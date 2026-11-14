@@ -2,7 +2,7 @@
 
 > **Ce dépôt est la source des leçons de Lnclass** (ADR-0134 de l'application, chantier `contenus-depot-dedie`). Il a été extrait de `docs/contenus/` de l'application le 2026-11-14, historique conservé.
 >
-> - **Public** : tout ce qui est ici, corrigés compris, est lisible par tous. Il n'y entre **jamais** de secret (jeton, clé, PIN, mot de passe) ni de donnée d'élève, d'enseignant ou d'établissement réel.
+> - **Public** : tout ce qui est ici, corrigés compris, est lisible par tous. Il n'y entre **jamais** de secret (jeton, clé, PIN, mot de passe) ni de donnée d'élève ni d'enseignant. Seule exception : `referentiel/`, la liste publique des DRENA et des écoles (nom, type, statut, DRENA ; ni contact, ni adresse, ni donnée de personne).
 > - **Rédiger ou corriger** : branche depuis `main`, PR vers `main` ; la CI (`.github/workflows/valider.yml`) lance `script/contenus/valider.rb` de l'application (à `Develop`) sur chaque leçon modifiée de `lecons/`.
 > - **Entrer dans l'application** : seules les leçons de `lecons/` y vont, par une PR applicative produite par `ruby script/contenus/synchroniser.rb <clone de ce dépôt>` ; l'application en garde une copie figée dans `docs/contenus/lecons-traitees/`, versionnée par `docs/contenus/VERSION`. On ne corrige jamais une leçon dans l'application.
 > - Les commandes citées plus bas (`valider.rb`, `bin/apercu-lecon`, imports) se lancent **depuis l'application**. Les liens vers `docs/chantiers/` pointent vers l'application (privée).
