@@ -7,7 +7,7 @@
 > - **Entrer dans l'application** : seules les leçons de `lecons/` y vont, par une PR applicative produite par `ruby script/contenus/synchroniser.rb <clone de ce dépôt>` ; l'application en garde une copie figée dans `docs/contenus/lecons-traitees/`, versionnée par `docs/contenus/VERSION`. On ne corrige jamais une leçon dans l'application.
 > - Les commandes citées plus bas (`valider.rb`, `bin/apercu-lecon`, imports) se lancent **depuis l'application**. Les liens vers `docs/chantiers/` pointent vers l'application (privée).
 >
-> Arborescence : `lecons/<niveau>-<série>/<matière>/*.json` (copiées dans l'application) · `a-reprendre/` · `progressions/` (progressions DPFC 2026-2027) · `prompts/` (prompts de rédaction).
+> Arborescence : `lecons/<niveau>-<série>/<matière>/*.json` (copiées dans l'application) · `a-reprendre/` · `referentiel/` (DRENA et établissements à importer) · `progressions/` (progressions DPFC 2026-2027) · `prompts/` (prompts de rédaction).
 
 Les contenus pédagogiques de Lnclass et la méthode pour les écrire : les **progressions** qui créent les fiches de cours de l'année, le **prompt** qui rédige une leçon complète (fiche de cours, fiches de révision, exercices), et les **leçons déjà traitées**. Ce dossier ne contient pas de code, seulement des fichiers importables et leur mode d'emploi.
 
