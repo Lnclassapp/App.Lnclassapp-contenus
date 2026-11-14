@@ -49,7 +49,8 @@ jobs:
 
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version-file: app/.ruby-version
+          # setup-ruby lit .ruby-version dans son dossier de travail : celui de l'application.
+          working-directory: app
 
       - name: Leçons à contrôler
         id: lecons
