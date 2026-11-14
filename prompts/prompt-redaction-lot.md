@@ -10,22 +10,22 @@
 
 Tu rédiges en lot les **leçons d'une matière pour un niveau** de Lnclass (application de soutien scolaire, secondaire ivoirien, programmes de la DPFC). Pour chaque leçon demandée, tu produis **un fichier** `lnclass.course-tree` **version 3** : la leçon, ses notions (fiche de révision au gabarit en 4 blocs), les deux exercices de chaque notion, les 4 problèmes de synthèse, les 4 sujets de devoir et les figures paramétrées.
 
-Chaque leçon est rédigée **exactement** comme le décrit `docs/contenus/prompt-redaction.md` : le gabarit des notions, la méthode en étapes numérotées, l'exemple qui applique chaque étape, les corrections qui reprennent les étapes et les mots de la méthode, les figures paramétrées, les types de questions, la part corrigée automatiquement, les règles de la matière (« Selon la matière » : textes, faits, sources), le format de sortie, le contrôle final. Rien de ce fichier n'est facultatif et rien n'est assoupli parce que le travail est en série.
+Chaque leçon est rédigée **exactement** comme le décrit `prompts/prompt-redaction.md` : le gabarit des notions, la méthode en étapes numérotées, l'exemple qui applique chaque étape, les corrections qui reprennent les étapes et les mots de la méthode, les figures paramétrées, les types de questions, la part corrigée automatiquement, les règles de la matière (« Selon la matière » : textes, faits, sources), le format de sortie, le contrôle final. Rien de ce fichier n'est facultatif et rien n'est assoupli parce que le travail est en série.
 
 ## Étape 0 — Lire avant d'écrire
 
-1. Lis en entier `docs/contenus/prompt-redaction.md`.
-2. Lis `docs/contenus/progressions-2026-2027/README.md` (règles de la progression, numéro de leçon, séries).
-3. Regarde une leçon déjà traitée dans `docs/contenus/lecons-traitees/` (par exemple `tle-d/mathematiques/`) pour le niveau de détail attendu : longueur des fiches, qualité des images, style des explications.
+1. Lis en entier `prompts/prompt-redaction.md`.
+2. Lis `progressions/README.md` (règles de la progression, numéro de leçon, séries).
+3. Regarde une leçon déjà traitée dans `lecons/` (par exemple `tle-d/mathematiques/`) pour le niveau de détail attendu : longueur des fiches, qualité des images, style des explications.
 
 ## Étape 1 — Composer le plan du niveau
 
-1. **Les leçons.** Ouvre `docs/contenus/progressions-2026-2027/progressions-2026-2027-<matière>.json` (`mathematiques`, `francais`, `histoire-geographie`, `svt`, `physique-chimie`, `edhc`, `philosophie`) et garde les fiches de cours du niveau demandé :
+1. **Les leçons.** Ouvre `progressions/progressions-2026-2027-<matière>.json` (`mathematiques`, `francais`, `histoire-geographie`, `svt`, `physique-chimie`, `edhc`, `philosophie`) et garde les fiches de cours du niveau demandé :
    - au 1er cycle : ceux sans `series_name` ;
    - à partir de la 2nde : ceux dont `series_name` est la série demandée.
 
    Le rang d'une leçon est le `N` de son `subtitle` (« Leçon N — … »). Prends les rangs demandés (par défaut 1 à 10 en 3ème).
-2. **Écarte les leçons déjà traitées** : un fichier existe dans `docs/contenus/lecons-traitees/<niveau>/<matière>/` dont `courses[0].name` est le même intitulé et dont `version` vaut 3. Ne les réécris pas, ne les écrase jamais. Un fichier de version 1 ou 2 au même intitulé est **remplacé** (ces versions ne s'importent plus).
+2. **Écarte les leçons déjà traitées** : un fichier existe dans `lecons/<niveau>/<matière>/` dont `courses[0].name` est le même intitulé et dont `version` vaut 3. Ne les réécris pas, ne les écrase jamais. Un fichier de version 1 ou 2 au même intitulé est **remplacé** (ces versions ne s'importent plus).
 3. **Affiche le plan** : un tableau rang × intitulé exact × état (« à rédiger » ou « déjà traité »). Puis enchaîne sans attendre de réponse. Si le plan est vide, dis-le et arrête-toi.
 4. **Attribue à chaque leçon un décor dominant** pour ses énoncés de problèmes (cour de l'école, marché, gbaka, football, champ, famille, téléphone et mobile money, atelier, port, plantation… ; en Français, un thème pour ses textes supports), le plus varié possible dans le niveau, et un **thème** (`blue`, `teal`, `burgundy`) en alternance. C'est une dominante, pas une obligation : si le décor fausse la notion, l'auteur en choisit un autre.
 
@@ -35,7 +35,7 @@ Une leçon pèse plusieurs dizaines de Ko de JSON. Dix leçons dans une seule co
 
 Chaque sous-agent reçoit, et lui seul le lit :
 
-- le texte intégral de `docs/contenus/prompt-redaction.md` (c'est son prompt) ;
+- le texte intégral de `prompts/prompt-redaction.md` (c'est son prompt) ;
 - son **ENTRÉE** remplie : intitulé exact, niveau et série, rang, matière, place dans la progression, contraintes du lot ;
 - le **contexte de sa matière** : la liste ordonnée des intitulés de la progression de la matière pour ce niveau (pas seulement ceux du lot). Les leçons précédentes sont des **acquis**, les leçons suivantes sont **interdites** : une notion qui leur appartient n'est pas traitée ;
 - son **décor dominant** (étape 1.5) ;
@@ -67,7 +67,7 @@ Règles de fond, pour toutes les leçons :
 
 ## Étape 4 — Ranger
 
-- Dossier : `docs/contenus/lecons-traitees/<niveau>-<série>/<matière>/` (`mathematiques`, `francais`, `histoire-geographie`, `svt`, `physique-chimie`, `edhc`, `philosophie`). Le niveau s'écrit `6eme`, `5eme`, `4eme`, `3eme`, `2nde`, `1ere` ou `tle` ; la série suit en minuscules (`tle-d`, `1ere-d`) et manque au 1er cycle (`3eme`).
+- Dossier : `lecons/<niveau>-<série>/<matière>/` (`mathematiques`, `francais`, `histoire-geographie`, `svt`, `physique-chimie`, `edhc`, `philosophie`). Le niveau s'écrit `6eme`, `5eme`, `4eme`, `3eme`, `2nde`, `1ere` ou `tle` ; la série suit en minuscules (`tle-d`, `1ere-d`) et manque au 1er cycle (`3eme`).
 - Fichier : l'intitulé de la fiche de cours en minuscules, sans accents, tout caractère non alphanumérique remplacé par un tiret, tirets multiples réduits à un (l'intitulé « Histoire — L'ONU » donne `histoire-l-onu.json`). Exemple : `3eme/mathematiques/racines-carrees.json`.
 - Ne remplace jamais un fichier v3 existant : s'il existe, saute la leçon et dis-le. Un fichier v1 ou v2 au même nom est remplacé.
 - L'intitulé (`name`) est **celui de la progression, à l'identique** : l'import détecte les doublons à ce nom.
@@ -85,7 +85,7 @@ Rends, dans la conversation, **sans recopier les JSON** :
 Selon le champ **Livraison** de l'ENTRÉE :
 
 - `fichiers` (par défaut) : les fichiers sont écrits dans le dépôt, rien n'est committé.
-- `pr` : crée la branche `docs/contenus-<niveau>-<série>` depuis la dernière `Develop`, ajoute les lignes au tableau « Leçons traitées » de `docs/contenus/README.md`, committe (`docs(contenus): leçons <niveau> <série>`), pousse la branche et ouvre une pull request vers `Develop`. Ne pousse jamais sur `Develop`.
+- `pr` : crée la branche `contenus/<niveau>-<série>` depuis la dernière `main` du dépôt de contenus, ajoute les lignes au tableau « Leçons traitées » de `README.md`, committe (`contenus(<niveau> <série>): leçons`), pousse la branche et ouvre une pull request vers `main`. Ne pousse jamais sur `main`. L'entrée dans l'application passe ensuite par une PR de synchronisation (`ruby script/contenus/synchroniser.rb <clone>`, dans l'application).
 
 ---
 
