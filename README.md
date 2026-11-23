@@ -1424,6 +1424,10 @@ Chaque fichier passe `script/contenus/valider.rb` sans erreur ni avertissement, 
 
 Points relevés à la rédaction, tranchés par le validateur pédagogique le 2026-11-14 ([décisions](https://github.com/Lnclassapp/App.Lnclassapp/blob/Develop/docs/chantiers/validation-pedagogique-agent/journal.md#décisions-du-validateur)) : le périmètre de chaque notion (ce qui est traité ou non), les modèles de situation et les barèmes des problèmes. La liste par leçon est dans le journal du chantier [`contenus-1ere-mathematiques-cd`](https://github.com/Lnclassapp/App.Lnclassapp/blob/Develop/docs/chantiers/contenus-1ere-mathematiques-cd/journal.md).
 
+#### 1ère, rangs 6 à 10 — retour de `a-reprendre/` (2026-11-23)
+
+Les 89 fichiers de 1ère annoncés dans les tableaux ci-dessus mais encore dans `a-reprendre/` (`sujets-manquants/` : 72 ; `exercices-et-sujets-manquants/` : 17) sont revenus dans `lecons/` le 2026-11-23 (issue [#678](https://github.com/Lnclassapp/App.Lnclassapp/issues/678)). Chaque leçon a maintenant ses 4 sujets de devoir de 4 exercices ; les 17 fichiers d'histoire-géographie et de philosophie ont aussi reçu leur second exercice par notion. Les 89 fichiers passent `script/contenus/valider.rb` sans erreur.
+
 ### 2nde — `lecons-traitees/2nde-a/`, `2nde-c/`, `2nde/`
 
 Les 3 premières leçons de chaque matière de Seconde (progression DPFC 2026-2027, rangs 1 à 3), rédigées le 2026-10-11 avec [`prompts/prompt-redaction-lot.md`](prompts/prompt-redaction-lot.md). Les séries A et C ont des progressions différentes en Mathématiques, SVT et Français ; Physique-Chimie et Histoire-Géographie ont des premières leçons communes.
