@@ -1055,10 +1055,6 @@
          {
           "content": "légende",
           "correct": true
-         },
-         {
-          "content": "legende",
-          "correct": true
          }
         ],
         "hint": "C'est le cadre qui accompagne la carte."
@@ -1753,10 +1749,6 @@
         {
          "content": "sédimentaire",
          "correct": true
-        },
-        {
-         "content": "sedimentaire",
-         "correct": true
         }
        ]
       }
@@ -2204,7 +2196,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Pense à l'étendue, à l'âge et aux roches de chaque ensemble."
       },
       {
        "title": "Exercice 2",
@@ -2307,7 +2300,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Compare la texture et le test à l'acide de chaque échantillon."
       },
       {
        "title": "Exercice 3",
@@ -2364,7 +2358,7 @@
         {
          "content": "Une coupe non déformée montre, de haut en bas : sables, argiles, socle. Classe ces terrains du plus ancien au plus récent.",
          "question_type": "ordering",
-         "explanation": "Étape 1 — Lire : trois terrains sont indiqués. Étape 2 — Repérer : le socle est en bas et les sables en haut. Étape 3 — Appliquer : plus on monte, plus la couche est récente. Étape 4 — Conclure : du plus ancien au plus récent : socle, argiles, sables.",
+         "explanation": "Étape 1 — Lire : trois terrains sont indiqués. Étape 2 — Repérer : le socle est en bas et les sables en haut. Étape 3 — Appliquer : plus on monte, plus la couche est récente. Étape 4 — Conclure : du plus ancien au plus récent : socle, argiles, sables. Pourquoi pas « Sables, argiles, socle » : c'est l'ordre du haut vers le bas, donc du plus récent au plus ancien.",
          "answers": [
           {
            "content": "Le socle"
@@ -2405,7 +2399,8 @@
          "tolerance": 0,
          "unit": "terrains"
         }
-       ]
+       ],
+       "hint": "Dans une coupe non déformée, le dessous est le plus ancien."
       },
       {
        "title": "Exercice 4",
@@ -2504,7 +2499,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Demande-toi dans quelle roche chaque ressource se forme."
       }
      ]
     },
@@ -2613,7 +2609,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Regarde la disposition des cristaux et la position de la ville dans le pays."
       },
       {
        "title": "Exercice 2",
@@ -2714,7 +2711,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Pense aux sédiments qui forment le bassin côtier."
       },
       {
        "title": "Exercice 3",
@@ -2817,7 +2815,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Relis la légende de la carte avant de choisir une zone."
       },
       {
        "title": "Exercice 4",
@@ -2889,7 +2888,7 @@
         {
          "content": "Un forage fictif traverse, du haut vers le bas, trois couches. Remets-les dans l'ordre où le foreur les rencontre.",
          "question_type": "ordering",
-         "explanation": "Étape 1 — Lire : les trois couches sont des sables, des argiles et un grès. Étape 2 — Repérer : les sables sont en haut. Étape 3 — Appliquer : le foreur descend : il croise d'abord le haut, puis le bas. Étape 4 — Conclure : ordre de traversée : sables, argiles, grès.",
+         "explanation": "Étape 1 — Lire : les trois couches sont des sables, des argiles et un grès. Étape 2 — Repérer : les sables sont en haut. Étape 3 — Appliquer : le foreur descend : il croise d'abord le haut, puis le bas. Étape 4 — Conclure : ordre de traversée : sables, argiles, grès. Pourquoi pas « Grès, argiles, sables » : ce serait l'ordre de bas en haut, alors que le foreur part de la surface.",
          "answers": [
           {
            "content": "Les sables"
@@ -2913,7 +2912,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Le pétrole est piégé dans des couches de sédiments."
       }
      ]
     },
@@ -3030,7 +3030,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Mêmes minéraux ne veut pas dire même roche : regarde la disposition."
       },
       {
        "title": "Exercice 2",
@@ -3131,7 +3132,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Relis le principe de superposition : le dessous est le plus ancien."
       },
       {
        "title": "Exercice 3",
@@ -3238,7 +3240,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Le pétrole se forme dans des sédiments, pas dans une roche cristalline."
       },
       {
        "title": "Exercice 4",
@@ -3349,7 +3352,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Rattache chaque observation à la roche, puis à son ensemble."
       }
      ]
     },
@@ -3432,10 +3436,6 @@
           {
            "content": "sédimentaire",
            "correct": true
-          },
-          {
-           "content": "sedimentaire",
-           "correct": true
           }
          ]
         },
@@ -3462,7 +3462,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Repère la position, observe les roches, puis rattache à l'ensemble."
       },
       {
        "title": "Exercice 2",
@@ -3573,7 +3574,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Utilise la clé de détermination et le test à l'acide."
       },
       {
        "title": "Exercice 3",
@@ -3674,7 +3676,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Pars du bas de la coupe : c'est la couche la plus ancienne."
       },
       {
        "title": "Exercice 4",
@@ -3777,7 +3780,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Chaque ressource se rattache à une roche, donc à un ensemble."
       }
      ]
     }
