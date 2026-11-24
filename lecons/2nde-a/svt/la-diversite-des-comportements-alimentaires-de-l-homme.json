@@ -1,0 +1,3707 @@
+{
+  "format": "lnclass.course-tree",
+  "version": 3,
+  "courses": [
+    {
+      "name": "La diversité des comportements alimentaires de l'Homme",
+      "subtitle": "Leçon 6 — progression DPFC 2026-2027",
+      "level_name": "2nde",
+      "series_name": "A",
+      "material_name": "SVT",
+      "theme": "burgundy",
+      "figures": [
+        {
+          "key": "decrire-repas",
+          "kind": "diagram",
+          "description": "Un schéma en arbre : au sommet « Décrire un repas », cinq branches qui donnent les questions à poser : quoi (les aliments et le plat), quand (le moment et la fréquence), où (maison, cantine, rue), avec qui (famille, camarades) et comment (cuisson, couverts ou mains).",
+          "params": {
+            "layout": "tree",
+            "direction": "down",
+            "nodes": [
+              {
+                "id": "r",
+                "label": "Décrire un repas"
+              },
+              {
+                "id": "q",
+                "label": "Quoi : les aliments et le plat"
+              },
+              {
+                "id": "w",
+                "label": "Quand : moment et fréquence"
+              },
+              {
+                "id": "o",
+                "label": "Où : maison, cantine, rue"
+              },
+              {
+                "id": "a",
+                "label": "Avec qui : famille, camarades"
+              },
+              {
+                "id": "h",
+                "label": "Comment : cuisson, couverts ou mains"
+              }
+            ],
+            "edges": [
+              {
+                "from": "r",
+                "to": "q"
+              },
+              {
+                "from": "r",
+                "to": "w"
+              },
+              {
+                "from": "r",
+                "to": "o"
+              },
+              {
+                "from": "r",
+                "to": "a"
+              },
+              {
+                "from": "r",
+                "to": "h"
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "carte-aliments",
+          "kind": "map",
+          "description": "Une carte schématique de la Côte d'Ivoire. La zone de forêt du Sud est teintée en catégorie 1 (manioc et banane plantain très cultivés), la savane du Nord en catégorie 2 (mil, maïs et sorgho davantage cultivés). Trois villes sont repérées : Abidjan, Daloa et Korhogo. C'est un exemple général, pas une règle absolue.",
+          "params": {
+            "base": "cote_d_ivoire",
+            "areas": [
+              {
+                "id": "dense_forest",
+                "category": 1
+              },
+              {
+                "id": "savanna",
+                "category": 2
+              }
+            ],
+            "places": [
+              {
+                "id": "abidjan"
+              },
+              {
+                "id": "daloa"
+              },
+              {
+                "id": "korhogo"
+              }
+            ],
+            "legend": [
+              "Forêt du Sud : manioc et banane plantain",
+              "Savane du Nord : mil, maïs et sorgho"
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "chaine-culture",
+          "kind": "diagram",
+          "description": "Un schéma fléché de gauche à droite en trois cases : une règle, une tradition ou une croyance du groupe fixe les aliments permis, évités ou réservés, ce qui donne le comportement observé : jeûne, interdit alimentaire ou repas de fête.",
+          "params": {
+            "layout": "flow",
+            "direction": "right",
+            "nodes": [
+              {
+                "id": "a",
+                "label": "Règle, tradition ou croyance du groupe"
+              },
+              {
+                "id": "b",
+                "label": "Aliments permis, évités ou réservés"
+              },
+              {
+                "id": "c",
+                "label": "Comportement observé : jeûne, interdit, repas de fête"
+              }
+            ],
+            "edges": [
+              {
+                "from": "a",
+                "to": "b",
+                "label": "fixe"
+              },
+              {
+                "from": "b",
+                "to": "c",
+                "label": "donne"
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "midi-eleves",
+          "kind": "stat_chart",
+          "description": "Un diagramme circulaire d'un sondage fictif auprès de 100 élèves d'un collège sur leur lieu de repas à midi : 40 élèves à la cantine, 30 à la maison, 20 chez une vendeuse devant l'école et 10 qui apportent leur repas.",
+          "params": {
+            "chart": "pie",
+            "series": [
+              40,
+              30,
+              20,
+              10
+            ],
+            "labels": [
+              "Cantine",
+              "Maison",
+              "Vendeuse devant l'école",
+              "Repas apporté"
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "facteurs-alimentation",
+          "kind": "diagram",
+          "description": "Un schéma en arbre : au sommet « Comportement alimentaire », quatre branches qui regroupent ce qui l'explique : le milieu et les ressources locales, le revenu avec les prix et le budget, la culture avec les traditions de la famille et la religion, et l'entourage avec l'école, les camarades et le travail.",
+          "params": {
+            "layout": "tree",
+            "direction": "down",
+            "nodes": [
+              {
+                "id": "r",
+                "label": "Comportement alimentaire"
+              },
+              {
+                "id": "m",
+                "label": "Milieu : ressources locales"
+              },
+              {
+                "id": "v",
+                "label": "Revenu : prix et budget"
+              },
+              {
+                "id": "c",
+                "label": "Culture : traditions de famille, religion"
+              },
+              {
+                "id": "e",
+                "label": "Entourage : école, camarades, travail"
+              }
+            ],
+            "edges": [
+              {
+                "from": "r",
+                "to": "m"
+              },
+              {
+                "from": "r",
+                "to": "v"
+              },
+              {
+                "from": "r",
+                "to": "c"
+              },
+              {
+                "from": "r",
+                "to": "e"
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "repas-dehors",
+          "kind": "stat_chart",
+          "description": "Une courbe fictive : le nombre de repas pris hors de la maison par semaine par une famille d'Abidjan, sur quatre années. Les valeurs sont 2 repas la première année, 3 la deuxième, 5 la troisième et 6 la quatrième : la courbe monte chaque année.",
+          "params": {
+            "chart": "line",
+            "series": [
+              2,
+              3,
+              5,
+              6
+            ],
+            "labels": [
+              "Année 1",
+              "Année 2",
+              "Année 3",
+              "Année 4"
+            ]
+          },
+          "controls": []
+        }
+      ],
+      "notions": [
+        {
+          "name": "Décrire un comportement alimentaire",
+          "remember": "Le **comportement alimentaire** est l'ensemble des habitudes d'une personne ou d'un groupe pour se nourrir : **quoi** (les aliments et le plat), **quand** (le moment et la fréquence), **où** (maison, cantine, rue), **avec qui** (famille, camarades) et **comment** (préparation, à la main ou avec des couverts). Un **aliment** est un produit que l'on mange (le manioc, l'igname) ; un **plat** est un aliment préparé. Exemples ivoiriens : l'attiéké (semoule de manioc cuite à la vapeur), le placali (pâte de manioc), le foutou (banane plantain ou igname pilée), le garba (attiéké avec du thon frit). Les comportements alimentaires sont **divers** : ils changent d'une famille à l'autre, d'une région à l'autre et d'une époque à l'autre.",
+          "method": [
+            "Repérer ce qui est mangé : le plat et les aliments de base.",
+            "Préciser quand, où et avec qui le repas est pris.",
+            "Noter comment le repas est préparé et mangé (cuisson, à la main, à la table).",
+            "Résumer le comportement en une phrase qui reprend ces informations."
+          ],
+          "example": {
+            "statement": "Chaque dimanche midi, la famille Kouassi se réunit dans la cour. Elle mange du foutou banane avec une sauce graine, à la main, dans un grand plat commun. Décrire ce repas.",
+            "steps": [
+              "Repérer : le plat est du foutou banane avec une sauce graine ; l'aliment de base est la banane plantain.",
+              "Préciser : quand ? chaque dimanche midi ; où ? dans la cour ; avec qui ? toute la famille.",
+              "Noter : le foutou est pilé, puis mangé à la main dans un grand plat commun.",
+              "Résumer : « Chaque dimanche midi, la famille mange ensemble dans la cour du foutou banane, à la main. »"
+            ]
+          },
+          "pitfall": "Ne décris pas les habitudes d'une personne à partir d'un seul repas. Contre-exemple : Awa mange du riz à la cantine un jeudi. Cela fait 1 déjeuner sur les 7 de la semaine, sans compter les autres repas, donc il ne dit pas ce qu'elle mange d'habitude. Pour décrire un comportement, regarde la fréquence (« chaque dimanche », « souvent », « rarement ») et plusieurs repas.",
+          "figure": "decrire-repas",
+          "practice": {
+            "statement": "Tu t'entraînes à décrire un comportement alimentaire.",
+            "questions": [
+              {
+                "content": "« Le dimanche, ma famille mange du foutou banane dans la cour, à la main, tous ensemble. » Quelle partie répond à la question « avec qui » ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 2 — Préciser quand, où et avec qui : « avec qui » demande les personnes présentes : « tous ensemble ». Les autres parties disent le plat (étape 1), le lieu (étape 2) et la manière de manger (étape 3).",
+                "answers": [
+                  {
+                    "content": "tous ensemble",
+                    "correct": true
+                  },
+                  {
+                    "content": "du foutou banane",
+                    "correct": false
+                  },
+                  {
+                    "content": "dans la cour",
+                    "correct": false
+                  },
+                  {
+                    "content": "à la main",
+                    "correct": false
+                  }
+                ],
+                "hint": "Cherche les personnes qui mangent."
+              },
+              {
+                "content": "Le plat fait de semoule de manioc cuite à la vapeur s'appelle l'___.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Repérer ce qui est mangé : le plat repéré est fait de semoule de manioc cuite à la vapeur ; c'est l'attiéké.",
+                "answers": [
+                  {
+                    "content": "attiéké",
+                    "correct": true
+                  }
+                ],
+                "hint": "On le sert aussi avec du thon frit dans le garba."
+              },
+              {
+                "content": "Les questions « quand » et « où » servent à décrire un repas, par exemple « le midi, à la cantine ».",
+                "question_type": "true_false",
+                "explanation": "Étape 2 — Préciser quand, où et avec qui : « quand » et « où » sont les informations à préciser : le midi répond à quand, la cantine répond à où. L'affirmation est vraie.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Relis l'étape 2 de la méthode."
+              },
+              {
+                "content": "Remets dans l'ordre les étapes de la méthode pour décrire un repas.",
+                "question_type": "ordering",
+                "explanation": "La méthode va du plat (étape 1) au contexte (étape 2), puis à la manière (étape 3), et se termine par la phrase de résumé (étape 4).",
+                "answers": [
+                  {
+                    "content": "Repérer ce qui est mangé"
+                  },
+                  {
+                    "content": "Préciser quand, où et avec qui"
+                  },
+                  {
+                    "content": "Noter comment le repas est préparé et mangé"
+                  },
+                  {
+                    "content": "Résumer en une phrase"
+                  }
+                ],
+                "hint": "On commence par le plat."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Décrire un repas en famille",
+              "statement": "Dans cet exercice, tu décris des repas de famille avec les étapes de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Que décrit le comportement alimentaire d'une personne ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer ce qui est mangé : le plat. Étape 2 — Préciser quand, où et avec qui : quand, où, avec qui. Étape 3 — Noter comment : comment. Le comportement alimentaire regroupe toutes ces informations, pas une seule.",
+                  "answers": [
+                    {
+                      "content": "Ce qu'elle mange, quand, où, comment et avec qui",
+                      "correct": true
+                    },
+                    {
+                      "content": "Seulement le prix de ses repas",
+                      "correct": false
+                    },
+                    {
+                      "content": "Seulement le nom du plat",
+                      "correct": false
+                    },
+                    {
+                      "content": "Seulement l'heure de son réveil",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque question à ce qu'elle permet de préciser.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Repérer ce qui est mangé : quoi donne le plat. Étape 2 — Préciser quand, où et avec qui : quand, où et avec qui donnent le contexte. Chaque question de la fiche correspond à un type d'information.",
+                  "answers": [
+                    {
+                      "content": "Quoi",
+                      "match": "Les aliments et le plat"
+                    },
+                    {
+                      "content": "Quand",
+                      "match": "Le moment et la fréquence"
+                    },
+                    {
+                      "content": "Où",
+                      "match": "La maison, la cantine ou la rue"
+                    },
+                    {
+                      "content": "Avec qui",
+                      "match": "La famille ou les camarades"
+                    }
+                  ]
+                },
+                {
+                  "content": "Le jeudi midi, Awa mange du placali avec une sauce gombo à la cantine, avec ses camarades. Quel est le plat ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer ce qui est mangé : le plat est le placali avec une sauce gombo. La cantine est le lieu, les camarades sont les convives, le jeudi midi est le moment : ce sont les informations de l'étape 2.",
+                  "answers": [
+                    {
+                      "content": "Du placali avec une sauce gombo",
+                      "correct": true
+                    },
+                    {
+                      "content": "La cantine",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ses camarades",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le jeudi midi",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "« À la cantine » précise l'endroit du repas : il répond à la question « ___ ? »",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Préciser quand, où et avec qui : l'endroit répond à la question où. Quand donnerait le moment, quoi donnerait le plat.",
+                  "answers": [
+                    {
+                      "content": "où",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un seul repas pris à la cantine suffit pour décrire toutes les habitudes alimentaires d'Awa.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer ce qui est mangé : un seul repas est repéré. Étape 2 — Préciser quand, où et avec qui : on précise quand (le moment et la fréquence) : la fréquence manque. Étape 4 — Résumer : le résumé doit tenir compte de la fréquence. Un seul repas ne dit pas ce qu'elle mange d'habitude : l'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Décrire des repas ivoiriens",
+              "statement": "Dans cet exercice, tu décris des repas ivoiriens (garba, foutou, placali, attiéké) avec les étapes de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Pour chaque repas, cherche d'abord le plat, puis le moment, le lieu et les convives.",
+              "questions": [
+                {
+                  "content": "« À la récréation, je mange un garba avec mes amis dans la cour de l'école. » Choisis les deux informations qui répondent à « où » et à « avec qui ».",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Repérer ce qui est mangé : le plat est un garba. Étape 2 — Préciser quand, où et avec qui : où : dans la cour ; avec qui : avec mes amis. Un garba est le plat, à la récréation est le moment : ce ne sont pas des réponses à où et avec qui.",
+                  "answers": [
+                    {
+                      "content": "dans la cour de l'école",
+                      "correct": true
+                    },
+                    {
+                      "content": "avec mes amis",
+                      "correct": true
+                    },
+                    {
+                      "content": "un garba",
+                      "correct": false
+                    },
+                    {
+                      "content": "à la récréation",
+                      "correct": false
+                    },
+                    {
+                      "content": "du thon frit",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'attiéké est fait à partir d'une plante cultivée. Laquelle ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer ce qui est mangé : l'aliment de base de l'attiéké est le manioc. L'igname et la banane plantain servent au foutou ; le riz est une céréale.",
+                  "answers": [
+                    {
+                      "content": "Le manioc",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'igname",
+                      "correct": false
+                    },
+                    {
+                      "content": "La banane plantain",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le riz",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes de la méthode pour décrire un repas.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Repérer, étape 2 — Préciser, étape 3 — Noter, étape 4 — Résumer : c'est l'ordre de la méthode.",
+                  "answers": [
+                    {
+                      "content": "Repérer ce qui est mangé"
+                    },
+                    {
+                      "content": "Préciser quand, où et avec qui"
+                    },
+                    {
+                      "content": "Noter comment le repas est préparé et mangé"
+                    },
+                    {
+                      "content": "Résumer en une phrase"
+                    }
+                  ]
+                },
+                {
+                  "content": "Le foutou se prépare en pilant de la banane plantain ou de l'___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Repérer ce qui est mangé : le foutou est fait de banane plantain ou d'igname pilée.",
+                  "answers": [
+                    {
+                      "content": "igname",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "« Chaque dimanche, nous mangeons ensemble dans la cour. » Cette phrase donne la fréquence et les personnes présentes.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Préciser quand, où et avec qui : « chaque dimanche » donne la fréquence et « ensemble » donne les personnes. L'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La famille Koné dit : « Le soir, nous mangeons du placali à la maison. » L'expression « le soir » répond à la question « ___ ».",
+                  "question_type": "select",
+                  "explanation": "Étape 2 — Préciser quand, où et avec qui : le soir est un moment : il répond à quand. Où serait la maison, quoi serait le placali.",
+                  "answers": [
+                    {
+                      "content": "quand",
+                      "correct": true
+                    },
+                    {
+                      "content": "où",
+                      "correct": false
+                    },
+                    {
+                      "content": "quoi",
+                      "correct": false
+                    },
+                    {
+                      "content": "avec qui",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Relier une habitude alimentaire à son milieu et à ses ressources",
+          "remember": "Ce que l'on mange dépend d'abord du **milieu** : le sol, le climat et la végétation décident de ce qui est cultivé, élevé ou pêché près de chez soi. Ces aliments sont les **ressources locales** (le poisson d'une lagune, la banane plantain d'une région de forêt, le mil d'une région de savane). Il dépend aussi du **revenu** : un aliment cher est acheté plus rarement par une famille au petit budget. Enfin le **transport** et le **marché** apportent des aliments produits loin : un aliment peut être mangé loin de son lieu de production. Le milieu est un facteur géographique, le revenu et le prix sont des facteurs économiques.",
+          "method": [
+            "Repérer l'habitude alimentaire observée : l'aliment ou le plat que l'on mange souvent.",
+            "Chercher d'où vient l'aliment : cultivé, élevé ou pêché sur place, ou acheté ailleurs.",
+            "Vérifier le prix et l'accès : marché proche, transport, budget de la famille.",
+            "Conclure avec « parce que » en nommant le facteur : le milieu ou le revenu."
+          ],
+          "example": {
+            "statement": "Dans un village au bord d'une lagune, les repas contiennent souvent du poisson frais. Expliquer cette habitude.",
+            "steps": [
+              "Repérer : l'habitude est de manger souvent du poisson frais.",
+              "Chercher d'où vient l'aliment : le poisson est pêché dans la lagune, tout près du village.",
+              "Vérifier le prix et l'accès : il n'y a pas de transport à payer, le poisson est facile à trouver et peu cher.",
+              "Conclure avec « parce que » : on mange souvent du poisson frais parce que la lagune le fournit sur place (facteur géographique) et qu'il est peu cher (facteur économique)."
+            ]
+          },
+          "pitfall": "Ne cherche pas l'explication dans le lieu seulement. Contre-exemple : du poisson fumé est vendu au marché de Bouaké, qui n'est pas au bord d'une lagune, grâce au transport. Et un aliment disponible peut rester trop cher pour une famille modeste. Regarde toujours le milieu ET le prix.",
+          "figure": "carte-aliments",
+          "practice": {
+            "statement": "Tu t'entraînes à relier une habitude alimentaire à son milieu.",
+            "questions": [
+              {
+                "content": "Dans un village au bord d'une lagune, on mange souvent du poisson frais. Quel est le facteur principal ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 2 — Chercher d'où vient l'aliment : le poisson est pêché dans la lagune. Étape 4 — Conclure avec « parce que » : on conclut : parce que le milieu fournit le poisson. Rien ne parle de religion, de goût ou de publicité.",
+                "answers": [
+                  {
+                    "content": "Le milieu : la lagune fournit le poisson tout près",
+                    "correct": true
+                  },
+                  {
+                    "content": "Une interdiction religieuse",
+                    "correct": false
+                  },
+                  {
+                    "content": "Le goût de chaque enfant",
+                    "correct": false
+                  },
+                  {
+                    "content": "La publicité à la télévision",
+                    "correct": false
+                  }
+                ],
+                "hint": "Cherche d'où vient le poisson."
+              },
+              {
+                "content": "Un aliment cher est en général acheté plus rarement par une famille au petit budget.",
+                "question_type": "true_false",
+                "explanation": "Étape 3 — Vérifier le prix et l'accès : le prix et le budget de la famille sont à vérifier ; un prix élevé limite les achats. L'affirmation est vraie.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Pense au budget."
+              },
+              {
+                "content": "Un aliment cultivé tout près du village est facile à trouver et souvent peu ___.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 3 — Vérifier le prix et l'accès : sans transport, le prix reste bas : l'aliment est peu cher.",
+                "answers": [
+                  {
+                    "content": "cher",
+                    "correct": true
+                  }
+                ],
+                "hint": "Pense au prix."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Expliquer un repas par son milieu",
+              "statement": "Dans cet exercice, tu expliques des habitudes alimentaires par le milieu et les ressources avec la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Le manioc est très cultivé dans le Sud forestier. Pourquoi y mange-t-on souvent de l'attiéké et du placali ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer l'habitude : l'habitude est de manger de l'attiéké et du placali. Étape 2 — Chercher d'où vient l'aliment : ils sont faits de manioc cultivé dans la région. Étape 4 — Conclure avec « parce que » : on conclut : parce que le milieu fournit le manioc. Aucune loi n'oblige à en manger et le manioc a un prix.",
+                  "answers": [
+                    {
+                      "content": "Parce que le manioc est cultivé dans la région et donc facile à trouver",
+                      "correct": true
+                    },
+                    {
+                      "content": "Parce qu'une loi oblige à en manger",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce que le manioc est toujours gratuit",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce que tous les habitants ont le même goût",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque situation au facteur qui l'explique.",
+                  "question_type": "matching",
+                  "explanation": "Étape 2 — Chercher d'où vient l'aliment : on regarde d'où vient chaque aliment. Étape 3 — Vérifier le prix et l'accès : on vérifie le prix et l'accès. Le champ voisin est une ressource locale, le prix relève du revenu, le marché relève de l'accès.",
+                  "answers": [
+                    {
+                      "content": "La banane plantain pousse dans le champ voisin",
+                      "match": "Ressources locales (milieu)"
+                    },
+                    {
+                      "content": "Un aliment cher que la famille achète rarement",
+                      "match": "Prix et revenu (économie)"
+                    },
+                    {
+                      "content": "Du poisson fumé vendu au marché, loin de la lagune",
+                      "match": "Transport et marché (accès)"
+                    }
+                  ]
+                },
+                {
+                  "content": "Un aliment produit loin du village ne peut jamais être mangé dans ce village.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 3 — Vérifier le prix et l'accès : l'accès par le transport et le marché permet d'avoir des aliments produits loin. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Les aliments cultivés, élevés ou pêchés près du village sont les ressources ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Chercher d'où vient l'aliment : un aliment qui vient de près est une ressource locale.",
+                  "answers": [
+                    {
+                      "content": "locales",
+                      "correct": true
+                    },
+                    {
+                      "content": "locale",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un élève dit : « On mange du poisson fumé à Bouaké uniquement parce que la lagune est à côté. » Pourquoi est-ce faux ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 2 — Chercher d'où vient l'aliment : on cherche d'où vient le poisson : de loin. Étape 3 — Vérifier le prix et l'accès : on vérifie l'accès : le transport et le marché. Étape 4 — Conclure avec « parce que » : on conclut avec le milieu ET l'accès. L'élève oublie le transport, comme dans le piège de la fiche.",
+                  "answers": [
+                    {
+                      "content": "Bouaké n'est pas au bord d'une lagune : le poisson arrive par le transport et le marché",
+                      "correct": true
+                    },
+                    {
+                      "content": "Parce que le poisson fumé n'est jamais vendu au marché",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce que le poisson fumé ne coûte rien",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce que le poisson fumé est interdit à Bouaké",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Du village à la ville : milieu, marché et budget",
+              "statement": "Dans cet exercice, tu relies des habitudes alimentaires à leur milieu et à leur budget (situations fictives en Côte d'Ivoire).",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Pour chaque situation, demande-toi d'où vient l'aliment, puis combien il coûte.",
+              "questions": [
+                {
+                  "content": "Dans un village de savane du Nord, la famille de Seydou cultive du mil et du maïs. Quelle habitude est la plus probable ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer l'habitude : l'habitude à expliquer est le choix du plat. Étape 2 — Chercher d'où vient l'aliment : le mil et le maïs sont cultivés dans le champ. Étape 4 — Conclure avec « parce que » : on conclut : parce que le milieu fournit des céréales. Les autres propositions supposent des aliments qui ne sont pas sur place.",
+                  "answers": [
+                    {
+                      "content": "Manger souvent des plats à base de céréales cultivées dans le champ",
+                      "correct": true
+                    },
+                    {
+                      "content": "Manger chaque jour du poisson frais de lagune",
+                      "correct": false
+                    },
+                    {
+                      "content": "Manger chaque jour des produits de la mer",
+                      "correct": false
+                    },
+                    {
+                      "content": "Manger chaque jour un plat venu de l'étranger",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Choisis les deux raisons qui expliquent qu'une famille de la lagune mange souvent du poisson.",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 2 — Chercher d'où vient l'aliment : le poisson vient de la lagune. Étape 3 — Vérifier le prix et l'accès : il est facile d'accès et peu cher. Une loi ou un poisson qui pousse dans les champs ne correspondent à rien dans la méthode.",
+                  "answers": [
+                    {
+                      "content": "Le poisson est pêché tout près",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il est facile à trouver et peu cher",
+                      "correct": true
+                    },
+                    {
+                      "content": "Une loi interdit les autres aliments",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le poisson pousse dans les champs",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le poisson ne se mange qu'un jour par an",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes de la méthode pour expliquer une habitude alimentaire.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Repérer l'habitude, étape 2 — Chercher d'où vient l'aliment, étape 3 — Vérifier le prix et l'accès, étape 4 — Conclure avec « parce que ».",
+                  "answers": [
+                    {
+                      "content": "Repérer l'habitude alimentaire observée"
+                    },
+                    {
+                      "content": "Chercher d'où vient l'aliment"
+                    },
+                    {
+                      "content": "Vérifier le prix et l'accès"
+                    },
+                    {
+                      "content": "Conclure avec « parce que »"
+                    }
+                  ]
+                },
+                {
+                  "content": "Une famille achète rarement un aliment trop ___ pour son budget.",
+                  "question_type": "select",
+                  "explanation": "Étape 3 — Vérifier le prix et l'accès : le prix est à vérifier : un aliment trop cher est acheté rarement. Frais, lourd ou ancien ne disent rien du budget.",
+                  "answers": [
+                    {
+                      "content": "cher",
+                      "correct": true
+                    },
+                    {
+                      "content": "frais",
+                      "correct": false
+                    },
+                    {
+                      "content": "lourd",
+                      "correct": false
+                    },
+                    {
+                      "content": "ancien",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le revenu d'une famille est un facteur qui influence ses achats de nourriture.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 3 — Vérifier le prix et l'accès : le budget de la famille fait partie de l'étape 3. L'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le sol, le climat et la végétation d'une région forment son ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Chercher d'où vient l'aliment : ce qui décide de ce qui pousse sur place est le milieu.",
+                  "answers": [
+                    {
+                      "content": "milieu",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Relier une habitude alimentaire à la culture et aux croyances",
+          "remember": "La **culture** (les traditions de la famille) et la **religion** transmettent des règles pour se nourrir ; l'**entourage** (l'école, les camarades, le travail) en impose d'autres : plats de fête, repas partagés dans un même plat, aliments évités, périodes de **jeûne**. Exemples : des musulmans ne mangent pas de porc et font le jeûne du Ramadan (ni nourriture ni boisson de l'aube au coucher du soleil pendant un mois) ; une famille prépare pour les fêtes la recette de ses grands-parents ; la cantine sert le même menu à tous les élèves. Ces règles sont des **choix de culture ou de croyance** : un groupe qui les suit n'a pas tort, et deux élèves de la même classe peuvent avoir des comportements différents.",
+          "method": [
+            "Repérer le comportement : un aliment évité, un jeûne, un repas de fête ou un repas partagé.",
+            "Chercher la règle ou la tradition qui l'explique : religion, tradition de la famille ou règle de l'entourage (école, travail).",
+            "Identifier le groupe qui suit cette règle.",
+            "Conclure sans juger : c'est une pratique du groupe, pas une erreur."
+          ],
+          "example": {
+            "statement": "Pendant le mois de Ramadan, la famille d'Aminata ne mange ni ne boit de l'aube au coucher du soleil, puis partage un repas le soir. Expliquer ce comportement.",
+            "steps": [
+              "Repérer le comportement : un jeûne pendant la journée, puis un repas partagé le soir.",
+              "Chercher la règle ou la tradition : c'est une règle religieuse de l'islam pour le mois de Ramadan.",
+              "Identifier le groupe : les musulmans qui pratiquent le jeûne, dont la famille d'Aminata.",
+              "Conclure sans juger : ce comportement est une pratique religieuse et culturelle du groupe, pas une erreur."
+            ]
+          },
+          "pitfall": "Ne juge pas un comportement alimentaire et ne généralise pas à tout un groupe. Contre-exemple : dans une classe de 40 élèves, 25 font le Ramadan et 15 ne le font pas : deux comportements existent dans la même école. Aucun n'est une erreur, et on ne dit jamais que « tous » les membres d'un groupe mangent pareil.",
+          "figure": "chaine-culture",
+          "practice": {
+            "statement": "Tu t'entraînes à relier une habitude alimentaire à la culture et aux croyances.",
+            "questions": [
+              {
+                "content": "Pendant le Ramadan, une famille musulmane ne mange pas de l'aube au coucher du soleil. Quelle est l'explication ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 2 — Chercher la règle ou la tradition : la règle est religieuse : le jeûne du Ramadan. Étape 3 — Identifier le groupe : le groupe est celui des musulmans pratiquants. Rien ne parle de manque de nourriture ou de prix.",
+                "answers": [
+                  {
+                    "content": "Une règle religieuse suivie par le groupe",
+                    "correct": true
+                  },
+                  {
+                    "content": "Un manque de nourriture dans la région",
+                    "correct": false
+                  },
+                  {
+                    "content": "Un prix trop élevé de tous les aliments",
+                    "correct": false
+                  },
+                  {
+                    "content": "Le goût personnel de chaque enfant",
+                    "correct": false
+                  }
+                ],
+                "hint": "Cherche la règle du groupe."
+              },
+              {
+                "content": "Une règle alimentaire suivie par un groupe est une erreur à corriger.",
+                "question_type": "true_false",
+                "explanation": "Étape 4 — Conclure sans juger : on conclut sans juger : c'est une pratique du groupe, pas une erreur. L'affirmation est fausse.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Relis l'étape 4."
+              },
+              {
+                "content": "Un plat préparé seulement pour les grandes occasions est un plat de ___.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Repérer le comportement : le comportement repéré est un repas de fête : le plat est réservé aux grandes occasions.",
+                "answers": [
+                  {
+                    "content": "fête",
+                    "correct": true
+                  }
+                ],
+                "hint": "On le prépare les jours de célébration."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Expliquer un comportement par la culture",
+              "statement": "Dans cet exercice, tu expliques des comportements alimentaires par la culture, la religion et la famille avec la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une famille prépare à chaque fête la recette de foutou transmise par les grands-parents. Quel facteur explique ce comportement ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer le comportement : le comportement est un repas de fête avec une recette précise. Étape 2 — Chercher la règle ou la tradition : la tradition de la famille l'explique. Le prix, le climat et le revenu relèvent du milieu et de l'économie, pas de la tradition.",
+                  "answers": [
+                    {
+                      "content": "La tradition de la famille",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le prix du marché",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le climat de la région",
+                      "correct": false
+                    },
+                    {
+                      "content": "Un manque de revenu",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque situation à la règle ou à la tradition qui l'explique.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Repérer le comportement : on repère chaque comportement. Étape 2 — Chercher la règle ou la tradition : on cherche la règle : religion, famille ou école. Chaque comportement a sa règle : religieuse, familiale ou scolaire.",
+                  "answers": [
+                    {
+                      "content": "Des musulmans ne mangent pas de porc",
+                      "match": "Règle religieuse"
+                    },
+                    {
+                      "content": "Un repas de fête préparé comme chez les grands-parents",
+                      "match": "Tradition de la famille"
+                    },
+                    {
+                      "content": "Tous les élèves mangent le même menu à la cantine",
+                      "match": "Règle de l'école"
+                    }
+                  ]
+                },
+                {
+                  "content": "Un comportement alimentaire lié à une religion est une pratique du groupe, pas une erreur.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 4 — Conclure sans juger : on conclut sans juger : c'est une pratique du groupe. L'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans une classe, 25 élèves font le Ramadan et 15 ne le font pas. Que montre cette classe ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Identifier le groupe : deux groupes sont identifiés : 25 et 15 élèves. Étape 4 — Conclure sans juger : on conclut sans juger : aucun n'est une erreur. Dire que 15 élèves se trompent serait juger, comme dans le piège de la fiche.",
+                  "answers": [
+                    {
+                      "content": "Deux comportements différents dans la même école, selon les croyances",
+                      "correct": true
+                    },
+                    {
+                      "content": "Que tous les élèves mangent pareil",
+                      "correct": false
+                    },
+                    {
+                      "content": "Que l'école oblige à jeûner",
+                      "correct": false
+                    },
+                    {
+                      "content": "Que 15 élèves se trompent",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le repas où toute la famille mange dans le même plat est un repas ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Repérer le comportement : le comportement repéré est un repas partagé.",
+                  "answers": [
+                    {
+                      "content": "partagé",
+                      "correct": true
+                    },
+                    {
+                      "content": "commun",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Fêtes, croyances et cantine",
+              "statement": "Dans cet exercice, tu expliques des comportements alimentaires par les traditions, les croyances et l'entourage.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Cherche d'abord la règle ou la tradition, puis le groupe qui la suit.",
+              "questions": [
+                {
+                  "content": "Choisis les deux facteurs qui relèvent de la culture et des croyances.",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 2 — Chercher la règle ou la tradition : la règle ou la tradition : religion, culture, famille ou école. Le prix, le sol et la distance relèvent du milieu et de l'économie.",
+                  "answers": [
+                    {
+                      "content": "Une règle religieuse",
+                      "correct": true
+                    },
+                    {
+                      "content": "Une tradition de famille",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le prix du marché",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le sol de la région",
+                      "correct": false
+                    },
+                    {
+                      "content": "La distance du champ",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une famille mange du placali sauce graine chaque dimanche midi, comme les grands-parents. Quelle explication est la plus juste ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer le comportement : le comportement est un repas répété chaque dimanche. Étape 2 — Chercher la règle ou la tradition : la tradition de la famille l'explique. Étape 4 — Conclure sans juger : conclure sans juger : pas d'erreur. Aucune obligation de l'État n'existe ici.",
+                  "answers": [
+                    {
+                      "content": "Une habitude transmise par la famille",
+                      "correct": true
+                    },
+                    {
+                      "content": "Une obligation de l'État",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une erreur d'alimentation",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le hasard de chaque semaine",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "À la cantine, tous les élèves mangent le même menu : c'est une règle fixée par ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 2 — Chercher la règle ou la tradition : la règle vient de l'école. Le champ, le marché et la lagune sont des lieux de ressources, pas des règles.",
+                  "answers": [
+                    {
+                      "content": "l'école",
+                      "correct": true
+                    },
+                    {
+                      "content": "le champ",
+                      "correct": false
+                    },
+                    {
+                      "content": "le marché",
+                      "correct": false
+                    },
+                    {
+                      "content": "la lagune",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes de la méthode pour expliquer un comportement par la culture.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Repérer le comportement, étape 2 — Chercher la règle ou la tradition, étape 3 — Identifier le groupe, étape 4 — Conclure sans juger.",
+                  "answers": [
+                    {
+                      "content": "Repérer le comportement"
+                    },
+                    {
+                      "content": "Chercher la règle ou la tradition"
+                    },
+                    {
+                      "content": "Identifier le groupe"
+                    },
+                    {
+                      "content": "Conclure sans juger"
+                    }
+                  ]
+                },
+                {
+                  "content": "On peut dire qu'un groupe qui jeûne mange « mal ».",
+                  "question_type": "true_false",
+                  "explanation": "Étape 4 — Conclure sans juger : conclure sans juger : le jeûne est une pratique religieuse, pas une erreur. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Le temps de jeûne des musulmans, de l'aube au coucher du soleil pendant un mois, s'appelle le ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Chercher la règle ou la tradition : la règle religieuse en cause est celle du Ramadan.",
+                  "answers": [
+                    {
+                      "content": "ramadan",
+                      "correct": true
+                    },
+                    {
+                      "content": "ramadhan",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Comparer deux comportements alimentaires",
+          "remember": "**Comparer** deux comportements alimentaires, c'est relever ce qui est **pareil** (ressemblances) et ce qui **change** (différences), puis relier chaque différence à un **facteur** : le milieu, le revenu, la culture ou l'entourage. On lit des données dans un texte, un tableau ou un diagramme. Une valeur plus grande est plus fréquente, mais elle n'est la **majorité** que si elle dépasse la moitié du total. Les plats peuvent être différents tout en partageant un aliment : l'attiéké et le placali sont faits de manioc. Les comportements changent aussi avec la vie en ville : on mange plus souvent hors de la maison quand on travaille loin.",
+          "method": [
+            "Lire les données de chaque situation (texte, tableau ou diagramme) et faire les totaux utiles.",
+            "Relever les ressemblances et les différences.",
+            "Chercher le facteur qui explique chaque différence.",
+            "Conclure par une phrase qui compare et explique avec « parce que »."
+          ],
+          "example": {
+            "statement": "Famille A (Abidjan) : garba acheté près du travail à midi. Famille B (village) : placali cuisiné à la maison avec du manioc cultivé dans son champ. Comparer.",
+            "steps": [
+              "Lire les données : A mange un garba acheté près du travail ; B mange un placali cuisiné à la maison.",
+              "Relever les ressemblances et les différences : ressemblance, les deux plats sont faits de manioc ; différences, A achète et mange près du travail, B cuisine et mange chez elle.",
+              "Chercher le facteur : A travaille en ville loin de chez elle (mode de vie en ville, travail loin de la maison) ; B cultive le manioc dans son champ (milieu).",
+              "Conclure : les deux familles mangent du manioc ; A l'achète parce qu'elle travaille en ville, B le cuisine parce qu'elle le cultive."
+            ]
+          },
+          "pitfall": "Ne confonds pas « le plus fréquent » et « la majorité ». Contre-exemple : sur 100 élèves, 40 mangent à la cantine : c'est le lieu le plus fréquent, mais 60 élèves mangent ailleurs. La majorité demande plus de 50 sur 100. Compare aussi les parts avant de conclure.",
+          "figure": "midi-eleves",
+          "practice": {
+            "statement": "Tu t'entraînes à comparer deux comportements alimentaires.",
+            "questions": [
+              {
+                "content": "Dans un sondage fictif de 100 élèves, 40 mangent à la cantine et 30 à la maison. Quel lieu est le plus fréquent ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Lire les données : on lit 40 à la cantine et 30 à la maison. Étape 2 — Relever les ressemblances et les différences : on compare : 40 est plus grand que 30. La cantine est donc plus fréquente.",
+                "answers": [
+                  {
+                    "content": "La cantine",
+                    "correct": true
+                  },
+                  {
+                    "content": "La maison",
+                    "correct": false
+                  },
+                  {
+                    "content": "Les deux sont aussi fréquents",
+                    "correct": false
+                  },
+                  {
+                    "content": "On ne peut pas savoir",
+                    "correct": false
+                  }
+                ],
+                "hint": "Compare 40 et 30."
+              },
+              {
+                "content": "Dans ce sondage, 40 élèves mangent à la cantine et 30 à la maison. Combien d'élèves mangent à la cantine ou à la maison ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Lire les données : on lit 40 et 30, puis on fait le total utile : 40 + 30 = 70. Le total est 70 élèves.",
+                "answers": [
+                  {
+                    "content": "70",
+                    "correct": true
+                  }
+                ],
+                "unit": "élèves",
+                "tolerance": 0,
+                "hint": "Additionne les deux valeurs."
+              },
+              {
+                "content": "Comparer, c'est relever à la fois des ressemblances et des différences.",
+                "question_type": "true_false",
+                "explanation": "Étape 2 — Relever les ressemblances et les différences : la méthode demande de relever les ressemblances et les différences. L'affirmation est vraie.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Relis l'étape 2."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Comparer où mangent les élèves à midi",
+              "statement": "Un sondage fictif auprès de 100 élèves d'un collège donne : 40 mangent à la cantine, 30 à la maison, 20 chez une vendeuse devant l'école et 10 apportent leur repas. Dans cet exercice, tu compares ces comportements avec la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": "midi-eleves",
+              "questions": [
+                {
+                  "content": "Quel est le lieu de repas le plus fréquent ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Lire les données : on lit 40, 30, 20 et 10. Étape 2 — Relever les ressemblances et les différences : la plus grande valeur est 40, la cantine. La maison, avec 30, est moins fréquente.",
+                  "answers": [
+                    {
+                      "content": "La cantine",
+                      "correct": true
+                    },
+                    {
+                      "content": "La maison",
+                      "correct": false
+                    },
+                    {
+                      "content": "Chez la vendeuse devant l'école",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le repas apporté",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien d'élèves mangent à la cantine ou chez la vendeuse devant l'école ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Lire les données : on lit 40 à la cantine et 20 chez la vendeuse, puis on fait le total : 40 + 20 = 60. Le résultat est 60 élèves.",
+                  "answers": [
+                    {
+                      "content": "60",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "élèves",
+                  "tolerance": 0
+                },
+                {
+                  "content": "La cantine est choisie par la majorité des élèves.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Lire les données : on lit 40 élèves sur 100. Étape 2 — Relever les ressemblances et les différences : la majorité demande plus de 50 sur 100 : 40 ne suffit pas. L'affirmation est fausse : 60 élèves mangent ailleurs.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel facteur peut expliquer que 20 élèves achètent leur repas devant l'école ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Chercher le facteur : on cherche le facteur : l'accès et le prix, un repas près de l'école. Étape 4 — Conclure : on conclut : ils achètent parce que c'est rapide et proche. Une règle religieuse ou une loi ne sont pas en cause ici.",
+                  "answers": [
+                    {
+                      "content": "Un repas rapide, près de l'école, à un prix connu",
+                      "correct": true
+                    },
+                    {
+                      "content": "Une règle religieuse qui oblige à acheter",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le climat de la région",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une loi qui interdit la cantine",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque lieu de repas au nombre d'élèves.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Lire les données : on lit chaque valeur du diagramme. Chaque lieu correspond à sa part dans le sondage.",
+                  "answers": [
+                    {
+                      "content": "Cantine",
+                      "match": "40 élèves"
+                    },
+                    {
+                      "content": "Maison",
+                      "match": "30 élèves"
+                    },
+                    {
+                      "content": "Vendeuse devant l'école",
+                      "match": "20 élèves"
+                    },
+                    {
+                      "content": "Repas apporté",
+                      "match": "10 élèves"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Comparer deux familles : ville et village",
+              "statement": "Dans cet exercice, tu compares le repas de deux familles fictives avec la méthode de la fiche. Famille A, à Abidjan : garba acheté près du travail à midi (attiéké et poisson). Famille B, au village : placali avec une sauce gombo, cuisiné à la maison avec du manioc cultivé dans son champ.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Cherche ce que les deux repas ont en commun avant de chercher ce qui les sépare.",
+              "questions": [
+                {
+                  "content": "Quelle ressemblance y a-t-il entre le garba et le placali ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Lire les données : on lit les deux plats : attiéké avec poisson, placali avec sauce. Étape 2 — Relever les ressemblances et les différences : l'attiéké et le placali sont faits de manioc : c'est la ressemblance. Ni l'igname ni le riz ne sont dans ces plats.",
+                  "answers": [
+                    {
+                      "content": "Les deux plats sont faits à partir du manioc",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les deux sont faits d'igname",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les deux sont faits de riz",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les deux sont des plats de fête obligatoires",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Choisis les deux différences observées entre la famille A et la famille B.",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Lire les données : on lit les deux situations. Étape 2 — Relever les ressemblances et les différences : on relève les différences : acheter ou cuisiner, près du travail ou à la maison. Les deux familles mangent du manioc : ce n'est pas une différence.",
+                  "answers": [
+                    {
+                      "content": "La famille A achète son repas, la famille B le cuisine",
+                      "correct": true
+                    },
+                    {
+                      "content": "La famille A mange près du travail, la famille B à la maison",
+                      "correct": true
+                    },
+                    {
+                      "content": "La famille A mange du manioc, la famille B n'en mange pas",
+                      "correct": false
+                    },
+                    {
+                      "content": "La famille A jeûne, la famille B non",
+                      "correct": false
+                    },
+                    {
+                      "content": "La famille A mange le soir, la famille B le matin",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel facteur explique le mieux que la famille B cuisine à partir de son champ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Chercher le facteur : on cherche le facteur : la famille a un champ de manioc, c'est le milieu. Étape 4 — Conclure : on conclut : elle cuisine parce qu'elle cultive. Rien ne parle de religion, d'école ou de publicité.",
+                  "answers": [
+                    {
+                      "content": "Le milieu : elle cultive elle-même le manioc",
+                      "correct": true
+                    },
+                    {
+                      "content": "Une règle religieuse",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une règle de l'école",
+                      "correct": false
+                    },
+                    {
+                      "content": "La publicité",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes de la méthode pour comparer deux comportements alimentaires.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Lire les données, étape 2 — Relever les ressemblances et les différences, étape 3 — Chercher le facteur, étape 4 — Conclure.",
+                  "answers": [
+                    {
+                      "content": "Lire les données de chaque situation"
+                    },
+                    {
+                      "content": "Relever les ressemblances et les différences"
+                    },
+                    {
+                      "content": "Chercher le facteur de chaque différence"
+                    },
+                    {
+                      "content": "Conclure par une phrase qui compare et explique"
+                    }
+                  ]
+                },
+                {
+                  "content": "Deux familles qui mangent des plats différents ne partagent forcément aucun aliment.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Relever les ressemblances et les différences : relever les ressemblances : le garba et le placali sont tous deux faits de manioc. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour conclure une comparaison, on explique la différence avec les mots « ___ ».",
+                  "question_type": "select",
+                  "explanation": "Étape 4 — Conclure : la conclusion s'écrit avec « parce que ». Les autres expressions ne donnent pas une cause.",
+                  "answers": [
+                    {
+                      "content": "parce que",
+                      "correct": true
+                    },
+                    {
+                      "content": "bien que",
+                      "correct": false
+                    },
+                    {
+                      "content": "avant que",
+                      "correct": false
+                    },
+                    {
+                      "content": "sans que",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Le dimanche chez la famille Koffi",
+          "statement": "Chaque dimanche midi, la famille Koffi, à Daloa, se réunit dans la cour. Elle mange du foutou banane avec une sauce graine, à la main, dans un grand plat commun (situation fictive).",
+          "exercise_type": "fixation",
+          "figure": "decrire-repas",
+          "questions": [
+            {
+              "content": "Quel est le plat décrit ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode détaillée. 1. Repérer ce qui est mangé : du foutou banane avec une sauce graine. 2. La cour est le lieu, chaque dimanche midi est le moment, le grand plat est la manière : ce ne sont pas le plat.",
+              "answers": [
+                {
+                  "content": "Du foutou banane avec une sauce graine",
+                  "correct": true
+                },
+                {
+                  "content": "La cour",
+                  "correct": false
+                },
+                {
+                  "content": "Chaque dimanche midi",
+                  "correct": false
+                },
+                {
+                  "content": "Un grand plat commun",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Choisis les deux informations qui répondent à « où » et à « comment ».",
+              "question_type": "multiple_correct_2",
+              "explanation": "Méthode détaillée. 1. Préciser où : dans la cour. 2. Noter comment : à la main. 3. Chaque dimanche répond à quand, du foutou banane répond à quoi, et Abidjan n'est pas cité.",
+              "answers": [
+                {
+                  "content": "dans la cour",
+                  "correct": true
+                },
+                {
+                  "content": "à la main",
+                  "correct": true
+                },
+                {
+                  "content": "chaque dimanche",
+                  "correct": false
+                },
+                {
+                  "content": "du foutou banane",
+                  "correct": false
+                },
+                {
+                  "content": "à Abidjan",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quel facteur explique que la banane plantain soit facile à trouver à Daloa, ville de la zone forestière ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode détaillée. 1. Repérer l'habitude : le foutou banane. 2. Chercher d'où vient l'aliment : la banane plantain est cultivée dans la région. 3. Vérifier l'accès : elle est proche. 4. Conclure : parce que le milieu la fournit.",
+              "answers": [
+                {
+                  "content": "Le milieu : la banane plantain est cultivée dans la région forestière",
+                  "correct": true
+                },
+                {
+                  "content": "Une règle religieuse",
+                  "correct": false
+                },
+                {
+                  "content": "Une règle de l'école",
+                  "correct": false
+                },
+                {
+                  "content": "Une loi sur les prix",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Manger dans un grand plat commun est une pratique de partage de la famille, pas une erreur.",
+              "question_type": "true_false",
+              "explanation": "Méthode détaillée. 1. Repérer le comportement : un repas partagé. 2. Chercher la règle : la tradition de la famille. 3. Identifier le groupe : la famille Koffi. 4. Conclure sans juger : c'est une pratique du groupe.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": true
+                },
+                {
+                  "content": "Faux",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "« Chaque dimanche midi » répond à la question « ___ ? »",
+              "question_type": "fill_blank",
+              "explanation": "Méthode détaillée. Préciser quand, où et avec qui : le moment et la fréquence répondent à quand. Où serait la cour, avec qui serait la famille.",
+              "answers": [
+                {
+                  "content": "quand",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Remets dans l'ordre les étapes pour décrire ce repas.",
+              "question_type": "ordering",
+              "explanation": "Méthode détaillée. On repère le plat, on précise le contexte, on note la manière, puis on résume : c'est l'ordre de la méthode de description.",
+              "answers": [
+                {
+                  "content": "Repérer le foutou banane avec une sauce graine"
+                },
+                {
+                  "content": "Préciser chaque dimanche midi, dans la cour, en famille"
+                },
+                {
+                  "content": "Noter qu'on mange à la main dans un plat commun"
+                },
+                {
+                  "content": "Résumer en une phrase"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Les élèves et leur repas de midi",
+          "statement": "Un sondage fictif auprès de 100 élèves d'un collège donne : 40 mangent à la cantine, 30 à la maison, 20 chez une vendeuse devant l'école et 10 apportent leur repas.",
+          "exercise_type": "fixation",
+          "figure": "midi-eleves",
+          "questions": [
+            {
+              "content": "Combien d'élèves ne mangent pas à la cantine ?",
+              "question_type": "numeric",
+              "explanation": "Méthode détaillée. 1. Lire : 40 à la cantine sur 100. 2. Calculer le reste : 100 − 40 = 60. La réponse est 60 élèves.",
+              "answers": [
+                {
+                  "content": "60",
+                  "correct": true
+                }
+              ],
+              "unit": "élèves",
+              "tolerance": 0
+            },
+            {
+              "content": "Quelle phrase de conclusion est juste ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode détaillée. 1. Lire : 40 à la cantine. 2. Comparer : 40 est la plus grande valeur, mais pas plus de 50 sur 100. 3. Conclure : le lieu le plus fréquent n'est pas la majorité, comme dans le piège de la fiche.",
+              "answers": [
+                {
+                  "content": "La cantine est le lieu le plus fréquent, mais 60 élèves mangent ailleurs",
+                  "correct": true
+                },
+                {
+                  "content": "La cantine est choisie par la majorité des élèves",
+                  "correct": false
+                },
+                {
+                  "content": "Tous les élèves mangent à la cantine",
+                  "correct": false
+                },
+                {
+                  "content": "La cantine est le lieu le moins fréquent",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Les élèves qui apportent leur repas sont plus nombreux que ceux qui mangent à la maison.",
+              "question_type": "true_false",
+              "explanation": "Méthode détaillée. 1. Lire : 10 élèves apportent leur repas, 30 mangent à la maison. 2. Comparer : 10 est plus petit que 30. L'affirmation est fausse.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Choisis les deux facteurs qui peuvent expliquer qu'un élève mange à la maison à midi.",
+              "question_type": "multiple_correct_2",
+              "explanation": "Méthode détaillée. 1. Lire : 30 élèves mangent à la maison. 2. Chercher le facteur : la distance (accès) et le budget (revenu) peuvent l'expliquer. 3. Une règle pour tous ou le climat ne sont pas en cause.",
+              "answers": [
+                {
+                  "content": "Une maison proche de l'école",
+                  "correct": true
+                },
+                {
+                  "content": "Un budget qui permet de cuisiner à la maison",
+                  "correct": true
+                },
+                {
+                  "content": "Une règle religieuse qui interdit la cantine pour tous",
+                  "correct": false
+                },
+                {
+                  "content": "Le climat de la région",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Dans ce sondage, le groupe le moins nombreux est : ___.",
+              "question_type": "select",
+              "explanation": "Méthode détaillée. 1. Lire les quatre valeurs : 40, 30, 20, 10. 2. Comparer : la plus petite est 10, le repas apporté.",
+              "answers": [
+                {
+                  "content": "le repas apporté",
+                  "correct": true
+                },
+                {
+                  "content": "la cantine",
+                  "correct": false
+                },
+                {
+                  "content": "la maison",
+                  "correct": false
+                },
+                {
+                  "content": "la vendeuse devant l'école",
+                  "correct": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Ramadan et cantine dans une classe",
+          "statement": "Dans une classe fictive de 40 élèves, pendant le mois de Ramadan, 25 élèves jeûnent de l'aube au coucher du soleil et ne mangent pas à la cantine à midi ; les 15 autres y mangent comme d'habitude. Le soir, les familles qui jeûnent partagent un repas.",
+          "exercise_type": "evaluation",
+          "figure": "chaine-culture",
+          "questions": [
+            {
+              "content": "Pourquoi 25 élèves ne mangent-ils pas à midi pendant cette période ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode détaillée. 1. Repérer le comportement : 25 élèves ne mangent pas à midi. 2. Chercher la règle : le jeûne du Ramadan. 3. Identifier le groupe : les élèves qui le pratiquent. 4. Conclure sans juger.",
+              "answers": [
+                {
+                  "content": "Parce qu'ils suivent une règle religieuse, le jeûne du Ramadan",
+                  "correct": true
+                },
+                {
+                  "content": "Parce que la cantine est fermée",
+                  "correct": false
+                },
+                {
+                  "content": "Parce qu'ils n'ont pas assez d'argent",
+                  "correct": false
+                },
+                {
+                  "content": "Parce que le climat l'interdit",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Combien d'élèves mangent à la cantine à midi pendant cette période ?",
+              "question_type": "numeric",
+              "explanation": "Méthode détaillée. 1. Lire : 40 élèves au total, 25 jeûnent. 2. Calculer : 40 − 25 = 15. 15 élèves mangent à la cantine.",
+              "answers": [
+                {
+                  "content": "15",
+                  "correct": true
+                }
+              ],
+              "unit": "élèves",
+              "tolerance": 0
+            },
+            {
+              "content": "Les 15 élèves qui mangent à la cantine se trompent.",
+              "question_type": "true_false",
+              "explanation": "Méthode détaillée. Conclure sans juger : manger à midi est une autre pratique, qui n'est pas une erreur. L'affirmation est fausse.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Remets dans l'ordre : de la règle au comportement observé.",
+              "question_type": "ordering",
+              "explanation": "Méthode détaillée. On part de la règle, on en déduit ce qui est permis, puis on observe le comportement, comme dans le schéma.",
+              "answers": [
+                {
+                  "content": "Une règle religieuse : le jeûne du Ramadan"
+                },
+                {
+                  "content": "On ne mange pas de l'aube au coucher du soleil"
+                },
+                {
+                  "content": "Les élèves qui jeûnent ne vont pas à la cantine à midi"
+                }
+              ]
+            },
+            {
+              "content": "Quelle conclusion respecte la méthode (conclure sans juger) ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode détaillée. 1. Repérer : deux comportements. 2. Chercher la règle : religieuse pour les 25. 3. Identifier les groupes. 4. Conclure sans juger : aucune pratique n'est une erreur.",
+              "answers": [
+                {
+                  "content": "Deux comportements existent dans la même classe : l'un suit une règle religieuse, l'autre non, et aucun n'est une erreur",
+                  "correct": true
+                },
+                {
+                  "content": "Les 25 élèves ont raison et les 15 ont tort",
+                  "correct": false
+                },
+                {
+                  "content": "Les 15 élèves ont raison et les 25 ont tort",
+                  "correct": false
+                },
+                {
+                  "content": "Tous les élèves ont le même comportement",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quelles deux phrases sont justes ?",
+              "question_type": "multiple_correct_2",
+              "explanation": "Méthode détaillée. 1. Lire les données : 25 élèves sur 40 jeûnent, le soir il y a un repas partagé. 2. Les deux autres phrases généralisent ou inventent une obligation, ce que la classe ne dit pas.",
+              "answers": [
+                {
+                  "content": "25 élèves sur 40 suivent le jeûne",
+                  "correct": true
+                },
+                {
+                  "content": "Le soir, les familles qui jeûnent partagent un repas",
+                  "correct": true
+                },
+                {
+                  "content": "Tous les musulmans de la ville mangent à la cantine",
+                  "correct": false
+                },
+                {
+                  "content": "La cantine oblige les élèves à jeûner",
+                  "correct": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Une famille d'Abidjan mange de plus en plus dehors",
+          "statement": "Une famille fictive d'Abidjan note chaque année le nombre de repas pris hors de la maison par semaine : 2, 3, 5 puis 6 (années 1 à 4). Les parents travaillent loin et on trouve du garba et de l'attiéké poisson près du travail.",
+          "exercise_type": "evaluation",
+          "figure": "repas-dehors",
+          "questions": [
+            {
+              "content": "De combien de repas par semaine ce nombre a-t-il augmenté entre l'année 1 et l'année 4 ?",
+              "question_type": "numeric",
+              "explanation": "Méthode détaillée. 1. Lire : 2 repas l'année 1, 6 repas l'année 4. 2. Calculer : 6 − 2 = 4. L'augmentation est de 4 repas.",
+              "answers": [
+                {
+                  "content": "4",
+                  "correct": true
+                }
+              ],
+              "unit": "repas",
+              "tolerance": 0
+            },
+            {
+              "content": "Que montre la courbe ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode détaillée. 1. Lire les valeurs : 2, 3, 5, 6. 2. Relever la différence d'une année à l'autre : la valeur monte chaque année.",
+              "answers": [
+                {
+                  "content": "La famille mange de plus en plus souvent hors de la maison",
+                  "correct": true
+                },
+                {
+                  "content": "La famille mange de moins en moins hors de la maison",
+                  "correct": false
+                },
+                {
+                  "content": "Le nombre de repas dehors est resté le même",
+                  "correct": false
+                },
+                {
+                  "content": "La famille ne mange plus jamais à la maison",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Choisis les trois facteurs qui peuvent expliquer ce comportement.",
+              "question_type": "multiple_correct_3",
+              "explanation": "Méthode détaillée. 1. Lire : les repas dehors augmentent. 2. Chercher le facteur : l'éloignement (entourage et milieu de vie), l'accès aux plats et le revenu. 3. Une interdiction religieuse ou un manque de manioc ne sont pas dans l'énoncé.",
+              "answers": [
+                {
+                  "content": "Un travail éloigné de la maison",
+                  "correct": true
+                },
+                {
+                  "content": "Des plats vendus près du travail",
+                  "correct": true
+                },
+                {
+                  "content": "Un budget qui permet d'acheter ces plats",
+                  "correct": true
+                },
+                {
+                  "content": "Une règle religieuse qui interdit de cuisiner",
+                  "correct": false
+                },
+                {
+                  "content": "Un manque de manioc sur tous les marchés d'Abidjan",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Relie chaque facteur à un exemple.",
+              "question_type": "matching",
+              "explanation": "Méthode détaillée. 1. Repérer chaque exemple. 2. Chercher la famille de facteurs : le champ relève du milieu, le prix du revenu, la recette de la tradition culturelle, la cantine de l'école.",
+              "answers": [
+                {
+                  "content": "Milieu",
+                  "match": "Le manioc cultivé près du village"
+                },
+                {
+                  "content": "Revenu",
+                  "match": "Un plat trop cher acheté rarement"
+                },
+                {
+                  "content": "Culture",
+                  "match": "Un repas de fête préparé comme chez les grands-parents"
+                },
+                {
+                  "content": "Entourage",
+                  "match": "Le menu unique de la cantine"
+                }
+              ]
+            },
+            {
+              "content": "Quelle phrase de conclusion respecte la méthode ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode détaillée. 1. Lire les données. 2. Relever la différence : plus de repas dehors. 3. Chercher le facteur. 4. Conclure avec « parce que » en s'appuyant sur l'énoncé.",
+              "answers": [
+                {
+                  "content": "Cette famille mange de plus en plus dehors parce que les parents travaillent loin et que des plats sont vendus près du travail",
+                  "correct": true
+                },
+                {
+                  "content": "Cette famille mange de plus en plus dehors parce que c'est interdit de cuisiner",
+                  "correct": false
+                },
+                {
+                  "content": "Toutes les familles d'Abidjan mangent de plus en plus dehors",
+                  "correct": false
+                },
+                {
+                  "content": "Cette famille mange dehors sans aucune raison",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "À partir de ces quatre valeurs d'une seule famille, on peut dire que toutes les familles d'Abidjan mangent de plus en plus dehors.",
+              "question_type": "true_false",
+              "explanation": "Méthode détaillée. Une seule famille ne prouve rien sur toutes les autres : on ne généralise pas à partir d'un cas, comme dans les pièges de la fiche. L'affirmation est fausse.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "subjects": [
+        {
+          "title": "Sujet 1 · Les savoirs de base des comportements alimentaires",
+          "notions": "Définition du comportement alimentaire, questions quoi, quand, où, avec qui et comment ; milieu, ressources et revenu ; culture, religion et famille ; vocabulaire de la comparaison.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Un élève révise la description d'un repas : quoi, quand, où, avec qui et comment.",
+              "exercise_type": "evaluation",
+              "figure": "decrire-repas",
+              "hint": "Pour chaque question, pense au plat, au moment, au lieu, aux personnes.",
+              "questions": [
+                {
+                  "content": "Le comportement alimentaire est :",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer la définition de la fiche. 2. Elle réunit quoi, quand, où, avec qui et comment. 3. Les autres propositions n'en gardent qu'un morceau.",
+                  "answers": [
+                    {
+                      "content": "l'ensemble des habitudes d'une personne ou d'un groupe pour se nourrir",
+                      "correct": true
+                    },
+                    {
+                      "content": "seulement le nom d'un plat",
+                      "correct": false
+                    },
+                    {
+                      "content": "seulement le prix d'un repas",
+                      "correct": false
+                    },
+                    {
+                      "content": "seulement la quantité mangée",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque plat à sa description.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1. Repérer chaque plat. 2. Chercher sa description dans la fiche. 3. Relier : l'attiéké est une semoule de manioc cuite à la vapeur, le foutou est de la banane plantain ou de l'igname pilée, le placali est une pâte de manioc, le garba est de l'attiéké avec du thon frit.",
+                  "answers": [
+                    {
+                      "content": "Attiéké",
+                      "match": "Semoule de manioc cuite à la vapeur"
+                    },
+                    {
+                      "content": "Foutou",
+                      "match": "Banane plantain ou igname pilée"
+                    },
+                    {
+                      "content": "Placali",
+                      "match": "Pâte de manioc"
+                    },
+                    {
+                      "content": "Garba",
+                      "match": "Attiéké avec du thon frit"
+                    }
+                  ]
+                },
+                {
+                  "content": "« Le soir » répond à la question « ___ ? »",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Repérer le type d'information : un moment. 2. Il répond à la question quand.",
+                  "answers": [
+                    {
+                      "content": "quand",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Les comportements alimentaires sont les mêmes dans toutes les familles.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Repérer la définition : les comportements sont divers. 2. Ils changent d'une famille, d'une région et d'une époque à l'autre. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la première étape de la méthode pour décrire un repas ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer ce qui est mangé : c'est la première étape. 2. Préciser, noter et résumer viennent ensuite, dans cet ordre.",
+                  "answers": [
+                    {
+                      "content": "Repérer ce qui est mangé",
+                      "correct": true
+                    },
+                    {
+                      "content": "Résumer en une phrase",
+                      "correct": false
+                    },
+                    {
+                      "content": "Noter comment le repas est préparé",
+                      "correct": false
+                    },
+                    {
+                      "content": "Préciser où le repas est pris",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Un élève révise le rôle du milieu et du revenu dans les habitudes alimentaires.",
+              "exercise_type": "evaluation",
+              "figure": "carte-aliments",
+              "hint": "Demande-toi d'où vient l'aliment et combien il coûte.",
+              "questions": [
+                {
+                  "content": "Quel plat est le plus lié à la zone de forêt du Sud, où le manioc et la banane plantain sont très cultivés ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer la zone : le Sud forestier. 2. Chercher les aliments cultivés : manioc, banane plantain. 3. Conclure : le foutou banane est lié à ce milieu.",
+                  "answers": [
+                    {
+                      "content": "Un plat de foutou banane",
+                      "correct": true
+                    },
+                    {
+                      "content": "Un plat de pommes de terre cultivées sur place",
+                      "correct": false
+                    },
+                    {
+                      "content": "Un plat de fruits de mer venus du Nord",
+                      "correct": false
+                    },
+                    {
+                      "content": "Un plat de blé cultivé sur place",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le milieu est un facteur géographique de l'alimentation.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Le milieu regroupe le sol, le climat et la végétation. 2. Il décide des ressources locales. L'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Choisis les deux facteurs économiques ou d'accès de l'alimentation.",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1. Vérifier le prix et l'accès. 2. Le prix et le transport relèvent de l'économie. 3. Tradition et religion relèvent de la culture.",
+                  "answers": [
+                    {
+                      "content": "Le prix des aliments",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le transport jusqu'au marché",
+                      "correct": true
+                    },
+                    {
+                      "content": "Une tradition de famille",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une règle religieuse",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le goût d'un camarade",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Les aliments cultivés ou pêchés près de chez soi sont les ressources ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Chercher d'où vient l'aliment : de près. 2. C'est une ressource locale.",
+                  "answers": [
+                    {
+                      "content": "locales",
+                      "correct": true
+                    },
+                    {
+                      "content": "locale",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un aliment trop ___ est acheté rarement par une famille au petit budget.",
+                  "question_type": "select",
+                  "explanation": "Méthode : 1. Vérifier le prix. 2. Un prix élevé limite les achats.",
+                  "answers": [
+                    {
+                      "content": "cher",
+                      "correct": true
+                    },
+                    {
+                      "content": "frais",
+                      "correct": false
+                    },
+                    {
+                      "content": "léger",
+                      "correct": false
+                    },
+                    {
+                      "content": "ancien",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Un élève révise le rôle de la culture, de la religion et de la famille.",
+              "exercise_type": "evaluation",
+              "figure": "chaine-culture",
+              "hint": "Cherche la règle ou la tradition, puis le groupe.",
+              "questions": [
+                {
+                  "content": "Le jeûne du Ramadan est :",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer le comportement : le jeûne. 2. Chercher la règle : religieuse. 3. Identifier le groupe : les musulmans pratiquants.",
+                  "answers": [
+                    {
+                      "content": "une règle religieuse suivie par un groupe",
+                      "correct": true
+                    },
+                    {
+                      "content": "une règle de l'État pour tous",
+                      "correct": false
+                    },
+                    {
+                      "content": "une maladie",
+                      "correct": false
+                    },
+                    {
+                      "content": "un manque de nourriture",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque comportement à sa règle.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1. Repérer chaque comportement. 2. Chercher sa règle. 3. Relier à religion, famille ou école.",
+                  "answers": [
+                    {
+                      "content": "Ne pas manger de porc",
+                      "match": "Règle religieuse"
+                    },
+                    {
+                      "content": "Servir la recette des grands-parents à la fête",
+                      "match": "Tradition de la famille"
+                    },
+                    {
+                      "content": "Manger le même menu que tous les élèves",
+                      "match": "Règle de l'école"
+                    }
+                  ]
+                },
+                {
+                  "content": "Un groupe qui suit une règle alimentaire de sa religion se trompe.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Identifier le groupe. 2. Conclure sans juger : c'est une pratique du groupe. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un repas où chacun mange seul dans son coin est un repas partagé.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Repérer le comportement : chacun mange seul. 2. Un repas partagé réunit les personnes autour d'un même plat ou d'une même table. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel facteur explique qu'une recette soit préparée à chaque fête de la même façon ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer le comportement : même recette de fête. 2. Chercher la tradition : la famille. 3. Les autres propositions relèvent du milieu ou de l'économie.",
+                  "answers": [
+                    {
+                      "content": "La tradition de la famille",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le climat",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le prix du marché",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le sol",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Un élève révise le vocabulaire de la comparaison de deux comportements alimentaires.",
+              "exercise_type": "evaluation",
+              "figure": "facteurs-alimentation",
+              "hint": "Compare d'abord, explique ensuite.",
+              "questions": [
+                {
+                  "content": "Comparer, c'est relever :",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Lire les données. 2. Relever les ressemblances et les différences. Les deux sont demandés.",
+                  "answers": [
+                    {
+                      "content": "les ressemblances et les différences",
+                      "correct": true
+                    },
+                    {
+                      "content": "seulement les ressemblances",
+                      "correct": false
+                    },
+                    {
+                      "content": "seulement les différences",
+                      "correct": false
+                    },
+                    {
+                      "content": "seulement les prix",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une valeur de 40 sur 100 est la majorité.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Lire : 40 sur 100. 2. La majorité demande plus de 50 sur 100. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour expliquer une différence, on écrit « parce ___ ».",
+                  "question_type": "select",
+                  "explanation": "Méthode : 1. Conclure avec « parce que ». 2. Les autres mots ne forment pas la locution.",
+                  "answers": [
+                    {
+                      "content": "que",
+                      "correct": true
+                    },
+                    {
+                      "content": "de",
+                      "correct": false
+                    },
+                    {
+                      "content": "dont",
+                      "correct": false
+                    },
+                    {
+                      "content": "vers",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Choisis les deux propositions qui sont des facteurs de l'arbre expliquant un comportement alimentaire.",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1. Lire l'arbre : milieu, revenu, culture, entourage. 2. Choisir deux facteurs de l'arbre. 3. Le goût d'un camarade et le nombre de plats goûtés ne sont pas des branches de l'arbre.",
+                  "answers": [
+                    {
+                      "content": "Le milieu et les ressources locales",
+                      "correct": true
+                    },
+                    {
+                      "content": "La culture, les traditions et la religion",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le goût d'un camarade",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le nombre de plats goûtés",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour comparer deux comportements.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1. Lire. 2. Relever. 3. Chercher le facteur. 4. Conclure.",
+                  "answers": [
+                    {
+                      "content": "Lire les données de chaque situation"
+                    },
+                    {
+                      "content": "Relever les ressemblances et les différences"
+                    },
+                    {
+                      "content": "Chercher le facteur de chaque différence"
+                    },
+                    {
+                      "content": "Conclure avec « parce que »"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 2 · Les repas dans la vie courante en Côte d'Ivoire",
+          "notions": "Repas du dimanche en famille, cantine scolaire, marché et budget, garba à la récréation et repas hors de la maison : description, milieu, revenu, culture et comparaison dans des situations ivoiriennes.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Chaque dimanche midi, la famille Diabaté se réunit dans la cour. Elle mange du placali avec une sauce gombo, à la main, dans un plat commun (situation fictive).",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Cherche le plat, le moment, le lieu et les convives.",
+              "questions": [
+                {
+                  "content": "Quel est le plat de ce repas ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer ce qui est mangé : du placali avec une sauce gombo. 2. Les autres propositions donnent le lieu, le moment et la manière.",
+                  "answers": [
+                    {
+                      "content": "Du placali avec une sauce gombo",
+                      "correct": true
+                    },
+                    {
+                      "content": "La cour",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le dimanche midi",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le plat commun",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le placali est une pâte faite à partir du ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Repérer l'aliment de base du placali : le manioc.",
+                  "answers": [
+                    {
+                      "content": "manioc",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Manger à la main dans un plat commun est une pratique de la famille, pas une erreur.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Repérer : repas partagé. 2. Chercher la tradition de la famille. 3. Conclure sans juger.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Choisis les deux informations qui répondent à « quand » et à « avec qui ».",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1. Préciser quand : chaque dimanche midi. 2. Préciser avec qui : toute la famille. 3. Le placali est le plat, la cour est le lieu.",
+                  "answers": [
+                    {
+                      "content": "chaque dimanche midi",
+                      "correct": true
+                    },
+                    {
+                      "content": "toute la famille",
+                      "correct": true
+                    },
+                    {
+                      "content": "du placali",
+                      "correct": false
+                    },
+                    {
+                      "content": "dans la cour",
+                      "correct": false
+                    },
+                    {
+                      "content": "une sauce gombo",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le placali du dimanche, comme chez les grands-parents, s'explique par une tradition de la ___.",
+                  "question_type": "select",
+                  "explanation": "Méthode : 1. Repérer la fréquence : chaque dimanche. 2. Chercher la règle : la tradition transmise par la famille.",
+                  "answers": [
+                    {
+                      "content": "famille",
+                      "correct": true
+                    },
+                    {
+                      "content": "cantine",
+                      "correct": false
+                    },
+                    {
+                      "content": "classe",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Dans un collège, un sondage fictif de 100 élèves donne le lieu de repas à midi : 40 à la cantine, 30 à la maison, 20 chez une vendeuse devant l'école, 10 avec un repas apporté.",
+              "exercise_type": "evaluation",
+              "figure": "midi-eleves",
+              "hint": "Lis chaque part, puis compare.",
+              "questions": [
+                {
+                  "content": "Quel est le lieu de repas le plus fréquent ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Lire les quatre valeurs. 2. La plus grande est 40, la cantine.",
+                  "answers": [
+                    {
+                      "content": "La cantine",
+                      "correct": true
+                    },
+                    {
+                      "content": "La maison",
+                      "correct": false
+                    },
+                    {
+                      "content": "Chez la vendeuse",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le repas apporté",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien d'élèves mangent à la maison ou apportent leur repas ?",
+                  "question_type": "numeric",
+                  "explanation": "Méthode : 1. Lire : 30 à la maison, 10 repas apportés. 2. Additionner : 30 + 10 = 40.",
+                  "answers": [
+                    {
+                      "content": "40",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "élèves",
+                  "tolerance": 0
+                },
+                {
+                  "content": "La cantine est choisie par la majorité des élèves.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Lire : 40 sur 100. 2. La majorité demande plus de 50 : 40 ne suffit pas.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien d'élèves mangent chez la vendeuse devant l'école ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Lire le diagramme : 40, 30, 20 et 10. 2. La part de la vendeuse devant l'école est 20.",
+                  "answers": [
+                    {
+                      "content": "20",
+                      "correct": true
+                    },
+                    {
+                      "content": "40",
+                      "correct": false
+                    },
+                    {
+                      "content": "30",
+                      "correct": false
+                    },
+                    {
+                      "content": "10",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pourquoi 20 élèves peuvent-ils acheter leur repas devant l'école ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Lire : 20 élèves. 2. Chercher le facteur : accès et prix. 3. Conclure avec « parce que ».",
+                  "answers": [
+                    {
+                      "content": "Parce que le repas est proche, rapide et à un prix qu'ils connaissent",
+                      "correct": true
+                    },
+                    {
+                      "content": "Parce qu'une loi interdit la cantine",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce qu'une règle religieuse l'oblige",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce que le climat l'impose",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Au marché, une famille fictive du Sud forestier achète du manioc et de la banane plantain, peu chers car cultivés dans la région, et rarement de la viande, jugée trop chère pour son budget.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Cherche d'où vient l'aliment, puis son prix.",
+              "questions": [
+                {
+                  "content": "Pourquoi cette famille achète-t-elle souvent du manioc et de la banane plantain ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer l'habitude. 2. Chercher d'où ils viennent : de la région. 3. Vérifier le prix : peu chers. 4. Conclure avec « parce que ».",
+                  "answers": [
+                    {
+                      "content": "Parce qu'ils sont cultivés dans la région et peu chers",
+                      "correct": true
+                    },
+                    {
+                      "content": "Parce qu'ils sont interdits ailleurs",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce qu'ils sont toujours gratuits",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce qu'ils sont réservés aux fêtes",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La viande est achetée rarement à cause du budget de la famille.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Vérifier le prix : la viande est jugée trop chère. 2. Le revenu limite les achats.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un aliment trop cher pour le ___ d'une famille est acheté rarement.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Vérifier le prix et le budget de la famille.",
+                  "answers": [
+                    {
+                      "content": "budget",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Choisis les deux facteurs qui expliquent les achats de cette famille.",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1. Chercher d'où vient l'aliment : le milieu. 2. Vérifier le prix : le revenu. 3. Aucune règle religieuse ni tradition de fête n'est citée.",
+                  "answers": [
+                    {
+                      "content": "Le milieu qui fournit le manioc et la banane plantain",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le revenu de la famille",
+                      "correct": true
+                    },
+                    {
+                      "content": "Une règle religieuse sur la viande",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une tradition de fête de la famille",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour expliquer cette habitude.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1. Repérer. 2. Chercher. 3. Vérifier. 4. Conclure.",
+                  "answers": [
+                    {
+                      "content": "Repérer l'habitude alimentaire observée"
+                    },
+                    {
+                      "content": "Chercher d'où vient l'aliment"
+                    },
+                    {
+                      "content": "Vérifier le prix et l'accès"
+                    },
+                    {
+                      "content": "Conclure avec « parce que »"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Une famille fictive d'Abidjan note le nombre de repas pris hors de la maison par semaine sur quatre années : 2, 3, 5 puis 6. Les parents travaillent loin et achètent souvent du garba près du travail.",
+              "exercise_type": "evaluation",
+              "figure": "repas-dehors",
+              "hint": "Lis la courbe année après année.",
+              "questions": [
+                {
+                  "content": "Que montre la courbe ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Lire : 2, 3, 5, 6. 2. Relever : la courbe monte.",
+                  "answers": [
+                    {
+                      "content": "Un nombre de repas dehors qui augmente chaque année",
+                      "correct": true
+                    },
+                    {
+                      "content": "Un nombre qui baisse",
+                      "correct": false
+                    },
+                    {
+                      "content": "Un nombre qui ne change pas",
+                      "correct": false
+                    },
+                    {
+                      "content": "Un nombre toujours égal à zéro",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien de repas dehors par semaine la quatrième année ?",
+                  "question_type": "numeric",
+                  "explanation": "Méthode : 1. Lire la dernière valeur de la courbe : 6.",
+                  "answers": [
+                    {
+                      "content": "6",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "repas",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Choisis les deux facteurs qui peuvent expliquer cette évolution.",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1. Lire la hausse. 2. Chercher le facteur : l'éloignement et l'accès aux plats vendus. 3. Les deux autres propositions ne sont pas dans l'énoncé.",
+                  "answers": [
+                    {
+                      "content": "Un travail éloigné de la maison",
+                      "correct": true
+                    },
+                    {
+                      "content": "Des plats vendus près du travail",
+                      "correct": true
+                    },
+                    {
+                      "content": "Une règle religieuse qui interdit de cuisiner",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le manque de manioc sur la planète",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "On peut en conclure que toutes les familles d'Abidjan mangent de plus en plus dehors.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Lire : une seule famille. 2. On ne généralise pas à partir d'un cas.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Le garba est un plat d'attiéké accompagné de ___ frit.",
+                  "question_type": "select",
+                  "explanation": "Méthode : 1. Repérer le plat : le garba. 2. Il associe l'attiéké au thon frit.",
+                  "answers": [
+                    {
+                      "content": "thon",
+                      "correct": true
+                    },
+                    {
+                      "content": "igname",
+                      "correct": false
+                    },
+                    {
+                      "content": "riz",
+                      "correct": false
+                    },
+                    {
+                      "content": "mil",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 3 · Raisonner et justifier sur les comportements alimentaires",
+          "notions": "Ne pas généraliser à partir d'un seul repas, d'une seule famille ou d'un seul groupe ; relier règle, aliments et comportement ; lire des parts et distinguer le plus fréquent de la majorité ; conclure sans juger.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Un élève veut vérifier des affirmations sur des repas. Il sait qu'un seul repas ne décrit pas les habitudes d'une personne.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Cherche à chaque fois si l'affirmation généralise trop vite.",
+              "questions": [
+                {
+                  "content": "Kofi a mangé du riz à la cantine un mardi : on peut dire qu'il mange toujours du riz.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Repérer : un seul repas. 2. Chercher la fréquence : elle n'est pas donnée. 3. Ne pas généraliser : l'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle information manque pour décrire les habitudes de Kofi ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer ce qui est donné : un repas. 2. Chercher ce qui manque : la fréquence. 3. Conclure : sans elle on ne décrit pas une habitude.",
+                  "answers": [
+                    {
+                      "content": "La fréquence : à quelle fréquence il mange ce plat",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le prix du riz dans le monde",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le nom de son école",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le prix du repas",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour décrire une habitude, on regarde la ___ du repas : chaque jour, souvent, rarement.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Préciser quand : le moment et la fréquence.",
+                  "answers": [
+                    {
+                      "content": "fréquence",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Si une famille mange du foutou un dimanche, on peut dire qu'elle mange du foutou chaque dimanche.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Repérer : un seul dimanche. 2. Pas de fréquence. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle phrase décrit une habitude ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer la fréquence : « chaque dimanche ». 2. Les autres phrases ne parlent que d'un jour.",
+                  "answers": [
+                    {
+                      "content": "« Chaque dimanche, nous mangeons du foutou. »",
+                      "correct": true
+                    },
+                    {
+                      "content": "« Dimanche dernier, nous avons mangé du foutou. »",
+                      "correct": false
+                    },
+                    {
+                      "content": "« Hier, j'ai mangé du riz. »",
+                      "correct": false
+                    },
+                    {
+                      "content": "« Ce matin, j'ai bu du jus. »",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "La règle, les aliments, le comportement : un élève relie ce qu'un groupe suit et ce qu'on observe (situations fictives).",
+              "exercise_type": "evaluation",
+              "figure": "chaine-culture",
+              "hint": "Suis le schéma de gauche à droite.",
+              "questions": [
+                {
+                  "content": "Remets dans l'ordre du schéma : de la règle au comportement observé.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1. Repérer la règle. 2. Chercher les aliments permis. 3. Observer le comportement. Le schéma va de la règle au comportement.",
+                  "answers": [
+                    {
+                      "content": "Une règle du groupe : jeûner pendant le Ramadan"
+                    },
+                    {
+                      "content": "Les aliments sont permis seulement la nuit"
+                    },
+                    {
+                      "content": "On observe : pas de repas en journée"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel est le comportement observé dans une famille qui fait le jeûne du Ramadan ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer le comportement : le jeûne en journée. 2. Chercher la règle : celle du Ramadan. 3. Identifier le repas du soir.",
+                  "answers": [
+                    {
+                      "content": "Pas de repas en journée, puis un repas partagé le soir",
+                      "correct": true
+                    },
+                    {
+                      "content": "Des repas toute la journée",
+                      "correct": false
+                    },
+                    {
+                      "content": "Un seul repas le matin",
+                      "correct": false
+                    },
+                    {
+                      "content": "Aucun repas pendant un an",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "On peut dire que ce jeûne est une erreur d'alimentation.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Identifier le groupe. 2. Conclure sans juger : c'est une pratique religieuse. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Choisis les deux conclusions qui respectent la méthode.",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1. Chercher la règle. 2. Identifier le groupe. 3. Conclure sans juger. Les deux autres propositions jugent ou imposent.",
+                  "answers": [
+                    {
+                      "content": "C'est une pratique religieuse du groupe",
+                      "correct": true
+                    },
+                    {
+                      "content": "Deux comportements différents peuvent exister dans un même groupe",
+                      "correct": true
+                    },
+                    {
+                      "content": "Tous les élèves doivent faire pareil",
+                      "correct": false
+                    },
+                    {
+                      "content": "Un des deux comportements est une erreur",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un plat préparé chaque jour de la semaine est un plat de fête.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Repérer le comportement : un plat de tous les jours. 2. Un plat de fête est réservé aux grandes occasions. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Un sondage fictif donne le lieu de repas de 100 élèves à midi : 40 à la cantine, 30 à la maison, 20 chez une vendeuse devant l'école, 10 avec un repas apporté.",
+              "exercise_type": "evaluation",
+              "figure": "midi-eleves",
+              "hint": "Additionne avec soin, puis compare à 50.",
+              "questions": [
+                {
+                  "content": "Combien d'élèves ne mangent ni à la cantine ni à la maison ?",
+                  "question_type": "numeric",
+                  "explanation": "Méthode : 1. Lire : 20 chez la vendeuse, 10 repas apportés. 2. Additionner : 20 + 10 = 30.",
+                  "answers": [
+                    {
+                      "content": "30",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "élèves",
+                  "tolerance": 0
+                },
+                {
+                  "content": "40 élèves sur 100 forment la majorité des élèves.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Lire : 40 sur 100. 2. Comparer à 50 : 40 est plus petit. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien d'élèves forment la plus grande part ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Lire les quatre valeurs. 2. Comparer : la plus grande est 40.",
+                  "answers": [
+                    {
+                      "content": "40",
+                      "correct": true
+                    },
+                    {
+                      "content": "30",
+                      "correct": false
+                    },
+                    {
+                      "content": "20",
+                      "correct": false
+                    },
+                    {
+                      "content": "10",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle conclusion est juste ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Lire. 2. Comparer 40 à 30, 20, 10 puis à 50. 3. Conclure : le plus fréquent n'est pas la majorité.",
+                  "answers": [
+                    {
+                      "content": "La cantine est le lieu le plus fréquent, mais elle n'est pas choisie par la majorité",
+                      "correct": true
+                    },
+                    {
+                      "content": "La cantine est choisie par tous les élèves",
+                      "correct": false
+                    },
+                    {
+                      "content": "La cantine n'est choisie par personne",
+                      "correct": false
+                    },
+                    {
+                      "content": "La maison est le lieu le plus fréquent",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque calcul à son résultat.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1. Lire les valeurs. 2. Additionner : 40 + 30 = 70 ; 20 + 10 = 30 ; 40 + 30 + 20 + 10 = 100.",
+                  "answers": [
+                    {
+                      "content": "Cantine + maison",
+                      "match": "70 élèves"
+                    },
+                    {
+                      "content": "Vendeuse + repas apporté",
+                      "match": "30 élèves"
+                    },
+                    {
+                      "content": "Total des quatre lieux",
+                      "match": "100 élèves"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Deux élèves discutent des repas : l'un juge, l'autre applique la méthode. Aide-les à conclure (situations fictives).",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Vérifie chaque phrase avec la méthode.",
+              "questions": [
+                {
+                  "content": "« Les élèves qui jeûnent mangent mal. » Cette phrase respecte la méthode.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Repérer : un jugement. 2. Conclure sans juger : le jeûne est une pratique du groupe.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "« Cette famille mange du manioc parce qu'elle en cultive. » Cette phrase relie une habitude à son milieu.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Repérer l'habitude. 2. Chercher d'où vient l'aliment : du champ. 3. Conclure avec « parce que ».",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle phrase compare bien deux repas ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Lire. 2. Relever une ressemblance et une différence. 3. Les autres phrases jugent ou ne donnent pas de ressemblance.",
+                  "answers": [
+                    {
+                      "content": "Les deux plats sont faits de manioc, mais l'un est acheté et l'autre est cuisiné à la maison",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les deux plats sont tout à fait différents",
+                      "correct": false
+                    },
+                    {
+                      "content": "Un plat est meilleur que l'autre",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les deux plats sont de fête",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Choisis les deux phrases qui généralisent à tort.",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1. Repérer les mots tous et toutes. 2. Un cas ne prouve pas la règle pour tous. 3. Les deux autres phrases décrivent un groupe précis.",
+                  "answers": [
+                    {
+                      "content": "Toutes les familles mangent à la maison.",
+                      "correct": true
+                    },
+                    {
+                      "content": "Tous les musulmans mangent pareil.",
+                      "correct": true
+                    },
+                    {
+                      "content": "Dans cette classe, 25 élèves font le Ramadan.",
+                      "correct": false
+                    },
+                    {
+                      "content": "Cette famille mange du placali le dimanche.",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quand on conclut sans juger, une pratique du groupe n'est jamais une ___.",
+                  "question_type": "select",
+                  "explanation": "Méthode : 1. Conclure sans juger. 2. Une pratique du groupe n'est pas une erreur.",
+                  "answers": [
+                    {
+                      "content": "erreur",
+                      "correct": true
+                    },
+                    {
+                      "content": "tradition",
+                      "correct": false
+                    },
+                    {
+                      "content": "règle",
+                      "correct": false
+                    },
+                    {
+                      "content": "habitude",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 4 · Bilan sur la diversité des comportements alimentaires",
+          "notions": "Toutes les notions : description d'un repas, milieu et revenu, culture et croyances, comparaison de deux comportements ; lecture de diagrammes et de courbes.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Un élève classe les facteurs qui influencent l'alimentation. L'arbre donne quatre branches : le milieu, le revenu, la culture et l'entourage.",
+              "exercise_type": "evaluation",
+              "figure": "facteurs-alimentation",
+              "hint": "Classe chaque situation dans une branche.",
+              "questions": [
+                {
+                  "content": "Relie chaque situation à sa branche.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1. Repérer la situation. 2. Chercher la règle ou le facteur. 3. Relier à la branche : milieu, revenu, culture, entourage.",
+                  "answers": [
+                    {
+                      "content": "Du poisson pêché dans la lagune voisine",
+                      "match": "Milieu"
+                    },
+                    {
+                      "content": "Un plat trop cher pour le budget",
+                      "match": "Revenu"
+                    },
+                    {
+                      "content": "Un repas de fête comme chez les grands-parents",
+                      "match": "Culture"
+                    },
+                    {
+                      "content": "Le menu unique de la cantine",
+                      "match": "Entourage"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel facteur explique le mieux que l'on mange souvent du mil dans une région de savane ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer l'habitude. 2. Chercher d'où vient l'aliment : du champ. 3. Conclure : le milieu.",
+                  "answers": [
+                    {
+                      "content": "Le milieu : le mil y est cultivé",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le menu de la cantine",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une tradition d'un autre pays",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une loi de l'école",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le revenu est un facteur qui influence ce que l'on achète pour manger.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Vérifier le prix et le budget. 2. Le revenu limite ou permet les achats.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Choisis les deux facteurs de l'arbre qui relèvent de la société.",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1. Lire l'arbre. 2. La culture et l'entourage viennent de la société ; le milieu vient de la nature.",
+                  "answers": [
+                    {
+                      "content": "La culture, les traditions et la religion",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'entourage : l'école, les camarades, le travail",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le milieu et les ressources locales",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le sol de la région",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le facteur lié au prix et au budget est le ___ de la famille.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Vérifier le prix et le budget. 2. Ce facteur est le revenu.",
+                  "answers": [
+                    {
+                      "content": "revenu",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "La carte schématique montre la forêt du Sud (manioc et banane plantain très cultivés) et la savane du Nord (mil, maïs et sorgho davantage cultivés), avec Abidjan, Daloa et Korhogo.",
+              "exercise_type": "evaluation",
+              "figure": "carte-aliments",
+              "hint": "Cherche la zone, puis la plante cultivée.",
+              "questions": [
+                {
+                  "content": "Quelle plante est très cultivée dans la forêt du Sud d'après la carte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Lire la légende. 2. Zone de forêt : manioc et banane plantain.",
+                  "answers": [
+                    {
+                      "content": "Le manioc",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le mil",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le sorgho",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le blé",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle plante est davantage cultivée dans la savane du Nord d'après la carte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Lire la légende. 2. Zone de savane : mil, maïs et sorgho.",
+                  "answers": [
+                    {
+                      "content": "Le mil",
+                      "correct": true
+                    },
+                    {
+                      "content": "La banane plantain",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le manioc",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le cacao",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La carte permet de dire que le mil ne se mange jamais à Abidjan.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Lire : la carte donne les cultures de la région. 2. Le transport permet d'avoir des aliments produits loin. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un aliment produit loin peut être mangé grâce au ___ et au marché.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Vérifier l'accès. 2. Le transport apporte les aliments.",
+                  "answers": [
+                    {
+                      "content": "transport",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Choisis les deux plats faits à partir du manioc.",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1. Repérer l'aliment de base. 2. Placali et attiéké viennent du manioc ; le foutou igname vient de l'igname et le tô du mil.",
+                  "answers": [
+                    {
+                      "content": "Le placali",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'attiéké",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le foutou igname",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le tô de mil",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Une famille fictive d'Abidjan note le nombre de repas hors de la maison par semaine : 2, 3, 5 puis 6 (années 1 à 4). Les parents travaillent loin de la maison.",
+              "exercise_type": "evaluation",
+              "figure": "repas-dehors",
+              "hint": "Lis la courbe, puis cherche un facteur.",
+              "questions": [
+                {
+                  "content": "De combien de repas par semaine ce nombre a-t-il augmenté entre l'année 2 et l'année 4 ?",
+                  "question_type": "numeric",
+                  "explanation": "Méthode : 1. Lire : 3 l'année 2, 6 l'année 4. 2. Calculer : 6 − 3 = 3.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "repas",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quel facteur peut expliquer cette hausse ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Lire la hausse. 2. Chercher le facteur : l'éloignement du travail. 3. Conclure avec « parce que ».",
+                  "answers": [
+                    {
+                      "content": "Un travail éloigné de la maison",
+                      "correct": true
+                    },
+                    {
+                      "content": "Une règle de la cantine",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le climat de la savane",
+                      "correct": false
+                    },
+                    {
+                      "content": "La lagune",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Cette courbe est celle de toutes les familles d'Abidjan.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Lire : une seule famille. 2. On ne généralise pas.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour analyser cette courbe.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1. Lire. 2. Relever. 3. Chercher le facteur. 4. Conclure.",
+                  "answers": [
+                    {
+                      "content": "Lire les valeurs de chaque année"
+                    },
+                    {
+                      "content": "Relever la hausse d'une année à l'autre"
+                    },
+                    {
+                      "content": "Chercher le facteur qui l'explique"
+                    },
+                    {
+                      "content": "Conclure avec « parce que »"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quand on lit une courbe qui monte, la valeur ___ d'une année à l'autre.",
+                  "question_type": "select",
+                  "explanation": "Méthode : 1. Lire la courbe. 2. Une courbe qui monte indique une valeur qui augmente.",
+                  "answers": [
+                    {
+                      "content": "augmente",
+                      "correct": true
+                    },
+                    {
+                      "content": "baisse",
+                      "correct": false
+                    },
+                    {
+                      "content": "reste nulle",
+                      "correct": false
+                    },
+                    {
+                      "content": "disparaît",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Pour finir, un élève décrit, explique et compare trois repas de la famille de Bintou (situations fictives) : placali en famille le dimanche, garba à la récréation, repas du soir pendant le Ramadan.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Applique la méthode du plus simple au plus fin.",
+              "questions": [
+                {
+                  "content": "Relie chaque repas à ce qui l'explique le mieux.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1. Repérer le comportement. 2. Chercher la règle ou le facteur. 3. Relier à la tradition, à l'accès et au prix, ou à la règle religieuse.",
+                  "answers": [
+                    {
+                      "content": "Placali en famille chaque dimanche",
+                      "match": "Tradition de la famille"
+                    },
+                    {
+                      "content": "Garba acheté à la récréation",
+                      "match": "Accès et prix près de l'école"
+                    },
+                    {
+                      "content": "Repas partagé le soir du Ramadan",
+                      "match": "Règle religieuse du groupe"
+                    }
+                  ]
+                },
+                {
+                  "content": "Que partagent le garba et le placali ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Lire les plats. 2. Relever la ressemblance : l'attiéké du garba et le placali viennent du manioc.",
+                  "answers": [
+                    {
+                      "content": "Le manioc comme aliment de base",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'igname",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le riz",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le mil",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "On peut juger que le jeûne est moins bien que le repas du dimanche.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Identifier le groupe. 2. Conclure sans juger.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Choisis les deux phrases qui décrivent bien le repas du dimanche.",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1. Repérer le plat : placali. 2. Préciser quand : chaque dimanche ; avec qui : en famille. 3. Les autres propositions inventent des informations.",
+                  "answers": [
+                    {
+                      "content": "Chaque dimanche, la famille mange du placali",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le repas est partagé en famille",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le repas est pris chaque jour",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le repas est pris à la cantine",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la dernière étape de la méthode pour expliquer un comportement par la culture ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer. 2. Chercher la règle. 3. Identifier le groupe. 4. Conclure sans juger : c'est la dernière étape.",
+                  "answers": [
+                    {
+                      "content": "Conclure sans juger",
+                      "correct": true
+                    },
+                    {
+                      "content": "Repérer le comportement",
+                      "correct": false
+                    },
+                    {
+                      "content": "Chercher la règle ou la tradition",
+                      "correct": false
+                    },
+                    {
+                      "content": "Identifier le groupe",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
