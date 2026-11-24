@@ -103,6 +103,20 @@ Vérification hors dépôt : format, intitulé et rang de la progression, `valid
 | 4 | `6eme/edhc/la-constitution.json` | La Constitution | 4 | 3 | 28 | 161 |
 | 5 | `6eme/edhc/le-president-de-la-republique.json` | Le Président de la République | 3 | 1 | 26 | 149 |
 
+### 2nde, Histoire-Géographie, leçons 6 à 10 (chantier `lecons-2nde-6-a-10`)
+
+Depuis le 2026-11-24, les leçons 6 à 10 d'Histoire-Géographie de la progression DPFC 2026-2027 de 2nde (Les techniques de représentation de la Terre, La préhistoire en Afrique et dans le reste du monde, La civilisation de l'Égypte ancienne, Le milieu subéquatorial ivoirien, La démocratie athénienne) sont rédigées au format v3 complet : 5 fichiers communs à toutes les séries. Chaque notion a son « Je m'entraîne » et 2 exercices (le second de 6 questions d'au moins 4 types), chaque leçon 4 problèmes et 4 sujets de devoir de 4 exercices entièrement corrigés automatiquement.
+
+Vérification : `valider.rb` sur la leçon et sur chaque sujet, format ; relecture IA indépendante de chaque leçon ; 80 points pédagogiques tranchés par le validateur pédagogique le 2026-11-24 (faits, dates, datations récentes de la préhistoire, climat et végétation, institutions athéniennes), relevés dans le journal du chantier `lecons-2nde-6-a-10` de l'application.
+
+| Fichier | Titre | Rang | Notions | Exercices | Questions | Figures |
+|---|---|---:|---:|---:|---:|---:|
+| `2nde/histoire-geographie/geographie-les-techniques-de-representation-de-la-terre.json` | Géographie — Les techniques de représentation de la terre | 6 | 5 | 30 | 175 | 6 |
+| `2nde/histoire-geographie/histoire-la-prehistoire-en-afrique-et-dans-le-reste-du-monde.json` | Histoire — La préhistoire en Afrique et dans le reste du monde | 7 | 5 | 30 | 170 | 4 |
+| `2nde/histoire-geographie/histoire-la-civilisation-de-l-egypte-ancienne.json` | Histoire — La civilisation de l'Egypte ancienne | 8 | 5 | 30 | 170 | 5 |
+| `2nde/histoire-geographie/geographie-le-milieu-subequatorial-ivoirien.json` | Géographie — Le milieu subéquatorial ivoirien | 9 | 6 | 32 | 184 | 5 |
+| `2nde/histoire-geographie/histoire-la-democratie-athenienne.json` | Histoire — La démocratie athénienne | 10 | 4 | 28 | 158 | 3 |
+
 ### 2nde, Français, leçons 6 à 10 (chantier `lecons-2nde-6-a-10`)
 
 Depuis le 2026-11-24, les leçons 6 à 10 de Français de la progression DPFC 2026-2027 de 2nde (L'énonciation, Les figures de style ou de rhétorique, Le commentaire composé, La pièce de théâtre, L'implicite) sont rédigées au format v3 complet : 10 fichiers, 5 leçons communes aux séries A et C, écrites une fois et recopiées avec le `series_name` de chaque série. Chaque notion a son « Je m'entraîne » et 2 exercices (le second de 6 questions d'au moins 4 types), chaque leçon 4 problèmes et 4 sujets de devoir de 4 exercices entièrement corrigés automatiquement. Les textes supports sont du domaine public, vérifiés mot à mot, ou écrits pour Lnclass.
