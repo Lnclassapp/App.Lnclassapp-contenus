@@ -351,7 +351,7 @@
         },
         {
           "name": "Le présupposé : l'information admise d'avance",
-          "remember": "Le **présupposé** est une information que l'énoncé présente comme **déjà connue et admise**, sans l'affirmer. Il **reste vrai** quand on **nie** la phrase ou quand on la transforme en **question**. L'information que la phrase affirme directement s'appelle le **posé**. Exemple : « Koffi a arrêté de fumer. » Posé : il ne fume plus. Présupposé : il fumait avant. « Koffi n'a pas arrêté de fumer » ou « Koffi a-t-il arrêté de fumer ? » gardent le présupposé « il fumait avant ». Indices fréquents : les verbes de changement (arrêter de, cesser de, devenir, reprendre), les adverbes (encore, déjà, toujours, ne… plus), la locution « depuis que » (« depuis que la route est abîmée » présuppose que la route est abîmée) et les groupes à article défini ou possessif (« mon frère » présuppose que j'ai un frère).",
+          "remember": "Le **présupposé** est une information que l'énoncé présente comme **déjà connue et admise**, sans l'affirmer. Il **reste vrai** quand on **nie** la phrase ou quand on la transforme en **question**. L'information que la phrase affirme directement s'appelle le **posé**. Exemple : « Koffi a arrêté de fumer. » Posé : il ne fume plus. Présupposé : il fumait avant. « Koffi n'a pas arrêté de fumer » ou « Koffi a-t-il arrêté de fumer ? » gardent le présupposé « il fumait avant ». Indices fréquents : les verbes de changement (arrêter de, cesser de, devenir, reprendre), les adverbes (encore, déjà, toujours, enfin, ne… plus), la locution « depuis que » (« depuis que la route est abîmée » présuppose que la route est abîmée) et les groupes à article défini ou possessif (« mon frère » présuppose que j'ai un frère).",
           "method": [
             "Repérer le mot ou la construction qui peut cacher une information admise d'avance.",
             "Formuler ce que la phrase affirme directement (le posé).",
@@ -1062,12 +1062,12 @@
           ]
         },
         {
-          "name": "Les indices de l'implicite : connecteurs, modalisateurs, ironie, litote, euphémisme",
-          "remember": "L'implicite s'appuie sur des **indices** dans l'énoncé. Les **connecteurs** et mots de liaison (« même », « pourtant », « déjà », « seulement », « enfin ») laissent entendre une attente ou une surprise. Les **modalisateurs** (« peut-être », « sans doute », « malheureusement », « il semble que ») montrent l'attitude de celui qui parle. Les mots **valorisants** ou **dévalorisants** jugent sans le dire : « bicoque » pour une petite maison en mauvais état. Trois procédés disent autre chose que le sens des mots : l'**ironie** dit le contraire de ce qu'on pense (« Quel beau temps ! » sous la pluie) ; la **litote** dit moins pour faire entendre plus (« Ce n'est pas mauvais » pour « C'est bon ») ; l'**euphémisme** adoucit une réalité pénible (« Il nous a quittés » pour « Il est mort »).",
+          "name": "Les indices de l'implicite : connecteurs et adverbes, modalisateurs, ironie, litote, euphémisme",
+          "remember": "L'implicite s'appuie sur des **indices** dans l'énoncé. Les **connecteurs** (« pourtant », « mais ») et certains **adverbes** (« même », « déjà », « seulement », « enfin ») laissent entendre une opposition, une attente ou une surprise. Les **modalisateurs** (« peut-être », « sans doute », « malheureusement », « il semble que ») montrent l'attitude de celui qui parle. Les mots **valorisants** ou **dévalorisants** jugent sans le dire : « bicoque » pour une petite maison en mauvais état. Trois procédés disent autre chose que le sens des mots : l'**ironie** dit le contraire de ce qu'on pense (« Quel beau temps ! » sous la pluie) ; la **litote** dit moins pour faire entendre plus (« Ce n'est pas mauvais » pour « C'est bon ») ; l'**euphémisme** adoucit une réalité pénible (« Il nous a quittés » pour « Il est mort »).",
           "method": [
-            "Relever les mots qui jugent ou qui nuancent : connecteurs, modalisateurs, mots valorisants ou dévalorisants.",
+            "Relever les mots qui jugent ou qui nuancent : connecteurs ou adverbes, modalisateurs, mots valorisants ou dévalorisants.",
             "Comparer le sens des mots avec la situation : dit-on le contraire, moins ou plus doux que ce qu'on pense ?",
-            "Nommer le procédé : connecteur, modalisateur, mot dévalorisant, ironie, litote ou euphémisme.",
+            "Nommer le procédé : connecteur, adverbe, modalisateur, mot dévalorisant, ironie, litote ou euphémisme.",
             "Formuler ce que l'indice fait comprendre, par une phrase complète."
           ],
           "example": {
@@ -1131,7 +1131,7 @@
               {
                 "content": "Écrit pour Lnclass : « Même Yao a réussi son devoir. » Que fait comprendre le mot « même » ?",
                 "question_type": "single_choice",
-                "explanation": "Étape 1 — Relever les mots : « même » est un connecteur de surprise. Étape 4 — Formuler : on ne comptait pas sur Yao. Les autres propositions n'ont aucun indice.",
+                "explanation": "Étape 1 — Relever les mots : « même » est un adverbe qui marque la surprise. Étape 4 — Formuler : on ne comptait pas sur Yao. Les autres propositions n'ont aucun indice.",
                 "answers": [
                   {
                     "content": "On ne s'attendait pas à ce que Yao réussisse.",
@@ -1319,7 +1319,7 @@
                     },
                     {
                       "content": "« Même le chef de classe a oublié son cahier. »",
-                      "match": "Connecteur qui marque la surprise"
+                      "match": "Adverbe qui marque la surprise"
                     }
                   ]
                 },
@@ -1398,7 +1398,7 @@
                 {
                   "content": "Quelles phrases contiennent un euphémisme ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Étape 2 — Comparer : « nous a quittés » adoucit « est mort » et « d'un certain âge » adoucit « âgée ». Les trois autres exemples sont une ironie, une litote et un connecteur de surprise. Étape 3 — Nommer chaque procédé.",
+                  "explanation": "Étape 2 — Comparer : « nous a quittés » adoucit « est mort » et « d'un certain âge » adoucit « âgée ». Les trois autres exemples sont une ironie, une litote et un adverbe de surprise. Étape 3 — Nommer chaque procédé.",
                   "answers": [
                     {
                       "content": "Notre voisin nous a quittés hier.",
@@ -1565,7 +1565,7 @@
                 {
                   "content": "Que présuppose le mot « redécouvrez » dans « redécouvrez la joie des fêtes en famille » ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 2 — Formuler l'implicite : « re- » suppose que la joie a déjà été connue puis perdue. Les autres propositions n'ont pas d'indice.",
+                  "explanation": "Étape 2 — Formuler l'implicite : « re- » suppose que la joie a déjà été connue puis perdue. Les autres propositions n'ont pas d'indice. « Le lecteur peut retrouver la joie des fêtes » est ce que l'affiche affirme (le posé), pas le présupposé.",
                   "answers": [
                     {
                       "content": "Le lecteur a perdu ou oublié la joie des fêtes en famille.",
@@ -1576,7 +1576,7 @@
                       "correct": false
                     },
                     {
-                      "content": "La boisson est gratuite.",
+                      "content": "Le lecteur peut retrouver la joie des fêtes en famille.",
                       "correct": false
                     },
                     {
@@ -1811,14 +1811,14 @@
             {
               "content": "Mme Bamba dit : « Chez tantie Adjoua, le tas est à cinq cents francs. » Quel est son sous-entendu ?",
               "question_type": "single_choice",
-              "explanation": "Méthode (sous-entendu). 1) Relire la situation : une cliente parle à une vendeuse, au marché. 2) Pourquoi le dit-elle ainsi ? Comparer les prix, c'est négocier sans le demander. 3) Formuler : baisse ton prix. 4) Elle pourrait désavouer : « Je donnais seulement une information. »",
+              "explanation": "Méthode (sous-entendu). 1) Relire la situation : une cliente parle à une vendeuse, au marché. 2) Pourquoi le dit-elle ainsi ? Comparer les prix, c'est négocier sans le demander. 3) Formuler : baisse ton prix. 4) Elle pourrait désavouer : « Je donnais seulement une information. » « Chez tantie Adjoua, le tas coûte cinq cents francs » est ce que la phrase dit en toutes lettres (l'explicite), pas le sous-entendu.",
               "answers": [
                 {
                   "content": "Baisse ton prix.",
                   "correct": true
                 },
                 {
-                  "content": "Je vais acheter chez Adjoua demain.",
+                  "content": "Chez tantie Adjoua, le tas coûte cinq cents francs.",
                   "correct": false
                 },
                 {
@@ -2094,14 +2094,14 @@
             {
               "content": "Dans « Peut-être serait-il possible d'ouvrir quelques heures de plus ? », le mot « peut-être » est un ___.",
               "question_type": "select",
-              "explanation": "Méthode (indices). Étape 1 — Relever : « peut-être » exprime un doute et une politesse. Étape 3 — Nommer le procédé : c'est un modalisateur. Étape 4 — Formuler : il adoucit la demande. Ce n'est ni un connecteur de surprise (comme « même ») ni un mot dévalorisant.",
+              "explanation": "Méthode (indices). Étape 1 — Relever : « peut-être » exprime un doute et une politesse. Étape 3 — Nommer le procédé : c'est un modalisateur. Étape 4 — Formuler : il adoucit la demande. Ce n'est ni un adverbe de surprise (comme « même ») ni un mot dévalorisant.",
               "answers": [
                 {
                   "content": "modalisateur",
                   "correct": true
                 },
                 {
-                  "content": "connecteur de surprise",
+                  "content": "adverbe de surprise",
                   "correct": false
                 },
                 {
@@ -2175,9 +2175,9 @@
           "figure": null,
           "questions": [
             {
-              "content": "Dans « Tu as déjà fini ? », que présuppose le mot « déjà » ?",
+              "content": "Dans « Tu as déjà fini ? », que laisse entendre le mot « déjà » ?",
               "question_type": "single_choice",
-              "explanation": "Méthode (présupposé). 1) Repérer : « déjà » signale que la fin est arrivée plus tôt que prévu. 2) Posé : la question demande si Yao a fini. 3) Présupposé : grand-mère attendait que le repas dure. Les autres idées n'ont pas d'indice.",
+              "explanation": "Méthode (présupposé). 1) Repérer : « déjà » signale que la fin arrive plus tôt que prévu. 2) Posé : la question demande si Yao a fini. 3) Présupposé : grand-mère attendait que le repas dure plus longtemps. 4) Test : « Tu n'as pas déjà fini ? » garde cette surprise. Les autres idées n'ont pas d'indice dans « déjà ».",
               "answers": [
                 {
                   "content": "Grand-mère s'attendait à ce que Yao mange plus longtemps.",
@@ -2310,7 +2310,7 @@
       "subjects": [
         {
           "title": "Sujet 1 · Les savoirs de base",
-          "notions": "Explicite et implicite ; présupposé et posé ; sous-entendu et situation ; indices de l'implicite (connecteurs, modalisateurs, mots dévalorisants, ironie, litote, euphémisme).",
+          "notions": "Explicite et implicite ; présupposé et posé ; sous-entendu et situation ; indices de l'implicite (connecteurs et adverbes, modalisateurs, mots dévalorisants, ironie, litote, euphémisme).",
           "exercises": [
             {
               "title": "Exercice 1",
@@ -2695,14 +2695,14 @@
                 {
                   "content": "Dans « Peut-être viendra-t-il demain », « peut-être » est un ___.",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Relever : « peut-être » exprime le doute de celui qui parle. Étape 3 — Nommer : c'est un modalisateur, pas un connecteur de surprise (comme « même »), ni un mot dévalorisant, ni un euphémisme.",
+                  "explanation": "Étape 1 — Relever : « peut-être » exprime le doute de celui qui parle. Étape 3 — Nommer : c'est un modalisateur, pas un adverbe de surprise (comme « même »), ni un mot dévalorisant, ni un euphémisme.",
                   "answers": [
                     {
                       "content": "modalisateur",
                       "correct": true
                     },
                     {
-                      "content": "connecteur de surprise",
+                      "content": "adverbe de surprise",
                       "correct": false
                     },
                     {
@@ -2718,7 +2718,7 @@
                 {
                   "content": "Le mot « même » dans « Même Yao a réussi » marque la surprise.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Relever : « même » classe Yao parmi les moins attendus. Étape 4 — Formuler : on ne comptait pas sur sa réussite. C'est un connecteur de surprise, donc l'affirmation est vraie.",
+                  "explanation": "Étape 1 — Relever : « même » classe Yao parmi les moins attendus. Étape 4 — Formuler : on ne comptait pas sur sa réussite. C'est un adverbe qui marque la surprise, donc l'affirmation est vraie.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -3146,7 +3146,7 @@
                 {
                   "content": "Que suggère « Faites-le travailler ! » ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Relever : « travailler » prête à l'argent une action utile. Étape 2 — Comparer avec la situation : sur une affiche de banque, cela suggère un gain. Étape 3 — Formuler : confier son argent à la banque peut rapporter. L'argent n'est pas à cacher.",
+                  "explanation": "Étape 1 — Relever : « travailler » prête à l'argent une action utile. Étape 2 — Comparer avec la situation : sur une affiche de banque, cela suggère un gain. Étape 3 — Formuler : confier son argent à la banque peut rapporter. L'argent n'est pas à cacher. « Jusqu'ici, le lecteur laissait son argent dormir » est le présupposé de « ne laissez plus », pas ce que suggère « Faites-le travailler ! ».",
                   "answers": [
                     {
                       "content": "Confier son argent à la banque peut rapporter.",
@@ -3157,7 +3157,7 @@
                       "correct": false
                     },
                     {
-                      "content": "La banque est gratuite.",
+                      "content": "Jusqu'ici, le lecteur laissait son argent dormir.",
                       "correct": false
                     },
                     {
@@ -3464,7 +3464,7 @@
                       "correct": false
                     },
                     {
-                      "content": "un connecteur de surprise",
+                      "content": "un adverbe de surprise",
                       "correct": false
                     }
                   ]
@@ -3620,14 +3620,14 @@
                 {
                   "content": "« Il semble que » est un ___.",
                   "question_type": "select",
-                  "explanation": "Étape 1 — Relever les mots qui nuancent : « il semble que » montre une réserve de celui qui parle. Étape 3 — Nommer : c'est un modalisateur, et non un connecteur de surprise comme « même ».",
+                  "explanation": "Étape 1 — Relever les mots qui nuancent : « il semble que » montre une réserve de celui qui parle. Étape 3 — Nommer : c'est un modalisateur, et non un adverbe de surprise comme « même ».",
                   "answers": [
                     {
                       "content": "modalisateur",
                       "correct": true
                     },
                     {
-                      "content": "connecteur de surprise",
+                      "content": "adverbe de surprise",
                       "correct": false
                     },
                     {
@@ -3708,7 +3708,7 @@
         },
         {
           "title": "Sujet 4 · Bilan sur l'implicite",
-          "notions": "Bilan : explicite et implicite, présupposé, sous-entendu, connecteurs et modalisateurs, ironie, litote, euphémisme, usages de l'implicite en publicité, politesse, humour et argumentation.",
+          "notions": "Bilan : explicite et implicite, présupposé, sous-entendu, connecteurs, adverbes et modalisateurs, ironie, litote, euphémisme, usages de l'implicite en publicité, politesse, humour et argumentation.",
           "exercises": [
             {
               "title": "Exercice 1",
@@ -3742,7 +3742,7 @@
                 {
                   "content": "Que fait comprendre « Même les plus difficiles en redemandent » ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Relever : « Même » est un connecteur de surprise. Étape 2 — Comparer : il classe les difficiles parmi les moins attendus. Étape 3 — Formuler : on les croyait impossibles à satisfaire.",
+                  "explanation": "Étape 1 — Relever : « Même » est un adverbe qui marque la surprise. Étape 2 — Comparer : il classe les difficiles parmi les moins attendus. Étape 3 — Formuler : on les croyait impossibles à satisfaire.",
                   "answers": [
                     {
                       "content": "On aurait cru les difficiles impossibles à satisfaire.",
@@ -3839,7 +3839,7 @@
                 {
                   "content": "Que sous-entend Moussa par « la voisine du dessous écoute aussi ton concert » ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Relire la situation : un frère qui révise parle à sa sœur. Étape 2 — Se demander pourquoi : il ne dit pas « baisse ». Étape 3 — Formuler : baisse la musique. « Monte le son » est l'inverse.",
+                  "explanation": "Étape 1 — Relire la situation : un frère qui révise parle à sa sœur. Étape 2 — Se demander pourquoi : il ne dit pas « baisse ». Étape 3 — Formuler : baisse la musique. « Monte le son » est l'inverse. « La voisine du dessous entend la musique » est ce que Moussa dit en toutes lettres, pas son sous-entendu.",
                   "answers": [
                     {
                       "content": "Baisse la musique.",
@@ -3854,7 +3854,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Les concerts sont gratuits.",
+                      "content": "La voisine du dessous entend la musique.",
                       "correct": false
                     }
                   ]
@@ -3862,14 +3862,14 @@
                 {
                   "content": "Dans « Je crois que la voisine du dessous écoute aussi ton concert », « je crois que » est un ___.",
                   "question_type": "select",
-                  "explanation": "Étape 1 — Relever : « je crois que » adoucit l'affirmation de Moussa. Étape 3 — Nommer : modalisateur, et non connecteur de surprise (comme « même »), euphémisme ou mot dévalorisant.",
+                  "explanation": "Étape 1 — Relever : « je crois que » adoucit l'affirmation de Moussa. Étape 3 — Nommer : modalisateur, et non adverbe de surprise (comme « même »), euphémisme ou mot dévalorisant.",
                   "answers": [
                     {
                       "content": "modalisateur",
                       "correct": true
                     },
                     {
-                      "content": "connecteur de surprise",
+                      "content": "adverbe de surprise",
                       "correct": false
                     },
                     {
@@ -4109,14 +4109,14 @@
                 {
                   "content": "Dans « Peut-être est-il temps d'écouter ceux qui les font », « peut-être » est un ___.",
                   "question_type": "select",
-                  "explanation": "Étape 1 — Relever : « peut-être » exprime une réserve. Étape 3 — Nommer : c'est un modalisateur, pas un connecteur de surprise comme « même ».",
+                  "explanation": "Étape 1 — Relever : « peut-être » exprime une réserve. Étape 3 — Nommer : c'est un modalisateur, pas un adverbe de surprise comme « même ».",
                   "answers": [
                     {
                       "content": "modalisateur",
                       "correct": true
                     },
                     {
-                      "content": "connecteur de surprise",
+                      "content": "adverbe de surprise",
                       "correct": false
                     },
                     {
