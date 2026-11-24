@@ -1,0 +1,3685 @@
+{
+ "format": "lnclass.course-tree",
+ "version": 3,
+ "courses": [
+  {
+   "name": "La division cellulaire",
+   "subtitle": "Leçon 8 — progression DPFC 2026-2027",
+   "level_name": "2nde",
+   "series_name": "C",
+   "material_name": "SVT",
+   "theme": "teal",
+   "figures": [
+    {
+     "key": "preparation-meristeme",
+     "kind": "diagram",
+     "description": "Schéma fléché de la préparation d'un méristème de racine d'oignon : prélever l'extrémité de la racine derrière la coiffe, colorer les chromosomes à l'orcéine acétique, écraser le fragment sous une lamelle, observer au microscope du plus petit au plus fort objectif, puis repérer les cellules en division.",
+     "params": {
+      "layout": "flow",
+      "direction": "down",
+      "nodes": [
+       {
+        "id": "p",
+        "label": "Prélever l'extrémité de la racine"
+       },
+       {
+        "id": "c",
+        "label": "Colorer les chromosomes"
+       },
+       {
+        "id": "e",
+        "label": "Écraser sous la lamelle"
+       },
+       {
+        "id": "o",
+        "label": "Observer au microscope"
+       },
+       {
+        "id": "r",
+        "label": "Repérer les cellules en division"
+       }
+      ],
+      "edges": [
+       {
+        "from": "p",
+        "to": "c"
+       },
+       {
+        "from": "c",
+        "to": "e"
+       },
+       {
+        "from": "e",
+        "to": "o"
+       },
+       {
+        "from": "o",
+        "to": "r"
+       }
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "cycle-cellulaire",
+     "kind": "diagram",
+     "description": "Cycle cellulaire en boucle : l'interphase, période la plus longue, est suivie de la mitose en quatre phases (prophase, métaphase, anaphase, télophase), puis de la cytodiérèse, qui sépare les deux cellules filles. Chaque cellule fille entre alors dans une nouvelle interphase.",
+     "params": {
+      "layout": "cycle",
+      "direction": "down",
+      "nodes": [
+       {
+        "id": "i",
+        "label": "Interphase",
+        "category": 1
+       },
+       {
+        "id": "p",
+        "label": "Prophase",
+        "category": 2
+       },
+       {
+        "id": "m",
+        "label": "Métaphase",
+        "category": 2
+       },
+       {
+        "id": "a",
+        "label": "Anaphase",
+        "category": 2
+       },
+       {
+        "id": "t",
+        "label": "Télophase",
+        "category": 2
+       },
+       {
+        "id": "c",
+        "label": "Cytodiérèse",
+        "category": 3
+       }
+      ],
+      "edges": [
+       {
+        "from": "i",
+        "to": "p"
+       },
+       {
+        "from": "p",
+        "to": "m"
+       },
+       {
+        "from": "m",
+        "to": "a"
+       },
+       {
+        "from": "a",
+        "to": "t"
+       },
+       {
+        "from": "t",
+        "to": "c"
+       },
+       {
+        "from": "c",
+        "to": "i"
+       }
+      ],
+      "legend": [
+       "Interphase",
+       "Mitose (4 phases)",
+       "Division du cytoplasme"
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "comptage-phases",
+     "kind": "stat_chart",
+     "description": "Diagramme en barres d'un comptage fictif sur 250 cellules d'un méristème : 230 cellules en interphase, puis 9 en prophase, 4 en métaphase, 3 en anaphase et 4 en télophase. Les cellules en mitose sont très peu nombreuses : la mitose est courte, l'interphase est longue.",
+     "params": {
+      "chart": "bars",
+      "series": [
+       230,
+       9,
+       4,
+       3,
+       4
+      ],
+      "labels": [
+       "Interphase",
+       "Prophase",
+       "Métaphase",
+       "Anaphase",
+       "Télophase"
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "indice-zones",
+     "kind": "stat_chart",
+     "description": "Diagramme en barres de l'indice mitotique en pourcentage, mesuré sur des comptages fictifs dans trois zones d'une racine : 8 % dans le méristème, 1 % dans la zone d'allongement et 0 % dans la zone pilifère. Les divisions se concentrent à l'extrémité de la racine.",
+     "params": {
+      "chart": "bars",
+      "series": [
+       8,
+       1,
+       0
+      ],
+      "labels": [
+       "Méristème",
+       "Zone d'allongement",
+       "Zone pilifère"
+      ]
+     },
+     "controls": []
+    }
+   ],
+   "notions": [
+    {
+     "name": "Mettre en évidence la division cellulaire dans une racine",
+     "remember": "Les cellules d'un être vivant se **divisent** : une cellule mère donne deux cellules filles. Chez la plante, la division a lieu surtout dans le **méristème**, un tissu de petites cellules situé à l'extrémité de la racine, juste derrière la **coiffe**. Pour la voir, on prélève cette extrémité, on la **colore** avec de l'orcéine acétique (qui teinte les **chromosomes**), puis on l'**écrase** entre lame et lamelle et on l'observe au microscope. Une cellule dont les chromosomes colorés sont visibles est **en division**. Une cellule dont le noyau arrondi est délimité par une enveloppe est au repos (**interphase**). La préparation fige les cellules : on voit chacune à un seul instant.",
+     "method": [
+      "Prélever l'extrémité de la racine : couper quelques millimètres de la pointe, juste derrière la coiffe, là où se trouve le méristème.",
+      "Colorer le fragment avec un colorant des chromosomes (orcéine acétique), qui les teinte en rouge ou en violet.",
+      "Écraser et observer : poser une lamelle, écraser doucement, puis observer au microscope, du plus petit objectif au plus fort.",
+      "Repérer et conclure : chercher les cellules aux chromosomes colorés visibles, les distinguer des noyaux arrondis, puis dire où la division a lieu."
+     ],
+     "example": {
+      "statement": "Une élève fait germer un oignon sur un verre d'eau. Elle prépare une lame avec l'extrémité d'une racine et compte 40 cellules dans un champ : 36 ont un noyau arrondi, 4 ont des chromosomes colorés visibles (comptage fictif). Que montre sa préparation ?",
+      "steps": [
+       "Prélever : elle coupe 3 mm de la pointe de la racine, derrière la coiffe : c'est le méristème.",
+       "Colorer : elle dépose le fragment dans l'orcéine acétique, qui teinte les chromosomes.",
+       "Écraser et observer : elle pose la lamelle, écrase doucement, observe d'abord à l'objectif ×4 puis à l'objectif ×40.",
+       "Repérer et conclure : 4 cellules ont des chromosomes visibles, donc elles sont en division ; les 36 autres sont en interphase. La division a lieu dans le méristème."
+      ]
+     },
+     "pitfall": "Ne confonds pas une cellule en division et une cellule dont le noyau est simplement coloré. Un noyau arrondi, délimité par son enveloppe, est en interphase, même s'il est bien coloré. Contre-exemple : sur 40 cellules colorées, 36 ont un noyau arrondi et 4 des chromosomes visibles : 4 cellules seulement sont en division, pas 40. Souviens-toi aussi que la lame montre des cellules figées, pas une division filmée.",
+     "figure": "preparation-meristeme",
+     "practice": {
+      "statement": "Tu t'entraînes à préparer un méristème de racine et à repérer des cellules en division.",
+      "questions": [
+       {
+        "content": "Pour mettre en évidence des cellules en division, quelle partie d'une racine d'oignon prélève-t-on ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Prélever : on coupe quelques millimètres de la pointe, derrière la coiffe, car le méristème s'y trouve. Étape 4 — Repérer et conclure : c'est là que les cellules en division sont nombreuses. Pourquoi pas « La partie couverte de poils absorbants » : cette zone absorbe l'eau et ses cellules ne se divisent presque plus.",
+        "answers": [
+         {
+          "content": "L'extrémité, juste derrière la coiffe",
+          "correct": true
+         },
+         {
+          "content": "La partie couverte de poils absorbants",
+          "correct": false
+         },
+         {
+          "content": "Un fragment pris au hasard, loin de la pointe",
+          "correct": false
+         },
+         {
+          "content": "La coiffe seule, qui protège la pointe",
+          "correct": false
+         }
+        ],
+        "hint": "Pense au tissu qui fabrique de nouvelles cellules."
+       },
+       {
+        "content": "Remets dans l'ordre les gestes de la préparation.",
+        "question_type": "ordering",
+        "explanation": "Étape 1 — Prélever d'abord le fragment. Étape 2 — Colorer ensuite ses chromosomes. Étape 3 — Écraser sous la lamelle et observer, du plus petit objectif au plus fort. Pourquoi pas « Observer avant de colorer » : sans colorant, les chromosomes sont presque invisibles.",
+        "answers": [
+         {
+          "content": "Prélever l'extrémité de la racine"
+         },
+         {
+          "content": "Colorer les chromosomes à l'orcéine acétique"
+         },
+         {
+          "content": "Écraser doucement sous la lamelle"
+         },
+         {
+          "content": "Observer du plus petit objectif au plus fort"
+         }
+        ],
+        "hint": "On prépare le fragment avant de regarder."
+       },
+       {
+        "content": "Une cellule dont les chromosomes colorés sont visibles est en train de se diviser.",
+        "question_type": "true_false",
+        "explanation": "Étape 4 — Repérer et conclure : les chromosomes ne sont visibles qu'au moment de la division ; on les repère à leur couleur. La cellule est donc en division. Pourquoi pas « Faux » : en interphase, le noyau arrondi cache les chromosomes, qui ne s'y voient pas individuellement.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": true
+         },
+         {
+          "content": "Faux",
+          "correct": false
+         }
+        ],
+        "hint": "Pense à ce qu'on voit en interphase."
+       },
+       {
+        "content": "Le colorant utilisé met en évidence les ___ des cellules.",
+        "question_type": "fill_blank",
+        "explanation": "Étape 2 — Colorer : l'orcéine acétique teinte les chromosomes en rouge ou en violet, ce qui permet de les voir à l'étape 4. Pourquoi pas « poils absorbants » : ce sont des prolongements de cellules de la racine, que le colorant ne cherche pas à mettre en évidence.",
+        "answers": [
+         {
+          "content": "chromosomes",
+          "correct": true
+         }
+        ],
+        "hint": "Ce sont les structures colorées en rouge."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "La racine d'oignon : où les cellules se divisent-elles ?",
+       "statement": "Dans cet exercice, tu suis pas à pas la méthode de la fiche sur une racine d'oignon mise à germer dans un verre d'eau, à la maison.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Une élève veut observer des cellules en division sur une racine d'oignon. Quelle partie prélève-t-elle ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Prélever : on coupe quelques millimètres de la pointe, derrière la coiffe, là où se trouve le méristème. Étape 4 — Repérer et conclure : c'est dans cette zone que les divisions sont nombreuses. Pourquoi pas « La partie moyenne, couverte de poils absorbants » : cette zone sert surtout à absorber l'eau ; ses cellules ne se divisent presque plus.",
+         "answers": [
+          {
+           "content": "Quelques millimètres de la pointe, derrière la coiffe",
+           "correct": true
+          },
+          {
+           "content": "La partie moyenne, couverte de poils absorbants",
+           "correct": false
+          },
+          {
+           "content": "La coiffe seule",
+           "correct": false
+          },
+          {
+           "content": "Une partie du bulbe qu'on mange",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi colore-t-on le fragment de racine avant l'observation ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Colorer : le colorant teinte les chromosomes. Étape 4 — Repérer et conclure : sans lui, on ne distinguerait pas une cellule en division d'une cellule au repos. Pourquoi pas « Pour faire diviser les cellules plus vite » : le colorant ne déclenche rien, il rend seulement visible ce qui existe déjà.",
+         "answers": [
+          {
+           "content": "Pour rendre les chromosomes visibles",
+           "correct": true
+          },
+          {
+           "content": "Pour faire diviser les cellules plus vite",
+           "correct": false
+          },
+          {
+           "content": "Pour agrandir les cellules",
+           "correct": false
+          },
+          {
+           "content": "Pour dissoudre la paroi des cellules",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Sur la lame, on voit une même cellule se diviser en direct, de la prophase à la télophase.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Écraser et observer : la préparation fige les cellules au moment où on les fixe. Étape 4 — Repérer et conclure : on voit donc des cellules à des stades différents, chacune à un seul instant. Pourquoi pas « Vrai » : pour suivre une même cellule, il faudrait la regarder vivante pendant des heures, ce que cette technique ne permet pas.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans un champ du microscope, une élève compte 40 cellules : 36 ont un noyau arrondi, les autres ont des chromosomes colorés visibles. Combien de cellules sont en division ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Observer : 40 cellules dans le champ. Étape 4 — Repérer et conclure : les cellules à noyau arrondi sont en interphase, soit 36 ; les autres sont en division, donc 40 − 36 = 4. Pourquoi pas « 36 » : ce sont les cellules au repos, à noyau arrondi, et non celles qui se divisent.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "cellules"
+        },
+        {
+         "content": "Choisis les deux observations qui montrent une cellule en division.",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 4 — Repérer et conclure : une cellule est en division si ses chromosomes colorés sont visibles ; la disposition (alignés, ou en deux groupes) précise le stade. Les noyaux arrondis sont en interphase. Pourquoi pas « Un noyau arrondi et coloré, délimité par une enveloppe, avec un nucléole » : un noyau bien délimité avec un nucléole est typique d'une cellule au repos.",
+         "answers": [
+          {
+           "content": "Des chromosomes colorés, courts et épais, alignés au milieu de la cellule",
+           "correct": true
+          },
+          {
+           "content": "Des chromosomes colorés répartis en deux groupes, aux deux extrémités de la cellule",
+           "correct": true
+          },
+          {
+           "content": "Un noyau arrondi et coloré, délimité par une enveloppe, avec un nucléole",
+           "correct": false
+          },
+          {
+           "content": "Une grande cellule allongée, sans chromosomes visibles, au noyau clair",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Du fragment de racine à la conclusion",
+       "statement": "Dans cet exercice, tu mélanges les gestes de la préparation, le vocabulaire et la lecture d'une observation.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Relie chaque geste à son rôle.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Prélever : on choisit le méristème. Étape 2 — Colorer : on rend les chromosomes visibles. Étape 3 — Écraser et observer : on étale les cellules, puis on regarde. Étape 4 — Repérer : on trouve les cellules en division. Pourquoi pas « Colorer » relié à « Étaler les cellules en une seule couche » : c'est l'écrasement qui étale les cellules ; le colorant ne fait que les teinter.",
+         "answers": [
+          {
+           "content": "Prélever l'extrémité",
+           "match": "Choisir la zone où les cellules se divisent"
+          },
+          {
+           "content": "Colorer",
+           "match": "Rendre les chromosomes visibles"
+          },
+          {
+           "content": "Écraser sous la lamelle",
+           "match": "Étaler les cellules en une seule couche"
+          },
+          {
+           "content": "Observer au microscope",
+           "match": "Repérer les cellules en division"
+          }
+         ]
+        },
+        {
+         "content": "Le tissu de l'extrémité de la racine, où les cellules se divisent, s'appelle le ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Prélever : on coupe la pointe, derrière la coiffe. Étape 4 — Repérer et conclure : le tissu qui fabrique de nouvelles cellules à cet endroit est le méristème. Pourquoi pas « coiffe » : la coiffe est le capuchon qui protège la pointe, pas le tissu qui se divise.",
+         "answers": [
+          {
+           "content": "méristème",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Pour repérer une cellule en division, on cherche des ___ colorés et visibles.",
+         "question_type": "select",
+         "explanation": "Étape 2 — Colorer : le colorant teinte les chromosomes. Étape 4 — Repérer et conclure : ce sont eux qu'on cherche pour reconnaître une cellule en division. Pourquoi pas « vacuoles » : une vacuole est une poche de la cellule, visible aussi en interphase, qui ne renseigne pas sur la division.",
+         "answers": [
+          {
+           "content": "chromosomes",
+           "correct": true
+          },
+          {
+           "content": "poils absorbants",
+           "correct": false
+          },
+          {
+           "content": "chloroplastes",
+           "correct": false
+          },
+          {
+           "content": "vacuoles",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre la démarche complète.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Prélever, Étape 2 — Colorer, Étape 3 — Écraser et observer, puis Étape 4 — Repérer et conclure : l'ordre suit les gestes de la fiche. Pourquoi pas « Colorer » après « Observer » : il faut colorer avant d'observer, sinon les chromosomes restent presque invisibles.",
+         "answers": [
+          {
+           "content": "Prélever l'extrémité de la racine"
+          },
+          {
+           "content": "Colorer les chromosomes"
+          },
+          {
+           "content": "Écraser sous la lamelle"
+          },
+          {
+           "content": "Observer du plus petit objectif au plus fort"
+          },
+          {
+           "content": "Repérer les cellules en division"
+          }
+         ]
+        },
+        {
+         "content": "Dans un méristème, toutes les cellules sont en division au même instant.",
+         "question_type": "true_false",
+         "explanation": "Étape 4 — Repérer et conclure : sur la lame, la plupart des cellules ont un noyau arrondi (interphase) et seule une petite partie montre des chromosomes visibles. Pourquoi pas « Vrai » : la division est courte : à un instant donné, peu de cellules sont en train de se diviser.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un champ montre 60 cellules, dont 54 à noyau arrondi. Combien de cellules ont des chromosomes visibles ?",
+         "question_type": "numeric",
+         "explanation": "Étape 4 — Repérer et conclure : les noyaux arrondis sont en interphase, soit 54 ; les autres ont des chromosomes visibles : 60 − 54 = 6. Pourquoi pas « 54 » : c'est le nombre de cellules au repos, pas celui des cellules en division.",
+         "answers": [
+          {
+           "content": "6",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "cellules"
+        }
+       ],
+       "hint": "Un noyau arrondi est au repos ; ce sont les chromosomes visibles qui signalent une division."
+      }
+     ]
+    },
+    {
+     "name": "Le cycle cellulaire et les phases de la mitose",
+     "remember": "Le **cycle cellulaire** est la suite des étapes d'une cellule, de sa formation à sa propre division. Il comprend l'**interphase**, période la plus longue : le noyau est délimité par une enveloppe et les chromosomes ne sont pas visibles. Vient ensuite la **mitose**, courte, qui répartit les chromosomes en deux lots identiques, puis la **cytodiérèse**, qui coupe la cellule en deux. La mitose a quatre phases. **Prophase** : les chromosomes se condensent et deviennent visibles (chacun a deux chromatides), l'enveloppe du noyau disparaît, le fuseau se forme. **Métaphase** : les chromosomes sont alignés au milieu de la cellule, dans la plaque équatoriale. **Anaphase** : les deux chromatides de chaque chromosome se séparent et migrent vers les pôles opposés. **Télophase** : deux noyaux se reforment. Cytodiérèse : par **étranglement** chez la cellule animale, par un **phragmoplaste** qui construit une paroi au milieu chez la cellule végétale. On obtient deux cellules filles identiques.",
+     "method": [
+      "Observer le noyau : dire si une enveloppe le délimite et si les chromosomes sont visibles.",
+      "Repérer l'aspect et la position des chromosomes, ainsi que le fuseau : dispersés, alignés au milieu ou séparés vers deux pôles.",
+      "Nommer la phase : interphase, prophase, métaphase, anaphase ou télophase.",
+      "Situer cette phase dans le cycle cellulaire : interphase, ou l'une des quatre phases de la mitose.",
+      "Conclure sur l'événement de la phase : ce que deviennent les chromosomes ou les chromatides, et la façon dont le cytoplasme se divise."
+     ],
+     "example": {
+      "statement": "Sur une lame de méristème de racine d'oignon, on voit une cellule dont les chromosomes colorés sont alignés au milieu, sans noyau délimité, accrochés aux fibres du fuseau. De quelle phase s'agit-il ?",
+      "steps": [
+       "Observer le noyau : aucune enveloppe ne délimite le noyau et les chromosomes sont bien visibles, donc la cellule n'est pas en interphase.",
+       "Repérer : les chromosomes sont alignés au milieu de la cellule, accrochés au fuseau ; les chromatides ne sont pas séparées.",
+       "Nommer la phase : des chromosomes alignés dans le plan du milieu, c'est la métaphase.",
+       "Situer : la métaphase est la deuxième des quatre phases de la mitose, après la prophase.",
+       "Conclure : les chromosomes forment la plaque équatoriale ; à l'anaphase suivante, leurs deux chromatides se sépareront."
+      ]
+     },
+     "pitfall": "Ne confonds pas métaphase et anaphase, ni la cytodiérèse de la cellule animale et celle de la cellule végétale. Un seul amas de chromosomes au milieu de la cellule, c'est la métaphase ; deux lots aux deux extrémités, c'est l'anaphase ou la télophase. Et une cellule végétale, entourée d'une paroi, ne s'étrangle pas : elle construit une paroi au milieu, alors que la cellule animale se pince en deux.",
+     "figure": "cycle-cellulaire",
+     "practice": {
+      "statement": "Tu t'entraînes à reconnaître la phase d'une cellule et à la situer dans le cycle.",
+      "questions": [
+       {
+        "content": "Une cellule a des chromosomes condensés, alignés au milieu, accrochés au fuseau. Quelle est sa phase ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Observer : pas de noyau délimité. Étape 2 — Repérer : chromosomes alignés au milieu. Étape 3 — Nommer la phase : c'est la métaphase. Pourquoi pas « Prophase » : en prophase les chromosomes sont visibles mais pas encore alignés au milieu.",
+        "answers": [
+         {
+          "content": "Métaphase",
+          "correct": true
+         },
+         {
+          "content": "Prophase",
+          "correct": false
+         },
+         {
+          "content": "Anaphase",
+          "correct": false
+         },
+         {
+          "content": "Télophase",
+          "correct": false
+         }
+        ],
+        "hint": "Regarde où sont placés les chromosomes."
+       },
+       {
+        "content": "Remets dans l'ordre les quatre phases de la mitose.",
+        "question_type": "ordering",
+        "explanation": "Étape 3 — Nommer et Étape 4 — Situer : la prophase condense les chromosomes, la métaphase les aligne, l'anaphase sépare les chromatides, la télophase reforme deux noyaux. Pourquoi pas « Anaphase » avant « Métaphase » : les chromatides ne peuvent se séparer qu'après l'alignement des chromosomes.",
+        "answers": [
+         {
+          "content": "Prophase"
+         },
+         {
+          "content": "Métaphase"
+         },
+         {
+          "content": "Anaphase"
+         },
+         {
+          "content": "Télophase"
+         }
+        ],
+        "hint": "Commence par la condensation des chromosomes."
+       },
+       {
+        "content": "L'interphase est la période la plus courte du cycle cellulaire.",
+        "question_type": "true_false",
+        "explanation": "Étape 4 — Situer : la mitose est courte, alors que l'interphase occupe la plus grande partie du cycle. Sur une lame, la plupart des cellules sont d'ailleurs en interphase. Pourquoi pas « Vrai » : on confond la durée d'une période avec son importance : la mitose est spectaculaire mais brève.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": false
+         },
+         {
+          "content": "Faux",
+          "correct": true
+         }
+        ],
+        "hint": "Sur une lame, beaucoup de cellules ont un noyau arrondi."
+       },
+       {
+        "content": "Pendant l'anaphase, les ___ de chaque chromosome se séparent.",
+        "question_type": "fill_blank",
+        "explanation": "Étape 5 — Conclure : à l'anaphase, les deux chromatides de chaque chromosome se séparent et migrent vers les pôles opposés de la cellule. Pourquoi pas « noyaux » : les noyaux n'existent pas encore à l'anaphase, ils se reforment à la télophase.",
+        "answers": [
+         {
+          "content": "chromatides",
+          "correct": true
+         }
+        ],
+        "hint": "Chaque chromosome est formé de deux chromatides."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Reconnaître les phases sur des cellules de méristème",
+       "statement": "Dans cet exercice, tu appliques les cinq étapes de la fiche à des cellules de méristème observées au microscope.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Une cellule a un noyau arrondi, délimité par une enveloppe ; aucun chromosome n'est visible. Quelle période du cycle observe-t-on ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Observer le noyau : il est délimité par son enveloppe et les chromosomes sont invisibles. Étape 3 — Nommer la phase : c'est l'interphase. Étape 4 — Situer : elle précède la mitose. Pourquoi pas « La télophase » : en télophase il y a deux noyaux qui se reforment, avec des chromosomes encore regroupés aux pôles.",
+         "answers": [
+          {
+           "content": "L'interphase",
+           "correct": true
+          },
+          {
+           "content": "La prophase",
+           "correct": false
+          },
+          {
+           "content": "La métaphase",
+           "correct": false
+          },
+          {
+           "content": "La télophase",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les chromosomes sont courts, épais et visibles ; l'enveloppe du noyau a disparu ; le fuseau se forme. Quelle phase est-ce ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Observer le noyau : l'enveloppe a disparu. Étape 2 — Repérer : les chromosomes condensés ne sont pas encore alignés. Étape 3 — Nommer : c'est la prophase. Pourquoi pas « La métaphase » : en métaphase, les chromosomes seraient déjà alignés au milieu de la cellule.",
+         "answers": [
+          {
+           "content": "La prophase",
+           "correct": true
+          },
+          {
+           "content": "L'interphase",
+           "correct": false
+          },
+          {
+           "content": "La métaphase",
+           "correct": false
+          },
+          {
+           "content": "L'anaphase",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Deux lots de chromatides sont aux extrémités d'une cellule végétale ; une enveloppe se reforme autour de chaque lot et une paroi se construit au milieu. Quelle phase est-ce ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Repérer : deux lots de chromatides sont arrivés aux pôles. Étape 3 — Nommer la phase : les enveloppes se reforment, c'est la télophase. Étape 5 — Conclure : deux noyaux apparaissent. Pourquoi pas « L'anaphase » : en anaphase, les chromatides sont encore en migration et aucune enveloppe n'entoure les lots.",
+         "answers": [
+          {
+           "content": "La télophase",
+           "correct": true
+          },
+          {
+           "content": "L'anaphase",
+           "correct": false
+          },
+          {
+           "content": "La métaphase",
+           "correct": false
+          },
+          {
+           "content": "La prophase",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quels événements ont lieu pendant l'anaphase ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 3 — Nommer : on parle de l'anaphase. Étape 5 — Conclure : les chromatides se séparent puis migrent vers les pôles opposés. Pourquoi pas « Les chromosomes forment la plaque équatoriale » : l'alignement est un événement de la métaphase, qui précède l'anaphase.",
+         "answers": [
+          {
+           "content": "Les deux chromatides de chaque chromosome se séparent",
+           "correct": true
+          },
+          {
+           "content": "Les chromatides migrent vers les pôles opposés de la cellule",
+           "correct": true
+          },
+          {
+           "content": "Les chromosomes forment la plaque équatoriale",
+           "correct": false
+          },
+          {
+           "content": "L'enveloppe du noyau se reforme autour de chaque lot",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule d'oignon termine sa division. Comment son cytoplasme se coupe-t-il en deux ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 5 — Conclure : chez la cellule végétale, un phragmoplaste construit une paroi au milieu, entre les deux noyaux de la télophase. Pourquoi pas « La cellule s'étrangle jusqu'à se couper en deux » : c'est la cytodiérèse de la cellule animale ; la paroi rigide d'une cellule végétale l'empêche de se pincer.",
+         "answers": [
+          {
+           "content": "Une nouvelle paroi se construit au milieu de la cellule",
+           "correct": true
+          },
+          {
+           "content": "La cellule s'étrangle jusqu'à se couper en deux",
+           "correct": false
+          },
+          {
+           "content": "Le noyau éclate et libère deux cellules",
+           "correct": false
+          },
+          {
+           "content": "La cellule ne se coupe pas : les deux noyaux restent dans une seule cellule",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Les phases de la mitose et le cycle",
+       "statement": "Dans cet exercice, tu associes les phases à leurs événements et tu replaces la mitose dans le cycle cellulaire.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Relie chaque phase à son événement.",
+         "question_type": "matching",
+         "explanation": "Étape 3 — Nommer la phase puis Étape 5 — Conclure : chaque phase a un événement propre, de la condensation (prophase) à la reformation des noyaux (télophase). Pourquoi pas « Anaphase » relié à « Les chromosomes s'alignent dans la plaque équatoriale » : l'alignement précède la séparation : il appartient à la métaphase.",
+         "answers": [
+          {
+           "content": "Prophase",
+           "match": "Les chromosomes se condensent et le fuseau se forme"
+          },
+          {
+           "content": "Métaphase",
+           "match": "Les chromosomes s'alignent dans la plaque équatoriale"
+          },
+          {
+           "content": "Anaphase",
+           "match": "Les chromatides migrent vers les pôles"
+          },
+          {
+           "content": "Télophase",
+           "match": "Deux noyaux se reforment"
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les périodes du cycle cellulaire, de l'interphase à la télophase.",
+         "question_type": "ordering",
+         "explanation": "Étape 4 — Situer : le cycle commence par l'interphase, puis la mitose enchaîne prophase, métaphase, anaphase et télophase. Pourquoi pas « Télophase » avant « Anaphase » : les noyaux ne se reforment qu'une fois les chromatides arrivées aux pôles.",
+         "answers": [
+          {
+           "content": "Interphase"
+          },
+          {
+           "content": "Prophase"
+          },
+          {
+           "content": "Métaphase"
+          },
+          {
+           "content": "Anaphase"
+          },
+          {
+           "content": "Télophase"
+          }
+         ]
+        },
+        {
+         "content": "Pendant la métaphase, les chromosomes sont alignés dans la plaque ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 2 — Repérer : les chromosomes sont alignés au milieu de la cellule. Étape 5 — Conclure : ils forment la plaque équatoriale. Pourquoi pas « polaire » : les pôles sont les extrémités de la cellule, où les chromatides arrivent à l'anaphase.",
+         "answers": [
+          {
+           "content": "équatoriale",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Chez la cellule animale, la cytodiérèse se fait par ___.",
+         "question_type": "select",
+         "explanation": "Étape 5 — Conclure : la membrane de la cellule animale se pince au milieu, c'est l'étranglement, jusqu'à séparer les deux cellules filles. Pourquoi pas « construction d'une nouvelle paroi » : cette façon de faire est celle de la cellule végétale, protégée par une paroi.",
+         "answers": [
+          {
+           "content": "étranglement",
+           "correct": true
+          },
+          {
+           "content": "construction d'une nouvelle paroi",
+           "correct": false
+          },
+          {
+           "content": "éclatement du noyau",
+           "correct": false
+          },
+          {
+           "content": "disparition de la membrane",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La mitose est la période la plus longue du cycle cellulaire.",
+         "question_type": "true_false",
+         "explanation": "Étape 4 — Situer : la mitose est courte, l'interphase est la période la plus longue du cycle cellulaire. Pourquoi pas « Vrai » : on retient que la mitose est la partie visible du cycle, ce qui la fait croire plus longue.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "À la fin de la mitose et de la cytodiérèse, combien de cellules filles obtient-on à partir d'une cellule mère ?",
+         "question_type": "numeric",
+         "explanation": "Étape 5 — Conclure : la mitose répartit les chromosomes en deux lots identiques, la cytodiérèse coupe la cellule : on obtient 2 cellules filles identiques. Pourquoi pas « 4 » : quatre cellules supposeraient deux divisions successives, alors qu'il n'y en a qu'une ici.",
+         "answers": [
+          {
+           "content": "2",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "cellules"
+        }
+       ],
+       "hint": "Prophase, métaphase, anaphase, télophase : suis l'ordre des événements des chromosomes."
+      }
+     ]
+    },
+    {
+     "name": "Calculer un indice mitotique",
+     "remember": "L'**indice mitotique** mesure la part des cellules en mitose dans un tissu : **IM = (nombre de cellules en mitose ÷ nombre total de cellules comptées) × 100**, en pourcentage. On compte sur la préparation toutes les cellules d'un champ, puis celles qui sont en mitose (prophase, métaphase, anaphase ou télophase). Les cellules en interphase comptent dans le total, mais pas parmi les cellules en mitose. L'indice est compris entre 0 % et 100 %. Un indice élevé indique une zone où les cellules se divisent beaucoup (le méristème) ; un indice faible ou nul, une zone qui se divise peu ou pas.",
+     "method": [
+      "Compter toutes les cellules du champ observé : c'est le total.",
+      "Repérer et compter les cellules en mitose, grâce à leurs chromosomes visibles.",
+      "Écrire le rapport : cellules en mitose ÷ total des cellules comptées.",
+      "Calculer l'indice mitotique en pourcentage : multiplier le rapport par 100.",
+      "Interpréter : comparer avec une autre zone ; plus l'indice est élevé, plus la zone se divise."
+     ],
+     "example": {
+      "statement": "Dans le méristème d'une racine d'oignon, un élève compte 250 cellules dont 20 sont en mitose. Dans la zone d'allongement, il compte 200 cellules dont 2 en mitose (comptages fictifs). Calcule l'indice mitotique de chaque zone et compare.",
+      "steps": [
+       "Compter : dans le méristème, il y a 250 cellules au total.",
+       "Repérer et compter : 20 cellules ont des chromosomes visibles, donc 20 sont en mitose ; les 230 autres sont en interphase.",
+       "Écrire le rapport : cellules en mitose ÷ total = 20 ÷ 250.",
+       "Calculer : 20 ÷ 250 = 0,08 et 0,08 × 100 = 8, donc IM = 8 %. Pour la zone d'allongement : 2 ÷ 200 × 100 = 1 %.",
+       "Interpréter : 8 % est bien plus grand que 1 % ; les cellules se divisent beaucoup plus dans le méristème que dans la zone d'allongement."
+      ]
+     },
+     "pitfall": "Ne divise pas par le nombre de cellules en interphase : on divise par le **total**. Contre-exemple : 20 cellules en mitose sur 250 donnent 20 ÷ 250 × 100 = 8 %. Avec 230 (les cellules en interphase), on trouverait 8,7 % : faux. N'oublie pas non plus de multiplier par 100 : 0,08 est un rapport, pas un pourcentage.",
+     "figure": "comptage-phases",
+     "practice": {
+      "statement": "Tu t'entraînes à calculer un indice mitotique à partir de comptages fictifs.",
+      "questions": [
+       {
+        "content": "Sur 100 cellules comptées dans un méristème, 12 sont en mitose. Quel est l'indice mitotique ?",
+        "question_type": "numeric",
+        "explanation": "Étape 3 — Écrire le rapport : 12 ÷ 100. Étape 4 — Calculer : 12 ÷ 100 = 0,12, puis 0,12 × 100 = 12, donc IM = 12 %. Pourquoi pas « 0,12 » : c'est le rapport avant la multiplication par 100, il n'est pas encore un pourcentage.",
+        "answers": [
+         {
+          "content": "12",
+          "correct": true
+         }
+        ],
+        "tolerance": 0,
+        "unit": "%",
+        "hint": "Divise par le total, puis multiplie par 100."
+       },
+       {
+        "content": "Quel calcul donne l'indice mitotique ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 3 — Écrire le rapport : cellules en mitose ÷ total. Étape 4 — Calculer : on multiplie par 100 pour obtenir un pourcentage. Pourquoi pas « (cellules en mitose ÷ cellules en interphase) × 100 » : on diviserait par une partie des cellules seulement, alors que le total comprend toutes les cellules.",
+        "answers": [
+         {
+          "content": "(cellules en mitose ÷ cellules comptées au total) × 100",
+          "correct": true
+         },
+         {
+          "content": "(cellules en mitose ÷ cellules en interphase) × 100",
+          "correct": false
+         },
+         {
+          "content": "(cellules en interphase ÷ cellules comptées au total) × 100",
+          "correct": false
+         },
+         {
+          "content": "cellules en mitose × cellules comptées au total ÷ 100",
+          "correct": false
+         }
+        ],
+        "hint": "Le dénominateur contient toutes les cellules du champ."
+       },
+       {
+        "content": "Les cellules en interphase ne comptent pas dans le total des cellules pour l'indice mitotique.",
+        "question_type": "true_false",
+        "explanation": "Étape 1 — Compter : le total comprend toutes les cellules du champ, en interphase comme en mitose. Étape 3 — Écrire le rapport : on divise par ce total. Pourquoi pas « Vrai » : en les retirant, on gonflerait l'indice et on ne mesurerait plus la part des cellules en mitose.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": false
+         },
+         {
+          "content": "Faux",
+          "correct": true
+         }
+        ],
+        "hint": "Relis l'étape 1."
+       },
+       {
+        "content": "Un champ contient 200 cellules dont 14 en mitose. Quel est l'indice mitotique ?",
+        "question_type": "numeric",
+        "explanation": "Étape 2 — Repérer et compter : 14 cellules en mitose. Étape 3 — Écrire le rapport : 14 ÷ 200 = 0,07. Étape 4 — Calculer : 0,07 × 100 = 7, donc IM = 7 %. Pourquoi pas « 14 % » : on aurait pris le nombre de cellules en mitose comme pourcentage, sans le rapporter au total.",
+        "answers": [
+         {
+          "content": "7",
+          "correct": true
+         }
+        ],
+        "tolerance": 0,
+        "unit": "%",
+        "hint": "Écris d'abord 14 ÷ 200."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Indices mitotiques sur des racines de maïs",
+       "statement": "Dans cet exercice, tu suis pas à pas la méthode de la fiche sur des comptages fictifs faits sur des racines de maïs du jardin scolaire.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Dans le méristème d'une racine de maïs, on compte 400 cellules dont 40 en mitose. Quel est l'indice mitotique ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Compter : 400 cellules. Étape 2 — Repérer et compter : 40 en mitose. Étape 3 — Écrire le rapport : 40 ÷ 400 = 0,1. Étape 4 — Calculer : 0,1 × 100 = 10, donc IM = 10 %. Pourquoi pas « 1 % » : on aurait oublié que 0,1 correspond à 10 %, soit 0,1 × 100.",
+         "answers": [
+          {
+           "content": "10",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "%"
+        },
+        {
+         "content": "Dans une autre préparation, on compte 500 cellules dont 25 en mitose. Quel est l'indice mitotique ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Écrire le rapport : 25 ÷ 500 = 0,05. Étape 4 — Calculer : 0,05 × 100 = 5, donc IM = 5 %. Pourquoi pas « 25 % » : 25 est le nombre de cellules en mitose, pas un pourcentage : il faut le rapporter au total de 500.",
+         "answers": [
+          {
+           "content": "5",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "%"
+        },
+        {
+         "content": "Sur un champ de 300 cellules, 276 sont en interphase. Quel est l'indice mitotique ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Compter : 300 cellules au total. Étape 2 — Repérer et compter : 300 − 276 = 24 cellules en mitose. Étape 3 — Écrire le rapport : 24 ÷ 300 = 0,08. Étape 4 — Calculer : 0,08 × 100 = 8, donc IM = 8 %. Pourquoi pas « 92 % » : 92 % est la part des cellules en interphase, pas celle des cellules en mitose.",
+         "answers": [
+          {
+           "content": "8",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "%"
+        },
+        {
+         "content": "Un méristème a un indice mitotique de 9 % et une zone d'allongement de 1 %. Que conclut-on ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 5 — Interpréter : 9 % est supérieur à 1 %, donc les cellules se divisent bien plus dans le méristème, qui fournit les nouvelles cellules. Pourquoi pas « Aucune cellule ne se divise dans la zone d'allongement » : un indice de 1 % n'est pas nul : quelques cellules de cette zone se divisent encore.",
+         "answers": [
+          {
+           "content": "Les cellules se divisent beaucoup plus dans le méristème",
+           "correct": true
+          },
+          {
+           "content": "Les cellules se divisent davantage dans la zone d'allongement",
+           "correct": false
+          },
+          {
+           "content": "Aucune cellule ne se divise dans la zone d'allongement",
+           "correct": false
+          },
+          {
+           "content": "Les deux zones se divisent autant",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un élève compte 20 cellules en mitose et 230 en interphase. Il calcule 20 ÷ 230 × 100, soit environ 8,7 %. Quelle est son erreur ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Compter : le total est 20 + 230 = 250. Étape 3 — Écrire le rapport : 20 ÷ 250. Étape 4 — Calculer : 20 ÷ 250 × 100 = 8 %, et non 8,7 %. Pourquoi pas « Il a oublié de multiplier par 100 » : il a bien multiplié par 100 ; l'erreur vient du dénominateur, qui doit être le total des cellules.",
+         "answers": [
+          {
+           "content": "Il divise par les cellules en interphase au lieu du total de 250",
+           "correct": true
+          },
+          {
+           "content": "Il a oublié de multiplier par 100",
+           "correct": false
+          },
+          {
+           "content": "Il aurait dû additionner les deux nombres",
+           "correct": false
+          },
+          {
+           "content": "Il n'y a aucune erreur",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Comptages et indice mitotique",
+       "statement": "Dans cet exercice, tu calcules un indice mitotique et tu vérifies ton vocabulaire sur les comptages de cellules.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Un champ de 300 cellules contient 18 cellules en mitose. Quel est l'indice mitotique ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Écrire le rapport : 18 ÷ 300 = 0,06. Étape 4 — Calculer : 0,06 × 100 = 6, donc IM = 6 %. Pourquoi pas « 18 % » : c'est le nombre de cellules en mitose, qui n'a pas été rapporté au total de 300.",
+         "answers": [
+          {
+           "content": "6",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "%"
+        },
+        {
+         "content": "L'indice mitotique s'exprime en ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 4 — Calculer : on multiplie le rapport par 100, ce qui donne une valeur en pourcentage. Pourquoi pas « centimètres » : l'indice est un rapport entre deux nombres de cellules, sans longueur.",
+         "answers": [
+          {
+           "content": "pourcentage",
+           "correct": true
+          },
+          {
+           "content": "pourcentages",
+           "correct": true
+          },
+          {
+           "content": "%",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un indice mitotique de 0 % signifie qu'aucune cellule comptée n'est en mitose.",
+         "question_type": "true_false",
+         "explanation": "Étape 4 — Calculer : 0 ÷ total × 100 = 0 %. Étape 5 — Interpréter : aucune cellule du champ n'est en mitose. Pourquoi pas « Faux » : l'indice nul vient d'un numérateur nul, donc de l'absence de cellules en mitose dans le champ.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pour calculer l'indice mitotique, on divise le nombre de cellules en mitose par le nombre de cellules ___ comptées.",
+         "question_type": "select",
+         "explanation": "Étape 3 — Écrire le rapport : le dénominateur est le total des cellules comptées, en interphase comme en mitose. Pourquoi pas « en interphase » : ce serait ignorer les cellules en mitose, qui font partie du total.",
+         "answers": [
+          {
+           "content": "au total",
+           "correct": true
+          },
+          {
+           "content": "en interphase",
+           "correct": false
+          },
+          {
+           "content": "en prophase",
+           "correct": false
+          },
+          {
+           "content": "en télophase",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles cellules comptent parmi les cellules en mitose ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 2 — Repérer et compter : une cellule est en mitose si elle est en prophase, métaphase, anaphase ou télophase. Pourquoi pas « Une cellule en interphase » : l'interphase précède la mitose et ne s'y compte pas.",
+         "answers": [
+          {
+           "content": "Une cellule en métaphase",
+           "correct": true
+          },
+          {
+           "content": "Une cellule en télophase",
+           "correct": true
+          },
+          {
+           "content": "Une cellule en interphase",
+           "correct": false
+          },
+          {
+           "content": "Une cellule à noyau arrondi avec un nucléole visible",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les étapes du calcul de l'indice mitotique.",
+         "question_type": "ordering",
+         "explanation": "Étapes 1 à 5 : Compter le total, repérer et compter les cellules en mitose, écrire le rapport, calculer en multipliant par 100, interpréter par comparaison. Pourquoi pas « Multiplier par 100 » avant « Diviser par le total » : il faut d'abord former le rapport avant de le convertir en pourcentage.",
+         "answers": [
+          {
+           "content": "Compter toutes les cellules du champ"
+          },
+          {
+           "content": "Compter les cellules en mitose"
+          },
+          {
+           "content": "Diviser le nombre de cellules en mitose par le total"
+          },
+          {
+           "content": "Multiplier le rapport par 100"
+          },
+          {
+           "content": "Comparer avec une autre zone"
+          }
+         ]
+        }
+       ],
+       "hint": "Le total contient toutes les cellules du champ, et on multiplie le rapport par 100."
+      }
+     ]
+    },
+    {
+     "name": "Le rôle de la division cellulaire : croissance et renouvellement",
+     "remember": "La division d'une cellule (mitose puis cytodiérèse) produit deux cellules filles identiques à la cellule mère. Elle joue deux rôles. La **croissance** : un organisme grandit parce que ses cellules se multiplient, puis s'allongent. Dans une racine, les cellules du méristème se divisent, puis les cellules formées s'allongent dans la zone d'allongement : la racine s'enfonce dans le sol. Le **renouvellement** : des cellules s'usent ou meurent sans cesse, par exemple à la surface de la peau ; elles sont remplacées par de nouvelles cellules formées par division, et le nombre de cellules reste à peu près constant. La division sert aussi à la **réparation** : sur les bords d'une plaie, les cellules se divisent pour combler la blessure.",
+     "method": [
+      "Repérer le tissu ou l'organe étudié et dire si ses cellules se divisent beaucoup ou peu.",
+      "Comparer le nombre de cellules avant et après : il augmente, ou il reste constant malgré les pertes.",
+      "Relier : chaque mitose donne deux cellules filles, qui s'ajoutent aux autres ou qui remplacent celles qui sont perdues.",
+      "Conclure : croissance si le nombre de cellules augmente, renouvellement s'il reste constant."
+     ],
+     "example": {
+      "statement": "Chaque jour, des cellules mortes se détachent de la surface de la peau. Pourtant l'épaisseur de la peau reste la même. Au microscope, on voit des cellules en mitose dans la couche profonde de l'épiderme. Quel est le rôle de ces divisions ?",
+      "steps": [
+       "Repérer : le tissu est l'épiderme, la couche superficielle de la peau ; ses cellules profondes se divisent.",
+       "Comparer : des cellules sont perdues en surface chaque jour, mais l'épaisseur de la peau ne change pas, donc le nombre de cellules reste constant.",
+       "Relier : chaque mitose donne deux cellules filles qui remplacent les cellules mortes détachées.",
+       "Conclure : le nombre de cellules reste constant, donc ces divisions assurent le renouvellement de la peau, et non sa croissance."
+      ]
+     },
+     "pitfall": "Ne crois pas que des cellules qui se divisent beaucoup font toujours grandir un tissu. Contre-exemple : si une zone de peau perd 500 cellules par jour et en forme 500 par division, son nombre reste constant : c'est du renouvellement, pas de la croissance. N'oublie pas non plus que, dans une racine, la croissance vient à la fois de la multiplication des cellules et de leur allongement.",
+     "figure": "indice-zones",
+     "practice": {
+      "statement": "Tu t'entraînes à distinguer croissance, renouvellement et réparation à partir de situations simples.",
+      "questions": [
+       {
+        "content": "Les cellules du méristème d'une racine de maïs se divisent beaucoup et la racine s'allonge. Quel rôle joue la division ici ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Repérer : le méristème se divise beaucoup. Étape 2 — Comparer : le nombre de cellules augmente. Étape 4 — Conclure : c'est la croissance. Pourquoi pas « Le renouvellement de cellules usées » : aucune cellule n'est perdue ici : le nombre augmente au lieu de rester constant.",
+        "answers": [
+         {
+          "content": "La croissance",
+          "correct": true
+         },
+         {
+          "content": "Le renouvellement de cellules usées",
+          "correct": false
+         },
+         {
+          "content": "La réparation d'une blessure",
+          "correct": false
+         },
+         {
+          "content": "La protection contre les microbes",
+          "correct": false
+         }
+        ],
+        "hint": "Le nombre de cellules augmente-t-il ?"
+       },
+       {
+        "content": "Dans un tissu qui se renouvelle, le nombre de cellules augmente sans cesse.",
+        "question_type": "true_false",
+        "explanation": "Étape 2 — Comparer : dans un tissu qui se renouvelle, les cellules perdues sont remplacées, donc le nombre reste constant. Étape 4 — Conclure : c'est du renouvellement. Pourquoi pas « Vrai » : l'augmentation continue du nombre de cellules est le signe d'une croissance, pas d'un renouvellement.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": false
+         },
+         {
+          "content": "Faux",
+          "correct": true
+         }
+        ],
+        "hint": "Relis l'étape 2 de la méthode."
+       },
+       {
+        "content": "Quand le nombre de cellules reste constant malgré les pertes, la division assure le ___ du tissu.",
+        "question_type": "fill_blank",
+        "explanation": "Étape 4 — Conclure : nombre de cellules constant malgré les pertes, c'est le renouvellement. Pourquoi pas « croissance » : la croissance suppose que le nombre de cellules augmente.",
+        "answers": [
+         {
+          "content": "renouvellement",
+          "correct": true
+         }
+        ],
+        "hint": "Le mot commence par « renou… »."
+       },
+       {
+        "content": "Un tissu perd 120 cellules par jour. Combien de nouvelles cellules doivent apparaître chaque jour pour que le nombre reste constant ?",
+        "question_type": "numeric",
+        "explanation": "Étape 2 — Comparer : le nombre doit rester constant. Étape 3 — Relier : les divisions doivent remplacer les 120 cellules perdues. Étape 4 — Conclure : il faut 120 nouvelles cellules, soit un renouvellement. Pourquoi pas « 240 » : on compterait deux fois les cellules perdues, alors que seules 120 cellules sont à remplacer.",
+        "answers": [
+         {
+          "content": "120",
+          "correct": true
+         }
+        ],
+        "tolerance": 0,
+        "unit": "cellules",
+        "hint": "Autant de cellules apparues que de cellules perdues."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Croissance ou renouvellement ?",
+       "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche à des situations de la vie courante.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Une racine de manioc passe de 3 cm à 6 cm en cinq jours ; le méristème a un indice mitotique de 9 %. Quel rôle joue la division ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : le méristème se divise beaucoup. Étape 2 — Comparer : la racine s'allonge, le nombre de cellules augmente. Étape 4 — Conclure : c'est la croissance. Pourquoi pas « Aucun rôle, car l'indice est faible » : 9 % est un indice élevé pour un tissu : il montre une zone très active.",
+         "answers": [
+          {
+           "content": "La croissance",
+           "correct": true
+          },
+          {
+           "content": "Le renouvellement",
+           "correct": false
+          },
+          {
+           "content": "La réparation d'une blessure",
+           "correct": false
+          },
+          {
+           "content": "Aucun rôle, car l'indice est faible",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Chez un adulte, la couche superficielle de la peau perd des cellules chaque jour, mais son épaisseur ne change pas. Quel est le rôle des mitoses profondes ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Comparer : des cellules sont perdues et l'épaisseur reste constante. Étape 3 — Relier : les cellules filles remplacent les cellules perdues. Étape 4 — Conclure : renouvellement. Pourquoi pas « La croissance de la peau » : la peau n'épaissit pas : le nombre de cellules reste constant.",
+         "answers": [
+          {
+           "content": "Le renouvellement",
+           "correct": true
+          },
+          {
+           "content": "La croissance de la peau",
+           "correct": false
+          },
+          {
+           "content": "La réparation d'une plaie",
+           "correct": false
+          },
+          {
+           "content": "La fabrication de nouvelles couches de peau",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une plaie légère se referme parce que les cellules des bords se divisent.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Repérer : les cellules des bords de la plaie se divisent. Étape 3 — Relier : leurs cellules filles comblent la blessure. Étape 4 — Conclure : c'est de la réparation. Pourquoi pas « Faux » : la plaie ne se referme pas par simple étirement : de nouvelles cellules sont nécessaires.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un tissu en croissance compte 2 000 cellules. En une journée, chaque cellule se divise une fois. Combien de cellules compte-t-il à la fin de la journée ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Relier : chaque mitose donne deux cellules filles, donc le nombre double. Étape 4 — Conclure : 2 000 × 2 = 4 000 cellules. Pourquoi pas « 2 001 » : on n'ajouterait qu'une cellule, alors que chaque cellule mère donne deux filles.",
+         "answers": [
+          {
+           "content": "4000",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "cellules"
+        },
+        {
+         "content": "Un élève affirme : « Si les cellules d'un tissu se divisent beaucoup, le tissu grandit forcément. » Pourquoi cette affirmation peut-elle être fausse ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Comparer : on regarde si le nombre de cellules augmente ou reste constant. Étape 4 — Conclure : s'il reste constant, c'est du renouvellement, même avec beaucoup de mitoses. Pourquoi pas « Une mitose ne forme qu'une seule cellule fille » : une mitose suivie de la cytodiérèse forme bien deux cellules filles.",
+         "answers": [
+          {
+           "content": "Si les cellules perdues sont aussitôt remplacées, le nombre reste constant",
+           "correct": true
+          },
+          {
+           "content": "La mitose ne produit jamais de nouvelles cellules",
+           "correct": false
+          },
+          {
+           "content": "Les cellules filles ne ressemblent pas à la cellule mère",
+           "correct": false
+          },
+          {
+           "content": "Une mitose ne forme qu'une seule cellule fille",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Le rôle de la division dans l'organisme",
+       "statement": "Dans cet exercice, tu relies des situations au rôle de la division cellulaire : croissance, renouvellement ou réparation.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Relie chaque situation à son rôle.",
+         "question_type": "matching",
+         "explanation": "Étape 2 — Comparer puis Étape 4 — Conclure : le nombre augmente pour la racine (croissance), reste constant pour la peau (renouvellement), et revient à l'état initial pour la plaie (réparation). Pourquoi pas « Croissance » relié à « Les cellules mortes de la peau sont remplacées » : la peau garde le même nombre de cellules : elle ne grandit pas.",
+         "answers": [
+          {
+           "content": "Une racine de maïs s'enfonce dans le sol",
+           "match": "Croissance"
+          },
+          {
+           "content": "Les cellules mortes de la peau sont remplacées",
+           "match": "Renouvellement"
+          },
+          {
+           "content": "Une plaie du genou se referme",
+           "match": "Réparation"
+          }
+         ]
+        },
+        {
+         "content": "La division d'une cellule mère donne ___ cellules filles identiques.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Relier : chaque mitose suivie de la cytodiérèse donne deux cellules filles identiques à la cellule mère. Pourquoi pas « quatre » : quatre cellules supposeraient deux divisions successives.",
+         "answers": [
+          {
+           "content": "deux",
+           "correct": true
+          },
+          {
+           "content": "2",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Les cellules du méristème se divisent, puis les nouvelles cellules ___ dans la zone d'allongement.",
+         "question_type": "select",
+         "explanation": "Étape 3 — Relier : les cellules filles s'ajoutent aux autres, puis s'allongent, ce qui fait grandir la racine. Étape 4 — Conclure : croissance par multiplication puis allongement. Pourquoi pas « produisent des poils absorbants » : les poils apparaissent plus haut, dans la zone pilifère, après l'allongement.",
+         "answers": [
+          {
+           "content": "s'allongent",
+           "correct": true
+          },
+          {
+           "content": "produisent des poils absorbants",
+           "correct": false
+          },
+          {
+           "content": "forment la coiffe",
+           "correct": false
+          },
+          {
+           "content": "se divisent plus vite",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans un tissu qui se renouvelle, le nombre de cellules reste à peu près constant.",
+         "question_type": "true_false",
+         "explanation": "Étape 2 — Comparer : les cellules perdues sont remplacées par des cellules nouvelles. Étape 4 — Conclure : le nombre reste constant. Pourquoi pas « Faux » : le nombre ne diminue pas, puisque la division compense les pertes.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quels exemples relèvent du renouvellement ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 2 — Comparer et Étape 4 — Conclure : il y a renouvellement quand le nombre de cellules reste constant malgré les pertes. Pourquoi pas « Un enfant qui grandit de 6 cm en un an » : un enfant qui grandit voit le nombre de ses cellules augmenter : c'est de la croissance.",
+         "answers": [
+          {
+           "content": "Les cellules de la surface de la peau remplacées chaque jour",
+           "correct": true
+          },
+          {
+           "content": "Les cellules usées de la muqueuse du tube digestif remplacées",
+           "correct": true
+          },
+          {
+           "content": "Une racine d'oignon qui s'allonge de 2 cm en quatre jours",
+           "correct": false
+          },
+          {
+           "content": "Un enfant qui grandit de 6 cm en un an",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une racine a un indice mitotique de 8 % dans le méristème, 1 % dans la zone d'allongement et 0 % dans la zone pilifère. Quelle zone a le plus de divisions ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : on compare les trois indices. Étape 2 — Comparer : 8 % est le plus grand. Étape 4 — Conclure : le méristème se divise le plus. Pourquoi pas « La zone pilifère » : son indice est nul : aucune cellule n'y est en mitose dans les comptages.",
+         "answers": [
+          {
+           "content": "Le méristème",
+           "correct": true
+          },
+          {
+           "content": "La zone d'allongement",
+           "correct": false
+          },
+          {
+           "content": "La zone pilifère",
+           "correct": false
+          },
+          {
+           "content": "Les trois zones à égalité",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Compare toujours le nombre de cellules avant et après : il augmente (croissance) ou reste constant (renouvellement)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "title": "Les racines de maïs du jardin scolaire",
+     "statement": "Au jardin scolaire d'un lycée, des élèves font germer des grains de maïs, puis préparent une lame avec l'extrémité d'une racine, colorée à l'orcéine acétique, pour chercher des cellules en division (situation fictive).",
+     "exercise_type": "fixation",
+     "figure": null,
+     "questions": [
+      {
+       "content": "Quelle partie de la racine les élèves doivent-ils prélever ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Prélever l'extrémité de la racine, derrière la coiffe, car le méristème s'y trouve. 2. Colorer, écraser et observer ensuite. Pourquoi pas « La zone couverte de poils absorbants » : cette zone absorbe l'eau et ses cellules ne se divisent presque plus.",
+       "answers": [
+        {
+         "content": "Quelques millimètres de la pointe, derrière la coiffe",
+         "correct": true
+        },
+        {
+         "content": "La zone couverte de poils absorbants",
+         "correct": false
+        },
+        {
+         "content": "La coiffe seule",
+         "correct": false
+        },
+        {
+         "content": "Un fragment du grain de maïs",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Remets dans l'ordre le protocole des élèves.",
+       "question_type": "ordering",
+       "explanation": "Méthode : 1. Prélever. 2. Colorer. 3. Écraser et observer, du plus petit objectif au plus fort. 4. Repérer et conclure : chercher les chromosomes colorés visibles. Pourquoi pas « Observer » avant « Colorer » : sans colorant, les chromosomes sont presque invisibles et la recherche des divisions échoue.",
+       "answers": [
+        {
+         "content": "Prélever l'extrémité de la racine"
+        },
+        {
+         "content": "Colorer les chromosomes à l'orcéine acétique"
+        },
+        {
+         "content": "Écraser doucement sous la lamelle"
+        },
+        {
+         "content": "Observer du plus petit objectif au plus fort"
+        },
+        {
+         "content": "Repérer les cellules en division"
+        }
+       ]
+      },
+      {
+       "content": "Une cellule est dessinée avec une longueur de 24 mm à un grossissement total de ×400. Quelle est sa taille réelle, en micromètres ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Mesurer la cellule sur le dessin : 24 mm. 2. Diviser par le grossissement : 24 ÷ 400 = 0,06 mm. 3. Convertir : 0,06 × 1 000 = 60 µm. Pourquoi pas « 9 600 µm » : multiplier par le grossissement donnerait une cellule plus grande que son dessin, ce qui est impossible.",
+       "answers": [
+        {
+         "content": "60",
+         "correct": true
+        }
+       ],
+       "tolerance": 0,
+       "unit": "µm"
+      },
+      {
+       "content": "Choisis les deux observations qui montrent une cellule en division.",
+       "question_type": "multiple_correct_2",
+       "explanation": "Méthode : 1. Observer le noyau et les chromosomes. 2. Une cellule est en division si ses chromosomes colorés sont visibles ; leur disposition précise la phase. Pourquoi pas « Un noyau arrondi, coloré, délimité par une enveloppe » : un noyau délimité par son enveloppe est en interphase, même bien coloré.",
+       "answers": [
+        {
+         "content": "Des chromosomes colorés alignés au milieu de la cellule",
+         "correct": true
+        },
+        {
+         "content": "Deux lots de chromosomes colorés aux extrémités d'une cellule",
+         "correct": true
+        },
+        {
+         "content": "Un noyau arrondi, coloré, délimité par une enveloppe",
+         "correct": false
+        },
+        {
+         "content": "Une cellule allongée au noyau clair, sans chromosomes visibles",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Les élèves trouvent beaucoup de cellules en division dans cette préparation. Que peuvent-ils conclure ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Repérer d'où vient le fragment : l'extrémité de la racine. 2. Conclure : la division a lieu dans le méristème. Pourquoi pas « Le colorant a fait diviser les cellules » : le colorant teinte les chromosomes d'une préparation fixée ; il ne déclenche aucune division.",
+       "answers": [
+        {
+         "content": "Les divisions ont lieu dans le méristème, à l'extrémité de la racine",
+         "correct": true
+        },
+        {
+         "content": "Toutes les cellules de la racine se divisent",
+         "correct": false
+        },
+        {
+         "content": "Les divisions ont lieu dans la zone pilifère",
+         "correct": false
+        },
+        {
+         "content": "Le colorant a fait diviser les cellules",
+         "correct": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Cinq cellules à reconnaître",
+     "statement": "Un élève décrit cinq cellules d'un méristème de racine d'oignon observées au microscope. Pour chacune, tu dois reconnaître la phase du cycle cellulaire (descriptions fictives).",
+     "exercise_type": "fixation",
+     "figure": null,
+     "questions": [
+      {
+       "content": "Cellule 1 : noyau arrondi, délimité par une enveloppe, chromosomes invisibles. Quelle période est-ce ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Observer le noyau : délimité, chromosomes invisibles. 2. Nommer : interphase. 3. Situer : avant la mitose. Pourquoi pas « La prophase » : en prophase, l'enveloppe disparaît et les chromosomes deviennent visibles.",
+       "answers": [
+        {
+         "content": "L'interphase",
+         "correct": true
+        },
+        {
+         "content": "La prophase",
+         "correct": false
+        },
+        {
+         "content": "L'anaphase",
+         "correct": false
+        },
+        {
+         "content": "La télophase",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Cellule 2 : l'enveloppe du noyau a disparu, des chromosomes courts et épais sont dispersés, le fuseau se forme. Quelle phase est-ce ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Observer : plus d'enveloppe. 2. Repérer : chromosomes condensés, non alignés. 3. Nommer : prophase. Pourquoi pas « La métaphase » : en métaphase, les chromosomes seraient alignés au milieu de la cellule.",
+       "answers": [
+        {
+         "content": "La prophase",
+         "correct": true
+        },
+        {
+         "content": "La métaphase",
+         "correct": false
+        },
+        {
+         "content": "L'anaphase",
+         "correct": false
+        },
+        {
+         "content": "L'interphase",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Cellule 3 : les chromatides de chaque chromosome sont séparées et se dirigent vers les deux extrémités de la cellule. Quelle phase est-ce ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Observer : pas d'enveloppe. 2. Repérer : chromatides séparées en migration. 3. Nommer : anaphase. Pourquoi pas « La télophase » : en télophase, les chromatides sont arrivées aux pôles et les noyaux se reforment.",
+       "answers": [
+        {
+         "content": "L'anaphase",
+         "correct": true
+        },
+        {
+         "content": "La métaphase",
+         "correct": false
+        },
+        {
+         "content": "La télophase",
+         "correct": false
+        },
+        {
+         "content": "La prophase",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Cellule 4 : deux noyaux entourés d'une enveloppe ; une paroi se construit au milieu de la cellule. Quelle phase est-ce ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Observer : deux noyaux. 2. Nommer : télophase. 3. Conclure : une cellule végétale se coupe en construisant une paroi au milieu. Pourquoi pas « avec étranglement » : l'étranglement est propre à la cellule animale, alors que cette cellule est entourée d'une paroi.",
+       "answers": [
+        {
+         "content": "La télophase, avec cytodiérèse par construction d'une paroi",
+         "correct": true
+        },
+        {
+         "content": "La métaphase, avec étranglement",
+         "correct": false
+        },
+        {
+         "content": "L'anaphase, avec étranglement",
+         "correct": false
+        },
+        {
+         "content": "L'interphase, sans division",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Cellule 5 : remets dans l'ordre les quatre phases pour décrire l'ensemble de la mitose.",
+       "question_type": "ordering",
+       "explanation": "Méthode : 1. Prophase : chromosomes visibles, fuseau. 2. Métaphase : alignement. 3. Anaphase : migration des chromatides. 4. Télophase : deux noyaux. Pourquoi pas « Anaphase » avant « Métaphase » : les chromatides ne se séparent qu'après l'alignement des chromosomes.",
+       "answers": [
+        {
+         "content": "Prophase"
+        },
+        {
+         "content": "Métaphase"
+        },
+        {
+         "content": "Anaphase"
+        },
+        {
+         "content": "Télophase"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Trois zones d'une racine de manioc",
+     "statement": "Un élève compte des cellules dans trois zones d'une racine de manioc. Zone A (méristème) : 500 cellules dont 45 en mitose. Zone B (zone d'allongement) : 400 cellules dont 8 en mitose. Zone C (zone pilifère) : 300 cellules, aucune en mitose (comptages fictifs).",
+     "exercise_type": "evaluation",
+     "figure": null,
+     "questions": [
+      {
+       "content": "Quel est l'indice mitotique de la zone A, 500 cellules dont 45 en mitose ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Compter : 500 cellules. 2. Compter les cellules en mitose : 45. 3. Écrire le rapport : 45 ÷ 500 = 0,09. 4. Calculer : 0,09 × 100 = 9, donc IM = 9 %. Pourquoi pas « 45 % » : c'est le nombre de cellules en mitose, qui n'a pas été rapporté au total de 500.",
+       "answers": [
+        {
+         "content": "9",
+         "correct": true
+        }
+       ],
+       "tolerance": 0,
+       "unit": "%"
+      },
+      {
+       "content": "Quel est l'indice mitotique de la zone B, 400 cellules dont 8 en mitose ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Compter : 400 cellules. 2. Compter : 8 en mitose. 3. Rapport : 8 ÷ 400 = 0,02. 4. Calculer : 0,02 × 100 = 2, donc IM = 2 %. Pourquoi pas « 8 % » : 8 est le nombre de cellules en mitose, pas un pourcentage.",
+       "answers": [
+        {
+         "content": "2",
+         "correct": true
+        }
+       ],
+       "tolerance": 0,
+       "unit": "%"
+      },
+      {
+       "content": "Quel est l'indice mitotique de la zone C, 300 cellules dont aucune en mitose ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Compter : 300 cellules. 2. Compter : 0 en mitose. 3. Rapport : 0 ÷ 300 = 0. 4. Calculer : 0 × 100 = 0, donc IM = 0 %. Pourquoi pas « 100 % » : 100 % supposerait que toutes les cellules sont en mitose, ce qui est faux ici.",
+       "answers": [
+        {
+         "content": "0",
+         "correct": true
+        }
+       ],
+       "tolerance": 0,
+       "unit": "%"
+      },
+      {
+       "content": "Quelle zone fournit le plus de nouvelles cellules à la racine ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Comparer les indices : 9 %, 2 % et 0 %. 2. Interpréter : l'indice le plus élevé indique la zone où les cellules se divisent le plus. Pourquoi pas « La zone C, la zone pilifère » : son indice est nul : elle ne fabrique pas de nouvelles cellules dans ce comptage.",
+       "answers": [
+        {
+         "content": "La zone A, le méristème",
+         "correct": true
+        },
+        {
+         "content": "La zone B, la zone d'allongement",
+         "correct": false
+        },
+        {
+         "content": "La zone C, la zone pilifère",
+         "correct": false
+        },
+        {
+         "content": "Les trois zones autant",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Dans la zone B, comment les cellules formées par le méristème font-elles grandir la racine ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Repérer : la zone B est la zone d'allongement. 2. Relier : les cellules filles du méristème s'allongent. 3. Conclure : la racine s'allonge par multiplication puis allongement des cellules. Pourquoi pas « En se divisant en quatre cellules » : la mitose donne deux cellules filles, jamais quatre à la fois, et l'allongement n'est pas une division.",
+       "answers": [
+        {
+         "content": "En s'allongeant",
+         "correct": true
+        },
+        {
+         "content": "En se divisant en quatre cellules",
+         "correct": false
+        },
+        {
+         "content": "En construisant une coiffe",
+         "correct": false
+        },
+        {
+         "content": "En perdant leur paroi",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "La croissance de cette racine s'explique par les divisions du méristème puis par l'allongement des cellules formées.",
+       "question_type": "true_false",
+       "explanation": "Méthode : 1. Repérer le méristème, indice de 9 %. 2. Comparer : le nombre de cellules augmente. 3. Conclure : croissance, avec multiplication puis allongement. Pourquoi pas « Faux » : la division seule ne suffit pas : les cellules formées doivent aussi s'allonger.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": true
+        },
+        {
+         "content": "Faux",
+         "correct": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "De la division au renouvellement de la peau",
+     "statement": "Aya observe un méristème de racine de haricot et lit un article sur la peau. Dans son champ, elle compte 320 cellules dont 24 en mitose (comptage fictif). L'article dit que, chaque jour, des cellules de la surface de la peau meurent mais que l'épaisseur de la peau reste la même.",
+     "exercise_type": "evaluation",
+     "figure": null,
+     "questions": [
+      {
+       "content": "Remets dans l'ordre les périodes du cycle cellulaire qu'Aya peut observer dans une cellule qui se divise.",
+       "question_type": "ordering",
+       "explanation": "Méthode : 1. Observer le noyau. 2. Situer : l'interphase précède la mitose. 3. Dans la mitose : prophase, métaphase, anaphase, télophase. Pourquoi pas « Télophase » avant « Anaphase » : les deux noyaux ne se reforment qu'après la migration des chromatides.",
+       "answers": [
+        {
+         "content": "Interphase"
+        },
+        {
+         "content": "Prophase"
+        },
+        {
+         "content": "Métaphase"
+        },
+        {
+         "content": "Anaphase"
+        },
+        {
+         "content": "Télophase"
+        }
+       ]
+      },
+      {
+       "content": "Quel est l'indice mitotique de son champ : 320 cellules dont 24 en mitose ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Compter : 320 cellules. 2. Compter : 24 en mitose. 3. Rapport : 24 ÷ 320 = 0,075. 4. Calculer : 0,075 × 100 = 7,5, donc IM = 7,5 %. Pourquoi pas « 24 % » : 24 est le nombre de cellules en mitose, qui n'a pas été rapporté au total de 320.",
+       "answers": [
+        {
+         "content": "7,5",
+         "correct": true
+        }
+       ],
+       "tolerance": 0,
+       "unit": "%"
+      },
+      {
+       "content": "Une cellule du champ d'Aya est une cellule végétale en fin de division. Comment son cytoplasme se coupe-t-il en deux ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Observer : télophase, deux noyaux. 2. Conclure : la cellule végétale bâtit une nouvelle paroi au milieu (phragmoplaste). Pourquoi pas « La cellule s'étrangle au milieu » : c'est la cytodiérèse d'une cellule animale, dépourvue de paroi rigide.",
+       "answers": [
+        {
+         "content": "Une paroi se construit au milieu de la cellule",
+         "correct": true
+        },
+        {
+         "content": "La cellule s'étrangle au milieu",
+         "correct": false
+        },
+        {
+         "content": "Le noyau se divise sans que le cytoplasme change",
+         "correct": false
+        },
+        {
+         "content": "La paroi disparaît complètement",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Quel rôle les divisions jouent-elles dans la peau, d'après l'article ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Repérer le tissu : la peau. 2. Comparer : cellules perdues, épaisseur constante donc nombre constant. 3. Relier : les cellules filles remplacent les cellules mortes. 4. Conclure : renouvellement. Pourquoi pas « La croissance : la peau devient plus épaisse chaque jour » : l'épaisseur de la peau ne change pas : le nombre de cellules reste constant.",
+       "answers": [
+        {
+         "content": "Le renouvellement : elles remplacent les cellules mortes de la surface",
+         "correct": true
+        },
+        {
+         "content": "La croissance : la peau devient plus épaisse chaque jour",
+         "correct": false
+        },
+        {
+         "content": "La disparition de la peau",
+         "correct": false
+        },
+        {
+         "content": "La production de cellules sans noyau",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Si une zone perd 500 cellules par jour et en forme 500 par division, son nombre de cellules augmente.",
+       "question_type": "true_false",
+       "explanation": "Méthode : 1. Comparer : 500 formées moins 500 perdues = 0. 2. Conclure : le nombre reste constant, c'est du renouvellement. Pourquoi pas « Vrai » : il n'y a croissance que si le nombre de cellules formées dépasse celui des cellules perdues.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": false
+        },
+        {
+         "content": "Faux",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Quelles affirmations sur les cellules filles d'une mitose sont justes ?",
+       "question_type": "multiple_correct_2",
+       "explanation": "Méthode : 1. Rappeler : la mitose répartit les chromosomes en deux lots identiques. 2. La cytodiérèse coupe la cellule en deux. Pourquoi pas « Elles sont au nombre de quatre » : quatre cellules supposeraient deux divisions successives.",
+       "answers": [
+        {
+         "content": "Elles sont au nombre de deux",
+         "correct": true
+        },
+        {
+         "content": "Elles sont identiques à la cellule mère",
+         "correct": true
+        },
+        {
+         "content": "Elles sont au nombre de quatre",
+         "correct": false
+        },
+        {
+         "content": "Elles diffèrent de la cellule mère par leurs chromosomes",
+         "correct": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "subjects": [
+    {
+     "title": "Sujet 1 · Les savoirs de base sur la division cellulaire",
+     "notions": "Mise en évidence de la division dans le méristème d'une racine ; cycle cellulaire (interphase et mitose) ; phases de la mitose et cytodiérèse ; indice mitotique ; rôle de la division dans la croissance et le renouvellement.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Dans cet exercice, tu retrouves le protocole qui met en évidence la division cellulaire dans une racine.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Où les cellules d'une racine d'oignon se divisent-elles le plus ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Prélever l'extrémité de la racine, derrière la coiffe. 2. Observer : les cellules en division y sont nombreuses, c'est le méristème. Pourquoi pas « Dans la zone pilifère » : cette zone absorbe l'eau ; ses cellules ne se divisent presque plus.",
+         "answers": [
+          {
+           "content": "Dans le méristème, derrière la coiffe",
+           "correct": true
+          },
+          {
+           "content": "Dans la coiffe seule",
+           "correct": false
+          },
+          {
+           "content": "Dans la zone pilifère",
+           "correct": false
+          },
+          {
+           "content": "Partout dans la racine, au même rythme",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le colorant (orcéine acétique) met en évidence les ___ des cellules.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Colorer le fragment avec l'orcéine acétique. 2. Elle teinte les chromosomes, qu'on peut alors repérer au microscope. Pourquoi pas « vacuoles » : le colorant n'a pas pour but de teinter les poches de la cellule.",
+         "answers": [
+          {
+           "content": "chromosomes",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les gestes du protocole.",
+         "question_type": "ordering",
+         "explanation": "Méthode : 1. Prélever. 2. Colorer. 3. Écraser et observer au microscope, du plus petit objectif au plus fort. Pourquoi pas « Observer » avant « Colorer » : sans colorant, les chromosomes sont presque invisibles.",
+         "answers": [
+          {
+           "content": "Prélever l'extrémité de la racine"
+          },
+          {
+           "content": "Colorer les chromosomes"
+          },
+          {
+           "content": "Écraser sous la lamelle"
+          },
+          {
+           "content": "Observer du plus petit objectif au plus fort"
+          }
+         ]
+        },
+        {
+         "content": "Une cellule en division se reconnaît à ses chromosomes colorés et visibles.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Observer le noyau et les chromosomes. 2. Conclure : des chromosomes colorés visibles signalent une cellule en division. Pourquoi pas « Faux » : les chromosomes ne sont pas visibles en interphase, où le noyau est arrondi.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un champ montre 80 cellules, dont 72 à noyau arrondi. Combien de cellules ont des chromosomes visibles ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Repérer : les noyaux arrondis sont en interphase, soit 72. 2. Calculer : 80 − 72 = 8 cellules aux chromosomes visibles. Pourquoi pas « 72 » : ce sont les cellules au repos, pas celles qui se divisent.",
+         "answers": [
+          {
+           "content": "8",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "cellules"
+        }
+       ],
+       "hint": "Pense au tissu de la pointe de la racine et à ce que le colorant fait voir."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Dans cet exercice, tu situes l'interphase et la mitose dans le cycle cellulaire.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Quelle période du cycle cellulaire est la plus longue ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Situer : le cycle comprend l'interphase, la mitose et la cytodiérèse. 2. Comparer les durées : l'interphase occupe la plus grande partie du cycle. Pourquoi pas « La mitose » : elle est visible mais courte : sur une lame, peu de cellules sont en mitose.",
+         "answers": [
+          {
+           "content": "L'interphase",
+           "correct": true
+          },
+          {
+           "content": "La mitose",
+           "correct": false
+          },
+          {
+           "content": "La prophase",
+           "correct": false
+          },
+          {
+           "content": "La cytodiérèse",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La mitose comprend quatre phases.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Rappeler : prophase, métaphase, anaphase et télophase. 2. Conclure : quatre phases. Pourquoi pas « Faux » : l'interphase n'est pas une phase de la mitose : elle la précède.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pendant l'interphase, le noyau est entouré d'une ___ nucléaire.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Observer le noyau en interphase : il est délimité. 2. Nommer ce qui le délimite : l'enveloppe nucléaire. Pourquoi pas « paroi » : la paroi entoure la cellule végétale, pas le noyau.",
+         "answers": [
+          {
+           "content": "enveloppe",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelles propriétés décrivent une cellule en interphase ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Observer le noyau : délimité. 2. Repérer les chromosomes : invisibles. Pourquoi pas « Ses chromosomes sont alignés au milieu » : l'alignement est un événement de la métaphase, donc de la mitose.",
+         "answers": [
+          {
+           "content": "Son noyau est délimité par une enveloppe",
+           "correct": true
+          },
+          {
+           "content": "Ses chromosomes ne sont pas visibles",
+           "correct": true
+          },
+          {
+           "content": "Ses chromosomes sont alignés au milieu",
+           "correct": false
+          },
+          {
+           "content": "Son fuseau sépare les chromatides",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque terme à sa définition.",
+         "question_type": "matching",
+         "explanation": "Méthode : 1. Situer chaque terme dans le cycle. 2. Associer la définition : interphase, mitose puis cytodiérèse font partie du cycle. Pourquoi pas « Mitose » relié à « Division du cytoplasme » : la division du cytoplasme est la cytodiérèse, qui suit la mitose.",
+         "answers": [
+          {
+           "content": "Interphase",
+           "match": "Période la plus longue, noyau délimité"
+          },
+          {
+           "content": "Mitose",
+           "match": "Division du noyau en quatre phases"
+          },
+          {
+           "content": "Cytodiérèse",
+           "match": "Division du cytoplasme"
+          },
+          {
+           "content": "Cycle cellulaire",
+           "match": "Suite des étapes entre deux divisions"
+          }
+         ]
+        }
+       ],
+       "hint": "L'interphase est longue, la mitose est courte."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Dans cet exercice, tu reconnais les phases de la mitose et leurs événements.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Les chromosomes sont alignés au milieu de la cellule, dans la plaque équatoriale. Quelle phase est-ce ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Observer : pas de noyau délimité. 2. Repérer : chromosomes alignés. 3. Nommer : métaphase. Pourquoi pas « L'anaphase » : en anaphase, les chromatides sont séparées et migrent vers les pôles.",
+         "answers": [
+          {
+           "content": "La métaphase",
+           "correct": true
+          },
+          {
+           "content": "La prophase",
+           "correct": false
+          },
+          {
+           "content": "L'anaphase",
+           "correct": false
+          },
+          {
+           "content": "La télophase",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les deux chromatides de chaque chromosome migrent vers les pôles opposés. Quelle phase est-ce ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer : chromatides séparées. 2. Nommer : anaphase. Pourquoi pas « La métaphase » : en métaphase, les chromatides sont encore unies et alignées.",
+         "answers": [
+          {
+           "content": "L'anaphase",
+           "correct": true
+          },
+          {
+           "content": "La métaphase",
+           "correct": false
+          },
+          {
+           "content": "La prophase",
+           "correct": false
+          },
+          {
+           "content": "L'interphase",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les quatre phases de la mitose.",
+         "question_type": "ordering",
+         "explanation": "Méthode : 1. Prophase : chromosomes visibles. 2. Métaphase : alignement. 3. Anaphase : migration. 4. Télophase : deux noyaux. Pourquoi pas « Télophase » avant « Anaphase » : les noyaux ne se reforment qu'une fois les chromatides arrivées aux pôles.",
+         "answers": [
+          {
+           "content": "Prophase"
+          },
+          {
+           "content": "Métaphase"
+          },
+          {
+           "content": "Anaphase"
+          },
+          {
+           "content": "Télophase"
+          }
+         ]
+        },
+        {
+         "content": "Pendant la ___, l'enveloppe du noyau disparaît et le fuseau se forme.",
+         "question_type": "select",
+         "explanation": "Méthode : 1. Observer le noyau : l'enveloppe disparaît. 2. Nommer : la prophase marque le début de la mitose. Pourquoi pas « télophase » : en télophase, l'enveloppe se reforme au lieu de disparaître.",
+         "answers": [
+          {
+           "content": "prophase",
+           "correct": true
+          },
+          {
+           "content": "métaphase",
+           "correct": false
+          },
+          {
+           "content": "anaphase",
+           "correct": false
+          },
+          {
+           "content": "télophase",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "En télophase, deux noyaux se reforment.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Repérer : deux lots de chromatides aux pôles. 2. Conclure : une enveloppe se reforme autour de chaque lot, donc deux noyaux. Pourquoi pas « Faux » : c'est en prophase, au contraire, que l'enveloppe disparaît.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Chez une cellule animale, comment le cytoplasme se divise-t-il ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Situer : cytodiérèse. 2. Conclure : la membrane de la cellule animale se pince au milieu. Pourquoi pas « Par construction d'un phragmoplaste » : le phragmoplaste construit une paroi, ce qui caractérise la cellule végétale.",
+         "answers": [
+          {
+           "content": "Par étranglement",
+           "correct": true
+          },
+          {
+           "content": "Par construction d'un phragmoplaste",
+           "correct": false
+          },
+          {
+           "content": "Par disparition du fuseau seul",
+           "correct": false
+          },
+          {
+           "content": "Par éclatement du noyau",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Chromosomes alignés : métaphase. Chromatides en migration : anaphase."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Dans cet exercice, tu calcules des indices mitotiques et tu précises le rôle de la division.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Sur 200 cellules comptées, 16 sont en mitose. Quel est l'indice mitotique ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter : 200 cellules. 2. Compter : 16 en mitose. 3. Rapport : 16 ÷ 200 = 0,08. 4. Calculer : 0,08 × 100 = 8, donc IM = 8 %. Pourquoi pas « 16 % » : c'est le nombre de cellules en mitose, sans division par le total.",
+         "answers": [
+          {
+           "content": "8",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "%"
+        },
+        {
+         "content": "Sur 500 cellules comptées, 50 sont en mitose. Quel est l'indice mitotique ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter : 500. 2. Compter : 50. 3. Rapport : 50 ÷ 500 = 0,1. 4. Calculer : 0,1 × 100 = 10, donc IM = 10 %. Pourquoi pas « 1 % » : 0,1 s'écrit 10 % : il faut multiplier par 100 et non par 10.",
+         "answers": [
+          {
+           "content": "10",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "%"
+        },
+        {
+         "content": "Quelle division remplace les cellules mortes de la peau ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer le tissu : la peau. 2. Comparer : cellules perdues, nombre constant. 3. Relier : les cellules filles remplacent les mortes. 4. Conclure : renouvellement. Pourquoi pas « La croissance » : le nombre de cellules ne s'accroît pas dans ce cas.",
+         "answers": [
+          {
+           "content": "Le renouvellement",
+           "correct": true
+          },
+          {
+           "content": "La croissance",
+           "correct": false
+          },
+          {
+           "content": "La fabrication d'énergie",
+           "correct": false
+          },
+          {
+           "content": "La protection contre le soleil",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "En fin de division, une cellule mère donne deux cellules filles identiques.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Rappeler : la mitose répartit les chromosomes en deux lots identiques. 2. La cytodiérèse coupe la cellule : deux cellules filles identiques. Pourquoi pas « Faux » : il n'y a pas quatre cellules, ni des cellules différentes de la cellule mère.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans quelle zone d'une racine la division est-elle la plus fréquente ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Comparer les zones. 2. Conclure : le méristème, juste derrière la coiffe, a l'indice mitotique le plus élevé. Pourquoi pas « La zone d'allongement » : les cellules s'y allongent surtout, elles ne s'y divisent presque plus.",
+         "answers": [
+          {
+           "content": "Le méristème",
+           "correct": true
+          },
+          {
+           "content": "La zone pilifère",
+           "correct": false
+          },
+          {
+           "content": "La zone d'allongement",
+           "correct": false
+          },
+          {
+           "content": "Le collet",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "IM = cellules en mitose ÷ total × 100."
+      }
+     ]
+    },
+    {
+     "title": "Sujet 2 · La division cellulaire dans la vie courante",
+     "notions": "Situations ivoiriennes : oignon du marché de Bouaké, plaie après un match de football, racine de maïs près de Korhogo, coup de soleil à Grand-Bassam ; préparation, réparation, croissance, renouvellement.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Une élève de Bouaké met un oignon acheté au marché sur un verre d'eau. Quand les racines poussent, elle prélève 3 mm de l'extrémité d'une racine et prépare une lame colorée à l'orcéine (situation fictive).",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Quelle partie de la racine prélève-t-elle ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Prélever l'extrémité de la racine, derrière la coiffe : le méristème. 2. C'est là que les cellules se divisent. Pourquoi pas « Un morceau pris au milieu de la racine » : les cellules du milieu de la racine se divisent peu et on y voit rarement des chromosomes.",
+         "answers": [
+          {
+           "content": "Les 3 mm de l'extrémité, derrière la coiffe",
+           "correct": true
+          },
+          {
+           "content": "Un morceau pris au milieu de la racine",
+           "correct": false
+          },
+          {
+           "content": "Le bulbe de l'oignon",
+           "correct": false
+          },
+          {
+           "content": "La zone couverte de poils absorbants",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi écrase-t-elle doucement le fragment sous la lamelle ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Colorer. 2. Écraser : on étale les cellules en une seule couche pour les voir une à une. 3. Observer. Pourquoi pas « Pour faire diviser les cellules » : l'écrasement ne déclenche rien : il étale les cellules.",
+         "answers": [
+          {
+           "content": "Pour étaler les cellules en une seule couche",
+           "correct": true
+          },
+          {
+           "content": "Pour faire diviser les cellules",
+           "correct": false
+          },
+          {
+           "content": "Pour faire éclater tous les noyaux",
+           "correct": false
+          },
+          {
+           "content": "Pour enlever le colorant",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "L'élève utilise un objectif ×40 et un oculaire ×10. Quel est le grossissement total ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Repérer les deux grossissements. 2. Calculer : 40 × 10 = 400. Pourquoi pas « 50 » : on aurait additionné les grossissements au lieu de les multiplier.",
+         "answers": [
+          {
+           "content": "400",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "×"
+        },
+        {
+         "content": "Parmi ces cellules observées, lesquelles sont en division ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Observer le noyau. 2. Une cellule est en division si ses chromosomes colorés sont visibles. Pourquoi pas « Une cellule au noyau arrondi coloré, délimité par une enveloppe » : ce noyau délimité est celui d'une cellule en interphase.",
+         "answers": [
+          {
+           "content": "Une cellule aux chromosomes colorés alignés au milieu",
+           "correct": true
+          },
+          {
+           "content": "Une cellule avec deux lots de chromosomes colorés aux extrémités",
+           "correct": true
+          },
+          {
+           "content": "Une cellule au noyau arrondi coloré, délimité par une enveloppe",
+           "correct": false
+          },
+          {
+           "content": "Une cellule au noyau clair et arrondi, sans chromosomes visibles",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les cellules de la lame sont figées : on voit chacune à un seul instant.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Écraser et observer une préparation fixée. 2. Conclure : on voit des cellules à des stades différents, chacune figée. Pourquoi pas « Faux » : la lame ne montre pas une division en direct, seulement des images fixes.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Pense à la zone qui se divise et à ce qu'on voit en interphase."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Pendant un match de football dans son quartier, un élève tombe et s'écorche le genou. Huit jours plus tard, la plaie est refermée (situation fictive).",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Pourquoi la plaie se referme-t-elle ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer : les cellules des bords se divisent. 2. Relier : leurs cellules filles comblent la plaie. 3. Conclure : réparation. Pourquoi pas « La peau s'étire seulement » : un simple étirement ne fabrique pas les cellules manquantes.",
+         "answers": [
+          {
+           "content": "Les cellules des bords se divisent et comblent la blessure",
+           "correct": true
+          },
+          {
+           "content": "Les cellules mortes redeviennent vivantes sans division",
+           "correct": false
+          },
+          {
+           "content": "La peau s'étire seulement",
+           "correct": false
+          },
+          {
+           "content": "Les cellules sortent du corps",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Chaque mitose donne deux cellules filles identiques à la cellule mère.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Rappeler : la mitose répartit les chromosomes en deux lots identiques. 2. La cytodiérèse sépare les deux cellules. Pourquoi pas « Faux » : les cellules filles ne diffèrent pas de la cellule mère.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule du bord de la plaie se divise, puis chacune de ses filles se divise, puis encore une fois. Combien de cellules obtient-on après ces trois divisions successives ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Relier : chaque division double le nombre de cellules. 2. Calculer : 1 → 2 → 4 → 8. Pourquoi pas « 6 » : on aurait ajouté 2 cellules par division, alors que le nombre double à chaque fois.",
+         "answers": [
+          {
+           "content": "8",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "cellules"
+        },
+        {
+         "content": "Quel est le rôle des divisions dans cette situation ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer : plaie, cellules perdues. 2. Comparer : le nombre revient à son niveau. 3. Conclure : réparation. Pourquoi pas « Faire grandir le genou » : le genou ne grandit pas : on remplace seulement ce qui a été perdu.",
+         "answers": [
+          {
+           "content": "Remplacer les cellules perdues lors de la blessure : la réparation",
+           "correct": true
+          },
+          {
+           "content": "Faire grandir le genou",
+           "correct": false
+          },
+          {
+           "content": "Ajouter des chromosomes dans chaque cellule",
+           "correct": false
+          },
+          {
+           "content": "Éviter toute mitose pendant la guérison",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les événements de la guérison.",
+         "question_type": "ordering",
+         "explanation": "Méthode : 1. Repérer : division des cellules des bords. 2. Comparer : le nombre augmente. 3. Relier : la peau se reconstitue. 4. Conclure : plaie refermée. Pourquoi pas « La plaie est refermée » en premier : la plaie ne peut se refermer qu'après la multiplication des cellules.",
+         "answers": [
+          {
+           "content": "Les cellules du bord de la plaie se divisent"
+          },
+          {
+           "content": "Le nombre de cellules augmente à nouveau"
+          },
+          {
+           "content": "La couche de peau se reconstitue"
+          },
+          {
+           "content": "La plaie est refermée"
+          }
+         ]
+        }
+       ],
+       "hint": "Une mitose donne deux cellules filles identiques."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Dans un champ près de Korhogo, un agriculteur observe une plantule de maïs dont la racine passe de 4 cm à 8 cm en une semaine. Un élève prépare une lame du méristème et compte des cellules (comptages fictifs).",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Quel rôle les divisions jouent-elles dans l'allongement de cette racine ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer : le méristème se divise. 2. Comparer : la racine passe de 4 cm à 8 cm. 3. Conclure : croissance. Pourquoi pas « Le renouvellement » : aucune perte de cellules n'est signalée : le nombre augmente.",
+         "answers": [
+          {
+           "content": "La croissance",
+           "correct": true
+          },
+          {
+           "content": "Le renouvellement",
+           "correct": false
+          },
+          {
+           "content": "La réparation d'une plaie",
+           "correct": false
+          },
+          {
+           "content": "La protection de la racine",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans le méristème, l'élève compte 300 cellules dont 27 en mitose. Quel est l'indice mitotique ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter : 300. 2. Compter : 27. 3. Rapport : 27 ÷ 300 = 0,09. 4. Calculer : 0,09 × 100 = 9, donc IM = 9 %. Pourquoi pas « 27 % » : c'est le nombre de cellules en mitose, sans division par le total.",
+         "answers": [
+          {
+           "content": "9",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "%"
+        },
+        {
+         "content": "Dans la zone d'allongement, l'indice mitotique est de 1 %. Que conclut-on par rapport au méristème ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Comparer : 1 % et 9 %. 2. Interpréter : l'indice faible indique peu de divisions. Pourquoi pas « Elles ne s'y divisent jamais » : un indice de 1 % n'est pas nul : quelques cellules s'y divisent encore.",
+         "answers": [
+          {
+           "content": "Les cellules s'y divisent beaucoup moins que dans le méristème",
+           "correct": true
+          },
+          {
+           "content": "Elles s'y divisent davantage",
+           "correct": false
+          },
+          {
+           "content": "Elles ne s'y divisent jamais",
+           "correct": false
+          },
+          {
+           "content": "Elles s'y divisent autant",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Après les divisions du méristème, les nouvelles cellules ___ dans la zone d'allongement.",
+         "question_type": "select",
+         "explanation": "Méthode : 1. Relier : les cellules filles s'ajoutent. 2. Elles s'allongent, ce qui fait grandir la racine. Pourquoi pas « forment la coiffe » : la coiffe est à la pointe, devant le méristème, et ne se forme pas dans cette zone.",
+         "answers": [
+          {
+           "content": "s'allongent",
+           "correct": true
+          },
+          {
+           "content": "produisent des poils absorbants",
+           "correct": false
+          },
+          {
+           "content": "forment la coiffe",
+           "correct": false
+          },
+          {
+           "content": "se colorent en rouge",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La racine s'allonge uniquement parce que les cellules grossissent, sans aucune division.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Repérer le méristème. 2. Conclure : la croissance vient de la multiplication des cellules puis de leur allongement. Pourquoi pas « Vrai » : sans divisions, la racine n'aurait pas de nouvelles cellules à allonger.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Compare les indices et pense au rôle de chaque zone."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Après une journée à la plage de Grand-Bassam, un élève a un coup de soleil : sa peau pèle et de petits morceaux de peau morte se détachent, mais l'épaisseur de sa peau reste la même (situation fictive).",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Pourquoi l'épaisseur de la peau reste-t-elle la même malgré les cellules mortes perdues ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer : la peau perd des cellules en surface. 2. Comparer : l'épaisseur est constante. 3. Relier : les cellules filles remplacent les cellules mortes. Pourquoi pas « La peau ne perd aucune cellule » : l'élève voit bien des morceaux de peau se détacher.",
+         "answers": [
+          {
+           "content": "Des divisions en profondeur remplacent les cellules perdues",
+           "correct": true
+          },
+          {
+           "content": "Les cellules mortes se recollent à la peau",
+           "correct": false
+          },
+          {
+           "content": "Les cellules de surface grossissent sans limite",
+           "correct": false
+          },
+          {
+           "content": "La peau ne perd aucune cellule",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans cette situation, le nombre de cellules de la peau reste à peu près constant.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Comparer : cellules perdues, épaisseur constante. 2. Conclure : le nombre reste constant. Pourquoi pas « Faux » : si le nombre augmentait, la peau deviendrait plus épaisse.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quel rôle de la division cette situation illustre-t-elle ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer le tissu : la peau. 2. Comparer : nombre constant. 3. Relier. 4. Conclure : renouvellement. Pourquoi pas « La croissance » : la peau n'épaissit pas.",
+         "answers": [
+          {
+           "content": "Le renouvellement",
+           "correct": true
+          },
+          {
+           "content": "La croissance",
+           "correct": false
+          },
+          {
+           "content": "La réparation d'un os",
+           "correct": false
+          },
+          {
+           "content": "La fabrication de poils absorbants",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les cellules perdues sont remplacées par des cellules nouvelles formées par ___ des cellules profondes.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Relier : une cellule mère donne deux cellules filles. 2. Nommer ce phénomène : la division, c'est-à-dire la mitose suivie de la cytodiérèse. Pourquoi pas « élongation » : l'allongement fait grandir une cellule, il n'en fabrique pas de nouvelle.",
+         "answers": [
+          {
+           "content": "division",
+           "correct": true
+          },
+          {
+           "content": "mitose",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Une zone de peau perd 500 cellules par jour. Combien de nouvelles cellules doivent apparaître chaque jour pour que le nombre reste constant ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Comparer : le nombre doit rester constant. 2. Relier : les divisions remplacent chaque cellule perdue. 3. Conclure : 500 nouvelles cellules. Pourquoi pas « 1 000 » : on compterait deux fois les cellules perdues.",
+         "answers": [
+          {
+           "content": "500",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "cellules"
+        },
+        {
+         "content": "Quelles situations relèvent du renouvellement ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Repérer. 2. Comparer : le nombre de cellules reste constant. 3. Conclure : renouvellement. Pourquoi pas « Un bébé qui prend 2 kg en trois mois » : un bébé qui grossit a un nombre de cellules qui augmente : c'est de la croissance.",
+         "answers": [
+          {
+           "content": "Les cellules usées de la peau remplacées chaque jour",
+           "correct": true
+          },
+          {
+           "content": "Les cellules de la muqueuse de l'intestin remplacées",
+           "correct": true
+          },
+          {
+           "content": "Un plant de maïs qui double de hauteur",
+           "correct": false
+          },
+          {
+           "content": "Un bébé qui prend 2 kg en trois mois",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Le nombre de cellules reste-t-il constant ?"
+      }
+     ]
+    },
+    {
+     "title": "Sujet 3 · Raisonner et justifier",
+     "notions": "Comparer des indices mitotiques, remettre des observations dans l'ordre, expliquer pourquoi l'interphase domine sur une lame, distinguer la cytodiérèse animale et végétale, tester une affirmation.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Un élève compte des cellules dans trois zones d'une racine. Zone A (méristème) : 400 cellules dont 36 en mitose. Zone B (zone d'allongement) : 300 cellules dont 6 en mitose. Zone C (zone pilifère) : 250 cellules dont aucune en mitose (comptages fictifs).",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Quel est l'indice mitotique de la zone A, 400 cellules dont 36 en mitose ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter : 400. 2. Compter : 36. 3. Rapport : 36 ÷ 400 = 0,09. 4. Calculer : 0,09 × 100 = 9, donc IM = 9 %. Pourquoi pas « 36 % » : c'est le nombre de cellules en mitose, sans division par le total.",
+         "answers": [
+          {
+           "content": "9",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "%"
+        },
+        {
+         "content": "Quel est l'indice mitotique de la zone B, 300 cellules dont 6 en mitose ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter : 300. 2. Compter : 6. 3. Rapport : 6 ÷ 300 = 0,02. 4. Calculer : 0,02 × 100 = 2, donc IM = 2 %. Pourquoi pas « 6 % » : 6 est le nombre de cellules en mitose, pas un pourcentage.",
+         "answers": [
+          {
+           "content": "2",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "%"
+        },
+        {
+         "content": "Quel est l'indice mitotique de la zone C, 250 cellules dont aucune en mitose ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter : 250. 2. Compter : 0. 3. Rapport : 0 ÷ 250 = 0. 4. Calculer : 0 × 100 = 0, donc IM = 0 %. Pourquoi pas « 100 % » : 100 % voudrait dire que toutes les cellules sont en mitose.",
+         "answers": [
+          {
+           "content": "0",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "%"
+        },
+        {
+         "content": "Quelle zone fournit le plus de nouvelles cellules ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Comparer : 9 %, 2 %, 0 %. 2. Interpréter : plus l'indice est élevé, plus la zone se divise. Pourquoi pas « La zone C » : son indice est nul : aucune cellule n'est en mitose dans le comptage.",
+         "answers": [
+          {
+           "content": "La zone A, le méristème",
+           "correct": true
+          },
+          {
+           "content": "La zone B",
+           "correct": false
+          },
+          {
+           "content": "La zone C",
+           "correct": false
+          },
+          {
+           "content": "Les trois zones autant",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Comment expliquer l'indice nul de la zone C ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer : 250 cellules comptées, aucune en mitose. 2. Interpréter : cette zone ne se divise pas dans le comptage. Pourquoi pas « Il n'y a aucune cellule dans cette zone » : 250 cellules ont bien été comptées dans cette zone.",
+         "answers": [
+          {
+           "content": "Ses cellules ne se divisent plus (ou presque plus)",
+           "correct": true
+          },
+          {
+           "content": "Il n'y a aucune cellule dans cette zone",
+           "correct": false
+          },
+          {
+           "content": "Toutes ses cellules sont mortes parce qu'elles sont en interphase",
+           "correct": false
+          },
+          {
+           "content": "Le colorant n'a coloré que cette zone",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un indice de 9 % signifie que 9 cellules sur 100 sont en mitose au moment de la fixation.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Rappeler : IM = cellules en mitose ÷ total × 100. 2. Conclure : 9 % veut dire 9 cellules sur 100. Pourquoi pas « Faux » : un pourcentage est bien un nombre de cellules pour 100 cellules comptées.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Calcule trois indices, puis compare-les."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Un élève dessine cinq cellules d'un méristème de racine d'oignon, qui sont les étapes d'une même division (descriptions fictives).",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Remets dans l'ordre ces observations, en partant de la cellule au repos.",
+         "question_type": "ordering",
+         "explanation": "Méthode : 1. Observer le noyau. 2. Repérer les chromosomes. 3. Nommer : interphase, prophase, métaphase, anaphase, télophase. 4. Situer dans le cycle. Pourquoi pas « Chromatides en migration » avant « Chromosomes alignés » : les chromatides ne migrent qu'après l'alignement des chromosomes.",
+         "answers": [
+          {
+           "content": "Noyau arrondi délimité, chromosomes invisibles"
+          },
+          {
+           "content": "Chromosomes condensés, enveloppe du noyau disparue"
+          },
+          {
+           "content": "Chromosomes alignés au milieu de la cellule"
+          },
+          {
+           "content": "Chromatides en migration vers les deux pôles"
+          },
+          {
+           "content": "Deux noyaux reformés et nouvelle paroi au milieu"
+          }
+         ]
+        },
+        {
+         "content": "Des chromosomes alignés au milieu, sans noyau délimité : quelle est la phase ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Observer : pas de noyau délimité. 2. Repérer : alignement. 3. Nommer : métaphase. Pourquoi pas « L'anaphase » : les chromatides ne sont pas encore séparées.",
+         "answers": [
+          {
+           "content": "La métaphase",
+           "correct": true
+          },
+          {
+           "content": "L'anaphase",
+           "correct": false
+          },
+          {
+           "content": "La télophase",
+           "correct": false
+          },
+          {
+           "content": "L'interphase",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi trouve-t-on bien plus de cellules en interphase qu'en mitose dans un méristème ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Situer : cycle, interphase puis mitose. 2. Comparer les durées : plus une période est longue, plus on y trouve de cellules. Pourquoi pas « Parce que le colorant détruit les cellules en mitose » : la préparation fige toutes les cellules, quelle que soit leur phase.",
+         "answers": [
+          {
+           "content": "Parce que l'interphase dure bien plus longtemps que la mitose",
+           "correct": true
+          },
+          {
+           "content": "Parce que le colorant détruit les cellules en mitose",
+           "correct": false
+          },
+          {
+           "content": "Parce que seule la zone d'allongement se divise",
+           "correct": false
+          },
+          {
+           "content": "Parce que l'interphase est la phase la plus longue de la mitose",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles informations montrent qu'une cellule est en anaphase ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Repérer. 2. Nommer : l'anaphase est la séparation puis la migration des chromatides. Pourquoi pas « Deux noyaux sont déjà reformés » : les noyaux se reforment à la télophase, après la migration.",
+         "answers": [
+          {
+           "content": "Les chromatides de chaque chromosome sont séparées",
+           "correct": true
+          },
+          {
+           "content": "Les deux lots de chromatides se dirigent vers des pôles opposés",
+           "correct": true
+          },
+          {
+           "content": "Les chromosomes sont alignés dans la plaque équatoriale",
+           "correct": false
+          },
+          {
+           "content": "Deux noyaux sont déjà reformés",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "À la fin de la télophase, chaque noyau reçoit un lot de chromatides identique à celui de l'autre.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Rappeler : la mitose répartit les chromosomes en deux lots identiques. 2. Conclure : deux noyaux identiques. Pourquoi pas « Faux » : la répartition des lots est égale et ne laisse aucun noyau différent.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Suis le noyau et les chromosomes, de la cellule au repos jusqu'aux deux cellules filles."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Un technicien observe la fin de la division de deux cellules : une cellule de racine d'oignon et une cellule de la peau d'un poisson (descriptions fictives).",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "La cellule A construit une nouvelle paroi au milieu, du centre vers l'extérieur. De quelle cellule s'agit-il ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Observer : télophase. 2. Conclure : une paroi qui se construit au milieu signale une cellule végétale. Pourquoi pas « D'une cellule animale » : la cellule animale n'a pas de paroi et se coupe par étranglement.",
+         "answers": [
+          {
+           "content": "D'une cellule végétale",
+           "correct": true
+          },
+          {
+           "content": "D'une cellule animale",
+           "correct": false
+          },
+          {
+           "content": "D'une cellule animale, car toutes les cellules construisent une paroi",
+           "correct": false
+          },
+          {
+           "content": "D'aucune cellule, car ce n'est pas une division",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La cellule B se pince au milieu comme un fil qu'on serre. De quelle cellule s'agit-il ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Observer : télophase. 2. Conclure : l'étranglement est propre à la cellule animale. Pourquoi pas « D'une cellule végétale » : la paroi rigide empêche la cellule végétale de se pincer.",
+         "answers": [
+          {
+           "content": "D'une cellule animale",
+           "correct": true
+          },
+          {
+           "content": "D'une cellule végétale",
+           "correct": false
+          },
+          {
+           "content": "D'une cellule végétale, qui a une paroi souple",
+           "correct": false
+          },
+          {
+           "content": "D'une cellule de racine d'oignon",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Chez la cellule végétale, la cytodiérèse se fait grâce à un ___ qui construit une nouvelle paroi.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Situer : télophase. 2. Conclure : le phragmoplaste construit la paroi au milieu de la cellule. Pourquoi pas « fuseau » : le fuseau sert à la migration des chromatides, pas à construire la paroi.",
+         "answers": [
+          {
+           "content": "phragmoplaste",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "La cellule végétale s'étrangle en son milieu comme la cellule animale.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Rappeler : cytodiérèse. 2. Conclure : la cellule végétale construit une paroi. Pourquoi pas « Vrai » : la paroi rigide ne permet pas de se pincer.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi une cellule végétale ne peut-elle pas se couper par étranglement ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Rappeler : paroi rigide autour de la cellule. 2. Conclure : on construit une nouvelle paroi pour séparer les deux cellules. Pourquoi pas « Parce qu'elle n'a pas de noyau » : la cellule végétale possède bien un noyau, qui se divise en mitose.",
+         "answers": [
+          {
+           "content": "Parce qu'elle est entourée d'une paroi rigide qu'il faut construire au milieu",
+           "correct": true
+          },
+          {
+           "content": "Parce qu'elle n'a pas de membrane",
+           "correct": false
+          },
+          {
+           "content": "Parce qu'elle n'a pas de noyau",
+           "correct": false
+          },
+          {
+           "content": "Parce qu'elle ne se divise pas",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Pense à la paroi de la cellule végétale."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Un élève affirme : « Toutes les cellules d'une racine se divisent en permanence. » Il compte dans le méristème 200 cellules dont 18 en mitose, et dans la zone pilifère 220 cellules dont aucune en mitose (comptages fictifs).",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Quel est l'indice mitotique du méristème, 200 cellules dont 18 en mitose ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter : 200. 2. Compter : 18. 3. Rapport : 18 ÷ 200 = 0,09. 4. Calculer : 0,09 × 100 = 9, donc IM = 9 %. Pourquoi pas « 18 % » : c'est le nombre de cellules en mitose, sans division par le total.",
+         "answers": [
+          {
+           "content": "9",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "%"
+        },
+        {
+         "content": "Quel est l'indice mitotique de la zone pilifère, 220 cellules dont aucune en mitose ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter : 220. 2. Compter : 0. 3. Rapport : 0 ÷ 220 = 0. 4. Calculer : 0 × 100 = 0, donc IM = 0 %. Pourquoi pas « 100 % » : 100 % voudrait dire que toutes les cellules sont en mitose.",
+         "answers": [
+          {
+           "content": "0",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "%"
+        },
+        {
+         "content": "Que montrent ces comptages à propos de l'affirmation de l'élève ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Comparer : 9 % et 0 %. 2. Interpréter : toutes les cellules ne se divisent pas, loin de là. Pourquoi pas « Elle est confirmée car 9 % n'est pas nul » : 9 % veut dire que 91 cellules sur 100 ne sont pas en mitose.",
+         "answers": [
+          {
+           "content": "Elle n'est pas confirmée : la zone pilifère n'a aucune cellule en mitose et le méristème seulement 9 %",
+           "correct": true
+          },
+          {
+           "content": "Elle est confirmée : toutes les zones ont des cellules",
+           "correct": false
+          },
+          {
+           "content": "Elle est confirmée car 9 % n'est pas nul",
+           "correct": false
+          },
+          {
+           "content": "On ne peut rien conclure sans compter les chromosomes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Même dans le méristème, que dire de la majorité des cellules au moment de l'observation ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Calculer : 100 − 9 = 91 % de cellules ne sont pas en mitose. 2. Conclure : elles sont en interphase. Pourquoi pas « Elles sont en métaphase » : la métaphase est une phase brève, donc peu de cellules s'y trouvent.",
+         "answers": [
+          {
+           "content": "Elles sont en interphase",
+           "correct": true
+          },
+          {
+           "content": "Elles sont en métaphase",
+           "correct": false
+          },
+          {
+           "content": "Elles sont en télophase",
+           "correct": false
+          },
+          {
+           "content": "Elles sont en train de s'étrangler",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Si un champ ne montre aucune cellule en mitose, on peut affirmer avec certitude que la zone ne se divise jamais.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Rappeler : la préparation est fixée et on n'observe qu'un champ à un instant. 2. Conclure : un seul champ ne prouve pas l'absence de division. Pourquoi pas « Vrai » : un comptage limité à un champ et à un instant ne couvre pas toute la zone ni tout le temps.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Calcule les deux indices avant de conclure."
+      }
+     ]
+    },
+    {
+     "title": "Sujet 4 · Bilan de la leçon",
+     "notions": "Toutes les notions : protocole d'observation, cycle et phases de la mitose, calcul de l'indice mitotique, rôle de la division.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Dans cet exercice, tu relis un protocole d'observation et tu lis une préparation.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Remets dans l'ordre le protocole complet.",
+         "question_type": "ordering",
+         "explanation": "Méthode : 1. Prélever. 2. Colorer. 3. Écraser et observer. 4. Repérer et conclure. Pourquoi pas « Colorer » après « Observer » : il faut colorer avant d'observer.",
+         "answers": [
+          {
+           "content": "Prélever l'extrémité de la racine"
+          },
+          {
+           "content": "Colorer les chromosomes"
+          },
+          {
+           "content": "Écraser sous la lamelle"
+          },
+          {
+           "content": "Observer du plus petit objectif au plus fort"
+          },
+          {
+           "content": "Repérer les cellules en division"
+          }
+         ]
+        },
+        {
+         "content": "Que doit-on voir pour affirmer qu'une cellule est en mitose ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Observer le noyau. 2. Repérer les chromosomes : visibles en mitose. Pourquoi pas « Une paroi autour de la cellule » : toute cellule végétale a une paroi, en division ou non.",
+         "answers": [
+          {
+           "content": "Des chromosomes colorés et visibles, sans noyau délimité",
+           "correct": true
+          },
+          {
+           "content": "Un noyau arrondi et coloré avec un nucléole",
+           "correct": false
+          },
+          {
+           "content": "Une grande vacuole",
+           "correct": false
+          },
+          {
+           "content": "Une paroi autour de la cellule",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule mesure 20 mm sur un dessin fait à un grossissement total de ×400. Quelle est sa taille réelle, en µm ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Mesurer : 20 mm. 2. Diviser : 20 ÷ 400 = 0,05 mm. 3. Convertir : 0,05 × 1 000 = 50 µm. Pourquoi pas « 8 000 µm » : multiplier donnerait une cellule plus grande que son dessin.",
+         "answers": [
+          {
+           "content": "50",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "µm"
+        },
+        {
+         "content": "Les cellules en division se trouvent surtout dans la zone pilifère.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Repérer : le méristème, derrière la coiffe. 2. Conclure : c'est lui qui se divise le plus. Pourquoi pas « Vrai » : la zone pilifère absorbe l'eau, ses cellules se divisent très peu.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "La zone de la racine où les cellules se divisent s'appelle le ___.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Situer la zone : derrière la coiffe. 2. Nommer : le méristème. Pourquoi pas « collet » : le collet est la limite entre la racine et la tige.",
+         "answers": [
+          {
+           "content": "méristème",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Pense aux étapes du protocole puis à ce qu'on voit dans chaque cellule."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Dans cet exercice, tu relies les phases de la mitose à leurs événements et à leur place dans le cycle.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Relie chaque phase à son événement.",
+         "question_type": "matching",
+         "explanation": "Méthode : 1. Nommer la phase. 2. Conclure sur son événement : condensation, alignement, séparation, reformation des noyaux. Pourquoi pas « Prophase » relié à « Les chromatides se séparent » : la séparation des chromatides appartient à l'anaphase.",
+         "answers": [
+          {
+           "content": "Prophase",
+           "match": "Les chromosomes deviennent visibles"
+          },
+          {
+           "content": "Métaphase",
+           "match": "Les chromosomes sont alignés au milieu"
+          },
+          {
+           "content": "Anaphase",
+           "match": "Les chromatides se séparent"
+          },
+          {
+           "content": "Télophase",
+           "match": "Deux noyaux se reforment"
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les périodes du cycle cellulaire.",
+         "question_type": "ordering",
+         "explanation": "Méthode : 1. Situer : l'interphase d'abord. 2. Puis les quatre phases de la mitose dans l'ordre. Pourquoi pas « Anaphase » avant « Prophase » : les chromatides ne se séparent qu'après la condensation et l'alignement.",
+         "answers": [
+          {
+           "content": "Interphase"
+          },
+          {
+           "content": "Prophase"
+          },
+          {
+           "content": "Métaphase"
+          },
+          {
+           "content": "Anaphase"
+          },
+          {
+           "content": "Télophase"
+          }
+         ]
+        },
+        {
+         "content": "Quel est le point commun de la prophase, de la métaphase, de l'anaphase et de la télophase ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Situer dans le cycle. 2. Conclure : ces quatre phases forment la mitose. Pourquoi pas « Ce sont des périodes de l'interphase » : l'interphase précède la mitose et n'en fait pas partie.",
+         "answers": [
+          {
+           "content": "Ce sont les quatre phases de la mitose",
+           "correct": true
+          },
+          {
+           "content": "Ce sont des périodes de l'interphase",
+           "correct": false
+          },
+          {
+           "content": "Ce sont des étapes de la cytodiérèse",
+           "correct": false
+          },
+          {
+           "content": "Ce sont des phases où le noyau est toujours délimité",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "À l'anaphase, les ___ de chaque chromosome se séparent.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Nommer la phase : anaphase. 2. Conclure : les deux chromatides se séparent. Pourquoi pas « noyaux » : les noyaux se reforment plus tard, à la télophase.",
+         "answers": [
+          {
+           "content": "chromatides",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "La mitose est ___ que l'interphase.",
+         "question_type": "select",
+         "explanation": "Méthode : 1. Situer. 2. Comparer : l'interphase est la période la plus longue. Pourquoi pas « plus longue » : c'est l'interphase qui occupe l'essentiel du cycle.",
+         "answers": [
+          {
+           "content": "plus courte",
+           "correct": true
+          },
+          {
+           "content": "plus longue",
+           "correct": false
+          },
+          {
+           "content": "deux fois plus longue",
+           "correct": false
+          },
+          {
+           "content": "aussi longue",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "En fin de télophase, le noyau est divisé en deux noyaux, avant la cytodiérèse.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Nommer : télophase. 2. Conclure : deux noyaux se forment, puis le cytoplasme se coupe en deux. Pourquoi pas « Faux » : la cytodiérèse suit la télophase et sépare les deux noyaux déjà formés.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Interphase, puis prophase, métaphase, anaphase, télophase."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Dans cet exercice, tu calcules des indices mitotiques à partir de comptages fictifs.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Un champ contient 350 cellules dont 28 en mitose. Quel est l'indice mitotique ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter : 350. 2. Compter : 28. 3. Rapport : 28 ÷ 350 = 0,08. 4. Calculer : 0,08 × 100 = 8, donc IM = 8 %. Pourquoi pas « 28 % » : c'est le nombre de cellules en mitose, sans division par le total.",
+         "answers": [
+          {
+           "content": "8",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "%"
+        },
+        {
+         "content": "Un champ contient 500 cellules dont 455 en interphase. Quel est l'indice mitotique ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter : 500. 2. Compter : 500 − 455 = 45 en mitose. 3. Rapport : 45 ÷ 500 = 0,09. 4. Calculer : 0,09 × 100 = 9, donc IM = 9 %. Pourquoi pas « 91 % » : 91 % est la part des cellules en interphase.",
+         "answers": [
+          {
+           "content": "9",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "%"
+        },
+        {
+         "content": "La zone X a un indice mitotique de 12 % et la zone Y de 2 %. Que conclut-on ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Comparer : 12 % et 2 %. 2. Interpréter : plus l'indice est élevé, plus la zone se divise. Pourquoi pas « Les cellules de Y se divisent davantage » : 2 % est plus petit que 12 %.",
+         "answers": [
+          {
+           "content": "Les cellules de X se divisent davantage",
+           "correct": true
+          },
+          {
+           "content": "Les cellules de Y se divisent davantage",
+           "correct": false
+          },
+          {
+           "content": "Les deux zones se divisent autant",
+           "correct": false
+          },
+          {
+           "content": "Les cellules de X ne se divisent pas",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi les cellules en interphase comptent-elles dans le total ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Compter toutes les cellules du champ. 2. Rapporter celles qui sont en mitose à ce total. Pourquoi pas « Parce qu'elles sont en mitose » : une cellule en interphase est au repos, elle n'est pas en mitose.",
+         "answers": [
+          {
+           "content": "Parce que l'indice mesure la part des cellules en mitose parmi toutes les cellules comptées",
+           "correct": true
+          },
+          {
+           "content": "Parce qu'elles sont en mitose",
+           "correct": false
+          },
+          {
+           "content": "Parce qu'on ne peut pas les distinguer des autres",
+           "correct": false
+          },
+          {
+           "content": "Parce qu'elles n'ont pas de noyau",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "L'indice mitotique peut dépasser 100 %.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Rappeler : cellules en mitose ÷ total ≤ 1. 2. Conclure : l'indice est compris entre 0 et 100 %. Pourquoi pas « Vrai » : les cellules en mitose font partie du total, elles ne peuvent pas être plus nombreuses que lui.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Le total contient toutes les cellules, et on multiplie par 100."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Dans cet exercice, tu précises le rôle de la division cellulaire dans l'organisme.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Un plant de tomate grandit, et le méristème de sa racine se divise beaucoup. Quel rôle joue la division ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer le méristème actif. 2. Comparer : le nombre de cellules augmente. 3. Conclure : croissance. Pourquoi pas « Le renouvellement » : le nombre de cellules augmente et ne reste pas constant.",
+         "answers": [
+          {
+           "content": "La croissance",
+           "correct": true
+          },
+          {
+           "content": "Le renouvellement",
+           "correct": false
+          },
+          {
+           "content": "La réparation d'une plaie",
+           "correct": false
+          },
+          {
+           "content": "La digestion",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Chaque jour, 200 cellules de la muqueuse de l'intestin meurent et 200 nouvelles se forment par division. Quel rôle joue la division ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Comparer : 200 perdues et 200 formées. 2. Conclure : nombre constant, donc renouvellement. Pourquoi pas « La croissance » : le nombre de cellules ne s'accroît pas.",
+         "answers": [
+          {
+           "content": "Le renouvellement",
+           "correct": true
+          },
+          {
+           "content": "La croissance",
+           "correct": false
+          },
+          {
+           "content": "La réparation d'un os",
+           "correct": false
+          },
+          {
+           "content": "La formation d'un nouvel organe",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles affirmations sur les cellules filles sont justes ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Rappeler : la mitose répartit les chromosomes en deux lots identiques. 2. Conclure : deux cellules filles identiques. Pourquoi pas « Elles sont au nombre de quatre » : quatre cellules supposeraient deux divisions successives.",
+         "answers": [
+          {
+           "content": "Elles sont identiques à la cellule mère",
+           "correct": true
+          },
+          {
+           "content": "Elles sont au nombre de deux",
+           "correct": true
+          },
+          {
+           "content": "Elles sont au nombre de quatre",
+           "correct": false
+          },
+          {
+           "content": "Elles diffèrent de la cellule mère par leur information génétique",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule se divise, puis ses deux filles se divisent aussi. Combien de cellules obtient-on ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Relier : chaque division double le nombre. 2. Calculer : 1 → 2 → 4. Pourquoi pas « 3 » : on aurait ajouté une seule cellule, alors que chaque cellule fille se divise en deux.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "cellules"
+        },
+        {
+         "content": "La croissance d'une racine s'explique par la division des cellules du méristème puis par l'allongement des cellules formées.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Repérer. 2. Comparer. 3. Conclure : multiplication puis allongement. Pourquoi pas « Faux » : la division seule ne fait pas grandir les cellules qu'elle produit.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Nombre de cellules qui augmente : croissance. Nombre constant : renouvellement."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3471 @@
+{
+ "format": "lnclass.course-tree",
+ "version": 3,
+ "courses": [
+  {
+   "name": "L'évolution de l'équipement chromosomique d'une cellule au cours de la mitose",
+   "subtitle": "Leçon 9 — progression DPFC 2026-2027",
+   "level_name": "2nde",
+   "series_name": "C",
+   "material_name": "SVT",
+   "theme": "teal",
+   "figures": [
+    {
+     "key": "chromosome-structure",
+     "kind": "diagram",
+     "description": "Schéma en arbre d'un chromosome à deux chromatides, observé en métaphase : le chromosome porte deux chromatides identiques, chacune contenant une molécule d'ADN, et un centromère, étranglement qui les relie. Le chromosome à une seule chromatide n'a pas encore été répliqué.",
+     "params": {
+      "layout": "tree",
+      "direction": "down",
+      "nodes": [
+       {
+        "id": "c",
+        "label": "Chromosome à 2 chromatides"
+       },
+       {
+        "id": "a",
+        "label": "Chromatide 1 : une molécule d'ADN"
+       },
+       {
+        "id": "b",
+        "label": "Chromatide 2 : copie identique"
+       },
+       {
+        "id": "m",
+        "label": "Centromère : relie les chromatides"
+       }
+      ],
+      "edges": [
+       {
+        "from": "c",
+        "to": "a"
+       },
+       {
+        "from": "c",
+        "to": "b"
+       },
+       {
+        "from": "c",
+        "to": "m"
+       }
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "caryotype-humain",
+     "kind": "diagram",
+     "description": "Schéma en arbre du caryotype d'une cellule humaine du corps : 46 chromosomes classés en 23 paires d'homologues, soit 22 paires de chromosomes ordinaires et une paire de chromosomes sexuels, XX chez la fille et XY chez le garçon. On lit 2n = 46 et n = 23 paires.",
+     "params": {
+      "layout": "tree",
+      "direction": "down",
+      "nodes": [
+       {
+        "id": "k",
+        "label": "Caryotype humain : 2n = 46"
+       },
+       {
+        "id": "o",
+        "label": "22 paires de chromosomes ordinaires"
+       },
+       {
+        "id": "s",
+        "label": "1 paire de chromosomes sexuels"
+       },
+       {
+        "id": "f",
+        "label": "XX : fille"
+       },
+       {
+        "id": "g",
+        "label": "XY : garçon"
+       }
+      ],
+      "edges": [
+       {
+        "from": "k",
+        "to": "o"
+       },
+       {
+        "from": "k",
+        "to": "s"
+       },
+       {
+        "from": "s",
+        "to": "f"
+       },
+       {
+        "from": "s",
+        "to": "g"
+       }
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "courbe-adn-cycle",
+     "kind": "stat_chart",
+     "description": "Courbe fictive de la quantité d'ADN par noyau, en unités arbitraires, au cours d'un cycle cellulaire : 2 en G1 et au début de la phase S, 3 au milieu de S, 4 en fin de S, en G2 et en métaphase, puis retour à 2 à la fin de l'anaphase et dans la cellule fille. La courbe monte pendant la réplication et redescend à la séparation des chromatides.",
+     "params": {
+      "chart": "line",
+      "series": [
+       2,
+       2,
+       3,
+       4,
+       4,
+       4,
+       2,
+       2
+      ],
+      "labels": [
+       "G1",
+       "Début de S",
+       "Milieu de S",
+       "Fin de S",
+       "G2",
+       "Métaphase",
+       "Fin d'anaphase",
+       "G1 (cellule fille)"
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "conservation-mitose",
+     "kind": "diagram",
+     "description": "Schéma fléché de la conservation de l'information génétique : une cellule mère à 46 chromosomes à une chromatide subit la réplication de l'ADN, puis ses chromosomes à deux chromatides se séparent en anaphase, et donnent deux cellules filles identiques à 46 chromosomes à une chromatide.",
+     "params": {
+      "layout": "flow",
+      "direction": "down",
+      "nodes": [
+       {
+        "id": "m",
+        "label": "Cellule mère : 46 chromosomes, ADN Q"
+       },
+       {
+        "id": "r",
+        "label": "Réplication (S) : 92 chromatides, ADN 2Q"
+       },
+       {
+        "id": "a",
+        "label": "Anaphase : les chromatides se séparent"
+       },
+       {
+        "id": "f",
+        "label": "2 cellules filles : 46 chromosomes, ADN Q"
+       }
+      ],
+      "edges": [
+       {
+        "from": "m",
+        "to": "r"
+       },
+       {
+        "from": "r",
+        "to": "a"
+       },
+       {
+        "from": "a",
+        "to": "f"
+       }
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "courbe-adn-mais",
+     "kind": "stat_chart",
+     "description": "Courbe fictive de la quantité d'ADN par noyau, en unités arbitraires, dans une cellule de racine de maïs : 4 en G1 et au début de la phase S, 6 au milieu de S, 8 en fin de S, en G2 et en métaphase, puis retour à 4 à la fin de l'anaphase et dans la cellule fille. La quantité double pendant la phase S puis revient à sa valeur de départ.",
+     "params": {
+      "chart": "line",
+      "series": [
+       4,
+       4,
+       6,
+       8,
+       8,
+       8,
+       4,
+       4
+      ],
+      "labels": [
+       "G1",
+       "Début de S",
+       "Milieu de S",
+       "Fin de S",
+       "G2",
+       "Métaphase",
+       "Fin d'anaphase",
+       "G1 (cellule fille)"
+      ]
+     },
+     "controls": []
+    }
+   ],
+   "notions": [
+    {
+     "name": "Décrire un chromosome et compter ses chromatides",
+     "remember": "Un **chromosome** est un bâtonnet fait d'**ADN**, visible au microscope seulement pendant la division de la cellule ; entre deux divisions, l'ADN est étalé en filaments fins, invisibles. Un chromosome peut avoir **une chromatide** (avant la réplication de l'ADN, ou juste après la séparation) ou **deux chromatides** identiques (après la réplication, jusqu'à l'anaphase). Les deux chromatides sont reliées par le **centromère**, un étranglement. Chaque chromatide contient une molécule d'ADN : un chromosome à deux chromatides a donc deux molécules d'ADN identiques.",
+     "method": [
+      "Repérer le chromosome : un bâtonnet visible pendant la division, fait d'ADN.",
+      "Localiser le centromère : l'étranglement qui relie les chromatides.",
+      "Compter les chromatides : une seule, ou deux chromatides identiques côte à côte.",
+      "Conclure : dire si l'ADN du chromosome a été répliqué (deux chromatides) ou non (une chromatide) et compter une molécule d'ADN par chromatide."
+     ],
+     "example": {
+      "statement": "Au microscope, une cellule en métaphase montre un chromosome en forme de X : deux bâtonnets identiques réunis par un étranglement. Décrire ce chromosome.",
+      "steps": [
+       "Repérer : le X est un chromosome, un bâtonnet d'ADN visible parce que la cellule est en division.",
+       "Localiser : l'étranglement au milieu du X est le centromère.",
+       "Compter : le X est formé de deux bâtonnets identiques, donc de deux chromatides.",
+       "Conclure : l'ADN a été répliqué ; le chromosome contient deux molécules d'ADN identiques, une par chromatide."
+      ]
+     },
+     "pitfall": "Ne confonds pas une chromatide et un chromosome. Un chromosome en X n'est pas « deux chromosomes » : c'est un seul chromosome à deux chromatides. Contre-exemple : une cellule qui compte 4 chromosomes en X a 4 chromosomes et 8 chromatides, pas 8 chromosomes. Pour ne pas te tromper, repère d'abord le centromère : tout ce qui est relié par lui forme un seul chromosome.",
+     "figure": "chromosome-structure",
+     "practice": {
+      "statement": "Tu t'entraînes à décrire un chromosome et à compter ses chromatides.",
+      "questions": [
+       {
+        "content": "Une cellule en métaphase compte 6 chromosomes en forme de X. Combien de chromatides compte-t-elle ?",
+        "question_type": "numeric",
+        "explanation": "Étape 3 — Compter les chromatides : chaque chromosome en X a 2 chromatides, donc 6 × 2 = 12 chromatides. Pourquoi pas « 6 » : on aurait compté les chromosomes au lieu des chromatides, alors que chaque X en contient deux.",
+        "answers": [
+         {
+          "content": "12",
+          "correct": true
+         }
+        ],
+        "tolerance": 0,
+        "hint": "Chaque X a deux chromatides."
+       },
+       {
+        "content": "Le centromère relie les deux chromatides d'un chromosome à deux chromatides.",
+        "question_type": "true_false",
+        "explanation": "Étape 2 — Localiser le centromère : c'est l'étranglement qui réunit les deux chromatides du chromosome. L'affirmation est donc vraie. Pourquoi pas « Faux » : le centromère n'est pas un organite à part : c'est la zone qui relie les chromatides.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": true
+         },
+         {
+          "content": "Faux",
+          "correct": false
+         }
+        ],
+        "hint": "Repense à l'étranglement du X."
+       },
+       {
+        "content": "Combien de molécules d'ADN contient un chromosome à une seule chromatide ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 4 — Conclure : une chromatide contient une molécule d'ADN, donc un chromosome à une chromatide en contient une. Pourquoi pas « Deux » : deux molécules d'ADN appartiennent à un chromosome qui a déjà été répliqué, avec deux chromatides.",
+        "answers": [
+         {
+          "content": "Une seule",
+          "correct": true
+         },
+         {
+          "content": "Deux",
+          "correct": false
+         },
+         {
+          "content": "Aucune",
+          "correct": false
+         },
+         {
+          "content": "Quatre",
+          "correct": false
+         }
+        ],
+        "hint": "Une chromatide, une molécule."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Reconnaître un chromosome et ses chromatides",
+       "statement": "Dans cet exercice, tu suis pas à pas la méthode de la fiche pour décrire des chromosomes observés pendant la division d'une cellule.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Un chromosome en forme de X est observé en métaphase. Combien de chromatides contient-il ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Compter les chromatides : le X est formé de deux bâtonnets identiques, donc de deux chromatides, reliées au centromère. Pourquoi pas « Une » : la chromatide est un seul des bâtonnets du X ; elle ne désigne pas le X entier.",
+         "answers": [
+          {
+           "content": "Deux",
+           "correct": true
+          },
+          {
+           "content": "Une",
+           "correct": false
+          },
+          {
+           "content": "Quatre",
+           "correct": false
+          },
+          {
+           "content": "Trois",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Comment s'appelle l'étranglement qui relie les deux chromatides d'un chromosome ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Localiser le centromère : l'étranglement qui relie les chromatides s'appelle le centromère. Pourquoi pas « Le fuseau de division » : le fuseau est un ensemble de filaments qui tirent les chromatides, il n'appartient pas au chromosome lui-même.",
+         "answers": [
+          {
+           "content": "Le centromère",
+           "correct": true
+          },
+          {
+           "content": "Le nucléole",
+           "correct": false
+          },
+          {
+           "content": "Le fuseau de division",
+           "correct": false
+          },
+          {
+           "content": "La membrane nucléaire",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un chromosome à deux chromatides contient deux molécules d'ADN identiques.",
+         "question_type": "true_false",
+         "explanation": "Étape 4 — Conclure : chaque chromatide contient une molécule d'ADN, et les deux chromatides sont des copies identiques après la réplication. L'affirmation est vraie. Pourquoi pas « Faux » : la réplication a justement fabriqué une copie de la molécule d'ADN, d'où deux molécules identiques.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un chromosome à deux chromatides apparaît après la ___ de l'ADN.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 4 — Conclure : l'ADN est copié en phase S ; le chromosome passe alors d'une à deux chromatides identiques, par réplication. Pourquoi pas « séparation » : la séparation des chromatides se produit plus tard, en anaphase, et fait revenir à une seule chromatide.",
+         "answers": [
+          {
+           "content": "réplication",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un chromosome ne comporte qu'une seule chromatide. Que peut-on dire de son ADN ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Compter les chromatides : une seule. Étape 4 — Conclure : une molécule d'ADN par chromatide, donc une molécule pour ce chromosome. Pourquoi pas « autant d'ADN qu'un chromosome à deux chromatides » : le chromosome répliqué a deux fois plus d'ADN que le chromosome non répliqué.",
+         "answers": [
+          {
+           "content": "Il contient une seule molécule d'ADN",
+           "correct": true
+          },
+          {
+           "content": "Il contient deux molécules d'ADN, comme tous les chromosomes",
+           "correct": false
+          },
+          {
+           "content": "Il ne contient pas d'ADN, car l'ADN est dans le centromère",
+           "correct": false
+          },
+          {
+           "content": "Il contient autant d'ADN qu'un chromosome à deux chromatides",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un chromosome en forme de X correspond à deux chromosomes.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Repérer le chromosome, puis Étape 2 — Localiser le centromère : tout ce qui est relié par lui forme un seul chromosome, ici à deux chromatides. L'affirmation est fausse. Pourquoi pas « Vrai » : on confond les deux chromatides avec deux chromosomes, alors qu'elles sont réunies par un même centromère.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Chromosome à une ou deux chromatides",
+       "statement": "Dans cet exercice, tu relies les mots du chromosome, tu complètes, tu ordonnes et tu calcules pour fixer la fiche.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Relie chaque terme à sa description.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Repérer le chromosome, Étape 2 — Localiser le centromère, Étape 3 — Compter les chromatides : chaque terme a sa description propre. Pourquoi pas relier « chromatide » à « bâtonnet d'ADN visible pendant la division » : c'est la définition du chromosome entier, dont la chromatide ne forme qu'une moitié après la réplication.",
+         "answers": [
+          {
+           "content": "Chromatide",
+           "match": "Un des deux bâtonnets identiques d'un chromosome répliqué"
+          },
+          {
+           "content": "Centromère",
+           "match": "Étranglement qui relie les chromatides"
+          },
+          {
+           "content": "Chromosome",
+           "match": "Bâtonnet d'ADN visible pendant la division"
+          },
+          {
+           "content": "Réplication",
+           "match": "Copie de l'ADN avant la division"
+          }
+         ]
+        },
+        {
+         "content": "Quelles affirmations décrivent un chromosome à deux chromatides ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 3 — Compter les chromatides : deux. Étape 4 — Conclure : la réplication a copié l'ADN, donc les chromatides sont identiques et portent la même information. Pourquoi pas « Il contient une seule molécule d'ADN » : chaque chromatide contient une molécule, donc ce chromosome en contient deux.",
+         "answers": [
+          {
+           "content": "Il apparaît après la réplication de l'ADN",
+           "correct": true
+          },
+          {
+           "content": "Ses deux chromatides portent la même information génétique",
+           "correct": true
+          },
+          {
+           "content": "Il est formé de deux chromosomes différents",
+           "correct": false
+          },
+          {
+           "content": "Il contient une seule molécule d'ADN",
+           "correct": false
+          },
+          {
+           "content": "Il n'existe que dans les cellules filles",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les deux chromatides d'un chromosome répliqué sont reliées au niveau du ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 2 — Localiser le centromère : l'étranglement qui relie les chromatides est le centromère. Pourquoi pas « noyau » : le noyau est l'organite qui renferme tous les chromosomes, il ne les relie pas entre eux.",
+         "answers": [
+          {
+           "content": "centromère",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Pendant l'interphase, les chromosomes sont visibles au microscope sous forme de bâtonnets.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Repérer le chromosome : il n'est visible comme bâtonnet que pendant la division. En interphase, l'ADN est étalé en filaments fins invisibles. L'affirmation est fausse. Pourquoi pas « Vrai » : les bâtonnets sont observés en prophase et en métaphase, pas entre deux divisions.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre la vie d'un chromosome au cours d'un cycle.",
+         "question_type": "ordering",
+         "explanation": "Étape 3 — Compter les chromatides : une, puis deux après la réplication, puis de nouveau une après la séparation en anaphase. Pourquoi pas placer la séparation avant la réplication : un chromosome ne peut pas se séparer en deux chromatides avant d'avoir copié son ADN.",
+         "answers": [
+          {
+           "content": "Chromosome à une chromatide, avant la phase S"
+          },
+          {
+           "content": "Réplication de l'ADN en phase S"
+          },
+          {
+           "content": "Chromosome à deux chromatides"
+          },
+          {
+           "content": "Séparation des chromatides en anaphase"
+          },
+          {
+           "content": "Chromosome à une chromatide dans la cellule fille"
+          }
+         ]
+        },
+        {
+         "content": "Une cellule contient 4 chromosomes à deux chromatides. Combien de chromatides compte-t-elle ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Compter les chromatides : chaque chromosome en a deux, donc 4 × 2 = 8 chromatides. Pourquoi pas « 4 » : 4 est le nombre de chromosomes ; on a oublié que chacun compte deux chromatides.",
+         "answers": [
+          {
+           "content": "8",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        }
+       ],
+       "hint": "Cherche d'abord le centromère, puis compte les chromatides qui lui sont reliées."
+      }
+     ]
+    },
+    {
+     "name": "Lire un caryotype et compter les chromosomes",
+     "remember": "Un **caryotype** est la photographie des chromosomes d'une cellule en division, classés **par paires** de chromosomes **homologues** (même taille, même forme, même position du centromère ; l'un vient du père, l'autre de la mère). Une cellule du corps a **2n chromosomes**, donc **n paires**. L'Homme a **2n = 46** : 23 paires, dont 22 paires de chromosomes ordinaires et une paire de chromosomes sexuels (XX chez la fille, XY chez le garçon). Le nombre de chromosomes est **caractéristique de l'espèce** : drosophile 2n = 8, petit pois 2n = 14, maïs 2n = 20. Il ne dépend pas de la taille de l'être vivant.",
+     "method": [
+      "Compter tous les chromosomes du caryotype.",
+      "Former les paires : associer les chromosomes de même taille et de même forme, les homologues.",
+      "Compter les paires : diviser le nombre de chromosomes par 2.",
+      "Conclure : écrire 2n = nombre de chromosomes et, si besoin, lire la paire de chromosomes sexuels."
+     ],
+     "example": {
+      "statement": "Le caryotype d'une cellule de la peau d'une fille montre 46 chromosomes, dont la dernière paire est formée de deux grands chromosomes X. Donner 2n et le nombre de paires.",
+      "steps": [
+       "Compter : le caryotype montre 46 chromosomes en tout.",
+       "Former les paires : on associe les chromosomes de même taille et de même forme, ce qui donne des paires d'homologues.",
+       "Compter les paires : 46 ÷ 2 = 23 paires.",
+       "Conclure : 2n = 46 ; la dernière paire est XX, donc le caryotype est celui d'une fille."
+      ]
+     },
+     "pitfall": "Ne confonds pas le nombre de chromosomes et le nombre de paires. 2n = 46 signifie 46 chromosomes, et non 46 paires. Contre-exemple : chez la drosophile, 2n = 8 donne 8 chromosomes, donc 4 paires, et non 8 paires. Pour t'en souvenir : le nombre de paires est toujours la moitié du nombre de chromosomes.",
+     "figure": "caryotype-humain",
+     "practice": {
+      "statement": "Tu t'entraînes à lire un caryotype et à compter les chromosomes.",
+      "questions": [
+       {
+        "content": "Chez le maïs, 2n = 20. Combien de paires de chromosomes une cellule du corps compte-t-elle ?",
+        "question_type": "numeric",
+        "explanation": "Étape 2 — Former les paires, puis Étape 3 — Compter les paires : 20 ÷ 2 = 10 paires. Pourquoi pas « 20 » : 20 est le nombre de chromosomes ; le nombre de paires est la moitié.",
+        "answers": [
+         {
+          "content": "10",
+          "correct": true
+         }
+        ],
+        "tolerance": 0,
+        "hint": "Divise par 2."
+       },
+       {
+        "content": "Remets dans l'ordre la lecture d'un caryotype.",
+        "question_type": "ordering",
+        "explanation": "Étape 1 — Compter, Étape 2 — Former les paires, Étape 3 — Compter les paires, Étape 4 — Conclure avec 2n. Pourquoi pas écrire 2n en premier : on ne connaît 2n qu'après avoir compté les chromosomes du caryotype.",
+        "answers": [
+         {
+          "content": "Compter tous les chromosomes"
+         },
+         {
+          "content": "Former les paires d'homologues"
+         },
+         {
+          "content": "Diviser le nombre de chromosomes par 2"
+         },
+         {
+          "content": "Écrire 2n"
+         }
+        ],
+        "hint": "On compte avant de conclure."
+       },
+       {
+        "content": "Dans l'écriture 2n = 46, le nombre 46 désigne le nombre de chromosomes.",
+        "question_type": "true_false",
+        "explanation": "Étape 4 — Conclure : 2n désigne le nombre total de chromosomes de la cellule, ici 46, et n = 23 est le nombre de paires. Pourquoi pas « Faux » : 46 ne peut pas être un nombre de paires, car 46 paires feraient 92 chromosomes.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": true
+         },
+         {
+          "content": "Faux",
+          "correct": false
+         }
+        ],
+        "hint": "2n est un total."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Lire des caryotypes",
+       "statement": "Dans cet exercice, tu appliques la méthode de la fiche à des caryotypes de l'Homme, de la drosophile et du petit pois.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Un caryotype humain montre 46 chromosomes. Combien de paires d'homologues contient-il ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Compter : 46 chromosomes. Étape 3 — Compter les paires : 46 ÷ 2 = 23 paires. Pourquoi pas « 46 » : 46 est le nombre de chromosomes ; chaque paire en réunit deux.",
+         "answers": [
+          {
+           "content": "23",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Le caryotype de la drosophile montre 8 chromosomes. Combien de paires contient-il ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Compter : 8 chromosomes. Étape 3 — Compter les paires : 8 ÷ 2 = 4 paires. Pourquoi pas « 8 » : on a confondu nombre de chromosomes et nombre de paires.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Que signifie 2n = 14 chez le petit pois ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 4 — Conclure : 2n = 14 est le nombre de chromosomes ; Étape 3 — Compter les paires : 14 ÷ 2 = 7 paires. Pourquoi pas « 14 paires » : 2n donne le nombre de chromosomes, la moitié de ce nombre donne les paires.",
+         "answers": [
+          {
+           "content": "La cellule contient 14 chromosomes, soit 7 paires",
+           "correct": true
+          },
+          {
+           "content": "La cellule contient 14 paires de chromosomes",
+           "correct": false
+          },
+          {
+           "content": "La cellule contient 7 chromosomes",
+           "correct": false
+          },
+          {
+           "content": "La cellule contient 28 chromosomes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Deux chromosomes de même taille, de même forme et de même position du centromère sont dits ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 2 — Former les paires : on associe les chromosomes de même taille et de même forme, qu'on appelle homologues. Pourquoi pas « identiques » : deux chromatides d'un même chromosome sont identiques, mais deux homologues, venus du père et de la mère, ne sont pas des copies l'un de l'autre.",
+         "answers": [
+          {
+           "content": "homologues",
+           "correct": true
+          },
+          {
+           "content": "homologue",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans un caryotype humain, la dernière paire est formée d'un X et d'un Y. Que peut-on conclure ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 4 — Conclure : on lit la paire de chromosomes sexuels ; XY correspond à un garçon, et X et Y sont comptés dans les 46 chromosomes. Pourquoi pas « 47 chromosomes » : X et Y forment la 23e paire, déjà comprise dans les 46 chromosomes.",
+         "answers": [
+          {
+           "content": "Le caryotype est celui d'un garçon",
+           "correct": true
+          },
+          {
+           "content": "Le caryotype est celui d'une fille",
+           "correct": false
+          },
+          {
+           "content": "La cellule a 47 chromosomes, car X et Y s'ajoutent aux 46",
+           "correct": false
+          },
+          {
+           "content": "Le caryotype est celui d'une cellule sexuelle",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un caryotype humain contient 46 paires de chromosomes.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Compter les paires : 46 chromosomes donnent 46 ÷ 2 = 23 paires. L'affirmation est fausse. Pourquoi pas « Vrai » : 46 est le nombre de chromosomes, pas de paires ; 46 paires feraient 92 chromosomes.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Caryotype, paires et espèces",
+       "statement": "Dans cet exercice, tu choisis, relies, calcules et vérifies pour fixer le vocabulaire du caryotype.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Une cellule humaine du corps contient ___ chromosomes.",
+         "question_type": "select",
+         "explanation": "Étape 4 — Conclure : chez l'Homme, 2n = 46, soit 23 paires de chromosomes. Pourquoi pas « 23 » : 23 est le nombre de paires, pas de chromosomes.",
+         "answers": [
+          {
+           "content": "46",
+           "correct": true
+          },
+          {
+           "content": "23",
+           "correct": false
+          },
+          {
+           "content": "92",
+           "correct": false
+          },
+          {
+           "content": "22",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles affirmations sur le caryotype sont vraies ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Compter et Étape 2 — Former les paires : le caryotype range les chromosomes visibles d'une cellule en division, par paires d'homologues. Pourquoi pas « Il est identique dans toutes les espèces » : le nombre de chromosomes change d'une espèce à l'autre : 46 chez l'Homme, 8 chez la drosophile.",
+         "answers": [
+          {
+           "content": "Il classe les chromosomes par paires de même taille",
+           "correct": true
+          },
+          {
+           "content": "Il est réalisé sur une cellule en division, quand les chromosomes sont bien visibles",
+           "correct": true
+          },
+          {
+           "content": "Il montre les molécules d'ADN une à une",
+           "correct": false
+          },
+          {
+           "content": "Il est identique dans toutes les espèces",
+           "correct": false
+          },
+          {
+           "content": "Il permet de lire la suite des gènes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque espèce à son nombre de chromosomes 2n.",
+         "question_type": "matching",
+         "explanation": "Étape 4 — Conclure : 2n est caractéristique de l'espèce ; Homme 46, drosophile 8, petit pois 14. Pourquoi pas associer l'Homme à 8 : la drosophile est une petite mouche, mais le nombre de chromosomes ne dépend pas de la taille de l'être vivant.",
+         "answers": [
+          {
+           "content": "Homme",
+           "match": "46"
+          },
+          {
+           "content": "Drosophile",
+           "match": "8"
+          },
+          {
+           "content": "Petit pois",
+           "match": "14"
+          }
+         ]
+        },
+        {
+         "content": "Le caryotype humain compte 22 paires de chromosomes ordinaires et une paire de chromosomes sexuels. Combien de chromosomes ordinaires compte-t-il ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Compter les paires : 22 paires, donc 22 × 2 = 44 chromosomes ordinaires, auxquels s'ajoutent 2 chromosomes sexuels, soit 46. Pourquoi pas « 22 » : 22 est le nombre de paires ; chaque paire compte deux chromosomes.",
+         "answers": [
+          {
+           "content": "44",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Le nombre de chromosomes est caractéristique de l'espèce.",
+         "question_type": "true_false",
+         "explanation": "Étape 4 — Conclure : tous les individus d'une espèce ont le même 2n, comme 46 pour l'Homme. L'affirmation est vraie. Pourquoi pas « Faux » : le nombre de chromosomes change bien d'une espèce à l'autre, mais reste le même dans toutes les cellules du corps d'une espèce.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Si 2n = 8, alors le nombre de paires vaut ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Compter les paires : 8 ÷ 2 = 4 paires. Pourquoi pas « 8 » : 8 est 2n, c'est-à-dire le nombre de chromosomes.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Le nombre de paires est toujours la moitié du nombre de chromosomes."
+      }
+     ]
+    },
+    {
+     "name": "Suivre la quantité d'ADN au cours du cycle cellulaire",
+     "remember": "L'**ADN** constitue les chromosomes : il porte l'information génétique et se trouve dans le noyau. On mesure la **quantité d'ADN par noyau**, notée Q (unités arbitraires). Elle est constante en **G1** (Q). Elle **double pendant la phase S** (de Q à 2Q) : c'est la **réplication** de l'ADN. Elle reste égale à 2Q en G2, puis de la prophase à la métaphase. Elle **revient à Q à la séparation des chromatides en anaphase** : chaque futur noyau fils reçoit une chromatide de chaque chromosome. La courbe est donc faite de paliers reliés par une montée et une descente.",
+     "method": [
+      "Lire les axes : repérer ce que mesure l'axe vertical (la quantité d'ADN) et les phases du cycle sur l'axe horizontal.",
+      "Lire le palier de départ : relever la quantité d'ADN avant toute variation, en G1.",
+      "Repérer les variations : trouver la montée, la descente et la valeur des paliers.",
+      "Relier chaque variation à son événement : la montée à la réplication de l'ADN (phase S), la descente à la séparation des chromatides (anaphase).",
+      "Conclure : comparer la quantité finale à la quantité de départ."
+     ],
+     "example": {
+      "statement": "Une courbe fictive donne la quantité d'ADN par noyau : 2 unités en G1, 4 unités en fin de phase S, 4 unités en métaphase, puis 2 unités à la fin de l'anaphase. Interpréter cette courbe.",
+      "steps": [
+       "Lire les axes : l'axe vertical donne la quantité d'ADN par noyau, l'axe horizontal les phases du cycle.",
+       "Lire le palier de départ : en G1, la quantité d'ADN est de 2 unités.",
+       "Repérer les variations : la courbe monte de 2 à 4 unités pendant la phase S, reste à 4 jusqu'en métaphase, puis redescend à 2.",
+       "Relier : la montée correspond à la réplication de l'ADN ; la descente correspond à la séparation des chromatides en anaphase.",
+       "Conclure : la quantité finale, 2 unités, est égale à la quantité de départ ; la quantité d'ADN a doublé puis est revenue à sa valeur initiale."
+      ]
+     },
+     "pitfall": "Ne confonds pas la quantité d'ADN et le nombre de chromosomes. En phase S, la quantité d'ADN double, mais le nombre de chromosomes ne change pas : chaque chromosome passe seulement de une à deux chromatides. Contre-exemple : une cellule humaine passe de 46 chromosomes à 46 chromosomes, tandis que son ADN passe de Q à 2Q. Et à la fin, l'ADN revient à Q, pas à Q ÷ 2.",
+     "figure": "courbe-adn-cycle",
+     "practice": {
+      "statement": "Tu t'entraînes à lire l'évolution de la quantité d'ADN par noyau.",
+      "questions": [
+       {
+        "content": "L'ADN est le constituant des ___ et porte l'information génétique.",
+        "question_type": "fill_blank",
+        "explanation": "Étape 1 — Lire les axes : la grandeur mesurée est l'ADN, constituant des chromosomes situés dans le noyau. Pourquoi pas « ribosomes » : les ribosomes fabriquent des protéines dans le cytoplasme et ne portent pas l'information génétique.",
+        "answers": [
+         {
+          "content": "chromosomes",
+          "correct": true
+         },
+         {
+          "content": "chromosome",
+          "correct": true
+         }
+        ],
+        "hint": "Pense aux bâtonnets du noyau."
+       },
+       {
+        "content": "Une courbe passe de 5 à 10 unités puis revient à 5. À quoi correspond la montée ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 4 — Relier chaque variation à son événement : la montée correspond à la réplication de l'ADN en phase S. Pourquoi pas « La séparation des chromatides » : elle fait au contraire redescendre la quantité d'ADN par noyau.",
+        "answers": [
+         {
+          "content": "À la réplication de l'ADN en phase S",
+          "correct": true
+         },
+         {
+          "content": "À la séparation des chromatides en anaphase",
+          "correct": false
+         },
+         {
+          "content": "À la division du cytoplasme",
+          "correct": false
+         },
+         {
+          "content": "À la disparition de l'ADN",
+          "correct": false
+         }
+        ],
+        "hint": "La montée double la quantité."
+       },
+       {
+        "content": "En G1, un noyau contient 7 unités d'ADN (valeur fictive). Combien en contient-il en G2 ?",
+        "question_type": "numeric",
+        "explanation": "Étape 3 — Repérer les variations : la phase S double la quantité d'ADN, donc 7 × 2 = 14 unités en G2. Pourquoi pas « 7 » : la quantité reste à 7 seulement avant la phase S, pas après.",
+        "answers": [
+         {
+          "content": "14",
+          "correct": true
+         }
+        ],
+        "tolerance": 0,
+        "unit": "unités",
+        "hint": "G2 vient après la phase S."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Lire la courbe de la quantité d'ADN",
+       "statement": "Dans cet exercice, tu lis une courbe fictive de la quantité d'ADN par noyau : 2 unités en G1, 4 unités en fin de phase S et en métaphase, puis 2 unités à la fin de l'anaphase.",
+       "exercise_type": "fixation",
+       "figure": "courbe-adn-cycle",
+       "questions": [
+        {
+         "content": "La quantité d'ADN passe de 2 unités en G1 à 4 unités en fin de phase S. Par quel nombre est-elle multipliée ?",
+         "question_type": "numeric",
+         "explanation": "Étape 2 — Lire le palier de départ : 2 unités. Étape 3 — Repérer les variations : 4 ÷ 2 = 2, la quantité double. Pourquoi pas « 4 » : 4 est la valeur atteinte, pas le facteur de multiplication.",
+         "answers": [
+          {
+           "content": "2",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Pendant quelle phase la quantité d'ADN par noyau augmente-t-elle ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Repérer les variations : la montée a lieu en phase S. Étape 4 — Relier : c'est la réplication de l'ADN. Pourquoi pas « La phase G1 » : en G1, la quantité d'ADN est stable, au niveau du palier de départ.",
+         "answers": [
+          {
+           "content": "La phase S",
+           "correct": true
+          },
+          {
+           "content": "La phase G1",
+           "correct": false
+          },
+          {
+           "content": "La phase G2",
+           "correct": false
+          },
+          {
+           "content": "La cytodiérèse",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "À la séparation des chromatides en anaphase, la quantité d'ADN par noyau ___.",
+         "question_type": "select",
+         "explanation": "Étape 3 — Repérer les variations : la courbe redescend de 4 à 2 unités. Étape 4 — Relier : c'est la séparation des chromatides. Pourquoi pas « reste égale à 4 unités » : la cellule entière garde 4 unités, mais chaque lot de chromatides, futur noyau fils, n'en reçoit que 2.",
+         "answers": [
+          {
+           "content": "revient à sa valeur de départ",
+           "correct": true
+          },
+          {
+           "content": "double encore",
+           "correct": false
+          },
+          {
+           "content": "reste égale à 4 unités",
+           "correct": false
+          },
+          {
+           "content": "tombe à zéro",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule contient 3 unités d'ADN en G1 (valeur fictive). Combien en contient-elle en G2 ?",
+         "question_type": "numeric",
+         "explanation": "Étape 2 — Lire le palier de départ : 3 unités. Étape 4 — Relier : la réplication en phase S double la quantité, donc 3 × 2 = 6 unités. Pourquoi pas « 3 » : la quantité ne reste à 3 que jusqu'à la phase S.",
+         "answers": [
+          {
+           "content": "6",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "unités"
+        },
+        {
+         "content": "L'événement responsable de la montée de la courbe est la ___ de l'ADN.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 4 — Relier chaque variation à son événement : la montée correspond à la réplication de l'ADN, copie de chaque molécule. Pourquoi pas « séparation » : la séparation fait redescendre la courbe, elle ne la fait pas monter.",
+         "answers": [
+          {
+           "content": "réplication",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "En phase S, le nombre de chromosomes de la cellule double.",
+         "question_type": "true_false",
+         "explanation": "Étape 5 — Conclure : en phase S, c'est la quantité d'ADN qui double ; chaque chromosome passe de une à deux chromatides, mais leur nombre reste 46 chez l'Homme. L'affirmation est fausse. Pourquoi pas « Vrai » : 92 chromatides ne font pas 92 chromosomes : les deux chromatides restent dans un seul chromosome.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Regarde les paliers : combien de fois la quantité est-elle multipliée ?"
+      },
+      {
+       "title": "Phases du cycle et quantité d'ADN",
+       "statement": "Dans cet exercice, tu ordonnes, relies, calcules et choisis pour fixer l'évolution de la quantité d'ADN au cours du cycle.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Remets dans l'ordre les parties de la courbe de la quantité d'ADN.",
+         "question_type": "ordering",
+         "explanation": "Étape 3 — Repérer les variations : palier de départ, montée, palier haut, descente, retour au palier de départ. Pourquoi pas placer la descente avant la montée : la quantité d'ADN ne peut pas diminuer avant d'avoir doublé en phase S.",
+         "answers": [
+          {
+           "content": "Palier à Q en G1"
+          },
+          {
+           "content": "Montée de Q à 2Q en phase S"
+          },
+          {
+           "content": "Palier à 2Q en G2 et en métaphase"
+          },
+          {
+           "content": "Descente de 2Q à Q en anaphase"
+          },
+          {
+           "content": "Palier à Q dans la cellule fille"
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque phase à ce qui arrive à la quantité d'ADN par noyau.",
+         "question_type": "matching",
+         "explanation": "Étape 4 — Relier chaque variation à son événement : S double, G1 reste stable, G2 reste doublée, l'anaphase ramène à la valeur de départ. Pourquoi pas relier G2 à « reste stable à sa valeur de départ » : en G2, la réplication est déjà faite et la quantité vaut 2Q.",
+         "answers": [
+          {
+           "content": "Phase S",
+           "match": "La quantité d'ADN double"
+          },
+          {
+           "content": "Anaphase",
+           "match": "Les chromatides se séparent et la quantité revient à la valeur de départ"
+          },
+          {
+           "content": "G1",
+           "match": "La quantité d'ADN reste stable à sa valeur de départ"
+          },
+          {
+           "content": "G2",
+           "match": "La quantité d'ADN reste égale au double de la valeur de départ"
+          }
+         ]
+        },
+        {
+         "content": "Quelles affirmations sont vraies ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 4 — Relier : la réplication, en phase S de l'interphase, précède la mitose ; l'ADN forme les chromosomes. Pourquoi pas « La quantité d'ADN diminue de moitié en phase S » : la phase S est celle du doublement, la diminution a lieu à la séparation des chromatides.",
+         "answers": [
+          {
+           "content": "L'ADN est le constituant principal des chromosomes",
+           "correct": true
+          },
+          {
+           "content": "La réplication de l'ADN a lieu avant la mitose",
+           "correct": true
+          },
+          {
+           "content": "La réplication de l'ADN a lieu pendant l'anaphase",
+           "correct": false
+          },
+          {
+           "content": "L'ADN disparaît pendant la mitose",
+           "correct": false
+          },
+          {
+           "content": "La quantité d'ADN par noyau diminue de moitié en phase S",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "En G2, un noyau contient 8 unités d'ADN (valeur fictive). Après la séparation des chromatides, combien d'unités reçoit chaque noyau fils ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Repérer les variations : la descente partage les chromatides en deux lots identiques, donc 8 ÷ 2 = 4 unités par noyau fils. Pourquoi pas « 8 » : 8 unités est la quantité du noyau avant la séparation, pas celle d'un noyau fils.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "unités"
+        },
+        {
+         "content": "La phase du cycle pendant laquelle l'ADN est répliqué s'appelle la phase ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 4 — Relier : la réplication de l'ADN a lieu en phase S, entre G1 et G2. Pourquoi pas « G2 » : en G2, la réplication est déjà terminée : la cellule se prépare seulement à la mitose.",
+         "answers": [
+          {
+           "content": "S",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelle suite décrit la quantité d'ADN par noyau au cours d'un cycle complet ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 5 — Conclure : la quantité double en phase S puis revient à sa valeur de départ à la séparation des chromatides. Pourquoi pas « Q, puis 2Q, puis 4Q » : l'ADN ne double qu'une fois par cycle, et la séparation en anaphase le ramène à Q.",
+         "answers": [
+          {
+           "content": "Q, puis 2Q, puis de nouveau Q",
+           "correct": true
+          },
+          {
+           "content": "Q, puis Q ÷ 2, puis de nouveau Q",
+           "correct": false
+          },
+          {
+           "content": "Q, puis 2Q, puis 4Q",
+           "correct": false
+          },
+          {
+           "content": "Q, puis 2Q, puis 2Q",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Dessine la courbe : un palier bas, une montée, un palier haut, une descente."
+      }
+     ]
+    },
+    {
+     "name": "Expliquer la conservation de l'information génétique dans les cellules filles",
+     "remember": "La mitose donne, à partir d'une **cellule mère**, **deux cellules filles identiques entre elles et identiques à la cellule mère** : même nombre de chromosomes (2n) et même information génétique. Cela s'explique par deux événements. La **réplication** (phase S) copie chaque chromosome en deux chromatides identiques. La **séparation** (anaphase) envoie une chromatide de chaque chromosome vers chaque pôle. Chez l'Homme : en G1, 46 chromosomes à une chromatide (ADN Q) ; de la fin de S à la métaphase, 46 chromosomes à deux chromatides, soit 92 chromatides (ADN 2Q) ; en anaphase, 92 chromosomes à une chromatide, 46 à chaque pôle ; dans chaque cellule fille, 46 chromosomes à une chromatide (ADN Q).",
+     "method": [
+      "Décrire la cellule mère : son nombre de chromosomes 2n, le nombre de chromatides par chromosome et sa quantité d'ADN Q.",
+      "Suivre la réplication : chaque chromosome à une chromatide devient un chromosome à deux chromatides identiques, et l'ADN passe à 2Q.",
+      "Suivre la séparation : en anaphase, les deux chromatides de chaque chromosome se séparent et migrent vers deux pôles opposés.",
+      "Conclure sur les cellules filles : même nombre de chromosomes 2n, quantité d'ADN Q et même information génétique que la cellule mère."
+     ],
+     "example": {
+      "statement": "Une cellule de la peau d'un enfant (2n = 46) se divise par mitose. Montrer que ses deux cellules filles conservent la même information génétique.",
+      "steps": [
+       "Décrire : la cellule mère a 46 chromosomes à une chromatide, donc 46 chromatides, et une quantité d'ADN Q.",
+       "Suivre la réplication : chaque chromosome devient un chromosome à deux chromatides identiques : 92 chromatides, ADN 2Q.",
+       "Suivre la séparation : en anaphase, les deux chromatides de chacun des 46 chromosomes se séparent, 46 vont à chaque pôle.",
+       "Conclure : chaque cellule fille a 46 chromosomes, une quantité d'ADN Q et des chromosomes copiés à l'identique : l'information génétique est conservée."
+      ]
+     },
+     "pitfall": "Ne crois pas que chaque cellule fille reçoit la moitié des chromosomes. La cellule a d'abord doublé son ADN, puis elle le partage : le résultat est un retour au point de départ. Contre-exemple : si chaque cellule fille avait 23 chromosomes, la génération suivante en aurait 11,5, ce qui est impossible. Chaque cellule fille a 46 chromosomes, comme la cellule mère.",
+     "figure": "conservation-mitose",
+     "practice": {
+      "statement": "Tu t'entraînes à expliquer la conservation de l'information génétique.",
+      "questions": [
+       {
+        "content": "Une cellule mère a 2n = 14. Combien de chromosomes contient chacune de ses cellules filles ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 4 — Conclure sur les cellules filles : même nombre de chromosomes 2n que la cellule mère, donc 14. Pourquoi pas « 7 » : la mitose ne divise pas le nombre de chromosomes par deux ; 7 est le nombre de paires.",
+        "answers": [
+         {
+          "content": "14",
+          "correct": true
+         },
+         {
+          "content": "7",
+          "correct": false
+         },
+         {
+          "content": "28",
+          "correct": false
+         },
+         {
+          "content": "21",
+          "correct": false
+         }
+        ],
+        "hint": "Une cellule fille est identique à sa mère."
+       },
+       {
+        "content": "L'ADN est répliqué avant la séparation des chromatides.",
+        "question_type": "true_false",
+        "explanation": "Étape 2 — Suivre la réplication, puis Étape 3 — Suivre la séparation : l'ADN est copié en phase S, bien avant l'anaphase. L'affirmation est vraie. Pourquoi pas « Faux » : sans réplication préalable, il n'y aurait pas de chromatides identiques à séparer.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": true
+         },
+         {
+          "content": "Faux",
+          "correct": false
+         }
+        ],
+        "hint": "Réplication d'abord."
+       },
+       {
+        "content": "Une cellule a 2n = 10. Combien de chromatides compte-t-elle en G2 ?",
+        "question_type": "numeric",
+        "explanation": "Étape 2 — Suivre la réplication : 10 chromosomes à deux chromatides, donc 10 × 2 = 20 chromatides. Pourquoi pas « 10 » : 10 est le nombre de chromosomes ; chacun a deux chromatides après la phase S.",
+        "answers": [
+         {
+          "content": "20",
+          "correct": true
+         }
+        ],
+        "tolerance": 0,
+        "hint": "Chaque chromosome a deux chromatides."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Suivre les chromosomes d'une cellule de la peau",
+       "statement": "Dans cet exercice, tu suis, avec la méthode de la fiche, les chromosomes d'une cellule humaine de la peau (2n = 46) pendant une mitose.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Une cellule de la peau est en G1, avec 46 chromosomes à une chromatide. Combien de chromatides compte-t-elle ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Décrire la cellule mère : 46 chromosomes à une chromatide, donc 46 × 1 = 46 chromatides. Pourquoi pas « 92 » : 92 est le nombre de chromatides après la réplication, pas avant.",
+         "answers": [
+          {
+           "content": "46",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Après la phase S, la même cellule compte 46 chromosomes à deux chromatides. Combien de chromatides compte-t-elle ?",
+         "question_type": "numeric",
+         "explanation": "Étape 2 — Suivre la réplication : chaque chromosome a deux chromatides identiques, donc 46 × 2 = 92 chromatides. Pourquoi pas « 46 » : 46 est le nombre de chromosomes, qui ne change pas en phase S.",
+         "answers": [
+          {
+           "content": "92",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Que contient chaque cellule fille obtenue à la fin de la mitose ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Suivre la séparation, puis Étape 4 — Conclure : chaque cellule fille reçoit une chromatide de chacun des 46 chromosomes, donc 46 chromosomes à une chromatide. Pourquoi pas « 46 chromosomes à deux chromatides » : les chromatides se sont séparées en anaphase, il n'en reste qu'une par chromosome.",
+         "answers": [
+          {
+           "content": "46 chromosomes à une chromatide",
+           "correct": true
+          },
+          {
+           "content": "23 chromosomes à une chromatide",
+           "correct": false
+          },
+          {
+           "content": "92 chromosomes à une chromatide",
+           "correct": false
+          },
+          {
+           "content": "46 chromosomes à deux chromatides",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "À l'anaphase, les ___ de chaque chromosome se séparent et migrent vers les pôles.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Suivre la séparation : en anaphase, ce sont les deux chromatides de chaque chromosome qui se séparent. Pourquoi pas « chromosomes » : les chromosomes ne se séparent pas entiers : chacun se scinde en ses deux chromatides.",
+         "answers": [
+          {
+           "content": "chromatides",
+           "correct": true
+          },
+          {
+           "content": "chromatide",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Les deux cellules filles contiennent la même information génétique que la cellule mère.",
+         "question_type": "true_false",
+         "explanation": "Étape 4 — Conclure : la réplication a copié l'ADN à l'identique et la séparation a distribué un exemplaire de chaque chromosome à chaque cellule fille. L'affirmation est vraie. Pourquoi pas « Faux » : la mitose ne mélange ni ne partage les gènes : elle copie puis distribue, ce qui conserve l'information.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Chaque cellule fille reçoit 23 chromosomes, la moitié de ceux de la cellule mère.",
+         "question_type": "true_false",
+         "explanation": "Étape 4 — Conclure : chaque cellule fille reçoit 46 chromosomes. L'affirmation est fausse. Pourquoi pas « Vrai » : la cellule a doublé son ADN avant de le partager : le partage ramène au nombre de départ, et non à la moitié.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Conservation du nombre de chromosomes et de l'ADN",
+       "statement": "Dans cet exercice, tu ordonnes, relies, calcules et choisis pour fixer la conservation de l'information génétique.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Remets dans l'ordre les étapes de la conservation de l'information génétique.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Décrire, Étape 2 — Suivre la réplication, Étape 3 — Suivre la séparation, Étape 4 — Conclure. Pourquoi pas placer la séparation avant la réplication : il n'y aurait alors rien à séparer : il faut d'abord deux chromatides identiques.",
+         "answers": [
+          {
+           "content": "Cellule mère à 46 chromosomes à une chromatide"
+          },
+          {
+           "content": "Réplication de l'ADN : 46 chromosomes à deux chromatides"
+          },
+          {
+           "content": "Séparation des chromatides en anaphase"
+          },
+          {
+           "content": "Deux cellules filles de 46 chromosomes chacune"
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque stade à ses chromosomes (2n = 46).",
+         "question_type": "matching",
+         "explanation": "Étape 2 — Suivre la réplication et Étape 3 — Suivre la séparation : en anaphase, chaque chromatide séparée devient un chromosome, donc la cellule entière en compte 92 avant la division. Pourquoi pas relier l'anaphase à 46 chromosomes à deux chromatides : en anaphase, les chromatides sont déjà séparées : il n'y a plus de chromosome à deux chromatides.",
+         "answers": [
+          {
+           "content": "Cellule en métaphase",
+           "match": "46 chromosomes à deux chromatides"
+          },
+          {
+           "content": "Cellule en anaphase, avant la division du cytoplasme",
+           "match": "92 chromosomes à une chromatide, 46 à chaque pôle"
+          },
+          {
+           "content": "Cellule fille",
+           "match": "46 chromosomes à une chromatide"
+          }
+         ]
+        },
+        {
+         "content": "Quelles propriétés expliquent la conservation de l'information génétique ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 2 — Suivre la réplication et Étape 3 — Suivre la séparation : copie à l'identique, puis envoi d'une copie à chaque cellule fille. Pourquoi pas « Les chromosomes se répartissent sans avoir été copiés » : sans réplication, chaque cellule fille ne recevrait que la moitié des chromosomes.",
+         "answers": [
+          {
+           "content": "La réplication fabrique deux copies identiques de chaque chromosome",
+           "correct": true
+          },
+          {
+           "content": "Les deux chromatides d'un chromosome vont dans deux cellules filles différentes",
+           "correct": true
+          },
+          {
+           "content": "Les chromosomes se répartissent sans avoir été copiés",
+           "correct": false
+          },
+          {
+           "content": "Chaque cellule fille reçoit seulement la moitié des gènes",
+           "correct": false
+          },
+          {
+           "content": "Les chromatides se séparent avant la réplication",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La drosophile a 2n = 8. Combien de chromatides compte une cellule en métaphase ?",
+         "question_type": "numeric",
+         "explanation": "Étape 2 — Suivre la réplication : 8 chromosomes à deux chromatides, donc 8 × 2 = 16 chromatides. Pourquoi pas « 8 » : 8 est le nombre de chromosomes, pas de chromatides.",
+         "answers": [
+          {
+           "content": "16",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Au terme de la mitose, les deux cellules filles sont ___ à la cellule mère.",
+         "question_type": "select",
+         "explanation": "Étape 4 — Conclure sur les cellules filles : même nombre de chromosomes, même quantité d'ADN Q, même information génétique. Pourquoi pas « deux fois plus riches en ADN » : l'ADN, doublé en phase S, est partagé en deux ; chaque cellule fille retrouve la quantité Q.",
+         "answers": [
+          {
+           "content": "génétiquement identiques",
+           "correct": true
+          },
+          {
+           "content": "génétiquement différentes",
+           "correct": false
+          },
+          {
+           "content": "deux fois plus riches en ADN",
+           "correct": false
+          },
+          {
+           "content": "deux fois moins riches en chromosomes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pour 2n = 46, une cellule en anaphase compte ___ chromosomes, car les chromatides séparées en forment chacune un.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Suivre la séparation : 92 chromatides séparées donnent 92 chromosomes à une chromatide dans la cellule, 46 à chaque pôle. Pourquoi pas « 46 » : 46 est le nombre de chromosomes par pôle et par cellule fille, pas dans la cellule entière en anaphase.",
+         "answers": [
+          {
+           "content": "92",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Compte les chromosomes, puis les chromatides, à chaque étape."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "title": "Le caryotype d'un enfant",
+     "statement": "Dans un laboratoire d'Abidjan, un technicien réalise le caryotype d'une cellule du corps d'un enfant (cas fictif). La cellule est observée en métaphase. Le caryotype compte 46 chromosomes, dont la dernière paire est formée d'un X et d'un Y.",
+     "exercise_type": "fixation",
+     "figure": null,
+     "questions": [
+      {
+       "content": "Combien de paires d'homologues le caryotype contient-il ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Compter les chromosomes : 46. 2. Former les paires d'homologues. 3. Compter les paires : 46 ÷ 2 = 23 paires. 4. Conclure : 2n = 46 et n = 23. Pourquoi pas « 46 » : 46 est le nombre de chromosomes, la moitié donne le nombre de paires.",
+       "answers": [
+        {
+         "content": "23",
+         "correct": true
+        }
+       ],
+       "tolerance": 0
+      },
+      {
+       "content": "Que peut-on conclure de la dernière paire XY ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : lire la paire de chromosomes sexuels : XY correspond à un garçon, XX à une fille ; X et Y font partie des 46 chromosomes. Pourquoi pas « 47 chromosomes » : X et Y forment la 23e paire, déjà comptée dans les 46 chromosomes.",
+       "answers": [
+        {
+         "content": "L'enfant est un garçon",
+         "correct": true
+        },
+        {
+         "content": "L'enfant est une fille",
+         "correct": false
+        },
+        {
+         "content": "L'enfant a 47 chromosomes",
+         "correct": false
+        },
+        {
+         "content": "La cellule est une cellule sexuelle",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Le caryotype compte 22 paires de chromosomes ordinaires. Combien de chromosomes ordinaires cela fait-il ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Repérer les 22 paires ordinaires. 2. Chaque paire compte 2 chromosomes : 22 × 2 = 44. 3. On ajoute les 2 chromosomes sexuels : 44 + 2 = 46. Pourquoi pas « 22 » : 22 est le nombre de paires, pas de chromosomes.",
+       "answers": [
+        {
+         "content": "44",
+         "correct": true
+        }
+       ],
+       "tolerance": 0
+      },
+      {
+       "content": "Chaque chromosome de la cellule en métaphase a deux chromatides. Combien de chromatides la cellule compte-t-elle ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Compter les chromosomes : 46. 2. Compter les chromatides de chacun : 2. 3. Calculer : 46 × 2 = 92 chromatides. Pourquoi pas « 46 » : 46 est le nombre de chromosomes, mais chacun a deux chromatides à ce stade.",
+       "answers": [
+        {
+         "content": "92",
+         "correct": true
+        }
+       ],
+       "tolerance": 0
+      },
+      {
+       "content": "Si on réalisait ce caryotype sur une autre cellule du corps du même enfant, on compterait aussi 46 chromosomes.",
+       "question_type": "true_false",
+       "explanation": "Méthode : toutes les cellules du corps d'une espèce contiennent 2n chromosomes, car elles proviennent de mitoses qui conservent le nombre de chromosomes : 46 chez l'Homme. L'affirmation est vraie. Pourquoi pas « Faux » : la mitose copie puis répartit l'ADN, donc toutes les cellules issues de la mitose gardent 2n.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": true
+        },
+        {
+         "content": "Faux",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Relie chaque terme à sa description.",
+       "question_type": "matching",
+       "explanation": "Méthode : chaque terme de la leçon a sa définition : caryotype, homologues, centromère. Pourquoi pas relier « homologues » à « photographie des chromosomes » : le caryotype est la photographie ; les homologues sont les deux chromosomes d'une même paire.",
+       "answers": [
+        {
+         "content": "Caryotype",
+         "match": "Photographie des chromosomes classés par paires"
+        },
+        {
+         "content": "Homologues",
+         "match": "Deux chromosomes de même taille et de même forme"
+        },
+        {
+         "content": "Centromère",
+         "match": "Étranglement qui relie les chromatides"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "La courbe d'ADN d'une cellule de racine de maïs",
+     "statement": "Un élève de 2nde observe une racine de maïs, plante cultivée dans de nombreux champs de Côte d'Ivoire (2n = 20). Il mesure la quantité d'ADN par noyau, en unités arbitraires (valeurs fictives) : 4 en G1 et au début de la phase S, 6 au milieu de S, 8 en fin de S, en G2 et en métaphase, puis 4 à la fin de l'anaphase.",
+     "exercise_type": "fixation",
+     "figure": "courbe-adn-mais",
+     "questions": [
+      {
+       "content": "Quelle est la quantité d'ADN par noyau en G1 ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Lire les axes : quantité d'ADN par noyau. 2. Lire le palier de départ : en G1, 4 unités. Pourquoi pas « 8 » : 8 unités est la valeur du palier haut, après la phase S.",
+       "answers": [
+        {
+         "content": "4",
+         "correct": true
+        }
+       ],
+       "tolerance": 0,
+       "unit": "unités"
+      },
+      {
+       "content": "Quelle est la quantité d'ADN par noyau en G2 ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 3. Repérer les variations : la courbe monte de 4 à 8 pendant la phase S, puis reste à 8 en G2. Pourquoi pas « 4 » : 4 est la valeur avant la réplication, en G1.",
+       "answers": [
+        {
+         "content": "8",
+         "correct": true
+        }
+       ],
+       "tolerance": 0,
+       "unit": "unités"
+      },
+      {
+       "content": "Quel événement explique la montée de 4 à 8 unités ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 4. Relier chaque variation à son événement : la montée correspond à la réplication de l'ADN, en phase S. Pourquoi pas « La séparation des chromatides » : elle fait redescendre la quantité d'ADN, de 8 à 4 unités.",
+       "answers": [
+        {
+         "content": "La réplication de l'ADN en phase S",
+         "correct": true
+        },
+        {
+         "content": "La séparation des chromatides en anaphase",
+         "correct": false
+        },
+        {
+         "content": "La division du cytoplasme",
+         "correct": false
+        },
+        {
+         "content": "La disparition du noyau en prophase",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Combien de chromatides compte une cellule de maïs en métaphase ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Décrire la cellule mère : 2n = 20 chromosomes. 2. Après la réplication, chacun a 2 chromatides : 20 × 2 = 40 chromatides. Pourquoi pas « 20 » : 20 est le nombre de chromosomes ; chacun a deux chromatides en métaphase.",
+       "answers": [
+        {
+         "content": "40",
+         "correct": true
+        }
+       ],
+       "tolerance": 0
+      },
+      {
+       "content": "Chaque cellule fille issue de cette mitose contient 4 unités d'ADN et 20 chromosomes.",
+       "question_type": "true_false",
+       "explanation": "Méthode : 3. Suivre la séparation : l'ADN revient de 8 à 4 unités ; 4. Conclure : même nombre de chromosomes 2n = 20 que la cellule mère. L'affirmation est vraie. Pourquoi pas « Faux » : la cellule fille retrouve la quantité de départ et non la moitié, car l'ADN a d'abord doublé.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": true
+        },
+        {
+         "content": "Faux",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "La quantité d'ADN par noyau est restée constante en ___.",
+       "question_type": "select",
+       "explanation": "Méthode : 3. Repérer les variations : G1 est un palier à 4 unités ; la phase S est une montée. Pourquoi pas « phase S » : en phase S, la courbe monte de 4 à 8 unités.",
+       "answers": [
+        {
+         "content": "G1",
+         "correct": true
+        },
+        {
+         "content": "phase S",
+         "correct": false
+        },
+        {
+         "content": "anaphase",
+         "correct": false
+        },
+        {
+         "content": "télophase tardive",
+         "correct": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Comparer deux hypothèses sur les cellules filles",
+     "statement": "Deux élèves discutent de ce que reçoit une cellule fille après une mitose d'une cellule humaine de la peau (2n = 46). Awa pense que chaque cellule fille reçoit 23 chromosomes. Koffi pense qu'elle reçoit 46 chromosomes à une chromatide, après réplication puis séparation. On compte les chromosomes de cellules filles au microscope (observation fictive) : 46 chromosomes.",
+     "exercise_type": "evaluation",
+     "figure": null,
+     "questions": [
+      {
+       "content": "Quelle hypothèse la mesure du nombre de chromosomes confirme-t-elle ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Rappeler la prévision de chaque hypothèse : 23 chromosomes pour Awa, 46 pour Koffi. 2. Comparer à la mesure : 46. 3. Conclure : Koffi. Pourquoi pas « L'hypothèse d'Awa » : elle prévoit 23 chromosomes, ce qui ne correspond pas aux 46 observés.",
+       "answers": [
+        {
+         "content": "L'hypothèse de Koffi",
+         "correct": true
+        },
+        {
+         "content": "L'hypothèse d'Awa",
+         "correct": false
+        },
+        {
+         "content": "Les deux hypothèses",
+         "correct": false
+        },
+        {
+         "content": "Aucune des deux",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Quels arguments permettent de rejeter l'hypothèse d'Awa ?",
+       "question_type": "multiple_correct_2",
+       "explanation": "Méthode : confronter l'hypothèse aux faits : 46 chromosomes dans toutes les cellules et un nombre qui ne peut pas être divisé par deux à chaque division sans disparaître. Pourquoi pas « La cellule fille est plus petite que la cellule mère » : la taille ne renseigne pas sur le nombre de chromosomes, et la cellule fille grandit ensuite.",
+       "answers": [
+        {
+         "content": "Les cellules de l'enfant contiennent toutes 46 chromosomes",
+         "correct": true
+        },
+        {
+         "content": "À chaque division, le nombre de chromosomes serait divisé par deux et finirait par disparaître",
+         "correct": true
+        },
+        {
+         "content": "La cellule fille est plus petite que la cellule mère",
+         "correct": false
+        },
+        {
+         "content": "L'ADN ne se copie jamais avant la division",
+         "correct": false
+        },
+        {
+         "content": "Le caryotype de l'enfant montre 23 chromosomes",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Selon Koffi, combien de chromatides compte la cellule mère juste avant l'anaphase ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Décrire la cellule mère : 46 chromosomes. 2. Suivre la réplication : deux chromatides chacun, 46 × 2 = 92 chromatides. Pourquoi pas « 46 » : 46 est le nombre de chromosomes ; après la réplication, chacun a deux chromatides.",
+       "answers": [
+        {
+         "content": "92",
+         "correct": true
+        }
+       ],
+       "tolerance": 0
+      },
+      {
+       "content": "Que se passe-t-il pour la quantité d'ADN de la cellule mère entre le début de G1 et la métaphase ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 2. Suivre la réplication : l'ADN est copié en phase S, donc la quantité passe de Q à 2Q. Pourquoi pas « Elle est divisée par deux » : c'est la séparation en anaphase, et non la phase S, qui ramène la quantité à Q par noyau.",
+       "answers": [
+        {
+         "content": "Elle double, de Q à 2Q",
+         "correct": true
+        },
+        {
+         "content": "Elle est divisée par deux",
+         "correct": false
+        },
+        {
+         "content": "Elle reste égale à Q",
+         "correct": false
+        },
+        {
+         "content": "Elle est multipliée par 46",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Après l'anaphase, chaque lot de 46 chromosomes à une chromatide porte la même information génétique que la cellule mère.",
+       "question_type": "true_false",
+       "explanation": "Méthode : 3. Suivre la séparation puis 4. Conclure : chaque chromatide est une copie fidèle, donc chaque lot reproduit les 46 chromosomes de la cellule mère. L'affirmation est vraie. Pourquoi pas « Faux » : les chromatides d'un chromosome sont identiques, donc les deux lots sont identiques entre eux et à la cellule mère.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": true
+        },
+        {
+         "content": "Faux",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Les cellules filles étant identiques à la cellule mère, on dit que l'information génétique est ___.",
+       "question_type": "fill_blank",
+       "explanation": "Méthode : 4. Conclure sur les cellules filles : même nombre de chromosomes, même ADN, donc information génétique conservée. Pourquoi pas « partagée » : l'information n'est pas coupée en deux : chaque cellule fille en reçoit un exemplaire complet.",
+       "answers": [
+        {
+         "content": "conservée",
+         "correct": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Analyse complète d'une mitose chez l'oignon",
+     "statement": "Une classe de 2nde observe des cellules d'une racine d'oignon (2n = 16). Les élèves relèvent le nombre de chromosomes, de chromatides et la quantité d'ADN par noyau (Q en G1, valeurs de la fiche) à trois moments : en G1, en métaphase et dans une cellule fille.",
+     "exercise_type": "evaluation",
+     "figure": null,
+     "questions": [
+      {
+       "content": "Combien de paires de chromosomes une cellule d'oignon compte-t-elle ?",
+       "question_type": "numeric",
+       "explanation": "Méthode (notion du caryotype) : 1. Compter les chromosomes : 2n = 16. 2. Compter les paires : 16 ÷ 2 = 8 paires. Pourquoi pas « 16 » : 16 est le nombre de chromosomes, la moitié donne les paires.",
+       "answers": [
+        {
+         "content": "8",
+         "correct": true
+        }
+       ],
+       "tolerance": 0
+      },
+      {
+       "content": "Combien de chromatides une cellule d'oignon compte-t-elle en métaphase ?",
+       "question_type": "numeric",
+       "explanation": "Méthode (notion du chromosome) : 1. Compter les chromosomes : 16. 2. Compter les chromatides de chacun : 2 en métaphase. 3. Calculer : 16 × 2 = 32 chromatides. Pourquoi pas « 16 » : 16 est le nombre de chromosomes, mais chacun a deux chromatides en métaphase.",
+       "answers": [
+        {
+         "content": "32",
+         "correct": true
+        }
+       ],
+       "tolerance": 0
+      },
+      {
+       "content": "Relie chaque moment à la quantité d'ADN par noyau.",
+       "question_type": "matching",
+       "explanation": "Méthode : 3. Repérer les variations : G1 est le palier de départ Q, la métaphase le palier doublé 2Q, et la séparation ramène chaque noyau fils à Q. Pourquoi pas relier le noyau fils à « 2Q, la valeur doublée » : 2Q est la quantité de la cellule mère avant la séparation : chaque noyau fils n'en reçoit que la moitié, soit Q.",
+       "answers": [
+        {
+         "content": "Cellule en G1",
+         "match": "Q, la valeur de départ"
+        },
+        {
+         "content": "Cellule en métaphase",
+         "match": "2Q, la valeur doublée"
+        },
+        {
+         "content": "Noyau fils, après la séparation",
+         "match": "Q, retour à la valeur de départ"
+        }
+       ]
+      },
+      {
+       "content": "Combien de chromosomes comptera chaque cellule fille ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 4. Conclure sur les cellules filles : même nombre de chromosomes 2n que la cellule mère, donc 16. Pourquoi pas « 8 » : 8 est le nombre de paires, et la mitose ne divise pas le nombre de chromosomes par deux.",
+       "answers": [
+        {
+         "content": "16",
+         "correct": true
+        },
+        {
+         "content": "8",
+         "correct": false
+        },
+        {
+         "content": "32",
+         "correct": false
+        },
+        {
+         "content": "24",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Quelles affirmations sur cette mitose sont vraies ?",
+       "question_type": "multiple_correct_2",
+       "explanation": "Méthode : relier chaque affirmation à son événement : réplication en phase S, conservation de l'information par la séparation des chromatides. Pourquoi pas « Le nombre de chromosomes double en phase S » : les chromatides doublent, mais leur nombre de chromosomes reste 16 jusqu'à l'anaphase.",
+       "answers": [
+        {
+         "content": "La réplication de l'ADN a lieu en phase S, avant la mitose",
+         "correct": true
+        },
+        {
+         "content": "Les cellules filles ont la même information génétique que la cellule mère",
+         "correct": true
+        },
+        {
+         "content": "La quantité d'ADN par noyau double à l'anaphase",
+         "correct": false
+        },
+        {
+         "content": "Le nombre de chromosomes double en phase S",
+         "correct": false
+        },
+        {
+         "content": "Chaque cellule fille a 8 chromosomes",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Remets dans l'ordre le devenir des chromosomes de l'oignon.",
+       "question_type": "ordering",
+       "explanation": "Méthode : 1. Décrire la cellule mère, 2. Suivre la réplication, 3. Suivre la séparation, 4. Conclure. Pourquoi pas placer la séparation en premier : il faut d'abord copier chaque chromosome avant de pouvoir séparer ses chromatides.",
+       "answers": [
+        {
+         "content": "16 chromosomes à une chromatide en G1"
+        },
+        {
+         "content": "Réplication : 16 chromosomes à deux chromatides"
+        },
+        {
+         "content": "Séparation des chromatides en anaphase"
+        },
+        {
+         "content": "Deux cellules filles de 16 chromosomes"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "subjects": [
+    {
+     "title": "Sujet 1 · Les savoirs de base sur les chromosomes",
+     "notions": "Le chromosome, ses chromatides et le centromère ; le caryotype et le nombre de chromosomes ; la quantité d'ADN au cours du cycle ; la conservation de l'information génétique.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Dans cet exercice, tu retrouves le vocabulaire du chromosome.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Une chromatide contient une molécule d'ADN.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Repérer le chromosome et ses chromatides. 2. Rappeler la règle de la fiche : une chromatide contient une molécule d'ADN. 3. Conclure : l'affirmation est vraie. Pourquoi pas « Faux » : on croirait qu'il faut deux molécules par chromatide, alors que c'est le chromosome répliqué qui en a deux.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le point qui relie les deux chromatides d'un chromosome s'appelle le ___.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Repérer le chromosome en X. 2. Localiser l'étranglement qui relie les chromatides : c'est le centromère. Pourquoi pas « nucléole » : le nucléole est un petit corps situé à l'intérieur du noyau et ne relie rien aux chromosomes.",
+         "answers": [
+          {
+           "content": "centromère",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quand un chromosome possède-t-il deux chromatides ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Suivre la vie du chromosome : une chromatide en G1, deux après la phase S, de nouveau une après l'anaphase. Pourquoi pas « Dans la cellule fille » : les chromatides se sont déjà séparées en anaphase, la cellule fille n'a que des chromosomes à une chromatide.",
+         "answers": [
+          {
+           "content": "Après la réplication de l'ADN, jusqu'à l'anaphase",
+           "correct": true
+          },
+          {
+           "content": "Avant la phase S",
+           "correct": false
+          },
+          {
+           "content": "Dans la cellule fille",
+           "correct": false
+          },
+          {
+           "content": "Après la séparation en anaphase",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule compte 5 chromosomes à deux chromatides. Combien de molécules d'ADN contient-elle ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter les chromatides : 5 × 2 = 10. 2. Compter une molécule d'ADN par chromatide : 10 molécules. Pourquoi pas « 5 » : 5 est le nombre de chromosomes, mais chacun contient deux molécules d'ADN identiques.",
+         "answers": [
+          {
+           "content": "10",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Quelles affirmations sont vraies pour un chromosome en X ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Repérer le chromosome. 2. Localiser le centromère. 3. Compter les chromatides : deux, identiques, reliées au centromère. Pourquoi pas « Il correspond à deux chromosomes distincts » : les deux chromatides réunies par un même centromère forment un seul chromosome.",
+         "answers": [
+          {
+           "content": "Il possède deux chromatides identiques",
+           "correct": true
+          },
+          {
+           "content": "Ses deux chromatides sont reliées par le centromère",
+           "correct": true
+          },
+          {
+           "content": "Il correspond à deux chromosomes distincts",
+           "correct": false
+          },
+          {
+           "content": "Il est visible en interphase sous forme de bâtonnet",
+           "correct": false
+          },
+          {
+           "content": "Il contient une seule molécule d'ADN",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Une chromatide contient une molécule d'ADN ; le centromère relie les chromatides."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Dans cet exercice, tu lis des caryotypes et tu comptes des paires de chromosomes.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Combien de chromosomes contient une cellule humaine du corps ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Rappeler : chez l'Homme 2n = 46. 2. Conclure : 46 chromosomes, soit 23 paires. Pourquoi pas « 23 » : 23 est le nombre de paires, pas le nombre de chromosomes.",
+         "answers": [
+          {
+           "content": "46",
+           "correct": true
+          },
+          {
+           "content": "23",
+           "correct": false
+          },
+          {
+           "content": "44",
+           "correct": false
+          },
+          {
+           "content": "92",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule de maïs a 2n = 20. Combien de paires de chromosomes compte-t-elle ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter : 20 chromosomes. 2. Compter les paires : 20 ÷ 2 = 10 paires. Pourquoi pas « 20 » : 20 est 2n, c'est-à-dire le nombre de chromosomes.",
+         "answers": [
+          {
+           "content": "10",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Deux chromosomes de la même paire sont des chromosomes ___.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Former les paires : on associe les chromosomes de même taille et de même forme. 2. Nommer : ce sont des homologues. Pourquoi pas « sexuels » : seuls X et Y sont des chromosomes sexuels, alors que toutes les paires sont formées d'homologues.",
+         "answers": [
+          {
+           "content": "homologues",
+           "correct": true
+          },
+          {
+           "content": "homologue",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque espèce à son nombre de chromosomes 2n.",
+         "question_type": "matching",
+         "explanation": "Méthode : 1. Rappeler 2n pour chaque espèce. 2. Associer : Homme 46, drosophile 8, petit pois 14. Pourquoi pas relier la drosophile à 46 : la petite taille d'une mouche ne signifie pas moins ou plus de chromosomes, le nombre est propre à chaque espèce.",
+         "answers": [
+          {
+           "content": "Homme",
+           "match": "46"
+          },
+          {
+           "content": "Drosophile",
+           "match": "8"
+          },
+          {
+           "content": "Petit pois",
+           "match": "14"
+          }
+         ]
+        },
+        {
+         "content": "Un caryotype est une photographie des chromosomes classés par paires.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Rappeler la définition : le caryotype montre les chromosomes d'une cellule en division, classés par paires d'homologues. 2. Conclure : l'affirmation est vraie. Pourquoi pas « Faux » : on confondrait le caryotype avec une mesure de l'ADN, alors qu'il présente des chromosomes entiers.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Le nombre de paires est la moitié du nombre de chromosomes."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Dans cet exercice, tu étudies la quantité d'ADN par noyau au cours du cycle cellulaire.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Pendant quelle phase l'ADN est-il répliqué ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Lire les axes. 2. Lire le palier de départ en G1. 3. Repérer la montée : elle a lieu en phase S, c'est la réplication. Pourquoi pas « L'anaphase » : l'anaphase est l'étape de la séparation des chromatides, qui fait redescendre la quantité d'ADN.",
+         "answers": [
+          {
+           "content": "La phase S",
+           "correct": true
+          },
+          {
+           "content": "La phase G1",
+           "correct": false
+          },
+          {
+           "content": "L'anaphase",
+           "correct": false
+          },
+          {
+           "content": "La télophase",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un noyau contient 5 unités d'ADN en G1 (valeur fictive). Combien en contient-il en G2 ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Lire le palier de départ : 5 unités. 2. Relier : la réplication double la quantité, 5 × 2 = 10 unités en G2. Pourquoi pas « 5 » : la quantité ne reste à 5 qu'avant la phase S.",
+         "answers": [
+          {
+           "content": "10",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "unités"
+        },
+        {
+         "content": "À la fin de l'anaphase, la quantité d'ADN par noyau ___.",
+         "question_type": "select",
+         "explanation": "Méthode : 1. Repérer la descente. 2. Relier : elle correspond à la séparation des chromatides ; la quantité revient à celle de G1. Pourquoi pas « reste au niveau de la métaphase » : la cellule entière garde son ADN, mais chaque lot de chromatides reçoit la moitié de la quantité de la métaphase.",
+         "answers": [
+          {
+           "content": "revient à sa valeur de départ",
+           "correct": true
+          },
+          {
+           "content": "double encore",
+           "correct": false
+          },
+          {
+           "content": "est divisée par 4",
+           "correct": false
+          },
+          {
+           "content": "reste au niveau de la métaphase",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les parties de la courbe d'ADN.",
+         "question_type": "ordering",
+         "explanation": "Méthode : 1. Lire le palier de départ. 2. Repérer la montée de la phase S. 3. Lire le palier haut. 4. Relier la descente à l'anaphase. Pourquoi pas la descente avant la montée : l'ADN ne peut diminuer qu'après avoir doublé en phase S.",
+         "answers": [
+          {
+           "content": "Palier bas en G1"
+          },
+          {
+           "content": "Montée en phase S"
+          },
+          {
+           "content": "Palier haut en G2 et en métaphase"
+          },
+          {
+           "content": "Descente en anaphase"
+          }
+         ]
+        },
+        {
+         "content": "En phase S, le nombre de chromosomes de la cellule double.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Repérer la montée de la phase S. 2. Relier : la quantité d'ADN double, mais chaque chromosome passe seulement de une à deux chromatides. Le nombre de chromosomes reste le même. L'affirmation est fausse. Pourquoi pas « Vrai » : on confond chromatides et chromosomes : 92 chromatides forment toujours 46 chromosomes à deux chromatides.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Pense au palier de départ, à la montée, au palier haut et à la descente."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Dans cet exercice, tu expliques comment la mitose conserve l'information génétique.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Une cellule mère a 2n = 8. Combien de chromosomes a chaque cellule fille ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Décrire la cellule mère : 8 chromosomes. 2. Conclure : chaque cellule fille a le même nombre de chromosomes, soit 8. Pourquoi pas « 4 » : 4 est le nombre de paires, la mitose ne divise pas le nombre de chromosomes par deux.",
+         "answers": [
+          {
+           "content": "8",
+           "correct": true
+          },
+          {
+           "content": "4",
+           "correct": false
+          },
+          {
+           "content": "16",
+           "correct": false
+          },
+          {
+           "content": "2",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "En anaphase, les ___ de chaque chromosome se séparent.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Suivre la séparation : en anaphase, chaque chromosome à deux chromatides se scinde. 2. Nommer ce qui se sépare : les chromatides. Pourquoi pas « chromosomes » : les chromosomes entiers ne se séparent pas, ils se scindent en leurs deux chromatides.",
+         "answers": [
+          {
+           "content": "chromatides",
+           "correct": true
+          },
+          {
+           "content": "chromatide",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Les deux cellules filles ont la même information génétique que la cellule mère.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Suivre la réplication : copie à l'identique. 2. Suivre la séparation : un exemplaire par cellule fille. 3. Conclure : l'information est conservée. Pourquoi pas « Faux » : on imaginerait un partage des gènes, alors que la mitose copie d'abord, puis distribue.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule de drosophile (2n = 8) est en métaphase. Combien de chromatides compte-t-elle ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Décrire : 8 chromosomes. 2. Suivre la réplication : deux chromatides chacun, 8 × 2 = 16. Pourquoi pas « 8 » : 8 est le nombre de chromosomes, non de chromatides.",
+         "answers": [
+          {
+           "content": "16",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Quelles étapes assurent la conservation de l'information génétique ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Suivre la réplication. 2. Suivre la séparation. 3. Conclure : copie fidèle puis distribution complète. Pourquoi pas « Le doublement du nombre de chromosomes à chaque division » : le nombre de chromosomes ne change pas d'une génération de cellules à l'autre : il est doublé puis ramené à 2n.",
+         "answers": [
+          {
+           "content": "La réplication de l'ADN en phase S",
+           "correct": true
+          },
+          {
+           "content": "La séparation des chromatides en anaphase",
+           "correct": true
+          },
+          {
+           "content": "La disparition de la moitié des chromosomes",
+           "correct": false
+          },
+          {
+           "content": "Le mélange des chromosomes de la mère et du père",
+           "correct": false
+          },
+          {
+           "content": "Le doublement du nombre de chromosomes à chaque division",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Chaque cellule fille a le même nombre de chromosomes que la cellule mère."
+      }
+     ]
+    },
+    {
+     "title": "Sujet 2 · Les chromosomes dans la vie courante",
+     "notions": "Mitose et réparation de la peau ; chromosomes du cacaoyer et du maïs ; courbe de la quantité d'ADN d'une racine de maïs ; caryotype de la drosophile.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Après une chute à vélo à Abidjan, un enfant a une plaie au genou. La peau se répare grâce à des mitoses de cellules de la peau (2n = 46).",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Combien de chromosomes contient chaque nouvelle cellule de peau ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Décrire la cellule mère : 2n = 46. 2. Conclure sur les cellules filles : même nombre de chromosomes, donc 46. Pourquoi pas « 23 » : 23 est le nombre de paires ; la mitose ne partage pas les chromosomes par moitié.",
+         "answers": [
+          {
+           "content": "46",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Une cellule de peau est en métaphase. Combien de chromatides compte-t-elle ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter les chromosomes : 46. 2. Après la réplication, deux chromatides chacun : 46 × 2 = 92. Pourquoi pas « 46 » : 46 est le nombre de chromosomes, mais ils ont chacun deux chromatides en métaphase.",
+         "answers": [
+          {
+           "content": "92",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Pourquoi les cellules neuves de la peau ressemblent-elles aux anciennes ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Suivre la réplication : l'ADN est copié. 2. Suivre la séparation : chaque cellule fille reçoit un exemplaire complet. Pourquoi pas « Elles ne reçoivent que la moitié de l'ADN » : l'ADN a d'abord doublé : après le partage, chaque cellule fille retrouve la quantité de départ.",
+         "answers": [
+          {
+           "content": "Elles reçoivent une copie complète de l'ADN de la cellule mère",
+           "correct": true
+          },
+          {
+           "content": "Elles ne reçoivent que la moitié de l'ADN, qui suffit à la peau",
+           "correct": false
+          },
+          {
+           "content": "Elles fabriquent un ADN nouveau, différent de celui de la mère",
+           "correct": false
+          },
+          {
+           "content": "Elles gardent seulement les chromosomes sexuels",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les cellules neuves de la peau ont un nombre de chromosomes différent des cellules voisines.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Rappeler : la mitose conserve 2n. 2. Conclure : les cellules neuves ont 46 chromosomes, comme les voisines. L'affirmation est fausse. Pourquoi pas « Vrai » : on imaginerait que les cellules en réparation changent de nombre de chromosomes, alors que toutes les cellules du corps gardent 2n.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "La mitose est une division qui conserve le nombre de ___ des cellules.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Rappeler : la mitose donne deux cellules filles identiques à la cellule mère. 2. Nommer ce qui est conservé : le nombre de chromosomes. Pourquoi pas « chromatides » : le nombre de chromatides change, 92 en métaphase puis 46 dans chaque cellule fille.",
+         "answers": [
+          {
+           "content": "chromosomes",
+           "correct": true
+          },
+          {
+           "content": "chromosome",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Chaque cellule fille a les mêmes chromosomes que la cellule mère."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Dans une plantation près de Daloa, un technicien étudie une cellule de racine de cacaoyer, dont 2n = 20.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Combien de paires de chromosomes une cellule de cacaoyer compte-t-elle ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter : 2n = 20 chromosomes. 2. Compter les paires : 20 ÷ 2 = 10 paires. Pourquoi pas « 20 » : 20 est le nombre de chromosomes, pas de paires.",
+         "answers": [
+          {
+           "content": "10",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Après la réplication de l'ADN, combien de chromatides compte la cellule ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Décrire : 20 chromosomes. 2. Suivre la réplication : deux chromatides chacun, 20 × 2 = 40. Pourquoi pas « 20 » : 20 est le nombre de chromosomes, qui ne change pas en phase S.",
+         "answers": [
+          {
+           "content": "40",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Chaque cellule fille issue de la mitose compte ___ chromosomes.",
+         "question_type": "select",
+         "explanation": "Méthode : 1. Décrire la cellule mère : 20 chromosomes. 2. Conclure : les cellules filles gardent le même nombre. Pourquoi pas « 40 » : 40 est le nombre de chromatides en métaphase, pas de chromosomes d'une cellule fille.",
+         "answers": [
+          {
+           "content": "20",
+           "correct": true
+          },
+          {
+           "content": "10",
+           "correct": false
+          },
+          {
+           "content": "40",
+           "correct": false
+          },
+          {
+           "content": "30",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les 20 chromosomes du cacaoyer forment 10 paires d'homologues.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Compter les chromosomes : 20. 2. Former les paires : 20 ÷ 2 = 10 paires d'homologues. 3. Conclure : l'affirmation est vraie. Pourquoi pas « Faux » : on confondrait 20 chromosomes avec 20 paires, alors que chaque paire en réunit deux.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles affirmations sont vraies pour une cellule de cacaoyer en G2 ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Décrire la cellule mère. 2. Suivre la réplication : chromosomes à deux chromatides, ADN doublé. Pourquoi pas « Elle contient autant d'ADN qu'en G1 » : la réplication de la phase S est terminée, donc l'ADN est déjà doublé.",
+         "answers": [
+          {
+           "content": "Elle contient 20 chromosomes à deux chromatides",
+           "correct": true
+          },
+          {
+           "content": "Sa quantité d'ADN est le double de celle de G1",
+           "correct": true
+          },
+          {
+           "content": "Elle contient 10 chromosomes à une chromatide",
+           "correct": false
+          },
+          {
+           "content": "Elle contient autant d'ADN qu'en G1",
+           "correct": false
+          },
+          {
+           "content": "Elle contient 40 chromosomes à une chromatide",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Applique la méthode : compter les chromosomes, puis les paires, puis les chromatides."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Un élève de 2nde observe une racine de maïs (2n = 20). Il relève la quantité d'ADN par noyau, en unités arbitraires (valeurs fictives) : 4 en G1, 6 au milieu de S, 8 en G2, puis 4 après la séparation des chromatides.",
+       "exercise_type": "evaluation",
+       "figure": "courbe-adn-mais",
+       "questions": [
+        {
+         "content": "Quelle est la quantité d'ADN par noyau au milieu de la phase S ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Lire les axes. 2. Repérer la montée : de 4 à 8 unités, le milieu vaut 6 unités. Pourquoi pas « 8 » : 8 unités est la valeur atteinte en fin de phase S, pas au milieu.",
+         "answers": [
+          {
+           "content": "6",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "unités"
+        },
+        {
+         "content": "Que représente la montée de 4 à 8 unités ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer la variation. 2. Relier la montée à la réplication de l'ADN en phase S. Pourquoi pas « Le doublement du nombre de chromosomes » : en phase S, ce sont les chromatides qui sont copiées, le nombre de chromosomes ne change pas.",
+         "answers": [
+          {
+           "content": "La réplication de l'ADN",
+           "correct": true
+          },
+          {
+           "content": "La séparation des chromatides",
+           "correct": false
+          },
+          {
+           "content": "La division du cytoplasme",
+           "correct": false
+          },
+          {
+           "content": "Le doublement du nombre de chromosomes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelle est la quantité d'ADN dans chaque noyau fils ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Repérer la descente : 8 vers 4 unités. 2. Relier : séparation des chromatides en anaphase. 3. Conclure : 4 unités par noyau fils. Pourquoi pas « 8 » : 8 unités est la quantité avant la séparation, qui se partage ensuite entre les deux noyaux.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "unités"
+        },
+        {
+         "content": "La quantité finale d'ADN par noyau est égale à la quantité de départ.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 5. Conclure : on compare la valeur finale, 4 unités, à la valeur de départ en G1, 4 unités. L'affirmation est vraie. Pourquoi pas « Faux » : on croirait que le partage divise l'ADN par deux, mais le doublement de la phase S compense exactement.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Après la séparation, la cellule fille a la même quantité d'ADN qu'en ___.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Lire le palier de départ : en G1, 4 unités. 2. Conclure : la cellule fille retrouve 4 unités, comme en G1. Pourquoi pas « G2 » : en G2, la quantité est doublée, 8 unités, ce qui n'est plus le cas dans une cellule fille.",
+         "answers": [
+          {
+           "content": "G1",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Lis les paliers de la courbe : bas, montée, haut, descente."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Au lycée, les élèves étudient le caryotype de la drosophile, mouche du vinaigre qu'on trouve sur les fruits mûrs vendus au marché (2n = 8).",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Combien de paires de chromosomes la drosophile a-t-elle ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter : 8 chromosomes. 2. Compter les paires : 8 ÷ 2 = 4 paires. Pourquoi pas « 8 » : 8 est le nombre de chromosomes, pas de paires : chaque paire réunit deux chromosomes homologues, de même taille et de même forme.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Combien de chromatides une cellule de drosophile compte-t-elle en métaphase ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Décrire : 8 chromosomes. 2. Suivre la réplication : deux chromatides chacun, 8 × 2 = 16. Pourquoi pas « 8 » : 8 est le nombre de chromosomes ; en métaphase, chacun a deux chromatides.",
+         "answers": [
+          {
+           "content": "16",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "La drosophile a moins de chromosomes que l'Homme.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Rappeler les nombres : drosophile 2n = 8, Homme 2n = 46. 2. Comparer : 8 est inférieur à 46. L'affirmation est vraie. Pourquoi pas « Faux » : le nombre de chromosomes est propre à chaque espèce, et ici la drosophile en a bien moins.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un caryotype de drosophile montre combien de chromosomes ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Rappeler : 2n = 8. 2. Conclure : le caryotype montre 8 chromosomes classés en 4 paires. Pourquoi pas « 16 » : 16 est le nombre de chromatides en métaphase, non le nombre de chromosomes.",
+         "answers": [
+          {
+           "content": "8",
+           "correct": true
+          },
+          {
+           "content": "4",
+           "correct": false
+          },
+          {
+           "content": "16",
+           "correct": false
+          },
+          {
+           "content": "46",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles affirmations sont vraies pour la drosophile ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Décrire la cellule mère : 8 chromosomes. 2. Suivre la réplication : 16 chromatides en G2. 3. Conclure : 8 chromosomes par cellule fille. Pourquoi pas « Une cellule en G1 compte 16 chromatides » : en G1, l'ADN n'est pas encore répliqué, il y a 8 chromatides.",
+         "answers": [
+          {
+           "content": "Chaque cellule fille a 8 chromosomes",
+           "correct": true
+          },
+          {
+           "content": "Une cellule en G2 compte 16 chromatides",
+           "correct": true
+          },
+          {
+           "content": "Chaque cellule fille a 4 chromosomes",
+           "correct": false
+          },
+          {
+           "content": "Une cellule en G1 compte 16 chromatides",
+           "correct": false
+          },
+          {
+           "content": "Le caryotype montre 4 chromosomes",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Le nombre de paires est la moitié du nombre de chromosomes."
+      }
+     ]
+    },
+    {
+     "title": "Sujet 3 · Raisonner et justifier",
+     "notions": "Comparer deux hypothèses avec une mesure ; interpréter une courbe de la quantité d'ADN ; corriger des affirmations erronées ; prévoir des nombres de chromosomes et de chromatides.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Deux élèves discutent : Awa pense que chaque cellule fille reçoit la moitié des chromosomes de la cellule mère ; Koffi pense qu'elle reçoit un lot complet. On compte les chromosomes de cellules filles issues d'une cellule de peau humaine : 46 chromosomes.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Quelle hypothèse la mesure confirme-t-elle ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Rappeler la prévision de chaque hypothèse : 23 pour Awa, 46 pour Koffi. 2. Comparer à la mesure : 46. 3. Conclure : Koffi. Pourquoi pas « L'hypothèse d'Awa » : elle prévoit 23 chromosomes par cellule fille, ce qui ne correspond pas à la mesure.",
+         "answers": [
+          {
+           "content": "L'hypothèse de Koffi",
+           "correct": true
+          },
+          {
+           "content": "L'hypothèse d'Awa",
+           "correct": false
+          },
+          {
+           "content": "Les deux",
+           "correct": false
+          },
+          {
+           "content": "Aucune des deux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Si chaque cellule fille recevait 23 chromosomes, la génération suivante en aurait 11,5.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Calculer : 23 ÷ 2 = 11,5. 2. Raisonner : un nombre de chromosomes est un entier. 3. Conclure : l'hypothèse d'Awa est impossible. L'affirmation est vraie. Pourquoi pas « Faux » : 23 ÷ 2 ne donne pas un nombre entier : le partage par moitié ne pourrait pas durer.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Selon Koffi, combien de chromatides compte la cellule mère juste avant l'anaphase ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Décrire : 46 chromosomes. 2. Suivre la réplication : 46 × 2 = 92 chromatides. Pourquoi pas « 46 » : 46 est le nombre de chromosomes ; chacun a deux chromatides après la phase S.",
+         "answers": [
+          {
+           "content": "92",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Quels faits confirment l'hypothèse de Koffi ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Relever les faits : 46 chromosomes mesurés, réplication préalable. 2. Les confronter à l'hypothèse de Koffi. Pourquoi pas « Les cellules filles contiennent 23 chromosomes » : ce n'est pas un fait observé : l'observation donne 46 chromosomes.",
+         "answers": [
+          {
+           "content": "Les cellules filles contiennent 46 chromosomes",
+           "correct": true
+          },
+          {
+           "content": "L'ADN a été répliqué avant la division",
+           "correct": true
+          },
+          {
+           "content": "Le nombre de chromosomes est divisé par deux à chaque mitose",
+           "correct": false
+          },
+          {
+           "content": "Les cellules filles contiennent 23 chromosomes",
+           "correct": false
+          },
+          {
+           "content": "Le noyau disparaît définitivement",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La mitose conserve l'information ___ dans les cellules filles.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Rappeler la conclusion de la leçon. 2. Nommer ce qui est conservé : l'information génétique. Pourquoi pas « cytoplasmique » : le cytoplasme est partagé entre les cellules filles, mais ce n'est pas lui qui porte les gènes.",
+         "answers": [
+          {
+           "content": "génétique",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Compare la prévision de chaque hypothèse avec la mesure."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Un élève interprète une courbe de la quantité d'ADN par noyau (valeurs fictives, en unités arbitraires) : 6 en G1, 12 en fin de S et en G2, puis 6 après la séparation des chromatides.",
+       "exercise_type": "evaluation",
+       "figure": "courbe-adn-cycle",
+       "questions": [
+        {
+         "content": "De quel facteur la quantité d'ADN est-elle multipliée pendant la phase S ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Lire le palier de départ : 6. 2. Repérer la montée : 12. 3. Calculer : 12 ÷ 6 = 2. Pourquoi pas « 12 » : 12 est la valeur du palier haut, pas le facteur.",
+         "answers": [
+          {
+           "content": "2",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Quelle conclusion la descente de 12 à 6 permet-elle ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer la descente. 2. Relier à l'événement : séparation des chromatides en anaphase. 3. Conclure : la quantité par noyau revient à 6. Pourquoi pas « Le nombre de chromosomes a été divisé par deux » : la descente concerne la quantité d'ADN par noyau ; le nombre de chromosomes de chaque noyau fils reste 2n.",
+         "answers": [
+          {
+           "content": "Les chromatides se sont séparées et chaque noyau fils a reçu la moitié de l'ADN de la cellule mère",
+           "correct": true
+          },
+          {
+           "content": "L'ADN a été détruit en anaphase",
+           "correct": false
+          },
+          {
+           "content": "Le nombre de chromosomes a été divisé par deux",
+           "correct": false
+          },
+          {
+           "content": "La cellule a répliqué son ADN une deuxième fois",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La quantité finale d'ADN est le double de la quantité initiale.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 5. Conclure : la valeur finale, 6 unités, est égale à la valeur de départ, 6 unités. L'affirmation est fausse. Pourquoi pas « Vrai » : 12 est la quantité de G2, avant la séparation, et non la quantité finale.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Une cellule fille issue de cette mitose contient ___ unités d'ADN.",
+         "question_type": "select",
+         "explanation": "Méthode : 1. Lire la valeur après la descente : 6. 2. Conclure : la cellule fille retrouve la quantité de départ. Pourquoi pas « 3 » : 3 serait la moitié de la quantité de départ, ce qui supposerait que la cellule ne double pas son ADN avant de le partager.",
+         "answers": [
+          {
+           "content": "6",
+           "correct": true
+          },
+          {
+           "content": "12",
+           "correct": false
+          },
+          {
+           "content": "3",
+           "correct": false
+          },
+          {
+           "content": "18",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles affirmations sont vraies ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 4. Relier chaque variation à son événement : montée en phase S, descente en anaphase. Pourquoi pas « La quantité d'ADN double en anaphase » : en anaphase, la quantité par noyau diminue ; elle double en phase S.",
+         "answers": [
+          {
+           "content": "La phase S est celle du doublement de l'ADN",
+           "correct": true
+          },
+          {
+           "content": "La séparation des chromatides ramène la quantité par noyau à sa valeur de départ",
+           "correct": true
+          },
+          {
+           "content": "La quantité d'ADN double en anaphase",
+           "correct": false
+          },
+          {
+           "content": "L'ADN est répliqué en G1 puis disparaît",
+           "correct": false
+          },
+          {
+           "content": "Le nombre de chromosomes double en phase S",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Cherche les paliers et les variations de la courbe."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Un camarade a rédigé des affirmations sur les chromosomes. Tu dois dire si chacune est exacte.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "« Un caryotype humain compte 46 paires de chromosomes. »",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Compter les chromosomes : 46. 2. Compter les paires : 46 ÷ 2 = 23. L'affirmation est fausse. Pourquoi pas « Vrai » : 46 est le nombre de chromosomes, non de paires.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "« Un chromosome en X correspond à deux chromosomes. »",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Repérer le chromosome. 2. Localiser le centromère qui relie les deux chromatides. 3. Conclure : un seul chromosome à deux chromatides. L'affirmation est fausse. Pourquoi pas « Vrai » : le X est un chromosome à deux chromatides, pas deux chromosomes.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "« La quantité d'ADN double pendant la mitose. » Quelle correction est exacte ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer la montée de la courbe : phase S. 2. Relier : réplication, avant la mitose. Pourquoi pas « Elle double en anaphase » : en anaphase, la quantité d'ADN par noyau diminue.",
+         "answers": [
+          {
+           "content": "Elle double en phase S, avant la mitose",
+           "correct": true
+          },
+          {
+           "content": "Elle double en anaphase",
+           "correct": false
+          },
+          {
+           "content": "Elle ne double jamais",
+           "correct": false
+          },
+          {
+           "content": "Elle triple en phase S",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "« Une cellule fille issue d'une mitose a la moitié de l'ADN de la cellule mère en G1. »",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Lire le palier de départ : Q. 2. Conclure : la cellule fille a Q, comme la cellule mère en G1. L'affirmation est fausse. Pourquoi pas « Vrai » : l'ADN, doublé en phase S, est partagé en deux : le résultat est Q, pas Q ÷ 2.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "« Les chromosomes d'une cellule fille sont ___ à ceux de la cellule mère. » (un mot)",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Suivre la réplication : copie à l'identique. 2. Suivre la séparation : un exemplaire complet par cellule fille. 3. Conclure : ils sont identiques. Pourquoi pas « différents » : la mitose conserve l'information génétique, elle ne la modifie pas.",
+         "answers": [
+          {
+           "content": "identiques",
+           "correct": true
+          },
+          {
+           "content": "identique",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Reprends la méthode de la fiche : repérer, compter, conclure."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Une cellule d'une espèce fictive a 2n = 24. Tu prévois ses chromosomes, ses chromatides et sa quantité d'ADN.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Combien de paires de chromosomes cette cellule compte-t-elle ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter : 24 chromosomes. 2. Compter les paires : 24 ÷ 2 = 12. Pourquoi pas « 24 » : 24 est le nombre de chromosomes ; le nombre de paires est toujours la moitié, car chaque paire réunit deux homologues.",
+         "answers": [
+          {
+           "content": "12",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Combien de chromatides compte-t-elle en G2 ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Décrire : 24 chromosomes. 2. Suivre la réplication : 24 × 2 = 48 chromatides. Pourquoi pas « 24 » : 24 est le nombre de chromosomes, qui ne change pas en phase S.",
+         "answers": [
+          {
+           "content": "48",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Combien de chromosomes compte chaque cellule fille ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Décrire la cellule mère : 24 chromosomes. 2. Conclure : les cellules filles gardent 2n = 24. Pourquoi pas « 12 » : 12 est le nombre de paires, pas de chromosomes d'une cellule fille.",
+         "answers": [
+          {
+           "content": "24",
+           "correct": true
+          },
+          {
+           "content": "12",
+           "correct": false
+          },
+          {
+           "content": "48",
+           "correct": false
+          },
+          {
+           "content": "36",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "En anaphase, la cellule compte 48 chromosomes à une chromatide.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 3. Suivre la séparation : les 48 chromatides se séparent et forment chacune un chromosome à une chromatide, 24 à chaque pôle. L'affirmation est vraie. Pourquoi pas « Faux » : 24 est le nombre de chromosomes par pôle, mais la cellule entière en compte 48 avant la division du cytoplasme.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles affirmations sont vraies ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 4. Conclure sur les cellules filles : même nombre de chromosomes 2n et quantité Q. Pourquoi pas « La quantité d'ADN est de 2Q dans chaque cellule fille » : 2Q est la quantité de la cellule mère avant la séparation, pas celle d'une cellule fille.",
+         "answers": [
+          {
+           "content": "Chaque cellule fille reçoit 24 chromosomes à une chromatide",
+           "correct": true
+          },
+          {
+           "content": "La quantité d'ADN par noyau revient à Q dans chaque cellule fille",
+           "correct": true
+          },
+          {
+           "content": "Chaque cellule fille reçoit 12 chromosomes",
+           "correct": false
+          },
+          {
+           "content": "La quantité d'ADN par noyau est de 2Q dans chaque cellule fille",
+           "correct": false
+          },
+          {
+           "content": "La cellule fille a 48 chromosomes",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Applique la méthode : compter, doubler en phase S, partager en anaphase."
+      }
+     ]
+    },
+    {
+     "title": "Sujet 4 · Bilan : des chromosomes à la conservation de l'information",
+     "notions": "Toutes les notions : chromosome et chromatides ; caryotype et nombre de chromosomes ; quantité d'ADN au cours du cycle ; conservation de l'information génétique dans les cellules filles.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Dans cet exercice, tu fais le bilan du vocabulaire : chromosome, chromatide, caryotype, ADN.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Relie chaque mot à sa définition.",
+         "question_type": "matching",
+         "explanation": "Méthode : 1. Reconnaître chaque mot. 2. Associer sa définition précise. Pourquoi pas relier « réplication » à « photographie des chromosomes » : la réplication copie l'ADN, alors que le caryotype est une image classée des chromosomes.",
+         "answers": [
+          {
+           "content": "Chromatide",
+           "match": "Un des deux éléments identiques d'un chromosome répliqué"
+          },
+          {
+           "content": "Caryotype",
+           "match": "Photographie des chromosomes classés par paires"
+          },
+          {
+           "content": "Réplication",
+           "match": "Copie de l'ADN en phase S"
+          },
+          {
+           "content": "Homologues",
+           "match": "Deux chromosomes de la même paire"
+          }
+         ]
+        },
+        {
+         "content": "Quel constituant des chromosomes porte l'information génétique ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Rappeler : les chromosomes sont faits d'ADN. 2. Conclure : l'information génétique est portée par l'ADN. Pourquoi pas « Les mitochondries » : les mitochondries libèrent l'énergie de la cellule, elles ne constituent pas les chromosomes.",
+         "answers": [
+          {
+           "content": "L'ADN",
+           "correct": true
+          },
+          {
+           "content": "Les ribosomes",
+           "correct": false
+          },
+          {
+           "content": "La membrane plasmique",
+           "correct": false
+          },
+          {
+           "content": "Les mitochondries",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les chromosomes sont visibles sous forme de bâtonnets pendant la division cellulaire.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Rappeler : l'ADN se condense pendant la division. 2. Conclure : les chromosomes apparaissent alors comme des bâtonnets. Pourquoi pas « Faux » : en interphase, l'ADN est étalé en filaments fins et invisibles, mais pendant la division les bâtonnets sont bien visibles.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule humaine du corps compte 46 chromosomes. Combien de paires d'homologues cela fait-il ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Compter : 46. 2. Compter les paires : 46 ÷ 2 = 23. Pourquoi pas « 46 » : 46 est le nombre de chromosomes, pas de paires : chaque paire réunit deux chromosomes homologues.",
+         "answers": [
+          {
+           "content": "23",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Un chromosome répliqué a deux ___ identiques.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Repérer le chromosome. 2. Compter ses chromatides : deux après la réplication. Pourquoi pas « chromosomes » : les deux éléments réunis par le centromère ne forment qu'un seul chromosome.",
+         "answers": [
+          {
+           "content": "chromatides",
+           "correct": true
+          },
+          {
+           "content": "chromatide",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Associe chaque mot à une seule idée précise."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "On étudie une cellule humaine (2n = 46) à trois stades : en G1, en métaphase et en anaphase. Tu dois calculer ses nombres de chromatides et de chromosomes.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "En G1, combien de chromatides la cellule compte-t-elle ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Décrire : 46 chromosomes à une chromatide. 2. Calculer : 46 × 1 = 46 chromatides. Pourquoi pas « 92 » : 92 est le nombre de chromatides après la réplication.",
+         "answers": [
+          {
+           "content": "46",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "En métaphase, combien de chromatides la cellule compte-t-elle ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 2. Suivre la réplication : 46 × 2 = 92 chromatides. Pourquoi pas « 46 » : 46 est le nombre de chromosomes, qui ne change pas en phase S : seules les chromatides sont copiées et passent de 46 à 92.",
+         "answers": [
+          {
+           "content": "92",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "En anaphase, combien de chromosomes la cellule compte-t-elle en tout ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 3. Suivre la séparation : chaque chromatide séparée est un chromosome, donc 92 chromosomes dans la cellule, 46 à chaque pôle. Pourquoi pas « 46 » : 46 est le nombre de chromosomes à chaque pôle, pas dans la cellule entière.",
+         "answers": [
+          {
+           "content": "92",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Combien de chromosomes compte une cellule fille ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 4. Conclure : même nombre de chromosomes que la cellule mère, 46. Pourquoi pas « 23 » : 23 est le nombre de paires, pas de chromosomes d'une cellule fille.",
+         "answers": [
+          {
+           "content": "46",
+           "correct": true
+          },
+          {
+           "content": "23",
+           "correct": false
+          },
+          {
+           "content": "92",
+           "correct": false
+          },
+          {
+           "content": "69",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Entre la métaphase et la cellule fille, le nombre de chromosomes par noyau a doublé.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 3. Suivre la séparation puis 4. Conclure : le nombre par noyau passe de 46 à 46 et la quantité d'ADN de 2Q à Q. L'affirmation est fausse. Pourquoi pas « Vrai » : 92 chromosomes existent seulement dans la cellule entière en anaphase, répartis en deux lots de 46.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Compte d'abord les chromosomes, puis double pour les chromatides après la phase S."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Un élève trace la courbe de la quantité d'ADN par noyau d'une cellule de racine de maïs (2n = 20) : 4 unités en G1, 8 unités en G2 et en métaphase, puis 4 unités après la séparation des chromatides (valeurs fictives).",
+       "exercise_type": "evaluation",
+       "figure": "courbe-adn-mais",
+       "questions": [
+        {
+         "content": "Quel événement fait passer la quantité d'ADN de 4 à 8 unités ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 3. Repérer la montée. 4. Relier : réplication de l'ADN en phase S. Pourquoi pas « La séparation des chromatides » : elle correspond à la descente de 8 à 4 unités.",
+         "answers": [
+          {
+           "content": "La réplication en phase S",
+           "correct": true
+          },
+          {
+           "content": "La séparation des chromatides",
+           "correct": false
+          },
+          {
+           "content": "La formation du fuseau",
+           "correct": false
+          },
+          {
+           "content": "La division du cytoplasme",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Combien de chromatides compte une cellule de maïs en métaphase ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Décrire : 20 chromosomes. 2. Suivre la réplication : 20 × 2 = 40 chromatides. Pourquoi pas « 20 » : 20 est le nombre de chromosomes ; en métaphase, chacun a déjà deux chromatides, ce qui fait 40 chromatides.",
+         "answers": [
+          {
+           "content": "40",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Après la séparation, chaque noyau fils contient 4 unités d'ADN et 20 chromosomes.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 3. Suivre la séparation puis 4. Conclure : 4 unités d'ADN et 20 chromosomes par noyau fils. L'affirmation est vraie. Pourquoi pas « Faux » : on croirait que le partage divise le nombre de chromosomes, alors que chaque lot est complet.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "En fin de phase S, le nombre de chromosomes de la cellule est ___.",
+         "question_type": "select",
+         "explanation": "Méthode : 2. Suivre la réplication : les chromatides doublent, mais pas les chromosomes. Le nombre reste 20. Pourquoi pas « égal à 40 » : 40 est le nombre de chromatides, et non de chromosomes.",
+         "answers": [
+          {
+           "content": "toujours 20",
+           "correct": true
+          },
+          {
+           "content": "égal à 40",
+           "correct": false
+          },
+          {
+           "content": "égal à 10",
+           "correct": false
+          },
+          {
+           "content": "égal à 8",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La quantité d'ADN par noyau d'une cellule fille est la même qu'en ___.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Lire le palier de départ : 4 unités en G1. 2. Conclure : la cellule fille a 4 unités, comme en G1. Pourquoi pas « G2 » : en G2, la quantité vaut 8 unités, car la réplication a déjà eu lieu.",
+         "answers": [
+          {
+           "content": "G1",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Relie chaque variation de la courbe à un événement du cycle."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Bilan : tu retraces le devenir des chromosomes d'une cellule de la peau pendant une mitose, de la cellule mère aux cellules filles.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Remets dans l'ordre le devenir des chromosomes.",
+         "question_type": "ordering",
+         "explanation": "Méthode : 1. Décrire la cellule mère. 2. Suivre la réplication. 3. Suivre la séparation. 4. Conclure sur les cellules filles. Pourquoi pas placer la séparation en premier : les chromatides identiques n'existent qu'après la réplication.",
+         "answers": [
+          {
+           "content": "Cellule mère : 46 chromosomes à une chromatide"
+          },
+          {
+           "content": "Réplication de l'ADN : 46 chromosomes à deux chromatides"
+          },
+          {
+           "content": "Séparation des chromatides en anaphase"
+          },
+          {
+           "content": "Deux cellules filles : 46 chromosomes chacune"
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi les cellules filles ont-elles la même information génétique que la cellule mère ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 2. Suivre la réplication : copie identique. 3. Suivre la séparation : un exemplaire par cellule. 4. Conclure : information conservée. Pourquoi pas « chaque cellule fille reçoit la moitié de l'ADN » : l'ADN a d'abord doublé : le partage rend la quantité de départ, soit un exemplaire complet.",
+         "answers": [
+          {
+           "content": "Parce que l'ADN est copié à l'identique puis réparti en un exemplaire complet par cellule",
+           "correct": true
+          },
+          {
+           "content": "Parce que chaque cellule fille reçoit la moitié de l'ADN de la mère",
+           "correct": false
+          },
+          {
+           "content": "Parce que les cellules filles fabriquent un nouvel ADN au hasard",
+           "correct": false
+          },
+          {
+           "content": "Parce que le noyau de la cellule mère ne se divise pas",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles affirmations sont vraies à propos de la mitose ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 4. Conclure : deux cellules filles identiques, même 2n. Pourquoi pas « Le nombre de chromosomes est divisé par deux » : c'est ce qui arrive dans une autre division, pas dans la mitose qui conserve 2n.",
+         "answers": [
+          {
+           "content": "Elle donne deux cellules filles identiques entre elles",
+           "correct": true
+          },
+          {
+           "content": "Le nombre de chromosomes est conservé",
+           "correct": true
+          },
+          {
+           "content": "Elle donne quatre cellules filles différentes",
+           "correct": false
+          },
+          {
+           "content": "Le nombre de chromosomes est divisé par deux",
+           "correct": false
+          },
+          {
+           "content": "L'ADN n'est pas répliqué",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule d'une autre espèce a 2n = 18. Combien de chromatides compte-t-elle en métaphase ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Décrire : 18 chromosomes. 2. Suivre la réplication : 18 × 2 = 36 chromatides. Pourquoi pas « 18 » : 18 est le nombre de chromosomes ; après la phase S, chacun a deux chromatides, d'où le doublement du nombre.",
+         "answers": [
+          {
+           "content": "36",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Chez l'Homme, une cellule fille issue d'une mitose a 46 chromosomes et une quantité d'ADN Q.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 4. Conclure : même nombre de chromosomes 2n = 46 et même quantité d'ADN Q que la cellule mère en G1. L'affirmation est vraie. Pourquoi pas « Faux » : on croirait que la mitose divise ces valeurs par deux, mais le doublement de la phase S compense le partage.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "En anaphase, les ___ de chaque chromosome se séparent.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 3. Suivre la séparation : en anaphase, chaque chromosome à deux chromatides se scinde. Pourquoi pas « chromosomes » : ce sont les chromatides, et non les chromosomes entiers, qui migrent vers les pôles.",
+         "answers": [
+          {
+           "content": "chromatides",
+           "correct": true
+          },
+          {
+           "content": "chromatide",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Pense à la réplication puis à la séparation des chromatides."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
