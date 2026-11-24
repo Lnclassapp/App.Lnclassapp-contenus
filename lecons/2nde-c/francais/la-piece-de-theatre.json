@@ -13,7 +13,7 @@
       "notions": [
         {
           "name": "Le texte théâtral : dialogue, répliques et didascalies",
-          "remember": "Un texte de théâtre est écrit pour être **joué** devant un public. Il mêle deux sortes de texte. Le **dialogue** est fait des paroles des personnages : chaque **réplique** (ce qu'un personnage dit avant que l'autre réponde) est précédée du **nom du personnage**. Les **didascalies** sont les indications de l'auteur : lieu, moment, gestes, ton, entrées et sorties. Elles sont écrites entre parenthèses ou en italique et **ne sont pas prononcées** par les acteurs.",
+          "remember": "Un texte de théâtre est écrit pour être **joué** devant un public. Il mêle deux sortes de texte. Le **dialogue** est fait des paroles des personnages : chaque **réplique** (ce qu'un personnage dit avant que l'autre réponde) est précédée du **nom du personnage**, qui indique qui parle et n'est pas prononcé. Les **didascalies** sont les indications de l'auteur : lieu, moment, gestes, ton, entrées et sorties. Elles sont écrites entre parenthèses ou en italique et **ne sont pas prononcées** par les acteurs.",
           "method": [
             "Repérer le nom du personnage en tête de chaque réplique pour savoir qui parle.",
             "Distinguer les répliques (paroles dites à voix haute) des didascalies (indications non prononcées, entre parenthèses ou en italique).",
@@ -35,9 +35,9 @@
             "statement": "Tu t'entraînes à distinguer les répliques et les didascalies.",
             "questions": [
               {
-                "content": "Dans « AWA (elle ouvre la porte). Entrez ! », quelle partie est une didascalie ?",
+                "content": "Dans « AWA (elle ouvre la porte). Entrez ! », quelle partie est une didascalie qui indique un geste ?",
                 "question_type": "single_choice",
-                "explanation": "Étape 2 — Distinguer les répliques des didascalies : « Entrez ! » est dit à voix haute, c'est la réplique. « (elle ouvre la porte) » est entre parenthèses et n'est pas prononcé : c'est la didascalie. « AWA » indique seulement qui parle.",
+                "explanation": "Étape 2 — Distinguer les répliques des didascalies : « Entrez ! » est dit à voix haute, c'est la réplique. « (elle ouvre la porte) » est entre parenthèses et n'est pas prononcé : c'est la didascalie. « AWA » indique seulement qui parle : ce n'est pas une indication de geste.",
                 "answers": [
                   {
                     "content": "(elle ouvre la porte)",
@@ -242,7 +242,7 @@
                 {
                   "content": "Relie chaque élément d'un texte de théâtre à son rôle.",
                   "question_type": "matching",
-                  "explanation": "Étape 1 — Repérer le nom du personnage : il dit qui parle. Étape 2 — Distinguer : la réplique est dite, la didascalie ne l'est pas. Le dialogue est l'ensemble des répliques échangées.",
+                  "explanation": "Étape 1 — Repérer le nom du personnage : il dit qui parle. Étape 2 — Distinguer : la réplique est dite, la didascalie ne l'est pas : elle indique le jeu (geste, ton, lieu). Le dialogue est l'ensemble des répliques échangées.",
                   "answers": [
                     {
                       "content": "Le nom du personnage en tête de ligne",
@@ -250,7 +250,7 @@
                     },
                     {
                       "content": "Une didascalie",
-                      "match": "Indication de l'auteur, non prononcée"
+                      "match": "Indication de jeu non prononcée (geste, ton, lieu)"
                     },
                     {
                       "content": "Une réplique",
@@ -1016,7 +1016,7 @@
         },
         {
           "name": "Les genres théâtraux : comédie, tragédie, drame",
-          "remember": "La **comédie** veut faire rire et corriger les défauts des hommes ; ses personnages sont des gens ordinaires, ses situations sont de la vie quotidienne, et la fin est en général heureuse. La **tragédie classique** (XVIIe siècle) met en scène des personnages de rang élevé (rois, princes, héros) pris dans des passions violentes ; elle inspire la terreur et la pitié, et finit mal (mort, exil). Elle respecte la règle des **trois unités** : de temps (environ vingt-quatre heures), de lieu et d'action. Le **drame** (théâtre romantique du XIXe siècle) mêle le tragique et le comique et refuse la règle des unités. Exemples : « L'Avare » de Molière (1668) est une comédie ; « Andromaque » de Racine (1667) est une tragédie ; « Hernani » de Victor Hugo (1830) est un drame romantique.",
+          "remember": "La **comédie** veut faire rire et corriger les défauts des hommes ; ses personnages sont des gens ordinaires, ses situations sont de la vie quotidienne, et la fin est en général heureuse. La **tragédie classique** (XVIIe siècle) met en scène des personnages de rang élevé (rois, princes, héros) pris dans des passions violentes ; elle inspire la terreur et la pitié, et finit mal (mort, exil). Elle respecte la règle des **trois unités** : de temps (environ vingt-quatre heures), de lieu et d'action. Le **drame romantique** (XIXe siècle, avec Victor Hugo) mêle le tragique et le comique, met en scène des personnages de tous milieux et rejette les unités de temps et de lieu. Exemples : « L'Avare » de Molière (1668) est une comédie ; « Andromaque » de Racine (1667) est une tragédie ; « Hernani » de Victor Hugo (1830) est un drame romantique.",
           "method": [
             "Relever les personnages et leur condition : gens ordinaires, rois et héros, ou personnages de tous milieux.",
             "Identifier le ton dominant : le rire, la terreur et la pitié, ou un mélange des deux.",
@@ -1032,7 +1032,7 @@
               "Conclure : gens ordinaires, rire, fin heureuse, c'est une comédie."
             ]
           },
-          "pitfall": "Ne confonds pas le sens courant et le sens littéraire du mot « drame ». Dans la vie courante, un drame est un événement triste. Au théâtre, c'est un **genre** qui mêle le tragique et le comique, avec des personnages de tous milieux. Une pièce qui finit mal n'est donc pas forcément une tragédie : si des scènes comiques se mêlent aux scènes tragiques, c'est un drame.",
+          "pitfall": "Ne confonds pas le sens courant et le sens littéraire du mot « drame ». Dans la vie courante, un drame est un événement triste. Au théâtre, le drame (surtout le drame romantique du XIXe siècle) est un **genre** qui mêle le tragique et le comique, avec des personnages de tous milieux. Une pièce qui finit mal n'est donc pas forcément une tragédie : si des scènes comiques se mêlent aux scènes tragiques, c'est un drame.",
           "figure": null,
           "practice": {
             "statement": "Tu t'entraînes à reconnaître le genre d'une pièce.",
@@ -1100,7 +1100,7 @@
               {
                 "content": "La tragédie classique respecte la règle des trois ___ : temps, lieu et action.",
                 "question_type": "fill_blank",
-                "explanation": "Étape 4 — Conclure : la règle des trois unités (temps, lieu, action) est une règle du théâtre classique, surtout de la tragédie ; le drame romantique la refuse.",
+                "explanation": "Étape 4 — Conclure : la règle des trois unités (temps, lieu, action) est une règle du théâtre classique, surtout de la tragédie ; le drame romantique rejette les unités de temps et de lieu.",
                 "answers": [
                   {
                     "content": "unités",
@@ -1286,7 +1286,7 @@
                 {
                   "content": "Le genre de « Hernani » de Victor Hugo (1830) est : ___.",
                   "question_type": "select",
-                  "explanation": "Étape 4 — Conclure : « Hernani » mêle le tragique et le comique et refuse la règle des unités. C'est un drame romantique.",
+                  "explanation": "Étape 4 — Conclure : « Hernani » mêle le tragique et le comique et ne respecte pas les unités de temps et de lieu. C'est un drame romantique.",
                   "answers": [
                     {
                       "content": "le drame romantique",
@@ -1305,7 +1305,7 @@
                 {
                   "content": "Quelles sont les trois unités de la tragédie classique ?",
                   "question_type": "multiple_correct_3",
-                  "explanation": "Étape 4 — Conclure : la tragédie classique respecte l'unité de temps (environ vingt-quatre heures), de lieu (un seul lieu) et d'action (une seule intrigue). Le ton et le nombre de personnages ne sont pas des unités.",
+                  "explanation": "Étape 4 — Conclure : la tragédie classique respecte l'unité de temps (environ vingt-quatre heures), de lieu (un seul lieu) et d'action (une seule intrigue). Le ton et les personnages ne font pas partie de ces trois unités.",
                   "answers": [
                     {
                       "content": "L'unité de temps",
@@ -1363,7 +1363,7 @@
               "Situer : c'est l'acte II, scène 4, dans le salon des Yao ; Mme Yao et Fanta parlent, Sékou est caché.",
               "Relever : Mme Yao parle à Fanta ; la didascalie « (elle jette un regard vers le rideau) » est la clé de la scène.",
               "Chercher ce que le spectateur sait : il sait que Sékou est derrière le rideau ; Mme Yao l'ignore, et Fanta le sait.",
-              "Interpréter : « Il n'est pas là pour te défendre ! » est ironique pour le spectateur, qui sourit : l'effet est comique."
+              "Interpréter : « Il n'est pas là pour te défendre ! » prend un autre sens pour le spectateur, qui sait que Sékou est là, tout près : il sourit, l'effet est comique."
             ]
           },
           "pitfall": "Ne crois pas que le spectateur est un personnage de la scène. Dans une scène à deux personnages, chaque réplique a **déjà deux destinataires** : l'interlocuteur et le spectateur. Le spectateur écoute et comprend, mais il ne répond jamais, et les personnages ne savent pas qu'on les regarde. Il est donc **destinataire**, pas **interlocuteur**.",
@@ -1520,7 +1520,7 @@
                 {
                   "content": "Quand Mme Yao dit « Il n'est pas là pour te défendre ! », quel effet cette réplique produit-elle sur le spectateur ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 4 — Interpréter l'effet : le spectateur sait ce que Mme Yao ignore. Sa phrase devient ironique et comique : c'est l'ironie dramatique.",
+                  "explanation": "Étape 4 — Interpréter l'effet : le spectateur sait ce que Mme Yao ignore. Sa phrase prend pour lui un autre sens et le fait sourire : c'est l'ironie dramatique.",
                   "answers": [
                     {
                       "content": "Elle le fait sourire, car il sait que Sékou est là.",
@@ -3462,7 +3462,7 @@
                 {
                   "content": "Pourquoi le spectateur peut-il sourire à la réplique « Entre amis, on ne cache rien ! » ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Le spectateur sait que l'inspecteur cache son identité. 2) La phrase de M. Séri est donc ironique pour lui.",
+                  "explanation": "1) Le spectateur sait que l'inspecteur cache son identité. 2) La phrase de M. Séri prend donc pour lui un autre sens : c'est M. Séri qu'on cache, sans qu'il le sache.",
                   "answers": [
                     {
                       "content": "Parce qu'il sait ce que M. Séri ignore.",
@@ -3523,7 +3523,7 @@
                 {
                   "content": "Le spectateur en sait plus que M. Séri : c'est de l'ironie ___.",
                   "question_type": "fill_blank",
-                  "explanation": "1) Le spectateur comprend ce qu'un personnage ignore. 2) C'est l'ironie dramatique. Chercher ce que le spectateur sait et que M. Séri ignore, puis nommer l'effet. Piège : ne pas parler d'ironie lyrique ou comique : le terme est « dramatique ».",
+                  "explanation": "1) Le spectateur comprend ce qu'un personnage ignore. 2) C'est l'ironie dramatique. Chercher ce que le spectateur sait et que M. Séri ignore, puis nommer l'effet. Piège : le terme est « ironie dramatique », même quand l'effet est comique.",
                   "answers": [
                     {
                       "content": "dramatique",
@@ -3789,7 +3789,7 @@
             },
             {
               "title": "Exercice 3",
-              "statement": "Dans cet exercice, tu analyses la structure et le genre d'une pièce.\n\nTexte écrit pour Lnclass : Pièce en cinq actes, « La Pirogue d'Akissi ». Acte I : sur la lagune, la jeune Akissi, fille du chef, et sa famille sont présentées. Actes II à IV : le chef promet Akissi à un prince rival ; Akissi s'enfuit avec Daouda, un pêcheur ; la guerre éclate entre les deux villages. Acte V : Akissi et Daouda meurent, le chef, brisé, abdique.",
+              "statement": "Dans cet exercice, tu analyses la structure et le genre d'une pièce.\n\nTexte écrit pour Lnclass : Pièce en cinq actes, « La Pirogue d'Akissi ». Acte I : sur la lagune, la jeune Akissi, fille du chef, et sa famille sont présentées. Actes II à IV : le chef promet Akissi à un prince rival ; Akissi s'enfuit avec Daouda, le fils du roi d'un village voisin ; la guerre éclate entre les deux villages. Aucune scène comique : le ton reste grave du début à la fin. Acte V : Akissi et Daouda meurent, le chef, brisé, abdique.",
               "exercise_type": "evaluation",
               "figure": null,
               "hint": "Cherche où est le problème et où il se termine.",
@@ -3854,7 +3854,7 @@
                 {
                   "content": "Quel est le genre de « La Pirogue d'Akissi » ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Le chef et le prince sont de rang élevé. 2) La guerre et la mort montrent des passions violentes. 3) La fin est malheureuse : tragédie.",
+                  "explanation": "1) Le chef, les princes et Akissi sont de rang élevé. 2) La guerre et la mort montrent des passions violentes ; le ton reste grave, sans scène comique : ce n'est pas un drame romantique. 3) La fin est malheureuse : tragédie.",
                   "answers": [
                     {
                       "content": "Une tragédie",
