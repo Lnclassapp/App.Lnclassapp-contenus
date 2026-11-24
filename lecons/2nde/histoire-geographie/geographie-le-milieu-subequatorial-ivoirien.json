@@ -12,7 +12,7 @@
     {
      "key": "carte-milieu-subequatorial",
      "kind": "map",
-     "description": "Une carte schématique de la Côte d'Ivoire. La forêt dense humide occupe le sud, la frange littorale borde l'océan et la savane couvre le centre et le nord. Abidjan, San-Pédro, Gagnoa et Daloa sont marquées dans le sud, Korhogo dans le nord. Elle sert à situer le milieu subéquatorial.",
+     "description": "Une carte schématique de la Côte d'Ivoire. La forêt dense humide occupe le sud, la frange littorale borde l'océan et la savane couvre le centre et le nord. Abidjan, San-Pédro, Gagnoa et Soubré sont marquées dans le sud, Korhogo dans le nord. Elle sert à situer le milieu subéquatorial.",
      "params": {
       "base": "cote_d_ivoire",
       "areas": [
@@ -43,8 +43,8 @@
         "label": "Gagnoa"
        },
        {
-        "id": "daloa",
-        "label": "Daloa"
+        "id": "soubre",
+        "label": "Soubré"
        },
        {
         "id": "korhogo",
@@ -250,7 +250,7 @@
    "notions": [
     {
      "name": "Situer le milieu subéquatorial en Côte d'Ivoire",
-     "remember": "Le **milieu subéquatorial** est le milieu de **forêt dense humide** du **sud** de la Côte d'Ivoire. Il longe le **golfe de Guinée**, qui fait partie de l'**océan Atlantique**, et s'étend du **littoral** vers l'intérieur des terres jusqu'à la limite avec la **savane**, qui domine le centre et le nord du pays.\n\nOn y trouve des villes du littoral comme **Abidjan** et **San-Pédro**, et des villes de l'intérieur comme **Divo**, **Gagnoa** et **Daloa**. Au nord, une ville comme **Korhogo** appartient déjà à la savane.",
+     "remember": "Le **milieu subéquatorial** est le milieu de **forêt dense humide** du **sud** de la Côte d'Ivoire. Il longe le **golfe de Guinée**, qui fait partie de l'**océan Atlantique**, et s'étend du **littoral** vers l'intérieur des terres jusqu'à la limite avec la **savane**, qui domine le centre et le nord du pays.\n\nOn y trouve des villes du littoral comme **Abidjan** et **San-Pédro**, et des villes de l'intérieur comme **Divo**, **Gagnoa** et **Soubré**. Au nord, une ville comme **Korhogo** appartient déjà à la savane.",
      "method": [
       "Situer le milieu dans le pays à l'aide des points cardinaux.",
       "Délimiter le milieu : dire ce qui le borde au sud et ce qu'il touche au nord.",
@@ -261,7 +261,7 @@
       "steps": [
        "Situer : le milieu subéquatorial occupe le sud du pays, le long du golfe de Guinée.",
        "Délimiter : au sud, il est bordé par l'océan Atlantique ; au nord, il touche la savane.",
-       "Citer : Abidjan et San-Pédro sont sur le littoral ; Divo, Gagnoa et Daloa sont dans l'intérieur du milieu."
+       "Citer : Abidjan et San-Pédro sont sur le littoral ; Divo, Gagnoa et Soubré sont dans l'intérieur du milieu."
       ]
      },
      "pitfall": "Ne pas croire que toute la Côte d'Ivoire est couverte de forêt. Contre-exemple : Abidjan, au sud, est dans le milieu subéquatorial, mais Korhogo, au nord, est dans la savane. Pour ne pas se tromper, on place toujours la ville sur la carte : la forêt est au sud, la savane au centre et au nord.",
@@ -438,7 +438,7 @@
         {
          "content": "Remets dans l'ordre ces villes, de la plus proche de l'océan à la plus au nord.",
          "question_type": "ordering",
-         "explanation": "Étape 3 — Citer : on range les repères du sud vers le nord : Abidjan sur le littoral, puis Gagnoa et Daloa dans la forêt, puis Korhogo en savane.",
+         "explanation": "Étape 3 — Citer : on range les repères du sud vers le nord : Abidjan sur le littoral, puis Gagnoa dans la forêt, puis Bouaké au centre, déjà en savane, et enfin Korhogo, dans la savane du nord.",
          "answers": [
           {
            "content": "Abidjan"
@@ -447,7 +447,7 @@
            "content": "Gagnoa"
           },
           {
-           "content": "Daloa"
+           "content": "Bouaké"
           },
           {
            "content": "Korhogo"
@@ -551,7 +551,7 @@
     },
     {
      "name": "Le climat subéquatorial",
-     "remember": "Le sud de la Côte d'Ivoire a un **climat subéquatorial**. Il a **quatre saisons** : la **grande saison sèche** (de décembre à février environ), la **grande saison des pluies** (de mars-avril à juillet environ), la **petite saison sèche** (août-septembre environ) et la **petite saison des pluies** (octobre-novembre environ). Il y a donc **deux saisons des pluies** et **deux saisons sèches**.\n\nLes **températures** sont **élevées** (autour de 26 °C en moyenne) et varient **peu** : l'**amplitude thermique**, écart entre le mois le plus chaud et le mois le plus froid, est faible, de quelques degrés. Les **précipitations** sont **abondantes** (plus de 1 200 mm par an) et l'**humidité** de l'air est élevée.",
+     "remember": "Le sud de la Côte d'Ivoire a un **climat subéquatorial**. Il a **quatre saisons** : la **grande saison sèche** (de décembre à février environ), la **grande saison des pluies** (de mars-avril à juillet environ), la **petite saison sèche** (août-septembre environ) et la **petite saison des pluies** (octobre-novembre environ). Il y a donc **deux saisons des pluies** et **deux saisons sèches**. Ces dates varient selon les lieux et les années : la grande saison sèche dure parfois jusqu'en mars, et la petite saison sèche commence parfois dès la mi-juillet.\n\nLes **températures** sont **élevées** (autour de 26 °C en moyenne) et varient **peu** : l'**amplitude thermique**, écart entre le mois le plus chaud et le mois le plus froid, est faible, de quelques degrés. Les **précipitations** sont **abondantes** (plus de 1 200 mm par an) et l'**humidité** de l'air est élevée.",
      "method": [
       "Repérer les saisons : les compter, puis les nommer.",
       "Caractériser les températures : leur niveau et leur amplitude.",
@@ -849,12 +849,12 @@
     },
     {
      "name": "Lire un diagramme ombrothermique",
-     "remember": "Un **diagramme ombrothermique** (ou de Gaussen) montre, mois par mois, les **températures** moyennes (une **courbe**, en °C) et les **précipitations** (des **barres**, en mm). L'échelle est choisie pour que **1 °C corresponde à 2 mm**.\n\nUn mois est **sec** quand ses précipitations en mm sont **inférieures au double** de sa température en °C : $P < 2T$. L'**amplitude thermique** est l'écart entre la température la plus haute et la plus basse : $T_{max} - T_{min}$. Le **total annuel** des précipitations s'obtient en additionnant les douze mois.",
+     "remember": "Un **diagramme ombrothermique** (ou de Gaussen) montre, mois par mois, les **températures** moyennes (une **courbe**, en °C) et les **précipitations** (des **barres**, en mm). L'échelle est choisie pour que **1 °C corresponde à 2 mm**.\n\nUn mois est **sec** quand ses précipitations en mm sont **inférieures ou égales au double** de sa température en °C : $P \\le 2T$ (règle de Gaussen). L'**amplitude thermique** est l'écart entre la température la plus haute et la plus basse : $T_{max} - T_{min}$. Le **total annuel** des précipitations s'obtient en additionnant les douze mois.",
      "method": [
       "Présenter le diagramme : le lieu, la période, les grandeurs et leurs unités.",
       "Lire la courbe des températures : la valeur la plus haute, la plus basse, l'amplitude.",
       "Lire les barres des précipitations : le mois le plus pluvieux et le total annuel.",
-      "Repérer les mois secs avec la règle $P < 2T$.",
+      "Repérer les mois secs avec la règle $P \\le 2T$.",
       "Conclure : nommer les saisons et le climat."
      ],
      "example": {
@@ -988,9 +988,9 @@
          ]
         },
         {
-         "content": "Un mois est sec si ses précipitations (en mm) sont inférieures au ___ de sa température (en °C) (un mot).",
+         "content": "Un mois est sec si ses précipitations (en mm) sont inférieures ou égales au ___ de sa température (en °C) (un mot).",
          "question_type": "fill_blank",
-         "explanation": "Étape 4 — Repérer les mois secs : la règle est $P < 2T$, c'est-à-dire que les précipitations sont inférieures au double de la température.",
+         "explanation": "Étape 4 — Repérer les mois secs : la règle est $P \\le 2T$, c'est-à-dire que les précipitations sont inférieures ou égales au double de la température.",
          "answers": [
           {
            "content": "double",
@@ -1028,7 +1028,7 @@
        "statement": "Dans cet exercice, tu lis un diagramme ombrothermique avec des questions de types variés.",
        "exercise_type": "fixation",
        "figure": null,
-       "hint": "Rappelle-toi : courbe pour les températures, barres pour les pluies, et $P < 2T$ pour un mois sec.",
+       "hint": "Rappelle-toi : courbe pour les températures, barres pour les pluies, et $P \\le 2T$ pour un mois sec.",
        "questions": [
         {
          "content": "Une station a un mois le plus chaud à 28 °C et un mois le plus froid à 24 °C. Quelle est l'amplitude thermique ?",
@@ -1145,16 +1145,16 @@
     },
     {
      "name": "La végétation : forêt dense humide et mangrove",
-     "remember": "La **forêt dense humide** est la végétation du sud de la Côte d'Ivoire. Elle est **sempervirente** : ses arbres restent **verts toute l'année**. Elle pousse là où il fait **chaud** et où les **pluies** sont **abondantes**. Ses arbres sont très hauts, serrés, et portent des **lianes**.\n\nLa forêt est **étagée** en **strates** : la **canopée** (la cime des grands arbres, tout en haut), la **strate moyenne** (arbustes et jeunes arbres), puis la **strate basse** (herbes et fougères, près du sol).\n\nSur le **littoral**, dans les eaux salées ou saumâtres des lagunes et des estuaires, on trouve la **mangrove** : une forêt de **palétuviers**, aux racines en forme d'échasses.",
+     "remember": "La **forêt dense humide** est la végétation du sud de la Côte d'Ivoire. Près de la côte, elle est **sempervirente** : ses arbres restent **verts toute l'année**. Plus au nord, la forêt **semi-décidue** perd une partie de ses feuilles en saison sèche, mais reste en grande partie verte. Elle pousse là où il fait **chaud** et où les **pluies** sont **abondantes**. Ses arbres sont très hauts, serrés, et portent des **lianes**.\n\nLa forêt est **étagée** en **strates** : la **canopée** (la cime des grands arbres, tout en haut), la **strate moyenne** (arbustes et jeunes arbres), puis la **strate basse** (herbes et fougères, près du sol).\n\nSur le **littoral**, dans les eaux salées ou saumâtres des lagunes et des estuaires, on trouve la **mangrove** : une forêt de **palétuviers**, aux racines en forme d'échasses.",
      "method": [
       "Identifier le type de végétation d'après sa situation : forêt dense humide ou mangrove.",
       "Décrire sa structure : la hauteur des arbres, le feuillage, les strates.",
       "Expliquer le lien avec le climat : la chaleur, les pluies, l'humidité."
      ],
      "example": {
-      "statement": "Décrire et expliquer la végétation d'une région de l'intérieur du sud : arbres très hauts, feuillage vert toute l'année, plusieurs niveaux de végétation, lianes, chaleur et pluies abondantes.",
+      "statement": "Décrire et expliquer la végétation d'une région du sud-ouest, sur la terre ferme, non loin de la côte : arbres très hauts, feuillage vert toute l'année, plusieurs niveaux de végétation, lianes, chaleur et pluies abondantes.",
       "steps": [
-       "Identifier : à l'intérieur du sud, ce type de végétation est la forêt dense humide.",
+       "Identifier : dans le sud-ouest, sur la terre ferme et non loin de la côte, ce type de végétation est la forêt dense humide sempervirente.",
        "Décrire : les arbres sont très hauts et toujours verts ; la forêt est étagée en canopée, strate moyenne et strate basse, avec des lianes.",
        "Expliquer : la chaleur et les pluies abondantes, avec un air humide, permettent aux arbres de rester verts toute l'année."
       ]
@@ -1205,7 +1205,7 @@
         "hint": "Elle est au bord de la mer."
        },
        {
-        "content": "La végétation toujours verte du sud est la forêt dense ___ (un mot).",
+        "content": "La forêt toujours verte du sud, près de la côte, est la forêt dense ___ (un mot).",
         "question_type": "fill_blank",
         "explanation": "Étape 3 — Expliquer : elle est dense et humide grâce à la chaleur et aux pluies abondantes du climat subéquatorial.",
         "answers": [
@@ -1254,9 +1254,9 @@
          ]
         },
         {
-         "content": "La forêt dense humide garde ses feuilles vertes toute l'année.",
+         "content": "Près de la côte, la forêt dense humide garde ses feuilles vertes toute l'année.",
          "question_type": "true_false",
-         "explanation": "Étape 2 — Décrire : elle est sempervirente, c'est-à-dire toujours verte, car la chaleur et l'humidité durent toute l'année.",
+         "explanation": "Étape 2 — Décrire : près de la côte, elle est sempervirente, c'est-à-dire toujours verte, car la chaleur et l'humidité durent toute l'année.",
          "answers": [
           {
            "content": "Vrai",
@@ -1419,9 +1419,9 @@
          ]
         },
         {
-         "content": "Pourquoi la forêt dense humide est-elle verte toute l'année ?",
+         "content": "Pourquoi la forêt sempervirente du sud est-elle verte toute l'année ?",
          "question_type": "single_choice",
-         "explanation": "Étape 3 — Expliquer : la forêt reste verte parce que la chaleur est constante et que les pluies sont abondantes. Pourquoi pas la chute des feuilles en saison sèche : c'est ce qui arrive aux arbres de la savane. Pourquoi pas un sol riche : le sol ferrallitique est pauvre en minéraux. Pourquoi pas une seule pluie par an : le sud a deux saisons des pluies.",
+         "explanation": "Étape 3 — Expliquer : la forêt sempervirente reste verte parce que la chaleur est constante et que les pluies sont abondantes. Pourquoi pas la chute des feuilles en saison sèche : c'est ce qui arrive aux arbres de la savane. Pourquoi pas un sol riche : le sol ferrallitique est pauvre en minéraux. Pourquoi pas une seule pluie par an : le sud a deux saisons des pluies.",
          "answers": [
           {
            "content": "Parce que la chaleur et l'humidité durent toute l'année",
@@ -1447,7 +1447,7 @@
     },
     {
      "name": "Les sols ferrallitiques et l'hydrographie",
-     "remember": "Les **sols ferrallitiques** du sud sont des sols **profonds**, de couleur **rouge ou jaune** (à cause du fer). Sous la chaleur et les pluies abondantes, l'eau **lessive** le sol : elle entraîne les éléments minéraux, qui deviennent rares. Ces sols sont donc **pauvres en éléments minéraux**. Leur fertilité vient de l'**humus**, formé par les feuilles mortes décomposées de la forêt. Sans forêt, le sol s'appauvrit et s'**érode**.\n\nLe sud a un **réseau hydrographique** dense. Les grands **fleuves** (**Cavally**, **Sassandra**, **Bandama**, **Comoé**) coulent du nord vers le sud jusqu'à l'océan ou aux lagunes. Leur débit est plus fort en saison des pluies. Au bord de l'océan, des **lagunes** (comme la lagune **Ébrié**, à Abidjan) sont séparées de la mer par un cordon de sable.",
+     "remember": "Les **sols ferrallitiques** du sud sont des sols **profonds**, de couleur **rouge ou jaune** (à cause du fer). Sous la chaleur et les pluies abondantes, l'eau **lessive** le sol : elle entraîne les éléments minéraux, qui deviennent rares. Ces sols sont donc **pauvres en éléments minéraux**. Leur fertilité vient de l'**humus**, formé par les feuilles mortes décomposées de la forêt. Sans forêt, le sol s'appauvrit et s'**érode**.\n\nLe sud a un **réseau hydrographique** dense. Les grands **fleuves** (**Cavally**, **Sassandra**, **Bandama**, **Comoé**) viennent du nord, certains de pays voisins, et coulent dans l'ensemble vers le sud jusqu'à l'océan ou aux lagunes. Leur débit est plus fort en saison des pluies. Au bord de l'océan, des **lagunes** (comme la lagune **Ébrié**, à Abidjan) sont séparées de la mer par un cordon de sable.",
      "method": [
       "Identifier l'élément étudié : un sol, un fleuve ou une lagune.",
       "Décrire ses caractères : couleur, profondeur et fertilité pour un sol ; direction et débit pour un cours d'eau.",
@@ -1573,7 +1573,7 @@
         {
          "content": "Quels sont deux fleuves de la Côte d'Ivoire qui traversent le milieu subéquatorial ?",
          "question_type": "multiple_correct_2",
-         "explanation": "Étape 1 — Identifier : le Sassandra et le Bandama coulent du nord vers le sud, à travers la forêt. Le Niger et le Nil ne sont pas ivoiriens.",
+         "explanation": "Étape 1 — Identifier : le Sassandra et le Bandama coulent dans l'ensemble du nord vers le sud, à travers la forêt. Le Niger et le Nil ne sont pas ivoiriens.",
          "answers": [
           {
            "content": "Le Sassandra",
@@ -1664,9 +1664,9 @@
          ]
         },
         {
-         "content": "Les fleuves Sassandra, Bandama et Comoé coulent du nord vers le ___.",
+         "content": "Les fleuves Sassandra, Bandama et Comoé coulent, dans l'ensemble, du nord vers le ___.",
          "question_type": "select",
-         "explanation": "Étape 2 — Décrire : les grands fleuves descendent du nord vers le sud, jusqu'à l'océan ou aux lagunes.",
+         "explanation": "Étape 2 — Décrire : les grands fleuves descendent dans l'ensemble du nord vers le sud, jusqu'à l'océan ou aux lagunes.",
          "answers": [
           {
            "content": "sud",
@@ -1760,14 +1760,14 @@
     },
     {
      "name": "La mise en valeur du milieu subéquatorial et ses problèmes",
-     "remember": "Le sud est la région la plus mise en valeur du pays. On y pratique des **cultures de rente**, destinées surtout à la vente et à l'exportation : **cacao**, **café**, **hévéa**, **palmier à huile**, banane, ananas. On y pratique aussi des **cultures vivrières**, destinées à nourrir les familles : **igname**, **manioc**, **banane plantain**. Le bois de la forêt est exploité et les ports d'**Abidjan** et de **San-Pédro** exportent les produits.\n\nCette mise en valeur pose le problème de la **déforestation**, c'est-à-dire le recul de la forêt. Ses **causes** : plantations, exploitation du bois, villes et routes. Ses **conséquences** : érosion et appauvrissement des sols, perte d'espèces animales et végétales. Des **solutions** : le **reboisement**, la protection des forêts classées et des parcs nationaux, l'agroforesterie (cultiver avec des arbres).",
+     "remember": "Le sud est la région la plus mise en valeur du pays. On y pratique des **cultures de rente**, destinées surtout à la vente et à l'exportation : **cacao**, **café**, **hévéa**, **palmier à huile**, banane, ananas. La Côte d'Ivoire est le **premier producteur mondial de cacao**. On y pratique aussi des **cultures vivrières**, destinées à nourrir les familles : **igname**, **manioc**, **banane plantain**. Le bois de la forêt est exploité et les ports d'**Abidjan** et de **San-Pédro** exportent les produits.\n\nCette mise en valeur pose le problème de la **déforestation**, c'est-à-dire le recul de la forêt. Ses **causes** : plantations, exploitation du bois, villes et routes. Ses **conséquences** : érosion et appauvrissement des sols, perte d'espèces animales et végétales. Des **solutions** : le **reboisement**, la protection des forêts classées et des parcs nationaux, l'agroforesterie (cultiver avec des arbres).",
      "method": [
       "Identifier l'activité humaine et le lieu où elle se pratique.",
       "Montrer ses effets sur le milieu : la déforestation et ses conséquences.",
       "Proposer une solution pour mieux protéger le milieu."
      ],
      "example": {
-      "statement": "Une plantation de cacao remplace une parcelle de forêt près de Daloa. Présenter cette mise en valeur, ses effets et une solution.",
+      "statement": "Une plantation de cacao remplace une parcelle de forêt près de Soubré. Présenter cette mise en valeur, ses effets et une solution.",
       "steps": [
        "Identifier : c'est une culture de rente, le cacao, destinée à la vente et à l'exportation, pratiquée dans le sud.",
        "Montrer les effets : la forêt a été coupée pour planter, c'est de la déforestation ; le sol à nu s'érode et des espèces disparaissent.",
@@ -2030,9 +2030,9 @@
          ]
         },
         {
-         "content": "La Côte d'Ivoire compte parmi les premiers producteurs mondiaux de cacao.",
+         "content": "La Côte d'Ivoire est le premier producteur mondial de cacao.",
          "question_type": "true_false",
-         "explanation": "Étape 1 — Identifier : le cacao du sud est l'une des grandes cultures de rente du pays, qui compte parmi les tout premiers producteurs mondiaux.",
+         "explanation": "Étape 1 — Identifier : le cacao, cultivé dans le sud forestier, est la grande culture de rente du pays ; la Côte d'Ivoire en est le premier producteur mondial.",
          "answers": [
           {
            "content": "Vrai",
@@ -2244,10 +2244,10 @@
        ]
       },
       {
-       "content": "Combien la station A compte-t-elle de mois secs (précipitations inférieures au double de la température) ?",
+       "content": "Combien la station A compte-t-elle de mois secs (précipitations inférieures ou égales au double de la température) ?",
        "question_type": "numeric",
        "tolerance": 0,
-       "explanation": "Méthode : 1) Appliquer la règle $P < 2T$ à chaque mois. 2) Janvier ($30 < 54$), février ($50 < 56$), août ($40 < 50$), septembre ($45 < 50$) et décembre ($50 < 54$) sont secs : 5 mois.",
+       "explanation": "Méthode : 1) Appliquer la règle $P \\le 2T$ à chaque mois. 2) Janvier ($30 < 54$), février ($50 < 56$), août ($40 < 50$), septembre ($45 < 50$) et décembre ($50 < 54$) sont secs : 5 mois.",
        "answers": [
         {
          "content": "5",
@@ -2502,7 +2502,7 @@
         {
          "content": "Dans quelle partie de la Côte d'Ivoire se trouve le milieu subéquatorial ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Situer avec les points cardinaux : on place le milieu sur la carte ; il occupe le sud du pays, le long du golfe de Guinée, car la forêt demande de la chaleur et des pluies abondantes. 2) Délimiter : il va de l'océan jusqu'à la savane, donc il s'étend aussi à l'intérieur (Daloa, Gagnoa). Pourquoi pas le nord : c'est le domaine de la savane, plus sèche. Pourquoi pas le littoral seulement : le milieu ne s'arrête pas à la côte.",
+         "explanation": "Méthode : 1) Situer avec les points cardinaux : on place le milieu sur la carte ; il occupe le sud du pays, le long du golfe de Guinée, car la forêt demande de la chaleur et des pluies abondantes. 2) Délimiter : il va de l'océan jusqu'à la savane, donc il s'étend aussi à l'intérieur (Gagnoa, Soubré). Pourquoi pas le nord : c'est le domaine de la savane, plus sèche. Pourquoi pas le littoral seulement : le milieu ne s'arrête pas à la côte.",
          "answers": [
           {
            "content": "Le sud",
@@ -2525,7 +2525,7 @@
         {
          "content": "Korhogo est une ville du milieu subéquatorial.",
          "question_type": "true_false",
-         "explanation": "Méthode : 1) Situer Korhogo : on la place sur la carte, elle est dans le nord du pays. 2) Délimiter : le nord est un milieu de savane, plus sec que la forêt, donc Korhogo n'est pas dans le milieu subéquatorial. Pourquoi pas Vrai : on confond une grande ville ivoirienne avec une ville du sud comme Daloa ; seule la position sur la carte permet de trancher.",
+         "explanation": "Méthode : 1) Situer Korhogo : on la place sur la carte, elle est dans le nord du pays. 2) Délimiter : le nord est un milieu de savane, plus sec que la forêt, donc Korhogo n'est pas dans le milieu subéquatorial. Pourquoi pas Vrai : on confond une grande ville ivoirienne avec une ville du sud comme Soubré ; seule la position sur la carte permet de trancher.",
          "answers": [
           {
            "content": "Vrai",
@@ -2545,20 +2545,16 @@
           {
            "content": "humide",
            "correct": true
-          },
-          {
-           "content": "sempervirente",
-           "correct": true
           }
          ]
         },
         {
          "content": "Quelles sont deux villes du milieu subéquatorial ?",
          "question_type": "multiple_correct_2",
-         "explanation": "Méthode : 1) Citer des repères : Daloa est une ville de l'intérieur du sud, en forêt, et San-Pédro une ville du littoral ; les deux sont donc dans le milieu subéquatorial. 2) Vérifier la situation de chaque ville sur la carte. Pourquoi pas Korhogo et Odienné : ces villes sont dans le nord, en savane ; on les choisit à tort parce qu'elles sont aussi connues que les villes du sud.",
+         "explanation": "Méthode : 1) Citer des repères : Soubré est une ville de l'intérieur du sud, en forêt, et San-Pédro une ville du littoral ; les deux sont donc dans le milieu subéquatorial. 2) Vérifier la situation de chaque ville sur la carte. Pourquoi pas Korhogo et Odienné : ces villes sont dans le nord, en savane ; on les choisit à tort parce qu'elles sont aussi connues que les villes du sud.",
          "answers": [
           {
-           "content": "Daloa",
+           "content": "Soubré",
            "correct": true
           },
           {
@@ -2737,7 +2733,7 @@
         {
          "content": "Une forêt dont les arbres restent verts toute l'année est dite ___ (un mot).",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 1) Décrire le feuillage : les arbres de la forêt du sud restent verts toute l'année. 2) Une forêt dont les arbres sont toujours verts est dite sempervirente, grâce à la chaleur et à l'humidité de toute l'année. Pourquoi pas « décidue » : une forêt décidue perd ses feuilles en saison sèche, ce qui est le cas de beaucoup d'arbres de la savane.",
+         "explanation": "Méthode : 1) Décrire le feuillage : près de la côte, les arbres de la forêt du sud restent verts toute l'année. 2) Une forêt dont les arbres sont toujours verts est dite sempervirente, grâce à la chaleur et à l'humidité de toute l'année. Pourquoi pas « décidue » : une forêt décidue perd ses feuilles en saison sèche, ce qui est le cas de beaucoup d'arbres de la savane ; plus au nord, la forêt semi-décidue n'en perd qu'une partie.",
          "answers": [
           {
            "content": "sempervirente",
@@ -2841,7 +2837,7 @@
         {
          "content": "Quels sont deux fleuves ivoiriens ?",
          "question_type": "multiple_correct_2",
-         "explanation": "Méthode : 1) Identifier les cours d'eau : le Cavally et la Comoé sont des fleuves ivoiriens, qui descendent du nord vers le sud. 2) Les distinguer des lagunes. Pourquoi pas la lagune Ébrié ou la lagune Aby : ce sont des lagunes, c'est-à-dire des étendues d'eau calme au bord de l'océan, séparées de la mer par un cordon de sable, et non des fleuves.",
+         "explanation": "Méthode : 1) Identifier les cours d'eau : le Cavally et la Comoé sont des fleuves ivoiriens, qui descendent dans l'ensemble du nord vers le sud. 2) Les distinguer des lagunes. Pourquoi pas la lagune Ébrié ou la lagune Aby : ce sont des lagunes, c'est-à-dire des étendues d'eau calme au bord de l'océan, séparées de la mer par un cordon de sable, et non des fleuves.",
          "answers": [
           {
            "content": "Le Cavally",
@@ -2897,11 +2893,11 @@
     },
     {
      "title": "Sujet 2 · Le milieu subéquatorial dans la vie courante en Côte d'Ivoire",
-     "notions": "Cultures de rente et cultures vivrières près de Daloa ; saisons et pluies à Abidjan ; lagune et mangrove ; déforestation et reboisement autour d'un collège.",
+     "notions": "Cultures de rente et cultures vivrières près de Soubré ; saisons et pluies à Abidjan ; lagune et mangrove ; déforestation et reboisement autour d'un collège.",
      "exercises": [
       {
        "title": "Exercice 1",
-       "statement": "Situation d'exemple : M. Koné est planteur près de Daloa. Il cultive du cacao et du café pour les vendre, et de l'igname et du manioc pour nourrir sa famille.",
+       "statement": "Situation d'exemple : M. Koné est planteur près de Soubré. Il cultive du cacao et du café pour les vendre, et de l'igname et du manioc pour nourrir sa famille.",
        "exercise_type": "evaluation",
        "figure": null,
        "hint": "Reprends la méthode de la fiche de révision.",
@@ -2953,9 +2949,9 @@
          ]
         },
         {
-         "content": "Daloa se trouve dans le milieu subéquatorial.",
+         "content": "Soubré se trouve dans le milieu subéquatorial.",
          "question_type": "true_false",
-         "explanation": "Méthode : 1) Situer Daloa : elle est dans l'intérieur du sud, entre le littoral et la savane. 2) Cette zone est celle de la forêt dense humide : Daloa est dans le milieu subéquatorial, donc l'énoncé est vrai. Pourquoi pas Faux : on prend Daloa pour une ville du nord, alors qu'elle est bien dans le sud forestier.",
+         "explanation": "Méthode : 1) Situer Soubré : elle est dans l'intérieur du sud, entre le littoral et la savane. 2) Cette zone est celle de la forêt dense humide : Soubré est dans le milieu subéquatorial, donc l'énoncé est vrai. Pourquoi pas Faux : on prend Soubré pour une ville du nord, alors qu'elle est bien dans le sud forestier.",
          "answers": [
           {
            "content": "Vrai",
@@ -2968,9 +2964,9 @@
          ]
         },
         {
-         "content": "Pourquoi le cacao pousse-t-il bien près de Daloa ?",
+         "content": "Pourquoi le cacao pousse-t-il bien près de Soubré ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Identifier le climat : près de Daloa, le climat est subéquatorial. 2) Expliquer : la chaleur et les pluies abondantes conviennent au cacao, qui a besoin d'humidité. Pourquoi pas un climat sec : c'est celui du nord. Pourquoi pas un sol riche : le sol ferrallitique est pauvre en minéraux, seul l'humus lui apporte de la fertilité.",
+         "explanation": "Méthode : 1) Identifier le climat : près de Soubré, le climat est subéquatorial. 2) Expliquer : la chaleur et les pluies abondantes conviennent au cacao, qui a besoin d'humidité. Pourquoi pas un climat sec : c'est celui du nord. Pourquoi pas un sol riche : le sol ferrallitique est pauvre en minéraux, seul l'humus lui apporte de la fertilité.",
          "answers": [
           {
            "content": "Parce qu'il y fait chaud et qu'il y pleut beaucoup",
@@ -3340,7 +3336,7 @@
          "content": "Combien la station C compte-t-elle de mois secs ?",
          "question_type": "numeric",
          "tolerance": 0,
-         "explanation": "Méthode : 1) Appliquer la règle $P < 2T$ à chaque mois. 2) Janvier : $20 < 54$ ; février : $45 < 56$ ; août : $30 < 48$ ; septembre : $45 < 50$ ; décembre : $40 < 54$. Cela fait 5 mois secs. Pourquoi pas 3 ou 4 : on oublie les mois proches de la limite, comme février ou septembre, ou on compte seulement la grande saison sèche.",
+         "explanation": "Méthode : 1) Appliquer la règle $P \\le 2T$ à chaque mois. 2) Janvier : $20 < 54$ ; février : $45 < 56$ ; août : $30 < 48$ ; septembre : $45 < 50$ ; décembre : $40 < 54$. Cela fait 5 mois secs. Pourquoi pas 3 ou 4 : on oublie les mois proches de la limite, comme février ou septembre, ou on compte seulement la grande saison sèche.",
          "answers": [
           {
            "content": "5",
@@ -3521,16 +3517,16 @@
          ]
         },
         {
-         "content": "Pourquoi la forêt dense humide reste-t-elle verte toute l'année ?",
+         "content": "Pourquoi la forêt sempervirente du sud reste-t-elle verte toute l'année ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Identifier la forêt sempervirente, c'est-à-dire toujours verte. 2) Expliquer par le climat : chaleur et humidité durent toute l'année. Pourquoi pas la chute des feuilles en saison sèche : c'est ce qui arrive aux arbres de la savane. Pourquoi pas des pluies rares : le sud reçoit des pluies abondantes.",
+         "explanation": "Méthode : 1) Identifier la forêt sempervirente, c'est-à-dire toujours verte. 2) Expliquer par le climat : chaleur et humidité durent toute l'année. Pourquoi pas la chute de toutes les feuilles en saison sèche : c'est ce qui arrive à beaucoup d'arbres de la savane, et un arbre sans feuilles n'est pas vert. Pourquoi pas un sol riche : le sol ferrallitique est pauvre en éléments minéraux. Pourquoi pas des pluies rares : le sud reçoit des pluies abondantes.",
          "answers": [
           {
            "content": "Parce que la chaleur et l'humidité durent toute l'année",
            "correct": true
           },
           {
-           "content": "Parce que les arbres perdent leurs feuilles en saison sèche puis les retrouvent",
+           "content": "Parce que ses arbres perdent toutes leurs feuilles en saison sèche",
            "correct": false
           },
           {
@@ -3877,7 +3873,7 @@
         {
          "content": "Que conclure de cette station ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Lire la courbe : températures élevées, amplitude de 3 °C. 2) Lire les barres : 1 775 mm. 3) Repérer les mois secs : deux saisons sèches. 4) Conclure : climat subéquatorial. Pourquoi pas un climat de savane : il n'a qu'une saison sèche. Pourquoi pas aucune saison sèche : cinq mois sont secs avec la règle $P < 2T$. Pourquoi pas un climat de montagne : les températures sont élevées toute l'année.",
+         "explanation": "Méthode : 1) Lire la courbe : températures élevées, amplitude de 3 °C. 2) Lire les barres : 1 775 mm. 3) Repérer les mois secs : deux saisons sèches. 4) Conclure : climat subéquatorial. Pourquoi pas un climat de savane : il n'a qu'une saison sèche. Pourquoi pas aucune saison sèche : cinq mois sont secs avec la règle $P \\le 2T$. Pourquoi pas un climat de montagne : les températures sont élevées toute l'année.",
          "answers": [
           {
            "content": "Elle a un climat subéquatorial",
@@ -3928,7 +3924,7 @@
         {
          "content": "La forêt dense humide perd toutes ses feuilles en saison sèche.",
          "question_type": "true_false",
-         "explanation": "Méthode : 1) Décrire le feuillage : la forêt dense humide est sempervirente. 2) Elle reste verte toute l'année, car la chaleur et l'humidité durent toute l'année, donc l'énoncé est faux. Pourquoi pas Vrai : on confond la forêt avec la savane, dont les arbres perdent leurs feuilles en saison sèche.",
+         "explanation": "Méthode : 1) Décrire le feuillage : près de la côte, la forêt dense humide est sempervirente, toujours verte ; plus au nord, la forêt semi-décidue ne perd qu'une partie de ses feuilles. 2) Elle ne perd donc jamais toutes ses feuilles, car la chaleur et l'humidité durent toute l'année : l'énoncé est faux. Pourquoi pas Vrai : on confond la forêt avec la savane, dont beaucoup d'arbres perdent leurs feuilles en saison sèche.",
          "answers": [
           {
            "content": "Vrai",
