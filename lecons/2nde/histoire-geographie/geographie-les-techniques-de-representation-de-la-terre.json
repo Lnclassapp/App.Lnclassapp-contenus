@@ -1250,7 +1250,7 @@
         },
         {
           "name": "Les projections cartographiques",
-          "remember": "La Terre est une **sphère**, mais une carte est **plane**. Une **projection cartographique** est la méthode qui permet de représenter la surface de la sphère sur une surface plane, comme si on « dépliait » la Terre. On ne peut pas aplatir une sphère sans la déformer, comme on ne peut pas aplatir une peau d'orange sans l'étirer ou la déchirer.\n\nToute projection **déforme** donc la réalité : les **surfaces**, les **distances**, les **formes** ou les **angles**. Aucune projection ne conserve tout à la fois ; on choisit celle qui convient à l'usage de la carte.\n\nOn distingue trois familles, selon la surface sur laquelle on projette : la projection **cylindrique** (sur un cylindre), la projection **conique** (sur un cône) et la projection **azimutale** (sur un plan). La projection cylindrique de **Mercator** (1569) est la plus connue : elle étire les surfaces près des pôles, si bien que le Groenland paraît aussi grand que l'Afrique, qui est pourtant bien plus grande. Un **planisphère** est une carte plane de toute la Terre.",
+          "remember": "La Terre est une **sphère**, mais une carte est **plane**. Une **projection cartographique** est la méthode qui permet de représenter la surface de la sphère sur une surface plane, comme si on « dépliait » la Terre. On ne peut pas aplatir une sphère sans la déformer, comme on ne peut pas aplatir une peau d'orange sans l'étirer ou la déchirer.\n\nToute projection **déforme** donc la réalité : les **surfaces**, les **distances**, les **formes** ou les **angles**. Aucune projection ne conserve tout à la fois ; on choisit celle qui convient à l'usage de la carte.\n\nOn distingue trois familles, selon la surface sur laquelle on projette : la projection **cylindrique** (sur un cylindre), la projection **conique** (sur un cône) et la projection **azimutale** (sur un plan). La projection cylindrique de **Mercator** (1569) est la plus connue : elle étire les surfaces près des pôles, si bien que le Groenland paraît presque aussi grand que l'Afrique, qui est pourtant environ 14 fois plus grande. Un **planisphère** est une carte plane de toute la Terre.",
           "method": [
             "Identifier le document : une carte plane de toute la Terre est un planisphère, obtenu par une projection.",
             "Repérer la famille de projection (cylindrique, conique ou azimutale) et la zone où les déformations sont les plus fortes.",
@@ -1258,15 +1258,15 @@
             "Conclure : toute projection déforme, on la choisit selon l'usage de la carte."
           ],
           "example": {
-            "statement": "Sur un planisphère de Mercator, le Groenland paraît aussi grand que l'Afrique. Explique pourquoi.",
+            "statement": "Sur un planisphère de Mercator, le Groenland paraît presque aussi grand que l'Afrique. Explique pourquoi.",
             "steps": [
               "Identifier : le document est un planisphère, une carte plane de toute la Terre, obtenue par une projection.",
               "Repérer : la projection de Mercator est cylindrique ; ses déformations sont les plus fortes près des pôles, où se trouve le Groenland.",
               "Expliquer : pour passer de la sphère à une surface plane, on étire les surfaces près des pôles ; le Groenland est donc agrandi.",
-              "Conclure : le Groenland paraît aussi grand que l'Afrique à cause de la projection ; en réalité l'Afrique est bien plus grande, car toute projection déforme."
+              "Conclure : le Groenland paraît presque aussi grand que l'Afrique à cause de la projection ; en réalité l'Afrique est bien plus grande, car toute projection déforme."
             ]
           },
-          "pitfall": "Ne pas croire qu'une carte plane montre les surfaces telles qu'elles sont. Contre-exemple : sur le planisphère de Mercator, le Groenland (près du pôle) paraît aussi grand que l'Afrique (près de l'équateur), alors que l'Afrique est bien plus grande. Une carte n'est pas une photographie de la Terre : demande-toi toujours quelle projection a été utilisée et où elle déforme le plus.",
+          "pitfall": "Ne pas croire qu'une carte plane montre les surfaces telles qu'elles sont. Contre-exemple : sur le planisphère de Mercator, le Groenland (près du pôle) paraît presque aussi grand que l'Afrique (près de l'équateur), alors que l'Afrique est bien plus grande. Une carte n'est pas une photographie de la Terre : demande-toi toujours quelle projection a été utilisée et où elle déforme le plus.",
           "practice": {
             "statement": "Tu t'entraînes à reconnaître et expliquer une projection avec la méthode : identifier, repérer, expliquer, conclure.",
             "questions": [
@@ -1428,7 +1428,7 @@
                 {
                   "content": "Sur une carte plane, les surfaces sont toujours représentées sans aucune déformation.",
                   "question_type": "true_false",
-                  "explanation": "Étape 4 — Conclure : toute projection déforme. Croire le contraire est le piège de la fiche, comme le Groenland qui paraît aussi grand que l'Afrique.",
+                  "explanation": "Étape 4 — Conclure : toute projection déforme. Croire le contraire est le piège de la fiche, comme le Groenland qui paraît presque aussi grand que l'Afrique.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -1464,7 +1464,7 @@
                       "content": "Expliquer qu'on étire les surfaces pour aplatir la sphère"
                     },
                     {
-                      "content": "Conclure que le Groenland paraît aussi grand que l'Afrique"
+                      "content": "Conclure que le Groenland paraît presque aussi grand que l'Afrique"
                     }
                   ]
                 },
@@ -1884,7 +1884,7 @@
       "exercises": [
         {
           "title": "Le voyage en car : situer les villes",
-          "statement": "Situation d'exemple, avec des valeurs arrondies au degré : Kouadio prend le car à la gare routière d'Abidjan pour aller à Korhogo, en passant par Yamoussoukro et Bouaké. Sa carte donne les coordonnées de ses étapes : Abidjan (5° N, 4° O), Yamoussoukro (7° N, 5° O), Bouaké (8° N, 5° O) et Korhogo (9° N, 6° O). Réponds aux questions.",
+          "statement": "Situation d'exemple, avec des valeurs arrondies au degré : Kouadio prend le car à la gare routière d'Abidjan pour aller à Korhogo, en passant par Yamoussoukro et Bouaké. Document : une carte routière de la Côte d'Ivoire (carte d'exemple), nord en haut, qui trace le trajet du car et donne les coordonnées de ses étapes : Abidjan (5° N, 4° O), Yamoussoukro (7° N, 5° O), Bouaké (8° N, 5° O) et Korhogo (9° N, 6° O). Réponds aux questions.",
           "exercise_type": "fixation",
           "figure": "carte-voyage-en-car",
           "hint": "Latitude d'abord, puis longitude ; la lettre dit nord ou sud, est ou ouest.",
@@ -1977,15 +1977,28 @@
                   "content": "Korhogo"
                 }
               ]
+            },
+            {
+              "content": "En trois ou quatre lignes, présente le trajet de Kouadio : donne les coordonnées de la ville de départ et de la ville d'arrivée, puis la direction générale du voyage, en la justifiant.",
+              "question_type": "written",
+              "points": 3,
+              "criteria": [
+                "Donne les coordonnées d'Abidjan, latitude d'abord : 5° N, 4° O (1 point)",
+                "Donne les coordonnées de Korhogo, latitude d'abord : 9° N, 6° O (1 point)",
+                "Conclut que le car va vers le nord, car la latitude nord passe de 5° à 9° (1 point)"
+              ],
+              "starter": "Kouadio part d'Abidjan, située à…",
+              "explanation": "Corrigé modèle : « Kouadio part d'Abidjan, située à environ 5° N, 4° O, et arrive à Korhogo, située à environ 9° N, 6° O. Pour chaque ville, j'écris la latitude d'abord, puis la longitude, avec sa lettre. La latitude nord passe de 5° à 9° : le car s'éloigne de l'équateur, il roule donc globalement vers le nord, en passant par Yamoussoukro et Bouaké. » Méthode : 1) Repérer la latitude (N ou S). 2) Repérer la longitude (E ou O). 3) Écrire les coordonnées, latitude d'abord. 4) Comparer les latitudes pour trouver la direction. Points : 1 pour Abidjan, 1 pour Korhogo, 1 pour la direction justifiée. Écrire « 4° O, 5° N » inverse latitude et longitude : c'est l'erreur à éviter.",
+              "answers": []
             }
           ]
         },
         {
-          "title": "Le voyage en car : distances et durée",
-          "statement": "Situation d'exemple, avec des valeurs fictives : Kouadio mesure sur une carte au 1/2 000 000 les distances à vol d'oiseau entre les étapes du voyage : Abidjan et Yamoussoukro 11 cm, Yamoussoukro et Bouaké 5 cm, Bouaké et Korhogo 10 cm. Le car roule en moyenne à 65 km/h. Réponds aux questions.",
+          "title": "Le voyage en car : distances sur la carte",
+          "statement": "Situation d'exemple, avec des valeurs approchées : Kouadio mesure à la règle, sur une carte de la Côte d'Ivoire au 1/2 000 000 (carte d'exemple), les distances à vol d'oiseau entre les étapes du voyage : Abidjan et Yamoussoukro 11 cm, Yamoussoukro et Bouaké 5 cm, Bouaké et Korhogo 10 cm. Le car, lui, suit la route. Réponds aux questions.",
           "exercise_type": "fixation",
           "figure": null,
-          "hint": "1 cm sur la carte représente 20 km ; durée = distance ÷ vitesse.",
+          "hint": "1 cm sur la carte représente 20 km ; la règle mesure en ligne droite, la route ne l'est pas.",
           "questions": [
             {
               "content": "Sur une carte au $1/2\\,000\\,000$, Abidjan et Yamoussoukro sont distantes de 11 cm. Quelle est la distance réelle, en km ?",
@@ -2027,17 +2040,27 @@
               "unit": "km"
             },
             {
-              "content": "On suppose que le car parcourt ces 520 km à 65 km/h en moyenne. Combien d'heures dure le trajet ?",
-              "question_type": "numeric",
-              "tolerance": 0,
-              "explanation": "Méthode : 1) Données : distance 520 km, vitesse 65 km/h. 2) Durée = distance ÷ vitesse. 3) $520 \\div 65 = 8$ : le trajet dure 8 heures.",
+              "content": "Les trois tronçons mesurés à la règle sur la carte au $1/2\\,000\\,000$ font 520 km à vol d'oiseau. Que peut-on dire de la distance que le car parcourt par la route d'Abidjan à Korhogo ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1) Mesurer : la règle donne la distance en ligne droite, dite à vol d'oiseau : 26 cm. 2) Lire l'échelle : 1 cm représente 20 km. 3) Calculer : $26 \\times 20 = 520$ km à vol d'oiseau. 4) Conclure : une route contourne les reliefs, les cours d'eau et passe par les villes, elle est sinueuse ; le car parcourt donc plus de 520 km. « Exactement 520 km » oublie que la route n'est pas droite ; « moins de 520 km » est impossible, car la ligne droite est le plus court chemin ; « 26 km » oublie de multiplier par l'échelle.",
               "answers": [
                 {
-                  "content": "8",
+                  "content": "Elle est plus longue que 520 km, car la route n'est pas en ligne droite",
                   "correct": true
+                },
+                {
+                  "content": "Elle est exactement de 520 km",
+                  "correct": false
+                },
+                {
+                  "content": "Elle est plus courte que 520 km",
+                  "correct": false
+                },
+                {
+                  "content": "Elle est de 26 km",
+                  "correct": false
                 }
-              ],
-              "unit": "h"
+              ]
             },
             {
               "content": "Pour voir plus de détails sur la ville de Bouaké, quelle carte choisir ?",
@@ -2061,12 +2084,25 @@
                   "correct": false
                 }
               ]
+            },
+            {
+              "content": "En trois ou quatre lignes, explique à Kouadio comment trouver la distance réelle entre Abidjan et Yamoussoukro (11 cm sur la carte au $1/2\\,000\\,000$), puis dis pourquoi le car roulera plus longtemps que cette distance.",
+              "question_type": "written",
+              "points": 3,
+              "criteria": [
+                "Lit l'échelle : 1 cm représente 2 000 000 cm, soit 20 km (1 point)",
+                "Calcule et convertit : 11 × 20 = 220 km à vol d'oiseau (1 point)",
+                "Explique que la route est sinueuse, donc plus longue que la ligne droite (1 point)"
+              ],
+              "starter": "Kouadio mesure d'abord…",
+              "explanation": "Corrigé modèle : « Kouadio mesure d'abord 11 cm à la règle entre Abidjan et Yamoussoukro. Il lit l'échelle : 1 cm représente 2 000 000 cm sur le terrain, soit 20 km. Il calcule : 11 × 2 000 000 = 22 000 000 cm, puis il convertit en divisant par 100 000 : 220 km. C'est une distance à vol d'oiseau, en ligne droite ; la route, elle, fait des détours, donc le car parcourt plus de 220 km. » Méthode : 1) Mesurer. 2) Lire l'échelle. 3) Calculer. 4) Convertir et conclure. Points : 1 pour l'échelle, 1 pour le calcul et la conversion, 1 pour la différence entre vol d'oiseau et route. Répondre « 22 000 000 km » oublie la conversion.",
+              "answers": []
             }
           ]
         },
         {
           "title": "Choisir le bon document et comprendre la projection",
-          "statement": "Situation d'exemple : Aya prépare un exposé sur le voyage de son oncle d'Abidjan à Korhogo. Elle dispose de quatre documents : un planisphère de Mercator, une photographie aérienne de la gare routière d'Abidjan, une image satellite de la Côte d'Ivoire et un croquis du trajet du car. Réponds aux questions.",
+          "statement": "Situation d'exemple : Aya prépare un exposé sur le voyage de son oncle d'Abidjan à Korhogo. Elle dispose de quatre documents d'exemple : un planisphère de Mercator, une photographie aérienne de la gare routière d'Abidjan, une image satellite de la Côte d'Ivoire et un croquis du trajet du car. Réponds aux questions.",
           "exercise_type": "evaluation",
           "figure": null,
           "hint": "Identifie le document, relève ce qu'il montre, compare puis conclus.",
@@ -2095,7 +2131,7 @@
               ]
             },
             {
-              "content": "Aya remarque que, sur le planisphère, le Groenland paraît aussi grand que l'Afrique. Quelle est l'explication ?",
+              "content": "Aya remarque que, sur le planisphère, le Groenland paraît presque aussi grand que l'Afrique. Quelle est l'explication ?",
               "question_type": "single_choice",
               "explanation": "Méthode : 1) Identifier : un planisphère est une carte plane obtenue par projection. 2) Repérer : la projection de Mercator étire les surfaces près des pôles. 3) Expliquer : le Groenland est agrandi. 4) Conclure : l'Afrique est en réalité bien plus grande.",
               "answers": [
@@ -2156,7 +2192,7 @@
               ]
             },
             {
-              "content": "En deux ou trois phrases, explique pourquoi le Groenland paraît aussi grand que l'Afrique sur un planisphère de Mercator.",
+              "content": "En deux ou trois phrases, explique pourquoi le Groenland paraît presque aussi grand que l'Afrique sur un planisphère de Mercator.",
               "question_type": "written",
               "points": 3,
               "criteria": [
@@ -2214,20 +2250,24 @@
               "unit": "km"
             },
             {
-              "content": "Sur la carte, la flèche du nord pointe vers le haut. Awa veut aller d'Abidjan à Korhogo : elle suit la route vers le ___ de la feuille.",
-              "question_type": "select",
-              "explanation": "Méthode : 1) S'orienter : le nord est en haut, car la flèche pointe vers le haut. 2) Korhogo est au nord d'Abidjan. 3) Elle suit donc la route vers le haut de la feuille.",
+              "content": "Awa sait qu'Abidjan est à environ 5° N, 4° O et Korhogo à environ 9° N, 6° O. Dans quelle direction se trouve Korhogo par rapport à Abidjan ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1) Repérer les latitudes : 5° N pour Abidjan, 9° N pour Korhogo ; la latitude nord augmente, Korhogo est plus au nord. 2) Repérer les longitudes : 4° O pour Abidjan, 6° O pour Korhogo ; la longitude ouest augmente, Korhogo est plus à l'ouest. 3) Conclure en combinant les deux : Korhogo est au nord-ouest d'Abidjan. « Nord-est » est l'erreur de croire qu'une longitude ouest qui grandit mène vers l'est ; « sud-ouest » et « sud-est » oublient que 9° N est plus loin de l'équateur que 5° N.",
               "answers": [
                 {
-                  "content": "haut",
+                  "content": "Au nord-ouest",
                   "correct": true
                 },
                 {
-                  "content": "bas",
+                  "content": "Au nord-est",
                   "correct": false
                 },
                 {
-                  "content": "côté gauche",
+                  "content": "Au sud-ouest",
+                  "correct": false
+                },
+                {
+                  "content": "Au sud-est",
                   "correct": false
                 }
               ]
@@ -2808,10 +2848,10 @@
             },
             {
               "title": "Exercice 2",
-              "statement": "Situation d'exemple, avec des valeurs fictives : sur la carte du voyage, à l'échelle 1/3 000 000, Abidjan et Yamoussoukro sont distantes de 7 cm, Yamoussoukro et Bouaké de 3 cm, Bouaké et Korhogo de 6 cm. Le car roule en moyenne à 80 km/h.",
+              "statement": "Situation d'exemple, avec des valeurs approchées : sur la carte du voyage (carte d'exemple de la Côte d'Ivoire), à l'échelle 1/3 000 000, Abidjan et Yamoussoukro sont distantes de 7 cm, Yamoussoukro et Bouaké de 3 cm, Bouaké et Korhogo de 6 cm, mesurés à la règle.",
               "exercise_type": "evaluation",
               "figure": null,
-              "hint": "1 cm représente 30 km ; durée = distance ÷ vitesse.",
+              "hint": "1 cm représente 30 km ; pour passer du terrain à la carte, on divise par 30.",
               "questions": [
                 {
                   "content": "Que représente 1 cm sur cette carte au $1/3\\,000\\,000$ ?",
@@ -2863,17 +2903,17 @@
                   "unit": "km"
                 },
                 {
-                  "content": "Le car roule en moyenne à 80 km/h sur 480 km. Combien d'heures dure le trajet ?",
+                  "content": "Sur la même carte au $1/3\\,000\\,000$, Kouadio veut tracer un trajet de 150 km à vol d'oiseau. Quelle longueur doit-il tracer, en cm ?",
                   "question_type": "numeric",
+                  "explanation": "Méthode : 1) Lire l'échelle : 1 cm sur la carte représente 3 000 000 cm, soit 30 km. 2) Convertir la distance réelle en centimètres : 150 km = $150 \\times 100\\,000 = 15\\,000\\,000$ cm. 3) Calculer en divisant par le dénominateur : $15\\,000\\,000 \\div 3\\,000\\,000 = 5$ cm. 4) Conclure : il trace 5 cm. Répondre 4 500 cm, c'est multiplier 150 par 30 au lieu de diviser : on passe du terrain à la carte en divisant.",
                   "tolerance": 0,
-                  "explanation": "Méthode : 1) Données : distance 480 km, vitesse 80 km/h. 2) Durée = distance ÷ vitesse. 3) $480 \\div 80 = 6$ heures.",
                   "answers": [
                     {
-                      "content": "6",
+                      "content": "5",
                       "correct": true
                     }
                   ],
-                  "unit": "h"
+                  "unit": "cm"
                 },
                 {
                   "content": "La distance parcourue par la route est toujours exactement égale à la distance mesurée en ligne droite sur la carte.",
