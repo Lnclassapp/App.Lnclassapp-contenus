@@ -147,9 +147,9 @@
                   ]
                 },
                 {
-                  "content": "Dans « (Un marché d'Abidjan, un matin. Awa arrive.) AWA (elle tâte une mangue). Elle est chère. », quelles parties ne sont pas prononcées par l'actrice ?",
+                  "content": "Dans « (Un marché d'Abidjan, un matin. Awa arrive.) AWA (elle tâte une mangue). Elle est chère. KOFFI. La qualité a un prix. », quelles parties ne sont pas prononcées par un acteur ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Étape 2 — Distinguer les répliques des didascalies : les deux parties entre parenthèses sont des didascalies, non prononcées. « Elle est chère. » est la réplique. « AWA » indique qui parle.",
+                  "explanation": "Étape 2 — Distinguer les répliques des didascalies : les deux parties entre parenthèses sont des didascalies, non prononcées. « Elle est chère. » et « La qualité a un prix. » sont des répliques, dites à voix haute.",
                   "answers": [
                     {
                       "content": "(Un marché d'Abidjan, un matin. Awa arrive.)",
@@ -164,7 +164,7 @@
                       "correct": false
                     },
                     {
-                      "content": "AWA",
+                      "content": "La qualité a un prix.",
                       "correct": false
                     }
                   ]
@@ -187,7 +187,7 @@
                       "correct": false
                     },
                     {
-                      "content": "le nom de l'auteur",
+                      "content": "un geste de l'actrice",
                       "correct": false
                     }
                   ]
@@ -437,24 +437,20 @@
                 "hint": "Le mot commence par « stic »."
               },
               {
-                "content": "Une longue réplique continue d'un personnage qui s'adresse à un autre est une ___.",
+                "content": "Une longue réplique continue d'un personnage qui s'adresse à un autre s'appelle : ___",
                 "question_type": "select",
                 "explanation": "Étape 2 — Mesurer la longueur des répliques : une longue réplique continue est une tirade, adressée à un interlocuteur.",
                 "answers": [
                   {
-                    "content": "tirade",
+                    "content": "une tirade",
                     "correct": true
                   },
                   {
-                    "content": "stichomythie",
+                    "content": "une stichomythie",
                     "correct": false
                   },
                   {
-                    "content": "aparté",
-                    "correct": false
-                  },
-                  {
-                    "content": "didascalie",
+                    "content": "un aparté",
                     "correct": false
                   }
                 ],
@@ -713,7 +709,7 @@
               "Chercher si le problème est résolu : il n'y a rien à résoudre. La scène présente la situation de départ : c'est l'exposition."
             ]
           },
-          "pitfall": "Ne crois pas qu'une nouvelle scène suppose un changement de lieu. Dans le théâtre classique, une scène change dès qu'un personnage **entre ou sort**, même si le décor reste le même. Exemple : à l'acte II, Fanta entre dans le salon, c'est la scène 3 ; Sékou entre à son tour, c'est la scène 4 ; le salon n'a pas changé. C'est l'**acte** qui marque une pause, un changement de lieu ou un saut dans le temps.",
+          "pitfall": "Ne crois pas qu'une nouvelle scène suppose un changement de lieu. Dans le théâtre classique, une scène change dès qu'un personnage **entre ou sort**, même si le décor reste le même. Exemple : à l'acte II, scène 2, Mme Yao parle à Sidi dans le salon ; Sidi sort et Fanta entre, c'est la scène 3 ; le salon n'a pas changé. C'est l'**acte** qui marque une pause, un changement de lieu ou un saut dans le temps.",
           "figure": null,
           "practice": {
             "statement": "Tu t'entraînes à nommer le moment de l'action.",
@@ -733,10 +729,6 @@
                   },
                   {
                     "content": "Le nœud",
-                    "correct": false
-                  },
-                  {
-                    "content": "Une didascalie",
                     "correct": false
                   }
                 ],
@@ -865,10 +857,6 @@
                     {
                       "content": "Le dénouement",
                       "correct": false
-                    },
-                    {
-                      "content": "Une didascalie",
-                      "correct": false
                     }
                   ]
                 },
@@ -960,11 +948,11 @@
                       "correct": false
                     },
                     {
-                      "content": "Entre l'acte I et l'acte II",
+                      "content": "À l'acte II",
                       "correct": false
                     },
                     {
-                      "content": "Au milieu de l'acte III",
+                      "content": "À l'acte III",
                       "correct": false
                     }
                   ]
@@ -1028,7 +1016,7 @@
         },
         {
           "name": "Les genres théâtraux : comédie, tragédie, drame",
-          "remember": "La **comédie** veut faire rire et corriger les défauts des hommes ; ses personnages sont des gens ordinaires, ses situations sont de la vie quotidienne, et la fin est en général heureuse. La **tragédie** (genre classique du XVIIe siècle) met en scène des personnages de rang élevé (rois, princes, héros) pris dans des passions violentes ; elle inspire la terreur et la pitié, et finit mal (mort, exil). Elle respecte la règle des **trois unités** : de temps (environ vingt-quatre heures), de lieu et d'action. Le **drame** (théâtre romantique du XIXe siècle) mêle le tragique et le comique et refuse la règle des unités. Exemples : « L'Avare » de Molière (1668) est une comédie ; « Andromaque » de Racine (1667) est une tragédie ; « Hernani » de Victor Hugo (1830) est un drame romantique.",
+          "remember": "La **comédie** veut faire rire et corriger les défauts des hommes ; ses personnages sont des gens ordinaires, ses situations sont de la vie quotidienne, et la fin est en général heureuse. La **tragédie classique** (XVIIe siècle) met en scène des personnages de rang élevé (rois, princes, héros) pris dans des passions violentes ; elle inspire la terreur et la pitié, et finit mal (mort, exil). Elle respecte la règle des **trois unités** : de temps (environ vingt-quatre heures), de lieu et d'action. Le **drame** (théâtre romantique du XIXe siècle) mêle le tragique et le comique et refuse la règle des unités. Exemples : « L'Avare » de Molière (1668) est une comédie ; « Andromaque » de Racine (1667) est une tragédie ; « Hernani » de Victor Hugo (1830) est un drame romantique.",
           "method": [
             "Relever les personnages et leur condition : gens ordinaires, rois et héros, ou personnages de tous milieux.",
             "Identifier le ton dominant : le rire, la terreur et la pitié, ou un mélange des deux.",
@@ -1039,7 +1027,7 @@
             "statement": "Nommer le genre de cette pièce écrite pour Lnclass : « Tanoh, un commerçant d'Abidjan connu pour son avarice, refuse de payer le tailleur de son fils. Il se déguise en client pour ne pas être reconnu, glisse sur une peau de banane et tout le quartier rit. À la fin, il avoue sa ruse et son fils épouse la jeune fille qu'il aime. »",
             "steps": [
               "Relever : les personnages sont un commerçant, son fils et un tailleur, des gens ordinaires.",
-              "Identifier le ton : le déguisement, la chute et les quiproquos font rire ; le ton dominant est le rire.",
+              "Identifier le ton : le déguisement et la chute font rire ; le ton dominant est le rire.",
               "Chercher la fin : l'aveu de Tanoh et le mariage du fils, la fin est heureuse.",
               "Conclure : gens ordinaires, rire, fin heureuse, c'est une comédie."
             ]
@@ -1064,10 +1052,6 @@
                   },
                   {
                     "content": "Un drame romantique",
-                    "correct": false
-                  },
-                  {
-                    "content": "Un monologue",
                     "correct": false
                   }
                 ],
@@ -1116,7 +1100,7 @@
               {
                 "content": "La tragédie classique respecte la règle des trois ___ : temps, lieu et action.",
                 "question_type": "fill_blank",
-                "explanation": "Étape 4 — Conclure : la règle des trois unités (temps, lieu, action) caractérise la tragédie classique ; le drame romantique la refuse.",
+                "explanation": "Étape 4 — Conclure : la règle des trois unités (temps, lieu, action) est une règle du théâtre classique, surtout de la tragédie ; le drame romantique la refuse.",
                 "answers": [
                   {
                     "content": "unités",
@@ -1219,10 +1203,6 @@
                     {
                       "content": "Un drame romantique",
                       "correct": false
-                    },
-                    {
-                      "content": "Une tirade",
-                      "correct": false
                     }
                   ]
                 },
@@ -1289,10 +1269,6 @@
                     {
                       "content": "Un drame romantique",
                       "correct": false
-                    },
-                    {
-                      "content": "Une stichomythie",
-                      "correct": false
                     }
                   ]
                 },
@@ -1308,24 +1284,20 @@
                   ]
                 },
                 {
-                  "content": "« Hernani » de Victor Hugo (1830) est un ___ romantique.",
+                  "content": "Le genre de « Hernani » de Victor Hugo (1830) est : ___.",
                   "question_type": "select",
                   "explanation": "Étape 4 — Conclure : « Hernani » mêle le tragique et le comique et refuse la règle des unités. C'est un drame romantique.",
                   "answers": [
                     {
-                      "content": "drame",
+                      "content": "le drame romantique",
                       "correct": true
                     },
                     {
-                      "content": "comédie",
+                      "content": "la tragédie classique",
                       "correct": false
                     },
                     {
-                      "content": "monologue",
-                      "correct": false
-                    },
-                    {
-                      "content": "acte",
+                      "content": "la comédie",
                       "correct": false
                     }
                   ]
@@ -1452,7 +1424,7 @@
                 "hint": "Tu as vu ce mot dans la leçon sur l'énonciation."
               },
               {
-                "content": "Relie chaque destinataire à son rôle.",
+                "content": "Relie chaque élément de la double énonciation à son rôle.",
                 "question_type": "matching",
                 "explanation": "Étape 2 — Relever qui parle à qui : le personnage interpellé est le destinataire dans l'histoire. Étape 3 — Chercher ce que sait le spectateur : il est le destinataire réel, dans la salle.",
                 "answers": [
@@ -1541,10 +1513,6 @@
                     },
                     {
                       "content": "Le spectateur",
-                      "correct": false
-                    },
-                    {
-                      "content": "Sékou",
                       "correct": false
                     }
                   ]
@@ -1688,7 +1656,7 @@
                   ]
                 },
                 {
-                  "content": "Quels indices montrent qu'une parole est destinée au spectateur ?",
+                  "content": "Quels indices montrent qu'une parole est destinée au seul spectateur ?",
                   "question_type": "multiple_correct_2",
                   "explanation": "Étape 2 — Relever les didascalies : « à part » signale une parole pour le spectateur. Étape 3 — Chercher ce que le spectateur sait : un personnage seul qui pense tout haut s'adresse à lui. Le nom en tête de ligne et la longueur ne disent rien du destinataire.",
                   "answers": [
@@ -1832,10 +1800,10 @@
             {
               "content": "Relie chaque passage de l'extrait à sa nature.",
               "question_type": "matching",
-              "explanation": "Méthode : 1) Repérer qui parle. 2) Distinguer répliques et didascalies : la phrase entre parenthèses est une didascalie de geste (3), la ligne avec nom et parole est une réplique. 3) « (à part) » désigne un aparté. « Acte I, scène 2 » situe la scène dans la pièce (méthode d'analyse d'une scène, étape 1).",
+              "explanation": "Méthode : 1) Repérer qui parle. 2) Distinguer répliques et didascalies : « (il se lève en soupirant) » est une didascalie de geste (3), la ligne avec nom et parole est une réplique. « (à part) » désigne une réplique dite à part, un aparté. « Acte I, scène 2 » situe la scène dans la pièce (méthode d'analyse d'une scène, étape 1).",
               "answers": [
                 {
-                  "content": "(Awa pose son plateau avec fracas.)",
+                  "content": "(il se lève en soupirant)",
                   "match": "Didascalie de geste"
                 },
                 {
@@ -1844,7 +1812,7 @@
                 },
                 {
                   "content": "AWA (à part). Quel têtu !",
-                  "match": "Aparté"
+                  "match": "Réplique dite à part"
                 },
                 {
                   "content": "Acte I, scène 2",
@@ -1876,17 +1844,13 @@
                 {
                   "content": "Il complique l'action : c'est le nœud.",
                   "correct": false
-                },
-                {
-                  "content": "Il annonce la fin de la pièce : c'est un aparté.",
-                  "correct": false
                 }
               ]
             },
             {
               "content": "Remets dans l'ordre ces événements de la pièce du roi Nanan.",
               "question_type": "ordering",
-              "explanation": "Méthode : l'action suit l'ordre exposition (acte I), nœud (actes II à IV), dénouement (acte V). 1) L'information sur l'amour est donnée à l'acte I. 2) L'interdiction et la guerre complique l'action. 3) La trahison aggrave le problème. 4) La mort des amants et l'exil du roi sont le dénouement.",
+              "explanation": "Méthode : l'action suit l'ordre exposition (acte I), nœud (actes II à IV), dénouement (acte V). 1) L'information sur l'amour est donnée à l'acte I. 2) L'interdiction et la guerre compliquent l'action. 3) La trahison aggrave le problème. 4) La mort des amants et l'exil du roi sont le dénouement.",
               "answers": [
                 {
                   "content": "Le roi apprend que son fils aime la fille de son ennemi."
@@ -1917,10 +1881,6 @@
                 },
                 {
                   "content": "Un drame romantique",
-                  "correct": false
-                },
-                {
-                  "content": "Une stichomythie",
                   "correct": false
                 }
               ]
@@ -1978,7 +1938,7 @@
         },
         {
           "title": "Problème 3 · Le faux malade",
-          "statement": "Texte écrit pour Lnclass.\n\nActe III, scène 5. (Le salon de M. Kouamé, commerçant. Il fait semblant d'être malade pour ne pas payer une dette ; le spectateur le sait depuis la scène 1. Son créancier, M. Bamba, entre.)\nM. BAMBA. Bonjour, monsieur Kouamé. Je viens pour mon argent.\nM. KOUAMÉ (d'une voix mourante, allongé sur un fauteuil). Ah ! Bamba... je suis bien... bien faible...\nM. BAMBA. Vous avez l'air mal en point, en effet.\nM. KOUAMÉ (à part, en ouvrant un œil). Il avale mon histoire. Je suis sauvé !\nM. KOUAMÉ (d'une voix mourante). Revenez... dans un mois...",
+          "statement": "Texte écrit pour Lnclass.\n\nContexte : acte III, scène 5. M. Kouamé, commerçant, fait semblant d'être malade pour ne pas payer une dette ; le spectateur le sait depuis la scène 1. Son créancier, M. Bamba, vient réclamer son argent.\n(Le salon de M. Kouamé. M. Bamba entre.)\nM. BAMBA. Bonjour, monsieur Kouamé. Je viens pour mon argent.\nM. KOUAMÉ (d'une voix mourante, allongé sur un fauteuil). Ah ! Bamba... je suis bien... bien faible...\nM. BAMBA. Vous avez l'air mal en point, en effet.\nM. KOUAMÉ (à part, en ouvrant un œil). Il avale mon histoire. Je suis sauvé !\nM. KOUAMÉ (d'une voix mourante). Revenez... dans un mois...",
           "exercise_type": "evaluation",
           "figure": null,
           "questions": [
@@ -2031,7 +1991,7 @@
             {
               "content": "Quelles didascalies montrent que M. Kouamé joue la comédie ?",
               "question_type": "multiple_correct_2",
-              "explanation": "Méthode : 2) Distinguer répliques et didascalies : seules les indications entre parenthèses sont des didascalies. 3) Les classer : « d'une voix mourante, allongé » donne le ton et le geste du faux malade ; « à part, en ouvrant un œil » dévoile la ruse. « Vous avez l'air mal en point » est une réplique ; « Le salon de M. Kouamé » indique seulement le lieu.",
+              "explanation": "Méthode : 2) Distinguer répliques et didascalies : seules les indications entre parenthèses sont des didascalies. 3) Les classer : « d'une voix mourante, allongé » donne le ton et le geste du faux malade ; « à part, en ouvrant un œil » dévoile la ruse. « Vous avez l'air mal en point » est une réplique ; « Le salon de M. Kouamé. M. Bamba entre. » indique seulement le lieu et une entrée.",
               "answers": [
                 {
                   "content": "(d'une voix mourante, allongé sur un fauteuil)",
@@ -2046,7 +2006,7 @@
                   "correct": false
                 },
                 {
-                  "content": "(Le salon de M. Kouamé, commerçant.)",
+                  "content": "(Le salon de M. Kouamé. M. Bamba entre.)",
                   "correct": false
                 }
               ]
@@ -2088,11 +2048,7 @@
                   "correct": false
                 },
                 {
-                  "content": "À la tirade",
-                  "correct": false
-                },
-                {
-                  "content": "Au monologue",
+                  "content": "Au drame romantique",
                   "correct": false
                 }
               ]
@@ -2114,8 +2070,8 @@
           ]
         },
         {
-          "title": "Problème 4 · La nuit dans la cour d'école",
-          "statement": "Texte écrit pour Lnclass.\n\nActe IV, scène 2. (Une cour d'école à Korhogo, la nuit. Mariam, élève de 2nde, vient de découvrir que son frère Issouf a pris l'argent de la caisse du club. Elle est seule.)\nMARIAM (elle marche de long en large). Dois-je le dénoncer ? C'est mon frère... Mais le club compte sur cet argent. Si je me tais, je suis complice ; si je parle, je le perds. Que faire ?\n(Issouf entre, sans la voir.)\nISSOUF (à part). Personne ici... tant mieux.\nMARIAM. Issouf !\nISSOUF. Mariam ?\nMARIAM. Tu as pris l'argent.\nISSOUF. Je l'ai rendu.\nMARIAM. Quand ?\nISSOUF. Ce soir.\nMARIAM. Menteur !",
+          "title": "Problème 4 · Acte IV, scènes 2 et 3 : la nuit dans la cour d'école",
+          "statement": "Texte écrit pour Lnclass : pièce en cinq actes.\n\nContexte : Mariam, élève de 2nde, vient de découvrir que son frère Issouf a pris l'argent de la caisse du club.\nActe IV, scène 2. (Une cour d'école à Korhogo, la nuit. Mariam est seule.)\nMARIAM (elle marche de long en large). Dois-je le dénoncer ? C'est mon frère... Mais le club compte sur cet argent. Si je me tais, je suis complice ; si je parle, je le perds. Que faire ?\nScène 3. (Issouf entre et aperçoit Mariam.)\nISSOUF (à part). Ma sœur ici... elle sait tout.\nMARIAM. Issouf !\nISSOUF. Mariam ?\nMARIAM. Tu as pris l'argent.\nISSOUF. Je l'ai rendu.\nMARIAM. Quand ?\nISSOUF. Ce soir.\nMARIAM. Menteur !",
           "exercise_type": "evaluation",
           "figure": null,
           "questions": [
@@ -2137,15 +2093,15 @@
                   "correct": false
                 },
                 {
-                  "content": "Une didascalie",
+                  "content": "Une tirade",
                   "correct": false
                 }
               ]
             },
             {
-              "content": "Dans la scène de la cour d'école, la réplique « ISSOUF (à part). Personne ici... tant mieux. » est :",
+              "content": "Dans la scène de la cour d'école, la réplique « ISSOUF (à part). Ma sœur ici... elle sait tout. » est :",
               "question_type": "single_choice",
-              "explanation": "Méthode : 1) Issouf entre ; Mariam est présente sur scène mais il ne la voit pas. 2) La réplique est courte. 3) « À part » : Mariam est censée ne pas entendre. 4) Nommer : un aparté, car un personnage est présent sur scène (Mariam). Un monologue suppose que le personnage soit seul.",
+              "explanation": "Méthode : 1) Issouf entre et aperçoit Mariam : deux personnages sont sur scène, donc ce n'est pas un monologue. 2) La réplique est courte. 3) « À part » : Mariam est censée ne pas entendre. 4) Nommer : un aparté, car un personnage est présent sur scène (Mariam). Un monologue suppose que le personnage soit seul.",
               "answers": [
                 {
                   "content": "Un aparté",
@@ -2214,7 +2170,7 @@
             {
               "content": "L'acte IV de la pièce, où le vol de l'argent est découvert, correspond plutôt à quel moment de l'action ?",
               "question_type": "single_choice",
-              "explanation": "Méthode (structure) : 3) Chercher l'obstacle : le vol de l'argent est un problème qui s'oppose à l'harmonie du club et place Mariam devant un dilemme. 4) Le problème n'est pas résolu. Un quatrième acte sur cinq appartient donc au nœud, ni à l'exposition (acte I) ni au dénouement (acte V).",
+              "explanation": "Méthode (structure) : 3) Chercher l'obstacle : le vol de l'argent est un problème qui s'oppose à l'harmonie du club et place Mariam devant un dilemme. 4) Le problème n'est pas résolu. Dans une pièce en cinq actes, l'acte IV appartient donc au nœud, ni à l'exposition (acte I) ni au dénouement (acte V).",
               "answers": [
                 {
                   "content": "Au nœud",
@@ -2227,24 +2183,19 @@
                 {
                   "content": "Au dénouement",
                   "correct": false
-                },
-                {
-                  "content": "À la double énonciation",
-                  "correct": false
                 }
               ]
             },
             {
               "content": "Explique en trois ou quatre phrases ce que le monologue de Mariam apprend au spectateur et qu'Issouf ignore. Appuie-toi sur la double énonciation.",
               "question_type": "written",
-              "explanation": "Corrigé modèle : « Dans son monologue, Mariam dit tout haut qu'elle hésite à dénoncer son frère : elle craint d'être complice, mais aussi de le perdre. Seul le spectateur l'entend, car Issouf n'est pas encore entré. Grâce à la double énonciation, le spectateur est le destinataire de ces pensées : il en sait plus qu'Issouf et attend avec inquiétude leur rencontre. » Un point par critère, avec un point pour les deux premiers pris ensemble si l'explication est complète.",
+              "explanation": "Corrigé modèle : « Dans son monologue, Mariam dit tout haut qu'elle hésite à dénoncer son frère : elle craint d'être complice, mais aussi de le perdre. Seul le spectateur l'entend, car Issouf n'est pas encore entré. Grâce à la double énonciation, le spectateur est le destinataire de ces pensées : il en sait plus qu'Issouf et attend avec inquiétude leur rencontre. » Barème : 1 point pour les pensées révélées au spectateur + 1 point pour l'ignorance d'Issouf + 1 point pour la double énonciation et l'effet = 3 points.",
               "answers": [],
               "points": 3,
               "criteria": [
                 "Il est dit que le monologue révèle les pensées de Mariam au spectateur",
                 "Il est dit qu'Issouf n'entend pas ces pensées (Mariam est seule à ce moment-là)",
-                "La double énonciation est expliquée : le spectateur est le destinataire de la parole",
-                "L'effet est interprété (inquiétude, tension, compassion)"
+                "La double énonciation est expliquée (le spectateur est le destinataire) et l'effet est interprété"
               ],
               "starter": "Dans son monologue, Mariam ..."
             },
@@ -2515,7 +2466,7 @@
                 {
                   "content": "L'exposition se trouve en général à l'acte ___.",
                   "question_type": "fill_blank",
-                  "explanation": "1) L'exposition ouvre la pièce. 2) Dans une pièce classique, elle occupe en général l'acte I.",
+                  "explanation": "1) L'exposition ouvre la pièce. 2) Dans une pièce classique, elle occupe en général l'acte I. Repérer l'acte, chercher les informations données au spectateur : elles ouvrent la pièce. Piège : ne pas placer l'exposition à l'acte V, qui contient le dénouement.",
                   "answers": [
                     {
                       "content": "I",
@@ -2538,7 +2489,7 @@
                 {
                   "content": "Le dénouement est le moment où le problème de la pièce est résolu.",
                   "question_type": "true_false",
-                  "explanation": "1) Le nœud complique l'action. 2) Le dénouement la résout et achève la pièce.",
+                  "explanation": "1) Le nœud complique l'action. 2) Le dénouement la résout et achève la pièce. Repérer l'acte final, chercher si le problème est résolu, puis nommer le moment. Piège : ne pas confondre le dénouement (la fin) avec le nœud (la complication).",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2553,7 +2504,7 @@
                 {
                   "content": "Remets dans l'ordre les moments de l'action d'une pièce.",
                   "question_type": "ordering",
-                  "explanation": "1) L'exposition présente la situation. 2) Le nœud complique l'action. 3) Le dénouement la résout.",
+                  "explanation": "1) L'exposition présente la situation. 2) Le nœud complique l'action. 3) Le dénouement la résout. Chercher d'abord les informations de départ (exposition), puis l'obstacle (nœud), enfin la résolution (dénouement). Piège : le nœud ne vient jamais avant l'exposition.",
                   "answers": [
                     {
                       "content": "L'exposition"
@@ -2633,17 +2584,13 @@
                     {
                       "content": "Le drame romantique",
                       "correct": false
-                    },
-                    {
-                      "content": "La stichomythie",
-                      "correct": false
                     }
                   ]
                 },
                 {
                   "content": "La comédie finit en général mal.",
                   "question_type": "true_false",
-                  "explanation": "1) La comédie veut faire rire. 2) Sa fin est en général heureuse.",
+                  "explanation": "1) La comédie veut faire rire. 2) Sa fin est en général heureuse. Relever le ton, chercher la fin, puis conclure : rire et fin heureuse désignent la comédie. Piège : la fin malheureuse est celle de la tragédie, non de la comédie.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2658,10 +2605,14 @@
                 {
                   "content": "Le genre qui mêle le tragique et le comique est le ___.",
                   "question_type": "fill_blank",
-                  "explanation": "1) Mêler le tragique et le comique est le trait du drame romantique du XIXe siècle.",
+                  "explanation": "1) Mêler le tragique et le comique est le trait du drame romantique du XIXe siècle. Identifier le ton dominant, relever les personnages, conclure. Piège : le sens courant de « drame » (événement triste) n'est pas son sens littéraire.",
                   "answers": [
                     {
                       "content": "drame",
+                      "correct": true
+                    },
+                    {
+                      "content": "drame romantique",
                       "correct": true
                     }
                   ]
@@ -2680,11 +2631,7 @@
                       "correct": false
                     },
                     {
-                      "content": "tirade",
-                      "correct": false
-                    },
-                    {
-                      "content": "scène",
+                      "content": "farce",
                       "correct": false
                     }
                   ]
@@ -2812,9 +2759,9 @@
                   ]
                 },
                 {
-                  "content": "Combien de personnages parlent dans cet extrait ? Écris le nombre en chiffre : ___",
+                  "content": "Combien de personnages parlent dans cet extrait ? Écris le nombre en chiffres : ___",
                   "question_type": "fill_blank",
-                  "explanation": "1) Repérer les noms en tête de réplique : LA DIRECTRICE et LE CONCIERGE. 2) Deux personnages parlent.",
+                  "explanation": "1) Repérer les noms en tête de réplique : LA DIRECTRICE et LE CONCIERGE. 2) Deux personnages parlent. Compter les personnages qui ont une réplique, pas ceux dont on parle. Piège : ne pas ajouter l'actrice ou le professeur, qui ne sont pas des personnages de la pièce.",
                   "answers": [
                     {
                       "content": "2",
@@ -2922,7 +2869,7 @@
                 {
                   "content": "Dans la didascalie « (à ___) », Brou dit sa réplique sans que Kouadio l'entende.",
                   "question_type": "fill_blank",
-                  "explanation": "1) La didascalie d'aparté s'écrit « à part ». 2) Elle signale la parole destinée au spectateur.",
+                  "explanation": "1) La didascalie d'aparté s'écrit « à part ». 2) Elle signale la parole destinée au spectateur. Chercher si les autres personnages entendent : « à part » répond oui à la question « qui n'entend pas ? ». Piège : ne pas confondre « à part » avec une sortie de scène.",
                   "answers": [
                     {
                       "content": "part",
@@ -2965,7 +2912,7 @@
                 {
                   "content": "Dans le résumé du « Bouillon de Maman Adjoua », quel acte contient le nœud ?",
                   "question_type": "single_choice",
-                  "explanation": "1) L'acte II contient un problème : Bidi gâche les marmites. 2) L'action se complique : c'est le nœud.",
+                  "explanation": "1) L'acte II contient un problème : Bidi gâche les marmites. 2) L'action se complique : c'est le nœud. Chercher l'obstacle, puis nommer le moment : le piment gâche les marmites, l'action se complique. Piège : ne pas prendre l'acte du dénouement pour le nœud.",
                   "answers": [
                     {
                       "content": "L'acte II",
@@ -2988,7 +2935,7 @@
                 {
                   "content": "Dans le résumé du « Bouillon de Maman Adjoua », quel acte contient le dénouement ?",
                   "question_type": "single_choice",
-                  "explanation": "1) À l'acte III, Bidi avoue et les voisins s'associent. 2) Le problème est résolu : c'est le dénouement.",
+                  "explanation": "1) À l'acte III, Bidi avoue et les voisins s'associent. 2) Le problème est résolu : c'est le dénouement. Chercher si le problème est résolu, puis nommer le moment : l'aveu règle tout. Piège : ne pas placer le dénouement à l'acte II, où le problème est à son comble.",
                   "answers": [
                     {
                       "content": "L'acte III",
@@ -3023,10 +2970,6 @@
                     },
                     {
                       "content": "Un drame romantique",
-                      "correct": false
-                    },
-                    {
-                      "content": "Un monologue",
                       "correct": false
                     }
                   ]
@@ -3142,7 +3085,7 @@
                 {
                   "content": "Quand le spectateur en sait plus qu'un personnage, on parle d'ironie ___.",
                   "question_type": "fill_blank",
-                  "explanation": "1) Le spectateur sait ce que M. Bakayoko ignore. 2) On parle d'ironie dramatique.",
+                  "explanation": "1) Le spectateur sait ce que M. Bakayoko ignore. 2) On parle d'ironie dramatique. Chercher ce que le spectateur sait et que M. Bakayoko ignore, puis nommer l'effet. Piège : ne pas croire que le spectateur est dupe comme le client.",
                   "answers": [
                     {
                       "content": "dramatique",
@@ -3168,7 +3111,7 @@
                 {
                   "content": "La situation A est :",
                   "question_type": "single_choice",
-                  "explanation": "1) Awa est seule. 2) Elle pense tout haut. 3) C'est un monologue.",
+                  "explanation": "1) Awa est seule. 2) Elle pense tout haut. 3) C'est un monologue. Compter les personnages : Awa est seule, personne ne peut l'entendre à part. Piège : ne pas parler d'aparté, qui exige un autre personnage présent sur scène.",
                   "answers": [
                     {
                       "content": "Un monologue",
@@ -3183,7 +3126,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Une tirade adressée à Koffi",
+                      "content": "Une tirade",
                       "correct": false
                     }
                   ]
@@ -3191,7 +3134,7 @@
                 {
                   "content": "La situation B est :",
                   "question_type": "single_choice",
-                  "explanation": "1) Koffi est présent. 2) Awa parle à part. 3) C'est un aparté.",
+                  "explanation": "1) Koffi est présent. 2) Awa parle à part. 3) C'est un aparté. Compter les personnages : Koffi est présent, et Awa parle « à part ». Mesurer : c'est court. Nommer : un aparté. Piège : ne pas parler de monologue, qui suppose un personnage seul.",
                   "answers": [
                     {
                       "content": "Un aparté",
@@ -3203,10 +3146,6 @@
                     },
                     {
                       "content": "Une stichomythie",
-                      "correct": false
-                    },
-                    {
-                      "content": "Une didascalie",
                       "correct": false
                     }
                   ]
@@ -3237,7 +3176,7 @@
                 {
                   "content": "Pourquoi la situation B n'est-elle pas un monologue ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Un monologue suppose un personnage seul. 2) Koffi est à côté d'Awa : la parole est un aparté.",
+                  "explanation": "1) Un monologue suppose un personnage seul. 2) Koffi est à côté d'Awa : la parole est un aparté. Compter les personnages présents : ils sont deux, Awa et Koffi. Piège : une réplique murmurée peut ressembler à un monologue, mais il y a un témoin sur scène.",
                   "answers": [
                     {
                       "content": "Parce que Koffi est présent sur scène.",
@@ -3260,7 +3199,7 @@
                 {
                   "content": "Dans la situation B, Koffi est censé entendre Awa.",
                   "question_type": "true_false",
-                  "explanation": "1) Awa murmure à part. 2) Koffi est censé ne pas entendre ; seul le spectateur entend.",
+                  "explanation": "1) Awa murmure à part. 2) Koffi est censé ne pas entendre ; seul le spectateur entend. Chercher si les autres personnages entendent : « à part » veut dire non. Piège : ne pas croire qu'un murmure est entendu parce qu'il est dit près de Koffi.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -3297,17 +3236,13 @@
                     {
                       "content": "Le dénouement",
                       "correct": false
-                    },
-                    {
-                      "content": "Une tirade",
-                      "correct": false
                     }
                   ]
                 },
                 {
                   "content": "La scène 2 correspond à :",
                   "question_type": "single_choice",
-                  "explanation": "1) Le chef interdit le mariage : un obstacle s'oppose au désir de Kouassi. 2) C'est le nœud.",
+                  "explanation": "1) Le chef interdit le mariage : un obstacle s'oppose au désir de Kouassi. 2) C'est le nœud. Chercher l'obstacle : l'interdiction du chef s'oppose au projet de Kouassi. Piège : ne pas confondre cette complication avec l'exposition de la scène 1.",
                   "answers": [
                     {
                       "content": "Le nœud",
@@ -3320,17 +3255,13 @@
                     {
                       "content": "Le dénouement",
                       "correct": false
-                    },
-                    {
-                      "content": "Un aparté",
-                      "correct": false
                     }
                   ]
                 },
                 {
                   "content": "Pourquoi la scène 2 est-elle un nœud ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Le nœud est le problème qui complique l'action. 2) La dette interdit le mariage.",
+                  "explanation": "1) Le nœud est le problème qui complique l'action. 2) La dette interdit le mariage. Chercher l'obstacle, puis nommer le moment : un nœud est une complication, ici la dette. Piège : ne pas croire que présenter un personnage suffit à faire un nœud.",
                   "answers": [
                     {
                       "content": "Parce qu'un obstacle s'oppose au projet de Kouassi.",
@@ -3353,7 +3284,7 @@
                 {
                   "content": "Pourquoi la scène 1 n'est-elle pas un nœud ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Dans la scène 1, rien ne s'oppose à Kouassi. 2) Elle donne seulement la situation de départ.",
+                  "explanation": "1) Dans la scène 1, rien ne s'oppose à Kouassi. 2) Elle donne seulement la situation de départ. Chercher l'obstacle : aucun ne s'oppose à Kouassi dans la scène 1. Nommer : c'est l'exposition. Piège : un projet de mariage n'est pas un problème tant que rien ne l'empêche.",
                   "answers": [
                     {
                       "content": "Parce qu'aucun obstacle n'y apparaît encore.",
@@ -3376,7 +3307,7 @@
                 {
                   "content": "La scène 1 est le dénouement de la pièce.",
                   "question_type": "true_false",
-                  "explanation": "1) Le dénouement résout le problème. 2) La scène 1 ouvre la pièce : c'est l'exposition.",
+                  "explanation": "1) Le dénouement résout le problème. 2) La scène 1 ouvre la pièce : c'est l'exposition. Chercher si le problème est résolu : dans la scène 1, il n'existe pas encore. Piège : ne pas confondre la première scène, qui ouvre la pièce, avec la dernière, qui la ferme.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -3411,11 +3342,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Un monologue",
-                      "correct": false
-                    },
-                    {
-                      "content": "Une scène",
+                      "content": "Un drame romantique",
                       "correct": false
                     }
                   ]
@@ -3423,7 +3350,7 @@
                 {
                   "content": "Quel est le genre de la pièce 2 ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Un maître d'école est un homme ordinaire. 2) Quiproquos et rires : ton comique. 3) Fin heureuse : comédie.",
+                  "explanation": "1) Un maître d'école est un homme ordinaire. 2) Quiproquos et rires : ton comique. 3) Fin heureuse : comédie. Relever les personnages : gens ordinaires. Identifier le ton : comique. Chercher la fin : heureuse. Conclure : comédie. Piège : ne pas confondre avec la tragédie, aux personnages nobles.",
                   "answers": [
                     {
                       "content": "Une comédie",
@@ -3436,17 +3363,13 @@
                     {
                       "content": "Un drame romantique",
                       "correct": false
-                    },
-                    {
-                      "content": "Une tirade",
-                      "correct": false
                     }
                   ]
                 },
                 {
                   "content": "Pourquoi la pièce 2 est-elle une comédie ?",
                   "question_type": "single_choice",
-                  "explanation": "1) La comédie veut faire rire. 2) Sa fin est heureuse. 3) Le roi et la mort sont des traits de la tragédie.",
+                  "explanation": "1) La comédie veut faire rire. 2) Sa fin est heureuse. 3) Le roi et la mort sont des traits de la tragédie. Relever, identifier, chercher, conclure : gens ordinaires, ton comique, fin heureuse. Piège : un roi et une mort sont les traits de la tragédie, non de la comédie.",
                   "answers": [
                     {
                       "content": "Parce qu'elle fait rire et finit en réconciliation.",
@@ -3508,7 +3431,7 @@
             },
             {
               "title": "Exercice 4",
-              "statement": "Dans cet exercice, tu justifies ce que sait le spectateur.\n\nTexte écrit pour Lnclass : Acte I, scène 5. Le chef de gare, M. Séri, croit que l'inspecteur venu visiter la gare est son ami ; le spectateur sait que c'est un inspecteur qui cache son identité.\nL'INSPECTEUR (il sourit). Votre gare est bien tenue, monsieur Séri.\nM. SÉRI (rassuré). Entre amis, on ne cache rien !",
+              "statement": "Dans cet exercice, tu justifies ce que sait le spectateur.\n\nTexte écrit pour Lnclass : Acte I, scène 5. Le chef de gare, M. Séri, croit que le visiteur est un vieil ami ; le spectateur sait que c'est un inspecteur qui cache son identité.\nL'INSPECTEUR (il sourit). Votre gare est bien tenue, monsieur Séri.\nM. SÉRI (rassuré). Entre amis, on ne cache rien !",
               "exercise_type": "evaluation",
               "figure": null,
               "hint": "Qui connaît la vérité, et qui l'ignore ?",
@@ -3516,7 +3439,7 @@
                 {
                   "content": "Dans la scène de la gare, qui ignore l'identité de l'inspecteur ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Le texte dit que le spectateur sait. 2) L'inspecteur connaît sa propre identité. 3) Seul M. Séri l'ignore.",
+                  "explanation": "1) Le texte dit que le spectateur sait. 2) L'inspecteur connaît sa propre identité. 3) Seul M. Séri l'ignore. Chercher ce que le spectateur sait et que certains personnages ignorent. Piège : ne pas croire que l'inspecteur, qui joue son rôle, ignore sa propre identité.",
                   "answers": [
                     {
                       "content": "M. Séri",
@@ -3562,7 +3485,7 @@
                 {
                   "content": "Que montre cette scène ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Chaque réplique s'adresse à un personnage et au spectateur. 2) C'est la double énonciation.",
+                  "explanation": "1) Chaque réplique s'adresse à un personnage et au spectateur. 2) C'est la double énonciation. Situer, relever, chercher ce que sait le spectateur, interpréter. Piège : le spectateur ne parle pas aux personnages ; il est destinataire, non interlocuteur.",
                   "answers": [
                     {
                       "content": "Que chaque réplique a deux destinataires : le personnage et le spectateur",
@@ -3585,7 +3508,7 @@
                 {
                   "content": "Le spectateur est un personnage de la scène.",
                   "question_type": "true_false",
-                  "explanation": "1) Le spectateur est dans la salle. 2) Il est destinataire, pas interlocuteur.",
+                  "explanation": "1) Le spectateur est dans la salle. 2) Il est destinataire, pas interlocuteur. Chercher qui parle à qui : le spectateur écoute depuis la salle. Piège : il n'appartient pas à la fiction et ne peut pas répondre aux personnages.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -3600,7 +3523,7 @@
                 {
                   "content": "Le spectateur en sait plus que M. Séri : c'est de l'ironie ___.",
                   "question_type": "fill_blank",
-                  "explanation": "1) Le spectateur comprend ce qu'un personnage ignore. 2) C'est l'ironie dramatique.",
+                  "explanation": "1) Le spectateur comprend ce qu'un personnage ignore. 2) C'est l'ironie dramatique. Chercher ce que le spectateur sait et que M. Séri ignore, puis nommer l'effet. Piège : ne pas parler d'ironie lyrique ou comique : le terme est « dramatique ».",
                   "answers": [
                     {
                       "content": "dramatique",
@@ -3653,7 +3576,7 @@
                 {
                   "content": "Quel mot désigne une grande partie d'une pièce ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Une pièce est divisée en actes. 2) Les autres mots désignent des textes ou des paroles.",
+                  "explanation": "1) Une pièce est divisée en actes. 2) Les autres mots désignent des textes ou des paroles. Repérer les mots de la structure : actes, scènes, nœud. Piège : ne pas confondre l'acte, grande partie, avec la scène, qui change à chaque entrée ou sortie.",
                   "answers": [
                     {
                       "content": "Un acte",
@@ -3676,7 +3599,7 @@
                 {
                   "content": "Les didascalies sont dites par les acteurs.",
                   "question_type": "true_false",
-                  "explanation": "1) Les didascalies sont des indications de l'auteur. 2) Elles ne sont jamais prononcées.",
+                  "explanation": "1) Les didascalies sont des indications de l'auteur. 2) Elles ne sont jamais prononcées. Distinguer les répliques des didascalies : on dit les premières, pas les secondes. Piège : ne pas prononcer « il sourit » en jouant la réplique.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -3691,7 +3614,7 @@
                 {
                   "content": "L'échange de répliques très courtes qui se répondent est la ___.",
                   "question_type": "fill_blank",
-                  "explanation": "1) Mesurer la longueur des répliques. 2) Très courtes et en écho : stichomythie.",
+                  "explanation": "1) Mesurer la longueur des répliques. 2) Très courtes et en écho : stichomythie. Mesurer la longueur des répliques : très courtes et en écho, c'est la stichomythie. Piège : ne pas confondre avec la tirade, qui est longue et continue.",
                   "answers": [
                     {
                       "content": "stichomythie",
@@ -3702,7 +3625,7 @@
                 {
                   "content": "Remets dans l'ordre les moments de l'action d'une pièce.",
                   "question_type": "ordering",
-                  "explanation": "1) Exposition. 2) Nœud. 3) Dénouement.",
+                  "explanation": "1) Exposition. 2) Nœud. 3) Dénouement. Chercher d'abord ce qui présente la situation (exposition), puis ce qui la complique (nœud), puis ce qui la résout (dénouement). Piège : ne pas inverser le nœud et le dénouement.",
                   "answers": [
                     {
                       "content": "L'exposition"
@@ -3718,7 +3641,7 @@
                 {
                   "content": "Quels mots désignent des genres théâtraux ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "1) La tragédie et le drame sont des genres. 2) La tirade et l'aparté sont des formes de la parole.",
+                  "explanation": "1) La tragédie et le drame sont des genres. 2) La tirade et l'aparté sont des formes de la parole. Nommer les genres : comédie, tragédie, drame. Piège : la tirade et l'aparté sont des formes de la parole, pas des genres.",
                   "answers": [
                     {
                       "content": "La tragédie",
@@ -3773,7 +3696,7 @@
                 {
                   "content": "Que montre la didascalie « (sans lever les yeux) » ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Classer la didascalie : c'est un geste. 2) Elle apprend à l'acteur comment jouer M. Coulibaly.",
+                  "explanation": "1) Classer la didascalie : c'est un geste. 2) Elle apprend à l'acteur comment jouer M. Coulibaly. Repérer, distinguer, classer, puis dire ce que la didascalie apprend à l'acteur. Piège : « sans lever les yeux » n'est pas prononcé, c'est une indication de jeu.",
                   "answers": [
                     {
                       "content": "Que M. Coulibaly écoute sans quitter son journal des yeux",
@@ -3819,7 +3742,7 @@
                 {
                   "content": "Qui ignore que Yao a raté son examen ?",
                   "question_type": "single_choice",
-                  "explanation": "1) L'aparté apprend la nouvelle au spectateur. 2) Yao la connaît. 3) Son père, qui n'a pas entendu, l'ignore.",
+                  "explanation": "1) L'aparté apprend la nouvelle au spectateur. 2) Yao la connaît. 3) Son père, qui n'a pas entendu, l'ignore. Chercher ce que le spectateur sait que Yao ou son père ignore. Piège : ne pas croire que le père a entendu l'aparté, qui est destiné au seul spectateur.",
                   "answers": [
                     {
                       "content": "M. Coulibaly",
@@ -3874,7 +3797,7 @@
                 {
                   "content": "Dans « La Pirogue d'Akissi », l'acte I correspond à :",
                   "question_type": "single_choice",
-                  "explanation": "1) L'acte I présente Akissi, sa famille et le lieu. 2) Il n'y a pas encore d'obstacle : exposition.",
+                  "explanation": "1) L'acte I présente Akissi, sa famille et le lieu. 2) Il n'y a pas encore d'obstacle : exposition. Repérer l'acte, chercher les informations données au spectateur. Piège : ne pas parler de nœud, car aucun obstacle n'est encore apparu.",
                   "answers": [
                     {
                       "content": "L'exposition",
@@ -3886,10 +3809,6 @@
                     },
                     {
                       "content": "Le dénouement",
-                      "correct": false
-                    },
-                    {
-                      "content": "L'aparté",
                       "correct": false
                     }
                   ]
@@ -3897,7 +3816,7 @@
                 {
                   "content": "Dans « La Pirogue d'Akissi », les actes II à IV correspondent à :",
                   "question_type": "single_choice",
-                  "explanation": "1) Les promesses, la fuite et la guerre compliquent l'action. 2) C'est le nœud.",
+                  "explanation": "1) Les promesses, la fuite et la guerre compliquent l'action. 2) C'est le nœud. Repérer les actes II à IV, chercher l'obstacle : promesse au prince, fuite, guerre. Piège : ne pas parler de dénouement avant la résolution.",
                   "answers": [
                     {
                       "content": "Le nœud",
@@ -3909,10 +3828,6 @@
                     },
                     {
                       "content": "Le dénouement",
-                      "correct": false
-                    },
-                    {
-                      "content": "Le monologue",
                       "correct": false
                     }
                   ]
@@ -3920,7 +3835,7 @@
                 {
                   "content": "Dans « La Pirogue d'Akissi », l'acte V correspond à :",
                   "question_type": "single_choice",
-                  "explanation": "1) Les amants meurent et le chef abdique. 2) Le problème est résolu : dénouement.",
+                  "explanation": "1) Les amants meurent et le chef abdique. 2) Le problème est résolu : dénouement. Repérer le dernier acte, chercher si le problème est résolu, puis nommer le moment. Piège : ne pas parler d'exposition pour un acte final.",
                   "answers": [
                     {
                       "content": "Le dénouement",
@@ -3932,10 +3847,6 @@
                     },
                     {
                       "content": "Le nœud",
-                      "correct": false
-                    },
-                    {
-                      "content": "La tirade",
                       "correct": false
                     }
                   ]
@@ -3954,11 +3865,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Un monologue",
-                      "correct": false
-                    },
-                    {
-                      "content": "Une scène",
+                      "content": "Un drame romantique",
                       "correct": false
                     }
                   ]
@@ -3966,7 +3873,7 @@
                 {
                   "content": "« La Pirogue d'Akissi » est une comédie.",
                   "question_type": "true_false",
-                  "explanation": "1) La comédie fait rire et finit en général bien. 2) Ici la fin est la mort : c'est une tragédie.",
+                  "explanation": "1) La comédie fait rire et finit en général bien. 2) Ici la fin est la mort : c'est une tragédie. Relever les personnages (rang élevé), identifier le ton (passions), chercher la fin (mort), conclure. Piège : le nombre d'actes ne décide pas du genre.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -4036,7 +3943,7 @@
                 {
                   "content": "Cet échange entre Djénéba et Soro est un monologue.",
                   "question_type": "true_false",
-                  "explanation": "1) Un monologue suppose un personnage seul. 2) Ici deux personnages se parlent.",
+                  "explanation": "1) Un monologue suppose un personnage seul. 2) Ici deux personnages se parlent. Compter les personnages : deux se parlent. Mesurer : répliques très courtes, donc stichomythie. Piège : ne pas parler de monologue, qui suppose un personnage seul.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -4051,7 +3958,7 @@
                 {
                   "content": "Les répliques de l'échange entre Djénéba et Soro sont très ___.",
                   "question_type": "fill_blank",
-                  "explanation": "1) Mesurer la longueur des répliques. 2) Elles sont très courtes.",
+                  "explanation": "1) Mesurer la longueur des répliques. 2) Elles sont très courtes. Mesurer la longueur de chaque réplique : un ou deux mots. Nommer la forme : stichomythie. Piège : une tirade serait longue et continue.",
                   "answers": [
                     {
                       "content": "courtes",
@@ -4074,7 +3981,7 @@
                 {
                   "content": "Dans le théâtre classique, qu'est-ce qui marque le début d'une nouvelle scène ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Repérer les personnages présents. 2) Une scène change quand un personnage entre ou sort.",
+                  "explanation": "1) Repérer les personnages présents. 2) Une scène change quand un personnage entre ou sort. Repérer les personnages présents : quand l'un entre ou sort, la scène change. Piège : ne pas croire qu'un changement de ton ou de lieu suffit ; c'est l'acte qui marque une pause.",
                   "answers": [
                     {
                       "content": "L'entrée ou la sortie d'un personnage",
@@ -4097,7 +4004,7 @@
                 {
                   "content": "La didascalie « (Une cour d'école, à Gagnoa. Midi.) » indique le ___ et le moment.",
                   "question_type": "select",
-                  "explanation": "1) Classer la didascalie. 2) « Une cour d'école, à Gagnoa » est le lieu ; « Midi » est le moment.",
+                  "explanation": "1) Classer la didascalie. 2) « Une cour d'école, à Gagnoa » est le lieu ; « Midi » est le moment. Classer la didascalie : lieu et moment. Piège : ne pas confondre une didascalie de lieu avec une didascalie de ton ou de geste.",
                   "answers": [
                     {
                       "content": "lieu",
@@ -4120,7 +4027,7 @@
                 {
                   "content": "Remets dans l'ordre les étapes de l'analyse d'une scène.",
                   "question_type": "ordering",
-                  "explanation": "1) Situer. 2) Relever. 3) Chercher ce que sait le spectateur. 4) Interpréter l'effet.",
+                  "explanation": "1) Situer. 2) Relever. 3) Chercher ce que sait le spectateur. 4) Interpréter l'effet. Situer, relever, chercher ce que sait le spectateur, interpréter l'effet : c'est l'ordre de la fiche. Piège : ne pas interpréter l'effet avant d'avoir situé la scène.",
                   "answers": [
                     {
                       "content": "Situer la scène."
