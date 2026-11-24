@@ -12,7 +12,7 @@
         {
           "key": "carte-egypte",
           "kind": "map",
-          "description": "Une carte de l'Afrique. L'Égypte, au nord-est du continent, est teintée : c'est le pays du Nil, qui la traverse du sud au nord jusqu'à la mer Méditerranée. Deux villes sont repérées : Le Caire, près des pyramides de Gizeh, et Alexandrie, sur la côte de la Méditerranée. La Côte d'Ivoire est teintée autrement, comme repère de comparaison.",
+          "description": "Une carte de l'Afrique. L'Égypte, au nord-est du continent, au bord de la mer Méditerranée, est teintée : c'est le pays du Nil, qui la traverse du sud au nord (le fleuve n'est pas tracé sur ce fond de carte). Un repère marque Memphis, capitale de l'Ancien Empire, et les pyramides de Gizeh, tout près de l'actuel Le Caire. La Côte d'Ivoire est teintée autrement, comme repère de comparaison.",
           "params": {
             "base": "africa",
             "areas": [
@@ -28,11 +28,7 @@
             "places": [
               {
                 "id": "cairo",
-                "label": "Le Caire"
-              },
-              {
-                "id": "alexandria",
-                "label": "Alexandrie"
+                "label": "Memphis et Gizeh"
               }
             ],
             "legend": [
@@ -249,7 +245,7 @@
       "notions": [
         {
           "name": "Le Nil, la crue et l'agriculture",
-          "remember": "L'**Égypte** est un pays du nord-est de l'Afrique, entouré de déserts (le désert Libyque à l'ouest, le désert Arabique à l'est). Le **Nil** la traverse du sud au nord et se jette dans la mer Méditerranée. Au sud, une **vallée** étroite (la Haute-Égypte) ; au nord, un **delta** en éventail (la Basse-Égypte).\n\nChaque été, le Nil déborde : c'est la **crue**. Les eaux se retirent en laissant le **limon**, une boue très fertile. L'année suit trois saisons : **Akhet** (inondation), **Peret** (semailles) et **Chemou** (récoltes). Les paysans cultivent surtout le blé et l'orge, mais aussi le lin et le papyrus.\n\nL'historien grec **Hérodote** (Ve siècle av. J.-C.) a résumé cette réalité : « l'Égypte est un **don du Nil** ».",
+          "remember": "L'**Égypte** est un pays du nord-est de l'Afrique, entouré de déserts (le désert Libyque à l'ouest, le désert Arabique à l'est). Le **Nil** la traverse du sud au nord et se jette dans la mer Méditerranée. Au sud, une **vallée** étroite (la Haute-Égypte) ; au nord, un **delta** en éventail (la Basse-Égypte).\n\nChaque été, le Nil déborde : c'est la **crue**. Les eaux se retirent en laissant le **limon**, une boue très fertile. L'année suit trois saisons : **Akhet** (inondation), **Peret** (semailles) et **Chemou** (récoltes). Les paysans creusent des **canaux** et des bassins pour conduire et garder l'eau de la crue. Ils cultivent surtout le blé et l'orge, mais aussi le lin ; dans les marais, on récolte le papyrus.\n\nL'historien grec **Hérodote** (Ve siècle av. J.-C.) a résumé cette réalité : « l'Égypte est un **don du Nil** ».",
           "method": [
             "Situer l'Égypte, le Nil et le désert sur la carte.",
             "Décrire le rythme du fleuve : crue, retrait des eaux, dépôt de limon.",
@@ -265,7 +261,7 @@
               "Conclure : sans le Nil il n'y aurait que du désert ; grâce à lui, les paysans récoltent assez de blé et d'orge pour nourrir le pays. C'est bien un « don du Nil »."
             ]
           },
-          "pitfall": "Ne crois pas que la crue vient de la pluie qui tombe en Égypte : il y pleut très peu. Les eaux viennent de pluies tombées loin en amont, au sud, et le fleuve les apporte. Contre-exemple : un champ situé à quelques kilomètres du fleuve, au-delà de la zone inondée, reste du désert. La fertilité s'arrête là où l'eau de la crue n'arrive plus.",
+          "pitfall": "Ne crois pas que la crue vient de la pluie qui tombe en Égypte : il y pleut très peu. Les eaux viennent de pluies tombées loin en amont, au sud, et le fleuve les apporte. Contre-exemple : un champ situé à quelques kilomètres du fleuve, au-delà de la zone inondée et des canaux, reste du désert. La fertilité s'arrête là où l'eau du Nil n'arrive plus.",
           "figure": "saisons-du-nil",
           "practice": {
             "statement": "Tu t'entraînes à situer, décrire, relier et conclure pour expliquer le rôle du Nil.",
@@ -514,9 +510,9 @@
                   ]
                 },
                 {
-                  "content": "Un champ éloigné du fleuve, que la crue n'atteint pas, reste désertique.",
+                  "content": "Un champ éloigné du fleuve, que ni la crue ni les canaux n'atteignent, reste désertique.",
                   "question_type": "true_false",
-                  "explanation": "Étape 4 — Conclure : la vie et les cultures existent là où l'eau du Nil arrive. Au-delà de la zone inondée, c'est le désert, comme le montre le piège de la fiche.",
+                  "explanation": "Étape 4 — Conclure : la vie et les cultures existent là où l'eau du Nil arrive. Au-delà de la zone inondée et des canaux, c'est le désert, comme le montre le piège de la fiche.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -547,7 +543,7 @@
         },
         {
           "name": "Les grandes périodes de l'Égypte pharaonique",
-          "remember": "Vers **3 000 av. J.-C.**, la Haute-Égypte et la Basse-Égypte sont réunies sous l'autorité d'un seul roi : c'est l'**unification** de l'Égypte. Le roi est appelé **pharaon**.\n\nOn découpe l'histoire pharaonique en trois grandes périodes (dates arrondies) :\n**Ancien Empire** (vers 2700 à 2200 av. J.-C.) : capitale Memphis, construction des pyramides de Gizeh.\n**Moyen Empire** (vers 2050 à 1750 av. J.-C.) : le pays est réunifié après une période de troubles.\n**Nouvel Empire** (vers 1550 à 1070 av. J.-C.) : l'Égypte est très puissante ; règne de Ramsès II au XIIIe siècle av. J.-C.\n\nEntre ces empires, il y a des périodes de troubles. En 332 av. J.-C., **Alexandre le Grand** conquiert l'Égypte, qui passe sous domination grecque.",
+          "remember": "Vers **3 000 av. J.-C.**, la Haute-Égypte et la Basse-Égypte sont réunies sous l'autorité d'un seul roi : c'est l'**unification** de l'Égypte. Le roi est appelé **pharaon**.\n\nOn découpe l'histoire pharaonique en trois grandes périodes (dates arrondies ; selon les historiens, elles varient de quelques dizaines d'années) :\n**Ancien Empire** (vers 2700 à 2200 av. J.-C.) : capitale Memphis, construction des pyramides de Gizeh.\n**Moyen Empire** (vers 2050 à 1750 av. J.-C.) : le pays est réunifié après une période de troubles.\n**Nouvel Empire** (vers 1550 à 1070 av. J.-C.) : l'Égypte est très puissante ; règne de Ramsès II au XIIIe siècle av. J.-C.\n\nEntre ces empires, il y a des périodes de troubles. En 332 av. J.-C., **Alexandre le Grand** conquiert l'Égypte, qui passe sous domination grecque.",
           "method": [
             "Repérer la date ou l'événement donné dans le document.",
             "Ranger la date : avant J.-C., plus le nombre est grand, plus la date est ancienne.",
@@ -840,7 +836,7 @@
         },
         {
           "name": "Le pouvoir du pharaon et la société égyptienne",
-          "remember": "Le **pharaon** est le roi de l'Égypte. Il est considéré comme un dieu vivant, le lien entre les dieux et les hommes. Il commande l'armée et veille à la justice et aux récoltes.\n\nIl ne gouverne pas seul. Le **vizir** est son principal ministre : il dirige l'administration et la justice. Les **scribes** savent écrire et compter : ils notent les récoltes et calculent les impôts, payés surtout en grain. Le pays est divisé en provinces, les **nomes**, dirigées par des **nomarques**.\n\nLa société est une pyramide : au sommet le pharaon et sa famille, puis les hauts fonctionnaires, les prêtres et les scribes, ensuite les artisans et les soldats, et en bas les **paysans**, la grande majorité de la population.",
+          "remember": "Le **pharaon** est le roi de l'Égypte. Il est considéré comme un dieu vivant, le lien entre les dieux et les hommes. Il commande l'armée et veille à la justice et aux récoltes.\n\nIl ne gouverne pas seul. Le **vizir** est son principal ministre : il dirige l'administration et la justice. Les **scribes** savent écrire et compter : ils notent les récoltes et calculent les impôts, payés surtout en grain. Le pays est divisé en provinces, les **nomes**, dirigées par des **nomarques**.\n\nLa société est une pyramide : au sommet le pharaon et sa famille, puis les hauts fonctionnaires, les prêtres et les scribes, ensuite les artisans et les soldats, et en bas les **paysans**, la grande majorité de la population. Tout en bas, il existe aussi des **esclaves**, peu nombreux, souvent des prisonniers de guerre.",
           "method": [
             "Identifier le personnage ou le groupe nommé dans le document.",
             "Situer son rang dans la société, du pharaon aux paysans.",
@@ -1057,7 +1053,7 @@
                 {
                   "content": "Range ces groupes du plus haut au plus bas de la société.",
                   "question_type": "ordering",
-                  "explanation": "Étape 2 — Situer le rang : le pharaon est au sommet, puis les hauts fonctionnaires, ensuite les artisans, et en bas les paysans, les plus nombreux.",
+                  "explanation": "Étape 2 — Situer le rang : le pharaon est au sommet, puis les hauts fonctionnaires, ensuite les artisans, et en bas, parmi ces quatre groupes, les paysans, les plus nombreux.",
                   "answers": [
                     {
                       "content": "Le pharaon"
@@ -1110,7 +1106,7 @@
                 {
                   "content": "Les impôts sont payés surtout en pièces de monnaie.",
                   "question_type": "true_false",
-                  "explanation": "Étape 4 — Relier : les impôts sont payés surtout en grain, que les scribes comptent et stockent. La monnaie en pièces n'existe pas encore dans l'Égypte pharaonique.",
+                  "explanation": "Étape 4 — Relier : les impôts sont payés surtout en grain, que les scribes comptent et stockent. Pendant presque toute l'histoire pharaonique, on n'utilise pas de pièces de monnaie : on paie en nature.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -1151,7 +1147,7 @@
         },
         {
           "name": "La religion et la vie après la mort",
-          "remember": "Les Égyptiens sont **polythéistes** : ils adorent beaucoup de dieux. **Rê** est le dieu du soleil. **Osiris** est le dieu des morts, qui juge les défunts ; **Isis** est son épouse ; leur fils **Horus**, le dieu à tête de faucon, protège le pharaon. **Amon** est le grand dieu de Thèbes, associé à Rê au Nouvel Empire. Les prêtres servent les dieux dans les temples.\n\nIls croient à la **vie après la mort**. Pour que le défunt vive dans l'au-delà, on conserve son corps : c'est la **momification**. On l'enterre avec des objets et des offrandes. Pendant le jugement, le cœur du défunt est pesé devant Osiris.\n\nLes pharaons de l'Ancien Empire ont des **pyramides** pour tombeaux, comme celles de **Gizeh**. Au Nouvel Empire, ils sont enterrés dans des tombes creusées dans la roche, dans la **Vallée des Rois**, près de Thèbes.",
+          "remember": "Les Égyptiens sont **polythéistes** : ils adorent beaucoup de dieux. **Rê** est le dieu du soleil. **Osiris** est le dieu des morts, qui juge les défunts ; **Isis** est son épouse ; leur fils **Horus**, le dieu à tête de faucon, protège le pharaon. **Amon** est le grand dieu de Thèbes ; associé à Rê sous le nom d'Amon-Rê, il devient le dieu principal au Nouvel Empire. Les prêtres servent les dieux dans les temples.\n\nIls croient à la **vie après la mort**. Pour que le défunt vive dans l'au-delà, on conserve son corps : c'est la **momification**. On l'enterre avec des objets et des offrandes. Pendant le jugement, le cœur du défunt est pesé devant Osiris.\n\nLes pharaons de l'Ancien Empire ont des **pyramides** pour tombeaux, comme celles de **Gizeh**. Au Nouvel Empire, ils sont enterrés dans des tombes creusées dans la roche, dans la **Vallée des Rois**, près de Thèbes.",
           "method": [
             "Identifier l'élément religieux montré : un dieu, un objet ou un monument.",
             "Rattacher cet élément à son rôle : le soleil, les morts, la protection du pharaon, le tombeau.",
@@ -1470,7 +1466,7 @@
         },
         {
           "name": "L'écriture hiéroglyphique et les apports de l'Égypte",
-          "remember": "Les Égyptiens ont inventé une écriture, les **hiéroglyphes** (mot grec qui veut dire « gravures sacrées »). Ces signes sont gravés sur la pierre des temples et des tombeaux, et écrits à l'encre sur le **papyrus**, une plante du delta. Seuls les **scribes** la maîtrisent. Le dieu Thot est celui de l'écriture.\n\nLa **pierre de Rosette**, découverte en 1799, porte le même texte en trois écritures : hiéroglyphes, démotique et grec. Grâce au grec, que l'on savait lire, **Champollion** déchiffre les hiéroglyphes en **1822**.\n\nL'Égypte lègue aussi : un **calendrier** de 365 jours (12 mois de 30 jours et 5 jours en plus), la **géométrie** (pour retrouver les limites des champs après la crue), la **médecine** (des papyrus décrivent des soins) et l'**architecture** (pyramides, temples de pierre à colonnes).",
+          "remember": "Les Égyptiens ont inventé une écriture, les **hiéroglyphes** (mot grec qui veut dire « gravures sacrées »). Ces signes sont gravés sur la pierre des temples et des tombeaux, et écrits à l'encre sur le **papyrus**, fabriqué avec une plante des marais du delta. Seuls les **scribes** la maîtrisent. Le dieu Thot est celui de l'écriture.\n\nLa **pierre de Rosette**, découverte en 1799, porte le même texte en trois écritures : hiéroglyphes, démotique et grec. Grâce au grec, que l'on savait lire, **Champollion** déchiffre les hiéroglyphes en **1822**.\n\nL'Égypte lègue aussi : un **calendrier** de 365 jours (12 mois de 30 jours et 5 jours en plus), la **géométrie** (pour retrouver les limites des champs après la crue), la **médecine** (des papyrus décrivent des soins) et l'**architecture** (pyramides, temples de pierre à colonnes).",
           "method": [
             "Repérer l'objet, le texte ou la découverte présenté dans le document.",
             "Chercher le besoin qui l'explique : écrire, compter, mesurer, soigner, bâtir.",
@@ -1839,7 +1835,7 @@
             {
               "content": "Quelles sont deux cultures citées dans le texte ?",
               "question_type": "multiple_correct_2",
-              "explanation": "Méthode : 1) Repérer dans le document : « du blé et de l'orge ». 2) Relier à l'agriculture du Nil : blé, orge, lin, papyrus. Cacao et café ne se cultivent pas dans l'Égypte ancienne.",
+              "explanation": "Méthode : 1) Repérer dans le document : « du blé et de l'orge ». 2) Relier à l'agriculture du Nil : blé, orge, lin. Cacao et café ne se cultivent pas dans l'Égypte ancienne.",
               "answers": [
                 {
                   "content": "Le blé",
@@ -2433,7 +2429,7 @@
                 {
                   "content": "Les paysans sont la grande majorité de la population.",
                   "question_type": "true_false",
-                  "explanation": "Méthode : 1) Identifier le groupe : les paysans. 2) Situer leur rang : en bas de la pyramide sociale. 3) Décrire : ils cultivent les champs et paient l'impôt en grain ; ils sont pourtant les plus nombreux. Pourquoi pas faux : être en bas de la société ne veut pas dire être peu nombreux.",
+                  "explanation": "Méthode : 1) Identifier le groupe : les paysans. 2) Situer leur rang : à la base de la pyramide sociale (seuls les quelques esclaves sont plus bas). 3) Décrire : ils cultivent les champs et paient l'impôt en grain ; ils sont pourtant les plus nombreux. Pourquoi pas faux : être en bas de la société ne veut pas dire être peu nombreux.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2448,7 +2444,7 @@
                 {
                   "content": "En quoi les impôts sont-ils surtout payés ?",
                   "question_type": "single_choice",
-                  "explanation": "Méthode : 1) Identifier qui paie : les paysans. 3) Décrire le rôle du scribe : il note les récoltes. 4) Relier à l'économie : l'impôt est payé surtout en grain, stocké dans les greniers de l'État. Pourquoi pas en pièces d'or : la monnaie en pièces n'existe pas encore dans l'Égypte pharaonique.",
+                  "explanation": "Méthode : 1) Identifier qui paie : les paysans. 3) Décrire le rôle du scribe : il note les récoltes. 4) Relier à l'économie : l'impôt est payé surtout en grain, stocké dans les greniers de l'État. Pourquoi pas en pièces d'or : pendant presque toute l'histoire pharaonique, on n'utilise pas de pièces de monnaie ; on paie en nature.",
                   "answers": [
                     {
                       "content": "En grain",
@@ -3072,7 +3068,7 @@
                 {
                   "content": "Quelles affirmations expliquent la richesse agricole de l'Égypte ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Méthode : 1) Situer les champs le long du Nil. 2) Décrire : la crue arrose et le limon fertilise. 4) Conclure : la richesse vient du fleuve. Pourquoi pas le désert cultivable : au-delà de la zone inondée, la terre reste stérile (piège de la fiche).",
+                  "explanation": "Méthode : 1) Situer les champs le long du Nil. 2) Décrire : la crue arrose et le limon fertilise. 4) Conclure : la richesse vient du fleuve. Pourquoi pas le désert cultivable : au-delà de la zone inondée et des canaux, la terre reste stérile (piège de la fiche).",
                   "answers": [
                     {
                       "content": "Le limon fertilise les champs",
