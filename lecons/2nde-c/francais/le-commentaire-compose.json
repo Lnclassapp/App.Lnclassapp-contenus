@@ -389,7 +389,7 @@
         },
         {
           "name": "Relever les procédés d'écriture et dégager leur effet",
-          "remember": "Un **procédé** est un moyen d'écriture. On en cherche dans cinq familles. Le **lexique** : un **champ lexical** est un ensemble de mots du même domaine (*prix, marchander, vendeuse* : le commerce). Les **figures de style** (comparaison, métaphore, antithèse, hyperbole…). Les **temps verbaux** : le présent rend la scène vivante, l'imparfait pose un décor qui dure, le passé simple lance une action brève. L'**énonciation** : *je* exprime les sentiments de celui qui parle, *tu* ou *vous* s'adresse à quelqu'un, *on* peut inclure le lecteur. Le **rythme** : phrases courtes (vivacité), phrases longues (ampleur), énumération (abondance), rimes dans un poème. Un procédé ne compte que si on dit son **effet** : citation, procédé, effet.",
+          "remember": "Un **procédé** est un moyen d'écriture. On en cherche dans cinq familles. Le **lexique** : un **champ lexical** est un ensemble de mots du même domaine (*prix, marchander, vendeuse* : le commerce). Les **figures de style** (comparaison, métaphore, antithèse, hyperbole…). Les **temps verbaux** : le présent rend la scène vivante, l'imparfait pose un décor qui dure, le passé simple lance une action brève. L'**énonciation** : *je* exprime les sentiments de celui qui parle, *tu* ou *vous* s'adresse à quelqu'un, l'**apostrophe** interpelle directement un être ou une chose (*Ô lagune !*), *on* peut inclure le lecteur. Le **rythme** : phrases courtes (vivacité), phrases longues (ampleur), énumération (abondance), rimes dans un poème. Un procédé ne compte que si on dit son **effet** : citation, procédé, effet.",
           "method": [
             "Repérer les procédés du passage en passant en revue les cinq familles : lexique, figures, temps verbaux, énonciation, rythme.",
             "Citer le passage exact, entre guillemets.",
@@ -565,9 +565,9 @@
                   ]
                 },
                 {
-                  "content": "Dans « On sent le piment, le poisson fumé, la terre mouillée », le pronom « on » inclut le lecteur dans la scène.",
+                  "content": "Dans « On sent le piment, le poisson fumé, la terre mouillée », le pronom « on » ne désigne personne en particulier : le lecteur peut s'imaginer, lui aussi, au milieu du marché.",
                   "question_type": "true_false",
-                  "explanation": "Étape 3 — Nommer : l'énonciation. « On » ne désigne personne en particulier : il invite chacun, donc le lecteur, à sentir les odeurs. Étape 4 — Interpréter : le lecteur est entraîné dans le marché.",
+                  "explanation": "Étape 2 — Citer : « On sent le piment, le poisson fumé, la terre mouillée ». Étape 3 — Nommer : l'énonciation. « On » ne désigne ni Maman Adjoua ni une autre personne précise : il vaut pour toute personne présente au marché. Étape 4 — Interpréter : le lecteur peut se mettre à cette place et sentir les odeurs ; il est entraîné dans la scène.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -855,21 +855,21 @@
           "exercise": [
             {
               "title": "Construire le plan d'une lettre de la ville",
-              "statement": "Dans cet exercice, tu appliques les cinq étapes de la fiche pour bâtir le plan d'une lettre écrite pour Lnclass.\n\nLettre écrite pour Lnclass : « Abidjan, le 12 mars. Cher Kouamé, tu me demandes si la ville me plaît. Je te réponds : elle m'étourdit ! Les klaxons, les foules, les lumières… Mais le soir, quand je ferme les yeux, j'entends encore le coq de chez nous, et j'ai le cœur gros. Écris-moi vite. Ton cousin, Yao. »\n\nRelevés : A « Les klaxons, les foules, les lumières » (énumération) ; B « elle m'étourdit » (personnification) ; C « Mais » (mot qui oppose) ; D « j'entends encore le coq de chez nous » (souvenir sonore) ; E « j'ai le cœur gros » (expression du chagrin).",
+              "statement": "Dans cet exercice, tu appliques les cinq étapes de la fiche pour bâtir le plan d'une lettre écrite pour Lnclass.\n\nLettre écrite pour Lnclass : « Abidjan, le 12 mars. Cher Kouamé, tu me demandes si la ville me plaît. Je te réponds : elle m'étourdit ! Les klaxons, les foules, les lumières… Mais le soir, quand je ferme les yeux, j'entends encore le coq de chez nous, et j'ai le cœur gros. Écris-moi vite. Ton cousin, Yao. »\n\nRelevés : A « Les klaxons, les foules, les lumières » (énumération) ; B « elle m'étourdit ! » (phrase exclamative) ; C « Mais » (mot qui oppose) ; D « j'entends encore le coq de chez nous » (souvenir sonore) ; E « j'ai le cœur gros » (expression du chagrin).",
               "exercise_type": "fixation",
               "figure": null,
               "questions": [
                 {
                   "content": "Quel axe regroupe le mieux les relevés A et B ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Classer : A (les klaxons, les foules, les lumières) et B (elle m'étourdit) disent la même chose, la ville accable par son bruit. Étape 2 — Donner un titre qui dit l'idée : « Une ville qui étourdit ». « Les énumérations et les personnifications » liste des procédés ; « Yao raconte sa vie en ville » raconte.",
+                  "explanation": "Étape 1 — Classer : A (les klaxons, les foules, les lumières) et B (elle m'étourdit !) disent la même chose, la ville accable par son bruit. Étape 2 — Donner un titre qui dit l'idée : « Une ville qui étourdit ». « Les énumérations et les exclamations » liste des procédés ; « Yao raconte sa vie en ville » raconte.",
                   "answers": [
                     {
                       "content": "Une ville qui étourdit",
                       "correct": true
                     },
                     {
-                      "content": "Les énumérations et les personnifications",
+                      "content": "Les énumérations et les exclamations",
                       "correct": false
                     },
                     {
@@ -908,14 +908,14 @@
                 {
                   "content": "Quel plan respecte les consignes ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 3 — Vérifier que les axes sont distincts, couvrent tout le texte et ne se contentent pas de raconter. « I. Les énumérations — II. Les personnifications » liste des procédés ; « I. Le début de la lettre — II. La fin de la lettre » découpe le texte sans idée ; « I. Yao est à Abidjan — II. Yao écrit à Kouamé » raconte. Seul le plan « ville qui étourdit / village qui manque » donne deux idées.",
+                  "explanation": "Étape 3 — Vérifier que les axes sont distincts, couvrent tout le texte et ne se contentent pas de raconter. « I. Les énumérations — II. Les exclamations » liste des procédés ; « I. Le début de la lettre — II. La fin de la lettre » découpe le texte sans idée ; « I. Yao est à Abidjan — II. Yao écrit à Kouamé » raconte. Seul le plan « ville qui étourdit / village qui manque » donne deux idées.",
                   "answers": [
                     {
                       "content": "I. Une ville qui étourdit — II. Un village qui manque",
                       "correct": true
                     },
                     {
-                      "content": "I. Les énumérations — II. Les personnifications",
+                      "content": "I. Les énumérations — II. Les exclamations",
                       "correct": false
                     },
                     {
@@ -978,7 +978,7 @@
                 {
                   "content": "Relie chaque axe au relevé qui le soutient.",
                   "question_type": "matching",
-                  "explanation": "Étape 1 — Classer chaque relevé sous l'idée qu'il soutient. L'exagération des « cent mille voix » dit une ville excessive ; l'antithèse montre un poète déchiré ; « le calme de l'ombre » dit le désir de repos ; « tu m'étourdis » donne à la ville une action humaine.",
+                  "explanation": "Étape 1 — Classer chaque relevé sous l'idée qu'il soutient. L'exagération des « cent mille voix » dit une ville excessive ; l'antithèse montre un poète déchiré ; « le calme de l'ombre » dit le désir de repos ; l'apostrophe « ô cité » interpelle la ville : le poète lui parle comme à une personne.",
                   "answers": [
                     {
                       "content": "Une ville excessive",
@@ -993,8 +993,8 @@
                       "match": "Les mots « le calme de l'ombre »"
                     },
                     {
-                      "content": "Une ville qui agit comme une personne",
-                      "match": "La personnification « tu m'étourdis »"
+                      "content": "Une ville à qui le poète parle comme à une personne",
+                      "match": "L'apostrophe « ô cité »"
                     }
                   ]
                 },
@@ -2682,14 +2682,14 @@
                 {
                   "content": "Quel axe regroupe le mieux C et D ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Classer : les sourires gratuits et les mangues-soleils disent la chaleur et la lumière du lieu. 2) Titrer : « Un marché chaleureux et lumineux ». « Les métaphores » est un nom de procédé.",
+                  "explanation": "1) Classer : les sourires gratuits et les mangues-soleils disent la chaleur et la lumière du lieu. 2) Titrer : « Un marché chaleureux et lumineux ». « Les métaphores » est un nom de procédé ; rien dans C ni dans D ne parle de bruit ou de désordre.",
                   "answers": [
                     {
                       "content": "Un marché chaleureux et lumineux",
                       "correct": true
                     },
                     {
-                      "content": "Un marché qui invite à acheter",
+                      "content": "Un marché bruyant et désordonné",
                       "correct": false
                     },
                     {
@@ -2741,9 +2741,9 @@
                   ]
                 },
                 {
-                  "content": "Dans quel ordre placer les deux axes, du plus visible au plus profond ?",
+                  "content": "Le plan va du plus visible au plus profond : d'abord ce que l'annonce dit directement, ensuite ce qu'elle suggère par des images. Quel ordre respecte cette règle ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Ordonner du plus visible au plus profond. 2) L'appel à acheter se voit d'abord (« achetez ») ; la chaleur du lieu, portée par les images, est plus profonde. Le plan par procédés et le plan par détails ne disent aucune idée.",
+                  "explanation": "1) Ordonner du plus visible au plus profond. 2) L'appel à acheter est dit directement (« achetez ») : c'est l'axe le plus visible ; la chaleur du lieu n'est que suggérée par les images (« les sourires sont gratuits », « les mangues sont des soleils ») : c'est l'axe le plus profond. Le plan par procédés et le plan par détails ne disent aucune idée.",
                   "answers": [
                     {
                       "content": "I. Un marché qui invite à acheter — II. Un marché chaleureux et lumineux",
