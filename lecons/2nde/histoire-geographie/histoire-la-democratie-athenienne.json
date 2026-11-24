@@ -1824,7 +1824,7 @@
         {
          "content": "Dans quelle région se trouve Athènes ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Situer la cité : Athènes est en Attique, au sud-est de la Grèce. 2) Éliminer : la Crète est une île, les deux autres régions sont au nord.",
+         "explanation": "Étape 1 — Situer la cité : Athènes est en Attique, dans le sud-est de la Grèce, au bord de la mer. Étape 4 — Conclure : c'est une cité de cette région. Pourquoi pas la Thessalie : c'est une région du nord de la Grèce, qu'on confond avec l'Attique parce que les deux sont grecques ; la Crète est une île.",
          "answers": [
           {
            "content": "L'Attique",
@@ -1847,7 +1847,7 @@
         {
          "content": "La colline des temples d'Athènes s'appelle l'___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 1) Nommer les lieux. 2) Relier : l'Acropole est la colline des temples, avec le Parthénon.",
+         "explanation": "Étape 2 — Nommer les lieux : la colline fortifiée d'Athènes est l'Acropole, la « ville haute ». Étape 3 — Relier à la fonction : on y honore les dieux, au Parthénon. Pourquoi pas l'Agora ou la Pnyx : l'Agora est la place de la vie publique et la Pnyx la colline du vote, deux lieux de citoyens, pas des temples.",
          "answers": [
           {
            "content": "Acropole",
@@ -1858,7 +1858,7 @@
         {
          "content": "Où les citoyens se réunissent-ils pour voter ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Nommer les lieux. 2) Relier à la fonction : c'est sur la Pnyx que l'Ecclésia vote.",
+         "explanation": "Étape 2 — Nommer les lieux : Acropole, Agora, Pnyx. Étape 3 — Relier à la fonction : c'est sur la Pnyx que l'Ecclésia se réunit et vote. Pourquoi pas l'Acropole : on la confond avec le lieu du pouvoir, mais c'est la colline des temples ; le Parthénon est un temple, pas une salle de vote.",
          "answers": [
           {
            "content": "Sur la Pnyx",
@@ -1881,7 +1881,7 @@
         {
          "content": "L'Agora est la place où l'on échange et où l'on discute des affaires de la cité.",
          "question_type": "true_false",
-         "explanation": "Méthode : 1) Nommer l'Agora. 2) Relier à sa fonction : vie publique, échanges, discussions.",
+         "explanation": "Étape 2 — Nommer l'Agora, grande place d'Athènes. Étape 3 — Relier à sa fonction : on y échange, on y discute des affaires de la cité et on y juge. Pourquoi pas Faux : on croit que l'Agora est un simple marché, mais c'est le centre de la vie publique, où se retrouvent les citoyens.",
          "answers": [
           {
            "content": "Vrai",
@@ -1896,7 +1896,7 @@
         {
          "content": "Que veut dire polis ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Définir le mot : polis veut dire cité, une ville et son territoire, avec ses lois.",
+         "explanation": "Étape 1 — Situer la cité : polis veut dire cité, une ville et la campagne autour, avec ses lois. Étape 4 — Conclure : la Grèce est faite de nombreuses cités. Pourquoi pas Armée : on confond la cité et ses citoyens-soldats ; la cité est un territoire avec ses lois, pas une armée.",
          "answers": [
           {
            "content": "Cité",
@@ -1928,7 +1928,7 @@
         {
          "content": "Range les réformateurs du plus ancien au plus récent.",
          "question_type": "ordering",
-         "explanation": "Méthode : 1) Repérer les dates : vers 594, 508-507, Ve siècle. 2) Ranger du plus ancien au plus récent.",
+         "explanation": "Étape 1 — Repérer la date : Solon vers 594, Clisthène vers 508-507, Périclès au Ve siècle (mort en 429). Étape 2 — Nommer dans l'ordre : avant J.-C., plus le nombre est grand, plus c'est ancien. Pourquoi pas Périclès en premier : son nom est le plus célèbre, mais il agit après Clisthène, bien après Solon.",
          "answers": [
           {
            "content": "Solon"
@@ -1944,7 +1944,7 @@
         {
          "content": "Qui interdit l'esclavage pour dettes ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Nommer le réformateur : Solon, vers 594. 2) Décrire sa réforme : fin de l'esclavage pour dettes.",
+         "explanation": "Étape 2 — Nommer le réformateur : Solon, vers 594. Étape 3 — Décrire sa réforme : il interdit l'esclavage pour dettes, pour protéger les paysans endettés. Pourquoi pas Clisthène : on le confond avec Solon car tous deux réforment Athènes, mais Clisthène crée les 10 tribus et la Boulè vers 508-507.",
          "answers": [
           {
            "content": "Solon",
@@ -1959,7 +1959,7 @@
            "correct": false
           },
           {
-           "content": "Alexandre",
+           "content": "Pisistrate",
            "correct": false
           }
          ]
@@ -1967,7 +1967,7 @@
         {
          "content": "Clisthène crée un conseil de combien de citoyens ? Écris le nombre.",
          "question_type": "numeric",
-         "explanation": "Méthode : 1) Nommer Clisthène. 2) Décrire : la Boulè des 500, soit 10 tribus × 50 citoyens.",
+         "explanation": "Étape 2 — Nommer : Clisthène crée la Boulè. Étape 3 — Décrire la réforme : 10 tribus envoient chacune 50 citoyens, soit 10 × 50 = 500. Pourquoi pas 50 ou 10 : on confond le nombre de citoyens par tribu (50) ou de tribus (10) avec le total du conseil.",
          "answers": [
           {
            "content": "500",
@@ -1980,7 +1980,7 @@
         {
          "content": "L'indemnité versée sous Périclès pour les fonctions publiques s'appelle le ___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 1) Nommer Périclès. 2) Décrire : il instaure le misthos.",
+         "explanation": "Étape 2 — Nommer Périclès, qui dirige Athènes au Ve siècle. Étape 3 — Décrire sa réforme : le misthos, indemnité pour les fonctions publiques, permet aux pauvres de participer. Pourquoi pas ostracisme ou Boulè : l'ostracisme est un exil, la Boulè un conseil ; aucun n'est une indemnité.",
          "answers": [
           {
            "content": "misthos",
@@ -1991,7 +1991,7 @@
         {
          "content": "Périclès dirige Athènes au Ve siècle av. J.-C.",
          "question_type": "true_false",
-         "explanation": "Méthode : 1) Repérer la période : Ve siècle, jusqu'à sa mort en 429.",
+         "explanation": "Étape 1 — Repérer la période : Périclès domine Athènes au Ve siècle av. J.-C., jusqu'à sa mort en 429. Étape 4 — Conclure : il est postérieur à Solon et à Clisthène. Pourquoi pas Faux : on le place parfois au VIe siècle avec Solon, mais le VIe siècle est celui de Solon.",
          "answers": [
           {
            "content": "Vrai",
@@ -2015,7 +2015,7 @@
         {
          "content": "Quelle institution rassemble tous les citoyens ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Identifier : décider. 2) Nommer : l'Ecclésia, assemblée du peuple.",
+         "explanation": "Étape 1 — Identifier le pouvoir : décider. Étape 2 — Nommer : l'Ecclésia, assemblée de tous les citoyens sur la Pnyx. Pourquoi pas la Boulè : elle ne compte que 500 citoyens tirés au sort et ne fait que préparer les lois ; l'Héliée est un tribunal.",
          "answers": [
           {
            "content": "L'Ecclésia",
@@ -2038,7 +2038,7 @@
         {
          "content": "Relie chaque institution à son rôle.",
          "question_type": "matching",
-         "explanation": "Méthode : 1) Identifier le pouvoir. 2) Nommer l'institution : la Boulè prépare, l'Héliée juge, les stratèges commandent.",
+         "explanation": "Étape 1 — Identifier le pouvoir : préparer, juger ou commander. Étape 2 — Nommer : la Boulè prépare les lois, l'Héliée juge, les stratèges commandent. Étape 3 — Préciser : Boulè et Héliée sont tirées au sort, les stratèges élus. Confusion fréquente : Boulè et Ecclésia, car toutes deux touchent aux lois ; seule l'Ecclésia les vote.",
          "answers": [
           {
            "content": "Boulè",
@@ -2057,7 +2057,7 @@
         {
          "content": "Les 10 stratèges sont…",
          "question_type": "single_choice",
-         "explanation": "Méthode : 3) Préciser l'accès : les stratèges sont élus, car il faut savoir commander.",
+         "explanation": "Étape 3 — Préciser comment on accède à la fonction : les stratèges sont élus, car un chef de guerre doit être compétent. Étape 4 — Conclure : ils sont rééligibles. Pourquoi pas tirés au sort : c'est le cas de la Boulè et de l'Héliée, d'où la confusion ; un général tiré au sort pourrait ne jamais avoir fait la guerre.",
          "answers": [
           {
            "content": "élus",
@@ -2068,11 +2068,11 @@
            "correct": false
           },
           {
-           "content": "désignés par un roi",
+           "content": "choisis par la Boulè",
            "correct": false
           },
           {
-           "content": "choisis par hérédité",
+           "content": "jugés par l'Héliée",
            "correct": false
           }
          ]
@@ -2080,7 +2080,7 @@
         {
          "content": "L'ostracisme permet d'exiler un citoyen dangereux pour dix ans.",
          "question_type": "true_false",
-         "explanation": "Méthode : 1) Identifier le pouvoir : protéger la cité. 2) Nommer : l'ostracisme, vote sur tesson, exil de dix ans.",
+         "explanation": "Étape 1 — Identifier le pouvoir : protéger la cité d'un citoyen jugé dangereux. Étape 2 — Nommer : l'ostracisme, vote sur tesson. Étape 3 — Préciser : l'exil dure dix ans. Pourquoi pas Faux : on le confond avec une condamnation de l'Héliée, mais c'est un vote de l'assemblée.",
          "answers": [
           {
            "content": "Vrai",
@@ -2095,7 +2095,7 @@
         {
          "content": "Le tribunal du peuple d'Athènes s'appelle l'___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 2) Nommer : l'Héliée, dont les jurés sont tirés au sort.",
+         "explanation": "Étape 1 — Identifier le pouvoir : juger. Étape 2 — Nommer : l'Héliée, tribunal du peuple. Étape 3 — Préciser : ses jurés sont des citoyens tirés au sort. Pourquoi pas Boulè ou Ecclésia : la Boulè prépare les lois et l'Ecclésia les vote ; ni l'une ni l'autre ne juge.",
          "answers": [
           {
            "content": "Héliée",
@@ -2115,7 +2115,7 @@
         {
          "content": "Qui est citoyen à Athènes ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Définir le citoyen : homme libre, adulte, né de parents athéniens.",
+         "explanation": "Étape 1 — Définir le citoyen : un homme libre, adulte, né de parents athéniens. Étape 2 — Repérer les exclus : les autres habitants, sans droits politiques. Pourquoi pas toute personne qui vit à Athènes : on confond citoyen et habitant ; le métèque vit à Athènes mais reste étranger.",
          "answers": [
           {
            "content": "Un homme libre, adulte, né de parents athéniens",
@@ -2138,7 +2138,7 @@
         {
          "content": "Quelles sont deux catégories exclues ?",
          "question_type": "multiple_correct_2",
-         "explanation": "Méthode : 2) Repérer les exclus : femmes, métèques, esclaves.",
+         "explanation": "Étape 2 — Repérer les exclus : femmes, métèques et esclaves n'ont pas de droits politiques. Étape 1 — Définir : les citoyens adultes sont, eux, les électeurs. Pourquoi pas les stratèges : ce sont des citoyens élus, donc ni exclus ni sans pouvoir.",
          "answers": [
           {
            "content": "Les femmes",
@@ -2161,7 +2161,7 @@
         {
          "content": "Les esclaves votent à l'Ecclésia.",
          "question_type": "true_false",
-         "explanation": "Méthode : 2) Repérer les exclus : les esclaves n'ont aucun droit politique.",
+         "explanation": "Étape 2 — Repérer les exclus : l'esclave appartient à un maître et n'a aucun droit politique. Étape 1 — Définir : seuls les citoyens libres votent. Pourquoi pas Vrai : on confond esclave et métèque, mais ni l'un ni l'autre ne vote.",
          "answers": [
           {
            "content": "Vrai",
@@ -2176,7 +2176,7 @@
         {
          "content": "Un étranger libre qui vit à Athènes est un ___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 2) Repérer les exclus : le métèque est un étranger libre, sans droits politiques.",
+         "explanation": "Étape 2 — Repérer les exclus : le métèque est un étranger libre installé à Athènes, sans droit de vote. Étape 1 — Définir : il n'est pas né de parents athéniens. Pourquoi pas citoyen ou esclave : il est libre, donc pas esclave, mais étranger, donc pas citoyen.",
          "answers": [
           {
            "content": "métèque",
@@ -2187,7 +2187,7 @@
         {
          "content": "Que signifie « démocratie » ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Définir : dêmos, le peuple, et kratos, le pouvoir.",
+         "explanation": "Étape 1 — Définir : démocratie vient de dêmos, le peuple, et kratos, le pouvoir. Étape 4 — Conclure : c'est le pouvoir du peuple, ici des citoyens. Pourquoi pas le pouvoir d'un seul : c'est la monarchie ; le pouvoir des riches est un autre régime, qu'on confond parfois avec la démocratie.",
          "answers": [
           {
            "content": "Le pouvoir du peuple",
@@ -2225,22 +2225,22 @@
         {
          "content": "Le panneau doit situer Athènes. Que doit-il écrire ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Situer la cité : Athènes est en Attique, en Grèce, loin de la Côte d'Ivoire.",
+         "explanation": "Étape 1 — Situer la cité : Athènes est en Attique, en Grèce, loin de la Côte d'Ivoire. Étape 4 — Conclure : le panneau doit écrire cité de l'Attique. Pourquoi pas ville d'Égypte : on la confond avec la civilisation étudiée avant (l'Égypte ancienne) ; Athènes est grecque.",
          "answers": [
           {
            "content": "Athènes est une cité de l'Attique, en Grèce",
            "correct": true
           },
           {
-           "content": "Athènes est un pays d'Afrique",
+           "content": "Athènes est un pays voisin de la Grèce",
+           "correct": false
+          },
+          {
+           "content": "Athènes est la capitale de tout l'empire grec",
            "correct": false
           },
           {
            "content": "Athènes est une ville d'Égypte",
-           "correct": false
-          },
-          {
-           "content": "Athènes est une île d'Asie",
            "correct": false
           }
          ]
@@ -2248,7 +2248,7 @@
         {
          "content": "Le panneau explique : « Les citoyens votent sur la colline de la ___. »",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 2) Nommer le lieu du vote : la Pnyx.",
+         "explanation": "Étape 2 — Nommer les lieux : la colline du vote est la Pnyx. Étape 3 — Relier à la fonction : l'Ecclésia s'y réunit. Pourquoi pas Acropole ou Agora : l'Acropole porte les temples, l'Agora est la place de la vie publique ; on les confond car ils sont proches au centre d'Athènes.",
          "answers": [
           {
            "content": "Pnyx",
@@ -2259,7 +2259,7 @@
         {
          "content": "Relie chaque lieu à l'étiquette du panneau.",
          "question_type": "matching",
-         "explanation": "Méthode : 3) Relier chaque lieu à sa fonction.",
+         "explanation": "Étape 2 — Nommer les trois lieux. Étape 3 — Relier chacun à sa fonction : temples sur l'Acropole, vie publique sur l'Agora, vote sur la Pnyx. Confusion fréquente : Agora et Pnyx, car on discute dans les deux ; mais le vote de l'assemblée se tient sur la Pnyx.",
          "answers": [
           {
            "content": "Acropole",
@@ -2278,7 +2278,7 @@
         {
          "content": "Le panneau peut écrire qu'Athènes est une cité parmi d'autres cités grecques.",
          "question_type": "true_false",
-         "explanation": "Méthode : 1) Situer : la Grèce compte beaucoup de cités indépendantes, comme Sparte ou Corinthe.",
+         "explanation": "Étape 1 — Situer la cité : la Grèce compte de nombreuses cités indépendantes, comme Sparte, Corinthe ou Thèbes. Étape 4 — Conclure : Athènes en est une parmi d'autres. Pourquoi pas Faux : on croit la Grèce unie en un seul État, ce qui est inexact.",
          "answers": [
           {
            "content": "Vrai",
@@ -2293,7 +2293,7 @@
         {
          "content": "Quel mot grec désigne la cité ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Définir : polis est la cité. La Pnyx est une colline, le misthos une indemnité, la Boulè un conseil.",
+         "explanation": "Étape 1 — Situer : polis désigne la cité, une ville et son territoire. Étape 2 — Nommer : les autres mots sont des lieux ou des institutions. Pourquoi pas Boulè : c'est le conseil des 500, une institution, pas la cité ; le misthos est une indemnité.",
          "answers": [
           {
            "content": "Polis",
@@ -2325,7 +2325,7 @@
         {
          "content": "Quelle façon de choisir ressemble à celle de la Boulè d'Athènes ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 3) Préciser l'accès : les membres de la Boulè sont tirés au sort.",
+         "explanation": "Étape 1 — Identifier : la Boulè désigne ses membres par le sort. Étape 3 — Préciser l'accès : tirage au sort, donc même chance pour tous. Pourquoi pas l'élection : c'est le mode de désignation des stratèges, d'où la confusion ; le vote à main levée est celui de l'Ecclésia.",
          "answers": [
           {
            "content": "Le tirage au sort",
@@ -2348,7 +2348,7 @@
         {
          "content": "Quelle façon de choisir ressemble à l'élection des stratèges ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 3) Préciser l'accès : les stratèges sont élus.",
+         "explanation": "Étape 3 — Préciser l'accès : les stratèges sont élus. Étape 4 — Conclure : on choisit des compétences. Pourquoi pas le tirage au sort : c'est le mode de la Boulè et de l'Héliée ; il ne choisit pas un chef de guerre compétent.",
          "answers": [
           {
            "content": "L'élection",
@@ -2359,11 +2359,11 @@
            "correct": false
           },
           {
-           "content": "L'hérédité",
+           "content": "La désignation par la Boulè",
            "correct": false
           },
           {
-           "content": "La décision d'un roi",
+           "content": "Le jugement de l'Héliée",
            "correct": false
           }
          ]
@@ -2371,7 +2371,7 @@
         {
          "content": "Le tirage au sort donne à chaque élève la même chance d'être désigné.",
          "question_type": "true_false",
-         "explanation": "Méthode : 4) Conclure : le sort garantit l'égalité des chances, c'est l'idée athénienne.",
+         "explanation": "Étape 3 — Préciser l'accès : tirage au sort, donc égalité des chances. Étape 4 — Conclure : c'est l'idée athénienne de l'égalité entre citoyens. Pourquoi pas Faux : on croit que le sort favorise certains, mais chaque nom a la même chance.",
          "answers": [
           {
            "content": "Vrai",
@@ -2386,7 +2386,7 @@
         {
          "content": "À Athènes, l'assemblée de tous les citoyens s'appelle l'___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 2) Nommer : l'Ecclésia, assemblée du peuple.",
+         "explanation": "Étape 1 — Identifier : décider. Étape 2 — Nommer : l'Ecclésia, assemblée du peuple sur la Pnyx. Pourquoi pas Boulè ou Héliée : la Boulè est un conseil de 500 et l'Héliée un tribunal ; aucune ne réunit tous les citoyens.",
          "answers": [
           {
            "content": "Ecclésia",
@@ -2397,22 +2397,22 @@
         {
          "content": "Pourquoi choisir par élection un chef d'équipe sportive plutôt que par tirage au sort ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 3) Préciser l'accès : l'élection convient quand il faut une compétence, comme pour un général.",
+         "explanation": "Étape 3 — Préciser l'accès : l'élection convient quand il faut une compétence. Étape 4 — Conclure : comme pour les stratèges. Pourquoi pas tout par tirage au sort : le sort donne l'égalité des chances, pas le meilleur chef ; c'est pourquoi les stratèges étaient élus.",
          "answers": [
           {
            "content": "Parce qu'il faut une compétence, comme pour un stratège",
            "correct": true
           },
           {
-           "content": "Parce que le sort est interdit",
+           "content": "Parce que le sort choisit toujours le meilleur",
            "correct": false
           },
           {
-           "content": "Parce que le chef doit être le plus riche",
+           "content": "Parce que l'élection donne l'égalité des chances",
            "correct": false
           },
           {
-           "content": "Parce que le sort donne toujours le meilleur",
+           "content": "Parce que le sort est réservé aux stratèges",
            "correct": false
           }
          ]
@@ -2429,7 +2429,7 @@
         {
          "content": "Cette réunion ressemble à…",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Identifier : décider. 2) Nommer : l'Ecclésia, où tous les citoyens votent.",
+         "explanation": "Étape 1 — Identifier : les habitants décident ensemble. Étape 2 — Nommer : l'Ecclésia, où tous les citoyens votent. Pourquoi pas la Boulè : elle ne compte que 500 membres tirés au sort et prépare seulement ; l'Héliée juge.",
          "answers": [
           {
            "content": "l'Ecclésia d'Athènes",
@@ -2452,7 +2452,7 @@
         {
          "content": "Dans cette réunion, les habitants décident eux-mêmes, comme dans une démocratie directe.",
          "question_type": "true_false",
-         "explanation": "Méthode : 3) Comparer : le vote direct est celui d'Athènes.",
+         "explanation": "Étape 1 — Identifier : chacun vote lui-même. Étape 3 — Préciser : sans intermédiaire, c'est la démocratie directe. Pourquoi pas Faux : on croit que voter exige des élus ; or à Athènes les citoyens votaient eux-mêmes.",
          "answers": [
           {
            "content": "Vrai",
@@ -2467,22 +2467,22 @@
         {
          "content": "Quelle limite d'Athènes cette réunion évite-t-elle ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 2) Repérer les exclus : les femmes étaient exclues à Athènes ; ici, chaque adulte du quartier vote.",
+         "explanation": "Étape 2 — Repérer les exclus : à Athènes, femmes, métèques et esclaves ne votaient pas. Étape 3 — Comparer : ici chaque adulte du quartier vote. Pourquoi pas le vote à main levée : l'Ecclésia votait aussi ainsi, ce n'est donc pas une limite.",
          "answers": [
           {
            "content": "L'exclusion des femmes",
            "correct": true
           },
           {
-           "content": "La présence d'un roi",
-           "correct": false
-          },
-          {
            "content": "Le vote à main levée",
            "correct": false
           },
           {
-           "content": "Le vote sur une place",
+           "content": "Le vote sur une place publique",
+           "correct": false
+          },
+          {
+           "content": "Le tirage au sort des votants",
            "correct": false
           }
          ]
@@ -2490,7 +2490,7 @@
         {
          "content": "Quand les citoyens votent eux-mêmes les décisions, la démocratie est dite ___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 3) Comparer : démocratie directe à Athènes, représentative en Côte d'Ivoire.",
+         "explanation": "Étape 1 — Définir : les citoyens votent eux-mêmes. Étape 3 — Comparer : directe à Athènes, représentative en Côte d'Ivoire. Pourquoi pas représentative : c'est celle où l'on élit des députés pour décider à sa place.",
          "answers": [
           {
            "content": "directe",
@@ -2501,22 +2501,22 @@
         {
          "content": "Pourquoi ce vote direct est-il possible dans un quartier ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 4) Conclure : un vote direct est facile quand le groupe est restreint, comme à Athènes.",
+         "explanation": "Étape 4 — Conclure : le vote direct est possible quand le groupe est petit, comme une cité grecque. Étape 3 — Comparer : un pays entier passe par des élus. Pourquoi pas les élus décident à la place des habitants : c'est le contraire d'un vote direct.",
          "answers": [
           {
            "content": "Le nombre de votants est petit, comme dans une cité grecque",
            "correct": true
           },
           {
+           "content": "Parce que les élus décident à la place des habitants",
+           "correct": false
+          },
+          {
            "content": "Parce que les décisions sont secrètes",
            "correct": false
           },
           {
-           "content": "Parce qu'il n'y a pas de loi",
-           "correct": false
-          },
-          {
-           "content": "Parce qu'on tire au sort tous les habitants",
+           "content": "Parce que les métèques votent",
            "correct": false
           }
          ]
@@ -2533,7 +2533,7 @@
         {
          "content": "Quel élève a raison ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Définir le citoyen. 2) Repérer les exclus : femmes, métèques, esclaves ne votaient pas.",
+         "explanation": "Étape 1 — Définir le citoyen : homme libre, adulte, né de parents athéniens. Étape 2 — Repérer les exclus : femmes, métèques, esclaves. Pourquoi pas le premier élève : il confond habitants et citoyens, alors que seule une minorité votait.",
          "answers": [
           {
            "content": "Le second : seuls les citoyens votaient",
@@ -2544,11 +2544,11 @@
            "correct": false
           },
           {
-           "content": "Les deux : les esclaves votaient",
+           "content": "Les deux : les métèques votaient aussi",
            "correct": false
           },
           {
-           "content": "Aucun : personne ne votait",
+           "content": "Aucun : seuls les stratèges votaient",
            "correct": false
           }
          ]
@@ -2556,7 +2556,7 @@
         {
          "content": "Quelles sont deux personnes qui ne votaient pas à Athènes ?",
          "question_type": "multiple_correct_2",
-         "explanation": "Méthode : 2) Repérer les exclus.",
+         "explanation": "Étape 2 — Repérer les exclus : une femme et un esclave n'ont pas de droits politiques. Étape 1 — Définir : l'homme libre né de parents athéniens est citoyen. Pourquoi pas le citoyen adulte : c'est justement celui qui vote.",
          "answers": [
           {
            "content": "Une femme",
@@ -2579,7 +2579,7 @@
         {
          "content": "En Côte d'Ivoire aujourd'hui, les femmes et les hommes votent.",
          "question_type": "true_false",
-         "explanation": "Méthode : 3) Comparer : le suffrage est universel en Côte d'Ivoire.",
+         "explanation": "Étape 3 — Comparer avec aujourd'hui : en Côte d'Ivoire, le suffrage est universel. Étape 2 — Repérer : à Athènes, les femmes étaient exclues. Pourquoi pas Faux : on suppose que le vote est resté réservé aux hommes, ce qui n'est plus le cas.",
          "answers": [
           {
            "content": "Vrai",
@@ -2594,7 +2594,7 @@
         {
          "content": "En Côte d'Ivoire, les citoyens élisent les députés et le ___ de la République.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 3) Comparer : les citoyens élisent le président de la République et les députés.",
+         "explanation": "Étape 3 — Comparer : les citoyens ivoiriens élisent des représentants. Étape 1 — Définir : à Athènes ils votaient eux-mêmes. Pourquoi pas stratège : c'est un titre athénien de général, pas celui du chef de l'État ivoirien.",
          "answers": [
           {
            "content": "président",
@@ -2605,7 +2605,7 @@
         {
          "content": "Quelle conclusion peut-on donner à ce débat ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 4) Conclure : réelle pour les citoyens, mais limitée à une minorité.",
+         "explanation": "Étape 4 — Conclure : les citoyens ont un vrai pouvoir (Ecclésia, tirage au sort), mais pas les exclus. Étape 2 — Repérer : femmes, métèques, esclaves. Pourquoi pas parfaite : elle excluait des catégories entières d'habitants.",
          "answers": [
           {
            "content": "La démocratie athénienne était réelle mais limitée",
@@ -2643,7 +2643,7 @@
         {
          "content": "De quel réformateur parle ce texte ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Repérer la date : VIe siècle. 2) Nommer : l'interdiction de l'esclavage pour dettes est de Solon.",
+         "explanation": "Étape 1 — Repérer la date : le VIe siècle av. J.-C., vers 594. Étape 2 — Nommer : Solon. Étape 3 — Décrire : fin de l'esclavage pour dettes. Pourquoi pas Clisthène : il agit vers 508-507 et crée les tribus et la Boulè ; Périclès agit au Ve siècle.",
          "answers": [
           {
            "content": "Solon",
@@ -2666,22 +2666,22 @@
         {
          "content": "Pourquoi cette réforme protège-t-elle les citoyens ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 3) Décrire la réforme et sa cause.",
+         "explanation": "Étape 3 — Décrire la réforme : un paysan ne peut plus devenir esclave pour dettes. Étape 4 — Conclure : la liberté des citoyens est protégée. Pourquoi pas la création de la Boulè : c'est la réforme de Clisthène, qu'on confond avec celle de Solon.",
          "answers": [
           {
            "content": "Un paysan endetté ne peut plus perdre sa liberté",
            "correct": true
           },
           {
-           "content": "Elle supprime tous les impôts",
+           "content": "Elle crée la Boulè des 500",
            "correct": false
           },
           {
-           "content": "Elle donne le droit de vote aux femmes",
+           "content": "Elle instaure le misthos",
            "correct": false
           },
           {
-           "content": "Elle crée la Boulè",
+           "content": "Elle répartit les citoyens en 10 tribus",
            "correct": false
           }
          ]
@@ -2689,7 +2689,7 @@
         {
          "content": "Clisthène agit avant Solon.",
          "question_type": "true_false",
-         "explanation": "Méthode : 1) Repérer les dates : Solon vers 594, Clisthène vers 508-507.",
+         "explanation": "Étape 1 — Repérer les dates : Solon vers 594, Clisthène vers 508-507. Étape 2 — Nommer l'ordre : Solon d'abord. Pourquoi pas Vrai : on inverse les deux noms ; or Clisthène vient après Solon, de plus de quatre-vingts ans.",
          "answers": [
           {
            "content": "Vrai",
@@ -2704,7 +2704,7 @@
         {
          "content": "Solon agit vers 594, Clisthène vers 508. Combien d'années les séparent ? Écris le nombre.",
          "question_type": "numeric",
-         "explanation": "Méthode : 1) Repérer les dates. 2) Calculer : 594 − 508 = 86.",
+         "explanation": "Étape 1 — Repérer les deux dates : 594 et 508 av. J.-C. Étape 2 — Calculer l'écart : 594 − 508 = 86 ans. Pourquoi pas 1 102 : additionner les dates est l'erreur d'élève ; avant J.-C., on soustrait.",
          "answers": [
           {
            "content": "86",
@@ -2717,7 +2717,7 @@
         {
          "content": "Quelle conclusion est exacte ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 4) Conclure : plusieurs réformateurs, plusieurs étapes.",
+         "explanation": "Étape 4 — Conclure : plusieurs réformateurs sur plus d'un siècle (Solon, Clisthène, Périclès). Étape 1 — Repérer les dates : 594, 508-507, Ve siècle. Pourquoi pas une seule loi : c'est le piège de la fiche, qui attribue tout à un seul homme.",
          "answers": [
           {
            "content": "La démocratie se construit par étapes",
@@ -2749,7 +2749,7 @@
         {
          "content": "Remets dans l'ordre le parcours de la loi.",
          "question_type": "ordering",
-         "explanation": "Méthode : 1) Identifier : préparer, décider, appliquer.",
+         "explanation": "Étape 1 — Identifier le pouvoir : préparer, décider puis appliquer. Étape 2 — Nommer : Boulè, Ecclésia, stratèges. Pourquoi pas voter avant de préparer : l'Ecclésia ne vote que les projets préparés par la Boulè, et on n'applique qu'une loi votée.",
          "answers": [
           {
            "content": "La Boulè prépare la loi"
@@ -2765,7 +2765,7 @@
         {
          "content": "Quelle institution juge le citoyen ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 2) Nommer : l'Héliée est le tribunal du peuple.",
+         "explanation": "Étape 1 — Identifier : juger. Étape 2 — Nommer : l'Héliée, tribunal du peuple. Pourquoi pas l'Ecclésia : elle vote les lois mais n'est pas un tribunal ; la Boulè prépare les lois.",
          "answers": [
           {
            "content": "L'Héliée",
@@ -2788,7 +2788,7 @@
         {
          "content": "Les jurés de l'Héliée sont tirés au sort.",
          "question_type": "true_false",
-         "explanation": "Méthode : 3) Préciser l'accès : jurés tirés au sort parmi les citoyens.",
+         "explanation": "Étape 3 — Préciser l'accès : les jurés sont des citoyens tirés au sort. Étape 4 — Conclure : le peuple juge lui-même. Pourquoi pas Faux : on croit les juges élus comme les stratèges, mais seuls les stratèges le sont.",
          "answers": [
           {
            "content": "Vrai",
@@ -2803,22 +2803,22 @@
         {
          "content": "Pourquoi les stratèges sont-ils élus ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 3) Préciser : l'élection choisit des compétences.",
+         "explanation": "Étape 3 — Préciser l'accès : élection pour choisir des compétences militaires. Étape 4 — Conclure : le sort sert aux autres charges. Pourquoi pas le tirage au sort réservé à la Boulè : il sert aussi à l'Héliée, mais pas pour un chef de guerre.",
          "answers": [
           {
            "content": "Il faut des chefs compétents pour la guerre",
            "correct": true
           },
           {
-           "content": "Le sort est interdit",
+           "content": "Les jurés de l'Héliée sont aussi élus",
            "correct": false
           },
           {
-           "content": "Ils sont étrangers",
+           "content": "Le tirage au sort est réservé à la Boulè",
            "correct": false
           },
           {
-           "content": "Ils sont tous riches",
+           "content": "Les stratèges sont choisis par l'Héliée",
            "correct": false
           }
          ]
@@ -2826,7 +2826,7 @@
         {
          "content": "Quelles sont deux institutions composées de citoyens tirés au sort ?",
          "question_type": "multiple_correct_2",
-         "explanation": "Méthode : 3) Préciser l'accès : Boulè et Héliée tirées au sort.",
+         "explanation": "Étape 3 — Préciser l'accès : Boulè (500 tirés au sort) et Héliée (jurés tirés au sort). Étape 2 — Nommer : l'Ecclésia réunit tous les citoyens, sans tirage ; les stratèges sont élus. Pourquoi pas l'Ecclésia : on la croit tirée au sort car elle est populaire, mais tous les citoyens y votent.",
          "answers": [
           {
            "content": "La Boulè",
@@ -2858,7 +2858,7 @@
         {
          "content": "Cette affirmation est exacte.",
          "question_type": "true_false",
-         "explanation": "Méthode : 1) Définir le citoyen : né de parents athéniens. 2) Repérer les exclus : un métèque reste étranger, sans droit de vote.",
+         "explanation": "Étape 1 — Définir : citoyen = homme libre né de parents athéniens. Étape 2 — Repérer : le métèque reste étranger, même riche et installé depuis vingt ans. Pourquoi pas Vrai : on confond ancienneté ou richesse avec citoyenneté ; seule la naissance compte.",
          "answers": [
           {
            "content": "Vrai",
@@ -2873,7 +2873,7 @@
         {
          "content": "Pourquoi cet homme ne peut-il pas voter ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 2) Repérer les exclus : l'étranger n'est pas citoyen.",
+         "explanation": "Étape 2 — Repérer les exclus : étranger, donc métèque. Étape 1 — Définir : il n'est pas né de parents athéniens. Pourquoi pas trop riche : la richesse ne retire pas le droit de vote ; Solon classait par richesse, mais tous les citoyens siégeaient.",
          "answers": [
           {
            "content": "Il est étranger, donc métèque",
@@ -2884,11 +2884,11 @@
            "correct": false
           },
           {
-           "content": "Il est trop âgé",
+           "content": "Il est esclave",
            "correct": false
           },
           {
-           "content": "Il paie ses dettes",
+           "content": "Il n'est pas tiré au sort",
            "correct": false
           }
          ]
@@ -2896,7 +2896,7 @@
         {
          "content": "Quelle règle de 451 av. J.-C. justifie cette exclusion ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Définir : la loi de 451 exige deux parents athéniens.",
+         "explanation": "Étape 1 — Définir le citoyen : la loi de 451 av. J.-C. exige un père et une mère athéniens. Étape 2 — Repérer : le métèque en est exclu. Pourquoi pas être riche : la richesse ne définit pas le citoyen.",
          "answers": [
           {
            "content": "Il faut un père et une mère athéniens",
@@ -2907,11 +2907,11 @@
            "correct": false
           },
           {
-           "content": "Il faut être stratège",
+           "content": "Il faut avoir été tiré au sort",
            "correct": false
           },
           {
-           "content": "Il faut avoir plus de cent ans",
+           "content": "Il faut avoir été stratège",
            "correct": false
           }
          ]
@@ -2919,7 +2919,7 @@
         {
          "content": "Un étranger libre qui vit à Athènes sans droit de vote est un ___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 2) Repérer les exclus : le métèque.",
+         "explanation": "Étape 2 — Repérer : le métèque est un étranger libre, sans droits politiques. Étape 1 — Définir : il n'est pas né de parents athéniens. Pourquoi pas esclave ou citoyen : il est libre, donc pas esclave, mais étranger, donc pas citoyen.",
          "answers": [
           {
            "content": "métèque",
@@ -2930,7 +2930,7 @@
         {
          "content": "Quelle conclusion juste ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 4) Conclure : réelle, mais limitée.",
+         "explanation": "Étape 4 — Conclure : réelle pour les citoyens, limitée car femmes, métèques, esclaves sont exclus. Étape 1 — Définir : ces exclusions viennent de la définition du citoyen. Pourquoi pas ouverte à tous : on oublie les exclus ; pourquoi pas inexistante : l'Ecclésia votait vraiment.",
          "answers": [
           {
            "content": "La démocratie athénienne est réelle mais limitée",
@@ -2941,7 +2941,7 @@
            "correct": false
           },
           {
-           "content": "Elle exclut les citoyens",
+           "content": "Elle est réservée aux riches",
            "correct": false
           },
           {
@@ -2962,7 +2962,7 @@
         {
          "content": "Quelle démocratie est directe ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 3) Comparer : les citoyens athéniens votent eux-mêmes.",
+         "explanation": "Étape 3 — Comparer : à Athènes, les citoyens votent eux-mêmes les lois : démocratie directe. Étape 1 — Définir : démocratie = pouvoir du peuple. Pourquoi pas le pays moderne : il passe par des élus, ce qui est la démocratie représentative.",
          "answers": [
           {
            "content": "Celle d'Athènes",
@@ -2985,7 +2985,7 @@
         {
          "content": "Quelle démocratie est représentative ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 3) Comparer : des élus décident pour les citoyens.",
+         "explanation": "Étape 3 — Comparer : dans un pays moderne, les citoyens élisent des représentants. Étape 1 — Définir : pouvoir du peuple. Pourquoi pas Athènes : on prend l'Ecclésia pour un parlement, mais tous les citoyens y votent.",
          "answers": [
           {
            "content": "Celle d'un pays moderne",
@@ -3008,7 +3008,7 @@
         {
          "content": "En Côte d'Ivoire, les citoyens élisent des députés qui votent les lois.",
          "question_type": "true_false",
-         "explanation": "Méthode : 3) Comparer : démocratie représentative.",
+         "explanation": "Étape 3 — Comparer avec aujourd'hui : en Côte d'Ivoire, on élit des députés. Étape 1 — Définir : ce sont eux qui votent les lois. Pourquoi pas Faux : on suppose que tous votent chaque loi, comme à Athènes.",
          "answers": [
           {
            "content": "Vrai",
@@ -3023,7 +3023,7 @@
         {
          "content": "Le système où le peuple élit des députés est la démocratie ___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 3) Comparer : démocratie représentative.",
+         "explanation": "Étape 3 — Comparer : le peuple élit des députés, donc la démocratie est représentative. Étape 1 — Définir : pouvoir du peuple. Pourquoi pas directe : c'est celle d'Athènes, où chaque citoyen vote.",
          "answers": [
           {
            "content": "représentative",
@@ -3034,7 +3034,7 @@
         {
          "content": "Quelles sont deux différences ?",
          "question_type": "multiple_correct_2",
-         "explanation": "Méthode : 3) Comparer : suffrage universel et représentants.",
+         "explanation": "Étape 3 — Comparer : aujourd'hui les femmes votent, et on élit des représentants. Étape 2 — Repérer : à Athènes, les femmes sont exclues. Pourquoi pas les stratèges ou les esclaves : le titre de stratège est athénien, et les esclaves ne votaient pas.",
          "answers": [
           {
            "content": "Les femmes votent aujourd'hui",
@@ -3072,7 +3072,7 @@
         {
          "content": "Athènes est…",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Situer : cité en Attique.",
+         "explanation": "Étape 1 — Situer la cité : Athènes est une cité de l'Attique. Étape 4 — Conclure : la Grèce compte beaucoup de cités. Pourquoi pas un pays : confusion cité et pays ; Athènes et Sparte sont deux cités du même pays.",
          "answers": [
           {
            "content": "une cité de l'Attique",
@@ -3095,7 +3095,7 @@
         {
          "content": "Relie le lieu à son rôle.",
          "question_type": "matching",
-         "explanation": "Méthode : 3) Relier lieu et fonction.",
+         "explanation": "Étape 2 — Nommer les lieux. Étape 3 — Relier chacun à sa fonction : temples sur l'Acropole, vie publique sur l'Agora, vote sur la Pnyx. Confusion fréquente : Agora et Pnyx, où l'on parle aussi, mais où seul le second sert au vote de l'assemblée.",
          "answers": [
           {
            "content": "Acropole",
@@ -3114,7 +3114,7 @@
         {
          "content": "Le port d'Athènes s'appelle ___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 1) Situer : port du Pirée.",
+         "explanation": "Étape 1 — Situer la cité : Athènes, en Attique, au bord de la mer. Étape 2 — Nommer : son port est Le Pirée. Pourquoi pas Corinthe ou Sparte : ce sont d'autres cités grecques, non le port d'Athènes.",
          "answers": [
           {
            "content": "Le Pirée",
@@ -3129,7 +3129,7 @@
         {
          "content": "La Grèce comptait de nombreuses cités indépendantes.",
          "question_type": "true_false",
-         "explanation": "Méthode : 1) Situer : Athènes, Sparte, Corinthe, Thèbes.",
+         "explanation": "Étape 1 — Situer : la Grèce est faite de nombreuses cités indépendantes : Athènes, Sparte, Corinthe, Thèbes. Étape 4 — Conclure : Athènes en est une. Pourquoi pas Faux : on imagine un seul État grec.",
          "answers": [
           {
            "content": "Vrai",
@@ -3144,7 +3144,7 @@
         {
          "content": "Où se dresse le Parthénon ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 2) Nommer les lieux.",
+         "explanation": "Étape 2 — Nommer les lieux. Étape 3 — Relier : le Parthénon, temple, est sur l'Acropole. Pourquoi pas la Pnyx : on la prend pour un lieu de culte alors que c'est la colline du vote.",
          "answers": [
           {
            "content": "Sur l'Acropole",
@@ -3176,7 +3176,7 @@
         {
          "content": "Range du plus ancien au plus récent.",
          "question_type": "ordering",
-         "explanation": "Méthode : 1) Repérer les dates.",
+         "explanation": "Étape 1 — Repérer les dates : 594, 508-507, 451, 429 av. J.-C. Étape 2 — Nommer : Solon, Clisthène, loi sur le citoyen, mort de Périclès. Pourquoi pas Périclès avant Clisthène : on le croit fondateur, mais Clisthène crée la Boulè bien avant.",
          "answers": [
           {
            "content": "Solon (vers 594)"
@@ -3195,7 +3195,7 @@
         {
          "content": "Qui crée les 10 tribus ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 2) Nommer.",
+         "explanation": "Étape 2 — Nommer : Clisthène. Étape 3 — Décrire : 10 tribus fondées sur le lieu de vie, qui envoient chacune 50 citoyens à la Boulè. Pourquoi pas Solon : on lui attribue toutes les réformes ; la sienne est l'interdiction de l'esclavage pour dettes.",
          "answers": [
           {
            "content": "Clisthène",
@@ -3218,7 +3218,7 @@
         {
          "content": "Qui instaure le misthos ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 2) Nommer.",
+         "explanation": "Étape 2 — Nommer : Périclès. Étape 3 — Décrire : le misthos, indemnité, permet aux pauvres d'exercer une charge. Pourquoi pas Clisthène : il organise les institutions, mais n'instaure pas l'indemnité.",
          "answers": [
           {
            "content": "Périclès",
@@ -3241,7 +3241,7 @@
         {
          "content": "Le mot démocratie vient de dêmos et de ___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 1) Définir : dêmos, le peuple, et kratos, le pouvoir.",
+         "explanation": "Étape 1 — Définir : dêmos est le peuple, kratos le pouvoir. Étape 4 — Conclure : démocratie = pouvoir du peuple. Pourquoi pas polis ou misthos : polis est la cité, misthos une indemnité ; seul kratos signifie pouvoir.",
          "answers": [
           {
            "content": "kratos",
@@ -3252,7 +3252,7 @@
         {
          "content": "La démocratie athénienne se construit en une seule fois.",
          "question_type": "true_false",
-         "explanation": "Méthode : 4) Conclure : plusieurs étapes.",
+         "explanation": "Étape 1 — Repérer les dates : 594, 508-507, Ve siècle. Étape 4 — Conclure : plusieurs étapes sur plus d'un siècle. Pourquoi pas Vrai : on retient un seul nom, alors que Solon, Clisthène et Périclès ont tous agi.",
          "answers": [
           {
            "content": "Vrai",
@@ -3276,7 +3276,7 @@
         {
          "content": "Relie institution et rôle.",
          "question_type": "matching",
-         "explanation": "Méthode : 2) Nommer l'institution.",
+         "explanation": "Étape 1 — Identifier le pouvoir. Étape 2 — Nommer : l'Ecclésia vote les lois, la Boulè prépare, l'Héliée juge. Confusion fréquente : Boulè et Ecclésia, car toutes deux touchent aux lois ; l'Ecclésia seule les vote.",
          "answers": [
           {
            "content": "Ecclésia",
@@ -3295,7 +3295,7 @@
         {
          "content": "Combien de membres compte la Boulè ? Écris le nombre.",
          "question_type": "numeric",
-         "explanation": "Méthode : 3) Préciser : 50 par tribu, 10 tribus, 500.",
+         "explanation": "Étape 3 — Préciser qui la compose : 10 tribus × 50 citoyens = 500 membres. Étape 2 — Nommer : la Boulè. Pourquoi pas 50 ou 10 : on prend le nombre par tribu ou de tribus pour le total.",
          "answers": [
           {
            "content": "500",
@@ -3308,7 +3308,7 @@
         {
          "content": "Les stratèges sont élus.",
          "question_type": "true_false",
-         "explanation": "Méthode : 3) Préciser l'accès : élection.",
+         "explanation": "Étape 3 — Préciser l'accès : les stratèges sont élus et rééligibles. Étape 1 — Identifier : commander l'armée demande des compétences. Pourquoi pas Faux : on les croit tirés au sort comme la Boulè.",
          "answers": [
           {
            "content": "Vrai",
@@ -3323,7 +3323,7 @@
         {
          "content": "À quoi sert l'ostracisme ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Identifier le pouvoir : protéger la cité.",
+         "explanation": "Étape 1 — Identifier le pouvoir : protéger la cité d'un citoyen dangereux. Étape 2 — Nommer : l'ostracisme, vote sur tesson. Pourquoi pas voter les lois : c'est le rôle de l'Ecclésia ; payer les juges relève du misthos.",
          "answers": [
           {
            "content": "À exiler un citoyen dangereux",
@@ -3334,7 +3334,7 @@
            "correct": false
           },
           {
-           "content": "À tirer au sort",
+           "content": "À juger les procès",
            "correct": false
           },
           {
@@ -3346,7 +3346,7 @@
         {
          "content": "L'indemnité pour les fonctions publiques s'appelle le ___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 2) Nommer : misthos.",
+         "explanation": "Étape 2 — Nommer : le misthos. Étape 3 — Préciser : indemnité de Périclès pour que les pauvres participent. Pourquoi pas ostracisme : c'est un exil, pas une indemnité.",
          "answers": [
           {
            "content": "misthos",
@@ -3366,7 +3366,7 @@
         {
          "content": "Qui est citoyen ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Définir le citoyen.",
+         "explanation": "Étape 1 — Définir le citoyen : homme libre, adulte, né de parents athéniens. Étape 2 — Repérer : les autres sont exclus. Pourquoi pas tout habitant d'Athènes : le métèque y vit sans être citoyen.",
          "answers": [
           {
            "content": "Un homme libre, adulte, né de parents athéniens",
@@ -3389,7 +3389,7 @@
         {
          "content": "Quelles sont deux catégories exclues ?",
          "question_type": "multiple_correct_2",
-         "explanation": "Méthode : 2) Repérer les exclus.",
+         "explanation": "Étape 2 — Repérer les exclus : femmes et esclaves, avec les métèques. Étape 1 — Définir : les citoyens et les stratèges, citoyens élus, ont des droits. Pourquoi pas les stratèges : ce sont des citoyens élus, donc non exclus.",
          "answers": [
           {
            "content": "Les femmes",
@@ -3412,7 +3412,7 @@
         {
          "content": "La démocratie ivoirienne est représentative.",
          "question_type": "true_false",
-         "explanation": "Méthode : 3) Comparer.",
+         "explanation": "Étape 3 — Comparer : en Côte d'Ivoire, les citoyens élisent président et députés : démocratie représentative. Étape 1 — Définir : à Athènes, elle était directe. Pourquoi pas Faux : on croit la démocratie moderne directe comme celle d'Athènes.",
          "answers": [
           {
            "content": "Vrai",
@@ -3427,7 +3427,7 @@
         {
          "content": "Quel héritage nous vient d'Athènes ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 4) Conclure : héritage vivant.",
+         "explanation": "Étape 4 — Conclure : l'héritage est le mot et l'idée du vote. Étape 3 — Comparer : l'esclavage et l'ostracisme ont disparu. Pourquoi pas l'ostracisme : c'est une pratique athénienne abandonnée.",
          "answers": [
           {
            "content": "Le mot démocratie et l'idée du vote",
@@ -3442,7 +3442,7 @@
            "correct": false
           },
           {
-           "content": "Le roi",
+           "content": "Le tirage au sort pour toutes les charges",
            "correct": false
           }
          ]
@@ -3450,7 +3450,7 @@
         {
          "content": "Conclusion juste ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 4) Conclure.",
+         "explanation": "Étape 4 — Conclure : réelle pour les citoyens, limitée par les exclusions. Étape 2 — Repérer les exclus : femmes, métèques, esclaves. Pourquoi pas complète pour tous : on oublie ces exclus.",
          "answers": [
           {
            "content": "Réelle mais limitée",

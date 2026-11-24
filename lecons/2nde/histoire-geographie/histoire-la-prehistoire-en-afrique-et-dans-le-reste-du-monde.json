@@ -12,15 +12,11 @@
         {
           "key": "periodes-de-la-prehistoire",
           "kind": "diagram",
-          "description": "Un schéma en quatre étapes, de gauche à droite : les premiers hommes, le Paléolithique (pierre taillée, chasse et cueillette), le Néolithique (pierre polie, agriculture, élevage, poterie), puis l'âge des métaux (cuivre, bronze, fer). L'invention de l'écriture marque la fin de la préhistoire.",
+          "description": "Un schéma en trois étapes, de gauche à droite : le Paléolithique (pierre taillée, chasse et cueillette), le Néolithique (pierre polie, agriculture, élevage, poterie), puis l'âge des métaux (cuivre, bronze, fer). La préhistoire commence avec les premiers hommes et se termine avec l'invention de l'écriture, à une date qui varie selon les régions.",
           "params": {
             "layout": "flow",
             "direction": "right",
             "nodes": [
-              {
-                "id": "p0",
-                "label": "Premiers hommes"
-              },
               {
                 "id": "pal",
                 "label": "Paléolithique : pierre taillée"
@@ -35,10 +31,6 @@
               }
             ],
             "edges": [
-              {
-                "from": "p0",
-                "to": "pal"
-              },
               {
                 "from": "pal",
                 "to": "neo"
@@ -98,7 +90,7 @@
         {
           "key": "etapes-de-l-hominisation",
           "kind": "diagram",
-          "description": "Un schéma en quatre étapes, de gauche à droite : l'australopithèque marche debout, Homo habilis taille des outils de pierre, Homo erectus maîtrise le feu et fabrique des bifaces, Homo sapiens parle, crée des œuvres d'art et peuple tous les continents.",
+          "description": "Un schéma en quatre étapes, de gauche à droite : l'australopithèque marche debout, Homo habilis taille des outils de pierre, Homo erectus maîtrise le feu et fabrique des bifaces, Homo sapiens crée les grandes œuvres d'art rupestre et peuple tous les continents.",
           "params": {
             "layout": "flow",
             "direction": "right",
@@ -117,7 +109,7 @@
               },
               {
                 "id": "sap",
-                "label": "Homo sapiens : langage, art"
+                "label": "Homo sapiens : art, tous les continents"
               }
             ],
             "edges": [
@@ -140,7 +132,7 @@
         {
           "key": "de-la-chasse-a-l-agriculture",
           "kind": "diagram",
-          "description": "Un schéma en quatre étapes, de haut en bas : les hommes cultivent et élèvent des animaux, la récolte dépasse les besoins et se stocke dans des poteries, les hommes se fixent dans des villages, la population augmente.",
+          "description": "Un schéma en quatre étapes, de haut en bas : les hommes cultivent et élèvent des animaux, la récolte dépasse les besoins et se stocke dans des greniers et des jarres, les villages deviennent plus nombreux et durables, la population augmente.",
           "params": {
             "layout": "flow",
             "direction": "down",
@@ -151,11 +143,11 @@
               },
               {
                 "id": "sur",
-                "label": "Surplus stocké dans des poteries"
+                "label": "Surplus stocké : greniers, jarres"
               },
               {
                 "id": "vil",
-                "label": "Sédentarisation : villages"
+                "label": "Villages plus nombreux et durables"
               },
               {
                 "id": "pop",
@@ -183,7 +175,7 @@
       "notions": [
         {
           "name": "Définir et périodiser la préhistoire",
-          "remember": "La **préhistoire** est la plus longue période de l'histoire de l'humanité : elle commence avec l'apparition des premiers hommes et se termine avec l'invention de l'écriture, vers 3 000 ans avant J.-C. Sans écrit, on l'étudie grâce aux **sources matérielles** (ossements fossiles, outils, restes d'habitat) et **iconographiques** (art rupestre), que cherchent les archéologues et les paléontologues.\n\nOn la découpe d'après les outils et le mode de vie :\n**Paléolithique** (*paléo* = ancien, *lithos* = pierre) : pierre taillée, chasse, pêche, cueillette, vie nomade.\n**Néolithique** (*néo* = nouveau) : pierre polie, agriculture, élevage, poterie, villages.\nL'**âge des métaux** (cuivre, bronze, fer) vient ensuite. La date de la fin de la préhistoire varie selon les régions.",
+          "remember": "La **préhistoire** est la plus longue période de l'histoire de l'humanité : elle commence avec l'apparition des premiers hommes et se termine avec l'invention de l'écriture, vers 3 000 ans avant J.-C. en Mésopotamie et en Égypte Sans écrit, on l'étudie grâce aux **sources matérielles** (ossements fossiles, outils, restes d'habitat) et **iconographiques** (art rupestre), que cherchent les archéologues et les paléontologues.\n\nOn la découpe d'après les outils et le mode de vie :\n**Paléolithique** (*paléo* = ancien, *lithos* = pierre) : pierre taillée, chasse, pêche, cueillette, vie nomade.\n**Néolithique** (*néo* = nouveau) : pierre polie, agriculture, élevage, poterie, villages.\nEntre les deux, surtout en Europe, on parle parfois de **Mésolithique**, une courte période de transition.\nL'**âge des métaux** (cuivre, bronze, fer) vient ensuite. La date de la fin de la préhistoire varie selon les régions : dans une grande partie de l'Afrique, on travaille le fer bien avant d'utiliser l'écriture.",
           "method": [
             "Repérer l'indice donné : texte écrit, outil ou mode de vie.",
             "Situer l'indice par rapport à l'écriture : sans écriture, c'est la préhistoire.",
@@ -485,7 +477,7 @@
         },
         {
           "name": "L'Afrique, berceau de l'humanité",
-          "remember": "Les plus anciens fossiles d'hominidés (la famille de l'homme) ont été trouvés en **Afrique**, qui est donc appelée le **berceau de l'humanité**. Les dates sont approximatives.\n\n**Toumaï** : découvert au Tchad en 2001, il a environ 7 millions d'années.\n**Lucy** : squelette d'une australopithèque découvert à Hadar, en Éthiopie, en 1974, vieux de plus de 3 millions d'années ; elle marchait debout.\n**Olduvai** (Tanzanie) : outils de pierre très anciens et fossiles d'Homo habilis.\n**Lac Turkana** (Kenya) : fossiles d'Homo erectus.\n**Afrique du Sud** : fossiles d'australopithèques.\n\nHomo sapiens apparaît lui aussi en Afrique, puis peuple les autres continents.",
+          "remember": "Les plus anciens fossiles d'hominidés (la famille de l'homme) ont été trouvés en **Afrique**, qui est donc appelée le **berceau de l'humanité**. Les dates sont approximatives.\n\n**Toumaï** : découvert au Tchad en 2001, il a environ 7 millions d'années. Ses découvreurs le considèrent comme un des plus anciens hominidés connus ; ce classement est encore discuté par les savants.\n**Lucy** : squelette d'une australopithèque découvert à Hadar, en Éthiopie, en 1974, vieux de plus de 3 millions d'années ; elle marchait debout.\n**Olduvai** (Tanzanie) : outils de pierre très anciens et fossiles d'Homo habilis.\n**Lac Turkana** (Kenya) : fossiles d'Homo erectus.\n**Afrique du Sud** : fossiles d'australopithèques.\n\nHomo sapiens apparaît lui aussi en Afrique, puis peuple les autres continents.",
           "method": [
             "Repérer le nom du fossile ou du site et son espèce.",
             "Situer le lieu de découverte sur la carte de l'Afrique.",
@@ -629,7 +621,7 @@
                       "content": "Homo erectus"
                     },
                     {
-                      "content": "Homo sapiens (plus de 200 000 ans)"
+                      "content": "Homo sapiens (environ 300 000 ans)"
                     }
                   ]
                 },
@@ -818,9 +810,9 @@
         },
         {
           "name": "L'hominisation et la vie au Paléolithique",
-          "remember": "L'**hominisation** est l'ensemble des transformations qui mènent des premiers hominidés à l'homme actuel. Elle est très lente.\n\n**Australopithèque** (Lucy) : marche debout (bipédie), petit cerveau.\n**Homo habilis** (« homme habile ») : taille les premiers outils de pierre, il y a plus de 2 millions d'années.\n**Homo erectus** (« homme debout ») : fabrique des bifaces, maîtrise le feu, sort d'Afrique.\n**Homo sapiens** (« homme sage ») : cerveau développé, langage, art ; il apparaît en Afrique il y a plus de 200 000 ans et peuple tous les continents.\n\nAu Paléolithique, les hommes vivent en petits groupes nomades de chasse, de pêche et de cueillette, dans des abris sous roche, des grottes ou des campements.",
+          "remember": "L'**hominisation** est la très lente évolution des premiers hominidés jusqu'à l'homme actuel.\n\n**Australopithèque** (Lucy) : marche debout (bipédie), petit cerveau.\n**Homo habilis** (« homme habile ») : vit il y a plus de 2 millions d'années ; il taille des galets, parmi les plus anciens outils de pierre connus.\n**Homo erectus** (« homme debout ») : fabrique des bifaces, maîtrise le feu, sort d'Afrique.\n**Homo sapiens** (« homme sage ») : grand cerveau, langage élaboré, auteur des grandes œuvres d'art rupestre. Il apparaît en Afrique il y a environ 300 000 ans (fossiles de Djebel Irhoud, au Maroc), puis peuple tous les continents : l'Europe et l'Australie il y a plus de 40 000 ans, l'Amérique il y a plus de 15 000 ans. D'autres espèces humaines, comme l'homme de Néandertal, ont vécu en même temps que lui, puis ont disparu.\n\nAu Paléolithique, les hommes vivent en petits groupes nomades de chasse, de pêche et de cueillette, dans des abris sous roche, des grottes ou des campements. En Côte d'Ivoire, à Anyama, près d'Abidjan, des outils de pierre taillée vieux d'environ 150 000 ans prouvent que des hommes vivaient déjà en forêt tropicale (étude de 2025).",
           "method": [
-            "Repérer le caractère décrit : marche debout, outil, feu ou langage.",
+            "Repérer le caractère décrit : marche debout, outil, feu ou art.",
             "Identifier l'espèce qui correspond à ce caractère.",
             "Ranger l'espèce dans l'ordre chronologique de l'hominisation.",
             "Relier ce progrès au mode de vie des hommes du Paléolithique."
@@ -842,7 +834,7 @@
               {
                 "content": "Relie chaque espèce à son progrès.",
                 "question_type": "matching",
-                "explanation": "Étape 1 — Repérer le caractère. Étape 2 — Identifier l'espèce : australopithèque, marche debout ; Homo habilis, outils ; Homo erectus, feu ; Homo sapiens, langage et art.",
+                "explanation": "Étape 1 — Repérer le caractère : marche debout, outil, feu ou art. Étape 2 — Identifier l'espèce : australopithèque, marche debout ; Homo habilis, galets taillés, parmi les plus anciens outils ; Homo erectus, maîtrise du feu ; Homo sapiens, art des grottes ornées. Étape 3 — Ranger : cet ordre est aussi celui de l'hominisation. Donner le feu à Homo habilis, c'est confondre l'outil le plus ancien avec un progrès plus récent.",
                 "answers": [
                   {
                     "content": "Australopithèque",
@@ -850,7 +842,7 @@
                   },
                   {
                     "content": "Homo habilis",
-                    "match": "Premiers outils de pierre taillée"
+                    "match": "Galets taillés, parmi les plus anciens outils"
                   },
                   {
                     "content": "Homo erectus",
@@ -858,7 +850,7 @@
                   },
                   {
                     "content": "Homo sapiens",
-                    "match": "Langage et art"
+                    "match": "Art des grottes ornées"
                   }
                 ],
                 "hint": "Lis la liste des espèces dans la fiche."
@@ -935,10 +927,10 @@
                 {
                   "content": "Homo habilis est connu pour…",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Repérer : l'outil de pierre taillée. Étape 2 — Identifier : c'est le progrès de Homo habilis, l'« homme habile ».",
+                  "explanation": "Étape 1 — Repérer : l'outil de pierre taillée. Étape 2 — Identifier : Homo habilis, l'« homme habile », taille des galets, parmi les plus anciens outils de pierre connus. Étape 3 — Ranger : il vit il y a plus de 2 millions d'années, bien avant l'agriculture (Néolithique), les peintures de Lascaux (œuvre d'Homo sapiens) et l'écriture, qui marque la fin de la préhistoire.",
                   "answers": [
                     {
-                      "content": "ses premiers outils de pierre taillée",
+                      "content": "la taille de galets, parmi les plus anciens outils de pierre",
                       "correct": true
                     },
                     {
@@ -1062,7 +1054,7 @@
                 {
                   "content": "Homo sapiens est apparu avant Homo habilis.",
                   "question_type": "true_false",
-                  "explanation": "Étape 3 — Ranger : Homo habilis, plus de 2 millions d'années, est bien plus ancien que Homo sapiens, plus de 200 000 ans.",
+                  "explanation": "Étape 3 — Ranger : Homo habilis, plus de 2 millions d'années, est bien plus ancien que Homo sapiens, environ 300 000 ans.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -1137,7 +1129,7 @@
         },
         {
           "name": "La révolution néolithique",
-          "remember": "La **révolution néolithique** est le passage d'une vie de chasse et de cueillette à une vie où l'homme **produit** sa nourriture. Elle apparaît il y a environ 10 000 ans au Proche-Orient, puis ailleurs, y compris en Afrique, à des dates différentes. Au Sahara, elle a eu lieu à une époque où le climat était plus humide.\n\n**Agriculture** : cultiver des plantes.\n**Élevage** : élever des animaux (bœufs, chèvres, moutons).\n**Sédentarisation** : vivre durablement dans des villages.\n**Poterie** : stocker, cuire et transporter.\n**Pierre polie** : haches plus efficaces.\n\nConséquences : des surplus, une population plus nombreuse, des métiers spécialisés et des échanges.",
+          "remember": "La **révolution néolithique** est le passage d'une vie de chasse et de cueillette à une vie où l'homme **produit** sa nourriture. Elle apparaît il y a plus de 10 000 ans au Proche-Orient, puis dans d'autres foyers, à des dates différentes : en Chine (riz, millet), en Amérique (maïs), en Afrique (mil, sorgho, igname). Au Sahara, elle a eu lieu à une époque où le climat était plus humide.\n\n**Agriculture** : cultiver des plantes.\n**Élevage** : élever des animaux (bœufs, chèvres, moutons).\n**Sédentarisation** : vivre durablement dans des villages.\n**Poterie** : stocker, cuire et transporter.\n**Pierre polie** : haches plus efficaces.\n\nEn Afrique, la poterie est même plus ancienne que l'agriculture : à Ounjougou, au Mali, des chasseurs-cueilleurs fabriquaient des poteries il y a plus de 11 000 ans. L'agriculture généralise ensuite le stockage et la vie dans des villages.\n\nConséquences : des surplus, une population plus nombreuse, des métiers spécialisés et des échanges.",
           "method": [
             "Repérer la nouveauté décrite : un outil, une ressource ou un habitat.",
             "Classer cette nouveauté : production de nourriture, mode de vie ou technique.",
@@ -1148,7 +1140,7 @@
             "statement": "Au musée, le club d'histoire observe de grandes jarres en terre cuite remplies de grains de céréales, trouvées dans un ancien village. Que montrent-elles ?",
             "steps": [
               "Repérer : des jarres en terre cuite (poterie) pleines de grains de céréales.",
-              "Classer : la poterie est une technique liée à l'agriculture, qui produit la nourriture.",
+              "Classer : la poterie est une technique ; remplie de grains, elle sert ici à conserver la nourriture produite par l'agriculture.",
               "Expliquer : on peut garder la récolte pour les mois sans récolte, sans avoir à se déplacer pour trouver à manger.",
               "Conclure : avec des surplus et un village fixe, la population peut augmenter et de nouveaux métiers, comme celui de potier, apparaissent."
             ]
@@ -1343,16 +1335,16 @@
                 {
                   "content": "Remets dans l'ordre cette chaîne de conséquences.",
                   "question_type": "ordering",
-                  "explanation": "Étape 3 — Expliquer : produire permet de stocker un surplus, donc de rester sur place. Étape 4 — Conclure : la population peut augmenter.",
+                  "explanation": "Étape 1 — Repérer la nouveauté : cultiver et élever. Étape 2 — Classer : c'est la production de nourriture. Étape 3 — Expliquer : produire permet de stocker un surplus, donc de vivre durablement au même endroit ; les villages se multiplient. Étape 4 — Conclure : la population peut augmenter. Des poteries et des villages existent parfois avant l'agriculture (Ounjougou, au Mali), mais c'est l'agriculture qui les généralise.",
                   "answers": [
                     {
                       "content": "Les hommes cultivent et élèvent des animaux"
                     },
                     {
-                      "content": "La récolte dépasse les besoins et se stocke dans des poteries"
+                      "content": "La récolte dépasse les besoins et se stocke dans des greniers et des jarres"
                     },
                     {
-                      "content": "Les hommes se fixent dans des villages"
+                      "content": "Les villages deviennent plus nombreux et durables"
                     },
                     {
                       "content": "La population augmente"
@@ -1781,7 +1773,7 @@
             {
               "content": "Remets ces quatre cartons dans l'ordre chronologique.",
               "question_type": "ordering",
-              "explanation": "Méthode : 1) Repérer ce que désigne chaque carton. 2) Les dater : Lucy (plus de 3 millions d'années), feu (Homo erectus), premiers villages (Néolithique, il y a environ 10 000 ans), écriture (vers 3 000 ans avant J.-C.). 3) Ranger du plus ancien au plus récent.",
+              "explanation": "Méthode : 1) Repérer ce que désigne chaque carton. 2) Les dater : Lucy (plus de 3 millions d'années), feu (Homo erectus), premiers villages (Néolithique, il y a plus de 10 000 ans), écriture (vers 3 000 ans avant J.-C.). 3) Ranger du plus ancien au plus récent.",
               "answers": [
                 {
                   "content": "Lucy"
@@ -1961,7 +1953,7 @@
                 "Relier au berceau de l'humanité",
                 "Citer un autre fossile africain"
               ],
-              "explanation": "Corrigé modèle : Lucy est une australopithèque de plus de 3 millions d'années, découverte en Éthiopie en 1974. C'est un des plus anciens hominidés connus qui marchaient debout. Avec Toumaï, trouvé au Tchad et plus ancien, elle montre que les plus anciens hominidés vivaient en Afrique : on parle de berceau de l'humanité. Barème (3 points) : présentation (1) ; date prudente (0,5) ; lien avec le berceau (1) ; autre fossile (0,5).",
+              "explanation": "Corrigé modèle : Lucy est une australopithèque de plus de 3 millions d'années, découverte en Éthiopie en 1974. C'est un des plus anciens hominidés connus qui marchaient debout. Avec Toumaï, trouvé au Tchad, plus ancien et considéré comme un des plus anciens hominidés connus, elle montre que les plus anciens hominidés vivaient en Afrique : on parle de berceau de l'humanité. Barème (3 points) : présentation (1) ; date prudente (0,5) ; lien avec le berceau (1) ; autre fossile (0,5).",
               "answers": [],
               "starter": "Lucy est …"
             }
@@ -2372,7 +2364,7 @@
                 {
                   "content": "Range du plus ancien au plus récent.",
                   "question_type": "ordering",
-                  "explanation": "Méthode : 1) Dater : environ 7 millions, plus de 3 millions, plus d'un million, plus de 200 000 ans. 2) Ranger de la plus grande durée à la plus petite.",
+                  "explanation": "Méthode : 1) Dater : environ 7 millions, plus de 3 millions, plus d'un million, environ 300 000 ans. 2) Ranger de la plus grande durée à la plus petite.",
                   "answers": [
                     {
                       "content": "Toumaï"
@@ -2400,7 +2392,7 @@
                 {
                   "content": "Relie chaque espèce à son progrès.",
                   "question_type": "matching",
-                  "explanation": "Méthode : 1) Repérer le progrès. 2) Identifier l'espèce correspondante.",
+                  "explanation": "Méthode : 1) Repérer le progrès décrit : marche debout, outil, feu ou art. 2) Identifier l'espèce qui lui correspond : la marche debout (bipédie) est le caractère de l'australopithèque, comme Lucy ; les galets taillés, parmi les plus anciens outils, celui de Homo habilis, l'« homme habile » ; la maîtrise du feu, celui de Homo erectus, qui taille aussi des bifaces ; l'art des grottes ornées, celui de Homo sapiens. 3) Ranger pour vérifier : australopithèque, Homo habilis, Homo erectus, Homo sapiens, du plus ancien au plus récent. Le piège : donner le feu à Homo habilis ou l'art à Homo erectus ; c'est confondre les progrès anciens et les progrès récents, alors que chaque espèce ajoute son progrès à ceux des précédentes.",
                   "answers": [
                     {
                       "content": "Australopithèque",
@@ -2408,7 +2400,7 @@
                     },
                     {
                       "content": "Homo habilis",
-                      "match": "Outils de pierre taillée"
+                      "match": "Galets taillés, parmi les plus anciens outils"
                     },
                     {
                       "content": "Homo erectus",
@@ -2416,7 +2408,7 @@
                     },
                     {
                       "content": "Homo sapiens",
-                      "match": "Langage et art"
+                      "match": "Art des grottes ornées"
                     }
                   ]
                 },
@@ -2720,7 +2712,7 @@
                 {
                   "content": "Range ces cartons du plus ancien au plus récent.",
                   "question_type": "ordering",
-                  "explanation": "Méthode : 1) Repérer les dates : environ 7 millions, plus de 3 millions, plus d'un million, plus de 200 000 ans. 2) Ranger du plus ancien au plus récent.",
+                  "explanation": "Méthode : 1) Repérer les dates : environ 7 millions, plus de 3 millions, plus d'un million, environ 300 000 ans. 2) Ranger du plus ancien au plus récent.",
                   "answers": [
                     {
                       "content": "Toumaï"
@@ -2977,7 +2969,7 @@
                 {
                   "content": "Range cette chaîne de conséquences.",
                   "question_type": "ordering",
-                  "explanation": "Méthode : 1) Expliquer la chaîne. 2) Produire permet de stocker, donc de rester, donc de croître.",
+                  "explanation": "Méthode : 1) Repérer la nouveauté : les hommes cultivent et élèvent, ils produisent leur nourriture. 2) Expliquer : la récolte dépasse les besoins, on stocke ce surplus dans des greniers et des jarres. 3) Conclure : on peut vivre durablement au même endroit, les villages se multiplient, et la population augmente. Mettre la hausse de la population au début inverse la cause et la conséquence.",
                   "answers": [
                     {
                       "content": "Les hommes cultivent et élèvent"
@@ -2986,7 +2978,7 @@
                       "content": "Ils stockent un surplus"
                     },
                     {
-                      "content": "Ils se fixent dans des villages"
+                      "content": "Les villages se multiplient"
                     },
                     {
                       "content": "La population augmente"
@@ -3199,7 +3191,7 @@
                 {
                   "content": "Range ces affirmations dans l'ordre d'un raisonnement.",
                   "question_type": "ordering",
-                  "explanation": "Méthode : 1) Repérer. 2) Situer. 3) Dater. 4) Conclure : l'ordre de la fiche.",
+                  "explanation": "Méthode : 1) Repérer : on part du document, un fossile et son espèce, par exemple Lucy, une australopithèque. 2) Situer : on place son lieu de découverte sur la carte de l'Afrique, Hadar, en Éthiopie. 3) Dater : on donne son âge avec prudence, « plus de 3 millions d'années ». 4) Conclure : alors seulement, on dit ce que la découverte prouve, ici l'origine africaine de l'humanité. C'est l'ordre des étapes de la fiche. Le piège : commencer par la conclusion ; une conclusion posée avant d'avoir repéré, situé et daté le fossile n'est appuyée sur aucune preuve, c'est une simple affirmation.",
                   "answers": [
                     {
                       "content": "On repère un fossile et son espèce"
@@ -3257,7 +3249,7 @@
                 {
                   "content": "Pourquoi le feu aide-t-il les chasseurs nomades ?",
                   "question_type": "single_choice",
-                  "explanation": "Méthode : 1) Repérer le feu. 2) Relier au mode de vie du Paléolithique.",
+                  "explanation": "Méthode : 1) Repérer le caractère : la maîtrise du feu, progrès de Homo erectus, au Paléolithique. 2) Relier au mode de vie : les hommes du Paléolithique sont des chasseurs-cueilleurs nomades, en petits groupes, dans des abris sous roche, des grottes ou des campements. 3) Expliquer : le feu les protège des animaux, les chauffe quand il fait froid, éclaire le campement la nuit et permet de cuire la viande. 4) Conclure : la bonne réponse est « Il protège, chauffe, éclaire et permet de cuire ». Les autres propositions sont des pièges de chronologie : cultiver et construire des villages sont des nouveautés du Néolithique, bien plus tardives, et l'écriture marque la fin de la préhistoire. Elles prêtent au feu des conséquences qui appartiennent à d'autres périodes.",
                   "answers": [
                     {
                       "content": "Il protège, chauffe, éclaire et permet de cuire",
@@ -3396,7 +3388,7 @@
                 {
                   "content": "Une interprétation d'une peinture rupestre est toujours certaine.",
                   "question_type": "true_false",
-                  "explanation": "Méthode : 1) Interpréter. 2) Nuancer : sans texte, le sens reste une hypothèse.",
+                  "explanation": "Méthode : 1) Décrire : on dit seulement ce que l'on voit sur la paroi, par exemple des bovidés et des personnages au Tassili. 2) Situer : la peinture date d'une période sans écriture ; aucun texte n'explique ce que voulaient dire ses auteurs. 3) Interpréter : on propose un sens, par exemple une scène d'élevage. 4) Nuancer : on ne sait pas si la scène raconte la vie quotidienne, un rite ou un récit ; l'interprétation reste une hypothèse. L'affirmation est donc fausse. Le piège : prendre son interprétation pour un fait ; dans une copie, on écrit « cette peinture montre peut-être… » ou « on peut supposer que… ».",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -3430,7 +3422,7 @@
                 {
                   "content": "Lascaux a été découverte en ___.",
                   "question_type": "fill_blank",
-                  "explanation": "Méthode : 1) Repérer le site. 2) Situer dans le temps : découverte en 1940.",
+                  "explanation": "Méthode : 1) Décrire : la grotte de Lascaux est ornée de chevaux, d'aurochs et de cerfs. 2) Situer le site : en Dordogne, en France. 3) Situer dans le temps en séparant deux dates : la grotte a été découverte en 1940, au XXe siècle ; les peintures, elles, ont été faites il y a plus de 15 000 ans, au Paléolithique. La réponse est donc 1940. Le piège : confondre la date de la découverte et l'âge des peintures, comme on confondrait la découverte de Lucy (1974) et son âge (plus de 3 millions d'années). Écrire 15 000 répond à une autre question.",
                   "answers": [
                     {
                       "content": "1940",
@@ -3566,7 +3558,7 @@
                 {
                   "content": "Range les espèces.",
                   "question_type": "ordering",
-                  "explanation": "Méthode : 1) Identifier chaque espèce. 2) Ranger dans l'ordre chronologique : l'australopithèque (Lucy, plus de 3 millions d'années), Homo habilis (plus de 2 millions), Homo erectus, puis Homo sapiens (plus de 200 000 ans).",
+                  "explanation": "Méthode : 1) Identifier chaque espèce. 2) Ranger dans l'ordre chronologique : l'australopithèque (Lucy, plus de 3 millions d'années), Homo habilis (plus de 2 millions), Homo erectus, puis Homo sapiens (environ 300 000 ans).",
                   "answers": [
                     {
                       "content": "Australopithèque"
@@ -3585,7 +3577,7 @@
                 {
                   "content": "Quelle espèce maîtrise le feu ?",
                   "question_type": "single_choice",
-                  "explanation": "Méthode : 1) Repérer le progrès : le feu. 2) Identifier l'espèce : Homo erectus, qui fabrique aussi des bifaces. 3) Homo habilis est connu pour les premiers outils de pierre, l'australopithèque pour la marche debout.",
+                  "explanation": "Méthode : 1) Repérer le progrès : le feu. 2) Identifier l'espèce : Homo erectus, qui fabrique aussi des bifaces. 3) Homo habilis est connu pour ses galets taillés, parmi les plus anciens outils de pierre, l'australopithèque pour la marche debout.",
                   "answers": [
                     {
                       "content": "Homo erectus",
@@ -3623,7 +3615,7 @@
                 {
                   "content": "Quelles sont deux caractéristiques de Homo sapiens ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Méthode : 1) Repérer les caractères. 2) Identifier : Homo sapiens a un cerveau développé, un langage et un art. 3) Toutes les espèces de la fiche marchent debout, et le premier à quitter l'Afrique est Homo erectus.",
+                  "explanation": "Méthode : 1) Repérer les caractères. 2) Identifier : Homo sapiens a un grand cerveau, un langage élaboré et il crée l'art des grottes ornées. 3) Toutes les espèces de la fiche marchent debout, et le premier à quitter l'Afrique est Homo erectus.",
                   "answers": [
                     {
                       "content": "Langage",
@@ -3682,7 +3674,7 @@
                 {
                   "content": "Range cette chaîne.",
                   "question_type": "ordering",
-                  "explanation": "Méthode : 1) Expliquer : produire sa nourriture donne un surplus qu'on stocke dans des poteries. 2) Le surplus permet de rester sur place : des villages naissent. 3) Conclure : la population augmente.",
+                  "explanation": "Méthode : 1) Expliquer : produire sa nourriture donne un surplus qu'on stocke dans des greniers et des jarres. 2) Le surplus permet de vivre durablement au même endroit : les villages se multiplient. 3) Conclure : la population augmente. Des villages existent parfois avant l'agriculture, mais c'est elle qui les généralise.",
                   "answers": [
                     {
                       "content": "Agriculture et élevage"
@@ -3771,7 +3763,7 @@
                 {
                   "content": "Quelle suite est correcte ?",
                   "question_type": "single_choice",
-                  "explanation": "Méthode : 1) Identifier chaque espèce. 2) Ranger dans l'ordre chronologique : l'australopithèque marche debout, Homo habilis taille les premiers outils, Homo erectus maîtrise le feu, Homo sapiens parle et crée de l'art. 3) La suite inversée part du plus récent : c'est le piège.",
+                  "explanation": "Méthode : 1) Identifier chaque espèce. 2) Ranger dans l'ordre chronologique : l'australopithèque marche debout, Homo habilis taille des galets, parmi les plus anciens outils, Homo erectus maîtrise le feu, Homo sapiens crée l'art des grottes ornées. 3) La suite inversée part du plus récent : c'est le piège.",
                   "answers": [
                     {
                       "content": "Australopithèque, Homo habilis, Homo erectus, Homo sapiens",
