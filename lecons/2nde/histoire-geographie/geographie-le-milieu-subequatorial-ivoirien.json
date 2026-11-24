@@ -1,0 +1,4104 @@
+{
+ "format": "lnclass.course-tree",
+ "version": 3,
+ "courses": [
+  {
+   "name": "Géographie — Le milieu subéquatorial ivoirien",
+   "subtitle": "Leçon 9 — progression DPFC 2026-2027",
+   "level_name": "2nde",
+   "material_name": "Histoire-Géographie",
+   "theme": "blue",
+   "figures": [
+    {
+     "key": "carte-milieu-subequatorial",
+     "kind": "map",
+     "description": "Une carte schématique de la Côte d'Ivoire. La forêt dense humide occupe le sud, la frange littorale borde l'océan et la savane couvre le centre et le nord. Abidjan, San-Pédro, Gagnoa et Soubré sont marquées dans le sud, Korhogo dans le nord. Elle sert à situer le milieu subéquatorial.",
+     "params": {
+      "base": "cote_d_ivoire",
+      "areas": [
+       {
+        "id": "dense_forest",
+        "category": 1
+       },
+       {
+        "id": "coastal_strip",
+        "category": 2
+       },
+       {
+        "id": "savanna",
+        "category": 3
+       }
+      ],
+      "places": [
+       {
+        "id": "abidjan",
+        "label": "Abidjan"
+       },
+       {
+        "id": "san_pedro",
+        "label": "San-Pédro"
+       },
+       {
+        "id": "gagnoa",
+        "label": "Gagnoa"
+       },
+       {
+        "id": "soubre",
+        "label": "Soubré"
+       },
+       {
+        "id": "korhogo",
+        "label": "Korhogo"
+       }
+      ],
+      "legend": [
+       "Forêt dense humide",
+       "Frange littorale",
+       "Savane"
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "precipitations-station-a",
+     "kind": "stat_chart",
+     "description": "Un diagramme en barres des précipitations mensuelles, en millimètres, de la station A (valeurs fictives), de janvier à décembre. Les barres sont basses de décembre à février et en août-septembre, et très hautes en mai, juin et juillet, avec un maximum de 500 mm en juin. On y lit le mois le plus pluvieux.",
+     "params": {
+      "chart": "bars",
+      "series": [
+       30,
+       50,
+       100,
+       140,
+       330,
+       500,
+       220,
+       40,
+       45,
+       140,
+       130,
+       50
+      ],
+      "labels": [
+       "Jan",
+       "Fév",
+       "Mar",
+       "Avr",
+       "Mai",
+       "Juin",
+       "Juil",
+       "Août",
+       "Sep",
+       "Oct",
+       "Nov",
+       "Déc"
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "temperatures-station-a",
+     "kind": "stat_chart",
+     "description": "Une courbe des températures moyennes mensuelles, en degrés Celsius, de la station A (valeurs fictives), de janvier à décembre. Elle reste entre 25 et 28 degrés toute l'année : elle monte à 28 de février à avril et descend à 25 de juillet à septembre. On y lit l'amplitude thermique, qui est faible.",
+     "params": {
+      "chart": "line",
+      "series": [
+       27,
+       28,
+       28,
+       28,
+       27,
+       26,
+       25,
+       25,
+       25,
+       26,
+       27,
+       27
+      ],
+      "labels": [
+       "Jan",
+       "Fév",
+       "Mar",
+       "Avr",
+       "Mai",
+       "Juin",
+       "Juil",
+       "Août",
+       "Sep",
+       "Oct",
+       "Nov",
+       "Déc"
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "etagement-foret",
+     "kind": "diagram",
+     "description": "Un schéma qui montre les trois niveaux de la forêt dense humide, de haut en bas : la canopée, formée par la cime des grands arbres ; la strate moyenne, avec les arbustes et les jeunes arbres ; la strate basse, avec les herbes et les fougères près du sol. Il sert à décrire l'étagement de la forêt.",
+     "params": {
+      "layout": "flow",
+      "direction": "down",
+      "nodes": [
+       {
+        "id": "can",
+        "label": "Canopée : cime des grands arbres",
+        "category": 1
+       },
+       {
+        "id": "moy",
+        "label": "Strate moyenne : arbustes et jeunes arbres",
+        "category": 2
+       },
+       {
+        "id": "bas",
+        "label": "Strate basse : herbes et fougères",
+        "category": 3
+       }
+      ],
+      "edges": [
+       {
+        "from": "can",
+        "to": "moy",
+        "label": "au-dessus de"
+       },
+       {
+        "from": "moy",
+        "to": "bas",
+        "label": "au-dessus de"
+       }
+      ],
+      "legend": [
+       "Niveau haut",
+       "Niveau moyen",
+       "Niveau bas"
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "chaine-deforestation",
+     "kind": "diagram",
+     "description": "Un schéma fléché de la déforestation. Trois causes : les plantations, l'exploitation du bois, les villes et les routes, mènent à la déforestation, c'est-à-dire au recul de la forêt. Elle entraîne deux conséquences : l'érosion des sols et la perte d'espèces animales et végétales. Il sert à relier causes et conséquences.",
+     "params": {
+      "layout": "flow",
+      "direction": "right",
+      "nodes": [
+       {
+        "id": "pl",
+        "label": "Plantations",
+        "category": 1
+       },
+       {
+        "id": "bo",
+        "label": "Exploitation du bois",
+        "category": 1
+       },
+       {
+        "id": "vi",
+        "label": "Villes et routes",
+        "category": 1
+       },
+       {
+        "id": "de",
+        "label": "Déforestation",
+        "category": 2
+       },
+       {
+        "id": "er",
+        "label": "Érosion des sols",
+        "category": 3
+       },
+       {
+        "id": "es",
+        "label": "Perte d'espèces",
+        "category": 3
+       }
+      ],
+      "edges": [
+       {
+        "from": "pl",
+        "to": "de"
+       },
+       {
+        "from": "bo",
+        "to": "de"
+       },
+       {
+        "from": "vi",
+        "to": "de"
+       },
+       {
+        "from": "de",
+        "to": "er"
+       },
+       {
+        "from": "de",
+        "to": "es"
+       }
+      ],
+      "legend": [
+       "Causes",
+       "Phénomène",
+       "Conséquences"
+      ]
+     },
+     "controls": []
+    }
+   ],
+   "notions": [
+    {
+     "name": "Situer le milieu subéquatorial en Côte d'Ivoire",
+     "remember": "Le **milieu subéquatorial** est le milieu de **forêt dense humide** du **sud** de la Côte d'Ivoire. Il longe le **golfe de Guinée**, qui fait partie de l'**océan Atlantique**, et s'étend du **littoral** vers l'intérieur des terres jusqu'à la limite avec la **savane**, qui domine le centre et le nord du pays.\n\nOn y trouve des villes du littoral comme **Abidjan** et **San-Pédro**, et des villes de l'intérieur comme **Divo**, **Gagnoa** et **Soubré**. Au nord, une ville comme **Korhogo** appartient déjà à la savane.",
+     "method": [
+      "Situer le milieu dans le pays à l'aide des points cardinaux.",
+      "Délimiter le milieu : dire ce qui le borde au sud et ce qu'il touche au nord.",
+      "Citer des repères : des villes du littoral et des villes de l'intérieur."
+     ],
+     "example": {
+      "statement": "Situer le milieu subéquatorial sur la carte de la Côte d'Ivoire.",
+      "steps": [
+       "Situer : le milieu subéquatorial occupe le sud du pays, le long du golfe de Guinée.",
+       "Délimiter : au sud, il est bordé par l'océan Atlantique ; au nord, il touche la savane.",
+       "Citer : Abidjan et San-Pédro sont sur le littoral ; Divo, Gagnoa et Soubré sont dans l'intérieur du milieu."
+      ]
+     },
+     "pitfall": "Ne pas croire que toute la Côte d'Ivoire est couverte de forêt. Contre-exemple : Abidjan, au sud, est dans le milieu subéquatorial, mais Korhogo, au nord, est dans la savane. Pour ne pas se tromper, on place toujours la ville sur la carte : la forêt est au sud, la savane au centre et au nord.",
+     "figure": "carte-milieu-subequatorial",
+     "practice": {
+      "statement": "Tu t'entraînes à situer le milieu subéquatorial avec la méthode : situer, délimiter, citer.",
+      "questions": [
+       {
+        "content": "Le milieu subéquatorial se trouve dans le ___ de la Côte d'Ivoire (un point cardinal).",
+        "question_type": "fill_blank",
+        "explanation": "Étape 1 — Situer : la forêt dense humide occupe le sud du pays, au bord du golfe de Guinée.",
+        "answers": [
+         {
+          "content": "sud",
+          "correct": true
+         }
+        ],
+        "hint": "Pense à l'océan : il est au sud."
+       },
+       {
+        "content": "Au sud, le milieu subéquatorial est bordé par l'océan Atlantique.",
+        "question_type": "true_false",
+        "explanation": "Étape 2 — Délimiter : la limite sud du milieu est le littoral, c'est-à-dire l'océan Atlantique (golfe de Guinée).",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": true
+         },
+         {
+          "content": "Faux",
+          "correct": false
+         }
+        ],
+        "hint": "Quel océan borde le sud de la Côte d'Ivoire ?"
+       },
+       {
+        "content": "Quelle ville se trouve dans le milieu subéquatorial ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 3 — Citer : Divo est une ville de l'intérieur du sud, en forêt. Korhogo, Ferkessédougou et Odienné sont dans le nord, en savane.",
+        "answers": [
+         {
+          "content": "Divo",
+          "correct": true
+         },
+         {
+          "content": "Korhogo",
+          "correct": false
+         },
+         {
+          "content": "Ferkessédougou",
+          "correct": false
+         },
+         {
+          "content": "Odienné",
+          "correct": false
+         }
+        ],
+        "hint": "Cherche la ville du sud."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Situer le milieu subéquatorial",
+       "statement": "Dans cet exercice, tu situes le milieu subéquatorial avec les trois étapes : situer, délimiter, citer.",
+       "exercise_type": "fixation",
+       "figure": "carte-milieu-subequatorial",
+       "hint": "Reprends les trois étapes : situer, délimiter, citer.",
+       "questions": [
+        {
+         "content": "Dans quelle partie de la Côte d'Ivoire se trouve le milieu subéquatorial ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Situer : le milieu subéquatorial occupe le sud du pays, au bord du golfe de Guinée. Le nord est un milieu de savane.",
+         "answers": [
+          {
+           "content": "Le sud, le long du golfe de Guinée",
+           "correct": true
+          },
+          {
+           "content": "Le nord, à la frontière avec le Mali",
+           "correct": false
+          },
+          {
+           "content": "Uniquement l'ouest montagneux",
+           "correct": false
+          },
+          {
+           "content": "Le centre, loin de la mer",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Au nord, le milieu subéquatorial touche la savane.",
+         "question_type": "true_false",
+         "explanation": "Étape 2 — Délimiter : au nord, la forêt dense humide laisse la place à la savane, qui domine le centre et le nord du pays.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Au sud, le milieu subéquatorial est bordé par l'océan ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Étape 2 — Délimiter : le golfe de Guinée fait partie de l'océan Atlantique, qui borde le sud du pays.",
+         "answers": [
+          {
+           "content": "Atlantique",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelles sont deux villes du milieu subéquatorial ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 3 — Citer : Abidjan est sur le littoral et Gagnoa dans l'intérieur du sud. Korhogo et Odienné sont dans le nord, en savane.",
+         "answers": [
+          {
+           "content": "Abidjan",
+           "correct": true
+          },
+          {
+           "content": "Gagnoa",
+           "correct": true
+          },
+          {
+           "content": "Korhogo",
+           "correct": false
+          },
+          {
+           "content": "Odienné",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une élève dit : « Toute la Côte d'Ivoire est couverte de forêt dense. » Que lui répondre ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Situer : la forêt dense humide est dans le sud. Étape 2 — Délimiter : au nord, elle touche la savane. L'affirmation oublie cette limite : elle est donc fausse.",
+         "answers": [
+          {
+           "content": "Faux : la forêt est au sud ; la savane domine le centre et le nord.",
+           "correct": true
+          },
+          {
+           "content": "Vrai : la forêt couvre tout le pays.",
+           "correct": false
+          },
+          {
+           "content": "Faux : il n'y a de forêt qu'à Abidjan.",
+           "correct": false
+          },
+          {
+           "content": "Vrai : seul le nord est sans forêt, mais il est tout petit.",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Repérer le milieu sur la carte",
+       "statement": "Dans cet exercice, tu situes des villes et le milieu subéquatorial avec des questions de types variés.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Pour chaque ville, place-la entre l'océan et la savane.",
+       "questions": [
+        {
+         "content": "Remets dans l'ordre ces villes, de la plus proche de l'océan à la plus au nord.",
+         "question_type": "ordering",
+         "explanation": "Étape 3 — Citer : on range les repères du sud vers le nord : Abidjan sur le littoral, puis Gagnoa dans la forêt, puis Bouaké au centre, déjà en savane, et enfin Korhogo, dans la savane du nord.",
+         "answers": [
+          {
+           "content": "Abidjan"
+          },
+          {
+           "content": "Gagnoa"
+          },
+          {
+           "content": "Bouaké"
+          },
+          {
+           "content": "Korhogo"
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque ville à sa situation.",
+         "question_type": "matching",
+         "explanation": "Étape 3 — Citer : Abidjan est au bord de l'océan, Gagnoa dans la forêt de l'intérieur du sud, Korhogo dans la savane du nord.",
+         "answers": [
+          {
+           "content": "Abidjan",
+           "match": "Littoral, au bord de l'océan"
+          },
+          {
+           "content": "Gagnoa",
+           "match": "Intérieur du sud, en forêt"
+          },
+          {
+           "content": "Korhogo",
+           "match": "Nord, en savane"
+          }
+         ]
+        },
+        {
+         "content": "Le milieu subéquatorial est situé dans le ___ du pays.",
+         "question_type": "select",
+         "explanation": "Étape 1 — Situer : on utilise les points cardinaux. Le milieu subéquatorial est dans le sud, près du golfe de Guinée.",
+         "answers": [
+          {
+           "content": "sud",
+           "correct": true
+          },
+          {
+           "content": "nord",
+           "correct": false
+          },
+          {
+           "content": "nord-est",
+           "correct": false
+          },
+          {
+           "content": "centre",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le milieu subéquatorial s'ouvre sur le golfe de ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Étape 2 — Délimiter : au sud, le milieu est borné par le golfe de Guinée, sur l'océan Atlantique.",
+         "answers": [
+          {
+           "content": "Guinée",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Le milieu subéquatorial occupe le nord de la Côte d'Ivoire.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Situer : il occupe le sud. Le nord est un milieu de savane : l'erreur consiste à inverser le sud et le nord.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelle phrase situe correctement ce milieu ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Situer : le sud. Étape 2 — Délimiter : l'océan au sud, la savane au nord. Les autres phrases se trompent de lieu ou oublient l'intérieur des terres.",
+         "answers": [
+          {
+           "content": "Il occupe le sud du pays, de l'océan Atlantique jusqu'à la savane.",
+           "correct": true
+          },
+          {
+           "content": "Il occupe le nord du pays, au contact du Mali.",
+           "correct": false
+          },
+          {
+           "content": "Il occupe le centre, loin de l'océan.",
+           "correct": false
+          },
+          {
+           "content": "Il occupe uniquement le littoral, sans l'intérieur.",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Le climat subéquatorial",
+     "remember": "Le sud de la Côte d'Ivoire a un **climat subéquatorial**. Il a **quatre saisons** : la **grande saison sèche** (de décembre à février environ), la **grande saison des pluies** (de mars-avril à juillet environ), la **petite saison sèche** (août-septembre environ) et la **petite saison des pluies** (octobre-novembre environ). Il y a donc **deux saisons des pluies** et **deux saisons sèches**. Ces dates varient selon les lieux et les années : la grande saison sèche dure parfois jusqu'en mars, et la petite saison sèche commence parfois dès la mi-juillet.\n\nLes **températures** sont **élevées** (autour de 26 °C en moyenne) et varient **peu** : l'**amplitude thermique**, écart entre le mois le plus chaud et le mois le plus froid, est faible, de quelques degrés. Les **précipitations** sont **abondantes** (plus de 1 200 mm par an) et l'**humidité** de l'air est élevée.",
+     "method": [
+      "Repérer les saisons : les compter, puis les nommer.",
+      "Caractériser les températures : leur niveau et leur amplitude.",
+      "Caractériser les précipitations et l'humidité : leur quantité et leur répartition.",
+      "Conclure en nommant le climat."
+     ],
+     "example": {
+      "statement": "Relevé fictif d'une station du sud : température moyenne de 26,6 °C, écart de 3 °C entre le mois le plus chaud et le mois le plus froid, 1 775 mm de pluie par an, deux saisons des pluies séparées par une courte saison sèche en août-septembre, une saison sèche de décembre à février, air humide toute l'année. Quel est ce climat ?",
+      "steps": [
+       "Repérer : il y a quatre saisons, deux saisons des pluies et deux saisons sèches (décembre-février, puis août-septembre).",
+       "Caractériser les températures : elles sont élevées (26,6 °C en moyenne) et varient peu (amplitude de 3 °C).",
+       "Caractériser les précipitations et l'humidité : 1 775 mm par an, donc abondantes, avec deux maxima ; l'air est humide.",
+       "Conclure : ces quatre saisons, ces températures élevées et ces fortes pluies sont celles du climat subéquatorial."
+      ]
+     },
+     "pitfall": "Ne pas confondre les quatre saisons du sud avec celles d'un pays tempéré. Contre-exemple : en France, les quatre saisons sont le printemps, l'été, l'automne et l'hiver ; en Côte d'Ivoire, ce sont deux saisons sèches et deux saisons des pluies. Les températures, elles, restent élevées toute l'année.",
+     "figure": null,
+     "practice": {
+      "statement": "Tu t'entraînes à décrire le climat du sud avec la méthode : repérer, caractériser, conclure.",
+      "questions": [
+       {
+        "content": "Le climat du sud est caractérisé par des précipitations abondantes.",
+        "question_type": "true_false",
+        "explanation": "Étape 3 — Caractériser les précipitations : le sud reçoit plus de 1 200 mm de pluie par an, donc des pluies abondantes.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": true
+         },
+         {
+          "content": "Faux",
+          "correct": false
+         }
+        ],
+        "hint": "Pense à la forêt dense."
+       },
+       {
+        "content": "Combien y a-t-il de saisons des pluies dans le sud ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Repérer : il y a la grande saison des pluies et la petite saison des pluies, soit deux saisons des pluies (et deux saisons sèches).",
+        "answers": [
+         {
+          "content": "Deux",
+          "correct": true
+         },
+         {
+          "content": "Une",
+          "correct": false
+         },
+         {
+          "content": "Trois",
+          "correct": false
+         },
+         {
+          "content": "Quatre",
+          "correct": false
+         }
+        ],
+        "hint": "Compte la grande et la petite."
+       },
+       {
+        "content": "La saison sèche de décembre à février est la grande saison ___ (un mot).",
+        "question_type": "fill_blank",
+        "explanation": "Étape 1 — Repérer : après la petite saison des pluies vient la grande saison sèche, de décembre à février environ.",
+        "answers": [
+         {
+          "content": "sèche",
+          "correct": true
+         }
+        ],
+        "hint": "Elle n'est pas pluvieuse."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Décrire le climat du sud",
+       "statement": "Dans cet exercice, tu décris le climat subéquatorial avec les quatre étapes : repérer, caractériser, caractériser, conclure.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Reprends les quatre étapes : repérer, caractériser, caractériser, conclure.",
+       "questions": [
+        {
+         "content": "Combien de saisons compte le climat subéquatorial ?",
+         "question_type": "numeric",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Repérer : deux saisons des pluies (grande et petite) et deux saisons sèches (grande et petite) font 4 saisons.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelles sont les deux saisons sèches du climat subéquatorial ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Repérer : les deux saisons sèches sont la grande saison sèche et la petite saison sèche. Les deux autres sont des saisons des pluies.",
+         "answers": [
+          {
+           "content": "La grande saison sèche",
+           "correct": true
+          },
+          {
+           "content": "La petite saison sèche",
+           "correct": true
+          },
+          {
+           "content": "La grande saison des pluies",
+           "correct": false
+          },
+          {
+           "content": "La petite saison des pluies",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Comment sont les températures dans le sud ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Caractériser les températures : elles sont élevées (autour de 26 °C) et varient peu. Un hiver froid n'existe pas en milieu subéquatorial.",
+         "answers": [
+          {
+           "content": "Élevées, avec une amplitude faible",
+           "correct": true
+          },
+          {
+           "content": "Basses, avec de fortes variations",
+           "correct": false
+          },
+          {
+           "content": "Élevées en été et très froides en hiver",
+           "correct": false
+          },
+          {
+           "content": "Faibles toute l'année",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les précipitations annuelles sont faibles dans le sud.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Caractériser les précipitations : elles sont abondantes (plus de 1 200 mm par an). Les croire faibles est une erreur.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un élève écrit : « Le climat du sud a quatre saisons : printemps, été, automne et hiver. » Que penser de cette phrase ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : on nomme les saisons du sud. Il y a bien quatre saisons, mais ce sont deux saisons sèches et deux saisons des pluies, pas celles d'un climat tempéré.",
+         "answers": [
+          {
+           "content": "Elle est fausse : les quatre saisons sont deux saisons des pluies et deux saisons sèches.",
+           "correct": true
+          },
+          {
+           "content": "Elle est vraie : le sud a le même rythme que la France.",
+           "correct": false
+          },
+          {
+           "content": "Elle est fausse : il n'y a que deux saisons dans le sud.",
+           "correct": false
+          },
+          {
+           "content": "Elle est vraie, mais seulement pour la forêt.",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Les saisons et les températures du sud",
+       "statement": "Dans cet exercice, tu mélanges plusieurs types de questions pour décrire le climat du sud.",
+       "exercise_type": "fixation",
+       "figure": "temperatures-station-a",
+       "hint": "Retiens : quatre saisons, chaleur toute l'année, pluies abondantes.",
+       "questions": [
+        {
+         "content": "Remets les saisons dans l'ordre, à partir de décembre.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Repérer : de décembre à février, grande saison sèche ; de mars-avril à juillet, grande saison des pluies ; en août-septembre, petite saison sèche ; en octobre-novembre, petite saison des pluies.",
+         "answers": [
+          {
+           "content": "Grande saison sèche"
+          },
+          {
+           "content": "Grande saison des pluies"
+          },
+          {
+           "content": "Petite saison sèche"
+          },
+          {
+           "content": "Petite saison des pluies"
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque saison à sa période approximative.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Repérer : chaque saison a sa période. Les périodes sont approximatives et varient un peu d'une année à l'autre.",
+         "answers": [
+          {
+           "content": "Grande saison sèche",
+           "match": "Décembre à février"
+          },
+          {
+           "content": "Grande saison des pluies",
+           "match": "Mars-avril à juillet"
+          },
+          {
+           "content": "Petite saison sèche",
+           "match": "Août-septembre"
+          },
+          {
+           "content": "Petite saison des pluies",
+           "match": "Octobre-novembre"
+          }
+         ]
+        },
+        {
+         "content": "L'écart entre la température du mois le plus chaud et celle du mois le plus froid s'appelle l'___ thermique (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Étape 2 — Caractériser les températures : cet écart s'appelle l'amplitude thermique. Dans le sud, elle est faible.",
+         "answers": [
+          {
+           "content": "amplitude",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans le sud, l'humidité de l'air est ___.",
+         "question_type": "select",
+         "explanation": "Étape 3 — Caractériser les précipitations et l'humidité : avec des pluies abondantes et de la chaleur, l'air du sud est humide.",
+         "answers": [
+          {
+           "content": "élevée",
+           "correct": true
+          },
+          {
+           "content": "faible",
+           "correct": false
+          },
+          {
+           "content": "nulle",
+           "correct": false
+          },
+          {
+           "content": "très faible",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le climat subéquatorial a deux saisons des pluies.",
+         "question_type": "true_false",
+         "explanation": "Étape 4 — Conclure : le climat subéquatorial se reconnaît à ses quatre saisons, dont deux saisons des pluies (grande et petite).",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un relevé fictif donne 28 °C pour le mois le plus chaud et 25 °C pour le mois le plus froid. Quelle est l'amplitude thermique ?",
+         "question_type": "numeric",
+         "tolerance": 0,
+         "explanation": "Étape 2 — Caractériser les températures : l'amplitude est l'écart entre le mois le plus chaud et le mois le plus froid : $28 - 25 = 3$ °C. Elle est faible.",
+         "answers": [
+          {
+           "content": "3",
+           "correct": true
+          }
+         ],
+         "unit": "°C"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Lire un diagramme ombrothermique",
+     "remember": "Un **diagramme ombrothermique** (ou de Gaussen) montre, mois par mois, les **températures** moyennes (une **courbe**, en °C) et les **précipitations** (des **barres**, en mm). L'échelle est choisie pour que **1 °C corresponde à 2 mm**.\n\nUn mois est **sec** quand ses précipitations en mm sont **inférieures ou égales au double** de sa température en °C : $P \\le 2T$ (règle de Gaussen). L'**amplitude thermique** est l'écart entre la température la plus haute et la plus basse : $T_{max} - T_{min}$. Le **total annuel** des précipitations s'obtient en additionnant les douze mois.",
+     "method": [
+      "Présenter le diagramme : le lieu, la période, les grandeurs et leurs unités.",
+      "Lire la courbe des températures : la valeur la plus haute, la plus basse, l'amplitude.",
+      "Lire les barres des précipitations : le mois le plus pluvieux et le total annuel.",
+      "Repérer les mois secs avec la règle $P \\le 2T$.",
+      "Conclure : nommer les saisons et le climat."
+     ],
+     "example": {
+      "statement": "Station A (relevé fictif). Températures moyennes (°C), de janvier à décembre : 27, 28, 28, 28, 27, 26, 25, 25, 25, 26, 27, 27. Précipitations (mm), dans le même ordre : 30, 50, 100, 140, 330, 500, 220, 40, 45, 140, 130, 50. Lis ce diagramme.",
+      "steps": [
+       "Présenter : c'est le diagramme de la station A, sur douze mois ; la courbe donne les températures en °C, les barres les précipitations en mm, avec $1$ °C pour $2$ mm.",
+       "Lire la courbe : la température la plus haute est 28 °C (février, mars, avril), la plus basse 25 °C (juillet, août, septembre) ; l'amplitude est $28 - 25 = 3$ °C.",
+       "Lire les barres : le mois le plus pluvieux est juin (500 mm) ; le total annuel est de 1 775 mm.",
+       "Repérer : on compare $P$ à $2T$. Janvier : $30 < 54$, février : $50 < 56$, août : $40 < 50$, septembre : $45 < 50$, décembre : $50 < 54$ ; ces mois sont secs. Mars : $100 > 56$, il n'est pas sec.",
+       "Conclure : deux saisons sèches (décembre-février, août-septembre) et deux saisons des pluies, des températures élevées et peu variables, des pluies abondantes : c'est un climat subéquatorial."
+      ]
+     },
+     "pitfall": "Ne pas comparer les précipitations à la température seule. Contre-exemple : février a 50 mm et 28 °C. Comme $50 > 28$, on croit à tort qu'il n'est pas sec ; en fait $2 \\times 28 = 56$ et $50 < 56$ : février est sec. Il faut toujours calculer le double de la température.",
+     "figure": "precipitations-station-a",
+     "practice": {
+      "statement": "Tu t'entraînes à lire un diagramme ombrothermique avec la méthode en cinq étapes.",
+      "questions": [
+       {
+        "content": "Un mois à 26 °C et 40 mm est un mois sec.",
+        "question_type": "true_false",
+        "explanation": "Étape 4 — Repérer les mois secs : $2 \\times 26 = 52$ et $40 < 52$, donc le mois est sec.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": true
+         },
+         {
+          "content": "Faux",
+          "correct": false
+         }
+        ],
+        "hint": "Calcule le double de la température."
+       },
+       {
+        "content": "Une station a un mois le plus chaud à 29 °C et un mois le plus froid à 26 °C. Quelle est son amplitude thermique ?",
+        "question_type": "numeric",
+        "tolerance": 0,
+        "explanation": "Étape 2 — Lire la courbe : l'amplitude est $29 - 26 = 3$ °C.",
+        "answers": [
+         {
+          "content": "3",
+          "correct": true
+         }
+        ],
+        "unit": "°C",
+        "hint": "Soustrais la plus basse à la plus haute."
+       },
+       {
+        "content": "Précipitations (mm) d'une station de janvier à décembre : 25, 55, 130, 180, 420, 380, 150, 30, 60, 160, 140, 45. Quel est le mois le plus pluvieux ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 3 — Lire les barres : la plus grande valeur est 420 mm, qui est la cinquième, donc mai. Juin (380 mm) est le deuxième mois le plus pluvieux, mais il reste en dessous.",
+        "answers": [
+         {
+          "content": "Mai",
+          "correct": true
+         },
+         {
+          "content": "Juin",
+          "correct": false
+         },
+         {
+          "content": "Avril",
+          "correct": false
+         },
+         {
+          "content": "Juillet",
+          "correct": false
+         }
+        ],
+        "hint": "Cherche la plus grande valeur."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Lire le diagramme de la station A",
+       "statement": "Station A (relevé fictif). Températures moyennes (°C), de janvier à décembre : 27, 28, 28, 28, 27, 26, 25, 25, 25, 26, 27, 27. Précipitations (mm), dans le même ordre : 30, 50, 100, 140, 330, 500, 220, 40, 45, 140, 130, 50. Réponds aux questions avec la méthode de la fiche.",
+       "exercise_type": "fixation",
+       "figure": "precipitations-station-a",
+       "hint": "Pour chaque mois, compare les précipitations au double de la température.",
+       "questions": [
+        {
+         "content": "Quelle est l'amplitude thermique de la station A ?",
+         "question_type": "numeric",
+         "tolerance": 0,
+         "explanation": "Étape 2 — Lire la courbe des températures : la plus haute est 28 °C, la plus basse 25 °C, donc l'amplitude est $28 - 25 = 3$ °C.",
+         "answers": [
+          {
+           "content": "3",
+           "correct": true
+          }
+         ],
+         "unit": "°C"
+        },
+        {
+         "content": "Quel est le mois le plus pluvieux de la station A ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Lire les barres des précipitations : la plus haute valeur est 500 mm, en juin. Mai (330 mm) et juillet (220 mm) sont moins pluvieux.",
+         "answers": [
+          {
+           "content": "Juin",
+           "correct": true
+          },
+          {
+           "content": "Mai",
+           "correct": false
+          },
+          {
+           "content": "Juillet",
+           "correct": false
+          },
+          {
+           "content": "Avril",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le mois d'août (25 °C, 40 mm) est un mois sec.",
+         "question_type": "true_false",
+         "explanation": "Étape 4 — Repérer les mois secs : $2 \\times 25 = 50$ et $40 < 50$, donc août est un mois sec.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un mois est sec si ses précipitations (en mm) sont inférieures ou égales au ___ de sa température (en °C) (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Étape 4 — Repérer les mois secs : la règle est $P \\le 2T$, c'est-à-dire que les précipitations sont inférieures ou égales au double de la température.",
+         "answers": [
+          {
+           "content": "double",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Février (28 °C, 50 mm) est-il un mois sec ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 4 — Repérer les mois secs : on compare $P$ au double de $T$, pas à $T$. $50 < 56$, donc février est sec. Comparer 50 à 28 est l'erreur du piège.",
+         "answers": [
+          {
+           "content": "Oui : 50 mm est inférieur à $2 \\times 28 = 56$ mm",
+           "correct": true
+          },
+          {
+           "content": "Non : 50 est supérieur à 28",
+           "correct": false
+          },
+          {
+           "content": "Non : il pleut encore en février",
+           "correct": false
+          },
+          {
+           "content": "Oui : février est le mois le plus chaud",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Lire une autre station du sud",
+       "statement": "Dans cet exercice, tu lis un diagramme ombrothermique avec des questions de types variés.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Rappelle-toi : courbe pour les températures, barres pour les pluies, et $P \\le 2T$ pour un mois sec.",
+       "questions": [
+        {
+         "content": "Une station a un mois le plus chaud à 28 °C et un mois le plus froid à 24 °C. Quelle est l'amplitude thermique ?",
+         "question_type": "numeric",
+         "tolerance": 0,
+         "explanation": "Étape 2 — Lire la courbe des températures : $28 - 24 = 4$ °C.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ],
+         "unit": "°C"
+        },
+        {
+         "content": "Précipitations (mm) de la station C, de janvier à décembre : 20, 45, 120, 150, 300, 480, 200, 30, 45, 150, 140, 40. Quel est le total annuel ?",
+         "question_type": "numeric",
+         "tolerance": 0,
+         "explanation": "Étape 3 — Lire les barres des précipitations : on additionne les douze mois : $20 + 45 + 120 + 150 + 300 + 480$ puis $200 + 30 + 45 + 150 + 140 + 40$, soit $1720$ mm.",
+         "answers": [
+          {
+           "content": "1720",
+           "correct": true
+          }
+         ],
+         "unit": "mm"
+        },
+        {
+         "content": "Précipitations (mm) de la station C, de janvier à décembre : 20, 45, 120, 150, 300, 480, 200, 30, 45, 150, 140, 40. Quel est le mois le plus pluvieux ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Lire les barres : la plus grande valeur est 480 mm, en juin.",
+         "answers": [
+          {
+           "content": "Juin",
+           "correct": true
+          },
+          {
+           "content": "Mai",
+           "correct": false
+          },
+          {
+           "content": "Juillet",
+           "correct": false
+          },
+          {
+           "content": "Octobre",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les étapes de lecture d'un diagramme ombrothermique.",
+         "question_type": "ordering",
+         "explanation": "Les cinq étapes de la fiche se suivent dans cet ordre : présenter, lire la courbe, lire les barres, repérer les mois secs, conclure.",
+         "answers": [
+          {
+           "content": "Présenter le diagramme"
+          },
+          {
+           "content": "Lire la courbe des températures"
+          },
+          {
+           "content": "Lire les barres des précipitations"
+          },
+          {
+           "content": "Repérer les mois secs"
+          },
+          {
+           "content": "Conclure sur le climat"
+          }
+         ]
+        },
+        {
+         "content": "Station C : janvier (27 °C, 20 mm), mars (28 °C, 120 mm), juin (26 °C, 480 mm), août (24 °C, 30 mm). Quels sont deux mois secs ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 4 — Repérer les mois secs : janvier $20 < 54$ et août $30 < 48$ sont secs ; mars $120 > 56$ et juin $480 > 52$ ne le sont pas.",
+         "answers": [
+          {
+           "content": "Janvier",
+           "correct": true
+          },
+          {
+           "content": "Août",
+           "correct": true
+          },
+          {
+           "content": "Mars",
+           "correct": false
+          },
+          {
+           "content": "Juin",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans un diagramme ombrothermique, les précipitations sont représentées par des ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Lire les barres : les précipitations se lisent sur des barres, la température sur une courbe.",
+         "answers": [
+          {
+           "content": "barres",
+           "correct": true
+          },
+          {
+           "content": "bâtons",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "La végétation : forêt dense humide et mangrove",
+     "remember": "La **forêt dense humide** est la végétation du sud de la Côte d'Ivoire. Près de la côte, elle est **sempervirente** : ses arbres restent **verts toute l'année**. Plus au nord, la forêt **semi-décidue** perd une partie de ses feuilles en saison sèche, mais reste en grande partie verte. Elle pousse là où il fait **chaud** et où les **pluies** sont **abondantes**. Ses arbres sont très hauts, serrés, et portent des **lianes**.\n\nLa forêt est **étagée** en **strates** : la **canopée** (la cime des grands arbres, tout en haut), la **strate moyenne** (arbustes et jeunes arbres), puis la **strate basse** (herbes et fougères, près du sol).\n\nSur le **littoral**, dans les eaux salées ou saumâtres des lagunes et des estuaires, on trouve la **mangrove** : une forêt de **palétuviers**, aux racines en forme d'échasses.",
+     "method": [
+      "Identifier le type de végétation d'après sa situation : forêt dense humide ou mangrove.",
+      "Décrire sa structure : la hauteur des arbres, le feuillage, les strates.",
+      "Expliquer le lien avec le climat : la chaleur, les pluies, l'humidité."
+     ],
+     "example": {
+      "statement": "Décrire et expliquer la végétation d'une région du sud-ouest, sur la terre ferme, non loin de la côte : arbres très hauts, feuillage vert toute l'année, plusieurs niveaux de végétation, lianes, chaleur et pluies abondantes.",
+      "steps": [
+       "Identifier : dans le sud-ouest, sur la terre ferme et non loin de la côte, ce type de végétation est la forêt dense humide sempervirente.",
+       "Décrire : les arbres sont très hauts et toujours verts ; la forêt est étagée en canopée, strate moyenne et strate basse, avec des lianes.",
+       "Expliquer : la chaleur et les pluies abondantes, avec un air humide, permettent aux arbres de rester verts toute l'année."
+      ]
+     },
+     "pitfall": "Ne pas confondre la forêt dense humide et la mangrove. Contre-exemple : près de Gagnoa, à l'intérieur des terres, la forêt pousse sur un sol ferme ; sur le littoral, dans l'eau saumâtre d'une lagune, ce sont des palétuviers, donc de la mangrove. Pour trancher, on regarde où l'on se trouve : intérieur ou bord de l'eau.",
+     "figure": "etagement-foret",
+     "practice": {
+      "statement": "Tu t'entraînes à décrire la végétation du sud avec la méthode : identifier, décrire, expliquer.",
+      "questions": [
+       {
+        "content": "Quelle est la strate la plus haute de la forêt dense humide ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 2 — Décrire : la canopée est formée par la cime des grands arbres, tout en haut. La strate moyenne est au-dessous, la strate basse près du sol.",
+        "answers": [
+         {
+          "content": "La canopée",
+          "correct": true
+         },
+         {
+          "content": "La strate basse",
+          "correct": false
+         },
+         {
+          "content": "Le sol nu",
+          "correct": false
+         },
+         {
+          "content": "La strate moyenne",
+          "correct": false
+         }
+        ],
+        "hint": "Pense à la cime des arbres."
+       },
+       {
+        "content": "La mangrove se développe dans une eau salée ou saumâtre.",
+        "question_type": "true_false",
+        "explanation": "Étape 1 — Identifier : la mangrove est la végétation du littoral, avec ses palétuviers dans les eaux salées ou saumâtres des lagunes et des estuaires.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": true
+         },
+         {
+          "content": "Faux",
+          "correct": false
+         }
+        ],
+        "hint": "Elle est au bord de la mer."
+       },
+       {
+        "content": "La forêt toujours verte du sud, près de la côte, est la forêt dense ___ (un mot).",
+        "question_type": "fill_blank",
+        "explanation": "Étape 3 — Expliquer : elle est dense et humide grâce à la chaleur et aux pluies abondantes du climat subéquatorial.",
+        "answers": [
+         {
+          "content": "humide",
+          "correct": true
+         },
+         {
+          "content": "sempervirente",
+          "correct": true
+         }
+        ],
+        "hint": "Elle pousse là où il pleut beaucoup."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Décrire la végétation du sud",
+       "statement": "Dans cet exercice, tu décris la végétation du sud avec la méthode : identifier, décrire, expliquer.",
+       "exercise_type": "fixation",
+       "figure": "etagement-foret",
+       "hint": "Reprends les trois étapes : identifier, décrire, expliquer.",
+       "questions": [
+        {
+         "content": "Quelle végétation couvre l'intérieur du sud de la Côte d'Ivoire ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Identifier : à l'intérieur du sud, chaud et très pluvieux, la végétation est la forêt dense humide. Pourquoi pas la savane ou la forêt claire : ce sont des milieux du nord. Pourquoi pas la mangrove : elle est au bord de l'eau salée, sur le littoral.",
+         "answers": [
+          {
+           "content": "La forêt dense humide",
+           "correct": true
+          },
+          {
+           "content": "La savane herbeuse",
+           "correct": false
+          },
+          {
+           "content": "La mangrove",
+           "correct": false
+          },
+          {
+           "content": "La forêt claire du nord",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Près de la côte, la forêt dense humide garde ses feuilles vertes toute l'année.",
+         "question_type": "true_false",
+         "explanation": "Étape 2 — Décrire : près de la côte, elle est sempervirente, c'est-à-dire toujours verte, car la chaleur et l'humidité durent toute l'année.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La couche formée par la cime des grands arbres s'appelle la ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Étape 2 — Décrire : la canopée est la strate la plus haute, formée par la cime des grands arbres.",
+         "answers": [
+          {
+           "content": "canopée",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quels sont deux éléments de la forêt dense humide ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 2 — Décrire : la forêt dense humide a des arbres très hauts et des lianes. Les herbes hautes et les buissons épineux appartiennent à d'autres milieux.",
+         "answers": [
+          {
+           "content": "Des lianes",
+           "correct": true
+          },
+          {
+           "content": "Des arbres très hauts",
+           "correct": true
+          },
+          {
+           "content": "Des herbes hautes qui sèchent chaque année",
+           "correct": false
+          },
+          {
+           "content": "Des buissons épineux isolés",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Où se développe la mangrove ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Identifier : la mangrove se reconnaît à sa situation, au bord de l'eau salée ou saumâtre. La confondre avec la forêt dense humide est l'erreur du piège.",
+         "answers": [
+          {
+           "content": "Sur le littoral, dans les eaux salées ou saumâtres des lagunes et des estuaires",
+           "correct": true
+          },
+          {
+           "content": "Dans la savane du nord",
+           "correct": false
+          },
+          {
+           "content": "Au cœur de la forêt, loin de l'eau",
+           "correct": false
+          },
+          {
+           "content": "Au sommet des montagnes de l'ouest",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Forêt, strates et mangrove",
+       "statement": "Dans cet exercice, tu mélanges plusieurs types de questions sur la végétation du sud.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Rappelle-toi : forêt à l'intérieur, mangrove au bord de l'eau.",
+       "questions": [
+        {
+         "content": "Remets les strates dans l'ordre, de la plus haute à la plus basse.",
+         "question_type": "ordering",
+         "explanation": "Étape 2 — Décrire : la forêt est étagée. On part des cimes (canopée), puis la strate moyenne, puis les herbes et fougères près du sol.",
+         "answers": [
+          {
+           "content": "Canopée"
+          },
+          {
+           "content": "Strate moyenne : arbustes et jeunes arbres"
+          },
+          {
+           "content": "Strate basse : herbes et fougères"
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque terme à sa description.",
+         "question_type": "matching",
+         "explanation": "Étape 2 — Décrire : chaque terme correspond à une description précise : la forêt est toujours verte, la mangrove a des palétuviers, la canopée est la strate la plus haute.",
+         "answers": [
+          {
+           "content": "Forêt dense humide",
+           "match": "Arbres hauts, feuillage toujours vert"
+          },
+          {
+           "content": "Mangrove",
+           "match": "Palétuviers aux racines en forme d'échasses"
+          },
+          {
+           "content": "Canopée",
+           "match": "Cime des grands arbres"
+          }
+         ]
+        },
+        {
+         "content": "La forêt dense humide se développe là où il fait chaud et où les pluies sont ___.",
+         "question_type": "select",
+         "explanation": "Étape 3 — Expliquer : la chaleur et les pluies abondantes expliquent la forêt dense humide.",
+         "answers": [
+          {
+           "content": "abondantes",
+           "correct": true
+          },
+          {
+           "content": "rares",
+           "correct": false
+          },
+          {
+           "content": "absentes",
+           "correct": false
+          },
+          {
+           "content": "limitées à un seul mois",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les arbres de la mangrove s'appellent les ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Étape 2 — Décrire : la mangrove est une forêt de palétuviers, qui poussent dans l'eau saumâtre.",
+         "answers": [
+          {
+           "content": "palétuviers",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "La mangrove se trouve au cœur de la forêt, loin du littoral.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Identifier : la mangrove est une végétation du littoral, au bord des lagunes et des estuaires, pas à l'intérieur des terres.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi la forêt sempervirente du sud est-elle verte toute l'année ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Expliquer : la forêt sempervirente reste verte parce que la chaleur est constante et que les pluies sont abondantes. Pourquoi pas la chute des feuilles en saison sèche : c'est ce qui arrive aux arbres de la savane. Pourquoi pas un sol riche : le sol ferrallitique est pauvre en minéraux. Pourquoi pas une seule pluie par an : le sud a deux saisons des pluies.",
+         "answers": [
+          {
+           "content": "Parce que la chaleur et l'humidité durent toute l'année",
+           "correct": true
+          },
+          {
+           "content": "Parce que les arbres perdent leurs feuilles seulement en saison sèche",
+           "correct": false
+          },
+          {
+           "content": "Parce que le sol est riche en minéraux",
+           "correct": false
+          },
+          {
+           "content": "Parce qu'il pleut une seule fois par an",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Les sols ferrallitiques et l'hydrographie",
+     "remember": "Les **sols ferrallitiques** du sud sont des sols **profonds**, de couleur **rouge ou jaune** (à cause du fer). Sous la chaleur et les pluies abondantes, l'eau **lessive** le sol : elle entraîne les éléments minéraux, qui deviennent rares. Ces sols sont donc **pauvres en éléments minéraux**. Leur fertilité vient de l'**humus**, formé par les feuilles mortes décomposées de la forêt. Sans forêt, le sol s'appauvrit et s'**érode**.\n\nLe sud a un **réseau hydrographique** dense. Les grands **fleuves** (**Cavally**, **Sassandra**, **Bandama**, **Comoé**) viennent du nord, certains de pays voisins, et coulent dans l'ensemble vers le sud jusqu'à l'océan ou aux lagunes. Leur débit est plus fort en saison des pluies. Au bord de l'océan, des **lagunes** (comme la lagune **Ébrié**, à Abidjan) sont séparées de la mer par un cordon de sable.",
+     "method": [
+      "Identifier l'élément étudié : un sol, un fleuve ou une lagune.",
+      "Décrire ses caractères : couleur, profondeur et fertilité pour un sol ; direction et débit pour un cours d'eau.",
+      "Expliquer son origine par le climat et la végétation."
+     ],
+     "example": {
+      "statement": "Présenter le sol rouge et profond d'une région forestière du sud, pauvre en éléments minéraux mais couvert d'une couche de feuilles décomposées.",
+      "steps": [
+       "Identifier : c'est un sol ferrallitique, le sol typique du sud.",
+       "Décrire : il est rouge et profond, pauvre en éléments minéraux ; seule sa couche d'humus le rend fertile.",
+       "Expliquer : la chaleur et les pluies abondantes lessivent le sol ; la forêt fournit l'humus avec ses feuilles mortes."
+      ]
+     },
+     "pitfall": "Ne pas croire que le sol de la forêt est riche par lui-même. Contre-exemple : un sol ferrallitique est pauvre en éléments minéraux ; c'est l'humus des feuilles mortes qui le rend fertile. Quand on coupe la forêt, l'humus disparaît, et le sol s'appauvrit puis s'érode.",
+     "figure": null,
+     "practice": {
+      "statement": "Tu t'entraînes à présenter un sol ou un cours d'eau avec la méthode : identifier, décrire, expliquer.",
+      "questions": [
+       {
+        "content": "Les sols rouges du sud sont des sols ___ (un mot).",
+        "question_type": "fill_blank",
+        "explanation": "Étape 1 — Identifier : le sol rouge, profond et lessivé du sud est le sol ferrallitique.",
+        "answers": [
+         {
+          "content": "ferrallitiques",
+          "correct": true
+         },
+         {
+          "content": "ferrallitique",
+          "correct": true
+         }
+        ],
+        "hint": "Il est riche en fer."
+       },
+       {
+        "content": "Quel est un fleuve de la Côte d'Ivoire ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Identifier : la Comoé est un fleuve ivoirien, comme le Bandama, le Sassandra et le Cavally. Le Congo, le Zambèze et le Nil sont des fleuves d'autres pays.",
+        "answers": [
+         {
+          "content": "La Comoé",
+          "correct": true
+         },
+         {
+          "content": "Le Congo",
+          "correct": false
+         },
+         {
+          "content": "Le Zambèze",
+          "correct": false
+         },
+         {
+          "content": "Le Nil",
+          "correct": false
+         }
+        ],
+        "hint": "Cherche un nom de fleuve ivoirien."
+       },
+       {
+        "content": "Les lagunes sont situées au bord de l'océan.",
+        "question_type": "true_false",
+        "explanation": "Étape 2 — Décrire : les lagunes sont des étendues d'eau calme séparées de l'océan par un cordon de sable, sur le littoral.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": true
+         },
+         {
+          "content": "Faux",
+          "correct": false
+         }
+        ],
+        "hint": "Pense à la lagune Ébrié."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Sols et cours d'eau du sud",
+       "statement": "Dans cet exercice, tu présentes des sols et des cours d'eau avec la méthode : identifier, décrire, expliquer.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Reprends les trois étapes : identifier, décrire, expliquer.",
+       "questions": [
+        {
+         "content": "Quelle est la couleur d'un sol ferrallitique ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Décrire : le sol ferrallitique est rouge ou jaune à cause du fer qu'il contient.",
+         "answers": [
+          {
+           "content": "Rouge ou jaune",
+           "correct": true
+          },
+          {
+           "content": "Noire",
+           "correct": false
+          },
+          {
+           "content": "Blanche",
+           "correct": false
+          },
+          {
+           "content": "Grise et sableuse",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les pluies abondantes lessivent les sols ferrallitiques.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Expliquer : les pluies entraînent les éléments minéraux hors du sol : c'est le lessivage.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quels sont deux fleuves de la Côte d'Ivoire qui traversent le milieu subéquatorial ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Identifier : le Sassandra et le Bandama coulent dans l'ensemble du nord vers le sud, à travers la forêt. Le Niger et le Nil ne sont pas ivoiriens.",
+         "answers": [
+          {
+           "content": "Le Sassandra",
+           "correct": true
+          },
+          {
+           "content": "Le Bandama",
+           "correct": true
+          },
+          {
+           "content": "Le Niger",
+           "correct": false
+          },
+          {
+           "content": "Le Nil",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une étendue d'eau calme séparée de l'océan par un cordon de sable est une ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Identifier : sur le littoral du sud, la lagune est séparée de l'océan par un cordon de sable.",
+         "answers": [
+          {
+           "content": "lagune",
+           "correct": true
+          },
+          {
+           "content": "lagunes",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Après la disparition de la forêt, que devient le sol ferrallitique ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Expliquer : l'humus venait de la forêt. Sans elle, le sol perd sa fertilité et les pluies l'érodent. Croire qu'il reste riche est l'erreur du piège.",
+         "answers": [
+          {
+           "content": "Il s'appauvrit et s'érode",
+           "correct": true
+          },
+          {
+           "content": "Il devient plus riche",
+           "correct": false
+          },
+          {
+           "content": "Il reste aussi fertile",
+           "correct": false
+          },
+          {
+           "content": "Il devient salé",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Sols, humus et lagunes",
+       "statement": "Dans cet exercice, tu mélanges plusieurs types de questions sur les sols et l'eau du sud.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Rappelle-toi : le sol est pauvre en minéraux, riche en humus grâce à la forêt.",
+       "questions": [
+        {
+         "content": "Relie chaque terme à sa définition.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Identifier : chaque terme désigne un élément précis du milieu. Les définitions de la fiche permettent de les relier.",
+         "answers": [
+          {
+           "content": "Sol ferrallitique",
+           "match": "Sol rouge ou jaune, profond et lessivé"
+          },
+          {
+           "content": "Humus",
+           "match": "Matière issue des feuilles mortes décomposées"
+          },
+          {
+           "content": "Lagune",
+           "match": "Eau calme séparée de l'océan par un cordon de sable"
+          },
+          {
+           "content": "Fleuve",
+           "match": "Grand cours d'eau qui va vers l'océan ou une lagune"
+          }
+         ]
+        },
+        {
+         "content": "Les fleuves Sassandra, Bandama et Comoé coulent, dans l'ensemble, du nord vers le ___.",
+         "question_type": "select",
+         "explanation": "Étape 2 — Décrire : les grands fleuves descendent dans l'ensemble du nord vers le sud, jusqu'à l'océan ou aux lagunes.",
+         "answers": [
+          {
+           "content": "sud",
+           "correct": true
+          },
+          {
+           "content": "nord",
+           "correct": false
+          },
+          {
+           "content": "nord-ouest",
+           "correct": false
+          },
+          {
+           "content": "centre",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La couche de feuilles mortes décomposées s'appelle l'___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Expliquer : l'humus est produit par la forêt et rend le sol fertile en surface.",
+         "answers": [
+          {
+           "content": "humus",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Le débit des fleuves est plus fort en saison des pluies.",
+         "question_type": "true_false",
+         "explanation": "Étape 2 — Décrire : en saison des pluies, les fleuves reçoivent plus d'eau, donc leur débit est plus fort.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelle lagune borde Abidjan ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Identifier : Abidjan est bâtie au bord de la lagune Ébrié. Les lagunes Aby et de Grand-Lahou sont d'autres lagunes du littoral ivoirien, loin d'Abidjan ; le lac de Kossou est un lac de barrage, pas une lagune du littoral.",
+         "answers": [
+          {
+           "content": "La lagune Ébrié",
+           "correct": true
+          },
+          {
+           "content": "La lagune Aby",
+           "correct": false
+          },
+          {
+           "content": "La lagune de Grand-Lahou",
+           "correct": false
+          },
+          {
+           "content": "Le lac de Kossou",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les étapes qui expliquent la fertilité du sol du sud.",
+         "question_type": "ordering",
+         "explanation": "Étape 3 — Expliquer : le climat permet la forêt ; la forêt donne des feuilles mortes ; celles-ci forment l'humus, qui rend le sol fertile en surface.",
+         "answers": [
+          {
+           "content": "Chaleur et pluies abondantes"
+          },
+          {
+           "content": "Forêt dense humide"
+          },
+          {
+           "content": "Feuilles mortes décomposées en humus"
+          },
+          {
+           "content": "Fertilité de la couche de surface du sol"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "La mise en valeur du milieu subéquatorial et ses problèmes",
+     "remember": "Le sud est la région la plus mise en valeur du pays. On y pratique des **cultures de rente**, destinées surtout à la vente et à l'exportation : **cacao**, **café**, **hévéa**, **palmier à huile**, banane, ananas. La Côte d'Ivoire est le **premier producteur mondial de cacao**. On y pratique aussi des **cultures vivrières**, destinées à nourrir les familles : **igname**, **manioc**, **banane plantain**. Le bois de la forêt est exploité et les ports d'**Abidjan** et de **San-Pédro** exportent les produits.\n\nCette mise en valeur pose le problème de la **déforestation**, c'est-à-dire le recul de la forêt. Ses **causes** : plantations, exploitation du bois, villes et routes. Ses **conséquences** : érosion et appauvrissement des sols, perte d'espèces animales et végétales. Des **solutions** : le **reboisement**, la protection des forêts classées et des parcs nationaux, l'agroforesterie (cultiver avec des arbres).",
+     "method": [
+      "Identifier l'activité humaine et le lieu où elle se pratique.",
+      "Montrer ses effets sur le milieu : la déforestation et ses conséquences.",
+      "Proposer une solution pour mieux protéger le milieu."
+     ],
+     "example": {
+      "statement": "Une plantation de cacao remplace une parcelle de forêt près de Soubré. Présenter cette mise en valeur, ses effets et une solution.",
+      "steps": [
+       "Identifier : c'est une culture de rente, le cacao, destinée à la vente et à l'exportation, pratiquée dans le sud.",
+       "Montrer les effets : la forêt a été coupée pour planter, c'est de la déforestation ; le sol à nu s'érode et des espèces disparaissent.",
+       "Proposer une solution : planter des arbres d'ombrage dans la plantation (agroforesterie) et reboiser les parcelles abîmées."
+      ]
+     },
+     "pitfall": "Ne pas croire que planter du cacao ne change rien à la forêt parce que le cacao est un arbre. Contre-exemple : pour créer la plantation, on a coupé la forêt naturelle et ses nombreuses espèces. C'est de la déforestation, même si l'on plante ensuite.",
+     "figure": "chaine-deforestation",
+     "practice": {
+      "statement": "Tu t'entraînes à présenter une mise en valeur et ses effets avec la méthode : identifier, montrer, proposer.",
+      "questions": [
+       {
+        "content": "Quelle culture est une culture de rente du sud ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Identifier : le café est une culture de rente, vendue surtout à l'exportation. L'igname et le manioc sont des cultures vivrières.",
+        "answers": [
+         {
+          "content": "Le café",
+          "correct": true
+         },
+         {
+          "content": "L'igname",
+          "correct": false
+         },
+         {
+          "content": "Le manioc",
+          "correct": false
+         },
+         {
+          "content": "Le riz de bas-fond",
+          "correct": false
+         }
+        ],
+        "hint": "Cherche la culture vendue à l'exportation."
+       },
+       {
+        "content": "La déforestation favorise l'érosion des sols.",
+        "question_type": "true_false",
+        "explanation": "Étape 2 — Montrer les effets : sans arbres, le sol n'est plus protégé et les pluies l'érodent.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": true
+         },
+         {
+          "content": "Faux",
+          "correct": false
+         }
+        ],
+        "hint": "Le sol à nu est exposé aux pluies."
+       },
+       {
+        "content": "Quelle action protège la forêt ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 3 — Proposer une solution : le reboisement remplace les arbres coupés. Ouvrir des plantations en forêt classée, planter du cacao en plein soleil à la place de la forêt ou exploiter le bois sans replanter aggravent la déforestation.",
+        "answers": [
+         {
+          "content": "Reboiser les parcelles",
+          "correct": true
+         },
+         {
+          "content": "Ouvrir de nouvelles plantations en forêt classée",
+          "correct": false
+         },
+         {
+          "content": "Planter du cacao en plein soleil à la place de la forêt",
+          "correct": false
+         },
+         {
+          "content": "Exploiter le bois sans replanter",
+          "correct": false
+         }
+        ],
+        "hint": "Pense à planter des arbres."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Cultures et déforestation",
+       "statement": "Dans cet exercice, tu présentes une mise en valeur du sud et ses effets avec la méthode : identifier, montrer, proposer.",
+       "exercise_type": "fixation",
+       "figure": "chaine-deforestation",
+       "hint": "Reprends les trois étapes : identifier, montrer, proposer.",
+       "questions": [
+        {
+         "content": "Quelles sont deux cultures de rente du sud ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Identifier : le cacao et l'hévéa sont des cultures de rente. L'igname et le manioc sont des cultures vivrières.",
+         "answers": [
+          {
+           "content": "Le cacao",
+           "correct": true
+          },
+          {
+           "content": "L'hévéa",
+           "correct": true
+          },
+          {
+           "content": "L'igname",
+           "correct": false
+          },
+          {
+           "content": "Le manioc",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les cultures de rente sont surtout destinées à la vente.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Identifier : une culture de rente est surtout vendue, souvent à l'exportation, alors qu'une culture vivrière nourrit les familles.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le recul de la forêt s'appelle la ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Étape 2 — Montrer les effets : le recul de la forêt, dû aux plantations, au bois et aux villes, est la déforestation.",
+         "answers": [
+          {
+           "content": "déforestation",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelle est une conséquence de la déforestation ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Montrer les effets : sans forêt, il y a moins d'humus, le sol s'érode et perd sa fertilité, et des espèces disparaissent.",
+         "answers": [
+          {
+           "content": "L'érosion et l'appauvrissement des sols",
+           "correct": true
+          },
+          {
+           "content": "Plus d'humus dans le sol",
+           "correct": false
+          },
+          {
+           "content": "Plus d'espèces animales",
+           "correct": false
+          },
+          {
+           "content": "Des sols plus fertiles",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un élève dit : « Planter du cacao ne change rien à la forêt, car le cacao est un arbre. » Que penser de cette phrase ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Montrer les effets : pour planter, on coupe d'abord la forêt naturelle, ce qui est de la déforestation. Étape 3 — Proposer une solution : l'agroforesterie limite ce problème.",
+         "answers": [
+          {
+           "content": "Elle est fausse : la forêt naturelle est coupée pour faire la plantation.",
+           "correct": true
+          },
+          {
+           "content": "Elle est vraie : un arbre remplace un arbre.",
+           "correct": false
+          },
+          {
+           "content": "Elle est vraie : le cacao pousse mieux sans forêt.",
+           "correct": false
+          },
+          {
+           "content": "Elle est fausse : le cacao est une culture vivrière.",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Rente, vivrier et reboisement",
+       "statement": "Dans cet exercice, tu mélanges plusieurs types de questions sur la mise en valeur et ses problèmes.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Rappelle-toi : cause, déforestation, conséquence, puis solution.",
+       "questions": [
+        {
+         "content": "Remets dans l'ordre cette chaîne de causes et de conséquences.",
+         "question_type": "ordering",
+         "explanation": "Étape 2 — Montrer les effets : les plantations et la coupe du bois font reculer la forêt ; le sol à nu est exposé aux pluies, puis il s'érode.",
+         "answers": [
+          {
+           "content": "Plantations et coupe du bois"
+          },
+          {
+           "content": "Recul de la forêt"
+          },
+          {
+           "content": "Sol à nu exposé aux pluies"
+          },
+          {
+           "content": "Érosion du sol"
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque terme à son exemple ou à sa définition.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Identifier : les cultures de rente se vendent, les cultures vivrières nourrissent les familles, et le reboisement est une solution (étape 3).",
+         "answers": [
+          {
+           "content": "Cultures de rente",
+           "match": "Cacao, café, hévéa"
+          },
+          {
+           "content": "Cultures vivrières",
+           "match": "Igname, manioc, banane plantain"
+          },
+          {
+           "content": "Reboisement",
+           "match": "Planter de nouveaux arbres"
+          }
+         ]
+        },
+        {
+         "content": "Planter des arbres là où la forêt a disparu s'appelle le ___.",
+         "question_type": "select",
+         "explanation": "Étape 3 — Proposer une solution : le reboisement remplace les arbres coupés et protège le sol.",
+         "answers": [
+          {
+           "content": "reboisement",
+           "correct": true
+          },
+          {
+           "content": "lessivage",
+           "correct": false
+          },
+          {
+           "content": "drainage",
+           "correct": false
+          },
+          {
+           "content": "labour",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le cacao est une culture de ___ (un mot : rente ou vivrière).",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Identifier : le cacao est surtout vendu à l'exportation, c'est donc une culture de rente.",
+         "answers": [
+          {
+           "content": "rente",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "La Côte d'Ivoire est le premier producteur mondial de cacao.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Identifier : le cacao, cultivé dans le sud forestier, est la grande culture de rente du pays ; la Côte d'Ivoire en est le premier producteur mondial.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelle action protège le mieux la forêt ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Proposer une solution : protéger les forêts classées et reboiser limitent la déforestation. Ouvrir des plantations en forêt classée, planter du cacao en plein soleil à la place de la forêt ou exploiter le bois sans replanter la renforcent.",
+         "answers": [
+          {
+           "content": "Protéger les forêts classées et reboiser",
+           "correct": true
+          },
+          {
+           "content": "Ouvrir de nouvelles plantations en forêt classée",
+           "correct": false
+          },
+          {
+           "content": "Planter du cacao en plein soleil à la place de la forêt",
+           "correct": false
+          },
+          {
+           "content": "Exploiter le bois sans replanter",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "title": "Une fiche sur le sud de la Côte d'Ivoire",
+     "statement": "Document (texte écrit pour Lnclass). Fiche d'un élève de Gagnoa : « Je vis dans le sud du pays, près de la forêt. Chez nous, il fait chaud toute l'année et il pleut beaucoup. Il y a deux saisons des pluies et deux saisons sèches. Le sol est rouge. Ma famille cultive le cacao. » Réponds aux questions.",
+     "exercise_type": "fixation",
+     "figure": null,
+     "hint": "Relis le texte : chaleur, pluies, sol, culture.",
+     "questions": [
+      {
+       "content": "Dans quel milieu vit l'élève qui écrit : « Je vis dans le sud, il fait chaud toute l'année, il pleut beaucoup, il y a deux saisons des pluies et deux saisons sèches » ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1) Situer : le sud du pays est le domaine du milieu subéquatorial. 2) Caractériser le climat : chaleur toute l'année, pluies abondantes, quatre saisons. 3) Conclure : c'est le milieu subéquatorial ; la savane est au nord. Pourquoi pas la mangrove : elle est sur le littoral, dans l'eau saumâtre, pas à l'intérieur.",
+       "answers": [
+        {
+         "content": "Le milieu subéquatorial",
+         "correct": true
+        },
+        {
+         "content": "La savane du nord",
+         "correct": false
+        },
+        {
+         "content": "Le milieu montagnard",
+         "correct": false
+        },
+        {
+         "content": "La mangrove du littoral",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Quels éléments de la fiche (chaleur, pluies, deux saisons des pluies, deux saisons sèches) sont typiques du climat subéquatorial ?",
+       "question_type": "multiple_correct_2",
+       "explanation": "Méthode : 1) Repérer les saisons : deux saisons des pluies et deux sèches. 2) Caractériser les températures : élevées toute l'année, sans hiver froid. 3) Caractériser les pluies : abondantes, donc pas rares.",
+       "answers": [
+        {
+         "content": "Une chaleur présente toute l'année",
+         "correct": true
+        },
+        {
+         "content": "Deux saisons des pluies et deux saisons sèches",
+         "correct": true
+        },
+        {
+         "content": "Un hiver froid",
+         "correct": false
+        },
+        {
+         "content": "Des pluies très rares",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Le sol rouge de la région de Gagnoa est un sol ___ (un mot).",
+       "question_type": "fill_blank",
+       "explanation": "Méthode : 1) Identifier le sol : rouge, profond, lessivé par les pluies. 2) Le nommer : c'est un sol ferrallitique, typique du sud.",
+       "answers": [
+        {
+         "content": "ferrallitique",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Le cacao, cultivé par la famille de l'élève, est une culture de rente.",
+       "question_type": "true_false",
+       "explanation": "Méthode : 1) Identifier l'activité : le cacao est cultivé pour être vendu. 2) Le classer : c'est une culture de rente, destinée surtout à l'exportation.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": true
+        },
+        {
+         "content": "Faux",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Quelle végétation naturelle entoure Gagnoa, ville du sud à l'intérieur des terres ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1) Identifier la situation : Gagnoa est à l'intérieur du sud, loin du littoral. 2) Décrire : chaleur et pluies abondantes donnent la forêt dense humide. 3) Écarter la mangrove, qui est au bord de l'eau salée, et la savane ou la forêt claire, qui sont dans le nord.",
+       "answers": [
+        {
+         "content": "La forêt dense humide",
+         "correct": true
+        },
+        {
+         "content": "La savane herbeuse",
+         "correct": false
+        },
+        {
+         "content": "La mangrove",
+         "correct": false
+        },
+        {
+         "content": "La forêt claire du nord",
+         "correct": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Lire le diagramme de la station A",
+     "statement": "Station A (relevé fictif). Températures moyennes (°C), de janvier à décembre : 27, 28, 28, 28, 27, 26, 25, 25, 25, 26, 27, 27. Précipitations (mm), dans le même ordre : 30, 50, 100, 140, 330, 500, 220, 40, 45, 140, 130, 50. Réponds aux questions.",
+     "exercise_type": "fixation",
+     "figure": "precipitations-station-a",
+     "hint": "Compare chaque mois à $2T$.",
+     "questions": [
+      {
+       "content": "Quel est le total annuel des précipitations de la station A ?",
+       "question_type": "numeric",
+       "tolerance": 0,
+       "explanation": "Méthode : 1) Lire les barres des précipitations. 2) Additionner les douze mois : $30 + 50 + 100 + 140 + 330 + 500$ puis $220 + 40 + 45 + 140 + 130 + 50$, soit $1775$ mm.",
+       "answers": [
+        {
+         "content": "1775",
+         "correct": true
+        }
+       ],
+       "unit": "mm"
+      },
+      {
+       "content": "Quel est le mois le plus pluvieux de la station A ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1) Lire les barres. 2) Repérer la plus grande valeur : 500 mm, en juin. Mai en a 330 et juillet 220.",
+       "answers": [
+        {
+         "content": "Juin",
+         "correct": true
+        },
+        {
+         "content": "Mai",
+         "correct": false
+        },
+        {
+         "content": "Juillet",
+         "correct": false
+        },
+        {
+         "content": "Octobre",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Quels sont deux mois secs de la station A ?",
+       "question_type": "multiple_correct_2",
+       "explanation": "Méthode : 1) Calculer le double de la température. 2) Comparer : décembre $50 < 54$ et août $40 < 50$ sont secs ; mai $330 > 54$ et juin $500 > 52$ ne le sont pas.",
+       "answers": [
+        {
+         "content": "Décembre",
+         "correct": true
+        },
+        {
+         "content": "Août",
+         "correct": true
+        },
+        {
+         "content": "Mai",
+         "correct": false
+        },
+        {
+         "content": "Juin",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Combien la station A compte-t-elle de mois secs (précipitations inférieures ou égales au double de la température) ?",
+       "question_type": "numeric",
+       "tolerance": 0,
+       "explanation": "Méthode : 1) Appliquer la règle $P \\le 2T$ à chaque mois. 2) Janvier ($30 < 54$), février ($50 < 56$), août ($40 < 50$), septembre ($45 < 50$) et décembre ($50 < 54$) sont secs : 5 mois.",
+       "answers": [
+        {
+         "content": "5",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Quel climat représente la station A ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1) Lire la courbe : températures élevées (25 à 28 °C), amplitude de 3 °C. 2) Lire les barres : 1 775 mm. 3) Repérer les mois secs : deux saisons sèches. 4) Conclure : c'est le climat subéquatorial. Pourquoi pas un climat de savane : il n'a qu'une saison des pluies, alors que la station en a deux.",
+       "answers": [
+        {
+         "content": "Le climat subéquatorial",
+         "correct": true
+        },
+        {
+         "content": "Un climat tempéré",
+         "correct": false
+        },
+        {
+         "content": "Un climat de savane, avec une seule saison des pluies",
+         "correct": false
+        },
+        {
+         "content": "Un climat de montagne",
+         "correct": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Une région du sud qui change",
+     "statement": "Document (texte écrit pour Lnclass). « Dans une région du sud, près d'un grand fleuve, la forêt dense couvrait autrefois tout le paysage. Aujourd'hui, de grandes plantations de cacao et de palmier à huile ont remplacé une grande partie des arbres. Le sol est rouge et pauvre en éléments minéraux ; les anciens disent qu'il donne moins de récoltes qu'avant. » Réponds aux questions.",
+     "exercise_type": "evaluation",
+     "figure": null,
+     "hint": "Pense à la forêt, à l'humus et à l'érosion.",
+     "questions": [
+      {
+       "content": "Quelle végétation couvrait autrefois la région décrite ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1) Identifier : région du sud, chaude et très pluvieuse. 2) Décrire : arbres hauts et serrés, forêt dense. 3) Conclure : forêt dense humide ; la mangrove est sur le littoral et la forêt claire dans le nord.",
+       "answers": [
+        {
+         "content": "La forêt dense humide",
+         "correct": true
+        },
+        {
+         "content": "La savane arborée",
+         "correct": false
+        },
+        {
+         "content": "La mangrove",
+         "correct": false
+        },
+        {
+         "content": "La forêt claire du nord",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Pourquoi le sol rouge de cette région est-il pauvre en éléments minéraux ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1) Identifier le sol : ferrallitique. 2) Expliquer : la chaleur et les pluies abondantes lessivent les éléments minéraux. Pourquoi pas un sol trop sec : le sud est très pluvieux. Pourquoi pas la mangrove ou l'eau salée : elles sont sur le littoral, pas dans cette région de forêt.",
+       "answers": [
+        {
+         "content": "Parce que les pluies abondantes lessivent le sol",
+         "correct": true
+        },
+        {
+         "content": "Parce que le sol est trop sec",
+         "correct": false
+        },
+        {
+         "content": "Parce que la mangrove a envahi la région",
+         "correct": false
+        },
+        {
+         "content": "Parce que le fleuve apporte trop d'eau salée",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "La couche d'humus formée par les feuilles mortes de la forêt rend le sol fertile en surface.",
+       "question_type": "true_false",
+       "explanation": "Méthode : 1) Identifier l'humus : feuilles mortes décomposées. 2) Expliquer : il apporte de la fertilité à un sol naturellement pauvre.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": true
+        },
+        {
+         "content": "Faux",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Quelles sont deux conséquences possibles de la disparition de la forêt ?",
+       "question_type": "multiple_correct_2",
+       "explanation": "Méthode : 1) Identifier la déforestation. 2) Montrer ses effets : le sol à nu s'érode et les espèces perdent leur milieu. Moins d'arbres signifie moins d'humus, pas plus.",
+       "answers": [
+        {
+         "content": "L'érosion des sols",
+         "correct": true
+        },
+        {
+         "content": "La perte d'espèces animales et végétales",
+         "correct": true
+        },
+        {
+         "content": "Plus d'humus dans le sol",
+         "correct": false
+        },
+        {
+         "content": "Une forêt plus dense",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Explique en trois phrases pourquoi le sol de cette région donne moins de récoltes qu'avant.",
+       "question_type": "written",
+       "points": 3,
+       "criteria": [
+        "Dit que la forêt a été coupée (1 point)",
+        "Explique la disparition de l'humus et l'érosion (1,5 point)",
+        "Relie cela à la fertilité du sol ferrallitique (0,5 point)"
+       ],
+       "explanation": "Corrigé modèle : « La forêt a été remplacée par des plantations : c'est de la déforestation. Sans les feuilles mortes de la forêt, il y a moins d'humus, et les pluies érodent le sol à nu. Le sol ferrallitique, naturellement pauvre en éléments minéraux, perd alors sa fertilité et donne moins de récoltes. » Points : 1 pour la déforestation, 1,5 pour l'humus et l'érosion, 0,5 pour le lien avec la fertilité.",
+       "answers": [],
+       "starter": "Autrefois, la forêt…"
+      }
+     ]
+    },
+    {
+     "title": "Bilan : le milieu subéquatorial et ses problèmes",
+     "statement": "Document (texte écrit pour Lnclass). « Dans le sud de la Côte d'Ivoire, on cultive le cacao, le café et l'hévéa, vendus à l'exportation par les ports d'Abidjan et de San-Pédro. Pour planter, on a coupé une grande partie de la forêt. Des associations plantent aujourd'hui des arbres pour protéger les sols et les espèces. » Réponds aux questions.",
+     "exercise_type": "evaluation",
+     "figure": "chaine-deforestation",
+     "hint": "Situe, décris, puis montre un problème et ses effets.",
+     "questions": [
+      {
+       "content": "Quelle cause de la déforestation le texte donne-t-il ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1) Repérer l'activité : plantations de cacao, de café et d'hévéa. 2) Montrer l'effet : on a coupé la forêt pour planter, c'est la déforestation. Pourquoi pas le lessivage ou les crues : ce sont des phénomènes naturels, pas une activité qui remplace la forêt.",
+       "answers": [
+        {
+         "content": "Les plantations qui remplacent la forêt",
+         "correct": true
+        },
+        {
+         "content": "Le manque de pluie",
+         "correct": false
+        },
+        {
+         "content": "Le lessivage des sols",
+         "correct": false
+        },
+        {
+         "content": "Les crues des fleuves",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Remets dans l'ordre ces étapes de la mise en valeur d'une parcelle du sud.",
+       "question_type": "ordering",
+       "explanation": "Méthode : 1) Identifier l'activité : on défriche d'abord la forêt, c'est-à-dire qu'on la coupe, pour pouvoir planter. 2) On plante les cacaoyers, puis on récolte les fèves, et la récolte est enfin exportée par les ports d'Abidjan ou de San-Pédro. Pourquoi pas récolter avant de planter : une récolte ne vient qu'après la plantation.",
+       "answers": [
+        {
+         "content": "Défricher une parcelle de forêt"
+        },
+        {
+         "content": "Planter des cacaoyers"
+        },
+        {
+         "content": "Récolter les fèves de cacao"
+        },
+        {
+         "content": "Exporter par le port d'Abidjan ou de San-Pédro"
+        }
+       ]
+      },
+      {
+       "content": "Le fait de planter de nouveaux arbres pour remplacer ceux qui ont été coupés s'appelle le ___ (un mot).",
+       "question_type": "fill_blank",
+       "explanation": "Méthode : 1) Identifier l'action décrite dans le texte. 2) La nommer : c'est le reboisement, une solution à la déforestation.",
+       "answers": [
+        {
+         "content": "reboisement",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Quelles sont deux cultures de rente citées dans le texte ?",
+       "question_type": "multiple_correct_2",
+       "explanation": "Méthode : 1) Repérer les cultures citées : cacao, café, hévéa. 2) Les classer : ce sont des cultures de rente, vendues à l'exportation. L'igname et le manioc ne sont pas dans le texte et sont vivrières.",
+       "answers": [
+        {
+         "content": "Le cacao",
+         "correct": true
+        },
+        {
+         "content": "Le café",
+         "correct": true
+        },
+        {
+         "content": "L'igname",
+         "correct": false
+        },
+        {
+         "content": "Le manioc",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Rédige un court paragraphe : présente le milieu subéquatorial (où il se trouve, son climat, sa végétation), puis un problème posé par sa mise en valeur.",
+       "question_type": "written",
+       "points": 6,
+       "criteria": [
+        "Situe le milieu : sud du pays, golfe de Guinée, limite avec la savane (1 point)",
+        "Décrit le climat : quatre saisons, chaleur, pluies abondantes (1,5 point)",
+        "Décrit la végétation : forêt dense humide, et mangrove sur le littoral (1,5 point)",
+        "Présente la déforestation et au moins une conséquence (1,5 point)",
+        "Rédige en phrases claires, avec un vocabulaire exact (0,5 point)"
+       ],
+       "explanation": "Corrigé modèle : « Le milieu subéquatorial occupe le sud de la Côte d'Ivoire, le long du golfe de Guinée, jusqu'à la savane. Son climat a quatre saisons, deux saisons des pluies et deux saisons sèches, avec des températures élevées et des pluies abondantes. Sa végétation est la forêt dense humide, étagée en strates, avec de la mangrove sur le littoral. Sa mise en valeur par les plantations provoque la déforestation, qui entraîne l'érosion des sols et la perte d'espèces. » Points : 1 pour la localisation, 1,5 pour le climat, 1,5 pour la végétation, 1,5 pour le problème, 0,5 pour la rédaction.",
+       "answers": [],
+       "starter": "Le milieu subéquatorial se trouve…"
+      }
+     ]
+    }
+   ],
+   "subjects": [
+    {
+     "title": "Sujet 1 · Les savoirs de base du milieu subéquatorial",
+     "notions": "Situer le milieu subéquatorial ; décrire son climat (saisons, températures, pluies) ; décrire sa végétation ; présenter les sols ferrallitiques et l'hydrographie.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Situer le milieu subéquatorial sur la carte de la Côte d'Ivoire.",
+       "exercise_type": "evaluation",
+       "figure": "carte-milieu-subequatorial",
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Dans quelle partie de la Côte d'Ivoire se trouve le milieu subéquatorial ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Situer avec les points cardinaux : on place le milieu sur la carte ; il occupe le sud du pays, le long du golfe de Guinée, car la forêt demande de la chaleur et des pluies abondantes. 2) Délimiter : il va de l'océan jusqu'à la savane, donc il s'étend aussi à l'intérieur (Gagnoa, Soubré). Pourquoi pas le nord : c'est le domaine de la savane, plus sèche. Pourquoi pas le littoral seulement : le milieu ne s'arrête pas à la côte.",
+         "answers": [
+          {
+           "content": "Le sud",
+           "correct": true
+          },
+          {
+           "content": "Le nord, en savane",
+           "correct": false
+          },
+          {
+           "content": "Le littoral seulement, sans l'intérieur",
+           "correct": false
+          },
+          {
+           "content": "Le centre, autour de Bouaké",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Korhogo est une ville du milieu subéquatorial.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Situer Korhogo : on la place sur la carte, elle est dans le nord du pays. 2) Délimiter : le nord est un milieu de savane, plus sec que la forêt, donc Korhogo n'est pas dans le milieu subéquatorial. Pourquoi pas Vrai : on confond une grande ville ivoirienne avec une ville du sud comme Soubré ; seule la position sur la carte permet de trancher.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Le milieu subéquatorial est le milieu de la forêt dense ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1) Identifier le milieu : c'est le milieu de forêt du sud, chaud et très pluvieux, donc humide toute l'année. 2) Le nommer : la forêt dense humide, dite ainsi parce que l'air et le sol y restent humides. Pourquoi pas « sèche » : les formations sèches, comme la savane, existent plus au nord, avec une longue saison sèche ; ce n'est pas le milieu subéquatorial.",
+         "answers": [
+          {
+           "content": "humide",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelles sont deux villes du milieu subéquatorial ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1) Citer des repères : Soubré est une ville de l'intérieur du sud, en forêt, et San-Pédro une ville du littoral ; les deux sont donc dans le milieu subéquatorial. 2) Vérifier la situation de chaque ville sur la carte. Pourquoi pas Korhogo et Odienné : ces villes sont dans le nord, en savane ; on les choisit à tort parce qu'elles sont aussi connues que les villes du sud.",
+         "answers": [
+          {
+           "content": "Soubré",
+           "correct": true
+          },
+          {
+           "content": "San-Pédro",
+           "correct": true
+          },
+          {
+           "content": "Korhogo",
+           "correct": false
+          },
+          {
+           "content": "Odienné",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Au nord, le milieu subéquatorial touche la ___.",
+         "question_type": "select",
+         "explanation": "Méthode : 1) Délimiter : on regarde ce qui borde le milieu au nord. 2) Plus on monte vers le nord, moins il pleut ; la forêt laisse alors la place à la savane. Pourquoi pas la mangrove : elle est sur le littoral, au sud. Pourquoi pas la forêt dense humide : c'est le milieu lui-même, pas son voisin. Pourquoi pas la lagune : c'est une étendue d'eau du littoral, pas une formation végétale.",
+         "answers": [
+          {
+           "content": "savane",
+           "correct": true
+          },
+          {
+           "content": "mangrove",
+           "correct": false
+          },
+          {
+           "content": "forêt dense humide",
+           "correct": false
+          },
+          {
+           "content": "lagune",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Décrire le climat du sud : saisons, températures et pluies.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Combien y a-t-il de saisons des pluies dans le sud ?",
+         "question_type": "numeric",
+         "tolerance": 0,
+         "explanation": "Méthode : 1) Repérer les saisons : on les compte et on les nomme. Il y a la grande saison des pluies et la petite saison des pluies, séparées par la petite saison sèche ; la grande saison sèche vient après. 2) On compte donc 2 saisons des pluies. Pourquoi pas 4 : le sud a 4 saisons en tout, mais seulement 2 sont des saisons des pluies, les 2 autres sont sèches.",
+         "answers": [
+          {
+           "content": "2",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans le sud, les températures sont élevées toute l'année.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Caractériser les températures : autour de 26 °C en moyenne dans le sud, avec une faible amplitude. 2) Aucun mois n'est froid, car le sud est proche de l'équateur par rapport au reste du pays. Pourquoi pas Faux : on confond la saison sèche, plus claire, avec une saison fraîche ; or la température reste élevée toute l'année.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Comment est l'amplitude thermique dans le sud ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Caractériser les températures : l'amplitude est l'écart entre le mois le plus chaud et le mois le plus froid. 2) Dans le sud, cet écart est de quelques degrés seulement : elle est faible toute l'année. Pourquoi pas forte : on pense aux hivers froids des pays tempérés. Pourquoi pas nulle : elle est faible, mais pas égale à zéro.",
+         "answers": [
+          {
+           "content": "Faible",
+           "correct": true
+          },
+          {
+           "content": "Forte, comme dans un pays tempéré",
+           "correct": false
+          },
+          {
+           "content": "Faible en saison sèche seulement",
+           "correct": false
+          },
+          {
+           "content": "Nulle : la température ne change jamais",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "L'air du sud est ___ (un mot) à cause de la chaleur et des pluies.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1) Caractériser les précipitations et l'humidité : le sud reçoit des pluies abondantes et il y fait chaud. 2) L'eau des pluies, des lagunes et de la forêt s'évapore et charge l'air de vapeur d'eau : l'air est humide. Pourquoi pas « sec » : on confond le sud avec le nord, où la saison sèche est longue et où l'air est plus sec.",
+         "answers": [
+          {
+           "content": "humide",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Remets les saisons dans l'ordre, à partir de mars-avril.",
+         "question_type": "ordering",
+         "explanation": "Méthode : 1) Repérer les saisons : on les nomme dans l'ordre à partir de mars-avril. 2) La grande saison des pluies (mars-avril à juillet) vient d'abord, puis la petite saison sèche (août-septembre), la petite saison des pluies (octobre-novembre) et la grande saison sèche (décembre à février). Pourquoi pas mettre la petite saison sèche en dernier : on confond la petite et la grande saison sèche.",
+         "answers": [
+          {
+           "content": "Grande saison des pluies"
+          },
+          {
+           "content": "Petite saison sèche"
+          },
+          {
+           "content": "Petite saison des pluies"
+          },
+          {
+           "content": "Grande saison sèche"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Décrire la végétation du sud.",
+       "exercise_type": "evaluation",
+       "figure": "etagement-foret",
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Quelle strate de la forêt est la plus proche du sol ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Décrire la structure : la forêt est étagée en trois strates, de haut en bas la canopée, la strate moyenne et la strate basse. 2) La strate basse, faite d'herbes et de fougères, est près du sol. Pourquoi pas la canopée ou la cime des grands arbres : c'est le niveau le plus haut, c'est l'inverse de ce qui est demandé.",
+         "answers": [
+          {
+           "content": "La strate basse",
+           "correct": true
+          },
+          {
+           "content": "La canopée",
+           "correct": false
+          },
+          {
+           "content": "La strate moyenne",
+           "correct": false
+          },
+          {
+           "content": "La cime des grands arbres",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La mangrove est une forêt de palétuviers.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Identifier la mangrove : c'est la végétation du littoral, qui pousse dans l'eau salée ou saumâtre. 2) Décrire : ses arbres sont des palétuviers, aux racines en forme d'échasses, donc l'énoncé est vrai. Pourquoi pas Faux : on la confond avec la forêt dense humide de l'intérieur, qui pousse sur un sol ferme.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une forêt dont les arbres restent verts toute l'année est dite ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1) Décrire le feuillage : près de la côte, les arbres de la forêt du sud restent verts toute l'année. 2) Une forêt dont les arbres sont toujours verts est dite sempervirente, grâce à la chaleur et à l'humidité de toute l'année. Pourquoi pas « décidue » : une forêt décidue perd ses feuilles en saison sèche, ce qui est le cas de beaucoup d'arbres de la savane ; plus au nord, la forêt semi-décidue n'en perd qu'une partie.",
+         "answers": [
+          {
+           "content": "sempervirente",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelle végétation pousse dans l'eau saumâtre des lagunes ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Identifier d'après la situation : l'eau saumâtre des lagunes est au bord de la mer. 2) La végétation qui y pousse est la mangrove, faite de palétuviers. Pourquoi pas la forêt dense humide : elle pousse à l'intérieur, sur sol ferme. Pourquoi pas la savane arborée ou la forêt claire : ce sont des milieux du nord, loin des lagunes.",
+         "answers": [
+          {
+           "content": "La mangrove",
+           "correct": true
+          },
+          {
+           "content": "La forêt dense humide",
+           "correct": false
+          },
+          {
+           "content": "La savane arborée",
+           "correct": false
+          },
+          {
+           "content": "La forêt claire du nord",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quels sont deux éléments de la forêt dense humide ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1) Décrire la structure de la forêt dense humide. 2) Elle a une canopée, formée par la cime des grands arbres, et des lianes qui montent vers la lumière. Pourquoi pas les herbes hautes de la savane : elles appartiennent à un autre milieu, plus sec. Pourquoi pas les palétuviers : ce sont les arbres de la mangrove, sur le littoral, pas de la forêt de l'intérieur.",
+         "answers": [
+          {
+           "content": "La canopée",
+           "correct": true
+          },
+          {
+           "content": "Les lianes",
+           "correct": true
+          },
+          {
+           "content": "Les herbes hautes de la savane",
+           "correct": false
+          },
+          {
+           "content": "Les palétuviers de la mangrove",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Présenter les sols et l'eau du sud.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Quelle est la couleur d'un sol ferrallitique ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Identifier le sol : c'est le sol ferrallitique du sud. 2) Le décrire : il est rouge ou jaune à cause du fer qu'il contient, après le lessivage par les pluies. Pourquoi pas noire : on pense à un sol riche en humus, mais l'humus ne forme qu'une mince couche en surface, le sol reste rouge en profondeur.",
+         "answers": [
+          {
+           "content": "Rouge ou jaune",
+           "correct": true
+          },
+          {
+           "content": "Noire, comme un sol riche en humus",
+           "correct": false
+          },
+          {
+           "content": "Blanche, comme le sable du littoral",
+           "correct": false
+          },
+          {
+           "content": "Grise, comme un sol de savane",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "L'humus est formé par les feuilles mortes décomposées.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Identifier l'humus : c'est la matière formée par les feuilles mortes décomposées. 2) Expliquer : il vient de la forêt et rend fertile la couche de surface du sol. Donc l'énoncé est vrai. Pourquoi pas Faux : on croit que le sol est riche par lui-même ; en réalité, c'est l'humus qui apporte la fertilité à un sol pauvre en éléments minéraux.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quels sont deux fleuves ivoiriens ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1) Identifier les cours d'eau : le Cavally et la Comoé sont des fleuves ivoiriens, qui descendent dans l'ensemble du nord vers le sud. 2) Les distinguer des lagunes. Pourquoi pas la lagune Ébrié ou la lagune Aby : ce sont des lagunes, c'est-à-dire des étendues d'eau calme au bord de l'océan, séparées de la mer par un cordon de sable, et non des fleuves.",
+         "answers": [
+          {
+           "content": "Le Cavally",
+           "correct": true
+          },
+          {
+           "content": "La Comoé",
+           "correct": true
+          },
+          {
+           "content": "La lagune Ébrié",
+           "correct": false
+          },
+          {
+           "content": "La lagune Aby",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "L'entraînement des éléments minéraux du sol par l'eau s'appelle le ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1) Décrire le phénomène : l'eau des pluies traverse le sol et emporte les éléments minéraux. 2) Expliquer : cette perte s'appelle le lessivage ; elle explique pourquoi les sols ferrallitiques du sud sont pauvres en éléments minéraux. Pourquoi pas l'érosion : elle emporte le sol lui-même, en surface, alors que le lessivage emporte les éléments minéraux.",
+         "answers": [
+          {
+           "content": "lessivage",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque terme à sa définition.",
+         "question_type": "matching",
+         "explanation": "Méthode : 1) Identifier chaque élément : la lagune, le fleuve et l'humus. 2) Les relier à leur définition de la fiche : la lagune est une eau calme au bord de l'océan, le fleuve un grand cours d'eau, l'humus une matière issue des feuilles mortes. Pourquoi pas lagune avec fleuve : l'élève confond les deux ; le fleuve coule vers l'océan, la lagune est séparée de l'océan par un cordon de sable.",
+         "answers": [
+          {
+           "content": "Lagune",
+           "match": "Eau calme séparée de l'océan par un cordon de sable"
+          },
+          {
+           "content": "Fleuve",
+           "match": "Grand cours d'eau qui va vers l'océan ou une lagune"
+          },
+          {
+           "content": "Humus",
+           "match": "Matière issue des feuilles mortes décomposées"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Sujet 2 · Le milieu subéquatorial dans la vie courante en Côte d'Ivoire",
+     "notions": "Cultures de rente et cultures vivrières près de Soubré ; saisons et pluies à Abidjan ; lagune et mangrove ; déforestation et reboisement autour d'un collège.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Situation d'exemple : M. Koné est planteur près de Soubré. Il cultive du cacao et du café pour les vendre, et de l'igname et du manioc pour nourrir sa famille.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Quelles sont les deux cultures de rente de M. Koné, qui cultive aussi de l'igname et du manioc ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1) Identifier les cultures vendues : M. Koné vend son cacao et son café. 2) Les classer : ce sont des cultures de rente, destinées à la vente et à l'exportation. Pourquoi pas l'igname et le manioc : il les cultive pour nourrir sa famille ; ce sont des cultures vivrières, et non de rente.",
+         "answers": [
+          {
+           "content": "Le cacao",
+           "correct": true
+          },
+          {
+           "content": "Le café",
+           "correct": true
+          },
+          {
+           "content": "L'igname",
+           "correct": false
+          },
+          {
+           "content": "Le manioc",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi l'igname est-elle une culture vivrière ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Identifier l'usage de l'igname : elle sert surtout à nourrir la famille du planteur. 2) La classer : une culture destinée à nourrir est une culture vivrière. Pourquoi pas « vendue à l'exportation » : c'est la définition d'une culture de rente, comme le cacao, qu'on confond avec une culture vivrière.",
+         "answers": [
+          {
+           "content": "Parce qu'elle sert surtout à nourrir la famille",
+           "correct": true
+          },
+          {
+           "content": "Parce qu'elle est vendue surtout à l'exportation",
+           "correct": false
+          },
+          {
+           "content": "Parce qu'elle ne pousse que dans la savane",
+           "correct": false
+          },
+          {
+           "content": "Parce qu'elle est une culture du littoral",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Soubré se trouve dans le milieu subéquatorial.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Situer Soubré : elle est dans l'intérieur du sud, entre le littoral et la savane. 2) Cette zone est celle de la forêt dense humide : Soubré est dans le milieu subéquatorial, donc l'énoncé est vrai. Pourquoi pas Faux : on prend Soubré pour une ville du nord, alors qu'elle est bien dans le sud forestier.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi le cacao pousse-t-il bien près de Soubré ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Identifier le climat : près de Soubré, le climat est subéquatorial. 2) Expliquer : la chaleur et les pluies abondantes conviennent au cacao, qui a besoin d'humidité. Pourquoi pas un climat sec : c'est celui du nord. Pourquoi pas un sol riche : le sol ferrallitique est pauvre en minéraux, seul l'humus lui apporte de la fertilité.",
+         "answers": [
+          {
+           "content": "Parce qu'il y fait chaud et qu'il y pleut beaucoup",
+           "correct": true
+          },
+          {
+           "content": "Parce que le climat y est sec, avec une longue saison sèche",
+           "correct": false
+          },
+          {
+           "content": "Parce que le sol y est blanc et sableux",
+           "correct": false
+          },
+          {
+           "content": "Parce que le sol y est riche en éléments minéraux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le cacao et le café sont des cultures de ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1) Identifier l'usage : le cacao et le café sont vendus, surtout à l'exportation. 2) Les nommer : ce sont des cultures de rente. Pourquoi pas « vivrières » : les cultures vivrières nourrissent les familles, comme l'igname ou le manioc ; on les confond parce que toutes sont des cultures du sud.",
+         "answers": [
+          {
+           "content": "rente",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Situation d'exemple : à Abidjan, Aya note que juin est le mois le plus pluvieux. Dans un relevé fictif, juin a 500 mm, juillet 220 mm et août 40 mm.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Quelle est la différence de précipitations, en mm, entre juin (500 mm) et juillet (220 mm) ?",
+         "question_type": "numeric",
+         "tolerance": 0,
+         "explanation": "Méthode : 1) Lire les barres : juin vaut 500 mm et juillet 220 mm. 2) Calculer l'écart : $500 - 220 = 280$ mm. Il pleut donc bien plus en juin, au cœur de la grande saison des pluies. Pourquoi pas 720 : on additionne les deux mois au lieu de les soustraire, alors que la question demande une différence.",
+         "answers": [
+          {
+           "content": "280",
+           "correct": true
+          }
+         ],
+         "unit": "mm"
+        },
+        {
+         "content": "À quelle saison correspond le mois de juin ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Repérer les saisons : juin est le mois le plus pluvieux, avec 500 mm. 2) Il se situe dans la grande saison des pluies, de mars-avril à juillet. Pourquoi pas la petite saison des pluies : elle a lieu en octobre-novembre, et ses pluies sont moins abondantes ; on confond la grande et la petite saison.",
+         "answers": [
+          {
+           "content": "La grande saison des pluies",
+           "correct": true
+          },
+          {
+           "content": "La grande saison sèche",
+           "correct": false
+          },
+          {
+           "content": "La petite saison sèche",
+           "correct": false
+          },
+          {
+           "content": "La petite saison des pluies",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Août (25 °C, 40 mm) est un mois sec.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Calculer le double de la température d'août : $2 \\times 25 = 50$ mm. 2) Comparer : août reçoit 40 mm, et $40 < 50$, donc le mois est sec. L'énoncé est vrai. Pourquoi pas Faux : on compare 40 à 25, la température seule, au lieu de la comparer à 50 ; c'est un mois sec mal compté.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Août fait partie de la petite saison ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1) Repérer les saisons : août est un mois de faibles pluies, entre la grande saison des pluies et la petite saison des pluies. 2) Août et septembre forment la petite saison sèche. Pourquoi pas « pluies » : la petite saison des pluies vient en octobre-novembre, pas en août ; on confond la saison sèche et la saison des pluies.",
+         "answers": [
+          {
+           "content": "sèche",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi le débit des cours d'eau du sud augmente-t-il pendant la saison des pluies ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Repérer la saison : en saison des pluies, il tombe beaucoup d'eau sur le sud. 2) Expliquer : les pluies abondantes alimentent les cours d'eau, dont le débit augmente ; pour les grands fleuves, le maximum peut venir un peu après les pluies. Pourquoi pas la saison sèche : les pluies sont alors faibles et le débit baisse. Pourquoi pas la température : elle varie peu et n'explique pas le débit.",
+         "answers": [
+          {
+           "content": "Parce que les pluies abondantes alimentent les cours d'eau",
+           "correct": true
+          },
+          {
+           "content": "Parce que la saison est sèche et que l'eau s'accumule",
+           "correct": false
+          },
+          {
+           "content": "Parce que la température est plus élevée qu'en février",
+           "correct": false
+          },
+          {
+           "content": "Parce que la lagune se vide dans le fleuve",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Situation d'exemple : Yao est pêcheur sur la lagune Ébrié, près d'Abidjan. Sur les rives, il voit des arbres aux racines en forme d'échasses.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Quelle végétation Yao voit-il sur les rives ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Identifier d'après la situation : Yao est sur les rives d'une lagune, au bord de la mer. 2) Décrire : des arbres aux racines en forme d'échasses sont des palétuviers, donc la mangrove. Pourquoi pas la forêt dense humide : elle pousse à l'intérieur, sur sol ferme. Pourquoi pas la savane ou la forêt claire : ce sont des milieux du nord.",
+         "answers": [
+          {
+           "content": "La mangrove",
+           "correct": true
+          },
+          {
+           "content": "La forêt dense humide",
+           "correct": false
+          },
+          {
+           "content": "La savane arborée",
+           "correct": false
+          },
+          {
+           "content": "La forêt claire",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une lagune est séparée de l'océan par un cordon de sable.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Identifier la lagune : c'est une étendue d'eau calme du littoral. 2) Décrire : elle est séparée de l'océan par un cordon de sable, donc l'énoncé est vrai. Pourquoi pas Faux : on confond la lagune avec un fleuve, qui coule jusqu'à l'océan ou jusqu'à une lagune sans en être séparé de cette manière.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les arbres de la mangrove sont des ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1) Identifier la mangrove : c'est la forêt des rives des lagunes. 2) Nommer ses arbres : ce sont des palétuviers, aux racines en forme d'échasses. Pourquoi pas « lianes » : les lianes grimpent dans la forêt dense humide de l'intérieur, ce n'est pas l'arbre de la mangrove ; on confond les deux formations.",
+         "answers": [
+          {
+           "content": "palétuviers",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Où est située Abidjan ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Situer Abidjan avec les points cardinaux : elle est dans le sud du pays. 2) Elle est bâtie sur le littoral, au bord de la lagune Ébrié. Pourquoi pas au nord : c'est le domaine de la savane. Pourquoi pas l'intérieur au bord d'un fleuve : Abidjan est près de la mer, pas loin d'elle, sur une lagune et non sur un fleuve.",
+         "answers": [
+          {
+           "content": "Sur le littoral, au bord de la lagune Ébrié",
+           "correct": true
+          },
+          {
+           "content": "Au nord, en savane",
+           "correct": false
+          },
+          {
+           "content": "Dans l'intérieur, au bord d'un fleuve, loin de la mer",
+           "correct": false
+          },
+          {
+           "content": "Au pied des montagnes de l'ouest",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Abidjan est dans le milieu subéquatorial.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Situer Abidjan : elle est sur le littoral du sud. 2) Cette zone appartient au milieu subéquatorial : forêt dense humide à l'intérieur et mangrove sur le littoral, donc l'énoncé est vrai. Pourquoi pas Faux : on croit que le milieu subéquatorial n'est que dans l'intérieur ; or il commence à la côte.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Situation d'exemple : le club environnement du collège de Gagnoa plante des arbres autour du terrain de sport, là où la forêt a disparu.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Comment s'appelle l'action de planter des arbres là où la forêt a disparu ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Identifier l'action : on plante des arbres là où la forêt a disparu. 2) La nommer : c'est le reboisement, une solution à la déforestation. Pourquoi pas la déforestation : c'est le contraire, le recul de la forêt. Pourquoi pas le lessivage : c'est l'entraînement des minéraux par l'eau, sans rapport avec la plantation d'arbres.",
+         "answers": [
+          {
+           "content": "Le reboisement",
+           "correct": true
+          },
+          {
+           "content": "Le lessivage",
+           "correct": false
+          },
+          {
+           "content": "La déforestation",
+           "correct": false
+          },
+          {
+           "content": "Le drainage",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Reboiser protège le sol de l'érosion.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Montrer les effets : les racines et les feuillages des arbres protègent le sol contre les pluies. 2) Proposer une solution : en replantant, on limite l'érosion, donc l'énoncé est vrai. Pourquoi pas Faux : on croit que les arbres n'ont aucun effet sur le sol, alors que leur disparition est une cause d'érosion.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles sont deux causes de la déforestation ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1) Identifier les causes humaines du recul de la forêt. 2) Les plantations et l'exploitation du bois coupent les arbres, donc ce sont des causes de la déforestation. Pourquoi pas les pluies abondantes ou le lessivage : ce sont des phénomènes naturels du milieu, qui appauvrissent le sol mais ne font pas reculer la forêt.",
+         "answers": [
+          {
+           "content": "Les plantations",
+           "correct": true
+          },
+          {
+           "content": "L'exploitation du bois",
+           "correct": true
+          },
+          {
+           "content": "Les pluies abondantes",
+           "correct": false
+          },
+          {
+           "content": "Le lessivage des sols",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelle est une conséquence de la déforestation ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Montrer les effets : quand la forêt recule, les espèces perdent leur milieu. 2) La perte d'espèces animales et végétales en est une conséquence. Pourquoi pas plus d'humus ou des sols plus fertiles : sans arbres, il y a moins de feuilles mortes, donc moins d'humus et des sols moins fertiles ; c'est l'inverse de ces propositions.",
+         "answers": [
+          {
+           "content": "La perte d'espèces animales et végétales",
+           "correct": true
+          },
+          {
+           "content": "Plus d'humus",
+           "correct": false
+          },
+          {
+           "content": "Des sols plus fertiles",
+           "correct": false
+          },
+          {
+           "content": "Une forêt plus étagée",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le recul de la forêt s'appelle la ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1) Identifier le phénomène : la forêt recule à cause des plantations, du bois et des villes. 2) Le nommer : c'est la déforestation. Pourquoi pas « reboisement » : c'est l'action contraire, planter de nouveaux arbres ; on confond le problème et sa solution.",
+         "answers": [
+          {
+           "content": "déforestation",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Sujet 3 · Raisonner et justifier",
+     "notions": "Lire un diagramme ombrothermique et appliquer la règle des mois secs ; comparer deux stations ; relier climat, végétation et sol ; analyser les causes, les conséquences et les solutions de la déforestation.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Station C (relevé fictif). Températures moyennes (°C), de janvier à décembre : 27, 28, 28, 28, 27, 26, 25, 24, 25, 26, 27, 27. Précipitations (mm), dans le même ordre : 20, 45, 120, 150, 300, 480, 200, 30, 45, 150, 140, 40. Réponds aux questions.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Quel est le total annuel des précipitations de la station C ?",
+         "question_type": "numeric",
+         "tolerance": 0,
+         "explanation": "Méthode : 1) Lire les barres des précipitations de la station C. 2) Additionner les douze mois : $20 + 45 + 120 + 150 + 300 + 480$ donne 1115, puis $200 + 30 + 45 + 150 + 140 + 40$ donne 605, soit 1720 mm. Pourquoi pas 1775 : c'est le total de la station A ; on mélange les deux relevés.",
+         "answers": [
+          {
+           "content": "1720",
+           "correct": true
+          }
+         ],
+         "unit": "mm"
+        },
+        {
+         "content": "Quelle est l'amplitude thermique de la station C ?",
+         "question_type": "numeric",
+         "tolerance": 0,
+         "explanation": "Méthode : 1) Lire la courbe des températures : le mois le plus chaud est à 28 °C, le plus froid à 24 °C. 2) Calculer l'amplitude : $28 - 24 = 4$ °C. Pourquoi pas 3 : c'est l'amplitude de la station A (28 et 25) ; on reprend la valeur de la mauvaise station.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ],
+         "unit": "°C"
+        },
+        {
+         "content": "Combien la station C compte-t-elle de mois secs ?",
+         "question_type": "numeric",
+         "tolerance": 0,
+         "explanation": "Méthode : 1) Appliquer la règle $P \\le 2T$ à chaque mois. 2) Janvier : $20 < 54$ ; février : $45 < 56$ ; août : $30 < 48$ ; septembre : $45 < 50$ ; décembre : $40 < 54$. Cela fait 5 mois secs. Pourquoi pas 3 ou 4 : on oublie les mois proches de la limite, comme février ou septembre, ou on compte seulement la grande saison sèche.",
+         "answers": [
+          {
+           "content": "5",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Septembre (25 °C, 45 mm) est un mois sec à la station C.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Calculer le double de la température de septembre : $2 \\times 25 = 50$ mm. 2) Comparer : $45 < 50$, donc septembre est sec. L'énoncé est vrai. Pourquoi pas Faux : on compare 45 à 25, la température seule, ou on pense que septembre est déjà un mois de pluie ; c'est un mois sec mal compté.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quel climat représente la station C ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Lire la courbe : températures élevées et amplitude de 4 °C. 2) Lire les barres : 1 720 mm. 3) Repérer les mois secs : deux saisons sèches. 4) Conclure : climat subéquatorial. Pourquoi pas un climat de savane : il n'a qu'une saison des pluies. Pourquoi pas un climat de montagne : la station est dans le sud, avec des températures élevées toute l'année.",
+         "answers": [
+          {
+           "content": "Le climat subéquatorial",
+           "correct": true
+          },
+          {
+           "content": "Un climat de savane, avec une seule saison des pluies",
+           "correct": false
+          },
+          {
+           "content": "Un climat de montagne",
+           "correct": false
+          },
+          {
+           "content": "Un climat tempéré",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Deux stations du sud, aux relevés fictifs. Station A : 1 775 mm de pluie par an et une amplitude thermique de 3 °C. Station C : 1 720 mm de pluie par an et une amplitude thermique de 4 °C.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Quelle station reçoit le plus de pluie, A (1 775 mm) ou C (1 720 mm) ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Lire les totaux annuels : 1 775 mm pour la station A, 1 720 mm pour la station C. 2) Comparer les deux nombres : 1 775 est supérieur à 1 720, donc A est plus pluvieuse. Pourquoi pas la station C : on a l'impression que 1 720 est plus grand parce qu'il paraît plus rond. Pourquoi pas « autant » : l'écart est de 55 mm.",
+         "answers": [
+          {
+           "content": "La station A",
+           "correct": true
+          },
+          {
+           "content": "La station C",
+           "correct": false
+          },
+          {
+           "content": "Elles reçoivent autant",
+           "correct": false
+          },
+          {
+           "content": "On ne peut pas savoir",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelle est la différence entre les totaux annuels de la station A (1 775 mm) et de la station C (1 720 mm) ?",
+         "question_type": "numeric",
+         "tolerance": 0,
+         "explanation": "Méthode : 1) Lire les deux totaux : 1 775 mm et 1 720 mm. 2) Calculer la différence : $1775 - 1720 = 55$ mm. Pourquoi pas 3495 : on additionne au lieu de soustraire. Pourquoi pas 5 : on ne soustrait que les chiffres des unités (5 et 0) en oubliant les dizaines et les centaines.",
+         "answers": [
+          {
+           "content": "55",
+           "correct": true
+          }
+         ],
+         "unit": "mm"
+        },
+        {
+         "content": "Les deux stations ont la même amplitude thermique (3 °C et 4 °C).",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Lire les amplitudes : 3 °C pour A, 4 °C pour C. 2) Comparer : 3 n'est pas égal à 4, donc les amplitudes sont différentes, mais elles restent faibles toutes les deux. Pourquoi pas Vrai : on confond « proches » et « égales » ; une amplitude de 3 °C n'est pas une amplitude de 4 °C.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quels sont deux points communs entre ces deux stations du sud ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1) Comparer les caractères des deux stations du sud. 2) Les deux ont des températures élevées toute l'année et des pluies abondantes (plus de 1 700 mm). Pourquoi pas un hiver froid : aucun mois n'est frais dans le sud. Pourquoi pas une seule saison des pluies : le sud en a deux, ce qui le distingue de la savane.",
+         "answers": [
+          {
+           "content": "Des températures élevées",
+           "correct": true
+          },
+          {
+           "content": "Des pluies abondantes",
+           "correct": true
+          },
+          {
+           "content": "Un hiver froid",
+           "correct": false
+          },
+          {
+           "content": "Une seule saison des pluies",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les deux stations sont dans le sud. Quel climat ont-elles en commun ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Comparer les températures : élevées et peu variables dans les deux stations. 2) Comparer les pluies : abondantes. 3) Conclure : c'est le climat subéquatorial. Pourquoi pas le climat de la savane du nord : il est plus sec et n'a qu'une saison des pluies. Pourquoi pas tempéré ou de montagne : les températures restent élevées toute l'année.",
+         "answers": [
+          {
+           "content": "Le climat subéquatorial",
+           "correct": true
+          },
+          {
+           "content": "Le climat de la savane du nord",
+           "correct": false
+          },
+          {
+           "content": "Le climat tempéré",
+           "correct": false
+          },
+          {
+           "content": "Le climat de montagne",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Relie le climat, la végétation et le sol du sud pour raisonner sur leurs liens.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Remets dans l'ordre cette chaîne d'explication.",
+         "question_type": "ordering",
+         "explanation": "Méthode : 1) Partir du climat : la chaleur et les pluies abondantes. 2) Ils permettent la forêt dense humide. 3) La forêt laisse tomber ses feuilles mortes, qui forment l'humus. 4) L'humus rend le sol fertile en surface. Pourquoi pas mettre le sol avant la forêt : le sol est pauvre en minéraux ; sa fertilité vient de la forêt, pas l'inverse.",
+         "answers": [
+          {
+           "content": "Chaleur et pluies abondantes"
+          },
+          {
+           "content": "Forêt dense humide"
+          },
+          {
+           "content": "Feuilles mortes qui forment l'humus"
+          },
+          {
+           "content": "Sol fertile en surface"
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi la forêt sempervirente du sud reste-t-elle verte toute l'année ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Identifier la forêt sempervirente, c'est-à-dire toujours verte. 2) Expliquer par le climat : chaleur et humidité durent toute l'année. Pourquoi pas la chute de toutes les feuilles en saison sèche : c'est ce qui arrive à beaucoup d'arbres de la savane, et un arbre sans feuilles n'est pas vert. Pourquoi pas un sol riche : le sol ferrallitique est pauvre en éléments minéraux. Pourquoi pas des pluies rares : le sud reçoit des pluies abondantes.",
+         "answers": [
+          {
+           "content": "Parce que la chaleur et l'humidité durent toute l'année",
+           "correct": true
+          },
+          {
+           "content": "Parce que ses arbres perdent toutes leurs feuilles en saison sèche",
+           "correct": false
+          },
+          {
+           "content": "Parce que le sol est riche en éléments minéraux",
+           "correct": false
+          },
+          {
+           "content": "Parce que les pluies sont rares mais régulières",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le sol ferrallitique est naturellement riche en éléments minéraux.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Identifier le sol : c'est le sol ferrallitique. 2) Expliquer : les pluies abondantes lessivent les éléments minéraux, donc il est pauvre. Seul l'humus de la forêt le rend fertile en surface. Pourquoi pas Vrai : on confond la fertilité de la forêt, due à l'humus, avec la richesse du sol lui-même.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi le sol s'appauvrit-il quand on coupe la forêt ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Identifier la déforestation. 2) Expliquer : sans arbres, il n'y a plus de feuilles mortes ni d'humus, et la pluie érode le sol à nu. Pourquoi pas l'arrêt des pluies : elles continuent de tomber. Pourquoi pas des pluies qui enrichissent : au contraire, elles lessivent et érodent. Pourquoi pas l'arrêt du lessivage : il continue.",
+         "answers": [
+          {
+           "content": "Parce que l'humus disparaît et que les pluies érodent le sol",
+           "correct": true
+          },
+          {
+           "content": "Parce que les pluies cessent complètement",
+           "correct": false
+          },
+          {
+           "content": "Parce que les pluies enrichissent le sol en minéraux",
+           "correct": false
+          },
+          {
+           "content": "Parce que le lessivage s'arrête",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque cause à sa conséquence.",
+         "question_type": "matching",
+         "explanation": "Méthode : 1) Identifier chaque cause. 2) Les relier à leur conséquence : les pluies abondantes lessivent le sol, les feuilles mortes forment l'humus, la coupe de la forêt favorise l'érosion. Pourquoi pas pluies et humus : l'élève confond le lessivage, qui enlève des minéraux, et l'humus, qui vient des feuilles mortes et apporte de la fertilité.",
+         "answers": [
+          {
+           "content": "Pluies abondantes",
+           "match": "Lessivage du sol"
+          },
+          {
+           "content": "Chute de feuilles mortes",
+           "match": "Formation d'humus"
+          },
+          {
+           "content": "Coupe de la forêt",
+           "match": "Érosion du sol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Analyser la déforestation : ses causes, ses conséquences et ses solutions.",
+       "exercise_type": "evaluation",
+       "figure": "chaine-deforestation",
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Quelles sont trois causes de la déforestation dans le sud ?",
+         "question_type": "multiple_correct_3",
+         "explanation": "Méthode : 1) Identifier les causes humaines du recul de la forêt. 2) Les plantations, l'exploitation du bois et les villes avec leurs routes remplacent les arbres. Pourquoi pas les pluies abondantes ou le lessivage : ce sont des phénomènes naturels du climat et du sol, qui ne coupent pas d'arbres et n'expliquent pas la déforestation.",
+         "answers": [
+          {
+           "content": "Les plantations",
+           "correct": true
+          },
+          {
+           "content": "L'exploitation du bois",
+           "correct": true
+          },
+          {
+           "content": "Les villes et les routes",
+           "correct": true
+          },
+          {
+           "content": "Les pluies abondantes",
+           "correct": false
+          },
+          {
+           "content": "Le lessivage des sols",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelle est la meilleure solution pour limiter la déforestation ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Montrer les effets de la coupe : sol à nu, érosion, perte d'espèces. 2) Proposer une solution : reboiser et protéger les forêts classées pour garder les arbres. Pourquoi pas ouvrir des plantations en forêt classée, planter du cacao en plein soleil ou exploiter le bois sans replanter : ces actions suppriment des arbres et aggravent la déforestation au lieu de la limiter.",
+         "answers": [
+          {
+           "content": "Reboiser et protéger les forêts classées",
+           "correct": true
+          },
+          {
+           "content": "Ouvrir de nouvelles plantations en forêt classée",
+           "correct": false
+          },
+          {
+           "content": "Planter du cacao en plein soleil à la place de la forêt",
+           "correct": false
+          },
+          {
+           "content": "Exploiter le bois sans replanter",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les étapes de la méthode pour présenter une mise en valeur et ses problèmes.",
+         "question_type": "ordering",
+         "explanation": "Méthode : 1) Identifier l'activité humaine et le lieu où elle se pratique. 2) Montrer ses effets sur le milieu, comme la déforestation. 3) Proposer une solution pour mieux protéger le milieu. Pourquoi pas proposer la solution avant les effets : on ne peut proposer une solution qu'après avoir compris le problème.",
+         "answers": [
+          {
+           "content": "Identifier l'activité humaine et son lieu"
+          },
+          {
+           "content": "Montrer ses effets sur le milieu"
+          },
+          {
+           "content": "Proposer une solution"
+          }
+         ]
+        },
+        {
+         "content": "La déforestation est seulement un problème du nord du pays.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Situer la forêt : elle est dans le sud. 2) La déforestation concerne donc surtout le sud, où la forêt recule à cause des plantations et du bois. Pourquoi pas Vrai : on pense que seul le nord est touché, comme s'il s'agissait d'une zone de savane ; or il n'y a pas de forêt dense au nord.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Cultiver des plantes en gardant des arbres s'appelle l'___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1) Identifier la solution : associer les cultures et les arbres. 2) La nommer : c'est l'agroforesterie, qui protège le sol et garde des arbres dans les plantations. Pourquoi pas « reboisement » : le reboisement plante des arbres seuls, sans cultures, alors que la question parle de cultiver en gardant des arbres.",
+         "answers": [
+          {
+           "content": "agroforesterie",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Sujet 4 · Bilan du milieu subéquatorial",
+     "notions": "Toutes les notions : localisation, climat, diagramme ombrothermique, végétation, sols et hydrographie, mise en valeur et problèmes.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Situer le milieu subéquatorial et décrire son climat.",
+       "exercise_type": "evaluation",
+       "figure": "carte-milieu-subequatorial",
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Où se situe le milieu subéquatorial ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Situer : le milieu subéquatorial est dans le sud du pays, au bord de l'océan Atlantique. 2) Délimiter : il va de l'océan jusqu'à la savane. Pourquoi pas le nord : c'est le domaine de la savane. Pourquoi pas le centre seulement : le milieu est une large bande du sud, pas un point. Pourquoi pas tout le pays : la savane en occupe le nord.",
+         "answers": [
+          {
+           "content": "Dans le sud, de l'océan Atlantique jusqu'à la savane",
+           "correct": true
+          },
+          {
+           "content": "Dans le nord, de la savane au Mali",
+           "correct": false
+          },
+          {
+           "content": "Dans le centre, autour de Bouaké uniquement",
+           "correct": false
+          },
+          {
+           "content": "Dans tout le pays",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Au sud, le milieu subéquatorial est bordé par l'océan ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1) Délimiter : au sud, le milieu est borné par la mer. 2) Le golfe de Guinée fait partie de l'océan Atlantique, donc la réponse est Atlantique. Pourquoi pas « Indien » ou « Pacifique » : ces océans ne bordent pas l'Afrique de l'Ouest ; on cite un océan au hasard sans regarder la carte.",
+         "answers": [
+          {
+           "content": "Atlantique",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Le climat du sud a deux saisons des pluies et deux saisons sèches.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Repérer les saisons : grande et petite saison des pluies, grande et petite saison sèche. 2) Il y a donc deux saisons des pluies et deux saisons sèches : l'énoncé est vrai. Pourquoi pas Faux : on croit qu'il n'y a qu'une saison des pluies, ce qui est le cas d'un climat de savane, pas du sud.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelle est la caractéristique des températures du sud ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Caractériser les températures : autour de 26 °C en moyenne. 2) L'écart entre le mois le plus chaud et le plus froid est faible : l'amplitude est faible. Pourquoi pas très variables : l'écart reste de quelques degrés. Pourquoi pas élevées seulement en saison des pluies : même en saison sèche, il fait chaud.",
+         "answers": [
+          {
+           "content": "Élevées avec une faible amplitude",
+           "correct": true
+          },
+          {
+           "content": "Basses avec une forte amplitude",
+           "correct": false
+          },
+          {
+           "content": "Élevées mais très variables entre saison sèche et saison des pluies",
+           "correct": false
+          },
+          {
+           "content": "Élevées seulement pendant la saison des pluies",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles sont deux caractéristiques des précipitations du sud ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1) Caractériser les précipitations : elles sont abondantes (plus de 1 200 mm) et il y a deux saisons des pluies. 2) Il y a donc deux maxima dans l'année. Pourquoi pas la saison sèche : c'est le moment où les pluies sont les plus faibles. Pourquoi pas une fois par an : le sud a deux saisons des pluies.",
+         "answers": [
+          {
+           "content": "Elles sont abondantes",
+           "correct": true
+          },
+          {
+           "content": "Elles ont deux maxima dans l'année",
+           "correct": true
+          },
+          {
+           "content": "Elles tombent surtout pendant la saison sèche",
+           "correct": false
+          },
+          {
+           "content": "Elles ne tombent qu'une fois par an, en juin",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Station A (relevé fictif). Températures moyennes (°C), de janvier à décembre : 27, 28, 28, 28, 27, 26, 25, 25, 25, 26, 27, 27. Précipitations (mm), dans le même ordre : 30, 50, 100, 140, 330, 500, 220, 40, 45, 140, 130, 50. Lis ce diagramme.",
+       "exercise_type": "evaluation",
+       "figure": "precipitations-station-a",
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Quelle est l'amplitude thermique de la station A ?",
+         "question_type": "numeric",
+         "tolerance": 0,
+         "explanation": "Méthode : 1) Lire la courbe des températures : le mois le plus chaud est à 28 °C, le plus froid à 25 °C. 2) Calculer l'amplitude : $28 - 25 = 3$ °C. Pourquoi pas 4 : c'est l'amplitude de la station C ; on confond avec un autre relevé. Pourquoi pas 53 : on additionne les deux valeurs au lieu de les soustraire.",
+         "answers": [
+          {
+           "content": "3",
+           "correct": true
+          }
+         ],
+         "unit": "°C"
+        },
+        {
+         "content": "Quelle est la valeur des précipitations du mois le plus pluvieux de la station A ?",
+         "question_type": "numeric",
+         "tolerance": 0,
+         "explanation": "Méthode : 1) Lire les barres des précipitations. 2) Repérer la plus haute : 500 mm, en juin, au cœur de la grande saison des pluies. Pourquoi pas 330 : c'est la valeur de mai, qui n'est que la deuxième plus forte barre ; on se trompe de barre.",
+         "answers": [
+          {
+           "content": "500",
+           "correct": true
+          }
+         ],
+         "unit": "mm"
+        },
+        {
+         "content": "Août (25 °C, 40 mm) est un mois sec.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Calculer le double de la température d'août : $2 \\times 25 = 50$. 2) Comparer : $40 < 50$, donc août est sec. Pourquoi pas Faux : on compare 40 à 25 (la température seule) au lieu de comparer 40 à 50 ; c'est un mois sec mal compté.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quel est le total annuel des précipitations de la station A ?",
+         "question_type": "numeric",
+         "tolerance": 0,
+         "explanation": "Méthode : 1) Lire les barres des précipitations. 2) Additionner les douze mois : $30 + 50 + 100 + 140 + 330 + 500$ donne 1150, puis $220 + 40 + 45 + 140 + 130 + 50$ donne 625, soit 1775 mm. Pourquoi pas 1720 : c'est le total de la station C ; on mélange les relevés.",
+         "answers": [
+          {
+           "content": "1775",
+           "correct": true
+          }
+         ],
+         "unit": "mm"
+        },
+        {
+         "content": "Que conclure de cette station ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Lire la courbe : températures élevées, amplitude de 3 °C. 2) Lire les barres : 1 775 mm. 3) Repérer les mois secs : deux saisons sèches. 4) Conclure : climat subéquatorial. Pourquoi pas un climat de savane : il n'a qu'une saison sèche. Pourquoi pas aucune saison sèche : cinq mois sont secs avec la règle $P \\le 2T$. Pourquoi pas un climat de montagne : les températures sont élevées toute l'année.",
+         "answers": [
+          {
+           "content": "Elle a un climat subéquatorial",
+           "correct": true
+          },
+          {
+           "content": "Elle a un climat de savane, avec une seule saison sèche",
+           "correct": false
+          },
+          {
+           "content": "Elle n'a aucune saison sèche",
+           "correct": false
+          },
+          {
+           "content": "Elle a un climat de montagne",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Décrire la végétation, les sols et l'eau du sud.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Relie chaque terme à sa description.",
+         "question_type": "matching",
+         "explanation": "Méthode : 1) Identifier chaque élément : la canopée, la mangrove et le sol ferrallitique. 2) Les relier à leur description : cime des grands arbres, forêt de palétuviers du littoral, sol rouge et lessivé. Pourquoi pas mangrove avec canopée : on confond la mangrove du littoral avec la forêt étagée de l'intérieur.",
+         "answers": [
+          {
+           "content": "Canopée",
+           "match": "Cime des grands arbres"
+          },
+          {
+           "content": "Mangrove",
+           "match": "Forêt de palétuviers du littoral"
+          },
+          {
+           "content": "Sol ferrallitique",
+           "match": "Sol rouge, profond et lessivé"
+          }
+         ]
+        },
+        {
+         "content": "La forêt dense humide perd toutes ses feuilles en saison sèche.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Décrire le feuillage : près de la côte, la forêt dense humide est sempervirente, toujours verte ; plus au nord, la forêt semi-décidue ne perd qu'une partie de ses feuilles. 2) Elle ne perd donc jamais toutes ses feuilles, car la chaleur et l'humidité durent toute l'année : l'énoncé est faux. Pourquoi pas Vrai : on confond la forêt avec la savane, dont beaucoup d'arbres perdent leurs feuilles en saison sèche.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Qu'est-ce qui rend le sol fertile en surface dans la forêt ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Identifier la source de fertilité : la forêt laisse tomber ses feuilles mortes. 2) Elles forment l'humus, qui rend le sol fertile en surface. Pourquoi pas le lessivage : il enlève des minéraux au lieu d'en apporter. Pourquoi pas les minéraux des pluies : les pluies lessivent le sol. Pourquoi pas le fer : il donne au sol sa couleur rouge, mais il n'est pas la source de sa fertilité.",
+         "answers": [
+          {
+           "content": "L'humus",
+           "correct": true
+          },
+          {
+           "content": "Le fer du sol",
+           "correct": false
+          },
+          {
+           "content": "Le lessivage",
+           "correct": false
+          },
+          {
+           "content": "Les éléments minéraux apportés par les pluies",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les grands cours d'eau comme le Sassandra et le Bandama sont des ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1) Identifier le type de cours d'eau : le Sassandra et le Bandama traversent le pays du nord vers le sud. 2) Ce sont des fleuves, qui se jettent dans l'océan ou dans une lagune. Pourquoi pas « lagunes » : une lagune est une eau calme du littoral séparée de la mer par un cordon de sable ; on confond fleuve et lagune.",
+         "answers": [
+          {
+           "content": "fleuves",
+           "correct": true
+          },
+          {
+           "content": "fleuve",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Remets les strates dans l'ordre, de la plus haute à la plus basse.",
+         "question_type": "ordering",
+         "explanation": "Méthode : 1) Décrire la structure de la forêt : trois strates. 2) De haut en bas : canopée, strate moyenne, strate basse. Pourquoi pas la strate basse en premier : on part du sol au lieu de partir de la cime ; la canopée, formée par la cime des grands arbres, est la plus haute.",
+         "answers": [
+          {
+           "content": "Canopée"
+          },
+          {
+           "content": "Strate moyenne"
+          },
+          {
+           "content": "Strate basse"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Montrer la mise en valeur du sud et ses problèmes.",
+       "exercise_type": "evaluation",
+       "figure": "chaine-deforestation",
+       "hint": "Reprends la méthode de la fiche de révision.",
+       "questions": [
+        {
+         "content": "Quelles sont deux cultures de rente du sud ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1) Identifier les cultures vendues : le cacao et le palmier à huile. 2) Les classer : ce sont des cultures de rente, destinées à la vente et à l'exportation. Pourquoi pas l'igname et le manioc : ce sont des cultures vivrières, qui nourrissent les familles ; on les confond avec les cultures de rente parce qu'elles poussent aussi dans le sud.",
+         "answers": [
+          {
+           "content": "Le cacao",
+           "correct": true
+          },
+          {
+           "content": "Le palmier à huile",
+           "correct": true
+          },
+          {
+           "content": "L'igname",
+           "correct": false
+          },
+          {
+           "content": "Le manioc",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quel est le problème posé par les plantations qui remplacent la forêt ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Identifier l'activité : des plantations remplacent la forêt. 2) Montrer l'effet : le recul de la forêt s'appelle la déforestation. Pourquoi pas le lessivage naturel : il est causé par les pluies, même sans plantations. Pourquoi pas le reboisement : c'est une solution, pas un problème. Pourquoi pas la mangrove : c'est une végétation du littoral.",
+         "answers": [
+          {
+           "content": "La déforestation",
+           "correct": true
+          },
+          {
+           "content": "Le lessivage naturel des sols",
+           "correct": false
+          },
+          {
+           "content": "La mangrove",
+           "correct": false
+          },
+          {
+           "content": "Le reboisement",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La déforestation favorise l'érosion des sols.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1) Montrer les effets : sans arbres, le sol à nu est exposé directement aux pluies. 2) Il s'érode : l'énoncé est vrai. Pourquoi pas Faux : on croit que les pluies protègent le sol ; au contraire, sans la protection des arbres, elles l'emportent.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Planter de nouveaux arbres à la place de ceux qui ont été coupés s'appelle le ___ (un mot).",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1) Proposer une solution : remettre des arbres là où ils ont été coupés. 2) Cette action s'appelle le reboisement. Pourquoi pas « déforestation » : c'est l'action contraire, couper la forêt ; on confond le problème et sa solution.",
+         "answers": [
+          {
+           "content": "reboisement",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelle action protège la forêt ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1) Montrer les effets de la coupe : sol à nu, perte d'espèces. 2) Proposer une solution : créer et protéger des forêts classées pour conserver la forêt. Pourquoi pas ouvrir des plantations en forêt classée, planter du cacao en plein soleil ou exploiter le bois sans replanter : ces actions font reculer la forêt, donc aggravent la déforestation.",
+         "answers": [
+          {
+           "content": "Créer et protéger des forêts classées",
+           "correct": true
+          },
+          {
+           "content": "Ouvrir de nouvelles plantations en forêt classée",
+           "correct": false
+          },
+          {
+           "content": "Planter du cacao en plein soleil à la place de la forêt",
+           "correct": false
+          },
+          {
+           "content": "Exploiter le bois sans replanter",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
