@@ -13,7 +13,7 @@
    "notions": [
     {
      "name": "Les figures d'analogie : comparaison, métaphore, personnification, allégorie",
-     "remember": "Une **figure de style** est un procédé d'expression qui s'écarte de la façon ordinaire de dire pour mieux faire voir, sentir ou convaincre. Les figures d'**analogie** rapprochent deux réalités qui se ressemblent. Le **comparé** est ce dont on parle ; le **comparant** est ce à quoi on le rapproche. La **comparaison** les relie par un outil (*comme*, *tel*, *pareil à*, *semblable à*, *ressembler à*) : *Le pêcheur est patient comme le fleuve.* La **métaphore** les identifie sans outil : *Le fleuve est un ruban d'argent.* La **personnification** donne à une chose, un animal ou une idée des actions ou des sentiments humains : *la lagune dort.* L'**allégorie** représente une idée abstraite (la Mort, la Justice, l'Ignorance) par un personnage ou un récit : dans une fable, l'agneau figure le faible et le loup le puissant.",
+     "remember": "Une **figure de style** est un procédé d'expression qui s'écarte de la façon ordinaire de dire pour mieux faire voir, sentir ou convaincre. Les figures d'**analogie** rapprochent deux réalités qui se ressemblent. Le **comparé** est ce dont on parle ; le **comparant** est ce à quoi on le rapproche. La **comparaison** les relie par un outil (*comme*, *tel*, *pareil à*, *semblable à*, *ressembler à*) : *Le pêcheur est patient comme le fleuve.* La **métaphore** les identifie sans outil : *Le fleuve est un ruban d'argent.* La **personnification** donne à une chose, un animal ou une idée des actions ou des sentiments humains : *la lagune dort.* L'**allégorie** représente une idée abstraite par un personnage ou un récit : la Justice devient une femme aux yeux bandés qui tient une balance ; la Mort, un squelette armé d'une faux.",
      "method": [
       "Relever l'expression qui rapproche deux réalités différentes : le comparé et le comparant.",
       "Chercher l'outil de comparaison (comme, tel, pareil à, semblable à, ressembler à) entre ces deux réalités.",
@@ -340,7 +340,7 @@
         {
          "content": "Une allégorie représente une idée abstraite par un personnage ou un récit.",
          "question_type": "true_false",
-         "explanation": "Étape 3 — Nommer : la Mort, la Justice ou l'Ignorance sont des idées abstraites ; on les montre par un personnage. Dans une fable, le loup et l'agneau figurent le puissant et le faible.",
+         "explanation": "Étape 3 — Nommer : la Justice et la Mort sont des idées abstraites ; l'allégorie les montre par un personnage : une femme aux yeux bandés qui tient une balance pour la Justice, un squelette armé d'une faux pour la Mort. L'affirmation est donc vraie.",
          "answers": [
           {
            "content": "Vrai",
@@ -367,7 +367,7 @@
       "Expliquer ce que l'opposition fait ressortir : un contraste, une tension, une impression paradoxale."
      ],
      "example": {
-      "statement": "Dans « Viens-tu du ciel profond ou sors-tu de l'abîme, / Ô Beauté ! » (Baudelaire, « Les Fleurs du mal », « Hymne à la Beauté »), nommer la figure d'opposition et dire ce qu'elle fait ressortir.",
+      "statement": "Dans « Viens-tu du ciel profond ou sors-tu de l'abîme, / Ô Beauté ? » (Baudelaire, « Les Fleurs du mal », « Hymne à la Beauté »), nommer la figure d'opposition et dire ce qu'elle fait ressortir.",
       "steps": [
        "Relever : « ciel profond » et « abîme » expriment des idées contraires, le haut et le bas.",
        "Observer leur place : les deux termes sont dans deux propositions séparées par « ou » ; ils ne sont pas accolés.",
@@ -689,7 +689,7 @@
     },
     {
      "name": "Amplifier ou atténuer : hyperbole, gradation, litote, euphémisme",
-     "remember": "Ces figures jouent sur l'**écart entre ce qu'on dit et la réalité**. Pour dire **plus** : l'**hyperbole** exagère pour frapper (*J'ai attendu une éternité.*) ; la **gradation** aligne des termes de plus en plus forts : *Va, cours, vole, et nous venge* (Corneille, « Le Cid », 1637). Pour dire **moins** : la **litote** dit moins pour faire entendre plus, souvent en niant le contraire : *Va, je ne te hais point* (Corneille, « Le Cid ») signifie « je t'aime » ; l'**euphémisme** adoucit une réalité dure ou gênante : *Il nous a quittés* pour « il est mort ».",
+     "remember": "Ces figures jouent sur l'**écart entre ce qu'on dit et la réalité**. Pour dire **plus** : l'**hyperbole** exagère pour frapper (*J'ai attendu une éternité.*) ; la **gradation** aligne des termes de plus en plus forts : *Va, cours, vole, et nous venge* (Corneille, « Le Cid », 1637) ; c'est la gradation la plus fréquente, mais une gradation peut aussi descendre vers des termes de plus en plus faibles. Pour dire **moins** : la **litote** dit moins pour faire entendre plus, souvent en niant le contraire : *Va, je ne te hais point* (Corneille, « Le Cid ») signifie « je t'aime » ; l'**euphémisme** adoucit une réalité dure ou gênante : *Il nous a quittés* pour « il est mort ».",
      "method": [
       "Relever l'expression qui semble exagérée ou trop douce par rapport à la réalité.",
       "Traduire cette expression en mots ordinaires pour mesurer l'écart.",
@@ -1052,7 +1052,7 @@
       "Expliquer l'effet : insister et rythmer (anaphore), ou évoquer et varier (métonymie, périphrase)."
      ],
      "example": {
-      "statement": "Camille parle de Rome à son frère (Corneille, « Horace », 1640) : « Rome, l'unique objet de mon ressentiment ! / Rome, à qui vient ton bras d'immoler mon amant ! / Rome qui t'a vu naître, et que ton cœur adore ! / Rome enfin que je hais parce qu'elle t'honore ! » Nommer la figure et dire son effet.",
+      "statement": "Camille parle de Rome à son frère (Corneille, « Horace », tragédie jouée en 1640, acte IV, scène 5) : « Rome, l'unique objet de mon ressentiment ! / Rome, à qui vient ton bras d'immoler mon amant ! / Rome qui t'a vu naître, et que ton cœur adore ! / Rome enfin que je hais parce qu'elle t'honore ! » Nommer la figure et dire son effet.",
       "steps": [
        "Relever : le mot « Rome » se répète dans les quatre vers.",
        "Situer : « Rome » est placé au début de chacun des quatre vers successifs.",

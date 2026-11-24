@@ -713,11 +713,11 @@
         },
         {
           "name": "Énoncé ancré et énoncé coupé de la situation d'énonciation",
-          "remember": "Un énoncé est **ancré dans la situation d'énonciation** (c'est le **discours**) quand il contient des repères liés à la parole : *je, tu, nous, vous*, *ici, maintenant, demain*, et les temps **présent, passé composé, futur**. On le trouve dans un dialogue, une lettre, une émission de radio. Un énoncé est **coupé de la situation d'énonciation** (c'est le **récit**) quand il n'en dépend pas : pronoms de la **3e personne**, temps **passé simple et imparfait**, repères propres au récit (*ce jour-là, le lendemain, la veille, à ce moment-là*). Un texte peut mêler les deux : un récit contient souvent un dialogue.",
+          "remember": "Un énoncé est **ancré dans la situation d'énonciation** (c'est le **discours**) quand il contient des repères liés à la parole : *je, tu, nous, vous*, *ici, maintenant, demain*, et les temps **présent, passé composé, futur**. On le trouve dans un dialogue, une lettre, une émission de radio. Un énoncé est **coupé de la situation d'énonciation** (c'est le **récit**) quand il n'en dépend pas : pronoms de la **3e personne**, temps **passé simple**, souvent accompagné de l'**imparfait**, repères propres au récit (*ce jour-là, le lendemain, la veille, à ce moment-là*). L'imparfait existe aussi dans le discours, et le présent peut aussi raconter (présent de narration) : un seul indice ne suffit jamais. Un texte peut mêler les deux : un récit contient souvent un dialogue.",
           "method": [
             "Chercher les pronoms : *je, tu, nous, vous* signalent un énoncé ancré ; *il, elle, ils* seuls annoncent un récit.",
             "Observer les repères de temps et de lieu : *maintenant, demain, ici* (ancré) ou *ce jour-là, le lendemain, la veille* (coupé).",
-            "Observer les temps verbaux : présent, passé composé, futur (ancré) ; passé simple, imparfait (coupé).",
+            "Observer les temps verbaux : présent, passé composé, futur (ancré) ; passé simple, avec l'imparfait (coupé). L'imparfait seul ne suffit pas : il existe aussi dans le discours.",
             "Conclure : nommer l'énoncé (ancré ou coupé) en citant au moins deux indices."
           ],
           "example": {
@@ -1071,11 +1071,11 @@
         },
         {
           "name": "La subjectivité : relever les marques du jugement",
-          "remember": "Un énoncé est **objectif** quand il donne des faits que l'on peut vérifier (« Le lycée compte douze salles »). Il est **subjectif** quand l'énonciateur y laisse sa trace : un **jugement**, un **sentiment**, une **opinion**. Les marques de la subjectivité sont : les adjectifs, noms et verbes qui expriment un jugement ou un sentiment (*magnifique, catastrophe, détester*) ; les adverbes (*malheureusement, franchement*) ; les verbes d'opinion (*je pense que, je trouve que*) ; le pronom *je* ; la ponctuation expressive (*!* et *?*). Ces mots montrent l'**attitude** de l'énonciateur : admiration, regret, critique, joie.",
+          "remember": "Un énoncé est **objectif** quand il donne des faits que l'on peut vérifier (« Le lycée compte douze salles »). Il est **subjectif** quand l'énonciateur y laisse sa trace : un **jugement**, un **sentiment**, une **opinion**. Les marques de la subjectivité sont : les adjectifs, noms et verbes qui expriment un jugement ou un sentiment (*magnifique, catastrophe, détester*) ; les adverbes (*malheureusement, franchement*) ; les verbes d'opinion (*je pense que, je trouve que*) ; le pronom *je* quand il accompagne un avis ou un sentiment (*je trouve, j'adore*) ; la ponctuation expressive (*!*, *…*). Les mots qui nuancent ou jugent ce que l'on dit (*malheureusement, peut-être, je pense que*) s'appellent des **modalisateurs**. Ces mots montrent l'**attitude** de l'énonciateur : admiration, regret, critique, joie.",
           "method": [
             "Lire l'énoncé et se demander s'il donne des faits ou une opinion.",
             "Relever les mots qui jugent ou expriment un sentiment : adjectifs, noms, verbes et adverbes d'appréciation.",
-            "Relever les autres marques : le pronom « je », les verbes d'opinion, la ponctuation expressive.",
+            "Relever les autres marques : le pronom « je » qui donne un avis, les verbes d'opinion, la ponctuation expressive.",
             "Conclure : dire si l'énoncé est objectif ou subjectif et quelle attitude l'énonciateur montre."
           ],
           "example": {
@@ -1425,7 +1425,7 @@
         },
         {
           "name": "Le discours rapporté : direct et indirect",
-          "remember": "**Rapporter** des paroles, c'est les redire. Au **discours direct**, on les rapporte telles qu'elles ont été dites : guillemets, deux-points, verbe de parole (*dire, demander, répondre, annoncer*). Les repères sont ceux de celui qui parle : « Je viendrai demain. » Au **discours indirect**, les paroles sont intégrées à la phrase, sans guillemets, après *que* (ou *si* pour une question à laquelle on répond par oui ou non). Quand le verbe de parole est au passé, on change : les **pronoms et possessifs** (*je* devient *il*, *vos* devient *leurs*) ; les **repères** (*aujourd'hui* → *ce jour-là*, *demain* → *le lendemain*, *hier* → *la veille*, *ici* → *là*) ; les **temps** (présent → imparfait, futur → conditionnel présent, passé composé → plus-que-parfait).",
+          "remember": "**Rapporter** des paroles, c'est les redire. Au **discours direct**, on les rapporte telles qu'elles ont été dites : guillemets, deux-points, verbe de parole (*dire, demander, répondre, annoncer*). Les repères sont ceux de celui qui parle : « Je viendrai demain. » Au **discours indirect**, les paroles sont intégrées à la phrase, sans guillemets, après *que* (ou *si* pour une question à laquelle on répond par oui ou non). Quand le verbe de parole est au passé et que les paroles sont rapportées plus tard, dans un récit (c'est le cas dans cette leçon), on change : les **pronoms et possessifs** (*je* devient *il*, *vos* devient *leurs*) ; les **repères** (*aujourd'hui* → *ce jour-là*, *demain* → *le lendemain*, *hier* → *la veille*, *ici* → *là*) ; les **temps** (présent → imparfait, futur → conditionnel présent, passé composé → plus-que-parfait).",
           "method": [
             "Repérer le verbe de parole et délimiter les paroles à rapporter.",
             "Changer les pronoms et les possessifs selon qui parle et à qui.",
@@ -1443,7 +1443,7 @@
               "Relier : « Awa a dit à Koffi qu'elle présenterait son émission le lendemain. » Plus de guillemets."
             ]
           },
-          "pitfall": "N'oublie pas de changer **tous** les repères en même temps. « Awa a dit à Koffi qu'elle présenterait son émission demain » est faux : « demain » doit devenir « le lendemain ». Autre piège : si le verbe de parole est au **présent** (« Awa dit : “Je présenterai mon émission demain” »), les temps et « demain » ne changent pas : « Awa dit qu'elle présentera son émission demain ». Regarde d'abord le temps du verbe de parole.",
+          "pitfall": "N'oublie pas de changer **tous** les repères en même temps. Dans un récit, « Awa a dit à Koffi qu'elle présenterait son émission demain » est faux : le temps a changé, mais « demain » renverrait au lendemain du jour où l'on raconte. Il faut « le lendemain ». Autre piège : si le verbe de parole est au **présent** (« Awa dit : “Je présenterai mon émission demain” »), les temps et « demain » ne changent pas : « Awa dit qu'elle présentera son émission demain ». Regarde d'abord le temps du verbe de parole.",
           "figure": null,
           "practice": {
             "statement": "Tu t'entraînes à passer du discours direct au discours indirect.",
@@ -1614,9 +1614,9 @@
                   ]
                 },
                 {
-                  "content": "Quand le verbe de parole est au passé composé, on peut garder « demain » au discours indirect.",
+                  "content": "Dans un récit, quand le verbe de parole est au passé composé et que les paroles sont rapportées plus tard, on garde « demain » au discours indirect.",
                   "question_type": "true_false",
-                  "explanation": "Étape 3 — Changer les repères : avec un verbe de parole au passé, « demain » devient « le lendemain ». Garder « demain » est l'erreur du piège : l'énonciation rapportée n'est plus celle du moment où l'on parle.",
+                  "explanation": "Étape 3 — Changer les repères : dans un récit, avec un verbe de parole au passé, « demain » devient « le lendemain ». Garder « demain » est l'erreur du piège : « demain » renverrait au lendemain du jour où l'on raconte, et non à celui où les paroles ont été dites. L'affirmation est donc fausse.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -3321,7 +3321,7 @@
             },
             {
               "title": "Exercice 2",
-              "statement": "Dans cet exercice, tu justifies le classement d'un énoncé.\n\nÉnoncé 1 : « Elle ouvrit la porte et le silence se fit. » Énoncé 2 : « Elle ouvre la porte, et maintenant le silence se fait. »",
+              "statement": "Dans cet exercice, tu justifies le classement d'un énoncé.\n\nÉnoncé 1 : « Elle ouvrit la porte et le silence se fit. » Énoncé 2 : « Regarde : elle ouvre la porte, et maintenant le silence se fait. »",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [
@@ -3349,9 +3349,9 @@
                   ]
                 },
                 {
-                  "content": "L'énoncé « Elle ouvre la porte, et maintenant le silence se fait. » est :",
+                  "content": "L'énoncé « Regarde : elle ouvre la porte, et maintenant le silence se fait. » est :",
                   "question_type": "single_choice",
-                  "explanation": "1) « Maintenant » est un repère de la parole. 2) Les verbes sont au présent. Conclusion : énoncé ancré.",
+                  "explanation": "1) « Regarde » s'adresse à un destinataire : c'est un impératif à la 2e personne. 2) « Maintenant » est un repère de la parole. 3) Les verbes sont au présent. Conclusion : énoncé ancré ; « elle » seul ne suffit pas à conclure au récit.",
                   "answers": [
                     {
                       "content": "Ancré dans la situation d'énonciation",
@@ -3372,12 +3372,12 @@
                   ]
                 },
                 {
-                  "content": "Quelle justification est correcte pour l'énoncé « Elle ouvre la porte, et maintenant le silence se fait. » ?",
+                  "content": "Quelle justification est correcte pour l'énoncé « Regarde : elle ouvre la porte, et maintenant le silence se fait. » ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Le pronom « elle » ne suffit pas à conclure. 2) Ce sont « maintenant » et le présent qui rendent l'énoncé ancré.",
+                  "explanation": "1) Le pronom « elle » ne suffit pas à conclure. 2) Ce sont « regarde » (adressé à un destinataire), « maintenant » et le présent, ensemble, qui rendent l'énoncé ancré : un seul indice ne suffit jamais.",
                   "answers": [
                     {
-                      "content": "Il contient « maintenant » et des verbes au présent",
+                      "content": "Il contient « regarde », « maintenant » et des verbes au présent",
                       "correct": true
                     },
                     {
@@ -3896,22 +3896,22 @@
                 {
                   "content": "Dans le message « Hier, à la radio du lycée, j'ai présenté mon premier journal… », qui est l'énonciateur ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Celui qui dit « j'ai présenté mon premier journal » est celui qui l'a présenté. 2) Le message se rapporte au club radio : c'est un élève du club.",
+                  "explanation": "1) Identifier l'énonciateur : celui qui parle dit « je » (« j'ai présenté », « je trouve ») ; c'est donc la personne qui a présenté son premier journal à la radio du lycée, l'élève du club radio. 2) « L'équipe » est ce dont il parle, pas lui ; « nous » réunit l'énonciateur et son équipe. 3) Les auditeurs et le lycée ne prennent pas la parole.",
                   "answers": [
                     {
-                      "content": "Un élève du club radio, qui a présenté le journal",
+                      "content": "Celui qui a présenté son premier journal, désigné par « je »",
                       "correct": true
                     },
                     {
-                      "content": "Un auditeur de la radio",
+                      "content": "L'équipe de la radio, désignée par « l'équipe »",
                       "correct": false
                     },
                     {
-                      "content": "Le proviseur",
+                      "content": "Les auditeurs qui ont écouté le journal",
                       "correct": false
                     },
                     {
-                      "content": "Un professeur",
+                      "content": "Le lycée, nommé dans « la radio du lycée »",
                       "correct": false
                     }
                   ]
