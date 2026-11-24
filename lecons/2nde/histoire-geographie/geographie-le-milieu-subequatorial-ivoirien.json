@@ -250,7 +250,7 @@
    "notions": [
     {
      "name": "Situer le milieu subéquatorial en Côte d'Ivoire",
-     "remember": "Le **milieu subéquatorial** est le milieu de **forêt dense humide** du **sud** de la Côte d'Ivoire. Il longe le **golfe de Guinée**, c'est-à-dire l'**océan Atlantique**, et s'étend du **littoral** vers l'intérieur des terres jusqu'à la limite avec la **savane**, qui domine le centre et le nord du pays.\n\nOn y trouve des villes du littoral comme **Abidjan** et **San-Pédro**, et des villes de l'intérieur comme **Divo**, **Gagnoa** et **Daloa**. Au nord, une ville comme **Korhogo** appartient déjà à la savane.",
+     "remember": "Le **milieu subéquatorial** est le milieu de **forêt dense humide** du **sud** de la Côte d'Ivoire. Il longe le **golfe de Guinée**, qui fait partie de l'**océan Atlantique**, et s'étend du **littoral** vers l'intérieur des terres jusqu'à la limite avec la **savane**, qui domine le centre et le nord du pays.\n\nOn y trouve des villes du littoral comme **Abidjan** et **San-Pédro**, et des villes de l'intérieur comme **Divo**, **Gagnoa** et **Daloa**. Au nord, une ville comme **Korhogo** appartient déjà à la savane.",
      "method": [
       "Situer le milieu dans le pays à l'aide des points cardinaux.",
       "Délimiter le milieu : dire ce qui le borde au sud et ce qu'il touche au nord.",
@@ -525,7 +525,7 @@
         {
          "content": "Quelle phrase situe correctement ce milieu ?",
          "question_type": "single_choice",
-         "explanation": "Étape 1 — Situer : le sud. Étape 2 — Délimiter : l'océan au sud, la savane au nord. Les autres phrases se trompent de lieu ou l'étendent à tout le pays.",
+         "explanation": "Étape 1 — Situer : le sud. Étape 2 — Délimiter : l'océan au sud, la savane au nord. Les autres phrases se trompent de lieu ou oublient l'intérieur des terres.",
          "answers": [
           {
            "content": "Il occupe le sud du pays, de l'océan Atlantique jusqu'à la savane.",
@@ -540,7 +540,7 @@
            "correct": false
           },
           {
-           "content": "Il occupe tout le pays, de la mer au désert.",
+           "content": "Il occupe uniquement le littoral, sans l'intérieur.",
            "correct": false
           }
          ]
@@ -736,7 +736,7 @@
        "title": "Les saisons et les températures du sud",
        "statement": "Dans cet exercice, tu mélanges plusieurs types de questions pour décrire le climat du sud.",
        "exercise_type": "fixation",
-       "figure": null,
+       "figure": "temperatures-station-a",
        "hint": "Retiens : quatre saisons, chaleur toute l'année, pluies abondantes.",
        "questions": [
         {
@@ -810,7 +810,7 @@
            "correct": false
           },
           {
-           "content": "variable",
+           "content": "très faible",
            "correct": false
           }
          ]
@@ -889,13 +889,13 @@
         "hint": "Calcule le double de la température."
        },
        {
-        "content": "Une station a un mois le plus chaud à 28 °C et un mois le plus froid à 24 °C. Quelle est son amplitude thermique ?",
+        "content": "Une station a un mois le plus chaud à 29 °C et un mois le plus froid à 26 °C. Quelle est son amplitude thermique ?",
         "question_type": "numeric",
         "tolerance": 0,
-        "explanation": "Étape 2 — Lire la courbe : l'amplitude est $28 - 24 = 4$ °C.",
+        "explanation": "Étape 2 — Lire la courbe : l'amplitude est $29 - 26 = 3$ °C.",
         "answers": [
          {
-          "content": "4",
+          "content": "3",
           "correct": true
          }
         ],
@@ -903,24 +903,24 @@
         "hint": "Soustrais la plus basse à la plus haute."
        },
        {
-        "content": "Précipitations (mm) d'une station de janvier à décembre : 20, 45, 120, 150, 300, 480, 200, 30, 45, 150, 140, 40. Quel est le mois le plus pluvieux ?",
+        "content": "Précipitations (mm) d'une station de janvier à décembre : 25, 55, 130, 180, 420, 380, 150, 30, 60, 160, 140, 45. Quel est le mois le plus pluvieux ?",
         "question_type": "single_choice",
-        "explanation": "Étape 3 — Lire les barres : la plus grande valeur est 480 mm, qui est la sixième, donc juin. Mai (300 mm) et juillet (200 mm) sont moins pluvieux.",
+        "explanation": "Étape 3 — Lire les barres : la plus grande valeur est 420 mm, qui est la cinquième, donc mai. Juin (380 mm) est le deuxième mois le plus pluvieux, mais il reste en dessous.",
         "answers": [
          {
-          "content": "Juin",
+          "content": "Mai",
           "correct": true
          },
          {
-          "content": "Mai",
-          "correct": false
-         },
-         {
-          "content": "Juillet",
+          "content": "Juin",
           "correct": false
          },
          {
           "content": "Avril",
+          "correct": false
+         },
+         {
+          "content": "Juillet",
           "correct": false
          }
         ],
@@ -1212,6 +1212,10 @@
          {
           "content": "humide",
           "correct": true
+         },
+         {
+          "content": "sempervirente",
+          "correct": true
          }
         ],
         "hint": "Elle pousse là où il pleut beaucoup."
@@ -1229,7 +1233,7 @@
         {
          "content": "Quelle végétation couvre l'intérieur du sud de la Côte d'Ivoire ?",
          "question_type": "single_choice",
-         "explanation": "Étape 1 — Identifier : à l'intérieur du sud, chaud et très pluvieux, la végétation est la forêt dense humide. La savane est au nord.",
+         "explanation": "Étape 1 — Identifier : à l'intérieur du sud, chaud et très pluvieux, la végétation est la forêt dense humide. Pourquoi pas la savane ou la forêt claire : ce sont des milieux du nord. Pourquoi pas la mangrove : elle est au bord de l'eau salée, sur le littoral.",
          "answers": [
           {
            "content": "La forêt dense humide",
@@ -1240,11 +1244,11 @@
            "correct": false
           },
           {
-           "content": "La steppe",
+           "content": "La mangrove",
            "correct": false
           },
           {
-           "content": "Le désert",
+           "content": "La forêt claire du nord",
            "correct": false
           }
          ]
@@ -1417,22 +1421,22 @@
         {
          "content": "Pourquoi la forêt dense humide est-elle verte toute l'année ?",
          "question_type": "single_choice",
-         "explanation": "Étape 3 — Expliquer : la forêt reste verte parce que la chaleur est constante et que les pluies sont abondantes. Les autres propositions sont fausses.",
+         "explanation": "Étape 3 — Expliquer : la forêt reste verte parce que la chaleur est constante et que les pluies sont abondantes. Pourquoi pas la chute des feuilles en saison sèche : c'est ce qui arrive aux arbres de la savane. Pourquoi pas un sol riche : le sol ferrallitique est pauvre en minéraux. Pourquoi pas une seule pluie par an : le sud a deux saisons des pluies.",
          "answers": [
           {
            "content": "Parce que la chaleur et l'humidité durent toute l'année",
            "correct": true
           },
           {
-           "content": "Parce que les hommes arrosent les arbres",
+           "content": "Parce que les arbres perdent leurs feuilles seulement en saison sèche",
            "correct": false
           },
           {
-           "content": "Parce qu'il ne pleut jamais",
+           "content": "Parce que le sol est riche en minéraux",
            "correct": false
           },
           {
-           "content": "Parce qu'elle est proche du désert",
+           "content": "Parce qu'il pleut une seule fois par an",
            "correct": false
           }
          ]
@@ -1481,10 +1485,10 @@
        {
         "content": "Quel est un fleuve de la Côte d'Ivoire ?",
         "question_type": "single_choice",
-        "explanation": "Étape 1 — Identifier : le Comoé est un fleuve ivoirien, comme le Bandama, le Sassandra et le Cavally. Le Congo, le Zambèze et le Nil sont d'autres pays.",
+        "explanation": "Étape 1 — Identifier : la Comoé est un fleuve ivoirien, comme le Bandama, le Sassandra et le Cavally. Le Congo, le Zambèze et le Nil sont des fleuves d'autres pays.",
         "answers": [
          {
-          "content": "Le Comoé",
+          "content": "La Comoé",
           "correct": true
          },
          {
@@ -1711,22 +1715,22 @@
         {
          "content": "Quelle lagune borde Abidjan ?",
          "question_type": "single_choice",
-         "explanation": "Étape 1 — Identifier : Abidjan est bâtie au bord de la lagune Ébrié. Le lac de Kossou est un lac de barrage ; le Cavally est un fleuve.",
+         "explanation": "Étape 1 — Identifier : Abidjan est bâtie au bord de la lagune Ébrié. Les lagunes Aby et de Grand-Lahou sont d'autres lagunes du littoral ivoirien, loin d'Abidjan ; le lac de Kossou est un lac de barrage, pas une lagune du littoral.",
          "answers": [
           {
            "content": "La lagune Ébrié",
            "correct": true
           },
           {
+           "content": "La lagune Aby",
+           "correct": false
+          },
+          {
+           "content": "La lagune de Grand-Lahou",
+           "correct": false
+          },
+          {
            "content": "Le lac de Kossou",
-           "correct": false
-          },
-          {
-           "content": "Le fleuve Cavally",
-           "correct": false
-          },
-          {
-           "content": "Le canal de Suez",
            "correct": false
           }
          ]
@@ -1818,22 +1822,22 @@
        {
         "content": "Quelle action protège la forêt ?",
         "question_type": "single_choice",
-        "explanation": "Étape 3 — Proposer une solution : le reboisement remplace les arbres coupés. Les autres actions aggravent la déforestation.",
+        "explanation": "Étape 3 — Proposer une solution : le reboisement remplace les arbres coupés. Ouvrir des plantations en forêt classée, planter du cacao en plein soleil à la place de la forêt ou exploiter le bois sans replanter aggravent la déforestation.",
         "answers": [
          {
           "content": "Reboiser les parcelles",
           "correct": true
          },
          {
-          "content": "Couper plus d'arbres",
+          "content": "Ouvrir de nouvelles plantations en forêt classée",
           "correct": false
          },
          {
-          "content": "Brûler la forêt pour planter",
+          "content": "Planter du cacao en plein soleil à la place de la forêt",
           "correct": false
          },
          {
-          "content": "Abandonner les parcs nationaux",
+          "content": "Exploiter le bois sans replanter",
           "correct": false
          }
         ],
@@ -2043,22 +2047,22 @@
         {
          "content": "Quelle action protège le mieux la forêt ?",
          "question_type": "single_choice",
-         "explanation": "Étape 3 — Proposer une solution : protéger les forêts classées et reboiser limitent la déforestation. Les autres actions la renforcent.",
+         "explanation": "Étape 3 — Proposer une solution : protéger les forêts classées et reboiser limitent la déforestation. Ouvrir des plantations en forêt classée, planter du cacao en plein soleil à la place de la forêt ou exploiter le bois sans replanter la renforcent.",
          "answers": [
           {
            "content": "Protéger les forêts classées et reboiser",
            "correct": true
           },
           {
-           "content": "Couper les arbres sans replanter",
+           "content": "Ouvrir de nouvelles plantations en forêt classée",
            "correct": false
           },
           {
-           "content": "Brûler la forêt pour agrandir les champs",
+           "content": "Planter du cacao en plein soleil à la place de la forêt",
            "correct": false
           },
           {
-           "content": "Construire des routes dans toutes les forêts",
+           "content": "Exploiter le bois sans replanter",
            "correct": false
           }
          ]
@@ -2079,7 +2083,7 @@
       {
        "content": "Dans quel milieu vit l'élève qui écrit : « Je vis dans le sud, il fait chaud toute l'année, il pleut beaucoup, il y a deux saisons des pluies et deux saisons sèches » ?",
        "question_type": "single_choice",
-       "explanation": "Méthode : 1) Situer : le sud du pays est le domaine du milieu subéquatorial. 2) Caractériser le climat : chaleur toute l'année, pluies abondantes, quatre saisons. 3) Conclure : c'est le milieu subéquatorial ; la savane est au nord.",
+       "explanation": "Méthode : 1) Situer : le sud du pays est le domaine du milieu subéquatorial. 2) Caractériser le climat : chaleur toute l'année, pluies abondantes, quatre saisons. 3) Conclure : c'est le milieu subéquatorial ; la savane est au nord. Pourquoi pas la mangrove : elle est sur le littoral, dans l'eau saumâtre, pas à l'intérieur.",
        "answers": [
         {
          "content": "Le milieu subéquatorial",
@@ -2094,7 +2098,7 @@
          "correct": false
         },
         {
-         "content": "Le désert",
+         "content": "La mangrove du littoral",
          "correct": false
         }
        ]
@@ -2151,7 +2155,7 @@
       {
        "content": "Quelle végétation naturelle entoure Gagnoa, ville du sud à l'intérieur des terres ?",
        "question_type": "single_choice",
-       "explanation": "Méthode : 1) Identifier la situation : Gagnoa est à l'intérieur du sud, loin du littoral. 2) Décrire : chaleur et pluies abondantes donnent la forêt dense humide. 3) Écarter la mangrove, qui est au bord de l'eau salée.",
+       "explanation": "Méthode : 1) Identifier la situation : Gagnoa est à l'intérieur du sud, loin du littoral. 2) Décrire : chaleur et pluies abondantes donnent la forêt dense humide. 3) Écarter la mangrove, qui est au bord de l'eau salée, et la savane ou la forêt claire, qui sont dans le nord.",
        "answers": [
         {
          "content": "La forêt dense humide",
@@ -2166,7 +2170,7 @@
          "correct": false
         },
         {
-         "content": "La steppe",
+         "content": "La forêt claire du nord",
          "correct": false
         }
        ]
@@ -2254,7 +2258,7 @@
       {
        "content": "Quel climat représente la station A ?",
        "question_type": "single_choice",
-       "explanation": "Méthode : 1) Lire la courbe : températures élevées (25 à 28 °C), amplitude de 3 °C. 2) Lire les barres : 1 775 mm. 3) Repérer les mois secs : deux saisons sèches. 4) Conclure : c'est le climat subéquatorial.",
+       "explanation": "Méthode : 1) Lire la courbe : températures élevées (25 à 28 °C), amplitude de 3 °C. 2) Lire les barres : 1 775 mm. 3) Repérer les mois secs : deux saisons sèches. 4) Conclure : c'est le climat subéquatorial. Pourquoi pas un climat de savane : il n'a qu'une saison des pluies, alors que la station en a deux.",
        "answers": [
         {
          "content": "Le climat subéquatorial",
@@ -2265,11 +2269,11 @@
          "correct": false
         },
         {
-         "content": "Un climat désertique",
+         "content": "Un climat de savane, avec une seule saison des pluies",
          "correct": false
         },
         {
-         "content": "Un climat polaire",
+         "content": "Un climat de montagne",
          "correct": false
         }
        ]
@@ -2286,7 +2290,7 @@
       {
        "content": "Quelle végétation couvrait autrefois la région décrite ?",
        "question_type": "single_choice",
-       "explanation": "Méthode : 1) Identifier : région du sud, chaude et très pluvieuse. 2) Décrire : arbres hauts et serrés, forêt dense. 3) Conclure : forêt dense humide ; la mangrove est sur le littoral.",
+       "explanation": "Méthode : 1) Identifier : région du sud, chaude et très pluvieuse. 2) Décrire : arbres hauts et serrés, forêt dense. 3) Conclure : forêt dense humide ; la mangrove est sur le littoral et la forêt claire dans le nord.",
        "answers": [
         {
          "content": "La forêt dense humide",
@@ -2301,7 +2305,7 @@
          "correct": false
         },
         {
-         "content": "Le désert",
+         "content": "La forêt claire du nord",
          "correct": false
         }
        ]
@@ -2309,7 +2313,7 @@
       {
        "content": "Pourquoi le sol rouge de cette région est-il pauvre en éléments minéraux ?",
        "question_type": "single_choice",
-       "explanation": "Méthode : 1) Identifier le sol : ferrallitique. 2) Expliquer : la chaleur et les pluies abondantes lessivent les éléments minéraux. Les autres raisons sont fausses : le sud n'est ni sec ni froid.",
+       "explanation": "Méthode : 1) Identifier le sol : ferrallitique. 2) Expliquer : la chaleur et les pluies abondantes lessivent les éléments minéraux. Pourquoi pas un sol trop sec : le sud est très pluvieux. Pourquoi pas la mangrove ou l'eau salée : elles sont sur le littoral, pas dans cette région de forêt.",
        "answers": [
         {
          "content": "Parce que les pluies abondantes lessivent le sol",
@@ -2320,7 +2324,7 @@
          "correct": false
         },
         {
-         "content": "Parce que la région est trop froide",
+         "content": "Parce que la mangrove a envahi la région",
          "correct": false
         },
         {
@@ -2392,7 +2396,7 @@
       {
        "content": "Quelle cause de la déforestation le texte donne-t-il ?",
        "question_type": "single_choice",
-       "explanation": "Méthode : 1) Repérer l'activité : plantations de cacao, de café et d'hévéa. 2) Montrer l'effet : on a coupé la forêt pour planter, c'est la déforestation.",
+       "explanation": "Méthode : 1) Repérer l'activité : plantations de cacao, de café et d'hévéa. 2) Montrer l'effet : on a coupé la forêt pour planter, c'est la déforestation. Pourquoi pas le lessivage ou les crues : ce sont des phénomènes naturels, pas une activité qui remplace la forêt.",
        "answers": [
         {
          "content": "Les plantations qui remplacent la forêt",
@@ -2403,7 +2407,7 @@
          "correct": false
         },
         {
-         "content": "Le froid de l'hiver",
+         "content": "Le lessivage des sols",
          "correct": false
         },
         {
@@ -2413,21 +2417,21 @@
        ]
       },
       {
-       "content": "Remets dans l'ordre cette chaîne de causes et de conséquences.",
+       "content": "Remets dans l'ordre ces étapes de la mise en valeur d'une parcelle du sud.",
        "question_type": "ordering",
-       "explanation": "Méthode : 1) Identifier la cause : plantations et coupe du bois. 2) Montrer les effets : la forêt recule, le sol à nu est exposé aux pluies, puis il s'érode.",
+       "explanation": "Méthode : 1) Identifier l'activité : on défriche d'abord la forêt, c'est-à-dire qu'on la coupe, pour pouvoir planter. 2) On plante les cacaoyers, puis on récolte les fèves, et la récolte est enfin exportée par les ports d'Abidjan ou de San-Pédro. Pourquoi pas récolter avant de planter : une récolte ne vient qu'après la plantation.",
        "answers": [
         {
-         "content": "Plantations et coupe du bois"
+         "content": "Défricher une parcelle de forêt"
         },
         {
-         "content": "Recul de la forêt"
+         "content": "Planter des cacaoyers"
         },
         {
-         "content": "Sol à nu exposé aux pluies"
+         "content": "Récolter les fèves de cacao"
         },
         {
-         "content": "Érosion et perte de fertilité"
+         "content": "Exporter par le port d'Abidjan ou de San-Pédro"
         }
        ]
       },
@@ -2540,6 +2544,10 @@
          "answers": [
           {
            "content": "humide",
+           "correct": true
+          },
+          {
+           "content": "sempervirente",
            "correct": true
           }
          ]
@@ -2729,7 +2737,7 @@
         {
          "content": "Une forêt dont les arbres restent verts toute l'année est dite ___ (un mot).",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 1) Décrire le feuillage : les arbres de la forêt du sud restent verts toute l'année. 2) Une forêt dont les arbres sont toujours verts est dite sempervirente, grâce à la chaleur et à l'humidité de toute l'année. Pourquoi pas « décidue » : cette forêt perd ses feuilles en saison sèche, ce qui est le cas des arbres de la savane, pas de la forêt dense humide.",
+         "explanation": "Méthode : 1) Décrire le feuillage : les arbres de la forêt du sud restent verts toute l'année. 2) Une forêt dont les arbres sont toujours verts est dite sempervirente, grâce à la chaleur et à l'humidité de toute l'année. Pourquoi pas « décidue » : une forêt décidue perd ses feuilles en saison sèche, ce qui est le cas de beaucoup d'arbres de la savane.",
          "answers": [
           {
            "content": "sempervirente",
@@ -2833,14 +2841,14 @@
         {
          "content": "Quels sont deux fleuves ivoiriens ?",
          "question_type": "multiple_correct_2",
-         "explanation": "Méthode : 1) Identifier les cours d'eau : le Cavally et le Comoé sont des fleuves ivoiriens, qui descendent du nord vers le sud. 2) Les distinguer des lagunes. Pourquoi pas la lagune Ébrié ou la lagune Aby : ce sont des lagunes, c'est-à-dire des étendues d'eau calme au bord de l'océan, séparées de la mer par un cordon de sable, et non des fleuves.",
+         "explanation": "Méthode : 1) Identifier les cours d'eau : le Cavally et la Comoé sont des fleuves ivoiriens, qui descendent du nord vers le sud. 2) Les distinguer des lagunes. Pourquoi pas la lagune Ébrié ou la lagune Aby : ce sont des lagunes, c'est-à-dire des étendues d'eau calme au bord de l'océan, séparées de la mer par un cordon de sable, et non des fleuves.",
          "answers": [
           {
            "content": "Le Cavally",
            "correct": true
           },
           {
-           "content": "Le Comoé",
+           "content": "La Comoé",
            "correct": true
           },
           {
@@ -3065,16 +3073,16 @@
          ]
         },
         {
-         "content": "Pourquoi le débit des fleuves est-il fort en juin ?",
+         "content": "Pourquoi le débit des cours d'eau du sud augmente-t-il pendant la saison des pluies ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Repérer la saison : juin est un mois de grande saison des pluies, avec 500 mm. 2) Expliquer : de fortes pluies alimentent les fleuves, dont le débit augmente. Pourquoi pas la saison sèche : en saison sèche, les pluies sont faibles et le débit baisse. Pourquoi pas la température : elle varie peu et n'explique pas un fort débit.",
+         "explanation": "Méthode : 1) Repérer la saison : en saison des pluies, il tombe beaucoup d'eau sur le sud. 2) Expliquer : les pluies abondantes alimentent les cours d'eau, dont le débit augmente ; pour les grands fleuves, le maximum peut venir un peu après les pluies. Pourquoi pas la saison sèche : les pluies sont alors faibles et le débit baisse. Pourquoi pas la température : elle varie peu et n'explique pas le débit.",
          "answers": [
           {
-           "content": "Parce que les pluies sont abondantes",
+           "content": "Parce que les pluies abondantes alimentent les cours d'eau",
            "correct": true
           },
           {
-           "content": "Parce que juin est dans la saison sèche",
+           "content": "Parce que la saison est sèche et que l'eau s'accumule",
            "correct": false
           },
           {
@@ -3358,7 +3366,7 @@
         {
          "content": "Quel climat représente la station C ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Lire la courbe : températures élevées et amplitude de 4 °C. 2) Lire les barres : 1 720 mm. 3) Repérer les mois secs : deux saisons sèches. 4) Conclure : climat subéquatorial. Pourquoi pas un climat de savane : il n'a qu'une saison des pluies. Pourquoi pas désertique : 1 720 mm de pluie sont très abondants.",
+         "explanation": "Méthode : 1) Lire la courbe : températures élevées et amplitude de 4 °C. 2) Lire les barres : 1 720 mm. 3) Repérer les mois secs : deux saisons sèches. 4) Conclure : climat subéquatorial. Pourquoi pas un climat de savane : il n'a qu'une saison des pluies. Pourquoi pas un climat de montagne : la station est dans le sud, avec des températures élevées toute l'année.",
          "answers": [
           {
            "content": "Le climat subéquatorial",
@@ -3369,7 +3377,7 @@
            "correct": false
           },
           {
-           "content": "Un climat désertique",
+           "content": "Un climat de montagne",
            "correct": false
           },
           {
@@ -3414,7 +3422,7 @@
          "content": "Quelle est la différence entre les totaux annuels de la station A (1 775 mm) et de la station C (1 720 mm) ?",
          "question_type": "numeric",
          "tolerance": 0,
-         "explanation": "Méthode : 1) Lire les deux totaux : 1 775 mm et 1 720 mm. 2) Calculer la différence : $1775 - 1720 = 55$ mm. Pourquoi pas 3495 : on additionne au lieu de soustraire. Pourquoi pas 5 : on soustrait seulement les chiffres des unités.",
+         "explanation": "Méthode : 1) Lire les deux totaux : 1 775 mm et 1 720 mm. 2) Calculer la différence : $1775 - 1720 = 55$ mm. Pourquoi pas 3495 : on additionne au lieu de soustraire. Pourquoi pas 5 : on ne soustrait que les chiffres des unités (5 et 0) en oubliant les dizaines et les centaines.",
          "answers": [
           {
            "content": "55",
@@ -3464,7 +3472,7 @@
         {
          "content": "Les deux stations sont dans le sud. Quel climat ont-elles en commun ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Comparer les températures : élevées et peu variables dans les deux stations. 2) Comparer les pluies : abondantes. 3) Conclure : c'est le climat subéquatorial. Pourquoi pas le climat de la savane du nord : il est plus sec et n'a qu'une saison des pluies. Pourquoi pas tempéré ou désertique : températures et pluies ne conviennent pas.",
+         "explanation": "Méthode : 1) Comparer les températures : élevées et peu variables dans les deux stations. 2) Comparer les pluies : abondantes. 3) Conclure : c'est le climat subéquatorial. Pourquoi pas le climat de la savane du nord : il est plus sec et n'a qu'une saison des pluies. Pourquoi pas tempéré ou de montagne : les températures restent élevées toute l'année.",
          "answers": [
           {
            "content": "Le climat subéquatorial",
@@ -3479,7 +3487,7 @@
            "correct": false
           },
           {
-           "content": "Le climat désertique",
+           "content": "Le climat de montagne",
            "correct": false
           }
          ]
@@ -3631,42 +3639,39 @@
         {
          "content": "Quelle est la meilleure solution pour limiter la déforestation ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Montrer les effets de la coupe : sol à nu, érosion, perte d'espèces. 2) Proposer une solution : reboiser et protéger les forêts classées pour garder les arbres. Pourquoi pas couper plus, brûler ou supprimer les parcs : ces actions aggravent la déforestation au lieu de la limiter.",
+         "explanation": "Méthode : 1) Montrer les effets de la coupe : sol à nu, érosion, perte d'espèces. 2) Proposer une solution : reboiser et protéger les forêts classées pour garder les arbres. Pourquoi pas ouvrir des plantations en forêt classée, planter du cacao en plein soleil ou exploiter le bois sans replanter : ces actions suppriment des arbres et aggravent la déforestation au lieu de la limiter.",
          "answers": [
           {
            "content": "Reboiser et protéger les forêts classées",
            "correct": true
           },
           {
-           "content": "Couper plus d'arbres",
+           "content": "Ouvrir de nouvelles plantations en forêt classée",
            "correct": false
           },
           {
-           "content": "Brûler la forêt",
+           "content": "Planter du cacao en plein soleil à la place de la forêt",
            "correct": false
           },
           {
-           "content": "Supprimer les parcs nationaux",
+           "content": "Exploiter le bois sans replanter",
            "correct": false
           }
          ]
         },
         {
-         "content": "Remets dans l'ordre cette chaîne de conséquences.",
+         "content": "Remets dans l'ordre les étapes de la méthode pour présenter une mise en valeur et ses problèmes.",
          "question_type": "ordering",
-         "explanation": "Méthode : 1) Partir de la cause : les plantations et la coupe du bois. 2) La forêt recule. 3) Le sol à nu reçoit directement les pluies. 4) Il s'érode. Pourquoi pas l'érosion avant le sol à nu : l'érosion est une conséquence ; elle vient seulement quand le sol n'est plus protégé par les arbres.",
+         "explanation": "Méthode : 1) Identifier l'activité humaine et le lieu où elle se pratique. 2) Montrer ses effets sur le milieu, comme la déforestation. 3) Proposer une solution pour mieux protéger le milieu. Pourquoi pas proposer la solution avant les effets : on ne peut proposer une solution qu'après avoir compris le problème.",
          "answers": [
           {
-           "content": "Plantations et coupe du bois"
+           "content": "Identifier l'activité humaine et son lieu"
           },
           {
-           "content": "Recul de la forêt"
+           "content": "Montrer ses effets sur le milieu"
           },
           {
-           "content": "Sol à nu exposé aux pluies"
-          },
-          {
-           "content": "Érosion du sol"
+           "content": "Proposer une solution"
           }
          ]
         },
@@ -3872,7 +3877,7 @@
         {
          "content": "Que conclure de cette station ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Lire la courbe : températures élevées, amplitude de 3 °C. 2) Lire les barres : 1 775 mm. 3) Repérer les mois secs : deux saisons sèches. 4) Conclure : climat subéquatorial. Pourquoi pas un climat de savane : il n'a qu'une saison sèche. Pourquoi pas aucune saison sèche : cinq mois sont secs avec la règle $P < 2T$.",
+         "explanation": "Méthode : 1) Lire la courbe : températures élevées, amplitude de 3 °C. 2) Lire les barres : 1 775 mm. 3) Repérer les mois secs : deux saisons sèches. 4) Conclure : climat subéquatorial. Pourquoi pas un climat de savane : il n'a qu'une saison sèche. Pourquoi pas aucune saison sèche : cinq mois sont secs avec la règle $P < 2T$. Pourquoi pas un climat de montagne : les températures sont élevées toute l'année.",
          "answers": [
           {
            "content": "Elle a un climat subéquatorial",
@@ -3887,7 +3892,7 @@
            "correct": false
           },
           {
-           "content": "Elle a un climat désertique",
+           "content": "Elle a un climat de montagne",
            "correct": false
           }
          ]
@@ -3938,14 +3943,14 @@
         {
          "content": "Qu'est-ce qui rend le sol fertile en surface dans la forêt ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Identifier la source de fertilité : la forêt laisse tomber ses feuilles mortes. 2) Elles forment l'humus, qui rend le sol fertile en surface. Pourquoi pas le lessivage : il enlève des minéraux au lieu d'en apporter. Pourquoi pas les minéraux des pluies : les pluies lessivent le sol. Pourquoi pas le sel : il appartient à l'eau de mer.",
+         "explanation": "Méthode : 1) Identifier la source de fertilité : la forêt laisse tomber ses feuilles mortes. 2) Elles forment l'humus, qui rend le sol fertile en surface. Pourquoi pas le lessivage : il enlève des minéraux au lieu d'en apporter. Pourquoi pas les minéraux des pluies : les pluies lessivent le sol. Pourquoi pas le fer : il donne au sol sa couleur rouge, mais il n'est pas la source de sa fertilité.",
          "answers": [
           {
            "content": "L'humus",
            "correct": true
           },
           {
-           "content": "Le sel",
+           "content": "Le fer du sol",
            "correct": false
           },
           {
@@ -4024,22 +4029,22 @@
         {
          "content": "Quel est le problème posé par les plantations qui remplacent la forêt ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Identifier l'activité : des plantations remplacent la forêt. 2) Montrer l'effet : le recul de la forêt s'appelle la déforestation. Pourquoi pas l'érosion : c'est une conséquence de la déforestation, pas le problème lui-même. Pourquoi pas le lessivage : il est causé par les pluies. Pourquoi pas l'amplitude : c'est une mesure du climat.",
+         "explanation": "Méthode : 1) Identifier l'activité : des plantations remplacent la forêt. 2) Montrer l'effet : le recul de la forêt s'appelle la déforestation. Pourquoi pas le lessivage naturel : il est causé par les pluies, même sans plantations. Pourquoi pas le reboisement : c'est une solution, pas un problème. Pourquoi pas la mangrove : c'est une végétation du littoral.",
          "answers": [
           {
            "content": "La déforestation",
            "correct": true
           },
           {
-           "content": "Le lessivage",
+           "content": "Le lessivage naturel des sols",
            "correct": false
           },
           {
-           "content": "L'amplitude thermique",
+           "content": "La mangrove",
            "correct": false
           },
           {
-           "content": "L'érosion",
+           "content": "Le reboisement",
            "correct": false
           }
          ]
@@ -4073,22 +4078,22 @@
         {
          "content": "Quelle action protège la forêt ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1) Montrer les effets de la coupe : sol à nu, perte d'espèces. 2) Proposer une solution : créer et protéger des forêts classées pour conserver la forêt. Pourquoi pas couper sans replanter, brûler ou abandonner les parcs : ces actions font reculer la forêt, donc aggravent la déforestation.",
+         "explanation": "Méthode : 1) Montrer les effets de la coupe : sol à nu, perte d'espèces. 2) Proposer une solution : créer et protéger des forêts classées pour conserver la forêt. Pourquoi pas ouvrir des plantations en forêt classée, planter du cacao en plein soleil ou exploiter le bois sans replanter : ces actions font reculer la forêt, donc aggravent la déforestation.",
          "answers": [
           {
            "content": "Créer et protéger des forêts classées",
            "correct": true
           },
           {
-           "content": "Couper sans replanter",
+           "content": "Ouvrir de nouvelles plantations en forêt classée",
            "correct": false
           },
           {
-           "content": "Brûler pour planter",
+           "content": "Planter du cacao en plein soleil à la place de la forêt",
            "correct": false
           },
           {
-           "content": "Abandonner les parcs nationaux",
+           "content": "Exploiter le bois sans replanter",
            "correct": false
           }
          ]
