@@ -275,7 +275,7 @@
        {
         "content": "Remets dans l'ordre la préparation d'une lame.",
         "question_type": "ordering",
-        "explanation": "Étape 1 — Préparer : fragment mince, goutte d'eau, lamelle posée doucement. Étape 2 — Observer : on termine par le plus petit objectif avant de passer à un plus fort.",
+        "explanation": "Étape 1 — Préparer : fragment mince, goutte d'eau, lamelle posée doucement. Étape 2 — Observer : on observe d'abord au plus petit objectif avant de passer à un plus fort.",
         "answers": [
          {
           "content": "Prélever un fragment très mince"
@@ -357,7 +357,7 @@
            "correct": false
           },
           {
-           "content": "×30",
+           "content": "×40",
            "correct": false
           }
          ]
@@ -486,10 +486,14 @@
         {
          "content": "1 mm = ___ µm.",
          "question_type": "fill_blank",
-         "explanation": "Étape 6 — Calculer la taille réelle : pour passer des millimètres aux micromètres, on multiplie par 1 000, donc 1 mm = 1 000 µm. Pourquoi pas 100 : 100 correspond aux centimètres, pas aux micromètres.",
+         "explanation": "Étape 6 — Calculer la taille réelle : pour passer des millimètres aux micromètres, on multiplie par 1 000, donc 1 mm = 1 000 µm. Pourquoi pas 100 : 1 m = 100 cm ; le micromètre est mille fois plus petit que le millimètre.",
          "answers": [
           {
            "content": "1000",
+           "correct": true
+          },
+          {
+           "content": "1 000",
            "correct": true
           }
          ]
@@ -692,22 +696,22 @@
         {
          "content": "Les cellules d'un muscle dépensent beaucoup d'énergie. Quel organite y est très abondant ?",
          "question_type": "single_choice",
-         "explanation": "Étape 3 — Associer à chaque organite son rôle : la mitochondrie libère l'énergie, donc une cellule qui en dépense beaucoup en contient beaucoup. Pourquoi pas « Le noyau seul » : le noyau contient l'information génétique et ne libère pas l'énergie.",
+         "explanation": "Étape 3 — Associer à chaque organite son rôle : la mitochondrie libère l'énergie, donc une cellule qui en dépense beaucoup en contient beaucoup. Pourquoi pas « L'appareil de Golgi » : il trie et emballe les protéines et ne libère pas l'énergie.",
          "answers": [
           {
            "content": "La mitochondrie",
            "correct": true
           },
           {
-           "content": "Le noyau seul",
+           "content": "Le réticulum",
            "correct": false
           },
           {
-           "content": "L'enveloppe nucléaire",
+           "content": "L'appareil de Golgi",
            "correct": false
           },
           {
-           "content": "Le nucléole",
+           "content": "Le ribosome",
            "correct": false
           }
          ]
@@ -833,7 +837,7 @@
            "correct": false
           },
           {
-           "content": "crête",
+           "content": "nucléole",
            "correct": false
           }
          ]
@@ -890,7 +894,7 @@
         {
          "content": "Une mitochondrie mesure 20 mm sur une image à ×10 000. Quelle est sa taille réelle, en µm ?",
          "question_type": "numeric",
-         "explanation": "Étape 1 — Repérer : la mitochondrie mesure 20 mm sur l'image. Pour la taille réelle, on divise la mesure par le grossissement : 20 ÷ 10 000 = 0,002 mm, soit 0,002 × 1 000 = 2 µm. Pourquoi pas « 200 000 µm » : multiplier 20 par 10 000 donne une taille énorme ; on divise par le grossissement.",
+         "explanation": "Étape 1 — Repérer : la structure à mesurer fait 20 mm sur l'image. Étape 2 — Reconnaître : c'est une mitochondrie, dont on calcule la taille réelle en divisant la mesure par le grossissement : 20 ÷ 10 000 = 0,002 mm, soit 0,002 × 1 000 = 2 µm. Pourquoi pas « 200 000 µm » : multiplier 20 par 10 000 donne une taille énorme ; on divise par le grossissement.",
          "answers": [
           {
            "content": "2",
@@ -912,10 +916,10 @@
       "Lister les structures visibles dans chaque cellule : limite, noyau, organites du cytoplasme.",
       "Repérer les structures communes : membrane plasmique, noyau, mitochondries, ribosomes.",
       "Repérer les structures propres à la cellule végétale : paroi, chloroplastes, grande vacuole.",
-      "Conclure : une paroi ou des chloroplastes désignent une cellule végétale ; sans paroi ni chloroplaste, la cellule est animale."
+      "Conclure : parmi les cellules à noyau, une paroi ou des chloroplastes désignent une cellule végétale ; sans paroi ni chloroplaste, la cellule est animale."
      ],
      "example": {
-      "statement": "Deux cellules sont observées. La cellule A est limitée par une membrane seule et contient un noyau et des mitochondries. La cellule B est entourée d'une paroi épaisse et contient un noyau, des chloroplastes et une grande vacuole. Quel est le type de chaque cellule ?",
+      "statement": "Deux cellules sont observées. La cellule A est limitée par une membrane seule et contient un noyau et des mitochondries. La cellule B est entourée d'une paroi épaisse et contient un noyau, des mitochondries, des chloroplastes et une grande vacuole. Quel est le type de chaque cellule ?",
       "steps": [
        "Lister : A montre une membrane, un noyau, des mitochondries ; B montre une paroi, un noyau, des chloroplastes, une grande vacuole.",
        "Repérer les structures communes : A et B ont toutes deux un noyau et des mitochondries.",
@@ -946,7 +950,7 @@
           "correct": false
          },
          {
-          "content": "sans membrane plasmique",
+          "content": "bactérienne",
           "correct": false
          }
         ],
@@ -1084,7 +1088,7 @@
            "match": "Ni paroi ni chloroplaste"
           },
           {
-           "content": "Cellule végétale non verte (racine)",
+           "content": "Cellule de racine",
            "match": "Paroi, mais pas de chloroplaste"
           },
           {
@@ -1149,7 +1153,7 @@
            "correct": false
           },
           {
-           "content": "sans noyau",
+           "content": "procaryote",
            "correct": false
           },
           {
@@ -1322,9 +1326,9 @@
         "hint": "Les ribosomes ne sont pas entourés de membrane."
        },
        {
-        "content": "Une cellule sans noyau est une cellule ___.",
+        "content": "Une cellule dont l'ADN est libre dans le cytoplasme, sans noyau, est une cellule ___.",
         "question_type": "fill_blank",
-        "explanation": "Étape 2 — Chercher le noyau : sans noyau, étape 4 — Conclure : la cellule est procaryote, comme la bactérie. Dans une bactérie, l'ADN existe bien, mais il flotte librement dans le cytoplasme.",
+        "explanation": "Étape 2 — Chercher le noyau : sans noyau, étape 4 — Conclure : la cellule est procaryote, comme la bactérie. Le noyau, délimité par son enveloppe, est le critère décisif de la cellule eucaryote.",
         "answers": [
          {
           "content": "procaryote",
@@ -1407,7 +1411,7 @@
         {
          "content": "Quelles structures sont communes à la bactérie et à la cellule animale ?",
          "question_type": "multiple_correct_2",
-         "explanation": "Étape 3 — Chercher les organites entourés de membrane : seuls les ribosomes et la membrane plasmique existent dans les deux types. Pourquoi pas « Les mitochondries » : ce sont des organites à membrane, absents de la bactérie.",
+         "explanation": "Étape 3 — Chercher les organites entourés de membrane : parmi les propositions, seuls les ribosomes et la membrane plasmique existent dans les deux types. Pourquoi pas « Les mitochondries » : ce sont des organites à membrane, absents de la bactérie.",
          "answers": [
           {
            "content": "La membrane plasmique",
@@ -1476,7 +1480,7 @@
       },
       {
        "title": "Des bactéries du lait caillé observées au microscope",
-       "statement": "Dans cet exercice, tu étudies des bactéries du lait caillé observées au microscope électronique par un élève (valeurs fictives).",
+       "statement": "Dans cet exercice, tu étudies des bactéries du lait caillé observées sur une photographie prise au microscope électronique par un élève (valeurs fictives).",
        "exercise_type": "fixation",
        "figure": null,
        "questions": [
@@ -1511,7 +1515,7 @@
            "correct": false
           },
           {
-           "content": "C'est une cellule sans ribosomes",
+           "content": "C'est une cellule eucaryote à paroi",
            "correct": false
           }
          ]
@@ -1543,21 +1547,21 @@
          ]
         },
         {
-         "content": "Relie chaque taille moyenne au type de cellule.",
+         "content": "Relie chaque description au type de cellule.",
          "question_type": "matching",
-         "explanation": "Étape 1 — Estimer la taille : la bactérie est la plus petite, la cellule animale mesure quelques dizaines de µm et la cellule végétale est la plus grande. Pourquoi pas inverser : un procaryote ne dépasse en général pas 10 µm.",
+         "explanation": "Étape 1 — Estimer la taille, étape 2 — Chercher le noyau, étape 3 — Chercher les organites : l'ADN libre sans noyau désigne le procaryote ; noyau et mitochondries sans paroi désignent l'eucaryote animal ; noyau, paroi et chloroplastes désignent l'eucaryote végétal. Pourquoi pas relier la taille seule : elle ne sépare pas à elle seule une cellule animale d'une cellule végétale.",
          "answers": [
           {
-           "content": "Environ 2 µm",
-           "match": "Bactérie"
+           "content": "Environ 2 µm, ADN libre, pas de noyau",
+           "match": "Cellule procaryote"
           },
           {
-           "content": "Environ 20 µm",
-           "match": "Cellule animale"
+           "content": "Environ 50 µm, noyau, mitochondries, sans paroi",
+           "match": "Cellule eucaryote animale"
           },
           {
-           "content": "Environ 100 µm",
-           "match": "Cellule végétale"
+           "content": "Environ 100 µm, noyau, paroi, chloroplastes",
+           "match": "Cellule eucaryote végétale"
           }
          ]
         },
@@ -1611,7 +1615,7 @@
        "unit": "×"
       },
       {
-       "content": "À ce grossissement, la cellule dessinée mesure 25 mm. Quelle est sa taille réelle, en µm ?",
+       "content": "Au grossissement ×100, la cellule dessinée mesure 25 mm. Quelle est sa taille réelle, en µm ?",
        "question_type": "numeric",
        "explanation": "Méthode : 1. Mesurer la cellule sur le dessin : 25 mm. 2. Calculer la taille réelle : 25 ÷ 100 = 0,25 mm. 3. Convertir : 0,25 × 1 000 = 250 µm. Pourquoi pas « 2 500 µm » : on aurait confondu le millimètre avec le centimètre lors de la conversion.",
        "answers": [
@@ -1637,7 +1641,7 @@
          "correct": false
         },
         {
-         "content": "remplacer l'oculaire par une lamelle colorée",
+         "content": "mettre plus de colorant sur la lame",
          "correct": false
         },
         {
@@ -1679,7 +1683,7 @@
          "correct": false
         },
         {
-         "content": "Le nom de l'élève à la place des légendes",
+         "content": "Le grossissement à la place du titre",
          "correct": false
         }
        ]
@@ -1688,21 +1692,21 @@
     },
     {
      "title": "Trois cellules au microscope électronique",
-     "statement": "Un biologiste compare trois cellules fictives au microscope électronique. La cellule X est très riche en réticulum rugueux et en appareil de Golgi. La cellule Y contient énormément de mitochondries. La cellule Z est entourée d'une paroi.",
+     "statement": "Un biologiste compare trois cellules fictives au microscope électronique. La cellule X est très riche en réticulum rugueux et en appareil de Golgi. La cellule Y contient énormément de mitochondries.",
      "exercise_type": "fixation",
      "figure": "ultrastructure-eucaryote",
      "questions": [
       {
        "content": "La cellule X fabrique et exporte surtout :",
        "question_type": "single_choice",
-       "explanation": "Méthode : 1. Repérer le réticulum rugueux et le Golgi. 2. Reconnaître leur rôle : le réticulum transporte les protéines fabriquées par les ribosomes, le Golgi les trie et les emballe. Pourquoi pas « de l'énergie lumineuse » : la lumière est utilisée par les chloroplastes, absents ici.",
+       "explanation": "Méthode : 1. Repérer le réticulum rugueux et le Golgi. 2. Reconnaître leur rôle : le réticulum transporte les protéines fabriquées par les ribosomes, le Golgi les trie et les emballe. Pourquoi pas « de l'énergie » : l'énergie est libérée par les mitochondries ; le réticulum et le Golgi ne la produisent pas.",
        "answers": [
         {
          "content": "des protéines",
          "correct": true
         },
         {
-         "content": "de l'énergie lumineuse",
+         "content": "de l'énergie",
          "correct": false
         },
         {
@@ -1894,7 +1898,7 @@
     },
     {
      "title": "Bilan : trois cellules à identifier",
-     "statement": "Trois cellules sont décrites (valeurs fictives). La cellule C1 mesure environ 2 µm, son ADN est libre, elle a des ribosomes et une paroi. La cellule C2 mesure environ 20 µm, avec un noyau, des mitochondries et sans paroi. La cellule C3 mesure environ 100 µm, avec un noyau, une paroi, des chloroplastes et une grande vacuole.",
+     "statement": "Trois cellules sont décrites (valeurs fictives). La cellule C1 mesure environ 2 µm, son ADN est libre, elle a des ribosomes et une paroi. La cellule C2 mesure environ 20 µm, avec un noyau, des mitochondries et sans paroi. La cellule C3 mesure environ 100 µm, avec un noyau, des mitochondries, une paroi, des chloroplastes et une grande vacuole.",
      "exercise_type": "evaluation",
      "figure": "tailles-cellules",
      "questions": [
@@ -1916,7 +1920,7 @@
          "correct": false
         },
         {
-         "content": "une cellule sans ribosomes",
+         "content": "une cellule eucaryote",
          "correct": false
         }
        ]
@@ -1939,7 +1943,7 @@
          "correct": false
         },
         {
-         "content": "une cellule sans mitochondries",
+         "content": "une bactérie",
          "correct": false
         }
        ]
@@ -2072,6 +2076,10 @@
           {
            "content": "1000",
            "correct": true
+          },
+          {
+           "content": "1 000",
+           "correct": true
           }
          ]
         },
@@ -2106,7 +2114,7 @@
            "correct": false
           },
           {
-           "content": "On colore la lentille",
+           "content": "On dessine d'abord la cellule",
            "correct": false
           }
          ]
@@ -2367,9 +2375,9 @@
          ]
         },
         {
-         "content": "Une cellule sans noyau est dite ___.",
+         "content": "Une cellule dont l'ADN est libre dans le cytoplasme, sans noyau, est une cellule ___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 1. Chercher le noyau : absent. 2. Conclure : cellule procaryote. Pourquoi pas eucaryote : une cellule eucaryote a un noyau. Dans une bactérie, l'ADN existe bien, mais il flotte librement dans le cytoplasme.",
+         "explanation": "Méthode : 1. Chercher le noyau : absent. 2. Conclure : cellule procaryote. Pourquoi pas eucaryote : une cellule eucaryote a un noyau. Le noyau, délimité par son enveloppe, est le critère décisif de la cellule eucaryote.",
          "answers": [
           {
            "content": "procaryote",
@@ -2401,12 +2409,12 @@
          ]
         },
         {
-         "content": "Une bactérie mesure 15 mm sur un dessin fait à ×300. Quelle est sa taille réelle, en µm ?",
+         "content": "Une bactérie mesure 20 mm sur une image à ×10 000. Quelle est sa taille réelle, en µm ?",
          "question_type": "numeric",
-         "explanation": "Méthode : 1. Mesurer : 15 mm. 2. Calculer la taille réelle : 15 ÷ 300 = 0,05 mm. 3. Convertir : 0,05 × 1 000 = 50 µm. Pourquoi pas « 4 500 µm » : on a multiplié 15 par 300 au lieu de diviser.",
+         "explanation": "Méthode : 1. Mesurer : 20 mm. 2. Calculer la taille réelle : 20 ÷ 10 000 = 0,002 mm. 3. Convertir : 0,002 × 1 000 = 2 µm. Pourquoi pas « 200 000 µm » : on a multiplié 20 par 10 000 au lieu de diviser.",
          "answers": [
           {
-           "content": "50",
+           "content": "2",
            "correct": true
           }
          ],
@@ -2457,22 +2465,22 @@
         {
          "content": "Dans quoi dépose-t-on la pelure pour la préparer ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1. Préparer : le fragment mince est déposé dans une goutte d'eau, puis recouvert d'une lamelle. Pourquoi pas « Sur la lamelle sèche » : un fragment sec, sans eau ni lamelle, se déforme et protège mal la lentille.",
+         "explanation": "Méthode : 1. Préparer : le fragment mince est déposé dans une goutte d'eau, puis recouvert d'une lamelle. Pourquoi pas « Sur la lame sèche, sans goutte d'eau » : un fragment sec, sans eau ni lamelle, se déforme et protège mal la lentille.",
          "answers": [
           {
            "content": "Dans une goutte d'eau, sur la lame",
            "correct": true
           },
           {
-           "content": "Dans du sable",
+           "content": "Sur la lame sèche, sans goutte d'eau",
            "correct": false
           },
           {
-           "content": "Sur la lamelle sèche",
+           "content": "Directement sur la lentille de l'objectif",
            "correct": false
           },
           {
-           "content": "Dans un tube fermé",
+           "content": "Sur la lamelle seule, sans lame",
            "correct": false
           }
          ]
@@ -2526,7 +2534,7 @@
            "correct": false
           },
           {
-           "content": "Pour tuer le microscope",
+           "content": "Pour coller la lamelle sur la lame",
            "correct": false
           },
           {
@@ -2670,7 +2678,7 @@
            "correct": false
           },
           {
-           "content": "Une enveloppe bactérienne",
+           "content": "Un nucléoïde sans enveloppe",
            "correct": false
           }
          ]
@@ -2718,7 +2726,7 @@
       },
       {
        "title": "Exercice 4",
-       "statement": "Dans un village, un élève examine du lait caillé au microscope électronique. Il y repère de minuscules cellules, des bactéries, et mesure l'une d'elles (valeurs fictives).",
+       "statement": "Dans un village, un élève examine du lait caillé sur une photographie prise au microscope électronique. Il y repère de minuscules cellules, des bactéries, et mesure l'une d'elles (valeurs fictives).",
        "exercise_type": "evaluation",
        "figure": null,
        "questions": [
@@ -2797,9 +2805,9 @@
          ]
         },
         {
-         "content": "Les bactéries sont des cellules sans ___.",
+         "content": "Les bactéries n'ont pas de ___ : leur ADN est libre dans le cytoplasme.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 1. Chercher le noyau. 2. Conclure : les bactéries n'en ont pas, leur ADN est libre. Pourquoi pas « ADN » : elles en possèdent une molécule. Le mot attendu désigne la structure qui entoure l'ADN chez les eucaryotes seulement.",
+         "explanation": "Méthode : 1. Chercher le noyau : une bactérie n'en a pas, son ADN est libre dans le cytoplasme. 2. Conclure : la bactérie est une cellule procaryote. Pourquoi pas « ADN » : elle en possède bien une molécule, simplement sans enveloppe autour.",
          "answers": [
           {
            "content": "noyau",
@@ -2921,14 +2929,14 @@
         {
          "content": "La cellule P est spécialisée dans :",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1. Repérer le réticulum rugueux et le Golgi. 2. Associer leur rôle : transport, tri et emballage des protéines. Pourquoi pas « la production d'énergie lumineuse » : la lumière est utilisée par les chloroplastes, absents ici.",
+         "explanation": "Méthode : 1. Repérer le réticulum rugueux et le Golgi. 2. Associer leur rôle : transport, tri et emballage des protéines. Pourquoi pas « la libération d'énergie » : l'énergie est libérée par les mitochondries, pas par le réticulum ni le Golgi.",
          "answers": [
           {
            "content": "la fabrication et la sécrétion de protéines",
            "correct": true
           },
           {
-           "content": "la production d'énergie lumineuse",
+           "content": "la libération d'énergie",
            "correct": false
           },
           {
@@ -3098,6 +3106,10 @@
           },
           {
            "content": "souterrain",
+           "correct": true
+          },
+          {
+           "content": "sous terre",
            "correct": true
           }
          ]
@@ -3467,7 +3479,7 @@
         {
          "content": "Quelles structures sont communes aux cellules animale et végétale ?",
          "question_type": "multiple_correct_3",
-         "explanation": "Méthode : 1. Lister. 2. Noyau, mitochondries, ribosomes sont communs. Pourquoi pas « La paroi » : elle est propre à la cellule végétale. Retiens que toute cellule eucaryote contient ces trois structures, alors que paroi et chloroplastes sont réservés au végétal.",
+         "explanation": "Méthode : 1. Lister. 2. Noyau, mitochondries et ribosomes sont, en général, communs à toutes les cellules eucaryotes. Pourquoi pas « La paroi » : elle est propre à la cellule végétale.",
          "answers": [
           {
            "content": "Le noyau",
@@ -3530,7 +3542,7 @@
       },
       {
        "title": "Exercice 4",
-       "statement": "Dans cet exercice, tu fais le bilan de toute la leçon. Trois cellules fictives sont décrites : S1 de 2 µm sans noyau, avec ADN libre et paroi ; S2 de 20 µm avec noyau et mitochondries, sans paroi ; S3 de 100 µm avec noyau, paroi et chloroplastes.",
+       "statement": "Dans cet exercice, tu fais le bilan de toute la leçon. Trois cellules fictives sont décrites : S1 de 2 µm sans noyau, avec ADN libre et paroi ; S2 de 20 µm avec noyau et mitochondries, sans paroi ; S3 de 100 µm avec noyau, mitochondries, paroi et chloroplastes.",
        "exercise_type": "evaluation",
        "figure": null,
        "questions": [
