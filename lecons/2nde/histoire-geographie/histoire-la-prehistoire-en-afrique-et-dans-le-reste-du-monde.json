@@ -1,0 +1,3869 @@
+{
+  "format": "lnclass.course-tree",
+  "version": 3,
+  "courses": [
+    {
+      "name": "Histoire — La préhistoire en Afrique et dans le reste du monde",
+      "subtitle": "Leçon 7 — progression DPFC 2026-2027",
+      "level_name": "2nde",
+      "material_name": "Histoire-Géographie",
+      "theme": "teal",
+      "figures": [
+        {
+          "key": "periodes-de-la-prehistoire",
+          "kind": "diagram",
+          "description": "Un schéma en quatre étapes, de gauche à droite : les premiers hommes, le Paléolithique (pierre taillée, chasse et cueillette), le Néolithique (pierre polie, agriculture, élevage, poterie), puis l'âge des métaux (cuivre, bronze, fer). L'invention de l'écriture marque la fin de la préhistoire.",
+          "params": {
+            "layout": "flow",
+            "direction": "right",
+            "nodes": [
+              {
+                "id": "p0",
+                "label": "Premiers hommes"
+              },
+              {
+                "id": "pal",
+                "label": "Paléolithique : pierre taillée"
+              },
+              {
+                "id": "neo",
+                "label": "Néolithique : pierre polie"
+              },
+              {
+                "id": "met",
+                "label": "Âge des métaux"
+              }
+            ],
+            "edges": [
+              {
+                "from": "p0",
+                "to": "pal"
+              },
+              {
+                "from": "pal",
+                "to": "neo"
+              },
+              {
+                "from": "neo",
+                "to": "met"
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "carte-sites-afrique",
+          "kind": "map",
+          "description": "Une carte de l'Afrique. Sept pays sont teintés en trois catégories : cinq pays où l'on a trouvé de très anciens fossiles, l'Éthiopie (Lucy), le Tchad (Toumaï), le Kenya (lac Turkana), la Tanzanie (Olduvai) et l'Afrique du Sud ; l'Algérie, pour l'art rupestre du Tassili ; la Côte d'Ivoire, comme repère.",
+          "params": {
+            "base": "africa",
+            "areas": [
+              {
+                "id": "eth",
+                "category": 1
+              },
+              {
+                "id": "tcd",
+                "category": 1
+              },
+              {
+                "id": "ken",
+                "category": 1
+              },
+              {
+                "id": "tza",
+                "category": 1
+              },
+              {
+                "id": "zaf",
+                "category": 1
+              },
+              {
+                "id": "dza",
+                "category": 2
+              },
+              {
+                "id": "civ",
+                "category": 3
+              }
+            ],
+            "legend": [
+              "Pays de grands fossiles d'hominidés",
+              "Algérie : art rupestre du Tassili",
+              "Côte d'Ivoire (repère)"
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "etapes-de-l-hominisation",
+          "kind": "diagram",
+          "description": "Un schéma en quatre étapes, de gauche à droite : l'australopithèque marche debout, Homo habilis taille des outils de pierre, Homo erectus maîtrise le feu et fabrique des bifaces, Homo sapiens parle, crée des œuvres d'art et peuple tous les continents.",
+          "params": {
+            "layout": "flow",
+            "direction": "right",
+            "nodes": [
+              {
+                "id": "aus",
+                "label": "Australopithèque : marche debout"
+              },
+              {
+                "id": "hab",
+                "label": "Homo habilis : outils de pierre"
+              },
+              {
+                "id": "ere",
+                "label": "Homo erectus : feu, bifaces"
+              },
+              {
+                "id": "sap",
+                "label": "Homo sapiens : langage, art"
+              }
+            ],
+            "edges": [
+              {
+                "from": "aus",
+                "to": "hab"
+              },
+              {
+                "from": "hab",
+                "to": "ere"
+              },
+              {
+                "from": "ere",
+                "to": "sap"
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "de-la-chasse-a-l-agriculture",
+          "kind": "diagram",
+          "description": "Un schéma en quatre étapes, de haut en bas : les hommes cultivent et élèvent des animaux, la récolte dépasse les besoins et se stocke dans des poteries, les hommes se fixent dans des villages, la population augmente.",
+          "params": {
+            "layout": "flow",
+            "direction": "down",
+            "nodes": [
+              {
+                "id": "cul",
+                "label": "Agriculture et élevage"
+              },
+              {
+                "id": "sur",
+                "label": "Surplus stocké dans des poteries"
+              },
+              {
+                "id": "vil",
+                "label": "Sédentarisation : villages"
+              },
+              {
+                "id": "pop",
+                "label": "Population plus nombreuse"
+              }
+            ],
+            "edges": [
+              {
+                "from": "cul",
+                "to": "sur"
+              },
+              {
+                "from": "sur",
+                "to": "vil"
+              },
+              {
+                "from": "vil",
+                "to": "pop"
+              }
+            ]
+          },
+          "controls": []
+        }
+      ],
+      "notions": [
+        {
+          "name": "Définir et périodiser la préhistoire",
+          "remember": "La **préhistoire** est la plus longue période de l'histoire de l'humanité : elle commence avec l'apparition des premiers hommes et se termine avec l'invention de l'écriture, vers 3 000 ans avant J.-C. Sans écrit, on l'étudie grâce aux **sources matérielles** (ossements fossiles, outils, restes d'habitat) et **iconographiques** (art rupestre), que cherchent les archéologues et les paléontologues.\n\nOn la découpe d'après les outils et le mode de vie :\n**Paléolithique** (*paléo* = ancien, *lithos* = pierre) : pierre taillée, chasse, pêche, cueillette, vie nomade.\n**Néolithique** (*néo* = nouveau) : pierre polie, agriculture, élevage, poterie, villages.\nL'**âge des métaux** (cuivre, bronze, fer) vient ensuite. La date de la fin de la préhistoire varie selon les régions.",
+          "method": [
+            "Repérer l'indice donné : texte écrit, outil ou mode de vie.",
+            "Situer l'indice par rapport à l'écriture : sans écriture, c'est la préhistoire.",
+            "Nommer la période d'après l'outil et le mode de vie : pierre taillée et chasse-cueillette, Paléolithique ; pierre polie et agriculture, Néolithique.",
+            "Ordonner la période dans la chronologie : Paléolithique, puis Néolithique, puis âge des métaux."
+          ],
+          "example": {
+            "statement": "Au musée des Civilisations de Côte d'Ivoire, le club d'histoire lit un panneau : « hache en pierre polie, graines de céréales et morceaux de poterie, trouvés près d'un ancien village ; aucun texte écrit ». À quelle période appartient cet ensemble ?",
+            "steps": [
+              "Repérer : une hache en pierre polie, des graines (donc de l'agriculture) et de la poterie ; aucun texte n'est signalé.",
+              "Situer : il n'y a pas d'écriture, donc l'ensemble appartient à la préhistoire.",
+              "Nommer : pierre polie, agriculture et poterie caractérisent le Néolithique.",
+              "Ordonner : le Néolithique vient après le Paléolithique et avant l'âge des métaux."
+            ]
+          },
+          "pitfall": "Ne confonds pas la préhistoire avec l'époque des dinosaures. Contre-exemple : les dinosaures ont disparu des dizaines de millions d'années avant l'apparition des premiers hommes. La préhistoire commence avec l'**homme**, pas avec la Terre ni avec les dinosaures. Demande-toi toujours : « Y a-t-il des hommes ? Y a-t-il de l'écriture ? »",
+          "figure": "periodes-de-la-prehistoire",
+          "practice": {
+            "statement": "Tu t'entraînes à repérer, situer, nommer et ordonner pour périodiser la préhistoire.",
+            "questions": [
+              {
+                "content": "Quel événement marque la fin de la préhistoire ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 2 — Situer par rapport à l'écriture : la préhistoire est la période sans écrit. Quand l'écriture est inventée, l'histoire commence. La poterie, le feu et les villages sont des progrès de la préhistoire, pas sa fin.",
+                "answers": [
+                  {
+                    "content": "L'invention de l'écriture",
+                    "correct": true
+                  },
+                  {
+                    "content": "L'apparition de la poterie",
+                    "correct": false
+                  },
+                  {
+                    "content": "La découverte du feu",
+                    "correct": false
+                  },
+                  {
+                    "content": "La naissance des premiers villages",
+                    "correct": false
+                  }
+                ],
+                "hint": "Quelle période est définie par l'absence d'écrit ?"
+              },
+              {
+                "content": "Relie chaque indice à sa période.",
+                "question_type": "matching",
+                "explanation": "Étape 3 — Nommer la période d'après l'outil et le mode de vie : pierre taillée et chasse-cueillette, Paléolithique ; pierre polie et agriculture, Néolithique ; métaux, âge des métaux.",
+                "answers": [
+                  {
+                    "content": "Pierre taillée, chasse et cueillette",
+                    "match": "Paléolithique"
+                  },
+                  {
+                    "content": "Pierre polie, agriculture et élevage",
+                    "match": "Néolithique"
+                  },
+                  {
+                    "content": "Cuivre, bronze et fer",
+                    "match": "Âge des métaux"
+                  }
+                ],
+                "hint": "Regarde d'abord la matière de l'outil."
+              },
+              {
+                "content": "Un outil en pierre polie appartient au Néolithique.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Repérer : la pierre polie. Étape 3 — Nommer : la pierre polie est l'outil du Néolithique, alors que la pierre taillée est celle du Paléolithique.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Pense au sens de « néo »."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Reconnaître la préhistoire et ses périodes",
+              "statement": "Dans cet exercice, tu appliques la méthode de la fiche (repérer, situer, nommer, ordonner) pour reconnaître la préhistoire et ses périodes.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": null,
+              "questions": [
+                {
+                  "content": "Le mot Paléolithique vient du grec : paléo veut dire « ancien » et lithos « pierre ». Que désigne-t-il ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Nommer : paléo = ancien, lithos = pierre ; le Paléolithique est la période de la pierre taillée. La pierre polie est celle du Néolithique, et le fer celui de l'âge des métaux.",
+                  "answers": [
+                    {
+                      "content": "L'âge de la pierre ancienne, taillée",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'âge de la pierre nouvelle, polie",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'âge du fer",
+                      "correct": false
+                    },
+                    {
+                      "content": "La période de l'écriture",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La préhistoire commence avec l'invention de l'écriture.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Situer par rapport à l'écriture : la préhistoire est la période d'avant l'écriture. L'écriture marque sa fin, pas son début. Elle commence avec l'apparition des premiers hommes.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Complète : la période qui précède le Néolithique s'appelle le ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 4 — Ordonner : la chronologie est Paléolithique, puis Néolithique, puis âge des métaux. Le Paléolithique précède donc le Néolithique.",
+                  "answers": [
+                    {
+                      "content": "Paléolithique",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets ces périodes dans l'ordre chronologique.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 4 — Ordonner : on commence par la pierre taillée (Paléolithique), puis la pierre polie (Néolithique), puis les métaux.",
+                  "answers": [
+                    {
+                      "content": "Paléolithique : pierre taillée"
+                    },
+                    {
+                      "content": "Néolithique : pierre polie"
+                    },
+                    {
+                      "content": "Âge des métaux : cuivre, bronze, fer"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle affirmation est exacte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : la préhistoire est l'histoire de l'homme avant l'écriture. Étape 2 — Situer : les dinosaures ont disparu des dizaines de millions d'années avant les premiers hommes. C'est le piège de la fiche.",
+                  "answers": [
+                    {
+                      "content": "La préhistoire commence avec les premiers hommes, bien après la disparition des dinosaures",
+                      "correct": true
+                    },
+                    {
+                      "content": "La préhistoire commence avec les dinosaures",
+                      "correct": false
+                    },
+                    {
+                      "content": "La préhistoire commence avec la formation de la Terre",
+                      "correct": false
+                    },
+                    {
+                      "content": "La préhistoire commence avec les premières villes",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Le musée : classer des objets préhistoriques",
+              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche (repérer, situer, nommer, ordonner) à des objets vus pendant une sortie du club d'histoire au musée des Civilisations de Côte d'Ivoire (situation imaginée).",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Regarde la matière de l'outil et demande-toi s'il y a de l'écriture.",
+              "questions": [
+                {
+                  "content": "Relie chaque objet du musée à sa période.",
+                  "question_type": "matching",
+                  "explanation": "Étape 3 — Nommer : pierre taillée, Paléolithique ; pierre polie, Néolithique ; fer, âge des métaux. Étape 2 — Situer : un texte gravé suppose l'écriture, donc on n'est plus en préhistoire.",
+                  "answers": [
+                    {
+                      "content": "Un galet taillé sur un côté",
+                      "match": "Paléolithique"
+                    },
+                    {
+                      "content": "Une hache en pierre polie",
+                      "match": "Néolithique"
+                    },
+                    {
+                      "content": "Une pointe de lance en fer",
+                      "match": "Âge des métaux"
+                    },
+                    {
+                      "content": "Un texte gravé en signes d'écriture",
+                      "match": "Histoire (après l'invention de l'écriture)"
+                    }
+                  ]
+                },
+                {
+                  "content": "Un panneau indique : « restes d'un campement de chasseurs nomades, outils en pierre taillée, aucun texte ». À quelle période appartient ce campement ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : pierre taillée, chasseurs nomades. Étape 3 — Nommer : ce sont les indices du Paléolithique. Le Néolithique aurait des champs et un village.",
+                  "answers": [
+                    {
+                      "content": "Paléolithique",
+                      "correct": true
+                    },
+                    {
+                      "content": "Néolithique",
+                      "correct": false
+                    },
+                    {
+                      "content": "Âge des métaux",
+                      "correct": false
+                    },
+                    {
+                      "content": "Histoire (après l'invention de l'écriture)",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une hache en pierre polie est plus ancienne qu'un galet taillé.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 4 — Ordonner : le Paléolithique (pierre taillée) précède le Néolithique (pierre polie). La hache polie est donc plus récente que le galet taillé.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Les premiers villages et l'agriculture apparaissent au ___ (nom de la période).",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 3 — Nommer : agriculture et villages sont les indices du Néolithique.",
+                  "answers": [
+                    {
+                      "content": "Néolithique",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un objet fictif est daté de 5 000 ans avant J.-C. et l'écriture est inventée vers 3 000 ans avant J.-C. Combien d'années séparent ces deux dates ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 4 — Ordonner : pour des dates avant J.-C., la plus grande est la plus ancienne. On calcule $5000 - 3000 = 2000$ ans.",
+                  "answers": [
+                    {
+                      "content": "2000",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "ans"
+                },
+                {
+                  "content": "Quelles sont deux sources qui permettent d'étudier la préhistoire ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Repérer : en préhistoire, il n'y a pas d'écrit. Étape 2 — Situer : on s'appuie donc sur des sources matérielles (outils, fossiles). Lettres et journaux supposent l'écriture.",
+                  "answers": [
+                    {
+                      "content": "Des outils de pierre retrouvés en fouille",
+                      "correct": true
+                    },
+                    {
+                      "content": "Des ossements fossiles",
+                      "correct": true
+                    },
+                    {
+                      "content": "Des lettres écrites par les premiers hommes",
+                      "correct": false
+                    },
+                    {
+                      "content": "Des journaux de l'époque",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "L'Afrique, berceau de l'humanité",
+          "remember": "Les plus anciens fossiles d'hominidés (la famille de l'homme) ont été trouvés en **Afrique**, qui est donc appelée le **berceau de l'humanité**. Les dates sont approximatives.\n\n**Toumaï** : découvert au Tchad en 2001, il a environ 7 millions d'années.\n**Lucy** : squelette d'une australopithèque découvert à Hadar, en Éthiopie, en 1974, vieux de plus de 3 millions d'années ; elle marchait debout.\n**Olduvai** (Tanzanie) : outils de pierre très anciens et fossiles d'Homo habilis.\n**Lac Turkana** (Kenya) : fossiles d'Homo erectus.\n**Afrique du Sud** : fossiles d'australopithèques.\n\nHomo sapiens apparaît lui aussi en Afrique, puis peuple les autres continents.",
+          "method": [
+            "Repérer le nom du fossile ou du site et son espèce.",
+            "Situer le lieu de découverte sur la carte de l'Afrique.",
+            "Dater le fossile avec prudence, en disant « environ » ou « plus de ».",
+            "Conclure sur ce que cette découverte prouve sur l'origine de l'humanité."
+          ],
+          "example": {
+            "statement": "Le club d'histoire lit une affiche sur Lucy. Que révèle-t-elle ?",
+            "steps": [
+              "Repérer : Lucy est le squelette d'une australopithèque (Australopithecus afarensis), découvert en 1974.",
+              "Situer : elle a été trouvée en Éthiopie, en Afrique de l'Est.",
+              "Dater : elle a plus de 3 millions d'années.",
+              "Conclure : Lucy est un des plus anciens hominidés connus qui marchaient debout, et elle a été découverte en Afrique : c'est un argument pour dire que l'Afrique est le berceau de l'humanité."
+            ]
+          },
+          "pitfall": "Ne confonds pas Lucy et Toumaï. Contre-exemple : Lucy (Éthiopie, plus de 3 millions d'années) est plus récente que Toumaï (Tchad, environ 7 millions d'années). Lucy n'est pas non plus « la première femme » : c'est une australopithèque, pas une femme actuelle. Associe toujours le fossile, son pays et sa date.",
+          "figure": "carte-sites-afrique",
+          "practice": {
+            "statement": "Tu t'entraînes à repérer, situer, dater et conclure sur les fossiles africains.",
+            "questions": [
+              {
+                "content": "Relie chaque pays à son fossile ou à son site.",
+                "question_type": "matching",
+                "explanation": "Étape 1 — Repérer le fossile ou le site. Étape 2 — Situer son pays : Lucy en Éthiopie, Toumaï au Tchad, Olduvai en Tanzanie, le lac Turkana au Kenya.",
+                "answers": [
+                  {
+                    "content": "Éthiopie",
+                    "match": "Lucy"
+                  },
+                  {
+                    "content": "Tchad",
+                    "match": "Toumaï"
+                  },
+                  {
+                    "content": "Tanzanie",
+                    "match": "Olduvai"
+                  },
+                  {
+                    "content": "Kenya",
+                    "match": "Lac Turkana"
+                  }
+                ],
+                "hint": "Relis la liste des fossiles de la fiche."
+              },
+              {
+                "content": "Où Lucy a-t-elle été découverte ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 2 — Situer : Lucy vient d'Éthiopie. Le Tchad est le pays de Toumaï ; la France et l'Algérie sont connues pour leur art rupestre.",
+                "answers": [
+                  {
+                    "content": "En Éthiopie, en Afrique de l'Est",
+                    "correct": true
+                  },
+                  {
+                    "content": "Au Tchad, en Afrique centrale",
+                    "correct": false
+                  },
+                  {
+                    "content": "En France",
+                    "correct": false
+                  },
+                  {
+                    "content": "En Algérie",
+                    "correct": false
+                  }
+                ],
+                "hint": "Lucy est un australopithèque d'Afrique de l'Est."
+              },
+              {
+                "content": "Les plus anciens fossiles d'hominidés connus ont été trouvés en Afrique.",
+                "question_type": "true_false",
+                "explanation": "Étape 4 — Conclure : Toumaï, Lucy et d'autres fossiles très anciens viennent d'Afrique, ce qui permet de parler de berceau de l'humanité.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Pense au mot « berceau »."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Situer les grands fossiles et sites africains",
+              "statement": "Dans cet exercice, tu appliques la méthode de la fiche (repérer, situer, dater, conclure) aux grands fossiles africains.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": null,
+              "questions": [
+                {
+                  "content": "Quelle description de Lucy est exacte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : Lucy est une australopithèque. Étape 2 — Situer : Éthiopie. Étape 3 — Dater : 1974 et plus de 3 millions d'années. Les autres propositions mélangent espèce, lieu ou date.",
+                  "answers": [
+                    {
+                      "content": "Une australopithèque découverte en Éthiopie en 1974, vieille de plus de 3 millions d'années",
+                      "correct": true
+                    },
+                    {
+                      "content": "Un Homo sapiens découvert au Tchad en 2001",
+                      "correct": false
+                    },
+                    {
+                      "content": "Un Homo erectus découvert en Tanzanie en 1974",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une australopithèque découverte en France en 1940",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le fossile Toumaï a été découvert au ___ en 2001.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Situer : Toumaï vient du Tchad. Ne le confonds pas avec Lucy, qui vient d'Éthiopie.",
+                  "answers": [
+                    {
+                      "content": "Tchad",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Range ces fossiles du plus ancien au plus récent.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 3 — Dater : Toumaï vient d'abord, puis Lucy, puis Homo erectus, puis Homo sapiens, le plus récent.",
+                  "answers": [
+                    {
+                      "content": "Toumaï (environ 7 millions d'années)"
+                    },
+                    {
+                      "content": "Lucy (plus de 3 millions d'années)"
+                    },
+                    {
+                      "content": "Homo erectus"
+                    },
+                    {
+                      "content": "Homo sapiens (plus de 200 000 ans)"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux raisons de dire que l'Afrique est le berceau de l'humanité ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 4 — Conclure : le berceau de l'humanité se justifie par les fossiles les plus anciens et par l'origine de Homo sapiens. L'agriculture est un autre sujet, sans lien avec cette origine, et les premiers hommes ne sont pas arrivés d'Asie : c'est l'inverse, ils sont partis d'Afrique.",
+                  "answers": [
+                    {
+                      "content": "Les plus anciens fossiles d'hominidés y ont été trouvés",
+                      "correct": true
+                    },
+                    {
+                      "content": "Homo sapiens y est apparu avant de peupler les autres continents",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'agriculture y est née avant tout autre continent",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les premiers hommes y sont arrivés depuis l'Asie",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Que prouve la découverte de Toumaï par rapport à Lucy ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Dater : Toumaï (environ 7 millions d'années) est plus ancien que Lucy (plus de 3 millions). Étape 4 — Conclure : cela renforce l'idée du berceau africain. C'est le piège de la fiche : confondre les deux fossiles.",
+                  "answers": [
+                    {
+                      "content": "Qu'un fossile encore plus ancien que Lucy a été trouvé en Afrique",
+                      "correct": true
+                    },
+                    {
+                      "content": "Que Toumaï est plus récent que Lucy",
+                      "correct": false
+                    },
+                    {
+                      "content": "Que Toumaï et Lucy sont le même fossile",
+                      "correct": false
+                    },
+                    {
+                      "content": "Que l'humanité est née en Europe",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Une carte de l'Afrique au musée",
+              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche (repérer, situer, dater, conclure) à une carte des pays africains où l'on a trouvé de grands fossiles, vue pendant une sortie du club d'histoire.",
+              "exercise_type": "fixation",
+              "figure": "carte-sites-afrique",
+              "hint": "Repère le pays, puis souviens-toi du fossile et de sa date.",
+              "questions": [
+                {
+                  "content": "Le fossile Lucy a été découvert en ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 2 — Situer : Lucy a été trouvée en Éthiopie, en Afrique de l'Est. L'Algérie est connue pour l'art rupestre du Tassili.",
+                  "answers": [
+                    {
+                      "content": "Éthiopie",
+                      "correct": true
+                    },
+                    {
+                      "content": "Algérie",
+                      "correct": false
+                    },
+                    {
+                      "content": "Afrique du Sud",
+                      "correct": false
+                    },
+                    {
+                      "content": "Côte d'Ivoire",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque fossile ou site à son pays.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Repérer le fossile ou le site. Étape 2 — Situer son pays : Olduvai en Tanzanie, le lac Turkana au Kenya, Toumaï au Tchad, Lucy en Éthiopie.",
+                  "answers": [
+                    {
+                      "content": "Olduvai",
+                      "match": "Tanzanie"
+                    },
+                    {
+                      "content": "Lac Turkana",
+                      "match": "Kenya"
+                    },
+                    {
+                      "content": "Toumaï",
+                      "match": "Tchad"
+                    },
+                    {
+                      "content": "Lucy",
+                      "match": "Éthiopie"
+                    }
+                  ]
+                },
+                {
+                  "content": "Lucy est un fossile de l'espèce Homo sapiens.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer l'espèce : Lucy est une australopithèque (Australopithecus afarensis). Homo sapiens est beaucoup plus récent.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Lucy a été découverte en 1974 et Toumaï en 2001. Combien d'années séparent ces deux découvertes ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 3 — Dater : on calcule la différence entre les deux années de découverte : $2001 - 1974 = 27$ ans. Attention : ce n'est pas l'âge des fossiles.",
+                  "answers": [
+                    {
+                      "content": "27",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "ans"
+                },
+                {
+                  "content": "Quels sont trois lieux africains où l'on a trouvé des fossiles d'hominidés ?",
+                  "question_type": "multiple_correct_3",
+                  "explanation": "Étape 2 — Situer : Olduvai, le lac Turkana et Hadar sont des sites de fossiles. Lascaux et le Tassili sont connus pour leur art rupestre, pas pour ces fossiles.",
+                  "answers": [
+                    {
+                      "content": "Olduvai (Tanzanie)",
+                      "correct": true
+                    },
+                    {
+                      "content": "Lac Turkana (Kenya)",
+                      "correct": true
+                    },
+                    {
+                      "content": "Hadar (Éthiopie)",
+                      "correct": true
+                    },
+                    {
+                      "content": "Lascaux (France)",
+                      "correct": false
+                    },
+                    {
+                      "content": "Tassili n'Ajjer (Algérie)",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle formulation est la plus prudente pour dater Lucy ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Dater avec prudence : on dit « plus de 3 millions d'années ». Environ 7 millions d'années est l'âge de Toumaï, pas de Lucy ; 3 000 ans confond millions et milliers ; 1974 est la date de la découverte, après J.-C., pas celle de Lucy.",
+                  "answers": [
+                    {
+                      "content": "Il y a plus de 3 millions d'années",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il y a environ 7 millions d'années",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il y a 3 000 ans",
+                      "correct": false
+                    },
+                    {
+                      "content": "En 1974 avant J.-C.",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "L'hominisation et la vie au Paléolithique",
+          "remember": "L'**hominisation** est l'ensemble des transformations qui mènent des premiers hominidés à l'homme actuel. Elle est très lente.\n\n**Australopithèque** (Lucy) : marche debout (bipédie), petit cerveau.\n**Homo habilis** (« homme habile ») : taille les premiers outils de pierre, il y a plus de 2 millions d'années.\n**Homo erectus** (« homme debout ») : fabrique des bifaces, maîtrise le feu, sort d'Afrique.\n**Homo sapiens** (« homme sage ») : cerveau développé, langage, art ; il apparaît en Afrique il y a plus de 200 000 ans et peuple tous les continents.\n\nAu Paléolithique, les hommes vivent en petits groupes nomades de chasse, de pêche et de cueillette, dans des abris sous roche, des grottes ou des campements.",
+          "method": [
+            "Repérer le caractère décrit : marche debout, outil, feu ou langage.",
+            "Identifier l'espèce qui correspond à ce caractère.",
+            "Ranger l'espèce dans l'ordre chronologique de l'hominisation.",
+            "Relier ce progrès au mode de vie des hommes du Paléolithique."
+          ],
+          "example": {
+            "statement": "Un panneau du musée décrit un hominidé qui est le premier à quitter l'Afrique, taille des bifaces et maîtrise le feu. Qui est-il et que change son progrès ?",
+            "steps": [
+              "Repérer : il est le premier à quitter l'Afrique, taille des bifaces et maîtrise le feu.",
+              "Identifier : ces caractères sont ceux de Homo erectus.",
+              "Ranger : Homo erectus vient après Homo habilis et avant Homo sapiens.",
+              "Relier : le feu protège du froid et des animaux, permet de cuire la viande et d'éclairer le campement, ce qui aide ces chasseurs nomades."
+            ]
+          },
+          "pitfall": "Ne dis pas que l'homme descend du chimpanzé actuel. Contre-exemple : le chimpanzé d'aujourd'hui est lui aussi le résultat d'une très longue évolution. L'homme et les singes actuels ont un **ancêtre commun** très lointain. L'hominisation n'est pas une rampe où un singe devient un homme.",
+          "figure": "etapes-de-l-hominisation",
+          "practice": {
+            "statement": "Tu t'entraînes à repérer, identifier, ranger et relier les étapes de l'hominisation.",
+            "questions": [
+              {
+                "content": "Relie chaque espèce à son progrès.",
+                "question_type": "matching",
+                "explanation": "Étape 1 — Repérer le caractère. Étape 2 — Identifier l'espèce : australopithèque, marche debout ; Homo habilis, outils ; Homo erectus, feu ; Homo sapiens, langage et art.",
+                "answers": [
+                  {
+                    "content": "Australopithèque",
+                    "match": "Marche debout"
+                  },
+                  {
+                    "content": "Homo habilis",
+                    "match": "Premiers outils de pierre taillée"
+                  },
+                  {
+                    "content": "Homo erectus",
+                    "match": "Maîtrise du feu"
+                  },
+                  {
+                    "content": "Homo sapiens",
+                    "match": "Langage et art"
+                  }
+                ],
+                "hint": "Lis la liste des espèces dans la fiche."
+              },
+              {
+                "content": "Range ces espèces de la plus ancienne à la plus récente.",
+                "question_type": "ordering",
+                "explanation": "Étape 3 — Ranger dans l'ordre chronologique : australopithèque, Homo habilis, Homo erectus, puis Homo sapiens.",
+                "answers": [
+                  {
+                    "content": "Australopithèque"
+                  },
+                  {
+                    "content": "Homo habilis"
+                  },
+                  {
+                    "content": "Homo erectus"
+                  },
+                  {
+                    "content": "Homo sapiens"
+                  }
+                ],
+                "hint": "Pense à Lucy en premier."
+              },
+              {
+                "content": "Homo erectus maîtrise le feu.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Repérer : le feu. Étape 2 — Identifier : la maîtrise du feu est un progrès de Homo erectus.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Pense à « homme debout »."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Comprendre l'hominisation",
+              "statement": "Dans cet exercice, tu appliques la méthode de la fiche (repérer, identifier, ranger, relier) pour comprendre l'hominisation.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": null,
+              "questions": [
+                {
+                  "content": "Que désigne le mot hominisation ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Ranger : l'hominisation est l'évolution lente de l'australopithèque à Homo sapiens. Agriculture, villages et poterie appartiennent au Néolithique.",
+                  "answers": [
+                    {
+                      "content": "L'ensemble des transformations qui mènent des premiers hominidés à l'homme actuel",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'invention de l'agriculture",
+                      "correct": false
+                    },
+                    {
+                      "content": "La naissance des villages",
+                      "correct": false
+                    },
+                    {
+                      "content": "La fabrication de poteries",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Homo habilis est connu pour…",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : l'outil de pierre taillée. Étape 2 — Identifier : c'est le progrès de Homo habilis, l'« homme habile ».",
+                  "answers": [
+                    {
+                      "content": "ses premiers outils de pierre taillée",
+                      "correct": true
+                    },
+                    {
+                      "content": "sa maîtrise de l'agriculture",
+                      "correct": false
+                    },
+                    {
+                      "content": "l'invention de l'écriture",
+                      "correct": false
+                    },
+                    {
+                      "content": "ses peintures de Lascaux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'espèce humaine actuelle s'appelle Homo ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Identifier : l'homme actuel est Homo sapiens, l'« homme sage ».",
+                  "answers": [
+                    {
+                      "content": "sapiens",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux conséquences de la maîtrise du feu ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 4 — Relier : le feu protège, chauffe, éclaire et permet de cuire. L'agriculture et l'écriture viennent bien plus tard.",
+                  "answers": [
+                    {
+                      "content": "Se protéger des animaux et du froid",
+                      "correct": true
+                    },
+                    {
+                      "content": "Cuire les aliments",
+                      "correct": true
+                    },
+                    {
+                      "content": "Cultiver des céréales",
+                      "correct": false
+                    },
+                    {
+                      "content": "Inventer l'écriture",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle affirmation est exacte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Ranger : Homo sapiens vient bien après Lucy. Étape 4 — Relier : c'est le piège de la fiche. Les singes actuels ne sont pas nos ancêtres : nous partageons un ancêtre commun.",
+                  "answers": [
+                    {
+                      "content": "L'homme et les singes actuels ont un ancêtre commun très lointain",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'homme descend du chimpanzé actuel",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'homme descend directement du gorille",
+                      "correct": false
+                    },
+                    {
+                      "content": "Homo sapiens est apparu avant Lucy",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Les étapes de l'hominisation au musée",
+              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche (repérer, identifier, ranger, relier) à une salle du musée sur l'hominisation, visitée par le club d'histoire.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Repère l'outil ou le progrès, puis nomme l'espèce.",
+              "questions": [
+                {
+                  "content": "Remets dans l'ordre les quatre étapes de la méthode.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Repérer, Étape 2 — Identifier, Étape 3 — Ranger, Étape 4 — Relier. On ne peut pas ranger une espèce avant de l'avoir identifiée.",
+                  "answers": [
+                    {
+                      "content": "Repérer le caractère décrit"
+                    },
+                    {
+                      "content": "Identifier l'espèce"
+                    },
+                    {
+                      "content": "Ranger l'espèce dans l'ordre chronologique"
+                    },
+                    {
+                      "content": "Relier le progrès au mode de vie"
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque nom d'espèce à son sens.",
+                  "question_type": "matching",
+                  "explanation": "Étape 2 — Identifier l'espèce par son nom : habilis veut dire habile, erectus debout et sapiens sage.",
+                  "answers": [
+                    {
+                      "content": "Homo habilis",
+                      "match": "Homme habile"
+                    },
+                    {
+                      "content": "Homo erectus",
+                      "match": "Homme debout"
+                    },
+                    {
+                      "content": "Homo sapiens",
+                      "match": "Homme sage"
+                    }
+                  ]
+                },
+                {
+                  "content": "Homo sapiens est apparu avant Homo habilis.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 3 — Ranger : Homo habilis, plus de 2 millions d'années, est bien plus ancien que Homo sapiens, plus de 200 000 ans.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un hominidé est le premier à quitter l'Afrique, taille des bifaces et maîtrise le feu. De quelle espèce s'agit-il ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : bifaces, feu, première sortie d'Afrique. Étape 2 — Identifier : c'est Homo erectus. Homo sapiens quitte aussi l'Afrique, mais bien plus tard.",
+                  "answers": [
+                    {
+                      "content": "Homo erectus",
+                      "correct": true
+                    },
+                    {
+                      "content": "Homo habilis",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une australopithèque",
+                      "correct": false
+                    },
+                    {
+                      "content": "Homo sapiens",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Au Paléolithique, les hommes vivent de chasse, de pêche et de ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 4 — Relier au mode de vie : les hommes du Paléolithique ne produisent pas leur nourriture, ils chassent, pêchent et cueillent.",
+                  "answers": [
+                    {
+                      "content": "cueillette",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels sont deux caractères du mode de vie au Paléolithique ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 4 — Relier : au Paléolithique, on se déplace pour trouver la nourriture. Élevage et culture sont des nouveautés du Néolithique.",
+                  "answers": [
+                    {
+                      "content": "Le nomadisme",
+                      "correct": true
+                    },
+                    {
+                      "content": "La chasse et la cueillette",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'élevage de troupeaux dans des villages",
+                      "correct": false
+                    },
+                    {
+                      "content": "La culture des céréales",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "La révolution néolithique",
+          "remember": "La **révolution néolithique** est le passage d'une vie de chasse et de cueillette à une vie où l'homme **produit** sa nourriture. Elle apparaît il y a environ 10 000 ans au Proche-Orient, puis ailleurs, y compris en Afrique, à des dates différentes. Au Sahara, elle a eu lieu à une époque où le climat était plus humide.\n\n**Agriculture** : cultiver des plantes.\n**Élevage** : élever des animaux (bœufs, chèvres, moutons).\n**Sédentarisation** : vivre durablement dans des villages.\n**Poterie** : stocker, cuire et transporter.\n**Pierre polie** : haches plus efficaces.\n\nConséquences : des surplus, une population plus nombreuse, des métiers spécialisés et des échanges.",
+          "method": [
+            "Repérer la nouveauté décrite : un outil, une ressource ou un habitat.",
+            "Classer cette nouveauté : production de nourriture, mode de vie ou technique.",
+            "Expliquer ce qu'elle change dans la vie quotidienne.",
+            "Conclure sur la conséquence pour la société."
+          ],
+          "example": {
+            "statement": "Au musée, le club d'histoire observe de grandes jarres en terre cuite remplies de grains de céréales, trouvées dans un ancien village. Que montrent-elles ?",
+            "steps": [
+              "Repérer : des jarres en terre cuite (poterie) pleines de grains de céréales.",
+              "Classer : la poterie est une technique liée à l'agriculture, qui produit la nourriture.",
+              "Expliquer : on peut garder la récolte pour les mois sans récolte, sans avoir à se déplacer pour trouver à manger.",
+              "Conclure : avec des surplus et un village fixe, la population peut augmenter et de nouveaux métiers, comme celui de potier, apparaissent."
+            ]
+          },
+          "pitfall": "Ne crois pas que la révolution néolithique est un événement brusque. Contre-exemple : elle s'étale sur plusieurs **milliers d'années** et n'a pas lieu partout à la même date. Le mot « révolution » veut dire un changement profond du mode de vie, pas un changement en un an.",
+          "figure": "de-la-chasse-a-l-agriculture",
+          "practice": {
+            "statement": "Tu t'entraînes à repérer, classer, expliquer et conclure sur la révolution néolithique.",
+            "questions": [
+              {
+                "content": "À quoi sert la poterie au Néolithique ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Repérer : la poterie. Étape 3 — Expliquer : elle permet de conserver la récolte, de cuire et de transporter. Elle ne sert ni à chasser ni à écrire.",
+                "answers": [
+                  {
+                    "content": "À stocker, cuire et transporter aliments et eau",
+                    "correct": true
+                  },
+                  {
+                    "content": "À chasser les animaux",
+                    "correct": false
+                  },
+                  {
+                    "content": "À écrire des textes",
+                    "correct": false
+                  },
+                  {
+                    "content": "À tailler la pierre",
+                    "correct": false
+                  }
+                ],
+                "hint": "Pense à la jarre de grains."
+              },
+              {
+                "content": "La sédentarisation signifie vivre durablement au même endroit.",
+                "question_type": "true_false",
+                "explanation": "Étape 2 — Classer : la sédentarisation est un changement de mode de vie. Étape 3 — Expliquer : les hommes quittent le nomadisme et habitent des villages.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Pense au contraire de nomade."
+              },
+              {
+                "content": "Relie chaque nouveauté à son rôle.",
+                "question_type": "matching",
+                "explanation": "Étape 2 — Classer chaque nouveauté : agriculture et élevage produisent la nourriture, la poterie est une technique, la sédentarisation un mode de vie.",
+                "answers": [
+                  {
+                    "content": "Agriculture",
+                    "match": "Cultiver des plantes"
+                  },
+                  {
+                    "content": "Élevage",
+                    "match": "Élever des animaux"
+                  },
+                  {
+                    "content": "Poterie",
+                    "match": "Stocker et cuire"
+                  },
+                  {
+                    "content": "Sédentarisation",
+                    "match": "Habiter un village"
+                  }
+                ],
+                "hint": "Relis les cinq nouveautés de la fiche."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Reconnaître les nouveautés du Néolithique",
+              "statement": "Dans cet exercice, tu appliques la méthode de la fiche (repérer, classer, expliquer, conclure) aux nouveautés du Néolithique.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": null,
+              "questions": [
+                {
+                  "content": "Quelles sont trois innovations du Néolithique ?",
+                  "question_type": "multiple_correct_3",
+                  "explanation": "Étape 2 — Classer : agriculture, élevage et poterie sont des nouveautés du Néolithique. La taille de galets et la vie nomade appartiennent au Paléolithique.",
+                  "answers": [
+                    {
+                      "content": "L'agriculture",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'élevage",
+                      "correct": true
+                    },
+                    {
+                      "content": "La poterie",
+                      "correct": true
+                    },
+                    {
+                      "content": "La taille de galets",
+                      "correct": false
+                    },
+                    {
+                      "content": "La vie nomade de chasseurs",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le passage de la chasse-cueillette à la production de nourriture s'appelle la révolution ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Classer : produire sa nourriture est la grande nouveauté du Néolithique, d'où le nom de révolution néolithique.",
+                  "answers": [
+                    {
+                      "content": "néolithique",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pourquoi les hommes du Néolithique deviennent-ils sédentaires ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Expliquer : cultiver et élever demande de rester près des champs et des troupeaux. Étape 4 — Conclure : des villages se forment.",
+                  "answers": [
+                    {
+                      "content": "Ils produisent leur nourriture sur place et peuvent la stocker",
+                      "correct": true
+                    },
+                    {
+                      "content": "Ils ne savent plus marcher",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ils chassent de plus en plus loin",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ils inventent l'écriture",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Au Néolithique, les hommes obtiennent leur nourriture uniquement par la chasse et la cueillette.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Classer : au Néolithique, ils cultivent et élèvent. La chasse et la cueillette seules caractérisent le Paléolithique.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pourquoi parle-t-on de « révolution » néolithique ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Conclure : c'est un changement profond de la société, lent et à des dates variables. C'est le piège de la fiche.",
+                  "answers": [
+                    {
+                      "content": "Parce que le changement est profond, même s'il s'étale sur des milliers d'années",
+                      "correct": true
+                    },
+                    {
+                      "content": "Parce qu'il a eu lieu en une seule année",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce qu'il a eu lieu partout à la même date",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce qu'il y a eu une guerre",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Du campement au village",
+              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche (repérer, classer, expliquer, conclure) pour comprendre ce que change l'agriculture.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Demande-toi si la nouveauté sert à produire, à habiter ou à fabriquer.",
+              "questions": [
+                {
+                  "content": "Remets dans l'ordre cette chaîne de conséquences.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 3 — Expliquer : produire permet de stocker un surplus, donc de rester sur place. Étape 4 — Conclure : la population peut augmenter.",
+                  "answers": [
+                    {
+                      "content": "Les hommes cultivent et élèvent des animaux"
+                    },
+                    {
+                      "content": "La récolte dépasse les besoins et se stocke dans des poteries"
+                    },
+                    {
+                      "content": "Les hommes se fixent dans des villages"
+                    },
+                    {
+                      "content": "La population augmente"
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque nouveauté à sa conséquence.",
+                  "question_type": "matching",
+                  "explanation": "Étape 3 — Expliquer ce que chaque nouveauté change : la poterie permet de conserver, l'élevage de disposer de lait et de viande, la pierre polie de défricher, le surplus de nourrir des artisans.",
+                  "answers": [
+                    {
+                      "content": "Poterie",
+                      "match": "Conserver les récoltes"
+                    },
+                    {
+                      "content": "Élevage",
+                      "match": "Disposer de lait et de viande"
+                    },
+                    {
+                      "content": "Pierre polie",
+                      "match": "Haches plus efficaces"
+                    },
+                    {
+                      "content": "Surplus",
+                      "match": "Métiers spécialisés"
+                    }
+                  ]
+                },
+                {
+                  "content": "Les premières traces d'élevage au Sahara datent d'une époque où le climat y était plus humide.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 3 — Expliquer : au Néolithique, le Sahara était plus humide, avec des savanes et des points d'eau, ce qui permettait d'élever des troupeaux.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un village néolithique fictif compte 30 maisons. Chaque maison abrite 6 personnes. Combien d'habitants compte le village ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 4 — Conclure sur la population : on multiplie, $30 \\times 6 = 180$ habitants. Un village fixe peut en accueillir bien plus qu'un campement de chasseurs.",
+                  "answers": [
+                    {
+                      "content": "180",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "personnes"
+                },
+                {
+                  "content": "Laquelle de ces découvertes n'appartient PAS au Néolithique ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 2 — Classer : la maîtrise du feu est bien plus ancienne, avec Homo erectus. Poterie, élevage et agriculture sont néolithiques.",
+                  "answers": [
+                    {
+                      "content": "La maîtrise du feu",
+                      "correct": true
+                    },
+                    {
+                      "content": "La poterie",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'élevage",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'agriculture",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La pierre polie remplace peu à peu la pierre ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Repérer l'outil : la pierre polie du Néolithique remplace la pierre taillée du Paléolithique.",
+                  "answers": [
+                    {
+                      "content": "taillée",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "L'art rupestre, témoin de la préhistoire",
+          "remember": "L'**art rupestre** désigne les peintures et les gravures faites sur les parois des grottes, des abris sous roche et des rochers. C'est une source **iconographique** précieuse pour une période sans écriture.\n\n**Tassili n'Ajjer** (Algérie, Sahara) : de très nombreuses peintures et gravures vieilles de plusieurs milliers d'années, avec des troupeaux de bovidés, des animaux de savane et des scènes de la vie. Elles montrent que le Sahara était plus humide. Le site est protégé par l'UNESCO.\n\n**Lascaux** (Dordogne, France) : grotte découverte en 1940, ornée de chevaux, d'aurochs et de cerfs peints il y a plus de 15 000 ans, au Paléolithique.\n\nLes sens de ces images restent des **hypothèses**.",
+          "method": [
+            "Décrire ce que montre l'image : animaux, personnages, scènes.",
+            "Situer le site et la période de l'œuvre.",
+            "Interpréter ce que l'image apprend sur la vie des hommes.",
+            "Nuancer l'interprétation, qui reste une hypothèse."
+          ],
+          "example": {
+            "statement": "Le club d'histoire observe la reproduction d'une peinture du Tassili : un troupeau de bovidés conduit par des personnages. Que peut-on en tirer ?",
+            "steps": [
+              "Décrire : on voit des bovidés et des personnages qui les guident.",
+              "Situer : la peinture vient du Tassili n'Ajjer, en Algérie, et date de plusieurs milliers d'années, du Néolithique.",
+              "Interpréter : ces hommes élevaient des bovins, et le Sahara était alors assez humide pour nourrir des troupeaux.",
+              "Nuancer : on ne sait pas toujours si la scène raconte la vie quotidienne ou un rite, c'est une hypothèse."
+            ]
+          },
+          "pitfall": "Ne confonds pas les sites ni les époques. Contre-exemple : des troupeaux de bovidés conduits par des hommes évoquent le Tassili (Afrique, Néolithique), alors que des chevaux et des aurochs peints dans une grotte évoquent Lascaux (Europe, Paléolithique). Associe toujours le sujet de l'image, le lieu et l'époque.",
+          "figure": "carte-sites-afrique",
+          "practice": {
+            "statement": "Tu t'entraînes à décrire, situer, interpréter et nuancer des œuvres d'art rupestre.",
+            "questions": [
+              {
+                "content": "Que montrent souvent les peintures du Tassili ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Décrire : on y voit des animaux, des personnages et des troupeaux. Étape 2 — Situer : les chevaux et les aurochs d'une grotte de Dordogne, c'est Lascaux, en France. Étape 3 — Interpréter : le Tassili montre l'élevage au Sahara ; il n'y a ni textes ni métal.",
+                "answers": [
+                  {
+                    "content": "Des troupeaux de bovidés et des scènes de la vie",
+                    "correct": true
+                  },
+                  {
+                    "content": "Des chevaux et des aurochs peints dans une grotte de Dordogne",
+                    "correct": false
+                  },
+                  {
+                    "content": "Des textes écrits",
+                    "correct": false
+                  },
+                  {
+                    "content": "Des haches en fer",
+                    "correct": false
+                  }
+                ],
+                "hint": "Pense à la vie néolithique."
+              },
+              {
+                "content": "Lascaux se trouve en Algérie.",
+                "question_type": "true_false",
+                "explanation": "Étape 2 — Situer : Lascaux est en Dordogne, en France. L'Algérie abrite le Tassili n'Ajjer.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Lascaux est une grotte d'Europe."
+              },
+              {
+                "content": "L'art rupestre est l'art peint ou gravé sur les parois de grottes ou d'abris sous ___.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Décrire : on parle d'art rupestre pour des peintures sur les parois de grottes, de rochers ou d'abris sous roche.",
+                "answers": [
+                  {
+                    "content": "roche",
+                    "correct": true
+                  }
+                ],
+                "hint": "Pense au mot « rupestre »,  qui vient de rocher."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Comprendre l'art rupestre",
+              "statement": "Dans cet exercice, tu appliques la méthode de la fiche (décrire, situer, interpréter, nuancer) à l'art rupestre.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": null,
+              "questions": [
+                {
+                  "content": "Que désigne l'art rupestre ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Décrire : l'art rupestre est fait d'images sur la roche. Les poteries sont des objets, les récits oraux sont parlés et il n'y a pas de textes écrits en préhistoire.",
+                  "answers": [
+                    {
+                      "content": "Les peintures et gravures faites sur les parois de roches, de grottes et d'abris",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les objets en terre cuite",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les récits transmis oralement",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les textes gravés dans la pierre",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque site à son pays.",
+                  "question_type": "matching",
+                  "explanation": "Étape 2 — Situer : le Tassili est en Algérie, Lascaux en France. Le lac Turkana (Kenya) et Hadar (Éthiopie) sont des sites de fossiles, pas d'art rupestre.",
+                  "answers": [
+                    {
+                      "content": "Tassili n'Ajjer",
+                      "match": "Algérie"
+                    },
+                    {
+                      "content": "Lascaux",
+                      "match": "France"
+                    },
+                    {
+                      "content": "Lac Turkana",
+                      "match": "Kenya"
+                    },
+                    {
+                      "content": "Hadar",
+                      "match": "Éthiopie"
+                    }
+                  ]
+                },
+                {
+                  "content": "L'art rupestre est une source écrite.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Décrire : on observe des images, pas des mots. C'est donc une source iconographique.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux informations que les peintures du Tassili apportent ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 3 — Interpréter : les troupeaux montrent l'élevage et la présence d'eau. Il n'y a ni livres ni immeubles à cette époque.",
+                  "answers": [
+                    {
+                      "content": "Des troupeaux de bovins étaient élevés",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le Sahara a connu un climat plus humide qu'aujourd'hui",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les hommes écrivaient des livres",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les hommes vivaient dans des immeubles",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Que faut-il dire d'une interprétation d'une peinture rupestre ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Nuancer : sans texte, on ne peut pas être sûr du sens. C'est le piège de la fiche : confondre interprétation et certitude.",
+                  "answers": [
+                    {
+                      "content": "C'est une hypothèse : on ne connaît pas toujours le sens voulu par l'artiste",
+                      "correct": true
+                    },
+                    {
+                      "content": "C'est une certitude absolue",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle ne sert à rien",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle est toujours écrite sous la peinture",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Lascaux et Tassili : deux fenêtres sur la préhistoire",
+              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche (décrire, situer, interpréter, nuancer) pour comparer deux sites d'art rupestre présentés par le club d'histoire au musée.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Décris d'abord l'image, puis cherche le lieu et l'époque.",
+              "questions": [
+                {
+                  "content": "Quelle scène est typique de Lascaux ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Décrire : Lascaux montre des animaux sauvages. Étape 2 — Situer : c'est une grotte du Paléolithique. Les troupeaux conduits par des hommes sont plutôt typiques du Tassili.",
+                  "answers": [
+                    {
+                      "content": "Des chevaux, des aurochs et des cerfs peints dans une grotte",
+                      "correct": true
+                    },
+                    {
+                      "content": "Des troupeaux de bovins conduits par des bergers du Sahara",
+                      "correct": false
+                    },
+                    {
+                      "content": "Des scènes de moisson dans un village",
+                      "correct": false
+                    },
+                    {
+                      "content": "Des maisons en briques le long d'un fleuve",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le Tassili n'Ajjer se trouve en ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 2 — Situer : le Tassili n'Ajjer est au Sahara, en Algérie.",
+                  "answers": [
+                    {
+                      "content": "Algérie",
+                      "correct": true
+                    },
+                    {
+                      "content": "France",
+                      "correct": false
+                    },
+                    {
+                      "content": "Éthiopie",
+                      "correct": false
+                    },
+                    {
+                      "content": "Tchad",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La grotte de Lascaux a été découverte en 1940.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Situer : Lascaux a été découverte en 1940 en Dordogne. Les peintures sont, elles, bien plus anciennes.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Lascaux a été découverte en 1940 et Lucy en 1974. Combien d'années séparent ces deux découvertes ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 2 — Situer dans le temps : on calcule $1974 - 1940 = 34$ ans. Attention : ce sont des dates de découverte, pas de création.",
+                  "answers": [
+                    {
+                      "content": "34",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "ans"
+                },
+                {
+                  "content": "Remets dans l'ordre les quatre étapes de la méthode.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Décrire, Étape 2 — Situer, Étape 3 — Interpréter, Étape 4 — Nuancer. On n'interprète qu'après avoir bien décrit et situé.",
+                  "answers": [
+                    {
+                      "content": "Décrire l'image"
+                    },
+                    {
+                      "content": "Situer le site et la période"
+                    },
+                    {
+                      "content": "Interpréter ce que l'image apprend"
+                    },
+                    {
+                      "content": "Nuancer l'interprétation"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux raisons pour lesquelles l'art rupestre est une source précieuse ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 3 — Interpréter : l'image renseigne sur la faune et les activités. Elle existe là où l'écriture manque. Elle ne porte pas de dates écrites ni ne prouve que tous étaient artistes.",
+                  "answers": [
+                    {
+                      "content": "Il montre des animaux et des activités de l'époque",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il existe pour des périodes où l'on n'a aucun texte écrit",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il donne des dates écrites par les artistes",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il prouve que tous les hommes préhistoriques étaient artistes",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Une frise chronologique affichée en classe",
+          "statement": "Document (situation écrite pour Lnclass) : à la fin de la sortie au musée des Civilisations de Côte d'Ivoire, le professeur du club d'histoire affiche en classe une frise avec quatre cartons mélangés : « Lucy », « Maîtrise du feu », « Premiers villages » et « Invention de l'écriture ». Réponds aux questions.",
+          "exercise_type": "fixation",
+          "figure": null,
+          "hint": null,
+          "questions": [
+            {
+              "content": "Remets ces quatre cartons dans l'ordre chronologique.",
+              "question_type": "ordering",
+              "explanation": "Méthode : 1) Repérer ce que désigne chaque carton. 2) Les dater : Lucy (plus de 3 millions d'années), feu (Homo erectus), premiers villages (Néolithique, il y a environ 10 000 ans), écriture (vers 3 000 ans avant J.-C.). 3) Ranger du plus ancien au plus récent.",
+              "answers": [
+                {
+                  "content": "Lucy"
+                },
+                {
+                  "content": "Maîtrise du feu"
+                },
+                {
+                  "content": "Premiers villages"
+                },
+                {
+                  "content": "Invention de l'écriture"
+                }
+              ]
+            },
+            {
+              "content": "Le carton « Invention de l'écriture » marque…",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1) Repérer l'indice : l'écriture. 2) Situer par rapport à l'écriture : la préhistoire est la période sans écrit. 3) Conclure : l'écriture ouvre l'histoire. Le Néolithique commence bien avant.",
+              "answers": [
+                {
+                  "content": "la fin de la préhistoire et le début de l'histoire",
+                  "correct": true
+                },
+                {
+                  "content": "le début de la préhistoire",
+                  "correct": false
+                },
+                {
+                  "content": "le début du Néolithique",
+                  "correct": false
+                },
+                {
+                  "content": "l'apparition des premiers hommes",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Les premiers villages appartiennent à la période du ___.",
+              "question_type": "fill_blank",
+              "explanation": "Méthode : 1) Repérer l'indice : les villages. 2) Nommer la période : agriculture, élevage et villages caractérisent le Néolithique. 3) Le Paléolithique est nomade.",
+              "answers": [
+                {
+                  "content": "Néolithique",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Dans une région fictive, les premiers villages datent de 7 000 ans avant J.-C. Combien d'années les séparent de l'invention de l'écriture, vers 3 000 ans avant J.-C. ?",
+              "question_type": "numeric",
+              "explanation": "Méthode : 1) Ordonner les dates : 7 000 av. J.-C. est plus ancien que 3 000 av. J.-C. 2) Soustraire : $7000 - 3000 = 4000$ ans.",
+              "answers": [
+                {
+                  "content": "4000",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "ans"
+            },
+            {
+              "content": "Explique en quelques lignes pourquoi l'invention de l'écriture marque la fin de la préhistoire.",
+              "question_type": "written",
+              "points": 3,
+              "criteria": [
+                "Définir la préhistoire comme la période sans écriture",
+                "Dire que l'écriture permet de laisser des textes",
+                "Nommer les sources utilisées avant l'écriture",
+                "Rédiger des phrases claires"
+              ],
+              "explanation": "Corrigé modèle : La préhistoire est la période d'avant l'écriture. Quand l'écriture est inventée, les sociétés laissent des textes et l'historien peut s'appuyer sur des sources écrites : c'est le début de l'histoire. Avant, on étudie les outils, les fossiles et l'art rupestre. Barème (3 points) : définition (1) ; rôle des textes (1) ; sources de la préhistoire et rédaction (1).",
+              "answers": [],
+              "starter": "Avant l'écriture, …"
+            }
+          ]
+        },
+        {
+          "title": "Un panneau du musée sur Lucy",
+          "statement": "Document : un panneau du musée (texte écrit pour Lnclass) indique : « Lucy, australopithèque (Australopithecus afarensis), squelette découvert en 1974 en Éthiopie. Âge : plus de 3 millions d'années. Elle marchait debout et avait un petit cerveau. » Réponds aux questions.",
+          "exercise_type": "fixation",
+          "figure": null,
+          "hint": null,
+          "questions": [
+            {
+              "content": "D'après le panneau, quelle espèce est Lucy ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode (fiche Afrique) : 1) Repérer le nom du fossile et son espèce : le panneau parle d'Australopithecus afarensis. 2) Les autres espèces sont plus récentes.",
+              "answers": [
+                {
+                  "content": "Une australopithèque",
+                  "correct": true
+                },
+                {
+                  "content": "Homo habilis",
+                  "correct": false
+                },
+                {
+                  "content": "Homo erectus",
+                  "correct": false
+                },
+                {
+                  "content": "Homo sapiens",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Relie chaque fossile ou site à son pays de découverte.",
+              "question_type": "matching",
+              "explanation": "Méthode : 1) Repérer le fossile ou le site. 2) Le situer : Lucy en Éthiopie, Toumaï au Tchad, Olduvai en Tanzanie, le lac Turkana au Kenya.",
+              "answers": [
+                {
+                  "content": "Lucy",
+                  "match": "Éthiopie"
+                },
+                {
+                  "content": "Toumaï",
+                  "match": "Tchad"
+                },
+                {
+                  "content": "Olduvai",
+                  "match": "Tanzanie"
+                },
+                {
+                  "content": "Lac Turkana",
+                  "match": "Kenya"
+                }
+              ]
+            },
+            {
+              "content": "D'après le panneau, Lucy a fabriqué des bifaces.",
+              "question_type": "true_false",
+              "explanation": "Méthode : 1) Repérer ce que dit le panneau : la marche debout et un petit cerveau, aucun outil. 2) Les bifaces sont associés à Homo erectus, une espèce plus récente.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Quelles sont deux informations que donne le panneau sur Lucy ?",
+              "question_type": "multiple_correct_2",
+              "explanation": "Méthode : 1) Lire le document. 2) Repérer ce qu'il dit : marche debout et âge. 3) Le feu est un progrès de Homo erectus et 2001 est la date de Toumaï.",
+              "answers": [
+                {
+                  "content": "Elle marchait debout",
+                  "correct": true
+                },
+                {
+                  "content": "Elle a plus de 3 millions d'années",
+                  "correct": true
+                },
+                {
+                  "content": "Elle maîtrisait le feu",
+                  "correct": false
+                },
+                {
+                  "content": "Elle a été découverte en 2001",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Explique en quelques lignes pourquoi la découverte de Lucy permet de dire que l'Afrique est le berceau de l'humanité.",
+              "question_type": "written",
+              "points": 3,
+              "criteria": [
+                "Présenter Lucy : espèce, lieu, date",
+                "Dater avec prudence",
+                "Relier au berceau de l'humanité",
+                "Citer un autre fossile africain"
+              ],
+              "explanation": "Corrigé modèle : Lucy est une australopithèque de plus de 3 millions d'années, découverte en Éthiopie en 1974. C'est un des plus anciens hominidés connus qui marchaient debout. Avec Toumaï, trouvé au Tchad et plus ancien, elle montre que les plus anciens hominidés vivaient en Afrique : on parle de berceau de l'humanité. Barème (3 points) : présentation (1) ; date prudente (0,5) ; lien avec le berceau (1) ; autre fossile (0,5).",
+              "answers": [],
+              "starter": "Lucy est …"
+            }
+          ]
+        },
+        {
+          "title": "Trois fossiles africains",
+          "statement": "Document : un tableau du manuel du club d'histoire (écrit pour Lnclass). Toumaï : Tchad, environ 7 millions d'années. Lucy : Éthiopie, plus de 3 millions d'années. Un Homo erectus : lac Turkana, Kenya, plus d'un million d'années. Réponds aux questions.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "hint": null,
+          "questions": [
+            {
+              "content": "Range ces trois fossiles du plus ancien au plus récent.",
+              "question_type": "ordering",
+              "explanation": "Méthode : 1) Repérer l'âge de chaque fossile dans le tableau. 2) Comparer : environ 7 millions, plus de 3 millions, plus d'un million. 3) Ranger du plus grand au plus petit nombre d'années.",
+              "answers": [
+                {
+                  "content": "Toumaï"
+                },
+                {
+                  "content": "Lucy"
+                },
+                {
+                  "content": "Homo erectus du lac Turkana"
+                }
+              ]
+            },
+            {
+              "content": "Quel est le fossile le plus ancien du tableau ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1) Repérer les âges. 2) Comparer : 7 millions est plus grand que 3 millions et qu'un million. 3) Toumaï est donc le plus ancien.",
+              "answers": [
+                {
+                  "content": "Toumaï",
+                  "correct": true
+                },
+                {
+                  "content": "Lucy",
+                  "correct": false
+                },
+                {
+                  "content": "Homo erectus du lac Turkana",
+                  "correct": false
+                },
+                {
+                  "content": "Aucun, ils ont le même âge",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quels sont trois pays africains cités dans ce tableau ?",
+              "question_type": "multiple_correct_3",
+              "explanation": "Méthode : 1) Repérer le lieu de chaque fossile. 2) Toumaï vient du Tchad, Lucy d'Éthiopie, Homo erectus du Kenya. L'Algérie et la France sont des pays d'art rupestre.",
+              "answers": [
+                {
+                  "content": "Tchad",
+                  "correct": true
+                },
+                {
+                  "content": "Éthiopie",
+                  "correct": true
+                },
+                {
+                  "content": "Kenya",
+                  "correct": true
+                },
+                {
+                  "content": "Algérie",
+                  "correct": false
+                },
+                {
+                  "content": "France",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "D'après le tableau, tous les fossiles ont été trouvés hors d'Afrique.",
+              "question_type": "true_false",
+              "explanation": "Méthode : 1) Lire les lieux. 2) Tchad, Éthiopie et Kenya sont des pays d'Afrique. 3) L'affirmation est fausse.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Rédige un court paragraphe qui présente ces trois fossiles dans l'ordre chronologique et conclut sur l'origine de l'humanité.",
+              "question_type": "written",
+              "points": 5,
+              "criteria": [
+                "Classer les fossiles du plus ancien au plus récent",
+                "Donner le lieu de chacun",
+                "Utiliser des dates prudentes",
+                "Conclure sur le berceau africain",
+                "Rédiger un texte structuré"
+              ],
+              "explanation": "Corrigé modèle : Le plus ancien fossile du tableau est Toumaï, découvert au Tchad, âgé d'environ 7 millions d'années. Vient ensuite Lucy, trouvée en Éthiopie, vieille de plus de 3 millions d'années. Le plus récent est un Homo erectus du lac Turkana, au Kenya, vieux de plus d'un million d'années. Ces trois fossiles viennent d'Afrique : cela montre que l'Afrique est le berceau de l'humanité. Barème (5 points) : ordre (1) ; lieux (1) ; dates prudentes (1) ; conclusion (1) ; rédaction (1).",
+              "answers": [],
+              "starter": "Le fossile le plus ancien est …"
+            }
+          ]
+        },
+        {
+          "title": "Au musée : une hache, une jarre et une peinture",
+          "statement": "Texte écrit pour Lnclass : au musée des Civilisations de Côte d'Ivoire, Awa observe trois objets présentés avec la mention « reproductions » : une hache en pierre polie, une jarre en terre cuite pleine de grains de céréales et une peinture du Tassili montrant un troupeau de bovidés conduit par des personnages. Réponds aux questions.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "hint": null,
+          "questions": [
+            {
+              "content": "La hache en pierre polie appartient au ___.",
+              "question_type": "select",
+              "explanation": "Méthode : 1) Repérer l'outil : pierre polie. 2) Nommer la période : la pierre polie est l'outil du Néolithique, alors que la pierre taillée est celui du Paléolithique.",
+              "answers": [
+                {
+                  "content": "Néolithique",
+                  "correct": true
+                },
+                {
+                  "content": "Paléolithique",
+                  "correct": false
+                },
+                {
+                  "content": "Âge des métaux",
+                  "correct": false
+                },
+                {
+                  "content": "Moyen Âge",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Relie chaque objet à ce qu'il montre.",
+              "question_type": "matching",
+              "explanation": "Méthode : 1) Repérer chaque objet. 2) Classer : la hache est une technique, la jarre est liée à l'agriculture, la peinture montre l'élevage. 3) Expliquer ce que chacun apprend.",
+              "answers": [
+                {
+                  "content": "La hache en pierre polie",
+                  "match": "Une technique nouvelle"
+                },
+                {
+                  "content": "La jarre pleine de grains",
+                  "match": "Le stockage d'une récolte"
+                },
+                {
+                  "content": "La peinture du troupeau",
+                  "match": "L'élevage au Sahara"
+                }
+              ]
+            },
+            {
+              "content": "La peinture du Tassili est une source écrite.",
+              "question_type": "true_false",
+              "explanation": "Méthode : 1) Décrire : c'est une image. 2) Une image est une source iconographique, pas une source écrite.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Pourquoi la jarre pleine de grains est-elle liée à la sédentarisation ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1) Repérer : jarre et grains. 2) Expliquer : on garde la récolte pour plus tard. 3) Conclure : on n'a plus besoin de se déplacer pour manger, donc on se fixe.",
+              "answers": [
+                {
+                  "content": "Elle permet de conserver la récolte et de rester dans un village",
+                  "correct": true
+                },
+                {
+                  "content": "Elle sert à chasser les animaux",
+                  "correct": false
+                },
+                {
+                  "content": "Elle prouve que les hommes étaient nomades",
+                  "correct": false
+                },
+                {
+                  "content": "Elle montre l'invention de l'écriture",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Explique en un paragraphe comment ces trois objets montrent la révolution néolithique.",
+              "question_type": "written",
+              "points": 5,
+              "criteria": [
+                "Présenter la hache polie comme une technique du Néolithique",
+                "Relier la jarre à l'agriculture et au stockage",
+                "Relier la peinture à l'élevage",
+                "Conclure sur la production de nourriture",
+                "Rédiger un texte structuré"
+              ],
+              "explanation": "Corrigé modèle : La hache en pierre polie est un outil du Néolithique. La jarre pleine de grains montre l'agriculture et le stockage d'une récolte, qui permettent de vivre dans un village. La peinture du Tassili montre un troupeau, donc l'élevage. Ces trois objets montrent que les hommes produisent leur nourriture : c'est la révolution néolithique, qui s'étale sur des milliers d'années. Barème (5 points) : hache (1) ; jarre (1) ; peinture (1) ; conclusion (1) ; rédaction (1).",
+              "answers": [],
+              "starter": "La hache en pierre polie montre …"
+            }
+          ]
+        }
+      ],
+      "subjects": [
+        {
+          "title": "Sujet 1 · Les savoirs de base de la préhistoire",
+          "notions": "Définition et périodes de la préhistoire, Afrique berceau de l'humanité, étapes de l'hominisation, révolution néolithique, art rupestre.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Savoirs de base : définir la préhistoire et ses périodes.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Pense à l'écriture et à la matière des outils.",
+              "questions": [
+                {
+                  "content": "La préhistoire est la période…",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer le critère : l'écriture. 2) La préhistoire est la période sans écrit, qui commence avec l'homme. 3) Les dinosaures sont bien plus anciens.",
+                  "answers": [
+                    {
+                      "content": "qui va des premiers hommes à l'invention de l'écriture",
+                      "correct": true
+                    },
+                    {
+                      "content": "qui commence avec les dinosaures",
+                      "correct": false
+                    },
+                    {
+                      "content": "qui commence avec l'invention de l'écriture",
+                      "correct": false
+                    },
+                    {
+                      "content": "qui commence avec les premières villes",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque période à son indice.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Repérer l'outil et le mode de vie. 2) Nommer la période d'après ces indices.",
+                  "answers": [
+                    {
+                      "content": "Paléolithique",
+                      "match": "Pierre taillée et chasse"
+                    },
+                    {
+                      "content": "Néolithique",
+                      "match": "Pierre polie et agriculture"
+                    },
+                    {
+                      "content": "Âge des métaux",
+                      "match": "Cuivre, bronze, fer"
+                    }
+                  ]
+                },
+                {
+                  "content": "Le Néolithique vient avant le Paléolithique.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Ordonner les périodes. 2) Le Paléolithique vient d'abord, puis le Néolithique.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Le mot Néolithique signifie « âge de la pierre ___ ».",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Décomposer le mot : néo veut dire nouveau. 2) Le Néolithique est l'âge de la pierre nouvelle, ou polie.",
+                  "answers": [
+                    {
+                      "content": "nouvelle",
+                      "correct": true
+                    },
+                    {
+                      "content": "polie",
+                      "correct": true
+                    },
+                    {
+                      "content": "neuve",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux sources utiles pour étudier la préhistoire ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Repérer : il n'y a pas d'écrit. 2) Les sources sont matérielles : outils et fossiles. 3) Archives et journaux supposent l'écriture.",
+                  "answers": [
+                    {
+                      "content": "Les outils de pierre",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les ossements fossiles",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les archives écrites",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les journaux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Savoirs de base : l'Afrique, berceau de l'humanité.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Associe chaque fossile à son pays.",
+              "questions": [
+                {
+                  "content": "Dans quel pays a été découverte Lucy ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer le fossile : Lucy. 2) Le situer : en Éthiopie. Le Tchad est le pays de Toumaï.",
+                  "answers": [
+                    {
+                      "content": "Éthiopie",
+                      "correct": true
+                    },
+                    {
+                      "content": "Tchad",
+                      "correct": false
+                    },
+                    {
+                      "content": "Kenya",
+                      "correct": false
+                    },
+                    {
+                      "content": "Algérie",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Toumaï a été découvert au ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Repérer le fossile : Toumaï, découvert en 2001, vieux d'environ 7 millions d'années. 2) Le situer sur la carte de l'Afrique : au Tchad. 3) Ne pas le confondre avec Lucy, trouvée en Éthiopie, ni avec les sites du Kenya (lac Turkana) ou de Tanzanie (Olduvai).",
+                  "answers": [
+                    {
+                      "content": "Tchad",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Lucy a plus de 3 millions d'années.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer la date. 2) Lucy a plus de 3 millions d'années. 3) La découverte date, elle, de 1974.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pourquoi appelle-t-on l'Afrique le berceau de l'humanité ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer les fossiles : Toumaï, Lucy. 2) Les situer : tous très anciens, en Afrique. 3) Conclure : berceau de l'humanité. Les villages relèvent du Néolithique, pas de l'origine de l'homme, et les premiers hommes sont partis d'Afrique, ils n'y sont pas arrivés d'Asie.",
+                  "answers": [
+                    {
+                      "content": "Parce que les plus anciens fossiles d'hominidés y ont été trouvés",
+                      "correct": true
+                    },
+                    {
+                      "content": "Parce que c'est le plus grand continent",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce que les premiers villages y sont apparus avant tout autre continent",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce que les premiers hommes y sont arrivés depuis l'Asie",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Range du plus ancien au plus récent.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Dater : environ 7 millions, plus de 3 millions, plus d'un million, plus de 200 000 ans. 2) Ranger de la plus grande durée à la plus petite.",
+                  "answers": [
+                    {
+                      "content": "Toumaï"
+                    },
+                    {
+                      "content": "Lucy"
+                    },
+                    {
+                      "content": "Homo erectus"
+                    },
+                    {
+                      "content": "Homo sapiens"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Savoirs de base : l'hominisation.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Relie chaque espèce à son progrès.",
+              "questions": [
+                {
+                  "content": "Relie chaque espèce à son progrès.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Repérer le progrès. 2) Identifier l'espèce correspondante.",
+                  "answers": [
+                    {
+                      "content": "Australopithèque",
+                      "match": "Marche debout"
+                    },
+                    {
+                      "content": "Homo habilis",
+                      "match": "Outils de pierre taillée"
+                    },
+                    {
+                      "content": "Homo erectus",
+                      "match": "Maîtrise du feu"
+                    },
+                    {
+                      "content": "Homo sapiens",
+                      "match": "Langage et art"
+                    }
+                  ]
+                },
+                {
+                  "content": "Que veut dire Homo erectus ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier l'espèce par son nom. 2) Erectus veut dire debout, habilis habile et sapiens sage.",
+                  "answers": [
+                    {
+                      "content": "Homme debout",
+                      "correct": true
+                    },
+                    {
+                      "content": "Homme habile",
+                      "correct": false
+                    },
+                    {
+                      "content": "Homme sage",
+                      "correct": false
+                    },
+                    {
+                      "content": "Homme des cavernes",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'homme descend du chimpanzé actuel.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer l'affirmation. 2) L'homme et les singes actuels ont un ancêtre commun très lointain. 3) C'est faux.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Au Paléolithique, les hommes sont des chasseurs-cueilleurs ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Relier au mode de vie : ils se déplacent pour trouver la nourriture. 2) Ce sont des nomades.",
+                  "answers": [
+                    {
+                      "content": "nomades",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux conséquences du feu ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Repérer le progrès : le feu. 2) Relier : il cuit, chauffe et protège. 3) Agriculture et écriture sont bien plus tardives.",
+                  "answers": [
+                    {
+                      "content": "La cuisson des aliments",
+                      "correct": true
+                    },
+                    {
+                      "content": "La protection contre le froid",
+                      "correct": true
+                    },
+                    {
+                      "content": "La culture des céréales",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'invention de l'écriture",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Savoirs de base : la révolution néolithique et l'art rupestre.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Pense à produire sa nourriture et à décrire une image.",
+              "questions": [
+                {
+                  "content": "Quelles sont trois innovations du Néolithique ?",
+                  "question_type": "multiple_correct_3",
+                  "explanation": "Méthode : 1) Repérer les nouveautés. 2) Classer : agriculture, élevage et poterie sont néolithiques. 3) Chasse nomade et galets taillés sont paléolithiques.",
+                  "answers": [
+                    {
+                      "content": "Agriculture",
+                      "correct": true
+                    },
+                    {
+                      "content": "Élevage",
+                      "correct": true
+                    },
+                    {
+                      "content": "Poterie",
+                      "correct": true
+                    },
+                    {
+                      "content": "Chasse nomade",
+                      "correct": false
+                    },
+                    {
+                      "content": "Taille de galets",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La sédentarisation désigne le fait de vivre dans des villages.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Classer : mode de vie. 2) Expliquer : on habite longtemps au même endroit.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Où se trouve le Tassili n'Ajjer ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Décrire le site : art rupestre. 2) Le situer : au Sahara, en Algérie. La France est le pays de Lascaux.",
+                  "answers": [
+                    {
+                      "content": "En Algérie",
+                      "correct": true
+                    },
+                    {
+                      "content": "En France",
+                      "correct": false
+                    },
+                    {
+                      "content": "Au Kenya",
+                      "correct": false
+                    },
+                    {
+                      "content": "En Éthiopie",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'art rupestre est peint ou gravé sur des ___ de grottes ou d'abris.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Décrire : l'art rupestre se trouve sur les parois de grottes et d'abris sous roche.",
+                  "answers": [
+                    {
+                      "content": "parois",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Que doit-on dire de l'interprétation d'une peinture rupestre ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Interpréter l'image. 2) Nuancer : sans texte, le sens exact reste incertain.",
+                  "answers": [
+                    {
+                      "content": "C'est une hypothèse",
+                      "correct": true
+                    },
+                    {
+                      "content": "C'est toujours une certitude",
+                      "correct": false
+                    },
+                    {
+                      "content": "C'est toujours une erreur",
+                      "correct": false
+                    },
+                    {
+                      "content": "C'est un texte écrit",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 2 · La préhistoire dans la vie courante en Côte d'Ivoire",
+          "notions": "Situations en Côte d'Ivoire (musée des Civilisations à Abidjan, frise en classe, exposé du club d'histoire, village près de Bouaké) : périodes, fossiles, Néolithique.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Situation écrite pour Lnclass : le club d'histoire d'un lycée de Yamoussoukro visite le musée des Civilisations de Côte d'Ivoire, à Abidjan, et lit des panneaux sur des objets préhistoriques (reproductions).",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Regarde la matière de l'outil et les indices de mode de vie.",
+              "questions": [
+                {
+                  "content": "Un panneau décrit un galet taillé et des restes d'un campement de chasseurs. Quelle est la période ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer : pierre taillée et chasseurs. 2) Nommer : Paléolithique. 3) Le Néolithique aurait des champs et des villages.",
+                  "answers": [
+                    {
+                      "content": "Paléolithique",
+                      "correct": true
+                    },
+                    {
+                      "content": "Néolithique",
+                      "correct": false
+                    },
+                    {
+                      "content": "Âge des métaux",
+                      "correct": false
+                    },
+                    {
+                      "content": "Histoire (après l'invention de l'écriture)",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un autre panneau montre une hache en pierre polie et des grains. Quelle est la période ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer : pierre polie et grains. 2) Nommer : agriculture, donc Néolithique.",
+                  "answers": [
+                    {
+                      "content": "Néolithique",
+                      "correct": true
+                    },
+                    {
+                      "content": "Paléolithique",
+                      "correct": false
+                    },
+                    {
+                      "content": "Moyen Âge",
+                      "correct": false
+                    },
+                    {
+                      "content": "Âge des dinosaures",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Les élèves peuvent lire des textes écrits par les hommes du Paléolithique.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Situer par rapport à l'écriture. 2) Le Paléolithique est antérieur à l'écriture. 3) Il n'y a pas de textes.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque objet à sa famille de source.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Repérer l'objet. 2) Classer d'après la forme de l'information, comme dans la leçon sur les sources.",
+                  "answers": [
+                    {
+                      "content": "Un outil de pierre",
+                      "match": "Source matérielle"
+                    },
+                    {
+                      "content": "Une peinture rupestre",
+                      "match": "Source iconographique"
+                    },
+                    {
+                      "content": "Un récit transmis par les anciens",
+                      "match": "Source orale"
+                    }
+                  ]
+                },
+                {
+                  "content": "Une hache polie du musée est datée de 5 000 av. J.-C. Combien d'années la séparent de l'invention de l'écriture, vers 3 000 av. J.-C. ?",
+                  "question_type": "numeric",
+                  "explanation": "Méthode : 1) Repérer les deux dates, toutes deux avant J.-C. 2) Ordonner : avant J.-C., le plus grand nombre est le plus ancien, donc 5 000 av. J.-C. vient avant 3 000 av. J.-C. 3) Soustraire : $5000 - 3000 = 2000$ ans. Additionner les deux dates (8 000) serait une erreur : elles sont du même côté de la naissance de J.-C.",
+                  "answers": [
+                    {
+                      "content": "2000",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "ans"
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Situation : en classe, le professeur du club d'histoire construit une frise avec les élèves. Chaque élève place un carton à son rang.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Range du plus ancien au plus récent.",
+              "questions": [
+                {
+                  "content": "Range ces cartons du plus ancien au plus récent.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Repérer les dates : environ 7 millions, plus de 3 millions, plus d'un million, plus de 200 000 ans. 2) Ranger du plus ancien au plus récent.",
+                  "answers": [
+                    {
+                      "content": "Toumaï"
+                    },
+                    {
+                      "content": "Lucy"
+                    },
+                    {
+                      "content": "Homo erectus et le feu"
+                    },
+                    {
+                      "content": "Homo sapiens"
+                    }
+                  ]
+                },
+                {
+                  "content": "Où place-t-on le carton « Néolithique » ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Nommer la période. 2) Ordonner : Paléolithique d'abord, puis Néolithique.",
+                  "answers": [
+                    {
+                      "content": "Après le Paléolithique",
+                      "correct": true
+                    },
+                    {
+                      "content": "Avant le Paléolithique",
+                      "correct": false
+                    },
+                    {
+                      "content": "Avant les premiers hommes",
+                      "correct": false
+                    },
+                    {
+                      "content": "À la place du Paléolithique",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le carton « Invention de l'écriture » marque la fin de la préhistoire.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Situer par rapport à l'écriture. 2) La préhistoire est avant l'écriture. 3) Vrai.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur la frise, le carton « Homo habilis et ses outils de pierre taillée » se place au ___ (nom de la période).",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Repérer l'indice : des outils de pierre taillée. 2) Nommer la période : la pierre taillée caractérise le Paléolithique. 3) Le Néolithique, plus récent, est celui de la pierre polie et de l'agriculture.",
+                  "answers": [
+                    {
+                      "content": "Paléolithique",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un carton de la frise porte la date 4 000 av. J.-C. et un autre 3 000 av. J.-C. Combien d'années les séparent ?",
+                  "question_type": "numeric",
+                  "explanation": "Méthode : 1) Ordonner : 4 000 av. J.-C. est plus ancien. 2) Soustraire : $4000 - 3000 = 1000$ ans.",
+                  "answers": [
+                    {
+                      "content": "1000",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "ans"
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Situation : Kouassi, du club d'histoire, présente à la classe un exposé sur Lucy et sur Toumaï.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Associe fossile, pays et date prudente.",
+              "questions": [
+                {
+                  "content": "Kouassi dit : « Lucy est la première femme. » Que lui répondre ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer l'espèce : australopithèque. 2) Identifier : ce n'est pas un Homo sapiens. 3) Le terme « première femme » est faux.",
+                  "answers": [
+                    {
+                      "content": "Lucy est une australopithèque, pas une femme actuelle",
+                      "correct": true
+                    },
+                    {
+                      "content": "C'est exact",
+                      "correct": false
+                    },
+                    {
+                      "content": "Lucy est un Homo sapiens",
+                      "correct": false
+                    },
+                    {
+                      "content": "Lucy est un Homo erectus",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Kouassi dit que Toumaï a été trouvé au ___.",
+                  "question_type": "select",
+                  "explanation": "Méthode : 1) Repérer le fossile : Toumaï, environ 7 millions d'années, découvert en 2001. 2) Le situer : au Tchad. 3) L'Éthiopie est le pays de Lucy, le Kenya celui du lac Turkana, la Tanzanie celui d'Olduvai.",
+                  "answers": [
+                    {
+                      "content": "Tchad",
+                      "correct": true
+                    },
+                    {
+                      "content": "Kenya",
+                      "correct": false
+                    },
+                    {
+                      "content": "Éthiopie",
+                      "correct": false
+                    },
+                    {
+                      "content": "Tanzanie",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Toumaï est plus récent que Lucy.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Dater : environ 7 millions d'années pour Toumaï, plus de 3 millions pour Lucy. 2) Toumaï est plus ancien.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles formulations sont prudentes ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Dater avec prudence. 2) On dit « plus de » ou « environ ». 3) Une date au jour près est impossible, et environ 7 millions d'années est l'âge de Toumaï, pas celui de Lucy.",
+                  "answers": [
+                    {
+                      "content": "Lucy a plus de 3 millions d'années",
+                      "correct": true
+                    },
+                    {
+                      "content": "Toumaï a environ 7 millions d'années",
+                      "correct": true
+                    },
+                    {
+                      "content": "Lucy a exactement 3 215 487 ans",
+                      "correct": false
+                    },
+                    {
+                      "content": "Lucy a environ 7 millions d'années",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Lucy a été découverte en 1974 et Toumaï en 2001. Combien d'années séparent ces deux découvertes ?",
+                  "question_type": "numeric",
+                  "explanation": "Méthode : 1) Repérer les deux dates de découverte. 2) Soustraire : $2001 - 1974 = 27$ ans.",
+                  "answers": [
+                    {
+                      "content": "27",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "ans"
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Situation : dans un village près de Bouaké, une famille garde du grain dans de grandes jarres et élève des chèvres. Le club d'histoire compare avec le Néolithique.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Pense à produire, stocker et rester sur place.",
+              "questions": [
+                {
+                  "content": "Garder le grain dans des jarres ressemble à quelle innovation du Néolithique ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer : jarres et grain. 2) Classer : technique de stockage. 3) C'est la poterie.",
+                  "answers": [
+                    {
+                      "content": "La poterie pour stocker",
+                      "correct": true
+                    },
+                    {
+                      "content": "La taille de galets",
+                      "correct": false
+                    },
+                    {
+                      "content": "La chasse nomade",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'art rupestre",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Élever des chèvres est une innovation du Néolithique.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer : l'élevage. 2) Classer : production de nourriture, donc Néolithique.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pourquoi un village fixe est-il possible au Néolithique ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Expliquer : champs et troupeaux demandent de rester. 2) Conclure : sédentarisation.",
+                  "answers": [
+                    {
+                      "content": "Parce que les hommes produisent et stockent leur nourriture sur place",
+                      "correct": true
+                    },
+                    {
+                      "content": "Parce qu'ils ne chassent plus du tout",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce qu'ils ont inventé l'écriture",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce qu'ils vivent dans des grottes",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Range cette chaîne de conséquences.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Expliquer la chaîne. 2) Produire permet de stocker, donc de rester, donc de croître.",
+                  "answers": [
+                    {
+                      "content": "Les hommes cultivent et élèvent"
+                    },
+                    {
+                      "content": "Ils stockent un surplus"
+                    },
+                    {
+                      "content": "Ils se fixent dans des villages"
+                    },
+                    {
+                      "content": "La population augmente"
+                    }
+                  ]
+                },
+                {
+                  "content": "Le fait d'habiter durablement un village s'appelle la ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Repérer la nouveauté : habiter un village. 2) La classer : c'est un changement de mode de vie du Néolithique. 3) La nommer : la sédentarisation, le contraire du nomadisme des chasseurs-cueilleurs du Paléolithique.",
+                  "answers": [
+                    {
+                      "content": "sédentarisation",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 3 · Raisonner et justifier sur la préhistoire",
+          "notions": "Justifier une période, un fossile, un mode de vie ou une source d'art rupestre, en choisissant l'argument exact.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Raisonner et justifier : choisis à chaque fois la justification exacte.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Cherche l'argument qui s'appuie sur un fait de la fiche.",
+              "questions": [
+                {
+                  "content": "Pourquoi peut-on dire qu'un galet taillé appartient à la préhistoire ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer : outil de pierre taillée. 2) Situer : pas d'écriture. 3) Conclure : préhistoire. Un galet taillé n'est pas poli et n'est pas en métal.",
+                  "answers": [
+                    {
+                      "content": "Parce qu'il date d'une période sans écriture, avec des hommes qui taillent la pierre",
+                      "correct": true
+                    },
+                    {
+                      "content": "Parce qu'il est en pierre polie",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce qu'il date de l'âge des métaux",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce qu'il a été trouvé avec des textes écrits",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pourquoi les dinosaures ne font-ils pas partie de la préhistoire ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Définir la préhistoire. 2) Situer : l'homme est apparu des dizaines de millions d'années après les dinosaures.",
+                  "answers": [
+                    {
+                      "content": "Parce que la préhistoire commence avec les hommes, apparus bien après leur disparition",
+                      "correct": true
+                    },
+                    {
+                      "content": "Parce que les dinosaures ont vécu après l'invention de l'écriture",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce que les dinosaures ont vécu au Néolithique",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce que la préhistoire ne concerne que l'Europe",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dire que la préhistoire est « sans histoire » est exact.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Définir : la préhistoire est l'histoire de l'homme avant l'écriture. 2) Elle a une histoire, étudiée par les archéologues.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux raisons de croiser plusieurs sources pour la préhistoire ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Repérer l'apport de chaque source. 2) Croiser, comme dans la leçon sur les méthodes.",
+                  "answers": [
+                    {
+                      "content": "Une seule trace est souvent partielle",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les outils et les fossiles apportent des informations différentes",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les hommes préhistoriques ont laissé beaucoup d'écrits",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une source n'a jamais de limites",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle conclusion est la plus prudente après la découverte d'un outil poli ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer l'indice. 2) Nommer la période avec prudence. 3) Croiser avec d'autres traces.",
+                  "answers": [
+                    {
+                      "content": "Il suggère le Néolithique, à confirmer par d'autres indices",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il prouve à lui seul le Néolithique et tout le reste",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il ne dit rien",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il date de l'écriture",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Raisonner sur l'origine de l'humanité en Afrique.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Appuie-toi sur les fossiles et leurs dates.",
+              "questions": [
+                {
+                  "content": "Quel argument soutient le mieux l'idée du berceau africain ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer les fossiles : Toumaï (Tchad, environ 7 millions d'années), Lucy (Éthiopie, plus de 3 millions). 2) Les situer : en Afrique. 3) Conclure : berceau de l'humanité. Les villages relèvent du Néolithique, les premiers hommes sont partis d'Afrique et non arrivés d'Asie, et Lascaux est en France.",
+                  "answers": [
+                    {
+                      "content": "Les plus anciens fossiles d'hominidés ont été trouvés en Afrique",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les premiers villages y sont apparus avant tout autre continent",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les premiers hommes y sont arrivés depuis l'Asie",
+                      "correct": false
+                    },
+                    {
+                      "content": "La grotte de Lascaux s'y trouve",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une seule découverte de fossile suffit à prouver tout le récit de l'hominisation.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer une découverte. 2) Croiser : il faut plusieurs fossiles. 3) Une découverte seule est partielle.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Toumaï (environ 7 millions d'années) et Lucy (plus de 3 millions d'années) : que peut-on dire ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Dater : 7 millions est plus grand que 3 millions. 2) Situer : Tchad et Éthiopie. 3) Conclure.",
+                  "answers": [
+                    {
+                      "content": "Toumaï est plus ancien et vient d'Afrique, comme Lucy",
+                      "correct": true
+                    },
+                    {
+                      "content": "Toumaï est plus récent que Lucy",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ce sont les mêmes fossiles",
+                      "correct": false
+                    },
+                    {
+                      "content": "Toumaï vient d'Éthiopie",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Range ces affirmations dans l'ordre d'un raisonnement.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Repérer. 2) Situer. 3) Dater. 4) Conclure : l'ordre de la fiche.",
+                  "answers": [
+                    {
+                      "content": "On repère un fossile et son espèce"
+                    },
+                    {
+                      "content": "On le situe sur la carte"
+                    },
+                    {
+                      "content": "On le date avec prudence"
+                    },
+                    {
+                      "content": "On conclut sur l'origine africaine"
+                    }
+                  ]
+                },
+                {
+                  "content": "Homo sapiens apparaît en ___ avant de peupler les autres continents.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Repérer l'espèce. 2) Situer : Homo sapiens apparaît en Afrique. 3) Conclure : berceau de l'humanité.",
+                  "answers": [
+                    {
+                      "content": "Afrique",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Raisonner sur le mode de vie et ses changements.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Compare Paléolithique et Néolithique.",
+              "questions": [
+                {
+                  "content": "Relie chaque trait à sa période.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Repérer le trait. 2) Nommer la période : nomadisme et cueillette, Paléolithique ; villages et champs, Néolithique ; bronze, âge des métaux.",
+                  "answers": [
+                    {
+                      "content": "Nomadisme et cueillette",
+                      "match": "Paléolithique"
+                    },
+                    {
+                      "content": "Villages et champs",
+                      "match": "Néolithique"
+                    },
+                    {
+                      "content": "Outils en bronze",
+                      "match": "Âge des métaux"
+                    }
+                  ]
+                },
+                {
+                  "content": "Pourquoi le feu aide-t-il les chasseurs nomades ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer le feu. 2) Relier au mode de vie du Paléolithique.",
+                  "answers": [
+                    {
+                      "content": "Il protège, chauffe, éclaire et permet de cuire",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il permet de cultiver",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il permet d'écrire",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il permet de construire des villages",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La révolution néolithique est un changement lent, sur des milliers d'années.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer : le mot révolution. 2) Conclure : changement profond mais lent.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pourquoi le surplus entraîne-t-il de nouveaux métiers ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Expliquer : le surplus nourrit plus de monde. 2) Conclure : potiers et artisans apparaissent.",
+                  "answers": [
+                    {
+                      "content": "Parce que certains peuvent se consacrer à un métier, nourris par le surplus",
+                      "correct": true
+                    },
+                    {
+                      "content": "Parce qu'il n'y a plus de nourriture",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce que tous restent chasseurs",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce qu'ils sont nomades",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux conséquences de la sédentarisation ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Expliquer. 2) Conclure : la sédentarisation permet des villages et plus d'habitants.",
+                  "answers": [
+                    {
+                      "content": "Des villages",
+                      "correct": true
+                    },
+                    {
+                      "content": "Une population plus nombreuse",
+                      "correct": true
+                    },
+                    {
+                      "content": "Un retour à la cueillette seule",
+                      "correct": false
+                    },
+                    {
+                      "content": "La disparition de la poterie",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Raisonner sur l'art rupestre comme source.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Décris, situe, interprète, nuance.",
+              "questions": [
+                {
+                  "content": "Pourquoi l'art rupestre est-il utile à l'historien ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Décrire : des images. 2) Interpréter : elles renseignent sur la vie. 3) Nuancer.",
+                  "answers": [
+                    {
+                      "content": "Il renseigne sur des sociétés sans écriture",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il est écrit",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il donne la date exacte",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il remplace tous les fossiles",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Des troupeaux conduits par des hommes dans une peinture du Sahara montrent…",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Décrire les troupeaux. 2) Situer : Tassili, Néolithique. 3) Interpréter : élevage.",
+                  "answers": [
+                    {
+                      "content": "l'élevage",
+                      "correct": true
+                    },
+                    {
+                      "content": "l'écriture",
+                      "correct": false
+                    },
+                    {
+                      "content": "la culture des céréales",
+                      "correct": false
+                    },
+                    {
+                      "content": "le Paléolithique seulement",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une interprétation d'une peinture rupestre est toujours certaine.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Interpréter. 2) Nuancer : sans texte, le sens reste une hypothèse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque site à son pays.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Décrire le site : le Tassili et Lascaux sont des sites d'art rupestre, Hadar un site de fossiles. 2) Situer son pays : le Tassili n'Ajjer en Algérie, Lascaux en Dordogne (France), Hadar en Éthiopie, où Lucy a été trouvée en 1974. Placer Lascaux en Afrique est la confusion à éviter.",
+                  "answers": [
+                    {
+                      "content": "Tassili n'Ajjer",
+                      "match": "Algérie"
+                    },
+                    {
+                      "content": "Lascaux",
+                      "match": "France"
+                    },
+                    {
+                      "content": "Hadar",
+                      "match": "Éthiopie"
+                    }
+                  ]
+                },
+                {
+                  "content": "Lascaux a été découverte en ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Repérer le site. 2) Situer dans le temps : découverte en 1940.",
+                  "answers": [
+                    {
+                      "content": "1940",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 4 · Bilan de la préhistoire",
+          "notions": "Bilan des cinq notions : périodes, Afrique, hominisation, Néolithique, art rupestre.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Bilan : définitions et périodes.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Revois la méthode : repérer, situer, nommer, ordonner.",
+              "questions": [
+                {
+                  "content": "Range ces repères dans l'ordre.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Nommer les périodes. 2) Ordonner : pierre taillée, pierre polie, métaux.",
+                  "answers": [
+                    {
+                      "content": "Paléolithique"
+                    },
+                    {
+                      "content": "Néolithique"
+                    },
+                    {
+                      "content": "Âge des métaux"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle phrase définit la préhistoire ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer le critère : l'écriture. 2) Situer : la préhistoire est avant l'écriture et commence avec l'homme. 3) Les dinosaures ont disparu des dizaines de millions d'années avant les premiers hommes, et la période après l'écriture est l'histoire.",
+                  "answers": [
+                    {
+                      "content": "La période qui va de l'apparition de l'homme à l'invention de l'écriture",
+                      "correct": true
+                    },
+                    {
+                      "content": "La période des dinosaures",
+                      "correct": false
+                    },
+                    {
+                      "content": "La période après l'écriture",
+                      "correct": false
+                    },
+                    {
+                      "content": "La période des villes",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un outil en pierre taillée appartient au Néolithique.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer l'indice : la pierre taillée. 2) Nommer la période : la pierre taillée est l'outil du Paléolithique. 3) Le Néolithique est celui de la pierre polie : l'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Le spécialiste qui fouille le sol pour étudier les outils et les restes d'habitat s'appelle l'___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Repérer : sans écriture, on étudie la préhistoire par des traces matérielles. 2) Nommer le spécialiste : l'archéologue fouille le sol pour trouver outils et restes d'habitat. 3) Le paléontologue, lui, étudie surtout les fossiles.",
+                  "answers": [
+                    {
+                      "content": "archéologue",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Entre 6 000 av. J.-C. et 3 000 av. J.-C., combien d'années ?",
+                  "question_type": "numeric",
+                  "explanation": "Méthode : 1) Ordonner : avant J.-C., 6 000 est plus ancien que 3 000. 2) Soustraire : $6000 - 3000 = 3000$ ans. Additionner les deux dates serait une erreur.",
+                  "answers": [
+                    {
+                      "content": "3000",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "ans"
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Bilan : l'Afrique et l'hominisation.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Associe fossile, pays, espèce et date.",
+              "questions": [
+                {
+                  "content": "Relie chaque fossile ou site à son pays.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Repérer le fossile ou le site. 2) Le situer sur la carte de l'Afrique : Lucy en Éthiopie (1974), Toumaï au Tchad (2001), Olduvai en Tanzanie, le lac Turkana au Kenya. 3) Inverser Lucy et Toumaï est la confusion la plus fréquente.",
+                  "answers": [
+                    {
+                      "content": "Lucy",
+                      "match": "Éthiopie"
+                    },
+                    {
+                      "content": "Toumaï",
+                      "match": "Tchad"
+                    },
+                    {
+                      "content": "Olduvai",
+                      "match": "Tanzanie"
+                    },
+                    {
+                      "content": "Lac Turkana",
+                      "match": "Kenya"
+                    }
+                  ]
+                },
+                {
+                  "content": "Range les espèces.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Identifier chaque espèce. 2) Ranger dans l'ordre chronologique : l'australopithèque (Lucy, plus de 3 millions d'années), Homo habilis (plus de 2 millions), Homo erectus, puis Homo sapiens (plus de 200 000 ans).",
+                  "answers": [
+                    {
+                      "content": "Australopithèque"
+                    },
+                    {
+                      "content": "Homo habilis"
+                    },
+                    {
+                      "content": "Homo erectus"
+                    },
+                    {
+                      "content": "Homo sapiens"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle espèce maîtrise le feu ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer le progrès : le feu. 2) Identifier l'espèce : Homo erectus, qui fabrique aussi des bifaces. 3) Homo habilis est connu pour les premiers outils de pierre, l'australopithèque pour la marche debout.",
+                  "answers": [
+                    {
+                      "content": "Homo erectus",
+                      "correct": true
+                    },
+                    {
+                      "content": "Homo habilis",
+                      "correct": false
+                    },
+                    {
+                      "content": "Australopithèque",
+                      "correct": false
+                    },
+                    {
+                      "content": "Aucune",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'homme descend du chimpanzé actuel.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer l'affirmation. 2) Identifier l'erreur : le chimpanzé actuel a lui aussi longuement évolué. 3) L'homme et les singes actuels ont un ancêtre commun très lointain : c'est faux.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux caractéristiques de Homo sapiens ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Repérer les caractères. 2) Identifier : Homo sapiens a un cerveau développé, un langage et un art. 3) Toutes les espèces de la fiche marchent debout, et le premier à quitter l'Afrique est Homo erectus.",
+                  "answers": [
+                    {
+                      "content": "Langage",
+                      "correct": true
+                    },
+                    {
+                      "content": "Art",
+                      "correct": true
+                    },
+                    {
+                      "content": "Marche à quatre pattes",
+                      "correct": false
+                    },
+                    {
+                      "content": "Premier à quitter l'Afrique",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Bilan : le Néolithique et l'art.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Produire, stocker, se fixer, représenter.",
+              "questions": [
+                {
+                  "content": "Quelles sont trois innovations néolithiques ?",
+                  "question_type": "multiple_correct_3",
+                  "explanation": "Méthode : 1) Repérer chaque nouveauté. 2) Classer : agriculture et élevage produisent la nourriture, la poterie la conserve, ce sont des innovations du Néolithique. 3) Le feu (Homo erectus) et le galet taillé sont bien plus anciens, du Paléolithique.",
+                  "answers": [
+                    {
+                      "content": "Agriculture",
+                      "correct": true
+                    },
+                    {
+                      "content": "Élevage",
+                      "correct": true
+                    },
+                    {
+                      "content": "Poterie",
+                      "correct": true
+                    },
+                    {
+                      "content": "Maîtrise du feu",
+                      "correct": false
+                    },
+                    {
+                      "content": "Galet taillé",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Range cette chaîne.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Expliquer : produire sa nourriture donne un surplus qu'on stocke dans des poteries. 2) Le surplus permet de rester sur place : des villages naissent. 3) Conclure : la population augmente.",
+                  "answers": [
+                    {
+                      "content": "Agriculture et élevage"
+                    },
+                    {
+                      "content": "Surplus stocké"
+                    },
+                    {
+                      "content": "Villages"
+                    },
+                    {
+                      "content": "Population plus nombreuse"
+                    }
+                  ]
+                },
+                {
+                  "content": "Que montrent les peintures du Tassili ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Décrire : des troupeaux de bovidés et des personnages. 2) Situer : le Tassili n'Ajjer, en Algérie. 3) Interpréter : l'élevage au Sahara, alors plus humide. Les chevaux et aurochs de Dordogne sont à Lascaux, en France.",
+                  "answers": [
+                    {
+                      "content": "Des troupeaux et des scènes de vie",
+                      "correct": true
+                    },
+                    {
+                      "content": "Des chevaux et des aurochs d'une grotte de Dordogne",
+                      "correct": false
+                    },
+                    {
+                      "content": "Des fossiles d'australopithèques",
+                      "correct": false
+                    },
+                    {
+                      "content": "Des outils en fer",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Lascaux est en Afrique.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Décrire : une grotte ornée de chevaux et d'aurochs. 2) Situer : Lascaux est en Dordogne, en France, découverte en 1940. 3) Le site d'art rupestre africain de la leçon est le Tassili, en Algérie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "La révolution néolithique s'étale sur des ___.",
+                  "question_type": "select",
+                  "explanation": "Méthode : 1) Repérer le mot révolution. 2) Conclure : c'est un changement profond mais lent, sur des milliers d'années et à des dates différentes selon les régions. 3) Des millions d'années, c'est l'échelle de l'hominisation, pas du Néolithique.",
+                  "answers": [
+                    {
+                      "content": "milliers d'années",
+                      "correct": true
+                    },
+                    {
+                      "content": "dizaines d'années",
+                      "correct": false
+                    },
+                    {
+                      "content": "millions d'années",
+                      "correct": false
+                    },
+                    {
+                      "content": "siècles seulement",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Bilan général : toutes les notions de la leçon.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Appuie-toi sur les fiches.",
+              "questions": [
+                {
+                  "content": "Quelle suite est correcte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier chaque espèce. 2) Ranger dans l'ordre chronologique : l'australopithèque marche debout, Homo habilis taille les premiers outils, Homo erectus maîtrise le feu, Homo sapiens parle et crée de l'art. 3) La suite inversée part du plus récent : c'est le piège.",
+                  "answers": [
+                    {
+                      "content": "Australopithèque, Homo habilis, Homo erectus, Homo sapiens",
+                      "correct": true
+                    },
+                    {
+                      "content": "Homo sapiens, Homo erectus, Homo habilis, australopithèque",
+                      "correct": false
+                    },
+                    {
+                      "content": "Homo habilis, australopithèque, Homo sapiens, Homo erectus",
+                      "correct": false
+                    },
+                    {
+                      "content": "Homo erectus, australopithèque, Homo habilis, Homo sapiens",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La préhistoire se termine avec l'invention de l'écriture.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer le critère : l'écriture. 2) Situer : la préhistoire est la période sans écrit ; l'écriture, vers 3 000 ans avant J.-C., ouvre l'histoire. 3) L'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque période à sa marque.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Repérer l'indice : le mode de vie ou la matière de l'outil. 2) Nommer la période : chasse et cueillette, Paléolithique ; agriculture et élevage, Néolithique ; cuivre, bronze, fer, âge des métaux.",
+                  "answers": [
+                    {
+                      "content": "Paléolithique",
+                      "match": "Chasse et cueillette"
+                    },
+                    {
+                      "content": "Néolithique",
+                      "match": "Agriculture et élevage"
+                    },
+                    {
+                      "content": "Âge des métaux",
+                      "match": "Cuivre, bronze, fer"
+                    }
+                  ]
+                },
+                {
+                  "content": "La découverte de Lucy date de ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Repérer le fossile : Lucy, une australopithèque. 2) Situer : à Hadar, en Éthiopie. 3) Dater la découverte : 1974. Ne pas confondre avec 2001 (Toumaï) ni avec l'âge de Lucy, plus de 3 millions d'années.",
+                  "answers": [
+                    {
+                      "content": "1974",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux sources de la préhistoire ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Repérer : la préhistoire n'a pas d'écriture. 2) Classer : les fossiles sont des sources matérielles, l'art rupestre une source iconographique. 3) Archives et journaux supposent l'écriture : ils sont impossibles pour cette période.",
+                  "answers": [
+                    {
+                      "content": "Les fossiles",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'art rupestre",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les archives écrites",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les journaux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

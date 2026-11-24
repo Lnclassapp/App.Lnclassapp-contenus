@@ -1,0 +1,3915 @@
+{
+  "format": "lnclass.course-tree",
+  "version": 3,
+  "courses": [
+    {
+      "name": "Géographie — Les techniques de représentation de la terre",
+      "subtitle": "Leçon 6 — progression DPFC 2026-2027",
+      "level_name": "2nde",
+      "material_name": "Histoire-Géographie",
+      "theme": "blue",
+      "figures": [
+        {
+          "key": "carte-voyage-en-car",
+          "kind": "map",
+          "description": "Une carte de la Côte d'Ivoire, nord en haut, sur laquelle le trajet d'un car est tracé en trois tronçons : d'Abidjan, au sud, vers Yamoussoukro, puis Bouaké, puis Korhogo, au nord. Elle sert à lire des villes étapes et des routes, et à dire dans quelle direction on roule.",
+          "params": {
+            "base": "cote_d_ivoire",
+            "places": [
+              {
+                "id": "abidjan",
+                "label": "Abidjan"
+              },
+              {
+                "id": "yamoussoukro",
+                "label": "Yamoussoukro"
+              },
+              {
+                "id": "bouake",
+                "label": "Bouaké"
+              },
+              {
+                "id": "korhogo",
+                "label": "Korhogo"
+              }
+            ],
+            "routes": [
+              {
+                "from": "abidjan",
+                "to": "yamoussoukro",
+                "label": "Route"
+              },
+              {
+                "from": "yamoussoukro",
+                "to": "bouake",
+                "label": "Route"
+              },
+              {
+                "from": "bouake",
+                "to": "korhogo",
+                "label": "Route"
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "coordonnees-geographiques",
+          "kind": "diagram",
+          "description": "Un schéma en arbre : les coordonnées géographiques se divisent en deux. La latitude se mesure depuis l'équateur, de 0° à 90°, vers le nord ou le sud, le long des parallèles. La longitude se mesure depuis le méridien de Greenwich, de 0° à 180°, vers l'est ou l'ouest, le long des méridiens.",
+          "params": {
+            "layout": "tree",
+            "direction": "down",
+            "nodes": [
+              {
+                "id": "c",
+                "label": "Coordonnées géographiques"
+              },
+              {
+                "id": "la",
+                "label": "Latitude : depuis l'équateur, 0° à 90° N ou S"
+              },
+              {
+                "id": "lo",
+                "label": "Longitude : depuis Greenwich, 0° à 180° E ou O"
+              },
+              {
+                "id": "pa",
+                "label": "Parallèles"
+              },
+              {
+                "id": "me",
+                "label": "Méridiens"
+              }
+            ],
+            "edges": [
+              {
+                "from": "c",
+                "to": "la"
+              },
+              {
+                "from": "c",
+                "to": "lo"
+              },
+              {
+                "from": "la",
+                "to": "pa",
+                "label": "lignes"
+              },
+              {
+                "from": "lo",
+                "to": "me",
+                "label": "lignes"
+              }
+            ],
+            "legend": []
+          },
+          "controls": []
+        },
+        {
+          "key": "elements-d-une-carte",
+          "kind": "diagram",
+          "description": "Un schéma en arbre : une carte comporte quatre éléments à lire. Le titre dit le sujet, l'espace et la date. La légende explique les couleurs et les signes. L'orientation est donnée par la flèche du nord ou la rose des vents. L'échelle dit de combien l'espace est réduit.",
+          "params": {
+            "layout": "tree",
+            "direction": "down",
+            "nodes": [
+              {
+                "id": "ca",
+                "label": "Une carte"
+              },
+              {
+                "id": "ti",
+                "label": "Titre : sujet, espace, date"
+              },
+              {
+                "id": "le",
+                "label": "Légende : explique les signes"
+              },
+              {
+                "id": "or",
+                "label": "Orientation : flèche du nord"
+              },
+              {
+                "id": "ec",
+                "label": "Échelle : réduction de l'espace"
+              }
+            ],
+            "edges": [
+              {
+                "from": "ca",
+                "to": "ti"
+              },
+              {
+                "from": "ca",
+                "to": "le"
+              },
+              {
+                "from": "ca",
+                "to": "or"
+              },
+              {
+                "from": "ca",
+                "to": "ec"
+              }
+            ],
+            "legend": []
+          },
+          "controls": []
+        },
+        {
+          "key": "calcul-distance-reelle",
+          "kind": "diagram",
+          "description": "Un schéma fléché en quatre étapes pour trouver une distance réelle : mesurer la distance sur la carte en centimètres, lire l'échelle, multiplier la mesure par le dénominateur de l'échelle, puis convertir le résultat en kilomètres. Il sert à retenir l'ordre des étapes du calcul.",
+          "params": {
+            "layout": "flow",
+            "direction": "down",
+            "nodes": [
+              {
+                "id": "me",
+                "label": "Mesurer sur la carte (cm)"
+              },
+              {
+                "id": "li",
+                "label": "Lire l'échelle"
+              },
+              {
+                "id": "mu",
+                "label": "Multiplier par le dénominateur"
+              },
+              {
+                "id": "co",
+                "label": "Convertir en km"
+              }
+            ],
+            "edges": [
+              {
+                "from": "me",
+                "to": "li"
+              },
+              {
+                "from": "li",
+                "to": "mu"
+              },
+              {
+                "from": "mu",
+                "to": "co"
+              }
+            ],
+            "legend": []
+          },
+          "controls": []
+        },
+        {
+          "key": "projections-cartographiques",
+          "kind": "diagram",
+          "description": "Un schéma en arbre : une projection cartographique représente la sphère terrestre sur une surface plane. On distingue trois familles selon la surface sur laquelle on projette : la projection cylindrique, sur un cylindre, la projection conique, sur un cône, et la projection azimutale, sur un plan.",
+          "params": {
+            "layout": "tree",
+            "direction": "down",
+            "nodes": [
+              {
+                "id": "p",
+                "label": "Projection : de la sphère au plan"
+              },
+              {
+                "id": "cy",
+                "label": "Cylindrique (sur un cylindre)"
+              },
+              {
+                "id": "co",
+                "label": "Conique (sur un cône)"
+              },
+              {
+                "id": "az",
+                "label": "Azimutale (sur un plan)"
+              }
+            ],
+            "edges": [
+              {
+                "from": "p",
+                "to": "cy"
+              },
+              {
+                "from": "p",
+                "to": "co"
+              },
+              {
+                "from": "p",
+                "to": "az"
+              }
+            ],
+            "legend": []
+          },
+          "controls": []
+        },
+        {
+          "key": "representations-de-la-terre",
+          "kind": "diagram",
+          "description": "Un schéma en arbre : pour représenter la Terre ou un espace, on dispose de cinq documents. Le globe est une maquette sphérique. La carte est plane et simplifiée. Le croquis est un dessin schématique. La photographie aérienne est prise d'un avion ou d'un drone. L'image satellite est prise par un satellite.",
+          "params": {
+            "layout": "tree",
+            "direction": "down",
+            "nodes": [
+              {
+                "id": "r",
+                "label": "Représenter la Terre"
+              },
+              {
+                "id": "gl",
+                "label": "Globe"
+              },
+              {
+                "id": "ca",
+                "label": "Carte"
+              },
+              {
+                "id": "cr",
+                "label": "Croquis"
+              },
+              {
+                "id": "ph",
+                "label": "Photographie aérienne"
+              },
+              {
+                "id": "sa",
+                "label": "Image satellite"
+              }
+            ],
+            "edges": [
+              {
+                "from": "r",
+                "to": "gl"
+              },
+              {
+                "from": "r",
+                "to": "ca"
+              },
+              {
+                "from": "r",
+                "to": "cr"
+              },
+              {
+                "from": "r",
+                "to": "ph"
+              },
+              {
+                "from": "r",
+                "to": "sa"
+              }
+            ],
+            "legend": []
+          },
+          "controls": []
+        }
+      ],
+      "notions": [
+        {
+          "name": "Les coordonnées géographiques : latitude et longitude",
+          "remember": "Pour repérer un lieu sur la Terre, on utilise un quadrillage imaginaire : les **parallèles** (cercles parallèles à l'équateur) et les **méridiens** (demi-cercles qui joignent les deux pôles). Les **coordonnées géographiques** d'un lieu sont sa latitude et sa longitude.\n\nLa **latitude** est la distance angulaire entre le lieu et l'**équateur** (0°). Elle se mesure en degrés, de 0° à 90°, vers le **nord** (N) ou le **sud** (S). Les pôles sont à 90°.\n\nLa **longitude** est la distance angulaire entre le lieu et le **méridien de Greenwich** (0°), qui passe par Greenwich, à Londres. Elle se mesure en degrés, de 0° à 180°, vers l'**est** (E) ou l'**ouest** (O).\n\nL'équateur partage la Terre en deux hémisphères, **nord** et **sud**. Le méridien de Greenwich et son prolongement (180°) la partagent en hémisphères **est** et **ouest**. On écrit la latitude d'abord, puis la longitude : Abidjan se trouve à environ 5° N, 4° O (valeurs arrondies au degré).",
+          "method": [
+            "Repérer la latitude : lire la valeur du parallèle et dire s'il est au nord ou au sud de l'équateur.",
+            "Repérer la longitude : lire la valeur du méridien et dire s'il est à l'est ou à l'ouest de Greenwich.",
+            "Écrire les coordonnées : la latitude d'abord, la longitude ensuite, chacune avec son degré et sa lettre (N, S, E ou O)."
+          ],
+          "example": {
+            "statement": "Le car arrive à Korhogo. Sur la carte, la ville est sur le parallèle 9 et sur le méridien 6, au nord de l'équateur et à l'ouest de Greenwich. Donne ses coordonnées géographiques (valeurs arrondies au degré).",
+            "steps": [
+              "Repérer la latitude : Korhogo est sur le parallèle 9, au nord de l'équateur, donc sa latitude est 9° N.",
+              "Repérer la longitude : Korhogo est sur le méridien 6, à l'ouest de Greenwich, donc sa longitude est 6° O.",
+              "Écrire les coordonnées : la latitude d'abord, la longitude ensuite, avec leurs lettres : Korhogo se trouve à environ 9° N, 6° O."
+            ]
+          },
+          "pitfall": "Ne pas confondre la latitude et la longitude, et ne pas oublier la lettre. Contre-exemple : 5° N et 5° S sont deux lieux très éloignés, de part et d'autre de l'équateur ; 4° O et 4° E aussi, de part et d'autre de Greenwich. Une latitude ne dépasse jamais 90° : une valeur de 120° est forcément une longitude. Écris toujours la lettre N, S, E ou O.",
+          "practice": {
+            "statement": "Tu t'entraînes à repérer la latitude et la longitude avec la méthode : repérer la latitude, repérer la longitude, écrire les coordonnées.",
+            "questions": [
+              {
+                "content": "La latitude se mesure à partir de l'___ (un mot).",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Repérer la latitude : on la mesure depuis le parallèle 0°, qui est l'équateur. Ne la confonds pas avec la longitude, qui part de Greenwich.",
+                "answers": [
+                  {
+                    "content": "équateur",
+                    "correct": true
+                  }
+                ],
+                "hint": "C'est le plus grand parallèle, 0°."
+              },
+              {
+                "content": "Quelle est la valeur maximale d'une latitude ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Repérer la latitude : elle va de 0° à 90°, les pôles étant à 90°. La valeur de 180° est celle de la longitude maximale : c'est l'erreur du piège.",
+                "answers": [
+                  {
+                    "content": "90°",
+                    "correct": true
+                  },
+                  {
+                    "content": "180°",
+                    "correct": false
+                  },
+                  {
+                    "content": "360°",
+                    "correct": false
+                  },
+                  {
+                    "content": "45°",
+                    "correct": false
+                  }
+                ],
+                "hint": "Pense aux pôles."
+              },
+              {
+                "content": "Une longitude peut valoir 150° E.",
+                "question_type": "true_false",
+                "explanation": "Étape 2 — Repérer la longitude : elle va de 0° à 180° vers l'est ou vers l'ouest. 150° E est donc possible.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "La longitude va jusqu'à 180°."
+              },
+              {
+                "content": "Abidjan est à environ 5° N, 4° O. Dans quels hémisphères se trouve la ville ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Repérer la latitude : 5° N, donc au nord de l'équateur. Étape 2 — Repérer la longitude : 4° O, donc à l'ouest de Greenwich. Étape 3 — Écrire : hémisphères nord et ouest.",
+                "answers": [
+                  {
+                    "content": "Nord et ouest",
+                    "correct": true
+                  },
+                  {
+                    "content": "Nord et est",
+                    "correct": false
+                  },
+                  {
+                    "content": "Sud et ouest",
+                    "correct": false
+                  },
+                  {
+                    "content": "Sud et est",
+                    "correct": false
+                  }
+                ],
+                "hint": "N donne le nord, O donne l'ouest."
+              }
+            ]
+          },
+          "figure": "coordonnees-geographiques",
+          "exercise": [
+            {
+              "title": "Repérer la latitude et la longitude",
+              "statement": "Dans cet exercice, tu appliques les trois étapes de la fiche (repérer la latitude, repérer la longitude, écrire les coordonnées) à des villes du voyage en car.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": null,
+              "questions": [
+                {
+                  "content": "Que mesure la latitude d'un lieu ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer la latitude : elle se mesure depuis l'équateur. La distance depuis Greenwich est la longitude : c'est l'erreur de confondre les deux.",
+                  "answers": [
+                    {
+                      "content": "La distance angulaire entre le lieu et l'équateur",
+                      "correct": true
+                    },
+                    {
+                      "content": "La distance angulaire entre le lieu et le méridien de Greenwich",
+                      "correct": false
+                    },
+                    {
+                      "content": "La distance en kilomètres entre le lieu et Yamoussoukro",
+                      "correct": false
+                    },
+                    {
+                      "content": "La hauteur du lieu au-dessus de la mer",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle ligne imaginaire sert de départ (0°) pour mesurer la longitude ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 2 — Repérer la longitude : on la mesure à partir du méridien de Greenwich. L'équateur est le point de départ de la latitude.",
+                  "answers": [
+                    {
+                      "content": "Le méridien de Greenwich",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'équateur",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le méridien de Yamoussoukro",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le parallèle du pôle Nord",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque mot à sa définition.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Repérer la latitude : de 0° à 90°, le long des parallèles. Étape 2 — Repérer la longitude : de 0° à 180°, le long des méridiens.",
+                  "answers": [
+                    {
+                      "content": "Latitude",
+                      "match": "Se mesure de 0° à 90°"
+                    },
+                    {
+                      "content": "Longitude",
+                      "match": "Se mesure de 0° à 180°"
+                    },
+                    {
+                      "content": "Parallèle",
+                      "match": "Cercle parallèle à l'équateur"
+                    },
+                    {
+                      "content": "Méridien",
+                      "match": "Demi-cercle qui joint les deux pôles"
+                    }
+                  ]
+                },
+                {
+                  "content": "Yamoussoukro est à environ 7° N, 5° O. Sa longitude est 5° ___ (une lettre : E ou O).",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Repérer la longitude : Yamoussoukro est à l'ouest de Greenwich, donc la lettre est O. Étape 3 — Écrire : 7° N, 5° O.",
+                  "answers": [
+                    {
+                      "content": "O",
+                      "correct": true
+                    },
+                    {
+                      "content": "Ouest",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un lieu situé à 5° S est dans le même hémisphère qu'un lieu situé à 5° N.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 3 — Écrire : la lettre compte. 5° S est au sud de l'équateur, 5° N au nord : ce sont deux hémisphères différents. C'est le piège de la fiche : oublier la lettre.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Donner et lire des coordonnées",
+              "statement": "Dans cet exercice, tu mélanges plusieurs types de questions pour repérer des lieux avec leurs coordonnées géographiques.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Repère la latitude, puis la longitude, puis écris les deux avec leurs lettres.",
+              "questions": [
+                {
+                  "content": "Remets dans l'ordre les étapes pour donner les coordonnées géographiques d'un lieu.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Repérer la latitude, Étape 2 — Repérer la longitude, Étape 3 — Écrire les coordonnées : la latitude toujours en premier.",
+                  "answers": [
+                    {
+                      "content": "Repérer la latitude : le parallèle et la lettre N ou S"
+                    },
+                    {
+                      "content": "Repérer la longitude : le méridien et la lettre E ou O"
+                    },
+                    {
+                      "content": "Écrire la latitude d'abord, puis la longitude, avec leurs lettres"
+                    }
+                  ]
+                },
+                {
+                  "content": "Bouaké est à environ 8° N et 5° O. Ses coordonnées s'écrivent ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Repérer la latitude : 8° N. Étape 2 — Repérer la longitude : 5° O. Étape 3 — Écrire : latitude d'abord, soit 8° N, 5° O. Inverser les deux valeurs donne un autre lieu.",
+                  "answers": [
+                    {
+                      "content": "8° N, 5° O",
+                      "correct": true
+                    },
+                    {
+                      "content": "5° N, 8° O",
+                      "correct": false
+                    },
+                    {
+                      "content": "8° S, 5° E",
+                      "correct": false
+                    },
+                    {
+                      "content": "8° O, 5° N",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux valeurs possibles pour une latitude ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Repérer la latitude : elle va de 0° à 90°. 45° N et 90° S respectent cette limite ; 120° et 200° la dépassent.",
+                  "answers": [
+                    {
+                      "content": "45° N",
+                      "correct": true
+                    },
+                    {
+                      "content": "90° S",
+                      "correct": true
+                    },
+                    {
+                      "content": "120° N",
+                      "correct": false
+                    },
+                    {
+                      "content": "200° S",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Abidjan est à environ 5° N et Korhogo à environ 9° N. De combien de degrés la latitude augmente-t-elle quand on va d'Abidjan à Korhogo ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Étape 1 — Repérer la latitude de chaque ville : Abidjan 5° N, Korhogo 9° N, toutes deux au nord. On compare ensuite : $9 - 5 = 4$. La latitude augmente de 4 degrés.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "degrés"
+                },
+                {
+                  "content": "Abidjan, Yamoussoukro, Bouaké et Korhogo ont toutes une latitude nord et une longitude ouest (valeurs arrondies : 5° N, 4° O ; 7° N, 5° O ; 8° N, 5° O ; 9° N, 6° O).",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer la latitude : les quatre villes ont la lettre N. Étape 2 — Repérer la longitude : elles ont toutes la lettre O. L'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le méridien 0° s'appelle le méridien de ___ (un mot).",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Repérer la longitude : le méridien d'origine, 0°, est le méridien de Greenwich, qui passe à Londres.",
+                  "answers": [
+                    {
+                      "content": "Greenwich",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "La carte : titre, légende et orientation",
+          "remember": "Une **carte** est une représentation plane, simplifiée et réduite d'un espace de la Terre. Pour la lire, on repère ses éléments.\n\nLe **titre** dit quel est le sujet, quel espace est représenté et, souvent, à quelle date. La **légende** explique chaque signe de la carte : couleurs, symboles, traits (une route, une ville, une forêt). L'**orientation** est donnée par une flèche vers le nord ou par une rose des vents ; en général, le nord est en haut. L'**échelle** dit de combien l'espace a été réduit (notion suivante).\n\nLes quatre **points cardinaux** sont le nord (N), le sud (S), l'est (E) et l'ouest (O). Entre eux se placent le nord-est, le sud-est, le sud-ouest et le nord-ouest. Quand le nord est en haut, l'est est à droite, le sud en bas et l'ouest à gauche.",
+          "method": [
+            "Lire le titre pour savoir quel sujet, quel espace et quelle date la carte représente.",
+            "Lire la légende pour savoir ce que chaque couleur, symbole ou trait représente.",
+            "S'orienter avec la flèche du nord ou la rose des vents avant de dire où se trouve chaque élément.",
+            "Décrire ce que l'on voit avec les points cardinaux, puis conclure par une phrase."
+          ],
+          "example": {
+            "statement": "Une carte a pour titre « Le voyage en car : d'Abidjan à Korhogo ». Sa légende dit : trait épais = route principale ; point = ville étape. Une flèche indique le nord vers le haut de la feuille. Décris le trajet.",
+            "steps": [
+              "Lire le titre : la carte montre le trajet d'un car, d'Abidjan à Korhogo, en Côte d'Ivoire.",
+              "Lire la légende : le trait épais est la route principale ; chaque point est une ville étape (Abidjan, Yamoussoukro, Bouaké, Korhogo).",
+              "S'orienter : la flèche du nord pointe vers le haut de la feuille, donc le nord est en haut.",
+              "Décrire : le car part d'Abidjan, au sud, et monte vers le nord par Yamoussoukro et Bouaké jusqu'à Korhogo. Conclure : le trajet va du sud vers le nord."
+            ]
+          },
+          "pitfall": "Ne pas croire que le nord est toujours en haut de la feuille. Contre-exemple : si la flèche du nord pointe vers la droite de la feuille, alors le nord est à droite et l'est est en bas. Lis toujours la flèche du nord ou la rose des vents avant de dire où se trouve un lieu, et lis la légende avant d'interpréter un signe.",
+          "practice": {
+            "statement": "Tu t'entraînes à lire une carte avec la méthode : lire le titre, lire la légende, s'orienter, décrire.",
+            "questions": [
+              {
+                "content": "Que dit le titre d'une carte ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Lire le titre : il donne le sujet, l'espace et la date. Ce que chaque signe veut dire se lit dans la légende (étape 2), le nord avec la flèche (étape 3).",
+                "answers": [
+                  {
+                    "content": "Son sujet, l'espace représenté et souvent la date",
+                    "correct": true
+                  },
+                  {
+                    "content": "Ce que chaque signe veut dire",
+                    "correct": false
+                  },
+                  {
+                    "content": "De combien l'espace est réduit",
+                    "correct": false
+                  },
+                  {
+                    "content": "Où se trouve le nord",
+                    "correct": false
+                  }
+                ],
+                "hint": "Le titre répond à : de quoi parle la carte, où, quand ?"
+              },
+              {
+                "content": "Ce qui explique les couleurs et les signes d'une carte s'appelle la ___ (un mot).",
+                "question_type": "fill_blank",
+                "explanation": "Étape 2 — Lire la légende : c'est elle qui dit ce que représente chaque couleur, symbole ou trait. Sans elle, on ne peut pas interpréter la carte.",
+                "answers": [
+                  {
+                    "content": "légende",
+                    "correct": true
+                  }
+                ],
+                "hint": "Elle se trouve souvent dans un cadre sur la carte."
+              },
+              {
+                "content": "Le sud-est est situé entre le sud et l'est.",
+                "question_type": "true_false",
+                "explanation": "Étape 3 — S'orienter : les points cardinaux intermédiaires se placent entre deux points principaux. Le sud-est est entre le sud et l'est.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Les deux mots composent le nom."
+              }
+            ]
+          },
+          "figure": "elements-d-une-carte",
+          "exercise": [
+            {
+              "title": "Lire une carte pas à pas",
+              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche (lire le titre, lire la légende, s'orienter, décrire) à la carte du voyage en car.",
+              "exercise_type": "fixation",
+              "figure": "carte-voyage-en-car",
+              "hint": null,
+              "questions": [
+                {
+                  "content": "Dans la démarche de lecture d'une carte, que fait-on en premier ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Lire le titre : c'est la première étape, car il dit de quoi parle la carte. On interprète ensuite les signes avec la légende.",
+                  "answers": [
+                    {
+                      "content": "On lit le titre",
+                      "correct": true
+                    },
+                    {
+                      "content": "On calcule une distance",
+                      "correct": false
+                    },
+                    {
+                      "content": "On colorie la carte",
+                      "correct": false
+                    },
+                    {
+                      "content": "On cherche la ville la plus grande",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque élément de la carte à son rôle.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Lire le titre, Étape 2 — Lire la légende, Étape 3 — S'orienter avec la flèche du nord. L'échelle est la quatrième information de la carte.",
+                  "answers": [
+                    {
+                      "content": "Titre",
+                      "match": "Dit le sujet, l'espace et la date"
+                    },
+                    {
+                      "content": "Légende",
+                      "match": "Explique les couleurs et les signes"
+                    },
+                    {
+                      "content": "Flèche du nord",
+                      "match": "Donne l'orientation"
+                    },
+                    {
+                      "content": "Échelle",
+                      "match": "Indique de combien l'espace est réduit"
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur la carte du voyage, le nord est en haut. Korhogo est située par rapport à Abidjan :",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — S'orienter : le nord est en haut. Étape 4 — Décrire : Korhogo est dans le haut de la carte par rapport à Abidjan, donc au nord. Le sud est vers le bas, d'où partent les voyageurs.",
+                  "answers": [
+                    {
+                      "content": "Au nord",
+                      "correct": true
+                    },
+                    {
+                      "content": "Au sud",
+                      "correct": false
+                    },
+                    {
+                      "content": "À l'est",
+                      "correct": false
+                    },
+                    {
+                      "content": "Au sud-est",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour décrire le trajet de Bouaké vers Abidjan, on va globalement vers le ___ (un point cardinal simple).",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 3 — S'orienter : le nord est en haut. Étape 4 — Décrire : Abidjan est plus bas que Bouaké sur la carte, donc on va vers le sud.",
+                  "answers": [
+                    {
+                      "content": "sud",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Le nord est toujours en haut de la feuille, même si la flèche du nord pointe vers la droite.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 3 — S'orienter : c'est la flèche du nord qui indique le nord, pas le haut de la feuille. Si elle pointe vers la droite, le nord est à droite : c'est le piège de la fiche.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Titre, légende et points cardinaux",
+              "statement": "Dans cet exercice, tu mélanges plusieurs types de questions sur les éléments d'une carte et sur l'orientation.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Titre d'abord, puis légende, puis orientation, puis description.",
+              "questions": [
+                {
+                  "content": "Remets dans l'ordre les étapes de lecture d'une carte.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Lire le titre, Étape 2 — Lire la légende, Étape 3 — S'orienter, Étape 4 — Décrire avec les points cardinaux.",
+                  "answers": [
+                    {
+                      "content": "Lire le titre"
+                    },
+                    {
+                      "content": "Lire la légende"
+                    },
+                    {
+                      "content": "S'orienter avec la flèche du nord"
+                    },
+                    {
+                      "content": "Décrire avec les points cardinaux"
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur une carte où la flèche du nord pointe vers le haut, l'est est ___ de la feuille.",
+                  "question_type": "select",
+                  "explanation": "Étape 3 — S'orienter : quand le nord est en haut, l'est est à droite, l'ouest à gauche et le sud en bas.",
+                  "answers": [
+                    {
+                      "content": "à droite",
+                      "correct": true
+                    },
+                    {
+                      "content": "à gauche",
+                      "correct": false
+                    },
+                    {
+                      "content": "en haut",
+                      "correct": false
+                    },
+                    {
+                      "content": "en bas",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels sont deux éléments à lire sur une carte ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Lire le titre, Étape 2 — Lire la légende : ce sont deux éléments d'une carte. Un portrait ou une photographie n'en font pas partie.",
+                  "answers": [
+                    {
+                      "content": "Un titre",
+                      "correct": true
+                    },
+                    {
+                      "content": "Une légende",
+                      "correct": true
+                    },
+                    {
+                      "content": "Un portrait de l'auteur",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une photographie de la ville",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque point cardinal à son opposé.",
+                  "question_type": "matching",
+                  "explanation": "Étape 3 — S'orienter : à l'opposé du nord, il y a le sud ; de l'est, l'ouest ; du nord-est, le sud-ouest ; du sud-est, le nord-ouest.",
+                  "answers": [
+                    {
+                      "content": "Nord",
+                      "match": "Sud"
+                    },
+                    {
+                      "content": "Est",
+                      "match": "Ouest"
+                    },
+                    {
+                      "content": "Nord-est",
+                      "match": "Sud-ouest"
+                    },
+                    {
+                      "content": "Sud-est",
+                      "match": "Nord-ouest"
+                    }
+                  ]
+                },
+                {
+                  "content": "Un trait rouge épais veut dire « route principale » : cette information se lit dans la ___ (un mot).",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Lire la légende : elle explique ce que représente chaque trait. On ne devine jamais un signe sans la légende.",
+                  "answers": [
+                    {
+                      "content": "légende",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Une carte a pour titre « Les routes de la Côte d'Ivoire en 2020 ». Que sait-on ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Lire le titre : il donne le sujet (les routes), l'espace (la Côte d'Ivoire) et la date (2020). Les autres propositions ne correspondent pas au titre.",
+                  "answers": [
+                    {
+                      "content": "Elle montre les routes, en Côte d'Ivoire, à la date de 2020",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elle montre le relief du monde",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle montre seulement les routes d'Abidjan",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle ne donne aucune date",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "L'échelle et le calcul de la distance réelle",
+          "remember": "L'**échelle** d'une carte indique de combien la réalité a été réduite pour tenir sur la feuille. Elle relie la distance sur la carte à la distance réelle sur le terrain.\n\nL'**échelle numérique** s'écrit $1/2\\,000\\,000$ ou $1 : 2\\,000\\,000$ : 1 cm sur la carte représente 2 000 000 cm sur le terrain, soit 20 km. L'**échelle graphique** est un segment gradué qui donne directement les distances réelles.\n\nPour trouver la distance réelle : **distance sur la carte × dénominateur de l'échelle**. Il faut ensuite convertir : 1 km = 1 000 m = 100 000 cm, donc on enlève cinq zéros pour passer des centimètres aux kilomètres.\n\nPlus le dénominateur est petit, plus l'échelle est **grande** : la carte montre une petite zone avec beaucoup de détails. Plus il est grand, plus l'échelle est **petite** : la carte montre un vaste espace avec peu de détails. Ainsi $1/50\\,000$ est une plus grande échelle que $1/2\\,000\\,000$.",
+          "method": [
+            "Mesurer la distance entre les deux lieux sur la carte, avec une règle, en centimètres.",
+            "Lire l'échelle et dire ce que représente 1 cm sur le terrain.",
+            "Calculer la distance réelle : multiplier la distance mesurée par le dénominateur de l'échelle.",
+            "Convertir le résultat en kilomètres, puis conclure par une phrase."
+          ],
+          "example": {
+            "statement": "Sur une carte au $1/2\\,000\\,000$, Bouaké et Korhogo sont distantes de 10 cm, mesurés à vol d'oiseau (valeur approchée pour l'exemple). Quelle est la distance réelle ?",
+            "steps": [
+              "Mesurer : sur la carte, la distance entre Bouaké et Korhogo est de 10 cm.",
+              "Lire l'échelle : $1/2\\,000\\,000$ signifie que 1 cm sur la carte représente 2 000 000 cm sur le terrain.",
+              "Calculer : $10 \\times 2\\,000\\,000 = 20\\,000\\,000$ cm.",
+              "Convertir : $20\\,000\\,000 \\div 100\\,000 = 200$. Conclure : la distance réelle est d'environ 200 km."
+            ]
+          },
+          "pitfall": "Ne pas oublier de convertir. Contre-exemple : $10 \\times 2\\,000\\,000 = 20\\,000\\,000$ **cm**, et pas 20 000 000 km. Si c'étaient des kilomètres, Bouaké serait plus loin de Korhogo que le tour de la Terre (environ 40 000 km) ! On passe des centimètres aux kilomètres en divisant par 100 000. Vérifie toujours que ton résultat est plausible.",
+          "practice": {
+            "statement": "Tu t'entraînes à calculer une distance réelle avec la méthode : mesurer, lire l'échelle, calculer, convertir.",
+            "questions": [
+              {
+                "content": "Sur une carte au $1/1\\,000\\,000$, deux villes sont distantes de 6 cm. Quelle est la distance réelle, en km ?",
+                "question_type": "numeric",
+                "tolerance": 0,
+                "explanation": "Étape 1 — Mesurer : 6 cm. Étape 2 — Lire l'échelle : 1 cm représente 1 000 000 cm. Étape 3 — Calculer : $6 \\times 1\\,000\\,000 = 6\\,000\\,000$ cm. Étape 4 — Convertir : $6\\,000\\,000 \\div 100\\,000 = 60$ km.",
+                "answers": [
+                  {
+                    "content": "60",
+                    "correct": true
+                  }
+                ],
+                "unit": "km",
+                "hint": "Divise par 100 000 à la fin."
+              },
+              {
+                "content": "L'échelle $1/5\\,000\\,000$ signifie que 1 cm sur la carte représente :",
+                "question_type": "single_choice",
+                "explanation": "Étape 2 — Lire l'échelle : 1 cm représente 5 000 000 cm. Étape 4 — Convertir : $5\\,000\\,000 \\div 100\\,000 = 50$ km. Les autres valeurs viennent d'un mauvais nombre de zéros retirés.",
+                "answers": [
+                  {
+                    "content": "50 km",
+                    "correct": true
+                  },
+                  {
+                    "content": "5 km",
+                    "correct": false
+                  },
+                  {
+                    "content": "500 km",
+                    "correct": false
+                  },
+                  {
+                    "content": "5 000 km",
+                    "correct": false
+                  }
+                ],
+                "hint": "Enlève cinq zéros."
+              },
+              {
+                "content": "Une carte au $1/50\\,000$ montre un espace plus petit, avec plus de détails, qu'une carte au $1/5\\,000\\,000$.",
+                "question_type": "true_false",
+                "explanation": "Étape 2 — Lire l'échelle : le dénominateur 50 000 est plus petit que 5 000 000, l'échelle est plus grande. Une grande échelle montre une petite zone avec beaucoup de détails.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Petit dénominateur : grande échelle."
+              },
+              {
+                "content": "Combien de centimètres y a-t-il dans 1 km ?",
+                "question_type": "numeric",
+                "tolerance": 0,
+                "explanation": "Étape 4 — Convertir : 1 km = 1 000 m et 1 m = 100 cm, donc $1\\,000 \\times 100 = 100\\,000$ cm.",
+                "answers": [
+                  {
+                    "content": "100000",
+                    "correct": true
+                  }
+                ],
+                "unit": "cm",
+                "hint": "1 km = 1 000 m ; 1 m = 100 cm."
+              }
+            ]
+          },
+          "figure": "calcul-distance-reelle",
+          "exercise": [
+            {
+              "title": "Calculer une distance réelle",
+              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche (mesurer, lire l'échelle, calculer, convertir) à des cartes du voyage en car.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": null,
+              "questions": [
+                {
+                  "content": "Que représente 1 cm sur une carte au $1/200\\,000$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 2 — Lire l'échelle : 1 cm représente 200 000 cm. Étape 4 — Convertir : $200\\,000 \\div 100\\,000 = 2$ km. Les autres valeurs oublient la conversion ou se trompent de zéros.",
+                  "answers": [
+                    {
+                      "content": "2 km",
+                      "correct": true
+                    },
+                    {
+                      "content": "200 km",
+                      "correct": false
+                    },
+                    {
+                      "content": "20 km",
+                      "correct": false
+                    },
+                    {
+                      "content": "200 m",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur une carte au $1/2\\,000\\,000$, Abidjan et Yamoussoukro sont distantes de 11 cm (valeur approchée). Quelle est la distance réelle, en km ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Étape 1 — Mesurer : 11 cm. Étape 2 — Lire l'échelle : 1 cm représente 2 000 000 cm. Étape 3 — Calculer : $11 \\times 2\\,000\\,000 = 22\\,000\\,000$ cm. Étape 4 — Convertir : $22\\,000\\,000 \\div 100\\,000 = 220$ km.",
+                  "answers": [
+                    {
+                      "content": "220",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "km"
+                },
+                {
+                  "content": "Quelle opération donne la distance réelle en centimètres ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Calculer : on multiplie la distance mesurée par le dénominateur. Une division donnerait un résultat plus petit que la mesure, ce qui est absurde pour une réduction.",
+                  "answers": [
+                    {
+                      "content": "Distance sur la carte × dénominateur de l'échelle",
+                      "correct": true
+                    },
+                    {
+                      "content": "Distance sur la carte ÷ dénominateur de l'échelle",
+                      "correct": false
+                    },
+                    {
+                      "content": "Distance sur la carte + dénominateur de l'échelle",
+                      "correct": false
+                    },
+                    {
+                      "content": "Dénominateur de l'échelle − distance sur la carte",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une échelle ___ est un segment gradué dessiné sur la carte (un mot).",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Lire l'échelle : l'échelle graphique est un segment gradué qui donne directement les distances réelles, à la différence de l'échelle numérique, écrite en chiffres.",
+                  "answers": [
+                    {
+                      "content": "graphique",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "10 cm sur une carte au $1/2\\,000\\,000$ représentent 20 000 000 km.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 3 — Calculer : $10 \\times 2\\,000\\,000 = 20\\,000\\,000$ cm. Étape 4 — Convertir : cela fait 200 km. Oublier la conversion est le piège de la fiche.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Échelles et distances",
+              "statement": "Dans cet exercice, tu mélanges plusieurs types de questions sur l'échelle et le calcul de distances réelles.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Mesure, lis l'échelle, multiplie, puis convertis les centimètres en kilomètres.",
+              "questions": [
+                {
+                  "content": "Remets dans l'ordre les étapes pour trouver une distance réelle.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Mesurer, Étape 2 — Lire l'échelle, Étape 3 — Calculer, Étape 4 — Convertir en kilomètres.",
+                  "answers": [
+                    {
+                      "content": "Mesurer la distance sur la carte, en centimètres"
+                    },
+                    {
+                      "content": "Lire l'échelle"
+                    },
+                    {
+                      "content": "Calculer en multipliant par le dénominateur"
+                    },
+                    {
+                      "content": "Convertir en kilomètres"
+                    }
+                  ]
+                },
+                {
+                  "content": "Deux villes sont distantes de 400 km. Sur une carte au $1/4\\,000\\,000$, quelle distance les sépare, en cm ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Ici on remonte la méthode : on part de la distance réelle. Étape 4 — Convertir d'abord : $400$ km $= 40\\,000\\,000$ cm. Étape 3 — Calculer ensuite en divisant par le dénominateur : $40\\,000\\,000 \\div 4\\,000\\,000 = 10$. Les deux villes sont à 10 cm sur la carte.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cm"
+                },
+                {
+                  "content": "Quelles sont deux échelles plus grandes que $1/1\\,000\\,000$ ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 2 — Lire l'échelle : une échelle est plus grande quand son dénominateur est plus petit. 50 000 et 200 000 sont inférieurs à 1 000 000 ; 5 000 000 et 10 000 000 sont supérieurs.",
+                  "answers": [
+                    {
+                      "content": "$1/50\\,000$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$1/200\\,000$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$1/5\\,000\\,000$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$1/10\\,000\\,000$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour représenter tout un pays sur une feuille, on choisit une échelle ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 2 — Lire l'échelle : un vaste espace demande un grand dénominateur, donc une petite échelle, avec peu de détails. Une grande échelle ne montrerait qu'une petite zone.",
+                  "answers": [
+                    {
+                      "content": "petite",
+                      "correct": true
+                    },
+                    {
+                      "content": "grande",
+                      "correct": false
+                    },
+                    {
+                      "content": "égale à 1",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une route de 150 km mesure 3 cm sur une carte. Combien de km 1 cm représente-t-il ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Étape 2 — Lire l'échelle : 1 cm représente la distance réelle divisée par la mesure : $150 \\div 3 = 50$. 1 cm représente 50 km, soit une échelle de $1/5\\,000\\,000$.",
+                  "answers": [
+                    {
+                      "content": "50",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "km"
+                },
+                {
+                  "content": "Sur une carte au $1/2\\,000\\,000$, deux villes sont distantes de 9 cm. Un élève écrit : « 18 000 000 km ». Quelle est son erreur ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Calculer : $9 \\times 2\\,000\\,000 = 18\\,000\\,000$ cm. Étape 4 — Convertir : cela fait 180 km. Il a donné le résultat en cm mais l'a écrit en km.",
+                  "answers": [
+                    {
+                      "content": "Il a oublié de convertir les centimètres en kilomètres",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il a mesuré en mètres",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il a divisé par le dénominateur",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il a lu la légende au lieu de l'échelle",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Les projections cartographiques",
+          "remember": "La Terre est une **sphère**, mais une carte est **plane**. Une **projection cartographique** est la méthode qui permet de représenter la surface de la sphère sur une surface plane, comme si on « dépliait » la Terre. On ne peut pas aplatir une sphère sans la déformer, comme on ne peut pas aplatir une peau d'orange sans l'étirer ou la déchirer.\n\nToute projection **déforme** donc la réalité : les **surfaces**, les **distances**, les **formes** ou les **angles**. Aucune projection ne conserve tout à la fois ; on choisit celle qui convient à l'usage de la carte.\n\nOn distingue trois familles, selon la surface sur laquelle on projette : la projection **cylindrique** (sur un cylindre), la projection **conique** (sur un cône) et la projection **azimutale** (sur un plan). La projection cylindrique de **Mercator** (1569) est la plus connue : elle étire les surfaces près des pôles, si bien que le Groenland paraît aussi grand que l'Afrique, qui est pourtant bien plus grande. Un **planisphère** est une carte plane de toute la Terre.",
+          "method": [
+            "Identifier le document : une carte plane de toute la Terre est un planisphère, obtenu par une projection.",
+            "Repérer la famille de projection (cylindrique, conique ou azimutale) et la zone où les déformations sont les plus fortes.",
+            "Expliquer la déformation : on passe d'une sphère à une surface plane, ce qui étire ou écrase certaines zones.",
+            "Conclure : toute projection déforme, on la choisit selon l'usage de la carte."
+          ],
+          "example": {
+            "statement": "Sur un planisphère de Mercator, le Groenland paraît aussi grand que l'Afrique. Explique pourquoi.",
+            "steps": [
+              "Identifier : le document est un planisphère, une carte plane de toute la Terre, obtenue par une projection.",
+              "Repérer : la projection de Mercator est cylindrique ; ses déformations sont les plus fortes près des pôles, où se trouve le Groenland.",
+              "Expliquer : pour passer de la sphère à une surface plane, on étire les surfaces près des pôles ; le Groenland est donc agrandi.",
+              "Conclure : le Groenland paraît aussi grand que l'Afrique à cause de la projection ; en réalité l'Afrique est bien plus grande, car toute projection déforme."
+            ]
+          },
+          "pitfall": "Ne pas croire qu'une carte plane montre les surfaces telles qu'elles sont. Contre-exemple : sur le planisphère de Mercator, le Groenland (près du pôle) paraît aussi grand que l'Afrique (près de l'équateur), alors que l'Afrique est bien plus grande. Une carte n'est pas une photographie de la Terre : demande-toi toujours quelle projection a été utilisée et où elle déforme le plus.",
+          "practice": {
+            "statement": "Tu t'entraînes à reconnaître et expliquer une projection avec la méthode : identifier, repérer, expliquer, conclure.",
+            "questions": [
+              {
+                "content": "Une projection cartographique permet de passer d'une surface plane à une sphère.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Identifier : une projection fait l'inverse. Elle représente la surface de la sphère terrestre sur une surface plane.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Pense au sens : de la Terre vers la feuille."
+              },
+              {
+                "content": "Une carte plane de toute la Terre s'appelle un ___ (un mot).",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Identifier : une carte plane qui montre toute la Terre est un planisphère. Le globe, lui, est sphérique.",
+                "answers": [
+                  {
+                    "content": "planisphère",
+                    "correct": true
+                  }
+                ],
+                "hint": "Le mot commence par « plani »."
+              },
+              {
+                "content": "Quelle projection se fait sur un cône ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 2 — Repérer : la famille se nomme d'après la surface de projection. Sur un cône, c'est la projection conique ; sur un cylindre, cylindrique ; sur un plan, azimutale. Il n'existe pas de famille sphérique.",
+                "answers": [
+                  {
+                    "content": "La projection conique",
+                    "correct": true
+                  },
+                  {
+                    "content": "La projection cylindrique",
+                    "correct": false
+                  },
+                  {
+                    "content": "La projection azimutale",
+                    "correct": false
+                  },
+                  {
+                    "content": "La projection sphérique",
+                    "correct": false
+                  }
+                ],
+                "hint": "Le nom vient de la forme de la surface."
+              }
+            ]
+          },
+          "figure": "projections-cartographiques",
+          "exercise": [
+            {
+              "title": "Comprendre pourquoi une carte déforme",
+              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche (identifier, repérer, expliquer, conclure) aux projections cartographiques.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": null,
+              "questions": [
+                {
+                  "content": "Pourquoi toute carte plane déforme-t-elle la Terre ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Expliquer : on passe d'une sphère à une surface plane, ce qui étire ou écrase certaines zones. Ce n'est pas une erreur de dessin mais une conséquence de la forme de la Terre.",
+                  "answers": [
+                    {
+                      "content": "On ne peut pas aplatir une sphère sans la déformer",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les cartographes font des erreurs de dessin",
+                      "correct": false
+                    },
+                    {
+                      "content": "La Terre est un disque plat",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'échelle est toujours trop petite",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque mot à sa définition.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Identifier le planisphère. Étape 2 — Repérer la famille : cylindrique, conique ou azimutale, selon la surface sur laquelle on projette.",
+                  "answers": [
+                    {
+                      "content": "Projection cylindrique",
+                      "match": "Projection sur un cylindre"
+                    },
+                    {
+                      "content": "Projection conique",
+                      "match": "Projection sur un cône"
+                    },
+                    {
+                      "content": "Projection azimutale",
+                      "match": "Projection sur un plan"
+                    },
+                    {
+                      "content": "Planisphère",
+                      "match": "Carte plane de toute la Terre"
+                    }
+                  ]
+                },
+                {
+                  "content": "Où les déformations de la projection de Mercator sont-elles les plus fortes ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 2 — Repérer la zone : la projection de Mercator étire les surfaces près des pôles. Près de l'équateur, elle déforme peu.",
+                  "answers": [
+                    {
+                      "content": "Près des pôles",
+                      "correct": true
+                    },
+                    {
+                      "content": "Près de l'équateur",
+                      "correct": false
+                    },
+                    {
+                      "content": "Au centre de l'Afrique",
+                      "correct": false
+                    },
+                    {
+                      "content": "Sur l'océan Atlantique seulement",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux choses que peut déformer une projection ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 3 — Expliquer : en aplatissant la sphère, on déforme les surfaces, les distances, les formes ou les angles. La température et la durée du jour n'ont rien à voir avec une projection.",
+                  "answers": [
+                    {
+                      "content": "Les surfaces",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les distances",
+                      "correct": true
+                    },
+                    {
+                      "content": "La température",
+                      "correct": false
+                    },
+                    {
+                      "content": "La durée du jour",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur une carte plane, les surfaces sont toujours représentées sans aucune déformation.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 4 — Conclure : toute projection déforme. Croire le contraire est le piège de la fiche, comme le Groenland qui paraît aussi grand que l'Afrique.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Projections et planisphères",
+              "statement": "Dans cet exercice, tu mélanges plusieurs types de questions sur les projections et leurs déformations.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Passe de la sphère au plan : tu étires ou tu écrases forcément certaines zones.",
+              "questions": [
+                {
+                  "content": "Remets dans l'ordre le raisonnement qui explique la taille du Groenland sur un planisphère de Mercator.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Identifier, Étape 2 — Repérer, Étape 3 — Expliquer, Étape 4 — Conclure : c'est l'ordre de la méthode de la fiche.",
+                  "answers": [
+                    {
+                      "content": "Identifier un planisphère obtenu par une projection"
+                    },
+                    {
+                      "content": "Repérer une projection cylindrique, déformée près des pôles"
+                    },
+                    {
+                      "content": "Expliquer qu'on étire les surfaces pour aplatir la sphère"
+                    },
+                    {
+                      "content": "Conclure que le Groenland paraît aussi grand que l'Afrique"
+                    }
+                  ]
+                },
+                {
+                  "content": "La projection de Mercator est la plus connue des projections ___ (un mot).",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Repérer la famille : la projection de Mercator se fait sur un cylindre, c'est une projection cylindrique.",
+                  "answers": [
+                    {
+                      "content": "cylindriques",
+                      "correct": true
+                    },
+                    {
+                      "content": "cylindrique",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur un planisphère de Mercator, un pays proche d'un pôle paraît ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 2 — Repérer : les déformations sont les plus fortes près des pôles, où l'on étire les surfaces. Étape 3 — Expliquer : le pays est donc agrandi.",
+                  "answers": [
+                    {
+                      "content": "plus grand qu'en réalité",
+                      "correct": true
+                    },
+                    {
+                      "content": "plus petit qu'en réalité",
+                      "correct": false
+                    },
+                    {
+                      "content": "exactement de sa taille réelle",
+                      "correct": false
+                    },
+                    {
+                      "content": "absent de la carte",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont trois choses qu'une projection peut déformer ?",
+                  "question_type": "multiple_correct_3",
+                  "explanation": "Étape 3 — Expliquer : l'aplatissement de la sphère déforme les surfaces, les distances ou les formes. Le titre et la légende sont écrits par l'auteur de la carte, ils ne sont pas déformés.",
+                  "answers": [
+                    {
+                      "content": "Les surfaces",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les distances",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les formes",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le titre de la carte",
+                      "correct": false
+                    },
+                    {
+                      "content": "La légende",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Il existe une projection plane qui conserve à la fois toutes les surfaces, toutes les distances et toutes les formes.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 4 — Conclure : toute projection déforme, aucune ne conserve tout à la fois. On choisit donc selon l'usage de la carte.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle phrase est exacte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Conclure : toute projection déforme. Mercator étire les surfaces près des pôles, et un planisphère est plat, pas sphérique.",
+                  "answers": [
+                    {
+                      "content": "Toute projection déforme la réalité, aucune n'est parfaite",
+                      "correct": true
+                    },
+                    {
+                      "content": "Une carte plane ne déforme jamais les distances",
+                      "correct": false
+                    },
+                    {
+                      "content": "La projection de Mercator conserve toutes les surfaces",
+                      "correct": false
+                    },
+                    {
+                      "content": "Un planisphère est une maquette sphérique",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Les autres représentations de la Terre : globe, croquis, photographie aérienne, image satellite",
+          "remember": "Il existe plusieurs documents pour représenter la Terre ou un espace.\n\nLe **globe terrestre** est une maquette sphérique de la Terre. Il garde la forme de la Terre, les surfaces et les distances sans déformation ; mais il est encombrant, on n'en voit qu'une moitié à la fois, et il montre peu de détails.\n\nLe **croquis** est un dessin schématique, fait à la main, qui ne garde que l'essentiel d'un espace pour expliquer une idée (par exemple le trajet d'un car).\n\nLa **photographie aérienne** est une photographie prise d'un avion ou d'un drone. Elle montre très précisément un espace réduit, tel qu'il est.\n\nL'**image satellite** est prise par un satellite qui tourne autour de la Terre. Elle montre d'en haut de très vastes espaces, parfois colorés par traitement.\n\nÀ la différence d'une carte, une photographie ou une image satellite ne simplifie pas la réalité : il faut l'interpréter pour la lire.",
+          "method": [
+            "Identifier la nature du document : globe, carte, croquis, photographie aérienne ou image satellite.",
+            "Relever ce qu'il montre : l'espace représenté, son étendue et son niveau de détail.",
+            "Comparer ses avantages et ses limites avec ceux d'une carte.",
+            "Conclure en disant à quoi il sert le mieux."
+          ],
+          "example": {
+            "statement": "Un élève observe un document pris d'un satellite, qui montre toute la Côte d'Ivoire, avec Abidjan au sud et Korhogo au nord. Présente ce document.",
+            "steps": [
+              "Identifier : c'est une image satellite, prise par un satellite qui tourne autour de la Terre.",
+              "Relever : elle montre d'en haut un très vaste espace, tout le pays, avec peu de détails sur chaque rue.",
+              "Comparer : à la différence d'une carte, elle montre la réalité sans la simplifier, mais il faut l'interpréter pour la lire.",
+              "Conclure : elle sert à observer de grands espaces, comme les forêts, les fleuves et les villes."
+            ]
+          },
+          "pitfall": "Ne pas confondre une photographie aérienne et une image satellite, ni prendre une photographie pour une carte. Contre-exemple : une photographie prise d'un avion au-dessus du quartier du Plateau, à Abidjan, est une photographie aérienne ; une image prise par un engin qui tourne autour de la Terre est une image satellite. Une carte, elle, est simplifiée et porte un titre, une légende, une orientation et une échelle. Demande-toi toujours qui a pris l'image, et d'où.",
+          "practice": {
+            "statement": "Tu t'entraînes à identifier et comparer des documents avec la méthode : identifier, relever, comparer, conclure.",
+            "questions": [
+              {
+                "content": "Quel document est pris par un satellite ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Identifier : une image prise par un satellite est une image satellite. La photographie aérienne est prise d'un avion ou d'un drone, le croquis est dessiné à la main, le globe est une maquette.",
+                "answers": [
+                  {
+                    "content": "L'image satellite",
+                    "correct": true
+                  },
+                  {
+                    "content": "La photographie aérienne",
+                    "correct": false
+                  },
+                  {
+                    "content": "Le croquis",
+                    "correct": false
+                  },
+                  {
+                    "content": "Le globe",
+                    "correct": false
+                  }
+                ],
+                "hint": "Cherche le mot satellite dans la réponse."
+              },
+              {
+                "content": "Un dessin schématique fait à la main, qui garde l'essentiel, est un ___ (un mot).",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Identifier : le croquis est un dessin simplifié. Étape 4 — Conclure : il sert à expliquer une idée, comme le trajet d'un car.",
+                "answers": [
+                  {
+                    "content": "croquis",
+                    "correct": true
+                  }
+                ],
+                "hint": "Ce n'est ni une photographie ni une carte."
+              },
+              {
+                "content": "Un globe terrestre montre la Terre sans déformer les surfaces.",
+                "question_type": "true_false",
+                "explanation": "Étape 3 — Comparer : le globe est sphérique comme la Terre, il garde donc les surfaces et les distances, à la différence d'une carte plane qui déforme.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Pense à la forme du globe."
+              }
+            ]
+          },
+          "figure": "representations-de-la-terre",
+          "exercise": [
+            {
+              "title": "Identifier et comparer des documents",
+              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche (identifier, relever, comparer, conclure) aux documents qui représentent la Terre.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": null,
+              "questions": [
+                {
+                  "content": "Relie chaque document à sa définition.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Identifier : chaque document se reconnaît à sa nature et à l'engin qui l'a produit.",
+                  "answers": [
+                    {
+                      "content": "Globe",
+                      "match": "Maquette sphérique de la Terre"
+                    },
+                    {
+                      "content": "Croquis",
+                      "match": "Dessin schématique de l'essentiel"
+                    },
+                    {
+                      "content": "Photographie aérienne",
+                      "match": "Photographie prise d'un avion ou d'un drone"
+                    },
+                    {
+                      "content": "Image satellite",
+                      "match": "Image prise par un satellite"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel document montre le mieux les maisons d'un quartier précis, avec beaucoup de détails ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 2 — Relever : la photographie aérienne montre très précisément un espace réduit. Le globe et le planisphère montrent la Terre entière, l'image satellite d'un continent montre trop peu de détails.",
+                  "answers": [
+                    {
+                      "content": "Une photographie aérienne du quartier",
+                      "correct": true
+                    },
+                    {
+                      "content": "Un globe terrestre",
+                      "correct": false
+                    },
+                    {
+                      "content": "Un planisphère",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une image satellite de tout le continent africain",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel est l'avantage du globe sur un planisphère ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Comparer : le globe est sphérique comme la Terre, donc sans déformation. Mais il est encombrant, on n'en voit qu'une moitié à la fois et il montre peu de détails.",
+                  "answers": [
+                    {
+                      "content": "Il ne déforme ni les surfaces ni les distances",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il tient facilement dans un cartable",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il montre toute la Terre d'un seul coup",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il montre beaucoup de détails",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une photographie prise d'un avion ou d'un drone est une photographie ___ (un mot).",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Identifier : une photographie prise d'un avion ou d'un drone est une photographie aérienne. Prise par un satellite, ce serait une image satellite.",
+                  "answers": [
+                    {
+                      "content": "aérienne",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Une photographie aérienne est une carte, car elle montre un espace.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 3 — Comparer : une carte est simplifiée et porte un titre, une légende, une orientation et une échelle. Une photographie montre la réalité telle quelle : c'est le piège de la fiche.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Choisir le bon document",
+              "statement": "Dans cet exercice, tu mélanges plusieurs types de questions pour choisir et lire un document qui représente un espace.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Demande-toi : quel espace faut-il montrer, et avec quel niveau de détail ?",
+              "questions": [
+                {
+                  "content": "Remets dans l'ordre les étapes pour présenter un document.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Identifier, Étape 2 — Relever, Étape 3 — Comparer, Étape 4 — Conclure : c'est l'ordre de la méthode de la fiche.",
+                  "answers": [
+                    {
+                      "content": "Identifier la nature du document"
+                    },
+                    {
+                      "content": "Relever ce qu'il montre"
+                    },
+                    {
+                      "content": "Comparer ses avantages et ses limites avec ceux d'une carte"
+                    },
+                    {
+                      "content": "Conclure sur son usage"
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour montrer simplement le trajet d'un car, on peut se contenter de ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 4 — Conclure : le croquis ne garde que l'essentiel, ce qui convient pour expliquer un trajet. Le globe et l'image satellite montrent beaucoup trop de choses.",
+                  "answers": [
+                    {
+                      "content": "un croquis",
+                      "correct": true
+                    },
+                    {
+                      "content": "un globe",
+                      "correct": false
+                    },
+                    {
+                      "content": "une image satellite",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels sont deux documents qui montrent la réalité sans la simplifier ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 3 — Comparer : la photographie aérienne et l'image satellite montrent le réel tel qu'il est. Le croquis et la carte sont des documents simplifiés.",
+                  "answers": [
+                    {
+                      "content": "La photographie aérienne",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'image satellite",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le croquis",
+                      "correct": false
+                    },
+                    {
+                      "content": "La carte",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque besoin au document le plus adapté.",
+                  "question_type": "matching",
+                  "explanation": "Étape 4 — Conclure : on choisit le document selon l'espace à montrer et le niveau de détail voulu.",
+                  "answers": [
+                    {
+                      "content": "Observer d'un seul coup toute la Côte d'Ivoire",
+                      "match": "Image satellite"
+                    },
+                    {
+                      "content": "Voir les toits d'une école et de sa cour",
+                      "match": "Photographie aérienne"
+                    },
+                    {
+                      "content": "Montrer simplement la route d'Abidjan à Korhogo",
+                      "match": "Croquis"
+                    },
+                    {
+                      "content": "Voir la forme réelle de la Terre",
+                      "match": "Globe"
+                    }
+                  ]
+                },
+                {
+                  "content": "Une photographie aérienne est à l'échelle $1/10\\,000$. Deux arbres sont distants de 2 cm sur la photographie. Quelle est la distance réelle, en m ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Étape 2 — Relever : l'échelle $1/10\\,000$ de la photographie. Le calcul reprend la méthode de l'échelle : mesurer 2 cm, multiplier par le dénominateur, $2 \\times 10\\,000 = 20\\,000$ cm, puis convertir : $20\\,000 \\div 100 = 200$ m.",
+                  "answers": [
+                    {
+                      "content": "200",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "m"
+                },
+                {
+                  "content": "Une image satellite peut montrer toute la Côte d'Ivoire d'un seul coup.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Relever : l'image satellite est prise d'en haut et montre de très vastes espaces, par exemple tout un pays.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Le voyage en car : situer les villes",
+          "statement": "Situation d'exemple, avec des valeurs arrondies au degré : Kouadio prend le car à la gare routière d'Abidjan pour aller à Korhogo, en passant par Yamoussoukro et Bouaké. Sa carte donne les coordonnées de ses étapes : Abidjan (5° N, 4° O), Yamoussoukro (7° N, 5° O), Bouaké (8° N, 5° O) et Korhogo (9° N, 6° O). Réponds aux questions.",
+          "exercise_type": "fixation",
+          "figure": "carte-voyage-en-car",
+          "hint": "Latitude d'abord, puis longitude ; la lettre dit nord ou sud, est ou ouest.",
+          "questions": [
+            {
+              "content": "Quelle est la latitude de Bouaké ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1) Repérer la latitude : c'est la valeur mesurée depuis l'équateur, suivie de N ou S. 2) Pour Bouaké, la latitude est 8° N. 3) 5° O est sa longitude, et 8° O mélange les deux : c'est l'erreur de confondre latitude et longitude.",
+              "answers": [
+                {
+                  "content": "8° N",
+                  "correct": true
+                },
+                {
+                  "content": "5° O",
+                  "correct": false
+                },
+                {
+                  "content": "8° O",
+                  "correct": false
+                },
+                {
+                  "content": "5° N",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "De combien de degrés la latitude augmente-t-elle entre Abidjan et Korhogo ?",
+              "question_type": "numeric",
+              "tolerance": 0,
+              "explanation": "Méthode : 1) Repérer la latitude de chaque ville : Abidjan 5° N, Korhogo 9° N. 2) Les deux sont au nord de l'équateur, on soustrait. 3) $9 - 5 = 4$ : la latitude augmente de 4 degrés.",
+              "answers": [
+                {
+                  "content": "4",
+                  "correct": true
+                }
+              ],
+              "unit": "degrés"
+            },
+            {
+              "content": "Quand le car va d'Abidjan à Korhogo, il roule globalement vers le ___.",
+              "question_type": "select",
+              "explanation": "Méthode : 1) Repérer les latitudes : 5° N pour Abidjan, 9° N pour Korhogo. 2) La latitude nord augmente : on s'éloigne de l'équateur vers le nord. 3) Le car roule donc vers le nord. Le sud serait le sens du retour.",
+              "answers": [
+                {
+                  "content": "nord",
+                  "correct": true
+                },
+                {
+                  "content": "sud",
+                  "correct": false
+                },
+                {
+                  "content": "est",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Korhogo est dans l'hémisphère Sud.",
+              "question_type": "true_false",
+              "explanation": "Méthode : 1) Repérer la latitude de Korhogo : 9° N. 2) La lettre N indique le nord de l'équateur. 3) La ville est dans l'hémisphère Nord ; la lettre S aurait indiqué le sud.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Remets dans l'ordre les villes que traverse le car, d'Abidjan à Korhogo.",
+              "question_type": "ordering",
+              "explanation": "Méthode : 1) Classer les villes par latitude croissante : 5° N, 7° N, 8° N, 9° N. 2) Le car monte vers le nord. 3) L'ordre est Abidjan, Yamoussoukro, Bouaké, Korhogo.",
+              "answers": [
+                {
+                  "content": "Abidjan"
+                },
+                {
+                  "content": "Yamoussoukro"
+                },
+                {
+                  "content": "Bouaké"
+                },
+                {
+                  "content": "Korhogo"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Le voyage en car : distances et durée",
+          "statement": "Situation d'exemple, avec des valeurs fictives : Kouadio mesure sur une carte au 1/2 000 000 les distances à vol d'oiseau entre les étapes du voyage : Abidjan et Yamoussoukro 11 cm, Yamoussoukro et Bouaké 5 cm, Bouaké et Korhogo 10 cm. Le car roule en moyenne à 65 km/h. Réponds aux questions.",
+          "exercise_type": "fixation",
+          "figure": null,
+          "hint": "1 cm sur la carte représente 20 km ; durée = distance ÷ vitesse.",
+          "questions": [
+            {
+              "content": "Sur une carte au $1/2\\,000\\,000$, Abidjan et Yamoussoukro sont distantes de 11 cm. Quelle est la distance réelle, en km ?",
+              "question_type": "numeric",
+              "tolerance": 0,
+              "explanation": "Méthode : 1) Mesurer : 11 cm. 2) Lire l'échelle : 1 cm représente 2 000 000 cm, soit 20 km. 3) Calculer : $11 \\times 2\\,000\\,000 = 22\\,000\\,000$ cm. 4) Convertir : $22\\,000\\,000 \\div 100\\,000 = 220$ km.",
+              "answers": [
+                {
+                  "content": "220",
+                  "correct": true
+                }
+              ],
+              "unit": "km"
+            },
+            {
+              "content": "Sur la même carte au $1/2\\,000\\,000$, Yamoussoukro et Bouaké sont distantes de 5 cm. Quelle est la distance réelle, en km ?",
+              "question_type": "numeric",
+              "tolerance": 0,
+              "explanation": "Méthode : 1) Mesurer : 5 cm. 2) Lire l'échelle : 1 cm représente 20 km. 3) Calculer : $5 \\times 2\\,000\\,000 = 10\\,000\\,000$ cm. 4) Convertir : $10\\,000\\,000 \\div 100\\,000 = 100$ km.",
+              "answers": [
+                {
+                  "content": "100",
+                  "correct": true
+                }
+              ],
+              "unit": "km"
+            },
+            {
+              "content": "Bouaké et Korhogo sont distantes de 10 cm sur cette carte au $1/2\\,000\\,000$. Quelle est la distance totale à vol d'oiseau, en km, des trois tronçons d'Abidjan à Korhogo (11 cm, 5 cm et 10 cm) ?",
+              "question_type": "numeric",
+              "tolerance": 0,
+              "explanation": "Méthode : 1) Additionner d'abord les mesures : $11 + 5 + 10 = 26$ cm. 2) Lire l'échelle : 1 cm représente 20 km. 3) Calculer : $26 \\times 20 = 520$ km. On trouve le même résultat en additionnant 220 km, 100 km et 200 km.",
+              "answers": [
+                {
+                  "content": "520",
+                  "correct": true
+                }
+              ],
+              "unit": "km"
+            },
+            {
+              "content": "On suppose que le car parcourt ces 520 km à 65 km/h en moyenne. Combien d'heures dure le trajet ?",
+              "question_type": "numeric",
+              "tolerance": 0,
+              "explanation": "Méthode : 1) Données : distance 520 km, vitesse 65 km/h. 2) Durée = distance ÷ vitesse. 3) $520 \\div 65 = 8$ : le trajet dure 8 heures.",
+              "answers": [
+                {
+                  "content": "8",
+                  "correct": true
+                }
+              ],
+              "unit": "h"
+            },
+            {
+              "content": "Pour voir plus de détails sur la ville de Bouaké, quelle carte choisir ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1) Lire l'échelle : pour plus de détails, il faut une plus grande échelle, donc un plus petit dénominateur. 2) 50 000 est le plus petit des dénominateurs proposés. 3) Les autres échelles montrent de vastes espaces avec peu de détails.",
+              "answers": [
+                {
+                  "content": "Une carte au $1/50\\,000$",
+                  "correct": true
+                },
+                {
+                  "content": "Une carte au $1/5\\,000\\,000$",
+                  "correct": false
+                },
+                {
+                  "content": "Une carte au $1/10\\,000\\,000$",
+                  "correct": false
+                },
+                {
+                  "content": "Un planisphère",
+                  "correct": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Choisir le bon document et comprendre la projection",
+          "statement": "Situation d'exemple : Aya prépare un exposé sur le voyage de son oncle d'Abidjan à Korhogo. Elle dispose de quatre documents : un planisphère de Mercator, une photographie aérienne de la gare routière d'Abidjan, une image satellite de la Côte d'Ivoire et un croquis du trajet du car. Réponds aux questions.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "hint": "Identifie le document, relève ce qu'il montre, compare puis conclus.",
+          "questions": [
+            {
+              "content": "Relie chaque besoin d'Aya au document le plus adapté.",
+              "question_type": "matching",
+              "explanation": "Méthode : 1) Identifier la nature de chaque document. 2) Relever ce qu'il montre : un dessin simplifié, un espace précis et détaillé, un très vaste espace, ou toute la Terre à plat. 3) Comparer ses avantages avec le besoin. 4) Conclure : chaque document sert à un usage.",
+              "answers": [
+                {
+                  "content": "Montrer simplement les villes étapes du trajet",
+                  "match": "Croquis"
+                },
+                {
+                  "content": "Voir les bus garés devant la gare routière",
+                  "match": "Photographie aérienne"
+                },
+                {
+                  "content": "Observer d'un seul coup tout le pays",
+                  "match": "Image satellite"
+                },
+                {
+                  "content": "Situer la Côte d'Ivoire dans le monde",
+                  "match": "Planisphère"
+                }
+              ]
+            },
+            {
+              "content": "Aya remarque que, sur le planisphère, le Groenland paraît aussi grand que l'Afrique. Quelle est l'explication ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1) Identifier : un planisphère est une carte plane obtenue par projection. 2) Repérer : la projection de Mercator étire les surfaces près des pôles. 3) Expliquer : le Groenland est agrandi. 4) Conclure : l'Afrique est en réalité bien plus grande.",
+              "answers": [
+                {
+                  "content": "La projection étire les surfaces près des pôles",
+                  "correct": true
+                },
+                {
+                  "content": "Le Groenland est réellement aussi grand que l'Afrique",
+                  "correct": false
+                },
+                {
+                  "content": "Le planisphère est une photographie prise d'un satellite",
+                  "correct": false
+                },
+                {
+                  "content": "L'échelle du planisphère est de 1/1",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quelles sont deux limites du globe terrestre ?",
+              "question_type": "multiple_correct_2",
+              "explanation": "Méthode : 1) Identifier : le globe est une maquette sphérique. 2) Comparer : il garde la forme, les surfaces et les distances, ce qui est son avantage. 3) Ses limites sont d'être encombrant, de montrer peu de détails et de n'en laisser voir qu'une moitié à la fois.",
+              "answers": [
+                {
+                  "content": "On n'en voit qu'une moitié à la fois",
+                  "correct": true
+                },
+                {
+                  "content": "Il est encombrant et montre peu de détails",
+                  "correct": true
+                },
+                {
+                  "content": "Il déforme fortement les surfaces",
+                  "correct": false
+                },
+                {
+                  "content": "Il ne montre pas la forme de la Terre",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Une photographie aérienne montre la réalité sans la simplifier.",
+              "question_type": "true_false",
+              "explanation": "Méthode : 1) Identifier : prise d'un avion ou d'un drone, elle montre le réel. 2) Comparer : à la différence d'une carte ou d'un croquis, elle ne simplifie pas, mais il faut l'interpréter. 3) L'affirmation est vraie.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": true
+                },
+                {
+                  "content": "Faux",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "En deux ou trois phrases, explique pourquoi le Groenland paraît aussi grand que l'Afrique sur un planisphère de Mercator.",
+              "question_type": "written",
+              "points": 3,
+              "criteria": [
+                "Identifie le planisphère et la projection (1 point)",
+                "Explique l'étirement des surfaces près des pôles (1,5 point)",
+                "Conclut que l'Afrique est en réalité plus grande (0,5 point)"
+              ],
+              "explanation": "Corrigé modèle : « Un planisphère est une carte plane de toute la Terre, obtenue par une projection. Pour passer de la sphère à une surface plane, la projection de Mercator étire les surfaces près des pôles, où se trouve le Groenland. Il paraît donc aussi grand que l'Afrique, alors que l'Afrique est en réalité bien plus grande. » Points : 1 pour identifier le planisphère et la projection, 1,5 pour l'explication de l'étirement près des pôles, 0,5 pour la conclusion sur la taille réelle.",
+              "answers": [],
+              "starter": "Un planisphère est une carte plane…"
+            }
+          ]
+        },
+        {
+          "title": "Bilan du voyage : de la carte aux coordonnées",
+          "statement": "Situation d'exemple : pour son devoir, Awa résume son voyage en car. Elle sait que Korhogo est à environ 9° N et 6° O (valeurs arrondies) et que, sur sa carte au 1/5 000 000, Abidjan et Korhogo sont distantes de 10 cm (valeur approchée). Elle prépare aussi la lecture de sa carte routière. Réponds aux questions.",
+          "exercise_type": "evaluation",
+          "figure": "coordonnees-geographiques",
+          "hint": "Latitude d'abord ; 1 cm = dénominateur cm ; nord = flèche.",
+          "questions": [
+            {
+              "content": "Awa écrit « Korhogo : 6° N, 9° O ». Quelle est son erreur ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1) Repérer la latitude : 9° N. 2) Repérer la longitude : 6° O. 3) Écrire : latitude d'abord, soit 9° N, 6° O. Awa a mis 6 à la place de la latitude et 9 à la place de la longitude.",
+              "answers": [
+                {
+                  "content": "Elle a inversé la latitude et la longitude",
+                  "correct": true
+                },
+                {
+                  "content": "Elle a oublié l'échelle",
+                  "correct": false
+                },
+                {
+                  "content": "Elle a confondu nord et sud",
+                  "correct": false
+                },
+                {
+                  "content": "Elle a écrit un titre trop long",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Sur la carte au $1/5\\,000\\,000$, Abidjan et Korhogo sont distantes de 10 cm. Quelle est la distance réelle, en km ?",
+              "question_type": "numeric",
+              "tolerance": 0,
+              "explanation": "Méthode : 1) Mesurer : 10 cm. 2) Lire l'échelle : 1 cm représente 5 000 000 cm, soit 50 km. 3) Calculer : $10 \\times 5\\,000\\,000 = 50\\,000\\,000$ cm. 4) Convertir : $50\\,000\\,000 \\div 100\\,000 = 500$ km.",
+              "answers": [
+                {
+                  "content": "500",
+                  "correct": true
+                }
+              ],
+              "unit": "km"
+            },
+            {
+              "content": "Sur la carte, la flèche du nord pointe vers le haut. Awa veut aller d'Abidjan à Korhogo : elle suit la route vers le ___ de la feuille.",
+              "question_type": "select",
+              "explanation": "Méthode : 1) S'orienter : le nord est en haut, car la flèche pointe vers le haut. 2) Korhogo est au nord d'Abidjan. 3) Elle suit donc la route vers le haut de la feuille.",
+              "answers": [
+                {
+                  "content": "haut",
+                  "correct": true
+                },
+                {
+                  "content": "bas",
+                  "correct": false
+                },
+                {
+                  "content": "côté gauche",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Une carte au $1/5\\,000\\,000$ montre plus de détails qu'une carte au $1/50\\,000$.",
+              "question_type": "true_false",
+              "explanation": "Méthode : 1) Lire l'échelle : plus le dénominateur est petit, plus l'échelle est grande. 2) 50 000 est plus petit que 5 000 000. 3) La carte au 1/50 000 montre donc plus de détails ; l'affirmation est fausse.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Remets dans l'ordre les étapes de lecture de la carte routière d'Awa.",
+              "question_type": "ordering",
+              "explanation": "Méthode : 1) Lire le titre pour connaître le sujet. 2) Lire la légende pour comprendre les signes. 3) S'orienter avec la flèche du nord. 4) Décrire le trajet avec les points cardinaux.",
+              "answers": [
+                {
+                  "content": "Lire le titre"
+                },
+                {
+                  "content": "Lire la légende"
+                },
+                {
+                  "content": "S'orienter avec la flèche du nord"
+                },
+                {
+                  "content": "Décrire le trajet avec les points cardinaux"
+                }
+              ]
+            },
+            {
+              "content": "En quatre ou cinq lignes, explique comment Awa doit lire sa carte routière avant de partir : cite le titre, la légende, l'orientation et l'échelle.",
+              "question_type": "written",
+              "points": 4,
+              "criteria": [
+                "Cite et explique le titre (1 point)",
+                "Cite et explique la légende (1 point)",
+                "Cite et explique l'orientation (1 point)",
+                "Cite l'échelle et la méthode de calcul de la distance (1 point)"
+              ],
+              "explanation": "Corrigé modèle : « Awa lit d'abord le titre, qui dit le sujet, l'espace et la date. Elle lit ensuite la légende pour savoir ce que représentent les traits et les points. Elle repère la flèche du nord pour s'orienter : si la flèche pointe vers le haut, le nord est en haut. Enfin elle lit l'échelle, par exemple 1/5 000 000, qui lui permet de calculer la distance réelle : elle multiplie la mesure par le dénominateur, puis convertit en kilomètres. » Points : 1 par élément cité et expliqué.",
+              "answers": [],
+              "starter": "Awa lit d'abord le titre, qui…"
+            }
+          ]
+        }
+      ],
+      "subjects": [
+        {
+          "title": "Sujet 1 · Les savoirs de base : coordonnées, carte, échelle et représentations",
+          "notions": "Latitude et longitude, éléments de la carte (titre, légende, orientation), échelle et distance réelle, projections et autres représentations de la Terre.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Situation d'exemple : un élève révise les coordonnées géographiques avant son voyage en car vers Korhogo.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Latitude depuis l'équateur, longitude depuis Greenwich.",
+              "questions": [
+                {
+                  "content": "Quelle ligne imaginaire est à 0° de latitude ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer la latitude : elle part de l'équateur, à 0°. 2) Le méridien de Greenwich est à 0° de longitude, pas de latitude. 3) Le tropique du Cancer est à 23°26′ N et le méridien 180° est une ligne de longitude.",
+                  "answers": [
+                    {
+                      "content": "L'équateur",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le méridien de Greenwich",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le tropique du Cancer",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le méridien 180°",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le méridien d'origine, à 0° de longitude, s'appelle le méridien de ___ (un mot).",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Repérer la longitude : elle se mesure depuis le méridien d'origine. 2) Ce méridien est celui de Greenwich, à Londres. 3) On compte ensuite vers l'est ou vers l'ouest.",
+                  "answers": [
+                    {
+                      "content": "Greenwich",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "La latitude d'un lieu peut valoir 100° N.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer la latitude : elle va de 0° à 90°. 2) 100° dépasse la limite des pôles. 3) La proposition est fausse ; 100° pourrait être une longitude.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux affirmations exactes sur la longitude ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Repérer la longitude : départ au méridien de Greenwich. 2) Elle va jusqu'à 180° vers l'est ou l'ouest. 3) Un départ à l'équateur et une limite de 90° décrivent la latitude.",
+                  "answers": [
+                    {
+                      "content": "Elle se mesure à partir du méridien de Greenwich",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elle va de 0° à 180° vers l'est ou l'ouest",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elle se mesure à partir de l'équateur",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle va de 0° à 90°",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque ligne à sa définition.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Repérer la latitude le long des parallèles. 2) Repérer la longitude le long des méridiens. 3) L'équateur est le parallèle 0° ; Greenwich est le méridien 0°.",
+                  "answers": [
+                    {
+                      "content": "Parallèle",
+                      "match": "Cercle parallèle à l'équateur"
+                    },
+                    {
+                      "content": "Méridien",
+                      "match": "Demi-cercle qui joint les deux pôles"
+                    },
+                    {
+                      "content": "Équateur",
+                      "match": "Parallèle de latitude 0°"
+                    },
+                    {
+                      "content": "Greenwich",
+                      "match": "Méridien de longitude 0°"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Situation d'exemple : une carte routière a pour titre « Les routes de Côte d'Ivoire », avec une légende (trait épais : route principale ; trait fin : piste), une flèche du nord pointant vers le haut et une échelle au 1/2 000 000.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Titre, légende, orientation, échelle : chaque élément a son rôle.",
+              "questions": [
+                {
+                  "content": "Où lit-on que le trait fin désigne une piste ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Lire le titre : il donne le sujet. 2) Lire la légende : elle explique les traits. 3) Le trait fin se lit donc dans la légende.",
+                  "answers": [
+                    {
+                      "content": "Dans la légende",
+                      "correct": true
+                    },
+                    {
+                      "content": "Dans le titre",
+                      "correct": false
+                    },
+                    {
+                      "content": "Dans l'échelle",
+                      "correct": false
+                    },
+                    {
+                      "content": "Dans la flèche du nord",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La flèche du nord pointe vers le haut : l'est est donc à droite.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) S'orienter : la flèche du nord pointe vers le haut. 2) Le nord est en haut, donc l'est est à droite, le sud en bas, l'ouest à gauche. 3) L'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le point cardinal opposé à l'ouest est l'___ (un mot).",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) S'orienter : les points cardinaux vont par paires opposées. 2) Nord et sud, est et ouest. 3) L'opposé de l'ouest est l'est.",
+                  "answers": [
+                    {
+                      "content": "est",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel élément de la carte dit de combien l'espace est réduit ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Lire le titre : il donne le sujet. 2) Lire la légende : elle explique les signes. 3) L'échelle relie la distance sur la carte à la distance réelle : c'est elle qui dit la réduction.",
+                  "answers": [
+                    {
+                      "content": "L'échelle",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le titre",
+                      "correct": false
+                    },
+                    {
+                      "content": "La légende",
+                      "correct": false
+                    },
+                    {
+                      "content": "La flèche du nord",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes de lecture d'une carte.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Lire le titre. 2) Lire la légende. 3) S'orienter avec la flèche du nord. 4) Décrire avec les points cardinaux.",
+                  "answers": [
+                    {
+                      "content": "Lire le titre"
+                    },
+                    {
+                      "content": "Lire la légende"
+                    },
+                    {
+                      "content": "S'orienter avec la flèche du nord"
+                    },
+                    {
+                      "content": "Décrire avec les points cardinaux"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Situation d'exemple : sur une carte au 1/1 000 000, deux villes sont distantes de 7 cm.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "1 km = 100 000 cm.",
+              "questions": [
+                {
+                  "content": "Quelle est la distance réelle entre les deux villes, en km ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1) Mesurer : 7 cm. 2) Lire l'échelle : 1 cm représente 1 000 000 cm. 3) Calculer : $7 \\times 1\\,000\\,000 = 7\\,000\\,000$ cm. 4) Convertir : $7\\,000\\,000 \\div 100\\,000 = 70$ km.",
+                  "answers": [
+                    {
+                      "content": "70",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "km"
+                },
+                {
+                  "content": "Que représente 1 cm sur une carte au $1/1\\,000\\,000$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Lire l'échelle : 1 cm représente 1 000 000 cm. 2) Convertir : $1\\,000\\,000 \\div 100\\,000 = 10$ km. 3) Les autres valeurs retirent trop ou pas assez de zéros.",
+                  "answers": [
+                    {
+                      "content": "10 km",
+                      "correct": true
+                    },
+                    {
+                      "content": "1 km",
+                      "correct": false
+                    },
+                    {
+                      "content": "100 km",
+                      "correct": false
+                    },
+                    {
+                      "content": "1 000 km",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour trouver la distance réelle, on ___ la distance mesurée par le dénominateur de l'échelle (un verbe au présent).",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Mesurer sur la carte. 2) Lire l'échelle. 3) Calculer : on multiplie la mesure par le dénominateur, car l'échelle est une réduction.",
+                  "answers": [
+                    {
+                      "content": "multiplie",
+                      "correct": true
+                    },
+                    {
+                      "content": "multiplier",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "L'échelle $1/50\\,000$ est plus grande que l'échelle $1/1\\,000\\,000$.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Lire l'échelle : plus le dénominateur est petit, plus l'échelle est grande. 2) 50 000 est inférieur à 1 000 000. 3) L'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour passer des centimètres aux kilomètres, on ___.",
+                  "question_type": "select",
+                  "explanation": "Méthode : 1) Convertir : 1 km = 100 000 cm. 2) On divise donc par 100 000. 3) Diviser par 100 000 revient à retirer cinq zéros.",
+                  "answers": [
+                    {
+                      "content": "retire cinq zéros",
+                      "correct": true
+                    },
+                    {
+                      "content": "retire trois zéros",
+                      "correct": false
+                    },
+                    {
+                      "content": "ajoute cinq zéros",
+                      "correct": false
+                    },
+                    {
+                      "content": "ajoute trois zéros",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Situation d'exemple : un élève compare un planisphère, un globe, une photographie aérienne et une image satellite.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Sphère vers plan : toute projection déforme.",
+              "questions": [
+                {
+                  "content": "Que fait une projection cartographique ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier : la Terre est une sphère et la carte est plane. 2) La projection est la méthode qui passe de l'une à l'autre. 3) Elle ne mesure ni la latitude ni l'échelle.",
+                  "answers": [
+                    {
+                      "content": "Elle représente la sphère terrestre sur une surface plane",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elle représente une surface plane sur une sphère",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle mesure la latitude d'un lieu",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle calcule l'échelle d'une carte",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un planisphère ne déforme jamais la Terre.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Identifier : un planisphère est une carte plane obtenue par projection. 2) Expliquer : on ne peut pas aplatir une sphère sans la déformer. 3) Conclure : toute projection déforme.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque document à sa définition.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Identifier la nature de chaque document. 2) Relever ce qui le distingue : maquette, avion ou drone, satellite, dessin. 3) Associer chaque nom à sa définition.",
+                  "answers": [
+                    {
+                      "content": "Globe",
+                      "match": "Maquette sphérique de la Terre"
+                    },
+                    {
+                      "content": "Photographie aérienne",
+                      "match": "Photographie prise d'un avion ou d'un drone"
+                    },
+                    {
+                      "content": "Image satellite",
+                      "match": "Image prise par un satellite"
+                    },
+                    {
+                      "content": "Croquis",
+                      "match": "Dessin schématique de l'essentiel"
+                    }
+                  ]
+                },
+                {
+                  "content": "Une projection faite sur un cylindre est dite ___ (un mot).",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Repérer la famille de projection d'après la surface utilisée. 2) Sur un cylindre, la projection est cylindrique. 3) Sur un cône, conique ; sur un plan, azimutale.",
+                  "answers": [
+                    {
+                      "content": "cylindrique",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel document est une maquette sphérique de la Terre ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier : une maquette sphérique est un globe. 2) Le planisphère est plat, le croquis est un dessin, l'image satellite est prise par un satellite.",
+                  "answers": [
+                    {
+                      "content": "Le globe",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le planisphère",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le croquis",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'image satellite",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 2 · Le voyage en car et la vie courante en Côte d'Ivoire",
+          "notions": "Lire des coordonnées et une carte routière, calculer des distances et des durées de trajet, choisir un document pour un besoin concret, interpréter un planisphère.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Situation d'exemple, avec des valeurs arrondies au degré : le car de Kouadio relie Abidjan (5° N, 4° O), Yamoussoukro (7° N, 5° O), Bouaké (8° N, 5° O) et Korhogo (9° N, 6° O).",
+              "exercise_type": "evaluation",
+              "figure": "carte-voyage-en-car",
+              "hint": "Latitude d'abord, puis longitude ; nord ou sud, est ou ouest.",
+              "questions": [
+                {
+                  "content": "Quelle ville est la plus au nord ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer la latitude de chaque ville : 5° N, 7° N, 8° N, 9° N. 2) La plus grande latitude nord est la plus au nord. 3) C'est Korhogo, à 9° N.",
+                  "answers": [
+                    {
+                      "content": "Korhogo",
+                      "correct": true
+                    },
+                    {
+                      "content": "Abidjan",
+                      "correct": false
+                    },
+                    {
+                      "content": "Yamoussoukro",
+                      "correct": false
+                    },
+                    {
+                      "content": "Bouaké",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Entre Yamoussoukro et Korhogo, de combien de degrés la latitude augmente-t-elle ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1) Repérer la latitude : Yamoussoukro 7° N, Korhogo 9° N. 2) Les deux sont au nord, on soustrait. 3) $9 - 7 = 2$ degrés.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "degrés"
+                },
+                {
+                  "content": "Les coordonnées de Yamoussoukro s'écrivent ___.",
+                  "question_type": "select",
+                  "explanation": "Méthode : 1) Repérer la latitude : 7° N. 2) Repérer la longitude : 5° O. 3) Écrire la latitude d'abord, avec ses lettres. Les autres propositions inversent les valeurs ou changent une lettre.",
+                  "answers": [
+                    {
+                      "content": "7° N, 5° O",
+                      "correct": true
+                    },
+                    {
+                      "content": "5° N, 7° O",
+                      "correct": false
+                    },
+                    {
+                      "content": "7° S, 5° E",
+                      "correct": false
+                    },
+                    {
+                      "content": "7° N, 5° E",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Toutes ces villes sont à l'ouest du méridien de Greenwich.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer la longitude de chaque ville : 4° O, 5° O, 5° O, 6° O. 2) Elles portent toutes la lettre O. 3) Elles sont toutes à l'ouest de Greenwich.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont les deux villes dont la longitude arrondie est 5° O ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Repérer la longitude de chaque ville. 2) Yamoussoukro et Bouaké sont toutes deux à 5° O. 3) Abidjan est à 4° O et Korhogo à 6° O.",
+                  "answers": [
+                    {
+                      "content": "Yamoussoukro",
+                      "correct": true
+                    },
+                    {
+                      "content": "Bouaké",
+                      "correct": true
+                    },
+                    {
+                      "content": "Abidjan",
+                      "correct": false
+                    },
+                    {
+                      "content": "Korhogo",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Situation d'exemple, avec des valeurs fictives : sur la carte du voyage, à l'échelle 1/3 000 000, Abidjan et Yamoussoukro sont distantes de 7 cm, Yamoussoukro et Bouaké de 3 cm, Bouaké et Korhogo de 6 cm. Le car roule en moyenne à 80 km/h.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "1 cm représente 30 km ; durée = distance ÷ vitesse.",
+              "questions": [
+                {
+                  "content": "Que représente 1 cm sur cette carte au $1/3\\,000\\,000$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Lire l'échelle : 1 cm représente 3 000 000 cm. 2) Convertir : $3\\,000\\,000 \\div 100\\,000 = 30$ km. 3) Les autres valeurs retirent trop ou pas assez de zéros.",
+                  "answers": [
+                    {
+                      "content": "30 km",
+                      "correct": true
+                    },
+                    {
+                      "content": "3 km",
+                      "correct": false
+                    },
+                    {
+                      "content": "300 km",
+                      "correct": false
+                    },
+                    {
+                      "content": "3 000 km",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la distance réelle entre Abidjan et Yamoussoukro (7 cm), en km ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1) Mesurer : 7 cm. 2) Lire l'échelle : 1 cm représente 30 km. 3) Calculer : $7 \\times 3\\,000\\,000 = 21\\,000\\,000$ cm. 4) Convertir : $21\\,000\\,000 \\div 100\\,000 = 210$ km.",
+                  "answers": [
+                    {
+                      "content": "210",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "km"
+                },
+                {
+                  "content": "Quelle est la distance totale à vol d'oiseau d'Abidjan à Korhogo, en km (tronçons de 7 cm, 3 cm et 6 cm) ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1) Additionner les mesures : $7 + 3 + 6 = 16$ cm. 2) Lire l'échelle : 1 cm représente 30 km. 3) Calculer : $16 \\times 30 = 480$ km.",
+                  "answers": [
+                    {
+                      "content": "480",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "km"
+                },
+                {
+                  "content": "Le car roule en moyenne à 80 km/h sur 480 km. Combien d'heures dure le trajet ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1) Données : distance 480 km, vitesse 80 km/h. 2) Durée = distance ÷ vitesse. 3) $480 \\div 80 = 6$ heures.",
+                  "answers": [
+                    {
+                      "content": "6",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "h"
+                },
+                {
+                  "content": "La distance parcourue par la route est toujours exactement égale à la distance mesurée en ligne droite sur la carte.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Mesurer : la règle donne la distance à vol d'oiseau. 2) Une route est sinueuse, donc plus longue que la ligne droite. 3) L'affirmation est fausse ; la mesure donne un ordre de grandeur.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Situation d'exemple : le directeur de l'école de Kouadio veut montrer la cour aux parents. Il hésite entre un croquis de la cour, une photographie aérienne de l'école, une image satellite de la Côte d'Ivoire et un globe.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Quel espace faut-il montrer, et avec quel niveau de détail ?",
+              "questions": [
+                {
+                  "content": "Quel document montre le mieux les bâtiments de l'école avec précision ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier les documents. 2) Relever : la photographie aérienne montre un espace réduit avec précision. 3) Conclure : c'est elle qui convient pour l'école.",
+                  "answers": [
+                    {
+                      "content": "La photographie aérienne",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'image satellite de la Côte d'Ivoire",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le globe",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le croquis d'un autre quartier",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel document le directeur peut-il dessiner lui-même pour montrer l'essentiel ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier : le croquis est un dessin schématique fait à la main. 2) Les autres documents sont pris par un avion, un satellite ou fabriqués comme maquette. 3) Conclure : le croquis.",
+                  "answers": [
+                    {
+                      "content": "Un croquis",
+                      "correct": true
+                    },
+                    {
+                      "content": "Une photographie aérienne",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une image satellite",
+                      "correct": false
+                    },
+                    {
+                      "content": "Un globe",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une image satellite de la Côte d'Ivoire montre bien chaque salle de classe de l'école.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Identifier : l'image satellite montre un très vaste espace. 2) Relever : le niveau de détail est faible. 3) Conclure : on ne voit pas chaque salle.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque besoin au document le plus adapté.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Identifier chaque document. 2) Relever son étendue et son niveau de détail. 3) Conclure : on choisit le document selon le besoin.",
+                  "answers": [
+                    {
+                      "content": "Voir la forme réelle de la Terre",
+                      "match": "Globe"
+                    },
+                    {
+                      "content": "Montrer simplement le trajet du car",
+                      "match": "Croquis"
+                    },
+                    {
+                      "content": "Voir les toits de l'école et de la cour",
+                      "match": "Photographie aérienne"
+                    },
+                    {
+                      "content": "Observer tout le pays d'un seul coup",
+                      "match": "Image satellite"
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur un plan de la cour au $1/500$, la cour mesure 8 cm de long. Quelle est sa longueur réelle, en m ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1) Mesurer : 8 cm. 2) Lire l'échelle : 1 cm représente 500 cm. 3) Calculer : $8 \\times 500 = 4\\,000$ cm. 4) Convertir : $4\\,000 \\div 100 = 40$ m.",
+                  "answers": [
+                    {
+                      "content": "40",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "m"
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Situation d'exemple : sur un planisphère de Mercator affiché au CDI du lycée, un élève voit le Groenland presque aussi grand que l'Afrique.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Pense à la sphère aplatie sur une feuille.",
+              "questions": [
+                {
+                  "content": "Pourquoi le Groenland paraît-il si grand ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier : un planisphère est obtenu par projection. 2) Repérer : la projection de Mercator étire les surfaces près des pôles. 3) Expliquer : le Groenland est agrandi. 4) Conclure : ce n'est pas sa taille réelle.",
+                  "answers": [
+                    {
+                      "content": "La projection étire les surfaces près des pôles",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le Groenland est réellement aussi grand que l'Afrique",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'échelle du planisphère est de 1/1",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le planisphère est une photographie aérienne",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "En réalité, l'Afrique est beaucoup plus grande que le Groenland.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Identifier le planisphère. 2) Expliquer : le Groenland est agrandi par la projection. 3) Conclure : l'Afrique, proche de l'équateur, est en réalité bien plus grande.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une carte plane de toute la Terre s'appelle un ___ (un mot).",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Identifier : une carte plane de toute la Terre est un planisphère. 2) Elle est obtenue par une projection. 3) Le globe, lui, est sphérique.",
+                  "answers": [
+                    {
+                      "content": "planisphère",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel document du CDI ne déforme pas la forme de la Terre ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Comparer : le globe est sphérique comme la Terre. 2) Il garde donc les formes et les surfaces. 3) Les documents plats déforment ou simplifient.",
+                  "answers": [
+                    {
+                      "content": "Le globe",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le planisphère",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le croquis",
+                      "correct": false
+                    },
+                    {
+                      "content": "La carte routière",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre le raisonnement qui explique la taille du Groenland.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Identifier. 2) Repérer la projection et la zone de déformation. 3) Expliquer l'étirement. 4) Conclure.",
+                  "answers": [
+                    {
+                      "content": "Identifier un planisphère obtenu par une projection"
+                    },
+                    {
+                      "content": "Repérer une projection cylindrique, déformée près des pôles"
+                    },
+                    {
+                      "content": "Expliquer qu'on étire les surfaces pour aplatir la sphère"
+                    },
+                    {
+                      "content": "Conclure que le Groenland paraît plus grand qu'en réalité"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 3 · Raisonner et justifier : coordonnées, orientation, échelles et projections",
+          "notions": "Repérer et corriger des erreurs sur les coordonnées, l'orientation, l'échelle et les projections ; raisonner sur des distances ; choisir la bonne justification.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Situation d'exemple : trois élèves décrivent Korhogo (9° N, 6° O, valeurs arrondies). Élève 1 : « Sa latitude est 6° O. » Élève 2 : « Elle est dans l'hémisphère Nord. » Élève 3 : « Sa longitude vaut 9° N. »",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Latitude : nord ou sud. Longitude : est ou ouest.",
+              "questions": [
+                {
+                  "content": "L'élève 1 a raison.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer la latitude de Korhogo : 9° N. 2) 6° O est sa longitude. 3) L'élève 1 donne la longitude en l'appelant latitude : il a tort.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "L'élève 2 a raison.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer la latitude de Korhogo : 9° N. 2) La lettre N place la ville au nord de l'équateur. 3) L'élève 2 a raison.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'élève 3 a raison.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer la longitude de Korhogo : 6° O. 2) 9° N est sa latitude. 3) L'élève 3 donne la latitude en l'appelant longitude : il a tort.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est l'écriture correcte des coordonnées de Korhogo ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer la latitude : 9° N. 2) Repérer la longitude : 6° O. 3) Écrire la latitude d'abord, avec ses lettres : 9° N, 6° O.",
+                  "answers": [
+                    {
+                      "content": "9° N, 6° O",
+                      "correct": true
+                    },
+                    {
+                      "content": "6° N, 9° O",
+                      "correct": false
+                    },
+                    {
+                      "content": "9° O, 6° N",
+                      "correct": false
+                    },
+                    {
+                      "content": "6° S, 9° E",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle erreur commettent les élèves 1 et 3 ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer la latitude, valeur avec N ou S. 2) Repérer la longitude, valeur avec E ou O. 3) Les élèves 1 et 3 attribuent chaque valeur au mauvais nom.",
+                  "answers": [
+                    {
+                      "content": "Ils confondent la latitude et la longitude",
+                      "correct": true
+                    },
+                    {
+                      "content": "Ils oublient l'échelle",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ils lisent la légende au lieu du titre",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ils confondent nord et sud",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Situation d'exemple : un élève mesure 12 cm entre deux villes sur une carte au 1/1 000 000 et écrit : « La distance est de 12 000 000 km. »",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Convertis les centimètres en kilomètres et vérifie que le résultat est plausible.",
+              "questions": [
+                {
+                  "content": "Quelle est l'erreur de l'élève ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Calculer : $12 \\times 1\\,000\\,000 = 12\\,000\\,000$ cm. 2) Ce résultat est en centimètres. 3) L'élève l'a écrit en kilomètres : il a oublié l'étape de conversion.",
+                  "answers": [
+                    {
+                      "content": "Il a oublié de convertir les centimètres en kilomètres",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il a divisé par le dénominateur",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il a mesuré en mètres",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il a lu l'orientation au lieu de l'échelle",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la bonne distance réelle, en km ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1) Mesurer : 12 cm. 2) Lire l'échelle : 1 cm représente 10 km. 3) Calculer : $12 \\times 1\\,000\\,000 = 12\\,000\\,000$ cm. 4) Convertir : $12\\,000\\,000 \\div 100\\,000 = 120$ km.",
+                  "answers": [
+                    {
+                      "content": "120",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "km"
+                },
+                {
+                  "content": "Une distance de 12 000 000 km est plausible entre deux villes de Côte d'Ivoire.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Vérifier le résultat : le tour de la Terre mesure environ 40 000 km. 2) 12 000 000 km est bien plus grand. 3) Le résultat est absurde, il faut revoir la conversion.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour passer des centimètres aux kilomètres, il faut ___ par 100 000.",
+                  "question_type": "select",
+                  "explanation": "Méthode : 1) Convertir : 1 km = 100 000 cm. 2) Un nombre de centimètres est plus grand que le nombre de kilomètres correspondant. 3) On divise donc par 100 000.",
+                  "answers": [
+                    {
+                      "content": "diviser",
+                      "correct": true
+                    },
+                    {
+                      "content": "multiplier",
+                      "correct": false
+                    },
+                    {
+                      "content": "soustraire",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur une carte au $1/500\\,000$, deux villes sont distantes de 12 cm. Quelle est la distance réelle, en km ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1) Mesurer : 12 cm. 2) Lire l'échelle : 1 cm représente 500 000 cm, soit 5 km. 3) Calculer : $12 \\times 500\\,000 = 6\\,000\\,000$ cm. 4) Convertir : $6\\,000\\,000 \\div 100\\,000 = 60$ km.",
+                  "answers": [
+                    {
+                      "content": "60",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "km"
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Situation d'exemple : trois élèves lisent une carte dont la flèche du nord pointe vers la droite de la feuille. Élève 1 : « Le nord est en haut. » Élève 2 : « Le nord est à droite. » Élève 3 : « L'est est en bas. »",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Fais tourner la carte : le nord suit la flèche.",
+              "questions": [
+                {
+                  "content": "L'élève 1 a raison.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) S'orienter : le nord est donné par la flèche du nord, pas par le haut de la feuille. 2) Elle pointe vers la droite. 3) L'élève 1 a tort.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "L'élève 2 a raison.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) S'orienter : la flèche du nord pointe vers la droite. 2) Le nord est donc à droite de la feuille. 3) L'élève 2 a raison.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'élève 3 a raison.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) S'orienter : quand le nord est à droite, on a tourné la carte d'un quart de tour vers la droite. 2) L'est, qui était à droite, est alors en bas. 3) L'élève 3 a raison.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Où est le sud sur la feuille ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) S'orienter : le nord est à droite. 2) Le sud est à l'opposé du nord. 3) Il est donc à gauche.",
+                  "answers": [
+                    {
+                      "content": "À gauche",
+                      "correct": true
+                    },
+                    {
+                      "content": "À droite",
+                      "correct": false
+                    },
+                    {
+                      "content": "En haut",
+                      "correct": false
+                    },
+                    {
+                      "content": "En bas",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle règle faut-il appliquer avant de décrire une carte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Lire le titre. 2) Lire la légende. 3) S'orienter avec la flèche du nord : le haut de la feuille n'est pas toujours le nord.",
+                  "answers": [
+                    {
+                      "content": "On lit la flèche du nord ou la rose des vents avant de s'orienter",
+                      "correct": true
+                    },
+                    {
+                      "content": "On suppose que le nord est toujours en haut",
+                      "correct": false
+                    },
+                    {
+                      "content": "On lit l'échelle avant le titre",
+                      "correct": false
+                    },
+                    {
+                      "content": "On ignore la légende",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Situation d'exemple : un élève affirme : « Sur mon planisphère, l'Afrique et le Groenland ont presque la même taille, donc leurs surfaces réelles sont presque égales. »",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Une projection déforme, surtout près des pôles.",
+              "questions": [
+                {
+                  "content": "Que répondre à cet élève ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier : un planisphère est obtenu par projection. 2) Expliquer : la projection étire les surfaces près des pôles. 3) Conclure : la taille sur la carte n'est pas la taille réelle.",
+                  "answers": [
+                    {
+                      "content": "Faux : la projection étire les surfaces près des pôles, donc le Groenland est agrandi",
+                      "correct": true
+                    },
+                    {
+                      "content": "Vrai : une carte plane ne déforme jamais les surfaces",
+                      "correct": false
+                    },
+                    {
+                      "content": "Vrai : le Groenland est situé à l'équateur",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux : l'Afrique est plus petite que le Groenland",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une projection peut conserver une chose (les formes, par exemple) en déformant les autres.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Identifier : toute projection déforme. 2) Aucune ne conserve tout à la fois. 3) Une projection peut conserver une chose, comme les formes, au prix d'autres déformations.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux bonnes explications de la déformation d'une carte plane ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Expliquer : la Terre est une sphère, la carte est plane. 2) Passer de l'une à l'autre déforme forcément. 3) Les couleurs et un cube n'expliquent rien.",
+                  "answers": [
+                    {
+                      "content": "On passe d'une sphère à une surface plane",
+                      "correct": true
+                    },
+                    {
+                      "content": "On ne peut pas aplatir une sphère sans l'étirer ou la déchirer",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les cartographes choisissent les couleurs au hasard",
+                      "correct": false
+                    },
+                    {
+                      "content": "La Terre est un cube",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque famille de projection à sa surface.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Repérer la famille d'après son nom. 2) Cylindrique : cylindre. 3) Conique : cône. 4) Azimutale : plan.",
+                  "answers": [
+                    {
+                      "content": "Cylindrique",
+                      "match": "Cylindre"
+                    },
+                    {
+                      "content": "Conique",
+                      "match": "Cône"
+                    },
+                    {
+                      "content": "Azimutale",
+                      "match": "Plan"
+                    }
+                  ]
+                },
+                {
+                  "content": "La projection de ___ est la plus connue des projections cylindriques (un nom).",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Repérer la famille : cylindrique. 2) La plus connue est celle de Mercator, qui date de 1569. 3) Elle étire les surfaces près des pôles.",
+                  "answers": [
+                    {
+                      "content": "Mercator",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 4 · Bilan : représenter la Terre",
+          "notions": "Bilan : coordonnées géographiques, lecture d'une carte, échelle et distance réelle, projections, globe, croquis, photographie aérienne et image satellite.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Situation d'exemple : Yamoussoukro se trouve à environ 7° N et 5° O (valeurs arrondies).",
+              "exercise_type": "evaluation",
+              "figure": "coordonnees-geographiques",
+              "hint": "Latitude depuis l'équateur, longitude depuis Greenwich.",
+              "questions": [
+                {
+                  "content": "Quelle est la latitude de Yamoussoukro ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer la latitude : valeur depuis l'équateur, avec N ou S. 2) Pour Yamoussoukro : 7° N. 3) 5° O est la longitude.",
+                  "answers": [
+                    {
+                      "content": "7° N",
+                      "correct": true
+                    },
+                    {
+                      "content": "5° O",
+                      "correct": false
+                    },
+                    {
+                      "content": "7° O",
+                      "correct": false
+                    },
+                    {
+                      "content": "5° N",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans quel hémisphère se trouve la ville selon sa longitude ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer la longitude : 5° O. 2) La lettre O indique l'ouest. 3) Le nord concerne la latitude, pas la longitude.",
+                  "answers": [
+                    {
+                      "content": "À l'ouest de Greenwich",
+                      "correct": true
+                    },
+                    {
+                      "content": "À l'est de Greenwich",
+                      "correct": false
+                    },
+                    {
+                      "content": "Au nord de l'équateur",
+                      "correct": false
+                    },
+                    {
+                      "content": "Au sud de l'équateur",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une latitude de 7° S placerait la ville dans l'hémisphère Nord.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer la latitude : la lettre S indique le sud. 2) 7° S est au sud de l'équateur. 3) L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "La longitude de Yamoussoukro est 5° ___ (une lettre : E ou O).",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Repérer la longitude : la ville est à l'ouest de Greenwich. 2) La lettre est donc O. 3) On écrit 7° N, 5° O.",
+                  "answers": [
+                    {
+                      "content": "O",
+                      "correct": true
+                    },
+                    {
+                      "content": "Ouest",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour donner des coordonnées géographiques.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Repérer la latitude. 2) Repérer la longitude. 3) Écrire la latitude d'abord, puis la longitude.",
+                  "answers": [
+                    {
+                      "content": "Repérer la latitude"
+                    },
+                    {
+                      "content": "Repérer la longitude"
+                    },
+                    {
+                      "content": "Écrire la latitude puis la longitude avec leurs lettres"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Situation d'exemple : sur la carte du voyage, au 1/2 000 000, Abidjan et Bouaké sont distantes de 14 cm (valeur approchée). Le nord est en haut.",
+              "exercise_type": "evaluation",
+              "figure": "carte-voyage-en-car",
+              "hint": "1 cm représente 20 km sur une carte au 1/2 000 000.",
+              "questions": [
+                {
+                  "content": "Quelle est la distance réelle entre Abidjan et Bouaké, en km ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1) Mesurer : 14 cm. 2) Lire l'échelle : 1 cm représente 20 km. 3) Calculer : $14 \\times 2\\,000\\,000 = 28\\,000\\,000$ cm. 4) Convertir : $28\\,000\\,000 \\div 100\\,000 = 280$ km.",
+                  "answers": [
+                    {
+                      "content": "280",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "km"
+                },
+                {
+                  "content": "Quelle ville est au nord de Bouaké ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) S'orienter : le nord est en haut. 2) Korhogo est au-dessus de Bouaké sur la carte. 3) Abidjan et Yamoussoukro sont au sud.",
+                  "answers": [
+                    {
+                      "content": "Korhogo",
+                      "correct": true
+                    },
+                    {
+                      "content": "Abidjan",
+                      "correct": false
+                    },
+                    {
+                      "content": "Yamoussoukro",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Abidjan est au nord de Yamoussoukro.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) S'orienter : le nord est en haut. 2) Abidjan est en bas de la carte, au sud de Yamoussoukro. 3) L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "La carte au $1/2\\,000\\,000$ a une échelle ___ que celle d'une carte au $1/50\\,000$.",
+                  "question_type": "select",
+                  "explanation": "Méthode : 1) Lire l'échelle : le dénominateur 2 000 000 est plus grand que 50 000. 2) Plus le dénominateur est grand, plus l'échelle est petite. 3) Elle est donc plus petite.",
+                  "answers": [
+                    {
+                      "content": "plus petite",
+                      "correct": true
+                    },
+                    {
+                      "content": "plus grande",
+                      "correct": false
+                    },
+                    {
+                      "content": "identique",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour savoir ce que représente un trait sur la carte, on lit la ___ (un mot).",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Lire le titre pour le sujet. 2) Lire la légende : elle explique chaque trait et chaque couleur. 3) On ne devine pas un signe sans elle.",
+                  "answers": [
+                    {
+                      "content": "légende",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Situation d'exemple : un professeur montre un planisphère de Mercator et un globe à ses élèves.",
+              "exercise_type": "evaluation",
+              "figure": "projections-cartographiques",
+              "hint": "Sphère vers plan : les surfaces sont étirées ou écrasées.",
+              "questions": [
+                {
+                  "content": "Pourquoi le planisphère déforme-t-il la Terre ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier : le planisphère est une carte plane. 2) Expliquer : passer de la sphère au plan déforme. 3) Conclure : la déformation vient de la projection.",
+                  "answers": [
+                    {
+                      "content": "On ne peut pas aplatir une sphère sans la déformer",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il est trop petit",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il est imprimé en couleurs",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il n'a pas de titre",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le globe déforme les surfaces comme le planisphère.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Comparer : le globe est sphérique comme la Terre. 2) Il garde donc les surfaces et les distances. 3) Seule une carte plane déforme.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux familles de projection ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Repérer les familles : cylindrique, conique et azimutale. 2) Cylindrique et conique en font partie. 3) Il n'existe pas de famille sphérique ni rectangulaire.",
+                  "answers": [
+                    {
+                      "content": "La projection cylindrique",
+                      "correct": true
+                    },
+                    {
+                      "content": "La projection conique",
+                      "correct": true
+                    },
+                    {
+                      "content": "La projection sphérique",
+                      "correct": false
+                    },
+                    {
+                      "content": "La projection rectangulaire",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque mot à sa définition.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Identifier chaque document. 2) Relever ce qui le définit. 3) Associer chaque mot à sa définition.",
+                  "answers": [
+                    {
+                      "content": "Planisphère",
+                      "match": "Carte plane de toute la Terre"
+                    },
+                    {
+                      "content": "Globe",
+                      "match": "Maquette sphérique de la Terre"
+                    },
+                    {
+                      "content": "Projection",
+                      "match": "Passage de la sphère à une surface plane"
+                    }
+                  ]
+                },
+                {
+                  "content": "Le Groenland paraît presque aussi grand que l'Afrique sur le planisphère de Mercator, parce que :",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier la projection de Mercator. 2) Repérer : les déformations sont fortes près des pôles. 3) Expliquer l'étirement. 4) Conclure : la taille réelle de l'Afrique est bien plus grande.",
+                  "answers": [
+                    {
+                      "content": "la projection étire les surfaces près des pôles",
+                      "correct": true
+                    },
+                    {
+                      "content": "le Groenland est à l'équateur",
+                      "correct": false
+                    },
+                    {
+                      "content": "l'échelle est de 1/1",
+                      "correct": false
+                    },
+                    {
+                      "content": "le globe est faux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Situation d'exemple : pour un exposé sur Abidjan, Awa dispose d'une image satellite, d'une photographie aérienne du port, d'un croquis du trajet du car et d'un globe.",
+              "exercise_type": "evaluation",
+              "figure": "representations-de-la-terre",
+              "hint": "Quel espace montrer, avec quel niveau de détail ?",
+              "questions": [
+                {
+                  "content": "Quel document montre le plus de détails sur le port ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier les documents. 2) Relever : la photographie aérienne montre un espace réduit avec précision. 3) Conclure : c'est elle qui convient pour le port.",
+                  "answers": [
+                    {
+                      "content": "La photographie aérienne du port",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'image satellite de la Côte d'Ivoire",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le globe",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le croquis du trajet du car",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel document est un dessin schématique ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier : le croquis est dessiné à la main et garde l'essentiel. 2) Les autres sont des images prises par un engin, ou une maquette.",
+                  "answers": [
+                    {
+                      "content": "Le croquis",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'image satellite",
+                      "correct": false
+                    },
+                    {
+                      "content": "La photographie aérienne",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le globe",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'image satellite est prise depuis un avion.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Identifier : l'image satellite est prise par un satellite qui tourne autour de la Terre. 2) La photographie prise d'un avion est une photographie aérienne.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Une photographie aérienne est au $1/20\\,000$. Deux bâtiments sont distants de 3 cm sur la photographie. Quelle est la distance réelle, en m ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1) Mesurer : 3 cm. 2) Lire l'échelle : 1 cm représente 20 000 cm. 3) Calculer : $3 \\times 20\\,000 = 60\\,000$ cm. 4) Convertir : $60\\,000 \\div 100 = 600$ m.",
+                  "answers": [
+                    {
+                      "content": "600",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "m"
+                },
+                {
+                  "content": "Quels sont deux documents qui montrent la réalité telle qu'elle est ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Comparer : la photographie aérienne et l'image satellite ne simplifient pas le réel. 2) Le croquis et la carte sont simplifiés. 3) Conclure : la photographie aérienne et l'image satellite.",
+                  "answers": [
+                    {
+                      "content": "La photographie aérienne",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'image satellite",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le croquis",
+                      "correct": false
+                    },
+                    {
+                      "content": "La carte",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

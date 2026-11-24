@@ -1,0 +1,3810 @@
+{
+  "format": "lnclass.course-tree",
+  "version": 3,
+  "courses": [
+    {
+      "name": "Histoire — La civilisation de l'Egypte ancienne",
+      "subtitle": "Leçon 8 — progression DPFC 2026-2027",
+      "level_name": "2nde",
+      "material_name": "Histoire-Géographie",
+      "theme": "burgundy",
+      "figures": [
+        {
+          "key": "carte-egypte",
+          "kind": "map",
+          "description": "Une carte de l'Afrique. L'Égypte, au nord-est du continent, est teintée : c'est le pays du Nil, qui la traverse du sud au nord jusqu'à la mer Méditerranée. Trois villes sont repérées : Le Caire, Alexandrie et Suez. La Côte d'Ivoire est teintée autrement, comme repère de comparaison.",
+          "params": {
+            "base": "africa",
+            "areas": [
+              {
+                "id": "egy",
+                "category": 1
+              },
+              {
+                "id": "civ",
+                "category": 2
+              }
+            ],
+            "places": [
+              {
+                "id": "cairo",
+                "label": "Le Caire"
+              },
+              {
+                "id": "alexandria",
+                "label": "Alexandrie"
+              },
+              {
+                "id": "suez",
+                "label": "Suez"
+              }
+            ],
+            "legend": [
+              "Égypte (pays du Nil)",
+              "Côte d'Ivoire (repère)"
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "saisons-du-nil",
+          "kind": "diagram",
+          "description": "Un cycle de trois saisons de quatre mois, qui se répètent chaque année au rythme du Nil : Akhet, l'inondation (la crue recouvre les champs), Peret, la saison des semailles (la terre est humide, on sème), puis Chemou, la saison des récoltes (on moissonne et on stocke le grain).",
+          "params": {
+            "layout": "cycle",
+            "direction": "down",
+            "nodes": [
+              {
+                "id": "ak",
+                "label": "Akhet : inondation"
+              },
+              {
+                "id": "pe",
+                "label": "Peret : semailles"
+              },
+              {
+                "id": "ch",
+                "label": "Chemou : récoltes"
+              }
+            ],
+            "edges": [
+              {
+                "from": "ak",
+                "to": "pe"
+              },
+              {
+                "from": "pe",
+                "to": "ch"
+              },
+              {
+                "from": "ch",
+                "to": "ak"
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "frise-egypte",
+          "kind": "timeline",
+          "description": "Une frise chronologique de 3 000 à 300 ans avant J.-C. Trois périodes sont colorées : l'Ancien Empire (vers 2700 à 2200), le Moyen Empire (vers 2050 à 1750) et le Nouvel Empire (vers 1550 à 1070). Quatre repères : l'unification vers 3000, les pyramides de Gizeh vers 2600, Ramsès II au XIIIe siècle vers 1250, la conquête d'Alexandre le Grand en 332.",
+          "params": {
+            "start": -3000,
+            "end": -300,
+            "step": 300,
+            "periods": [
+              {
+                "from": -2700,
+                "to": -2200,
+                "label": "Ancien Empire"
+              },
+              {
+                "from": -2050,
+                "to": -1750,
+                "label": "Moyen Empire"
+              },
+              {
+                "from": -1550,
+                "to": -1070,
+                "label": "Nouvel Empire"
+              }
+            ],
+            "events": [
+              {
+                "at": -3000,
+                "label": "Unification"
+              },
+              {
+                "at": -2600,
+                "label": "Pyramides de Gizeh"
+              },
+              {
+                "at": -1250,
+                "label": "Ramsès II"
+              },
+              {
+                "at": -332,
+                "label": "Alexandre le Grand"
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "organisation-egypte",
+          "kind": "diagram",
+          "description": "Un schéma en arbre de l'organisation de l'Égypte : au sommet le pharaon, qui commande le vizir et les prêtres. Le vizir dirige les scribes et les nomarques, chefs des nomes (les provinces). Les nomarques encadrent les paysans et les artisans, la grande majorité de la population.",
+          "params": {
+            "layout": "tree",
+            "direction": "down",
+            "nodes": [
+              {
+                "id": "ph",
+                "label": "Pharaon",
+                "category": 1
+              },
+              {
+                "id": "vi",
+                "label": "Vizir",
+                "category": 1
+              },
+              {
+                "id": "pr",
+                "label": "Prêtres",
+                "category": 2
+              },
+              {
+                "id": "sc",
+                "label": "Scribes",
+                "category": 2
+              },
+              {
+                "id": "no",
+                "label": "Nomarques (chefs de nomes)",
+                "category": 1
+              },
+              {
+                "id": "pa",
+                "label": "Paysans et artisans",
+                "category": 3
+              }
+            ],
+            "edges": [
+              {
+                "from": "ph",
+                "to": "vi"
+              },
+              {
+                "from": "ph",
+                "to": "pr"
+              },
+              {
+                "from": "vi",
+                "to": "sc"
+              },
+              {
+                "from": "vi",
+                "to": "no"
+              },
+              {
+                "from": "no",
+                "to": "pa"
+              }
+            ],
+            "legend": [
+              "Pouvoir et administration",
+              "Prêtres et scribes (savoir)",
+              "Population"
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "vers-la-vie-apres-la-mort",
+          "kind": "diagram",
+          "description": "Un schéma en cinq étapes, de haut en bas, qui suit la croyance des Égyptiens : la mort, la momification du corps, le tombeau garni d'offrandes (pyramide ou tombe de la Vallée des Rois), la pesée du cœur devant Osiris, puis la vie éternelle.",
+          "params": {
+            "layout": "flow",
+            "direction": "down",
+            "nodes": [
+              {
+                "id": "mo",
+                "label": "Mort"
+              },
+              {
+                "id": "mm",
+                "label": "Momification du corps"
+              },
+              {
+                "id": "to",
+                "label": "Tombeau et offrandes"
+              },
+              {
+                "id": "pe",
+                "label": "Pesée du cœur devant Osiris"
+              },
+              {
+                "id": "vi",
+                "label": "Vie éternelle"
+              }
+            ],
+            "edges": [
+              {
+                "from": "mo",
+                "to": "mm"
+              },
+              {
+                "from": "mm",
+                "to": "to"
+              },
+              {
+                "from": "to",
+                "to": "pe"
+              },
+              {
+                "from": "pe",
+                "to": "vi"
+              }
+            ]
+          },
+          "controls": []
+        }
+      ],
+      "notions": [
+        {
+          "name": "Le Nil, la crue et l'agriculture",
+          "remember": "L'**Égypte** est un pays du nord-est de l'Afrique, entouré de déserts (le désert Libyque à l'ouest, le désert Arabique à l'est). Le **Nil** la traverse du sud au nord et se jette dans la mer Méditerranée. Au sud, une **vallée** étroite (la Haute-Égypte) ; au nord, un **delta** en éventail (la Basse-Égypte).\n\nChaque été, le Nil déborde : c'est la **crue**. Les eaux se retirent en laissant le **limon**, une boue très fertile. L'année suit trois saisons : **Akhet** (inondation), **Peret** (semailles) et **Chemou** (récoltes). Les paysans cultivent surtout le blé et l'orge, mais aussi le lin et le papyrus.\n\nL'historien grec **Hérodote** (Ve siècle av. J.-C.) a résumé cette réalité : « l'Égypte est un **don du Nil** ».",
+          "method": [
+            "Situer l'Égypte, le Nil et le désert sur la carte.",
+            "Décrire le rythme du fleuve : crue, retrait des eaux, dépôt de limon.",
+            "Relier la crue aux travaux des champs : inondation, semailles, récoltes.",
+            "Conclure sur le rôle du Nil pour la population : sans lui, le désert ; avec lui, des récoltes."
+          ],
+          "example": {
+            "statement": "Pour un exposé en classe, un élève doit expliquer la phrase d'Hérodote : « l'Égypte est un don du Nil ». Comment procède-t-il ?",
+            "steps": [
+              "Situer : l'Égypte est au nord-est de l'Afrique, dans un désert ; le Nil la traverse du sud au nord jusqu'à la Méditerranée, avec une vallée au sud et un delta au nord.",
+              "Décrire : chaque été, la crue fait monter les eaux ; en se retirant, elles laissent le limon, une boue fertile.",
+              "Relier : la crue donne son rythme aux travaux : Akhet (inondation), puis Peret (semailles), puis Chemou (récoltes).",
+              "Conclure : sans le Nil il n'y aurait que du désert ; grâce à lui, les paysans récoltent assez de blé et d'orge pour nourrir le pays. C'est bien un « don du Nil »."
+            ]
+          },
+          "pitfall": "Ne crois pas que la crue vient de la pluie qui tombe en Égypte : il y pleut très peu. Les eaux viennent de pluies tombées loin en amont, au sud, et le fleuve les apporte. Contre-exemple : un champ situé à quelques kilomètres du fleuve, au-delà de la zone inondée, reste du désert. La fertilité s'arrête là où l'eau de la crue n'arrive plus.",
+          "figure": "saisons-du-nil",
+          "practice": {
+            "statement": "Tu t'entraînes à situer, décrire, relier et conclure pour expliquer le rôle du Nil.",
+            "questions": [
+              {
+                "content": "Comment s'appelle la boue fertile que la crue dépose sur les champs ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 2 — Décrire le rythme du fleuve : la crue déborde, puis les eaux se retirent et laissent le limon, une boue fertile. Le sable est celui du désert ; le papyrus est une plante.",
+                "answers": [
+                  {
+                    "content": "Le limon",
+                    "correct": true
+                  },
+                  {
+                    "content": "Le sable",
+                    "correct": false
+                  },
+                  {
+                    "content": "Le natron",
+                    "correct": false
+                  },
+                  {
+                    "content": "Le papyrus",
+                    "correct": false
+                  }
+                ],
+                "hint": "Quel mot désigne le dépôt laissé par les eaux ?"
+              },
+              {
+                "content": "Relie chaque saison égyptienne à ce qu'on y fait.",
+                "question_type": "matching",
+                "explanation": "Étape 3 — Relier la crue aux travaux des champs : Akhet, l'inondation ; Peret, les semailles ; Chemou, les récoltes. Les travaux suivent l'ordre du Nil.",
+                "answers": [
+                  {
+                    "content": "Akhet",
+                    "match": "Le Nil inonde les champs"
+                  },
+                  {
+                    "content": "Peret",
+                    "match": "On sème dans la terre humide"
+                  },
+                  {
+                    "content": "Chemou",
+                    "match": "On récolte et on stocke le grain"
+                  }
+                ],
+                "hint": "Les semailles viennent après le retrait des eaux."
+              },
+              {
+                "content": "Le Nil coule du nord vers le sud.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Situer le Nil : il traverse l'Égypte du sud vers le nord et se jette dans la mer Méditerranée. Le delta, au nord, est donc son embouchure.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Où se trouve le delta : au nord ou au sud ?"
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Situer le Nil et décrire la crue",
+              "statement": "Dans cet exercice, tu appliques la méthode de la fiche (situer, décrire, relier, conclure) pour comprendre le rôle du Nil en Égypte (voir la carte).",
+              "exercise_type": "fixation",
+              "figure": "carte-egypte",
+              "hint": null,
+              "questions": [
+                {
+                  "content": "Dans quelle mer le Nil se jette-t-il ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Situer le Nil : il coule du sud vers le nord et se jette dans la mer Méditerranée. La mer Rouge borde l'Égypte à l'est, mais le Nil ne s'y jette pas.",
+                  "answers": [
+                    {
+                      "content": "La mer Méditerranée",
+                      "correct": true
+                    },
+                    {
+                      "content": "La mer Rouge",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'océan Atlantique",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'océan Indien",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Complète : au nord, le Nil se divise en plusieurs bras et forme un ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Situer : le Nil forme une vallée étroite au sud, puis un delta en éventail au nord, près de la Méditerranée.",
+                  "answers": [
+                    {
+                      "content": "delta",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Où se trouve la Haute-Égypte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Situer : le Nil coule du sud au nord. La Haute-Égypte est en amont, donc au sud ; la Basse-Égypte est le delta, au nord. « Haute » veut dire en amont, vers la source du fleuve, et non en haut de la carte.",
+                  "answers": [
+                    {
+                      "content": "Au sud, le long de la vallée étroite",
+                      "correct": true
+                    },
+                    {
+                      "content": "Au nord, dans le delta",
+                      "correct": false
+                    },
+                    {
+                      "content": "À l'ouest, dans le désert Libyque",
+                      "correct": false
+                    },
+                    {
+                      "content": "Sur les bords de la mer Méditerranée",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux conséquences de la crue pour les paysans ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 2 — Décrire : la crue arrose les champs puis laisse le limon, qui fertilise le sol. Étape 4 — Conclure : le désert reste tout autour, le Nil ne change pas de sens.",
+                  "answers": [
+                    {
+                      "content": "Les champs sont arrosés",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le limon rend la terre fertile",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le désert disparaît de l'Égypte",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le Nil change de sens",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "En Égypte, la crue vient des fortes pluies qui tombent sur les champs égyptiens.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Décrire : il pleut très peu en Égypte. La crue vient de pluies tombées loin en amont, au sud, que le Nil apporte. C'est le piège de la fiche.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Une affiche au CDI : le Nil et le calendrier des paysans",
+              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche (situer, décrire, relier, conclure) à une affiche sur le Nil exposée au CDI du lycée (situation imaginée).",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Pense à la crue, aux semailles puis aux récoltes.",
+              "questions": [
+                {
+                  "content": "Remets les trois saisons dans l'ordre de l'année égyptienne.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 3 — Relier la crue aux travaux : d'abord le Nil inonde les champs (Akhet), puis on sème dans la terre humide (Peret), enfin on récolte (Chemou).",
+                  "answers": [
+                    {
+                      "content": "Akhet : l'inondation"
+                    },
+                    {
+                      "content": "Peret : les semailles"
+                    },
+                    {
+                      "content": "Chemou : les récoltes"
+                    }
+                  ]
+                },
+                {
+                  "content": "Qui a écrit que « l'Égypte est un don du Nil » ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Conclure : la formule « don du Nil » est celle d'Hérodote, historien grec du Ve siècle av. J.-C. Champollion a déchiffré les hiéroglyphes ; Ramsès II était pharaon ; Osiris est un dieu.",
+                  "answers": [
+                    {
+                      "content": "Hérodote, un historien grec",
+                      "correct": true
+                    },
+                    {
+                      "content": "Champollion, un savant français",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ramsès II, un pharaon",
+                      "correct": false
+                    },
+                    {
+                      "content": "Osiris, un dieu égyptien",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La boue fertile laissée par la crue s'appelle le ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Décrire : en se retirant, les eaux laissent le limon, qui rend la terre fertile.",
+                  "answers": [
+                    {
+                      "content": "limon",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque région à sa position.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Situer sur la carte : la vallée est au sud (Haute-Égypte), le delta au nord (Basse-Égypte), et le désert borde la vallée à l'est et à l'ouest.",
+                  "answers": [
+                    {
+                      "content": "La Haute-Égypte",
+                      "match": "Au sud, la vallée"
+                    },
+                    {
+                      "content": "La Basse-Égypte",
+                      "match": "Au nord, le delta"
+                    },
+                    {
+                      "content": "Le désert",
+                      "match": "De chaque côté de la vallée"
+                    }
+                  ]
+                },
+                {
+                  "content": "Un champ éloigné du fleuve, que la crue n'atteint pas, reste désertique.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 4 — Conclure : la vie et les cultures existent là où l'eau du Nil arrive. Au-delà de la zone inondée, c'est le désert, comme le montre le piège de la fiche.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une année égyptienne compte 3 saisons de 4 mois chacune. Combien de mois compte-t-elle ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 3 — Relier au calendrier : Akhet, Peret et Chemou durent chacune 4 mois. Calcul : 3 × 4 = 12 mois.",
+                  "answers": [
+                    {
+                      "content": "12",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mois"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Les grandes périodes de l'Égypte pharaonique",
+          "remember": "Vers **3 000 av. J.-C.**, la Haute-Égypte et la Basse-Égypte sont réunies sous l'autorité d'un seul roi : c'est l'**unification** de l'Égypte. Le roi est appelé **pharaon**.\n\nOn découpe l'histoire pharaonique en trois grandes périodes (dates arrondies) :\n**Ancien Empire** (vers 2700 à 2200 av. J.-C.) : capitale Memphis, construction des pyramides de Gizeh.\n**Moyen Empire** (vers 2050 à 1750 av. J.-C.) : le pays est réunifié après une période de troubles.\n**Nouvel Empire** (vers 1550 à 1070 av. J.-C.) : l'Égypte est très puissante ; règne de Ramsès II au XIIIe siècle av. J.-C.\n\nEntre ces empires, il y a des périodes de troubles. La civilisation pharaonique prend fin avec la conquête d'**Alexandre le Grand**, en 332 av. J.-C.",
+          "method": [
+            "Repérer la date ou l'événement donné dans le document.",
+            "Ranger la date : avant J.-C., plus le nombre est grand, plus la date est ancienne.",
+            "Nommer l'empire dont les dates encadrent celle du document.",
+            "Ordonner l'empire par rapport aux autres repères de la frise."
+          ],
+          "example": {
+            "statement": "Sur la frise affichée au CDI, une étiquette dit : « Les pyramides de Gizeh sont construites vers 2 600 av. J.-C. ». À quelle période appartient cet événement ?",
+            "steps": [
+              "Repérer : la date donnée est 2 600 av. J.-C. et l'événement est la construction des pyramides de Gizeh.",
+              "Ranger : on compte à rebours avant J.-C. ; 2 600 est plus grand que 2 050 ou 1 550, donc cette date est plus ancienne.",
+              "Nommer : 2 600 est compris entre 2 700 et 2 200 av. J.-C. : c'est l'Ancien Empire.",
+              "Ordonner : l'Ancien Empire vient après l'unification (vers 3 000) et avant le Moyen Empire (vers 2 050), puis le Nouvel Empire."
+            ]
+          },
+          "pitfall": "Ne lis pas les dates avant J.-C. comme des dates normales : plus le nombre est grand, plus c'est ancien. Contre-exemple : 2 600 av. J.-C. (pyramides de Gizeh) est bien plus ancien que 1 250 av. J.-C. (Ramsès II), même si 2 600 est plus grand que 1 250. Compte à rebours jusqu'à la naissance de Jésus-Christ.",
+          "figure": "frise-egypte",
+          "practice": {
+            "statement": "Tu t'entraînes à repérer, ranger, nommer et ordonner pour situer un événement sur la frise.",
+            "questions": [
+              {
+                "content": "Vers quelle date l'Égypte est-elle unifiée ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Repérer la date donnée par la fiche : l'unification date d'environ 3 000 av. J.-C. L'année 332 av. J.-C. est celle de la conquête d'Alexandre le Grand.",
+                "answers": [
+                  {
+                    "content": "Vers 3 000 av. J.-C.",
+                    "correct": true
+                  },
+                  {
+                    "content": "Vers 1 000 av. J.-C.",
+                    "correct": false
+                  },
+                  {
+                    "content": "En 332 av. J.-C.",
+                    "correct": false
+                  },
+                  {
+                    "content": "Vers 2 000 après J.-C.",
+                    "correct": false
+                  }
+                ],
+                "hint": "Quelle est la date la plus ancienne de la frise ?"
+              },
+              {
+                "content": "Relie chaque événement à son empire.",
+                "question_type": "matching",
+                "explanation": "Étape 3 — Nommer l'empire : Gizeh vers 2 600 av. J.-C., Ancien Empire ; le pays réunifié vers 2 050, Moyen Empire ; Ramsès II au XIIIe siècle av. J.-C., Nouvel Empire.",
+                "answers": [
+                  {
+                    "content": "Les pyramides de Gizeh",
+                    "match": "Ancien Empire"
+                  },
+                  {
+                    "content": "Le retour de l'unité après les troubles",
+                    "match": "Moyen Empire"
+                  },
+                  {
+                    "content": "Le règne de Ramsès II",
+                    "match": "Nouvel Empire"
+                  }
+                ],
+                "hint": "Compare chaque date aux dates des empires."
+              },
+              {
+                "content": "Remets ces trois empires dans l'ordre chronologique.",
+                "question_type": "ordering",
+                "explanation": "Étape 4 — Ordonner : Ancien Empire (vers 2700 à 2200), puis Moyen Empire (vers 2050 à 1750), puis Nouvel Empire (vers 1550 à 1070).",
+                "answers": [
+                  {
+                    "content": "Ancien Empire"
+                  },
+                  {
+                    "content": "Moyen Empire"
+                  },
+                  {
+                    "content": "Nouvel Empire"
+                  }
+                ]
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Repérer et ranger les dates de l'Égypte pharaonique",
+              "statement": "Dans cet exercice, tu appliques la méthode de la fiche (repérer, ranger, nommer, ordonner) à des dates de l'histoire de l'Égypte.",
+              "exercise_type": "fixation",
+              "figure": "frise-egypte",
+              "hint": null,
+              "questions": [
+                {
+                  "content": "Quel est le nom du roi d'Égypte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer le vocabulaire : le roi d'Égypte s'appelle le pharaon. Le vizir, le scribe et le nomarque sont des personnes qui le servent.",
+                  "answers": [
+                    {
+                      "content": "Le pharaon",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le vizir",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le scribe",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le nomarque",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une date de 2 600 av. J.-C. est plus ancienne qu'une date de 1 250 av. J.-C.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Ranger : avant J.-C., on compte à rebours ; 2 600 av. J.-C. est plus loin dans le passé que 1 250 av. J.-C. Le grand nombre est la date la plus ancienne.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Complète : l'Ancien Empire, le Moyen Empire et le ___ Empire sont les trois grandes périodes.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 4 — Ordonner : l'ordre est Ancien, Moyen, puis Nouvel Empire. Le Nouvel Empire est le plus récent.",
+                  "answers": [
+                    {
+                      "content": "Nouvel",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Une date de 2 000 av. J.-C. appartient à quelle période ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Nommer : 2 000 est compris entre 2 050 et 1 750 av. J.-C. C'est le Moyen Empire. L'Ancien Empire se termine vers 2 200 ; le Nouvel Empire commence vers 1 550.",
+                  "answers": [
+                    {
+                      "content": "Le Moyen Empire (vers 2050 à 1750)",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'Ancien Empire (vers 2700 à 2200)",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le Nouvel Empire (vers 1550 à 1070)",
+                      "correct": false
+                    },
+                    {
+                      "content": "La conquête d'Alexandre le Grand",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La civilisation pharaonique commence avec l'invention de l'écriture en 332 av. J.-C.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer : 332 av. J.-C. est la date de la conquête d'Alexandre le Grand, qui met fin à la civilisation pharaonique. Elle commence avec l'unification, vers 3 000 av. J.-C.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Une frise au CDI : classer les repères de l'Égypte",
+              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche (repérer, ranger, nommer, ordonner) à une frise préparée par le club d'histoire pour le CDI (situation imaginée).",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Aide-toi de la frise et compte à rebours.",
+              "questions": [
+                {
+                  "content": "Remets ces repères dans l'ordre chronologique.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 4 — Ordonner : unification (vers 3 000), pyramides de Gizeh (vers 2 600), Ramsès II (XIIIe siècle), Alexandre le Grand (332 av. J.-C.). Étape 2 — Ranger : plus le nombre est grand, plus la date est ancienne.",
+                  "answers": [
+                    {
+                      "content": "Unification de l'Égypte"
+                    },
+                    {
+                      "content": "Pyramides de Gizeh"
+                    },
+                    {
+                      "content": "Règne de Ramsès II"
+                    },
+                    {
+                      "content": "Conquête d'Alexandre le Grand"
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque période à ses dates arrondies.",
+                  "question_type": "matching",
+                  "explanation": "Étape 3 — Nommer l'empire d'après ses dates : Ancien Empire, vers 2700 à 2200 ; Moyen Empire, vers 2050 à 1750 ; Nouvel Empire, vers 1550 à 1070.",
+                  "answers": [
+                    {
+                      "content": "Ancien Empire",
+                      "match": "Vers 2700 à 2200 av. J.-C."
+                    },
+                    {
+                      "content": "Moyen Empire",
+                      "match": "Vers 2050 à 1750 av. J.-C."
+                    },
+                    {
+                      "content": "Nouvel Empire",
+                      "match": "Vers 1550 à 1070 av. J.-C."
+                    }
+                  ]
+                },
+                {
+                  "content": "Vers 1 250 av. J.-C., Ramsès II règne. Dans quel empire est-on ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Nommer : 1 250 est compris entre 1 550 et 1 070 av. J.-C. C'est le Nouvel Empire. Le Moyen Empire s'arrête vers 1 750.",
+                  "answers": [
+                    {
+                      "content": "Le Nouvel Empire",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'Ancien Empire",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le Moyen Empire",
+                      "correct": false
+                    },
+                    {
+                      "content": "Après la conquête d'Alexandre le Grand",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la ville capitale de l'Ancien Empire ? Réponds par son nom : ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Repérer dans la fiche : la capitale de l'Ancien Empire est Memphis, près des pyramides de Gizeh.",
+                  "answers": [
+                    {
+                      "content": "Memphis",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Les pyramides de Gizeh datent de vers 2 600 av. J.-C. Combien d'années les séparent de Ramsès II, vers 1 250 av. J.-C. ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 2 — Ranger : 2 600 est plus ancien que 1 250. Calcul : 2 600 − 1 250 = 1 350 ans.",
+                  "answers": [
+                    {
+                      "content": "1350",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "ans"
+                },
+                {
+                  "content": "Entre deux empires, l'Égypte connaît parfois des périodes de troubles.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 4 — Ordonner : sur la frise, les trois empires sont séparés par des périodes de troubles où le pouvoir est affaibli, avant la réunification.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Le pouvoir du pharaon et la société égyptienne",
+          "remember": "Le **pharaon** est le roi de l'Égypte. Il est considéré comme un dieu vivant, le lien entre les dieux et les hommes. Il commande l'armée et veille à la justice et aux récoltes.\n\nIl ne gouverne pas seul. Le **vizir** est son principal ministre : il dirige l'administration et la justice. Les **scribes** savent écrire et compter : ils notent les récoltes et calculent les impôts, payés surtout en grain. Le pays est divisé en provinces, les **nomes**, dirigées par des **nomarques**.\n\nLa société est une pyramide : au sommet le pharaon et sa famille, puis les hauts fonctionnaires, les prêtres et les scribes, ensuite les artisans et les soldats, et en bas les **paysans**, la grande majorité de la population.",
+          "method": [
+            "Identifier le personnage ou le groupe nommé dans le document.",
+            "Situer son rang dans la société, du pharaon aux paysans.",
+            "Décrire son rôle : ce qu'il fait pour le pays.",
+            "Relier ce rôle au pharaon ou à l'économie du grain et des impôts."
+          ],
+          "example": {
+            "statement": "Lors de la visite de l'exposition du club d'histoire, un panneau montre un homme assis qui note sur un papyrus les sacs de grain apportés par un village. Que représente-t-il ?",
+            "steps": [
+              "Identifier : l'homme est assis, écrit sur un papyrus et compte les sacs de grain : c'est un scribe.",
+              "Situer : le scribe est un lettré, au-dessus des paysans et des artisans, mais sous le vizir et le pharaon.",
+              "Décrire : il note les récoltes et calcule les impôts que doit chaque paysan.",
+              "Relier : grâce à lui, le vizir et le pharaon savent quel grain est stocké et peuvent nourrir le pays : le scribe sert le pouvoir et l'économie."
+            ]
+          },
+          "pitfall": "Ne crois pas que le pharaon gouverne seul. Contre-exemple : pour compter les récoltes de milliers de villages le long du Nil, il faut un vizir, des nomarques dans chaque nome et des scribes pour écrire. Le pharaon décide, mais ses fonctionnaires font fonctionner le pays. Autre confusion à éviter : le vizir est un ministre, pas un roi.",
+          "figure": "organisation-egypte",
+          "practice": {
+            "statement": "Tu t'entraînes à identifier, situer, décrire et relier pour comprendre l'organisation de l'Égypte.",
+            "questions": [
+              {
+                "content": "Quel personnage est le principal ministre du pharaon ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Identifier : le principal ministre du pharaon est le vizir. Le nomarque dirige seulement un nome, et le scribe note et compte.",
+                "answers": [
+                  {
+                    "content": "Le vizir",
+                    "correct": true
+                  },
+                  {
+                    "content": "Le scribe",
+                    "correct": false
+                  },
+                  {
+                    "content": "Le nomarque",
+                    "correct": false
+                  },
+                  {
+                    "content": "L'artisan",
+                    "correct": false
+                  }
+                ],
+                "hint": "Il dirige l'administration et la justice."
+              },
+              {
+                "content": "Relie chaque personnage à son rôle.",
+                "question_type": "matching",
+                "explanation": "Étape 3 — Décrire le rôle : le pharaon règne, le scribe écrit et compte, le nomarque dirige une province (un nome).",
+                "answers": [
+                  {
+                    "content": "Le pharaon",
+                    "match": "Roi, dieu vivant"
+                  },
+                  {
+                    "content": "Le scribe",
+                    "match": "Écrit et compte les récoltes"
+                  },
+                  {
+                    "content": "Le nomarque",
+                    "match": "Dirige un nome"
+                  }
+                ],
+                "hint": "Un nome est une province."
+              },
+              {
+                "content": "Les paysans forment la plus petite partie de la population.",
+                "question_type": "true_false",
+                "explanation": "Étape 2 — Situer le rang : les paysans sont en bas de la société, mais ils sont la grande majorité de la population.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Pense à ceux qui travaillent dans les champs."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Identifier les rôles dans l'État égyptien",
+              "statement": "Dans cet exercice, tu appliques la méthode de la fiche (identifier, situer, décrire, relier) à l'organisation de l'Égypte pharaonique.",
+              "exercise_type": "fixation",
+              "figure": "organisation-egypte",
+              "hint": null,
+              "questions": [
+                {
+                  "content": "Comment appelle-t-on une province de l'Égypte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : le pays est divisé en provinces appelées nomes, dirigées par des nomarques. Le delta est une région du Nil ; l'empire est une période.",
+                  "answers": [
+                    {
+                      "content": "Un nome",
+                      "correct": true
+                    },
+                    {
+                      "content": "Un delta",
+                      "correct": false
+                    },
+                    {
+                      "content": "Un empire",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une crue",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Complète : l'homme qui sait écrire et compter, et note les récoltes, est le ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 3 — Décrire le rôle : le scribe écrit sur papyrus et compte les récoltes et les impôts.",
+                  "answers": [
+                    {
+                      "content": "scribe",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Qui forme la grande majorité de la population égyptienne ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 2 — Situer : les paysans sont en bas de la pyramide sociale, mais ils sont les plus nombreux. Prêtres, scribes et vizirs sont peu nombreux.",
+                  "answers": [
+                    {
+                      "content": "Les paysans",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les prêtres",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les scribes",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les vizirs",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels sont deux rôles du pharaon ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 3 — Décrire : le pharaon commande l'armée et il est le lien entre les dieux et les hommes. Étape 4 — Relier : les scribes écrivent et les paysans cultivent, pas lui.",
+                  "answers": [
+                    {
+                      "content": "Commander l'armée",
+                      "correct": true
+                    },
+                    {
+                      "content": "Être le lien entre les dieux et les hommes",
+                      "correct": true
+                    },
+                    {
+                      "content": "Écrire tous les textes lui-même",
+                      "correct": false
+                    },
+                    {
+                      "content": "Cultiver les champs du pays",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le pharaon gouverne seul, sans vizir ni scribes.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 4 — Relier : le pharaon décide, mais le vizir dirige l'administration et la justice, et les scribes notent récoltes et impôts. C'est le piège de la fiche.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Une visite d'exposition : qui fait quoi ?",
+              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche (identifier, situer, décrire, relier) à des panneaux d'une exposition du club d'histoire (situation imaginée).",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Regarde ce que fait chaque personnage.",
+              "questions": [
+                {
+                  "content": "Relie chaque panneau au personnage qu'il représente.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Identifier d'après l'indice : écrire, le scribe ; rendre la justice au nom du roi, le vizir ; roi couronné et dieu vivant, le pharaon.",
+                  "answers": [
+                    {
+                      "content": "Un homme écrit sur un papyrus",
+                      "match": "Un scribe"
+                    },
+                    {
+                      "content": "Un homme rend la justice au nom du roi",
+                      "match": "Le vizir"
+                    },
+                    {
+                      "content": "Un roi couronné, dieu vivant",
+                      "match": "Le pharaon"
+                    }
+                  ]
+                },
+                {
+                  "content": "Range ces groupes du plus haut au plus bas de la société.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 2 — Situer le rang : le pharaon est au sommet, puis les hauts fonctionnaires, ensuite les artisans, et en bas les paysans, les plus nombreux.",
+                  "answers": [
+                    {
+                      "content": "Le pharaon"
+                    },
+                    {
+                      "content": "Le vizir et les hauts fonctionnaires"
+                    },
+                    {
+                      "content": "Les artisans"
+                    },
+                    {
+                      "content": "Les paysans"
+                    }
+                  ]
+                },
+                {
+                  "content": "Pourquoi les scribes sont-ils indispensables au pouvoir ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Relier au pouvoir et à l'économie : sans scribes, pas de comptes de récoltes ni d'impôts en grain. Commander l'armée est le rôle du pharaon ; diriger une province, celui du nomarque.",
+                  "answers": [
+                    {
+                      "content": "Ils notent les récoltes et calculent les impôts",
+                      "correct": true
+                    },
+                    {
+                      "content": "Ils commandent l'armée du pharaon",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ils soignent les paysans malades",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ils dirigent les provinces",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Complète : un nome est dirigé par un ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 3 — Décrire le rôle : le nomarque dirige un nome, c'est-à-dire une province, au nom du pharaon.",
+                  "answers": [
+                    {
+                      "content": "nomarque",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Les impôts sont payés surtout en pièces de monnaie.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 4 — Relier : les impôts sont payés surtout en grain, que les scribes comptent et stockent. La monnaie en pièces n'existe pas encore dans l'Égypte pharaonique.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle phrase résume le mieux le rôle du vizir ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Décrire : le vizir est le principal ministre du pharaon ; il dirige l'administration et la justice. Il ne faut pas le confondre avec le roi (piège de la fiche).",
+                  "answers": [
+                    {
+                      "content": "Le principal ministre : il dirige l'administration et la justice",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le roi des dieux, dieu du soleil",
+                      "correct": false
+                    },
+                    {
+                      "content": "Un paysan qui cultive le lin",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le chef d'une armée étrangère",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "La religion et la vie après la mort",
+          "remember": "Les Égyptiens sont **polythéistes** : ils adorent beaucoup de dieux. **Rê** est le dieu du soleil. **Osiris** est le dieu des morts, qui juge les défunts ; **Isis** est son épouse ; leur fils **Horus**, le dieu à tête de faucon, protège le pharaon. **Amon** est le grand dieu de Thèbes, associé à Rê au Nouvel Empire. Les prêtres servent les dieux dans les temples.\n\nIls croient à la **vie après la mort**. Pour que le défunt vive dans l'au-delà, on conserve son corps : c'est la **momification**. On l'enterre avec des objets et des offrandes. Pendant le jugement, le cœur du défunt est pesé devant Osiris.\n\nLes pharaons de l'Ancien Empire ont des **pyramides** pour tombeaux, comme celles de **Gizeh**. Au Nouvel Empire, ils sont enterrés dans des tombes creusées dans la roche, dans la **Vallée des Rois**, près de Thèbes.",
+          "method": [
+            "Identifier l'élément religieux montré : un dieu, un objet ou un monument.",
+            "Rattacher cet élément à son rôle : le soleil, les morts, la protection du pharaon, le tombeau.",
+            "Relier ce rôle à la croyance en la vie après la mort : conserver le corps et préparer le voyage.",
+            "Situer le monument ou le dieu dans son époque : Ancien Empire ou Nouvel Empire."
+          ],
+          "example": {
+            "statement": "Une affiche du club d'histoire montre une grande pyramide à Gizeh, une momie dans son sarcophage et un faucon protégeant un roi. Que nous apprend-elle sur la religion égyptienne ?",
+            "steps": [
+              "Identifier : une pyramide (un monument), une momie (un corps conservé) et un faucon qui protège un roi : c'est Horus.",
+              "Rattacher : la pyramide est le tombeau du pharaon ; la momie est un corps préparé ; Horus protège le pharaon.",
+              "Relier : les Égyptiens croient à la vie après la mort ; ils conservent le corps par la momification et construisent un tombeau pour le voyage vers l'au-delà.",
+              "Situer : les pyramides de Gizeh datent de l'Ancien Empire ; plus tard, au Nouvel Empire, les pharaons seront enterrés dans la Vallée des Rois."
+            ]
+          },
+          "pitfall": "Ne crois pas que tous les pharaons sont enterrés dans des pyramides. Contre-exemple : le tombeau de Toutânkhamon, découvert en 1922, est dans la Vallée des Rois, pas dans une pyramide. Les pyramides sont celles de l'Ancien Empire ; au Nouvel Empire, on cache les tombes dans la roche. Ne confonds pas non plus le polythéisme (plusieurs dieux) avec le monothéisme (un seul dieu).",
+          "figure": "vers-la-vie-apres-la-mort",
+          "practice": {
+            "statement": "Tu t'entraînes à identifier, rattacher, relier et situer pour comprendre la religion égyptienne.",
+            "questions": [
+              {
+                "content": "Quel dieu égyptien est le dieu du soleil ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 2 — Rattacher à son rôle : Rê est le dieu du soleil. Osiris est le dieu des morts, Horus protège le pharaon et Isis est l'épouse d'Osiris.",
+                "answers": [
+                  {
+                    "content": "Rê",
+                    "correct": true
+                  },
+                  {
+                    "content": "Osiris",
+                    "correct": false
+                  },
+                  {
+                    "content": "Horus",
+                    "correct": false
+                  },
+                  {
+                    "content": "Isis",
+                    "correct": false
+                  }
+                ],
+                "hint": "Son nom se prononce comme une syllabe."
+              },
+              {
+                "content": "Relie chaque dieu à son rôle.",
+                "question_type": "matching",
+                "explanation": "Étape 2 — Rattacher : Osiris juge les morts, Horus protège le pharaon, Amon est le grand dieu de Thèbes.",
+                "answers": [
+                  {
+                    "content": "Osiris",
+                    "match": "Dieu des morts et juge du défunt"
+                  },
+                  {
+                    "content": "Horus",
+                    "match": "Dieu à tête de faucon, protecteur du pharaon"
+                  },
+                  {
+                    "content": "Amon",
+                    "match": "Grand dieu de Thèbes"
+                  }
+                ],
+                "hint": "Un faucon est l'emblème d'Horus."
+              },
+              {
+                "content": "Les Égyptiens momifient les morts parce qu'ils croient à la vie après la mort.",
+                "question_type": "true_false",
+                "explanation": "Étape 3 — Relier à la croyance : on conserve le corps par la momification parce qu'on croit que le défunt vivra dans l'au-delà.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Pourquoi conserver un corps ?"
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Reconnaître les dieux et les tombeaux",
+              "statement": "Dans cet exercice, tu appliques la méthode de la fiche (identifier, rattacher, relier, situer) à la religion de l'Égypte ancienne.",
+              "exercise_type": "fixation",
+              "figure": "vers-la-vie-apres-la-mort",
+              "hint": null,
+              "questions": [
+                {
+                  "content": "Comment appelle-t-on une religion à plusieurs dieux ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : les Égyptiens adorent beaucoup de dieux (Rê, Osiris, Isis, Horus, Amon) : c'est le polythéisme. Le monothéisme est la croyance en un seul dieu.",
+                  "answers": [
+                    {
+                      "content": "Le polythéisme",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le monothéisme",
+                      "correct": false
+                    },
+                    {
+                      "content": "La momification",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le calendrier",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Complète : la conservation du corps d'un défunt s'appelle la ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 3 — Relier à la croyance : on conserve le corps pour la vie après la mort. Cette technique est la momification.",
+                  "answers": [
+                    {
+                      "content": "momification",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Où les pharaons du Nouvel Empire sont-ils enterrés ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Situer : les pyramides de Gizeh sont de l'Ancien Empire. Au Nouvel Empire, les tombes sont creusées dans la roche de la Vallée des Rois, près de Thèbes.",
+                  "answers": [
+                    {
+                      "content": "Dans la Vallée des Rois",
+                      "correct": true
+                    },
+                    {
+                      "content": "Dans les pyramides de Gizeh",
+                      "correct": false
+                    },
+                    {
+                      "content": "Dans le delta du Nil",
+                      "correct": false
+                    },
+                    {
+                      "content": "Dans les maisons des paysans",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels sont deux éléments mis dans un tombeau égyptien ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 3 — Relier : on enterre le défunt avec des offrandes et des objets utiles pour sa vie après la mort. Étape 1 — Identifier : les autres objets ne servent pas à ce voyage.",
+                  "answers": [
+                    {
+                      "content": "Des offrandes pour le défunt",
+                      "correct": true
+                    },
+                    {
+                      "content": "Des objets pour la vie dans l'au-delà",
+                      "correct": true
+                    },
+                    {
+                      "content": "Des armes pour attaquer les dieux",
+                      "correct": false
+                    },
+                    {
+                      "content": "Des cartes du Nil pour la crue",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Toutânkhamon a été enterré dans une pyramide de Gizeh.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 4 — Situer : son tombeau, découvert en 1922, est dans la Vallée des Rois. Les pyramides de Gizeh sont plus anciennes. C'est le piège de la fiche.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exposition du club d'histoire : dieux, momies et tombeaux",
+              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche (identifier, rattacher, relier, situer) à des panneaux d'exposition (situation imaginée).",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Pense à la mort, au tombeau puis au jugement.",
+              "questions": [
+                {
+                  "content": "Relie chaque dieu à ce qu'il représente.",
+                  "question_type": "matching",
+                  "explanation": "Étape 2 — Rattacher à son rôle : Rê, le soleil ; Osiris, les morts et leur jugement ; Horus, le faucon qui protège le pharaon.",
+                  "answers": [
+                    {
+                      "content": "Rê",
+                      "match": "Le soleil"
+                    },
+                    {
+                      "content": "Osiris",
+                      "match": "Le jugement des morts"
+                    },
+                    {
+                      "content": "Horus",
+                      "match": "La protection du pharaon"
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets les étapes de la croyance égyptienne dans l'ordre.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 3 — Relier le rôle à la croyance : après la mort, on momifie le corps, on le place dans le tombeau avec des offrandes, puis le cœur est pesé devant Osiris pour le jugement.",
+                  "answers": [
+                    {
+                      "content": "La mort du défunt"
+                    },
+                    {
+                      "content": "La momification du corps"
+                    },
+                    {
+                      "content": "Le tombeau garni d'offrandes"
+                    },
+                    {
+                      "content": "La pesée du cœur devant Osiris"
+                    }
+                  ]
+                },
+                {
+                  "content": "Pourquoi les pharaons de l'Ancien Empire ont-ils des pyramides ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Relier : la pyramide est le tombeau du pharaon, où le défunt est préparé pour la vie après la mort. Étape 4 — Situer : c'est l'Ancien Empire (Gizeh). Ce ne sont ni des palais ni des greniers.",
+                  "answers": [
+                    {
+                      "content": "Ce sont leurs tombeaux, pour la vie après la mort",
+                      "correct": true
+                    },
+                    {
+                      "content": "Ce sont des temples pour le soleil seulement",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ce sont des greniers à grain",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ce sont des palais où ils habitent",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Les trois grandes pyramides célèbres se trouvent à ___ (site près du Caire).",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 4 — Situer : les pyramides de Gizeh, près du Caire, sont les plus célèbres de l'Ancien Empire.",
+                  "answers": [
+                    {
+                      "content": "Gizeh",
+                      "correct": true
+                    },
+                    {
+                      "content": "Giza",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans la religion égyptienne, un seul dieu est adoré.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : Rê, Osiris, Isis, Horus et Amon sont plusieurs dieux. L'Égypte est polythéiste, et non monothéiste.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel dieu est lié au grand temple de Thèbes au Nouvel Empire ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 2 — Rattacher : Amon est le grand dieu de Thèbes, associé à Rê. Étape 4 — Situer : il est surtout honoré au Nouvel Empire.",
+                  "answers": [
+                    {
+                      "content": "Amon",
+                      "correct": true
+                    },
+                    {
+                      "content": "Osiris, dieu des morts",
+                      "correct": false
+                    },
+                    {
+                      "content": "Horus, dieu à tête de faucon",
+                      "correct": false
+                    },
+                    {
+                      "content": "Isis, épouse d'Osiris",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "L'écriture hiéroglyphique et les apports de l'Égypte",
+          "remember": "Les Égyptiens ont inventé une écriture, les **hiéroglyphes** (mot grec qui veut dire « gravures sacrées »). Ces signes sont gravés sur la pierre des temples et des tombeaux, et écrits à l'encre sur le **papyrus**, une plante du delta. Seuls les **scribes** la maîtrisent. Le dieu Thot est celui de l'écriture.\n\nLa **pierre de Rosette**, découverte en 1799, porte le même texte en trois écritures : hiéroglyphes, démotique et grec. Grâce au grec, que l'on savait lire, **Champollion** déchiffre les hiéroglyphes en **1822**.\n\nL'Égypte lègue aussi : un **calendrier** de 365 jours (12 mois de 30 jours et 5 jours en plus), la **géométrie** (pour retrouver les limites des champs après la crue), la **médecine** (des papyrus décrivent des soins) et l'**architecture** (pyramides, temples de pierre à colonnes).",
+          "method": [
+            "Repérer l'objet, le texte ou la découverte présenté dans le document.",
+            "Chercher le besoin qui l'explique : écrire, compter, mesurer, soigner, bâtir.",
+            "Nommer le savoir ou la technique : écriture, calendrier, géométrie, médecine, architecture.",
+            "Conclure sur l'héritage : ce que nous en retenons aujourd'hui."
+          ],
+          "example": {
+            "statement": "Le club d'histoire présente la pierre de Rosette. Une élève doit expliquer pourquoi elle est célèbre.",
+            "steps": [
+              "Repérer : une pierre gravée de trois écritures (hiéroglyphes, démotique et grec) ; elle a été découverte en 1799.",
+              "Chercher le besoin : les hiéroglyphes n'étaient plus compris ; on voulait lire les inscriptions des temples et des tombeaux.",
+              "Nommer : le texte en grec, connu, permet de déchiffrer l'écriture hiéroglyphique ; Champollion y parvient en 1822.",
+              "Conclure : grâce à Champollion, on lit les textes de l'Égypte ancienne et on connaît mieux sa religion, ses rois et sa vie quotidienne."
+            ]
+          },
+          "pitfall": "Ne confonds pas la date de la découverte de la pierre de Rosette (1799) et celle du déchiffrement des hiéroglyphes (1822). Contre-exemple : Champollion n'a pas trouvé la pierre ; il a mis plus de vingt ans après sa découverte pour comprendre les signes, en comparant avec le grec. 1799 : on découvre la pierre ; 1822 : on lit enfin les hiéroglyphes.",
+          "figure": null,
+          "practice": {
+            "statement": "Tu t'entraînes à repérer, chercher, nommer et conclure pour comprendre les apports de l'Égypte.",
+            "questions": [
+              {
+                "content": "Le savant qui déchiffre les hiéroglyphes en 1822 est ___.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 3 — Nommer : Champollion déchiffre les hiéroglyphes en 1822, grâce à la pierre de Rosette et à son texte en grec.",
+                "answers": [
+                  {
+                    "content": "Champollion",
+                    "correct": true
+                  },
+                  {
+                    "content": "Jean-François Champollion",
+                    "correct": true
+                  }
+                ],
+                "hint": "Un savant français, dont le nom commence par C."
+              },
+              {
+                "content": "Relie chaque besoin au savoir égyptien correspondant.",
+                "question_type": "matching",
+                "explanation": "Étape 2 — Chercher le besoin : après la crue, il faut mesurer les champs (géométrie) ; il faut prévoir les saisons (calendrier) ; il faut bâtir pour les dieux et les morts (architecture).",
+                "answers": [
+                  {
+                    "content": "Retrouver les champs après la crue",
+                    "match": "La géométrie"
+                  },
+                  {
+                    "content": "Compter les jours de l'année",
+                    "match": "Le calendrier"
+                  },
+                  {
+                    "content": "Bâtir les tombeaux et les temples",
+                    "match": "L'architecture"
+                  }
+                ],
+                "hint": "Pense au besoin des paysans et des prêtres."
+              },
+              {
+                "content": "Sur quel support écrit-on le plus souvent à l'encre en Égypte ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Repérer le support : le papyrus est une plante du delta dont on fait des feuilles. Le limon est une boue, le sarcophage un cercueil.",
+                "answers": [
+                  {
+                    "content": "Le papyrus",
+                    "correct": true
+                  },
+                  {
+                    "content": "Le limon",
+                    "correct": false
+                  },
+                  {
+                    "content": "Le natron",
+                    "correct": false
+                  },
+                  {
+                    "content": "Le sarcophage",
+                    "correct": false
+                  }
+                ],
+                "hint": "C'est une plante du delta."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Les hiéroglyphes et la pierre de Rosette",
+              "statement": "Dans cet exercice, tu appliques la méthode de la fiche (repérer, chercher le besoin, nommer, conclure) à l'écriture égyptienne.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": null,
+              "questions": [
+                {
+                  "content": "Que veut dire le mot hiéroglyphes ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Nommer : hiéroglyphe vient du grec et veut dire « gravure sacrée ». Les scribes les écrivent, mais le mot ne désigne pas les scribes.",
+                  "answers": [
+                    {
+                      "content": "Gravures sacrées",
+                      "correct": true
+                    },
+                    {
+                      "content": "Papiers du Nil",
+                      "correct": false
+                    },
+                    {
+                      "content": "Écriture des scribes",
+                      "correct": false
+                    },
+                    {
+                      "content": "Lettres du soleil",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La pierre de Rosette porte le même texte en trois écritures.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer : elle porte des hiéroglyphes, du démotique et du grec. Le texte grec permet de comprendre les deux autres écritures.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Complète : les hiéroglyphes sont déchiffrés en ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 3 — Nommer : Champollion déchiffre les hiéroglyphes en 1822. 1799 est la date de la découverte de la pierre.",
+                  "answers": [
+                    {
+                      "content": "1822",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pourquoi le texte en grec a-t-il aidé Champollion ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 2 — Chercher le besoin : on voulait lire une écriture oubliée. Étape 4 — Conclure : on savait lire le grec, donc en comparant les trois textes on a compris les hiéroglyphes.",
+                  "answers": [
+                    {
+                      "content": "On savait lire le grec",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le grec est une écriture égyptienne",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le grec est gravé en or",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le grec a été inventé en 1822",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Champollion a découvert la pierre de Rosette en 1822.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer les dates : la pierre est découverte en 1799 ; Champollion déchiffre les hiéroglyphes en 1822. C'est le piège de la fiche.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Calendrier, géométrie, médecine, architecture",
+              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche (repérer, chercher le besoin, nommer, conclure) aux apports de l'Égypte, pour un exposé en classe (situation imaginée).",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Pense au besoin de chaque savoir.",
+              "questions": [
+                {
+                  "content": "Relie chaque apport à son exemple.",
+                  "question_type": "matching",
+                  "explanation": "Étape 3 — Nommer le savoir d'après l'exemple : le calendrier de 365 jours ; la géométrie, pour retrouver les champs ; l'architecture, avec les pyramides et les temples.",
+                  "answers": [
+                    {
+                      "content": "Le calendrier",
+                      "match": "12 mois de 30 jours et 5 jours en plus"
+                    },
+                    {
+                      "content": "La géométrie",
+                      "match": "Mesurer les champs après la crue"
+                    },
+                    {
+                      "content": "L'architecture",
+                      "match": "Pyramides et temples à colonnes"
+                    }
+                  ]
+                },
+                {
+                  "content": "Un mois égyptien compte 30 jours. Avec 12 mois et 5 jours en plus, combien de jours compte l'année ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 3 — Nommer le calendrier. Calcul : 12 × 30 = 360 jours, puis 360 + 5 = 365 jours.",
+                  "answers": [
+                    {
+                      "content": "365",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "jours"
+                },
+                {
+                  "content": "Pourquoi la géométrie s'est-elle développée en Égypte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 2 — Chercher le besoin : la crue effaçait les limites des champs ; on devait les mesurer à nouveau. C'est l'origine de la géométrie égyptienne.",
+                  "answers": [
+                    {
+                      "content": "Il fallait retrouver les limites des champs après la crue",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il fallait mesurer la distance jusqu'à la Lune",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il fallait compter les sacs de ciment",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il fallait dessiner les cartes de l'Afrique",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets ces dates dans l'ordre.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Repérer chaque date, puis ranger : avant J.-C., plus le nombre est grand, plus c'est ancien ; les dates après J.-C. (1799, 1822) viennent ensuite, dans l'ordre croissant.",
+                  "answers": [
+                    {
+                      "content": "Vers 3 000 av. J.-C. : unification"
+                    },
+                    {
+                      "content": "Vers 2 600 av. J.-C. : pyramides de Gizeh"
+                    },
+                    {
+                      "content": "1799 : découverte de la pierre de Rosette"
+                    },
+                    {
+                      "content": "1822 : déchiffrement des hiéroglyphes"
+                    }
+                  ]
+                },
+                {
+                  "content": "Les papyrus médicaux montrent que les Égyptiens soignaient déjà des malades et des blessés.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 3 — Nommer : la médecine est un apport de l'Égypte ; des papyrus décrivent des soins. Étape 4 — Conclure : c'est un héritage de cette civilisation.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle phrase conclut le mieux sur l'héritage de l'Égypte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Conclure : l'Égypte a légué des savoirs qui comptent encore (écriture, calendrier, géométrie, médecine, architecture), et pas seulement des pyramides.",
+                  "answers": [
+                    {
+                      "content": "Écriture, calendrier, géométrie, médecine et architecture nous viennent en partie d'elle",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elle n'a rien laissé après sa fin",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle a inventé l'imprimerie",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle n'a laissé que des pyramides",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Un exposé en classe : l'Égypte est un don du Nil",
+          "statement": "Document (texte écrit pour Lnclass) : lors d'un exposé en classe, une élève de 2nde lit : « Au nord-est de l'Afrique, l'Égypte est presque entièrement désertique. Pourtant, des millions de personnes y vivent le long du Nil. Chaque été, le fleuve déborde. Quand les eaux se retirent, elles laissent une boue noire sur les champs. Les paysans y sèment du blé et de l'orge. » Réponds aux questions.",
+          "exercise_type": "fixation",
+          "figure": null,
+          "hint": null,
+          "questions": [
+            {
+              "content": "Quel nom donne-t-on à ce débordement annuel du fleuve ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1) Situer l'Égypte et le Nil. 2) Décrire le rythme du fleuve : chaque été il déborde, c'est la crue. Le limon est la boue laissée ensuite ; le delta est la zone du nord.",
+              "answers": [
+                {
+                  "content": "La crue",
+                  "correct": true
+                },
+                {
+                  "content": "Le delta",
+                  "correct": false
+                },
+                {
+                  "content": "Le limon",
+                  "correct": false
+                },
+                {
+                  "content": "La momification",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "La boue noire laissée par les eaux, qui fertilise les champs, s'appelle le ___.",
+              "question_type": "fill_blank",
+              "explanation": "Méthode : 1) Décrire : en se retirant, les eaux laissent le limon. 2) Relier : ce limon rend les champs fertiles pour les semailles.",
+              "answers": [
+                {
+                  "content": "limon",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Remets dans l'ordre les trois saisons de l'année égyptienne.",
+              "question_type": "ordering",
+              "explanation": "Méthode : 1) Décrire la crue. 2) Relier la crue aux travaux des champs : le Nil inonde (Akhet), on sème (Peret), on récolte (Chemou).",
+              "answers": [
+                {
+                  "content": "Akhet : l'inondation"
+                },
+                {
+                  "content": "Peret : les semailles"
+                },
+                {
+                  "content": "Chemou : les récoltes"
+                }
+              ]
+            },
+            {
+              "content": "Quelles sont deux cultures citées dans le texte ?",
+              "question_type": "multiple_correct_2",
+              "explanation": "Méthode : 1) Repérer dans le document : « du blé et de l'orge ». 2) Relier à l'agriculture du Nil : blé, orge, lin, papyrus. Cacao et café ne se cultivent pas dans l'Égypte ancienne.",
+              "answers": [
+                {
+                  "content": "Le blé",
+                  "correct": true
+                },
+                {
+                  "content": "L'orge",
+                  "correct": true
+                },
+                {
+                  "content": "Le cacao",
+                  "correct": false
+                },
+                {
+                  "content": "Le café",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Explique avec tes mots pourquoi on dit que « l'Égypte est un don du Nil ».",
+              "question_type": "written",
+              "points": 3,
+              "criteria": [
+                "Situer l'Égypte dans le désert, traversée par le Nil",
+                "Décrire la crue et le limon",
+                "Relier la crue aux semailles et aux récoltes",
+                "Conclure : sans le Nil, il n'y aurait que du désert"
+              ],
+              "explanation": "Corrigé modèle : L'Égypte se trouve dans un désert, mais le Nil la traverse du sud au nord. Chaque été, la crue inonde les champs ; en se retirant, elle laisse le limon, une boue fertile. Les paysans sèment alors du blé et de l'orge et font leurs récoltes. Sans le Nil, il n'y aurait que du désert : l'Égypte est un « don du Nil » (Hérodote). Barème : 1 point pour situer, 1 point pour la crue et le limon, 1 point pour la conclusion appuyée sur les saisons.",
+              "answers": [],
+              "starter": "L'Égypte est un don du Nil parce que…"
+            }
+          ]
+        },
+        {
+          "title": "L'exposition du club d'histoire : la frise des empires",
+          "statement": "Document (situation écrite pour Lnclass) : à l'entrée de l'exposition du club d'histoire, une frise affiche trois étiquettes : « Pyramides de Gizeh, vers 2 600 av. J.-C. », « Ramsès II, vers 1 250 av. J.-C. » et « Conquête d'Alexandre le Grand, 332 av. J.-C. ». Réponds aux questions.",
+          "exercise_type": "fixation",
+          "figure": null,
+          "hint": null,
+          "questions": [
+            {
+              "content": "À quel empire appartiennent les pyramides de Gizeh ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1) Repérer la date : vers 2 600 av. J.-C. 2) Ranger : date très ancienne. 3) Nommer : 2 600 est entre 2 700 et 2 200 : Ancien Empire.",
+              "answers": [
+                {
+                  "content": "À l'Ancien Empire",
+                  "correct": true
+                },
+                {
+                  "content": "Au Moyen Empire",
+                  "correct": false
+                },
+                {
+                  "content": "Au Nouvel Empire",
+                  "correct": false
+                },
+                {
+                  "content": "À l'époque d'Alexandre le Grand",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "À quel empire appartient le règne de Ramsès II ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1) Repérer : vers 1 250 av. J.-C. 3) Nommer : 1 250 est entre 1 550 et 1 070 : Nouvel Empire. Le Moyen Empire s'arrête vers 1 750.",
+              "answers": [
+                {
+                  "content": "Au Nouvel Empire",
+                  "correct": true
+                },
+                {
+                  "content": "À l'Ancien Empire",
+                  "correct": false
+                },
+                {
+                  "content": "Au Moyen Empire",
+                  "correct": false
+                },
+                {
+                  "content": "À la préhistoire",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Range les trois étiquettes dans l'ordre chronologique.",
+              "question_type": "ordering",
+              "explanation": "Méthode : 1) Repérer les dates. 2) Ranger : avant J.-C., plus le nombre est grand, plus c'est ancien. 3) Ordonner : 2 600, puis 1 250, puis 332.",
+              "answers": [
+                {
+                  "content": "Pyramides de Gizeh, vers 2 600 av. J.-C."
+                },
+                {
+                  "content": "Ramsès II, vers 1 250 av. J.-C."
+                },
+                {
+                  "content": "Conquête d'Alexandre le Grand, 332 av. J.-C."
+                }
+              ]
+            },
+            {
+              "content": "Combien d'années séparent la conquête d'Alexandre le Grand (332 av. J.-C.) du règne de Ramsès II, vers 1 250 av. J.-C. ?",
+              "question_type": "numeric",
+              "explanation": "Méthode : 1) Ranger : 1 250 est plus ancien que 332. 2) Soustraire : 1 250 − 332 = 918 ans.",
+              "answers": [
+                {
+                  "content": "918",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "ans"
+            },
+            {
+              "content": "Explique pourquoi on ne peut pas dire que 332 av. J.-C. est plus ancien que 1 250 av. J.-C.",
+              "question_type": "written",
+              "points": 2,
+              "criteria": [
+                "Rappeler qu'on compte à rebours avant J.-C.",
+                "Comparer 1 250 et 332 : 1 250 est plus ancien",
+                "Donner l'ordre exact des deux dates"
+              ],
+              "explanation": "Corrigé modèle : Avant J.-C., on compte à rebours : plus le nombre est grand, plus la date est ancienne. 1 250 av. J.-C. est donc plus ancien que 332 av. J.-C., et non l'inverse. Barème : 1 point pour la règle du compte à rebours, 1 point pour la comparaison correcte.",
+              "answers": [],
+              "starter": "Avant J.-C., plus le nombre est grand…"
+            }
+          ]
+        },
+        {
+          "title": "Au pied d'un tombeau : religion et pouvoir",
+          "statement": "Document (texte écrit pour Lnclass) : un guide du club d'histoire décrit à un groupe une tombe de la Vallée des Rois : « Les murs montrent le pharaon devant Osiris, dieu des morts, et Horus, le dieu à tête de faucon, qui le protège. Dans la salle du fond, un sarcophage contenait une momie, entourée d'objets et d'offrandes. Un scribe a noté sur un papyrus la liste de ces objets. » Réponds aux questions.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "hint": null,
+          "questions": [
+            {
+              "content": "Pourquoi des objets et des offrandes sont-ils placés dans la tombe ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1) Identifier : offrandes et momie. 2) Rattacher : ce sont des éléments liés à la mort. 3) Relier : on croit que le défunt vivra dans l'au-delà et aura besoin de ces objets.",
+              "answers": [
+                {
+                  "content": "Les Égyptiens croient à la vie après la mort",
+                  "correct": true
+                },
+                {
+                  "content": "Pour payer l'impôt au vizir",
+                  "correct": false
+                },
+                {
+                  "content": "Pour décorer le palais du vivant du pharaon",
+                  "correct": false
+                },
+                {
+                  "content": "Pour nourrir les paysans du village",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Relie chaque personnage du document à son rôle.",
+              "question_type": "matching",
+              "explanation": "Méthode : 1) Identifier chaque personnage. 2) Rattacher à son rôle : Osiris juge les morts, Horus protège le pharaon, le scribe écrit et compte.",
+              "answers": [
+                {
+                  "content": "Osiris",
+                  "match": "Dieu des morts et juge du défunt"
+                },
+                {
+                  "content": "Horus",
+                  "match": "Dieu à tête de faucon qui protège le pharaon"
+                },
+                {
+                  "content": "Le scribe",
+                  "match": "Écrit la liste des objets"
+                }
+              ]
+            },
+            {
+              "content": "La Vallée des Rois contient les pyramides de l'Ancien Empire.",
+              "question_type": "true_false",
+              "explanation": "Méthode : 1) Identifier le lieu : la Vallée des Rois. 2) Situer : ses tombes sont creusées dans la roche, au Nouvel Empire. Les pyramides de Gizeh sont de l'Ancien Empire.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Le corps conservé du défunt, entouré de bandelettes, est une ___.",
+              "question_type": "fill_blank",
+              "explanation": "Méthode : 1) Identifier l'élément : le corps conservé dans le sarcophage. 2) Nommer : c'est une momie, obtenue par la momification.",
+              "answers": [
+                {
+                  "content": "momie",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Explique en quelques lignes pourquoi les Égyptiens momifient les morts.",
+              "question_type": "written",
+              "points": 3,
+              "criteria": [
+                "Citer la croyance en la vie après la mort",
+                "Dire que le corps doit être conservé",
+                "Évoquer le tombeau et les offrandes",
+                "Rédiger des phrases claires"
+              ],
+              "explanation": "Corrigé modèle : Les Égyptiens croient à la vie après la mort. Pour que le défunt vive dans l'au-delà, son corps doit être conservé : on le momifie, puis on le place dans un tombeau avec des objets et des offrandes. Au jugement, son cœur est pesé devant Osiris. Barème : 1 point pour la croyance, 1 point pour la conservation du corps, 1 point pour le tombeau et les offrandes.",
+              "answers": [],
+              "starter": "Les Égyptiens croient que…"
+            }
+          ]
+        },
+        {
+          "title": "Bilan d'un exposé : la civilisation égyptienne",
+          "statement": "Document (situation écrite pour Lnclass) : pour terminer son exposé, un élève affirme : « La civilisation égyptienne naît vers 3 000 av. J.-C. autour du Nil. Un pharaon, aidé d'un vizir et de scribes, gouverne. Les paysans cultivent les champs. Les Égyptiens croient à plusieurs dieux et à la vie après la mort. Leur écriture, les hiéroglyphes, est déchiffrée en 1822. » Réponds aux questions.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "hint": null,
+          "questions": [
+            {
+              "content": "Quelle phrase de l'exposé décrit correctement le pouvoir ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1) Identifier : pharaon, vizir, scribes. 2) Décrire les rôles : le pharaon décide, le vizir dirige l'administration, les scribes écrivent et comptent. 3) Il ne gouverne pas seul (piège de la fiche).",
+              "answers": [
+                {
+                  "content": "Le pharaon gouverne avec un vizir et des scribes",
+                  "correct": true
+                },
+                {
+                  "content": "Le pharaon gouverne seul",
+                  "correct": false
+                },
+                {
+                  "content": "Les paysans commandent l'armée",
+                  "correct": false
+                },
+                {
+                  "content": "Les nomarques sont des dieux",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quelles sont deux conséquences directes du Nil sur la vie des Égyptiens ?",
+              "question_type": "multiple_correct_2",
+              "explanation": "Méthode : 1) Décrire la crue. 2) Relier : la crue donne des récoltes et un calendrier (Akhet, Peret, Chemou). 3) Les autres propositions sont des erreurs de date ou d'auteur.",
+              "answers": [
+                {
+                  "content": "Des récoltes de blé et d'orge",
+                  "correct": true
+                },
+                {
+                  "content": "Un calendrier fondé sur les saisons du fleuve",
+                  "correct": true
+                },
+                {
+                  "content": "La construction de la Vallée des Rois par des Grecs",
+                  "correct": false
+                },
+                {
+                  "content": "L'invention de la pierre de Rosette en 3 000 av. J.-C.",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Les hiéroglyphes sont déchiffrés par Champollion en ___.",
+              "question_type": "fill_blank",
+              "explanation": "Méthode : 1) Repérer le document : l'exposé donne 1822. 2) Nommer : Champollion y parvient grâce à la pierre de Rosette (découverte en 1799).",
+              "answers": [
+                {
+                  "content": "1822",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Dans quel ordre faut-il lire cette suite : unification, pyramides de Gizeh, Ramsès II ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1) Repérer les dates : vers 3 000, vers 2 600 et vers 1 250 av. J.-C. 2) Ranger : le plus grand nombre est le plus ancien. 3) Ordonner : unification, Gizeh, Ramsès II.",
+              "answers": [
+                {
+                  "content": "Unification, puis Gizeh, puis Ramsès II",
+                  "correct": true
+                },
+                {
+                  "content": "Ramsès II, puis Gizeh, puis unification",
+                  "correct": false
+                },
+                {
+                  "content": "Gizeh, puis unification, puis Ramsès II",
+                  "correct": false
+                },
+                {
+                  "content": "Unification, puis Ramsès II, puis Gizeh",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Rédige un court paragraphe : comment le Nil a-t-il permis à l'Égypte d'avoir un pouvoir fort et des savoirs nouveaux ?",
+              "question_type": "written",
+              "points": 5,
+              "criteria": [
+                "Expliquer la crue, le limon et les récoltes",
+                "Relier les récoltes aux impôts, aux scribes et au pharaon",
+                "Citer un apport lié au Nil (géométrie, calendrier)",
+                "Utiliser des mots précis (crue, limon, scribe, pharaon)",
+                "Rédiger un paragraphe clair et organisé"
+              ],
+              "explanation": "Corrigé modèle : Le Nil déborde chaque été et la crue laisse le limon, qui fertilise les champs : les paysans récoltent blé et orge. Ces récoltes sont comptées et taxées par les scribes, ce qui donne au pharaon et à son vizir les moyens de nourrir le pays et de bâtir. Pour retrouver les champs après la crue, on invente la géométrie, et le rythme du fleuve donne le calendrier. Barème : 1 point par critère.",
+              "answers": [],
+              "starter": "Chaque année, le Nil…"
+            }
+          ]
+        }
+      ],
+      "subjects": [
+        {
+          "title": "Sujet 1 · Les savoirs de base sur l'Égypte ancienne",
+          "notions": "Le Nil et la crue, les grandes périodes, le pouvoir et la société, la religion, l'écriture et les apports : définitions, dates et acteurs.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Savoirs de base : le Nil et la crue.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Pense au sens du fleuve et au limon.",
+              "questions": [
+                {
+                  "content": "Dans quel sens coule le Nil en Égypte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Situer le Nil : il traverse l'Égypte du sud au nord. 2) Il se jette dans la Méditerranée, au nord, par son delta.",
+                  "answers": [
+                    {
+                      "content": "Du sud vers le nord",
+                      "correct": true
+                    },
+                    {
+                      "content": "Du nord vers le sud",
+                      "correct": false
+                    },
+                    {
+                      "content": "D'ouest en est",
+                      "correct": false
+                    },
+                    {
+                      "content": "D'est en ouest",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le débordement annuel du Nil s'appelle la ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Décrire le rythme du fleuve. 2) Chaque été, le Nil déborde : c'est la crue.",
+                  "answers": [
+                    {
+                      "content": "crue",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Le limon déposé par la crue rend la terre fertile.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Décrire : les eaux se retirent et laissent le limon. 2) Relier : cette boue fertilise les champs.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque saison à son activité.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Décrire la crue. 2) Relier les saisons aux travaux : Akhet, inondation ; Peret, semailles ; Chemou, récoltes.",
+                  "answers": [
+                    {
+                      "content": "Akhet",
+                      "match": "Inondation"
+                    },
+                    {
+                      "content": "Peret",
+                      "match": "Semailles"
+                    },
+                    {
+                      "content": "Chemou",
+                      "match": "Récoltes"
+                    }
+                  ]
+                },
+                {
+                  "content": "Qui a écrit que « l'Égypte est un don du Nil » ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer la citation. 2) L'attribuer : Hérodote, historien grec du Ve siècle av. J.-C. Champollion a déchiffré les hiéroglyphes en 1822.",
+                  "answers": [
+                    {
+                      "content": "Hérodote",
+                      "correct": true
+                    },
+                    {
+                      "content": "Champollion",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ramsès II",
+                      "correct": false
+                    },
+                    {
+                      "content": "Alexandre le Grand",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Savoirs de base : les grandes périodes.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Avant J.-C., le plus grand nombre est le plus ancien.",
+              "questions": [
+                {
+                  "content": "Vers quelle date l'Égypte est-elle unifiée ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer l'événement : l'unification. 2) La dater : vers 3 000 av. J.-C. 1822 est la date du déchiffrement des hiéroglyphes.",
+                  "answers": [
+                    {
+                      "content": "Vers 3 000 av. J.-C.",
+                      "correct": true
+                    },
+                    {
+                      "content": "Vers 1 550 av. J.-C.",
+                      "correct": false
+                    },
+                    {
+                      "content": "En 332 av. J.-C.",
+                      "correct": false
+                    },
+                    {
+                      "content": "En 1822",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Range les trois empires dans l'ordre chronologique.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Repérer les dates : vers 2700, 2050 et 1550 av. J.-C. 2) Ranger : le plus grand nombre est le plus ancien.",
+                  "answers": [
+                    {
+                      "content": "Ancien Empire"
+                    },
+                    {
+                      "content": "Moyen Empire"
+                    },
+                    {
+                      "content": "Nouvel Empire"
+                    }
+                  ]
+                },
+                {
+                  "content": "Les pyramides de Gizeh datent de l'___ Empire.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Repérer la date : vers 2 600 av. J.-C. 2) Nommer : entre 2 700 et 2 200, c'est l'Ancien Empire.",
+                  "answers": [
+                    {
+                      "content": "Ancien",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Ramsès II règne pendant le Moyen Empire.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer : Ramsès II règne au XIIIe siècle av. J.-C., vers 1 250. 2) Nommer : c'est le Nouvel Empire (vers 1550 à 1070).",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel événement met fin à la civilisation pharaonique en 332 av. J.-C. ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer la date : 332 av. J.-C. 2) Nommer : la conquête d'Alexandre le Grand. L'unification date d'environ 3 000 av. J.-C.",
+                  "answers": [
+                    {
+                      "content": "La conquête d'Alexandre le Grand",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'unification de l'Égypte",
+                      "correct": false
+                    },
+                    {
+                      "content": "La construction des pyramides",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le déchiffrement des hiéroglyphes",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Savoirs de base : le pouvoir et la société.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Regarde le rôle de chaque personnage.",
+              "questions": [
+                {
+                  "content": "Qui est considéré comme un dieu vivant ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier le personnage. 2) Le pharaon est le roi, considéré comme un dieu vivant, lien entre les dieux et les hommes.",
+                  "answers": [
+                    {
+                      "content": "Le pharaon",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le vizir",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le scribe",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le nomarque",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque personnage à son rôle.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Identifier. 2) Décrire le rôle de chacun : vizir, administration et justice ; scribe, écriture et comptes ; nomarque, une province.",
+                  "answers": [
+                    {
+                      "content": "Le vizir",
+                      "match": "Dirige l'administration et la justice"
+                    },
+                    {
+                      "content": "Le scribe",
+                      "match": "Écrit et compte les récoltes"
+                    },
+                    {
+                      "content": "Le nomarque",
+                      "match": "Dirige un nome"
+                    }
+                  ]
+                },
+                {
+                  "content": "Une province de l'Égypte ancienne s'appelle un ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Identifier le mot. 2) Le pays est divisé en nomes, dirigés par des nomarques.",
+                  "answers": [
+                    {
+                      "content": "nome",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Les paysans sont la grande majorité de la population.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Situer leur rang : en bas de la société. 2) Ils sont pourtant les plus nombreux.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "En quoi les impôts sont-ils surtout payés ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Relier l'impôt à l'économie : les récoltes. 2) Les scribes comptent le grain dû par les paysans. Il n'y a pas encore de pièces de monnaie.",
+                  "answers": [
+                    {
+                      "content": "En grain",
+                      "correct": true
+                    },
+                    {
+                      "content": "En pièces d'or",
+                      "correct": false
+                    },
+                    {
+                      "content": "En billets",
+                      "correct": false
+                    },
+                    {
+                      "content": "En papyrus",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Savoirs de base : religion et écriture.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Distingue la découverte de la pierre et le déchiffrement.",
+              "questions": [
+                {
+                  "content": "Quel dieu est le dieu des morts ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier le dieu. 2) Rattacher à son rôle : Osiris est le dieu des morts ; Rê est le soleil ; Horus protège le pharaon.",
+                  "answers": [
+                    {
+                      "content": "Osiris",
+                      "correct": true
+                    },
+                    {
+                      "content": "Rê",
+                      "correct": false
+                    },
+                    {
+                      "content": "Horus",
+                      "correct": false
+                    },
+                    {
+                      "content": "Amon",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Les Égyptiens adorent un seul dieu.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Identifier : Rê, Osiris, Isis, Horus, Amon. 2) Ils sont polythéistes : plusieurs dieux.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "La conservation du corps d'un défunt s'appelle la ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Relier à la croyance en la vie après la mort. 2) On conserve le corps : c'est la momification.",
+                  "answers": [
+                    {
+                      "content": "momification",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque date à son événement.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Repérer chaque date. 2) Nommer : 1799, la pierre ; 1822, Champollion ; 1922, la tombe de Toutânkhamon dans la Vallée des Rois.",
+                  "answers": [
+                    {
+                      "content": "1799",
+                      "match": "Découverte de la pierre de Rosette"
+                    },
+                    {
+                      "content": "1822",
+                      "match": "Déchiffrement des hiéroglyphes"
+                    },
+                    {
+                      "content": "1922",
+                      "match": "Découverte du tombeau de Toutânkhamon"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels sont deux apports de l'Égypte ancienne ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Repérer les apports égyptiens. 2) Calendrier et géométrie sont liés à la crue. L'imprimerie et la boussole ne viennent pas d'Égypte.",
+                  "answers": [
+                    {
+                      "content": "Un calendrier de 365 jours",
+                      "correct": true
+                    },
+                    {
+                      "content": "La géométrie pour mesurer les champs",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'imprimerie",
+                      "correct": false
+                    },
+                    {
+                      "content": "La boussole",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 2 · L'Égypte ancienne dans la vie courante en Côte d'Ivoire",
+          "notions": "Situations ivoiriennes (exposition de club d'histoire à Bouaké, exposé en classe à Abidjan, frise au CDI à Yamoussoukro, journée culturelle à Korhogo) : le Nil, les périodes, la religion, l'écriture.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Situation écrite pour Lnclass : le club d'histoire d'un lycée de Bouaké prépare une exposition sur l'Égypte ancienne et rédige des étiquettes pour ses panneaux.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Associe chaque objet à son rôle.",
+              "questions": [
+                {
+                  "content": "Une étiquette présente une maquette de pyramide. Que doit-elle dire ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier le monument. 2) Rattacher : tombeau du pharaon. 3) Situer : Ancien Empire, comme à Gizeh.",
+                  "answers": [
+                    {
+                      "content": "C'est le tombeau d'un pharaon de l'Ancien Empire",
+                      "correct": true
+                    },
+                    {
+                      "content": "C'est le palais où vivait le pharaon",
+                      "correct": false
+                    },
+                    {
+                      "content": "C'est un grenier à grain du Nouvel Empire",
+                      "correct": false
+                    },
+                    {
+                      "content": "C'est un temple dédié à Champollion",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une étiquette dit : « Ce papier fabriqué avec une plante du delta s'appelle le ___ ».",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Repérer le support d'écriture. 2) Nommer : le papyrus, plante du delta.",
+                  "answers": [
+                    {
+                      "content": "papyrus",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Une étiquette affirme : « Toutânkhamon repose dans une pyramide de Gizeh ». Elle est juste.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Situer : sa tombe, découverte en 1922, est dans la Vallée des Rois. 2) Gizeh appartient à l'Ancien Empire.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque panneau à son dieu.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Identifier l'indice. 2) Rattacher au dieu : faucon, Horus ; soleil, Rê ; épouse d'Osiris, Isis.",
+                  "answers": [
+                    {
+                      "content": "Un dieu à tête de faucon",
+                      "match": "Horus"
+                    },
+                    {
+                      "content": "Le dieu du soleil",
+                      "match": "Rê"
+                    },
+                    {
+                      "content": "L'épouse d'Osiris",
+                      "match": "Isis"
+                    }
+                  ]
+                },
+                {
+                  "content": "Le club prépare 3 panneaux sur le Nil, 4 sur la religion et 2 sur l'écriture. Combien de panneaux au total ?",
+                  "question_type": "numeric",
+                  "explanation": "Méthode : 1) Lister les panneaux. 2) Additionner : 3 + 4 + 2 = 9.",
+                  "answers": [
+                    {
+                      "content": "9",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "panneaux"
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Situation écrite pour Lnclass : à Abidjan, une élève de 2nde prépare un exposé en classe sur le rôle du Nil. Elle compare avec les champs de sa grand-mère, près d'un cours d'eau.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Pense au rythme de la crue.",
+              "questions": [
+                {
+                  "content": "Pour expliquer la fertilité des champs égyptiens, quel mot doit-elle employer ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Décrire la crue. 2) Nommer le dépôt fertile : le limon. Le delta est un lieu, le nome une province.",
+                  "answers": [
+                    {
+                      "content": "Le limon",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le delta",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le nome",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le natron",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes de son explication.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Décrire la crue, puis le retrait. 2) Relier au limon, puis aux semailles et aux récoltes.",
+                  "answers": [
+                    {
+                      "content": "Le Nil déborde en été"
+                    },
+                    {
+                      "content": "Les eaux se retirent"
+                    },
+                    {
+                      "content": "Le limon reste sur les champs"
+                    },
+                    {
+                      "content": "Les paysans sèment puis récoltent"
+                    }
+                  ]
+                },
+                {
+                  "content": "Elle peut dire que la crue vient des pluies tombées sur l'Égypte.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Décrire : il pleut très peu en Égypte. 2) La crue vient de pluies tombées loin en amont, au sud.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle conclusion doit-elle donner à son exposé ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Situer : un désert traversé par le Nil. 2) Conclure : le fleuve rend la vie possible, c'est un « don du Nil ».",
+                  "answers": [
+                    {
+                      "content": "Sans le Nil, l'Égypte ne serait qu'un désert",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le Nil empêche toute agriculture",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'Égypte vit surtout de la pêche en mer",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le Nil coule vers le sud",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le nord de l'Égypte, en forme d'éventail, s'appelle le ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Situer sur la carte. 2) Au nord, le Nil se divise en bras : c'est le delta, la Basse-Égypte.",
+                  "answers": [
+                    {
+                      "content": "delta",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Situation écrite pour Lnclass : au CDI d'un lycée de Yamoussoukro, une frise sur l'Égypte ancienne est affichée. Des élèves y collent des étiquettes.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Compte à rebours avant J.-C.",
+              "questions": [
+                {
+                  "content": "Une élève colle « vers 1 250 av. J.-C. : Ramsès II ». Dans quelle période ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer la date. 2) Nommer : 1 250 est entre 1 550 et 1 070 av. J.-C. : Nouvel Empire.",
+                  "answers": [
+                    {
+                      "content": "Nouvel Empire",
+                      "correct": true
+                    },
+                    {
+                      "content": "Ancien Empire",
+                      "correct": false
+                    },
+                    {
+                      "content": "Moyen Empire",
+                      "correct": false
+                    },
+                    {
+                      "content": "Préhistoire",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur la frise, 2 600 av. J.-C. doit être placé à gauche de 1 250 av. J.-C.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Ranger : 2 600 av. J.-C. est plus ancien. 2) Sur une frise, le plus ancien est à gauche.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien d'années séparent l'unification (vers 3 000 av. J.-C.) des pyramides de Gizeh (vers 2 600 av. J.-C.) ?",
+                  "question_type": "numeric",
+                  "explanation": "Méthode : 1) Ranger : 3 000 est plus ancien. 2) Soustraire : 3 000 − 2 600 = 400 ans.",
+                  "answers": [
+                    {
+                      "content": "400",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "ans"
+                },
+                {
+                  "content": "Range ces étiquettes dans l'ordre chronologique.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Repérer : vers 3 000, 2 700, 2 050, 1 550 av. J.-C. 2) Ranger du plus ancien au plus récent.",
+                  "answers": [
+                    {
+                      "content": "Unification"
+                    },
+                    {
+                      "content": "Ancien Empire"
+                    },
+                    {
+                      "content": "Moyen Empire"
+                    },
+                    {
+                      "content": "Nouvel Empire"
+                    }
+                  ]
+                },
+                {
+                  "content": "Où faut-il coller l'étiquette « Moyen Empire » ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer les bornes du Moyen Empire. 2) Ordonner : il vient après l'Ancien Empire et avant le Nouvel Empire.",
+                  "answers": [
+                    {
+                      "content": "Entre vers 2050 et 1750 av. J.-C.",
+                      "correct": true
+                    },
+                    {
+                      "content": "Entre vers 2700 et 2200 av. J.-C.",
+                      "correct": false
+                    },
+                    {
+                      "content": "Entre vers 1550 et 1070 av. J.-C.",
+                      "correct": false
+                    },
+                    {
+                      "content": "Après 332 av. J.-C.",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Situation écrite pour Lnclass : lors de la journée culturelle d'un lycée de Korhogo, un stand présente l'écriture égyptienne et une reproduction de la pierre de Rosette.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Le grec était connu.",
+              "questions": [
+                {
+                  "content": "Combien d'écritures porte la pierre de Rosette ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer : hiéroglyphes, démotique et grec. 2) Compter : trois écritures.",
+                  "answers": [
+                    {
+                      "content": "Trois",
+                      "correct": true
+                    },
+                    {
+                      "content": "Une",
+                      "correct": false
+                    },
+                    {
+                      "content": "Deux",
+                      "correct": false
+                    },
+                    {
+                      "content": "Cinq",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le savant qui déchiffre les hiéroglyphes s'appelle ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Repérer le déchiffrement. 2) Nommer : Champollion, en 1822.",
+                  "answers": [
+                    {
+                      "content": "Champollion",
+                      "correct": true
+                    },
+                    {
+                      "content": "Jean-François Champollion",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "La pierre de Rosette est découverte en 1822.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer les deux dates. 2) Découverte en 1799, déchiffrement en 1822 : c'est le piège.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pourquoi peu d'Égyptiens savaient-ils écrire ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier qui écrit. 2) Les scribes, formés longtemps, maîtrisent l'écriture et servent le pouvoir.",
+                  "answers": [
+                    {
+                      "content": "L'écriture était réservée aux scribes",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les hiéroglyphes étaient interdits",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il n'existait pas de support",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le pharaon ne savait pas compter",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels sont deux supports des hiéroglyphes ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Repérer les supports. 2) On grave la pierre et on écrit à l'encre sur le papyrus.",
+                  "answers": [
+                    {
+                      "content": "La pierre des temples",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le papyrus",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le papier imprimé",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'écran",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 3 · Raisonner et justifier",
+          "notions": "Relier causes et conséquences autour du Nil, justifier une date sur la frise, expliquer l'organisation de l'État, expliquer les croyances et le déchiffrement.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Raisonner : relier les causes et les conséquences autour du Nil.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Cherche toujours la cause dans le fleuve.",
+              "questions": [
+                {
+                  "content": "Pourquoi la géométrie s'est-elle développée en Égypte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Chercher le besoin : après la crue, les champs n'avaient plus de limites. 2) Nommer : on les mesure à nouveau, d'où la géométrie.",
+                  "answers": [
+                    {
+                      "content": "La crue effaçait les limites des champs",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il fallait mesurer la Lune",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le désert était trop petit",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les paysans voulaient des pyramides",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets cette chaîne de causes dans l'ordre.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Partir de la cause : la crue. 2) Relier chaque conséquence à la suivante, jusqu'au pouvoir du pharaon.",
+                  "answers": [
+                    {
+                      "content": "La crue dépose le limon"
+                    },
+                    {
+                      "content": "Les récoltes sont abondantes"
+                    },
+                    {
+                      "content": "Les scribes comptent le grain"
+                    },
+                    {
+                      "content": "Le pharaon dispose de réserves"
+                    }
+                  ]
+                },
+                {
+                  "content": "Les impôts en grain renforcent le pouvoir du pharaon.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Relier l'économie au pouvoir. 2) Le grain stocké permet de nourrir le pays et de payer les travaux.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel raisonnement justifie le calendrier de trois saisons ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer les saisons : inondation, semailles, récoltes. 2) Relier au Nil : elles suivent la crue.",
+                  "answers": [
+                    {
+                      "content": "Il suit le rythme de la crue du Nil",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il suit le mouvement de la Lune seulement",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il imite le calendrier grec",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il dépend des pluies en Égypte",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles affirmations expliquent la richesse agricole de l'Égypte ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Décrire la crue et le limon. 2) Écarter les erreurs : il pleut peu, le désert reste stérile.",
+                  "answers": [
+                    {
+                      "content": "Le limon fertilise les champs",
+                      "correct": true
+                    },
+                    {
+                      "content": "La crue arrose les terres chaque année",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il pleut beaucoup en Égypte",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le désert est cultivable partout",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Raisonner : justifier une date sur la frise.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Avant J.-C., le plus grand nombre est le plus ancien.",
+              "questions": [
+                {
+                  "content": "Un élève dit : « 1 250 av. J.-C. est plus ancien que 2 600 av. J.-C. car 1 250 est plus petit ». Quelle est son erreur ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Ranger : avant J.-C., on compte à rebours. 2) 2 600 av. J.-C. est donc plus ancien que 1 250 av. J.-C.",
+                  "answers": [
+                    {
+                      "content": "Il oublie qu'on compte à rebours avant J.-C.",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il confond Ramsès II et Champollion",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il oublie la conquête d'Alexandre",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il n'y a aucune erreur",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une date de 2 100 av. J.-C. se situe entre l'Ancien et le Moyen Empire, dans une période de troubles.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Repérer : l'Ancien Empire finit vers 2 200, le Moyen Empire commence vers 2 050. 2) 2 100 est entre les deux : période de troubles.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien d'années environ dure le Nouvel Empire, de 1 550 à 1 070 av. J.-C. ?",
+                  "question_type": "numeric",
+                  "explanation": "Méthode : 1) Repérer les bornes. 2) Soustraire : 1 550 − 1 070 = 480 ans.",
+                  "answers": [
+                    {
+                      "content": "480",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "ans"
+                },
+                {
+                  "content": "Quelle justification place Ramsès II au Nouvel Empire ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer sa date. 2) Nommer l'empire dont les bornes l'encadrent : le Nouvel Empire.",
+                  "answers": [
+                    {
+                      "content": "Il règne vers 1 250 av. J.-C., entre 1 550 et 1 070",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il règne vers 2 600 av. J.-C.",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il est enterré dans une pyramide de Gizeh",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il déchiffre les hiéroglyphes",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Range ces dates de la plus ancienne à la plus récente.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Avant J.-C. : le plus grand nombre d'abord. 2) Les dates après J.-C. viennent ensuite.",
+                  "answers": [
+                    {
+                      "content": "2 600 av. J.-C."
+                    },
+                    {
+                      "content": "1 250 av. J.-C."
+                    },
+                    {
+                      "content": "332 av. J.-C."
+                    },
+                    {
+                      "content": "1822 apr. J.-C."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Raisonner : expliquer l'organisation de l'État.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Le pharaon décide, d'autres exécutent.",
+              "questions": [
+                {
+                  "content": "Pourquoi le pharaon a-t-il besoin d'un vizir ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier le vizir. 2) Décrire son rôle. 3) Relier : le pays est trop grand pour un seul homme.",
+                  "answers": [
+                    {
+                      "content": "Pour diriger l'administration et la justice d'un grand pays",
+                      "correct": true
+                    },
+                    {
+                      "content": "Pour remplacer les dieux",
+                      "correct": false
+                    },
+                    {
+                      "content": "Pour cultiver les champs",
+                      "correct": false
+                    },
+                    {
+                      "content": "Pour écrire à sa place les prières",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Sans scribes, l'État ne pourrait pas connaître les récoltes de chaque nome.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Décrire le rôle des scribes : écrire et compter. 2) Relier à l'économie : ils notent les récoltes et les impôts.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque niveau de l'État à son territoire.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Identifier chaque acteur. 2) Situer son niveau : du pays entier au village.",
+                  "answers": [
+                    {
+                      "content": "Le pharaon",
+                      "match": "Toute l'Égypte"
+                    },
+                    {
+                      "content": "Le nomarque",
+                      "match": "Un nome"
+                    },
+                    {
+                      "content": "Le scribe du village",
+                      "match": "Les champs d'un village"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle phrase réfute l'idée que le pharaon gouverne seul ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer l'idée fausse. 2) La corriger par le rôle des fonctionnaires : c'est le piège de la fiche.",
+                  "answers": [
+                    {
+                      "content": "Vizir, nomarques et scribes appliquent ses décisions",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le pharaon est un dieu vivant",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le pharaon a une pyramide",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le pharaon porte une couronne",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le principal ministre du pharaon est le ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Identifier le personnage. 2) Le vizir dirige l'administration et la justice.",
+                  "answers": [
+                    {
+                      "content": "vizir",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Raisonner : expliquer les croyances et leurs traces.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Relie chaque trace à la croyance en l'au-delà.",
+              "questions": [
+                {
+                  "content": "Pourquoi les tombeaux contiennent-ils des objets du quotidien ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier les objets. 2) Relier à la croyance en la vie après la mort.",
+                  "answers": [
+                    {
+                      "content": "Le défunt doit pouvoir vivre dans l'au-delà",
+                      "correct": true
+                    },
+                    {
+                      "content": "Pour les vendre au marché",
+                      "correct": false
+                    },
+                    {
+                      "content": "Pour payer les scribes",
+                      "correct": false
+                    },
+                    {
+                      "content": "Pour cacher les impôts",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre le parcours du défunt selon la croyance.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Relier chaque étape à la suivante. 2) Le jugement d'Osiris précède la vie éternelle.",
+                  "answers": [
+                    {
+                      "content": "La momification"
+                    },
+                    {
+                      "content": "Le tombeau et les offrandes"
+                    },
+                    {
+                      "content": "La pesée du cœur devant Osiris"
+                    },
+                    {
+                      "content": "La vie éternelle"
+                    }
+                  ]
+                },
+                {
+                  "content": "Au Nouvel Empire, on cache les tombes royales dans la roche de la Vallée des Rois.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Situer l'époque. 2) Les pharaons du Nouvel Empire sont enterrés dans la Vallée des Rois, près de Thèbes.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pourquoi Champollion a-t-il besoin du texte grec ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Chercher le besoin : lire une écriture oubliée. 2) Le grec, connu, sert de clé de lecture.",
+                  "answers": [
+                    {
+                      "content": "Il compare un texte connu au texte en hiéroglyphes",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le grec est la langue des pharaons",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le grec est plus ancien que les hiéroglyphes",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il ne connaît pas le grec",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles traces montrent la croyance en la vie après la mort ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Identifier les traces religieuses. 2) Momies et tombeaux sont liés à l'au-delà ; champs et calendrier sont liés au Nil.",
+                  "answers": [
+                    {
+                      "content": "Les momies",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les tombeaux garnis d'offrandes",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les champs de blé",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le calendrier de 365 jours",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 4 · Bilan de la civilisation égyptienne",
+          "notions": "Toutes les notions : le Nil et l'agriculture, les grandes périodes, le pouvoir et la société, la religion et la vie après la mort, l'écriture et les apports.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Bilan : le cadre géographique et l'économie.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Le Nil explique tout le reste.",
+              "questions": [
+                {
+                  "content": "Où se trouve l'Égypte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Situer sur la carte. 2) L'Égypte borde la Méditerranée, au nord-est du continent.",
+                  "answers": [
+                    {
+                      "content": "Au nord-est de l'Afrique",
+                      "correct": true
+                    },
+                    {
+                      "content": "À l'ouest de l'Afrique",
+                      "correct": false
+                    },
+                    {
+                      "content": "Au sud de l'Afrique",
+                      "correct": false
+                    },
+                    {
+                      "content": "Au centre de l'Afrique",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque mot à sa définition.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Décrire le fleuve. 2) Associer chaque mot à son sens.",
+                  "answers": [
+                    {
+                      "content": "Crue",
+                      "match": "Débordement du Nil"
+                    },
+                    {
+                      "content": "Limon",
+                      "match": "Boue fertile"
+                    },
+                    {
+                      "content": "Delta",
+                      "match": "Embouchure en éventail"
+                    }
+                  ]
+                },
+                {
+                  "content": "Les paysans cultivent du blé et de l'orge grâce au limon.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Décrire la crue. 2) Relier : le limon rend possible ces cultures.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La saison des récoltes s'appelle ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Relier les saisons aux travaux. 2) Akhet, inondation ; Peret, semailles ; Chemou, récoltes.",
+                  "answers": [
+                    {
+                      "content": "Chemou",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un paysan doit 2 sacs de grain par champ. Il a 5 champs. Combien de sacs le scribe note-t-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Méthode : 1) Relier l'impôt aux récoltes. 2) Calcul : 2 × 5 = 10 sacs.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "sacs"
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Bilan : les périodes et le pouvoir.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Avant J.-C., le plus grand nombre est le plus ancien.",
+              "questions": [
+                {
+                  "content": "Quelle était la capitale de l'Ancien Empire ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Repérer l'empire. 2) Nommer sa capitale : Memphis. Alexandrie et Le Caire sont des villes plus tardives.",
+                  "answers": [
+                    {
+                      "content": "Memphis",
+                      "correct": true
+                    },
+                    {
+                      "content": "Thèbes",
+                      "correct": false
+                    },
+                    {
+                      "content": "Alexandrie",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le Caire",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Range dans l'ordre chronologique.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1) Repérer : vers 3 000, vers 2 600, vers 1 250, 332 av. J.-C. 2) Ranger du plus ancien au plus récent.",
+                  "answers": [
+                    {
+                      "content": "Unification"
+                    },
+                    {
+                      "content": "Pyramides de Gizeh"
+                    },
+                    {
+                      "content": "Ramsès II"
+                    },
+                    {
+                      "content": "Conquête d'Alexandre le Grand"
+                    }
+                  ]
+                },
+                {
+                  "content": "Le vizir est le roi de l'Égypte.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Identifier : le roi est le pharaon. 2) Le vizir est son principal ministre.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Qui encadre les paysans d'un nome ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier le niveau du nome. 2) Le nomarque dirige la province au nom du pharaon.",
+                  "answers": [
+                    {
+                      "content": "Le nomarque",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le pharaon en personne",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le dieu Rê",
+                      "correct": false
+                    },
+                    {
+                      "content": "Champollion",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles sont deux caractéristiques du Nouvel Empire ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1) Repérer les repères du Nouvel Empire. 2) Gizeh et l'unification sont plus anciens.",
+                  "answers": [
+                    {
+                      "content": "Le règne de Ramsès II",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les tombes de la Vallée des Rois",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les pyramides de Gizeh",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'unification de l'Égypte",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Bilan : la religion.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Rattache chaque dieu à son rôle.",
+              "questions": [
+                {
+                  "content": "Relie chaque dieu à son rôle.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Identifier le dieu. 2) Rattacher à son rôle.",
+                  "answers": [
+                    {
+                      "content": "Rê",
+                      "match": "Soleil"
+                    },
+                    {
+                      "content": "Osiris",
+                      "match": "Dieu des morts"
+                    },
+                    {
+                      "content": "Amon",
+                      "match": "Grand dieu de Thèbes"
+                    }
+                  ]
+                },
+                {
+                  "content": "Comment appelle-t-on la croyance en plusieurs dieux ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Identifier : plusieurs dieux. 2) Nommer : polythéisme.",
+                  "answers": [
+                    {
+                      "content": "Le polythéisme",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le monothéisme",
+                      "correct": false
+                    },
+                    {
+                      "content": "La momification",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'unification",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Les pyramides de Gizeh sont des tombeaux de pharaons.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Identifier le monument. 2) Rattacher : ce sont des tombeaux de l'Ancien Empire.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le cœur du défunt est pesé devant le dieu ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Relier à la croyance. 2) Osiris, dieu des morts, juge le défunt.",
+                  "answers": [
+                    {
+                      "content": "Osiris",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Où a été découvert le tombeau de Toutânkhamon en 1922 ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Situer l'époque : Nouvel Empire. 2) Les tombes royales sont alors dans la Vallée des Rois.",
+                  "answers": [
+                    {
+                      "content": "Dans la Vallée des Rois",
+                      "correct": true
+                    },
+                    {
+                      "content": "À Gizeh",
+                      "correct": false
+                    },
+                    {
+                      "content": "À Alexandrie",
+                      "correct": false
+                    },
+                    {
+                      "content": "Dans le delta",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Bilan : l'écriture et les apports.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Associe chaque apport à son besoin.",
+              "questions": [
+                {
+                  "content": "Que veut dire « hiéroglyphes » ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1) Nommer le mot. 2) Il vient du grec : gravures sacrées.",
+                  "answers": [
+                    {
+                      "content": "Gravures sacrées",
+                      "correct": true
+                    },
+                    {
+                      "content": "Écriture du peuple",
+                      "correct": false
+                    },
+                    {
+                      "content": "Papiers du Nil",
+                      "correct": false
+                    },
+                    {
+                      "content": "Lettres grecques",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Champollion déchiffre les hiéroglyphes en ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1) Repérer la date. 2) 1822 ; la pierre de Rosette est découverte en 1799.",
+                  "answers": [
+                    {
+                      "content": "1822",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque apport à son exemple.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1) Repérer l'exemple. 2) Nommer le savoir correspondant.",
+                  "answers": [
+                    {
+                      "content": "Médecine",
+                      "match": "Papyrus décrivant des soins"
+                    },
+                    {
+                      "content": "Architecture",
+                      "match": "Temples à colonnes"
+                    },
+                    {
+                      "content": "Calendrier",
+                      "match": "365 jours"
+                    }
+                  ]
+                },
+                {
+                  "content": "Le calendrier égyptien compte 12 mois de 30 jours. Combien de jours font ces 12 mois, avant les 5 jours ajoutés ?",
+                  "question_type": "numeric",
+                  "explanation": "Méthode : 1) Nommer le calendrier. 2) Calcul : 12 × 30 = 360 jours ; avec 5 jours en plus, l'année fait 365 jours.",
+                  "answers": [
+                    {
+                      "content": "360",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "jours"
+                },
+                {
+                  "content": "Le texte grec de la pierre de Rosette a permis de comprendre les hiéroglyphes.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1) Chercher le besoin : lire une écriture oubliée. 2) Le grec, connu, a servi de clé.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
