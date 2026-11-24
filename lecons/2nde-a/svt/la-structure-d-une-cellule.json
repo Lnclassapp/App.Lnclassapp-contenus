@@ -1,0 +1,3303 @@
+{
+ "format": "lnclass.course-tree",
+ "version": 3,
+ "courses": [
+  {
+   "name": "La structure d'une cellule",
+   "subtitle": "Leçon 8 — progression DPFC 2026-2027",
+   "level_name": "2nde",
+   "series_name": "A",
+   "material_name": "SVT",
+   "theme": "teal",
+   "figures": [
+    {
+     "key": "demarche-observation",
+     "kind": "diagram",
+     "description": "Schéma fléché des étapes d'une observation au microscope optique : on prépare la lame et la lamelle, on règle le microscope en partant du plus petit objectif, on calcule le grossissement en multipliant objectif et oculaire, puis on dessine et on légende la cellule observée.",
+     "params": {
+      "layout": "flow",
+      "direction": "down",
+      "nodes": [
+       {
+        "id": "p",
+        "label": "Préparer la lame et la lamelle"
+       },
+       {
+        "id": "r",
+        "label": "Régler : plus petit objectif, mise au point"
+       },
+       {
+        "id": "c",
+        "label": "Calculer G = objectif × oculaire"
+       },
+       {
+        "id": "d",
+        "label": "Dessiner et légender (titre, grossissement)"
+       }
+      ],
+      "edges": [
+       {
+        "from": "p",
+        "to": "r"
+       },
+       {
+        "from": "r",
+        "to": "c"
+       },
+       {
+        "from": "c",
+        "to": "d"
+       }
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "constituants-cellule",
+     "kind": "diagram",
+     "description": "Schéma en arbre des constituants d'une cellule. Trois constituants sont présents dans les deux types de cellules : la membrane, le cytoplasme et le noyau. Trois autres sont propres à la cellule végétale : la paroi, la vacuole et les chloroplastes (ces derniers seulement dans les parties vertes).",
+     "params": {
+      "layout": "tree",
+      "direction": "down",
+      "nodes": [
+       {
+        "id": "cell",
+        "label": "Cellule"
+       },
+       {
+        "id": "mem",
+        "label": "Membrane",
+        "category": 1
+       },
+       {
+        "id": "cyt",
+        "label": "Cytoplasme",
+        "category": 1
+       },
+       {
+        "id": "noy",
+        "label": "Noyau",
+        "category": 1
+       },
+       {
+        "id": "par",
+        "label": "Paroi",
+        "category": 2
+       },
+       {
+        "id": "vac",
+        "label": "Vacuole",
+        "category": 2
+       },
+       {
+        "id": "chl",
+        "label": "Chloroplastes",
+        "category": 2
+       }
+      ],
+      "edges": [
+       {
+        "from": "cell",
+        "to": "mem"
+       },
+       {
+        "from": "cell",
+        "to": "cyt"
+       },
+       {
+        "from": "cell",
+        "to": "noy"
+       },
+       {
+        "from": "cell",
+        "to": "par"
+       },
+       {
+        "from": "cell",
+        "to": "vac"
+       },
+       {
+        "from": "cell",
+        "to": "chl"
+       }
+      ],
+      "legend": [
+       "Cellule animale et cellule végétale",
+       "Cellule végétale seulement"
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "tailles-cellules",
+     "kind": "stat_chart",
+     "description": "Diagramme en barres de la longueur approximative de quatre cellules, en micromètres (µm) : hématie 7 µm, cellule de la joue 50 µm, ovule humain 100 µm, cellule de l'épiderme d'oignon 200 µm. Ce sont des ordres de grandeur ; 1 mm vaut 1 000 µm.",
+     "params": {
+      "chart": "bars",
+      "series": [
+       7,
+       50,
+       100,
+       200
+      ],
+      "labels": [
+       "Hématie",
+       "Cellule de joue",
+       "Ovule humain",
+       "Cellule d'oignon"
+      ]
+     },
+     "controls": []
+    }
+   ],
+   "notions": [
+    {
+     "name": "Observer une cellule au microscope optique",
+     "remember": "Les cellules sont trop petites pour l'œil nu : on les observe au **microscope optique**. On fabrique une **préparation** : un fragment très mince, dans une goutte d'eau ou de colorant, entre une **lame** et une **lamelle**. Le **grossissement** total est $G = G_{objectif} \\times G_{oculaire}$. La taille réelle est la taille du dessin divisée par $G$. Un **dessin d'observation** porte un titre, des légendes reliées par des traits et le grossissement.",
+     "method": [
+      "Préparer la lame : une goutte d'eau ou de colorant, un fragment très mince, puis la lamelle posée en biais pour chasser les bulles d'air.",
+      "Régler le microscope : placer la lame sur la platine, choisir le plus petit objectif, puis faire la mise au point sans forcer.",
+      "Calculer le grossissement $G = G_{objectif} \\times G_{oculaire}$, puis la taille réelle : taille du dessin ÷ $G$.",
+      "Dessiner ce qu'on voit, puis légender : un titre, des traits de légende et le grossissement."
+     ],
+     "example": {
+      "statement": "Observer de l'épiderme d'oignon avec l'objectif ×40 et l'oculaire ×10. Une cellule est dessinée sur 4 cm de long. Quel est le grossissement ? Quelle est la longueur réelle de la cellule ?",
+      "steps": [
+       "Préparer : une goutte d'eau iodée, un fragment très mince d'épiderme, la lamelle posée en biais.",
+       "Régler : on place la lame sur la platine, on commence par l'objectif ×4, on fait la mise au point, puis on passe à l'objectif ×40.",
+       "Calculer : $G = 40 \\times 10 = 400$ ; taille réelle = 40 mm ÷ 400 = 0,1 mm, soit 100 µm.",
+       "Dessiner : on dessine les contours et le noyau vus, avec le titre « Cellules d'épiderme d'oignon » et le grossissement ×400, puis on légende."
+      ]
+     },
+     "pitfall": "Ne pas confondre le grossissement de l'objectif et le grossissement total. Contre-exemple : avec l'objectif ×40 et l'oculaire ×10, $G = 40 \\times 10 = 400$ et non 40. Ne pas confondre non plus la taille du dessin et la taille réelle : un dessin de 4 cm pour $G = 400$ représente une cellule de 0,1 mm, pas de 4 cm.",
+     "figure": "demarche-observation",
+     "practice": {
+      "statement": "Tu t'entraînes à calculer un grossissement et une taille réelle, et à préparer et dessiner une observation.",
+      "questions": [
+       {
+        "content": "Un microscope a un objectif ×4 et un oculaire ×10. Quel est son grossissement total ?",
+        "question_type": "numeric",
+        "explanation": "Étape 3 — Calculer : G = objectif × oculaire = 4 × 10 = 40. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 14 » : additionner les deux grossissements est faux : les deux lentilles se multiplient.",
+        "answers": [
+         {
+          "content": "40",
+          "correct": true
+         }
+        ],
+        "unit": "",
+        "tolerance": 0,
+        "hint": "Les deux lentilles se multiplient."
+       },
+       {
+        "content": "Comment pose-t-on la lamelle sur la goutte qui contient le fragment à observer ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Préparer : la lamelle se pose en biais, doucement, sur la goutte qui contient le fragment. Pourquoi pas « d'un coup, bien à plat » : la lamelle posée à plat emprisonne des bulles d'air qui gênent l'observation.",
+        "answers": [
+         {
+          "content": "En la posant en biais, doucement, pour chasser les bulles d'air",
+          "correct": true
+         },
+         {
+          "content": "D'un coup, bien à plat",
+          "correct": false
+         },
+         {
+          "content": "En appuyant fort avec le pouce pour écraser le fragment",
+          "correct": false
+         },
+         {
+          "content": "Sans goutte de liquide, pour que la lame reste sèche",
+          "correct": false
+         }
+        ],
+        "hint": "Pense aux bulles d'air."
+       },
+       {
+        "content": "Avec G = 100, une cellule dessinée sur 1 cm mesure aussi 1 cm en réalité.",
+        "question_type": "true_false",
+        "explanation": "Étape 3 — Calculer : taille réelle = taille du dessin ÷ G = 10 mm ÷ 100 = 0,1 mm. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « Vrai » : le dessin est agrandi, la taille réelle est donc beaucoup plus petite que le dessin.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": false
+         },
+         {
+          "content": "Faux",
+          "correct": true
+         }
+        ],
+        "hint": "Divise par G."
+       },
+       {
+        "content": "Un dessin d'observation porte un ___ qui dit ce qu'on a observé.",
+        "question_type": "fill_blank",
+        "explanation": "Étape 4 — Dessiner : un dessin d'observation comporte un titre, des légendes et le grossissement. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « légende seule » : sans titre, on ne sait pas ce que le dessin représente.",
+        "answers": [
+         {
+          "content": "titre",
+          "correct": true
+         }
+        ],
+        "hint": "Il se place au-dessus ou au-dessous du dessin."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Préparer, régler, calculer et dessiner",
+       "statement": "Dans cet exercice, tu appliques pas à pas la méthode d'observation d'une cellule au microscope optique.",
+       "exercise_type": "fixation",
+       "figure": "demarche-observation",
+       "questions": [
+        {
+         "content": "Pour observer des cellules d'épiderme d'oignon, que place-t-on sous la lamelle ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Préparer : le fragment doit être très mince, dans une goutte de liquide, couvert d'une lamelle. Pourquoi pas « un morceau d'oignon entier » : trop épais, il ne laisse pas passer la lumière et on ne voit aucune cellule isolée.",
+         "answers": [
+          {
+           "content": "Un fragment très mince, dans une goutte d'eau ou de colorant",
+           "correct": true
+          },
+          {
+           "content": "Un morceau d'oignon entier, coupé en deux",
+           "correct": false
+          },
+          {
+           "content": "Une goutte d'eau seule, sans fragment",
+           "correct": false
+          },
+          {
+           "content": "Un fragment sec, sans liquide",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "On pose la lamelle d'un coup, bien à plat, pour que la préparation soit nette.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Préparer : on pose la lamelle en biais, doucement, pour chasser les bulles d'air. Pourquoi pas « Vrai » : posée à plat d'un coup, la lamelle emprisonne des bulles d'air qui gênent la lecture.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les gestes de l'observation.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Préparer : on fabrique d'abord la préparation. Étape 2 — Régler : on pose la lame, on choisit le plus petit objectif puis on fait la mise au point. Pourquoi pas « commencer par le plus fort objectif » : il risque d'écraser la lame et son champ est trop étroit pour repérer les cellules.",
+         "answers": [
+          {
+           "content": "Fabriquer la préparation entre lame et lamelle"
+          },
+          {
+           "content": "Poser la lame sur la platine"
+          },
+          {
+           "content": "Choisir le plus petit objectif"
+          },
+          {
+           "content": "Faire la mise au point"
+          }
+         ]
+        },
+        {
+         "content": "Un microscope a un objectif ×10 et un oculaire ×10. Quel est son grossissement total ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Calculer : G = objectif × oculaire = 10 × 10 = 100. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 20 » : additionner 10 et 10 est faux : les grossissements se multiplient.",
+         "answers": [
+          {
+           "content": "100",
+           "correct": true
+          }
+         ],
+         "unit": "",
+         "tolerance": 0
+        },
+        {
+         "content": "Avec un grossissement de 100, une cellule est dessinée sur 2 cm de long. Quelle est sa longueur réelle, en mm ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Calculer : taille du dessin = 2 cm = 20 mm ; taille réelle = 20 ÷ 100 = 0,2 mm. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 2 » : 2 cm est la taille du dessin, pas la taille réelle : il faut diviser par G.",
+         "answers": [
+          {
+           "content": "0,2",
+           "correct": true
+          }
+         ],
+         "unit": "mm",
+         "tolerance": 0
+        },
+        {
+         "content": "Quels éléments un dessin d'observation doit-il comporter ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 4 — Dessiner : un bon dessin a un titre, des légendes reliées par des traits et le grossissement. Pourquoi pas « dessiner les parties qu'on connaît » : un dessin d'observation montre uniquement ce qu'on voit réellement.",
+         "answers": [
+          {
+           "content": "Un titre qui dit ce qu'on observe",
+           "correct": true
+          },
+          {
+           "content": "Des légendes écrites horizontalement et reliées par des traits",
+           "correct": true
+          },
+          {
+           "content": "Des ombres et des couleurs pour faire joli",
+           "correct": false
+          },
+          {
+           "content": "Les parties qu'on connaît mais qu'on ne voit pas dans le microscope",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un élève utilise l'objectif ×40 et l'oculaire ×10 et écrit G = 40. Quelle est son erreur ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Calculer : G = objectif × oculaire = 40 × 10 = 400. Pourquoi pas « aucune : le grossissement est celui de l'objectif » : l'image traverse deux lentilles, objectif puis oculaire, donc les deux comptent.",
+         "answers": [
+          {
+           "content": "Il a oublié l'oculaire : G = 40 × 10 = 400",
+           "correct": true
+          },
+          {
+           "content": "Il a additionné au lieu de multiplier",
+           "correct": false
+          },
+          {
+           "content": "Aucune : le grossissement est celui de l'objectif",
+           "correct": false
+          },
+          {
+           "content": "Il a confondu grossissement et taille du dessin",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Les deux lentilles se multiplient ; le dessin est plus grand que la cellule réelle."
+      },
+      {
+       "title": "Matériel, grossissement et dessin au microscope",
+       "statement": "Dans cet exercice, tu retrouves le rôle du matériel, tu calcules un grossissement et une taille réelle dans six questions de types variés.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Relie chaque élément à son rôle.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Préparer : la lamelle couvre la préparation et le colorant la rend plus visible. Étape 3 — Calculer : objectif et oculaire sont les deux lentilles dont on multiplie les grossissements. Pourquoi pas « oculaire proche de la préparation » : c'est l'objectif qui est près de la lame, l'oculaire est devant l'œil.",
+         "answers": [
+          {
+           "content": "Lamelle",
+           "match": "Aplatit et protège la préparation"
+          },
+          {
+           "content": "Colorant",
+           "match": "Rend les cellules plus visibles"
+          },
+          {
+           "content": "Objectif",
+           "match": "Lentille proche de la préparation, elle grossit une première fois"
+          },
+          {
+           "content": "Oculaire",
+           "match": "Lentille devant l'œil, elle grossit une seconde fois"
+          }
+         ]
+        },
+        {
+         "content": "Le grossissement total se calcule en ___ celui de l'objectif et celui de l'oculaire.",
+         "question_type": "select",
+         "explanation": "Étape 3 — Calculer : G = objectif × oculaire, donc on multiplie. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « additionnant » : 10 et 10 additionnés donnent 20, mais le microscope grossit 100 fois.",
+         "answers": [
+          {
+           "content": "multipliant",
+           "correct": true
+          },
+          {
+           "content": "additionnant",
+           "correct": false
+          },
+          {
+           "content": "divisant",
+           "correct": false
+          },
+          {
+           "content": "soustrayant",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un microscope a un objectif ×10 et un oculaire ×15. Quel est son grossissement total ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Calculer : G = objectif × oculaire = 10 × 15 = 150. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 25 » : 25 est la somme des deux grossissements, mais il faut les multiplier.",
+         "answers": [
+          {
+           "content": "150",
+           "correct": true
+          }
+         ],
+         "unit": "",
+         "tolerance": 0
+        },
+        {
+         "content": "Sur un dessin, une cellule mesure 3 cm et le grossissement est 100. Sa longueur réelle est de ___ mm.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Calculer : taille du dessin = 3 cm = 30 mm ; taille réelle = 30 ÷ 100 = 0,3 mm. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 30 » : 30 mm est la longueur du dessin, pas celle de la cellule : on divise par G.",
+         "answers": [
+          {
+           "content": "0,3",
+           "correct": true
+          },
+          {
+           "content": "0.3",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Avec un grossissement de 400, une cellule de 0,1 mm de long mesure 4 cm sur le dessin.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Calculer : taille du dessin = 0,1 mm × 400 = 40 mm = 4 cm. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « Faux » : 0,1 mm × 400 donne bien 40 mm, soit 4 cm : le dessin est agrandi 400 fois.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles précautions permettent de bien observer une préparation ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Préparer : un fragment très mince laisse passer la lumière. Étape 2 — Régler : on commence par le plus petit objectif et on fait la mise au point sans forcer. Pourquoi pas « poser la lamelle brutalement à plat » : elle emprisonne des bulles d'air qui gênent l'observation.",
+         "answers": [
+          {
+           "content": "Commencer par le plus petit objectif",
+           "correct": true
+          },
+          {
+           "content": "Utiliser un fragment très mince",
+           "correct": true
+          },
+          {
+           "content": "Poser la lamelle brutalement à plat",
+           "correct": false
+          },
+          {
+           "content": "Approcher l'objectif tout contre la lame en regardant de côté pour la mise au point, puis forcer la vis",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Objectif et oculaire se multiplient ; la taille réelle est la taille du dessin divisée par G."
+      }
+     ]
+    },
+    {
+     "name": "Les constituants d'une cellule animale et d'une cellule végétale",
+     "remember": "Toute cellule a une **membrane** (elle la limite), un **cytoplasme** (le milieu qui la remplit) et un **noyau** (qui dirige la cellule). La cellule végétale a en plus une **paroi** (enveloppe rigide autour de la membrane), une **vacuole** (grande poche d'eau et de substances dissoutes) et, dans les parties vertes, des **chloroplastes** (grains verts qui contiennent la chlorophylle). La cellule animale n'a ni paroi, ni grande vacuole, ni chloroplastes.",
+     "method": [
+      "Repérer la membrane et le cytoplasme, présents dans toute cellule.",
+      "Identifier le noyau : une structure arrondie, souvent plus foncée, dans le cytoplasme.",
+      "Rechercher les éléments propres au végétal : la paroi, la vacuole, les chloroplastes.",
+      "Conclure : cellule animale s'il n'y a aucun de ces éléments ; cellule végétale s'il y a une paroi."
+     ],
+     "example": {
+      "statement": "On observe une cellule aux contours nets et rectangulaires, avec un noyau et une grande zone claire, sans grains verts. Est-elle animale ou végétale ?",
+      "steps": [
+       "Repérer : on voit un contour et un contenu, donc une membrane et un cytoplasme.",
+       "Identifier : une structure arrondie et foncée dans le contenu est le noyau.",
+       "Rechercher : les contours nets montrent une paroi, la grande zone claire est une vacuole ; il n'y a pas de grains verts, donc pas de chloroplastes.",
+       "Conclure : la paroi et la vacuole montrent une cellule végétale (sans chloroplastes, comme dans un bulbe)."
+      ]
+     },
+     "pitfall": "Ne pas conclure « animale » parce qu'on ne voit pas de chloroplastes. Contre-exemple : une cellule de bulbe d'oignon est végétale (paroi, vacuole) mais n'a pas de chloroplastes, car ils n'existent que dans les parties vertes. C'est la **paroi** qui décide.",
+     "figure": "constituants-cellule",
+     "practice": {
+      "statement": "Tu t'entraînes à reconnaître les constituants d'une cellule et à distinguer cellule animale et cellule végétale.",
+      "questions": [
+       {
+        "content": "Quelle structure rigide entoure la membrane d'une cellule végétale ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 3 — Rechercher : la paroi est l'enveloppe rigide qui entoure la membrane d'une cellule végétale. Pourquoi pas « le cytoplasme » : le cytoplasme est le milieu à l'intérieur de la cellule, pas son enveloppe.",
+        "answers": [
+         {
+          "content": "La paroi",
+          "correct": true
+         },
+         {
+          "content": "Le noyau",
+          "correct": false
+         },
+         {
+          "content": "Le cytoplasme",
+          "correct": false
+         },
+         {
+          "content": "La vacuole",
+          "correct": false
+         }
+        ],
+        "hint": "Elle est à l'extérieur de la membrane."
+       },
+       {
+        "content": "Une cellule animale possède une paroi.",
+        "question_type": "true_false",
+        "explanation": "Étape 3 — Rechercher : la paroi est propre à la cellule végétale. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « Vrai » : seule la cellule végétale a une paroi ; la cellule animale n'a que sa membrane.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": false
+         },
+         {
+          "content": "Faux",
+          "correct": true
+         }
+        ],
+        "hint": "Pense à la différence entre animal et végétal."
+       },
+       {
+        "content": "La grande poche d'eau d'une cellule végétale s'appelle la ___.",
+        "question_type": "fill_blank",
+        "explanation": "Étape 3 — Rechercher : la vacuole est une grande poche remplie d'eau et de substances dissoutes. Pourquoi pas « noyau » : le noyau est une structure arrondie dans le cytoplasme, pas une poche d'eau.",
+        "answers": [
+         {
+          "content": "vacuole",
+          "correct": true
+         }
+        ],
+        "hint": "Elle occupe une grande place dans la cellule."
+       },
+       {
+        "content": "Une cellule qui n'a que membrane, cytoplasme et noyau est une cellule ___.",
+        "question_type": "select",
+        "explanation": "Étape 1 — Repérer : membrane et cytoplasme sont présents partout. Étape 2 — Identifier : le noyau aussi. Étape 4 — Conclure : sans paroi, ni vacuole, ni chloroplastes : c'est une cellule animale. Pourquoi pas « végétale » : une cellule végétale aurait au moins une paroi.",
+        "answers": [
+         {
+          "content": "animale",
+          "correct": true
+         },
+         {
+          "content": "végétale",
+          "correct": false
+         }
+        ],
+        "hint": "Cherche la paroi."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Les constituants d'une cellule",
+       "statement": "Dans cet exercice, tu repères les constituants d'une cellule animale et d'une cellule végétale, un par un.",
+       "exercise_type": "fixation",
+       "figure": "constituants-cellule",
+       "questions": [
+        {
+         "content": "Quel constituant limite toute cellule et la sépare de l'extérieur ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : la membrane entoure le cytoplasme dans toutes les cellules. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « la paroi » : elle n'existe que dans la cellule végétale, à l'extérieur de la membrane.",
+         "answers": [
+          {
+           "content": "La membrane",
+           "correct": true
+          },
+          {
+           "content": "La paroi",
+           "correct": false
+          },
+          {
+           "content": "Le noyau",
+           "correct": false
+          },
+          {
+           "content": "La vacuole",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le milieu dans lequel baignent le noyau et les autres éléments de la cellule s'appelle le ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Repérer : le cytoplasme est le contenu de la cellule, limité par la membrane. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « noyau » : le noyau est une structure précise, il baigne dans le cytoplasme.",
+         "answers": [
+          {
+           "content": "cytoplasme",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quel élément arrondi, souvent plus foncé, se trouve dans le cytoplasme d'une cellule ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Identifier : on cherche une structure arrondie et plus foncée dans le cytoplasme : c'est le noyau. Pourquoi pas « la vacuole » : c'est une poche claire remplie d'eau, pas une structure foncée.",
+         "answers": [
+          {
+           "content": "Le noyau",
+           "correct": true
+          },
+          {
+           "content": "La vacuole",
+           "correct": false
+          },
+          {
+           "content": "La paroi",
+           "correct": false
+          },
+          {
+           "content": "Les chloroplastes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque constituant à sa description.",
+         "question_type": "matching",
+         "explanation": "Étape 2 — Identifier : le noyau est la structure arrondie dans le cytoplasme. Étape 3 — Rechercher : paroi, vacuole et chloroplastes sont propres à la cellule végétale. Pourquoi pas « noyau : grains verts » : les grains verts sont les chloroplastes, le noyau est arrondi et dirige la cellule.",
+         "answers": [
+          {
+           "content": "Paroi",
+           "match": "Enveloppe rigide qui soutient la cellule"
+          },
+          {
+           "content": "Vacuole",
+           "match": "Grande poche d'eau et de substances dissoutes"
+          },
+          {
+           "content": "Chloroplastes",
+           "match": "Grains verts qui contiennent la chlorophylle"
+          },
+          {
+           "content": "Noyau",
+           "match": "Structure arrondie qui dirige la cellule"
+          }
+         ]
+        },
+        {
+         "content": "Quels constituants se trouvent à la fois dans une cellule animale et dans une cellule végétale ?",
+         "question_type": "multiple_correct_3",
+         "explanation": "Étape 1 — Repérer : membrane et cytoplasme sont partout. Étape 2 — Identifier : le noyau aussi. Étape 3 — Rechercher : paroi et chloroplastes sont propres à la cellule végétale. Pourquoi pas « la paroi » : elle est absente de la cellule animale.",
+         "answers": [
+          {
+           "content": "La membrane",
+           "correct": true
+          },
+          {
+           "content": "Le cytoplasme",
+           "correct": true
+          },
+          {
+           "content": "Le noyau",
+           "correct": true
+          },
+          {
+           "content": "La paroi",
+           "correct": false
+          },
+          {
+           "content": "Les chloroplastes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "On observe une cellule aux contours nets et rectangulaires, avec un noyau et une grande zone claire, sans grains verts. De quelle cellule s'agit-il ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Rechercher : contours nets (paroi) et grande zone claire (vacuole) : ce sont des éléments végétaux. Étape 4 — Conclure : la paroi et la vacuole suffisent pour conclure : cellule végétale. Pourquoi pas « animale, car il n'y a pas de grains verts » : beaucoup de cellules végétales, par exemple dans un bulbe ou une racine, n'ont pas de chloroplastes.",
+         "answers": [
+          {
+           "content": "D'une cellule végétale",
+           "correct": true
+          },
+          {
+           "content": "D'une cellule animale, car il n'y a pas de grains verts",
+           "correct": false
+          },
+          {
+           "content": "D'une cellule animale, car elle a un noyau",
+           "correct": false
+          },
+          {
+           "content": "On ne peut pas savoir",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Toute cellule végétale contient des chloroplastes.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Rechercher : les chloroplastes se trouvent seulement dans les parties vertes exposées à la lumière. Étape 4 — Conclure : un bulbe d'oignon est végétal mais n'en a pas. Pourquoi pas « Vrai » : les cellules d'une racine ou d'un bulbe sont végétales et n'ont pas de chloroplastes.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Membrane, cytoplasme et noyau sont communs ; paroi, vacuole et chloroplastes sont propres au végétal."
+      },
+      {
+       "title": "Distinguer une cellule animale d'une cellule végétale",
+       "statement": "Dans cet exercice, tu suis la démarche qui permet de reconnaître une cellule animale ou végétale dans six questions de types variés.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Remets dans l'ordre la démarche pour identifier une cellule.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Repérer : on repère l'enveloppe et le contenu. Étape 2 — Identifier : on identifie le noyau. Étape 3 — Rechercher : on recherche les éléments propres au végétal. Étape 4 — Conclure : on conclut. Pourquoi pas « conclure avant de chercher la paroi » : sans chercher les éléments propres au végétal, on ne peut pas décider.",
+         "answers": [
+          {
+           "content": "Repérer la membrane et le cytoplasme"
+          },
+          {
+           "content": "Identifier le noyau"
+          },
+          {
+           "content": "Rechercher la paroi, la vacuole et les chloroplastes"
+          },
+          {
+           "content": "Conclure : cellule animale ou végétale"
+          }
+         ]
+        },
+        {
+         "content": "Une cellule de la muqueuse de la joue n'a ni paroi, ni vacuole, ni chloroplastes. C'est une cellule ___.",
+         "question_type": "select",
+         "explanation": "Étape 3 — Rechercher : ni paroi, ni vacuole, ni chloroplastes. Étape 4 — Conclure : seuls membrane, cytoplasme et noyau : cellule animale. Pourquoi pas « végétale » : aucun élément propre au végétal n'a été trouvé.",
+         "answers": [
+          {
+           "content": "animale",
+           "correct": true
+          },
+          {
+           "content": "végétale",
+           "correct": false
+          },
+          {
+           "content": "chlorophyllienne",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quels trois constituants ne se trouvent que dans la cellule végétale ?",
+         "question_type": "multiple_correct_3",
+         "explanation": "Étape 3 — Rechercher : paroi, vacuole et chloroplastes sont les éléments propres au végétal. Étape 2 — Identifier : le noyau est commun aux deux. Pourquoi pas « le noyau » : il existe aussi dans la cellule animale.",
+         "answers": [
+          {
+           "content": "La paroi",
+           "correct": true
+          },
+          {
+           "content": "La vacuole",
+           "correct": true
+          },
+          {
+           "content": "Les chloroplastes",
+           "correct": true
+          },
+          {
+           "content": "Le noyau",
+           "correct": false
+          },
+          {
+           "content": "Le cytoplasme",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La paroi est située à l'intérieur de la membrane.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Repérer : la membrane entoure le cytoplasme. Étape 3 — Rechercher : la paroi entoure la membrane : elle est à l'extérieur. Pourquoi pas « Vrai » : la paroi est l'enveloppe externe rigide de la cellule végétale.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Les grains verts qui donnent leur couleur aux feuilles sont les ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Rechercher : les chloroplastes sont des grains verts qui contiennent la chlorophylle. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « vacuoles » : les vacuoles sont des poches d'eau claires, pas des grains verts.",
+         "answers": [
+          {
+           "content": "chloroplastes",
+           "correct": true
+          },
+          {
+           "content": "chloroplaste",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi les cellules d'une feuille sont-elles vertes alors que celles du bulbe d'oignon ne le sont pas ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Rechercher : on cherche les chloroplastes : présents dans la feuille, absents du bulbe. Étape 4 — Conclure : les deux sont des cellules végétales. Pourquoi pas « le bulbe n'est pas formé de cellules végétales » : le bulbe a une paroi et une vacuole : c'est du végétal sans chloroplastes.",
+         "answers": [
+          {
+           "content": "La feuille contient des chloroplastes, que le bulbe souterrain n'a pas",
+           "correct": true
+          },
+          {
+           "content": "Le bulbe n'est pas formé de cellules végétales",
+           "correct": false
+          },
+          {
+           "content": "Le bulbe n'a pas de noyau",
+           "correct": false
+          },
+          {
+           "content": "La feuille n'a pas de vacuole",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Cherche d'abord les constituants communs, puis ceux qui sont propres au végétal."
+      }
+     ]
+    },
+    {
+     "name": "Comparer des cellules et leurs tailles",
+     "remember": "Les cellules animales et végétales ont des **ressemblances** (membrane, cytoplasme, noyau) et des **différences** (paroi, vacuole, chloroplastes pour le végétal) : la cellule est l'**unité du vivant**. Leur taille se mesure en **micromètres** (µm) : $1\\ mm = 1\\,000\\ µm$. Ordres de grandeur : hématie 7 µm, cellule de joue 50 µm, cellule d'épiderme d'oignon 200 µm. Ces cellules sont trop petites pour l'œil nu.",
+     "method": [
+      "Lister les constituants observés dans chaque cellule.",
+      "Comparer : un constituant présent dans les deux cellules est une ressemblance, présent dans une seule, une différence.",
+      "Convertir les tailles dans la même unité ($1\\ mm = 1\\,000\\ µm$) avant de les comparer.",
+      "Conclure : les ressemblances montrent l'unité du vivant ; la taille en µm explique le microscope."
+     ],
+     "example": {
+      "statement": "Comparer une cellule d'oignon (membrane, cytoplasme, noyau, paroi, vacuole ; 0,2 mm de long) et une cellule de joue (membrane, cytoplasme, noyau ; 50 µm de long).",
+      "steps": [
+       "Lister : oignon, membrane, cytoplasme, noyau, paroi et vacuole ; joue, membrane, cytoplasme et noyau.",
+       "Comparer : membrane, cytoplasme et noyau sont communs ; paroi et vacuole sont propres à l'oignon.",
+       "Convertir : 0,2 mm = 200 µm, donc l'oignon mesure 200 ÷ 50 = 4 fois la longueur de la joue.",
+       "Conclure : les constituants communs montrent l'unité du vivant ; ces tailles en µm exigent un microscope."
+      ]
+     },
+     "pitfall": "Ne pas comparer des tailles dans des unités différentes. Contre-exemple : 7 et 0,2 semblent donner 7 > 0,2, mais une hématie mesure 7 µm et une cellule d'oignon 0,2 mm = 200 µm : c'est l'oignon la plus grande. On convertit toujours d'abord.",
+     "figure": "tailles-cellules",
+     "practice": {
+      "statement": "Tu t'entraînes à comparer des cellules, à convertir des tailles et à conclure.",
+      "questions": [
+       {
+        "content": "Convertis 0,5 mm en micromètres.",
+        "question_type": "numeric",
+        "explanation": "Étape 3 — Convertir : 1 mm = 1 000 µm, donc 0,5 mm = 0,5 × 1 000 = 500 µm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 0,5 » : écrire 0,5 µm oublie de convertir : 0,5 mm vaut 500 µm.",
+        "answers": [
+         {
+          "content": "500",
+          "correct": true
+         }
+        ],
+        "unit": "µm",
+        "tolerance": 0,
+        "hint": "1 mm = 1 000 µm."
+       },
+       {
+        "content": "Quel constituant fait la différence entre une cellule végétale et une cellule animale ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Lister : on liste membrane, cytoplasme, noyau et paroi. Étape 2 — Comparer : seule la paroi n'est que dans une des deux cellules. Pourquoi pas « le noyau » : il existe dans les deux cellules, c'est une ressemblance.",
+        "answers": [
+         {
+          "content": "La paroi",
+          "correct": true
+         },
+         {
+          "content": "La membrane",
+          "correct": false
+         },
+         {
+          "content": "Le noyau",
+          "correct": false
+         },
+         {
+          "content": "Le cytoplasme",
+          "correct": false
+         }
+        ],
+        "hint": "Cherche ce qui n'est que dans une cellule."
+       },
+       {
+        "content": "Une cellule de 7 µm est plus grande qu'une cellule de 0,05 mm.",
+        "question_type": "true_false",
+        "explanation": "Étape 3 — Convertir : 7 µm = 0,007 mm, et 0,05 mm = 50 µm : 7 µm est plus petit. Pourquoi pas « Vrai » : 7 est plus grand que 0,05 mais les unités diffèrent : il faut convertir avant de comparer.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": false
+         },
+         {
+          "content": "Faux",
+          "correct": true
+         }
+        ],
+        "hint": "Convertis dans la même unité."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Ressemblances, différences et tailles",
+       "statement": "Dans cet exercice, tu compares les constituants de deux cellules et leurs tailles, pas à pas.",
+       "exercise_type": "fixation",
+       "figure": "tailles-cellules",
+       "questions": [
+        {
+         "content": "Une cellule d'oignon a une membrane, un cytoplasme, un noyau, une paroi et une vacuole. Une cellule de joue a une membrane, un cytoplasme et un noyau. Quels constituants sont communs aux deux ?",
+         "question_type": "multiple_correct_3",
+         "explanation": "Étape 1 — Lister : on liste les constituants de chaque cellule. Étape 2 — Comparer : les constituants présents dans les deux sont les ressemblances. Pourquoi pas « la paroi » : elle n'est que dans la cellule d'oignon : c'est une différence.",
+         "answers": [
+          {
+           "content": "La membrane",
+           "correct": true
+          },
+          {
+           "content": "Le cytoplasme",
+           "correct": true
+          },
+          {
+           "content": "Le noyau",
+           "correct": true
+          },
+          {
+           "content": "La paroi",
+           "correct": false
+          },
+          {
+           "content": "La vacuole",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule d'oignon a une membrane, un cytoplasme, un noyau, une paroi et une vacuole. Une cellule de joue a une membrane, un cytoplasme et un noyau. Quels deux constituants sont des différences ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Lister : on liste les constituants des deux cellules. Étape 2 — Comparer : ce que seule la cellule d'oignon possède est une différence. Pourquoi pas « le noyau » : les deux cellules en ont un : c'est une ressemblance.",
+         "answers": [
+          {
+           "content": "La paroi",
+           "correct": true
+          },
+          {
+           "content": "La vacuole",
+           "correct": true
+          },
+          {
+           "content": "La membrane",
+           "correct": false
+          },
+          {
+           "content": "Le noyau",
+           "correct": false
+          },
+          {
+           "content": "Le cytoplasme",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Convertis 0,2 mm en micromètres.",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Convertir : 1 mm = 1 000 µm, donc 0,2 mm = 0,2 × 1 000 = 200 µm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 0,2 » : 0,2 µm oublie la conversion : 0,2 mm vaut 200 µm.",
+         "answers": [
+          {
+           "content": "200",
+           "correct": true
+          }
+         ],
+         "unit": "µm",
+         "tolerance": 0
+        },
+        {
+         "content": "Convertis 50 µm en millimètres.",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Convertir : 1 000 µm = 1 mm, donc 50 µm = 50 ÷ 1 000 = 0,05 mm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 5 » : 5 mm multiplie par erreur : 50 µm est bien plus petit qu'un millimètre.",
+         "answers": [
+          {
+           "content": "0,05",
+           "correct": true
+          }
+         ],
+         "unit": "mm",
+         "tolerance": 0
+        },
+        {
+         "content": "Une cellule d'oignon mesure 200 µm et une cellule de joue 50 µm. Combien de fois la cellule d'oignon est-elle plus longue que la cellule de joue ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Convertir : les deux tailles sont déjà en µm. Étape 2 — Comparer : on compare : 200 ÷ 50 = 4. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 150 » : 150 est la différence des tailles, pas leur rapport.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ],
+         "unit": "",
+         "tolerance": 0
+        },
+        {
+         "content": "Une cellule d'oignon mesure 0,2 mm et une hématie 7 µm. Laquelle est la plus grande ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Convertir : 0,2 mm = 200 µm. Étape 2 — Comparer : on compare 200 µm et 7 µm : l'oignon est plus grand. Pourquoi pas « l'hématie, car 7 est plus grand que 0,2 » : on compare deux nombres d'unités différentes : il faut d'abord convertir.",
+         "answers": [
+          {
+           "content": "La cellule d'oignon : 0,2 mm = 200 µm, plus que 7 µm",
+           "correct": true
+          },
+          {
+           "content": "L'hématie, car 7 est plus grand que 0,2",
+           "correct": false
+          },
+          {
+           "content": "Elles ont la même taille",
+           "correct": false
+          },
+          {
+           "content": "On ne peut pas les comparer",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les cellules d'oignon et de joue ont toutes les deux une membrane, un cytoplasme et un noyau. Que montre cette ressemblance ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Comparer : les constituants communs sont des ressemblances. Étape 4 — Conclure : des ressemblances chez des êtres différents montrent l'unité du vivant. Pourquoi pas « toutes les cellules sont identiques » : elles ont des constituants communs mais aussi des différences (paroi, vacuole) et des tailles différentes.",
+         "answers": [
+          {
+           "content": "Les êtres vivants sont construits sur le même plan : la cellule est l'unité du vivant",
+           "correct": true
+          },
+          {
+           "content": "Toutes les cellules sont identiques",
+           "correct": false
+          },
+          {
+           "content": "Les cellules végétales sont des cellules animales",
+           "correct": false
+          },
+          {
+           "content": "Toutes les cellules ont la même taille",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Convertis les tailles dans la même unité avant de les comparer : 1 mm = 1 000 µm."
+      },
+      {
+       "title": "Comparer des cellules et des tailles",
+       "statement": "Dans cet exercice, tu compares des cellules et tu convertis des tailles dans six questions de types variés.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Relie chaque cellule à son ordre de grandeur.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Lister : on liste les cellules étudiées. Étape 2 — Comparer : on compare leurs tailles : de la plus petite à la plus grande, hématie, joue, ovule, oignon. Pourquoi pas « hématie : environ 200 µm » : l'hématie est la plus petite de ces cellules.",
+         "answers": [
+          {
+           "content": "Hématie",
+           "match": "Environ 7 µm"
+          },
+          {
+           "content": "Cellule de joue",
+           "match": "Environ 50 µm"
+          },
+          {
+           "content": "Ovule humain",
+           "match": "Environ 100 µm"
+          },
+          {
+           "content": "Cellule d'épiderme d'oignon",
+           "match": "Environ 200 µm"
+          }
+         ]
+        },
+        {
+         "content": "1 mm = ___ µm.",
+         "question_type": "select",
+         "explanation": "Étape 3 — Convertir : 1 mm = 1 000 µm, donc pour convertir des mm en µm on multiplie par 1 000. Pourquoi pas « 100 » : c'est 1 cm = 10 mm ou 1 mm = 1 000 µm : 100 n'est pas la bonne conversion.",
+         "answers": [
+          {
+           "content": "1 000",
+           "correct": true
+          },
+          {
+           "content": "10",
+           "correct": false
+          },
+          {
+           "content": "100",
+           "correct": false
+          },
+          {
+           "content": "10 000",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule de 10 µm est visible à l'œil nu.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Convertir : 10 µm = 0,01 mm. Étape 4 — Conclure : c'est bien plus petit que ce que l'œil nu distingue : il faut un microscope. Pourquoi pas « Vrai » : une taille en µm est invisible à l'œil nu.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Range ces cellules de la plus petite à la plus grande.",
+         "question_type": "ordering",
+         "explanation": "Étape 3 — Convertir : 0,05 mm = 50 µm ; 0,1 mm = 100 µm ; 0,2 mm = 200 µm. Étape 2 — Comparer : on range 7, 50, 100, 200. Pourquoi pas « cellule de joue avant l'hématie » : 0,05 est plus petit que 7 mais 0,05 mm vaut 50 µm, soit plus que 7 µm.",
+         "answers": [
+          {
+           "content": "Hématie (7 µm)"
+          },
+          {
+           "content": "Cellule de joue (0,05 mm)"
+          },
+          {
+           "content": "Ovule humain (0,1 mm)"
+          },
+          {
+           "content": "Cellule d'oignon (0,2 mm)"
+          }
+         ]
+        },
+        {
+         "content": "Les cellules animales et végétales observées ont en commun la membrane, le cytoplasme et le ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Lister : on liste les constituants. Étape 2 — Comparer : les constituants communs sont membrane, cytoplasme et noyau. Pourquoi pas « paroi » : la paroi n'est que dans la cellule végétale.",
+         "answers": [
+          {
+           "content": "noyau",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelles deux phrases sont exactes ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 2 — Comparer : constituants communs d'un côté, constituants propres au végétal de l'autre. Étape 4 — Conclure : conclure sur l'unité du vivant. Pourquoi pas « les cellules animales ont une paroi rigide » : la paroi est propre à la cellule végétale.",
+         "answers": [
+          {
+           "content": "La cellule animale et la cellule végétale ont en commun la membrane, le cytoplasme et le noyau",
+           "correct": true
+          },
+          {
+           "content": "La paroi, la vacuole et les chloroplastes distinguent la cellule végétale",
+           "correct": true
+          },
+          {
+           "content": "Les cellules animales ont une paroi rigide",
+           "correct": false
+          },
+          {
+           "content": "Toutes les cellules mesurent environ 1 mm",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Les ressemblances sont dans les deux cellules ; convertis toujours avant de comparer des tailles."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "title": "Observer de l'épiderme d'oignon",
+     "statement": "Au laboratoire, un élève prépare une pellicule d'épiderme d'oignon, la colore à l'eau iodée et l'observe avec l'objectif ×40 et l'oculaire ×10. Il dessine une cellule de 4 cm de long.",
+     "exercise_type": "fixation",
+     "figure": "demarche-observation",
+     "questions": [
+      {
+       "content": "Remets dans l'ordre les gestes de cette observation.",
+       "question_type": "ordering",
+       "explanation": "Étape 1 — Préparer : préparation d'abord. Étape 2 — Régler : lame sur la platine, plus petit objectif, mise au point. Étape 4 — Dessiner : on dessine à la fin. Pourquoi pas « passer directement à l'objectif ×40 » : il risque d'écraser la lame et on ne repère pas les cellules.",
+       "answers": [
+        {
+         "content": "Fabriquer la préparation entre lame et lamelle"
+        },
+        {
+         "content": "Poser la lame sur la platine et choisir le plus petit objectif"
+        },
+        {
+         "content": "Faire la mise au point puis passer à l'objectif ×40"
+        },
+        {
+         "content": "Dessiner et légender la cellule"
+        }
+       ]
+      },
+      {
+       "content": "L'élève utilise l'objectif ×40 et l'oculaire ×10. Quel est le grossissement total ?",
+       "question_type": "numeric",
+       "explanation": "Étape 3 — Calculer : G = objectif × oculaire = 40 × 10 = 400. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 50 » : additionner 40 et 10 est faux : les grossissements se multiplient.",
+       "answers": [
+        {
+         "content": "400",
+         "correct": true
+        }
+       ],
+       "unit": "",
+       "tolerance": 0
+      },
+      {
+       "content": "Sa cellule est dessinée sur 4 cm de long. Quelle est sa longueur réelle, en µm ?",
+       "question_type": "numeric",
+       "explanation": "Étape 3 — Calculer : 4 cm = 40 mm ; taille réelle = 40 ÷ 400 = 0,1 mm = 100 µm. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 4 cm » : 4 cm est la taille du dessin, pas celle de la cellule.",
+       "answers": [
+        {
+         "content": "100",
+         "correct": true
+        }
+       ],
+       "unit": "µm",
+       "tolerance": 0
+      },
+      {
+       "content": "Quels constituants peut-il légender sur son dessin ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 2 — Identifier : le noyau. Étape 3 — Rechercher : la paroi et la vacuole ; pas de chloroplastes dans un bulbe. Pourquoi pas « paroi, noyau et chloroplastes » : un bulbe d'oignon n'a pas de chloroplastes.",
+       "answers": [
+        {
+         "content": "Paroi, cytoplasme, noyau et vacuole",
+         "correct": true
+        },
+        {
+         "content": "Membrane, cytoplasme et noyau seulement, comme une cellule animale",
+         "correct": false
+        },
+        {
+         "content": "Paroi, noyau et chloroplastes",
+         "correct": false
+        },
+        {
+         "content": "Noyau et chloroplastes seulement",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Comme il ne voit pas de grains verts, il peut conclure que c'est une cellule animale.",
+       "question_type": "true_false",
+       "explanation": "Étape 3 — Rechercher : on recherche la paroi : elle est visible. Étape 4 — Conclure : la paroi montre une cellule végétale. Pourquoi pas « Vrai » : l'absence de chloroplastes ne prouve rien : un bulbe est végétal sans chloroplastes.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": false
+        },
+        {
+         "content": "Faux",
+         "correct": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Comparer une cellule de joue et une cellule de feuille",
+     "statement": "Une élève observe deux préparations : des cellules de sa joue colorées au bleu de méthylène (A) et des cellules de la feuille d'une plante aquatique, l'élodée (B). En B, elle voit des contours nets et de nombreux grains verts.",
+     "exercise_type": "fixation",
+     "figure": "constituants-cellule",
+     "questions": [
+      {
+       "content": "De quel type de cellules s'agit-il en A (cellules de la joue) ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 3 — Rechercher : on recherche paroi, vacuole et chloroplastes : aucun dans la joue. Étape 4 — Conclure : seuls membrane, cytoplasme et noyau : cellule animale. Pourquoi pas « cellules végétales » : elles n'ont pas de paroi.",
+       "answers": [
+        {
+         "content": "Des cellules animales",
+         "correct": true
+        },
+        {
+         "content": "Des cellules végétales",
+         "correct": false
+        },
+        {
+         "content": "Des cellules sans noyau",
+         "correct": false
+        },
+        {
+         "content": "Des cellules avec chloroplastes",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "De quel type de cellules s'agit-il en B ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 1 — Lister : on liste contours nets et grains verts. Étape 2 — Comparer : ces éléments sont propres au végétal. Pourquoi pas « cellules animales, car elles ont un noyau » : le noyau existe dans les deux types de cellules.",
+       "answers": [
+        {
+         "content": "Des cellules végétales",
+         "correct": true
+        },
+        {
+         "content": "Des cellules animales, car elles ont un noyau",
+         "correct": false
+        },
+        {
+         "content": "Des cellules animales, car elles sont colorées",
+         "correct": false
+        },
+        {
+         "content": "On ne peut pas savoir",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Quels deux constituants sont communs aux cellules A et B ?",
+       "question_type": "multiple_correct_2",
+       "explanation": "Étape 1 — Lister : on liste les constituants de A et de B. Étape 2 — Comparer : noyau et cytoplasme sont dans les deux. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « la paroi » : elle n'existe qu'en B.",
+       "answers": [
+        {
+         "content": "Le noyau",
+         "correct": true
+        },
+        {
+         "content": "Le cytoplasme",
+         "correct": true
+        },
+        {
+         "content": "La paroi",
+         "correct": false
+        },
+        {
+         "content": "Les chloroplastes",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Les grains verts de la cellule B sont des ___.",
+       "question_type": "fill_blank",
+       "explanation": "Étape 3 — Rechercher : les grains verts qui contiennent la chlorophylle sont les chloroplastes. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « vacuoles » : les vacuoles sont des poches d'eau claires.",
+       "answers": [
+        {
+         "content": "chloroplastes",
+         "correct": true
+        },
+        {
+         "content": "chloroplaste",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Les cellules de la joue possèdent une paroi rigide.",
+       "question_type": "true_false",
+       "explanation": "Étape 3 — Rechercher : la paroi est propre à la cellule végétale. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « Vrai » : la cellule animale n'a que sa membrane.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": false
+        },
+        {
+         "content": "Faux",
+         "correct": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Mesurer et comparer des cellules",
+     "statement": "Le diagramme donne la longueur approximative de quatre cellules, en µm : hématie 7, cellule de joue 50, ovule humain 100, cellule d'oignon 200.",
+     "exercise_type": "evaluation",
+     "figure": "tailles-cellules",
+     "questions": [
+      {
+       "content": "Quelle est la plus grande de ces quatre cellules ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 2 — Comparer : on compare 7, 50, 100 et 200 µm : toutes en µm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « l'ovule humain » : il mesure 100 µm, moins que les 200 µm de l'oignon.",
+       "answers": [
+        {
+         "content": "La cellule d'oignon",
+         "correct": true
+        },
+        {
+         "content": "L'hématie",
+         "correct": false
+        },
+        {
+         "content": "La cellule de joue",
+         "correct": false
+        },
+        {
+         "content": "L'ovule humain",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Convertis la longueur de la cellule d'oignon en millimètres.",
+       "question_type": "numeric",
+       "explanation": "Étape 3 — Convertir : 200 µm = 200 ÷ 1 000 = 0,2 mm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 200 » : 200 est la valeur en µm, pas en mm.",
+       "answers": [
+        {
+         "content": "0,2",
+         "correct": true
+        }
+       ],
+       "unit": "mm",
+       "tolerance": 0
+      },
+      {
+       "content": "Combien de fois la cellule d'oignon est-elle plus longue que la cellule de joue ?",
+       "question_type": "numeric",
+       "explanation": "Étape 3 — Convertir : les deux tailles sont en µm. Étape 2 — Comparer : 200 ÷ 50 = 4. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 150 » : c'est la différence, pas le rapport.",
+       "answers": [
+        {
+         "content": "4",
+         "correct": true
+        }
+       ],
+       "unit": "",
+       "tolerance": 0
+      },
+      {
+       "content": "Convertis la longueur de la cellule de joue en millimètres.",
+       "question_type": "numeric",
+       "explanation": "Étape 3 — Convertir : 50 µm = 50 ÷ 1 000 = 0,05 mm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 5 » : 5 mm multiplie par erreur au lieu de diviser.",
+       "answers": [
+        {
+         "content": "0,05",
+         "correct": true
+        }
+       ],
+       "unit": "mm",
+       "tolerance": 0
+      },
+      {
+       "content": "Une hématie est visible à l'œil nu.",
+       "question_type": "true_false",
+       "explanation": "Étape 3 — Convertir : 7 µm = 0,007 mm. Étape 4 — Conclure : c'est trop petit pour l'œil nu : il faut un microscope. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « Vrai » : 7 µm est bien en dessous de ce que l'œil distingue.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": false
+        },
+        {
+         "content": "Faux",
+         "correct": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Corriger un compte rendu d'observation",
+     "statement": "Un élève rédige ce compte rendu fictif : « J'observe de l'épiderme d'oignon avec l'objectif ×10 et l'oculaire ×10. Le grossissement est 20. Ma cellule mesure 2 cm sur le dessin, donc elle mesure 2 cm en réalité. Je ne vois pas de grains verts : c'est une cellule animale. »",
+     "exercise_type": "evaluation",
+     "figure": null,
+     "questions": [
+      {
+       "content": "Quelle est l'erreur sur le grossissement ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 3 — Calculer : G = objectif × oculaire = 10 × 10 = 100. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « il n'y a pas d'erreur » : 20 est la somme, mais il faut multiplier.",
+       "answers": [
+        {
+         "content": "Il a additionné 10 et 10 au lieu de les multiplier",
+         "correct": true
+        },
+        {
+         "content": "Il a oublié l'oculaire",
+         "correct": false
+        },
+        {
+         "content": "Il a pris le grossissement de l'objectif seul",
+         "correct": false
+        },
+        {
+         "content": "Il n'y a pas d'erreur",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Quel est le grossissement correct ?",
+       "question_type": "numeric",
+       "explanation": "Étape 3 — Calculer : G = 10 × 10 = 100. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 20 » : c'est la somme et non le produit.",
+       "answers": [
+        {
+         "content": "100",
+         "correct": true
+        }
+       ],
+       "unit": "",
+       "tolerance": 0
+      },
+      {
+       "content": "Avec le bon grossissement, quelle est la longueur réelle de la cellule, en µm ?",
+       "question_type": "numeric",
+       "explanation": "Étape 3 — Calculer : 2 cm = 20 mm ; 20 ÷ 100 = 0,2 mm = 200 µm. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 2 cm » : la taille du dessin n'est pas la taille réelle.",
+       "answers": [
+        {
+         "content": "200",
+         "correct": true
+        }
+       ],
+       "unit": "µm",
+       "tolerance": 0
+      },
+      {
+       "content": "Quelle conclusion est correcte sur le type de cellule ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 3 — Rechercher : on recherche la paroi : présente. Étape 4 — Conclure : la paroi montre une cellule végétale. Pourquoi pas « cellule animale, car elle n'a pas de chloroplastes » : l'absence de chloroplastes est normale dans un bulbe.",
+       "answers": [
+        {
+         "content": "Cellule végétale : elle a une paroi, et un bulbe n'a pas de chloroplastes",
+         "correct": true
+        },
+        {
+         "content": "Cellule animale, car elle n'a pas de chloroplastes",
+         "correct": false
+        },
+        {
+         "content": "Cellule végétale, car elle a un noyau",
+         "correct": false
+        },
+        {
+         "content": "On ne peut rien conclure",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Cette cellule est plus grande qu'une cellule de joue de 50 µm.",
+       "question_type": "true_false",
+       "explanation": "Étape 3 — Convertir : 200 µm contre 50 µm, dans la même unité. Étape 2 — Comparer : 200 > 50. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « Faux » : 200 µm dépasse 50 µm.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": true
+        },
+        {
+         "content": "Faux",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Que doit comporter son dessin d'observation ?",
+       "question_type": "multiple_correct_2",
+       "explanation": "Étape 4 — Dessiner : un titre, des légendes et le grossissement. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « des couleurs pour faire joli » : un dessin montre ce qu'on voit, pas la décoration.",
+       "answers": [
+        {
+         "content": "Un titre",
+         "correct": true
+        },
+        {
+         "content": "Le grossissement utilisé",
+         "correct": true
+        },
+        {
+         "content": "Des couleurs pour faire joli",
+         "correct": false
+        },
+        {
+         "content": "Les parties qu'on devine mais qu'on ne voit pas",
+         "correct": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "subjects": [
+    {
+     "title": "Sujet 1 · Les savoirs de base",
+     "notions": "Le matériel et les gestes de l'observation microscopique, le grossissement, les constituants d'une cellule animale et végétale, les unités de taille.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Tu étudies le matériel et les gestes de l'observation microscopique d'une cellule.",
+       "exercise_type": "evaluation",
+       "figure": "demarche-observation",
+       "questions": [
+        {
+         "content": "Quel objet protège la préparation et l'aplatit légèrement ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Préparer : la lamelle couvre le fragment dans la goutte de liquide. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « la platine » : c'est le plateau qui porte la lame, il ne couvre pas la préparation.",
+         "answers": [
+          {
+           "content": "La lamelle",
+           "correct": true
+          },
+          {
+           "content": "La platine",
+           "correct": false
+          },
+          {
+           "content": "L'oculaire",
+           "correct": false
+          },
+          {
+           "content": "La vis de mise au point",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Par quel objectif commence-t-on l'observation ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Régler : on choisit le plus petit objectif avant la mise au point. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « le plus fort » : il risque d'écraser la lame et son champ est trop étroit.",
+         "answers": [
+          {
+           "content": "Le plus petit grossissement",
+           "correct": true
+          },
+          {
+           "content": "Le plus fort, pour tout voir de près",
+           "correct": false
+          },
+          {
+           "content": "Peu importe",
+           "correct": false
+          },
+          {
+           "content": "On enlève l'objectif",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un microscope a un objectif ×10 et un oculaire ×10. Quel est son grossissement ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Calculer : G = 10 × 10 = 100. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 20 » : les grossissements se multiplient.",
+         "answers": [
+          {
+           "content": "100",
+           "correct": true
+          }
+         ],
+         "unit": "",
+         "tolerance": 0
+        },
+        {
+         "content": "Le dessin d'observation porte un titre, des traits de légende et le ___ utilisé.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 4 — Dessiner : titre, légendes et grossissement. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « nom de l'élève » : le nom de l'élève n'apprend rien sur l'observation.",
+         "answers": [
+          {
+           "content": "grossissement",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Le colorant sert à rendre les cellules plus visibles.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Préparer : on ajoute une goutte de colorant à la préparation. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « Faux » : un colorant rend le noyau et les contours plus faciles à voir.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Lame, lamelle, petit objectif d'abord, G = objectif × oculaire."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Tu retrouves les constituants d'une cellule.",
+       "exercise_type": "evaluation",
+       "figure": "constituants-cellule",
+       "questions": [
+        {
+         "content": "Quel constituant limite toute cellule ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : la membrane entoure le cytoplasme. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « la paroi » : elle n'est que dans la cellule végétale.",
+         "answers": [
+          {
+           "content": "La membrane",
+           "correct": true
+          },
+          {
+           "content": "La paroi",
+           "correct": false
+          },
+          {
+           "content": "La vacuole",
+           "correct": false
+          },
+          {
+           "content": "Les chloroplastes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque constituant à sa description.",
+         "question_type": "matching",
+         "explanation": "Étape 2 — Identifier : le noyau est la structure arrondie. Étape 3 — Rechercher : vacuole et chloroplastes sont propres au végétal. Pourquoi pas « cytoplasme : grains verts » : les grains verts sont les chloroplastes.",
+         "answers": [
+          {
+           "content": "Noyau",
+           "match": "Structure arrondie qui dirige la cellule"
+          },
+          {
+           "content": "Cytoplasme",
+           "match": "Milieu qui remplit la cellule"
+          },
+          {
+           "content": "Vacuole",
+           "match": "Poche d'eau et de substances dissoutes"
+          },
+          {
+           "content": "Chloroplastes",
+           "match": "Grains verts de chlorophylle"
+          }
+         ]
+        },
+        {
+         "content": "Quels deux éléments ne se trouvent que dans des cellules végétales ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 3 — Rechercher : paroi et chloroplastes sont propres au végétal. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « le noyau » : il existe aussi dans la cellule animale.",
+         "answers": [
+          {
+           "content": "La paroi",
+           "correct": true
+          },
+          {
+           "content": "Les chloroplastes",
+           "correct": true
+          },
+          {
+           "content": "Le noyau",
+           "correct": false
+          },
+          {
+           "content": "La membrane",
+           "correct": false
+          },
+          {
+           "content": "Le cytoplasme",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La paroi rigide entoure la membrane d'une cellule végétale.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Repérer : la membrane est la limite de la cellule. Étape 3 — Rechercher : la paroi est autour de la membrane. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « Faux » : la paroi est l'enveloppe externe rigide.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le noyau est situé dans le ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Repérer : le cytoplasme remplit la cellule. Étape 2 — Identifier : le noyau baigne dedans. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « membrane » : la membrane est la limite de la cellule, pas son contenu.",
+         "answers": [
+          {
+           "content": "cytoplasme",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Trois constituants sont communs, trois sont propres au végétal."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Tu identifies des cellules d'après ce qu'on y voit.",
+       "exercise_type": "evaluation",
+       "figure": "constituants-cellule",
+       "questions": [
+        {
+         "content": "Une cellule a une membrane, un cytoplasme et un noyau, sans paroi. De quelle cellule s'agit-il ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Rechercher : pas de paroi, de vacuole ni de chloroplastes. Étape 4 — Conclure : cellule animale. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « cellule végétale » : il n'y a aucune paroi.",
+         "answers": [
+          {
+           "content": "D'une cellule animale",
+           "correct": true
+          },
+          {
+           "content": "D'une cellule végétale",
+           "correct": false
+          },
+          {
+           "content": "D'une cellule sans noyau",
+           "correct": false
+          },
+          {
+           "content": "D'une cellule à chloroplastes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule a une paroi, une grande vacuole et un noyau. De quelle cellule s'agit-il ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Rechercher : la paroi et la vacuole sont propres au végétal. Étape 4 — Conclure : cellule végétale. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « cellule animale » : elle a une paroi.",
+         "answers": [
+          {
+           "content": "D'une cellule végétale",
+           "correct": true
+          },
+          {
+           "content": "D'une cellule animale",
+           "correct": false
+          },
+          {
+           "content": "D'une cellule sans paroi",
+           "correct": false
+          },
+          {
+           "content": "D'une cellule sans noyau",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les grains verts dans le cytoplasme sont des ___.",
+         "question_type": "select",
+         "explanation": "Étape 3 — Rechercher : les chloroplastes sont les grains verts. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « vacuoles » : ce sont des poches d'eau claires.",
+         "answers": [
+          {
+           "content": "chloroplastes",
+           "correct": true
+          },
+          {
+           "content": "noyaux",
+           "correct": false
+          },
+          {
+           "content": "vacuoles",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule sans chloroplastes est forcément animale.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Rechercher : on regarde la paroi, pas seulement les chloroplastes. Étape 4 — Conclure : un bulbe a une paroi sans chloroplastes. Pourquoi pas « Vrai » : des cellules végétales de bulbe n'ont pas de chloroplastes.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre la démarche d'identification.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Repérer : repérer. Étape 2 — Identifier : identifier. Étape 3 — Rechercher : rechercher. Étape 4 — Conclure : conclure. Pourquoi pas « conclure en premier » : il faut d'abord chercher les éléments propres au végétal.",
+         "answers": [
+          {
+           "content": "Repérer la membrane et le cytoplasme"
+          },
+          {
+           "content": "Identifier le noyau"
+          },
+          {
+           "content": "Rechercher paroi, vacuole et chloroplastes"
+          },
+          {
+           "content": "Conclure : animale ou végétale"
+          }
+         ]
+        }
+       ],
+       "hint": "Cherche la paroi pour décider."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Tu convertis et compares des tailles de cellules.",
+       "exercise_type": "evaluation",
+       "figure": "tailles-cellules",
+       "questions": [
+        {
+         "content": "1 mm = ___ µm.",
+         "question_type": "select",
+         "explanation": "Étape 3 — Convertir : 1 mm = 1 000 µm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 100 » : ce n'est pas la bonne conversion.",
+         "answers": [
+          {
+           "content": "1 000",
+           "correct": true
+          },
+          {
+           "content": "10",
+           "correct": false
+          },
+          {
+           "content": "100",
+           "correct": false
+          },
+          {
+           "content": "10 000",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Convertis 0,1 mm en micromètres.",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Convertir : 0,1 × 1 000 = 100 µm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 0,1 » : il faut convertir : 0,1 mm vaut 100 µm.",
+         "answers": [
+          {
+           "content": "100",
+           "correct": true
+          }
+         ],
+         "unit": "µm",
+         "tolerance": 0
+        },
+        {
+         "content": "Convertis 30 µm en millimètres.",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Convertir : 30 ÷ 1 000 = 0,03 mm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 3 » : 3 mm multiplie par erreur au lieu de diviser.",
+         "answers": [
+          {
+           "content": "0,03",
+           "correct": true
+          }
+         ],
+         "unit": "mm",
+         "tolerance": 0
+        },
+        {
+         "content": "Parmi 7 µm, 50 µm et 0,2 mm, quelle est la plus petite taille ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Convertir : 0,2 mm = 200 µm. Étape 2 — Comparer : on compare 7, 50 et 200 µm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 0,2 mm » : 0,2 est plus petit que 7 mais 0,2 mm vaut 200 µm.",
+         "answers": [
+          {
+           "content": "7 µm",
+           "correct": true
+          },
+          {
+           "content": "50 µm",
+           "correct": false
+          },
+          {
+           "content": "0,2 mm",
+           "correct": false
+          },
+          {
+           "content": "Elles sont égales",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque taille à sa conversion en micromètres.",
+         "question_type": "matching",
+         "explanation": "Étape 3 — Convertir : on multiplie les millimètres par 1 000. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 0,05 mm : 5 µm » : il faut multiplier par 1 000 et non par 100.",
+         "answers": [
+          {
+           "content": "0,01 mm",
+           "match": "10 µm"
+          },
+          {
+           "content": "0,05 mm",
+           "match": "50 µm"
+          },
+          {
+           "content": "0,2 mm",
+           "match": "200 µm"
+          },
+          {
+           "content": "1 mm",
+           "match": "1 000 µm"
+          }
+         ]
+        }
+       ],
+       "hint": "On multiplie par 1 000 pour passer de mm à µm."
+      }
+     ]
+    },
+    {
+     "title": "Sujet 2 · La vie courante en Côte d'Ivoire",
+     "notions": "Observation d'oignon du marché et de cellules de la joue, cellules d'une feuille et d'une racine de manioc, ordres de grandeur de tailles de cellules.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Au laboratoire d'un lycée de Bouaké, une élève prépare de l'épiderme d'un oignon acheté au marché.",
+       "exercise_type": "evaluation",
+       "figure": "demarche-observation",
+       "questions": [
+        {
+         "content": "Remets dans l'ordre les gestes de l'élève.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Préparer : fragment mince dans une goutte puis lamelle en biais. Étape 2 — Régler : plus petit objectif puis mise au point. Pourquoi pas « commencer par la mise au point » : sans préparation il n'y a rien à observer.",
+         "answers": [
+          {
+           "content": "Déposer un fragment très mince dans une goutte d'eau iodée"
+          },
+          {
+           "content": "Poser la lamelle en biais"
+          },
+          {
+           "content": "Placer la lame sous le plus petit objectif"
+          },
+          {
+           "content": "Faire la mise au point"
+          }
+         ]
+        },
+        {
+         "content": "Comment pose-t-elle la lamelle ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Préparer : lamelle en biais pour chasser les bulles d'air. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « d'un coup, à plat » : la lamelle emprisonne des bulles d'air.",
+         "answers": [
+          {
+           "content": "En biais et doucement",
+           "correct": true
+          },
+          {
+           "content": "D'un coup, à plat",
+           "correct": false
+          },
+          {
+           "content": "En appuyant fort avec le pouce",
+           "correct": false
+          },
+          {
+           "content": "Sans la poser",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Elle utilise l'objectif ×40 et l'oculaire ×10. Quel est le grossissement total ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Calculer : G = 40 × 10 = 400. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 50 » : il faut multiplier.",
+         "answers": [
+          {
+           "content": "400",
+           "correct": true
+          }
+         ],
+         "unit": "",
+         "tolerance": 0
+        },
+        {
+         "content": "Son dessin d'une cellule mesure 4 cm. Quelle est la longueur réelle de la cellule, en µm ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Calculer : 40 mm ÷ 400 = 0,1 mm = 100 µm. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 40 » : 40 mm est la taille du dessin.",
+         "answers": [
+          {
+           "content": "100",
+           "correct": true
+          }
+         ],
+         "unit": "µm",
+         "tolerance": 0
+        },
+        {
+         "content": "À quoi sert l'eau iodée ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Préparer : on ajoute le colorant à la préparation. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « faire grossir les cellules » : le colorant ne grossit pas : le grossissement vient des lentilles.",
+         "answers": [
+          {
+           "content": "À rendre les cellules et leur noyau plus visibles",
+           "correct": true
+          },
+          {
+           "content": "À faire grossir les cellules",
+           "correct": false
+          },
+          {
+           "content": "À remplacer la lamelle",
+           "correct": false
+          },
+          {
+           "content": "À remplacer l'objectif",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Le grossissement est un produit ; la taille réelle se calcule par une division."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Un élève gratte l'intérieur de sa joue avec un coton-tige propre, étale le contenu sur une lame, ajoute une goutte de bleu de méthylène et observe.",
+       "exercise_type": "evaluation",
+       "figure": "constituants-cellule",
+       "questions": [
+        {
+         "content": "Quelles cellules observe-t-il ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 4 — Conclure : la joue appartient à un être humain : cellules animales. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « cellules végétales » : la joue n'a pas de paroi.",
+         "answers": [
+          {
+           "content": "Des cellules animales",
+           "correct": true
+          },
+          {
+           "content": "Des cellules végétales",
+           "correct": false
+          },
+          {
+           "content": "Des cellules d'oignon",
+           "correct": false
+          },
+          {
+           "content": "Des cellules d'une feuille",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quels constituants voit-il probablement ?",
+         "question_type": "multiple_correct_3",
+         "explanation": "Étape 1 — Repérer : membrane et cytoplasme. Étape 2 — Identifier : noyau coloré. Étape 3 — Rechercher : pas de paroi ni de chloroplastes. Pourquoi pas « la paroi » : elle n'existe pas dans une cellule animale.",
+         "answers": [
+          {
+           "content": "La membrane",
+           "correct": true
+          },
+          {
+           "content": "Le cytoplasme",
+           "correct": true
+          },
+          {
+           "content": "Le noyau",
+           "correct": true
+          },
+          {
+           "content": "La paroi",
+           "correct": false
+          },
+          {
+           "content": "Les chloroplastes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi ne voit-il pas de grains verts ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Rechercher : les chloroplastes sont propres au végétal. Pourquoi pas « les chloroplastes sont trop petits » : on les voit dans une feuille avec le même microscope : ils n'existent pas dans la joue.",
+         "answers": [
+          {
+           "content": "Les cellules animales n'ont pas de chloroplastes",
+           "correct": true
+          },
+          {
+           "content": "Les chloroplastes sont trop petits pour être vus",
+           "correct": false
+          },
+          {
+           "content": "Ses cellules n'ont pas de noyau",
+           "correct": false
+          },
+          {
+           "content": "Le microscope est mal réglé",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les cellules de la joue ont une paroi rigide.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Rechercher : la paroi est propre au végétal. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « Vrai » : la cellule animale n'a que sa membrane.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Une cellule de la joue mesure 0,05 mm. Quelle est sa longueur en micromètres ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Convertir : 0,05 × 1 000 = 50 µm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 0,05 » : il faut convertir en µm.",
+         "answers": [
+          {
+           "content": "50",
+           "correct": true
+          }
+         ],
+         "unit": "µm",
+         "tolerance": 0
+        }
+       ],
+       "hint": "Dans la joue, il n'y a ni paroi ni chloroplastes."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Un jardinier de Korhogo compare une feuille de manioc, verte, et la racine du manioc, blanche et souterraine.",
+       "exercise_type": "evaluation",
+       "figure": "constituants-cellule",
+       "questions": [
+        {
+         "content": "Pourquoi les cellules de la feuille de manioc sont-elles vertes ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Rechercher : les chloroplastes sont les grains verts. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « elles n'ont pas de paroi » : la feuille a une paroi comme toute cellule végétale.",
+         "answers": [
+          {
+           "content": "Elles contiennent des chloroplastes",
+           "correct": true
+          },
+          {
+           "content": "Elles n'ont pas de noyau",
+           "correct": false
+          },
+          {
+           "content": "Elles sont animales",
+           "correct": false
+          },
+          {
+           "content": "Elles n'ont pas de paroi",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Que dire des cellules de la racine, qui ne sont pas vertes ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Rechercher : la racine a une paroi mais pas de chloroplastes. Étape 4 — Conclure : c'est donc du végétal. Pourquoi pas « animales, car blanches » : la couleur ne décide pas : c'est la paroi.",
+         "answers": [
+          {
+           "content": "Elles sont végétales : paroi, mais pas de chloroplastes",
+           "correct": true
+          },
+          {
+           "content": "Elles sont animales, car elles sont blanches",
+           "correct": false
+          },
+          {
+           "content": "Elles ne sont pas des cellules",
+           "correct": false
+          },
+          {
+           "content": "Elles sont végétales car elles ont un noyau seulement",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La paroi se trouve dans les cellules de la feuille et dans celles de la racine.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Rechercher : la paroi est propre à toute cellule végétale. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « Faux » : toutes les cellules végétales ont une paroi.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les cellules de la racine n'ont pas de ___ car elles ne reçoivent pas la lumière.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Rechercher : les chloroplastes n'existent que dans les parties vertes éclairées. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « noyau » : le noyau existe dans toutes ces cellules.",
+         "answers": [
+          {
+           "content": "chloroplastes",
+           "correct": true
+          },
+          {
+           "content": "chloroplaste",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque cellule à ce qu'on y observe.",
+         "question_type": "matching",
+         "explanation": "Étape 3 — Rechercher : on recherche paroi, vacuole et chloroplastes. Étape 4 — Conclure : on conclut animal ou végétal. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « racine : chloroplastes » : la racine n'est pas éclairée.",
+         "answers": [
+          {
+           "content": "Feuille de manioc",
+           "match": "Paroi, vacuole, noyau et chloroplastes"
+          },
+          {
+           "content": "Racine de manioc",
+           "match": "Paroi, vacuole et noyau, sans chloroplastes"
+          },
+          {
+           "content": "Muqueuse de la joue",
+           "match": "Membrane, cytoplasme et noyau, sans paroi"
+          }
+         ]
+        }
+       ],
+       "hint": "La couleur ne suffit pas : cherche la paroi."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Un manuel donne ces longueurs : hématie 7 µm, cellule de la joue 50 µm, cellule d'oignon 0,2 mm.",
+       "exercise_type": "evaluation",
+       "figure": "tailles-cellules",
+       "questions": [
+        {
+         "content": "Convertis 0,2 mm en micromètres.",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Convertir : 0,2 × 1 000 = 200 µm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 0,2 » : il faut convertir.",
+         "answers": [
+          {
+           "content": "200",
+           "correct": true
+          }
+         ],
+         "unit": "µm",
+         "tolerance": 0
+        },
+        {
+         "content": "Combien de fois la cellule d'oignon est-elle plus longue que la cellule de la joue ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Convertir : 200 µm et 50 µm, même unité. Étape 2 — Comparer : 200 ÷ 50 = 4. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 150 » : c'est la différence.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ],
+         "unit": "",
+         "tolerance": 0
+        },
+        {
+         "content": "Pourquoi faut-il un microscope pour voir une hématie ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Convertir : 7 µm = 0,007 mm. Étape 4 — Conclure : c'est trop petit pour l'œil nu. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « elle mesure 7 mm » : 7 µm et 7 mm diffèrent d'un facteur 1 000.",
+         "answers": [
+          {
+           "content": "Elle mesure 7 µm, soit 0,007 mm, bien en dessous de ce que l'œil nu distingue",
+           "correct": true
+          },
+          {
+           "content": "Elle mesure 7 mm mais elle est fragile",
+           "correct": false
+          },
+          {
+           "content": "Elle n'a pas de membrane",
+           "correct": false
+          },
+          {
+           "content": "Le microscope sert surtout à la colorer",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "7 µm est plus grand que 0,05 mm.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Convertir : 0,05 mm = 50 µm. Étape 2 — Comparer : 7 < 50. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « Vrai » : il faut convertir avant de comparer.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Avec un grossissement de 100, une cellule de 0,2 mm est dessinée sur ___.",
+         "question_type": "select",
+         "explanation": "Étape 3 — Calculer : taille du dessin = 0,2 mm × 100 = 20 mm. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 2 mm » : c'est la taille réelle divisée par 100.",
+         "answers": [
+          {
+           "content": "20 mm",
+           "correct": true
+          },
+          {
+           "content": "2 mm",
+           "correct": false
+          },
+          {
+           "content": "200 mm",
+           "correct": false
+          },
+          {
+           "content": "0,002 mm",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Convertis toujours avant de comparer."
+      }
+     ]
+    },
+    {
+     "title": "Sujet 3 · Raisonner et justifier",
+     "notions": "Déduire le type de cellule à partir d'observations, repérer une erreur de calcul de grossissement, comparer trois cellules, calculer une taille réelle.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Un élève observe deux préparations. En A : cellules aux contours rectangulaires nets, noyau visible, grande zone claire, pas de grains verts. En B : cellules aux contours arrondis irréguliers, noyau coloré, ni zone claire ni paroi.",
+       "exercise_type": "evaluation",
+       "figure": "constituants-cellule",
+       "questions": [
+        {
+         "content": "Quelle préparation montre des cellules végétales ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Lister : on liste ce qu'on voit en A et en B. Étape 2 — Comparer : contours nets et zone claire seulement en A. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « la préparation B » : elle n'a ni paroi ni vacuole.",
+         "answers": [
+          {
+           "content": "La préparation A",
+           "correct": true
+          },
+          {
+           "content": "La préparation B",
+           "correct": false
+          },
+          {
+           "content": "Les deux",
+           "correct": false
+          },
+          {
+           "content": "Aucune",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quel indice justifie cette conclusion ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Rechercher : paroi et vacuole sont propres au végétal. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « l'absence de grains verts » : elle n'apprend rien : un bulbe est végétal sans chloroplastes.",
+         "answers": [
+          {
+           "content": "Les contours nets (paroi) et la grande zone claire (vacuole)",
+           "correct": true
+          },
+          {
+           "content": "L'absence de grains verts",
+           "correct": false
+          },
+          {
+           "content": "La présence d'un noyau",
+           "correct": false
+          },
+          {
+           "content": "La couleur du colorant",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La préparation B montre des cellules animales parce qu'elles n'ont pas de paroi.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Rechercher : pas de paroi, ni vacuole. Étape 4 — Conclure : cellule animale. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « Faux » : sans paroi, c'est une cellule animale.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles deux phrases montrent que A et B sont des cellules ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 2 — Comparer : les constituants communs sont des ressemblances. Étape 4 — Conclure : ils montrent l'unité du vivant. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « elles ont une paroi » : B n'en a pas.",
+         "answers": [
+          {
+           "content": "Elles ont toutes les deux une membrane et un cytoplasme",
+           "correct": true
+          },
+          {
+           "content": "Elles ont toutes les deux un noyau visible",
+           "correct": true
+          },
+          {
+           "content": "Elles ont toutes les deux une paroi",
+           "correct": false
+          },
+          {
+           "content": "Elles contiennent toutes les deux des chloroplastes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi l'absence de grains verts en A n'empêche-t-elle pas la cellule d'être végétale ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Rechercher : les chloroplastes n'existent que dans les parties vertes. Étape 4 — Conclure : la paroi suffit à conclure. Pourquoi pas « les cellules végétales n'ont jamais de chloroplastes » : elles en ont dans les feuilles.",
+         "answers": [
+          {
+           "content": "Les cellules des parties non éclairées, comme un bulbe, n'ont pas de chloroplastes",
+           "correct": true
+          },
+          {
+           "content": "Les cellules végétales n'ont jamais de chloroplastes",
+           "correct": false
+          },
+          {
+           "content": "Les grains verts sont des noyaux",
+           "correct": false
+          },
+          {
+           "content": "La paroi cache les chloroplastes",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "La paroi est l'indice décisif."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Un élève écrit : « Le grossissement est G = 40 + 10 = 50 », avec l'objectif ×40 et l'oculaire ×10.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Quelle est son erreur ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Calculer : G = objectif × oculaire. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « il n'y a pas d'erreur » : 50 est une somme, pas un produit.",
+         "answers": [
+          {
+           "content": "Il a additionné au lieu de multiplier",
+           "correct": true
+          },
+          {
+           "content": "Il a oublié l'objectif",
+           "correct": false
+          },
+          {
+           "content": "Il a oublié l'oculaire",
+           "correct": false
+          },
+          {
+           "content": "Il n'y a pas d'erreur",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quel est le grossissement correct ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Calculer : G = 40 × 10 = 400. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 50 » : c'est la somme.",
+         "answers": [
+          {
+           "content": "400",
+           "correct": true
+          }
+         ],
+         "unit": "",
+         "tolerance": 0
+        },
+        {
+         "content": "Avec ce grossissement, un dessin de 2 cm représente une cellule de quelle longueur réelle, en µm ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Calculer : 20 mm ÷ 400 = 0,05 mm = 50 µm. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 2 » : c'est la taille du dessin en cm.",
+         "answers": [
+          {
+           "content": "50",
+           "correct": true
+          }
+         ],
+         "unit": "µm",
+         "tolerance": 0
+        },
+        {
+         "content": "Avec l'oculaire ×15 à la place de ×10 et le même objectif ×40, le grossissement devient 600.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Calculer : G = 40 × 15 = 600. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « Faux » : 40 × 15 donne bien 600.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quand le grossissement augmente, la taille du dessin d'une même cellule ___.",
+         "question_type": "select",
+         "explanation": "Étape 3 — Calculer : taille du dessin = taille réelle × G. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « diminue » : plus G est grand, plus le dessin est grand.",
+         "answers": [
+          {
+           "content": "augmente",
+           "correct": true
+          },
+          {
+           "content": "diminue",
+           "correct": false
+          },
+          {
+           "content": "reste identique",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "G est un produit ; la taille réelle est le dessin divisé par G."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Un tableau fictif décrit trois cellules. Cellule 1 : paroi, noyau, chloroplastes. Cellule 2 : paroi, noyau, pas de chloroplastes. Cellule 3 : pas de paroi, noyau, pas de chloroplastes.",
+       "exercise_type": "evaluation",
+       "figure": "constituants-cellule",
+       "questions": [
+        {
+         "content": "Quelles cellules sont végétales ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Rechercher : la paroi se trouve dans les cellules 1 et 2. Étape 4 — Conclure : elles sont végétales. Pourquoi pas « la cellule 1 seulement » : les chloroplastes ne sont pas obligatoires pour une cellule végétale.",
+         "answers": [
+          {
+           "content": "Les cellules 1 et 2",
+           "correct": true
+          },
+          {
+           "content": "La cellule 1 seulement, car elle a des chloroplastes",
+           "correct": false
+          },
+          {
+           "content": "Les cellules 2 et 3",
+           "correct": false
+          },
+          {
+           "content": "La cellule 3 seulement",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Que dire de la cellule 3 ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Rechercher : pas de paroi ni de chloroplastes. Étape 4 — Conclure : cellule animale. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « cellule végétale » : sans paroi, elle ne peut pas être végétale.",
+         "answers": [
+          {
+           "content": "C'est une cellule animale",
+           "correct": true
+          },
+          {
+           "content": "C'est une cellule végétale",
+           "correct": false
+          },
+          {
+           "content": "Elle n'a pas de noyau",
+           "correct": false
+          },
+          {
+           "content": "On ne peut pas savoir",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles deux conclusions sont exactes ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Lister : on liste les constituants. Étape 2 — Comparer : noyau dans les trois, paroi dans 1 et 2. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « les trois ont une paroi » : la cellule 3 n'en a pas.",
+         "answers": [
+          {
+           "content": "Les trois cellules ont un noyau",
+           "correct": true
+          },
+          {
+           "content": "Les cellules 1 et 2 ont en commun une paroi",
+           "correct": true
+          },
+          {
+           "content": "Les trois cellules ont une paroi",
+           "correct": false
+          },
+          {
+           "content": "Seule la cellule 3 a un noyau",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La cellule 2 est animale car elle n'a pas de chloroplastes.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Rechercher : elle a une paroi. Étape 4 — Conclure : cellule végétale. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « Vrai » : l'absence de chloroplastes ne rend pas une cellule animale.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelle phrase est la meilleure conclusion pour la cellule 2 ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Rechercher : paroi présente. Étape 4 — Conclure : cellule végétale. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « elle est végétale car elle a un noyau » : le noyau existe aussi dans la cellule animale.",
+         "answers": [
+          {
+           "content": "Elle a une paroi : c'est une cellule végétale, sans chloroplastes comme une partie non verte",
+           "correct": true
+          },
+          {
+           "content": "Elle est animale car elle n'a pas de chloroplastes",
+           "correct": false
+          },
+          {
+           "content": "Elle est végétale car elle a un noyau",
+           "correct": false
+          },
+          {
+           "content": "On ne peut rien conclure sans chloroplastes",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Cherche la paroi, pas les chloroplastes."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Un élève mesure 6 cm sur son dessin pour une cellule observée avec un grossissement G = 300.",
+       "exercise_type": "evaluation",
+       "figure": "tailles-cellules",
+       "questions": [
+        {
+         "content": "Quelle est la longueur réelle de la cellule, en mm ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Calculer : 6 cm = 60 mm ; 60 ÷ 300 = 0,2 mm. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 60 » : 60 mm est la taille du dessin.",
+         "answers": [
+          {
+           "content": "0,2",
+           "correct": true
+          }
+         ],
+         "unit": "mm",
+         "tolerance": 0
+        },
+        {
+         "content": "Quelle est cette longueur en micromètres ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Convertir : 0,2 mm = 200 µm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 0,2 » : il faut convertir.",
+         "answers": [
+          {
+           "content": "200",
+           "correct": true
+          }
+         ],
+         "unit": "µm",
+         "tolerance": 0
+        },
+        {
+         "content": "Quelle cellule a cette taille ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Lister : on liste les tailles connues. Étape 2 — Comparer : on compare avec 200 µm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « cellule de joue » : elle ne mesure que 50 µm.",
+         "answers": [
+          {
+           "content": "Une cellule d'oignon (200 µm)",
+           "correct": true
+          },
+          {
+           "content": "Une cellule de joue (50 µm)",
+           "correct": false
+          },
+          {
+           "content": "Une hématie (7 µm)",
+           "correct": false
+          },
+          {
+           "content": "Aucune",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pour passer de la taille du dessin à la taille réelle, on multiplie par G.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Calculer : taille réelle = taille du dessin ÷ G. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « Vrai » : multiplier agrandit encore, alors que la réalité est plus petite.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les étapes du calcul de la taille réelle.",
+         "question_type": "ordering",
+         "explanation": "Étape 3 — Calculer : G puis division. Étape 3 — Calculer : conversion en µm à la fin. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « convertir avant de diviser » : on divise d'abord par G puis on convertit.",
+         "answers": [
+          {
+           "content": "Mesurer le dessin en mm"
+          },
+          {
+           "content": "Calculer G (objectif × oculaire)"
+          },
+          {
+           "content": "Diviser la mesure par G"
+          },
+          {
+           "content": "Convertir en µm"
+          }
+         ]
+        }
+       ],
+       "hint": "La taille réelle est la taille du dessin divisée par G."
+      }
+     ]
+    },
+    {
+     "title": "Sujet 4 · Bilan",
+     "notions": "Bilan des trois notions : observation au microscope, constituants d'une cellule, ressemblances, différences et tailles.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Bilan de l'observation microscopique.",
+       "exercise_type": "evaluation",
+       "figure": "demarche-observation",
+       "questions": [
+        {
+         "content": "Remets dans l'ordre les étapes d'une observation.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Préparer : préparer. Étape 2 — Régler : régler. Étape 3 — Calculer : calculer. Étape 4 — Dessiner : dessiner. Pourquoi pas « dessiner avant de régler » : on ne peut dessiner qu'après avoir observé.",
+         "answers": [
+          {
+           "content": "Préparer la lame"
+          },
+          {
+           "content": "Régler le microscope"
+          },
+          {
+           "content": "Calculer le grossissement"
+          },
+          {
+           "content": "Dessiner et légender"
+          }
+         ]
+        },
+        {
+         "content": "Objectif ×10 et oculaire ×10 : quel est le grossissement ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Calculer : G = 10 × 10 = 100. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 20 » : il faut multiplier.",
+         "answers": [
+          {
+           "content": "100",
+           "correct": true
+          }
+         ],
+         "unit": "",
+         "tolerance": 0
+        },
+        {
+         "content": "Quels constituants voit-on dans une cellule d'oignon ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : membrane et cytoplasme. Étape 2 — Identifier : noyau. Étape 3 — Rechercher : paroi et vacuole, mais pas de chloroplastes. Pourquoi pas « paroi, noyau et chloroplastes » : un bulbe n'a pas de chloroplastes.",
+         "answers": [
+          {
+           "content": "Membrane, cytoplasme, noyau, paroi et vacuole",
+           "correct": true
+          },
+          {
+           "content": "Membrane, cytoplasme et noyau seulement",
+           "correct": false
+          },
+          {
+           "content": "Paroi, noyau et chloroplastes",
+           "correct": false
+          },
+          {
+           "content": "Chloroplastes et vacuole seulement",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans l'épiderme d'oignon, on trouve des chloroplastes.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Convertir : chloroplastes seulement dans les parties vertes. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « Vrai » : un bulbe est souterrain, donc sans chloroplastes.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Une cellule de la joue n'a pas de ___.",
+         "question_type": "select",
+         "explanation": "Étape 3 — Rechercher : paroi propre au végétal. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « noyau » : la joue a un noyau.",
+         "answers": [
+          {
+           "content": "paroi",
+           "correct": true
+          },
+          {
+           "content": "noyau",
+           "correct": false
+          },
+          {
+           "content": "membrane",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Reprends les trois notions."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Bilan sur les constituants.",
+       "exercise_type": "evaluation",
+       "figure": "constituants-cellule",
+       "questions": [
+        {
+         "content": "Relie chaque observation à sa conclusion.",
+         "question_type": "matching",
+         "explanation": "Étape 3 — Rechercher : on recherche paroi, vacuole et chloroplastes. Étape 4 — Conclure : on conclut animale ou végétale. Pourquoi pas « paroi sans grains verts : animale » : la paroi montre le végétal.",
+         "answers": [
+          {
+           "content": "Paroi, vacuole et grains verts",
+           "match": "Cellule végétale d'une feuille"
+          },
+          {
+           "content": "Paroi et vacuole, sans grains verts",
+           "match": "Cellule végétale d'un bulbe ou d'une racine"
+          },
+          {
+           "content": "Membrane, cytoplasme et noyau seulement",
+           "match": "Cellule animale"
+          }
+         ]
+        },
+        {
+         "content": "Quelles trois structures ne se trouvent que chez les cellules végétales ?",
+         "question_type": "multiple_correct_3",
+         "explanation": "Étape 3 — Rechercher : paroi, vacuole et chloroplastes. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « le noyau » : il existe aussi dans la cellule animale.",
+         "answers": [
+          {
+           "content": "La paroi",
+           "correct": true
+          },
+          {
+           "content": "La vacuole",
+           "correct": true
+          },
+          {
+           "content": "Les chloroplastes",
+           "correct": true
+          },
+          {
+           "content": "Le noyau",
+           "correct": false
+          },
+          {
+           "content": "Le cytoplasme",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La ___ est l'enveloppe rigide qui entoure la membrane d'une cellule végétale.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Rechercher : la paroi entoure la membrane. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « membrane » : la membrane est à l'intérieur de la paroi.",
+         "answers": [
+          {
+           "content": "paroi",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelle phrase est exacte ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Rechercher : la paroi est dans toutes les cellules végétales. Étape 4 — Conclure : les chloroplastes seulement dans les parties vertes. Pourquoi pas « toutes les cellules végétales ont des chloroplastes » : un bulbe n'en a pas.",
+         "answers": [
+          {
+           "content": "Toutes les cellules végétales ont une paroi, mais pas toutes des chloroplastes",
+           "correct": true
+          },
+          {
+           "content": "Toutes les cellules végétales ont des chloroplastes",
+           "correct": false
+          },
+          {
+           "content": "Les cellules animales ont une paroi mince",
+           "correct": false
+          },
+          {
+           "content": "Seules les cellules végétales ont un noyau",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le noyau est présent dans les cellules animales et végétales observées.",
+         "question_type": "true_false",
+         "explanation": "Étape 2 — Identifier : le noyau est dans les deux. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « Faux » : il est commun aux deux types.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Trois constituants communs, trois propres au végétal."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Bilan sur les tailles.",
+       "exercise_type": "evaluation",
+       "figure": "tailles-cellules",
+       "questions": [
+        {
+         "content": "Convertis 0,3 mm en micromètres.",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Convertir : 0,3 × 1 000 = 300 µm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 0,3 » : il faut convertir.",
+         "answers": [
+          {
+           "content": "300",
+           "correct": true
+          }
+         ],
+         "unit": "µm",
+         "tolerance": 0
+        },
+        {
+         "content": "Convertis 120 µm en millimètres.",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Convertir : 120 ÷ 1 000 = 0,12 mm. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « 12 » : il faut diviser.",
+         "answers": [
+          {
+           "content": "0,12",
+           "correct": true
+          }
+         ],
+         "unit": "mm",
+         "tolerance": 0
+        },
+        {
+         "content": "0,2 mm est plus petit que 50 µm.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Convertir : 0,2 mm = 200 µm. Étape 2 — Comparer : 200 > 50. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « Vrai » : il faut convertir avant de comparer.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quel est l'ordre de grandeur de la taille de la plupart des cellules observées au microscope ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 4 — Conclure : les tailles en µm exigent un microscope. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « plusieurs centimètres » : ces cellules sont invisibles à l'œil nu.",
+         "answers": [
+          {
+           "content": "De quelques µm à quelques centaines de µm",
+           "correct": true
+          },
+          {
+           "content": "Plusieurs centimètres",
+           "correct": false
+          },
+          {
+           "content": "Plusieurs mètres",
+           "correct": false
+          },
+          {
+           "content": "Moins d'un µm",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La cellule est l'___ de base du vivant.",
+         "question_type": "select",
+         "explanation": "Étape 4 — Conclure : les ressemblances montrent l'unité du vivant. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « organe » : un organe est formé de nombreuses cellules.",
+         "answers": [
+          {
+           "content": "unité",
+           "correct": true
+          },
+          {
+           "content": "organe",
+           "correct": false
+          },
+          {
+           "content": "appareil",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Convertis avant de comparer."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Un élève observe l'épiderme d'un oignon avec l'objectif ×40 et l'oculaire ×10 et dessine une cellule de 4 cm.",
+       "exercise_type": "evaluation",
+       "figure": "demarche-observation",
+       "questions": [
+        {
+         "content": "Quel est le grossissement ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Calculer : G = 40 × 10 = 400. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 50 » : il faut multiplier.",
+         "answers": [
+          {
+           "content": "400",
+           "correct": true
+          }
+         ],
+         "unit": "",
+         "tolerance": 0
+        },
+        {
+         "content": "Quelle est la longueur réelle de la cellule, en µm ?",
+         "question_type": "numeric",
+         "explanation": "Étape 3 — Calculer : 40 mm ÷ 400 = 0,1 mm = 100 µm. Rappel de la méthode : 1. Préparer ; 2. Régler ; 3. Calculer ; 4. Dessiner. Pourquoi pas « 40 » : c'est la taille du dessin.",
+         "answers": [
+          {
+           "content": "100",
+           "correct": true
+          }
+         ],
+         "unit": "µm",
+         "tolerance": 0
+        },
+        {
+         "content": "De quel type de cellule s'agit-il ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Rechercher : la paroi et la vacuole sont visibles. Étape 4 — Conclure : cellule végétale. Rappel de la méthode : 1. Repérer ; 2. Identifier ; 3. Rechercher ; 4. Conclure. Pourquoi pas « cellule animale » : elle a une paroi.",
+         "answers": [
+          {
+           "content": "D'une cellule végétale",
+           "correct": true
+          },
+          {
+           "content": "D'une cellule animale",
+           "correct": false
+          },
+          {
+           "content": "D'une cellule sans noyau",
+           "correct": false
+          },
+          {
+           "content": "On ne peut pas savoir",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quels deux éléments de cette cellule la distinguent d'une cellule de joue ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Lister : on liste les constituants de chaque cellule. Étape 2 — Comparer : seuls paroi et vacuole sont propres à l'oignon. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « le noyau » : la joue en a un aussi.",
+         "answers": [
+          {
+           "content": "La paroi",
+           "correct": true
+          },
+          {
+           "content": "La vacuole",
+           "correct": true
+          },
+          {
+           "content": "Le noyau",
+           "correct": false
+          },
+          {
+           "content": "Le cytoplasme",
+           "correct": false
+          },
+          {
+           "content": "La membrane",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Cette cellule est plus grande qu'une hématie de 7 µm.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Convertir : 100 µm et 7 µm, même unité. Étape 2 — Comparer : 100 > 7. Rappel de la méthode : 1. Lister ; 2. Comparer ; 3. Convertir ; 4. Conclure. Pourquoi pas « Faux » : 100 µm dépasse 7 µm.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "G, taille réelle, type de cellule."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
