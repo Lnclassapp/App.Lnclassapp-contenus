@@ -553,7 +553,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Relie chaque geste à une étape de la méthode et vérifie les unités : 1 mm = 1 000 µm."
       }
      ]
     },
@@ -899,7 +900,8 @@
          "tolerance": 0,
          "unit": "µm"
         }
-       ]
+       ],
+       "hint": "Pour chaque organite, retiens sa forme au microscope et un seul rôle principal."
       }
      ]
     },
@@ -1251,7 +1253,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Cherche d'abord la paroi : c'est le critère le plus sûr pour une cellule végétale."
       }
      ]
     },
@@ -1321,7 +1324,7 @@
        {
         "content": "Une cellule sans noyau est une cellule ___.",
         "question_type": "fill_blank",
-        "explanation": "Étape 2 — Chercher le noyau : sans noyau, étape 4 — Conclure : la cellule est procaryote, comme la bactérie.",
+        "explanation": "Étape 2 — Chercher le noyau : sans noyau, étape 4 — Conclure : la cellule est procaryote, comme la bactérie. Dans une bactérie, l'ADN existe bien, mais il flotte librement dans le cytoplasme.",
         "answers": [
          {
           "content": "procaryote",
@@ -1581,7 +1584,8 @@
           }
          ]
         }
-       ]
+       ],
+       "hint": "Cherche le noyau, puis les organites entourés de membrane."
       }
      ]
     }
@@ -2365,7 +2369,7 @@
         {
          "content": "Une cellule sans noyau est dite ___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 1. Chercher le noyau : absent. 2. Conclure : cellule procaryote. Pourquoi pas eucaryote : une cellule eucaryote a un noyau.",
+         "explanation": "Méthode : 1. Chercher le noyau : absent. 2. Conclure : cellule procaryote. Pourquoi pas eucaryote : une cellule eucaryote a un noyau. Dans une bactérie, l'ADN existe bien, mais il flotte librement dans le cytoplasme.",
          "answers": [
           {
            "content": "procaryote",
@@ -2795,7 +2799,7 @@
         {
          "content": "Les bactéries sont des cellules sans ___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 1. Chercher le noyau. 2. Conclure : les bactéries n'en ont pas, leur ADN est libre. Pourquoi pas « ADN » : elles en possèdent une molécule.",
+         "explanation": "Méthode : 1. Chercher le noyau. 2. Conclure : les bactéries n'en ont pas, leur ADN est libre. Pourquoi pas « ADN » : elles en possèdent une molécule. Le mot attendu désigne la structure qui entoure l'ADN chez les eucaryotes seulement.",
          "answers": [
           {
            "content": "noyau",
@@ -3211,7 +3215,7 @@
         {
          "content": "Une cellule dont l'ADN est dans un noyau est ___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 1. Chercher le noyau : présent. 2. Conclure : eucaryote. Pourquoi pas procaryote : l'ADN procaryote n'est pas dans un noyau.",
+         "explanation": "Méthode : 1. Chercher le noyau : présent. 2. Conclure : eucaryote. Pourquoi pas procaryote : l'ADN procaryote n'est pas dans un noyau. Le noyau, délimité par son enveloppe, est le critère décisif de la cellule eucaryote.",
          "answers": [
           {
            "content": "eucaryote",
@@ -3237,7 +3241,7 @@
         {
          "content": "Quel est le grossissement total ?",
          "question_type": "numeric",
-         "explanation": "Méthode : 1. Calculer le grossissement total : 40 × 10 = 400. Pourquoi pas « 50 » : on a additionné les deux grossissements.",
+         "explanation": "Méthode : 1. Calculer le grossissement total : 40 × 10 = 400. Pourquoi pas « 50 » : on a additionné les deux grossissements. Les deux grossissements se multiplient et ne s'additionnent jamais.",
          "answers": [
           {
            "content": "400",
@@ -3463,7 +3467,7 @@
         {
          "content": "Quelles structures sont communes aux cellules animale et végétale ?",
          "question_type": "multiple_correct_3",
-         "explanation": "Méthode : 1. Lister. 2. Noyau, mitochondries, ribosomes sont communs. Pourquoi pas « La paroi » : elle est propre à la cellule végétale.",
+         "explanation": "Méthode : 1. Lister. 2. Noyau, mitochondries, ribosomes sont communs. Pourquoi pas « La paroi » : elle est propre à la cellule végétale. Retiens que toute cellule eucaryote contient ces trois structures, alors que paroi et chloroplastes sont réservés au végétal.",
          "answers": [
           {
            "content": "Le noyau",
@@ -3490,7 +3494,7 @@
         {
          "content": "La paroi des cellules végétales est faite de ___.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 1. Repérer la paroi. 2. Elle est faite de cellulose. Pourquoi pas « chlorophylle » : c'est le pigment vert des chloroplastes.",
+         "explanation": "Méthode : 1. Repérer la paroi. 2. Elle est faite de cellulose. Pourquoi pas « chlorophylle » : c'est le pigment vert des chloroplastes. Cette paroi rigide, extérieure à la membrane plasmique, protège la cellule et lui donne sa forme.",
          "answers": [
           {
            "content": "cellulose",
@@ -3602,7 +3606,7 @@
         {
          "content": "Combien de fois S3 est-elle plus grande que S1 ?",
          "question_type": "numeric",
-         "explanation": "Méthode : 1. Estimer les tailles : 100 µm et 2 µm. 2. Diviser : 100 ÷ 2 = 50. Pourquoi pas « 98 » : on a soustrait au lieu de diviser.",
+         "explanation": "Méthode : 1. Estimer les tailles : 100 µm et 2 µm. 2. Diviser : 100 ÷ 2 = 50. Pourquoi pas « 98 » : on a soustrait au lieu de diviser. Le résultat 50 signifie que 50 bactéries alignées font la taille d'une cellule végétale.",
          "answers": [
           {
            "content": "50",
