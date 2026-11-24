@@ -432,7 +432,7 @@
     },
     {
      "name": "De Solon à Périclès : les étapes de la démocratie",
-     "remember": "Le mot **démocratie** vient du grec *dêmos* (le peuple) et *kratos* (le pouvoir) : c'est le pouvoir du peuple. À Athènes, elle se construit en plusieurs étapes. Au départ, les grands propriétaires, les aristocrates, dominent, et des paysans endettés risquent de devenir esclaves.\n\n**Solon**, vers **594 av. J.-C.**, interdit l'esclavage pour dettes et classe les citoyens selon leur richesse ; tous les citoyens peuvent siéger à l'assemblée.\n**Clisthène**, vers **508-507 av. J.-C.**, répartit les citoyens en 10 tribus selon leur lieu de vie (les dèmes) et crée la **Boulè des 500**, conseil de 500 citoyens.\n**Périclès**, au **Ve siècle av. J.-C.**, dirige Athènes comme stratège jusqu'à sa mort en 429 ; il fait payer les fonctions publiques (le **misthos**) pour que les pauvres puissent y participer.",
+     "remember": "Le mot **démocratie** vient du grec *dêmos* (le peuple) et *kratos* (le pouvoir) : c'est le pouvoir du peuple. À Athènes, elle se construit en plusieurs étapes. Au départ, les grands propriétaires, les aristocrates, dominent, et des paysans endettés risquent de devenir esclaves.\n\n**Solon**, vers **594 av. J.-C.**, interdit l'esclavage pour dettes et classe les citoyens selon leur richesse ; tous les citoyens peuvent siéger à l'assemblée.\nAprès lui, **Pisistrate** s'empare du pouvoir et gouverne seul, en **tyran**, au milieu du VIe siècle av. J.-C.\n**Clisthène**, vers **508-507 av. J.-C.**, répartit les citoyens en 10 tribus selon leur lieu de vie (les dèmes) et crée la **Boulè des 500**, conseil de 500 citoyens.\n**Périclès**, élu stratège de nombreuses fois, domine la vie d'Athènes au **Ve siècle av. J.-C.** jusqu'à sa mort en 429 ; il instaure le **misthos**, une indemnité versée d'abord aux jurés du tribunal (l'Héliée), puis étendue à d'autres fonctions publiques, pour que les pauvres puissent y participer.",
      "method": [
       "Repérer la date et la période : vers 594, 508-507, Ve siècle.",
       "Nommer le réformateur qui agit à cette date.",
@@ -445,7 +445,7 @@
        "Repérer : la date est vers 508-507 av. J.-C., après l'époque de Solon.",
        "Nommer : le réformateur est Clisthène.",
        "Décrire : il répartit les citoyens en 10 tribus selon leur lieu de vie et crée la Boulè des 500.",
-       "Conclure : le pouvoir ne dépend plus de la naissance ou de la famille ; les citoyens de tous les quartiers participent aux affaires de la cité."
+       "Conclure : les citoyens sont regroupés selon leur lieu de vie et non plus selon leur famille, ce qui affaiblit les grandes familles aristocratiques ; les citoyens de tous les dèmes participent aux affaires de la cité."
       ]
      },
      "pitfall": "Ne crois pas que la démocratie est l'œuvre d'un seul homme, à une seule date. Contre-exemple : Solon pose des bases vers 594, Clisthène crée la Boulè en 508-507, Périclès ajoute le misthos au Ve siècle. Cela fait plus d'un siècle d'étapes : il faut toujours associer un nom, une date et une réforme.",
@@ -485,7 +485,7 @@
          },
          {
           "content": "Périclès",
-          "match": "Fait payer les fonctions publiques"
+          "match": "Instaure le misthos, une indemnité"
          }
         ],
         "hint": "Le misthos est une indemnité."
@@ -577,10 +577,10 @@
         {
          "content": "Que permet le misthos instauré sous Périclès ?",
          "question_type": "single_choice",
-         "explanation": "Étape 4 — Conclure : le misthos est une indemnité. Les pauvres peuvent donc siéger ou juger sans renoncer à leur gagne-pain. Il ne donne pas le droit de vote aux femmes.",
+         "explanation": "Étape 4 — Conclure : le misthos est une indemnité. Les pauvres peuvent donc juger à l'Héliée ou exercer une charge publique sans renoncer à leur gagne-pain. Il ne donne pas le droit de vote aux femmes.",
          "answers": [
           {
-           "content": "Aux citoyens pauvres d'exercer une fonction publique sans perdre leur salaire",
+           "content": "Aux citoyens pauvres d'exercer une fonction publique sans perdre le revenu de leur journée de travail",
            "correct": true
           },
           {
@@ -749,7 +749,7 @@
     },
     {
      "name": "Les institutions de la démocratie athénienne",
-     "remember": "À Athènes, plusieurs institutions se partagent le pouvoir.\n**L'Ecclésia** est l'assemblée du peuple : tous les citoyens s'y réunissent sur la Pnyx, votent les lois et décident de la guerre et de la paix.\n**La Boulè** compte 500 citoyens, 50 par tribu, tirés au sort pour un an ; elle prépare les projets de lois.\n**Les magistrats** appliquent les décisions ; la plupart sont tirés au sort. **Les stratèges**, 10 généraux, sont élus et peuvent être réélus.\n**L'Héliée** est le tribunal du peuple : ses jurés sont des citoyens tirés au sort.\n**Le misthos** est l'indemnité versée à ceux qui exercent une fonction publique.\n**L'ostracisme** permet à l'assemblée d'exiler un citoyen jugé dangereux pour dix ans : on vote en écrivant son nom sur un tesson (ostrakon).",
+     "remember": "À Athènes, plusieurs institutions se partagent le pouvoir.\n**L'Ecclésia** est l'assemblée du peuple : tous les citoyens s'y réunissent sur la Pnyx, votent les lois et décident de la guerre et de la paix.\n**La Boulè** compte 500 citoyens, 50 par tribu, tirés au sort pour un an ; elle prépare les projets de lois.\n**Les magistrats** appliquent les décisions ; la plupart sont tirés au sort. **Les stratèges**, 10 généraux, sont élus à main levée par l'Ecclésia, pour un an, et peuvent être réélus.\n**L'Héliée** est le tribunal du peuple : ses jurés sont des citoyens tirés au sort.\n**Le misthos** est l'indemnité versée à ceux qui exercent une fonction publique.\n**L'ostracisme** permet à l'assemblée d'exiler un citoyen jugé dangereux pour dix ans : on vote en écrivant son nom sur un tesson (ostrakon).",
      "method": [
       "Identifier le pouvoir exercé : préparer, décider, appliquer ou juger.",
       "Nommer l'institution qui l'exerce.",
@@ -1231,7 +1231,7 @@
            "correct": false
           },
           {
-           "content": "Seuls les nés de parents ivoiriens votent",
+           "content": "Seuls les chefs de famille votent",
            "correct": false
           },
           {
@@ -2897,7 +2897,7 @@
         {
          "content": "Pourquoi cet homme ne peut-il pas voter ?",
          "question_type": "single_choice",
-         "explanation": "Étape 2 — Repérer les exclus : étranger, donc métèque. Étape 1 — Définir : il n'est pas né de parents athéniens. Pourquoi pas trop riche : la richesse ne retire pas le droit de vote ; Solon classait par richesse, mais tous les citoyens siégeaient.",
+         "explanation": "Étape 2 — Repérer les exclus : étranger, donc métèque. Étape 1 — Définir : il n'est pas né de parents athéniens. Pourquoi pas trop riche : la richesse ne retire pas le droit de vote ; Solon classait par richesse, mais tous les citoyens pouvaient siéger à l'assemblée.",
          "answers": [
           {
            "content": "Il est étranger, donc métèque",
