@@ -103,6 +103,25 @@ Vérification hors dépôt : format, intitulé et rang de la progression, `valid
 | 4 | `6eme/edhc/la-constitution.json` | La Constitution | 4 | 3 | 28 | 161 |
 | 5 | `6eme/edhc/le-president-de-la-republique.json` | Le Président de la République | 3 | 1 | 26 | 149 |
 
+### 2nde, Français, leçons 6 à 10 (chantier `lecons-2nde-6-a-10`)
+
+Depuis le 2026-11-24, les leçons 6 à 10 de Français de la progression DPFC 2026-2027 de 2nde (L'énonciation, Les figures de style ou de rhétorique, Le commentaire composé, La pièce de théâtre, L'implicite) sont rédigées au format v3 complet : 10 fichiers, 5 leçons communes aux séries A et C, écrites une fois et recopiées avec le `series_name` de chaque série. Chaque notion a son « Je m'entraîne » et 2 exercices (le second de 6 questions d'au moins 4 types), chaque leçon 4 problèmes et 4 sujets de devoir de 4 exercices entièrement corrigés automatiquement. Les textes supports sont du domaine public, vérifiés mot à mot, ou écrits pour Lnclass.
+
+Vérification : `valider.rb` sur la leçon et sur chaque sujet, format ; relecture IA indépendante de chaque leçon ; 58 points pédagogiques tranchés par le validateur pédagogique le 2026-11-24 (citations, définitions, rattachement au programme), relevés dans le journal du chantier `lecons-2nde-6-a-10` de l'application.
+
+| Fichier | Titre | Rang | Notions | Exercices | Questions | Figures |
+|---|---|---:|---:|---:|---:|---:|
+| `2nde-a/francais/l-enonciation.json` | L'énonciation | 6 | 5 | 30 | 182 | 0 |
+| `2nde-a/francais/les-figures-de-style-ou-de-rhetorique.json` | Les figures de style ou de rhétorique | 7 | 5 | 30 | 180 | 0 |
+| `2nde-a/francais/le-commentaire-compose.json` | Le commentaire composé | 8 | 4 | 28 | 165 | 0 |
+| `2nde-a/francais/la-piece-de-theatre.json` | La pièce de théâtre | 9 | 5 | 30 | 184 | 0 |
+| `2nde-a/francais/l-implicite.json` | L'implicite | 10 | 5 | 30 | 180 | 0 |
+| `2nde-c/francais/l-enonciation.json` | L'énonciation | 6 | 5 | 30 | 182 | 0 |
+| `2nde-c/francais/les-figures-de-style-ou-de-rhetorique.json` | Les figures de style ou de rhétorique | 7 | 5 | 30 | 180 | 0 |
+| `2nde-c/francais/le-commentaire-compose.json` | Le commentaire composé | 8 | 4 | 28 | 165 | 0 |
+| `2nde-c/francais/la-piece-de-theatre.json` | La pièce de théâtre | 9 | 5 | 30 | 184 | 0 |
+| `2nde-c/francais/l-implicite.json` | L'implicite | 10 | 5 | 30 | 180 | 0 |
+
 ### 2nde, leçons 4 et 5 de chaque série et matière, en v3 complet (chantier `lecons-2nde-4-5`)
 
 Depuis le 2026-11-14, les leçons 4 et 5 de la progression DPFC 2026-2027 de 2nde A, 2nde C (Français, Mathématiques, Physique-Chimie, SVT) et d'Histoire-Géographie de 2nde sont rédigées au format v3 complet, comme les 3 premières : 18 fichiers, 14 leçons distinctes (Français et Physique-Chimie sont communs à A et C, écrits une fois et recopiés avec le `series_name` de chaque série ; Généralités sur les fonctions est écrite à part en A et en C). Chaque notion a son « Je m'entraîne » et 2 exercices (le second de 6 questions d'au moins 4 types), chaque leçon 4 problèmes et 4 sujets de devoir de 4 exercices. Hors Mathématiques et Physique-Chimie, les seconds exercices et les sujets sont entièrement corrigés automatiquement.
