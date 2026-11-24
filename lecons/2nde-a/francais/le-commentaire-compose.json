@@ -24,14 +24,14 @@
           "example": {
             "statement": "Texte écrit pour Lnclass : « Le car s'est arrêté devant le grand fromager. Je suis descendu, ma valise à la main, et le village m'a pris tout entier : l'odeur du bois brûlé, le cri des poules, la poussière rouge de la piste. Dix ans que je n'avais pas revu cette place. Les enfants, qui ne me connaissaient pas, m'ont regardé comme on regarde un étranger ; les vieux, eux, ont levé la tête, puis les mains. Alors j'ai compris que j'étais rentré. » Lire méthodiquement ce texte : genre, situation, thème, ton.",
             "steps": [
-              "Lire : le texte raconte l'arrivée d'un homme dans son village, après dix ans d'absence.",
+              "Lire : le texte raconte l'arrivée d'un homme dans son village, après dix ans d'absence. Source : texte écrit pour Lnclass, sans titre.",
               "Repérer le genre : c'est un récit à la première personne (« je suis descendu »), avec des verbes d'action au passé composé.",
               "Préciser la situation : le narrateur parle de lui-même, sur la place du village, devant les enfants et les vieux, au moment de son retour.",
               "Formuler le thème : le retour au village natal (un groupe nominal, sans verbe).",
               "Nommer le ton : nostalgique et ému. Indices : « l'odeur du bois brûlé, le cri des poules » (les souvenirs) et « j'ai compris que j'étais rentré » (l'émotion)."
             ]
           },
-          "pitfall": "Ne confonds pas **commenter** et **raconter**. Contre-exemple : « Le narrateur descend du car, il voit les enfants, puis les vieux le saluent » est une paraphrase : on redit le texte sans rien expliquer. Un commentaire dit au contraire : « Les trois sensations « l'odeur du bois brûlé, le cri des poules, la poussière rouge » font revenir le village par les sens. » Pour t'éviter l'erreur, demande-toi à chaque phrase : est-ce que j'explique **comment** le texte produit son effet, ou est-ce que je répète **ce qu'il raconte** ?",
+          "pitfall": "Ne confonds pas **commenter** et **raconter**. Contre-exemple : « Le narrateur descend du car, il voit les enfants, puis les vieux le saluent » est une paraphrase : on redit le texte sans rien expliquer. Un commentaire dit au contraire : « Les trois sensations “l'odeur du bois brûlé, le cri des poules, la poussière rouge” font revenir le village par les sens. » Pour t'éviter l'erreur, demande-toi à chaque phrase : est-ce que j'explique **comment** le texte produit son effet, ou est-ce que je répète **ce qu'il raconte** ?",
           "practice": {
             "statement": "Tu t'entraînes à lire méthodiquement un court récit : genre, situation, thème et ton.",
             "questions": [
@@ -122,6 +122,10 @@
                   },
                   {
                     "content": "endroit",
+                    "correct": true
+                  },
+                  {
+                    "content": "cadre",
                     "correct": true
                   }
                 ],
@@ -249,7 +253,7 @@
             },
             {
               "title": "Lire méthodiquement un quatrain sur la ville",
-              "statement": "Dans cet exercice, tu lis méthodiquement un quatrain écrit pour Lnclass, à l'aide des étapes de la fiche.\n\nQuatrain écrit pour Lnclass :\nVille aux cent mille voix, tu m'étourdis le jour,\nTu me brûles la nuit de tes lampes sans nombre ;\nJe t'aime et je te fuis, ô cité, tour à tour,\nCherchant dans tes clameurs le calme de l'ombre.",
+              "statement": "Dans cet exercice, tu lis méthodiquement un quatrain écrit pour Lnclass, à l'aide des étapes de la fiche.\n\nQuatrain écrit pour Lnclass :\nVille aux cent mille voix, tu m'étourdis le jour,\nTu me brûles la nuit de tes lampes sans nombre ;\nJe t'aime et je te fuis, ô cité, tour à tour,\nCherchant dans tes clameurs tout le calme de l'ombre.",
               "exercise_type": "fixation",
               "figure": null,
               "questions": [
@@ -320,7 +324,7 @@
                       "correct": true
                     },
                     {
-                      "content": "« Cherchant dans tes clameurs le calme de l'ombre »",
+                      "content": "« Cherchant dans tes clameurs tout le calme de l'ombre »",
                       "correct": true
                     },
                     {
@@ -385,9 +389,9 @@
         },
         {
           "name": "Relever les procédés d'écriture et dégager leur effet",
-          "remember": "Un **procédé** est un moyen d'écriture. On en cherche dans cinq familles. Le **lexique** : un **champ lexical** est un ensemble de mots du même domaine (*prix, marchander, vendeuse* : le commerce). Les **figures de style** (comparaison, métaphore, antithèse, hyperbole…). Les **temps verbaux** : le présent rend la scène vivante, l'imparfait pose un décor qui dure, le passé simple lance une action brève. L'**énonciation** : *je* exprime les sentiments de celui qui parle, *tu* ou *vous* s'adresse à quelqu'un, *on* inclut le lecteur. Le **rythme** : phrases courtes (vivacité), phrases longues (ampleur), énumération (abondance), rimes dans un poème. Un procédé ne compte que si on dit son **effet** : citation, procédé, effet.",
+          "remember": "Un **procédé** est un moyen d'écriture. On en cherche dans cinq familles. Le **lexique** : un **champ lexical** est un ensemble de mots du même domaine (*prix, marchander, vendeuse* : le commerce). Les **figures de style** (comparaison, métaphore, antithèse, hyperbole…). Les **temps verbaux** : le présent rend la scène vivante, l'imparfait pose un décor qui dure, le passé simple lance une action brève. L'**énonciation** : *je* exprime les sentiments de celui qui parle, *tu* ou *vous* s'adresse à quelqu'un, *on* peut inclure le lecteur. Le **rythme** : phrases courtes (vivacité), phrases longues (ampleur), énumération (abondance), rimes dans un poème. Un procédé ne compte que si on dit son **effet** : citation, procédé, effet.",
           "method": [
-            "Repérer, dans le passage, un procédé de chaque famille : lexique, figures, temps verbaux, énonciation, rythme.",
+            "Repérer les procédés du passage en passant en revue les cinq familles : lexique, figures, temps verbaux, énonciation, rythme.",
             "Citer le passage exact, entre guillemets.",
             "Nommer le procédé avec le terme précis (champ lexical, métaphore, imparfait, « je », phrase courte…).",
             "Interpréter : dire l'effet produit sur le lecteur et le lien avec le sens du texte."
@@ -401,7 +405,7 @@
               "Interpréter : un fleuve emporte ceux qui s'y jettent ; le marché est si abondant que chacun s'y laisse entraîner. L'énumération multiplie les sensations et rend le ton enthousiaste."
             ]
           },
-          "pitfall": "Ne te contente pas de **relever** : un procédé sans effet ne rapporte rien. Contre-exemple : « Il y a une métaphore dans « un fleuve de voix » » ne dit pas pourquoi l'auteur l'emploie. Écris plutôt : « La métaphore « un fleuve de voix » montre un marché si bruyant qu'on s'y laisse emporter. » La phrase juste a trois morceaux : la citation, le nom du procédé, l'effet. Si l'un manque, la phrase est incomplète.",
+          "pitfall": "Ne te contente pas de **relever** : un procédé sans effet ne rapporte rien. Contre-exemple : « Il y a une métaphore dans “un fleuve de voix” » ne dit pas pourquoi l'auteur l'emploie. Écris plutôt : « La métaphore “un fleuve de voix” montre un marché si bruyant qu'on s'y laisse emporter. » La phrase juste a trois morceaux : la citation, le nom du procédé, l'effet. Si l'un manque, la phrase est incomplète.",
           "practice": {
             "statement": "Tu t'entraînes à relever un procédé et à dire son effet.",
             "questions": [
@@ -487,7 +491,7 @@
           "exercise": [
             {
               "title": "Relever les procédés d'un passage de marché",
-              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche à un passage de marché écrit pour Lnclass.\n\nTexte écrit pour Lnclass : « Au marché, la voix de Maman Adjoua domine les autres : « Tomates ! Belles tomates ! » Autour d'elle, les paniers débordent, les pagnes claquent comme des drapeaux, les rires fusent. On sent le piment, le poisson fumé, la terre mouillée. Le marché est une fête. »",
+              "statement": "Dans cet exercice, tu appliques les quatre étapes de la fiche à un passage de marché écrit pour Lnclass.\n\nTexte écrit pour Lnclass : « Au marché, la voix de Maman Adjoua domine les autres : “Tomates ! Belles tomates !” Autour d'elle, les paniers débordent, les pagnes claquent comme des drapeaux, les rires fusent. On sent le piment, le poisson fumé, la terre mouillée. Le marché est une fête. »",
               "exercise_type": "fixation",
               "figure": null,
               "questions": [
@@ -603,14 +607,14 @@
             },
             {
               "title": "Relever les procédés d'un quatrain sur la ville",
-              "statement": "Dans cet exercice, tu relèves les procédés d'un quatrain écrit pour Lnclass et tu dis leur effet.\n\nQuatrain écrit pour Lnclass :\nVille aux cent mille voix, tu m'étourdis le jour,\nTu me brûles la nuit de tes lampes sans nombre ;\nJe t'aime et je te fuis, ô cité, tour à tour,\nCherchant dans tes clameurs le calme de l'ombre.",
+              "statement": "Dans cet exercice, tu relèves les procédés d'un quatrain écrit pour Lnclass et tu dis leur effet.\n\nQuatrain écrit pour Lnclass :\nVille aux cent mille voix, tu m'étourdis le jour,\nTu me brûles la nuit de tes lampes sans nombre ;\nJe t'aime et je te fuis, ô cité, tour à tour,\nCherchant dans tes clameurs tout le calme de l'ombre.",
               "exercise_type": "fixation",
               "figure": null,
               "questions": [
                 {
                   "content": "Relie chaque passage au procédé qu'il contient.",
                   "question_type": "matching",
-                  "explanation": "Étape 3 — Nommer le procédé. « Cent mille voix » exagère : hyperbole. « Je t'aime et je te fuis » oppose deux sentiments : antithèse. « Tu m'étourdis » prête à la ville un geste humain : personnification. Le « tu » dit à la ville est une marque d'énonciation : le poète s'adresse à elle comme à une personne.",
+                  "explanation": "Étape 3 — Nommer le procédé. « Cent mille voix » exagère : hyperbole. « Je t'aime et je te fuis » oppose deux sentiments : antithèse. « ô cité » interpelle la ville comme une personne : apostrophe. « jour » et « tour », à la fin des vers 1 et 3, se terminent par le même son : rime.",
                   "answers": [
                     {
                       "content": "« Ville aux cent mille voix »",
@@ -621,12 +625,12 @@
                       "match": "Antithèse"
                     },
                     {
-                      "content": "« tu m'étourdis le jour »",
-                      "match": "Personnification"
+                      "content": "« ô cité »",
+                      "match": "Apostrophe"
                     },
                     {
-                      "content": "« tu » dit à la ville",
-                      "match": "Adresse à quelqu'un"
+                      "content": "« jour » et « tour »",
+                      "match": "Rime"
                     }
                   ]
                 },
@@ -684,13 +688,17 @@
                     {
                       "content": "rime",
                       "correct": true
+                    },
+                    {
+                      "content": "rime croisée",
+                      "correct": true
                     }
                   ]
                 },
                 {
                   "content": "Dans « Je t'aime et je te fuis », la construction parallèle des deux propositions met en ___ les sentiments contraires du poète.",
                   "question_type": "select",
-                  "explanation": "Étape 3 — Nommer : deux propositions courtes, de même construction, reliées par « et ». Étape 4 — Interpréter : ce parallélisme place les deux sentiments face à face : il les met en opposition.",
+                  "explanation": "Étape 3 — Nommer : deux propositions courtes, de même construction, reliées par « et ». Étape 4 — Interpréter : ce parallélisme place les deux sentiments face à face : il les met en opposition. « harmonie » est faux : aimer et fuir s'opposent, ils ne s'accordent pas.",
                   "answers": [
                     {
                       "content": "opposition",
@@ -701,7 +709,7 @@
                       "correct": false
                     },
                     {
-                      "content": "oubli",
+                      "content": "mouvement",
                       "correct": false
                     },
                     {
@@ -741,7 +749,7 @@
             "Écrire le plan détaillé : sous chaque axe, deux ou trois idées, chacune avec sa citation."
           ],
           "example": {
-            "statement": "Texte écrit pour Lnclass : un homme descend du car dans son village après dix ans d'absence. Relevés : A « l'odeur du bois brûlé, le cri des poules, la poussière rouge » (énumération de sensations) ; B « le village m'a pris tout entier » (personnification) ; C « comme on regarde un étranger » (comparaison) ; D « les vieux ont levé la tête, puis les mains » (gestes qui se suivent) ; E « j'ai compris que j'étais rentré » (phrase courte). Construire le plan.",
+            "statement": "Texte écrit pour Lnclass : un homme descend du car dans son village après dix ans d'absence. Relevés : A « l'odeur du bois brûlé, le cri des poules, la poussière rouge » (énumération de sensations) ; B « le village m'a pris tout entier » (personnification) ; C « comme on regarde un étranger » (comparaison) ; D « les vieux, eux, ont levé la tête, puis les mains » (gestes qui se suivent) ; E « j'ai compris que j'étais rentré » (phrase courte). Construire le plan.",
             "steps": [
               "Classer : A et B disent que le village s'impose aux sens et aux souvenirs ; C, D et E disent comment les habitants accueillent, puis reconnaissent, le voyageur.",
               "Donner un titre : axe I « Un village qui s'impose par les sens » ; axe II « Un accueil qui passe de la distance à la reconnaissance ».",
@@ -900,7 +908,7 @@
                 {
                   "content": "Quel plan respecte les consignes ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 3 — Vérifier que les axes sont distincts, couvrent tout le texte et ne se contentent pas de raconter. Le deuxième plan découpe le texte sans idée, le troisième raconte, le premier liste des procédés. Seul le plan « ville qui étourdit / village qui manque » donne deux idées.",
+                  "explanation": "Étape 3 — Vérifier que les axes sont distincts, couvrent tout le texte et ne se contentent pas de raconter. « I. Les énumérations — II. Les personnifications » liste des procédés ; « I. Le début de la lettre — II. La fin de la lettre » découpe le texte sans idée ; « I. Yao est à Abidjan — II. Yao écrit à Kouamé » raconte. Seul le plan « ville qui étourdit / village qui manque » donne deux idées.",
                   "answers": [
                     {
                       "content": "I. Une ville qui étourdit — II. Un village qui manque",
@@ -963,7 +971,7 @@
             },
             {
               "title": "Construire le plan d'un quatrain sur la ville",
-              "statement": "Dans cet exercice, tu construis le plan d'un quatrain écrit pour Lnclass.\n\nQuatrain écrit pour Lnclass :\nVille aux cent mille voix, tu m'étourdis le jour,\nTu me brûles la nuit de tes lampes sans nombre ;\nJe t'aime et je te fuis, ô cité, tour à tour,\nCherchant dans tes clameurs le calme de l'ombre.",
+              "statement": "Dans cet exercice, tu construis le plan d'un quatrain écrit pour Lnclass.\n\nQuatrain écrit pour Lnclass :\nVille aux cent mille voix, tu m'étourdis le jour,\nTu me brûles la nuit de tes lampes sans nombre ;\nJe t'aime et je te fuis, ô cité, tour à tour,\nCherchant dans tes clameurs tout le calme de l'ombre.",
               "exercise_type": "fixation",
               "figure": null,
               "questions": [
@@ -1089,7 +1097,7 @@
         },
         {
           "name": "Rédiger l'introduction, le développement et la conclusion",
-          "remember": "L'**introduction** a quatre temps : l'**amorce** (une phrase générale sur le thème), la **présentation du texte** (genre, source, situation, thème), le **projet de lecture** (la question à laquelle le commentaire répond) et l'**annonce du plan** (les axes, dans l'ordre). Le **développement** suit le plan : chaque axe a ses paragraphes, et chaque paragraphe enchaîne **l'idée**, la **citation** entre guillemets et l'**interprétation** (l'effet). Une phrase de transition relie les parties. La **conclusion** donne le **bilan** (la réponse au projet de lecture, en reprenant les axes) puis l'**ouverture** (un élargissement vers un autre texte ou un autre thème). On écrit en général au présent, sans « je ».",
+          "remember": "L'**introduction** a quatre temps : l'**amorce** (une phrase générale sur le thème), la **présentation du texte** (genre, source, situation, thème), le **projet de lecture** (la question à laquelle le commentaire répond) et l'**annonce du plan** (les axes, dans l'ordre). Le **développement** suit le plan : chaque axe a ses paragraphes, et chaque paragraphe enchaîne **l'idée**, la **citation** entre guillemets et l'**interprétation** (l'effet). Une phrase de transition relie les parties. La **conclusion** donne le **bilan** (la réponse au projet de lecture, en reprenant les axes) puis l'**ouverture** (un élargissement vers un autre texte ou un autre thème). Les analyses s'écrivent au présent ; l'annonce du plan peut employer « nous verrons », mais on évite « je ».",
           "method": [
             "Rédiger l'amorce : une phrase générale qui introduit le thème, sans résumer le texte.",
             "Présenter le texte : genre, source, situation et thème.",
@@ -1109,14 +1117,14 @@
               "Ajouter l'ouverture : « On pourrait le rapprocher d'un poème d'exil, où le pays quitté est regretté. »"
             ]
           },
-          "pitfall": "Ne fais pas de l'introduction un **résumé** du texte. Contre-exemple : « Le narrateur descend du car, il voit le village, les enfants le regardent, puis les vieux le saluent » raconte tout et ne dit rien de l'effet : ce n'est pas une amorce. Une bonne amorce est **générale** : « Revenir chez soi après de longues années est une épreuve que beaucoup d'hommes ont connue. » Le récit du texte appartient à la présentation, en une phrase seulement. Pour t'éviter l'erreur, relis ton amorce : si elle contient un nom du texte, elle est trop précise.",
+          "pitfall": "Ne fais pas de l'introduction un **résumé** du texte. Contre-exemple : « Le narrateur descend du car, il voit le village, les enfants le regardent, puis les vieux le saluent » raconte tout et ne dit rien de l'effet : ce n'est pas une amorce. Une bonne amorce est **générale** : « Revenir chez soi après de longues années est une épreuve que beaucoup d'hommes ont connue. » Le récit du texte appartient à la présentation, en une phrase seulement. Pour t'éviter l'erreur, relis ton amorce : si elle contient un nom propre ou un détail du texte, elle est trop précise.",
           "practice": {
             "statement": "Tu t'entraînes à reconnaître et à ordonner les parties d'un commentaire composé.",
             "questions": [
               {
                 "content": "Texte écrit pour Lnclass : une vendeuse rit et marchande dans un marché de ville. Quelle phrase est une bonne amorce pour le commentaire ?",
                 "question_type": "single_choice",
-                "explanation": "Étape 1 — Rédiger l'amorce : une phrase générale sur le thème, sans résumer le texte. La première phrase le fait. La deuxième résume (c'est de la présentation), la troisième annonce le plan, la quatrième est un jugement vide.",
+                "explanation": "Étape 1 — Rédiger l'amorce : une phrase générale sur le thème, sans résumer le texte. La phrase sur le marché, lieu de rencontre, le fait. « Le texte décrit un marché… » résume (c'est de la présentation) ; « Dans la première partie, nous verrons… » annonce le plan ; « Ce texte est très beau » est un jugement vide.",
                 "answers": [
                   {
                     "content": "Le marché est, dans bien des villes, un lieu où l'on se rencontre autant qu'on achète.",
@@ -1191,14 +1199,14 @@
           "exercise": [
             {
               "title": "Rédiger l'introduction d'un commentaire sur la gare routière",
-              "statement": "Dans cet exercice, tu appliques les étapes de la fiche pour rédiger l'introduction d'un commentaire.\n\nTexte écrit pour Lnclass : « À la gare routière, les cars klaxonnent, les apprentis crient les destinations : « Bouaké ! Korhogo ! Man ! » Les valises montent sur les toits, les voyageurs courent, les mères serrent leurs enfants. Dans cette cohue, une vieille femme sourit : elle rentre chez elle. »",
+              "statement": "Dans cet exercice, tu appliques les étapes de la fiche pour rédiger l'introduction d'un commentaire.\n\nTexte écrit pour Lnclass : « À la gare routière, les cars klaxonnent, les apprentis crient les destinations : “Bouaké ! Korhogo ! Man !” Les valises montent sur les toits, les voyageurs courent, les mères serrent leurs enfants. Dans cette cohue, une vieille femme sourit : elle rentre chez elle. »",
               "exercise_type": "fixation",
               "figure": null,
               "questions": [
                 {
                   "content": "Quelle phrase est la meilleure amorce ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Rédiger l'amorce : une phrase générale sur le thème, sans résumer le texte. La première le fait. La deuxième résume le texte, la troisième annonce le plan, la quatrième est un jugement vide.",
+                  "explanation": "Étape 1 — Rédiger l'amorce : une phrase générale sur le thème, sans résumer le texte. « Partir ou revenir… » le fait. « À la gare routière, les cars klaxonnent… » résume le texte ; « Nous verrons d'abord le bruit… » annonce le plan ; « Ce texte est très beau et très émouvant » est un jugement vide.",
                   "answers": [
                     {
                       "content": "Partir ou revenir est, dans toutes les sociétés, un moment fort de la vie.",
@@ -1307,7 +1315,7 @@
                 {
                   "content": "Relie chaque élément à son rôle.",
                   "question_type": "matching",
-                  "explanation": "Étape 1 — Rédiger l'amorce ; Étape 3 — Poser le projet de lecture ; Étape 5 — Conclure par un bilan ; Étape 6 — Ajouter l'ouverture. Les étapes 1 à 3 font l'introduction, les étapes 5 et 6 pour la conclusion (bilan, ouverture). Chaque élément a un rôle précis, et on ne les mélange pas.",
+                  "explanation": "Étape 1 — Rédiger l'amorce ; Étape 3 — Poser le projet de lecture ; Étape 5 — Conclure par un bilan ; Étape 6 — Ajouter l'ouverture. Les étapes 1 à 3 font l'introduction, les étapes 5 et 6 font la conclusion (bilan, ouverture). Chaque élément a un rôle précis, et on ne les mélange pas.",
                   "answers": [
                     {
                       "content": "L'amorce",
@@ -1530,7 +1538,7 @@
             {
               "content": "Dans « Mariam a lâché sa valise et elle a couru », quel est l'effet des deux verbes d'action ?",
               "question_type": "single_choice",
-              "explanation": "Méthode des procédés : 1) citer « a lâché sa valise et elle a couru » ; 2) nommer : deux verbes d'action coordonnés, au passé composé ; 3) interpréter : le geste rapide et sans réflexion montre une joie qui emporte tout. Un verbe d'action ne décrit jamais un décor immobile.",
+              "explanation": "Méthode des procédés : Étape 2 — citer « a lâché sa valise et elle a couru » ; Étape 3 — nommer : deux verbes d'action coordonnés, au passé composé ; Étape 4 — interpréter : le geste rapide et sans réflexion montre une joie qui emporte tout. Un verbe d'action ne décrit jamais un décor immobile.",
               "answers": [
                 {
                   "content": "Ils montrent un élan spontané : la joie passe avant tout",
@@ -1553,7 +1561,7 @@
             {
               "content": "Quels champs lexicaux trouve-t-on dans le texte ?",
               "question_type": "multiple_correct_2",
-              "explanation": "Méthode des procédés : 1) repérer des mots du même domaine ; 2) les nommer par un champ lexical. « Toit de tôle, case, manguier » disent le village ; « vendaient, bananes, manioc » disent le marché. Aucun mot ne relève de la guerre ni de la mer.",
+              "explanation": "Méthode des procédés : Étape 1 — repérer des mots du même domaine ; Étape 3 — les nommer par un champ lexical. « Toit de tôle, case, manguier » disent le village ; « vendaient, bananes, manioc » disent le marché. « piste » n'est pas dans le texte et « valise » reste un mot isolé : il n'y a pas de champ lexical du voyage. Aucun mot ne parle de danse ni de chant.",
               "answers": [
                 {
                   "content": "Le village (toit de tôle, case, manguier)",
@@ -1564,11 +1572,11 @@
                   "correct": true
                 },
                 {
-                  "content": "La guerre",
+                  "content": "Le voyage (valise, piste)",
                   "correct": false
                 },
                 {
-                  "content": "La mer",
+                  "content": "La fête (danse, chant)",
                   "correct": false
                 }
               ]
@@ -1585,7 +1593,7 @@
             {
               "content": "Relie chaque passage au procédé qu'il contient.",
               "question_type": "matching",
-              "explanation": "Méthode : 1) repérer ; 2) citer ; 3) nommer. « Grosses comme des bébés » a l'outil « comme » : comparaison. Trois couleurs à la suite : énumération. Les deux phrases en « Quel… ! » sont exclamatives. Les verbes « crient », « discutent » sont au présent de description.",
+              "explanation": "Méthode des procédés : Étape 1 — repérer ; Étape 2 — citer ; Étape 3 — nommer. « Grosses comme des bébés » a l'outil « comme » : comparaison. Trois couleurs à la suite : énumération. Les deux phrases en « Quel… ! » sont exclamatives. Les verbes « crient », « discutent » sont au présent de description.",
               "answers": [
                 {
                   "content": "« grosses comme des bébés »",
@@ -1608,7 +1616,7 @@
             {
               "content": "Quel est l'effet des phrases exclamatives « Quel vacarme ! Mais quelle joie ! » ?",
               "question_type": "single_choice",
-              "explanation": "Méthode : 1) citer ; 2) nommer : phrases exclamatives, avec « Mais » qui oppose le vacarme à la joie ; 3) interpréter : le bruit est une joie pour le narrateur, qui exprime son enthousiasme. Il n'y a ni ordre ni colère.",
+              "explanation": "Méthode : Étape 2 — citer ; Étape 3 — nommer : phrases exclamatives, avec « Mais » qui oppose le vacarme à la joie ; Étape 4 — interpréter : le bruit est une joie pour le narrateur, qui exprime son enthousiasme. Il n'y a ni ordre ni colère.",
               "answers": [
                 {
                   "content": "Elles traduisent l'enthousiasme de celui qui parle",
@@ -1646,7 +1654,7 @@
             {
               "content": "Quel axe regroupe le mieux les procédés du texte ?",
               "question_type": "single_choice",
-              "explanation": "Méthode du plan : 1) classer les procédés par effet ; 2) donner un titre qui dit l'idée. Les couleurs, le vacarme et la joie forment une idée. « Les comparaisons et les énumérations » est une liste de procédés ; « Le samedi au marché » est le thème ; la dernière réponse recopie le texte.",
+              "explanation": "Méthode du plan : 1) classer les procédés par effet ; 2) donner un titre qui dit l'idée. Les couleurs, le vacarme et la joie forment une idée. « Les comparaisons et les énumérations » est une liste de procédés ; « Le samedi au marché » est le thème ; « Les enfants courent entre les jambes » recopie le texte.",
               "answers": [
                 {
                   "content": "Un marché plein de couleurs, de bruits et de joie",
@@ -1669,7 +1677,7 @@
             {
               "content": "Que montrent « Voici… voici… » et les exclamations sur la présence de celui qui parle ?",
               "question_type": "single_choice",
-              "explanation": "Méthode : 1) citer « Voici », « Quel vacarme ! » ; 2) nommer : marques d'énonciation, le narrateur s'implique ; 3) interpréter : il guide le lecteur dans le marché et partage son enthousiasme. Un narrateur neutre ne ferait pas d'exclamation.",
+              "explanation": "Méthode : Étape 2 — citer « Voici », « Quel vacarme ! » ; Étape 3 — nommer : marques d'énonciation, le narrateur s'implique ; Étape 4 — interpréter : il guide le lecteur dans le marché et partage son enthousiasme. Un narrateur neutre ne ferait pas d'exclamation.",
               "answers": [
                 {
                   "content": "Un narrateur enthousiaste qui montre la scène au lecteur",
@@ -1692,7 +1700,7 @@
             {
               "content": "Dans ce texte, tous les verbes conjugués sont au présent.",
               "question_type": "true_false",
-              "explanation": "Méthode : repérer les temps. Se touchent, voici, caquettent, crient, discutent, courent : tout est au présent, qui rend la scène vivante.",
+              "explanation": "Méthode : repérer les temps. Se touchent, caquettent, crient, discutent, courent : tout est au présent, qui rend la scène vivante. « voici » est un présentatif, pas un verbe conjugué.",
               "answers": [
                 {
                   "content": "Vrai",
@@ -1709,7 +1717,7 @@
         },
         {
           "title": "Problème 3 · Un quatrain sur le retour au pays",
-          "statement": "Quatrain écrit pour Lnclass :\nAu bout de la piste rouge, le village m'attend,\nAvec ses toits de tôle et son manguier géant ;\nMa mère sur le seuil, les bras ouverts, sourit :\nMon long exil s'achève, et mon cœur est guéri.",
+          "statement": "Quatrain écrit pour Lnclass :\nAu bout de la piste, le village m'attend,\nAvec ses toits de tôle et son manguier géant ;\nMa mère sur le seuil, les bras ouverts, sourit :\nMon long exil s'achève, et mon cœur est guéri.",
           "exercise_type": "evaluation",
           "figure": null,
           "questions": [
@@ -1762,7 +1770,7 @@
             {
               "content": "Dans « le village m'attend », quel procédé et quel effet ?",
               "question_type": "single_choice",
-              "explanation": "Méthode des procédés : 1) citer « le village m'attend » ; 2) nommer : attendre est une action humaine, c'est une personnification ; 3) interpréter : le village devient un proche qui espère le retour. Il n'y a ni outil de comparaison, ni contraire, ni exagération.",
+              "explanation": "Méthode des procédés : Étape 2 — citer « le village m'attend » ; Étape 3 — nommer : attendre est une action humaine, c'est une personnification ; Étape 4 — interpréter : le village devient un proche qui espère le retour. Il n'y a ni outil de comparaison, ni contraire, ni exagération.",
               "answers": [
                 {
                   "content": "Une personnification : le village attend comme une personne, ce qui rend l'accueil vivant",
@@ -1785,7 +1793,7 @@
             {
               "content": "Que suggère « mon cœur est guéri » ?",
               "question_type": "single_choice",
-              "explanation": "Méthode des procédés : 1) citer « mon cœur est guéri » ; 2) nommer : métaphore, l'exil est une maladie dont on guérit ; 3) interpréter : la douleur de l'éloignement disparaît avec le retour. L'expression ne se lit pas au sens propre.",
+              "explanation": "Méthode des procédés : Étape 2 — citer « mon cœur est guéri » ; Étape 3 — nommer : métaphore, l'exil est une maladie dont on guérit ; Étape 4 — interpréter : la douleur de l'éloignement disparaît avec le retour. L'expression ne se lit pas au sens propre.",
               "answers": [
                 {
                   "content": "L'exil était une souffrance, comme une maladie, qui prend fin",
@@ -1837,7 +1845,7 @@
                 "Chaque axe est une idée, pas un nom de procédé",
                 "Chaque axe s'appuie sur le texte (village, mère, exil)"
               ],
-              "explanation": "Corrigé modèle : « I. Un village qui accueille le poète comme une personne (« le village m'attend », « ma mère… sourit »). II. Un exil qui prend fin dans l'apaisement (« mon long exil s'achève », « mon cœur est guéri »). » Barème : 1 point pour deux axes distincts qui ne sont pas des noms de procédés ; 1 point pour leur appui sur des éléments du texte.",
+              "explanation": "Corrigé modèle : « I. Un village qui accueille le poète comme une personne (“le village m'attend”, “ma mère… sourit”). II. Un exil qui prend fin dans l'apaisement (“mon long exil s'achève”, “mon cœur est guéri”). » Barème : 1 point pour deux axes distincts qui ne sont pas des noms de procédés ; 1 point pour leur appui sur des éléments du texte.",
               "answers": [],
               "starter": "I. Un village qui…"
             }
@@ -1876,7 +1884,7 @@
             {
               "content": "Quel est l'effet de l'imparfait dans « cédait », « battait » et « se calmait » ?",
               "question_type": "single_choice",
-              "explanation": "Méthode des procédés : 1) citer ; 2) nommer l'imparfait ; 3) interpréter : le goudron qui cède « peu à peu » et le cœur qui se calme durent pendant le trajet. L'action brève et soudaine est la valeur du passé simple, pas de l'imparfait.",
+              "explanation": "Méthode des procédés : Étape 2 — citer ; Étape 3 — nommer l'imparfait ; Étape 4 — interpréter : le goudron qui « cédait un peu » et le cœur qui « se calmait peu à peu » durent pendant le trajet. L'action brève et soudaine est la valeur du passé simple, pas de l'imparfait.",
               "answers": [
                 {
                   "content": "Il montre un changement progressif, qui dure pendant le trajet",
@@ -1899,7 +1907,7 @@
             {
               "content": "Quel est l'effet de « voici le fleuve, voici le pont de bois, voici le manguier » ?",
               "question_type": "single_choice",
-              "explanation": "Méthode des procédés : 1) citer ; 2) nommer : « voici » est répété en tête de trois groupes, c'est une anaphore, avec une énumération ; 3) interpréter : le narrateur reconnaît les repères un à un, avec émotion. Il n'y a ni contraire, ni exagération, ni atténuation.",
+              "explanation": "Méthode des procédés : Étape 2 — citer ; Étape 3 — nommer : « voici » est répété en tête de trois groupes, c'est une anaphore, avec une énumération ; Étape 4 — interpréter : le narrateur reconnaît les repères un à un, avec émotion. Il n'y a ni contraire, ni exagération, ni atténuation.",
               "answers": [
                 {
                   "content": "Une anaphore de « voici » : elle fait défiler les repères du village, comme on les découvre",
@@ -1945,7 +1953,7 @@
             {
               "content": "Remets dans l'ordre l'introduction du commentaire.",
               "question_type": "ordering",
-              "explanation": "Méthode de l'introduction : 1) amorce générale ; 2) présentation du texte (genre, source, situation, thème) ; 3) projet de lecture sous forme de question ; 4) annonce des axes dans l'ordre. On va du général au particulier.",
+              "explanation": "Méthode de l'introduction : Étape 1 — Rédiger l'amorce, générale ; Étape 2 — Présenter le texte (genre, source, situation, thème) ; Étape 3 — Poser le projet de lecture sous forme de question, puis annoncer les axes dans l'ordre. On va du général au particulier.",
               "answers": [
                 {
                   "content": "Quitter la ville pour rentrer chez soi est un voyage qui change celui qui le fait."
@@ -1971,7 +1979,7 @@
                 "Le procédé est nommé",
                 "L'interprétation dit l'effet sur le lecteur"
               ],
-              "explanation": "Corrigé modèle : « Le trajet apaise peu à peu le narrateur (idée). « À chaque kilomètre, le goudron cédait un peu à la terre rouge, et mon cœur […] se calmait peu à peu » (citation). L'imparfait et l'expression « peu à peu » montrent un changement lent, qui dure : le calme gagne le voyageur à mesure qu'il s'approche du village (interprétation). » Barème : 1 point pour l'idée ; 1 point pour la citation exacte ; 1 point pour le procédé nommé ; 1 point pour l'interprétation.",
+              "explanation": "Corrigé modèle : « Le trajet apaise peu à peu le narrateur (idée). “À chaque kilomètre, le goudron cédait un peu à la terre rouge, et mon cœur […] se calmait peu à peu” (citation). L'imparfait et l'expression “peu à peu” montrent un changement lent, qui dure : le calme gagne le voyageur à mesure qu'il s'approche du village (interprétation). » Barème : 1 point pour l'idée ; 1 point pour la citation exacte ; 1 point pour le procédé nommé ; 1 point pour l'interprétation.",
               "answers": [],
               "starter": "Le trajet apaise peu à peu le narrateur…"
             }
@@ -2120,7 +2128,7 @@
                 {
                   "content": "Lesquelles sont des familles de procédés à étudier ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "1) Les cinq familles sont le lexique, les figures, les temps verbaux, l'énonciation et le rythme. 2) Le prix du livre et le nombre de pages ne sont pas des moyens d'écriture : ils ne produisent aucun effet sur le lecteur.",
+                  "explanation": "1) Les cinq familles sont le lexique, les figures, les temps verbaux, l'énonciation et le rythme. 2) Le résumé du texte et la biographie de l'auteur ne sont pas des moyens d'écriture : ils ne produisent aucun effet sur le lecteur, et le résumé est même l'erreur à éviter.",
                   "answers": [
                     {
                       "content": "Les temps verbaux",
@@ -2131,11 +2139,11 @@
                       "correct": true
                     },
                     {
-                      "content": "Le prix du livre",
+                      "content": "Le résumé du texte",
                       "correct": false
                     },
                     {
-                      "content": "Le nombre de pages",
+                      "content": "La biographie de l'auteur",
                       "correct": false
                     }
                   ]
@@ -2412,7 +2420,7 @@
           "exercises": [
             {
               "title": "Exercice 1",
-              "statement": "Lettre écrite pour Lnclass : « Korhogo, le 3 octobre. Chère Awa, la rentrée à la ville est dure. Le lycée est grand, les cours vont vite, et personne ne me connaît. Mais je pense à toi : je garde ton foulard dans mon sac comme un porte-bonheur. Dis à maman que je travaille. Je t'embrasse. Aya. »",
+              "statement": "Lettre écrite pour Lnclass : « Korhogo, le 3 octobre. Chère Awa, la rentrée à la ville est dure. Le lycée est grand, les cours vont vite, et personne ne me connaît. Mais je pense à toi : je garde ton foulard dans mon sac ; il me réchauffe comme ta main. Dis à maman que je travaille. Je t'embrasse. Aya. »",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [
@@ -2488,7 +2496,7 @@
                 {
                   "content": "Quel est le ton de la lettre ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Indices d'inquiétude : « la rentrée est dure », « personne ne me connaît ». 2) Indices de courage et de tendresse : « je travaille », « je garde ton foulard… comme un porte-bonheur ». Le « Mais » fait passer de l'un à l'autre.",
+                  "explanation": "1) Indices d'inquiétude : « la rentrée à la ville est dure », « personne ne me connaît ». 2) Indices de courage et de tendresse : « je travaille », « il me réchauffe comme ta main ». Le « Mais » fait passer de l'un à l'autre.",
                   "answers": [
                     {
                       "content": "Inquiet mais courageux et tendre",
@@ -2509,12 +2517,12 @@
                   ]
                 },
                 {
-                  "content": "Quel procédé dans « je garde ton foulard dans mon sac comme un porte-bonheur », et quel effet ?",
+                  "content": "Quel procédé dans « il me réchauffe comme ta main », dit du foulard d'Awa, et quel effet ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Citer le passage. 2) Nommer : l'outil « comme » relie le foulard et le porte-bonheur, c'est une comparaison, pas une métaphore. 3) Interpréter : l'objet d'Awa donne à Aya la force d'affronter la ville.",
+                  "explanation": "1) Citer le passage. 2) Nommer : l'outil « comme » relie la chaleur du foulard et celle de la main d'Awa : c'est une comparaison, pas une métaphore. 3) Interpréter : l'objet rend l'amie présente malgré l'absence et donne à Aya la force d'affronter la ville. Il n'y a ni exagération ni contraire.",
                   "answers": [
                     {
-                      "content": "Une comparaison : le foulard protège Aya comme un objet qui porte chance",
+                      "content": "Une comparaison : le foulard réchauffe Aya comme la main d'Awa, ce qui rend l'amie présente malgré l'absence",
                       "correct": true
                     },
                     {
@@ -2522,11 +2530,11 @@
                       "correct": false
                     },
                     {
-                      "content": "Une hyperbole sur la taille du sac",
+                      "content": "Une hyperbole sur la chaleur du foulard",
                       "correct": false
                     },
                     {
-                      "content": "Une antithèse entre le foulard et le sac",
+                      "content": "Une antithèse entre le foulard et la main",
                       "correct": false
                     }
                   ]
@@ -2536,14 +2544,14 @@
             },
             {
               "title": "Exercice 2",
-              "statement": "Texte écrit pour Lnclass : « Le soir, le quartier s'allume. Les maquis ouvrent leurs portes, les braises rougissent, la fumée du poisson monte vers les étoiles. On rit, on chante, on se tape sur l'épaule. La nuit est douce comme un pagne neuf. »",
+              "statement": "Texte écrit pour Lnclass : « Le soir, le quartier s'allume. Les maquis ouvrent leurs portes, les braises rougissent de plaisir, la fumée du poisson monte vers les étoiles. On rit, on chante, on se tape sur l'épaule. La nuit est douce comme un pagne neuf. »",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [
                 {
                   "content": "Relie chaque passage au procédé qu'il contient.",
                   "question_type": "matching",
-                  "explanation": "1) « comme » : comparaison. 2) Trois verbes à la suite avec « on » : énumération. 3) « s'allume » est au présent de description. 4) Des maquis qui « ouvrent leurs portes » agissent comme des hôtes : personnification.",
+                  "explanation": "1) « comme » : comparaison. 2) Trois verbes à la suite avec « on » : énumération. 3) Des braises qui « rougissent de plaisir » éprouvent un sentiment humain : personnification.",
                   "answers": [
                     {
                       "content": "« douce comme un pagne neuf »",
@@ -2554,11 +2562,7 @@
                       "match": "Énumération de verbes avec « on »"
                     },
                     {
-                      "content": "« le quartier s'allume »",
-                      "match": "Présent de description"
-                    },
-                    {
-                      "content": "« Les maquis ouvrent leurs portes »",
+                      "content": "« les braises rougissent de plaisir »",
                       "match": "Personnification"
                     }
                   ]
@@ -2587,9 +2591,9 @@
                   ]
                 },
                 {
-                  "content": "Les mots « s'allume », « braises » et « rougissent » appartiennent au champ lexical du ___.",
+                  "content": "Les mots « s'allume », « braises » et « fumée » appartiennent au champ lexical du ___.",
                   "question_type": "fill_blank",
-                  "explanation": "1) Repérer des mots du même domaine. 2) Les nommer : s'allumer, braises, rougir disent le feu et la lumière qui éclairent la nuit du quartier.",
+                  "explanation": "1) Repérer des mots du même domaine. 2) Les nommer : s'allumer, braises, fumée disent le feu et la lumière qui éclairent la nuit du quartier.",
                   "answers": [
                     {
                       "content": "feu",
@@ -2655,7 +2659,7 @@
                 {
                   "content": "Quel axe regroupe le mieux A et B ?",
                   "question_type": "single_choice",
-                  "explanation": "1) Classer : A pousse à acheter, B rassure sur les prix. 2) Titrer par une idée : « Un marché qui invite à acheter ». La première proposition fausse liste des procédés, la deuxième n'est que le thème, la troisième recopie un relevé.",
+                  "explanation": "1) Classer : A pousse à acheter, B rassure sur les prix. 2) Titrer par une idée : « Un marché qui invite à acheter ». « Les répétitions et les images » liste des procédés ; « Le marché du quartier » n'est que le thème ; « Les mangues sont des soleils » recopie un relevé.",
                   "answers": [
                     {
                       "content": "Un marché qui invite à acheter",
@@ -2764,14 +2768,14 @@
             },
             {
               "title": "Exercice 4",
-              "statement": "Texte écrit pour Lnclass : « Le car du retour est plein : sacs de riz, régimes de bananes, poules dans des paniers. À chaque arrêt, une famille descend, et l'on entend des cris de joie. Quand mon tour arrive, le chauffeur me tend ma valise en souriant : « Bon retour chez toi ! » »",
+              "statement": "Texte écrit pour Lnclass : « Le car du retour est plein : sacs de riz, régimes de bananes, poules dans des paniers. À chaque arrêt, une famille descend, et l'on entend des cris de joie. Quand mon tour arrive, le chauffeur me tend ma valise en souriant : “Bon retour chez toi !” »",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [
                 {
                   "content": "Quelle phrase est la meilleure amorce ?",
                   "question_type": "single_choice",
-                  "explanation": "1) L'amorce est une phrase générale sur le thème. 2) Elle ne résume pas le texte (deuxième proposition), n'annonce pas le plan (troisième), ne donne pas un jugement vide (quatrième).",
+                  "explanation": "1) L'amorce est une phrase générale sur le thème. 2) « Le car est plein de sacs de riz… » résume le texte ; « Nous verrons d'abord le car… » annonce le plan ; « Ce texte est très bien écrit » est un jugement vide.",
                   "answers": [
                     {
                       "content": "Rentrer chez soi est souvent l'un des moments les plus attendus d'un voyage.",
@@ -3194,7 +3198,7 @@
                 {
                   "content": "Quels éléments manquent à cette introduction ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "1) L'introduction a quatre temps : amorce, présentation, projet de lecture, annonce du plan. 2) Il manque l'amorce et le projet de lecture. Le bilan et l'ouverture appartiennent à la conclusion, pas à l'introduction.",
+                  "explanation": "1) L'introduction a quatre temps : amorce, présentation, projet de lecture, annonce du plan. 2) Parmi les propositions, il manque l'amorce et le projet de lecture ; la présentation, elle, est remplacée par un résumé. Le bilan et l'ouverture appartiennent à la conclusion, pas à l'introduction.",
                   "answers": [
                     {
                       "content": "Une amorce générale",
@@ -3217,7 +3221,7 @@
                 {
                   "content": "Dans un commentaire, on évite en général d'écrire « je parlerai ».",
                   "question_type": "true_false",
-                  "explanation": "1) Le commentaire s'écrit au présent, de préférence sans « je ». 2) On écrit : « Nous verrons d'abord… », ou « Le poème montre… ».",
+                  "explanation": "1) Les analyses s'écrivent au présent. 2) L'annonce du plan peut employer « nous verrons » ; le défaut de « je parlerai » est le « je ». On écrit : « Nous verrons d'abord… », ou « Le poème montre… ».",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -3337,7 +3341,7 @@
           "exercises": [
             {
               "title": "Exercice 1",
-              "statement": "Quatrain écrit pour Lnclass :\nMon pays m'a rendu son soleil et sa poussière,\nLe manguier m'a rendu l'ombre de mon enfance ;\nVille, je te quitte sans haine et sans colère,\nMais je garde de toi le goût de l'errance.",
+              "statement": "Quatrain écrit pour Lnclass :\nMon pays m'a rendu son soleil, sa poussière,\nLe manguier m'a rendu l'ombre de mon enfance ;\nVille, je te quitte sans haine et sans colère,\nMais je garde de toi tout le goût de l'errance.",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [
@@ -3502,7 +3506,7 @@
                 {
                   "content": "Quels mots forment le champ lexical du repos ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "1) Repérer les mots du même domaine. 2) « se couchent », « s'endorment » (et « sieste ») disent le repos. « s'étire le long de la piste » décrit la forme du village et « cases rondes » son aspect.",
+                  "explanation": "1) Repérer les mots du même domaine. 2) « se couchent », « s'endorment » (et « sieste ») disent le repos. « greniers sur pilotis » et « cases rondes » décrivent l'aspect du village.",
                   "answers": [
                     {
                       "content": "« se couchent »",
@@ -3513,7 +3517,7 @@
                       "correct": true
                     },
                     {
-                      "content": "« s'étire le long de la piste »",
+                      "content": "« greniers sur pilotis »",
                       "correct": false
                     },
                     {
@@ -3565,7 +3569,7 @@
             },
             {
               "title": "Exercice 3",
-              "statement": "Quatrain écrit pour Lnclass :\nMon pays m'a rendu son soleil et sa poussière,\nLe manguier m'a rendu l'ombre de mon enfance ;\nVille, je te quitte sans haine et sans colère,\nMais je garde de toi le goût de l'errance.\n\nRelevés : A « m'a rendu son soleil et sa poussière » ; B « l'ombre de mon enfance » ; C « sans haine et sans colère » ; D « je garde de toi le goût de l'errance ».",
+              "statement": "Quatrain écrit pour Lnclass :\nMon pays m'a rendu son soleil, sa poussière,\nLe manguier m'a rendu l'ombre de mon enfance ;\nVille, je te quitte sans haine et sans colère,\nMais je garde de toi tout le goût de l'errance.\n\nRelevés : A « m'a rendu son soleil, sa poussière » ; B « l'ombre de mon enfance » ; C « sans haine et sans colère » ; D « je garde de toi le goût de l'errance ».",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [
@@ -3575,7 +3579,7 @@
                   "explanation": "1) Classer chaque relevé sous l'idée qu'il soutient. 2) A dit ce que le pays redonne ; B dit l'enfance retrouvée ; C dit l'absence de rancune envers la ville ; D dit que l'envie de partir demeure.",
                   "answers": [
                     {
-                      "content": "A « m'a rendu son soleil et sa poussière »",
+                      "content": "A « m'a rendu son soleil, sa poussière »",
                       "match": "Un pays qui redonne au poète ce qu'il aime"
                     },
                     {
