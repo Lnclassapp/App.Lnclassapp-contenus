@@ -335,7 +335,7 @@
          ]
         },
         {
-         "content": "Quels sont deux lieux de la vie publique d'Athènes ?",
+         "content": "Quels sont deux lieux de la vie politique, où les citoyens discutent et votent ?",
          "question_type": "multiple_correct_2",
          "explanation": "Étape 2 — Nommer les lieux : l'Agora et la Pnyx sont des lieux où les citoyens se retrouvent. Le Pirée est le port, et le Parthénon est un temple sur l'Acropole, lieu religieux.",
          "answers": [
@@ -562,7 +562,7 @@
          ]
         },
         {
-         "content": "Clisthène répartit les citoyens en ___ tribus. Écris le nombre.",
+         "content": "En combien de tribus Clisthène répartit-il les citoyens ? Écris le nombre.",
          "question_type": "numeric",
          "explanation": "Étape 3 — Décrire la réforme : Clisthène crée 10 tribus. Chacune envoie 50 citoyens à la Boulè : 10 × 50 = 500.",
          "answers": [
@@ -1110,7 +1110,7 @@
        {
         "content": "Comment appelle-t-on les étrangers libres qui vivent à Athènes sans être citoyens ?",
         "question_type": "single_choice",
-        "explanation": "Étape 2 — Repérer les exclus : les métèques sont des étrangers libres, sans droits politiques. Les stratèges, héliastes et archontes sont des responsables ou des jurés, citoyens.",
+        "explanation": "Étape 2 — Repérer les exclus : les métèques sont des étrangers libres, sans droits politiques. Les stratèges, les jurés de l'Héliée et les membres de la Boulè sont des citoyens.",
         "answers": [
          {
           "content": "Les métèques",
@@ -1121,11 +1121,11 @@
           "correct": false
          },
          {
-          "content": "Les héliastes",
+          "content": "Les jurés de l'Héliée",
           "correct": false
          },
          {
-          "content": "Les archontes",
+          "content": "Les membres de la Boulè",
           "correct": false
          }
         ],
@@ -1488,6 +1488,18 @@
          "correct": true
         }
        ]
+      },
+      {
+       "content": "Explique en deux phrases pourquoi Athènes est une cité et non un pays.",
+       "question_type": "written",
+       "points": 2,
+       "starter": "Athènes est une cité parce que…",
+       "criteria": [
+        "Athènes est présentée comme une ville avec son territoire, l'Attique",
+        "La Grèce comporte d'autres cités indépendantes (Sparte, Corinthe, Thèbes)"
+       ],
+       "explanation": "Corrigé modèle : Athènes est une cité, c'est-à-dire une ville avec son territoire, l'Attique, et ses propres lois. Elle fait partie de la Grèce, qui compte beaucoup d'autres cités indépendantes comme Sparte, Corinthe ou Thèbes. Barème : 1 point par critère.",
+       "answers": []
       }
      ],
      "hint": "Relis chaque phrase de la fiche avant de répondre."
@@ -1590,6 +1602,18 @@
          "correct": true
         }
        ]
+      },
+      {
+       "content": "Montre avec la frise que la démocratie athénienne se construit par étapes.",
+       "question_type": "written",
+       "points": 2,
+       "starter": "La frise montre que…",
+       "criteria": [
+        "Citer au moins deux réformateurs avec leurs dates (Solon vers 594, Clisthène 508-507)",
+        "Conclure que la construction dure plus d'un siècle"
+       ],
+       "explanation": "Corrigé modèle : La frise place Solon vers 594, Clisthène en 508-507, puis la loi sur le citoyen en 451 et la mort de Périclès en 429. La démocratie ne naît donc pas d'un seul coup : elle se construit par étapes, sur plus d'un siècle. Barème : 1 point par critère.",
+       "answers": []
       }
      ],
      "hint": "Sur la frise, lis de la gauche (ancien) vers la droite (récent)."
@@ -1662,7 +1686,7 @@
        ]
       },
       {
-       "content": "Quels sont deux personnes qui ne peuvent pas voter à l'Ecclésia en 440 av. J.-C. ?",
+       "content": "Quelles sont les deux personnes qui ne peuvent pas voter à l'Ecclésia en 440 av. J.-C. ?",
        "question_type": "multiple_correct_2",
        "explanation": "Méthode : 1) Définir le citoyen : homme libre, adulte, né de parents athéniens. 2) Repérer les exclus : les femmes et les esclaves.",
        "answers": [
@@ -1685,7 +1709,7 @@
        ]
       },
       {
-       "content": "En quelques lignes, explique en quoi le tirage au sort et le vote à l'Ecclésia montrent que le peuple a le pouvoir à Athènes.",
+       "content": "En quelques lignes, explique en quoi le tirage au sort et le vote à l'Ecclésia montrent que le peuple a le pouvoir à Athènes, puis précise une limite de ce pouvoir.",
        "question_type": "written",
        "points": 4,
        "starter": "À Athènes, le peuple a le pouvoir parce que…",
@@ -1792,7 +1816,7 @@
        ]
       },
       {
-       "content": "Rédige un court paragraphe : montre que la démocratie athénienne est réelle mais limitée, et cite un héritage qui nous vient d'Athènes.",
+       "content": "Rédige un court paragraphe : montre que la démocratie athénienne est réelle mais limitée, cite un héritage qui nous vient d'Athènes, puis compare avec la Côte d'Ivoire d'aujourd'hui.",
        "question_type": "written",
        "points": 6,
        "starter": "La démocratie athénienne est réelle car…",
@@ -1991,7 +2015,7 @@
         {
          "content": "Périclès dirige Athènes au Ve siècle av. J.-C.",
          "question_type": "true_false",
-         "explanation": "Étape 1 — Repérer la période : Périclès domine Athènes au Ve siècle av. J.-C., jusqu'à sa mort en 429. Étape 4 — Conclure : il est postérieur à Solon et à Clisthène. Pourquoi pas Faux : on le place parfois au VIe siècle avec Solon, mais le VIe siècle est celui de Solon.",
+         "explanation": "Étape 1 — Repérer la période : Périclès domine Athènes au Ve siècle av. J.-C., jusqu'à sa mort en 429. Étape 4 — Conclure : il est postérieur à Solon et à Clisthène. Pourquoi pas Faux : on le place parfois au VIe siècle avec Solon, mais le VIe siècle est celui de Solon (vers 594) et de Clisthène (508-507) ; Périclès domine au Ve siècle.",
          "answers": [
           {
            "content": "Vrai",
@@ -2055,24 +2079,24 @@
          ]
         },
         {
-         "content": "Les 10 stratèges sont…",
+         "content": "Comment les 10 stratèges sont-ils désignés ?",
          "question_type": "single_choice",
          "explanation": "Étape 3 — Préciser comment on accède à la fonction : les stratèges sont élus, car un chef de guerre doit être compétent. Étape 4 — Conclure : ils sont rééligibles. Pourquoi pas tirés au sort : c'est le cas de la Boulè et de l'Héliée, d'où la confusion ; un général tiré au sort pourrait ne jamais avoir fait la guerre.",
          "answers": [
           {
-           "content": "élus",
+           "content": "Par élection",
            "correct": true
           },
           {
-           "content": "tirés au sort",
+           "content": "Par tirage au sort",
            "correct": false
           },
           {
-           "content": "choisis par la Boulè",
+           "content": "Par choix de la Boulè",
            "correct": false
           },
           {
-           "content": "jugés par l'Héliée",
+           "content": "Par héritage",
            "correct": false
           }
          ]
@@ -2136,7 +2160,7 @@
          ]
         },
         {
-         "content": "Quelles sont deux catégories exclues ?",
+         "content": "Quelles sont deux catégories exclues de la citoyenneté athénienne ?",
          "question_type": "multiple_correct_2",
          "explanation": "Étape 2 — Repérer les exclus : femmes, métèques et esclaves n'ont pas de droits politiques. Étape 1 — Définir : les citoyens adultes sont, eux, les électeurs. Pourquoi pas les stratèges : ce sont des citoyens élus, donc ni exclus ni sans pouvoir.",
          "answers": [
@@ -2161,7 +2185,7 @@
         {
          "content": "Les esclaves votent à l'Ecclésia.",
          "question_type": "true_false",
-         "explanation": "Étape 2 — Repérer les exclus : l'esclave appartient à un maître et n'a aucun droit politique. Étape 1 — Définir : seuls les citoyens libres votent. Pourquoi pas Vrai : on confond esclave et métèque, mais ni l'un ni l'autre ne vote.",
+         "explanation": "Étape 2 — Repérer les exclus : l'esclave appartient à un maître et n'a aucun droit politique. Étape 1 — Définir : seuls les citoyens libres votent. Pourquoi pas Vrai : on croit que tout habitant d'Athènes vote, mais l'esclave appartient à un maître et n'a aucun droit politique.",
          "answers": [
           {
            "content": "Vrai",
@@ -2325,7 +2349,7 @@
         {
          "content": "Quelle façon de choisir ressemble à celle de la Boulè d'Athènes ?",
          "question_type": "single_choice",
-         "explanation": "Étape 1 — Identifier : la Boulè désigne ses membres par le sort. Étape 3 — Préciser l'accès : tirage au sort, donc même chance pour tous. Pourquoi pas l'élection : c'est le mode de désignation des stratèges, d'où la confusion ; le vote à main levée est celui de l'Ecclésia.",
+         "explanation": "Étape 1 — Identifier : les membres de la Boulè sont tirés au sort. Étape 3 — Préciser l'accès : tirage au sort, donc même chance pour tous. Pourquoi pas le vote à main levée ou l'élection : ce sont des choix par les voix des électeurs, comme pour les stratèges, alors que la Boulè se tire au sort.",
          "answers": [
           {
            "content": "Le tirage au sort",
@@ -2351,7 +2375,7 @@
          "explanation": "Étape 3 — Préciser l'accès : les stratèges sont élus. Étape 4 — Conclure : on choisit des compétences. Pourquoi pas le tirage au sort : c'est le mode de la Boulè et de l'Héliée ; il ne choisit pas un chef de guerre compétent.",
          "answers": [
           {
-           "content": "L'élection",
+           "content": "L'élection d'un candidat par un vote",
            "correct": true
           },
           {
@@ -2504,7 +2528,7 @@
          "explanation": "Étape 4 — Conclure : le vote direct est possible quand le groupe est petit, comme une cité grecque. Étape 3 — Comparer : un pays entier passe par des élus. Pourquoi pas les élus décident à la place des habitants : c'est le contraire d'un vote direct.",
          "answers": [
           {
-           "content": "Le nombre de votants est petit, comme dans une cité grecque",
+           "content": "Le groupe est assez petit pour se réunir en un seul lieu, comme les citoyens sur la Pnyx",
            "correct": true
           },
           {
@@ -2616,7 +2640,7 @@
            "correct": false
           },
           {
-           "content": "Athènes n'était pas une démocratie",
+           "content": "Athènes était une monarchie",
            "correct": false
           },
           {
@@ -2717,7 +2741,7 @@
         {
          "content": "Quelle conclusion est exacte ?",
          "question_type": "single_choice",
-         "explanation": "Étape 4 — Conclure : plusieurs réformateurs sur plus d'un siècle (Solon, Clisthène, Périclès). Étape 1 — Repérer les dates : 594, 508-507, Ve siècle. Pourquoi pas une seule loi : c'est le piège de la fiche, qui attribue tout à un seul homme.",
+         "explanation": "Étape 4 — Conclure : plusieurs réformateurs sur plus d'un siècle (Solon, Clisthène, Périclès). Étape 1 — Repérer les dates : 594, 508-507, Ve siècle. Pourquoi pas une seule loi : le piège de la fiche : croire que tout vient d'un seul homme.",
          "answers": [
           {
            "content": "La démocratie se construit par étapes",
@@ -2928,7 +2952,7 @@
          ]
         },
         {
-         "content": "Quelle conclusion juste ?",
+         "content": "Quelle conclusion juste sur la démocratie athénienne ?",
          "question_type": "single_choice",
          "explanation": "Étape 4 — Conclure : réelle pour les citoyens, limitée car femmes, métèques, esclaves sont exclus. Étape 1 — Définir : ces exclusions viennent de la définition du citoyen. Pourquoi pas ouverte à tous : on oublie les exclus ; pourquoi pas inexistante : l'Ecclésia votait vraiment.",
          "answers": [
@@ -3032,7 +3056,7 @@
          ]
         },
         {
-         "content": "Quelles sont deux différences ?",
+         "content": "Quelles sont deux différences entre la démocratie d'Athènes et celle d'un pays moderne ?",
          "question_type": "multiple_correct_2",
          "explanation": "Étape 3 — Comparer : aujourd'hui les femmes votent, et on élit des représentants. Étape 2 — Repérer : à Athènes, les femmes sont exclues. Pourquoi pas les stratèges ou les esclaves : le titre de stratège est athénien, et les esclaves ne votaient pas.",
          "answers": [
@@ -3448,7 +3472,7 @@
          ]
         },
         {
-         "content": "Conclusion juste ?",
+         "content": "Quelle conclusion juste sur la démocratie athénienne ?",
          "question_type": "single_choice",
          "explanation": "Étape 4 — Conclure : réelle pour les citoyens, limitée par les exclusions. Étape 2 — Repérer les exclus : femmes, métèques, esclaves. Pourquoi pas complète pour tous : on oublie ces exclus.",
          "answers": [
@@ -3465,7 +3489,7 @@
            "correct": false
           },
           {
-           "content": "Réservée aux dieux",
+           "content": "Réservée aux riches",
            "correct": false
           }
          ]
