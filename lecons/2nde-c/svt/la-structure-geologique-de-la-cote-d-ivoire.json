@@ -83,7 +83,7 @@
     {
      "key": "cle-roches",
      "kind": "diagram",
-     "description": "Clé de détermination en arbre pour reconnaître une roche à partir de ce qu'on observe sur l'échantillon : des cristaux soudés sans orientation donnent un granite, des bandes claires et sombres un gneiss, des feuillets minces un schiste, des grains libres un sable, une pâte plastique une argile, des bulles avec une goutte d'acide un calcaire.",
+     "description": "Clé de détermination en arbre pour reconnaître une roche à partir de ce qu'on observe sur l'échantillon : des cristaux soudés sans orientation donnent un granite, des bandes claires et sombres un gneiss, des feuillets minces un schiste, des grains libres un sable, une pâte plastique une argile, des bulles avec une goutte d'acide une roche carbonatée comme le calcaire.",
      "params": {
       "layout": "tree",
       "direction": "down",
@@ -159,14 +159,14 @@
     {
      "key": "coupe-bassin",
      "kind": "diagram",
-     "description": "Coupe schématique et fictive d'un forage dans le bassin sédimentaire côtier, lue de haut en bas : des sables en surface, puis des argiles, puis un grès, puis le socle précambrien tout en bas. Les couches ne sont pas déformées : chaque couche repose sur celle qui est dessous, donc le socle est le plus ancien et les sables sont les plus récents.",
+     "description": "Coupe schématique et fictive d'un forage dans le bassin sédimentaire côtier, lue de haut en bas : des sables en surface, puis des argiles, puis un grès, puis le socle précambrien tout en bas. Les couches ne sont pas déformées : chaque couche repose sur celle qui est dessous.",
      "params": {
       "layout": "flow",
       "direction": "down",
       "nodes": [
        {
         "id": "1",
-        "label": "Sables : couche du haut, la plus récente"
+        "label": "Sables"
        },
        {
         "id": "2",
@@ -178,7 +178,7 @@
        },
        {
         "id": "4",
-        "label": "Socle précambrien : en bas, le plus ancien"
+        "label": "Socle précambrien"
        }
       ],
       "edges": [
@@ -299,9 +299,9 @@
    "notions": [
     {
      "name": "Distinguer le socle précambrien et le bassin sédimentaire",
-     "remember": "La Côte d'Ivoire a **deux grands ensembles géologiques**. Le **socle précambrien** couvre l'essentiel du territoire, du nord jusqu'au voisinage de la côte : ce sont des roches très anciennes (plus de 500 millions d'années), dures, **cristallines** (comme le granite) ou **cristallophylliennes** (comme le gneiss, les schistes et les roches vertes), c'est-à-dire cristallisées en profondeur, souvent déformées et transformées par la chaleur et la pression. Le **bassin sédimentaire côtier** est une étroite bande au sud, le long de l'océan Atlantique : ce sont des **sédiments** (sables, argiles, grès) déposés en couches par l'eau, bien plus jeunes et plus meubles. Une **roche sédimentaire** naît du dépôt puis du tassement de sédiments.",
+     "remember": "La Côte d'Ivoire a **deux grands ensembles géologiques**. Le **socle précambrien** couvre l'essentiel du territoire, du nord jusqu'au voisinage de la côte : ce sont des roches très anciennes (plus de 500 millions d'années), dures, **cristallines** (comme le granite) ou **cristallophylliennes** (comme le gneiss, les schistes et les roches vertes), c'est-à-dire cristallisées en profondeur, souvent déformées et transformées par la chaleur et la pression. Le **bassin sédimentaire côtier** est une étroite bande le long de la côte, de l'ouest d'Abidjan jusqu'au Ghana ; à l'ouest (San Pedro, Tabou), le socle atteint la mer. Ce sont des **sédiments** (sables, argiles, grès) déposés en couches par l'eau, bien plus jeunes et en grande partie meubles. Une **roche sédimentaire** naît du dépôt puis du tassement de sédiments.",
      "method": [
-      "Repérer la position de la région : au nord et à l'intérieur des terres, ou au sud, en bordure de l'océan.",
+      "Repérer la position de la région : au nord et à l'intérieur des terres, ou en bordure de l'océan. La position ne suffit pas : c'est la roche qui décide.",
       "Observer les roches de la région : cristaux serrés et feuillets, ou couches de sables et d'argiles.",
       "Rattacher la région à son ensemble : socle précambrien (roches dures et anciennes) ou bassin sédimentaire côtier (roches meubles et plus jeunes).",
       "Conclure en donnant les caractères de l'ensemble : roches, âge relatif et étendue."
@@ -315,7 +315,7 @@
        "Conclure : le socle est ancien, dur et très étendu ; le bassin sédimentaire est une bande côtière de roches meubles et plus jeunes."
       ]
      },
-     "pitfall": "Ne crois pas que tout le pays est fait de sables et d'argiles parce que la côte l'est. Contre-exemple : en partant de la lagune d'Abidjan vers le nord, on quitte assez vite les sables et les argiles et l'on rencontre du granite et du gneiss : le bassin sédimentaire n'est qu'une étroite bande, le socle occupe l'essentiel du pays. Ne confonds pas non plus « précambrien », qui dit l'âge (très ancien), et « sédimentaire », qui dit le mode de formation (dépôt en couches).",
+     "pitfall": "Ne décide pas d'après la seule position : « au bord de la mer » ne veut pas dire « sables et argiles ». Contre-exemple : à San Pedro, en bordure de l'océan, le socle atteint la mer, alors qu'à Abidjan on trouve des sables et des argiles. Le bassin sédimentaire n'est qu'une étroite bande côtière, le socle occupe l'essentiel du pays : c'est la roche qui décide. Ne confonds pas non plus « précambrien », qui dit l'âge (très ancien), et « sédimentaire », qui dit le mode de formation (dépôt en couches).",
      "figure": "deux-ensembles",
      "practice": {
       "statement": "Tu t'entraînes à distinguer le socle précambrien et le bassin sédimentaire.",
@@ -449,11 +449,11 @@
          "answers": [
           {
            "content": "Socle précambrien",
-           "match": "Granites, gneiss, schistes et roches vertes"
+           "match": "Essentiel du territoire : granites, gneiss, schistes, roches vertes"
           },
           {
            "content": "Bassin sédimentaire côtier",
-           "match": "Sables et argiles en couches"
+           "match": "Étroite bande côtière de sables et d'argiles"
           },
           {
            "content": "Roche sédimentaire",
@@ -494,7 +494,7 @@
            "correct": true
           },
           {
-           "content": "Le sable n'existe pas en Côte d'Ivoire",
+           "content": "Les sables côtiers prouvent que tout le sous-sol est récent",
            "correct": false
           },
           {
@@ -551,20 +551,20 @@
          ]
         },
         {
-         "content": "Le bassin sédimentaire côtier se situe au ___ du pays.",
+         "content": "Le bassin sédimentaire côtier forme une étroite bande le long de la ___.",
          "question_type": "select",
-         "explanation": "Étape 1 — Repérer : la côte borde l'océan Atlantique, donc le sud. Étape 3 — Rattacher : le bassin côtier se situe au sud. Étape 4 — Conclure : c'est une étroite bande au sud. Le nord appartient au socle.",
+         "explanation": "Étape 1 — Repérer : la côte borde l'océan Atlantique. Étape 3 — Rattacher : le bassin côtier longe la côte. Étape 4 — Conclure : c'est une étroite bande côtière. Le nord et l'extrême ouest appartiennent au socle.",
          "answers": [
           {
-           "content": "sud",
+           "content": "côte",
            "correct": true
           },
           {
-           "content": "nord",
+           "content": "frontière nord",
            "correct": false
           },
           {
-           "content": "centre",
+           "content": "frontière ouest",
            "correct": false
           }
          ]
@@ -636,7 +636,7 @@
     },
     {
      "name": "Reconnaître les principales roches de Côte d'Ivoire",
-     "remember": "Une roche se reconnaît à sa **texture** (comment sont disposés les grains ou les cristaux) et à ses **minéraux**. Le **granite** : roche claire à gros cristaux soudés (quartz, feldspath, mica), sans orientation. Le **gneiss** : mêmes minéraux, mais rangés en bandes claires et sombres. Le **schiste** : roche à grains très fins qui se débite en feuillets minces. Les **roches vertes** : roches sombres, verdâtres, à minéraux fins. Le **sable** : grains libres qui s'écoulent entre les doigts. L'**argile** : grains si fins qu'on ne les voit pas ; mouillée, elle forme une pâte plastique. **Test à l'acide** : une goutte d'acide chlorhydrique dilué fait mousser un **calcaire** (effervescence) ; le granite, le gneiss et le schiste ne mousseront pas.",
+     "remember": "Une roche se reconnaît à sa **texture** (comment sont disposés les grains ou les cristaux) et à ses **minéraux**. Le **granite** : roche claire à gros cristaux soudés (quartz, feldspath, mica), sans orientation. Le **gneiss** : mêmes minéraux, mais rangés en bandes claires et sombres. Le **schiste** : roche à grains très fins qui se débite en feuillets minces. Les **roches vertes** : roches sombres, verdâtres, à minéraux fins. Le **sable** : grains libres qui s'écoulent entre les doigts. L'**argile** : grains si fins qu'on ne les voit pas ; mouillée, elle forme une pâte plastique. **Test à l'acide** : une goutte d'acide chlorhydrique dilué fait mousser les roches carbonatées, comme le **calcaire** (effervescence) ; le granite, le gneiss et le schiste ne mousseront pas.",
      "method": [
       "Observer la roche à l'œil nu et à la loupe : couleur, taille des grains ou des cristaux, bandes ou feuillets.",
       "Tester la roche : goutte d'acide chlorhydrique dilué (effervescence ou non), grains qui se détachent ou non.",
@@ -644,7 +644,7 @@
       "Nommer la roche, puis dire à quel ensemble géologique elle appartient."
      ],
      "example": {
-      "statement": "Un échantillon a des bandes claires et sombres alternées et des cristaux visibles à l'œil nu. Il ne fait pas effervescence avec l'acide et ne se débite pas en feuillets minces. Quelle est cette roche ?",
+      "statement": "Un échantillon a des bandes claires et sombres alternées et des cristaux visibles à l'œil nu (quartz, feldspath, mica). Il ne fait pas effervescence avec l'acide, ne se débite pas en feuillets minces et ne s'effrite pas en grains. Quelle est cette roche ?",
       "steps": [
        "Observer : bandes claires et sombres alternées, cristaux visibles à l'œil nu.",
        "Tester : aucune effervescence avec l'acide ; la roche est dure et ne s'effrite pas en grains.",
@@ -790,7 +790,7 @@
         {
          "content": "Relie chaque roche à son indice de reconnaissance.",
          "question_type": "matching",
-         "explanation": "Étape 1 — Observer : chaque roche a un indice visible ou testable. Étape 2 — Tester : l'acide ne fait mousser que le calcaire. Étape 3 — Comparer : on compare chaque indice avec la clé de détermination. Étape 4 — Nommer : chaque roche est ainsi reconnue.",
+         "explanation": "Étape 1 — Observer : chaque roche a un indice visible ou testable. Étape 2 — Tester : l'acide ne fait mousser que les roches carbonatées, comme le calcaire. Étape 3 — Comparer : on compare chaque indice avec la clé de détermination. Étape 4 — Nommer : chaque roche est ainsi reconnue.",
          "answers": [
           {
            "content": "Granite",
@@ -885,10 +885,14 @@
          ]
         },
         {
-         "content": "Une roche qui fait effervescence avec une goutte d'acide est un ___.",
+         "content": "Une roche qui fait effervescence avec une goutte d'acide est une roche ___.",
          "question_type": "fill_blank",
-         "explanation": "Étape 2 — Tester : des bulles apparaissent avec l'acide. Étape 3 — Comparer : cette effervescence est le signe d'un calcaire. Étape 4 — Nommer : c'est un calcaire.",
+         "explanation": "Étape 2 — Tester : des bulles apparaissent avec l'acide. Étape 3 — Comparer : cette effervescence est le signe d'une roche carbonatée, comme le calcaire. Étape 4 — Nommer : c'est une roche carbonatée, par exemple un calcaire.",
          "answers": [
+          {
+           "content": "carbonatée",
+           "correct": true
+          },
           {
            "content": "calcaire",
            "correct": true
@@ -995,7 +999,7 @@
      "example": {
       "statement": "Un forage fictif dans le bassin côtier traverse, de haut en bas : des sables, puis des argiles, puis un grès, puis le socle cristallin. Classe ces terrains du plus ancien au plus récent.",
       "steps": [
-       "Lire : la légende du forage indique quatre terrains : sables, argiles, grès et socle cristallin.",
+       "Lire : le relevé du forage indique quatre terrains : sables, argiles, grès et socle cristallin.",
        "Repérer : sur la coupe, les sables sont en haut, puis viennent les argiles, puis le grès, et le socle est tout en bas.",
        "Appliquer : les couches n'étant pas déformées, la couche du dessous est plus ancienne que celle du dessus.",
        "Conclure : du plus ancien au plus récent : socle cristallin, grès, argiles, sables."
@@ -1286,6 +1290,10 @@
           {
            "content": "haut",
            "correct": true
+          },
+          {
+           "content": "sommet",
+           "correct": true
           }
          ]
         },
@@ -1325,7 +1333,7 @@
       "statement": "Dans quel ensemble géologique cherche-t-on du pétrole, et pourquoi ?",
       "steps": [
        "Identifier : le pétrole est un hydrocarbure, formé à partir de restes d'êtres vivants.",
-       "Rechercher : il se forme et reste piégé dans des couches de sédiments enfouies, jamais dans une roche cristalline.",
+       "Rechercher : le pétrole se forme dans des sédiments ; le granite n'en produit pas, et il reste piégé dans des couches de sédiments enfouies.",
        "Rattacher : ces couches de sédiments sont celles du bassin sédimentaire côtier, sous la mer au large ; le socle cristallin n'en contient pas.",
        "Justifier : on cherche le pétrole dans le bassin sédimentaire côtier, car ses couches de sédiments ont pu enfermer des restes d'êtres vivants."
       ]
@@ -1376,21 +1384,21 @@
         "hint": "Pense au mot offshore."
        },
        {
-        "content": "Relie chaque ressource à son ensemble géologique.",
+        "content": "Relie chaque ressource à la roche ou au gisement qui la fournit.",
         "question_type": "matching",
         "explanation": "Étape 1 — Identifier : on a un métal, un hydrocarbure et une pierre de construction. Étape 3 — Rattacher : l'or se rattache au socle, le gaz en mer au bassin, le granite au socle. Étape 4 — Justifier : chaque ressource est liée à sa roche.",
         "answers": [
          {
           "content": "Or",
-          "match": "Socle précambrien"
+          "match": "Filons de quartz du socle"
          },
          {
           "content": "Gaz en mer",
-          "match": "Bassin sédimentaire côtier"
+          "match": "Couches de sédiments sous la mer"
          },
          {
           "content": "Granite",
-          "match": "Roche cristalline du socle"
+          "match": "Carrière dans le socle cristallin"
          }
         ],
         "hint": "Un hydrocarbure demande des couches de sédiments."
@@ -1509,7 +1517,7 @@
            "correct": true
           },
           {
-           "content": "L'or ne se trouve nulle part en Côte d'Ivoire",
+           "content": "L'or se forme dans les couches de sédiments, comme le pétrole",
            "correct": false
           },
           {
@@ -1538,11 +1546,11 @@
          "answers": [
           {
            "content": "Or",
-           "match": "Filons de quartz et roches vertes"
+           "match": "Filons de quartz"
           },
           {
            "content": "Diamant",
-           "match": "Graviers de rivières"
+           "match": "Graviers de rivières issus du socle"
           },
           {
            "content": "Pétrole",
@@ -1550,7 +1558,7 @@
           },
           {
            "content": "Argile",
-           "match": "Briques et construction"
+           "match": "Couches de sédiments près de la lagune"
           }
          ]
         },
@@ -1612,7 +1620,7 @@
          ]
         },
         {
-         "content": "L'or est surtout cherché dans des filons de ___ .",
+         "content": "L'or est surtout cherché dans des filons de ___.",
          "question_type": "fill_blank",
          "explanation": "Étape 1 — Identifier : l'or est un métal précieux. Étape 2 — Rechercher : on le trouve dans des filons de quartz et des roches vertes. Étape 3 — Rattacher : ce sont des roches du socle. Étape 4 — Justifier : il se trouve dans des filons de quartz.",
          "answers": [
@@ -1858,29 +1866,29 @@
     {
      "title": "Choisir un site selon la ressource",
      "exercise_type": "evaluation",
-     "figure": "ressources-liens",
+     "figure": null,
      "statement": "Une entreprise étudie quatre projets en Côte d'Ivoire : une mine d'or, un puits de gaz en mer, une carrière de granite et une briqueterie qui utilise des argiles.",
      "questions": [
       {
-       "content": "Relie chaque projet à l'ensemble géologique où l'installer.",
+       "content": "Relie chaque projet à la roche ou au gisement qui le fournit.",
        "question_type": "matching",
        "explanation": "Méthode détaillée. Étape 1 — Identifier : on a un métal, un hydrocarbure et deux matériaux de construction. Étape 2 — Rechercher : l'or est dans les filons du socle, le gaz dans les sédiments en mer, le granite est une roche cristalline, l'argile est un sédiment. Étape 3 — Rattacher : chaque projet se rattache à son ensemble. Étape 4 — Justifier : chaque ressource est liée à sa roche et à son origine.",
        "answers": [
         {
          "content": "Mine d'or",
-         "match": "Socle précambrien"
+         "match": "Filons de quartz et roches vertes du socle"
         },
         {
          "content": "Puits de gaz en mer",
-         "match": "Bassin sédimentaire côtier"
+         "match": "Couches de sédiments sous la mer"
         },
         {
          "content": "Carrière de granite",
-         "match": "Roche cristalline du socle"
+         "match": "Massif de granite du socle"
         },
         {
          "content": "Briqueterie d'argile",
-         "match": "Argiles du bassin côtier"
+         "match": "Argiles près de la lagune"
         }
        ]
       },
@@ -1910,14 +1918,14 @@
       {
        "content": "Pourquoi cherche-t-on du gaz dans le bassin sédimentaire plutôt que dans le granite ?",
        "question_type": "single_choice",
-       "explanation": "Méthode détaillée. Étape 1 — Identifier : le gaz est un hydrocarbure. Étape 2 — Rechercher : il se forme dans des couches de sédiments. Étape 3 — Rattacher : ces couches sont celles du bassin sédimentaire côtier. Étape 4 — Justifier : le granite est cristallin, il ne peut pas piéger de gaz formé dans des sédiments.",
+       "explanation": "Méthode détaillée. Étape 1 — Identifier : le gaz est un hydrocarbure. Étape 2 — Rechercher : il se forme dans des couches de sédiments. Étape 3 — Rattacher : ces couches sont celles du bassin sédimentaire côtier. Étape 4 — Justifier : le gaz se forme dans des sédiments ; le granite n'en produit pas.",
        "answers": [
         {
          "content": "Parce que le gaz se forme à partir de restes d'êtres vivants enfouis dans des couches de sédiments",
          "correct": true
         },
         {
-         "content": "Parce que le granite est trop clair",
+         "content": "Parce que le gaz s'échappe toujours du granite vers la mer",
          "correct": false
         },
         {
@@ -2050,7 +2058,7 @@
        ]
       },
       {
-       "content": "Choisis les deux ressources que l'on peut espérer trouver dans le bassin sédimentaire côtier de ce forage.",
+       "content": "Choisis les deux ressources du bassin sédimentaire côtier.",
        "question_type": "multiple_correct_2",
        "explanation": "Méthode détaillée. Étape 1 — Identifier : on a un hydrocarbure, un matériau de construction, un métal et une pierre précieuse. Étape 2 — Rechercher : pétrole, gaz, sables et argiles se trouvent dans les couches de sédiments. Étape 3 — Rattacher : ils se rattachent au bassin sédimentaire côtier. Étape 4 — Justifier : l'or et le diamant relèvent du socle.",
        "answers": [
@@ -2099,7 +2107,7 @@
        "title": "Exercice 1",
        "statement": "On rappelle les deux grands ensembles géologiques de la Côte d'Ivoire.",
        "exercise_type": "evaluation",
-       "figure": "deux-ensembles",
+       "figure": null,
        "questions": [
         {
          "content": "Quel ensemble géologique couvre l'essentiel du territoire ivoirien ?",
@@ -2125,9 +2133,9 @@
          ]
         },
         {
-         "content": "Le bassin sédimentaire côtier se trouve au sud, le long de l'océan Atlantique.",
+         "content": "Le bassin sédimentaire côtier est une étroite bande le long de la côte, de l'ouest d'Abidjan jusqu'au Ghana.",
          "question_type": "true_false",
-         "explanation": "Étape 1 — Repérer : on repère la côte, au sud. Étape 2 — Observer : le bassin est fait de sables et d'argiles en couches. Étape 3 — Rattacher : il longe l'océan Atlantique. Étape 4 — Conclure : l'affirmation est vraie. Pourquoi pas « Faux » : la côte est bien au sud et c'est là que les sédiments se sont déposés.",
+         "explanation": "Étape 1 — Repérer : on repère la côte, de l'ouest d'Abidjan au Ghana. Étape 2 — Observer : le bassin est fait de sables et d'argiles en couches. Étape 3 — Rattacher : il longe la côte sur cette bande. Étape 4 — Conclure : l'affirmation est vraie. Pourquoi pas « Faux » : c'est bien là que les sédiments se sont déposés, le long de la côte.",
          "answers": [
           {
            "content": "Vrai",
@@ -2161,11 +2169,11 @@
          "answers": [
           {
            "content": "Socle précambrien",
-           "match": "Granites, gneiss, schistes, roches vertes"
+           "match": "Essentiel du territoire : granites, gneiss, schistes, roches vertes"
           },
           {
            "content": "Bassin sédimentaire côtier",
-           "match": "Sables et argiles"
+           "match": "Étroite bande côtière de sables et d'argiles"
           },
           {
            "content": "Roche sédimentaire",
@@ -2280,7 +2288,7 @@
         {
          "content": "Relie chaque roche à son indice.",
          "question_type": "matching",
-         "explanation": "Étape 1 — Observer : chaque roche a un indice. Étape 2 — Tester : l'acide ne fait mousser que le calcaire. Étape 3 — Comparer : on compare avec la clé de détermination. Étape 4 — Nommer : chaque roche est reconnue. Pourquoi pas « Granite avec Bandes claires et sombres » : les bandes caractérisent le gneiss, mêmes minéraux mais autre disposition.",
+         "explanation": "Étape 1 — Observer : chaque roche a un indice. Étape 2 — Tester : l'acide ne fait mousser que les roches carbonatées, comme le calcaire. Étape 3 — Comparer : on compare avec la clé de détermination. Étape 4 — Nommer : chaque roche est reconnue. Pourquoi pas « Granite avec Bandes claires et sombres » : les bandes caractérisent le gneiss, mêmes minéraux mais autre disposition.",
          "answers": [
           {
            "content": "Granite",
@@ -2305,14 +2313,14 @@
       },
       {
        "title": "Exercice 3",
-       "statement": "Une coupe fictive du bassin côtier montre de haut en bas : sables, argiles, socle. Les couches ne sont pas déformées.",
+       "statement": "Une coupe fictive du bassin côtier montre de haut en bas : sables, argiles, grès, socle. Les couches ne sont pas déformées.",
        "exercise_type": "evaluation",
        "figure": "coupe-bassin",
        "questions": [
         {
-         "content": "Une coupe non déformée montre, de haut en bas : sables, argiles, socle. Quelle est la couche la plus ancienne ?",
+         "content": "Une coupe non déformée montre, de haut en bas : sables, argiles, grès, socle. Quel est le terrain le plus ancien ?",
          "question_type": "single_choice",
-         "explanation": "Étape 1 — Lire : la coupe donne trois terrains. Étape 2 — Repérer : le socle est en bas. Étape 3 — Appliquer : le dessous est plus ancien. Étape 4 — Conclure : le socle est le plus ancien. Pourquoi pas « Les sables » : ils sont en haut, donc les plus récents.",
+         "explanation": "Étape 1 — Lire : la coupe donne quatre terrains. Étape 2 — Repérer : le socle est en bas. Étape 3 — Appliquer : le dessous est plus ancien. Étape 4 — Conclure : le socle est le plus ancien. Pourquoi pas « Les sables » : ils sont en haut, donc les plus récents.",
          "answers": [
           {
            "content": "Le socle",
@@ -2327,15 +2335,15 @@
            "correct": false
           },
           {
-           "content": "Elles ont toutes le même âge",
+           "content": "Le grès",
            "correct": false
           }
          ]
         },
         {
-         "content": "Une coupe non déformée montre, de haut en bas : sables, argiles, socle. Quelle est la couche la plus récente ?",
+         "content": "Une coupe non déformée montre, de haut en bas : sables, argiles, grès, socle. Quel est le terrain le plus récent ?",
          "question_type": "single_choice",
-         "explanation": "Étape 1 — Lire : la coupe donne trois terrains. Étape 2 — Repérer : les sables sont en haut. Étape 3 — Appliquer : le dessus est plus récent que le dessous. Étape 4 — Conclure : les sables sont les plus récents. Pourquoi pas « Le socle » : il est tout en bas, donc le plus ancien.",
+         "explanation": "Étape 1 — Lire : la coupe donne quatre terrains. Étape 2 — Repérer : les sables sont en haut. Étape 3 — Appliquer : le dessus est plus récent que le dessous. Étape 4 — Conclure : les sables sont les plus récents. Pourquoi pas « Le socle » : il est tout en bas, donc le plus ancien.",
          "answers": [
           {
            "content": "Les sables",
@@ -2346,22 +2354,25 @@
            "correct": false
           },
           {
-           "content": "Le socle",
+           "content": "Le grès",
            "correct": false
           },
           {
-           "content": "Aucune",
+           "content": "La couche la plus épaisse",
            "correct": false
           }
          ]
         },
         {
-         "content": "Une coupe non déformée montre, de haut en bas : sables, argiles, socle. Classe ces terrains du plus ancien au plus récent.",
+         "content": "Une coupe non déformée montre, de haut en bas : sables, argiles, grès, socle. Classe ces terrains du plus ancien au plus récent.",
          "question_type": "ordering",
-         "explanation": "Étape 1 — Lire : trois terrains sont indiqués. Étape 2 — Repérer : le socle est en bas et les sables en haut. Étape 3 — Appliquer : plus on monte, plus la couche est récente. Étape 4 — Conclure : du plus ancien au plus récent : socle, argiles, sables. Pourquoi pas « Sables, argiles, socle » : c'est l'ordre du haut vers le bas, donc du plus récent au plus ancien.",
+         "explanation": "Étape 1 — Lire : quatre terrains sont indiqués. Étape 2 — Repérer : le socle est en bas et les sables en haut. Étape 3 — Appliquer : plus on monte, plus la couche est récente. Étape 4 — Conclure : du plus ancien au plus récent : socle, grès, argiles, sables. Pourquoi pas « Sables, argiles, grès, socle » : c'est l'ordre du haut vers le bas, donc du plus récent au plus ancien.",
          "answers": [
           {
            "content": "Le socle"
+          },
+          {
+           "content": "Le grès"
           },
           {
            "content": "Les argiles"
@@ -2406,7 +2417,7 @@
        "title": "Exercice 4",
        "statement": "On relie des ressources du sous-sol aux deux ensembles géologiques.",
        "exercise_type": "evaluation",
-       "figure": "ressources-liens",
+       "figure": null,
        "questions": [
         {
          "content": "Le manganèse est une ressource :",
@@ -2483,7 +2494,7 @@
         {
          "content": "Relie chaque ressource à sa roche ou à sa structure.",
          "question_type": "matching",
-         "explanation": "Étape 1 — Identifier : un métal, une pierre précieuse et un hydrocarbure. Étape 2 — Rechercher : chacun a sa roche d'origine. Étape 3 — Rattacher : or et diamant : socle ; pétrole : bassin. Étape 4 — Justifier : chaque ressource est liée à sa roche. Pourquoi pas « Pétrole avec Filons de quartz » : le pétrole vient de couches de sédiments, jamais de filons de quartz.",
+         "explanation": "Étape 1 — Identifier : un métal, une pierre précieuse et un hydrocarbure. Étape 2 — Rechercher : chacun a sa roche d'origine ; l'or s'orpaille aussi en rivière, mais son gisement d'origine est le filon de quartz. Étape 3 — Rattacher : or et diamant : socle ; pétrole : bassin. Étape 4 — Justifier : chaque ressource est liée à sa roche. Pourquoi pas « Pétrole avec Filons de quartz » : le pétrole vient de couches de sédiments, jamais de filons de quartz.",
          "answers": [
           {
            "content": "Or",
@@ -2680,17 +2691,19 @@
          ]
         },
         {
-         "content": "Un camion transporte 12 tonnes de sable puis 8 tonnes d'argile pour la briqueterie. Quelle masse de sédiments, en tonnes, est transportée au total ?",
-         "question_type": "numeric",
-         "explanation": "Étape 1 — Identifier : sable et argile sont deux sédiments. Étape 4 — Justifier : on additionne : 12 + 8 = 20 tonnes. Pourquoi pas « 4 » : ce serait la différence 12 − 8, alors que la question demande le total.",
+         "content": "Le sable et l'argile d'une briqueterie d'Abidjan sont des ___ déposés en couches par l'eau.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Identifier : sable et argile sont des matériaux de construction. Étape 2 — Rechercher : ce sont des grains déposés en couches par l'eau. Étape 3 — Rattacher : ils se rattachent au bassin sédimentaire côtier. Étape 4 — Justifier : ce sont des sédiments. Pourquoi pas « granites » : le granite est une roche cristalline du socle, pas un dépôt.",
          "answers": [
           {
-           "content": "20",
+           "content": "sédiments",
+           "correct": true
+          },
+          {
+           "content": "sédiment",
            "correct": true
           }
-         ],
-         "tolerance": 0,
-         "unit": "tonnes"
+         ]
         },
         {
          "content": "Remets dans l'ordre les étapes de la méthode pour dire d'où vient une ressource.",
@@ -2721,7 +2734,7 @@
        "figure": null,
        "questions": [
         {
-         "content": "Dans quelle zone de cette carte la société doit-elle chercher l'or ?",
+         "content": "Sur une carte simplifiée, le nord est en rose (légende : granite, gneiss et roches vertes) et une bande au sud est en jaune (légende : sables et argiles). Dans quelle zone une société doit-elle chercher de l'or ?",
          "question_type": "single_choice",
          "explanation": "Étape 1 — Lire : la légende dit rose : granite, gneiss et roches vertes ; jaune : sables et argiles. Étape 2 — Repérer : la zone rose couvre le nord. Étape 4 — Conclure : l'or est lié aux roches vertes et aux filons de quartz du socle. Pourquoi pas « Dans la bande jaune » : les sables et les argiles sont des sédiments, sans filons de quartz ni roches vertes.",
          "answers": [
@@ -2793,7 +2806,7 @@
          ]
         },
         {
-         "content": "Choisis les deux roches de la zone rose.",
+         "content": "Sur une carte simplifiée, la zone rose du nord a pour légende : granite, gneiss et roches vertes ; la bande jaune du sud : sables et argiles. Choisis les deux roches de la zone rose.",
          "question_type": "multiple_correct_2",
          "explanation": "Étape 1 — Lire : la légende dit rose : granite, gneiss et roches vertes. Étape 2 — Repérer : la zone rose est au nord. Étape 4 — Conclure : granite et gneiss sont dans la zone rose. Pourquoi pas « Le sable » : il est dans la bande jaune, dans le bassin côtier.",
          "answers": [
@@ -2820,7 +2833,7 @@
       },
       {
        "title": "Exercice 4",
-       "statement": "Une plateforme pétrolière est installée en mer, au large d'Abidjan. Un forage fictif traverse de haut en bas : des sables, des argiles, puis un grès.",
+       "statement": "Une plateforme pétrolière est installée en mer, au large d'Abidjan. Un forage fictif traverse de haut en bas : des sables, des argiles, puis un grès. Les couches ne sont pas déformées.",
        "exercise_type": "evaluation",
        "figure": null,
        "questions": [
@@ -2871,7 +2884,7 @@
          ]
         },
         {
-         "content": "Le forage traverse d'abord les couches les plus récentes.",
+         "content": "Un forage fictif traverse de haut en bas : sables, argiles, grès, sans déformation. Il traverse d'abord les couches les plus récentes.",
          "question_type": "true_false",
          "explanation": "Étape 1 — Lire : le forage descend de haut en bas. Étape 2 — Repérer : les sables sont en haut. Étape 3 — Appliquer : la couche du dessus est la plus récente. Étape 4 — Conclure : il traverse d'abord les plus récentes : l'affirmation est vraie. Pourquoi pas « Faux » : il part du haut, donc du plus récent.",
          "answers": [
@@ -2886,18 +2899,18 @@
          ]
         },
         {
-         "content": "Un forage fictif traverse, du haut vers le bas, trois couches. Remets-les dans l'ordre où le foreur les rencontre.",
+         "content": "Un forage traverse de haut en bas, sans déformation : sables, argiles, grès. Classe ces couches de la plus ancienne à la plus récente.",
          "question_type": "ordering",
-         "explanation": "Étape 1 — Lire : les trois couches sont des sables, des argiles et un grès. Étape 2 — Repérer : les sables sont en haut. Étape 3 — Appliquer : le foreur descend : il croise d'abord le haut, puis le bas. Étape 4 — Conclure : ordre de traversée : sables, argiles, grès. Pourquoi pas « Grès, argiles, sables » : ce serait l'ordre de bas en haut, alors que le foreur part de la surface.",
+         "explanation": "Étape 1 — Lire : trois couches sont indiquées : sables, argiles, grès. Étape 2 — Repérer : le grès est en bas, les sables en haut. Étape 3 — Appliquer : plus on monte, plus la couche est récente. Étape 4 — Conclure : de la plus ancienne à la plus récente : grès, argiles, sables. Pourquoi pas « Sables, argiles, grès » : c'est l'ordre de traversée, de haut en bas, donc de la plus récente à la plus ancienne.",
          "answers": [
           {
-           "content": "Les sables"
+           "content": "Le grès"
           },
           {
            "content": "Les argiles"
           },
           {
-           "content": "Le grès"
+           "content": "Les sables"
           }
          ]
         },
@@ -2928,7 +2941,7 @@
        "figure": null,
        "questions": [
         {
-         "content": "Qu'est-ce qui distingue l'échantillon A de l'échantillon B ?",
+         "content": "L'échantillon A est clair, à gros cristaux de quartz, de feldspath et de mica sans orientation ; l'échantillon B a les mêmes minéraux, disposés en bandes claires et sombres. Qu'est-ce qui distingue A de B ?",
          "question_type": "single_choice",
          "explanation": "Étape 1 — Observer : A a des cristaux sans orientation, B des bandes. Étape 2 — Tester : ni l'un ni l'autre ne mousse avec l'acide. Étape 3 — Comparer : mêmes minéraux, seule la disposition change. Étape 4 — Nommer : la disposition des cristaux les distingue. Pourquoi pas « Les minéraux, car ils sont différents » : les minéraux sont les mêmes dans les deux échantillons.",
          "answers": [
@@ -2976,7 +2989,7 @@
         {
          "content": "Deux roches différentes peuvent contenir les mêmes minéraux.",
          "question_type": "true_false",
-         "explanation": "Étape 1 — Observer : on compare A et B. Étape 2 — Tester : A et B contiennent quartz, feldspath et mica. Étape 3 — Comparer : pourtant l'une est un granite et l'autre un gneiss. Étape 4 — Nommer : l'affirmation est vraie. Pourquoi pas « Faux » : granite et gneiss en sont la preuve : mêmes minéraux, dispositions différentes.",
+         "explanation": "Étape 1 — Observer : A et B contiennent quartz, feldspath et mica. Étape 2 — Tester : on compare la disposition de leurs cristaux. Étape 3 — Comparer : pourtant l'une est un granite et l'autre un gneiss. Étape 4 — Nommer : l'affirmation est vraie. Pourquoi pas « Faux » : granite et gneiss en sont la preuve : mêmes minéraux, dispositions différentes.",
          "answers": [
           {
            "content": "Vrai",
@@ -2989,7 +3002,7 @@
          ]
         },
         {
-         "content": "Quelle conclusion est correcte ?",
+         "content": "L'échantillon A a des cristaux de quartz, de feldspath et de mica sans orientation ; l'échantillon B a les mêmes minéraux en bandes claires et sombres. Quelle conclusion est correcte ?",
          "question_type": "single_choice",
          "explanation": "Étape 2 — Observer : granite et gneiss sont des roches cristallines et cristallophylliennes. Étape 3 — Rattacher : elles se rattachent au socle précambrien. Étape 4 — Conclure : granite et gneiss appartiennent au socle. Pourquoi pas « A et B sont la même roche » : la disposition différente des cristaux donne deux roches.",
          "answers": [
@@ -3040,7 +3053,7 @@
        "figure": null,
        "questions": [
         {
-         "content": "Quelle est l'erreur de l'élève qui dit que le socle est le plus récent ?",
+         "content": "Une coupe non déformée montre, de haut en bas : sables, argiles, socle. Un élève dit que le socle est le plus récent. Quelle est son erreur ?",
          "question_type": "single_choice",
          "explanation": "Étape 2 — Repérer : le socle est en bas de la coupe. Étape 3 — Appliquer : la couche du dessous est plus ancienne que celle du dessus. Étape 4 — Conclure : le socle est donc le plus ancien. Pourquoi pas « Les sables sont les plus anciens » : ils sont en haut, donc les plus récents.",
          "answers": [
@@ -3049,7 +3062,7 @@
            "correct": true
           },
           {
-           "content": "Le socle n'existe pas sous les argiles",
+           "content": "La couche la plus épaisse est la plus récente",
            "correct": false
           },
           {
@@ -3142,7 +3155,7 @@
        "figure": null,
        "questions": [
         {
-         "content": "Que répondre à cette annonce ?",
+         "content": "Un journal annonce : « On va trouver du pétrole en creusant dans le granite du Nord. » Que répondre ?",
          "question_type": "single_choice",
          "explanation": "Étape 1 — Identifier : le pétrole est un hydrocarbure. Étape 2 — Rechercher : il se forme dans des couches de sédiments. Étape 3 — Rattacher : ces couches sont celles du bassin sédimentaire côtier. Étape 4 — Justifier : le granite est cristallin : on n'y cherche pas de pétrole. Pourquoi pas « Le pétrole se forme dans le granite quand il est très ancien » : l'âge ne change pas la nature de la roche : le granite reste cristallin.",
          "answers": [
@@ -3220,7 +3233,7 @@
            "correct": false
           },
           {
-           "content": "Le granite est toujours trop clair",
+           "content": "Le granite est trop dur pour être foré",
            "correct": false
           }
          ]
@@ -3252,14 +3265,14 @@
         {
          "content": "Une région du centre montre du granite et du gneiss. Quelle justification est correcte ?",
          "question_type": "single_choice",
-         "explanation": "Étape 1 — Repérer : la région est au centre, à l'intérieur des terres. Étape 2 — Observer : on voit du granite et du gneiss. Étape 3 — Rattacher : ces roches cristallines forment le socle précambrien. Étape 4 — Conclure : le socle est ancien et étendu. Pourquoi pas « Elle fait partie du bassin côtier, car elle est au centre » : le bassin n'est qu'une bande au sud.",
+         "explanation": "Étape 1 — Repérer : la région est au centre, à l'intérieur des terres. Étape 2 — Observer : on voit du granite et du gneiss. Étape 3 — Rattacher : ces roches cristallines forment le socle précambrien. Étape 4 — Conclure : le socle est ancien et étendu. Pourquoi pas « Elle fait partie du bassin côtier, car le gneiss est en couches » : le gneiss est une roche cristallophyllienne, pas un sédiment en couches.",
          "answers": [
           {
            "content": "Elle fait partie du socle, car ces roches sont cristallines et très anciennes",
            "correct": true
           },
           {
-           "content": "Elle fait partie du bassin côtier, car elle est au centre",
+           "content": "Elle fait partie du bassin côtier, car le gneiss est en couches",
            "correct": false
           },
           {
@@ -3543,7 +3556,7 @@
         {
          "content": "Relie chaque observation à la roche correspondante.",
          "question_type": "matching",
-         "explanation": "Étape 1 — Observer : trois observations différentes. Étape 2 — Tester : l'acide ne fait mousser que le calcaire. Étape 3 — Comparer : on compare avec la clé de détermination. Étape 4 — Nommer : chaque observation donne sa roche. Pourquoi pas « Feuillets minces avec Sable » : le sable est fait de grains libres, pas de feuillets.",
+         "explanation": "Étape 1 — Observer : trois observations différentes. Étape 2 — Tester : l'acide ne fait mousser que les roches carbonatées, comme le calcaire. Étape 3 — Comparer : on compare avec la clé de détermination. Étape 4 — Nommer : chaque observation donne sa roche. Pourquoi pas « Feuillets minces avec Sable » : le sable est fait de grains libres, pas de feuillets.",
          "answers": [
           {
            "content": "Bulles avec l'acide",
@@ -3626,7 +3639,7 @@
          ]
         },
         {
-         "content": "Où cherche-t-on du pétrole dans ce forage ?",
+         "content": "Un forage traverse de haut en bas : sables, argiles, grès, socle. Où cherche-t-on du pétrole ?",
          "question_type": "single_choice",
          "explanation": "Étape 1 — Identifier : le pétrole est un hydrocarbure. Étape 2 — Rechercher : il est piégé dans des couches de sédiments. Étape 3 — Rattacher : ces couches forment le bassin sédimentaire. Étape 4 — Justifier : on le cherche dans les sédiments. Pourquoi pas « Dans le socle précambrien » : le socle est cristallin et ne piège pas de pétrole.",
          "answers": [
@@ -3649,9 +3662,9 @@
          ]
         },
         {
-         "content": "Un forage traverse de haut en bas : sables, argiles, grès, socle. Combien de couches de sédiments traverse-t-il avant le socle ?",
+         "content": "Un forage traverse de haut en bas : sables, argiles, grès, socle. Combien de terrains sédimentaires traverse-t-il avant d'atteindre le socle ?",
          "question_type": "numeric",
-         "explanation": "Étape 1 — Lire : quatre terrains sont indiqués. Étape 2 — Repérer : sables, argiles et grès sont des sédiments. Étape 4 — Conclure : 3 couches de sédiments avant le socle. Pourquoi pas « 4 » : le socle n'est pas une couche de sédiments.",
+         "explanation": "Étape 1 — Lire : quatre terrains sont indiqués. Étape 2 — Repérer : sables, argiles et grès sont des sédiments. Étape 4 — Conclure : 3 couches de sédiments avant le socle. Pourquoi pas « 4 » : le socle n'est pas un terrain sédimentaire.",
          "answers": [
           {
            "content": "3",
@@ -3659,7 +3672,7 @@
           }
          ],
          "tolerance": 0,
-         "unit": "couches"
+         "unit": "terrains"
         },
         {
          "content": "Dans ce forage, le socle est le terrain le plus récent.",
@@ -3683,7 +3696,7 @@
        "title": "Exercice 4",
        "statement": "On dresse le bilan des ressources du sous-sol ivoirien et de leur ensemble géologique.",
        "exercise_type": "evaluation",
-       "figure": "ressources-liens",
+       "figure": null,
        "questions": [
         {
          "content": "Laquelle de ces ressources se trouve dans le bassin sédimentaire côtier ?",
