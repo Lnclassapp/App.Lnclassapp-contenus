@@ -1,0 +1,3452 @@
+{
+  "format": "lnclass.course-tree",
+  "version": 3,
+  "courses": [
+    {
+      "name": "Étude de fonctions élémentaires",
+      "subtitle": "Leçon 6 — progression DPFC 2026-2027",
+      "level_name": "2nde",
+      "series_name": "A",
+      "material_name": "Mathématiques",
+      "theme": "blue",
+      "figures": [
+        {
+          "key": "droite-affine",
+          "kind": "coordinate_plane",
+          "description": "Dans un repère, la droite qui représente la fonction affine f définie par f(x) = 2x + 1. Elle passe par le point A de coordonnées (0 ; 1) et par le point B de coordonnées (2 ; 5). On lit son ordonnée à l'origine et on voit qu'elle monte de la gauche vers la droite.",
+          "params": {
+            "xmin": -2,
+            "xmax": 5,
+            "ymin": -2,
+            "ymax": 8,
+            "points": [
+              {
+                "id": "A",
+                "x": 0,
+                "y": 1
+              },
+              {
+                "id": "B",
+                "x": 2,
+                "y": 5
+              }
+            ],
+            "lines": [
+              {
+                "a": 2,
+                "b": 1
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "droite-deux-valeurs",
+          "kind": "coordinate_plane",
+          "description": "Dans un repère, la droite qui représente une fonction affine g. Elle passe par le point A de coordonnées (2 ; 7) et par le point B de coordonnées (5 ; 16). On y lit deux valeurs de la fonction, qui permettent de retrouver sa formule g(x) = 3x + 1.",
+          "params": {
+            "xmin": 0,
+            "xmax": 6,
+            "ymin": 0,
+            "ymax": 18,
+            "points": [
+              {
+                "id": "A",
+                "x": 2,
+                "y": 7
+              },
+              {
+                "id": "B",
+                "x": 5,
+                "y": 16
+              }
+            ],
+            "lines": [
+              {
+                "a": 3,
+                "b": 1
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "droite-stock-tomates",
+          "kind": "coordinate_plane",
+          "description": "Dans un repère, la droite qui représente le stock de tomates S d'une vendeuse du marché, en caisses, après x jours : S(x) = -2x + 8. Elle passe par le point A de coordonnées (0 ; 8) et par le point B de coordonnées (4 ; 0). Elle descend de la gauche vers la droite.",
+          "params": {
+            "xmin": -1,
+            "xmax": 6,
+            "ymin": -1,
+            "ymax": 9,
+            "points": [
+              {
+                "id": "A",
+                "x": 0,
+                "y": 8
+              },
+              {
+                "id": "B",
+                "x": 4,
+                "y": 0
+              }
+            ],
+            "lines": [
+              {
+                "a": -2,
+                "b": 8
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "parabole-carre",
+          "kind": "coordinate_plane",
+          "description": "Dans un repère, sept points de la courbe de la fonction carré x ↦ x², reliés par des segments : (-3 ; 9), (-2 ; 4), (-1 ; 1), (0 ; 0), (1 ; 1), (2 ; 4) et (3 ; 9). La courbe descend jusqu'à l'origine, point le plus bas, puis remonte. Elle est symétrique par rapport à l'axe des ordonnées.",
+          "params": {
+            "xmin": -4,
+            "xmax": 4,
+            "ymin": -1,
+            "ymax": 10,
+            "points": [
+              {
+                "id": "A",
+                "x": -3,
+                "y": 9
+              },
+              {
+                "id": "B",
+                "x": -2,
+                "y": 4
+              },
+              {
+                "id": "C",
+                "x": -1,
+                "y": 1
+              },
+              {
+                "id": "O",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "D",
+                "x": 1,
+                "y": 1
+              },
+              {
+                "id": "E",
+                "x": 2,
+                "y": 4
+              },
+              {
+                "id": "F",
+                "x": 3,
+                "y": 9
+              }
+            ],
+            "segments": [
+              {
+                "x1": -3,
+                "y1": 9,
+                "x2": -2,
+                "y2": 4
+              },
+              {
+                "x1": -2,
+                "y1": 4,
+                "x2": -1,
+                "y2": 1
+              },
+              {
+                "x1": -1,
+                "y1": 1,
+                "x2": 0,
+                "y2": 0
+              },
+              {
+                "x1": 0,
+                "y1": 0,
+                "x2": 1,
+                "y2": 1
+              },
+              {
+                "x1": 1,
+                "y1": 1,
+                "x2": 2,
+                "y2": 4
+              },
+              {
+                "x1": 2,
+                "y1": 4,
+                "x2": 3,
+                "y2": 9
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "hyperbole-inverse",
+          "kind": "coordinate_plane",
+          "description": "Dans un repère, huit points de la courbe de la fonction inverse x ↦ 1/x, en deux branches : (0,5 ; 2), (1 ; 1), (2 ; 0,5) et (4 ; 0,25) pour x positif ; (-0,5 ; -2), (-1 ; -1), (-2 ; -0,5) et (-4 ; -0,25) pour x négatif. Chaque branche descend de gauche à droite. La courbe ne coupe jamais les axes.",
+          "params": {
+            "xmin": -4,
+            "xmax": 4,
+            "ymin": -4,
+            "ymax": 4,
+            "points": [
+              {
+                "id": "A",
+                "x": 0.5,
+                "y": 2
+              },
+              {
+                "id": "B",
+                "x": 1,
+                "y": 1
+              },
+              {
+                "id": "C",
+                "x": 2,
+                "y": 0.5
+              },
+              {
+                "id": "D",
+                "x": 4,
+                "y": 0.25
+              },
+              {
+                "id": "E",
+                "x": -0.5,
+                "y": -2
+              },
+              {
+                "id": "F",
+                "x": -1,
+                "y": -1
+              },
+              {
+                "id": "G",
+                "x": -2,
+                "y": -0.5
+              },
+              {
+                "id": "H",
+                "x": -4,
+                "y": -0.25
+              }
+            ],
+            "segments": [
+              {
+                "x1": 0.5,
+                "y1": 2,
+                "x2": 1,
+                "y2": 1
+              },
+              {
+                "x1": 1,
+                "y1": 1,
+                "x2": 2,
+                "y2": 0.5
+              },
+              {
+                "x1": 2,
+                "y1": 0.5,
+                "x2": 4,
+                "y2": 0.25
+              },
+              {
+                "x1": -0.5,
+                "y1": -2,
+                "x2": -1,
+                "y2": -1
+              },
+              {
+                "x1": -1,
+                "y1": -1,
+                "x2": -2,
+                "y2": -0.5
+              },
+              {
+                "x1": -2,
+                "y1": -0.5,
+                "x2": -4,
+                "y2": -0.25
+              }
+            ]
+          },
+          "controls": []
+        }
+      ],
+      "notions": [
+        {
+          "name": "Représenter une fonction affine",
+          "remember": "Une **fonction affine** est une fonction $f$ définie sur $\\mathbb{R}$ par $f(x) = ax + b$, où $a$ et $b$ sont deux nombres fixés. $a$ est le **coefficient directeur** et $b$ l'**ordonnée à l'origine**. Si $b = 0$, c'est une fonction **linéaire** : $f(x) = ax$. Sa représentation est une **droite**, qui passe par le point $(0 ; b)$. Si $a > 0$, $f$ est **croissante** ; si $a < 0$, $f$ est **décroissante** ; si $a = 0$, $f$ est constante. Deux points suffisent pour tracer la droite.",
+          "method": [
+            "Identifier : les nombres $a$ et $b$ dans la formule $f(x) = ax + b$.",
+            "Calculer : les images de deux valeurs de $x$ faciles, par exemple $f(0)$ et $f(2)$.",
+            "Placer : les deux points dans le repère, puis tracer la droite qui passe par eux.",
+            "Conclure : donner le sens de variation d'après le signe de $a$ : croissante si $a > 0$, décroissante si $a < 0$."
+          ],
+          "example": {
+            "statement": "Représenter la fonction $f$ définie par $f(x) = 2x + 1$ et donner son sens de variation.",
+            "steps": [
+              "Identifier : $f(x) = 2x + 1$ est de la forme $ax + b$ avec $a = 2$ et $b = 1$.",
+              "Calculer : $f(0) = 2 \\times 0 + 1 = 1$ et $f(2) = 2 \\times 2 + 1 = 5$.",
+              "Placer : les points $A(0 ; 1)$ et $B(2 ; 5)$, puis tracer la droite $(AB)$.",
+              "Conclure : $a = 2$ est positif, donc $f$ est croissante sur $\\mathbb{R}$ : la droite monte de la gauche vers la droite."
+            ]
+          },
+          "pitfall": "Ne pas croire que le signe de $b$ donne le sens de variation : c'est le signe de $a$ qui le donne. Contre-exemple : $f(x) = -2x + 5$ a $b = 5$ positif, pourtant $f(0) = 5$ puis $f(1) = 3$ : les images diminuent, $f$ est décroissante parce que $a = -2$ est négatif. Le nombre $b$ dit seulement où la droite coupe l'axe des ordonnées, au point $(0 ; b)$.",
+          "practice": {
+            "statement": "Tu t'entraînes à repérer $a$ et $b$, à calculer des images et à donner le sens de variation d'une fonction affine.",
+            "questions": [
+              {
+                "content": "Dans la fonction $f(x) = -3x + 7$, quel est le coefficient directeur ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Identifier : $f(x) = -3x + 7$ est de la forme $ax + b$ avec $a = -3$ et $b = 7$. Le coefficient directeur est $a$, c'est-à-dire $-3$. La réponse 7 est l'ordonnée à l'origine $b$ : on confond $a$ et $b$.",
+                "answers": [
+                  {
+                    "content": "$-3$",
+                    "correct": true
+                  },
+                  {
+                    "content": "$7$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$3$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$-7$",
+                    "correct": false
+                  }
+                ],
+                "hint": "Le coefficient directeur est le nombre qui multiplie $x$, avec son signe."
+              },
+              {
+                "content": "Soit $f(x) = 4x - 5$. Calcule l'image de 2 par $f$.",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Identifier : $a = 4$ et $b = -5$. Étape 2 — Calculer : $f(2) = 4 \\times 2 - 5 = 8 - 5 = 3$. Étape 3 — Placer : le point $(2 ; 3)$ est sur la droite. Étape 4 — Conclure : l'image de 2 est 3.",
+                "answers": [
+                  {
+                    "content": "3",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "Remplace $x$ par 2 : fais la multiplication avant la soustraction."
+              },
+              {
+                "content": "Vrai ou faux : la fonction $g(x) = -5x + 2$ est croissante.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Identifier : $a = -5$ et $b = 2$. Étape 2 — Calculer : $g(0) = 2$ et $g(1) = -3$ : l'image diminue. Étape 4 — Conclure : $a = -5$ est négatif, donc $g$ est décroissante : l'affirmation est fausse.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Regarde le signe du coefficient directeur $a$."
+              },
+              {
+                "content": "La droite de la fonction $h(x) = 2x + 6$ coupe l'axe des ordonnées au point d'ordonnée ___ .",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Identifier : $a = 2$ et $b = 6$. Étape 2 — Calculer : $h(0) = 2 \\times 0 + 6 = 6$. Étape 3 — Placer : la droite passe par le point $(0 ; 6)$. Étape 4 — Conclure : l'ordonnée à l'origine est 6.",
+                "answers": [
+                  {
+                    "content": "6",
+                    "correct": true
+                  }
+                ],
+                "hint": "Calcule l'image de 0."
+              }
+            ]
+          },
+          "figure": "droite-affine",
+          "exercise": [
+            {
+              "title": "Reconnaître et tracer une fonction affine",
+              "statement": "Dans cet exercice, tu reconnais une fonction affine, tu calcules des images et tu donnes son sens de variation avec la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Parmi ces fonctions, laquelle est une fonction affine ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : une fonction affine s'écrit $ax + b$. $f(x) = 5x - 2$ a $a = 5$ et $b = -2$. Les autres contiennent $x^2$ ou $\\dfrac{1}{x}$ : leur courbe n'est pas une droite.",
+                  "answers": [
+                    {
+                      "content": "$f(x) = 5x - 2$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$g(x) = x^2 + 1$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$h(x) = \\dfrac{1}{x}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$k(x) = 2x^2$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Soit $f(x) = -2x + 3$. Calcule l'image de 4 par $f$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : $a = -2$ et $b = 3$. Étape 2 — Calculer : $f(4) = -2 \\times 4 + 3 = -8 + 3 = -5$. Étape 3 — Placer : le point $(4 ; -5)$ est sur la droite. Étape 4 — Conclure : $f(4) = -5$.",
+                  "answers": [
+                    {
+                      "content": "-5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "La droite qui représente $f(x) = 2x + 1$ passe par un seul de ces points. Lequel ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : $a = 2$ et $b = 1$. Étape 2 — Calculer : $f(2) = 2 \\times 2 + 1 = 5$, $f(1) = 3$ et $f(0) = 1$. Étape 3 — Placer : le point d'abscisse 2 est $(2 ; 5)$. Étape 4 — Conclure : seul $(2 ; 5)$ est sur la droite. Les autres points ne vérifient pas $y = f(x)$.",
+                  "answers": [
+                    {
+                      "content": "$(2 ; 5)$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(2 ; 4)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(1 ; 2)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(0 ; 2)$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : la fonction $f(x) = -4x + 9$ est croissante parce que 9 est positif.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : $a = -4$ et $b = 9$. Étape 2 — Calculer : $f(0) = 9$ et $f(1) = 5$ : l'image diminue. Étape 4 — Conclure : c'est le signe de $a$ qui compte, et $a = -4$ est négatif : $f$ est décroissante. Le signe de $b$ ne dit rien sur le sens de variation.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "La fonction $f(x) = 0{,}5x + 3$ est ___ (croissante ou décroissante).",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Identifier : $a = 0{,}5$ et $b = 3$. Étape 2 — Calculer : $f(0) = 3$ et $f(2) = 4$ : l'image augmente. Étape 4 — Conclure : $a = 0{,}5$ est positif : $f$ est croissante.",
+                  "answers": [
+                    {
+                      "content": "croissante",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Le prix d'un panier de tomates au marché",
+              "statement": "Dans cet exercice, tu étudies la fonction affine $f(x) = 250x + 500$ : le prix en francs de $x$ kilogrammes de tomates, avec un sac de 500 francs.",
+              "hint": "Remplace $x$ par le nombre de kilogrammes, et rappelle-toi que le coefficient directeur se lit devant $x$.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quel est le prix de 4 kilogrammes de tomates ? Calcule $f(4)$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : $f(x) = 250x + 500$ avec $a = 250$ et $b = 500$. Étape 2 — Calculer : $f(4) = 250 \\times 4 + 500 = 1000 + 500 = 1500$. Étape 3 — Placer : le point $(4 ; 1500)$ est sur la droite. Étape 4 — Conclure : 4 kilogrammes coûtent 1 500 francs.",
+                  "answers": [
+                    {
+                      "content": "1500",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "F"
+                },
+                {
+                  "content": "Que représente le coefficient directeur 250 dans cette situation ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : $a = 250$ est le nombre qui multiplie $x$, donc le prix de chaque kilogramme. Étape 2 — Calculer : $f(1) - f(0) = 750 - 500 = 250$ : chaque kilogramme de plus ajoute 250 francs. Le prix du sac est $b = 500$.",
+                  "answers": [
+                    {
+                      "content": "Le prix d'un kilogramme de tomates",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le prix du sac",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le nombre de kilogrammes achetés",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le prix total de la commande",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : la droite de $f$ passe par le point $(0 ; 500)$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : $b = 500$. Étape 2 — Calculer : $f(0) = 250 \\times 0 + 500 = 500$. Étape 3 — Placer : le point $(0 ; 500)$ est sur la droite. Étape 4 — Conclure : l'affirmation est vraie, car l'ordonnée à l'origine est $b = 500$.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque fonction à son coefficient directeur.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Identifier : on écrit chaque formule sous la forme $ax + b$ et on lit $a$. Pour $f$ : $a = 3$. Pour $g$ : $a = -2$. Pour $h$ : $a = 0{,}5$. Pour $k$ : $7 - x = -1 \\times x + 7$, donc $a = -1$ : le nombre 7 est $b$, pas $a$.",
+                  "answers": [
+                    {
+                      "content": "$f(x) = 3x + 1$",
+                      "match": "$3$"
+                    },
+                    {
+                      "content": "$g(x) = -2x + 5$",
+                      "match": "$-2$"
+                    },
+                    {
+                      "content": "$h(x) = 0{,}5x - 4$",
+                      "match": "$0{,}5$"
+                    },
+                    {
+                      "content": "$k(x) = 7 - x$",
+                      "match": "$-1$"
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour représenter la fonction $f(x) = 250x + 500$.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Identifier, Étape 2 — Calculer, Étape 3 — Placer, Étape 4 — Conclure : on ne place pas de points avant de les avoir calculés, et on conclut sur le sens de variation à la fin.",
+                  "answers": [
+                    {
+                      "content": "Identifier : $a = 250$ et $b = 500$."
+                    },
+                    {
+                      "content": "Calculer : $f(0) = 500$ et $f(2) = 1000$."
+                    },
+                    {
+                      "content": "Placer : les points $(0 ; 500)$ et $(2 ; 1000)$, puis tracer la droite."
+                    },
+                    {
+                      "content": "Conclure : $a = 250 > 0$, donc $f$ est croissante."
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles propositions sont vraies pour $f(x) = 250x + 500$ ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Identifier : $a = 250$ et $b = 500$. Étape 2 — Calculer : $f(0) = 500$, $f(1) = 750$ et $f(2) = 1000$. Étape 4 — Conclure : $a = 250 > 0$ donc $f$ est croissante, et $f(0) = 500$. Les propositions $f(1) = 250$ et $f(2) = 750$ oublient d'ajouter le sac de 500 francs ou de multiplier par $x$.",
+                  "answers": [
+                    {
+                      "content": "$f$ est croissante",
+                      "correct": true
+                    },
+                    {
+                      "content": "$f(0) = 500$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$f(1) = 250$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$f(2) = 750$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$f$ est décroissante",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Déterminer une fonction affine à partir de deux valeurs",
+          "remember": "Une fonction affine $f(x) = ax + b$ est connue dès qu'on connaît **deux** de ses valeurs $f(x_1) = y_1$ et $f(x_2) = y_2$, avec $x_1 \\neq x_2$. Le **coefficient directeur** est $a = \\dfrac{y_2 - y_1}{x_2 - x_1}$ : c'est l'accroissement de $f(x)$ quand $x$ augmente de 1. Ensuite, $b = y_1 - a x_1$. Graphiquement, la droite est celle qui passe par les points $(x_1 ; y_1)$ et $(x_2 ; y_2)$.",
+          "method": [
+            "Noter : les deux données $f(x_1) = y_1$ et $f(x_2) = y_2$, avec $x_1 \\neq x_2$.",
+            "Calculer : le coefficient directeur $a = \\dfrac{y_2 - y_1}{x_2 - x_1}$.",
+            "Déterminer : $b$, en remplaçant $x$ et $f(x)$ par les valeurs d'une donnée dans $f(x) = ax + b$, puis en résolvant.",
+            "Vérifier : la formule avec l'autre donnée, puis écrire $f(x) = ax + b$."
+          ],
+          "example": {
+            "statement": "Une fonction affine $f$ vérifie $f(2) = 7$ et $f(5) = 16$. Trouver sa formule.",
+            "steps": [
+              "Noter : $x_1 = 2$ et $y_1 = 7$ ; $x_2 = 5$ et $y_2 = 16$, avec $2 \\neq 5$.",
+              "Calculer : $a = \\dfrac{16 - 7}{5 - 2} = \\dfrac{9}{3} = 3$.",
+              "Déterminer : $7 = 3 \\times 2 + b$, donc $7 = 6 + b$ et $b = 1$.",
+              "Vérifier : $f(5) = 3 \\times 5 + 1 = 16$ : c'est bon. Donc $f(x) = 3x + 1$."
+            ]
+          },
+          "pitfall": "Ne pas soustraire dans un ordre différent en haut et en bas de la fraction. Contre-exemple : $f(1) = 3$ et $f(3) = 7$. Bon calcul : $a = \\dfrac{7 - 3}{3 - 1} = 2$. Mauvais calcul : $\\dfrac{7 - 3}{1 - 3} = -2$, qui donne $f(x) = -2x + 5$ et $f(3) = -1$, au lieu de 7. On garde le même ordre en haut et en bas : valeur de $y$ et valeur de $x$ de la même donnée en premier. L'étape Vérifier sert à repérer cette erreur.",
+          "practice": {
+            "statement": "Tu t'entraînes à trouver $a$ puis $b$ quand on connaît deux valeurs d'une fonction affine.",
+            "questions": [
+              {
+                "content": "Une fonction affine $f$ vérifie $f(1) = 4$ et $f(3) = 10$. Calcule son coefficient directeur $a$.",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Noter : $x_1 = 1$, $y_1 = 4$, $x_2 = 3$, $y_2 = 10$, avec $1 \\neq 3$. Étape 2 — Calculer : $a = \\dfrac{10 - 4}{3 - 1} = \\dfrac{6}{2} = 3$. Étape 3 — Déterminer : $4 = 3 \\times 1 + b$ donne $b = 1$. Étape 4 — Vérifier : $f(3) = 3 \\times 3 + 1 = 10$. Donc $a = 3$.",
+                "answers": [
+                  {
+                    "content": "3",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "Fais la différence des images, divisée par la différence des $x$."
+              },
+              {
+                "content": "Une fonction affine $f$ vérifie $f(0) = 2$ et $f(4) = 10$. Quelle est sa formule ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Noter : $x_1 = 0$, $y_1 = 2$, $x_2 = 4$, $y_2 = 10$. Étape 2 — Calculer : $a = \\dfrac{10 - 2}{4 - 0} = \\dfrac{8}{4} = 2$. Étape 3 — Déterminer : $2 = 2 \\times 0 + b$ donne $b = 2$. Étape 4 — Vérifier : $f(4) = 2 \\times 4 + 2 = 10$. Donc $f(x) = 2x + 2$. La réponse avec $\\dfrac{1}{2}$ vient d'une fraction renversée.",
+                "answers": [
+                  {
+                    "content": "$f(x) = 2x + 2$",
+                    "correct": true
+                  },
+                  {
+                    "content": "$f(x) = 4x + 2$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$f(x) = 2x + 10$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$f(x) = \\dfrac{1}{2}x + 2$",
+                    "correct": false
+                  }
+                ],
+                "hint": "Comme $x_1 = 0$, la valeur de $b$ est directement $f(0)$."
+              },
+              {
+                "content": "Une fonction affine $f$ vérifie $f(1) = 5$ et $f(2) = 8$. Alors $b =$ ___ .",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Noter : $x_1 = 1$, $y_1 = 5$, $x_2 = 2$, $y_2 = 8$. Étape 2 — Calculer : $a = \\dfrac{8 - 5}{2 - 1} = 3$. Étape 3 — Déterminer : $5 = 3 \\times 1 + b$, donc $b = 5 - 3 = 2$. Étape 4 — Vérifier : $f(2) = 3 \\times 2 + 2 = 8$. Donc $b = 2$.",
+                "answers": [
+                  {
+                    "content": "2",
+                    "correct": true
+                  }
+                ],
+                "hint": "Calcule d'abord $a$, puis remplace $x$ et $f(x)$ par $1$ et $5$."
+              },
+              {
+                "content": "Vrai ou faux : si $f$ est affine avec $f(1) = 2$ et $f(3) = -2$, alors $f$ est décroissante.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Noter : $x_1 = 1$, $y_1 = 2$, $x_2 = 3$, $y_2 = -2$. Étape 2 — Calculer : $a = \\dfrac{-2 - 2}{3 - 1} = \\dfrac{-4}{2} = -2$. Étape 3 — Déterminer : $2 = -2 \\times 1 + b$ donne $b = 4$. Étape 4 — Vérifier : $f(3) = -6 + 4 = -2$. Comme $a = -2 < 0$, $f$ est décroissante : l'affirmation est vraie.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Calcule $a$ : son signe donne le sens de variation."
+              }
+            ]
+          },
+          "figure": "droite-deux-valeurs",
+          "exercise": [
+            {
+              "title": "Retrouver la formule à partir de deux valeurs",
+              "statement": "Dans cet exercice, tu retrouves la formule d'une fonction affine à partir de deux valeurs, avec la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une fonction affine $f$ vérifie $f(2) = 3$ et $f(6) = 11$. Calcule son coefficient directeur $a$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Noter : $x_1 = 2$, $y_1 = 3$, $x_2 = 6$, $y_2 = 11$. Étape 2 — Calculer : $a = \\dfrac{11 - 3}{6 - 2} = \\dfrac{8}{4} = 2$. Étape 3 — Déterminer : $3 = 2 \\times 2 + b$ donne $b = -1$. Étape 4 — Vérifier : $f(6) = 12 - 1 = 11$. Donc $a = 2$.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une fonction affine $f$ a pour coefficient directeur 2 et vérifie $f(2) = 3$. Calcule $b$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Noter : $a = 2$ est connu et $f(2) = 3$. Étape 2 — Calculer : il n'y a plus de $a$ à calculer. Étape 3 — Déterminer : $3 = 2 \\times 2 + b$, donc $3 = 4 + b$ et $b = 3 - 4 = -1$. Étape 4 — Vérifier : $f(2) = 2 \\times 2 - 1 = 3$ : c'est bon.",
+                  "answers": [
+                    {
+                      "content": "-1",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une fonction affine $f$ vérifie $f(1) = 1$ et $f(4) = 7$. Quelle est sa formule ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Noter : $x_1 = 1$, $y_1 = 1$, $x_2 = 4$, $y_2 = 7$. Étape 2 — Calculer : $a = \\dfrac{7 - 1}{4 - 1} = 2$. Étape 3 — Déterminer : $1 = 2 \\times 1 + b$ donne $b = -1$. Étape 4 — Vérifier : $f(4) = 8 - 1 = 7$. Donc $f(x) = 2x - 1$. La formule $2x + 1$ donne $f(1) = 3$ : le signe de $b$ est faux.",
+                  "answers": [
+                    {
+                      "content": "$f(x) = 2x - 1$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$f(x) = 2x + 1$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$f(x) = 3x - 2$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$f(x) = -2x + 3$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : pour $f(1) = 3$ et $f(3) = 7$, on obtient $a = \\dfrac{3 - 7}{3 - 1} = -2$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Noter : $x_1 = 1$, $y_1 = 3$, $x_2 = 3$, $y_2 = 7$. Étape 2 — Calculer : on garde le même ordre en haut et en bas : $a = \\dfrac{7 - 3}{3 - 1} = 2$. Le calcul proposé change l'ordre en haut seulement et donne $-2$. Étape 4 — Vérifier : avec $a = 2$ et $b = 1$, $f(3) = 7$ ; avec $-2$ on aurait $f(3) = -1$ : c'est faux.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Une fonction affine vérifie $f(0) = 4$ et $f(2) = 10$. Son coefficient directeur $a$ vaut ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Noter : $x_1 = 0$, $y_1 = 4$, $x_2 = 2$, $y_2 = 10$. Étape 2 — Calculer : $a = \\dfrac{10 - 4}{2 - 0} = \\dfrac{6}{2} = 3$. Étape 3 — Déterminer : $b = f(0) = 4$. Étape 4 — Vérifier : $f(2) = 3 \\times 2 + 4 = 10$. Donc $a = 3$.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Les frais d'un transfert de mobile money",
+              "statement": "Dans cet exercice, tu retrouves la formule des frais d'un transfert de mobile money. Pour envoyer $x$ milliers de francs, les frais $f(x)$, en francs, sont donnés par une fonction affine, avec $f(5) = 150$ et $f(20) = 300$ (valeurs fictives).",
+              "hint": "Calcule d'abord $a$ avec les deux valeurs, puis $b$ avec l'une d'elles, et vérifie avec l'autre.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Calcule le coefficient directeur $a$ de $f$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Noter : $x_1 = 5$, $y_1 = 150$, $x_2 = 20$, $y_2 = 300$, avec $5 \\neq 20$. Étape 2 — Calculer : $a = \\dfrac{300 - 150}{20 - 5} = \\dfrac{150}{15}$, soit $a = 10$. Étape 3 — Déterminer : $150 = 10 \\times 5 + b$ donne $b = 100$. Étape 4 — Vérifier : $f(20) = 200 + 100 = 300$. Donc $a = 10$ : 10 francs de frais par millier envoyé.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "F/millier"
+                },
+                {
+                  "content": "Calcule $b$, l'ordonnée à l'origine de $f$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Noter : $a = 10$ et $f(5) = 150$. Étape 2 — Calculer : $a = \\dfrac{300 - 150}{20 - 5} = 10$. Étape 3 — Déterminer : $150 = 10 \\times 5 + b$, donc $150 = 50 + b$ et $b = 100$. Étape 4 — Vérifier : $f(20) = 10 \\times 20 + 100 = 300$. Donc $b = 100$ : ce sont les frais fixes.",
+                  "answers": [
+                    {
+                      "content": "100",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "F"
+                },
+                {
+                  "content": "Quelle est la formule de $f$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Noter : $f(5) = 150$ et $f(20) = 300$. Étape 2 — Calculer : $a = \\dfrac{300 - 150}{20 - 5} = 10$. Étape 3 — Déterminer : $b = 150 - 10 \\times 5 = 100$. Étape 4 — Vérifier : $f(20) = 300$. Donc $f(x) = 10x + 100$. La formule $15x + 75$ vérifie $f(5) = 150$ mais donne $f(20) = 375$ : elle ne passe pas par les deux points.",
+                  "answers": [
+                    {
+                      "content": "$f(x) = 10x + 100$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$f(x) = 10x + 150$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$f(x) = 15x + 75$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$f(x) = \\dfrac{1}{10}x + 100$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels sont les frais, en francs, pour envoyer 12 milliers de francs ? Calcule $f(12)$ avec la formule $f(x) = 10x + 100$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Noter : on utilise $f(x) = 10x + 100$ avec $a = 10$ et $b = 100$. Étape 2 — Calculer : on remplace $x$ par 12 : $f(12) = 10 \\times 12 + 100 = 120 + 100 = 220$. Étape 4 — Vérifier : le résultat 220 est entre $f(5) = 150$ et $f(20) = 300$, comme 12 est entre 5 et 20. Les frais sont de 220 francs.",
+                  "answers": [
+                    {
+                      "content": "220",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "F"
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour trouver la formule des frais.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Noter, Étape 2 — Calculer, Étape 3 — Déterminer, Étape 4 — Vérifier : on a besoin de $a$ pour trouver $b$, et on vérifie à la fin avec la donnée qu'on n'a pas utilisée.",
+                  "answers": [
+                    {
+                      "content": "Noter : $f(5) = 150$ et $f(20) = 300$."
+                    },
+                    {
+                      "content": "Calculer : $a = \\dfrac{300 - 150}{20 - 5} = 10$."
+                    },
+                    {
+                      "content": "Déterminer : $150 = 10 \\times 5 + b$, donc $b = 100$."
+                    },
+                    {
+                      "content": "Vérifier : $f(20) = 300$, donc $f(x) = 10x + 100$."
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles propositions sont vraies pour $f(x) = 10x + 100$ ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Noter : $a = 10$ et $b = 100$. Étape 2 — Calculer : $f(10) = 100 + 100 = 200$, $f(0) = 100$ et $f(1) = 110$. Sens de variation : $a = 10 > 0$, donc $f$ est croissante. Étape 4 — Vérifier : $f(0) = 100$ et non 0 (les frais fixes existent même pour un envoi nul) ; $f(1) = 110$ et non 10.",
+                  "answers": [
+                    {
+                      "content": "$f$ est croissante",
+                      "correct": true
+                    },
+                    {
+                      "content": "$f(10) = 200$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$f(0) = 0$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$f(1) = 10$",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Étudier la fonction carré",
+          "remember": "La **fonction carré** est définie sur $\\mathbb{R}$ par $f(x) = x^2$. Un carré est toujours positif ou nul, et deux nombres opposés ont le même carré : $(-3)^2 = 3^2 = 9$. Elle est **décroissante** sur $]-\\infty ; 0]$ et **croissante** sur $[0 ; +\\infty[$ : son **minimum** est 0, atteint pour $x = 0$. Donc si $0 \\leq a < b$, alors $a^2 < b^2$ ; et si $a < b \\leq 0$, alors $a^2 > b^2$. Sa courbe est une **parabole**, symétrique par rapport à l'axe des ordonnées.",
+          "method": [
+            "Repérer : si les deux nombres sont positifs ou nuls, ou s'ils sont négatifs ou nuls.",
+            "Rappeler : le sens de variation de la fonction carré sur cet intervalle : décroissante sur $]-\\infty ; 0]$, croissante sur $[0 ; +\\infty[$.",
+            "Comparer : si la fonction est croissante, les carrés sont rangés dans le même ordre que les nombres ; si elle est décroissante, dans l'ordre inverse.",
+            "Conclure : écrire l'inégalité entre les carrés, puis la vérifier par le calcul."
+          ],
+          "example": {
+            "statement": "Comparer $(-3)^2$ et $(-2)^2$ sans se fier au signe.",
+            "steps": [
+              "Repérer : $-3$ et $-2$ sont tous les deux négatifs : ils sont dans $]-\\infty ; 0]$.",
+              "Rappeler : sur $]-\\infty ; 0]$, la fonction carré est décroissante.",
+              "Comparer : $-3 < -2$, et la fonction est décroissante : l'ordre est inversé, donc $(-3)^2 > (-2)^2$.",
+              "Conclure : $(-3)^2 > (-2)^2$. Vérification : $(-3)^2 = 9$ et $(-2)^2 = 4$, et $9 > 4$."
+            ]
+          },
+          "pitfall": "Ne pas écrire que si $x < y$ alors $x^2 < y^2$ : c'est faux quand les nombres sont négatifs ou de signes différents. Contre-exemple : $-3 < 2$, mais $(-3)^2 = 9$ et $2^2 = 4$, donc $(-3)^2 > 2^2$. Un carré est toujours positif ou nul : $(-3)^2 = 9$, jamais $-9$. Avant de comparer, regarde toujours le signe des nombres.",
+          "practice": {
+            "statement": "Tu t'entraînes à comparer des carrés avec le sens de variation de la fonction carré.",
+            "questions": [
+              {
+                "content": "Les nombres 2 et 5 sont positifs. Quelle inégalité est vraie ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Repérer : 2 et 5 sont positifs, dans $[0 ; +\\infty[$. Étape 2 — Rappeler : la fonction carré y est croissante. Étape 3 — Comparer : $2 < 5$, l'ordre est conservé, donc $2^2 < 5^2$. Étape 4 — Conclure : $4 < 25$. La proposition $2^2 > 5^2$ inverse l'ordre sans raison.",
+                "answers": [
+                  {
+                    "content": "$2^2 < 5^2$",
+                    "correct": true
+                  },
+                  {
+                    "content": "$2^2 > 5^2$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$2^2 = 5^2$",
+                    "correct": false
+                  }
+                ],
+                "hint": "Sur les nombres positifs, la fonction carré conserve l'ordre."
+              },
+              {
+                "content": "Vrai ou faux : comme $-6 < -1$, on a $(-6)^2 < (-1)^2$.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Repérer : $-6$ et $-1$ sont négatifs. Étape 2 — Rappeler : la fonction carré est décroissante sur $]-\\infty ; 0]$. Étape 3 — Comparer : $-6 < -1$, donc l'ordre s'inverse : $(-6)^2 > (-1)^2$. Étape 4 — Conclure : $36 > 1$ : l'affirmation est fausse.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Pour des nombres négatifs, l'ordre des carrés est inversé."
+              },
+              {
+                "content": "Si $-4 \\leq x \\leq -1$, quelle est la plus petite valeur possible de $x^2$ ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Repérer : $x$ est entre $-4$ et $-1$ : tous ces nombres sont négatifs. Étape 2 — Rappeler : la fonction carré est décroissante sur $]-\\infty ; 0]$. Étape 3 — Comparer : $-4 \\leq x \\leq -1$ donne, en inversant l'ordre, $(-1)^2 \\leq x^2 \\leq (-4)^2$. Étape 4 — Conclure : $1 \\leq x^2 \\leq 16$. La plus petite valeur est 1.",
+                "answers": [
+                  {
+                    "content": "1",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "Calcule les carrés des deux bornes et range-les en inversant l'ordre."
+              },
+              {
+                "content": "Complète avec le bon signe : $(-5)^2$ ___ $(-2)^2$",
+                "question_type": "select",
+                "explanation": "Étape 1 — Repérer : $-5$ et $-2$ sont négatifs. Étape 2 — Rappeler : la fonction carré est décroissante sur $]-\\infty ; 0]$. Étape 3 — Comparer : $-5 < -2$, donc l'ordre s'inverse : $(-5)^2 > (-2)^2$. Étape 4 — Conclure : $25 > 4$.",
+                "answers": [
+                  {
+                    "content": ">",
+                    "correct": true
+                  },
+                  {
+                    "content": "<",
+                    "correct": false
+                  },
+                  {
+                    "content": "=",
+                    "correct": false
+                  }
+                ],
+                "hint": "Les deux nombres sont négatifs."
+              }
+            ]
+          },
+          "figure": "parabole-carre",
+          "exercise": [
+            {
+              "title": "Comparer des carrés et lire les variations",
+              "statement": "Dans cet exercice, tu utilises les variations de la fonction carré et la méthode de la fiche pour comparer des carrés.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Sur quel intervalle la fonction carré est-elle décroissante ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : on cherche où les images diminuent quand $x$ augmente. Étape 2 — Rappeler : $(-3)^2 = 9$, $(-2)^2 = 4$, $(-1)^2 = 1$, $0^2 = 0$ : les images diminuent jusqu'à 0. Étape 3 — Comparer : après 0, elles augmentent. Étape 4 — Conclure : la fonction carré est décroissante sur $]-\\infty ; 0]$, croissante sur $[0 ; +\\infty[$ ; elle n'est donc pas monotone sur $\\mathbb{R}$.",
+                  "answers": [
+                    {
+                      "content": "$]-\\infty ; 0]$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$[0 ; +\\infty[$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\mathbb{R}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$[-1 ; 1]$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle comparaison est vraie ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : $-7$ et $-4$ sont négatifs. Étape 2 — Rappeler : la fonction carré est décroissante sur $]-\\infty ; 0]$. Étape 3 — Comparer : $-7 < -4$, donc l'ordre s'inverse : $(-7)^2 > (-4)^2$. Étape 4 — Conclure : $49 > 16$. L'inégalité $(-7)^2 < (-4)^2$ vient de l'erreur « le plus petit nombre a le plus petit carré ».",
+                  "answers": [
+                    {
+                      "content": "$(-7)^2 > (-4)^2$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(-7)^2 < (-4)^2$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(-7)^2 = (-4)^2$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel est le minimum de la fonction carré sur $\\mathbb{R}$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : la fonction carré change de sens en 0. Étape 2 — Rappeler : elle est décroissante sur $]-\\infty ; 0]$ puis croissante sur $[0 ; +\\infty[$. Étape 3 — Comparer : toutes les images avant et après 0 sont plus grandes que $0^2 = 0$. Étape 4 — Conclure : le minimum est 0, atteint pour $x = 0$.",
+                  "answers": [
+                    {
+                      "content": "0",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Vrai ou faux : comme $-5 < 3$, on a $(-5)^2 < 3^2$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer : $-5$ est négatif et 3 est positif : les nombres ne sont pas du même côté de 0, la méthode ne s'applique pas directement. Étape 2 — Rappeler : on calcule les carrés. Étape 3 — Comparer : $(-5)^2 = 25$ et $3^2 = 9$. Étape 4 — Conclure : $25 > 9$ : l'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Si $1 \\leq x \\leq 3$, alors $x^2$ est compris entre 1 et ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Repérer : $x$ est entre 1 et 3, donc positif. Étape 2 — Rappeler : la fonction carré est croissante sur $[0 ; +\\infty[$. Étape 3 — Comparer : l'ordre est conservé : $1^2 \\leq x^2 \\leq 3^2$. Étape 4 — Conclure : $1 \\leq x^2 \\leq 9$.",
+                  "answers": [
+                    {
+                      "content": "9",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "L'aire d'un étal carré du marché",
+              "statement": "Dans cet exercice, tu utilises la fonction carré $A(x) = x^2$ : l'aire, en mètres carrés, d'un étal carré de côté $x$ mètres. Tu compares aussi des carrés de nombres quelconques.",
+              "hint": "Repère le signe des nombres : sur les positifs la fonction carré conserve l'ordre, sur les négatifs elle l'inverse.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle est l'aire, en mètres carrés, d'un étal de côté 3 mètres ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : $A(x) = x^2$ et le côté est 3. Étape 2 — Rappeler : la fonction carré est croissante pour les nombres positifs. Calcul : on remplace $x$ par 3, ce qui donne $3^2$. Étape 4 — Conclure : $A(3) = 3^2 = 9$ : l'aire est de 9 mètres carrés.",
+                  "answers": [
+                    {
+                      "content": "9",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un vendeur passe d'un étal de côté 2 mètres à un étal de côté 3 mètres. Que devient l'aire ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : les côtés 2 et 3 sont positifs. Étape 2 — Rappeler : la fonction carré est croissante sur $[0 ; +\\infty[$. Étape 3 — Comparer : $2 < 3$, donc $A(2) < A(3)$ avec $A(2) = 4$ et $A(3) = 9$. Étape 4 — Conclure : l'aire passe de 4 à 9. Elle n'est pas proportionnelle au côté : la réponse 6 vient de $2 \\times 3 = 6$, qui multiplie les deux côtés au lieu de mettre 3 au carré.",
+                  "answers": [
+                    {
+                      "content": "Elle passe de 4 à 9 mètres carrés",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elle passe de 4 à 6 mètres carrés",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle passe de 4 à 8 mètres carrés",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle reste de 4 mètres carrés",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : la fonction $A$ est croissante pour des côtés positifs.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer : un côté est un nombre positif. Étape 2 — Rappeler : la fonction carré est croissante sur $[0 ; +\\infty[$. Étape 3 — Comparer : plus le côté est grand, plus l'aire est grande. Étape 4 — Conclure : l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque nombre à son carré.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Repérer : on élève chaque nombre au carré. Étape 2 — Rappeler : un carré est toujours positif ou nul. Étape 3 — Comparer : $(-3)^2 = 9$ ; $(-0{,}5)^2 = 0{,}25$ ; $1{,}5^2 = 2{,}25$ ; $(-2)^2 = 4$. Étape 4 — Conclure : aucun carré n'est négatif, malgré le signe de départ.",
+                  "answers": [
+                    {
+                      "content": "$-3$",
+                      "match": "$9$"
+                    },
+                    {
+                      "content": "$-0{,}5$",
+                      "match": "$0{,}25$"
+                    },
+                    {
+                      "content": "$1{,}5$",
+                      "match": "$2{,}25$"
+                    },
+                    {
+                      "content": "$-2$",
+                      "match": "$4$"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles inégalités sont vraies ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Repérer : on regarde le signe des nombres de chaque comparaison. Étape 2 — Rappeler : carré décroissante sur les négatifs, croissante sur les positifs. Étape 3 — Comparer : $(-6)^2 = 36 > 1 = (-1)^2$ et $2^2 = 4 < 25 = 5^2$ sont vraies ; $(-3)^2 = 9$ n'est pas inférieur à $(-2)^2 = 4$ ; $(-4)^2 = 16$ n'est pas inférieur à 1. Étape 4 — Conclure : les deux premières sont vraies.",
+                  "answers": [
+                    {
+                      "content": "$(-6)^2 > (-1)^2$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$2^2 < 5^2$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(-3)^2 < (-2)^2$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(-4)^2 < 1^2$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Range ces carrés du plus petit au plus grand.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Repérer : on repère le signe de chaque nombre. Étape 2 — Rappeler : un carré est toujours positif. Étape 3 — Comparer : $1^2 = 1$, $(-2)^2 = 4$ et $(-3)^2 = 9$. Étape 4 — Conclure : l'ordre croissant est $1^2$, $(-2)^2$, $(-3)^2$ : sur les négatifs, le plus éloigné de 0 a le plus grand carré.",
+                  "answers": [
+                    {
+                      "content": "$1^2$"
+                    },
+                    {
+                      "content": "$(-2)^2$"
+                    },
+                    {
+                      "content": "$(-3)^2$"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Étudier la fonction inverse",
+          "remember": "La **fonction inverse** est définie par $f(x) = \\dfrac{1}{x}$ pour tout $x \\neq 0$ : son ensemble de définition est $\\mathbb{R}$ privé de 0, car on ne peut pas diviser par 0. Elle est **décroissante** sur $]-\\infty ; 0[$ et **décroissante** sur $]0 ; +\\infty[$, mais pas sur les deux à la fois. $\\dfrac{1}{x}$ a le même signe que $x$. Donc si $0 < a < b$ ou si $a < b < 0$, alors $\\dfrac{1}{a} > \\dfrac{1}{b}$. Sa courbe est une **hyperbole**, à deux branches, qui ne coupe jamais les axes.",
+          "method": [
+            "Vérifier : que les deux nombres sont non nuls et du même côté de 0 (tous deux positifs, ou tous deux négatifs).",
+            "Rappeler : la fonction inverse est décroissante sur $]-\\infty ; 0[$ et sur $]0 ; +\\infty[$.",
+            "Comparer : les inverses se rangent dans l'ordre contraire de celui des nombres.",
+            "Conclure : écrire l'inégalité entre les inverses, puis la vérifier avec les valeurs."
+          ],
+          "example": {
+            "statement": "Comparer $\\dfrac{1}{2}$ et $\\dfrac{1}{5}$ en utilisant la fonction inverse.",
+            "steps": [
+              "Vérifier : 2 et 5 sont non nuls et tous les deux positifs : ils sont dans $]0 ; +\\infty[$.",
+              "Rappeler : sur $]0 ; +\\infty[$, la fonction inverse est décroissante.",
+              "Comparer : $2 < 5$, et l'ordre est contraire pour les inverses : $\\dfrac{1}{2} > \\dfrac{1}{5}$.",
+              "Conclure : $\\dfrac{1}{2} > \\dfrac{1}{5}$. Vérification : $0{,}5 > 0{,}2$."
+            ]
+          },
+          "pitfall": "Ne pas dire que la fonction inverse est décroissante sur tout $\\mathbb{R}$ : elle n'est même pas définie en 0, et elle change de signe. Contre-exemple : $-2 < 4$, pourtant $\\dfrac{1}{-2} = -0{,}5$ est plus petit que $\\dfrac{1}{4} = 0{,}25$ : l'ordre n'est pas inversé. On ne compare les inverses que pour deux nombres du même côté de 0, c'est-à-dire dans l'un des deux intervalles.",
+          "practice": {
+            "statement": "Tu t'entraînes à comparer des inverses avec les variations de la fonction inverse.",
+            "questions": [
+              {
+                "content": "Pour quelle valeur de $x$ la fonction inverse $f(x) = \\dfrac{1}{x}$ n'est-elle pas définie ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Vérifier : on cherche le nombre qui annule le dénominateur. Étape 2 — Rappeler : la fonction inverse est définie sur $\\mathbb{R}$ privé de 0. Étape 3 — Comparer : $\\dfrac{1}{1} = 1$, $\\dfrac{1}{-1} = -1$ et $\\dfrac{1}{10} = 0{,}1$ existent. Étape 4 — Conclure : seul $x = 0$ est interdit, car on ne divise pas par 0.",
+                "answers": [
+                  {
+                    "content": "$x = 0$",
+                    "correct": true
+                  },
+                  {
+                    "content": "$x = 1$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$x = -1$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$x = 10$",
+                    "correct": false
+                  }
+                ],
+                "hint": "Quel nombre ne peut pas être au dénominateur ?"
+              },
+              {
+                "content": "Quelle inégalité est vraie ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Vérifier : 3 et 8 sont non nuls et positifs. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : $3 < 8$, donc l'ordre est contraire : $\\dfrac{1}{3} > \\dfrac{1}{8}$. Étape 4 — Conclure : le plus petit dénominateur donne la plus grande fraction. L'inégalité $\\dfrac{1}{3} < \\dfrac{1}{8}$ garde l'ordre des nombres par erreur.",
+                "answers": [
+                  {
+                    "content": "$\\dfrac{1}{3} > \\dfrac{1}{8}$",
+                    "correct": true
+                  },
+                  {
+                    "content": "$\\dfrac{1}{3} < \\dfrac{1}{8}$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$\\dfrac{1}{3} = \\dfrac{1}{8}$",
+                    "correct": false
+                  }
+                ],
+                "hint": "Pense à un gâteau coupé en 3 ou en 8 parts."
+              },
+              {
+                "content": "Vrai ou faux : comme $-4 < -2$, on a $\\dfrac{1}{-4} > \\dfrac{1}{-2}$.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Vérifier : $-4$ et $-2$ sont non nuls et tous les deux négatifs. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]-\\infty ; 0[$. Étape 3 — Comparer : $-4 < -2$, donc l'ordre est contraire : $\\dfrac{1}{-4} > \\dfrac{1}{-2}$. Étape 4 — Conclure : $-0{,}25 > -0{,}5$ : l'affirmation est vraie.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Les deux nombres sont du même côté de 0 : la fonction inverse est décroissante."
+              },
+              {
+                "content": "Si $2 \\leq x \\leq 5$, quelle est la plus petite valeur possible de $\\dfrac{1}{x}$ ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Vérifier : $x$ est entre 2 et 5, donc non nul et positif. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : $2 \\leq x \\leq 5$ donne, à l'ordre contraire, $\\dfrac{1}{5} \\leq \\dfrac{1}{x} \\leq \\dfrac{1}{2}$. Étape 4 — Conclure : la plus petite valeur est $\\dfrac{1}{5} = 0{,}2$.",
+                "answers": [
+                  {
+                    "content": "0,2",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "La plus petite valeur de l'inverse correspond à la plus grande valeur de $x$."
+              }
+            ]
+          },
+          "figure": "hyperbole-inverse",
+          "exercise": [
+            {
+              "title": "Comparer des inverses et définir la fonction inverse",
+              "statement": "Dans cet exercice, tu utilises la fonction inverse et la méthode de la fiche pour calculer des images et comparer des inverses.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quel est l'ensemble de définition de la fonction inverse $f(x) = \\dfrac{1}{x}$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Vérifier : $\\dfrac{1}{x}$ existe quand le dénominateur n'est pas nul. Étape 2 — Rappeler : la fonction inverse n'a pas d'image pour 0. Étape 3 — Comparer : elle est pourtant définie pour les négatifs ($\\dfrac{1}{-2} = -0{,}5$) comme pour les positifs. Étape 4 — Conclure : l'ensemble de définition est $\\mathbb{R}$ privé de 0. L'intervalle $]0 ; +\\infty[$ oublie les nombres négatifs.",
+                  "answers": [
+                    {
+                      "content": "$\\mathbb{R}$ privé de 0",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\mathbb{R}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$[0 ; +\\infty[$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$]0 ; +\\infty[$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle inégalité est vraie ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Vérifier : 3 et 7 sont non nuls et positifs. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : $3 < 7$, donc l'ordre est contraire : $\\dfrac{1}{3} > \\dfrac{1}{7}$. Étape 4 — Conclure : $\\dfrac{1}{3} > \\dfrac{1}{7}$.",
+                  "answers": [
+                    {
+                      "content": "$\\dfrac{1}{3} > \\dfrac{1}{7}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\dfrac{1}{3} < \\dfrac{1}{7}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\dfrac{1}{3} = \\dfrac{1}{7}$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Calcule l'image de $-4$ par la fonction inverse.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Vérifier : $-4$ est non nul. Étape 2 — Rappeler : l'image de $x$ par la fonction inverse est $\\dfrac{1}{x}$. Calcul : l'inverse d'un nombre négatif est négatif. Étape 4 — Conclure : $\\dfrac{1}{-4} = -0{,}25$.",
+                  "answers": [
+                    {
+                      "content": "-0,25",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Vrai ou faux : comme $-2 < 4$, on a $\\dfrac{1}{-2} > \\dfrac{1}{4}$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Vérifier : $-2$ et 4 ne sont pas du même côté de 0 : la règle de comparaison ne s'applique pas. Étape 2 — Rappeler : la fonction inverse est décroissante sur chaque intervalle, pas sur la réunion. Étape 3 — Comparer : $\\dfrac{1}{-2} = -0{,}5$ et $\\dfrac{1}{4} = 0{,}25$. Étape 4 — Conclure : $-0{,}5 < 0{,}25$ : l'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Si $0 < x \\leq 2$, alors $\\dfrac{1}{x} \\geq$ ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Vérifier : $x$ est positif et non nul. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : $x \\leq 2$ donne, à l'ordre contraire, $\\dfrac{1}{x} \\geq \\dfrac{1}{2}$. Étape 4 — Conclure : $\\dfrac{1}{x} \\geq 0{,}5$.",
+                  "answers": [
+                    {
+                      "content": "0,5",
+                      "correct": true
+                    },
+                    {
+                      "content": "1/2",
+                      "correct": true
+                    },
+                    {
+                      "content": "0.5",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Partager un kilogramme de piment au marché",
+              "statement": "Dans cet exercice, tu utilises la fonction inverse $g(x) = \\dfrac{1}{x}$ : la masse, en kilogrammes, de chaque part quand une commerçante partage 1 kilogramme de piment en $x$ parts égales.",
+              "hint": "Vérifie que les nombres sont du même côté de 0, puis range les inverses dans l'ordre contraire des nombres.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle est la masse d'une part quand il y a 4 parts ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Vérifier : $x = 4$ est non nul et positif. Étape 2 — Rappeler : $g(x) = \\dfrac{1}{x}$. Calcul : on remplace $x$ par 4. Étape 4 — Conclure : $g(4) = \\dfrac{1}{4} = 0{,}25$ : chaque part pèse 0,25 kilogramme.",
+                  "answers": [
+                    {
+                      "content": "0,25",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "kg"
+                },
+                {
+                  "content": "Avec 5 parts ou avec 10 parts, dans quel cas chaque part est-elle la plus petite ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Vérifier : 5 et 10 sont positifs et non nuls. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : $5 < 10$, donc $\\dfrac{1}{5} > \\dfrac{1}{10}$. Étape 4 — Conclure : plus il y a de parts, plus chaque part est petite : $0{,}1 < 0{,}2$.",
+                  "answers": [
+                    {
+                      "content": "Avec 10 parts, car $\\dfrac{1}{10} < \\dfrac{1}{5}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "Avec 5 parts, car $\\dfrac{1}{5} < \\dfrac{1}{10}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les parts sont égales",
+                      "correct": false
+                    },
+                    {
+                      "content": "On ne peut pas comparer",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : la fonction $g$ est décroissante sur $]0 ; +\\infty[$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Vérifier : le nombre de parts est positif, donc dans $]0 ; +\\infty[$. Étape 2 — Rappeler : la fonction inverse y est décroissante. Étape 3 — Comparer : plus $x$ est grand, plus $\\dfrac{1}{x}$ est petit. Étape 4 — Conclure : l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque nombre de parts à la masse d'une part, en kilogrammes.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Vérifier : tous les nombres de parts sont positifs. Étape 2 — Rappeler : $g(x) = \\dfrac{1}{x}$. Étape 3 — Comparer : $g(2) = 0{,}5$ ; $g(5) = 0{,}2$ ; $g(8) = 0{,}125$ ; $g(10) = 0{,}1$. Étape 4 — Conclure : les masses diminuent quand le nombre de parts augmente.",
+                  "answers": [
+                    {
+                      "content": "$2$ parts",
+                      "match": "$0{,}5$"
+                    },
+                    {
+                      "content": "$5$ parts",
+                      "match": "$0{,}2$"
+                    },
+                    {
+                      "content": "$8$ parts",
+                      "match": "$0{,}125$"
+                    },
+                    {
+                      "content": "$10$ parts",
+                      "match": "$0{,}1$"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles inégalités sont vraies ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Vérifier : chaque inégalité compare deux nombres du même côté de 0. Étape 2 — Rappeler : l'inverse est décroissante sur chaque intervalle. Étape 3 — Comparer : $3 < 7$ donne $\\dfrac{1}{3} > \\dfrac{1}{7}$ ; $-3 < -1$ donne $\\dfrac{1}{-3} > \\dfrac{1}{-1}$ (soit environ $-0{,}33 > -1$). Étape 4 — Conclure : $\\dfrac{1}{4} > \\dfrac{1}{2}$ est fausse car $0{,}25 < 0{,}5$, et $\\dfrac{1}{-2} > \\dfrac{1}{-4}$ est fausse car $-0{,}5 < -0{,}25$.",
+                  "answers": [
+                    {
+                      "content": "$\\dfrac{1}{3} > \\dfrac{1}{7}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\dfrac{1}{-3} > \\dfrac{1}{-1}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\dfrac{1}{4} > \\dfrac{1}{2}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\dfrac{1}{-2} > \\dfrac{1}{-4}$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Range ces nombres du plus petit au plus grand.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Vérifier : 2, 5 et 10 sont positifs. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : $2 < 5 < 10$ donne, à l'ordre contraire, $\\dfrac{1}{10} < \\dfrac{1}{5} < \\dfrac{1}{2}$. Étape 4 — Conclure : $0{,}1 < 0{,}2 < 0{,}5$.",
+                  "answers": [
+                    {
+                      "content": "$\\dfrac{1}{10}$"
+                    },
+                    {
+                      "content": "$\\dfrac{1}{5}$"
+                    },
+                    {
+                      "content": "$\\dfrac{1}{2}$"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Les frais de retrait de mobile money",
+          "statement": "Un agent de mobile money prélève, pour un retrait de $x$ milliers de francs, des frais $f(x) = 20x + 50$, en francs (valeurs fictives).",
+          "hint": "Pour une image, remplace $x$ ; pour un antécédent, résous l'équation ; pour retrouver une formule, calcule $a$ puis $b$.",
+          "exercise_type": "fixation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Quels sont les frais, en francs, pour un retrait de 5 milliers de francs ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Identifier : $f(x) = 20x + 50$ avec $a = 20$ et $b = 50$. Étape 2 — Calculer : $f(5) = 20 \\times 5 + 50 = 100 + 50 = 150$. Étape 3 — Conclure : les frais sont de 150 francs. Le nombre 50 est le montant fixe, que l'on paie même pour un retrait presque nul.",
+              "answers": [
+                {
+                  "content": "150",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "F"
+            },
+            {
+              "content": "Quel est le sens de variation de $f$, et pourquoi ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Identifier : $a = 20$ et $b = 50$. Étape 2 — Rappeler la règle : le sens de variation d'une fonction affine dépend du signe de $a$. Étape 3 — Conclure : $a = 20 > 0$, donc $f$ est croissante : plus on retire, plus les frais augmentent. Les réponses qui parlent de $b$ sont fausses : $b$ ne donne pas le sens de variation.",
+              "answers": [
+                {
+                  "content": "Croissante, car $a = 20$ est positif",
+                  "correct": true
+                },
+                {
+                  "content": "Décroissante, car $a = 20$ est positif",
+                  "correct": false
+                },
+                {
+                  "content": "Croissante, car $b = 50$ est positif",
+                  "correct": false
+                },
+                {
+                  "content": "Décroissante, car $b = 50$ est positif",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Pour des frais de 250 francs, quel montant, en milliers de francs, a été retiré ? Cherche l'antécédent de 250.",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Écrire l'équation : on cherche $x$ tel que $f(x) = 250$, soit $20x + 50 = 250$. Étape 2 — Résoudre : $20x = 250 - 50 = 200$, donc $x = \\dfrac{200}{20} = 10$. Étape 3 — Vérifier : $f(10) = 20 \\times 10 + 50 = 250$. Conclusion : 10 milliers de francs ont été retirés.",
+              "answers": [
+                {
+                  "content": "10",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "milliers"
+            },
+            {
+              "content": "Vrai ou faux : la droite qui représente $f$ passe par le point $(0 ; 50)$.",
+              "question_type": "true_false",
+              "explanation": "Étape 1 — Identifier : $b = 50$ est l'ordonnée à l'origine. Étape 2 — Calculer : $f(0) = 20 \\times 0 + 50 = 50$. Étape 3 — Conclure : le point $(0 ; 50)$ est sur la droite : l'affirmation est vraie.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": true
+                },
+                {
+                  "content": "Faux",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Un autre agent applique une fonction affine $h$ avec $h(2) = 90$ et $h(6) = 130$. Calcule son coefficient directeur.",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Noter : $h(2) = 90$ et $h(6) = 130$, avec $2 \\neq 6$. Étape 2 — Calculer : $a = \\dfrac{130 - 90}{6 - 2} = \\dfrac{40}{4} = 10$. Étape 3 — Déterminer : $90 = 10 \\times 2 + b$ donne $b = 70$. Étape 4 — Vérifier : $h(6) = 60 + 70 = 130$. Donc $a = 10$.",
+              "answers": [
+                {
+                  "content": "10",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "F/millier"
+            },
+            {
+              "content": "Pour la même fonction $h$ (avec $h(2) = 90$ et $h(6) = 130$), l'ordonnée à l'origine vaut $b =$ ___ .",
+              "question_type": "fill_blank",
+              "explanation": "Étape 1 — Noter : $h(2) = 90$ et $h(6) = 130$. Étape 2 — Calculer : $a = \\dfrac{130 - 90}{6 - 2} = 10$. Étape 3 — Déterminer : $90 = 10 \\times 2 + b$, donc $b = 90 - 20 = 70$. Étape 4 — Vérifier : $h(6) = 10 \\times 6 + 70 = 130$. Donc $b = 70$.",
+              "answers": [
+                {
+                  "content": "70",
+                  "correct": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "L'étal carré et les parts de piment",
+          "statement": "Une commerçante du marché installe un étal carré de côté $x$ mètres : son aire est $A(x) = x^2$, en mètres carrés. Elle partage aussi 1 kilogramme de piment en $x$ parts égales : chaque part pèse $g(x) = \\dfrac{1}{x}$ kilogramme.",
+          "hint": "Pour comparer, vérifie d'abord le signe des nombres, puis le sens de variation de la fonction sur cet intervalle.",
+          "exercise_type": "fixation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Quelle est l'aire, en mètres carrés, d'un étal de côté 5 mètres ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Repérer : $A(x) = x^2$ et le côté est 5. Étape 2 — Calculer : $A(5) = 5^2 = 25$. Étape 3 — Conclure : l'aire est de 25 mètres carrés. On ne calcule pas $2 \\times 5 = 10$ : le carré est un produit de 5 par lui-même.",
+              "answers": [
+                {
+                  "content": "25",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Un élève écrit : « $-5 < -2$ donc $(-5)^2 < (-2)^2$ ». Quelle est la bonne correction ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Repérer : $-5$ et $-2$ sont négatifs. Étape 2 — Rappeler : la fonction carré est décroissante sur $]-\\infty ; 0]$. Étape 3 — Comparer : $-5 < -2$ inverse l'ordre des carrés : $(-5)^2 > (-2)^2$. Étape 4 — Conclure : $25 > 4$. L'élève a appliqué la règle des nombres positifs à des nombres négatifs.",
+              "answers": [
+                {
+                  "content": "Sur les négatifs, la fonction carré est décroissante : $(-5)^2 > (-2)^2$",
+                  "correct": true
+                },
+                {
+                  "content": "La phrase est juste : $(-5)^2 < (-2)^2$",
+                  "correct": false
+                },
+                {
+                  "content": "Les deux carrés sont égaux",
+                  "correct": false
+                },
+                {
+                  "content": "On ne peut pas comparer deux carrés",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quelle est la masse d'une part, en kilogrammes, quand il y a 8 parts ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Vérifier : 8 est non nul et positif. Étape 2 — Rappeler : $g(x) = \\dfrac{1}{x}$. Étape 3 — Calculer : $g(8) = \\dfrac{1}{8} = 0{,}125$. Étape 4 — Conclure : chaque part pèse 0,125 kilogramme, soit 125 grammes.",
+              "answers": [
+                {
+                  "content": "0,125",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "kg"
+            },
+            {
+              "content": "Quelle inégalité est vraie ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Vérifier : 6 et 9 sont non nuls et positifs. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : $6 < 9$, donc $\\dfrac{1}{6} > \\dfrac{1}{9}$. Étape 4 — Conclure : une part sur 6 est plus grosse qu'une part sur 9.",
+              "answers": [
+                {
+                  "content": "$\\dfrac{1}{6} > \\dfrac{1}{9}$",
+                  "correct": true
+                },
+                {
+                  "content": "$\\dfrac{1}{6} < \\dfrac{1}{9}$",
+                  "correct": false
+                },
+                {
+                  "content": "$\\dfrac{1}{6} = \\dfrac{1}{9}$",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quelles affirmations sont vraies ?",
+              "question_type": "multiple_correct_2",
+              "explanation": "Étape 1 — Rappeler : on ne divise pas par 0, donc $\\dfrac{1}{x}$ n'existe pas pour $x = 0$ ; un carré est toujours positif ou nul. Étape 2 — Examiner les deux erreurs : la fonction carré diminue sur $]-\\infty ; 0]$ ($(-2)^2 = 4 > (-1)^2 = 1$), donc elle n'est pas croissante sur $\\mathbb{R}$ ; la fonction inverse est décroissante sur chaque intervalle, pas sur les deux ensemble ($\\dfrac{1}{-2} < \\dfrac{1}{4}$ avec $-2 < 4$).",
+              "answers": [
+                {
+                  "content": "La fonction inverse n'est pas définie en 0",
+                  "correct": true
+                },
+                {
+                  "content": "Pour tout nombre $x$, on a $x^2 \\geq 0$",
+                  "correct": true
+                },
+                {
+                  "content": "La fonction carré est croissante sur $\\mathbb{R}$",
+                  "correct": false
+                },
+                {
+                  "content": "La fonction inverse est décroissante sur $\\mathbb{R}$ privé de 0 tout entier",
+                  "correct": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Comparer deux offres de mobile money",
+          "statement": "Deux opérateurs de mobile money proposent des frais d'envoi pour $x$ milliers de francs : l'offre A a pour frais $A(x) = 10x + 100$, l'offre B a pour frais $B(x) = 20x + 50$, en francs (valeurs fictives).",
+          "hint": "Pour comparer, calcule les deux frais pour le même montant ; pour l'égalité, résous $A(x) = B(x)$.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Quels sont les frais de l'offre A pour 5 milliers de francs ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Identifier : $A(x) = 10x + 100$ avec $a = 10$ et $b = 100$. Étape 2 — Calculer : $A(5) = 10 \\times 5 + 100 = 150$. Étape 3 — Conclure : les frais sont de 150 francs. Pour l'offre B, $B(5) = 20 \\times 5 + 50 = 150$ aussi.",
+              "answers": [
+                {
+                  "content": "150",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "F"
+            },
+            {
+              "content": "Pour quel montant, en milliers de francs, les deux offres ont-elles les mêmes frais ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Écrire l'équation : les frais sont égaux quand $A(x) = B(x)$, soit $10x + 100 = 20x + 50$. Étape 2 — Résoudre : on regroupe les $x$ d'un côté : $100 - 50 = 20x - 10x$, donc $50 = 10x$ et $x = 5$. Étape 3 — Vérifier : $A(5) = 150$ et $B(5) = 150$. Conclusion : pour 5 milliers de francs, les frais sont les mêmes.",
+              "answers": [
+                {
+                  "content": "5",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "milliers"
+            },
+            {
+              "content": "Pour un envoi de 8 milliers de francs, quelle offre est la moins chère ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Identifier : $A(x) = 10x + 100$ et $B(x) = 20x + 50$. Étape 2 — Calculer : $A(8) = 80 + 100 = 180$ et $B(8) = 160 + 50 = 210$. Étape 3 — Comparer : $180 < 210$. Conclusion : l'offre A est la moins chère pour 8 milliers de francs. Les réponses qui inversent 180 et 210 se trompent de comparaison.",
+              "answers": [
+                {
+                  "content": "L'offre A, avec 180 francs contre 210",
+                  "correct": true
+                },
+                {
+                  "content": "L'offre B, avec 180 francs contre 210",
+                  "correct": false
+                },
+                {
+                  "content": "L'offre A, avec 210 francs contre 180",
+                  "correct": false
+                },
+                {
+                  "content": "Les deux offres coûtent pareil",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Vrai ou faux : pour un envoi de 2 milliers de francs, l'offre B coûte moins cher que l'offre A.",
+              "question_type": "true_false",
+              "explanation": "Étape 1 — Identifier : $A(x) = 10x + 100$ et $B(x) = 20x + 50$. Étape 2 — Calculer : $A(2) = 20 + 100 = 120$ et $B(2) = 40 + 50 = 90$. Étape 3 — Comparer : $90 < 120$. Conclusion : l'affirmation est vraie : sous 5 milliers de francs, l'offre B est moins chère, car elle a moins de frais fixes.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": true
+                },
+                {
+                  "content": "Faux",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Une offre C est affine, avec $C(0) = 80$ et $C(10) = 180$. Calcule $C(15)$.",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Noter : $C(0) = 80$ et $C(10) = 180$. Étape 2 — Calculer : $a = \\dfrac{180 - 80}{10 - 0} = 10$. Étape 3 — Déterminer : $b = C(0) = 80$, donc $C(x) = 10x + 80$. Étape 4 — Conclure : $C(15) = 10 \\times 15 + 80 = 230$ francs. Vérification : $C(10) = 180$.",
+              "answers": [
+                {
+                  "content": "230",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "F"
+            },
+            {
+              "content": "Un client envoie toujours 3 milliers de francs. Quelle offre, A ou B, doit-il choisir ? Justifie avec des calculs.",
+              "question_type": "written",
+              "explanation": "Corrigé modèle : Pour 3 milliers de francs, $A(3) = 10 \\times 3 + 100 = 130$ francs et $B(3) = 20 \\times 3 + 50 = 110$ francs. Comme $110 < 130$, le client doit choisir l'offre B. Cela s'explique parce que 3 est plus petit que 5 : en dessous de 5 milliers de francs, l'offre B, qui a moins de frais fixes, est la moins chère. Barème : 1 point pour $A(3) = 130$, 1 point pour $B(3) = 110$, 1 point pour la comparaison et le choix de l'offre B.",
+              "answers": [],
+              "points": 3,
+              "criteria": [
+                "Calcule $A(3) = 130$ francs",
+                "Calcule $B(3) = 110$ francs",
+                "Compare les deux frais et choisit l'offre B"
+              ],
+              "starter": "Pour 3 milliers de francs, A(3) = …"
+            }
+          ]
+        },
+        {
+          "title": "Bilan : trois fonctions du marché",
+          "statement": "Au marché, une commerçante commande du piment : 1 kilogramme coûte 5 milliers de francs avec le transport, et 4 kilogrammes coûtent 14 milliers de francs. Le prix $k(x)$, en milliers de francs, de $x$ kilogrammes est une fonction affine. Elle étudie aussi la fonction carré et la fonction inverse.",
+          "hint": "Pour la fonction affine, calcule $a$ puis $b$ ; pour les comparaisons, regarde d'abord le signe des nombres.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Calcule le prix de 10 kilogrammes de piment, en milliers de francs.",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Noter : $k(1) = 5$ et $k(4) = 14$, avec $1 \\neq 4$. Étape 2 — Calculer : $a = \\dfrac{14 - 5}{4 - 1} = \\dfrac{9}{3} = 3$. Étape 3 — Déterminer : $5 = 3 \\times 1 + b$ donne $b = 2$, donc $k(x) = 3x + 2$. Étape 4 — Vérifier : $k(4) = 12 + 2 = 14$. Conclusion : $k(10) = 3 \\times 10 + 2 = 32$ milliers de francs.",
+              "answers": [
+                {
+                  "content": "32",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "milliers"
+            },
+            {
+              "content": "Quel est le sens de variation de $k$ ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Identifier : $k(x) = 3x + 2$ avec $a = 3$ et $b = 2$. Étape 2 — Calculer : $k(0) = 2$ et $k(1) = 5$ : l'image augmente. Étape 3 — Conclure : $a = 3 > 0$, donc $k$ est croissante : plus la commande est grosse, plus elle coûte cher.",
+              "answers": [
+                {
+                  "content": "Croissante, car $a = 3$ est positif",
+                  "correct": true
+                },
+                {
+                  "content": "Décroissante, car $a = 3$ est positif",
+                  "correct": false
+                },
+                {
+                  "content": "Décroissante, car $b = 2$ est positif",
+                  "correct": false
+                },
+                {
+                  "content": "Constante, car $b = 2$",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quelle comparaison est vraie ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Repérer : $-2{,}5$ et $-1{,}5$ sont négatifs. Étape 2 — Rappeler : la fonction carré est décroissante sur $]-\\infty ; 0]$. Étape 3 — Comparer : $-2{,}5 < -1{,}5$, donc l'ordre s'inverse : $(-2{,}5)^2 > (-1{,}5)^2$. Étape 4 — Conclure : $6{,}25 > 2{,}25$.",
+              "answers": [
+                {
+                  "content": "$(-2{,}5)^2 > (-1{,}5)^2$",
+                  "correct": true
+                },
+                {
+                  "content": "$(-2{,}5)^2 < (-1{,}5)^2$",
+                  "correct": false
+                },
+                {
+                  "content": "$(-2{,}5)^2 = (-1{,}5)^2$",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Si $4 \\leq x \\leq 8$, quelle est la plus grande valeur possible de $\\dfrac{1}{x}$ ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Vérifier : $x$ est entre 4 et 8, donc non nul et positif. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : $4 \\leq x \\leq 8$ donne, à l'ordre contraire, $\\dfrac{1}{8} \\leq \\dfrac{1}{x} \\leq \\dfrac{1}{4}$. Étape 4 — Conclure : la plus grande valeur est $\\dfrac{1}{4} = 0{,}25$.",
+              "answers": [
+                {
+                  "content": "0,25",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Vrai ou faux : comme $-1 < 2$, on a $\\dfrac{1}{-1} > \\dfrac{1}{2}$.",
+              "question_type": "true_false",
+              "explanation": "Étape 1 — Vérifier : $-1$ et 2 ne sont pas du même côté de 0 : on ne peut pas utiliser la décroissance de la fonction inverse. Étape 2 — Calculer : $\\dfrac{1}{-1} = -1$ et $\\dfrac{1}{2} = 0{,}5$. Étape 3 — Comparer : $-1 < 0{,}5$. Conclusion : l'affirmation est fausse.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Explique pourquoi on ne peut pas dire que la fonction inverse est décroissante sur $\\mathbb{R}$ privé de 0 tout entier. Appuie-toi sur un contre-exemple chiffré.",
+              "question_type": "written",
+              "explanation": "Corrigé modèle : La fonction inverse est décroissante sur $]-\\infty ; 0[$ et sur $]0 ; +\\infty[$, mais pas sur les deux à la fois. Contre-exemple : $-2 < 4$, pourtant $\\dfrac{1}{-2} = -0{,}5$ est plus petit que $\\dfrac{1}{4} = 0{,}25$ : l'ordre n'est pas inversé. Il faut donc comparer deux nombres du même côté de 0. Barème : 1 point pour les deux intervalles, 1 point pour le contre-exemple chiffré, 1 point pour la conclusion.",
+              "answers": [],
+              "points": 3,
+              "criteria": [
+                "Cite les deux intervalles où la fonction est décroissante",
+                "Donne un contre-exemple chiffré avec deux nombres de signes différents",
+                "Conclut qu'on compare des nombres du même côté de 0"
+              ],
+              "starter": "La fonction inverse est décroissante sur …"
+            }
+          ]
+        }
+      ],
+      "subjects": [
+        {
+          "title": "Sujet 1 · Les savoirs de base",
+          "notions": "Reconnaître une fonction affine, son coefficient directeur et son ordonnée à l'origine, calculer des images, donner le sens de variation ; connaître la fonction carré (minimum, symétrie, variations) et la fonction inverse (ensemble de définition, variations, courbe).",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "La figure représente la droite de la fonction $f$ définie par $f(x) = 2x + 1$.",
+              "hint": "Le coefficient directeur est le nombre devant $x$ ; l'ordonnée à l'origine est le nombre seul.",
+              "exercise_type": "evaluation",
+              "figure": "droite-affine",
+              "questions": [
+                {
+                  "content": "La droite représente $f(x) = 2x + 1$. Quel est son coefficient directeur ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : $f(x) = 2x + 1$ est de la forme $ax + b$. Étape 2 — Lire : le coefficient directeur est le nombre qui multiplie $x$ : $a = 2$. Le nombre 1 est $b$, l'ordonnée à l'origine.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "La droite représente $f(x) = 2x + 1$. Quelle est son ordonnée à l'origine ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : $a = 2$ et $b = 1$. Étape 2 — Calculer : $f(0) = 2 \\times 0 + 1 = 1$. La droite coupe l'axe des ordonnées au point $(0 ; 1)$, donc l'ordonnée à l'origine est 1.",
+                  "answers": [
+                    {
+                      "content": "1",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "La fonction est définie par $f(x) = 2x + 1$. Calcule l'image de 3 par $f$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : $f(x) = 2x + 1$. Étape 2 — Remplacer : $x$ par 3 : $2 \\times 3 + 1$. Étape 3 — Calculer : $6 + 1 = 7$. Donc $f(3) = 7$.",
+                  "answers": [
+                    {
+                      "content": "7",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quel est le sens de variation de la fonction $f(x) = 2x + 1$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : $a = 2$ et $b = 1$. Étape 2 — Conclure : le sens de variation d'une fonction affine dépend du signe de $a$. Ici $a = 2 > 0$, donc $f$ est croissante : la droite monte de la gauche vers la droite. La réponse qui s'appuie sur $b$ confond $a$ et $b$.",
+                  "answers": [
+                    {
+                      "content": "Croissante sur $\\mathbb{R}$, car $a = 2$ est positif",
+                      "correct": true
+                    },
+                    {
+                      "content": "Décroissante sur $\\mathbb{R}$, car $a = 2$ est positif",
+                      "correct": false
+                    },
+                    {
+                      "content": "Croissante sur $\\mathbb{R}$, car $b = 1$ est positif",
+                      "correct": false
+                    },
+                    {
+                      "content": "Constante sur $\\mathbb{R}$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : la droite qui représente $f(x) = 2x + 1$ passe par le point $(1 ; 2)$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : $a = 2$ et $b = 1$. Étape 2 — Calculer : $f(1) = 2 \\times 1 + 1 = 3$. Étape 3 — Conclure : le point de la droite d'abscisse 1 est $(1 ; 3)$, et non $(1 ; 2)$ : l'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "On considère les fonctions $g(x) = -3x + 6$, $h(x) = 4x$ et $k(x) = x^2 + 1$.",
+              "hint": "Une fonction affine s'écrit $ax + b$ ; elle est linéaire si $b = 0$.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Parmi les fonctions $g(x) = -3x + 6$, $h(x) = 4x$ et $k(x) = x^2 + 1$, laquelle est une fonction linéaire ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : une fonction linéaire est une fonction affine avec $b = 0$, de la forme $ax$. Étape 2 — Examiner : $h(x) = 4x$ a $a = 4$ et $b = 0$ ; $g$ a $b = 6$, elle est affine mais pas linéaire ; $k$ contient $x^2$, elle n'est pas affine. Conclusion : $h$ est linéaire.",
+                  "answers": [
+                    {
+                      "content": "$h(x) = 4x$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$g(x) = -3x + 6$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$k(x) = x^2 + 1$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Soit $g(x) = -3x + 6$. Calcule l'image de 2 par $g$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : $a = -3$ et $b = 6$. Étape 2 — Remplacer : $x$ par 2 : $-3 \\times 2 + 6$. Étape 3 — Calculer : $-6 + 6 = 0$. Donc $g(2) = 0$.",
+                  "answers": [
+                    {
+                      "content": "0",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quel est le sens de variation de $g(x) = -3x + 6$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : $a = -3$ et $b = 6$. Étape 2 — Calculer : $g(0) = 6$ et $g(1) = 3$ : l'image diminue. Étape 3 — Conclure : $a = -3 < 0$, donc $g$ est décroissante. Le signe de $b$ ne donne pas le sens de variation.",
+                  "answers": [
+                    {
+                      "content": "Décroissante, car $a = -3$ est négatif",
+                      "correct": true
+                    },
+                    {
+                      "content": "Croissante, car $b = 6$ est positif",
+                      "correct": false
+                    },
+                    {
+                      "content": "Croissante, car $a = -3$ est négatif",
+                      "correct": false
+                    },
+                    {
+                      "content": "Décroissante, car $b = 6$ est positif",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque fonction à son ordonnée à l'origine.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Identifier : on écrit chaque formule sous la forme $ax + b$. Étape 2 — Lire : $b$ est le nombre seul, avec son signe. Pour $3x - 4$ : $b = -4$. Pour $5 - 2x = -2x + 5$ : $b = 5$. Pour $4x$ : $b = 0$. Pour $x + 7$ : $b = 7$.",
+                  "answers": [
+                    {
+                      "content": "$f(x) = 3x - 4$",
+                      "match": "$-4$"
+                    },
+                    {
+                      "content": "$f(x) = 5 - 2x$",
+                      "match": "$5$"
+                    },
+                    {
+                      "content": "$f(x) = 4x$",
+                      "match": "$0$"
+                    },
+                    {
+                      "content": "$f(x) = x + 7$",
+                      "match": "$7$"
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : la fonction $k(x) = x^2 + 1$ est une fonction affine.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : une fonction affine s'écrit $ax + b$, avec $x$ à la puissance 1. Étape 2 — Examiner : $k(x) = x^2 + 1$ contient $x^2$. Étape 3 — Calculer : $k(0) = 1$, $k(1) = 2$, $k(2) = 5$ : les écarts ne sont pas constants, la courbe n'est pas une droite. Conclusion : l'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "La figure donne sept points de la courbe de la fonction carré $f(x) = x^2$.",
+              "hint": "Un carré est toujours positif ou nul ; la courbe descend jusqu'à l'origine puis remonte.",
+              "exercise_type": "evaluation",
+              "figure": "parabole-carre",
+              "questions": [
+                {
+                  "content": "Soit la fonction carré $f(x) = x^2$. Calcule l'image de $-3$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : $f(x) = x^2$ et le nombre est $-3$. Étape 2 — Remplacer : $x$ par $-3$, entre parenthèses : $(-3)^2$. Étape 3 — Calculer : $(-3) \\times (-3) = 9$. Donc $f(-3) = 9$ : un carré n'est jamais négatif.",
+                  "answers": [
+                    {
+                      "content": "9",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quel est le minimum de la fonction carré sur $\\mathbb{R}$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : sur la courbe, les points $(-3 ; 9)$, $(-2 ; 4)$, $(-1 ; 1)$ descendent jusqu'à $(0 ; 0)$, puis remontent. Étape 2 — Rappeler : la fonction est décroissante sur $]-\\infty ; 0]$ puis croissante sur $[0 ; +\\infty[$. Étape 3 — Conclure : le point le plus bas est l'origine : le minimum est 0, atteint pour $x = 0$.",
+                  "answers": [
+                    {
+                      "content": "0, atteint pour $x = 0$",
+                      "correct": true
+                    },
+                    {
+                      "content": "1, atteint pour $x = 1$",
+                      "correct": false
+                    },
+                    {
+                      "content": "9, atteint pour $x = 3$",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il n'y a pas de minimum",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : pour la fonction carré, $f(-2) = f(2)$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer : $f(x) = x^2$. Étape 2 — Calculer : $f(-2) = (-2)^2 = 4$ et $f(2) = 2^2 = 4$. Étape 3 — Conclure : deux nombres opposés ont le même carré : l'affirmation est vraie. La courbe est symétrique par rapport à l'axe des ordonnées.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur quel intervalle la fonction carré est-elle croissante ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : on lit la courbe de gauche à droite. Étape 2 — Rappeler : elle descend jusqu'à l'origine, puis monte. Étape 3 — Conclure : la fonction carré est croissante sur $[0 ; +\\infty[$. Elle n'est pas croissante sur $\\mathbb{R}$ : elle est décroissante avant 0.",
+                  "answers": [
+                    {
+                      "content": "$[0 ; +\\infty[$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$]-\\infty ; 0]$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\mathbb{R}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$[-3 ; 3]$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour tout nombre $x$, on a $x^2 \\geq$ ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Repérer : on cherche la plus petite valeur d'un carré. Étape 2 — Rappeler : le minimum de la fonction carré est 0, atteint pour $x = 0$. Étape 3 — Conclure : $x^2 \\geq 0$ pour tout nombre $x$.",
+                  "answers": [
+                    {
+                      "content": "0",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "La figure donne huit points de la courbe de la fonction inverse $f(x) = \\dfrac{1}{x}$.",
+              "hint": "La fonction inverse n'est pas définie en 0 ; elle est décroissante sur chaque intervalle.",
+              "exercise_type": "evaluation",
+              "figure": "hyperbole-inverse",
+              "questions": [
+                {
+                  "content": "Soit la fonction inverse $f(x) = \\dfrac{1}{x}$. Calcule l'image de 4.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Vérifier : 4 est non nul. Étape 2 — Rappeler : $f(x) = \\dfrac{1}{x}$. Étape 3 — Calculer : $f(4) = \\dfrac{1}{4} = 0{,}25$. Le point $(4 ; 0{,}25)$ est bien sur la courbe.",
+                  "answers": [
+                    {
+                      "content": "0,25",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quel est l'ensemble de définition de la fonction inverse ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Vérifier : $\\dfrac{1}{x}$ n'existe pas quand $x = 0$. Étape 2 — Rappeler : on ne divise jamais par 0. Étape 3 — Conclure : la fonction est définie pour tous les nombres sauf 0. Les intervalles $]0 ; +\\infty[$ et $[0 ; +\\infty[$ oublient les nombres négatifs ; $\\mathbb{R}$ entier oublie l'interdiction en 0.",
+                  "answers": [
+                    {
+                      "content": "$\\mathbb{R}$ privé de 0",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\mathbb{R}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$]0 ; +\\infty[$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$[0 ; +\\infty[$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : la courbe de la fonction inverse coupe l'axe des ordonnées.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Vérifier : couper l'axe des ordonnées, c'est avoir $x = 0$. Étape 2 — Rappeler : la fonction inverse n'est pas définie en 0. Étape 3 — Conclure : la courbe n'a pas de point d'abscisse 0 : elle ne coupe jamais l'axe des ordonnées. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel est le sens de variation de la fonction inverse sur $]0 ; +\\infty[$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Vérifier : on est dans $]0 ; +\\infty[$, tous les nombres sont positifs et non nuls. Étape 2 — Rappeler : sur la figure, les points $(0{,}5 ; 2)$, $(1 ; 1)$, $(2 ; 0{,}5)$, $(4 ; 0{,}25)$ descendent. Étape 3 — Conclure : la fonction inverse est décroissante sur $]0 ; +\\infty[$.",
+                  "answers": [
+                    {
+                      "content": "Décroissante",
+                      "correct": true
+                    },
+                    {
+                      "content": "Croissante",
+                      "correct": false
+                    },
+                    {
+                      "content": "Constante",
+                      "correct": false
+                    },
+                    {
+                      "content": "Croissante puis décroissante",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour la fonction inverse, l'image de $-2$ est ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Vérifier : $-2$ est non nul. Étape 2 — Rappeler : $f(x) = \\dfrac{1}{x}$. Étape 3 — Calculer : $f(-2) = \\dfrac{1}{-2} = -0{,}5$. Le point $(-2 ; -0{,}5)$ est sur la courbe.",
+                  "answers": [
+                    {
+                      "content": "-0,5",
+                      "correct": true
+                    },
+                    {
+                      "content": "-1/2",
+                      "correct": true
+                    },
+                    {
+                      "content": "-0.5",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 2 · La vie courante en contextes ivoiriens",
+          "notions": "Fonctions affines dans des situations du marché et du mobile money : prix avec livraison, frais de transfert retrouvés à partir de deux valeurs, stock qui diminue ; aire d'un étal carré et partage en parts égales avec les fonctions carré et inverse.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Un livreur apporte des sacs d'attiéké au marché de Cocody. Le prix, en milliers de francs, de $x$ sacs avec la livraison est $P(x) = 2x + 3$.",
+              "hint": "Pour un prix, remplace $x$ par le nombre de sacs ; pour un nombre de sacs, résous l'équation $P(x) = $ le prix.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Avec $P(x) = 2x + 3$, quel est le prix, en milliers de francs, de 5 sacs ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : $P(x) = 2x + 3$ avec $a = 2$ et $b = 3$. Étape 2 — Remplacer : $x$ par 5 : $2 \\times 5 + 3$. Étape 3 — Calculer : $10 + 3 = 13$. Conclusion : 5 sacs coûtent 13 milliers de francs.",
+                  "answers": [
+                    {
+                      "content": "13",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "milliers"
+                },
+                {
+                  "content": "Avec $P(x) = 2x + 3$, combien de sacs ont été livrés si le prix est de 19 milliers de francs ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : on cherche $x$ tel que $P(x) = 19$, soit $2x + 3 = 19$. Étape 2 — Résoudre : $2x = 19 - 3 = 16$, donc $x = 8$. Étape 3 — Vérifier : $P(8) = 16 + 3 = 19$. Conclusion : 8 sacs.",
+                  "answers": [
+                    {
+                      "content": "8",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "sacs"
+                },
+                {
+                  "content": "Dans $P(x) = 2x + 3$, que représente le nombre 3 ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : $b = 3$ est le nombre seul. Étape 2 — Calculer : $P(0) = 3$ : même sans sac, on paie 3 milliers. Étape 3 — Conclure : 3 est le prix de la livraison. Le prix d'un sac est $a = 2$, le coefficient devant $x$.",
+                  "answers": [
+                    {
+                      "content": "Le prix de la livraison, payé même sans sac",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le prix d'un sac",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le nombre de sacs livrés",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le prix total de la commande",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : la fonction $P$, définie par $P(x) = 2x + 3$, est croissante.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : $a = 2$ et $b = 3$. Étape 2 — Calculer : $P(1) = 5$ et $P(2) = 7$ : le prix augmente. Étape 3 — Conclure : $a = 2 > 0$, donc $P$ est croissante : plus on achète de sacs, plus on paie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Avec $P(x) = 2x + 3$, le prix de 10 sacs est ___ milliers de francs.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Identifier : $a = 2$ et $b = 3$. Étape 2 — Remplacer : $x$ par 10 : $2 \\times 10 + 3$. Étape 3 — Calculer : $20 + 3 = 23$. Conclusion : 10 sacs coûtent 23 milliers de francs.",
+                  "answers": [
+                    {
+                      "content": "23",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Un opérateur de mobile money prélève, pour un transfert de $x$ milliers de francs, des frais $h(x)$ en francs. La fonction $h$ est affine, avec $h(10) = 150$ et $h(50) = 350$ (valeurs fictives).",
+              "hint": "Calcule $a$ avec les deux valeurs, puis $b$ avec l'une d'elles, et vérifie avec l'autre.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Calcule le coefficient directeur $a$ de $h$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Noter : $h(10) = 150$ et $h(50) = 350$, avec $10 \\neq 50$. Étape 2 — Calculer : $a = \\dfrac{350 - 150}{50 - 10} = \\dfrac{200}{40}$, soit $a = 5$. Conclusion : $a = 5$ : 5 francs de frais par millier envoyé.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "F/millier"
+                },
+                {
+                  "content": "Calcule l'ordonnée à l'origine $b$ de $h$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Noter : $a = \\dfrac{350 - 150}{50 - 10} = 5$ et $h(10) = 150$. Étape 2 — Déterminer : $150 = 5 \\times 10 + b$, donc $150 = 50 + b$ et $b = 100$. Étape 3 — Vérifier : $h(50) = 5 \\times 50 + 100 = 350$. Conclusion : $b = 100$, ce sont les frais fixes.",
+                  "answers": [
+                    {
+                      "content": "100",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "F"
+                },
+                {
+                  "content": "Quelle est la formule de $h$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Noter : $h(10) = 150$ et $h(50) = 350$. Étape 2 — Calculer : $a = 5$, puis $b = 150 - 50 = 100$. Étape 3 — Vérifier : $h(50) = 250 + 100 = 350$. Conclusion : $h(x) = 5x + 100$. La formule $7x + 80$ donne bien $h(10) = 150$ mais $h(50) = 430$ ; la formule $10x + 50$ donne aussi $h(10) = 150$ mais $h(50) = 550$ : elles ne passent pas par les deux points.",
+                  "answers": [
+                    {
+                      "content": "$h(x) = 5x + 100$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$h(x) = 5x + 150$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$h(x) = 7x + 80$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$h(x) = 10x + 50$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Avec $h(x) = 5x + 100$, quels sont les frais, en francs, d'un transfert de 30 milliers de francs ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : $h(x) = 5x + 100$. Étape 2 — Remplacer : $x$ par 30 : $5 \\times 30 + 100$. Étape 3 — Calculer : $150 + 100 = 250$. Conclusion : les frais sont de 250 francs.",
+                  "answers": [
+                    {
+                      "content": "250",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "F"
+                },
+                {
+                  "content": "Vrai ou faux : avec $h(x) = 5x + 100$, un transfert de 0 franc n'a aucun frais.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : $a = 5$ et $b = 100$. Étape 2 — Calculer : $h(0) = 5 \\times 0 + 100 = 100$. Étape 3 — Conclure : il reste 100 francs de frais fixes : l'affirmation est fausse. Penser que $h(0) = 0$ revient à oublier le nombre $b$.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour trouver la formule de $h$.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Noter, Étape 2 — Calculer, Étape 3 — Déterminer, Étape 4 — Vérifier : le coefficient $a$ se calcule avant $b$, et la vérification se fait avec la donnée non utilisée.",
+                  "answers": [
+                    {
+                      "content": "Noter : $h(10) = 150$ et $h(50) = 350$."
+                    },
+                    {
+                      "content": "Calculer : $a = \\dfrac{350 - 150}{50 - 10} = 5$."
+                    },
+                    {
+                      "content": "Déterminer : $150 = 5 \\times 10 + b$, donc $b = 100$."
+                    },
+                    {
+                      "content": "Vérifier : $h(50) = 350$, donc $h(x) = 5x + 100$."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Une vendeuse du marché d'Adjamé commence la semaine avec 8 caisses de tomates et en vend 2 par jour. Son stock, en caisses, après $x$ jours est $S(x) = -2x + 8$ ; la figure montre la droite de $S$.",
+              "hint": "Pour un antécédent, résous l'équation ; un résultat négatif n'a pas de sens pour un stock.",
+              "exercise_type": "evaluation",
+              "figure": "droite-stock-tomates",
+              "questions": [
+                {
+                  "content": "Avec $S(x) = -2x + 8$, combien reste-t-il de caisses après 3 jours ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : $S(x) = -2x + 8$ avec $a = -2$ et $b = 8$. Étape 2 — Remplacer : $x$ par 3 : $-2 \\times 3 + 8$. Étape 3 — Calculer : $-6 + 8 = 2$. Conclusion : il reste 2 caisses.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "caisses"
+                },
+                {
+                  "content": "Avec $S(x) = -2x + 8$, après combien de jours le stock est-il épuisé ? Cherche l'antécédent de 0.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : on cherche $x$ tel que $S(x) = 0$, soit $-2x + 8 = 0$. Étape 2 — Résoudre : $-2x = -8$, donc $x = 4$. Étape 3 — Vérifier : $S(4) = -8 + 8 = 0$. Conclusion : le stock est épuisé après 4 jours, au point $B(4 ; 0)$ de la droite.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "jours"
+                },
+                {
+                  "content": "Que signifie le coefficient directeur $-2$ dans $S(x) = -2x + 8$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : $a = -2$ et $b = 8$. Étape 2 — Calculer : $S(1) - S(0) = 6 - 8 = -2$. Étape 3 — Conclure : chaque jour, le stock diminue de 2 caisses. Le nombre de caisses au départ est $b = 8$.",
+                  "answers": [
+                    {
+                      "content": "Le stock diminue de 2 caisses chaque jour",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le stock augmente de 2 caisses chaque jour",
+                      "correct": false
+                    },
+                    {
+                      "content": "La vendeuse a 2 caisses au départ",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le stock est de 2 caisses après 8 jours",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : la fonction $S$ est décroissante.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : $a = -2$ et $b = 8$. Étape 2 — Calculer : $S(0) = 8$ puis $S(1) = 6$. Étape 3 — Conclure : $a = -2 < 0$, donc $S$ est décroissante : la droite de la figure descend de la gauche vers la droite.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le calcul donne $S(5) = -2$. Que faut-il en penser ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Calculer : $S(5) = -2 \\times 5 + 8 = -2$, le calcul est correct. Étape 2 — Interpréter : un nombre de caisses ne peut pas être négatif. Étape 3 — Conclure : le stock est nul à partir de $x = 4$ ; la formule n'a de sens dans cette situation que pour $x$ de 0 à 4.",
+                  "answers": [
+                    {
+                      "content": "Le stock est épuisé : un stock ne peut pas être négatif, la formule ne vaut que pour $x$ de 0 à 4",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il reste 2 caisses",
+                      "correct": false
+                    },
+                    {
+                      "content": "La vendeuse doit 2 caisses de plus",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le calcul est faux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Au marché, un étal carré a pour côté $x$ mètres : son aire est $A(x) = x^2$, en mètres carrés. Une commerçante partage aussi 1 kilogramme de poivre en $x$ parts égales : chaque part pèse $g(x) = \\dfrac{1}{x}$ kilogramme.",
+              "hint": "Compare en regardant le sens de variation sur les nombres positifs : la fonction carré conserve l'ordre, la fonction inverse range les inverses dans l'ordre contraire.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle est l'aire, en mètres carrés, d'un étal de côté 6 mètres ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : $A(x) = x^2$ et le côté est 6. Étape 2 — Remplacer : $x$ par 6. Étape 3 — Calculer : $A(6) = 6^2 = 36$. Conclusion : l'aire est de 36 mètres carrés.",
+                  "answers": [
+                    {
+                      "content": "36",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Entre un étal de côté 3 mètres et un étal de côté 5 mètres, lequel a la plus grande aire ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : 3 et 5 sont positifs. Étape 2 — Rappeler : la fonction carré est croissante sur $[0 ; +\\infty[$. Étape 3 — Comparer : $3 < 5$ conserve l'ordre, donc $3^2 < 5^2$. Étape 4 — Conclure : $9 < 25$ : l'étal de 5 mètres est plus grand.",
+                  "answers": [
+                    {
+                      "content": "Celui de 5 mètres, car $5^2 > 3^2$",
+                      "correct": true
+                    },
+                    {
+                      "content": "Celui de 3 mètres, car $3^2 > 5^2$",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ils ont la même aire",
+                      "correct": false
+                    },
+                    {
+                      "content": "On ne peut pas comparer",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la masse d'une part, en kilogrammes, quand le poivre est partagé en 5 parts ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Vérifier : $x = 5$ est non nul et positif. Étape 2 — Rappeler : $g(x) = \\dfrac{1}{x}$. Étape 3 — Calculer : $g(5) = \\dfrac{1}{5} = 0{,}2$. Conclusion : chaque part pèse 0,2 kilogramme.",
+                  "answers": [
+                    {
+                      "content": "0,2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "kg"
+                },
+                {
+                  "content": "Vrai ou faux : $\\dfrac{1}{5} > \\dfrac{1}{4}$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Vérifier : 4 et 5 sont positifs et non nuls. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : $4 < 5$ donne $\\dfrac{1}{4} > \\dfrac{1}{5}$. Conclusion : l'inégalité est fausse, car $\\dfrac{1}{5} < \\dfrac{1}{4}$, soit $0{,}2 < 0{,}25$ : une part sur 5 est plus petite qu'une part sur 4.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles affirmations sont vraies ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Rappeler : la fonction carré est croissante sur $[0 ; +\\infty[$ et la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 2 — Calculer : $g(0) = \\dfrac{1}{0}$ n'existe pas, on ne divise pas par 0 ; $A(-2) = (-2)^2 = 4$, un carré n'est jamais négatif. Conclusion : seules les deux premières sont vraies.",
+                  "answers": [
+                    {
+                      "content": "$A$ est croissante pour des côtés positifs",
+                      "correct": true
+                    },
+                    {
+                      "content": "$g$ est décroissante pour un nombre de parts positif",
+                      "correct": true
+                    },
+                    {
+                      "content": "$g(0) = 0$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$A(-2) = -4$",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 3 · Raisonner et rédiger",
+          "notions": "Justifier le sens de variation d'une fonction affine, retrouver sa formule et vérifier ; encadrer un carré ou un inverse avec les variations de la fonction carré et de la fonction inverse ; rédiger une justification avec un contre-exemple.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "On considère la fonction $f$ définie par $f(x) = -3x + 12$.",
+              "hint": "Le sens de variation dépend du signe de $a$ ; pour tracer une droite, deux points suffisent.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Soit $f(x) = -3x + 12$. Calcule $f(4)$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : $a = -3$ et $b = 12$. Étape 2 — Remplacer : $x$ par 4 : $-3 \\times 4 + 12$. Étape 3 — Calculer : $-12 + 12 = 0$. Donc $f(4) = 0$.",
+                  "answers": [
+                    {
+                      "content": "0",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pourquoi la fonction $f(x) = -3x + 12$ est-elle décroissante ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : $a = -3$ et $b = 12$. Étape 2 — Calculer : $f(0) = 12$ puis $f(1) = 9$ : l'image diminue. Étape 3 — Conclure : $a = -3 < 0$, donc $f$ est décroissante. Les autres raisons sont fausses : $b$ ne donne pas le sens de variation, et $-3x$ est positif quand $x$ est négatif.",
+                  "answers": [
+                    {
+                      "content": "Parce que son coefficient directeur $-3$ est négatif",
+                      "correct": true
+                    },
+                    {
+                      "content": "Parce que son ordonnée à l'origine 12 est positive",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce que $f(4) = 0$",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parce que $-3 \\times x$ est toujours négatif",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : pour la fonction $f(x) = -3x + 12$, l'image de 5 est positive.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : $a = -3$ et $b = 12$. Étape 2 — Remplacer : $x$ par 5 : $-3 \\times 5 + 12$. Étape 3 — Calculer : $-15 + 12 = -3$. Conclusion : $f(5) = -3$ est négatif : l'affirmation est fausse. La fonction est décroissante et s'annule en 4, donc elle est négative après 4.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour $f(x) = -3x + 12$, quel est l'antécédent de 3 ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : on cherche $x$ tel que $f(x) = 3$, soit $-3x + 12 = 3$. Étape 2 — Résoudre : $-3x = 3 - 12 = -9$, donc $x = \\dfrac{-9}{-3} = 3$. Étape 3 — Vérifier : $f(3) = -9 + 12 = 3$. Conclusion : l'antécédent de 3 est 3.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Explique pourquoi la fonction $f(x) = -3x + 12$ est décroissante, puis donne deux points de sa droite.",
+                  "question_type": "written",
+                  "explanation": "Corrigé modèle : $f(x) = -3x + 12$ est de la forme $ax + b$ avec $a = -3$ et $b = 12$. Comme $a = -3$ est négatif, $f$ est décroissante : la droite descend de la gauche vers la droite. On calcule $f(0) = 12$ et $f(4) = -12 + 12 = 0$ : la droite passe par les points $(0 ; 12)$ et $(4 ; 0)$. Barème : 1 point pour $a = -3$ et son signe, 1 point pour la conclusion décroissante, 1 point pour les deux points exacts.",
+                  "answers": [],
+                  "points": 3,
+                  "criteria": [
+                    "Identifie $a = -3$ comme coefficient directeur",
+                    "Conclut que $f$ est décroissante car $a < 0$",
+                    "Donne deux points exacts, par exemple $(0 ; 12)$ et $(4 ; 0)$"
+                  ],
+                  "starter": "Ici $a = -3$ ; comme $a$ est …"
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Une fonction affine $k$ vérifie $k(1) = -1$ et $k(3) = -7$.",
+              "hint": "Pour trouver une fonction affine, calcule $a$ avec les deux valeurs, puis $b$, puis vérifie.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Calcule le coefficient directeur $a$ de $k$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Noter : $k(1) = -1$ et $k(3) = -7$, avec $1 \\neq 3$. Étape 2 — Calculer : $a = \\dfrac{-7 - (-1)}{3 - 1} = \\dfrac{-6}{2} = -3$. Étape 3 — Déterminer : $-1 = -3 \\times 1 + b$ donne $b = 2$. Étape 4 — Vérifier : $k(3) = -9 + 2 = -7$. Donc $a = -3$.",
+                  "answers": [
+                    {
+                      "content": "-3",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Calcule l'ordonnée à l'origine $b$ de $k$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Noter : $k(1) = -1$ et $k(3) = -7$. Étape 2 — Calculer : $a = \\dfrac{-7 + 1}{3 - 1} = -3$. Étape 3 — Déterminer : $-1 = -3 \\times 1 + b$, donc $b = -1 + 3 = 2$. Étape 4 — Vérifier : $k(3) = -3 \\times 3 + 2 = -7$. Donc $b = 2$.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle est la formule de $k$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Noter : $k(1) = -1$ et $k(3) = -7$. Étape 2 — Calculer : $a = -3$. Étape 3 — Déterminer : $b = 2$. Étape 4 — Vérifier : $k(1) = -3 + 2 = -1$ et $k(3) = -9 + 2 = -7$. La formule $3x - 4$ donne $k(1) = -1$ mais $k(3) = 5$ ; $-3x - 4$ donne $k(1) = -7$ ; $-2x + 1$ donne $k(1) = -1$ mais $k(3) = -5$ : elles ne passent pas par les deux points.",
+                  "answers": [
+                    {
+                      "content": "$k(x) = -3x + 2$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$k(x) = 3x - 4$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$k(x) = -3x - 4$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$k(x) = -2x + 1$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : la fonction $k$ est croissante.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Noter : $k(1) = -1$ et $k(3) = -7$. Étape 2 — Calculer : $a = -3$. Étape 3 — Conclure : $a = -3 < 0$, donc $k$ est décroissante. On le voit aussi sans calcul : quand $x$ passe de 1 à 3, l'image passe de $-1$ à $-7$ : elle diminue. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Montre que la formule $k(x) = -3x + 2$ est cohérente avec les deux données $k(1) = -1$ et $k(3) = -7$.",
+                  "question_type": "written",
+                  "explanation": "Corrigé modèle : On remplace $x$ par 1 : $k(1) = -3 \\times 1 + 2 = -3 + 2 = -1$, ce qui est la première donnée. On remplace $x$ par 3 : $k(3) = -3 \\times 3 + 2 = -9 + 2 = -7$, ce qui est la deuxième donnée. La formule vérifie donc les deux données. Barème : 1 point pour le calcul de $k(1)$, 1 point pour le calcul de $k(3)$.",
+                  "answers": [],
+                  "points": 2,
+                  "criteria": [
+                    "Calcule $k(1) = -1$",
+                    "Calcule $k(3) = -7$ et conclut"
+                  ],
+                  "starter": "Pour $x = 1$, on a $k(1) = …$"
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "On étudie les carrés de nombres situés dans un intervalle, avec la fonction carré $f(x) = x^2$.",
+              "hint": "Regarde si l'intervalle contient 0 : le minimum de la fonction carré est atteint en 0.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "On sait que $-5 \\leq x \\leq -2$. Quelle est la plus petite valeur possible de $x^2$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : $x$ est entre $-5$ et $-2$, donc négatif. Étape 2 — Rappeler : la fonction carré est décroissante sur $]-\\infty ; 0]$. Étape 3 — Comparer : $-5 \\leq x \\leq -2$ donne, à l'ordre contraire, $(-2)^2 \\leq x^2 \\leq (-5)^2$. Étape 4 — Conclure : $4 \\leq x^2 \\leq 25$ : la plus petite valeur est 4.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "On sait que $-5 \\leq x \\leq -2$. Quelle est la plus grande valeur possible de $x^2$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : $x$ est entre $-5$ et $-2$, donc négatif. Étape 2 — Rappeler : la fonction carré est décroissante sur $]-\\infty ; 0]$. Étape 3 — Comparer : l'ordre est contraire, $(-2)^2 \\leq x^2 \\leq (-5)^2$. Étape 4 — Conclure : $4 \\leq x^2 \\leq 25$ : la plus grande valeur est 25, atteinte pour $x = -5$.",
+                  "answers": [
+                    {
+                      "content": "25",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "On sait que $-5 \\leq x \\leq -2$. Quel est l'encadrement de $x^2$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : $x$ est négatif. Étape 2 — Rappeler : la fonction carré est décroissante sur $]-\\infty ; 0]$. Étape 3 — Comparer : l'ordre est inversé : $(-2)^2 \\leq x^2 \\leq (-5)^2$. Étape 4 — Conclure : $4 \\leq x^2 \\leq 25$. L'encadrement $25 \\leq x^2 \\leq 4$ n'est pas rangé du plus petit au plus grand ; les carrés ne sont jamais négatifs.",
+                  "answers": [
+                    {
+                      "content": "$4 \\leq x^2 \\leq 25$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$25 \\leq x^2 \\leq 4$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$-25 \\leq x^2 \\leq -4$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$-5 \\leq x^2 \\leq -2$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "On sait que $-2 \\leq x \\leq 3$. Quel est l'encadrement de $x^2$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : $-2 \\leq x \\leq 3$ contient 0 : $x$ peut être négatif, nul ou positif, la méthode s'applique en deux morceaux. Étape 2 — Rappeler : le minimum de la fonction carré est 0, atteint en $x = 0$ ; elle décroît avant 0 et croît après. Étape 3 — Comparer : $(-2)^2 = 4$ et $3^2 = 9$ ; le plus grand est 9. Étape 4 — Conclure : $0 \\leq x^2 \\leq 9$. Le minimum n'est pas 4 : il est atteint en 0, et un carré n'est jamais négatif.",
+                  "answers": [
+                    {
+                      "content": "$0 \\leq x^2 \\leq 9$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$4 \\leq x^2 \\leq 9$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$0 \\leq x^2 \\leq 4$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$-4 \\leq x^2 \\leq 9$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "On sait que $-2 \\leq x \\leq 3$. Explique pourquoi la plus petite valeur de $x^2$ est 0 et non 4.",
+                  "question_type": "written",
+                  "explanation": "Corrigé modèle : Quand $x$ est entre $-2$ et 3, il peut valoir 0. La fonction carré est décroissante sur $]-\\infty ; 0]$ puis croissante sur $[0 ; +\\infty[$ : son minimum est $0^2 = 0$, atteint pour $x = 0$. Comme 0 est dans l'intervalle, la plus petite valeur de $x^2$ est 0. Le nombre 4 est le carré de $-2$, une borne, mais pas le minimum. Barème : 1 point pour 0 dans l'intervalle, 1 point pour les variations de la fonction carré, 1 point pour la conclusion.",
+                  "answers": [],
+                  "points": 3,
+                  "criteria": [
+                    "Remarque que 0 est dans l'intervalle",
+                    "Rappelle les variations de la fonction carré (minimum en 0)",
+                    "Conclut que le minimum est 0 et non 4"
+                  ],
+                  "starter": "L'intervalle contient 0, donc …"
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "On étudie les inverses de nombres situés dans un intervalle, avec la fonction inverse $f(x) = \\dfrac{1}{x}$.",
+              "hint": "L'ordre des inverses n'est inversé que pour des nombres du même côté de 0.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "On sait que $2 \\leq x \\leq 4$. Quelle est la plus petite valeur possible de $\\dfrac{1}{x}$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Vérifier : $x$ est entre 2 et 4, donc positif et non nul. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : $2 \\leq x \\leq 4$ donne, à l'ordre contraire, $\\dfrac{1}{4} \\leq \\dfrac{1}{x} \\leq \\dfrac{1}{2}$. Étape 4 — Conclure : la plus petite valeur est $\\dfrac{1}{4} = 0{,}25$.",
+                  "answers": [
+                    {
+                      "content": "0,25",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "On sait que $2 \\leq x \\leq 4$. Quelle est la plus grande valeur possible de $\\dfrac{1}{x}$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Vérifier : $x$ est entre 2 et 4, donc positif et non nul. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : l'ordre est contraire, $\\dfrac{1}{4} \\leq \\dfrac{1}{x} \\leq \\dfrac{1}{2}$. Étape 4 — Conclure : la plus grande valeur est $\\dfrac{1}{2} = 0{,}5$, atteinte pour $x = 2$.",
+                  "answers": [
+                    {
+                      "content": "0,5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "On sait que $2 \\leq x \\leq 4$. Quel est l'encadrement de $\\dfrac{1}{x}$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Vérifier : $x$ est positif et non nul. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : l'ordre est contraire : $\\dfrac{1}{4} \\leq \\dfrac{1}{x} \\leq \\dfrac{1}{2}$. Étape 4 — Conclure : la bonne réponse range du plus petit au plus grand. L'encadrement qui commence par $\\dfrac{1}{2}$ est faux car $\\dfrac{1}{2} > \\dfrac{1}{4}$.",
+                  "answers": [
+                    {
+                      "content": "$\\dfrac{1}{4} \\leq \\dfrac{1}{x} \\leq \\dfrac{1}{2}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\dfrac{1}{2} \\leq \\dfrac{1}{x} \\leq \\dfrac{1}{4}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$2 \\leq \\dfrac{1}{x} \\leq 4$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$-4 \\leq \\dfrac{1}{x} \\leq -2$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : pour $-3 \\leq x \\leq 3$ avec $x \\neq 0$, on a $-\\dfrac{1}{3} \\leq \\dfrac{1}{x} \\leq \\dfrac{1}{3}$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Vérifier : l'intervalle contient des nombres négatifs et positifs : la méthode ne s'applique pas sur tout l'intervalle. Étape 2 — Calculer : pour $x = 1$, $\\dfrac{1}{x} = 1$. Étape 3 — Comparer : $1 > \\dfrac{1}{3}$. Conclusion : l'encadrement est faux, car l'inverse devient grand quand $x$ s'approche de 0.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Explique pourquoi on peut inverser l'ordre pour $2 \\leq x \\leq 4$, mais pas pour $-3 \\leq x \\leq 3$.",
+                  "question_type": "written",
+                  "explanation": "Corrigé modèle : La fonction inverse est décroissante sur $]0 ; +\\infty[$ et sur $]-\\infty ; 0[$, mais pas sur les deux à la fois. Pour $2 \\leq x \\leq 4$, tous les nombres sont positifs : on est dans un seul intervalle et l'ordre des inverses est contraire, donc $\\dfrac{1}{4} \\leq \\dfrac{1}{x} \\leq \\dfrac{1}{2}$. Pour $-3 \\leq x \\leq 3$, l'intervalle contient des nombres négatifs, positifs et 0, où la fonction n'est pas définie : par exemple $-2 < 1$ mais $\\dfrac{1}{-2} < \\dfrac{1}{1}$, l'ordre n'est pas inversé. Barème : 1 point pour les deux intervalles de décroissance, 1 point pour le premier cas, 1 point pour le contre-exemple du second cas.",
+                  "answers": [],
+                  "points": 3,
+                  "criteria": [
+                    "Cite les deux intervalles où la fonction inverse est décroissante",
+                    "Explique que $2 \\leq x \\leq 4$ reste dans un seul intervalle",
+                    "Donne un contre-exemple ou la valeur interdite 0 pour l'autre cas"
+                  ],
+                  "starter": "La fonction inverse est décroissante sur …"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 4 · Bilan de toutes les notions",
+          "notions": "Bilan : représenter et lire une fonction affine (solde de mobile money), retrouver sa formule à partir de deux valeurs, comparer des carrés et des inverses avec leurs variations, comparer deux offres de transfert.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Le solde d'un compte de mobile money, en milliers de francs, après $x$ jours de dépenses est $S(x) = 12 - 2x$, avec $x$ de 0 à 6.",
+              "hint": "Pour représenter une fonction affine, calcule deux points ; pour le sens de variation, regarde le signe de $a$.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Avec $S(x) = 12 - 2x$, quel est le solde, en milliers de francs, après 3 jours ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : $S(x) = 12 - 2x = -2x + 12$ avec $a = -2$ et $b = 12$. Étape 2 — Remplacer : $x$ par 3 : $12 - 2 \\times 3$. Étape 3 — Calculer : $12 - 6 = 6$. Conclusion : le solde est de 6 milliers de francs.",
+                  "answers": [
+                    {
+                      "content": "6",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "milliers"
+                },
+                {
+                  "content": "Que signifie le coefficient directeur $-2$ dans $S(x) = 12 - 2x$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : $a = -2$ et $b = 12$. Étape 2 — Calculer : $S(1) - S(0) = 10 - 12 = -2$. Étape 3 — Conclure : chaque jour, le solde diminue de 2 milliers de francs. Le solde de départ est $b = 12$.",
+                  "answers": [
+                    {
+                      "content": "Le solde diminue de 2 milliers de francs par jour",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le solde augmente de 2 milliers de francs par jour",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le solde de départ est de 2 milliers de francs",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le solde est de 2 milliers de francs après 12 jours",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : la fonction $S$ est décroissante.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : $a = -2$ et $b = 12$. Étape 2 — Calculer : $S(0) = 12$ et $S(1) = 10$. Étape 3 — Conclure : $a = -2 < 0$, donc $S$ est décroissante.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Après combien de jours le solde est-il nul ? Résous $S(x) = 0$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : on cherche $x$ tel que $S(x) = 0$, soit $12 - 2x = 0$. Étape 2 — Résoudre : $2x = 12$, donc $x = 6$. Étape 3 — Vérifier : $S(6) = 12 - 12 = 0$. Conclusion : le solde est nul après 6 jours.",
+                  "answers": [
+                    {
+                      "content": "6",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "jours"
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour représenter $S(x) = 12 - 2x$.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Identifier, Étape 2 — Calculer, Étape 3 — Placer, Étape 4 — Conclure : on calcule les points avant de les placer, et on conclut sur le sens de variation avec le signe de $a$.",
+                  "answers": [
+                    {
+                      "content": "Identifier : $a = -2$ et $b = 12$."
+                    },
+                    {
+                      "content": "Calculer : $S(0) = 12$ et $S(6) = 0$."
+                    },
+                    {
+                      "content": "Placer : les points $(0 ; 12)$ et $(6 ; 0)$, puis tracer la droite."
+                    },
+                    {
+                      "content": "Conclure : $a = -2 < 0$, donc $S$ est décroissante."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Le prix, en francs, d'un panier de $x$ kilogrammes de mangues est donné par une fonction affine $f$, avec $f(1) = 800$ et $f(3) = 1400$.",
+              "hint": "Calcule $a$, puis $b$, puis vérifie avec l'autre valeur.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Calcule le coefficient directeur $a$ de $f$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Noter : $f(1) = 800$ et $f(3) = 1400$, avec $1 \\neq 3$. Étape 2 — Calculer : $a = \\dfrac{1400 - 800}{3 - 1} = \\dfrac{600}{2}$, soit $a = 300$. Étape 3 — Déterminer : $800 = 300 \\times 1 + b$ donne $b = 500$. Étape 4 — Vérifier : $f(3) = 900 + 500 = 1400$. Donc $a = 300$.",
+                  "answers": [
+                    {
+                      "content": "300",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "F/kg"
+                },
+                {
+                  "content": "Calcule l'ordonnée à l'origine $b$ de $f$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Noter : $a = 300$ et $f(1) = 800$. Étape 2 — Calculer : $a = \\dfrac{1400 - 800}{3 - 1} = 300$. Étape 3 — Déterminer : $800 = 300 \\times 1 + b$, donc $b = 500$. Étape 4 — Vérifier : $f(3) = 300 \\times 3 + 500 = 1400$. Donc $b = 500$ : c'est le prix du panier vide.",
+                  "answers": [
+                    {
+                      "content": "500",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "F"
+                },
+                {
+                  "content": "Quelle est la formule de $f$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Noter : $f(1) = 800$ et $f(3) = 1400$. Étape 2 — Calculer : $a = 300$. Étape 3 — Déterminer : $b = 800 - 300 = 500$. Étape 4 — Vérifier : $f(1) = 300 + 500 = 800$. Les formules $500x + 300$ et $600x + 200$ donnent $f(1) = 800$ mais $f(3) = 1800$ et $2000$ ; la formule $300x + 800$ donne $f(1) = 1100$.",
+                  "answers": [
+                    {
+                      "content": "$f(x) = 300x + 500$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$f(x) = 300x + 800$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$f(x) = 500x + 300$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$f(x) = 600x + 200$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Avec $f(x) = 300x + 500$, quel est le prix, en francs, de 5 kilogrammes ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : $f(x) = 300x + 500$. Étape 2 — Remplacer : $x$ par 5 : $300 \\times 5 + 500$. Étape 3 — Calculer : $1500 + 500 = 2000$. Conclusion : 5 kilogrammes coûtent 2 000 francs.",
+                  "answers": [
+                    {
+                      "content": "2000",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "F"
+                },
+                {
+                  "content": "Vrai ou faux : la fonction $f$ est décroissante.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Noter : $f(1) = 800$ et $f(3) = 1400$. Étape 2 — Calculer : $a = 300$. Étape 3 — Conclure : $a = 300 > 0$, donc $f$ est croissante : le prix augmente avec la masse. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Avec $f(x) = 300x + 500$, le prix de 10 kilogrammes est ___ francs.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Identifier : $a = 300$ et $b = 500$. Étape 2 — Remplacer : $x$ par 10 : $300 \\times 10 + 500$. Étape 3 — Calculer : $3000 + 500 = 3500$. Conclusion : 10 kilogrammes coûtent 3 500 francs.",
+                  "answers": [
+                    {
+                      "content": "3500",
+                      "correct": true
+                    },
+                    {
+                      "content": "3 500",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "On compare des carrés et des inverses avec les variations de la fonction carré et de la fonction inverse.",
+              "hint": "Regarde le signe des nombres avant de comparer : carré croissante sur les positifs, décroissante sur les négatifs ; inverse décroissante sur chaque intervalle.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle comparaison de carrés est vraie ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : $-4$ et $-3$ sont négatifs. Étape 2 — Rappeler : la fonction carré est décroissante sur $]-\\infty ; 0]$. Étape 3 — Comparer : $-4 < -3$ inverse l'ordre : $(-4)^2 > (-3)^2$. Étape 4 — Conclure : $16 > 9$.",
+                  "answers": [
+                    {
+                      "content": "$(-4)^2 > (-3)^2$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(-4)^2 < (-3)^2$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(-4)^2 = (-3)^2$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle comparaison d'inverses est vraie ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Vérifier : 3 et 5 sont positifs et non nuls. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : $3 < 5$ donne $\\dfrac{1}{3} > \\dfrac{1}{5}$. Étape 4 — Conclure : $\\dfrac{1}{5} < \\dfrac{1}{3}$, soit environ $0{,}2 < 0{,}33$.",
+                  "answers": [
+                    {
+                      "content": "$\\dfrac{1}{5} < \\dfrac{1}{3}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\dfrac{1}{5} > \\dfrac{1}{3}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\dfrac{1}{5} = \\dfrac{1}{3}$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Si $1 \\leq x \\leq 3$, quelle est la plus grande valeur possible de $x^2$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : $x$ est entre 1 et 3, donc positif. Étape 2 — Rappeler : la fonction carré est croissante sur $[0 ; +\\infty[$. Étape 3 — Comparer : l'ordre est conservé : $1^2 \\leq x^2 \\leq 3^2$. Étape 4 — Conclure : $1 \\leq x^2 \\leq 9$ : la plus grande valeur est 9.",
+                  "answers": [
+                    {
+                      "content": "9",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Si $1 \\leq x \\leq 4$, quelle est la plus grande valeur possible de $\\dfrac{1}{x}$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Vérifier : $x$ est entre 1 et 4, donc positif et non nul. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : $1 \\leq x \\leq 4$ donne, à l'ordre contraire, $\\dfrac{1}{4} \\leq \\dfrac{1}{x} \\leq 1$. Étape 4 — Conclure : la plus grande valeur est 1, atteinte pour $x = 1$.",
+                  "answers": [
+                    {
+                      "content": "1",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Vrai ou faux : $\\dfrac{1}{-3} < \\dfrac{1}{2}$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Vérifier : $-3$ est négatif et 2 est positif : les nombres ne sont pas du même côté de 0, on calcule. Étape 2 — Calculer : $\\dfrac{1}{-3} \\approx -0{,}33$ et $\\dfrac{1}{2} = 0{,}5$. Étape 3 — Comparer : un nombre négatif est plus petit qu'un nombre positif. Conclusion : l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles affirmations sont vraies ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Rappeler : un carré est positif ou nul, et on ne divise pas par 0. Étape 2 — Calculer : $(-3)^2 = 9$ et non $-9$. Étape 3 — Conclure : la fonction inverse est définie sur $\\mathbb{R}$ privé de 0, pas sur $\\mathbb{R}$ entier. Seules les deux premières affirmations sont vraies.",
+                  "answers": [
+                    {
+                      "content": "Pour tout nombre $x$, $x^2 \\geq 0$",
+                      "correct": true
+                    },
+                    {
+                      "content": "La fonction inverse n'est pas définie en 0",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(-3)^2 = -9$",
+                      "correct": false
+                    },
+                    {
+                      "content": "La fonction inverse est définie sur $\\mathbb{R}$",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Deux opérateurs de mobile money proposent des frais pour un envoi de $x$ milliers de francs : $F(x) = 5x + 100$ et $G(x) = 10x + 50$, en francs (valeurs fictives).",
+              "hint": "Pour comparer deux offres, calcule les deux frais pour le même montant ; pour l'égalité, résous $F(x) = G(x)$.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quels sont les frais de l'offre $F(x) = 5x + 100$ pour 4 milliers de francs ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : $F(x) = 5x + 100$ avec $a = 5$ et $b = 100$. Étape 2 — Remplacer : $x$ par 4 : $5 \\times 4 + 100$. Étape 3 — Calculer : $20 + 100 = 120$. Conclusion : les frais sont de 120 francs.",
+                  "answers": [
+                    {
+                      "content": "120",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "F"
+                },
+                {
+                  "content": "Pour des frais de 200 francs avec l'offre $F(x) = 5x + 100$, quel montant, en milliers de francs, a été envoyé ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : on cherche $x$ tel que $F(x) = 200$, soit $5x + 100 = 200$. Étape 2 — Résoudre : $5x = 100$, donc $x = 20$. Étape 3 — Vérifier : $F(20) = 100 + 100 = 200$. Conclusion : 20 milliers de francs.",
+                  "answers": [
+                    {
+                      "content": "20",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "milliers"
+                },
+                {
+                  "content": "Pour quel montant, en milliers de francs, les offres $F(x) = 5x + 100$ et $G(x) = 10x + 50$ ont-elles les mêmes frais ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : $F(x) = G(x)$ donne $5x + 100 = 10x + 50$. Étape 2 — Résoudre : $100 - 50 = 10x - 5x$, donc $50 = 5x$ et $x = 10$. Étape 3 — Vérifier : $F(10) = 150$ et $G(10) = 150$. Conclusion : pour 10 milliers de francs.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "milliers"
+                },
+                {
+                  "content": "Pour un envoi de 20 milliers de francs, quelle offre est la moins chère ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : $F(x) = 5x + 100$ et $G(x) = 10x + 50$. Étape 2 — Calculer : $F(20) = 100 + 100 = 200$ et $G(20) = 200 + 50 = 250$. Étape 3 — Comparer : $200 < 250$. Conclusion : l'offre $F$ est la moins chère.",
+                  "answers": [
+                    {
+                      "content": "L'offre $F$, avec 200 francs contre 250",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'offre $G$, avec 200 francs contre 250",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'offre $F$, avec 250 francs contre 200",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les deux offres coûtent pareil",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : pour un envoi de 6 milliers de francs, l'offre $G$ est moins chère que l'offre $F$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : $F(x) = 5x + 100$ et $G(x) = 10x + 50$. Étape 2 — Calculer : $F(6) = 30 + 100 = 130$ et $G(6) = 60 + 50 = 110$. Étape 3 — Comparer : $110 < 130$. Conclusion : l'affirmation est vraie. Sous 10 milliers de francs, $G$ est moins chère.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Laquelle de ces fonctions augmente le plus vite quand le montant envoyé augmente ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : $F$ a $a = 5$ et $b = 100$ ; $G$ a $a = 10$ et $b = 50$. Étape 2 — Calculer : quand $x$ augmente de 1, $F$ augmente de 5 francs et $G$ de 10 francs. Étape 3 — Conclure : c'est le coefficient directeur qui mesure la vitesse de la hausse : $G$ augmente le plus vite. L'ordonnée à l'origine ne dit que les frais fixes.",
+                  "answers": [
+                    {
+                      "content": "$G$, car son coefficient directeur $10$ est plus grand que $5$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$F$, car son ordonnée à l'origine $100$ est plus grande que $50$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$F$, car $5$ est plus petit que $10$",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elles augmentent de la même façon",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

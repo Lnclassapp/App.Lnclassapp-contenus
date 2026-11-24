@@ -1,0 +1,3404 @@
+{
+  "format": "lnclass.course-tree",
+  "version": 3,
+  "courses": [
+    {
+      "name": "Statistique",
+      "subtitle": "Leçon 7 — progression DPFC 2026-2027",
+      "level_name": "2nde",
+      "material_name": "Mathématiques",
+      "series_name": "A",
+      "theme": "teal",
+      "figures": [
+        {
+          "key": "boissons-secteurs",
+          "kind": "stat_chart",
+          "description": "Un diagramme circulaire des boissons achetées par 20 clients d'une boutique de quartier : le bissap occupe le plus grand secteur (8 clients), puis l'eau (5), le jus de gingembre (4) et le soda (3). Chaque secteur est proportionnel à l'effectif de sa modalité.",
+          "params": {
+            "chart": "pie",
+            "series": [
+              8,
+              5,
+              4,
+              3
+            ],
+            "labels": [
+              "Bissap",
+              "Eau",
+              "Gingembre",
+              "Soda"
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "buts-batons",
+          "kind": "stat_chart",
+          "description": "Un diagramme en bâtons du nombre de buts marqués par une équipe de quartier en 20 matchs : 3 matchs sans but, 6 matchs à 1 but, 5 matchs à 2 buts, 4 matchs à 3 buts et 2 matchs à 4 buts. La hauteur de chaque bâton est l'effectif.",
+          "params": {
+            "chart": "bars",
+            "series": [
+              3,
+              6,
+              5,
+              4,
+              2
+            ],
+            "labels": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4"
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "notes-histogramme",
+          "kind": "stat_chart",
+          "description": "Un histogramme des notes de 20 élèves, regroupées en quatre classes de même amplitude 5 : une note dans [0 ; 5[, cinq dans [5 ; 10[, neuf dans [10 ; 15[ et cinq dans [15 ; 20[. Les rectangles sont collés, leur hauteur est l'effectif.",
+          "params": {
+            "chart": "histogram",
+            "series": [
+              1,
+              5,
+              9,
+              5
+            ],
+            "labels": [
+              "[0 ; 5[",
+              "[5 ; 10[",
+              "[10 ; 15[",
+              "[15 ; 20["
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "transport-secteurs",
+          "kind": "stat_chart",
+          "description": "Un diagramme circulaire du moyen de transport de 50 élèves pour venir au lycée : 20 à pied (le plus grand secteur), 15 en gbaka, 10 en bus et 5 à vélo. Chaque secteur est proportionnel à l'effectif de sa modalité.",
+          "params": {
+            "chart": "pie",
+            "series": [
+              20,
+              15,
+              10,
+              5
+            ],
+            "labels": [
+              "À pied",
+              "Gbaka",
+              "Bus",
+              "Vélo"
+            ]
+          },
+          "controls": []
+        }
+      ],
+      "notions": [
+        {
+          "name": "Effectifs et fréquences",
+          "remember": "On étudie une **population** (ensemble d'**individus**) selon un **caractère**. Le caractère est **qualitatif** (modalités en mots : couleur, équipe) ou **quantitatif** (modalités en nombres) ; un caractère quantitatif est **discret** (valeurs isolées : nombre de buts) ou **continu** (toutes les valeurs d'un intervalle : la taille). L'**effectif** $n$ d'une modalité est le nombre d'individus qui la prennent ; l'effectif total est $N$. La **fréquence** est $f = \\frac{n}{N}$ ; en pourcentage, on multiplie par 100. La somme des fréquences vaut 100 %.",
+          "method": [
+            "Identifier : repérer la population, le caractère, sa nature et ses modalités.",
+            "Compter : donner l'effectif de chaque modalité.",
+            "Totaliser : calculer l'effectif total $N$ en additionnant les effectifs.",
+            "Calculer : diviser chaque effectif par $N$, puis multiplier par 100 pour avoir la fréquence en %."
+          ],
+          "example": {
+            "statement": "Une boutique de quartier note la boisson achetée par 20 clients : bissap, eau, bissap, soda, gingembre, bissap, eau, bissap, gingembre, soda, bissap, eau, gingembre, bissap, eau, bissap, gingembre, soda, bissap, eau. Donner les effectifs et les fréquences.",
+            "steps": [
+              "Identifier : la population est formée des 20 clients, le caractère est la boisson achetée (qualitatif), les modalités sont bissap, eau, gingembre et soda.",
+              "Compter : bissap 8, eau 5, gingembre 4, soda 3.",
+              "Totaliser : $N = 8 + 5 + 4 + 3 = 20$.",
+              "Calculer : bissap $\\frac{8}{20} = 40$ %, eau 25 %, gingembre 20 %, soda 15 %. La somme fait 100 %."
+            ]
+          },
+          "pitfall": "Ne pas confondre effectif et fréquence. Contre-exemple : 8 clients sur 20 achètent du bissap ; la fréquence est $\\frac{8}{20} = 0{,}4$, soit 40 %, et non 8 %. On divise toujours par l'effectif total $N$, puis on vérifie que la somme des fréquences fait 100 %.",
+          "practice": {
+            "statement": "Tu t'entraînes à calculer des effectifs et des fréquences.",
+            "questions": [
+              {
+                "content": "Dans une classe de 25 élèves, 5 sont absents. Quelle est la fréquence des absents, en pourcentage ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Identifier : modalité : absent. Étape 2 — Compter : effectif : 5. Étape 3 — Totaliser : effectif total : N = 25. Étape 4 — Calculer : $f = \\frac{5}{25} = 0{,}2$, soit 20 %. La fréquence est 20 %.",
+                "answers": [
+                  {
+                    "content": "20",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "unit": "%",
+                "hint": "Divise l'effectif 5 par l'effectif total 25."
+              },
+              {
+                "content": "On note le nombre de frères et sœurs de chaque élève. Quelle est la nature de ce caractère ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Identifier : le caractère est le nombre de frères et sœurs : ses modalités sont des nombres entiers isolés (0, 1, 2, 3…). C'est un caractère quantitatif discret.",
+                "answers": [
+                  {
+                    "content": "quantitatif discret",
+                    "correct": true
+                  },
+                  {
+                    "content": "qualitatif",
+                    "correct": false
+                  },
+                  {
+                    "content": "quantitatif continu",
+                    "correct": false
+                  },
+                  {
+                    "content": "aucune des trois",
+                    "correct": false
+                  }
+                ],
+                "hint": "Les modalités sont-elles des mots ou des nombres ?"
+              },
+              {
+                "content": "Sur 50 buts marqués dans un championnat, 10 le sont de la tête. Vrai ou faux : la fréquence des buts de la tête est 20 %.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Identifier : modalité : but de la tête. Étape 2 — Compter : effectif : 10. Étape 3 — Totaliser : effectif total : N = 50. Étape 4 — Calculer : $f = \\frac{10}{50} = 0{,}2$, soit 20 %. L'affirmation est vraie.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Divise 10 par 50."
+              }
+            ]
+          },
+          "figure": null,
+          "exercise": [
+            {
+              "title": "Les ventes de la boutique",
+              "statement": "Dans une boutique de quartier, 25 clients achètent chacun un seul produit un samedi matin : 10 pains, 7 sachets de lait, 5 boîtes de sardines et 3 savons. Tu appliques la méthode de la fiche pas à pas.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Une fréquence se calcule en divisant l'effectif de la modalité par l'effectif total.",
+              "questions": [
+                {
+                  "content": "Dans la boutique, on étudie le produit acheté par chaque client. Quelle est la nature de ce caractère ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : la population est formée des 25 clients, le caractère est le produit acheté, et ses modalités (pain, lait, sardines, savon) sont des mots, pas des nombres. Le caractère est donc qualitatif ; il serait quantitatif seulement si on mesurait ou comptait quelque chose.",
+                  "answers": [
+                    {
+                      "content": "qualitatif",
+                      "correct": true
+                    },
+                    {
+                      "content": "quantitatif discret",
+                      "correct": false
+                    },
+                    {
+                      "content": "quantitatif continu",
+                      "correct": false
+                    },
+                    {
+                      "content": "ni qualitatif ni quantitatif",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans la boutique, on a compté 10 pains, 7 sachets de lait, 5 boîtes de sardines et 3 savons. Quel est l'effectif total N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : les modalités sont pain, lait, sardines et savon. Étape 2 — Compter : les effectifs sont donnés : 10, 7, 5 et 3. Étape 3 — Totaliser : on additionne les effectifs, $10 + 7 + 5 + 3 = 25$. L'effectif total est N = 25 clients.",
+                  "answers": [
+                    {
+                      "content": "25",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "clients"
+                },
+                {
+                  "content": "Sur 25 clients, 10 achètent du pain. Quelle est la fréquence des pains, en pourcentage ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : la modalité étudiée est le pain. Étape 2 — Compter : son effectif est 10. Étape 3 — Totaliser : l'effectif total est N = 25. Étape 4 — Calculer : $f = \\frac{10}{25} = 0{,}4$, donc $0{,}4 \\times 100 = 40$ %. La fréquence des pains est 40 %.",
+                  "answers": [
+                    {
+                      "content": "40",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "%"
+                },
+                {
+                  "content": "Sur 25 clients, 3 achètent un savon. Quelle est la fréquence des savons ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : modalité : le savon. Étape 2 — Compter : effectif : 3. Étape 3 — Totaliser : effectif total : N = 25. Étape 4 — Calculer : $f = \\frac{3}{25} = 0{,}12$, soit 12 %. Le résultat 3 % est l'erreur tentante : on confond l'effectif 3 avec la fréquence, qui se calcule en divisant par N.",
+                  "answers": [
+                    {
+                      "content": "12 %",
+                      "correct": true
+                    },
+                    {
+                      "content": "3 %",
+                      "correct": false
+                    },
+                    {
+                      "content": "30 %",
+                      "correct": false
+                    },
+                    {
+                      "content": "25 %",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur 25 clients, 7 achètent du lait. Vrai ou faux : la fréquence du lait est 7 %.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : modalité : le lait. Étape 2 — Compter : effectif : 7. Étape 3 — Totaliser : total : N = 25. Étape 4 — Calculer : $f = \\frac{7}{25} = 0{,}28$, soit 28 %. Elle n'est pas de 7 % : 7 est l'effectif, pas la fréquence.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Relevés, nature du caractère et pourcentages",
+              "statement": "Dans cet exercice, tu mélanges plusieurs types de questions sur les caractères, les effectifs et les fréquences, en refaisant la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Un caractère qualitatif a des mots pour modalités ; la somme des fréquences fait 100 %.",
+              "questions": [
+                {
+                  "content": "Dans une classe de 40 élèves, 10 sont en retard un lundi. La fréquence des retards est ___ %.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Identifier : la modalité étudiée est « en retard ». Étape 2 — Compter : son effectif est 10. Étape 3 — Totaliser : l'effectif total est N = 40. Étape 4 — Calculer : $f = \\frac{10}{40} = 0{,}25$, soit 25 %. La fréquence est 25 %.",
+                  "answers": [
+                    {
+                      "content": "25",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque caractère à sa nature.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Identifier : on regarde si les modalités sont des mots ou des nombres. Étape 2 — Compter : pour chaque caractère, on cherche les valeurs possibles. Le nombre de buts prend des valeurs entières isolées (discret) ; la taille prend toutes les valeurs d'un intervalle (continu) ; l'équipe préférée est un mot (qualitatif).",
+                  "answers": [
+                    {
+                      "content": "Nombre de buts par match",
+                      "match": "Quantitatif discret"
+                    },
+                    {
+                      "content": "Taille d'un élève",
+                      "match": "Quantitatif continu"
+                    },
+                    {
+                      "content": "Équipe préférée",
+                      "match": "Qualitatif"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels caractères sont quantitatifs ? (deux bonnes réponses)",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Identifier : on repère les caractères dont les modalités sont des nombres ; les modalités des trois autres sont des mots. Le nombre de buts et la taille sont quantitatifs ; équipe, quartier et couleur sont qualitatifs.",
+                  "answers": [
+                    {
+                      "content": "Nombre de buts marqués",
+                      "correct": true
+                    },
+                    {
+                      "content": "Taille en centimètres",
+                      "correct": true
+                    },
+                    {
+                      "content": "Équipe préférée",
+                      "correct": false
+                    },
+                    {
+                      "content": "Quartier d'habitation",
+                      "correct": false
+                    },
+                    {
+                      "content": "Couleur du maillot",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour construire un tableau d'effectifs et de fréquences.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Identifier : on repère d'abord le caractère. Étape 2 — Compter : on donne les effectifs. Étape 3 — Totaliser : on obtient N. Étape 4 — Calculer : on ne peut diviser par N qu'une fois N connu.",
+                  "answers": [
+                    {
+                      "content": "Identifier : repérer la population, le caractère et ses modalités."
+                    },
+                    {
+                      "content": "Compter : donner l'effectif de chaque modalité."
+                    },
+                    {
+                      "content": "Totaliser : calculer l'effectif total N."
+                    },
+                    {
+                      "content": "Calculer : diviser chaque effectif par N, puis multiplier par 100."
+                    }
+                  ]
+                },
+                {
+                  "content": "La somme des fréquences de toutes les modalités d'une série vaut ___ .",
+                  "question_type": "select",
+                  "explanation": "Étape 4 — Calculer : les fréquences se partagent l'ensemble de la population : $\\frac{n_1}{N} + \\frac{n_2}{N} + \\dots$ vaut $\\frac{N}{N} = 1$, soit 100 %. Elle ne vaut ni 50 % ni N.",
+                  "answers": [
+                    {
+                      "content": "100 %",
+                      "correct": true
+                    },
+                    {
+                      "content": "50 %",
+                      "correct": false
+                    },
+                    {
+                      "content": "N",
+                      "correct": false
+                    },
+                    {
+                      "content": "10 %",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur 20 matchs, une équipe marque 3 buts ou plus dans 5 matchs. Quelle est la fréquence de ces matchs, en pourcentage ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : modalité : « 3 buts ou plus ». Étape 2 — Compter : effectif : 5. Étape 3 — Totaliser : effectif total : N = 20. Étape 4 — Calculer : $f = \\frac{5}{20} = 0{,}25$, soit 25 %. La fréquence est 25 %.",
+                  "answers": [
+                    {
+                      "content": "25",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Classes et effectifs cumulés",
+          "remember": "Quand une série a beaucoup de valeurs différentes (notes, tailles, prix), on la **regroupe en classes** de même **amplitude**. Une classe $[a\\,;\\,b[$ contient les valeurs de $a$ (inclus) à $b$ (exclu) ; son amplitude est $b - a$ et son **centre** est $\\frac{a + b}{2}$. L'**effectif cumulé croissant** d'une classe est la somme des effectifs de cette classe et de toutes les classes précédentes ; le dernier est égal à $N$. La **classe modale** est la classe d'effectif le plus grand.",
+          "method": [
+            "Repérer : trouver la plus petite et la plus grande valeur de la série.",
+            "Découper : choisir des classes $[a\\,;\\,b[$ de même amplitude, qui couvrent toutes les valeurs.",
+            "Compter : ranger chaque valeur dans sa classe et donner l'effectif de chaque classe.",
+            "Cumuler : additionner les effectifs de la première classe jusqu'à la classe voulue ; le dernier cumul est $N$."
+          ],
+          "example": {
+            "statement": "Les notes de 20 élèves sont : 4, 6, 7, 8, 9, 9, 10, 10, 11, 12, 12, 13, 13, 14, 14, 15, 16, 16, 17, 19. Les regrouper en classes de même amplitude 5 et donner les effectifs cumulés.",
+            "steps": [
+              "Repérer : la plus petite note est 4 et la plus grande est 19.",
+              "Découper : on prend les classes [0 ; 5[, [5 ; 10[, [10 ; 15[ et [15 ; 20[.",
+              "Compter : les effectifs sont 1, 5, 9 et 5.",
+              "Cumuler : $1$, puis $1 + 5 = 6$, puis $6 + 9 = 15$, puis $15 + 5 = 20 = N$."
+            ]
+          },
+          "pitfall": "Ne pas oublier que la borne de droite est exclue. Contre-exemple : les deux notes 10 appartiennent à [10 ; 15[ et non à [5 ; 10[. Si on range les deux notes 10 à gauche, on trouve 7 notes dans [5 ; 10[ au lieu de 5. Ne confonds pas non plus effectif (9 pour [10 ; 15[) et effectif cumulé ($1 + 5 + 9 = 15$).",
+          "practice": {
+            "statement": "Tu t'entraînes à ranger des valeurs en classes et à cumuler les effectifs.",
+            "questions": [
+              {
+                "content": "On range les notes 3, 7, 12, 14 et 18 dans les classes [0 ; 10[ et [10 ; 20[. Quel est l'effectif de [10 ; 20[ ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Repérer : les notes vont de 3 à 18. Étape 2 — Découper : les classes sont [0 ; 10[ et [10 ; 20[. Étape 3 — Compter : 12, 14 et 18 sont dans [10 ; 20[ ; 3 et 7 dans [0 ; 10[. L'effectif est 3.",
+                "answers": [
+                  {
+                    "content": "3",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "unit": "notes",
+                "hint": "Compte les notes de 10 inclus à 20 exclu."
+              },
+              {
+                "content": "Vrai ou faux : la note 10 appartient à la classe [0 ; 10[.",
+                "question_type": "true_false",
+                "explanation": "Étape 2 — Découper : [0 ; 10[ exclut la borne 10. Étape 3 — Compter : 10 est la borne gauche de [10 ; 20[. L'affirmation est fausse.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "La borne de droite est exclue."
+              },
+              {
+                "content": "Trois classes ont pour effectifs 5, 8 et 7. Quel est l'effectif cumulé de la troisième classe ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 3 — Compter : les effectifs sont 5, 8 et 7. Étape 4 — Cumuler : $5$, puis $5 + 8 = 13$, puis $13 + 7 = 20$. Le dernier cumul est l'effectif total, 20 ; 7 est seulement l'effectif de la classe.",
+                "answers": [
+                  {
+                    "content": "20",
+                    "correct": true
+                  },
+                  {
+                    "content": "7",
+                    "correct": false
+                  },
+                  {
+                    "content": "15",
+                    "correct": false
+                  },
+                  {
+                    "content": "13",
+                    "correct": false
+                  }
+                ],
+                "hint": "Additionne les trois effectifs."
+              }
+            ]
+          },
+          "figure": "notes-histogramme",
+          "exercise": [
+            {
+              "title": "Les tailles des élèves en classes",
+              "statement": "Les tailles en centimètres de 12 élèves sont : 150, 152, 155, 158, 160, 161, 163, 165, 166, 170, 172, 178. On les regroupe en classes de même amplitude 10 : [150 ; 160[, [160 ; 170[ et [170 ; 180[.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Dans [a ; b[, la borne a est dedans, la borne b est dehors.",
+              "questions": [
+                {
+                  "content": "Avec les classes [150 ; 160[, [160 ; 170[ et [170 ; 180[, dans quelle classe se range la taille 160 cm ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : la plus petite taille est 150, la plus grande 178. Étape 2 — Découper : les classes sont de la forme [a ; b[ : a est dans la classe, b est exclu. Étape 3 — Compter : 160 est la borne gauche de [160 ; 170[ : il y entre. Le choix [150 ; 160[ est faux : sa borne droite 160 est exclue.",
+                  "answers": [
+                    {
+                      "content": "[160 ; 170[",
+                      "correct": true
+                    },
+                    {
+                      "content": "[150 ; 160[",
+                      "correct": false
+                    },
+                    {
+                      "content": "[170 ; 180[",
+                      "correct": false
+                    },
+                    {
+                      "content": "dans aucune classe",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Parmi les tailles 150, 152, 155, 158, 160, 161, 163, 165, 166, 170, 172, 178, quel est l'effectif de la classe [160 ; 170[ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : valeurs de 150 à 178. Étape 2 — Découper : classes d'amplitude 10. Étape 3 — Compter : on range : 160, 161, 163, 165, 166 sont dans [160 ; 170[ ; 170 n'y est pas ; les effectifs sont 4, 5 et 3. Étape 4 — Cumuler : les effectifs cumulés sont 4, 9 et 12. L'effectif de [160 ; 170[ est 5.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "élèves"
+                },
+                {
+                  "content": "Les classes [150 ; 160[, [160 ; 170[ et [170 ; 180[ ont pour effectifs 4, 5 et 3. Combien d'élèves mesurent moins de 170 cm ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 3 — Compter : les effectifs sont 4, 5 et 3. Étape 4 — Cumuler : on cumule : $4 + 5 = 9$. 9 élèves mesurent moins de 170 cm.",
+                  "answers": [
+                    {
+                      "content": "9",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "élèves"
+                },
+                {
+                  "content": "Les classes [150 ; 160[, [160 ; 170[ et [170 ; 180[ ont pour effectifs 4, 5 et 3. Combien d'élèves mesurent 160 cm ou plus ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Compter : les effectifs sont 4, 5 et 3. Étape 4 — Cumuler : 160 cm ou plus : on additionne les deux dernières classes, $5 + 3 = 8$ (ou $12 - 4 = 8$). Le résultat 5 oublie la dernière classe ; 9 compte les élèves de moins de 170 cm.",
+                  "answers": [
+                    {
+                      "content": "8",
+                      "correct": true
+                    },
+                    {
+                      "content": "5",
+                      "correct": false
+                    },
+                    {
+                      "content": "9",
+                      "correct": false
+                    },
+                    {
+                      "content": "4",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : la taille 170 cm est comptée dans la classe [160 ; 170[.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Découper : la classe [160 ; 170[ contient les valeurs de 160 inclus à 170 exclu. Étape 3 — Compter : 170 est la borne droite : il est dans la classe suivante [170 ; 180[. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Prix d'articles et effectifs cumulés",
+              "statement": "Dans cet exercice, tu mélanges plusieurs types de questions sur les classes et les effectifs cumulés. Une boutique relève le prix de 10 articles : 100, 150, 200, 250, 300, 350, 400, 450, 500 et 550 FCFA, regroupés en classes d'amplitude 200.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "L'effectif cumulé d'une classe est la somme de ses effectifs et de ceux des classes avant elle.",
+              "questions": [
+                {
+                  "content": "La classe [300 ; 500[ contient les prix de 300 FCFA inclus à ___ FCFA exclu.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Découper : la classe [a ; b[ va de a inclus à b exclu ; ici a = 300 et b = 500. La borne droite est 500.",
+                  "answers": [
+                    {
+                      "content": "500",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est l'amplitude de la classe [100 ; 300[, en FCFA ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 2 — Découper : l'amplitude est $b - a = 300 - 100 = 200$. L'amplitude est 200 FCFA.",
+                  "answers": [
+                    {
+                      "content": "200",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "FCFA"
+                },
+                {
+                  "content": "Les classes [100 ; 300[, [300 ; 500[ et [500 ; 700[ ont pour effectifs 4, 4 et 2. Relie chaque classe à son effectif cumulé croissant.",
+                  "question_type": "matching",
+                  "explanation": "Étape 3 — Compter : les effectifs sont 4, 4 et 2. Étape 4 — Cumuler : on cumule : $4$, puis $4 + 4 = 8$, puis $8 + 2 = 10$. Le dernier cumul, 10, est l'effectif total.",
+                  "answers": [
+                    {
+                      "content": "[100 ; 300[",
+                      "match": "4"
+                    },
+                    {
+                      "content": "[300 ; 500[",
+                      "match": "8"
+                    },
+                    {
+                      "content": "[500 ; 700[",
+                      "match": "10"
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour regrouper une série en classes.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Repérer : on commence par le minimum et le maximum. Étape 2 — Découper : on choisit les classes. Étape 3 — Compter : on range les valeurs. Étape 4 — Cumuler : on additionne les effectifs une fois connus.",
+                  "answers": [
+                    {
+                      "content": "Repérer : trouver la plus petite et la plus grande valeur."
+                    },
+                    {
+                      "content": "Découper : choisir des classes de même amplitude."
+                    },
+                    {
+                      "content": "Compter : donner l'effectif de chaque classe."
+                    },
+                    {
+                      "content": "Cumuler : ajouter les effectifs de proche en proche."
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles valeurs appartiennent à la classe [300 ; 500[ ? (deux bonnes réponses)",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 2 — Découper : [300 ; 500[ contient 300 inclus jusqu'à 500 exclu. Étape 3 — Compter : 300 et 450 y sont ; 500 est exclu, 250 est avant, 550 est après. Les deux bonnes valeurs sont 300 et 450.",
+                  "answers": [
+                    {
+                      "content": "300",
+                      "correct": true
+                    },
+                    {
+                      "content": "450",
+                      "correct": true
+                    },
+                    {
+                      "content": "500",
+                      "correct": false
+                    },
+                    {
+                      "content": "250",
+                      "correct": false
+                    },
+                    {
+                      "content": "550",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Les classes [100 ; 300[, [300 ; 500[ et [500 ; 700[ ont pour effectifs 4, 4 et 2. Combien d'articles coûtent moins de 500 FCFA ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Compter : les effectifs sont 4, 4 et 2. Étape 4 — Cumuler : moins de 500 : $4 + 4 = 8$. Le résultat 10 est l'effectif total ; 4 oublie la première classe.",
+                  "answers": [
+                    {
+                      "content": "8",
+                      "correct": true
+                    },
+                    {
+                      "content": "4",
+                      "correct": false
+                    },
+                    {
+                      "content": "10",
+                      "correct": false
+                    },
+                    {
+                      "content": "2",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Représenter une série",
+          "remember": "Le **diagramme en bâtons** représente un caractère qualitatif ou quantitatif discret : un bâton par modalité, de hauteur égale à l'effectif. L'**histogramme** représente des valeurs regroupées en classes de même amplitude : des rectangles collés, de hauteur proportionnelle à l'effectif. Le **diagramme circulaire** représente les parts d'un tout : l'angle d'un secteur est $f \\times 360°$ ($f$ fréquence en nombre décimal). La somme des angles vaut 360°.",
+          "method": [
+            "Choisir : choisir le diagramme selon le caractère : bâtons (modalités isolées), histogramme (classes), circulaire (parts d'un tout).",
+            "Calculer : calculer ce qu'on trace : la hauteur (l'effectif) ou l'angle $f \\times 360°$.",
+            "Tracer : graduer les axes (ou le disque), puis dessiner chaque bâton, rectangle ou secteur.",
+            "Lire : donner un titre et repérer la modalité ou la classe la plus grande."
+          ],
+          "example": {
+            "statement": "Représenter par un diagramme circulaire les boissons achetées par 20 clients : bissap 8, eau 5, gingembre 4, soda 3.",
+            "steps": [
+              "Choisir : on veut les parts d'un tout, donc un diagramme circulaire.",
+              "Calculer : angle $= f \\times 360°$, soit $0{,}4 \\times 360 = 144$° pour le bissap, 90° pour l'eau, 72° pour le gingembre et 54° pour le soda.",
+              "Tracer : on dessine un disque et quatre secteurs de 144°, 90°, 72° et 54° (total 360°).",
+              "Lire : le plus grand secteur est celui du bissap, 40 % des clients ; on écrit le titre « Boissons achetées »."
+            ]
+          },
+          "pitfall": "Ne pas confondre fréquence et angle. Contre-exemple : le bissap a une fréquence de 40 %, mais son secteur mesure $0{,}4 \\times 360 = 144$°, pas 40°. Vérifie toujours que la somme des angles fait 360°.",
+          "practice": {
+            "statement": "Tu t'entraînes à choisir un diagramme et à calculer ce qu'on trace.",
+            "questions": [
+              {
+                "content": "Dans un diagramme circulaire, un secteur correspond à 10 élèves sur 40. Quel est son angle, en degrés ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Choisir : parts d'un tout : diagramme circulaire. Étape 2 — Calculer : $f = \\frac{10}{40} = 0{,}25$, donc $0{,}25 \\times 360 = 90$. L'angle est 90°.",
+                "answers": [
+                  {
+                    "content": "90",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "unit": "°",
+                "hint": "Calcule la fréquence, puis multiplie par 360."
+              },
+              {
+                "content": "Vrai ou faux : dans un diagramme en bâtons, les bâtons se touchent.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Choisir : on trace des bâtons pour des modalités isolées. Étape 3 — Tracer : les bâtons sont séparés par des espaces ; ce sont les rectangles d'un histogramme qui sont collés. L'affirmation est fausse.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Pense à la différence avec l'histogramme."
+              },
+              {
+                "content": "Un secteur mesure 180°. Quelle est la fréquence de la modalité correspondante ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Choisir : diagramme circulaire. Étape 2 — Calculer : $f = \\frac{180}{360} = 0{,}5$. La fréquence est 50 % ; 100 % correspondrait au disque entier.",
+                "answers": [
+                  {
+                    "content": "50 %",
+                    "correct": true
+                  },
+                  {
+                    "content": "18 %",
+                    "correct": false
+                  },
+                  {
+                    "content": "25 %",
+                    "correct": false
+                  },
+                  {
+                    "content": "100 %",
+                    "correct": false
+                  }
+                ],
+                "hint": "Divise l'angle par 360."
+              }
+            ]
+          },
+          "figure": "boissons-secteurs",
+          "exercise": [
+            {
+              "title": "Choisir et construire un diagramme",
+              "statement": "Une équipe de quartier a joué 20 matchs : 3 sans but, 6 à 1 but, 5 à 2 buts, 4 à 3 buts et 2 à 4 buts. Tu appliques la méthode de la fiche pas à pas.",
+              "exercise_type": "fixation",
+              "figure": "buts-batons",
+              "hint": "Angle d'un secteur = fréquence × 360°.",
+              "questions": [
+                {
+                  "content": "Quel diagramme est fait de rectangles collés, un par classe de valeurs ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Choisir : un histogramme représente des valeurs regroupées en classes par des rectangles collés. Le diagramme circulaire est fait de secteurs et le diagramme en bâtons de bâtons séparés.",
+                  "answers": [
+                    {
+                      "content": "l'histogramme",
+                      "correct": true
+                    },
+                    {
+                      "content": "le diagramme circulaire",
+                      "correct": false
+                    },
+                    {
+                      "content": "le diagramme en bâtons",
+                      "correct": false
+                    },
+                    {
+                      "content": "le tableau des effectifs",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans un diagramme circulaire, 5 élèves sur 20 aiment le basket. Quel est l'angle du secteur du basket, en degrés ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Choisir : on veut des parts d'un tout : diagramme circulaire. Étape 2 — Calculer : $f = \\frac{5}{20} = 0{,}25$, donc angle $= 0{,}25 \\times 360 = 90$. L'angle est 90°.",
+                  "answers": [
+                    {
+                      "content": "90",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "°"
+                },
+                {
+                  "content": "Dans un diagramme en bâtons, 3 matchs sont sans but, 6 à 1 but, 5 à 2 buts, 4 à 3 buts et 2 à 4 buts. Quelle est la hauteur du bâton des matchs à 2 buts ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Choisir : le nombre de buts est discret : diagramme en bâtons. Étape 2 — Calculer : la hauteur d'un bâton est l'effectif de la modalité : 5 matchs à 2 buts. La hauteur est 5.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "matchs"
+                },
+                {
+                  "content": "Dans un diagramme circulaire, 8 clients sur 20 achètent du bissap. Quel est l'angle de leur secteur ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Choisir : parts d'un tout : diagramme circulaire. Étape 2 — Calculer : $f = \\frac{8}{20} = 0{,}4$, donc angle $= 0{,}4 \\times 360 = 144$. Le résultat 40° est la fréquence en pourcentage prise pour un angle ; 72° est l'angle de 4 clients, pas de 8.",
+                  "answers": [
+                    {
+                      "content": "144°",
+                      "correct": true
+                    },
+                    {
+                      "content": "40°",
+                      "correct": false
+                    },
+                    {
+                      "content": "8°",
+                      "correct": false
+                    },
+                    {
+                      "content": "72°",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : dans un diagramme circulaire, la somme des angles de tous les secteurs vaut 100°.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Choisir : un diagramme circulaire est un disque entier. Étape 4 — Lire : les secteurs remplissent un tour complet : la somme des angles vaut 360°, et 100 est la somme des fréquences en pourcentage. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Lire et dessiner des diagrammes",
+              "statement": "Dans cet exercice, tu mélanges plusieurs types de questions sur les diagrammes. Une boutique relève la boisson achetée par 20 clients : 8 bissap, 5 eau, 4 gingembre et 3 soda.",
+              "exercise_type": "fixation",
+              "figure": "boissons-secteurs",
+              "hint": "Valeurs isolées : bâtons ; classes : histogramme ; parts d'un tout : secteurs.",
+              "questions": [
+                {
+                  "content": "Dans un diagramme en bâtons, la hauteur d'un bâton représente l'___ de la modalité.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Choisir : on choisit des bâtons séparés pour un caractère discret ou qualitatif. Étape 2 — Calculer : la hauteur d'un bâton est l'effectif de la modalité. Le mot attendu est effectif.",
+                  "answers": [
+                    {
+                      "content": "effectif",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque série au diagramme adapté.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Choisir : on regarde le type de données : valeurs isolées, classes ou parts d'un tout. Bâtons pour des valeurs isolées, histogramme pour des classes, secteurs pour des parts d'un tout.",
+                  "answers": [
+                    {
+                      "content": "Nombre de buts par match",
+                      "match": "Diagramme en bâtons"
+                    },
+                    {
+                      "content": "Notes regroupées en classes",
+                      "match": "Histogramme"
+                    },
+                    {
+                      "content": "Parts d'un tout en pourcentage",
+                      "match": "Diagramme circulaire"
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans un diagramme circulaire, un secteur représente 30 % des élèves. Quel est son angle, en degrés ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Choisir : parts d'un tout : diagramme circulaire. Étape 2 — Calculer : angle $= 0{,}3 \\times 360 = 108$. L'angle est 108°.",
+                  "answers": [
+                    {
+                      "content": "108",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "°"
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour représenter une série.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Choisir : on décide du diagramme. Étape 2 — Calculer : on trouve les hauteurs ou angles. Étape 3 — Tracer : on dessine. Étape 4 — Lire : on interprète.",
+                  "answers": [
+                    {
+                      "content": "Choisir : choisir le diagramme selon le caractère."
+                    },
+                    {
+                      "content": "Calculer : calculer les hauteurs ou les angles."
+                    },
+                    {
+                      "content": "Tracer : dessiner les bâtons, rectangles ou secteurs."
+                    },
+                    {
+                      "content": "Lire : donner un titre et repérer la plus grande modalité."
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles affirmations sont vraies pour un histogramme de classes de même amplitude ? (deux bonnes réponses)",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Choisir : on choisit un histogramme pour des classes. Étape 2 — Calculer : la hauteur est proportionnelle à l'effectif ; les rectangles sont collés. La somme de 360° concerne le diagramme circulaire.",
+                  "answers": [
+                    {
+                      "content": "Les rectangles sont collés.",
+                      "correct": true
+                    },
+                    {
+                      "content": "La hauteur d'un rectangle est proportionnelle à l'effectif.",
+                      "correct": true
+                    },
+                    {
+                      "content": "La somme des angles vaut 360°.",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les rectangles sont séparés par des espaces.",
+                      "correct": false
+                    },
+                    {
+                      "content": "La hauteur est la valeur de la classe.",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans le diagramme circulaire des boissons (bissap 8, eau 5, gingembre 4, soda 3), le plus grand secteur est celui de la modalité ___ .",
+                  "question_type": "select",
+                  "explanation": "Étape 2 — Calculer : angles : bissap $0{,}4 \\times 360 = 144$°, eau 90°, gingembre 72°, soda 54°. Étape 4 — Lire : le plus grand secteur est celui de la plus grande fréquence : le bissap. La somme 144 + 90 + 72 + 54 donne bien 360°.",
+                  "answers": [
+                    {
+                      "content": "bissap",
+                      "correct": true
+                    },
+                    {
+                      "content": "eau",
+                      "correct": false
+                    },
+                    {
+                      "content": "gingembre",
+                      "correct": false
+                    },
+                    {
+                      "content": "soda",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "La moyenne et le mode",
+          "remember": "Le **mode** d'une série est la valeur d'effectif le plus grand ; pour une série en classes, on parle de **classe modale**. La **moyenne** est $\\bar{x} = \\frac{S}{N}$, où $S = n_1 x_1 + n_2 x_2 + \\dots + n_p x_p$ : chaque valeur $x_i$ compte autant de fois que son effectif $n_i$. Pour une série en classes, on prend le centre de chaque classe comme valeur $x_i$.",
+          "method": [
+            "Totaliser : calculer l'effectif total $N$.",
+            "Multiplier : multiplier chaque valeur (ou centre de classe) par son effectif.",
+            "Additionner : additionner tous ces produits.",
+            "Conclure : diviser la somme par $N$ pour la moyenne ; le mode est la valeur d'effectif le plus grand."
+          ],
+          "example": {
+            "statement": "Une équipe a marqué : 0 but dans 3 matchs, 1 but dans 6 matchs, 2 buts dans 5 matchs, 3 buts dans 4 matchs et 4 buts dans 2 matchs. Donner la moyenne et le mode.",
+            "steps": [
+              "Totaliser : $N = 3 + 6 + 5 + 4 + 2 = 20$.",
+              "Multiplier : $3 \\times 0 = 0$, $6 \\times 1 = 6$, $5 \\times 2 = 10$, $4 \\times 3 = 12$, $2 \\times 4 = 8$.",
+              "Additionner : $0 + 6 + 10 + 12 + 8 = 36$.",
+              "Conclure : $\\bar{x} = \\frac{36}{20} = 1{,}8$ but par match ; le mode est 1 but, d'effectif 6, le plus grand."
+            ]
+          },
+          "pitfall": "Ne pas calculer la moyenne des valeurs sans tenir compte des effectifs. Contre-exemple : pour les buts 0, 1, 2, 3, 4, la moyenne simple vaut $\\frac{0 + 1 + 2 + 3 + 4}{5} = 2$, mais la vraie moyenne est 1,8. Ne confonds pas non plus le mode (la valeur, 1 but) et son effectif (6 matchs).",
+          "practice": {
+            "statement": "Tu t'entraînes à calculer une moyenne et à trouver un mode.",
+            "questions": [
+              {
+                "content": "Dans 5 matchs, une équipe a marqué : 0 but (2 matchs), 1 but (2 matchs) et 3 buts (1 match). Quelle est la moyenne de buts par match ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Totaliser : N = 2 + 2 + 1 = 5. Étape 2 — Multiplier : $2 \\times 0 = 0$, $2 \\times 1 = 2$, $1 \\times 3 = 3$. Étape 3 — Additionner : $0 + 2 + 3 = 5$. Étape 4 — Conclure : $\\bar{x} = \\frac{5}{5} = 1$. La moyenne est 1 but par match.",
+                "answers": [
+                  {
+                    "content": "1",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "Multiplie chaque nombre de buts par le nombre de matchs."
+              },
+              {
+                "content": "Tailles : 5 élèves de 150 cm, 7 élèves de 160 cm et 2 élèves de 170 cm. Quel est le mode ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 4 — Conclure : le mode est la valeur d'effectif le plus grand : 7 élèves, pour 160 cm. Le résultat 7 est l'effectif, pas la valeur.",
+                "answers": [
+                  {
+                    "content": "160 cm",
+                    "correct": true
+                  },
+                  {
+                    "content": "7",
+                    "correct": false
+                  },
+                  {
+                    "content": "150 cm",
+                    "correct": false
+                  },
+                  {
+                    "content": "170 cm",
+                    "correct": false
+                  }
+                ],
+                "hint": "Cherche la valeur, pas l'effectif."
+              },
+              {
+                "content": "Vrai ou faux : le mode d'une série est toujours son plus grand effectif.",
+                "question_type": "true_false",
+                "explanation": "Étape 4 — Conclure : le mode est la valeur qui a le plus grand effectif, pas cet effectif lui-même. L'affirmation est fausse.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Le mode est une valeur de la série."
+              }
+            ]
+          },
+          "figure": "buts-batons",
+          "exercise": [
+            {
+              "title": "Les notes d'un petit groupe",
+              "statement": "Dans un groupe de 10 élèves, les notes sont : 8 (2 élèves), 10 (4 élèves), 12 (3 élèves) et 14 (1 élève). Tu appliques la méthode de la fiche pas à pas.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Multiplie chaque valeur par son effectif avant d'additionner.",
+              "questions": [
+                {
+                  "content": "Dans un groupe, 2 élèves ont 8, 4 ont 10, 3 ont 12 et 1 a 14. Quel est l'effectif total N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : $N = 2 + 4 + 3 + 1 = 10$. L'effectif total est 10.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "élèves"
+                },
+                {
+                  "content": "Notes : 8 (2 élèves), 10 (4), 12 (3), 14 (1). Quelle est la somme $n_i x_i$ de tous les produits effectif × note ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 10. Étape 2 — Multiplier : $2 \\times 8 = 16$, $4 \\times 10 = 40$, $3 \\times 12 = 36$, $1 \\times 14 = 14$. Étape 3 — Additionner : $16 + 40 + 36 + 14 = 106$. La somme est 106.",
+                  "answers": [
+                    {
+                      "content": "106",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Notes : 8 (2 élèves), 10 (4), 12 (3), 14 (1). Quelle est la moyenne de la série ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 10. Étape 2 — Multiplier : les produits valent 16, 40, 36 et 14. Étape 3 — Additionner : la somme est 106. Étape 4 — Conclure : $\\bar{x} = \\frac{106}{10} = 10{,}6$. La moyenne est 10,6.",
+                  "answers": [
+                    {
+                      "content": "10,6",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Notes : 8 (2 élèves), 10 (4), 12 (3), 14 (1). Quel est le mode de la série ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Conclure : le mode est la valeur d'effectif le plus grand : l'effectif 4 est le plus grand et correspond à la note 10. Le résultat 4 est l'effectif, pas la valeur.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    },
+                    {
+                      "content": "4",
+                      "correct": false
+                    },
+                    {
+                      "content": "8",
+                      "correct": false
+                    },
+                    {
+                      "content": "14",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La moyenne des valeurs 8, 10, 12 et 14 est 11. Vrai ou faux : c'est la moyenne de la série (8 : 2 élèves, 10 : 4, 12 : 3, 14 : 1).",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Totaliser : N = 10, et non 4 valeurs. Étape 2 — Multiplier : il faut multiplier chaque valeur par son effectif. Étape 3 — Additionner : la somme pondérée est 106. Étape 4 — Conclure : la moyenne est 10,6 et non 11. Calculer 11 oublie les effectifs.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Ventes de sacs de riz",
+              "statement": "Dans cet exercice, tu mélanges plusieurs types de questions sur la moyenne et le mode. Une boutique relève le nombre de sacs de riz vendus par jour pendant 20 jours : 2 sacs (4 jours), 3 sacs (6 jours), 4 sacs (7 jours) et 5 sacs (3 jours).",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Pour des classes, on remplace chaque classe par son centre.",
+              "questions": [
+                {
+                  "content": "Le mode de la série (2 sacs : 4 jours, 3 sacs : 6 jours, 4 sacs : 7 jours, 5 sacs : 3 jours) est ___ sacs.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 4 — Conclure : le mode est la valeur d'effectif le plus grand : 7 jours pour 4 sacs. Le mode est 4 sacs.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Série : 2 sacs (4 jours), 3 sacs (6 jours), 4 sacs (7 jours), 5 sacs (3 jours). Quelle est la somme des produits effectif × valeur ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 20. Étape 2 — Multiplier : $4 \\times 2 = 8$, $6 \\times 3 = 18$, $7 \\times 4 = 28$, $3 \\times 5 = 15$. Étape 3 — Additionner : $8 + 18 + 28 + 15 = 69$. La somme est 69.",
+                  "answers": [
+                    {
+                      "content": "69",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Série : 2 sacs (4 jours), 3 sacs (6 jours), 4 sacs (7 jours), 5 sacs (3 jours). Quelle est la moyenne de sacs vendus par jour ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 4 + 6 + 7 + 3 = 20. Étape 2 — Multiplier : produits 8, 18, 28, 15. Étape 3 — Additionner : somme 69. Étape 4 — Conclure : $\\bar{x} = \\frac{69}{20} = 3{,}45$. La moyenne est 3,45 sacs par jour.",
+                  "answers": [
+                    {
+                      "content": "3,45",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "sacs"
+                },
+                {
+                  "content": "Relie chaque paramètre à sa définition.",
+                  "question_type": "matching",
+                  "explanation": "Étape 4 — Conclure : le mode est une valeur, la classe modale une classe, la moyenne se calcule avec les produits. Chaque paramètre a sa propre définition.",
+                  "answers": [
+                    {
+                      "content": "Mode",
+                      "match": "Valeur d'effectif le plus grand"
+                    },
+                    {
+                      "content": "Moyenne",
+                      "match": "Somme des produits effectif × valeur, divisée par N"
+                    },
+                    {
+                      "content": "Classe modale",
+                      "match": "Classe d'effectif le plus grand"
+                    }
+                  ]
+                },
+                {
+                  "content": "Des notes sont regroupées : [0 ; 10[ pour 4 élèves et [10 ; 20[ pour 6 élèves. Quelle est la moyenne, avec les centres des classes ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Totaliser : N = 4 + 6 = 10. Étape 2 — Multiplier : les centres sont 5 et 15 : $4 \\times 5 = 20$ et $6 \\times 15 = 90$. Étape 3 — Additionner : $20 + 90 = 110$. Étape 4 — Conclure : $\\bar{x} = \\frac{110}{10} = 11$. Le résultat 10 est la moyenne simple 5 et 15, sans effectifs.",
+                  "answers": [
+                    {
+                      "content": "11",
+                      "correct": true
+                    },
+                    {
+                      "content": "10",
+                      "correct": false
+                    },
+                    {
+                      "content": "15",
+                      "correct": false
+                    },
+                    {
+                      "content": "12",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre de la méthode de la fiche les étapes pour calculer une moyenne.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Totaliser : N d'abord. Étape 2 — Multiplier : les produits. Étape 3 — Additionner : la somme. Étape 4 — Conclure : on divise par N à la fin.",
+                  "answers": [
+                    {
+                      "content": "Totaliser : calculer l'effectif total N."
+                    },
+                    {
+                      "content": "Multiplier : multiplier chaque valeur par son effectif."
+                    },
+                    {
+                      "content": "Additionner : additionner les produits."
+                    },
+                    {
+                      "content": "Conclure : diviser la somme par N."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "La médiane",
+          "remember": "La **médiane** $M$ d'une série est la valeur qui la partage, une fois rangée dans l'ordre croissant, en deux groupes de même effectif. Si $N$ est impair, c'est la valeur de rang $\\frac{N + 1}{2}$. Si $N$ est pair, c'est la moyenne des valeurs de rang $\\frac{N}{2}$ et $\\frac{N}{2} + 1$. On repère le rang avec les effectifs cumulés quand la série est en tableau.",
+          "method": [
+            "Ordonner : ranger les valeurs dans l'ordre croissant.",
+            "Situer : calculer l'effectif total $N$, puis le rang du milieu : un rang si $N$ est impair, deux rangs si $N$ est pair.",
+            "Lire : repérer la ou les valeurs à ce rang (avec les effectifs cumulés si besoin).",
+            "Conclure : donner la médiane : la valeur trouvée, ou la moyenne des deux valeurs centrales."
+          ],
+          "example": {
+            "statement": "Les tailles en cm de 6 élèves sont : 158, 162, 155, 170, 165, 160. Trouver la médiane.",
+            "steps": [
+              "Ordonner : 155, 158, 160, 162, 165, 170.",
+              "Situer : $N = 6$, pair : les rangs du milieu sont 3 et 4.",
+              "Lire : la 3e valeur est 160 et la 4e est 162.",
+              "Conclure : $M = \\frac{160 + 162}{2} = 161$ cm."
+            ]
+          },
+          "pitfall": "Ne pas oublier de ranger la série avant de chercher le milieu. Contre-exemple : pour 9, 2, 5, la valeur du milieu de la liste est 2, mais rangée (2, 5, 9) la médiane est 5. Pour $N$ pair, ne prends pas une seule valeur : fais la moyenne des deux valeurs centrales.",
+          "practice": {
+            "statement": "Tu t'entraînes à trouver une médiane.",
+            "questions": [
+              {
+                "content": "Quelle est la médiane de la série 12, 3, 9, 14, 5 ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Ordonner : 3, 5, 9, 12, 14. Étape 2 — Situer : N = 5 : rang 3. Étape 3 — Lire : le 3e nombre est 9. Étape 4 — Conclure : la médiane est 9.",
+                "answers": [
+                  {
+                    "content": "9",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "Range d'abord la série."
+              },
+              {
+                "content": "Vrai ou faux : une série de 8 valeurs n'a pas de valeur centrale unique : on fait la moyenne des valeurs de rang 4 et 5.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Ordonner : on range la série. Étape 2 — Situer : N = 8 est pair : rangs 4 et 5. Étape 3 — Lire : on lit ces deux valeurs. Étape 4 — Conclure : on fait leur moyenne. L'affirmation est vraie.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Si N est pair, il y a deux rangs au milieu."
+              },
+              {
+                "content": "Quelle est la médiane de la série 2, 4, 6, 10 ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Ordonner : la série est rangée. Étape 2 — Situer : N = 4 : rangs 2 et 3. Étape 3 — Lire : les valeurs sont 4 et 6. Étape 4 — Conclure : $\\frac{4 + 6}{2} = 5$. Les réponses 4 et 6 ne prennent qu'une valeur centrale.",
+                "answers": [
+                  {
+                    "content": "5",
+                    "correct": true
+                  },
+                  {
+                    "content": "4",
+                    "correct": false
+                  },
+                  {
+                    "content": "6",
+                    "correct": false
+                  },
+                  {
+                    "content": "10",
+                    "correct": false
+                  }
+                ],
+                "hint": "Fais la moyenne des deux valeurs du milieu."
+              }
+            ]
+          },
+          "figure": null,
+          "exercise": [
+            {
+              "title": "Tailles, notes et buts",
+              "statement": "Tu appliques la méthode de la fiche pas à pas pour trouver des médianes.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Range d'abord la série, puis cherche le rang du milieu.",
+              "questions": [
+                {
+                  "content": "Les tailles en cm de 7 élèves sont : 152, 148, 160, 155, 158, 150, 165. Quelle est la médiane ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Ordonner : 148, 150, 152, 155, 158, 160, 165. Étape 2 — Situer : N = 7, impair : rang $\\frac{7 + 1}{2} = 4$. Étape 3 — Lire : le 4e nombre est 155. Étape 4 — Conclure : la médiane est 155 cm.",
+                  "answers": [
+                    {
+                      "content": "155",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "cm"
+                },
+                {
+                  "content": "Notes de 6 élèves : 12, 8, 15, 9, 10, 14. Quelle est la médiane ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Ordonner : 8, 9, 10, 12, 14, 15. Étape 2 — Situer : N = 6, pair : rangs 3 et 4. Étape 3 — Lire : les valeurs de rang 3 et 4 sont 10 et 12. Étape 4 — Conclure : $\\frac{10 + 12}{2} = 11$. Les réponses 10 et 12 ne prennent qu'une des deux valeurs centrales.",
+                  "answers": [
+                    {
+                      "content": "11",
+                      "correct": true
+                    },
+                    {
+                      "content": "10",
+                      "correct": false
+                    },
+                    {
+                      "content": "12",
+                      "correct": false
+                    },
+                    {
+                      "content": "13",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une série ordonnée compte 9 valeurs. À quel rang se trouve la médiane ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Ordonner : série déjà ordonnée. Étape 2 — Situer : N = 9, impair : rang $\\frac{9 + 1}{2} = 5$. La médiane est la valeur de rang 5.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Vrai ou faux : la médiane de la série non ordonnée 9, 2, 5 est 2.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Ordonner : on range d'abord : 2, 5, 9. Étape 2 — Situer : N = 3 : rang 2. Étape 3 — Lire : le 2e nombre est 5. La médiane est 5 ; 2 est la valeur du milieu de la liste non rangée.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Buts en 20 matchs : 0 but (3 matchs), 1 (6), 2 (5), 3 (4), 4 (2). Quelle est la médiane ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Ordonner : valeurs déjà rangées, effectifs cumulés 3, 9, 14, 18, 20. Étape 2 — Situer : N = 20, pair : rangs 10 et 11. Étape 3 — Lire : les rangs 10 et 11 sont dans le groupe cumulé 14 : valeur 2. Étape 4 — Conclure : $\\frac{2 + 2}{2} = 2$. La médiane est 2 buts.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "buts"
+                }
+              ]
+            },
+            {
+              "title": "Rang et valeur de la médiane",
+              "statement": "Dans cet exercice, tu mélanges plusieurs types de questions sur la médiane, en refaisant la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "N impair : une valeur centrale ; N pair : la moyenne de deux valeurs centrales.",
+              "questions": [
+                {
+                  "content": "La médiane d'une série ordonnée de 11 valeurs est la valeur de rang ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Situer : N = 11, impair : rang $\\frac{11 + 1}{2} = 6$. Le rang est 6.",
+                  "answers": [
+                    {
+                      "content": "6",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque effectif total au rang de la médiane.",
+                  "question_type": "matching",
+                  "explanation": "Étape 2 — Situer : N impair : rang $\\frac{N + 1}{2}$ ; N pair : rangs $\\frac{N}{2}$ et $\\frac{N}{2} + 1$. N = 9 donne le rang 5, N = 10 les rangs 5 et 6, N = 7 le rang 4.",
+                  "answers": [
+                    {
+                      "content": "N = 9",
+                      "match": "rang 5"
+                    },
+                    {
+                      "content": "N = 10",
+                      "match": "rangs 5 et 6"
+                    },
+                    {
+                      "content": "N = 7",
+                      "match": "rang 4"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la médiane de la série 3, 7, 8, 12, 20 ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Ordonner : la série est déjà rangée. Étape 2 — Situer : N = 5, rang 3. Étape 3 — Lire : le 3e nombre est 8. La médiane est 8.",
+                  "answers": [
+                    {
+                      "content": "8",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelles affirmations sont vraies ? (deux bonnes réponses)",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Ordonner : la série doit être rangée. Étape 2 — Situer : on cherche le milieu. Étape 3 — Lire : si N est pair, on prend deux valeurs centrales. Étape 4 — Conclure : et on fait leur moyenne. La médiane diffère en général de la moyenne et du mode.",
+                  "answers": [
+                    {
+                      "content": "La médiane partage la série ordonnée en deux groupes de même effectif.",
+                      "correct": true
+                    },
+                    {
+                      "content": "Si N est pair, la médiane est la moyenne des deux valeurs centrales.",
+                      "correct": true
+                    },
+                    {
+                      "content": "La médiane est toujours égale à la moyenne.",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il n'est pas nécessaire de ranger la série.",
+                      "correct": false
+                    },
+                    {
+                      "content": "La médiane est la valeur d'effectif le plus grand.",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour trouver une médiane.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Ordonner : on range d'abord. Étape 2 — Situer : on calcule le rang. Étape 3 — Lire : on repère la valeur. Étape 4 — Conclure : on donne la réponse.",
+                  "answers": [
+                    {
+                      "content": "Ordonner : ranger les valeurs dans l'ordre croissant."
+                    },
+                    {
+                      "content": "Situer : calculer N et le rang du milieu."
+                    },
+                    {
+                      "content": "Lire : repérer la valeur à ce rang."
+                    },
+                    {
+                      "content": "Conclure : donner la médiane."
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la médiane de la série 4, 6, 9, 15 ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Ordonner : la série est rangée. Étape 2 — Situer : N = 4, pair : rangs 2 et 3. Étape 3 — Lire : les valeurs sont 6 et 9. Étape 4 — Conclure : $\\frac{6 + 9}{2} = 7{,}5$. La médiane est 7,5.",
+                  "answers": [
+                    {
+                      "content": "7,5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Les notes d'une classe",
+          "statement": "Les notes de 20 élèves sont : 4, 6, 7, 8, 9, 9, 10, 10, 11, 12, 12, 13, 13, 14, 14, 15, 16, 16, 17, 19. On les regroupe en classes d'amplitude 5 : [0 ; 5[, [5 ; 10[, [10 ; 15[ et [15 ; 20[, d'effectifs 1, 5, 9 et 5.",
+          "exercise_type": "fixation",
+          "figure": "notes-histogramme",
+          "hint": "Classes : centres pour la moyenne, effectif le plus grand pour la classe modale.",
+          "questions": [
+            {
+              "content": "Les notes de 20 élèves sont : 4, 6, 7, 8, 9, 9, 10, 10, 11, 12, 12, 13, 13, 14, 14, 15, 16, 16, 17, 19. On les regroupe en classes d'amplitude 5 : [0 ; 5[, [5 ; 10[, [10 ; 15[ et [15 ; 20[, d'effectifs 1, 5, 9 et 5. Combien d'élèves ont une note strictement inférieure à 10 ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Repérer : classes d'amplitude 5, effectifs 1, 5, 9, 5. Étape 2 — Découper : les classes avant 10 sont [0 ; 5[ et [5 ; 10[. Étape 3 — Compter : effectifs 1 et 5. Étape 4 — Cumuler : $1 + 5 = 6$. 6 élèves ont moins de 10. Ranger les deux notes 10 dans [5 ; 10[ donnerait 8, à tort : la borne 10 est exclue.",
+              "answers": [
+                {
+                  "content": "6",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "élèves"
+            },
+            {
+              "content": "Notes regroupées en classes d'effectifs 1, 5, 9 et 5 (total 20). Quelle est la fréquence de la classe [15 ; 20[, en pourcentage ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Identifier : modalité : la classe [15 ; 20[. Étape 2 — Compter : effectif : 5. Étape 3 — Totaliser : N = 1 + 5 + 9 + 5 = 20. Étape 4 — Calculer : $f = \\frac{5}{20} = 0{,}25$, soit 25 %. La fréquence est 25 %. Répondre 5 % confond l'effectif et la fréquence.",
+              "answers": [
+                {
+                  "content": "25",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "%"
+            },
+            {
+              "content": "Notes regroupées : [0 ; 5[ (1 élève), [5 ; 10[ (5), [10 ; 15[ (9), [15 ; 20[ (5). Quelle est la moyenne, avec les centres des classes ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Totaliser : N = 20. Étape 2 — Multiplier : centres 2,5 ; 7,5 ; 12,5 ; 17,5 : $2{,}5 + 37{,}5 + 112{,}5 + 87{,}5$. Étape 3 — Additionner : somme = 240. Étape 4 — Conclure : $\\bar{x} = \\frac{240}{20} = 12$. La moyenne est 12. La moyenne simple des centres, 10, oublie les effectifs.",
+              "answers": [
+                {
+                  "content": "12",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Notes regroupées : [0 ; 5[ (1 élève), [5 ; 10[ (5), [10 ; 15[ (9), [15 ; 20[ (5). Quelle est la classe modale ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 4 — Conclure : la classe modale est la classe d'effectif le plus grand : 9, pour [10 ; 15[. Les classes [5 ; 10[ et [15 ; 20[ n'ont que 5 élèves.",
+              "answers": [
+                {
+                  "content": "[10 ; 15[",
+                  "correct": true
+                },
+                {
+                  "content": "[5 ; 10[",
+                  "correct": false
+                },
+                {
+                  "content": "[15 ; 20[",
+                  "correct": false
+                },
+                {
+                  "content": "[0 ; 5[",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Les notes exactes de 20 élèves, rangées : 4, 6, 7, 8, 9, 9, 10, 10, 11, 12, 12, 13, 13, 14, 14, 15, 16, 16, 17, 19. Quelle est la médiane ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Ordonner : la série est déjà rangée. Étape 2 — Situer : N = 20, pair : rangs 10 et 11. Étape 3 — Lire : la 10e et la 11e valeurs valent 12 et 12. Étape 4 — Conclure : $\\frac{12 + 12}{2} = 12$. La médiane est 12. Faire la moyenne de la plus petite et de la plus grande note, 11,5, ne donne pas la médiane.",
+              "answers": [
+                {
+                  "content": "12",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            }
+          ]
+        },
+        {
+          "title": "Les buts de l'équipe du quartier",
+          "statement": "Une équipe de quartier a joué 20 matchs : 3 sans but, 6 à 1 but, 5 à 2 buts, 4 à 3 buts et 2 à 4 buts.",
+          "exercise_type": "fixation",
+          "figure": "buts-batons",
+          "hint": "Reprends la méthode de chaque fiche : effectifs, moyenne, médiane, angle.",
+          "questions": [
+            {
+              "content": "Une équipe de quartier a joué 20 matchs : 3 sans but, 6 à 1 but, 5 à 2 buts, 4 à 3 buts et 2 à 4 buts. Quelle est la fréquence des matchs sans but, en pourcentage ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Identifier : modalité : 0 but. Étape 2 — Compter : effectif : 3. Étape 3 — Totaliser : N = 20. Étape 4 — Calculer : $f = \\frac{3}{20} = 0{,}15$, soit 15 %. La fréquence est 15 %. Répondre 3 % confond l'effectif et la fréquence.",
+              "answers": [
+                {
+                  "content": "15",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "%"
+            },
+            {
+              "content": "Une équipe de quartier a joué 20 matchs : 3 sans but, 6 à 1 but, 5 à 2 buts, 4 à 3 buts et 2 à 4 buts. Quel est le mode du nombre de buts ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 4 — Conclure : le mode est la valeur d'effectif le plus grand : 6 matchs, pour 1 but. La réponse 6 est l'effectif, pas la valeur.",
+              "answers": [
+                {
+                  "content": "1 but",
+                  "correct": true
+                },
+                {
+                  "content": "6 buts",
+                  "correct": false
+                },
+                {
+                  "content": "0 but",
+                  "correct": false
+                },
+                {
+                  "content": "2 buts",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Une équipe de quartier a joué 20 matchs : 3 sans but, 6 à 1 but, 5 à 2 buts, 4 à 3 buts et 2 à 4 buts. Quelle est la moyenne de buts par match ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Totaliser : N = 20. Étape 2 — Multiplier : $0 + 6 + 10 + 12 + 8$. Étape 3 — Additionner : somme = 36. Étape 4 — Conclure : $\\bar{x} = \\frac{36}{20} = 1{,}8$. La moyenne est 1,8 but par match. La moyenne simple des valeurs 0 à 4, qui vaut 2, oublie les effectifs.",
+              "answers": [
+                {
+                  "content": "1,8",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Une équipe de quartier a joué 20 matchs : 3 sans but, 6 à 1 but, 5 à 2 buts, 4 à 3 buts et 2 à 4 buts. Quelle est la médiane du nombre de buts ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Ordonner : valeurs rangées, cumuls 3, 9, 14, 18, 20. Étape 2 — Situer : N = 20 : rangs 10 et 11. Étape 3 — Lire : ces deux rangs valent 2 et 2. Étape 4 — Conclure : $\\frac{2 + 2}{2} = 2$. La médiane est 2 buts. Le mode, 1 but, n'est pas la médiane.",
+              "answers": [
+                {
+                  "content": "2",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Une équipe de quartier a joué 20 matchs : 3 sans but, 6 à 1 but, 5 à 2 buts, 4 à 3 buts et 2 à 4 buts. Vrai ou faux : plus de la moitié des matchs comptent au moins 2 buts.",
+              "question_type": "true_false",
+              "explanation": "Étape 4 — Cumuler : au moins 2 buts : $5 + 4 + 2 = 11$ matchs sur 20, soit 55 %. C'est plus de la moitié : l'affirmation est vraie. Compter seulement les 5 matchs à 2 buts serait l'erreur.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": true
+                },
+                {
+                  "content": "Faux",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Une équipe de quartier a joué 20 matchs : 3 sans but, 6 à 1 but, 5 à 2 buts, 4 à 3 buts et 2 à 4 buts. Dans un diagramme circulaire, quel est l'angle du secteur des matchs à 3 buts, en degrés ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Choisir : parts d'un tout : diagramme circulaire. Étape 2 — Calculer : $f = \\frac{4}{20} = 0{,}2$, donc angle $= 0{,}2 \\times 360 = 72$. L'angle est 72°. Répondre 20° prend la fréquence en pourcentage pour un angle.",
+              "answers": [
+                {
+                  "content": "72",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "°"
+            }
+          ]
+        },
+        {
+          "title": "Les tailles des élèves de la classe",
+          "statement": "Les tailles de 20 élèves de 2nde sont regroupées en classes de même amplitude 10 : [140 ; 150[ (2 élèves), [150 ; 160[ (6), [160 ; 170[ (8) et [170 ; 180[ (4).",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "hint": "Moyenne par les centres ; cumule les effectifs pour « moins de ».",
+          "questions": [
+            {
+              "content": "Les tailles de 20 élèves de 2nde sont regroupées en classes de même amplitude 10 : [140 ; 150[ (2 élèves), [150 ; 160[ (6), [160 ; 170[ (8) et [170 ; 180[ (4). Combien d'élèves mesurent moins de 160 cm ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Repérer : quatre classes d'amplitude 10. Étape 2 — Découper : moins de 160 : [140 ; 150[ et [150 ; 160[. Étape 3 — Compter : effectifs 2 et 6. Étape 4 — Cumuler : $2 + 6 = 8$. 8 élèves mesurent moins de 160 cm. Répondre 6 oublie la classe [140 ; 150[.",
+              "answers": [
+                {
+                  "content": "8",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "élèves"
+            },
+            {
+              "content": "Les tailles de 20 élèves de 2nde sont regroupées en classes de même amplitude 10 : [140 ; 150[ (2 élèves), [150 ; 160[ (6), [160 ; 170[ (8) et [170 ; 180[ (4). Quelle est la fréquence de la classe [160 ; 170[, en pourcentage ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Identifier : modalité : [160 ; 170[. Étape 2 — Compter : effectif : 8. Étape 3 — Totaliser : N = 2 + 6 + 8 + 4 = 20. Étape 4 — Calculer : $f = \\frac{8}{20} = 0{,}4$, soit 40 %. La fréquence est 40 %. Répondre 8 % confond l'effectif et la fréquence.",
+              "answers": [
+                {
+                  "content": "40",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "%"
+            },
+            {
+              "content": "Les tailles de 20 élèves de 2nde sont regroupées en classes de même amplitude 10 : [140 ; 150[ (2 élèves), [150 ; 160[ (6), [160 ; 170[ (8) et [170 ; 180[ (4). Quelle est la moyenne des tailles, avec les centres des classes, en cm ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Totaliser : N = 20. Étape 2 — Multiplier : centres 145, 155, 165, 175 : $290 + 930 + 1320 + 700$. Étape 3 — Additionner : somme = 3240. Étape 4 — Conclure : $\\bar{x} = \\frac{3240}{20} = 162$. La moyenne est 162 cm. La moyenne simple des centres, 160, oublie les effectifs.",
+              "answers": [
+                {
+                  "content": "162",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "cm"
+            },
+            {
+              "content": "Les tailles de 20 élèves de 2nde sont regroupées en classes de même amplitude 10 : [140 ; 150[ (2 élèves), [150 ; 160[ (6), [160 ; 170[ (8) et [170 ; 180[ (4). Quelle est la classe modale ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 4 — Conclure : la classe modale est la classe d'effectif le plus grand : 8, pour [160 ; 170[. [150 ; 160[ n'a que 6 élèves.",
+              "answers": [
+                {
+                  "content": "[160 ; 170[",
+                  "correct": true
+                },
+                {
+                  "content": "[140 ; 150[",
+                  "correct": false
+                },
+                {
+                  "content": "[150 ; 160[",
+                  "correct": false
+                },
+                {
+                  "content": "[170 ; 180[",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Les tailles de 20 élèves de 2nde sont regroupées en classes de même amplitude 10 : [140 ; 150[ (2 élèves), [150 ; 160[ (6), [160 ; 170[ (8) et [170 ; 180[ (4). Vrai ou faux : plus de la moitié des élèves mesurent moins de 160 cm.",
+              "question_type": "true_false",
+              "explanation": "Étape 3 — Compter : effectifs 2 et 6. Étape 4 — Cumuler : $2 + 6 = 8$ élèves sur 20, soit 40 %. 40 % est moins de la moitié : l'affirmation est fausse. Ne compter que la classe modale serait une autre erreur.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Les tailles de 20 élèves de 2nde sont regroupées en classes de même amplitude 10 : [140 ; 150[ (2 élèves), [150 ; 160[ (6), [160 ; 170[ (8) et [170 ; 180[ (4). Si l'on représente les parts des classes par un diagramme circulaire, quel est l'angle du secteur [170 ; 180[, en degrés ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Choisir : parts d'un tout. Étape 2 — Calculer : $f = \\frac{4}{20} = 0{,}2$, angle $= 0{,}2 \\times 360 = 72$. L'angle est 72°. Répondre 20° prend la fréquence en pourcentage pour un angle.",
+              "answers": [
+                {
+                  "content": "72",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "°"
+            }
+          ]
+        },
+        {
+          "title": "Les ventes de jus de la boutique de Mariam",
+          "statement": "Une boutique relève le nombre de bouteilles de jus vendues par jour pendant 20 jours : 4 bouteilles (2 jours), 5 (5 jours), 6 (8 jours), 7 (3 jours) et 8 (2 jours).",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "hint": "Une nouvelle valeur change N et la somme : recalcule la moyenne.",
+          "questions": [
+            {
+              "content": "Une boutique relève le nombre de bouteilles de jus vendues par jour pendant 20 jours : 4 bouteilles (2 jours), 5 (5 jours), 6 (8 jours), 7 (3 jours) et 8 (2 jours). Quelle est la somme des produits effectif × valeur ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Totaliser : N = 20. Étape 2 — Multiplier : $4 \\times 2 = 8$, $5 \\times 5 = 25$, $6 \\times 8 = 48$, $7 \\times 3 = 21$, $8 \\times 2 = 16$. Étape 3 — Additionner : $8 + 25 + 48 + 21 + 16 = 118$. La somme est 118. Additionner seulement les valeurs, $4 + 5 + 6 + 7 + 8 = 30$, oublie les effectifs.",
+              "answers": [
+                {
+                  "content": "118",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Une boutique relève le nombre de bouteilles de jus vendues par jour pendant 20 jours : 4 bouteilles (2 jours), 5 (5 jours), 6 (8 jours), 7 (3 jours) et 8 (2 jours). Quelle est la moyenne de bouteilles vendues par jour ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Totaliser : N = 20. Étape 2 — Multiplier : produits 8, 25, 48, 21 et 16. Étape 3 — Additionner : $8 + 25 + 48 + 21 + 16 = 118$. Étape 4 — Conclure : $\\bar{x} = \\frac{118}{20} = 5{,}9$. La moyenne est 5,9 bouteilles. La moyenne simple des valeurs, $\\frac{30}{5} = 6$, oublie les effectifs.",
+              "answers": [
+                {
+                  "content": "5,9",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Une boutique relève le nombre de bouteilles de jus vendues par jour pendant 20 jours : 4 bouteilles (2 jours), 5 (5 jours), 6 (8 jours), 7 (3 jours) et 8 (2 jours). Quelle est la médiane ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Ordonner : valeurs rangées, cumuls 2, 7, 15, 18, 20. Étape 2 — Situer : N = 20 : rangs 10 et 11. Étape 3 — Lire : les rangs 10 et 11 sont dans le groupe de 6 bouteilles. Étape 4 — Conclure : $\\frac{6 + 6}{2} = 6$. La médiane est 6 bouteilles. Prendre la valeur du milieu des modalités sans passer par les rangs est une erreur de méthode, même si elle tombe juste ici.",
+              "answers": [
+                {
+                  "content": "6",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Une boutique relève le nombre de bouteilles de jus vendues par jour pendant 20 jours : 4 bouteilles (2 jours), 5 (5 jours), 6 (8 jours), 7 (3 jours) et 8 (2 jours). Quelle est la fréquence des jours où elle vend au moins 7 bouteilles, en pourcentage ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Identifier : modalité : au moins 7 bouteilles. Étape 2 — Compter : effectif : $3 + 2 = 5$. Étape 3 — Totaliser : N = 20. Étape 4 — Calculer : $f = \\frac{5}{20} = 0{,}25$, soit 25 %. La fréquence est 25 %. Compter seulement les 3 jours à 7 bouteilles (15 %) oublie ceux à 8.",
+              "answers": [
+                {
+                  "content": "25",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "%"
+            },
+            {
+              "content": "Une boutique relève le nombre de bouteilles de jus vendues par jour pendant 20 jours : 4 bouteilles (2 jours), 5 (5 jours), 6 (8 jours), 7 (3 jours) et 8 (2 jours). Un 21e jour, elle vend 8 bouteilles. Quelle est la nouvelle moyenne ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Totaliser : N = 20 + 1 = 21. Étape 2 — Multiplier : le 21e jour compte une fois : $1 \\times 8 = 8$. Étape 3 — Additionner : $118 + 8 = 126$. Étape 4 — Conclure : $\\bar{x} = \\frac{126}{21} = 6$. La nouvelle moyenne est 6 bouteilles. Diviser 126 par 20 oublie que N passe à 21.",
+              "answers": [
+                {
+                  "content": "6",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Une boutique relève le nombre de bouteilles de jus vendues par jour pendant 20 jours : 4 bouteilles (2 jours), 5 (5 jours), 6 (8 jours), 7 (3 jours) et 8 (2 jours). Un 21e jour, elle vend 8 bouteilles. Vrai ou faux : la médiane reste 6.",
+              "question_type": "true_false",
+              "explanation": "Étape 1 — Ordonner : cumuls 2, 7, 15, 18, 21. Étape 2 — Situer : N = 21, impair : rang 11. Étape 3 — Lire : le rang 11 est dans le groupe de 6 bouteilles. La médiane reste 6 : l'affirmation est vraie. Chercher encore les rangs 10 et 11 serait faux, car N est devenu impair.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": true
+                },
+                {
+                  "content": "Faux",
+                  "correct": false
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "subjects": [
+        {
+          "title": "Sujet 1 · Les savoirs de base",
+          "notions": "Vocabulaire (population, caractère, modalité), effectifs et fréquences en pourcentage, classes et effectifs cumulés, moyenne, mode et médiane d'une série simple.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Un professeur étudie la population des élèves d'une classe selon plusieurs caractères.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Une population est un ensemble d'individus ; un caractère est ce qu'on étudie sur eux.",
+              "questions": [
+                {
+                  "content": "Relie chaque caractère à sa nature.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Identifier : on regarde si les modalités sont des mots ou des nombres. Étape 2 — Compter : un nombre entier isolé est discret, une mesure est continue. Couleur : qualitatif ; frères et sœurs : discret ; taille : continu.",
+                  "answers": [
+                    {
+                      "content": "Couleur des yeux",
+                      "match": "Qualitatif"
+                    },
+                    {
+                      "content": "Nombre de frères et sœurs",
+                      "match": "Quantitatif discret"
+                    },
+                    {
+                      "content": "Taille en centimètres",
+                      "match": "Quantitatif continu"
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans une classe de 40 élèves, 10 jouent au football. Quelle est la fréquence des footballeurs ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : modalité : footballeur. Étape 2 — Compter : effectif : 10. Étape 3 — Totaliser : N = 40. Étape 4 — Calculer : $f = \\frac{10}{40} = 0{,}25$, soit 25 %. Le résultat 10 % confond effectif et fréquence.",
+                  "answers": [
+                    {
+                      "content": "25 %",
+                      "correct": true
+                    },
+                    {
+                      "content": "10 %",
+                      "correct": false
+                    },
+                    {
+                      "content": "4 %",
+                      "correct": false
+                    },
+                    {
+                      "content": "40 %",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans un tableau d'effectifs, la somme de tous les effectifs est l'effectif ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 3 — Totaliser : on additionne tous les effectifs pour obtenir N, l'effectif total. Le mot attendu est total.",
+                  "answers": [
+                    {
+                      "content": "total",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : la fréquence d'une modalité peut être supérieure à 100 %.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 3 — Totaliser : l'effectif d'une modalité est au plus N. Étape 4 — Calculer : donc $f = \\frac{n}{N} \\leq 1$, soit au plus 100 %. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels ensembles sont des populations statistiques ? (deux bonnes réponses)",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Identifier : une population est un ensemble d'individus : les élèves et les clients en sont ; le nombre de buts, la taille et les notes sont des caractères. Les bonnes réponses sont les élèves et les clients.",
+                  "answers": [
+                    {
+                      "content": "Les élèves de la classe de 2nde A",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les clients d'une boutique un samedi",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le nombre de buts",
+                      "correct": false
+                    },
+                    {
+                      "content": "La taille en centimètres",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les notes sur 20",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Dans une classe de 25 élèves, on relève le sport préféré de chacun : 10 football, 7 basket, 5 handball et 3 athlétisme.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Divise chaque effectif par 25.",
+              "questions": [
+                {
+                  "content": "Sport préféré : 10 football, 7 basket, 5 handball, 3 athlétisme. Quel est l'effectif total ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : modalités : quatre sports. Étape 2 — Compter : effectifs 10, 7, 5 et 3. Étape 3 — Totaliser : $10 + 7 + 5 + 3 = 25$. N = 25.",
+                  "answers": [
+                    {
+                      "content": "25",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "élèves"
+                },
+                {
+                  "content": "Sport préféré : 10 football sur 25 élèves. Quelle est la fréquence du football, en pourcentage ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : modalité : football. Étape 2 — Compter : effectif : 10. Étape 3 — Totaliser : N = 25. Étape 4 — Calculer : $\\frac{10}{25} = 0{,}4$, soit 40 %. La fréquence est 40 %.",
+                  "answers": [
+                    {
+                      "content": "40",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "%"
+                },
+                {
+                  "content": "Sport préféré : 5 handball sur 25 élèves. Quelle est la fréquence du handball, en pourcentage ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : modalité : handball. Étape 2 — Compter : effectif : 5. Étape 3 — Totaliser : N = 25. Étape 4 — Calculer : $\\frac{5}{25} = 0{,}2$, soit 20 %. La fréquence est 20 %.",
+                  "answers": [
+                    {
+                      "content": "20",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "%"
+                },
+                {
+                  "content": "Sport préféré : 10 football, 7 basket, 5 handball, 3 athlétisme. Quelle est la nature du caractère ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : le caractère est le sport préféré : ses modalités sont des mots. Le caractère est qualitatif.",
+                  "answers": [
+                    {
+                      "content": "qualitatif",
+                      "correct": true
+                    },
+                    {
+                      "content": "quantitatif discret",
+                      "correct": false
+                    },
+                    {
+                      "content": "quantitatif continu",
+                      "correct": false
+                    },
+                    {
+                      "content": "aucune des trois",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour calculer des fréquences.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Identifier : on repère le caractère. Étape 2 — Compter : les effectifs. Étape 3 — Totaliser : N. Étape 4 — Calculer : on divise par N.",
+                  "answers": [
+                    {
+                      "content": "Identifier : repérer le caractère et ses modalités."
+                    },
+                    {
+                      "content": "Compter : donner l'effectif de chaque modalité."
+                    },
+                    {
+                      "content": "Totaliser : calculer N."
+                    },
+                    {
+                      "content": "Calculer : diviser chaque effectif par N."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Les notes de 10 élèves à une interrogation sont : 3, 6, 7, 9, 10, 12, 13, 15, 16, 19. On les range en classes d'amplitude 5 : [0 ; 5[, [5 ; 10[, [10 ; 15[ et [15 ; 20[.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "La borne de droite d'une classe est exclue.",
+              "questions": [
+                {
+                  "content": "Notes : 3, 6, 7, 9, 10, 12, 13, 15, 16, 19. Quel est l'effectif de la classe [5 ; 10[ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : notes de 3 à 19. Étape 2 — Découper : classes d'amplitude 5. Étape 3 — Compter : 6, 7 et 9 sont dans [5 ; 10[ ; 10 n'y est pas. L'effectif est 3.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "élèves"
+                },
+                {
+                  "content": "Notes : 3, 6, 7, 9, 10, 12, 13, 15, 16, 19. Quel est l'effectif de la classe [10 ; 15[ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : notes de 3 à 19. Étape 2 — Découper : classes d'amplitude 5. Étape 3 — Compter : 10, 12 et 13 sont dans [10 ; 15[. L'effectif est 3.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "élèves"
+                },
+                {
+                  "content": "Les classes [0 ; 5[, [5 ; 10[, [10 ; 15[ et [15 ; 20[ ont pour effectifs 1, 3, 3 et 3. Combien d'élèves ont moins de 15 ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Compter : effectifs 1, 3, 3 et 3. Étape 4 — Cumuler : $1 + 3 + 3 = 7$. Le résultat 10 est l'effectif total.",
+                  "answers": [
+                    {
+                      "content": "7",
+                      "correct": true
+                    },
+                    {
+                      "content": "3",
+                      "correct": false
+                    },
+                    {
+                      "content": "10",
+                      "correct": false
+                    },
+                    {
+                      "content": "1",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Vrai ou faux : la note 10 est rangée dans la classe [5 ; 10[.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Découper : [5 ; 10[ exclut 10. Étape 3 — Compter : 10 est dans [10 ; 15[. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel est le centre de la classe [10 ; 15[ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 2 — Découper : le centre est $\\frac{10 + 15}{2} = 12{,}5$. Le centre est 12,5.",
+                  "answers": [
+                    {
+                      "content": "12,5",
+                      "correct": true
+                    },
+                    {
+                      "content": "10",
+                      "correct": false
+                    },
+                    {
+                      "content": "15",
+                      "correct": false
+                    },
+                    {
+                      "content": "5",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Une équipe de quartier a joué 10 matchs : 0 but dans 2 matchs, 1 but dans 3 matchs, 2 buts dans 4 matchs et 3 buts dans 1 match.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Multiplie chaque nombre de buts par son effectif.",
+              "questions": [
+                {
+                  "content": "Buts sur 10 matchs : 0 but (2 matchs), 1 but (3), 2 buts (4), 3 buts (1). Quelle est la somme des produits effectif × valeur ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 10. Étape 2 — Multiplier : $0 + 3 + 8 + 3 = 14$. La somme est 14.",
+                  "answers": [
+                    {
+                      "content": "14",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Buts sur 10 matchs : 0 but (2 matchs), 1 but (3), 2 buts (4), 3 buts (1). Quelle est la moyenne ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 10. Étape 2 — Multiplier : on multiplie chaque valeur par son effectif : 0 + 3 + 8 + 3. Étape 3 — Additionner : somme = 14. Étape 4 — Conclure : $\\bar{x} = \\frac{14}{10} = 1{,}4$. La moyenne est 1,4.",
+                  "answers": [
+                    {
+                      "content": "1,4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "buts"
+                },
+                {
+                  "content": "Buts sur 10 matchs : 0 but (2 matchs), 1 but (3), 2 buts (4), 3 buts (1). Quel est le mode ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Conclure : le mode est la valeur d'effectif le plus grand : 4, pour 2 buts. Le nombre 4 est l'effectif, pas la valeur.",
+                  "answers": [
+                    {
+                      "content": "2 buts",
+                      "correct": true
+                    },
+                    {
+                      "content": "4 buts",
+                      "correct": false
+                    },
+                    {
+                      "content": "1 but",
+                      "correct": false
+                    },
+                    {
+                      "content": "3 buts",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Buts sur 10 matchs : 0 but (2 matchs), 1 but (3), 2 buts (4), 3 buts (1). Quelle est la médiane ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Ordonner : valeurs rangées, effectifs cumulés 2, 5, 9, 10. Étape 2 — Situer : N = 10, pair : rangs 5 et 6. Étape 3 — Lire : rang 5 : cumuls 2 < 5 ≤ 5, donc valeur 1 ; rang 6 : cumuls 5 < 6 ≤ 9, donc valeur 2. Étape 4 — Conclure : $\\frac{1 + 2}{2} = 1{,}5$. La médiane est 1,5.",
+                  "answers": [
+                    {
+                      "content": "1,5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "buts"
+                },
+                {
+                  "content": "Buts sur 10 matchs : 0 but (2 matchs), 1 but (3), 2 buts (4), 3 buts (1). Vrai ou faux : la médiane est 2.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Ordonner : valeurs rangées, cumuls 2, 5, 9, 10. Étape 2 — Situer : N = 10 : rangs 5 et 6. Étape 3 — Lire : ces rangs valent 1 et 2. Étape 4 — Conclure : $\\frac{1 + 2}{2} = 1{,}5$. La médiane est 1,5 et non 2, qui est le mode.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 2 · La vie courante",
+          "notions": "Statistique dans des situations ivoiriennes (marché, gbaka, football, mobile money) : effectifs et fréquences, classes, moyenne, mode, médiane et diagramme circulaire.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Au marché de Treichville, on relève le prix du kilo de tomates chez 10 vendeuses : 500 FCFA (2 vendeuses), 600 FCFA (3), 700 FCFA (4) et 800 FCFA (1).",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "La moyenne et la médiane se calculent différemment.",
+              "questions": [
+                {
+                  "content": "Prix du kilo de tomates chez 10 vendeuses du marché de Treichville : 500 FCFA (2), 600 FCFA (3), 700 FCFA (4), 800 FCFA (1). Quelle est la somme des produits effectif × valeur ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 10. Étape 2 — Multiplier : $1000 + 1800 + 2800 + 800 = 6400$. La somme est 6400.",
+                  "answers": [
+                    {
+                      "content": "6400",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Prix du kilo de tomates chez 10 vendeuses du marché de Treichville : 500 FCFA (2), 600 FCFA (3), 700 FCFA (4), 800 FCFA (1). Quelle est la moyenne ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 10. Étape 2 — Multiplier : on multiplie chaque valeur par son effectif : 1000 + 1800 + 2800 + 800. Étape 3 — Additionner : somme = 6400. Étape 4 — Conclure : $\\bar{x} = \\frac{6400}{10} = 640$. La moyenne est 640.",
+                  "answers": [
+                    {
+                      "content": "640",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "FCFA"
+                },
+                {
+                  "content": "Prix du kilo de tomates chez 10 vendeuses du marché de Treichville : 500 FCFA (2), 600 FCFA (3), 700 FCFA (4), 800 FCFA (1). Quel est le mode ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Conclure : le mode est la valeur d'effectif le plus grand : 4, pour 700 FCFA. Le nombre 4 est l'effectif, pas la valeur.",
+                  "answers": [
+                    {
+                      "content": "700 FCFA",
+                      "correct": true
+                    },
+                    {
+                      "content": "4 FCFA",
+                      "correct": false
+                    },
+                    {
+                      "content": "500 FCFA",
+                      "correct": false
+                    },
+                    {
+                      "content": "800 FCFA",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Prix du kilo de tomates chez 10 vendeuses du marché de Treichville : 500 FCFA (2), 600 FCFA (3), 700 FCFA (4), 800 FCFA (1). Quelle est la médiane ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Ordonner : valeurs rangées, effectifs cumulés 2, 5, 9, 10. Étape 2 — Situer : N = 10, pair : rangs 5 et 6. Étape 3 — Lire : rang 5 : cumuls 2 < 5 ≤ 5, donc valeur 600 ; rang 6 : cumuls 5 < 6 ≤ 9, donc valeur 700. Étape 4 — Conclure : $\\frac{600 + 700}{2} = 650$. La médiane est 650.",
+                  "answers": [
+                    {
+                      "content": "650",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "FCFA"
+                },
+                {
+                  "content": "Prix du kilo de tomates chez 10 vendeuses du marché de Treichville : 500 FCFA (2), 600 FCFA (3), 700 FCFA (4), 800 FCFA (1). Quelle est la fréquence de la valeur 700 FCFA, en pourcentage ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : modalité : 700 FCFA. Étape 2 — Compter : effectif : 4. Étape 3 — Totaliser : N = 10. Étape 4 — Calculer : $f = \\frac{4}{10}$, soit 40 %. La fréquence est 40 %.",
+                  "answers": [
+                    {
+                      "content": "40",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "%"
+                },
+                {
+                  "content": "Prix du kilo de tomates chez 10 vendeuses du marché de Treichville : 500 FCFA (2), 600 FCFA (3), 700 FCFA (4), 800 FCFA (1). Vrai ou faux : la moyenne est 650 FCFA.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Totaliser : N = 10. Étape 2 — Multiplier : produits : 1000, 1800, 2800, 800. Étape 3 — Additionner : somme = 6400. Étape 4 — Conclure : $\\bar{x} = \\frac{6400}{10} = 640$. La moyenne est 640 FCFA ; 650 est la médiane.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "À la gare des gbakas d'Adjamé, on relève le temps d'attente de 20 passagers, regroupé en classes de même amplitude 10 minutes : [0 ; 10[ pour 6 passagers, [10 ; 20[ pour 9 et [20 ; 30[ pour 5.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Centres des classes : 5, 15 et 25.",
+              "questions": [
+                {
+                  "content": "Temps d'attente (en minutes) de 20 passagers à la gare des gbakas, regroupés en classes : [0 ; 10[ (6 passagers), [10 ; 20[ (9) et [20 ; 30[ (5). Combien de passagers attendent moins de 20 minutes ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : trois classes d'amplitude 10. Étape 2 — Découper : moins de 20 : [0 ; 10[ et [10 ; 20[. Étape 3 — Compter : effectifs 6 et 9. Étape 4 — Cumuler : $6 + 9 = 15$. 15 passagers attendent moins de 20 minutes.",
+                  "answers": [
+                    {
+                      "content": "15",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "passagers"
+                },
+                {
+                  "content": "Temps d'attente (en minutes) de 20 passagers à la gare des gbakas, regroupés en classes : [0 ; 10[ (6 passagers), [10 ; 20[ (9) et [20 ; 30[ (5). Quelle est la fréquence de la classe [20 ; 30[, en pourcentage ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : modalité : [20 ; 30[. Étape 2 — Compter : effectif : 5. Étape 3 — Totaliser : N = 6 + 9 + 5 = 20. Étape 4 — Calculer : $f = \\frac{5}{20} = 0{,}25$, soit 25 %. La fréquence est 25 %.",
+                  "answers": [
+                    {
+                      "content": "25",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "%"
+                },
+                {
+                  "content": "Temps d'attente (en minutes) de 20 passagers à la gare des gbakas, regroupés en classes : [0 ; 10[ (6 passagers), [10 ; 20[ (9) et [20 ; 30[ (5). Quelle est la moyenne du temps d'attente, avec les centres des classes, en minutes ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 20. Étape 2 — Multiplier : centres 5, 15, 25 : $30 + 135 + 125$. Étape 3 — Additionner : somme = 290. Étape 4 — Conclure : $\\bar{x} = \\frac{290}{20} = 14{,}5$. La moyenne est 14,5 minutes.",
+                  "answers": [
+                    {
+                      "content": "14,5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "min"
+                },
+                {
+                  "content": "Temps d'attente (en minutes) de 20 passagers à la gare des gbakas, regroupés en classes : [0 ; 10[ (6 passagers), [10 ; 20[ (9) et [20 ; 30[ (5). Quelle est la classe modale ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Conclure : la classe modale est celle d'effectif le plus grand : 9, pour [10 ; 20[. [0 ; 10[ n'a que 6 passagers.",
+                  "answers": [
+                    {
+                      "content": "[10 ; 20[",
+                      "correct": true
+                    },
+                    {
+                      "content": "[0 ; 10[",
+                      "correct": false
+                    },
+                    {
+                      "content": "[20 ; 30[",
+                      "correct": false
+                    },
+                    {
+                      "content": "aucune",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Temps d'attente (en minutes) de 20 passagers à la gare des gbakas, regroupés en classes : [0 ; 10[ (6 passagers), [10 ; 20[ (9) et [20 ; 30[ (5). Si l'on représente les parts des classes par un diagramme circulaire, quel est l'angle du secteur [0 ; 10[, en degrés ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Choisir : parts d'un tout. Étape 2 — Calculer : $f = \\frac{6}{20} = 0{,}3$, angle $= 0{,}3 \\times 360 = 108$. L'angle est 108°.",
+                  "answers": [
+                    {
+                      "content": "108",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "°"
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Lors d'un tournoi de football de quartier à Yopougon, on relève le nombre de buts de chacun des 25 matchs : 0 but (4 matchs), 1 but (8), 2 buts (7), 3 buts (4) et 4 buts (2).",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Au moins 3 buts : additionne les effectifs de 3 et de 4 buts.",
+              "questions": [
+                {
+                  "content": "Buts par match d'un tournoi de quartier (25 matchs) : 0 but (4), 1 but (8), 2 buts (7), 3 buts (4), 4 buts (2). Quelle est la fréquence de la valeur 1 but, en pourcentage ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : modalité : 1 but. Étape 2 — Compter : effectif : 8. Étape 3 — Totaliser : N = 25. Étape 4 — Calculer : $f = \\frac{8}{25}$, soit 32 %. La fréquence est 32 %.",
+                  "answers": [
+                    {
+                      "content": "32",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "%"
+                },
+                {
+                  "content": "Buts par match d'un tournoi de quartier (25 matchs) : 0 but (4), 1 but (8), 2 buts (7), 3 buts (4), 4 buts (2). Quelle est la moyenne ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 25. Étape 2 — Multiplier : on multiplie chaque valeur par son effectif : 0 + 8 + 14 + 12 + 8. Étape 3 — Additionner : somme = 42. Étape 4 — Conclure : $\\bar{x} = \\frac{42}{25} = 1{,}68$. La moyenne est 1,68.",
+                  "answers": [
+                    {
+                      "content": "1,68",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "buts"
+                },
+                {
+                  "content": "Buts par match d'un tournoi de quartier (25 matchs) : 0 but (4), 1 but (8), 2 buts (7), 3 buts (4), 4 buts (2). Quelle est la médiane ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Ordonner : valeurs rangées, effectifs cumulés 4, 12, 19, 23, 25. Étape 2 — Situer : N = 25, impair : rang 13. Étape 3 — Lire : rang 13 : cumuls 12 < 13 ≤ 19, donc valeur 2. Étape 4 — Conclure : la médiane est la valeur de rang 13 : 2. La médiane est 2.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "buts"
+                },
+                {
+                  "content": "Buts par match d'un tournoi de quartier (25 matchs) : 0 but (4), 1 but (8), 2 buts (7), 3 buts (4), 4 buts (2). Quel est le mode ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Conclure : le mode est la valeur d'effectif le plus grand : 8, pour 1 but. Le nombre 8 est l'effectif, pas la valeur.",
+                  "answers": [
+                    {
+                      "content": "1 but",
+                      "correct": true
+                    },
+                    {
+                      "content": "8 buts",
+                      "correct": false
+                    },
+                    {
+                      "content": "2 buts",
+                      "correct": false
+                    },
+                    {
+                      "content": "0 but",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Buts par match d'un tournoi de quartier (25 matchs) : 0 but (4), 1 but (8), 2 buts (7), 3 buts (4), 4 buts (2). Vrai ou faux : moins d'un quart des matchs comptent au moins 3 buts.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : modalité : au moins 3 buts. Étape 2 — Compter : effectif : $4 + 2 = 6$. Étape 3 — Totaliser : N = 25. Étape 4 — Calculer : $f = \\frac{6}{25} = 0{,}24$, soit 24 %. 24 % est moins de 25 % : l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Une boutique de mobile money note le nombre de clients reçus chaque jour pendant 8 jours : 14, 20, 11, 17, 25, 13, 16 et 18.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Range d'abord les 8 nombres.",
+              "questions": [
+                {
+                  "content": "Nombre de clients d'une boutique de mobile money pendant 8 jours : 14, 20, 11, 17, 25, 13, 16 et 18. Quelle est la somme des 8 nombres de clients ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 8, chaque valeur a pour effectif 1. Étape 2 — Multiplier : chaque produit vaut la valeur elle-même. Étape 3 — Additionner : $14 + 20 + 11 + 17 + 25 + 13 + 16 + 18 = 134$. La somme est 134.",
+                  "answers": [
+                    {
+                      "content": "134",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Nombre de clients d'une boutique de mobile money pendant 8 jours : 14, 20, 11, 17, 25, 13, 16 et 18. Quelle est la moyenne de clients par jour ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 8. Étape 2 — Multiplier : produits égaux aux valeurs. Étape 3 — Additionner : somme = 134. Étape 4 — Conclure : $\\bar{x} = \\frac{134}{8} = 16{,}75$. La moyenne est 16,75 clients.",
+                  "answers": [
+                    {
+                      "content": "16,75",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "clients"
+                },
+                {
+                  "content": "Nombre de clients d'une boutique de mobile money pendant 8 jours : 14, 20, 11, 17, 25, 13, 16 et 18. Quelle est la médiane ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Ordonner : 11, 13, 14, 16, 17, 18, 20, 25. Étape 2 — Situer : N = 8, pair : rangs 4 et 5. Étape 3 — Lire : les valeurs sont 16 et 17. Étape 4 — Conclure : $\\frac{16 + 17}{2} = 16{,}5$. La médiane est 16,5 clients.",
+                  "answers": [
+                    {
+                      "content": "16,5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "clients"
+                },
+                {
+                  "content": "Nombre de clients d'une boutique de mobile money pendant 8 jours : 14, 20, 11, 17, 25, 13, 16 et 18. À quel(s) rang(s) se trouve la médiane une fois la série rangée ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Ordonner : on range la série. Étape 2 — Situer : N = 8, pair : rangs $\\frac{8}{2} = 4$ et $4 + 1 = 5$. Il y a deux rangs au milieu.",
+                  "answers": [
+                    {
+                      "content": "rangs 4 et 5",
+                      "correct": true
+                    },
+                    {
+                      "content": "rang 4",
+                      "correct": false
+                    },
+                    {
+                      "content": "rang 5",
+                      "correct": false
+                    },
+                    {
+                      "content": "rang 8",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Nombre de clients d'une boutique de mobile money pendant 8 jours : 14, 20, 11, 17, 25, 13, 16 et 18. Vrai ou faux : la médiane est la 4e valeur de la liste non rangée, soit 17.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Ordonner : il faut d'abord ranger : 11, 13, 14, 16, 17, 18, 20, 25. Étape 2 — Situer : rangs 4 et 5. Étape 3 — Lire : valeurs 16 et 17. Étape 4 — Conclure : médiane 16,5. La 4e valeur de la liste non rangée est 17, mais ce n'est pas la médiane.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 3 · Raisonner et justifier",
+          "notions": "Effet d'une nouvelle valeur sur la moyenne et la médiane, note à obtenir pour une moyenne visée, lecture et justification d'un diagramme circulaire, classes et moyenne.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Yao a eu cinq notes à ses devoirs : 8, 10, 12, 12 et 13. Il se demande ce que devient sa moyenne avec une sixième note.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Ajouter une note change N et la somme.",
+              "questions": [
+                {
+                  "content": "Yao a eu les notes 8, 10, 12, 12 et 13. Quelle est la moyenne ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 5. Étape 2 — Multiplier : produits : 8, 10, 24, 13. Étape 3 — Additionner : somme = 55. Étape 4 — Conclure : $\\bar{x} = \\frac{55}{5} = 11$. La moyenne est 11.",
+                  "answers": [
+                    {
+                      "content": "11",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Yao a eu les notes 8, 10, 12, 12 et 13. Quel est le mode ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Conclure : le mode est la valeur d'effectif le plus grand : 12 apparaît 2 fois. Le nombre 2 est l'effectif.",
+                  "answers": [
+                    {
+                      "content": "12",
+                      "correct": true
+                    },
+                    {
+                      "content": "2",
+                      "correct": false
+                    },
+                    {
+                      "content": "8",
+                      "correct": false
+                    },
+                    {
+                      "content": "13",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Yao a eu les notes 8, 10, 12, 12 et 13. Quelle est la médiane ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Ordonner : 8, 10, 12, 12, 13. Étape 2 — Situer : N = 5 : rang 3. Étape 3 — Lire : le 3e nombre est 12. La médiane est 12.",
+                  "answers": [
+                    {
+                      "content": "12",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Yao a eu les notes 8, 10, 12, 12 et 13. Sa sixième note est 11. Vrai ou faux : sa moyenne reste 11.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Totaliser : N = 5 + 1 = 6. Étape 2 — Multiplier : la nouvelle note compte une fois : $1 \\times 11 = 11$. Étape 3 — Additionner : $55 + 11 = 66$. Étape 4 — Conclure : $\\bar{x} = \\frac{66}{6} = 11$. La moyenne reste 11 : l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Yao a eu les notes 8, 10, 12, 12 et 13. Sa sixième note est 11. Quelle est la nouvelle médiane ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Ordonner : 8, 10, 11, 12, 12, 13. Étape 2 — Situer : N = 6 : rangs 3 et 4. Étape 3 — Lire : les valeurs sont 11 et 12. Étape 4 — Conclure : $\\frac{11 + 12}{2} = 11{,}5$. La médiane est 11,5.",
+                  "answers": [
+                    {
+                      "content": "11,5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Aya a eu trois notes : 9, 12 et 15. Elle veut une quatrième note qui lui donne la moyenne qu'elle vise.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Moyenne visée × N = somme nécessaire.",
+              "questions": [
+                {
+                  "content": "Aya a eu les notes 9, 12 et 15. Quelle est la moyenne des trois notes ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 3. Étape 2 — Multiplier : chaque note a pour effectif 1 : les produits sont les notes elles-mêmes, 9, 12 et 15. Étape 3 — Additionner : $9 + 12 + 15 = 36$. Étape 4 — Conclure : $\\bar{x} = \\frac{36}{3} = 12$. La moyenne est 12.",
+                  "answers": [
+                    {
+                      "content": "12",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Aya a 9, 12 et 15. Avec une quatrième note, elle veut une moyenne de 13. Quelle somme totale des quatre notes lui faut-il ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Totaliser : N = 4. Étape 2 — Multiplier : la somme visée est $4 \\times 13 = 52$. Le résultat 13 est la moyenne visée, pas la somme.",
+                  "answers": [
+                    {
+                      "content": "52",
+                      "correct": true
+                    },
+                    {
+                      "content": "13",
+                      "correct": false
+                    },
+                    {
+                      "content": "49",
+                      "correct": false
+                    },
+                    {
+                      "content": "48",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Aya a 9, 12 et 15 (somme 36). Elle veut une moyenne de 13 sur quatre notes. Quelle quatrième note lui faut-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 4. Étape 2 — Multiplier : la somme visée est $4 \\times 13 = 52$. Étape 3 — Additionner : les trois notes donnent $9 + 12 + 15 = 36$, il manque $52 - 36 = 16$. Étape 4 — Conclure : vérification : $\\frac{36 + 16}{4} = 13$. Il lui faut 16.",
+                  "answers": [
+                    {
+                      "content": "16",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Aya a 9, 12 et 15. Vrai ou faux : avec une quatrième note de 20, sa moyenne est 14.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Totaliser : N = 4. Étape 2 — Multiplier : la note 20 compte une fois : $1 \\times 20 = 20$. Étape 3 — Additionner : $9 + 12 + 15 + 20 = 56$. Étape 4 — Conclure : $\\bar{x} = \\frac{56}{4} = 14$. L'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Aya a 9, 12, 15 et 16. Quelle est la médiane de ces quatre notes ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Ordonner : 9, 12, 15, 16. Étape 2 — Situer : N = 4 : rangs 2 et 3. Étape 3 — Lire : les valeurs sont 12 et 15. Étape 4 — Conclure : $\\frac{12 + 15}{2} = 13{,}5$. La médiane est 13,5.",
+                  "answers": [
+                    {
+                      "content": "13,5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "On interroge 50 élèves sur leur moyen de transport pour venir au lycée : 20 viennent à pied, 15 en gbaka, 10 en bus et 5 à vélo. On trace un diagramme circulaire.",
+              "exercise_type": "evaluation",
+              "figure": "transport-secteurs",
+              "hint": "Angle = fréquence × 360°.",
+              "questions": [
+                {
+                  "content": "Transport de 50 élèves : 20 à pied, 15 en gbaka, 10 en bus, 5 à vélo. Quel est l'angle du secteur du gbaka, en degrés ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Choisir : parts d'un tout : diagramme circulaire. Étape 2 — Calculer : $f = \\frac{15}{50} = 0{,}3$, angle $= 0{,}3 \\times 360 = 108$. L'angle est 108°.",
+                  "answers": [
+                    {
+                      "content": "108",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "°"
+                },
+                {
+                  "content": "Transport de 50 élèves : 20 à pied, 15 en gbaka, 10 en bus, 5 à vélo. Quelle est la fréquence du bus, en pourcentage ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : modalité : le bus. Étape 2 — Compter : effectif : 10. Étape 3 — Totaliser : N = 50. Étape 4 — Calculer : $f = \\frac{10}{50} = 0{,}2$, soit 20 %. La fréquence est 20 %.",
+                  "answers": [
+                    {
+                      "content": "20",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "%"
+                },
+                {
+                  "content": "Transport de 50 élèves : 20 à pied sur 50. Vrai ou faux : le secteur « à pied » est la moitié du disque.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Choisir : parts d'un tout. Étape 2 — Calculer : $f = \\frac{20}{50} = 0{,}4$, angle $= 0{,}4 \\times 360 = 144$. Étape 3 — Tracer : la moitié du disque serait 180°. L'affirmation est fausse : 144° est moins que 180°.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans un diagramme circulaire, que vaut la somme des angles de tous les secteurs ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Choisir : un diagramme circulaire est un disque entier. Étape 4 — Lire : les secteurs remplissent un tour complet : 360°. 100 est la somme des fréquences en pourcentage, pas des angles.",
+                  "answers": [
+                    {
+                      "content": "360°",
+                      "correct": true
+                    },
+                    {
+                      "content": "100°",
+                      "correct": false
+                    },
+                    {
+                      "content": "180°",
+                      "correct": false
+                    },
+                    {
+                      "content": "50°",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Transport de 50 élèves : 20 à pied, 15 en gbaka, 10 en bus, 5 à vélo. Quelles affirmations sont vraies ? (deux bonnes réponses)",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Identifier : modalités : pied, gbaka, bus, vélo. Étape 2 — Compter : effectifs 20, 15, 10, 5. Étape 3 — Totaliser : N = 50. Étape 4 — Calculer : fréquences 40 %, 30 %, 20 %, 10 % ; angle du bus $0{,}2 \\times 360 = 72$°. Seules les affirmations sur le mode (pied) et sur le gbaka (30 %) sont vraies.",
+                  "answers": [
+                    {
+                      "content": "La marche à pied est le mode.",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le gbaka est utilisé par 30 % des élèves.",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le vélo est utilisé par 5 % des élèves.",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le bus est utilisé par 15 % des élèves.",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'angle du bus est 100°.",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "À la sortie d'un stade, on relève l'âge de 30 supporters, regroupé en classes d'amplitude 10 : [10 ; 20[ pour 3 supporters, [20 ; 30[ pour 12, [30 ; 40[ pour 9 et [40 ; 50[ pour 6.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Centres des classes : 15, 25, 35 et 45.",
+              "questions": [
+                {
+                  "content": "Âges de 30 supporters regroupés en classes d'amplitude 10 : [10 ; 20[ (3 supporters), [20 ; 30[ (12), [30 ; 40[ (9) et [40 ; 50[ (6). Combien de supporters ont moins de 30 ans ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : quatre classes d'amplitude 10. Étape 2 — Découper : moins de 30 : [10 ; 20[ et [20 ; 30[. Étape 3 — Compter : effectifs 3 et 12. Étape 4 — Cumuler : $3 + 12 = 15$. 15 supporters ont moins de 30 ans.",
+                  "answers": [
+                    {
+                      "content": "15",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "supporters"
+                },
+                {
+                  "content": "Âges de 30 supporters regroupés en classes d'amplitude 10 : [10 ; 20[ (3 supporters), [20 ; 30[ (12), [30 ; 40[ (9) et [40 ; 50[ (6). Quelle est la fréquence de la classe [20 ; 30[, en pourcentage ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : modalité : [20 ; 30[. Étape 2 — Compter : effectif : 12. Étape 3 — Totaliser : N = 30. Étape 4 — Calculer : $f = \\frac{12}{30} = 0{,}4$, soit 40 %. La fréquence est 40 %.",
+                  "answers": [
+                    {
+                      "content": "40",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "%"
+                },
+                {
+                  "content": "Âges de 30 supporters regroupés en classes d'amplitude 10 : [10 ; 20[ (3 supporters), [20 ; 30[ (12), [30 ; 40[ (9) et [40 ; 50[ (6). Quelle est la moyenne d'âge, avec les centres des classes ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 30. Étape 2 — Multiplier : centres 15, 25, 35, 45 : $45 + 300 + 315 + 270$. Étape 3 — Additionner : somme = 930. Étape 4 — Conclure : $\\bar{x} = \\frac{930}{30} = 31$. La moyenne est 31 ans.",
+                  "answers": [
+                    {
+                      "content": "31",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "ans"
+                },
+                {
+                  "content": "Âges de 30 supporters regroupés en classes d'amplitude 10 : [10 ; 20[ (3 supporters), [20 ; 30[ (12), [30 ; 40[ (9) et [40 ; 50[ (6). Quelle est la classe modale ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Conclure : la classe modale est celle d'effectif le plus grand : 12, pour [20 ; 30[. [30 ; 40[ n'a que 9 supporters.",
+                  "answers": [
+                    {
+                      "content": "[20 ; 30[",
+                      "correct": true
+                    },
+                    {
+                      "content": "[10 ; 20[",
+                      "correct": false
+                    },
+                    {
+                      "content": "[30 ; 40[",
+                      "correct": false
+                    },
+                    {
+                      "content": "[40 ; 50[",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Âges de 30 supporters regroupés en classes d'amplitude 10 : [10 ; 20[ (3 supporters), [20 ; 30[ (12), [30 ; 40[ (9) et [40 ; 50[ (6). Vrai ou faux : 80 % des supporters ont moins de 40 ans.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer : quatre classes. Étape 2 — Découper : moins de 40 : trois premières classes. Étape 3 — Compter : effectifs 3, 12, 9. Étape 4 — Cumuler : $3 + 12 + 9 = 24$ ; $\\frac{24}{30} = 0{,}8$, soit 80 %. L'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 4 · Bilan de la leçon",
+          "notions": "Toutes les notions : vocabulaire, effectifs et fréquences, classes et effectifs cumulés, diagrammes, moyenne, mode, classe modale et médiane.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Dans une boutique de quartier, on note le produit de chacune des 20 ventes d'un samedi : 9 sacs de riz, 6 bouteilles d'huile, 3 sachets de sucre et 2 savons.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Fréquence = effectif ÷ N ; angle = fréquence × 360°.",
+              "questions": [
+                {
+                  "content": "Ventes d'une boutique de quartier un samedi (20 ventes) : 9 sacs de riz, 6 bouteilles d'huile, 3 sachets de sucre et 2 savons. Quelle est la nature du caractère « produit vendu » ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : le caractère est le produit : ses modalités sont des mots. Le caractère est qualitatif.",
+                  "answers": [
+                    {
+                      "content": "qualitatif",
+                      "correct": true
+                    },
+                    {
+                      "content": "quantitatif discret",
+                      "correct": false
+                    },
+                    {
+                      "content": "quantitatif continu",
+                      "correct": false
+                    },
+                    {
+                      "content": "aucune des trois",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Ventes d'une boutique de quartier un samedi (20 ventes) : 9 sacs de riz, 6 bouteilles d'huile, 3 sachets de sucre et 2 savons. Quelle est la fréquence du riz, en pourcentage ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : modalité : riz. Étape 2 — Compter : effectif : 9. Étape 3 — Totaliser : N = 20. Étape 4 — Calculer : $f = \\frac{9}{20} = 0{,}45$, soit 45 %. La fréquence est 45 %.",
+                  "answers": [
+                    {
+                      "content": "45",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "%"
+                },
+                {
+                  "content": "Ventes d'une boutique de quartier un samedi (20 ventes) : 9 sacs de riz, 6 bouteilles d'huile, 3 sachets de sucre et 2 savons. Dans un diagramme circulaire, quel est l'angle du secteur du sucre, en degrés ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Choisir : parts d'un tout. Étape 2 — Calculer : $f = \\frac{3}{20} = 0{,}15$, angle $= 0{,}15 \\times 360 = 54$. L'angle est 54°.",
+                  "answers": [
+                    {
+                      "content": "54",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "°"
+                },
+                {
+                  "content": "Ventes d'une boutique de quartier un samedi (20 ventes) : 9 sacs de riz, 6 bouteilles d'huile, 3 sachets de sucre et 2 savons. Le plus grand secteur est celui de la modalité ___ .",
+                  "question_type": "select",
+                  "explanation": "Étape 2 — Calculer : angles : riz 162°, huile 108°, sucre 54°, savon 36°. Étape 4 — Lire : le plus grand secteur correspond à la plus grande fréquence. C'est le riz.",
+                  "answers": [
+                    {
+                      "content": "riz",
+                      "correct": true
+                    },
+                    {
+                      "content": "sucre",
+                      "correct": false
+                    },
+                    {
+                      "content": "savon",
+                      "correct": false
+                    },
+                    {
+                      "content": "huile",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Ventes d'une boutique de quartier un samedi (20 ventes) : 9 sacs de riz, 6 bouteilles d'huile, 3 sachets de sucre et 2 savons. Vrai ou faux : la somme des fréquences des quatre produits vaut 100 %.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : quatre modalités. Étape 2 — Compter : effectifs 9, 6, 3 et 2. Étape 3 — Totaliser : N = 20. Étape 4 — Calculer : $45 + 30 + 15 + 10 = 100$ %. L'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "On relève la pointure de chaque élève d'un groupe de 20 : 36 (2 élèves), 37 (5), 38 (7), 39 (4) et 40 (2).",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Moyenne par produits, médiane par cumuls.",
+              "questions": [
+                {
+                  "content": "Pointures de 20 élèves : 36 (2 élèves), 37 (5), 38 (7), 39 (4), 40 (2). Le mode de la série est la pointure ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 4 — Conclure : le mode est la valeur d'effectif le plus grand : 7 élèves, pour la pointure 38. Le mode est 38.",
+                  "answers": [
+                    {
+                      "content": "38",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pointures de 20 élèves : 36 (2 élèves), 37 (5), 38 (7), 39 (4), 40 (2). Quelle est la moyenne ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 20. Étape 2 — Multiplier : on multiplie chaque valeur par son effectif : 72 + 185 + 266 + 156 + 80. Étape 3 — Additionner : somme = 759. Étape 4 — Conclure : $\\bar{x} = \\frac{759}{20} = 37{,}95$. La moyenne est 37,95.",
+                  "answers": [
+                    {
+                      "content": "37,95",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pointures de 20 élèves : 36 (2 élèves), 37 (5), 38 (7), 39 (4), 40 (2). Quelle est la médiane ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Ordonner : valeurs rangées, effectifs cumulés 2, 7, 14, 18, 20. Étape 2 — Situer : N = 20, pair : rangs 10 et 11. Étape 3 — Lire : rang 10 : cumuls 7 < 10 ≤ 14, donc valeur 38 ; rang 11 : cumuls 7 < 11 ≤ 14, donc valeur 38. Étape 4 — Conclure : $\\frac{38 + 38}{2} = 38$. La médiane est 38.",
+                  "answers": [
+                    {
+                      "content": "38",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pointures de 20 élèves : 36 (2 élèves), 37 (5), 38 (7), 39 (4), 40 (2). Quelle est la fréquence de la pointure 38, en pourcentage ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : modalité : pointure 38. Étape 2 — Compter : effectif : 7. Étape 3 — Totaliser : N = 20. Étape 4 — Calculer : $f = \\frac{7}{20} = 0{,}35$, soit 35 %. La fréquence est 35 %.",
+                  "answers": [
+                    {
+                      "content": "35",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "%"
+                },
+                {
+                  "content": "Pointures de 20 élèves : 36 (2 élèves), 37 (5), 38 (7), 39 (4), 40 (2). Combien d'élèves ont une pointure inférieure ou égale à 37 ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 3 — Compter : les pointures 36, 37, 38, 39, 40 ont pour effectifs 2, 5, 7, 4 et 2. Étape 4 — Cumuler : jusqu'à 37, on cumule les deux premiers effectifs : $2 + 5 = 7$. 7 élèves ont au plus la pointure 37.",
+                  "answers": [
+                    {
+                      "content": "7",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "élèves"
+                },
+                {
+                  "content": "Pointures de 20 élèves : 36 (2 élèves), 37 (5), 38 (7), 39 (4), 40 (2). La moyenne est 37,95 et la médiane 38. Quelle affirmation est vraie ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Conclure : 37,95 est inférieur à 38 ; le mode vaut 38, donc la moyenne n'est pas égale au mode. La moyenne diffère de la médiane de 0,05.",
+                  "answers": [
+                    {
+                      "content": "La moyenne est un peu inférieure à la médiane.",
+                      "correct": true
+                    },
+                    {
+                      "content": "La moyenne est égale à la médiane.",
+                      "correct": false
+                    },
+                    {
+                      "content": "La moyenne est supérieure à la médiane.",
+                      "correct": false
+                    },
+                    {
+                      "content": "La moyenne est égale au mode.",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "À la récréation, on relève la dépense de 20 élèves, regroupée en classes de même amplitude 100 FCFA : [0 ; 100[ pour 4 élèves, [100 ; 200[ pour 8, [200 ; 300[ pour 6 et [300 ; 400[ pour 2.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Centres des classes : 50, 150, 250 et 350.",
+              "questions": [
+                {
+                  "content": "Dépenses de 20 élèves à la récréation, en FCFA, regroupées : [0 ; 100[ (4 élèves), [100 ; 200[ (8), [200 ; 300[ (6) et [300 ; 400[ (2). Combien d'élèves dépensent moins de 200 FCFA ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : quatre classes d'amplitude 100. Étape 2 — Découper : moins de 200 : [0 ; 100[ et [100 ; 200[. Étape 3 — Compter : effectifs 4 et 8. Étape 4 — Cumuler : $4 + 8 = 12$. 12 élèves dépensent moins de 200 FCFA.",
+                  "answers": [
+                    {
+                      "content": "12",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "élèves"
+                },
+                {
+                  "content": "Dépenses de 20 élèves à la récréation, en FCFA, regroupées : [0 ; 100[ (4 élèves), [100 ; 200[ (8), [200 ; 300[ (6) et [300 ; 400[ (2). Quelle est la fréquence de la classe [200 ; 300[, en pourcentage ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : modalité : [200 ; 300[. Étape 2 — Compter : effectif : 6. Étape 3 — Totaliser : N = 20. Étape 4 — Calculer : $f = \\frac{6}{20} = 0{,}3$, soit 30 %. La fréquence est 30 %.",
+                  "answers": [
+                    {
+                      "content": "30",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "%"
+                },
+                {
+                  "content": "Dépenses de 20 élèves à la récréation, en FCFA, regroupées : [0 ; 100[ (4 élèves), [100 ; 200[ (8), [200 ; 300[ (6) et [300 ; 400[ (2). Quelle est la dépense moyenne, avec les centres des classes, en FCFA ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 20. Étape 2 — Multiplier : centres 50, 150, 250, 350 : $200 + 1200 + 1500 + 700$. Étape 3 — Additionner : somme = 3600. Étape 4 — Conclure : $\\bar{x} = \\frac{3600}{20} = 180$. La dépense moyenne est 180 FCFA.",
+                  "answers": [
+                    {
+                      "content": "180",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "FCFA"
+                },
+                {
+                  "content": "Dépenses de 20 élèves à la récréation, en FCFA, regroupées : [0 ; 100[ (4 élèves), [100 ; 200[ (8), [200 ; 300[ (6) et [300 ; 400[ (2). Quelle est la classe modale ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Conclure : la classe modale est celle d'effectif le plus grand : 8, pour [100 ; 200[. [200 ; 300[ n'a que 6 élèves.",
+                  "answers": [
+                    {
+                      "content": "[100 ; 200[",
+                      "correct": true
+                    },
+                    {
+                      "content": "[0 ; 100[",
+                      "correct": false
+                    },
+                    {
+                      "content": "[200 ; 300[",
+                      "correct": false
+                    },
+                    {
+                      "content": "[300 ; 400[",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dépenses de 20 élèves à la récréation, en FCFA, regroupées : [0 ; 100[ (4 élèves), [100 ; 200[ (8), [200 ; 300[ (6) et [300 ; 400[ (2). Si l'on représente les parts des classes par un diagramme circulaire, quel est l'angle du secteur [300 ; 400[, en degrés ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Choisir : parts d'un tout. Étape 2 — Calculer : $f = \\frac{2}{20} = 0{,}1$, angle $= 0{,}1 \\times 360 = 36$. L'angle est 36°.",
+                  "answers": [
+                    {
+                      "content": "36",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "°"
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Dans un quartier, on relève le nombre d'enfants de 20 familles : 1 enfant (5 familles), 2 enfants (8), 3 enfants (4) et 4 enfants (3).",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Reprends les méthodes de chaque fiche.",
+              "questions": [
+                {
+                  "content": "Nombre d'enfants par famille dans un quartier (20 familles) : 1 enfant (5 familles), 2 enfants (8), 3 enfants (4) et 4 enfants (3). Quelle est la fréquence des familles de 3 enfants ou plus, en pourcentage ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : modalité : 3 enfants ou plus. Étape 2 — Compter : effectif : $4 + 3 = 7$. Étape 3 — Totaliser : N = 20. Étape 4 — Calculer : $f = \\frac{7}{20} = 0{,}35$, soit 35 %. La fréquence est 35 %.",
+                  "answers": [
+                    {
+                      "content": "35",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "%"
+                },
+                {
+                  "content": "Nombre d'enfants par famille dans un quartier (20 familles) : 1 enfant (5 familles), 2 enfants (8), 3 enfants (4) et 4 enfants (3). Quelle est la moyenne ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Totaliser : N = 20. Étape 2 — Multiplier : on multiplie chaque valeur par son effectif : 5 + 16 + 12 + 12. Étape 3 — Additionner : somme = 45. Étape 4 — Conclure : $\\bar{x} = \\frac{45}{20} = 2{,}25$. La moyenne est 2,25.",
+                  "answers": [
+                    {
+                      "content": "2,25",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "enfants"
+                },
+                {
+                  "content": "Nombre d'enfants par famille dans un quartier (20 familles) : 1 enfant (5 familles), 2 enfants (8), 3 enfants (4) et 4 enfants (3). Quelle est la médiane ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Ordonner : valeurs rangées, effectifs cumulés 5, 13, 17, 20. Étape 2 — Situer : N = 20, pair : rangs 10 et 11. Étape 3 — Lire : rang 10 : cumuls 5 < 10 ≤ 13, donc valeur 2 ; rang 11 : cumuls 5 < 11 ≤ 13, donc valeur 2. Étape 4 — Conclure : $\\frac{2 + 2}{2} = 2$. La médiane est 2.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "enfants"
+                },
+                {
+                  "content": "Nombre d'enfants par famille dans un quartier (20 familles) : 1 enfant (5 familles), 2 enfants (8), 3 enfants (4) et 4 enfants (3). Quel est le mode ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Conclure : le mode est la valeur d'effectif le plus grand : 8, pour 2 enfants. Le nombre 8 est l'effectif, pas la valeur.",
+                  "answers": [
+                    {
+                      "content": "2 enfants",
+                      "correct": true
+                    },
+                    {
+                      "content": "8 enfants",
+                      "correct": false
+                    },
+                    {
+                      "content": "1 enfant",
+                      "correct": false
+                    },
+                    {
+                      "content": "4 enfants",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Nombre d'enfants par famille dans un quartier (20 familles) : 1 enfant (5 familles), 2 enfants (8), 3 enfants (4) et 4 enfants (3). Quel diagramme convient pour représenter cette série, qui prend des valeurs isolées ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Choisir : le nombre d'enfants est un caractère discret : bâtons. L'histogramme sert pour des classes.",
+                  "answers": [
+                    {
+                      "content": "le diagramme en bâtons",
+                      "correct": true
+                    },
+                    {
+                      "content": "l'histogramme à classes",
+                      "correct": false
+                    },
+                    {
+                      "content": "le tableau des effectifs",
+                      "correct": false
+                    },
+                    {
+                      "content": "aucun diagramme",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre de la méthode de la fiche les étapes pour calculer la moyenne de cette série.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Totaliser : N d'abord. Étape 2 — Multiplier : les produits. Étape 3 — Additionner : la somme 45. Étape 4 — Conclure : on divise par N, 2,25.",
+                  "answers": [
+                    {
+                      "content": "Totaliser : N = 5 + 8 + 4 + 3 = 20."
+                    },
+                    {
+                      "content": "Multiplier : 5 × 1, 8 × 2, 4 × 3, 3 × 4."
+                    },
+                    {
+                      "content": "Additionner : 5 + 16 + 12 + 12 = 45."
+                    },
+                    {
+                      "content": "Conclure : 45 ÷ 20 = 2,25."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

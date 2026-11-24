@@ -1,0 +1,3655 @@
+{
+  "format": "lnclass.course-tree",
+  "version": 3,
+  "courses": [
+    {
+      "name": "Fonctions polynômes et fractions rationnelles",
+      "subtitle": "Leçon 6 — progression DPFC 2026-2027",
+      "level_name": "2nde",
+      "series_name": "C",
+      "material_name": "Mathématiques",
+      "theme": "burgundy",
+      "figures": [
+        {
+          "key": "racines-de-p",
+          "kind": "number_line",
+          "description": "Une droite graduée de −4 à 5 sur laquelle sont marquées les trois racines −2, 1 et 3 du polynôme P(x) = x³ − 2x² − 5x + 6. Le polynôme s'annule en ces trois nombres, ce qui donne la factorisation P(x) = (x + 2)(x − 1)(x − 3).",
+          "params": {
+            "min": -4,
+            "max": 5,
+            "step": 1,
+            "points": [
+              {
+                "value": -2,
+                "label": "−2"
+              },
+              {
+                "value": 1,
+                "label": "1"
+              },
+              {
+                "value": 3,
+                "label": "3"
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "valeurs-interdites",
+          "kind": "number_line",
+          "description": "Une droite graduée de −4 à 5 sur laquelle sont marquées les deux valeurs interdites −1 et 2 de la fraction F(x) = (x² − 4) / (x² − x − 2). L'ensemble de définition est toute la droite, sauf ces deux nombres : ℝ privé de {−1 ; 2}.",
+          "params": {
+            "min": -4,
+            "max": 5,
+            "step": 1,
+            "points": [
+              {
+                "value": -1,
+                "label": "−1"
+              },
+              {
+                "value": 2,
+                "label": "2"
+              }
+            ]
+          },
+          "controls": []
+        }
+      ],
+      "notions": [
+        {
+          "name": "Déterminer le degré d'un polynôme",
+          "remember": "Un **polynôme** est une fonction $P$ qui s'écrit $P(x)=a_nx^n+\\dots+a_1x+a_0$, avec $n$ entier naturel et des coefficients $a_0,\\dots,a_n$ réels. Si $a_n\\neq 0$, l'entier $n$ est le **degré** de $P$ et $a_n$ son **coefficient dominant**. Exemple : $4x^3-x+7$ est de degré 3, de coefficient dominant 4. Un polynôme de degré 2 est un **trinôme** $ax^2+bx+c$ ($a\\neq 0$). Pour deux polynômes non nuls : le degré de $P\\times Q$ est la somme des degrés ; le degré de $P+Q$ est au plus le plus grand des deux degrés.",
+          "method": [
+            "Développer et réduire l'expression de $P(x)$, puis l'ordonner suivant les puissances décroissantes de $x$.",
+            "Repérer le terme de plus grand exposant dont le coefficient n'est pas nul.",
+            "Lire le degré (cet exposant) et le coefficient dominant (son coefficient).",
+            "Contrôler avec la règle : le degré d'un produit est la somme des degrés, celui d'une somme est au plus le plus grand des degrés."
+          ],
+          "example": {
+            "statement": "Déterminer le degré de $P(x)=(x-2)(x^2+3x)-x^3$.",
+            "steps": [
+              "Développer : $(x-2)(x^2+3x)=x^3+3x^2-2x^2-6x=x^3+x^2-6x$, donc $P(x)=x^3+x^2-6x-x^3=x^2-6x$, déjà ordonné.",
+              "Repérer : le terme de plus grand exposant est $x^2$, car le terme en $x^3$ a disparu ($x^3-x^3=0$).",
+              "Lire : le degré de $P$ est $2$ et son coefficient dominant est $1$.",
+              "Contrôler : le produit $(x-2)(x^2+3x)$ est de degré $1+2=3$, mais la somme avec $-x^3$ annule le terme en $x^3$ ; le degré $2$ est bien au plus $3$."
+            ]
+          },
+          "pitfall": "Ne pas lire le degré avant d'avoir développé et réduit. L'expression $(x^2+x)+(3-x^2)$ semble de degré 2, mais elle vaut $x+3$ : les termes en $x^2$ s'annulent et le degré est 1. Le degré d'une somme n'est donc pas toujours le plus grand des deux degrés. On réduit d'abord, puis on lit le plus grand exposant dont le coefficient n'est pas nul.",
+          "figure": null,
+          "practice": {
+            "statement": "Tu t'entraînes à déterminer le degré d'un polynôme avec la méthode de la fiche.",
+            "questions": [
+              {
+                "content": "Quel est le degré de $P(x)=5x^3-2x^2+x-4$ ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Développer : $P(x)$ est déjà développé et ordonné. Étape 2 — Repérer : le terme de plus grand exposant est $5x^3$, son coefficient $5$ n'est pas nul. Étape 3 — Lire : le degré est l'exposant, soit $3$ ; le nombre $5$ est le coefficient dominant, pas le degré. Étape 4 — Contrôler : aucun produit ni aucune somme ici, la lecture directe suffit.",
+                "answers": [
+                  {
+                    "content": "3",
+                    "correct": true
+                  },
+                  {
+                    "content": "5",
+                    "correct": false
+                  },
+                  {
+                    "content": "2",
+                    "correct": false
+                  },
+                  {
+                    "content": "4",
+                    "correct": false
+                  }
+                ],
+                "hint": "Le degré est un exposant, pas un coefficient."
+              },
+              {
+                "content": "Quel est le degré de $P(x)=(x+1)(x-3)-x^2$ ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Développer : $(x+1)(x-3)=x^2-3x+x-3=x^2-2x-3$, donc $P(x)=x^2-2x-3-x^2=-2x-3$. Étape 2 — Repérer : le terme en $x^2$ a disparu, le plus grand exposant est $1$. Étape 3 — Lire : le degré de $P$ est $1$. Étape 4 — Contrôler : le produit est de degré $2$, la somme avec $-x^2$ peut être de degré plus petit : $1\\leq 2$.",
+                "answers": [
+                  {
+                    "content": "1",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "Développe, puis regarde si le terme en $x^2$ reste."
+              },
+              {
+                "content": "Le polynôme $(2x^2+x)-(2x^2-5)$ est de degré 2.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Développer : $(2x^2+x)-(2x^2-5)=2x^2+x-2x^2+5=x+5$. Étape 2 — Repérer : le terme en $x^2$ a disparu, le plus grand exposant est $1$. Étape 3 — Lire : le degré est $1$, pas $2$. Étape 4 — Contrôler : le degré d'une somme est seulement au plus le plus grand des degrés. L'affirmation est fausse.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Réduis avant de lire le degré."
+              },
+              {
+                "content": "Quel est le coefficient dominant de $P(x)=3x-7x^3+2$ ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Développer : on ordonne $P(x)=-7x^3+3x+2$. Étape 2 — Repérer : le terme de plus grand exposant est $-7x^3$. Étape 3 — Lire : le coefficient dominant est $-7$, avec son signe ; le degré est $3$. Étape 4 — Contrôler : $7$ oublie le signe moins, et $3$ est le coefficient du premier terme écrit, pas du plus grand exposant.",
+                "answers": [
+                  {
+                    "content": "-7",
+                    "correct": true
+                  },
+                  {
+                    "content": "3",
+                    "correct": false
+                  },
+                  {
+                    "content": "7",
+                    "correct": false
+                  },
+                  {
+                    "content": "2",
+                    "correct": false
+                  }
+                ],
+                "hint": "Ordonne d'abord le polynôme."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Lire le degré et le coefficient dominant",
+              "statement": "Dans cet exercice, tu détermines le degré et le coefficient dominant de polynômes avec la méthode de la fiche : développer, repérer, lire, contrôler.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quel est le degré de $P(x)=-2x^4+x^2-9$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Développer : $P(x)$ est déjà développé et ordonné. Étape 2 — Repérer : le terme de plus grand exposant est $-2x^4$. Étape 3 — Lire : le degré est $4$ ; $-2$ est le coefficient dominant. Étape 4 — Contrôler : aucune somme ne fait disparaître $x^4$, le degré est bien $4$.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    },
+                    {
+                      "content": "2",
+                      "correct": false
+                    },
+                    {
+                      "content": "9",
+                      "correct": false
+                    },
+                    {
+                      "content": "-2",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel est le degré du polynôme $(x-1)(x+4)$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Développer : $(x-1)(x+4)=x^2+4x-x-4=x^2+3x-4$. Étape 2 — Repérer : le plus grand exposant est $2$. Étape 3 — Lire : le degré est $2$. Étape 4 — Contrôler : le degré d'un produit est la somme des degrés : $1+1=2$.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quel est le coefficient dominant de $(2x-1)(x^2+3)$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Développer : $(2x-1)(x^2+3)=2x^3+6x-x^2-3=2x^3-x^2+6x-3$. Étape 2 — Repérer : le terme de plus grand exposant est $2x^3$. Étape 3 — Lire : le coefficient dominant est $2$ et le degré $3$. Étape 4 — Contrôler : $2\\times 1=2$ (produit des coefficients dominants) et $1+2=3$ (somme des degrés).",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    },
+                    {
+                      "content": "-1",
+                      "correct": false
+                    },
+                    {
+                      "content": "6",
+                      "correct": false
+                    },
+                    {
+                      "content": "3",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le degré de $(x^2+4x)-(x^2-1)$ est ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Développer : $(x^2+4x)-(x^2-1)=x^2+4x-x^2+1=4x+1$. Étape 2 — Repérer : le terme en $x^2$ a disparu, le plus grand exposant est $1$. Étape 3 — Lire : le degré est $1$. Étape 4 — Contrôler : $1\\leq 2$, la règle de la somme est respectée.",
+                  "answers": [
+                    {
+                      "content": "1",
+                      "correct": true
+                    },
+                    {
+                      "content": "un",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Le polynôme $(3x^3+x)+(-3x^3+2x^2)$ est de degré 3.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Développer : $(3x^3+x)+(-3x^3+2x^2)=3x^3+x-3x^3+2x^2=2x^2+x$. Étape 2 — Repérer : le terme en $x^3$ a disparu, le plus grand exposant est $2$. Étape 3 — Lire : le degré est $2$. Étape 4 — Contrôler : deux polynômes de degré 3 peuvent avoir une somme de degré plus petit ; l'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Degrés dans l'atelier de menuiserie et de couture",
+              "statement": "Dans cet exercice, tu détermines le degré de polynômes issus de l'atelier, avec les quatre étapes de la fiche : développer, repérer, lire, contrôler.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Un menuisier découpe un panneau de largeur $x$ m et de longueur $x+2$ m. Son aire est $A(x)=x(x+2)$. Quel est le degré de $A$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Développer : $A(x)=x(x+2)=x^2+2x$. Étape 2 — Repérer : le plus grand exposant est $2$. Étape 3 — Lire : le degré de $A$ est $2$. Étape 4 — Contrôler : produit de deux polynômes de degré $1$, donc de degré $1+1=2$.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    },
+                    {
+                      "content": "1",
+                      "correct": false
+                    },
+                    {
+                      "content": "3",
+                      "correct": false
+                    },
+                    {
+                      "content": "4",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le coût d'un lot de tissu est $C(x)=(2x+3)(x^2-1)$. Quel est le degré de $C$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Développer : $C(x)=2x^3-2x+3x^2-3=2x^3+3x^2-2x-3$. Étape 2 — Repérer : le plus grand exposant est $3$, de coefficient $2$. Étape 3 — Lire : le degré est $3$. Étape 4 — Contrôler : $1+2=3$.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Le produit d'un polynôme de degré 2 et d'un polynôme de degré 3 est de degré 5.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Développer : $(ax^2+\\dots)(bx^3+\\dots)=abx^5+\\dots$. Étape 2 — Repérer : le terme de plus grand exposant est $abx^5$, avec $ab\\neq 0$. Étape 3 — Lire : le degré est $5$. Étape 4 — Contrôler : le degré d'un produit est la somme des degrés, $2+3=5$ ; l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le coefficient dominant de $P(x)=4x-x^3+2x^2$ est ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Développer : on ordonne $P(x)=-x^3+2x^2+4x$. Étape 2 — Repérer : le terme de plus grand exposant est $-x^3$, soit $-1\\times x^3$. Étape 3 — Lire : le coefficient dominant est $-1$ et le degré $3$. Étape 4 — Contrôler : le coefficient $4$ est celui du terme en $x$, pas du plus grand exposant.",
+                  "answers": [
+                    {
+                      "content": "-1",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles expressions sont de degré 2 après réduction ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Développer : $(x+1)^2=x^2+2x+1$ ; $x(x-4)+3=x^2-4x+3$ ; $(x^2+5)-(x^2-2)=7$ ; $(x+2)(x-2)-x^2=-4$ ; $x^3-x(x^2-1)=x$. Étape 2 — Repérer : le plus grand exposant vaut $2$ pour $(x+1)^2$ et $x(x-4)+3$, $0$ pour $(x^2+5)-(x^2-2)$ et $(x+2)(x-2)-x^2$, $1$ pour $x^3-x(x^2-1)$. Étape 3 — Lire : seules $(x+1)^2$ et $x(x-4)+3$ sont de degré $2$. Étape 4 — Contrôler : dans les trois autres, les termes de plus haut degré s'annulent.",
+                  "answers": [
+                    {
+                      "content": "$(x+1)^2$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$x(x-4)+3$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x^2+5)-(x^2-2)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x+2)(x-2)-x^2$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$x^3-x(x^2-1)$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque polynôme à son degré.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Développer : $(x+1)^3=x^3+3x^2+3x+1$ ; $(x^2+1)^2=x^4+2x^2+1$ ; $x(x-5)=x^2-5x$ ; $(x^2+x)-(x^2-3)=x+3$. Étape 2 — Repérer : le plus grand exposant est $3$, $4$, $2$ et $1$. Étape 3 — Lire : ce sont les degrés des quatre polynômes. Étape 4 — Contrôler : $3\\times 1=3$ et $2\\times 2=4$ (degré d'une puissance), et $(x^2+x)-(x^2-3)$ a perdu son terme en $x^2$.",
+                  "answers": [
+                    {
+                      "content": "$(x+1)^3$",
+                      "match": "3"
+                    },
+                    {
+                      "content": "$(x^2+1)^2$",
+                      "match": "4"
+                    },
+                    {
+                      "content": "$x(x-5)$",
+                      "match": "2"
+                    },
+                    {
+                      "content": "$(x^2+x)-(x^2-3)$",
+                      "match": "1"
+                    }
+                  ]
+                }
+              ],
+              "hint": "Développe et réduis avant de lire le plus grand exposant."
+            }
+          ]
+        },
+        {
+          "name": "Utiliser l'égalité de polynômes",
+          "remember": "Deux polynômes $P$ et $Q$ sont **égaux** si $P(x)=Q(x)$ pour tout réel $x$. C'est le cas si et seulement s'ils ont le même degré et les mêmes coefficients, terme à terme : le coefficient de $x^k$ dans $P$ est celui de $x^k$ dans $Q$, pour chaque $k$. Cette règle sert à calculer des coefficients inconnus : on égale les coefficients de même degré.",
+          "method": [
+            "Développer et réduire le membre qui contient les inconnues.",
+            "Ordonner les deux membres suivant les puissances décroissantes de $x$.",
+            "Identifier les coefficients de même degré pour former un système d'équations.",
+            "Résoudre le système, puis vérifier en redéveloppant."
+          ],
+          "example": {
+            "statement": "Déterminer les réels $a$, $b$, $c$ tels que, pour tout réel $x$ : $3x^2-5x+4=a(x-1)^2+b(x-1)+c$.",
+            "steps": [
+              "Développer : $a(x-1)^2+b(x-1)+c=ax^2-2ax+a+bx-b+c$.",
+              "Ordonner : le membre de droite devient $ax^2+(b-2a)x+(a-b+c)$, à comparer à $3x^2-5x+4$.",
+              "Identifier : $a=3$, $b-2a=-5$ et $a-b+c=4$.",
+              "Résoudre : $a=3$, puis $b=-5+6=1$, puis $c=4-3+1=2$. Vérification : $3(x-1)^2+(x-1)+2=3x^2-6x+3+x-1+2=3x^2-5x+4$."
+            ]
+          },
+          "pitfall": "Ne pas croire qu'une égalité vraie pour une seule valeur de $x$ prouve l'égalité de deux polynômes. Les polynômes $(x+1)^2$ et $x^2+1$ valent tous les deux $1$ pour $x=0$ ; mais pour $x=1$ ils valent $4$ et $2$ : ils ne sont pas égaux. Pour prouver l'égalité, on compare tous les coefficients, un par un.",
+          "figure": null,
+          "practice": {
+            "statement": "Tu t'entraînes à utiliser l'égalité de polynômes avec la méthode de la fiche.",
+            "questions": [
+              {
+                "content": "Pour tout réel $x$, $(a+1)x^2+3x=4x^2+3x$. Quelle est la valeur de $a$ ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Développer : les deux membres sont déjà développés. Étape 2 — Ordonner : ils sont déjà ordonnés. Étape 3 — Identifier : coefficients de $x^2$ : $a+1=4$ ; ceux de $x$ ($3$ et $3$) et les constantes ($0$ et $0$) sont déjà égaux. Étape 4 — Résoudre : $a=4-1=3$. Vérification : $(3+1)x^2+3x=4x^2+3x$.",
+                "answers": [
+                  {
+                    "content": "3",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "Compare les coefficients de $x^2$ : $a+1=4$."
+              },
+              {
+                "content": "Pour tout réel $x$, $(x+a)^2=x^2+6x+9$. Quelle est la valeur de $a$ ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Développer : $(x+a)^2=x^2+2ax+a^2$. Étape 2 — Ordonner : c'est déjà ordonné, à comparer à $x^2+6x+9$. Étape 3 — Identifier : $2a=6$ et $a^2=9$. Étape 4 — Résoudre : $a=3$, et $3^2=9$ convient. Vérification : $(x+3)^2=x^2+6x+9$. La valeur $-3$ vérifie $a^2=9$ mais pas $2a=6$.",
+                "answers": [
+                  {
+                    "content": "3",
+                    "correct": true
+                  },
+                  {
+                    "content": "6",
+                    "correct": false
+                  },
+                  {
+                    "content": "-3",
+                    "correct": false
+                  },
+                  {
+                    "content": "9",
+                    "correct": false
+                  }
+                ],
+                "hint": "Compare le coefficient de $x$ : $2a=6$."
+              },
+              {
+                "content": "Pour tout réel $x$, $x^2+bx+c=(x-2)(x+5)$. Quelles sont les valeurs de $b$ et $c$ ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Développer : $(x-2)(x+5)=x^2+5x-2x-10=x^2+3x-10$. Étape 2 — Ordonner : $x^2+3x-10$ est ordonné, à comparer à $x^2+bx+c$. Étape 3 — Identifier : $b=3$ et $c=-10$. Étape 4 — Résoudre : le système est déjà résolu ; vérification en redéveloppant : $(x-2)(x+5)=x^2+3x-10$. Le produit des nombres $-2$ et $5$ est négatif, donc $c$ est négatif.",
+                "answers": [
+                  {
+                    "content": "$b=3$ et $c=-10$",
+                    "correct": true
+                  },
+                  {
+                    "content": "$b=-3$ et $c=-10$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$b=3$ et $c=10$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$b=7$ et $c=-10$",
+                    "correct": false
+                  }
+                ],
+                "hint": "Développe d'abord $(x-2)(x+5)$."
+              },
+              {
+                "content": "Les polynômes $x^2+2x$ et $x^2+2$ sont égaux.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Développer : les deux sont déjà développés. Étape 2 — Ordonner : $x^2+2x+0$ et $x^2+0x+2$. Étape 3 — Identifier : les coefficients de $x$ sont $2$ et $0$, et les constantes sont $0$ et $2$. Étape 4 — Résoudre : les coefficients de $x$ diffèrent ($2\\neq 0$), les polynômes ne sont pas égaux.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Compare les coefficients de $x$."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Identifier des coefficients inconnus",
+              "statement": "Dans cet exercice, tu utilises l'égalité de polynômes avec la méthode de la fiche : développer, ordonner, identifier, résoudre.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Pour tout réel $x$, $a(x+2)+b=3x+10$. Quelle est la valeur de $b$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Développer : $a(x+2)+b=ax+2a+b$. Étape 2 — Ordonner : $ax+(2a+b)$, à comparer à $3x+10$. Étape 3 — Identifier : $a=3$ et $2a+b=10$. Étape 4 — Résoudre : $b=10-2\\times 3=4$. Vérification : $3(x+2)+4=3x+10$.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pour tout réel $x$, $x^2-6x+8=(x-2)(x-b)$. Quelle est la valeur de $b$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Développer : $(x-2)(x-b)=x^2-bx-2x+2b=x^2-(b+2)x+2b$. Étape 2 — Ordonner : à comparer à $x^2-6x+8$. Étape 3 — Identifier : $b+2=6$ et $2b=8$. Étape 4 — Résoudre : $b=4$, et $2\\times 4=8$ convient. La valeur $6$ oublie le terme $2$ dans $b+2$.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    },
+                    {
+                      "content": "2",
+                      "correct": false
+                    },
+                    {
+                      "content": "-4",
+                      "correct": false
+                    },
+                    {
+                      "content": "6",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour tout réel $x$, $x^2+px+q=(x+3)^2-1$. Quelles sont les valeurs de $p$ et $q$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Développer : $(x+3)^2-1=x^2+6x+9-1=x^2+6x+8$. Étape 2 — Ordonner : $x^2+6x+8$ est à comparer à $x^2+px+q$. Étape 3 — Identifier : $p=6$ et $q=8$. Étape 4 — Résoudre : le système est résolu ; $q=9$ oublierait de retrancher $1$.",
+                  "answers": [
+                    {
+                      "content": "$p=6$ et $q=8$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$p=3$ et $q=8$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$p=6$ et $q=9$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$p=6$ et $q=10$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour tout réel $x$, $(x-a)^2=x^2-10x+25$, donc $a=$ ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Développer : $(x-a)^2=x^2-2ax+a^2$. Étape 2 — Ordonner : à comparer à $x^2-10x+25$. Étape 3 — Identifier : $-2a=-10$ et $a^2=25$. Étape 4 — Résoudre : $a=5$, et $5^2=25$ convient.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour $x=0$, les polynômes $(x+2)^2$ et $x^2+4$ ont la même valeur ($4$). Donc ils sont égaux.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Développer : $(x+2)^2=x^2+4x+4$. Étape 2 — Ordonner : $x^2+4x+4$ et $x^2+0x+4$. Étape 3 — Identifier : les coefficients de $x$ sont $4$ et $0$ : ils diffèrent. Étape 4 — Résoudre : les polynômes ne sont pas égaux ; pour $x=1$, ils valent $9$ et $5$. Une seule valeur égale ne prouve rien.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Coefficients inconnus dans des aires de panneaux",
+              "statement": "Dans cet exercice, tu retrouves des coefficients inconnus dans des aires et des expressions, en égalant les coefficients de même degré.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Un panneau a pour aire $A(x)=(x+3)(x+a)$, et $A(x)=x^2+7x+12$ pour tout réel $x$. Quelle est la valeur de $a$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Développer : $(x+3)(x+a)=x^2+(a+3)x+3a$. Étape 2 — Ordonner : à comparer à $x^2+7x+12$. Étape 3 — Identifier : $a+3=7$ et $3a=12$. Étape 4 — Résoudre : $a=4$, et $3\\times 4=12$ convient.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pour tout réel $x$, $2x^2+bx+c=2(x-1)^2+3$. Quelles sont les valeurs de $b$ et $c$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Développer : $2(x-1)^2+3=2x^2-4x+2+3=2x^2-4x+5$. Étape 2 — Ordonner : à comparer à $2x^2+bx+c$. Étape 3 — Identifier : $b=-4$ et $c=5$. Étape 4 — Résoudre : le système est résolu ; $b=-2$ oublierait de multiplier $-2x$ par $2$.",
+                  "answers": [
+                    {
+                      "content": "$b=-4$ et $c=5$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$b=-2$ et $c=5$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$b=4$ et $c=5$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$b=-4$ et $c=3$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour tout réel $x$, $(x-a)^2=x^2-12x+36$, donc $a=$ ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Développer : $(x-a)^2=x^2-2ax+a^2$. Étape 2 — Ordonner : à comparer à $x^2-12x+36$. Étape 3 — Identifier : $-2a=-12$ et $a^2=36$. Étape 4 — Résoudre : $a=6$, et $6^2=36$ convient.",
+                  "answers": [
+                    {
+                      "content": "6",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Les polynômes $2x^2+4x+2$ et $2(x+1)^2$ sont égaux.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Développer : $2(x+1)^2=2(x^2+2x+1)=2x^2+4x+2$. Étape 2 — Ordonner : les deux membres sont écrits $2x^2+4x+2$. Étape 3 — Identifier : les coefficients $2$, $4$ et $2$ sont égaux deux à deux. Étape 4 — Résoudre : aucun système à résoudre, les polynômes sont égaux.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles égalités sont vraies pour tout réel $x$ ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Développer : $(x+2)^2=x^2+4x+4$ ; $(x-1)(x+1)=x^2-1$ ; $(x+3)^2=x^2+6x+9$ ; $2(x+1)=2x+2$ ; $(x-2)^2=x^2-4x+4$. Étape 2 — Ordonner : on écrit chaque membre par puissances décroissantes. Étape 3 — Identifier : $(x+2)^2=x^2+4x+4$ et $(x-1)(x+1)=x^2-1$ ont les mêmes coefficients des deux côtés ; $(x+3)^2$, $2(x+1)$ et $(x-2)^2$ ne sont pas égaux aux expressions proposées (double produit oublié, facteur oublié). Étape 4 — Résoudre : seules $(x+2)^2=x^2+4x+4$ et $(x-1)(x+1)=x^2-1$ sont vraies.",
+                  "answers": [
+                    {
+                      "content": "$(x+2)^2=x^2+4x+4$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x-1)(x+1)=x^2-1$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x+3)^2=x^2+9$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$2(x+1)=2x+1$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x-2)^2=x^2-4$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque expression au triplet $(a\\,;\\,b\\,;\\,c)$ des coefficients de $ax^2+bx+c$ qui lui est égal.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Développer : $(x+1)(x+2)=x^2+3x+2$ ; $(x-1)(x+2)=x^2+x-2$ ; $(x-2)^2=x^2-4x+4$ ; $2x(x+1)-3=2x^2+2x-3$. Étape 2 — Ordonner : chaque résultat est écrit $ax^2+bx+c$. Étape 3 — Identifier : on lit $a$, $b$, $c$ terme à terme. Étape 4 — Résoudre : les associations sont celles de la liste.",
+                  "answers": [
+                    {
+                      "content": "$(x+1)(x+2)$",
+                      "match": "$(1\\,;\\,3\\,;\\,2)$"
+                    },
+                    {
+                      "content": "$(x-1)(x+2)$",
+                      "match": "$(1\\,;\\,1\\,;\\,-2)$"
+                    },
+                    {
+                      "content": "$(x-2)^2$",
+                      "match": "$(1\\,;\\,-4\\,;\\,4)$"
+                    },
+                    {
+                      "content": "$2x(x+1)-3$",
+                      "match": "$(2\\,;\\,2\\,;\\,-3)$"
+                    }
+                  ]
+                }
+              ],
+              "hint": "Développe un membre, ordonne, puis égale les coefficients de même degré."
+            }
+          ]
+        },
+        {
+          "name": "Utiliser une racine pour factoriser un polynôme",
+          "remember": "Un réel $a$ est une **racine** du polynôme $P$ si $P(a)=0$. Propriété : si $a$ est une racine de $P$, alors $P(x)=(x-a)Q(x)$, où $Q$ est un polynôme de degré $n-1$ si $P$ est de degré $n$. Réciproquement, si $P(x)=(x-a)Q(x)$, alors $P(a)=0$. Le facteur est toujours $x-a$ : pour la racine $-2$, c'est $x-(-2)=x+2$.",
+          "method": [
+            "Calculer $P(a)$ pour quelques entiers simples ($\\pm 1$, $\\pm 2$, $\\pm 3$…) jusqu'à trouver une racine $a$.",
+            "Écrire $P(x)=(x-a)Q(x)$, où $Q$ est de degré $n-1$ à coefficients inconnus (pour $n=3$ : $Q(x)=ux^2+vx+w$).",
+            "Développer $(x-a)Q(x)$, puis identifier ses coefficients avec ceux de $P$.",
+            "Résoudre le système, écrire la factorisation $P(x)=(x-a)Q(x)$ et la vérifier."
+          ],
+          "example": {
+            "statement": "Factoriser $P(x)=x^3-2x^2-5x+6$.",
+            "steps": [
+              "Calculer : $P(0)=6\\neq 0$, puis $P(1)=1-2-5+6=0$ ; donc $1$ est une racine de $P$.",
+              "Écrire : $P(x)=(x-1)(ux^2+vx+w)$, avec $u$, $v$, $w$ à trouver.",
+              "Développer : $(x-1)(ux^2+vx+w)=ux^3+(v-u)x^2+(w-v)x-w$. Identifier avec $x^3-2x^2-5x+6$ : $u=1$, $v-u=-2$, $w-v=-5$, $-w=6$.",
+              "Résoudre : $u=1$, $v=-1$, $w=-6$, et $-w=6$ est vérifié. Donc $P(x)=(x-1)(x^2-x-6)$. Vérification : $(x-1)(x^2-x-6)=x^3-x^2-6x-x^2+x+6=x^3-2x^2-5x+6$."
+            ]
+          },
+          "pitfall": "Ne pas se tromper de signe : si $-2$ est une racine, le facteur est $x+2$, pas $x-2$. Pour $P(x)=x^3-2x^2-5x+6$ : $P(-2)=-8-8+10+6=0$, donc $x+2$ est un facteur de $P$ ; mais $P(2)=8-8-10+6=-4\\neq 0$, donc $x-2$ n'en est pas un. Le facteur est $x-a$, où $a$ est la racine : $x-(-2)=x+2$.",
+          "figure": "racines-de-p",
+          "practice": {
+            "statement": "Tu t'entraînes à factoriser un polynôme avec une racine, en suivant la méthode de la fiche.",
+            "questions": [
+              {
+                "content": "Lequel de ces nombres est une racine de $P(x)=x^3-3x^2+x+2$ ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Calculer : $P(2)=8-12+2+2=0$ ; $P(-2)=-8-12-2+2=-20$ ; $P(1)=1-3+1+2=1$ ; $P(3)=27-27+3+2=5$. Étape 2 — Écrire : seul $2$ annule $P$, donc $P(x)=(x-2)Q(x)$. Étape 3 — Développer : sans objet ici, la question ne demande que la racine ; pour factoriser, on identifierait ensuite les coefficients de $Q$. Étape 4 — Résoudre : sans objet ici ; la racine est $2$, les autres nombres donnent une valeur non nulle.",
+                "answers": [
+                  {
+                    "content": "2",
+                    "correct": true
+                  },
+                  {
+                    "content": "-2",
+                    "correct": false
+                  },
+                  {
+                    "content": "1",
+                    "correct": false
+                  },
+                  {
+                    "content": "3",
+                    "correct": false
+                  }
+                ],
+                "hint": "Calcule $P(a)$ pour chaque nombre proposé."
+              },
+              {
+                "content": "Le nombre $2$ est une racine de $P(x)=x^2-5x+6$. Quelle est la factorisation de $P$ ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Calculer : $P(2)=4-10+6=0$, donc $2$ est une racine. Étape 2 — Écrire : $P(x)=(x-2)(ux+v)$. Étape 3 — Développer : $(x-2)(ux+v)=ux^2+(v-2u)x-2v$ ; on identifie : $u=1$, $v-2u=-5$, $-2v=6$. Étape 4 — Résoudre : $v=-3$, donc $P(x)=(x-2)(x-3)$. Le facteur est $x-2$ (racine $2$), pas $x+2$.",
+                "answers": [
+                  {
+                    "content": "$(x-2)(x-3)$",
+                    "correct": true
+                  },
+                  {
+                    "content": "$(x+2)(x-3)$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$(x-2)(x+3)$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$(x+2)(x+3)$",
+                    "correct": false
+                  }
+                ],
+                "hint": "Le facteur associé à la racine $a$ est $x-a$."
+              },
+              {
+                "content": "Si $P(-3)=0$, alors $x-3$ est un facteur de $P(x)$.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Calculer : $P(-3)=0$ signifie que $-3$ est une racine. Étape 2 — Écrire : $P(x)=(x-(-3))Q(x)=(x+3)Q(x)$. Étape 3 — Développer : le facteur est $x+3$. Étape 4 — Résoudre : $x-3$ est un facteur seulement si $P(3)=0$, ce qu'on ne sait pas ; l'affirmation est fausse.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Le facteur de la racine $-3$ est $x-(-3)$."
+              },
+              {
+                "content": "Le nombre $1$ est une racine de $P(x)=x^3-7x+6$. On écrit $P(x)=(x-1)(x^2+vx+w)$. Quelle est la valeur de $w$ ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Calculer : $P(1)=1-7+6=0$, donc $1$ est une racine. Étape 2 — Écrire : $P(x)=(x-1)(x^2+vx+w)$. Étape 3 — Développer : $(x-1)(x^2+vx+w)=x^3+(v-1)x^2+(w-v)x-w$ ; on identifie avec $x^3+0x^2-7x+6$ : $v-1=0$, $w-v=-7$, $-w=6$. Étape 4 — Résoudre : $v=1$, $w=-6$, et $-w=6$ est vérifié.",
+                "answers": [
+                  {
+                    "content": "-6",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "Le coefficient de $x^2$ dans $P$ est $0$."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Racines et factorisations pas à pas",
+              "statement": "Dans cet exercice, tu utilises une racine pour factoriser un polynôme, avec les étapes de la fiche : calculer, écrire, développer, résoudre.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Lequel de ces nombres est une racine de $P(x)=x^3-x^2-x-2$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Calculer : $P(2)=8-4-2-2=0$ ; $P(1)=-3$ ; $P(-1)=-1-1+1-2=-3$ ; $P(-2)=-8-4+2-2=-12$. Étape 2 — Écrire : $2$ est la seule racine parmi ces nombres, donc $P(x)=(x-2)Q(x)$. Étape 3 — Développer : on identifierait ensuite les coefficients de $Q$. Étape 4 — Résoudre : la racine est $2$.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    },
+                    {
+                      "content": "1",
+                      "correct": false
+                    },
+                    {
+                      "content": "-1",
+                      "correct": false
+                    },
+                    {
+                      "content": "-2",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour $P(x)=x^3-2x^2-5x+6$, calcule $P(2)$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Calculer : $P(2)=2^3-2\\times 2^2-5\\times 2+6=8-8-10+6=-4$. Étape 2 — Écrire : comme $P(2)\\neq 0$, on ne peut pas écrire $P(x)=(x-2)Q(x)$. Étape 3 — Développer : sans objet, $2$ n'est pas une racine. Étape 4 — Résoudre : $P(2)=-4$, donc $x-2$ n'est pas un facteur de $P$.",
+                  "answers": [
+                    {
+                      "content": "-4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Le nombre $3$ est une racine de $P(x)=x^2-2x-3$. Quelle est la factorisation de $P$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Calculer : $P(3)=9-6-3=0$, donc $3$ est une racine. Étape 2 — Écrire : $P(x)=(x-3)(ux+v)$. Étape 3 — Développer : $(x-3)(ux+v)=ux^2+(v-3u)x-3v$ ; on identifie : $u=1$, $v-3=-2$, $-3v=-3$. Étape 4 — Résoudre : $v=1$, donc $P(x)=(x-3)(x+1)$.",
+                  "answers": [
+                    {
+                      "content": "$(x-3)(x+1)$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x+3)(x-1)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x-3)(x-1)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x+3)(x+1)$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le nombre $1$ est une racine de $P(x)=x^3-2x^2-5x+6$. On écrit $P(x)=(x-1)(x^2+vx+w)$. Quelle est la valeur de $v$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Calculer : $P(1)=1-2-5+6=0$, donc $1$ est une racine. Étape 2 — Écrire : $P(x)=(x-1)(x^2+vx+w)$. Étape 3 — Développer : $(x-1)(x^2+vx+w)=x^3+(v-1)x^2+(w-v)x-w$ ; on identifie avec $x^3-2x^2-5x+6$ : $v-1=-2$. Étape 4 — Résoudre : $v=-1$ ; on trouve aussi $w=-6$.",
+                  "answers": [
+                    {
+                      "content": "-1",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Si $-4$ est une racine de $P$, alors $x-4$ est un facteur de $P(x)$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Calculer : $P(-4)=0$ signifie que $-4$ est une racine. Étape 2 — Écrire : $P(x)=(x-(-4))Q(x)=(x+4)Q(x)$. Étape 3 — Développer : le facteur est $x+4$. Étape 4 — Résoudre : $x-4$ serait un facteur si $4$ était une racine ; l'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Racines d'un polynôme du menuisier",
+              "statement": "Dans cet exercice, tu retrouves des racines et des facteurs d'un polynôme de menuiserie, avec les quatre étapes de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Si $P(a)=0$, le réel $a$ est une ___ du polynôme $P$.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Calculer : on calcule $P(a)$. Étape 2 — Écrire : si $P(a)=0$, alors $P(x)=(x-a)Q(x)$. Étape 3 — Développer : sans objet ici. Étape 4 — Résoudre : par définition, un réel qui annule $P$ est une racine de $P$.",
+                  "answers": [
+                    {
+                      "content": "racine",
+                      "correct": true
+                    },
+                    {
+                      "content": "racines",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour $P(x)=x^3-3x+1$, calcule $P(2)$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Calculer : $P(2)=2^3-3\\times 2+1=8-6+1=3$. Étape 2 — Écrire : $P(2)\\neq 0$, donc $x-2$ n'est pas un facteur. Étape 3 — Développer : sans objet. Étape 4 — Résoudre : $P(2)=3$.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Le polynôme $P(x)=x^2+x-6$ vérifie $P(-3)=0$. Quel est un facteur de $P(x)$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Calculer : $P(-3)=9-3-6=0$, donc $-3$ est une racine. Étape 2 — Écrire : $P(x)=(x-(-3))Q(x)=(x+3)Q(x)$. Étape 3 — Développer : $(x+3)(x-2)=x^2+x-6$. Étape 4 — Résoudre : $x+3$ est un facteur. Le facteur $x-3$ demanderait $P(3)=0$, or $P(3)=6$.",
+                  "answers": [
+                    {
+                      "content": "$x+3$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$x-3$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$x+6$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$x-1$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels nombres sont des racines de $P(x)=x^3-2x^2-5x+6$ ?",
+                  "question_type": "multiple_correct_3",
+                  "explanation": "Étape 1 — Calculer : $P(-2)=-8-8+10+6=0$ ; $P(1)=0$ ; $P(3)=27-18-15+6=0$ ; $P(2)=-4$ ; $P(-1)=-1-2+5+6=8$. Étape 2 — Écrire : les racines sont $-2$, $1$ et $3$, donc $P(x)=(x+2)(x-1)(x-3)$. Étape 3 — Développer : on le vérifie en redéveloppant le produit. Étape 4 — Résoudre : $2$ et $-1$ ne sont pas des racines.",
+                  "answers": [
+                    {
+                      "content": "$-2$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$1$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$3$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$2$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$-1$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour $P(x)=x^3-2x^2-5x+6$, on a $P(x)=(x-1)(x^2-x-6)$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Calculer : $P(1)=0$, donc $x-1$ est un facteur. Étape 2 — Écrire : $P(x)=(x-1)(x^2+vx+w)$. Étape 3 — Développer : $(x-1)(x^2-x-6)=x^3-x^2-6x-x^2+x+6$. Étape 4 — Résoudre : on obtient $x^3-2x^2-5x+6$ ; l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour factoriser un polynôme $P$ avec une racine.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Calculer : on cherche d'abord une racine, sinon on ne peut pas écrire le facteur. Étape 2 — Écrire : on pose $P(x)=(x-a)Q(x)$. Étape 3 — Développer : on identifie les coefficients. Étape 4 — Résoudre : on résout le système, puis on vérifie. L'ordre ne peut pas changer : chaque étape utilise le résultat de la précédente.",
+                  "answers": [
+                    {
+                      "content": "Calculer $P(a)$ pour trouver une racine $a$."
+                    },
+                    {
+                      "content": "Écrire $P(x)=(x-a)Q(x)$ avec $Q$ à coefficients inconnus."
+                    },
+                    {
+                      "content": "Développer $(x-a)Q(x)$ et identifier avec les coefficients de $P$."
+                    },
+                    {
+                      "content": "Résoudre le système et écrire la factorisation vérifiée."
+                    }
+                  ]
+                }
+              ],
+              "hint": "Une racine $a$ annule $P$ ; son facteur est $x-a$."
+            }
+          ]
+        },
+        {
+          "name": "Mettre un trinôme du second degré sous forme canonique",
+          "remember": "Un **trinôme du second degré** est un polynôme $f(x)=ax^2+bx+c$ avec $a\\neq 0$. Sa **forme canonique** est $f(x)=a(x-\\alpha)^2+\\beta$, avec $\\alpha=-\\dfrac{b}{2a}$ et $\\beta=f(\\alpha)$. Elle vient de l'égalité $x^2+2hx=(x+h)^2-h^2$. Si $a>0$, $f$ a un **minimum** $\\beta$, atteint en $x=\\alpha$ ; si $a<0$, $f$ a un **maximum** $\\beta$, atteint en $x=\\alpha$. Quand on obtient une différence de deux carrés $A^2-B^2$, on factorise : $A^2-B^2=(A-B)(A+B)$.",
+          "method": [
+            "Mettre en facteur le coefficient $a$ de $x^2$, quand il est différent de $1$.",
+            "Faire apparaître un carré : $x^2+2hx=(x+h)^2-h^2$, où $2h$ est le coefficient de $x$.",
+            "Regrouper les constantes pour obtenir la forme canonique $a(x-\\alpha)^2+\\beta$.",
+            "Factoriser avec $A^2-B^2=(A-B)(A+B)$ quand c'est possible, ou lire l'extremum $\\beta$ atteint en $x=\\alpha$."
+          ],
+          "example": {
+            "statement": "Mettre $f(x)=x^2-6x+5$ sous forme canonique, puis la factoriser.",
+            "steps": [
+              "Mettre en facteur : ici $a=1$, il n'y a rien à mettre en facteur ; on garde $x^2-6x+5$.",
+              "Faire apparaître un carré : $2h=-6$ donne $h=-3$, donc $x^2-6x=(x-3)^2-9$.",
+              "Regrouper : $x^2-6x+5=(x-3)^2-9+5=(x-3)^2-4$ ; c'est la forme canonique, avec $\\alpha=3$ et $\\beta=-4$.",
+              "Factoriser : $(x-3)^2-4=(x-3)^2-2^2=(x-5)(x-1)$ ; et comme $a=1>0$, le minimum de $f$ est $-4$, atteint en $x=3$."
+            ]
+          },
+          "pitfall": "Ne pas oublier de retrancher le carré qu'on a ajouté. Comme $(x+3)^2=x^2+6x+9$, on a $x^2+6x=(x+3)^2-9$. Écrire $x^2+6x+5=(x+3)^2+5$ est faux : pour $x=0$, le membre de gauche vaut $5$ et celui de droite $14$. La bonne forme est $(x+3)^2-9+5=(x+3)^2-4$.",
+          "figure": null,
+          "practice": {
+            "statement": "Tu t'entraînes à mettre un trinôme sous forme canonique, avec la méthode de la fiche.",
+            "questions": [
+              {
+                "content": "Quelle est la forme canonique de $x^2+4x+1$ ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Mettre en facteur : $a=1$, rien à faire. Étape 2 — Faire apparaître un carré : $2h=4$ donne $h=2$, donc $x^2+4x=(x+2)^2-4$. Étape 3 — Regrouper : $x^2+4x+1=(x+2)^2-4+1=(x+2)^2-3$. Étape 4 — Factoriser : on s'arrête ici à la forme canonique, avec $\\alpha=-2$ et $\\beta=-3$. Garder $+1$ sans retrancher $4$ est l'erreur du piège.",
+                "answers": [
+                  {
+                    "content": "$(x+2)^2-3$",
+                    "correct": true
+                  },
+                  {
+                    "content": "$(x+2)^2+1$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$(x-2)^2-3$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$(x+4)^2-15$",
+                    "correct": false
+                  }
+                ],
+                "hint": "$x^2+4x=(x+2)^2-4$."
+              },
+              {
+                "content": "Quel est le minimum de la fonction $f(x)=x^2-2x+5$ ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Mettre en facteur : $a=1$. Étape 2 — Faire apparaître un carré : $2h=-2$ donne $h=-1$, donc $x^2-2x=(x-1)^2-1$. Étape 3 — Regrouper : $f(x)=(x-1)^2-1+5=(x-1)^2+4$. Étape 4 — Factoriser : on lit l'extremum : $a=1>0$, donc le minimum est $\\beta=4$, atteint en $x=1$.",
+                "answers": [
+                  {
+                    "content": "4",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "Écris la forme canonique, puis lis $\\beta$."
+              },
+              {
+                "content": "Complète : $x^2-8x+7=(x-4)^2-$ ___ .",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Mettre en facteur : $a=1$. Étape 2 — Faire apparaître un carré : $2h=-8$ donne $h=-4$, donc $x^2-8x=(x-4)^2-16$. Étape 3 — Regrouper : $x^2-8x+7=(x-4)^2-16+7=(x-4)^2-9$. Étape 4 — Factoriser : $(x-4)^2-3^2=(x-7)(x-1)$. Le nombre qui manque est $9$.",
+                "answers": [
+                  {
+                    "content": "9",
+                    "correct": true
+                  }
+                ],
+                "hint": "$(x-4)^2=x^2-8x+16$, donc il faut retrancher $16$, puis ajouter $7$."
+              },
+              {
+                "content": "Le polynôme $x^2+6x+5$ se factorise en $(x+1)(x+5)$.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Mettre en facteur : $a=1$. Étape 2 — Faire apparaître un carré : $x^2+6x=(x+3)^2-9$. Étape 3 — Regrouper : $x^2+6x+5=(x+3)^2-4$. Étape 4 — Factoriser : $(x+3)^2-2^2=(x+1)(x+5)$. L'affirmation est vraie.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Écris la forme canonique puis factorise la différence de deux carrés."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Forme canonique, minimum et factorisation",
+              "statement": "Dans cet exercice, tu mets des trinômes sous forme canonique avec les étapes de la fiche : mettre en facteur, faire apparaître un carré, regrouper, factoriser.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle est la forme canonique de $x^2-10x+21$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=1$. Étape 2 — Faire apparaître un carré : $2h=-10$ donne $h=-5$, donc $x^2-10x=(x-5)^2-25$. Étape 3 — Regrouper : $x^2-10x+21=(x-5)^2-25+21=(x-5)^2-4$. Étape 4 — Factoriser : $(x-5)^2-2^2=(x-7)(x-3)$. Garder $+21$ sans retrancher $25$ est faux.",
+                  "answers": [
+                    {
+                      "content": "$(x-5)^2-4$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x-5)^2+21$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x-5)^2+4$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x+5)^2-4$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la valeur minimale de $f(x)=x^2-10x+21$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=1$. Étape 2 — Faire apparaître un carré : $x^2-10x=(x-5)^2-25$. Étape 3 — Regrouper : $f(x)=(x-5)^2-4$. Étape 4 — Factoriser : on lit l'extremum : $a>0$, donc le minimum est $-4$, atteint en $x=5$.",
+                  "answers": [
+                    {
+                      "content": "-4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle est la factorisation de $x^2+4x-5$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=1$. Étape 2 — Faire apparaître un carré : $x^2+4x=(x+2)^2-4$. Étape 3 — Regrouper : $x^2+4x-5=(x+2)^2-9$. Étape 4 — Factoriser : $(x+2)^2-3^2=(x+2-3)(x+2+3)=(x-1)(x+5)$.",
+                  "answers": [
+                    {
+                      "content": "$(x-1)(x+5)$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x+1)(x-5)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x-1)(x-5)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x+1)(x+5)$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "On écrit $f(x)=2x^2-8x+3$ sous la forme $2(x-\\alpha)^2+\\beta$. Quelle est la valeur de $\\alpha$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Mettre en facteur : $f(x)=2(x^2-4x)+3$. Étape 2 — Faire apparaître un carré : $x^2-4x=(x-2)^2-4$. Étape 3 — Regrouper : $f(x)=2\\big((x-2)^2-4\\big)+3=2(x-2)^2-5$. Étape 4 — Factoriser ou lire : $\\alpha=2$ et $\\beta=-5$.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pour tout réel $x$, $x^2+8x+3=(x+4)^2+3$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=1$. Étape 2 — Faire apparaître un carré : $(x+4)^2=x^2+8x+16$, donc $x^2+8x=(x+4)^2-16$. Étape 3 — Regrouper : $x^2+8x+3=(x+4)^2-13$. Étape 4 — Factoriser : on lit $\\beta=-13$, pas $3$ ; pour $x=0$, $3$ et $19$ diffèrent. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Trinômes autour d'une pièce de tissu",
+              "statement": "Dans cet exercice, tu utilises la forme canonique pour trouver un maximum, factoriser et reconnaître des écritures égales d'un même trinôme.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Un rectangle de tissu a pour largeur $x$ m et pour longueur $6-x$ m. Son aire, en m², est $A(x)=-x^2+6x$. Quelle est l'aire maximale ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Mettre en facteur : $A(x)=-(x^2-6x)$. Étape 2 — Faire apparaître un carré : $x^2-6x=(x-3)^2-9$. Étape 3 — Regrouper : $A(x)=-\\big((x-3)^2-9\\big)=-(x-3)^2+9$. Étape 4 — Factoriser ou lire : $a=-1<0$, donc l'aire maximale est $\\beta=9$, atteinte en $x=3$.",
+                  "answers": [
+                    {
+                      "content": "9",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pour $A(x)=-x^2+6x$ (largeur $x$ m, longueur $6-x$ m), l'aire est maximale quand la largeur vaut ___ mètres.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Mettre en facteur : $A(x)=-(x^2-6x)$. Étape 2 — Faire apparaître un carré : $x^2-6x=(x-3)^2-9$. Étape 3 — Regrouper : $A(x)=-(x-3)^2+9$. Étape 4 — Lire : le maximum $9$ est atteint quand $(x-3)^2=0$, soit $x=3$. Le rectangle est alors un carré de $3$ m de côté.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la forme canonique de $x^2+12x+20$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=1$. Étape 2 — Faire apparaître un carré : $2h=12$ donne $h=6$, donc $x^2+12x=(x+6)^2-36$. Étape 3 — Regrouper : $x^2+12x+20=(x+6)^2-36+20=(x+6)^2-16$. Étape 4 — Factoriser : $(x+6)^2-4^2=(x+2)(x+10)$.",
+                  "answers": [
+                    {
+                      "content": "$(x+6)^2-16$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x+6)^2+20$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x+6)^2+16$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x-6)^2-16$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles écritures sont égales à $x^2-4x-5$ pour tout réel $x$ ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=1$. Étape 2 — Faire apparaître un carré : $x^2-4x=(x-2)^2-4$. Étape 3 — Regrouper : $x^2-4x-5=(x-2)^2-9$. Étape 4 — Factoriser : $(x-2)^2-3^2=(x-5)(x+1)$. $(x-2)^2+5$ donne $x^2-4x+9$ ; $(x+5)(x-1)$ et $(x+2)^2-9$ donnent $x^2+4x-5$.",
+                  "answers": [
+                    {
+                      "content": "$(x-2)^2-9$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x-5)(x+1)$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x-2)^2+5$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x+5)(x-1)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x+2)^2-9$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque trinôme à sa forme canonique.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=1$ pour les quatre trinômes. Étape 2 — Faire apparaître un carré : $x^2+2x=(x+1)^2-1$ ; $x^2-4x=(x-2)^2-4$ ; $x^2+6x=(x+3)^2-9$ ; $x^2-2x=(x-1)^2-1$. Étape 3 — Regrouper : $-4+1=-3$ ; $-9+9=0$ ; $-1-3=-4$. Étape 4 — Factoriser : les formes canoniques sont celles de la liste.",
+                  "answers": [
+                    {
+                      "content": "$x^2+2x$",
+                      "match": "$(x+1)^2-1$"
+                    },
+                    {
+                      "content": "$x^2-4x+1$",
+                      "match": "$(x-2)^2-3$"
+                    },
+                    {
+                      "content": "$x^2+6x+9$",
+                      "match": "$(x+3)^2$"
+                    },
+                    {
+                      "content": "$x^2-2x-3$",
+                      "match": "$(x-1)^2-4$"
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour mettre un trinôme sous forme canonique.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Mettre en facteur : on met en facteur le coefficient $a$ de $x^2$ quand $a\\neq 1$. Étape 2 — Faire apparaître un carré : on utilise $x^2+2hx=(x+h)^2-h^2$. Étape 3 — Regrouper : on additionne les constantes. Étape 4 — Factoriser ou lire : on exploite la forme canonique obtenue. Chaque étape utilise le résultat de la précédente.",
+                  "answers": [
+                    {
+                      "content": "Mettre en facteur le coefficient de $x^2$ quand il est différent de $1$."
+                    },
+                    {
+                      "content": "Faire apparaître un carré avec $x^2+2hx=(x+h)^2-h^2$."
+                    },
+                    {
+                      "content": "Regrouper les constantes pour obtenir $a(x-\\alpha)^2+\\beta$."
+                    },
+                    {
+                      "content": "Factoriser ou lire l'extremum atteint en $x=\\alpha$."
+                    }
+                  ]
+                }
+              ],
+              "hint": "Utilise $x^2+2hx=(x+h)^2-h^2$ et n'oublie pas de retrancher $h^2$."
+            }
+          ]
+        },
+        {
+          "name": "Déterminer l'ensemble de définition d'une fraction rationnelle et la simplifier",
+          "remember": "Une **fraction rationnelle** est un quotient $F(x)=\\dfrac{P(x)}{Q(x)}$ de deux polynômes, avec $Q$ non nul. Elle est définie pour tout réel $x$ tel que $Q(x)\\neq 0$ : son **ensemble de définition** est $D_F=\\mathbb{R}$ privé des racines de $Q$. On peut simplifier par un facteur commun $x-a$ : $\\dfrac{(x-a)A(x)}{(x-a)B(x)}=\\dfrac{A(x)}{B(x)}$ pour $x\\neq a$. La fraction simplifiée est égale à $F$ sur $D_F$ seulement.",
+          "method": [
+            "Factoriser le numérateur et le dénominateur.",
+            "Chercher les valeurs interdites : résoudre $Q(x)=0$ et écrire $D_F$.",
+            "Simplifier les facteurs communs au numérateur et au dénominateur.",
+            "Conclure : écrire la fraction simplifiée avec son ensemble de définition $D_F$."
+          ],
+          "example": {
+            "statement": "Simplifier $F(x)=\\dfrac{x^2-4}{x^2-x-2}$ et donner son ensemble de définition.",
+            "steps": [
+              "Factoriser : $x^2-4=(x-2)(x+2)$ et $x^2-x-2=(x-2)(x+1)$, car $2$ est une racine ($4-2-2=0$).",
+              "Chercher : $(x-2)(x+1)=0$ pour $x=2$ ou $x=-1$ ; donc $D_F=\\mathbb{R}\\setminus\\{-1\\,;\\,2\\}$.",
+              "Simplifier : le facteur $x-2$ est commun, donc $F(x)=\\dfrac{x+2}{x+1}$.",
+              "Conclure : pour tout $x\\in D_F$, $F(x)=\\dfrac{x+2}{x+1}$ ; la valeur $2$ reste interdite, même si $\\dfrac{x+2}{x+1}$ est définie en $2$."
+            ]
+          },
+          "pitfall": "Ne pas chercher l'ensemble de définition sur la fraction simplifiée. Ici $\\dfrac{x+2}{x+1}$ n'interdit que $-1$, mais $F$ interdit aussi $2$ : $F(2)=\\dfrac{0}{0}$ n'existe pas, alors que $\\dfrac{2+2}{2+1}=\\dfrac43$. On cherche toujours les valeurs interdites sur la fraction de départ, avant de simplifier.",
+          "figure": "valeurs-interdites",
+          "practice": {
+            "statement": "Tu t'entraînes à déterminer l'ensemble de définition d'une fraction rationnelle et à la simplifier.",
+            "questions": [
+              {
+                "content": "Quel est l'ensemble de définition de $F(x)=\\dfrac{3}{x^2-9}$ ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Factoriser : le dénominateur est $x^2-9=(x-3)(x+3)$. Étape 2 — Chercher : $(x-3)(x+3)=0$ pour $x=3$ ou $x=-3$. Étape 3 — Simplifier : rien à simplifier, $3$ est constant. Étape 4 — Conclure : $D_F=\\mathbb{R}\\setminus\\{-3\\,;\\,3\\}$. Oublier $-3$ revient à ne résoudre qu'à moitié $x^2=9$.",
+                "answers": [
+                  {
+                    "content": "$\\mathbb{R}\\setminus\\{-3\\,;\\,3\\}$",
+                    "correct": true
+                  },
+                  {
+                    "content": "$\\mathbb{R}\\setminus\\{3\\}$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$\\mathbb{R}\\setminus\\{9\\}$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$\\mathbb{R}\\setminus\\{-9\\,;\\,9\\}$",
+                    "correct": false
+                  }
+                ],
+                "hint": "Résous $x^2-9=0$ : il y a deux solutions."
+              },
+              {
+                "content": "Pour $x=4$, quelle est la valeur de $\\dfrac{x^2-9}{x-3}$ ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Factoriser : $x^2-9=(x-3)(x+3)$. Étape 2 — Chercher : la valeur interdite est $3$, et $4\\neq 3$. Étape 3 — Simplifier : $\\dfrac{(x-3)(x+3)}{x-3}=x+3$. Étape 4 — Conclure : pour $x=4$, la valeur est $4+3=7$.",
+                "answers": [
+                  {
+                    "content": "7",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "Simplifie d'abord, puis remplace $x$ par $4$."
+              },
+              {
+                "content": "La fraction $\\dfrac{x^2-1}{x+1}$ est définie en $x=-1$.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Factoriser : $x^2-1=(x-1)(x+1)$. Étape 2 — Chercher : le dénominateur $x+1$ s'annule pour $x=-1$ ; $D=\\mathbb{R}\\setminus\\{-1\\}$. Étape 3 — Simplifier : $\\dfrac{x^2-1}{x+1}=x-1$ pour $x\\neq -1$. Étape 4 — Conclure : $-1$ est interdit, même si $x-1$ existe en $-1$. L'affirmation est fausse.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Regarde le dénominateur de la fraction de départ."
+              },
+              {
+                "content": "Pour $x\\neq -3$ et $x\\neq 3$, quelle est la forme simplifiée de $\\dfrac{x^2+3x}{x^2-9}$ ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Factoriser : $x^2+3x=x(x+3)$ et $x^2-9=(x-3)(x+3)$. Étape 2 — Chercher : les valeurs interdites sont $3$ et $-3$. Étape 3 — Simplifier : le facteur $x+3$ est commun, donc $\\dfrac{x(x+3)}{(x-3)(x+3)}=\\dfrac{x}{x-3}$. Étape 4 — Conclure : $\\dfrac{x}{x-3}$ pour $x\\in\\mathbb{R}\\setminus\\{-3\\,;\\,3\\}$.",
+                "answers": [
+                  {
+                    "content": "$\\dfrac{x}{x-3}$",
+                    "correct": true
+                  },
+                  {
+                    "content": "$\\dfrac{x+3}{x-3}$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$\\dfrac{x}{x+3}$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$\\dfrac{x}{x-9}$",
+                    "correct": false
+                  }
+                ],
+                "hint": "Le facteur commun est $x+3$."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Ensemble de définition et simplification",
+              "statement": "Dans cet exercice, tu étudies des fractions rationnelles avec la méthode de la fiche : factoriser, chercher les valeurs interdites, simplifier, conclure.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle est la valeur interdite de $F(x)=\\dfrac{2x}{x+6}$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Factoriser : le dénominateur $x+6$ est déjà un facteur. Étape 2 — Chercher : $x+6=0$ donne $x=-6$. Étape 3 — Simplifier : rien à simplifier. Étape 4 — Conclure : la valeur interdite est $-6$ et $D_F=\\mathbb{R}\\setminus\\{-6\\}$. La valeur $6$ vient d'une erreur de signe.",
+                  "answers": [
+                    {
+                      "content": "-6",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quel est l'ensemble de définition de $F(x)=\\dfrac{1}{x^2-5x+6}$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Factoriser : $x^2-5x+6=(x-2)(x-3)$, car $2+3=5$ et $2\\times 3=6$. Étape 2 — Chercher : $(x-2)(x-3)=0$ pour $x=2$ ou $x=3$. Étape 3 — Simplifier : rien à simplifier. Étape 4 — Conclure : $D_F=\\mathbb{R}\\setminus\\{2\\,;\\,3\\}$.",
+                  "answers": [
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{2\\,;\\,3\\}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{-2\\,;\\,-3\\}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{5\\,;\\,6\\}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{6\\}$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour $x\\neq 3$, quelle est la forme simplifiée de $\\dfrac{x^2-9}{x^2-6x+9}$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Factoriser : $x^2-9=(x-3)(x+3)$ et $x^2-6x+9=(x-3)^2$. Étape 2 — Chercher : la valeur interdite est $3$. Étape 3 — Simplifier : $\\dfrac{(x-3)(x+3)}{(x-3)(x-3)}=\\dfrac{x+3}{x-3}$. Étape 4 — Conclure : $\\dfrac{x+3}{x-3}$ pour $x\\neq 3$.",
+                  "answers": [
+                    {
+                      "content": "$\\dfrac{x+3}{x-3}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\dfrac{x-3}{x+3}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\dfrac{1}{x-3}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$1$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour $F(x)=\\dfrac{x^2+4x}{x^2-16}$, calcule $F(5)$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Factoriser : $x^2+4x=x(x+4)$ et $x^2-16=(x-4)(x+4)$. Étape 2 — Chercher : les valeurs interdites sont $-4$ et $4$ ; $5$ est autorisé. Étape 3 — Simplifier : $F(x)=\\dfrac{x}{x-4}$. Étape 4 — Conclure : $F(5)=\\dfrac{5}{5-4}=5$.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "La fraction $\\dfrac{x^2-4}{x-2}$ est égale à $x+2$ pour tout réel $x$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Factoriser : $x^2-4=(x-2)(x+2)$. Étape 2 — Chercher : $x-2=0$ pour $x=2$ ; la fraction n'est pas définie en $2$. Étape 3 — Simplifier : $\\dfrac{x^2-4}{x-2}=x+2$ pour $x\\neq 2$. Étape 4 — Conclure : l'égalité n'a lieu que sur $\\mathbb{R}\\setminus\\{2\\}$ ; l'affirmation « pour tout réel $x$ » est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Prix du tissu et valeurs interdites",
+              "statement": "Dans cet exercice, tu étudies des fractions rationnelles issues de la couture : valeurs interdites, simplification et ensemble de définition.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une couturière achète $x$ mètres de tissu pour un coût de $x^2+20x$ francs. Le prix au mètre est la fraction $p(x)=\\dfrac{x^2+20x}{x}$. Quel est l'ensemble de définition de $p$, vue comme fraction rationnelle ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Factoriser : le dénominateur est $x$ et le numérateur $x(x+20)$. Étape 2 — Chercher : le dénominateur $x$ s'annule pour $x=0$. Étape 3 — Simplifier : $\\dfrac{x(x+20)}{x}=x+20$ pour $x\\neq 0$. Étape 4 — Conclure : $D_p=\\mathbb{R}\\setminus\\{0\\}$. La valeur $-20$ annule le numérateur, pas le dénominateur.",
+                  "answers": [
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{0\\}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\mathbb{R}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{-20\\}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{-20\\,;\\,0\\}$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour $x\\neq 0$, $\\dfrac{x^2+20x}{x}=x+$ ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Factoriser : $x^2+20x=x(x+20)$. Étape 2 — Chercher : la valeur interdite est $0$. Étape 3 — Simplifier : $\\dfrac{x(x+20)}{x}=x+20$. Étape 4 — Conclure : le nombre qui manque est $20$, pour $x\\neq 0$.",
+                  "answers": [
+                    {
+                      "content": "20",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Avec $p(x)=\\dfrac{x^2+20x}{x}$ (prix au mètre, en francs), quel est le prix au mètre pour $x=30$ mètres ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Factoriser : $x^2+20x=x(x+20)$. Étape 2 — Chercher : $30\\neq 0$, donc $p(30)$ existe. Étape 3 — Simplifier : $p(x)=x+20$. Étape 4 — Conclure : $p(30)=30+20=50$ ; on retrouve $\\dfrac{900+600}{30}=50$.",
+                  "answers": [
+                    {
+                      "content": "50",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "F"
+                },
+                {
+                  "content": "Quelles fractions sont définies en $x=1$ ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Factoriser : les dénominateurs sont $x+3$, $x^2+1$, $x-1$, $x^2-1=(x-1)(x+1)$ et $(x-1)(x+2)$. Étape 2 — Chercher : pour $x=1$, ils valent $4$, $2$, $0$, $0$ et $0$. Étape 3 — Simplifier : sans objet, on regarde seulement le dénominateur. Étape 4 — Conclure : seules $\\dfrac{x-1}{x+3}$ et $\\dfrac{x}{x^2+1}$ sont définies en $1$ ; un numérateur nul ne pose pas de problème.",
+                  "answers": [
+                    {
+                      "content": "$\\dfrac{x-1}{x+3}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\dfrac{x}{x^2+1}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\dfrac{x+3}{x-1}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\dfrac{2}{x^2-1}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\dfrac{1}{(x-1)(x+2)}$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque fraction à sa forme simplifiée (là où elle est définie).",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Factoriser : $x^2-9=(x-3)(x+3)$ ; $x^2+2x=x(x+2)$ ; $x^2-1=(x-1)(x+1)$ et $x^2-x=x(x-1)$ ; $x^2-4x=x(x-4)$ et $x^2-16=(x-4)(x+4)$. Étape 2 — Chercher : les valeurs interdites sont $-3$ ; $0$ ; $0$ et $1$ ; $-4$ et $4$. Étape 3 — Simplifier : on barre le facteur commun de chaque fraction. Étape 4 — Conclure : les formes simplifiées sont celles de la liste.",
+                  "answers": [
+                    {
+                      "content": "$\\dfrac{x^2-9}{x+3}$",
+                      "match": "$x-3$"
+                    },
+                    {
+                      "content": "$\\dfrac{x^2+2x}{x}$",
+                      "match": "$x+2$"
+                    },
+                    {
+                      "content": "$\\dfrac{x^2-1}{x^2-x}$",
+                      "match": "$\\dfrac{x+1}{x}$"
+                    },
+                    {
+                      "content": "$\\dfrac{x^2-4x}{x^2-16}$",
+                      "match": "$\\dfrac{x}{x+4}$"
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour simplifier une fraction rationnelle.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Factoriser : on fait apparaître les facteurs. Étape 2 — Chercher : on relève les valeurs interdites avant de simplifier, sinon elles disparaissent. Étape 3 — Simplifier : on barre les facteurs communs. Étape 4 — Conclure : on écrit le résultat avec $D_F$. Chercher les valeurs interdites après la simplification serait l'erreur du piège.",
+                  "answers": [
+                    {
+                      "content": "Factoriser le numérateur et le dénominateur."
+                    },
+                    {
+                      "content": "Chercher les valeurs interdites avec le dénominateur de départ."
+                    },
+                    {
+                      "content": "Simplifier les facteurs communs."
+                    },
+                    {
+                      "content": "Conclure avec la fraction simplifiée et l'ensemble de définition."
+                    }
+                  ]
+                }
+              ],
+              "hint": "Cherche les valeurs interdites sur la fraction de départ, puis simplifie."
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Le coffre du menuisier",
+          "statement": "Un menuisier fabrique un coffre sans couvercle avec une plaque rectangulaire de 30 cm sur 20 cm. Il découpe un carré de côté $x$ cm à chaque coin, avec $0<x<10$, puis plie les bords. Le volume du coffre, en cm³, est $V(x)=x(30-2x)(20-2x)$.",
+          "exercise_type": "fixation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Quel est le degré du polynôme $V(x)=x(30-2x)(20-2x)$ ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Développer : $(30-2x)(20-2x)=600-60x-40x+4x^2=4x^2-100x+600$, puis $V(x)=4x^3-100x^2+600x$. Étape 2 — Repérer : le plus grand exposant est $3$, de coefficient $4$. Étape 3 — Lire : le degré de $V$ est $3$. Étape 4 — Contrôler : produit de trois polynômes de degré $1$, donc de degré $1+1+1=3$.",
+              "answers": [
+                {
+                  "content": "3",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Quel est le développement de $V(x)=x(30-2x)(20-2x)$ ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Développer : $(30-2x)(20-2x)=600-60x-40x+4x^2=4x^2-100x+600$. Étape 2 — Multiplier par $x$ : $V(x)=4x^3-100x^2+600x$. Étape 3 — Contrôler : le degré est $3$, la somme $-60x-40x$ donne bien $-100x$ (et non $-50x$) et le terme constant est nul à cause du facteur $x$.",
+              "answers": [
+                {
+                  "content": "$4x^3-100x^2+600x$",
+                  "correct": true
+                },
+                {
+                  "content": "$4x^3+100x^2+600x$",
+                  "correct": false
+                },
+                {
+                  "content": "$4x^3-50x^2+600x$",
+                  "correct": false
+                },
+                {
+                  "content": "$4x^3-100x^2+600$",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Avec $V(x)=x(30-2x)(20-2x)$ (en cm³), quel est le volume du coffre pour $x=5$ ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Calculer : on remplace $x$ par $5$. Étape 2 — Écrire : $V(5)=5\\times(30-10)\\times(20-10)$. Étape 3 — Résoudre : $V(5)=5\\times 20\\times 10=1000$. Le volume est $1000$ cm³.",
+              "answers": [
+                {
+                  "content": "1000",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Le nombre $10$ est une racine du polynôme $V(x)=x(30-2x)(20-2x)$, même s'il est hors de l'intervalle $0<x<10$.",
+              "question_type": "true_false",
+              "explanation": "Étape 1 — Calculer : $V(10)=10\\times(30-20)\\times(20-20)$. Étape 2 — Écrire : le facteur $20-20$ vaut $0$, donc $V(10)=0$. Étape 3 — Conclure : $V(10)=0$, donc $10$ est une racine de $V$ et $x-10$ est un facteur de $V(x)$. Il est hors de l'intervalle d'étude $0<x<10$, mais c'est bien une racine du polynôme.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": true
+                },
+                {
+                  "content": "Faux",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quelle est la factorisation de $V(x)=4x^3-100x^2+600x$ ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Calculer : $V(0)=0$ et $V(10)=0$ ; $0$ et $10$ sont des racines. Étape 2 — Écrire : $30-2x=-2(x-15)$ et $20-2x=-2(x-10)$. Étape 3 — Développer : le produit des deux facteurs vaut $4(x-15)(x-10)$, donc $V(x)=4x(x-10)(x-15)$ ; on vérifie : $(x-10)(x-15)=x^2-25x+150$, puis $4x(x^2-25x+150)=4x^3-100x^2+600x$. Étape 4 — Conclure : $x(x-10)(x-15)$ oublie le facteur $4$ ; $x+10$ et $x+15$ ont le mauvais signe.",
+              "answers": [
+                {
+                  "content": "$4x(x-10)(x-15)$",
+                  "correct": true
+                },
+                {
+                  "content": "$x(x-10)(x-15)$",
+                  "correct": false
+                },
+                {
+                  "content": "$4x(x+10)(x+15)$",
+                  "correct": false
+                },
+                {
+                  "content": "$4x(x-10)(x+15)$",
+                  "correct": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "La longueur du rectangle de tissu",
+          "statement": "Une couturière découpe un rectangle de tissu d'aire $A(x)=x^2+7x+12$ (en m²) et de largeur $x+3$ (en m). Sa longueur est donnée par la fraction rationnelle $L(x)=\\dfrac{x^2+7x+12}{x+3}$.",
+          "exercise_type": "fixation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Quelle est la valeur interdite de $L(x)=\\dfrac{x^2+7x+12}{x+3}$ ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Factoriser : le dénominateur $x+3$ est déjà un facteur. Étape 2 — Chercher : $x+3=0$ donne $x=-3$. Étape 3 — Conclure : la valeur interdite est $-3$ et $D_L=\\mathbb{R}\\setminus\\{-3\\}$. La valeur $3$ vient d'une erreur de signe.",
+              "answers": [
+                {
+                  "content": "-3",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Quelle est la factorisation de $x^2+7x+12$ ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Chercher : deux nombres de somme $7$ et de produit $12$ sont $3$ et $4$. Étape 2 — Écrire : $x^2+7x+12=(x+3)(x+4)$. Étape 3 — Vérifier : $(x+3)(x+4)=x^2+4x+3x+12=x^2+7x+12$. Les autres propositions ont une somme $8$, $-7$ ou $13$, pas $7$.",
+              "answers": [
+                {
+                  "content": "$(x+3)(x+4)$",
+                  "correct": true
+                },
+                {
+                  "content": "$(x+2)(x+6)$",
+                  "correct": false
+                },
+                {
+                  "content": "$(x-3)(x-4)$",
+                  "correct": false
+                },
+                {
+                  "content": "$(x+1)(x+12)$",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Pour $x\\neq -3$, quelle est la forme simplifiée de $L(x)=\\dfrac{x^2+7x+12}{x+3}$ ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Factoriser : $x^2+7x+12=(x+3)(x+4)$. Étape 2 — Chercher : la valeur interdite est $-3$. Étape 3 — Simplifier : le facteur $x+3$ est commun, donc $L(x)=\\dfrac{(x+3)(x+4)}{x+3}=x+4$. Étape 4 — Conclure : $L(x)=x+4$ pour $x\\neq -3$. On ne barre pas seulement le $x$ ou le $12$ : on simplifie un facteur entier.",
+              "answers": [
+                {
+                  "content": "$x+4$",
+                  "correct": true
+                },
+                {
+                  "content": "$x+3$",
+                  "correct": false
+                },
+                {
+                  "content": "$x^2+7x+4$",
+                  "correct": false
+                },
+                {
+                  "content": "$\\dfrac{x+4}{x+3}$",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Avec $L(x)=\\dfrac{x^2+7x+12}{x+3}$, quelle est la longueur du tissu, en m, pour $x=2$ ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Factoriser : $L(x)=\\dfrac{(x+3)(x+4)}{x+3}$. Étape 2 — Chercher : $2\\neq -3$, donc $L(2)$ existe. Étape 3 — Simplifier : $L(x)=x+4$. Étape 4 — Conclure : $L(2)=2+4=6$ ; on retrouve $\\dfrac{4+14+12}{5}=\\dfrac{30}{5}=6$.",
+              "answers": [
+                {
+                  "content": "6",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "La fraction $\\dfrac{x^2+7x+12}{x+3}$ est égale à $x+4$ pour tout réel $x$.",
+              "question_type": "true_false",
+              "explanation": "Étape 1 — Factoriser : $x^2+7x+12=(x+3)(x+4)$. Étape 2 — Chercher : le dénominateur s'annule pour $x=-3$ ; la fraction n'y est pas définie. Étape 3 — Simplifier : $\\dfrac{x^2+7x+12}{x+3}=x+4$ pour $x\\neq -3$. Étape 4 — Conclure : l'égalité n'a lieu que sur $\\mathbb{R}\\setminus\\{-3\\}$, alors que $x+4$ existe en $-3$.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Avec $L(x)=\\dfrac{x^2+7x+12}{x+3}$, quelle est la longueur du tissu, en m, pour $x=5$ ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Factoriser : $L(x)=\\dfrac{(x+3)(x+4)}{x+3}$. Étape 2 — Chercher : $5\\neq -3$, donc $L(5)$ existe. Étape 3 — Simplifier : $L(x)=x+4$. Étape 4 — Conclure : $L(5)=5+4=9$ ; on retrouve $\\dfrac{25+35+12}{8}=\\dfrac{72}{8}=9$.",
+              "answers": [
+                {
+                  "content": "9",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            }
+          ]
+        },
+        {
+          "title": "La poutre et ses racines",
+          "statement": "Pour étudier la flexion d'une poutre, un menuisier utilise le polynôme $P(x)=2x^3-3x^2-11x+6$. Il cherche ses racines pour le factoriser.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Pour $P(x)=2x^3-3x^2-11x+6$, calcule $P(-1)$.",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Calculer : on remplace $x$ par $-1$. Étape 2 — Écrire : $P(-1)=2\\times(-1)^3-3\\times(-1)^2-11\\times(-1)+6$. Étape 3 — Résoudre : $P(-1)=-2-3+11+6=12$. Le résultat n'est pas nul : $-1$ n'est pas une racine. Attention aux signes : $(-1)^3=-1$ et $-11\\times(-1)=+11$.",
+              "answers": [
+                {
+                  "content": "12",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Lequel de ces nombres est une racine de $P(x)=2x^3-3x^2-11x+6$ ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Calculer : $P(3)=54-27-33+6=0$ ; $P(2)=16-12-22+6=-12$ ; $P(1)=2-3-11+6=-6$ ; $P(-3)=-54-27+33+6=-42$. Étape 2 — Écrire : seul $3$ annule $P$, donc $P(x)=(x-3)Q(x)$. Étape 3 — Conclure : la racine est $3$.",
+              "answers": [
+                {
+                  "content": "3",
+                  "correct": true
+                },
+                {
+                  "content": "2",
+                  "correct": false
+                },
+                {
+                  "content": "1",
+                  "correct": false
+                },
+                {
+                  "content": "-3",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Le nombre $3$ est une racine de $P(x)=2x^3-3x^2-11x+6$. On écrit $P(x)=(x-3)(2x^2+vx+w)$. Quelle est la valeur de $v$ ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Calculer : $P(3)=0$, donc $x-3$ est un facteur. Étape 2 — Écrire : $P(x)=(x-3)(2x^2+vx+w)$. Étape 3 — Développer : $(x-3)(2x^2+vx+w)=2x^3+(v-6)x^2+(w-3v)x-3w$ ; on identifie avec $2x^3-3x^2-11x+6$ : $v-6=-3$, $w-3v=-11$, $-3w=6$. Étape 4 — Résoudre : $v=3$, puis $w=-11+9=-2$, et $-3w=6$ est vérifié. Donc $Q(x)=2x^2+3x-2$.",
+              "answers": [
+                {
+                  "content": "3",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Quelle est la factorisation complète de $P(x)=2x^3-3x^2-11x+6$ ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Calculer : $P(3)=0$. Étape 2 — Écrire : $P(x)=(x-3)(2x^2+3x-2)$. Étape 3 — Développer : on cherche une racine de $Q(x)=2x^2+3x-2$ : $Q(-2)=8-6-2=0$, donc $Q(x)=(x+2)(2x-1)$ ; on le vérifie : $(x+2)(2x-1)=2x^2-x+4x-2=2x^2+3x-2$. Étape 4 — Conclure : $P(x)=(x-3)(x+2)(2x-1)$. On vérifie : $(x-3)(x+2)=x^2-x-6$, puis $(x^2-x-6)(2x-1)=2x^3-3x^2-11x+6$.",
+              "answers": [
+                {
+                  "content": "$(x-3)(x+2)(2x-1)$",
+                  "correct": true
+                },
+                {
+                  "content": "$(x-3)(x-2)(2x+1)$",
+                  "correct": false
+                },
+                {
+                  "content": "$(x+3)(x+2)(2x-1)$",
+                  "correct": false
+                },
+                {
+                  "content": "$(x-3)(x+2)(2x+1)$",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quelles sont les racines de $P(x)=(x-3)(x+2)(2x-1)$ ?",
+              "question_type": "multiple_correct_3",
+              "explanation": "Étape 1 — Calculer : un produit est nul si un de ses facteurs est nul. Étape 2 — Écrire : $x-3=0$, $x+2=0$ ou $2x-1=0$. Étape 3 — Résoudre : $x=3$, $x=-2$ ou $x=\\dfrac12$. Étape 4 — Conclure : les racines sont $3$, $-2$ et $\\dfrac12$. Les nombres $2$ et $-\\dfrac12$ viennent d'erreurs de signe sur les facteurs $x+2$ et $2x-1$.",
+              "answers": [
+                {
+                  "content": "$3$",
+                  "correct": true
+                },
+                {
+                  "content": "$-2$",
+                  "correct": true
+                },
+                {
+                  "content": "$\\dfrac{1}{2}$",
+                  "correct": true
+                },
+                {
+                  "content": "$2$",
+                  "correct": false
+                },
+                {
+                  "content": "$-\\dfrac{1}{2}$",
+                  "correct": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Le cadre et l'aire maximale",
+          "statement": "Un menuisier fabrique un cadre rectangulaire de périmètre 16 dm. Sa largeur est $x$ dm et sa longueur $8-x$ dm, avec $0<x<8$. L'aire, en dm², est $A(x)=x(8-x)=-x^2+8x$. On étudie aussi la fraction rationnelle $R(x)=\\dfrac{16-A(x)}{x^2-16}$.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Quelle est la forme canonique de $A(x)=-x^2+8x$ ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Mettre en facteur : $A(x)=-(x^2-8x)$. Étape 2 — Faire apparaître un carré : $x^2-8x=(x-4)^2-16$. Étape 3 — Regrouper : $A(x)=-\\big((x-4)^2-16\\big)=-(x-4)^2+16$. Étape 4 — Lire : $\\alpha=4$ et $\\beta=16$. Le signe moins devant la parenthèse change aussi le signe de $-16$.",
+              "answers": [
+                {
+                  "content": "$-(x-4)^2+16$",
+                  "correct": true
+                },
+                {
+                  "content": "$-(x-4)^2-16$",
+                  "correct": false
+                },
+                {
+                  "content": "$(x-4)^2+16$",
+                  "correct": false
+                },
+                {
+                  "content": "$-(x+4)^2+16$",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quelle est l'aire maximale du cadre, en dm², avec $A(x)=-(x-4)^2+16$ ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Mettre en facteur : $A(x)=-(x-4)^2+16$ est déjà sous forme canonique. Étape 2 — Faire apparaître un carré : $(x-4)^2\\geq 0$. Étape 3 — Regrouper : $-(x-4)^2\\leq 0$, donc $A(x)\\leq 16$. Étape 4 — Factoriser ou lire l'extremum : le maximum est $\\beta=16$, atteint quand $(x-4)^2=0$.",
+              "answers": [
+                {
+                  "content": "16",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Pour quelle largeur $x$, en dm, l'aire $A(x)=-(x-4)^2+16$ est-elle maximale ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Mettre en facteur : $A(x)=-(x-4)^2+16$. Étape 2 — Faire apparaître un carré : le carré $(x-4)^2$ est nul pour $x=4$. Étape 3 — Regrouper : alors $A(4)=16$, le maximum. Étape 4 — Lire : $\\alpha=4$ ; la longueur vaut $8-4=4$ dm, le cadre est un carré.",
+              "answers": [
+                {
+                  "content": "4",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Pour quelles largeurs $x$ (en dm, avec $0<x<8$) l'aire $A(x)=-x^2+8x$ vaut-elle $12$ dm² ?",
+              "question_type": "multiple_correct_2",
+              "explanation": "Étape 1 — Mettre en facteur : on écrit $-x^2+8x=12$, soit $x^2-8x+12=0$ ; ici $a=1$, rien à mettre en facteur. Étape 2 — Faire apparaître un carré : $x^2-8x=(x-4)^2-16$. Étape 3 — Regrouper : $(x-4)^2-16+12=(x-4)^2-4$. Étape 4 — Factoriser : $(x-4)^2-2^2=(x-6)(x-2)=0$, donc $x=2$ ou $x=6$. On vérifie : $A(2)=2\\times 6=12$ et $A(6)=6\\times 2=12$. Pour $x=4$, l'aire vaut $16$, pas $12$.",
+              "answers": [
+                {
+                  "content": "$2$",
+                  "correct": true
+                },
+                {
+                  "content": "$6$",
+                  "correct": true
+                },
+                {
+                  "content": "$4$",
+                  "correct": false
+                },
+                {
+                  "content": "$3$",
+                  "correct": false
+                },
+                {
+                  "content": "$12$",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quel est l'ensemble de définition de $R(x)=\\dfrac{16-A(x)}{x^2-16}$, avec $A(x)=-x^2+8x$, vue comme fraction rationnelle sur $\\mathbb{R}$ ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Factoriser : $16-A(x)=x^2-8x+16=(x-4)^2$ et $x^2-16=(x-4)(x+4)$. Étape 2 — Chercher : le dénominateur s'annule pour $x=4$ ou $x=-4$. Étape 3 — Conclure : $D_R=\\mathbb{R}\\setminus\\{-4\\,;\\,4\\}$. On cherche les valeurs interdites sur la fraction de départ, avant toute simplification.",
+              "answers": [
+                {
+                  "content": "$\\mathbb{R}\\setminus\\{-4\\,;\\,4\\}$",
+                  "correct": true
+                },
+                {
+                  "content": "$\\mathbb{R}\\setminus\\{4\\}$",
+                  "correct": false
+                },
+                {
+                  "content": "$\\mathbb{R}\\setminus\\{16\\}$",
+                  "correct": false
+                },
+                {
+                  "content": "$\\mathbb{R}$",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Pour $x\\neq -4$ et $x\\neq 4$, quelle est la forme simplifiée de $R(x)=\\dfrac{(x-4)^2}{x^2-16}$ ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Factoriser : $(x-4)^2=(x-4)(x-4)$ et $x^2-16=(x-4)(x+4)$. Étape 2 — Chercher : les valeurs interdites sont $-4$ et $4$. Étape 3 — Simplifier : un seul facteur $x-4$ est commun, donc $R(x)=\\dfrac{(x-4)(x-4)}{(x-4)(x+4)}$ $=\\dfrac{x-4}{x+4}$. Étape 4 — Conclure : $R(x)=\\dfrac{x-4}{x+4}$ sur $D_R$. Il reste un facteur $x-4$ au numérateur : le quotient n'est pas $1$.",
+              "answers": [
+                {
+                  "content": "$\\dfrac{x-4}{x+4}$",
+                  "correct": true
+                },
+                {
+                  "content": "$\\dfrac{x+4}{x-4}$",
+                  "correct": false
+                },
+                {
+                  "content": "$\\dfrac{1}{x+4}$",
+                  "correct": false
+                },
+                {
+                  "content": "$\\dfrac{x-4}{x-4}=1$",
+                  "correct": false
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "subjects": [
+        {
+          "title": "Sujet 1 · Les savoirs de base",
+          "notions": "Degré et coefficient dominant d'un polynôme ; égalité de polynômes et identification des coefficients ; racine et factorisation par x − a ; forme canonique d'un trinôme et extremum ; ensemble de définition et simplification d'une fraction rationnelle.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "On étudie le degré et le coefficient dominant de polynômes.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quel est le degré du polynôme $(2x-1)(x^2+x+3)$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Développer : $(2x-1)(x^2+x+3)=2x^3+2x^2+6x-x^2-x-3$ $=2x^3+x^2+5x-3$. Étape 2 — Repérer : le plus grand exposant est $3$. Étape 3 — Lire : le degré est $3$. Étape 4 — Contrôler : $1+2=3$ (somme des degrés d'un produit).",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quel est le coefficient dominant de $P(x)=-3x^4+x-8$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Développer : $P(x)$ est déjà ordonné. Étape 2 — Repérer : le terme de plus grand exposant est $-3x^4$. Étape 3 — Lire : le coefficient dominant est $-3$ et le degré $4$. Étape 4 — Contrôler : $4$ est le degré, $-8$ est le terme constant.",
+                  "answers": [
+                    {
+                      "content": "-3",
+                      "correct": true
+                    },
+                    {
+                      "content": "4",
+                      "correct": false
+                    },
+                    {
+                      "content": "-8",
+                      "correct": false
+                    },
+                    {
+                      "content": "1",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le produit d'un polynôme de degré 1 et d'un polynôme de degré 4 est de degré 5.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Développer : $(ax+b)(cx^4+\\dots)=acx^5+\\dots$ avec $ac\\neq 0$. Étape 2 — Repérer : le plus grand exposant est $5$. Étape 3 — Lire : le degré est $5$. Étape 4 — Contrôler : $1+4=5$, la règle du produit est respectée.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le degré de $(x^3+x)-(x^3-2)$ est ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Développer : $(x^3+x)-(x^3-2)=x^3+x-x^3+2=x+2$. Étape 2 — Repérer : le terme en $x^3$ a disparu, le plus grand exposant est $1$. Étape 3 — Lire : le degré est $1$. Étape 4 — Contrôler : $1\\leq 3$ ; le degré d'une somme peut baisser.",
+                  "answers": [
+                    {
+                      "content": "1",
+                      "correct": true
+                    },
+                    {
+                      "content": "un",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel polynôme est de degré 2 après réduction ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Développer : $x(x-1)+x=x^2-x+x=x^2$ ; $(x+1)^2-x^2=2x+1$ ; $(x^2+2)-(x^2-2)=4$ ; $x^3-x^3+1=1$. Étape 2 — Repérer : le plus grand exposant vaut $2$, $1$, $0$ et $0$. Étape 3 — Lire : seul $x(x-1)+x$ est de degré $2$. Étape 4 — Contrôler : dans les trois autres, les termes de plus haut degré s'annulent.",
+                  "answers": [
+                    {
+                      "content": "$x(x-1)+x$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x+1)^2-x^2$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x^2+2)-(x^2-2)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$x^3-x^3+1$",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Développe et réduis avant de lire le plus grand exposant."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Un couturier compare deux écritures du prix d'une pièce de tissu, en fonction de la longueur $x$.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Pour tout réel $x$, $(a-2)x^2+x=x^2+x$. Quelle est la valeur de $a$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Développer : les deux membres sont déjà développés. Étape 2 — Ordonner : ils sont ordonnés. Étape 3 — Identifier : $a-2=1$ pour les coefficients de $x^2$. Étape 4 — Résoudre : $a=3$. Vérification : $(3-2)x^2+x=x^2+x$.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pour tout réel $x$, $(x+2)(x+a)=x^2+6x+8$. Quelle est la valeur de $a$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Développer : $(x+2)(x+a)=x^2+(a+2)x+2a$. Étape 2 — Ordonner : à comparer à $x^2+6x+8$. Étape 3 — Identifier : $a+2=6$ et $2a=8$. Étape 4 — Résoudre : $a=4$ ; la valeur $6$ oublie le terme $2$ et la valeur $8$ est le terme constant, pas $a$.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    },
+                    {
+                      "content": "2",
+                      "correct": false
+                    },
+                    {
+                      "content": "6",
+                      "correct": false
+                    },
+                    {
+                      "content": "8",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour tout réel $x$, $(x-1)^2=x^2-1$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Développer : $(x-1)^2=x^2-2x+1$. Étape 2 — Ordonner : à comparer à $x^2+0x-1$. Étape 3 — Identifier : les coefficients de $x$ sont $-2$ et $0$ ; les constantes sont $1$ et $-1$. Étape 4 — Résoudre : les coefficients diffèrent, l'égalité est fausse ; pour $x=2$, on a $1$ et $3$.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour tout réel $x$, $x^2+bx+16=(x+4)^2$, donc $b=$ ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Développer : $(x+4)^2=x^2+8x+16$. Étape 2 — Ordonner : à comparer à $x^2+bx+16$. Étape 3 — Identifier : $b=8$ et $16=16$. Étape 4 — Résoudre : $b=8$.",
+                  "answers": [
+                    {
+                      "content": "8",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour tout réel $x$, $a(x+1)+b=4x+9$. Quelles sont les valeurs de $a$ et $b$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Développer : $a(x+1)+b=ax+a+b$. Étape 2 — Ordonner : $ax+(a+b)$, à comparer à $4x+9$. Étape 3 — Identifier : $a=4$ et $a+b=9$. Étape 4 — Résoudre : $b=9-4=5$. La valeur $b=9$ oublie le terme $a$ dans $a+b$.",
+                  "answers": [
+                    {
+                      "content": "$a=4$ et $b=5$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$a=4$ et $b=9$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$a=9$ et $b=4$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$a=5$ et $b=4$",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Développe un membre, ordonne, puis égale les coefficients de même degré."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Une planche est découpée selon le polynôme $P(x)=x^2-x-12$ (modèle fictif).",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Pour $P(x)=x^2-x-12$, calcule $P(3)$.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Calculer : $P(3)=3^2-3-12$. Étape 2 — Écrire : $P(3)=9-3-12$. Étape 3 — Résoudre : $P(3)=-6$. Étape 4 — Conclure : $P(3)\\neq 0$, donc $3$ n'est pas une racine.",
+                  "answers": [
+                    {
+                      "content": "-6",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Lequel de ces nombres est une racine de $P(x)=x^2-x-12$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Calculer : $P(4)=16-4-12=0$ ; $P(-4)=16+4-12=8$ ; $P(3)=-6$ ; $P(12)=144-12-12=120$. Étape 2 — Écrire : seul $4$ annule $P$. Étape 3 — Conclure : $4$ est une racine.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    },
+                    {
+                      "content": "-4",
+                      "correct": false
+                    },
+                    {
+                      "content": "3",
+                      "correct": false
+                    },
+                    {
+                      "content": "12",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le nombre $4$ est une racine de $P(x)=x^2-x-12$. Quelle est la factorisation de $P$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Calculer : $P(4)=0$. Étape 2 — Écrire : $P(x)=(x-4)(ux+v)$. Étape 3 — Développer : $(x-4)(ux+v)=ux^2+(v-4u)x-4v$ ; on identifie : $u=1$, $v-4=-1$, $-4v=-12$. Étape 4 — Résoudre : $v=3$, donc $P(x)=(x-4)(x+3)$.",
+                  "answers": [
+                    {
+                      "content": "$(x-4)(x+3)$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x+4)(x-3)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x-4)(x-3)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x+4)(x+3)$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Si $P(5)=0$, alors $x-5$ est un facteur de $P(x)$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Calculer : $P(5)=0$ signifie que $5$ est une racine. Étape 2 — Écrire : $P(x)=(x-5)Q(x)$. Étape 3 — Développer : sans objet. Étape 4 — Conclure : $x-5$ est un facteur ; l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Si $-7$ est une racine de $P$, le facteur correspondant est $x+$ ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Calculer : $P(-7)=0$. Étape 2 — Écrire : $P(x)=(x-(-7))Q(x)$. Étape 3 — Développer : $x-(-7)=x+7$. Étape 4 — Conclure : le nombre qui manque est $7$ ; le facteur $x-7$ viendrait de la racine $7$.",
+                  "answers": [
+                    {
+                      "content": "7",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Une racine $a$ annule $P$ ; son facteur est $x-a$."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Un tailleur étudie le coût de revient d'une pièce, en milliers de francs, quand il en fabrique $x$ : $f(x)=x^2-6x+11$ (modèle fictif). Il étudie aussi quelques fractions rationnelles.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle est la forme canonique de $f(x)=x^2-6x+11$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=1$. Étape 2 — Faire apparaître un carré : $x^2-6x=(x-3)^2-9$. Étape 3 — Regrouper : $x^2-6x+11=(x-3)^2-9+11=(x-3)^2+2$. Étape 4 — Lire : $\\alpha=3$ et $\\beta=2$. Garder $+11$ sans retrancher $9$ est faux.",
+                  "answers": [
+                    {
+                      "content": "$(x-3)^2+2$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x-3)^2+11$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x-3)^2-2$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x+3)^2+2$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la valeur minimale de $f(x)=x^2-6x+11$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=1>0$. Étape 2 — Faire apparaître un carré : $x^2-6x=(x-3)^2-9$. Étape 3 — Regrouper : $f(x)=(x-3)^2-9+11=(x-3)^2+2$. Étape 4 — Lire : le minimum est $\\beta=2$, atteint en $x=3$.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle est la valeur interdite de $\\dfrac{4}{2x-8}$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Factoriser : $2x-8=2(x-4)$. Étape 2 — Chercher : $2(x-4)=0$ donne $x=4$. Étape 3 — Simplifier : rien à simplifier. Étape 4 — Conclure : la valeur interdite est $4$.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pour $x\\neq 5$, quelle est la forme simplifiée de $\\dfrac{x^2-25}{x-5}$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Factoriser : $x^2-25=(x-5)(x+5)$. Étape 2 — Chercher : la valeur interdite est $5$. Étape 3 — Simplifier : $\\dfrac{(x-5)(x+5)}{x-5}=x+5$. Étape 4 — Conclure : $x+5$ pour $x\\neq 5$.",
+                  "answers": [
+                    {
+                      "content": "$x+5$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$x-5$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$x^2-5$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$5$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La fraction $\\dfrac{x+1}{x^2-1}$ est définie en $x=1$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Factoriser : $x^2-1=(x-1)(x+1)$. Étape 2 — Chercher : le dénominateur s'annule pour $x=1$ et pour $x=-1$. Étape 3 — Simplifier : $\\dfrac{x+1}{x^2-1}=\\dfrac{1}{x-1}$ pour $x\\neq \\pm 1$. Étape 4 — Conclure : $1$ est une valeur interdite ; l'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Utilise $x^2+2hx=(x+h)^2-h^2$, et cherche les valeurs interdites avec le dénominateur de départ."
+            }
+          ]
+        },
+        {
+          "title": "Sujet 2 · La vie courante en contexte ivoirien",
+          "notions": "Aire d'un panneau (polynôme de degré 2) chez un menuisier de Bouaké ; coût de confection d'une couturière de Yopougon (forme canonique et minimum) ; volume d'une caisse d'Adjamé (degré, racines) ; prix moyen du tissu au marché de Treichville (fraction rationnelle).",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Un menuisier de Bouaké fabrique des panneaux de largeur $x$ m et de longueur $x+3$ m. L'aire d'un panneau, en m², est $A(x)=x(x+3)=x^2+3x$.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quel est le degré de l'aire $A(x)=x(x+3)$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Développer : $A(x)=x(x+3)=x^2+3x$. Étape 2 — Repérer : le plus grand exposant est $2$. Étape 3 — Lire : le degré est $2$. Étape 4 — Contrôler : produit de deux polynômes de degré $1$, donc $1+1=2$.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle est l'aire, en m², d'un panneau de largeur $x=4$ m, avec $A(x)=x(x+3)$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Calculer : on remplace $x$ par $4$. Étape 2 — Écrire : $A(4)=4\\times(4+3)$. Étape 3 — Résoudre : $A(4)=4\\times 7=28$. Le panneau a une aire de $28$ m².",
+                  "answers": [
+                    {
+                      "content": "28",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle largeur positive, en m, donne une aire de $10$ m² avec $A(x)=x^2+3x$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Calculer : on cherche $x$ tel que $x^2+3x=10$, soit $P(x)=x^2+3x-10=0$. Étape 2 — Écrire : $P(2)=4+6-10=0$, donc $2$ est une racine et $P(x)=(x-2)(x+5)$. Étape 3 — Développer : $(x-2)(x+5)=x^2+3x-10$. Étape 4 — Résoudre : $x=2$ ou $x=-5$ ; une largeur est positive, donc $x=2$ m.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "L'aire $A(x)=x^2+3x$ est un polynôme de degré 2.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Développer : $A(x)=x^2+3x$ est déjà développé. Étape 2 — Repérer : le plus grand exposant est $2$, de coefficient $1\\neq 0$. Étape 3 — Lire : le degré est $2$. Étape 4 — Contrôler : l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un autre panneau a pour largeur $x+1$ m et pour longueur $x+3$ m. Quelle est son aire, en m² ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Développer : $(x+1)(x+3)=x^2+3x+x+3=x^2+4x+3$. Étape 2 — Ordonner : $x^2+4x+3$. Étape 3 — Contrôler : le degré est $1+1=2$ ; le terme en $x$ est $3x+x=4x$. Le résultat $x^2+3$ oublie le terme $4x$.",
+                  "answers": [
+                    {
+                      "content": "$x^2+4x+3$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$x^2+3$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$x^2+4x+4$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$2x+4$",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Pour une aire, multiplie la largeur par la longueur, puis développe."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Une couturière de Yopougon calcule le coût de revient d'une robe, en milliers de francs, quand l'atelier en fabrique $x$ : $C(x)=x^2-8x+20$ (modèle fictif).",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle est la forme canonique de $C(x)=x^2-8x+20$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=1$. Étape 2 — Faire apparaître un carré : $x^2-8x=(x-4)^2-16$. Étape 3 — Regrouper : $C(x)=(x-4)^2-16+20=(x-4)^2+4$. Étape 4 — Lire : $\\alpha=4$ et $\\beta=4$. Garder $+20$ sans retrancher $16$ est faux.",
+                  "answers": [
+                    {
+                      "content": "$(x-4)^2+4$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x-4)^2+20$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x+4)^2+4$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x-4)^2-4$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel est le coût minimal, en milliers de francs, avec $C(x)=x^2-8x+20$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=1>0$. Étape 2 — Faire apparaître un carré : $C(x)=(x-4)^2+4$. Étape 3 — Regrouper : $(x-4)^2\\geq 0$, donc $C(x)\\geq 4$. Étape 4 — Lire : le minimum est $\\beta=4$, soit $4$ milliers de francs.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pour quel nombre $x$ de robes le coût $C(x)=x^2-8x+20$ est-il minimal ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=1$. Étape 2 — Faire apparaître un carré : $C(x)=(x-4)^2+4$. Étape 3 — Regrouper : le minimum $4$ est atteint quand $(x-4)^2=0$. Étape 4 — Lire : $x=\\alpha=4$ robes.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pour tout réel $x$, $C(x)=x^2-8x+20$ est supérieur ou égal à $4$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=1$. Étape 2 — Faire apparaître un carré : $x^2-8x=(x-4)^2-16$. Étape 3 — Regrouper : $C(x)=(x-4)^2+4$. Étape 4 — Lire : un carré est positif ou nul, donc $C(x)\\geq 4$ ; l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour quelles valeurs de $x$ a-t-on $C(x)=x^2-8x+20=5$ ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Mettre en facteur : on écrit $x^2-8x+20=5$. Étape 2 — Faire apparaître un carré : $(x-4)^2+4=5$, soit $(x-4)^2=1$. Étape 3 — Regrouper : $x-4=1$ ou $x-4=-1$. Étape 4 — Lire : $x=5$ ou $x=3$. On vérifie : $C(3)=9-24+20=5$ et $C(5)=25-40+20=5$ ; $C(4)=4$.",
+                  "answers": [
+                    {
+                      "content": "$3$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$5$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$4$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$1$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$9$",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Écris $C(x)$ sous forme canonique : le minimum se lit directement."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Un menuisier d'Adjamé fabrique des caisses de dimensions $x$, $x+1$ et $x+2$ (en dm). Le volume, en dm³, est $V(x)=x(x+1)(x+2)$.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quel est le développement de $V(x)=x(x+1)(x+2)$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Développer : $(x+1)(x+2)=x^2+3x+2$, puis $V(x)=x(x^2+3x+2)=x^3+3x^2+2x$. Étape 2 — Ordonner : $x^3+3x^2+2x$. Étape 3 — Contrôler : le degré est $1+1+1=3$. Les propositions qui oublient le terme $3x^2$ ou $2x$ sont fausses.",
+                  "answers": [
+                    {
+                      "content": "$x^3+3x^2+2x$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$x^3+2x$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$x^3+3x^2+2$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$3x+3$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel est le volume, en dm³, de la caisse pour $x=3$, avec $V(x)=x(x+1)(x+2)$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Calculer : on remplace $x$ par $3$. Étape 2 — Écrire : $V(3)=3\\times 4\\times 5$. Étape 3 — Résoudre : $V(3)=60$. Le volume est $60$ dm³.",
+                  "answers": [
+                    {
+                      "content": "60",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Le nombre $-1$ est une racine de $V(x)=x(x+1)(x+2)$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Calculer : $V(-1)=(-1)\\times 0\\times 1$. Étape 2 — Écrire : le facteur $x+1$ vaut $0$ pour $x=-1$. Étape 3 — Conclure : $V(-1)=0$, donc $-1$ est une racine de $V$ et $x+1$ un facteur. L'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le degré du polynôme $V(x)=x(x+1)(x+2)$ est ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Développer : $V(x)=x^3+3x^2+2x$. Étape 2 — Repérer : le plus grand exposant est $3$. Étape 3 — Lire : le degré est $3$. Étape 4 — Contrôler : $1+1+1=3$.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    },
+                    {
+                      "content": "trois",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles valeurs de $x$ annulent $V(x)=x(x+1)(x+2)$ ?",
+                  "question_type": "multiple_correct_3",
+                  "explanation": "Étape 1 — Calculer : $V(0)=0$, $V(-1)=0$, $V(-2)=0$, mais $V(1)=1\\times 2\\times 3=6$ et $V(2)=2\\times 3\\times 4=24$. Étape 2 — Écrire : un produit est nul si un facteur est nul : $x=0$, $x+1=0$ ou $x+2=0$. Étape 3 — Résoudre : $x=0$, $x=-1$ ou $x=-2$. Étape 4 — Conclure : les racines sont $0$, $-1$ et $-2$ ; $1$ et $2$ viennent d'erreurs de signe.",
+                  "answers": [
+                    {
+                      "content": "$0$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$-1$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$-2$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$1$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$2$",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Un produit est nul si l'un de ses facteurs est nul."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Au marché de Treichville, un commerçant livre $x$ mètres de pagne pour $100x+500$ francs (livraison comprise). Le prix moyen au mètre est $m(x)=\\dfrac{100x+500}{x}$.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quel est l'ensemble de définition de $m(x)=\\dfrac{100x+500}{x}$, vue comme fraction rationnelle ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Factoriser : le numérateur est $100(x+5)$, le dénominateur $x$. Étape 2 — Chercher : $x=0$ annule le dénominateur. Étape 3 — Simplifier : $x+5$ n'est pas un facteur du dénominateur, rien à simplifier. Étape 4 — Conclure : $D_m=\\mathbb{R}\\setminus\\{0\\}$. La valeur $-5$ annule le numérateur, pas le dénominateur.",
+                  "answers": [
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{0\\}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\mathbb{R}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{-5\\}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{500\\}$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel est le prix moyen au mètre, en francs, pour $x=5$ mètres, avec $m(x)=\\dfrac{100x+500}{x}$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Factoriser : le numérateur vaut $100x+500$. Étape 2 — Chercher : $5\\neq 0$, donc $m(5)$ existe. Étape 3 — Simplifier : on calcule directement. Étape 4 — Conclure : $m(5)=\\dfrac{500+500}{5}=\\dfrac{1000}{5}=200$.",
+                  "answers": [
+                    {
+                      "content": "200",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "F"
+                },
+                {
+                  "content": "Quel est le prix moyen au mètre, en francs, pour $x=10$ mètres, avec $m(x)=\\dfrac{100x+500}{x}$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Factoriser : le numérateur vaut $100x+500$. Étape 2 — Chercher : $10\\neq 0$, donc $m(10)$ existe. Étape 3 — Simplifier : on calcule directement. Étape 4 — Conclure : $m(10)=\\dfrac{1000+500}{10}=150$.",
+                  "answers": [
+                    {
+                      "content": "150",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "F"
+                },
+                {
+                  "content": "Avec $m(x)=\\dfrac{100x+500}{x}$, le prix moyen pour $10$ m est inférieur au prix moyen pour $5$ m.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Factoriser : $m(x)=\\dfrac{100x+500}{x}$. Étape 2 — Chercher : $5$ et $10$ sont autorisés. Étape 3 — Simplifier : on calcule $m(5)=200$ et $m(10)=150$. Étape 4 — Conclure : $150<200$ ; la livraison est partagée sur plus de mètres, le prix moyen baisse. L'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour $x\\neq -5$, $\\dfrac{100x+500}{x+5}=$ ? Donne le nombre.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Factoriser : $100x+500=100(x+5)$. Étape 2 — Chercher : la valeur interdite est $-5$. Étape 3 — Simplifier : $\\dfrac{100(x+5)}{x+5}=100$. Étape 4 — Conclure : la fraction vaut $100$ pour $x\\neq -5$.",
+                  "answers": [
+                    {
+                      "content": "100",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                }
+              ],
+              "hint": "Cherche d'abord la valeur qui annule le dénominateur, puis simplifie."
+            }
+          ]
+        },
+        {
+          "title": "Sujet 3 · Raisonner et justifier",
+          "notions": "Justifier un degré et réfuter une affirmation sur les degrés ; démontrer une égalité de polynômes ; justifier qu'un nombre est racine et factoriser complètement ; justifier une forme canonique, un minimum et un ensemble de définition ; reconnaître une simplification correcte.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Dans l'atelier, Awa et Koffi discutent des degrés de polynômes. Il faut justifier chaque conclusion.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Awa dit : « Le degré de $(x^2+3x)+(2-x^2)$ est $2$, car chaque parenthèse est de degré $2$. » Quelle est la bonne réponse ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Développer : $(x^2+3x)+(2-x^2)=x^2+3x+2-x^2=3x+2$. Étape 2 — Repérer : le terme en $x^2$ a disparu, le plus grand exposant est $1$. Étape 3 — Lire : le degré est $1$. Étape 4 — Contrôler : le degré d'une somme est seulement au plus le plus grand des degrés ; le piège est de lire le degré avant de réduire.",
+                  "answers": [
+                    {
+                      "content": "Elle a tort : la somme vaut $3x+2$, qui est de degré $1$",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elle a raison : la somme de deux polynômes de degré $2$ est de degré $2$",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle a tort : la somme vaut $x^2+2$, de degré $2$",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle a raison : le degré d'une somme est toujours le plus grand degré",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel est le degré du polynôme $(x^2+1)(x^3-x)$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Développer : $(x^2+1)(x^3-x)=x^5-x^3+x^3-x=x^5-x$. Étape 2 — Repérer : le plus grand exposant est $5$. Étape 3 — Lire : le degré est $5$. Étape 4 — Contrôler : $2+3=5$, somme des degrés d'un produit.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Il existe deux polynômes de degré 3 dont la somme est de degré 1.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Développer : prenons $x^3+x$ et $-x^3+3$ ; leur somme vaut $x^3+x-x^3+3=x+3$. Étape 2 — Repérer : le terme en $x^3$ a disparu. Étape 3 — Lire : la somme est de degré $1$. Étape 4 — Contrôler : un seul exemple suffit pour justifier qu'il en existe ; l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour déterminer le degré d'un polynôme.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Développer : on réduit d'abord, sinon on lit un faux degré. Étape 2 — Repérer : on cherche le plus grand exposant à coefficient non nul. Étape 3 — Lire : on note le degré et le coefficient dominant. Étape 4 — Contrôler : on confronte à la règle du produit et à celle de la somme. L'ordre est imposé : chaque étape utilise la précédente.",
+                  "answers": [
+                    {
+                      "content": "Développer et réduire l'expression, puis l'ordonner."
+                    },
+                    {
+                      "content": "Repérer le terme de plus grand exposant dont le coefficient n'est pas nul."
+                    },
+                    {
+                      "content": "Lire le degré et le coefficient dominant."
+                    },
+                    {
+                      "content": "Contrôler avec les règles sur le produit et la somme."
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles expressions sont de degré 3 après réduction ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Développer : $(x-1)(x+1)(x+2)=(x^2-1)(x+2)=x^3+2x^2-x-2$ ; $(x^2+x)^2-x^4=2x^3+x^2$ ; $x^3-(x^3+x)=-x$ ; $(x+1)^2-x^2=2x+1$ ; $(x^2+3)-(x^2-3)=6$. Étape 2 — Repérer : le plus grand exposant vaut $3$, $3$, $1$, $1$ et $0$. Étape 3 — Lire : deux expressions sont de degré $3$. Étape 4 — Contrôler : dans les trois autres, les termes de plus haut degré s'annulent.",
+                  "answers": [
+                    {
+                      "content": "$(x-1)(x+1)(x+2)$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x^2+x)^2-x^4$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$x^3-(x^3+x)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x+1)^2-x^2$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x^2+3)-(x^2-3)$",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Réduis chaque expression avant de lire le plus grand exposant."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Un couturier doit prouver que deux écritures d'un même prix sont égales pour toute longueur $x$.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Pour tout réel $x$, $(x+3)^2-(x-3)^2=12x$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Développer : $(x+3)^2=x^2+6x+9$ et $(x-3)^2=x^2-6x+9$. Étape 2 — Ordonner : la différence est $(x^2+6x+9)-(x^2-6x+9)$. Étape 3 — Identifier : on obtient $12x$, de coefficients $0$, $12$ et $0$. Étape 4 — Résoudre : les coefficients sont ceux de $12x$ ; l'égalité est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour démontrer que deux polynômes sont égaux, que faut-il faire ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Développer : on met chaque polynôme sous forme développée. Étape 2 — Ordonner : on les écrit par puissances décroissantes. Étape 3 — Identifier : on compare les coefficients de même degré, un par un. Étape 4 — Résoudre : l'égalité est démontrée si tous les coefficients sont égaux. Une seule valeur de $x$, le degré seul ou le coefficient dominant seul ne suffisent pas.",
+                  "answers": [
+                    {
+                      "content": "Montrer qu'ils ont les mêmes coefficients, degré par degré",
+                      "correct": true
+                    },
+                    {
+                      "content": "Vérifier l'égalité pour $x=0$ seulement",
+                      "correct": false
+                    },
+                    {
+                      "content": "Vérifier qu'ils ont le même degré",
+                      "correct": false
+                    },
+                    {
+                      "content": "Vérifier qu'ils ont le même coefficient dominant",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour tout réel $x$, $a(x+1)^2+b=2x^2+4x+5$. Quelle est la valeur de $a$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Développer : $a(x+1)^2+b=ax^2+2ax+a+b$. Étape 2 — Ordonner : à comparer à $2x^2+4x+5$. Étape 3 — Identifier : $a=2$, $2a=4$ et $a+b=5$. Étape 4 — Résoudre : $a=2$ ; on vérifie $2a=4$.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pour tout réel $x$, $a(x+1)^2+b=2x^2+4x+5$. Quelle est la valeur de $b$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Développer : $a(x+1)^2+b=ax^2+2ax+a+b$. Étape 2 — Ordonner : à comparer à $2x^2+4x+5$. Étape 3 — Identifier : $a=2$ et $a+b=5$. Étape 4 — Résoudre : $b=5-2=3$. Vérification : $2(x+1)^2+3=2x^2+4x+2+3$.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelles égalités sont vraies pour tout réel $x$ ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Développer : $(x-1)^2=x^2-2x+1$ ; $(x+1)(x-1)=x^2-1$ ; $(x+2)^2=x^2+4x+4$ ; $(2x+1)^2=4x^2+4x+1$ ; $(x-3)(x+3)=x^2-9$. Étape 2 — Ordonner : on compare à chaque membre de droite. Étape 3 — Identifier : $(x-1)^2=x^2-2x+1$ et $(x+1)(x-1)=x^2-1$ ont les mêmes coefficients des deux côtés. Étape 4 — Résoudre : $(x+2)^2$, $(2x+1)^2$ et $(x-3)(x+3)$ oublient le double produit ou se trompent de signe ; seules $(x-1)^2=x^2-2x+1$ et $(x+1)(x-1)=x^2-1$ sont vraies.",
+                  "answers": [
+                    {
+                      "content": "$(x-1)^2=x^2-2x+1$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x+1)(x-1)=x^2-1$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x+2)^2=x^2+4$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(2x+1)^2=4x^2+1$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x-3)(x+3)=x^2+9$",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Développe, ordonne, puis compare tous les coefficients."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Pour fabriquer une étagère, un menuisier utilise le polynôme $P(x)=x^3-3x^2-4x+12$ (modèle fictif). Il justifie ses racines.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Le nombre $2$ est une racine de $P(x)=x^3-3x^2-4x+12$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Calculer : $P(2)=8-12-8+12$. Étape 2 — Écrire : $P(2)=0$. Étape 3 — Développer : sans objet. Étape 4 — Conclure : $P(2)=0$, donc $2$ est une racine ; l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "On écrit $P(x)=(x-2)(x^2+vx+w)$ avec $P(x)=x^3-3x^2-4x+12$. Quelle est la valeur de $v$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Calculer : $P(2)=0$. Étape 2 — Écrire : $P(x)=(x-2)(x^2+vx+w)$. Étape 3 — Développer : $(x-2)(x^2+vx+w)=x^3+(v-2)x^2+(w-2v)x-2w$ ; on identifie : $v-2=-3$, $w-2v=-4$, $-2w=12$. Étape 4 — Résoudre : $v=-1$, puis $w=-4-2=-6$, et $-2w=12$ est vérifié.",
+                  "answers": [
+                    {
+                      "content": "-1",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle est la factorisation complète de $P(x)=x^3-3x^2-4x+12$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Calculer : $P(2)=0$. Étape 2 — Écrire : $P(x)=(x-2)(x^2-x-6)$. Étape 3 — Développer : $3$ est une racine de $x^2-x-6$ ($9-3-6=0$), donc $x^2-x-6=(x-3)(x+2)$, car $(x-3)(x+2)=x^2-x-6$. Étape 4 — Résoudre : $P(x)=(x-2)(x-3)(x+2)$. Les autres propositions ont un mauvais signe sur au moins un facteur.",
+                  "answers": [
+                    {
+                      "content": "$(x-2)(x-3)(x+2)$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x-2)(x+3)(x+2)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x-2)(x-3)(x-2)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x+2)(x+3)(x+2)$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Les racines de $P(x)=x^3-3x^2-4x+12$ sont exactement $2$, $3$ et $-2$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Calculer : $P(2)=0$, $P(3)=27-27-12+12=0$ et $P(-2)=-8-12+8+12=0$. Étape 2 — Écrire : $P(x)=(x-2)(x-3)(x+2)$. Étape 3 — Développer : un produit est nul seulement si un facteur est nul. Étape 4 — Résoudre : les racines sont exactement $2$, $3$ et $-2$ ; l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La somme des trois racines de $P(x)=(x-2)(x-3)(x+2)$ est ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Calculer : les racines sont $2$, $3$ et $-2$. Étape 2 — Écrire : leur somme est $2+3+(-2)$. Étape 3 — Développer : sans objet. Étape 4 — Résoudre : $2+3-2=3$. Le facteur $x+2$ donne la racine $-2$, pas $2$.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    },
+                    {
+                      "content": "trois",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Le facteur $x-a$ correspond à la racine $a$."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Une couturière étudie le trinôme $q(x)=x^2+6x+10$ et des fractions rationnelles. Il faut justifier chaque réponse.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Comment justifier que $x^2+6x+10$ est toujours strictement positif ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=1$. Étape 2 — Faire apparaître un carré : $x^2+6x=(x+3)^2-9$. Étape 3 — Regrouper : $x^2+6x+10=(x+3)^2-9+10=(x+3)^2+1$. Étape 4 — Lire : $(x+3)^2\\geq 0$, donc l'expression est supérieure ou égale à $1$. Oublier de retrancher $9$ donne la forme fausse $(x+3)^2+10$.",
+                  "answers": [
+                    {
+                      "content": "$x^2+6x+10=(x+3)^2+1$, et un carré est positif ou nul, donc l'expression est supérieure ou égale à $1$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$x^2+6x+10=(x+3)^2+10$, donc elle est supérieure ou égale à $10$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$x^2+6x+10=(x-3)^2+1$, donc elle est supérieure ou égale à $1$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$x^2+6x=(x+3)^2$, donc $x^2+6x+10=(x+3)^2+10$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la valeur minimale de $q(x)=x^2+6x+10$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=1>0$. Étape 2 — Faire apparaître un carré : $x^2+6x=(x+3)^2-9$. Étape 3 — Regrouper : $q(x)=(x+3)^2+1$. Étape 4 — Lire : le minimum est $\\beta=1$, atteint en $x=-3$.",
+                  "answers": [
+                    {
+                      "content": "1",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quel est l'ensemble de définition de $F(x)=\\dfrac{x-1}{x^2+6x+10}$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Factoriser : le dénominateur s'écrit $(x+3)^2+1$. Étape 2 — Chercher : $(x+3)^2+1\\geq 1$, donc il ne s'annule jamais. Étape 3 — Simplifier : rien à simplifier. Étape 4 — Conclure : $D_F=\\mathbb{R}$. La valeur $1$ annule le numérateur, ce qui est permis.",
+                  "answers": [
+                    {
+                      "content": "$\\mathbb{R}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{-3\\}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{1\\}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{-1\\,;\\,10\\}$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La fraction $\\dfrac{x^2-9}{x-3}$ est égale à $x+3$ pour $x\\neq 3$ et n'est pas définie en $3$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Factoriser : $x^2-9=(x-3)(x+3)$. Étape 2 — Chercher : le dénominateur $x-3$ s'annule pour $x=3$. Étape 3 — Simplifier : $\\dfrac{(x-3)(x+3)}{x-3}=x+3$ pour $x\\neq 3$. Étape 4 — Conclure : l'affirmation est vraie : égalité sur $\\mathbb{R}\\setminus\\{3\\}$ seulement.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle fraction est égale à $x-1$ pour tout réel $x$ où elle est définie ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Factoriser : $x^2-1=(x-1)(x+1)$ ; $x^2-x=x(x-1)$. Étape 2 — Chercher : la valeur interdite est $-1$ pour $\\dfrac{x^2-1}{x+1}$, $-1$ pour $\\dfrac{x^2+1}{x+1}$, $1$ pour $\\dfrac{x^2-1}{x-1}$ et $-1$ pour $\\dfrac{x^2-x}{x+1}$. Étape 3 — Simplifier : $\\dfrac{(x-1)(x+1)}{x+1}=x-1$ ; $\\dfrac{x^2-1}{x-1}=x+1$ ; $x^2+1$ ne se factorise pas ici ; $\\dfrac{x(x-1)}{x+1}$ ne se simplifie pas. Étape 4 — Conclure : seule $\\dfrac{x^2-1}{x+1}$ est égale à $x-1$ sur son ensemble de définition.",
+                  "answers": [
+                    {
+                      "content": "$\\dfrac{x^2-1}{x+1}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\dfrac{x^2+1}{x+1}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\dfrac{x^2-1}{x-1}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\dfrac{x^2-x}{x+1}$",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Écris la forme canonique, puis factorise ; cherche les valeurs interdites avec le dénominateur de départ."
+            }
+          ]
+        },
+        {
+          "title": "Sujet 4 · Bilan de toutes les notions",
+          "notions": "Toutes les notions de la leçon : degré d'un polynôme, égalité de polynômes, racine et factorisation par x − a, forme canonique d'un trinôme avec extremum, ensemble de définition et simplification d'une fraction rationnelle.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Un menuisier fabrique le tiroir d'une machine à coudre, de dimensions $x$, $x+2$ et $x+5$ (en cm). Son volume, en cm³, est $V(x)=x(x+2)(x+5)$.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quel est le degré du polynôme $V(x)=x(x+2)(x+5)$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Développer : $(x+2)(x+5)=x^2+7x+10$, puis $V(x)=x^3+7x^2+10x$. Étape 2 — Repérer : le plus grand exposant est $3$. Étape 3 — Lire : le degré est $3$. Étape 4 — Contrôler : $1+1+1=3$.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quel est le développement de $V(x)=x(x+2)(x+5)$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Développer : $(x+2)(x+5)=x^2+5x+2x+10=x^2+7x+10$. Étape 2 — Ordonner : $V(x)=x(x^2+7x+10)=x^3+7x^2+10x$. Étape 3 — Contrôler : la somme $5+2$ donne le coefficient $7$ et le produit $2\\times 5$ donne $10$.",
+                  "answers": [
+                    {
+                      "content": "$x^3+7x^2+10x$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$x^3+10x$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$x^3+7x^2+10$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$x^3+10x^2+7x$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel est le volume, en cm³, pour $x=2$, avec $V(x)=x(x+2)(x+5)$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Calculer : on remplace $x$ par $2$. Étape 2 — Écrire : $V(2)=2\\times 4\\times 7$. Étape 3 — Résoudre : $V(2)=56$. Le volume est $56$ cm³.",
+                  "answers": [
+                    {
+                      "content": "56",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Le nombre $-2$ est une racine de $V(x)=x(x+2)(x+5)$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Calculer : $V(-2)=(-2)\\times 0\\times 3$. Étape 2 — Écrire : le facteur $x+2$ s'annule pour $x=-2$. Étape 3 — Conclure : $V(-2)=0$ ; $-2$ est une racine et $x+2$ un facteur ; l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles valeurs annulent $V(x)=x(x+2)(x+5)$ ?",
+                  "question_type": "multiple_correct_3",
+                  "explanation": "Étape 1 — Calculer : $V(0)=0$, $V(-2)=0$, $V(-5)=0$, alors que $V(2)=56$ et $V(5)=350$. Étape 2 — Écrire : un produit est nul si un facteur est nul : $x=0$, $x+2=0$ ou $x+5=0$. Étape 3 — Résoudre : $x=0$, $-2$ ou $-5$. Étape 4 — Conclure : les racines sont $0$, $-2$ et $-5$ ; $2$ et $5$ ignorent le signe du facteur.",
+                  "answers": [
+                    {
+                      "content": "$0$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$-2$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$-5$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$2$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$5$",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Un produit est nul si l'un de ses facteurs est nul."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Une couturière découpe une pièce de tissu d'aire $A(x)=x^2+9x+20$ (en m²) et de largeur $x+4$ (en m). Sa longueur est $L(x)=\\dfrac{x^2+9x+20}{x+4}$.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle est la factorisation de $x^2+9x+20$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Chercher : deux nombres de somme $9$ et de produit $20$ sont $4$ et $5$. Étape 2 — Écrire : $x^2+9x+20=(x+4)(x+5)$. Étape 3 — Vérifier : $(x+4)(x+5)=x^2+9x+20$. Les autres propositions ont une somme $12$, $-9$ ou $21$.",
+                  "answers": [
+                    {
+                      "content": "$(x+4)(x+5)$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$(x+2)(x+10)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x-4)(x-5)$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x+1)(x+20)$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour tout réel $x$, $x^2+9x+20=(x+4)(x+a)$. Quelle est la valeur de $a$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Développer : $(x+4)(x+a)=x^2+(a+4)x+4a$. Étape 2 — Ordonner : à comparer à $x^2+9x+20$. Étape 3 — Identifier : $a+4=9$ et $4a=20$. Étape 4 — Résoudre : $a=5$.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quel est l'ensemble de définition de $L(x)=\\dfrac{x^2+9x+20}{x+4}$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Factoriser : le numérateur est $(x+4)(x+5)$, le dénominateur $x+4$. Étape 2 — Chercher : $x+4=0$ donne $x=-4$. Étape 3 — Simplifier : $x+5$ existe partout, mais $L$ n'est pas définie en $-4$. Étape 4 — Conclure : $D_L=\\mathbb{R}\\setminus\\{-4\\}$.",
+                  "answers": [
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{-4\\}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{-5\\}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\mathbb{R}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{-5\\,;\\,-4\\}$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la longueur, en m, pour $x=3$, avec $L(x)=\\dfrac{x^2+9x+20}{x+4}$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Factoriser : $L(x)=\\dfrac{(x+4)(x+5)}{x+4}$. Étape 2 — Chercher : $3\\neq -4$, donc $L(3)$ existe. Étape 3 — Simplifier : $L(x)=x+5$. Étape 4 — Conclure : $L(3)=8$ ; on retrouve $\\dfrac{9+27+20}{7}=\\dfrac{56}{7}=8$.",
+                  "answers": [
+                    {
+                      "content": "8",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "La fraction $\\dfrac{x^2+9x+20}{x+4}$ est égale à $x+5$ pour tout réel $x\\neq -4$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Factoriser : $x^2+9x+20=(x+4)(x+5)$. Étape 2 — Chercher : la valeur interdite est $-4$. Étape 3 — Simplifier : $\\dfrac{(x+4)(x+5)}{x+4}=x+5$. Étape 4 — Conclure : l'égalité a lieu sur $\\mathbb{R}\\setminus\\{-4\\}$ ; l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Factorise le numérateur, puis simplifie le facteur commun."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Un cadre rectangulaire a un périmètre de 20 dm. Sa largeur est $x$ dm et sa longueur $10-x$ dm. L'aire, en dm², est $A(x)=x(10-x)=-x^2+10x$.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle est la forme canonique de $A(x)=-x^2+10x$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Mettre en facteur : $A(x)=-(x^2-10x)$. Étape 2 — Faire apparaître un carré : $x^2-10x=(x-5)^2-25$. Étape 3 — Regrouper : $A(x)=-\\big((x-5)^2-25\\big)=-(x-5)^2+25$. Étape 4 — Lire : $\\alpha=5$ et $\\beta=25$. Le signe moins change aussi le signe de $-25$.",
+                  "answers": [
+                    {
+                      "content": "$-(x-5)^2+25$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$-(x-5)^2-25$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$(x-5)^2+25$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$-(x+5)^2+25$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est l'aire maximale, en dm², avec $A(x)=-(x-5)^2+25$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=-1<0$. Étape 2 — Faire apparaître un carré : $(x-5)^2\\geq 0$. Étape 3 — Regrouper : $-(x-5)^2\\leq 0$, donc $A(x)\\leq 25$. Étape 4 — Lire : le maximum est $\\beta=25$.",
+                  "answers": [
+                    {
+                      "content": "25",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pour quelle largeur $x$, en dm, l'aire $A(x)=-(x-5)^2+25$ est-elle maximale ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Mettre en facteur : $a=-1$. Étape 2 — Faire apparaître un carré : $(x-5)^2=0$ pour $x=5$. Étape 3 — Regrouper : alors $A(5)=25$. Étape 4 — Lire : $x=\\alpha=5$ ; le cadre est un carré de $5$ dm de côté.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pour tout réel $x$, $A(x)=-x^2+10x$ est inférieure ou égale à $25$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Mettre en facteur : $A(x)=-(x^2-10x)$. Étape 2 — Faire apparaître un carré : $x^2-10x=(x-5)^2-25$. Étape 3 — Regrouper : $A(x)=-(x-5)^2+25$. Étape 4 — Lire : $-(x-5)^2\\leq 0$, donc $A(x)\\leq 25$ ; l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour quelles largeurs $x$ (en dm) l'aire $A(x)=-x^2+10x$ vaut-elle $21$ dm² ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Mettre en facteur : on écrit $-x^2+10x=21$, soit $-(x-5)^2+25=21$. Étape 2 — Faire apparaître un carré : $(x-5)^2=4$. Étape 3 — Regrouper : $x-5=2$ ou $x-5=-2$. Étape 4 — Lire : $x=7$ ou $x=3$. On vérifie : $A(3)=3\\times 7=21$ et $A(7)=7\\times 3=21$ ; $A(5)=25$, $A(4)=24$ et $A(2)=16$.",
+                  "answers": [
+                    {
+                      "content": "$3$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$7$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$5$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$4$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$2$",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Écris $A(x)$ sous forme canonique : le maximum se lit directement."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Un menuisier et une couturière comparent leurs formules : l'identité $x^3-1=(x-1)(x^2+x+1)$ leur sert à simplifier des fractions.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Le degré de $(x-1)(x^2+x+1)$ est ___ .",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Développer : $(x-1)(x^2+x+1)=x^3+x^2+x-x^2-x-1=x^3-1$. Étape 2 — Repérer : le plus grand exposant est $3$. Étape 3 — Lire : le degré est $3$. Étape 4 — Contrôler : $1+2=3$.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    },
+                    {
+                      "content": "trois",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Le nombre $1$ est une racine de $x^3-1$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Calculer : $1^3-1=0$. Étape 2 — Écrire : $x^3-1=(x-1)(x^2+x+1)$. Étape 3 — Développer : on vérifie le produit : $x^3-1$. Étape 4 — Conclure : $1$ est une racine et $x-1$ un facteur ; l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour $x\\neq 1$, quelle est la forme simplifiée de $\\dfrac{x^3-1}{x-1}$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Factoriser : $x^3-1=(x-1)(x^2+x+1)$. Étape 2 — Chercher : la valeur interdite est $1$. Étape 3 — Simplifier : $\\dfrac{(x-1)(x^2+x+1)}{x-1}=x^2+x+1$. Étape 4 — Conclure : $x^2+x+1$ pour $x\\neq 1$.",
+                  "answers": [
+                    {
+                      "content": "$x^2+x+1$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$x^2-1$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$x^2+1$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$x^2-x+1$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la valeur de $\\dfrac{x^3-1}{x-1}$ pour $x=2$ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Factoriser : $x^3-1=(x-1)(x^2+x+1)$. Étape 2 — Chercher : $2\\neq 1$, donc la fraction existe. Étape 3 — Simplifier : elle vaut $x^2+x+1$. Étape 4 — Conclure : pour $x=2$, $4+2+1=7$ ; on retrouve $\\dfrac{8-1}{1}=7$.",
+                  "answers": [
+                    {
+                      "content": "7",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quel est l'ensemble de définition de $\\dfrac{x^3-1}{x-1}$ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Factoriser : le numérateur est $(x-1)(x^2+x+1)$, le dénominateur $x-1$. Étape 2 — Chercher : $x-1=0$ donne $x=1$. Étape 3 — Simplifier : $x^2+x+1$ existe partout, mais la fraction de départ pas en $1$. Étape 4 — Conclure : $D=\\mathbb{R}\\setminus\\{1\\}$.",
+                  "answers": [
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{1\\}$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$\\mathbb{R}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{-1\\}$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$\\mathbb{R}\\setminus\\{0\\,;\\,1\\}$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour tout réel $x$, $\\dfrac{x^3-1}{x-1}=x^2+x+1$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Factoriser : $x^3-1=(x-1)(x^2+x+1)$. Étape 2 — Chercher : le dénominateur $x-1$ s'annule pour $x=1$ ; la fraction n'y est pas définie. Étape 3 — Simplifier : $\\dfrac{(x-1)(x^2+x+1)}{x-1}=x^2+x+1$ pour $x\\neq 1$. Étape 4 — Conclure : l'égalité n'a lieu que sur $\\mathbb{R}\\setminus\\{1\\}$, alors que $x^2+x+1$ existe en $1$ ; l'affirmation « pour tout réel $x$ » est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Factorise avec la racine $1$, cherche les valeurs interdites, puis simplifie."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
