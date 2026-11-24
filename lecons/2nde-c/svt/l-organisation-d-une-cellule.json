@@ -1,0 +1,3661 @@
+{
+ "format": "lnclass.course-tree",
+ "version": 3,
+ "courses": [
+  {
+   "name": "L'organisation d'une cellule",
+   "subtitle": "Leçon 7 — progression DPFC 2026-2027",
+   "level_name": "2nde",
+   "series_name": "C",
+   "material_name": "SVT",
+   "theme": "teal",
+   "figures": [
+    {
+     "key": "microscope-demarche",
+     "kind": "diagram",
+     "description": "Schéma fléché de la démarche d'observation au microscope optique : préparer la lame avec une lamelle, observer du plus petit au plus fort objectif, dessiner et légender, calculer le grossissement total (objectif multiplié par oculaire), mesurer la cellule sur le dessin, puis calculer sa taille réelle en divisant par le grossissement.",
+     "params": {
+      "layout": "flow",
+      "direction": "down",
+      "nodes": [
+       {
+        "id": "p",
+        "label": "Préparer la lame et la lamelle"
+       },
+       {
+        "id": "o",
+        "label": "Observer : petit puis fort objectif"
+       },
+       {
+        "id": "d",
+        "label": "Dessiner et légender"
+       },
+       {
+        "id": "g",
+        "label": "Grossissement = objectif × oculaire"
+       },
+       {
+        "id": "m",
+        "label": "Mesurer la cellule sur le dessin"
+       },
+       {
+        "id": "t",
+        "label": "Taille réelle = mesure ÷ grossissement"
+       }
+      ],
+      "edges": [
+       {
+        "from": "p",
+        "to": "o"
+       },
+       {
+        "from": "o",
+        "to": "d"
+       },
+       {
+        "from": "d",
+        "to": "g"
+       },
+       {
+        "from": "g",
+        "to": "m"
+       },
+       {
+        "from": "m",
+        "to": "t"
+       }
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "ultrastructure-eucaryote",
+     "kind": "diagram",
+     "description": "Schéma en arbre de l'ultrastructure d'une cellule eucaryote vue au microscope électronique : la cellule porte une membrane plasmique, un noyau et un cytoplasme. Dans le cytoplasme se trouvent les mitochondries, le réticulum endoplasmique, l'appareil de Golgi et les ribosomes, chacun avec son rôle.",
+     "params": {
+      "layout": "tree",
+      "direction": "down",
+      "nodes": [
+       {
+        "id": "c",
+        "label": "Cellule eucaryote"
+       },
+       {
+        "id": "mp",
+        "label": "Membrane plasmique : limite, échanges"
+       },
+       {
+        "id": "n",
+        "label": "Noyau : information génétique"
+       },
+       {
+        "id": "cy",
+        "label": "Cytoplasme et organites"
+       },
+       {
+        "id": "mi",
+        "label": "Mitochondries : énergie"
+       },
+       {
+        "id": "re",
+        "label": "Réticulum : transport"
+       },
+       {
+        "id": "go",
+        "label": "Golgi : tri, emballage"
+       },
+       {
+        "id": "ri",
+        "label": "Ribosomes : protéines"
+       }
+      ],
+      "edges": [
+       {
+        "from": "c",
+        "to": "mp"
+       },
+       {
+        "from": "c",
+        "to": "n"
+       },
+       {
+        "from": "c",
+        "to": "cy"
+       },
+       {
+        "from": "cy",
+        "to": "mi"
+       },
+       {
+        "from": "cy",
+        "to": "re"
+       },
+       {
+        "from": "cy",
+        "to": "go"
+       },
+       {
+        "from": "cy",
+        "to": "ri"
+       }
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "animale-vegetale",
+     "kind": "diagram",
+     "description": "Schéma en arbre qui compare les deux cellules eucaryotes : en haut, les structures communes (membrane plasmique, noyau, mitochondries, ribosomes) ; à gauche la cellule animale, sans paroi ni chloroplaste ; à droite la cellule végétale, avec une paroi, des chloroplastes et une grande vacuole.",
+     "params": {
+      "layout": "tree",
+      "direction": "down",
+      "nodes": [
+       {
+        "id": "c",
+        "label": "Communes : membrane, noyau, mitochondries"
+       },
+       {
+        "id": "a",
+        "label": "Cellule animale : ni paroi ni chloroplaste"
+       },
+       {
+        "id": "v",
+        "label": "Cellule végétale : paroi, chloroplastes, vacuole"
+       }
+      ],
+      "edges": [
+       {
+        "from": "c",
+        "to": "a"
+       },
+       {
+        "from": "c",
+        "to": "v"
+       }
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "procaryote-eucaryote",
+     "kind": "diagram",
+     "description": "Schéma en arbre qui oppose les deux grands types de cellules : la cellule procaryote, comme la bactérie, a son ADN libre dans le cytoplasme et aucun organite entouré de membrane ; la cellule eucaryote possède un noyau délimité par une enveloppe et des organites entourés de membrane. Les deux ont une membrane plasmique et des ribosomes.",
+     "params": {
+      "layout": "tree",
+      "direction": "down",
+      "nodes": [
+       {
+        "id": "c",
+        "label": "Cellule : membrane plasmique, ribosomes, ADN"
+       },
+       {
+        "id": "p",
+        "label": "Procaryote : ADN libre, pas de noyau"
+       },
+       {
+        "id": "e",
+        "label": "Eucaryote : noyau et organites"
+       }
+      ],
+      "edges": [
+       {
+        "from": "c",
+        "to": "p"
+       },
+       {
+        "from": "c",
+        "to": "e"
+       }
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "tailles-cellules",
+     "kind": "stat_chart",
+     "description": "Diagramme en barres qui compare des tailles moyennes arrondies, données à titre d'exemple : une bactérie d'environ 2 µm, une cellule animale d'environ 20 µm et une cellule végétale d'environ 100 µm. La cellule procaryote est la plus petite, les cellules eucaryotes sont nettement plus grandes.",
+     "params": {
+      "chart": "bars",
+      "series": [
+       2,
+       20,
+       100
+      ],
+      "labels": [
+       "Bactérie",
+       "Cellule animale",
+       "Cellule végétale"
+      ]
+     },
+     "controls": []
+    }
+   ],
+   "notions": [
+    {
+     "name": "Observer une cellule au microscope et calculer sa taille réelle",
+     "remember": "La cellule est l'**unité structurale et fonctionnelle** de tout être vivant : le corps est fait de cellules (unité de structure) et chaque cellule accomplit les fonctions du vivant (unité de fonctionnement). Elle est trop petite pour l'œil nu : on l'observe au **microscope optique**, qui grossit grâce à deux lentilles, l'objectif et l'oculaire. **Grossissement total = grossissement de l'objectif × grossissement de l'oculaire.** Taille réelle = taille mesurée sur le dessin ÷ grossissement total. Unités : 1 mm = 1 000 µm (micromètres). Avec une barre d'échelle, on utilise une règle de trois. On voit au microscope optique la forme de la cellule, son noyau et sa paroi éventuelle ; pour les détails internes, il faut le microscope électronique.",
+     "method": [
+      "Préparer l'observation : déposer un fragment très mince dans une goutte d'eau ou de colorant sur une lame, puis le recouvrir d'une lamelle sans bulle d'air.",
+      "Observer : commencer par le plus petit objectif, puis passer à un objectif plus fort pour voir les détails.",
+      "Dessiner et légender : donner un titre, tracer au crayon et à la règle des traits de légende, écrire le nom de chaque structure.",
+      "Calculer le grossissement total : multiplier le grossissement de l'objectif par celui de l'oculaire.",
+      "Mesurer la cellule sur le dessin, en millimètres, avec une règle.",
+      "Calculer la taille réelle : diviser la mesure du dessin par le grossissement total, puis convertir en micromètres (1 mm = 1 000 µm)."
+     ],
+     "example": {
+      "statement": "Une pelure d'oignon est observée avec un objectif ×40 et un oculaire ×10. Sur le dessin, une cellule mesure 20 mm. Quelle est sa taille réelle ?",
+      "steps": [
+       "Préparer : on dépose une pelure d'oignon très fine dans une goutte d'eau, puis on pose doucement la lamelle.",
+       "Observer : on commence avec l'objectif ×4 pour trouver les cellules, puis on passe à l'objectif ×40.",
+       "Dessiner et légender : titre « Cellules d'une pelure d'oignon », puis traits de légende vers la paroi, le cytoplasme et le noyau.",
+       "Calculer le grossissement total : 40 × 10 = 400.",
+       "Mesurer : la cellule mesure 20 mm sur le dessin.",
+       "Calculer la taille réelle : 20 ÷ 400 = 0,05 mm, soit 0,05 × 1 000 = 50 µm."
+      ]
+     },
+     "pitfall": "Ne multiplie pas la mesure du dessin par le grossissement : on la divise. Contre-exemple : une cellule dessinée de 20 mm à ×400 mesure 20 ÷ 400 = 0,05 mm, soit 50 µm. En multipliant, tu trouverais 8 000 mm, soit 8 m : absurde pour une cellule ! La cellule réelle est toujours bien plus petite que son dessin. Surveille aussi l'unité : 1 mm = 1 000 µm.",
+     "figure": "microscope-demarche",
+     "practice": {
+      "statement": "Tu t'entraînes à observer une cellule et à calculer sa taille réelle.",
+      "questions": [
+       {
+        "content": "Un microscope a un objectif ×10 et un oculaire ×10. Quel est le grossissement total ?",
+        "question_type": "numeric",
+        "explanation": "Étape 4 — Calculer le grossissement total : on multiplie le grossissement de l'objectif par celui de l'oculaire, 10 × 10 = 100. Le grossissement total est donc ×100.",
+        "answers": [
+         {
+          "content": "100",
+          "correct": true
+         }
+        ],
+        "tolerance": 0,
+        "unit": "×",
+        "hint": "Multiplie les deux grossissements."
+       },
+       {
+        "content": "Remets dans l'ordre la préparation d'une lame.",
+        "question_type": "ordering",
+        "explanation": "Étape 1 — Préparer : fragment mince, goutte d'eau, lamelle posée doucement. Étape 2 — Observer : on termine par le plus petit objectif avant de passer à un plus fort.",
+        "answers": [
+         {
+          "content": "Prélever un fragment très mince"
+         },
+         {
+          "content": "Le déposer dans une goutte d'eau sur la lame"
+         },
+         {
+          "content": "Poser doucement une lamelle"
+         },
+         {
+          "content": "Observer au plus petit objectif"
+         }
+        ],
+        "hint": "Pense à ce qu'on pose en dernier sur la lame."
+       },
+       {
+        "content": "Comment calcule-t-on la taille réelle d'une cellule ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 6 — Calculer la taille réelle : on divise la mesure du dessin par le grossissement total. Multiplier donnerait une cellule plus grande que son dessin, ce qui est faux.",
+        "answers": [
+         {
+          "content": "On divise la mesure du dessin par le grossissement total",
+          "correct": true
+         },
+         {
+          "content": "On multiplie la mesure du dessin par le grossissement total",
+          "correct": false
+         },
+         {
+          "content": "On additionne la mesure du dessin et le grossissement total",
+          "correct": false
+         },
+         {
+          "content": "On divise le grossissement par la mesure du dessin",
+          "correct": false
+         }
+        ],
+        "hint": "La cellule réelle est plus petite que le dessin."
+       },
+       {
+        "content": "Une cellule mesure 30 mm sur un dessin fait à ×300. Quelle est sa taille réelle, en µm ?",
+        "question_type": "numeric",
+        "explanation": "Étape 5 — Mesurer : 30 mm sur le dessin. Étape 6 — Calculer la taille réelle : 30 ÷ 300 = 0,1 mm, soit 0,1 × 1 000 = 100 µm.",
+        "answers": [
+         {
+          "content": "100",
+          "correct": true
+         }
+        ],
+        "tolerance": 0,
+        "unit": "µm",
+        "hint": "Convertis ensuite les mm en µm."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Grossissement et taille réelle d'une cellule d'oignon",
+       "statement": "Dans cet exercice, tu suis pas à pas la méthode de la fiche sur des cellules de pelure d'oignon, achetées au marché de ton quartier.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Un objectif ×40 est associé à un oculaire ×10. Quel est le grossissement total ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 4 — Calculer le grossissement total : objectif × oculaire = 40 × 10 = 400. Pourquoi pas « ×50 » : c'est la somme 40 + 10 ; les deux grossissements se multiplient et ne s'additionnent pas.",
+         "answers": [
+          {
+           "content": "×400",
+           "correct": true
+          },
+          {
+           "content": "×50",
+           "correct": false
+          },
+          {
+           "content": "×4 000",
+           "correct": false
+          },
+          {
+           "content": "×30",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un objectif ×4 est associé à un oculaire ×10. Quel est le grossissement total ?",
+         "question_type": "numeric",
+         "explanation": "Étape 4 — Calculer le grossissement total : 4 × 10 = 40, donc le grossissement total est ×40. Pourquoi pas « 14 » : on additionnerait 4 et 10 au lieu de les multiplier.",
+         "answers": [
+          {
+           "content": "40",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "×"
+        },
+        {
+         "content": "Une cellule d'oignon mesure 18 mm sur un dessin fait à ×300. Quelle est sa taille réelle, en µm ?",
+         "question_type": "numeric",
+         "explanation": "Étape 5 — Mesurer : 18 mm. Étape 6 — Calculer la taille réelle : 18 ÷ 300 = 0,06 mm, soit 0,06 × 1 000 = 60 µm. Pourquoi pas « 5 400 µm » : 18 × 300 = 5 400 donne une cellule plus grande que son dessin, impossible.",
+         "answers": [
+          {
+           "content": "60",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "µm"
+        },
+        {
+         "content": "Pour obtenir la taille réelle, on ___ la mesure du dessin par le grossissement total.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 6 — Calculer la taille réelle : on divise la mesure du dessin par le grossissement total, puis on convertit en micromètres. Pourquoi pas « multiplie » : la mesure du dessin est déjà un agrandissement ; il faut le défaire, donc diviser.",
+         "answers": [
+          {
+           "content": "divise",
+           "correct": true
+          },
+          {
+           "content": "diviser",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre le calcul de la taille réelle.",
+         "question_type": "ordering",
+         "explanation": "Étape 4 — Calculer le grossissement total. Étape 5 — Mesurer la cellule sur le dessin. Étape 6 — Diviser la mesure par ce grossissement, puis convertir en micromètres. Pourquoi pas convertir d'abord : la conversion se fait sur le résultat final, après la division.",
+         "answers": [
+          {
+           "content": "Calculer le grossissement total"
+          },
+          {
+           "content": "Mesurer la cellule sur le dessin"
+          },
+          {
+           "content": "Diviser la mesure par le grossissement"
+          },
+          {
+           "content": "Convertir le résultat en micromètres"
+          }
+         ]
+        },
+        {
+         "content": "Une cellule dessinée de 20 mm à ×400 mesure en réalité 20 × 400 = 8 000 mm.",
+         "question_type": "true_false",
+         "explanation": "Étape 6 — Calculer la taille réelle : on divise, donc 20 ÷ 400 = 0,05 mm, soit 50 µm. Pourquoi pas « Vrai » : une cellule de 8 mètres n'existe pas ; la multiplication agrandit encore au lieu de revenir à la taille réelle.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Préparer et régler l'observation d'un frottis de joue",
+       "statement": "Dans cet exercice, tu prépares l'observation de cellules de la joue au microscope, avec un colorant (le bleu de méthylène), et tu calcules leur taille.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "À quoi sert le colorant déposé sur la lame ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Préparer : on ajoute une goutte de colorant pour que les structures ressortent au microscope. Pourquoi pas « À grossir les cellules » : c'est le microscope qui grossit grâce à l'objectif et à l'oculaire, pas le colorant.",
+         "answers": [
+          {
+           "content": "À rendre visibles les cellules, presque transparentes",
+           "correct": true
+          },
+          {
+           "content": "À grossir les cellules",
+           "correct": false
+          },
+          {
+           "content": "À faire disparaître le noyau",
+           "correct": false
+          },
+          {
+           "content": "À coller la lamelle sur la lame",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Il faut poser la lamelle doucement, pour éviter les bulles d'air.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Préparer : on recouvre l'échantillon d'une lamelle posée doucement. Une bulle d'air gêne l'observation. Pourquoi pas « Faux » : poser brutalement la lamelle piège de l'air et écrase le fragment.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "1 mm = ___ µm.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 6 — Calculer la taille réelle : pour passer des millimètres aux micromètres, on multiplie par 1 000, donc 1 mm = 1 000 µm. Pourquoi pas 100 : 100 correspond aux centimètres, pas aux micromètres.",
+         "answers": [
+          {
+           "content": "1000",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Avec un objectif ×40 et un oculaire ×10, une cellule de joue mesure 24 mm sur le dessin. Quelle est sa taille réelle, en µm ?",
+         "question_type": "numeric",
+         "explanation": "Étape 4 — Calculer le grossissement total : 40 × 10 = 400. Étape 5 — Mesurer : 24 mm. Étape 6 — Calculer la taille réelle : 24 ÷ 400 = 0,06 mm, soit 60 µm. Pourquoi pas « 9 600 µm » : on aurait multiplié 24 par 400 au lieu de diviser.",
+         "answers": [
+          {
+           "content": "60",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "µm"
+        },
+        {
+         "content": "Quels gestes sont corrects pour observer ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Préparer : lamelle posée doucement sur un fragment très mince. Étape 2 — Observer : on commence par le plus petit objectif. Pourquoi pas « commencer par le plus fort objectif » : l'image serait floue et la lentille risquerait de toucher la lame.",
+         "answers": [
+          {
+           "content": "Commencer par le plus petit objectif",
+           "correct": true
+          },
+          {
+           "content": "Poser la lamelle doucement",
+           "correct": true
+          },
+          {
+           "content": "Commencer par le plus fort objectif",
+           "correct": false
+          },
+          {
+           "content": "Observer un fragment épais pour voir plus de cellules",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque association d'objectif et d'oculaire à son grossissement total.",
+         "question_type": "matching",
+         "explanation": "Étape 4 — Calculer le grossissement total : 4 × 10 = 40 ; 10 × 10 = 100 ; 40 × 10 = 400 ; 100 × 10 = 1 000. Pourquoi pas additionner : 4 + 10 = 14 ne donne aucun de ces grossissements.",
+         "answers": [
+          {
+           "content": "Objectif ×4, oculaire ×10",
+           "match": "×40"
+          },
+          {
+           "content": "Objectif ×10, oculaire ×10",
+           "match": "×100"
+          },
+          {
+           "content": "Objectif ×40, oculaire ×10",
+           "match": "×400"
+          },
+          {
+           "content": "Objectif ×100, oculaire ×10",
+           "match": "×1 000"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Identifier les organites d'une cellule eucaryote et leur rôle",
+     "remember": "Le **microscope électronique** grossit des dizaines de milliers de fois : il montre l'**ultrastructure** de la cellule. La **membrane plasmique** limite la cellule et contrôle les échanges. Le **noyau** est entouré d'une **enveloppe** percée de pores et contient un **nucléole** et l'information génétique. Le **cytoplasme** contient les **organites** (compartiments spécialisés) : les **mitochondries** (ovales, membrane interne repliée en crêtes) libèrent l'énergie lors de la respiration cellulaire ; le **réticulum endoplasmique** (sacs aplatis, rugueux s'il porte des ribosomes) transporte les protéines ; l'**appareil de Golgi** (sacs empilés) trie et emballe en vésicules ; les **ribosomes** (petits grains) fabriquent les protéines.",
+     "method": [
+      "Repérer sur l'image la limite de la cellule, puis les structures de l'intérieur : le noyau et les organites du cytoplasme.",
+      "Reconnaître chaque organite à sa forme : noyau (enveloppe à pores, nucléole), mitochondrie (ovale, crêtes), réticulum (sacs aplatis), Golgi (sacs empilés, vésicules), ribosomes (petits grains).",
+      "Associer à chaque organite son rôle : noyau, information génétique ; mitochondrie, énergie ; ribosomes, fabrication des protéines ; réticulum et Golgi, transport et tri.",
+      "Conclure par une phrase : « C'est … ; il sert à … »."
+     ],
+     "example": {
+      "statement": "Sur une image de microscope électronique, une structure ovale d'environ 2 µm, située dans le cytoplasme, est entourée de deux membranes dont l'interne forme des replis. De quoi s'agit-il ?",
+      "steps": [
+       "Repérer : la structure est à l'intérieur du cytoplasme, loin de la limite de la cellule ; elle est ovale.",
+       "Reconnaître : une forme ovale, une double membrane et des replis en crêtes sont les signes d'une mitochondrie.",
+       "Associer : la mitochondrie est le lieu de la respiration cellulaire, qui libère l'énergie.",
+       "Conclure : « C'est une mitochondrie ; elle sert à libérer l'énergie dont la cellule a besoin »."
+      ]
+     },
+     "pitfall": "Ne confonds pas l'organite qui fabrique les protéines et ceux qui les transportent. Contre-exemple : le réticulum rugueux paraît granuleux parce que des ribosomes y sont accrochés, mais ce sont les ribosomes qui fabriquent les protéines ; le réticulum les transporte, puis l'appareil de Golgi les trie et les emballe. Pour chaque organite, retiens un seul rôle principal.",
+     "figure": "ultrastructure-eucaryote",
+     "practice": {
+      "statement": "Tu t'entraînes à reconnaître les organites et à donner leur rôle.",
+      "questions": [
+       {
+        "content": "Relie chaque organite à son rôle.",
+        "question_type": "matching",
+        "explanation": "Étape 3 — Associer à chaque organite son rôle : le noyau contient l'information génétique, la mitochondrie libère l'énergie, le ribosome fabrique les protéines.",
+        "answers": [
+         {
+          "content": "Noyau",
+          "match": "Contient l'information génétique"
+         },
+         {
+          "content": "Mitochondrie",
+          "match": "Libère l'énergie"
+         },
+         {
+          "content": "Ribosome",
+          "match": "Fabrique les protéines"
+         }
+        ],
+        "hint": "Chaque organite a un rôle principal."
+       },
+       {
+        "content": "Une structure entourée d'une enveloppe percée de pores et contenant un nucléole est :",
+        "question_type": "single_choice",
+        "explanation": "Étape 2 — Reconnaître : une enveloppe à pores et un nucléole sont les signes du noyau. La mitochondrie est ovale avec des crêtes, le Golgi est fait de sacs empilés.",
+        "answers": [
+         {
+          "content": "un noyau",
+          "correct": true
+         },
+         {
+          "content": "une mitochondrie",
+          "correct": false
+         },
+         {
+          "content": "un ribosome",
+          "correct": false
+         },
+         {
+          "content": "un appareil de Golgi",
+          "correct": false
+         }
+        ],
+        "hint": "Pense à l'enveloppe nucléaire."
+       },
+       {
+        "content": "Les protéines sont fabriquées par les ___.",
+        "question_type": "fill_blank",
+        "explanation": "Étape 3 — Associer : les ribosomes, petits grains du cytoplasme ou du réticulum, fabriquent les protéines.",
+        "answers": [
+         {
+          "content": "ribosomes",
+          "correct": true
+         },
+         {
+          "content": "ribosome",
+          "correct": true
+         }
+        ],
+        "hint": "Ce sont de très petits grains."
+       },
+       {
+        "content": "Le noyau est entouré d'une enveloppe percée de pores.",
+        "question_type": "true_false",
+        "explanation": "Étape 2 — Reconnaître : l'enveloppe du noyau est percée de pores, ce qui permet des échanges avec le cytoplasme.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": true
+         },
+         {
+          "content": "Faux",
+          "correct": false
+         }
+        ],
+        "hint": "Relis « À retenir »."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Reconnaître les organites et donner leur rôle",
+       "statement": "Dans cet exercice, tu reconnais des organites sur des images de microscope électronique et tu donnes leur rôle, avec la méthode de la fiche.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Quelle structure limite la cellule et contrôle les échanges avec l'extérieur ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer la limite de la cellule : c'est la membrane plasmique, qui contrôle les échanges. Pourquoi pas « Le noyau » : le noyau est à l'intérieur de la cellule et ne la limite pas ; il contient l'information génétique.",
+         "answers": [
+          {
+           "content": "La membrane plasmique",
+           "correct": true
+          },
+          {
+           "content": "Le noyau",
+           "correct": false
+          },
+          {
+           "content": "La mitochondrie",
+           "correct": false
+          },
+          {
+           "content": "Le ribosome",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les cellules d'un muscle dépensent beaucoup d'énergie. Quel organite y est très abondant ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Associer à chaque organite son rôle : la mitochondrie libère l'énergie, donc une cellule qui en dépense beaucoup en contient beaucoup. Pourquoi pas « Le noyau seul » : le noyau contient l'information génétique et ne libère pas l'énergie.",
+         "answers": [
+          {
+           "content": "La mitochondrie",
+           "correct": true
+          },
+          {
+           "content": "Le noyau seul",
+           "correct": false
+          },
+          {
+           "content": "L'enveloppe nucléaire",
+           "correct": false
+          },
+          {
+           "content": "Le nucléole",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque organite à ce qu'on voit au microscope électronique.",
+         "question_type": "matching",
+         "explanation": "Étape 2 — Reconnaître chaque organite à sa forme : noyau (enveloppe à pores, nucléole), mitochondrie (ovale, crêtes), Golgi (sacs empilés, vésicules), ribosome (petit grain). Pourquoi pas inverser mitochondrie et Golgi : les crêtes appartiennent à la mitochondrie, les sacs empilés au Golgi.",
+         "answers": [
+          {
+           "content": "Noyau",
+           "match": "Enveloppe à pores et nucléole"
+          },
+          {
+           "content": "Mitochondrie",
+           "match": "Forme ovale avec des crêtes"
+          },
+          {
+           "content": "Appareil de Golgi",
+           "match": "Sacs empilés et vésicules"
+          },
+          {
+           "content": "Ribosome",
+           "match": "Petits grains"
+          }
+         ]
+        },
+        {
+         "content": "L'organite où se déroule la respiration cellulaire est la ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Associer à chaque organite son rôle : la respiration cellulaire se déroule dans la mitochondrie et libère l'énergie. Pourquoi pas le noyau : il contient l'information génétique.",
+         "answers": [
+          {
+           "content": "mitochondrie",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre la méthode d'identification d'un organite.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Repérer. Étape 2 — Reconnaître. Étape 3 — Associer. Étape 4 — Conclure. Pourquoi pas associer d'abord un rôle : sans avoir reconnu la forme, on risque de confondre deux organites.",
+         "answers": [
+          {
+           "content": "Repérer la limite de la cellule et les structures"
+          },
+          {
+           "content": "Reconnaître l'organite à sa forme"
+          },
+          {
+           "content": "Associer à l'organite son rôle"
+          },
+          {
+           "content": "Conclure par une phrase"
+          }
+         ]
+        },
+        {
+         "content": "Le réticulum endoplasmique rugueux fabrique lui-même les protéines.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Associer à chaque organite son rôle : ce sont les ribosomes accrochés sur le réticulum qui fabriquent les protéines ; le réticulum les transporte. Pourquoi pas « Vrai » : l'aspect granuleux du réticulum vient de ses ribosomes, mais il ne les remplace pas.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Rôles des organites : énergie, transport et protéines",
+       "statement": "Dans cet exercice, tu associes chaque organite de la cellule à son rôle, avec les mots de la méthode de la fiche.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Quels organites participent à la fabrication et au tri des protéines ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 3 — Associer à chaque organite son rôle : les ribosomes fabriquent les protéines, l'appareil de Golgi les trie et les emballe en vésicules. Pourquoi pas « Les mitochondries » : elles libèrent l'énergie de la cellule et ne fabriquent pas les protéines.",
+         "answers": [
+          {
+           "content": "Les ribosomes",
+           "correct": true
+          },
+          {
+           "content": "L'appareil de Golgi",
+           "correct": true
+          },
+          {
+           "content": "Les mitochondries",
+           "correct": false
+          },
+          {
+           "content": "La vacuole",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le noyau est entouré d'une ___ percée de pores.",
+         "question_type": "select",
+         "explanation": "Étape 2 — Reconnaître : l'enveloppe nucléaire est percée de pores. Pourquoi pas « paroi » : la paroi entoure toute la cellule végétale à l'extérieur et ne limite pas le noyau.",
+         "answers": [
+          {
+           "content": "enveloppe",
+           "correct": true
+          },
+          {
+           "content": "paroi",
+           "correct": false
+          },
+          {
+           "content": "membrane plasmique",
+           "correct": false
+          },
+          {
+           "content": "vacuole",
+           "correct": false
+          },
+          {
+           "content": "crête",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les mitochondries libèrent l'énergie lors de la respiration ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Associer à chaque organite son rôle : la respiration cellulaire se déroule dans les mitochondries. Pourquoi pas « pulmonaire » : la respiration pulmonaire est celle des poumons, pas celle de la cellule.",
+         "answers": [
+          {
+           "content": "cellulaire",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Au microscope optique, on distingue facilement les ribosomes.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Repérer : les ribosomes sont de très petits grains, visibles seulement au microscope électronique. Pourquoi pas « Vrai » : le microscope optique ne grossit pas assez pour les voir.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quel organite est formé de sacs aplatis empilés qui libèrent des vésicules ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Reconnaître : des sacs empilés et des vésicules sont les signes de l'appareil de Golgi. Pourquoi pas « La mitochondrie » : elle est ovale avec des crêtes et ne produit pas de vésicules.",
+         "answers": [
+          {
+           "content": "L'appareil de Golgi",
+           "correct": true
+          },
+          {
+           "content": "La mitochondrie",
+           "correct": false
+          },
+          {
+           "content": "Le ribosome",
+           "correct": false
+          },
+          {
+           "content": "Le noyau",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une mitochondrie mesure 20 mm sur une image à ×10 000. Quelle est sa taille réelle, en µm ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Repérer : la mitochondrie mesure 20 mm sur l'image. Pour la taille réelle, on divise la mesure par le grossissement : 20 ÷ 10 000 = 0,002 mm, soit 0,002 × 1 000 = 2 µm. Pourquoi pas « 200 000 µm » : multiplier 20 par 10 000 donne une taille énorme ; on divise par le grossissement.",
+         "answers": [
+          {
+           "content": "2",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "µm"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Comparer une cellule animale et une cellule végétale",
+     "remember": "Les cellules animale et végétale sont des cellules **eucaryotes**. Elles ont en commun : la **membrane plasmique**, le **cytoplasme**, le **noyau**, les **mitochondries**, le réticulum endoplasmique, l'appareil de Golgi et les ribosomes. La cellule **végétale** a en plus : une **paroi** de cellulose, rigide, qui entoure la membrane et donne sa forme à la cellule ; des **chloroplastes**, verts grâce à la chlorophylle, où se fait la photosynthèse ; une **grande vacuole** qui stocke l'eau et des substances. La cellule **animale** n'a ni paroi ni chloroplaste et ses vacuoles sont petites. Les chloroplastes manquent dans les cellules non éclairées, comme celles d'une racine : la paroi est le critère le plus sûr.",
+     "method": [
+      "Lister les structures visibles dans chaque cellule : limite, noyau, organites du cytoplasme.",
+      "Repérer les structures communes : membrane plasmique, noyau, mitochondries, ribosomes.",
+      "Repérer les structures propres à la cellule végétale : paroi, chloroplastes, grande vacuole.",
+      "Conclure : une paroi ou des chloroplastes désignent une cellule végétale ; sans paroi ni chloroplaste, la cellule est animale."
+     ],
+     "example": {
+      "statement": "Deux cellules sont observées. La cellule A est limitée par une membrane seule et contient un noyau et des mitochondries. La cellule B est entourée d'une paroi épaisse et contient un noyau, des chloroplastes et une grande vacuole. Quel est le type de chaque cellule ?",
+      "steps": [
+       "Lister : A montre une membrane, un noyau, des mitochondries ; B montre une paroi, un noyau, des chloroplastes, une grande vacuole.",
+       "Repérer les structures communes : A et B ont toutes deux un noyau et des mitochondries.",
+       "Repérer les structures propres à la cellule végétale : la cellule B possède une paroi, des chloroplastes et une grande vacuole ; la cellule A n'en possède aucune.",
+       "Conclure : A, sans paroi ni chloroplaste, est une cellule animale ; B, avec paroi et chloroplastes, est une cellule végétale."
+      ]
+     },
+     "pitfall": "Ne conclus pas « pas de chloroplaste, donc cellule animale ». Contre-exemple : une cellule de pelure d'oignon n'a pas de chloroplaste, car le bulbe pousse sous terre, loin de la lumière, mais elle a une paroi : c'est une cellule végétale. De même, une cellule de racine. Cherche d'abord la paroi : toutes les cellules végétales en ont une, aucune cellule animale n'en a.",
+     "figure": "animale-vegetale",
+     "practice": {
+      "statement": "Tu t'entraînes à comparer une cellule animale et une cellule végétale.",
+      "questions": [
+       {
+        "content": "Une cellule possède une paroi, des chloroplastes et une grande vacuole. C'est une cellule :",
+        "question_type": "single_choice",
+        "explanation": "Étape 3 — Repérer les structures propres à la cellule végétale : paroi, chloroplastes et grande vacuole sont réunis. Étape 4 — Conclure : c'est une cellule végétale.",
+        "answers": [
+         {
+          "content": "végétale",
+          "correct": true
+         },
+         {
+          "content": "animale",
+          "correct": false
+         },
+         {
+          "content": "procaryote sans noyau",
+          "correct": false
+         },
+         {
+          "content": "sans membrane plasmique",
+          "correct": false
+         }
+        ],
+        "hint": "Cherche la paroi."
+       },
+       {
+        "content": "Une cellule animale possède une paroi de cellulose.",
+        "question_type": "true_false",
+        "explanation": "Étape 3 — Repérer les structures propres à la cellule végétale : la paroi de cellulose est propre à la cellule végétale. Étape 4 — Conclure : l'affirmation est fausse.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": false
+         },
+         {
+          "content": "Faux",
+          "correct": true
+         }
+        ],
+        "hint": "La paroi appartient à l'autre type de cellule."
+       },
+       {
+        "content": "Relie chaque structure à son rôle.",
+        "question_type": "matching",
+        "explanation": "Étape 3 — Repérer les structures propres à la cellule végétale : la paroi soutient, le chloroplaste réalise la photosynthèse, la grande vacuole stocke l'eau.",
+        "answers": [
+         {
+          "content": "Paroi",
+          "match": "Soutient et protège la cellule"
+         },
+         {
+          "content": "Chloroplaste",
+          "match": "Réalise la photosynthèse"
+         },
+         {
+          "content": "Grande vacuole",
+          "match": "Stocke l'eau et des substances"
+         }
+        ],
+        "hint": "Chaque structure a un rôle."
+       },
+       {
+        "content": "Les ___ contiennent la chlorophylle.",
+        "question_type": "fill_blank",
+        "explanation": "Étape 3 — Repérer les structures propres à la cellule végétale : la chlorophylle verte se trouve dans les chloroplastes.",
+        "answers": [
+         {
+          "content": "chloroplastes",
+          "correct": true
+         },
+         {
+          "content": "chloroplaste",
+          "correct": true
+         }
+        ],
+        "hint": "Ce sont les organites verts."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Structures communes et structures propres",
+       "statement": "Dans cet exercice, tu compares la cellule animale et la cellule végétale avec la méthode de la fiche.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Quelle structure est présente dans les deux types de cellules ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Repérer les structures communes : le noyau est présent dans les cellules animales et végétales. Pourquoi pas « La paroi » : elle est propre à la cellule végétale et n'existe pas dans la cellule animale.",
+         "answers": [
+          {
+           "content": "Le noyau",
+           "correct": true
+          },
+          {
+           "content": "La paroi",
+           "correct": false
+          },
+          {
+           "content": "Les chloroplastes",
+           "correct": false
+          },
+          {
+           "content": "La grande vacuole",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles structures sont communes aux cellules animale et végétale ?",
+         "question_type": "multiple_correct_3",
+         "explanation": "Étape 2 — Repérer les structures communes : noyau, mitochondries et ribosomes se trouvent dans les deux cellules. Pourquoi pas « Les chloroplastes » : ils font partie des structures propres à la cellule végétale (étape 3).",
+         "answers": [
+          {
+           "content": "Le noyau",
+           "correct": true
+          },
+          {
+           "content": "Les mitochondries",
+           "correct": true
+          },
+          {
+           "content": "Les ribosomes",
+           "correct": true
+          },
+          {
+           "content": "La paroi de cellulose",
+           "correct": false
+          },
+          {
+           "content": "Les chloroplastes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La paroi des cellules végétales est faite de ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Repérer les structures propres à la cellule végétale : la paroi est faite de cellulose, elle est rigide. Pourquoi pas « de chlorophylle » : la chlorophylle est le pigment vert des chloroplastes.",
+         "answers": [
+          {
+           "content": "cellulose",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque cellule à ses structures propres.",
+         "question_type": "matching",
+         "explanation": "Étape 3 — Repérer les structures propres à la cellule végétale, puis étape 4 — Conclure : la cellule animale n'a ni paroi ni chloroplaste ; la cellule de racine a une paroi sans chloroplaste ; la cellule de feuille a les deux. Pourquoi pas associer la racine à la cellule animale : la paroi la désigne comme végétale.",
+         "answers": [
+          {
+           "content": "Cellule animale",
+           "match": "Ni paroi ni chloroplaste"
+          },
+          {
+           "content": "Cellule végétale non verte (racine)",
+           "match": "Paroi, mais pas de chloroplaste"
+          },
+          {
+           "content": "Cellule de feuille",
+           "match": "Paroi et chloroplastes"
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre la méthode de comparaison.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Lister. Étape 2 — Repérer les structures communes. Étape 3 — Repérer les structures propres. Étape 4 — Conclure. Pourquoi pas conclure en premier : on risquerait de se fier à un seul indice.",
+         "answers": [
+          {
+           "content": "Lister les structures visibles dans chaque cellule"
+          },
+          {
+           "content": "Repérer les structures communes"
+          },
+          {
+           "content": "Repérer les structures propres à la cellule végétale"
+          },
+          {
+           "content": "Conclure sur le type de cellule"
+          }
+         ]
+        },
+        {
+         "content": "Une cellule sans chloroplaste est forcément une cellule animale.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Repérer les structures propres à la cellule végétale : une cellule de racine ou de pelure d'oignon a une paroi mais pas de chloroplaste. Étape 4 — Conclure : elle est végétale. Pourquoi pas « Vrai » : l'absence de chloroplaste ne suffit pas ; la paroi est le critère le plus sûr.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Cellule de feuille, cellule de joue et cellule d'oignon",
+       "statement": "Dans cet exercice, tu classes des cellules observées dans une classe de 2nde de Côte d'Ivoire : feuille de manioc, joue d'un élève, pelure d'oignon.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Une cellule de pelure d'oignon montre une paroi nette, un noyau et aucun chloroplaste. C'est une cellule :",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Repérer les structures propres à la cellule végétale : la paroi est visible. Étape 4 — Conclure : cellule végétale. Pourquoi pas « animale » : aucune cellule animale n'a de paroi, et l'absence de chloroplaste s'explique par le bulbe enterré.",
+         "answers": [
+          {
+           "content": "végétale",
+           "correct": true
+          },
+          {
+           "content": "animale",
+           "correct": false
+          },
+          {
+           "content": "sans noyau",
+           "correct": false
+          },
+          {
+           "content": "chlorophyllienne verte",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles structures la cellule d'une feuille de manioc possède-t-elle en plus d'une cellule de la joue ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 3 — Repérer les structures propres à la cellule végétale : paroi et chloroplastes manquent à la cellule de joue. Pourquoi pas « Un noyau » : la cellule de joue en a un aussi ; c'est une structure commune (étape 2).",
+         "answers": [
+          {
+           "content": "Des chloroplastes",
+           "correct": true
+          },
+          {
+           "content": "Une paroi",
+           "correct": true
+          },
+          {
+           "content": "Un noyau",
+           "correct": false
+          },
+          {
+           "content": "Des mitochondries",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La grande vacuole centrale est une structure typique des cellules végétales.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Repérer les structures propres à la cellule végétale : la grande vacuole stocke l'eau et des substances. Pourquoi pas « Faux » : la cellule animale n'a que de petites vacuoles.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les chloroplastes réalisent la ___, qui produit de la matière organique avec la lumière.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Repérer les structures propres à la cellule végétale : le chloroplaste est le lieu de la photosynthèse. Pourquoi pas la respiration : elle se déroule dans les mitochondries.",
+         "answers": [
+          {
+           "content": "photosynthèse",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Parmi les cellules eucaryotes, une cellule sans paroi ni chloroplaste est une cellule ___.",
+         "question_type": "select",
+         "explanation": "Étape 4 — Conclure : sans paroi ni chloroplaste, la cellule eucaryote est animale. Pourquoi pas végétale : une cellule végétale a toujours une paroi.",
+         "answers": [
+          {
+           "content": "animale",
+           "correct": true
+          },
+          {
+           "content": "végétale",
+           "correct": false
+          },
+          {
+           "content": "sans noyau",
+           "correct": false
+          },
+          {
+           "content": "bactérienne",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi les cellules d'une racine n'ont-elles pas de chloroplastes ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Repérer les structures propres à la cellule végétale : la racine a une paroi, mais pas de chloroplaste faute de lumière. Pourquoi pas « Ce sont des cellules animales » : la paroi montre qu'elles sont végétales, avec ou sans chloroplaste.",
+         "answers": [
+          {
+           "content": "La racine est dans le sol et ne reçoit pas de lumière",
+           "correct": true
+          },
+          {
+           "content": "Ce sont des cellules animales",
+           "correct": false
+          },
+          {
+           "content": "Elles n'ont pas de noyau",
+           "correct": false
+          },
+          {
+           "content": "Elles n'ont pas de paroi",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Distinguer une cellule procaryote et une cellule eucaryote",
+     "remember": "Il existe deux grands types de cellules. La cellule **procaryote**, comme la **bactérie**, est petite (en général 1 à 10 µm) : son ADN est libre dans le cytoplasme, dans une zone appelée nucléoïde, sans noyau ; elle n'a aucun organite entouré de membrane ; elle a une membrane plasmique, des ribosomes et le plus souvent une paroi. La cellule **eucaryote** (animale ou végétale) est plus grande (en général 10 à 100 µm) : son ADN est dans un **noyau** limité par une enveloppe, et son cytoplasme contient des organites entourés de membrane (mitochondries, réticulum, Golgi). Toutes les cellules ont une membrane plasmique, des ribosomes et de l'ADN.",
+     "method": [
+      "Estimer la taille de la cellule avec l'échelle de l'image : en général 1 à 10 µm pour un procaryote, 10 à 100 µm pour un eucaryote.",
+      "Chercher le noyau : une enveloppe qui entoure l'ADN, ou un ADN libre dans le cytoplasme.",
+      "Chercher les organites entourés de membrane (mitochondries, réticulum, Golgi), sans compter les ribosomes, présents dans les deux types.",
+      "Conclure : ni noyau ni organite à membrane, cellule procaryote ; noyau et organites à membrane, cellule eucaryote."
+     ],
+     "example": {
+      "statement": "Une cellule observée au microscope électronique mesure 2 µm. Son ADN est dispersé dans le cytoplasme, sans enveloppe. On y voit des ribosomes et une paroi, mais ni mitochondrie ni réticulum. De quel type de cellule s'agit-il ?",
+      "steps": [
+       "Estimer la taille : 2 µm, c'est petit, dans l'intervalle des cellules procaryotes (1 à 10 µm).",
+       "Chercher le noyau : l'ADN est libre dans le cytoplasme, aucune enveloppe ne l'entoure, donc il n'y a pas de noyau.",
+       "Chercher les organites entourés de membrane : il n'y en a aucun ; les ribosomes sont présents dans les deux types de cellules.",
+       "Conclure : sans noyau ni organite à membrane, c'est une cellule procaryote, comme une bactérie."
+      ]
+     },
+     "pitfall": "Ne dis pas que la bactérie n'a pas d'ADN. Contre-exemple : une bactérie a bien une molécule d'ADN, mais elle est libre dans le cytoplasme, dans le nucléoïde, sans enveloppe : « pas de noyau » ne veut pas dire « pas d'ADN ». Ne te fie pas non plus à la paroi : la bactérie en a une, alors que ce n'est pas une cellule végétale.",
+     "figure": "procaryote-eucaryote",
+     "practice": {
+      "statement": "Tu t'entraînes à distinguer une cellule procaryote et une cellule eucaryote.",
+      "questions": [
+       {
+        "content": "Une bactérie possède un noyau limité par une enveloppe.",
+        "question_type": "true_false",
+        "explanation": "Étape 2 — Chercher le noyau : l'ADN de la bactérie est libre dans le cytoplasme, sans enveloppe. Étape 4 — Conclure : la bactérie est procaryote, l'affirmation est fausse.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": false
+         },
+         {
+          "content": "Faux",
+          "correct": true
+         }
+        ],
+        "hint": "Relis la définition du procaryote."
+       },
+       {
+        "content": "Quelle structure existe dans une cellule procaryote comme dans une cellule eucaryote ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 3 — Chercher les organites : les ribosomes sont présents dans les deux types de cellules, alors que mitochondries et Golgi sont des organites à membrane propres aux eucaryotes.",
+        "answers": [
+         {
+          "content": "Le ribosome",
+          "correct": true
+         },
+         {
+          "content": "La mitochondrie",
+          "correct": false
+         },
+         {
+          "content": "Le noyau avec enveloppe",
+          "correct": false
+         },
+         {
+          "content": "L'appareil de Golgi",
+          "correct": false
+         }
+        ],
+        "hint": "Les ribosomes ne sont pas entourés de membrane."
+       },
+       {
+        "content": "Une cellule sans noyau est une cellule ___.",
+        "question_type": "fill_blank",
+        "explanation": "Étape 2 — Chercher le noyau : sans noyau, étape 4 — Conclure : la cellule est procaryote, comme la bactérie.",
+        "answers": [
+         {
+          "content": "procaryote",
+          "correct": true
+         }
+        ],
+        "hint": "Le mot commence par « pro »."
+       },
+       {
+        "content": "Une cellule de 50 µm possède un noyau et des mitochondries. C'est une cellule :",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Estimer la taille : 50 µm est dans l'intervalle des eucaryotes. Étapes 2 et 3 — un noyau et des mitochondries sont présents. Étape 4 — Conclure : cellule eucaryote.",
+        "answers": [
+         {
+          "content": "eucaryote",
+          "correct": true
+         },
+         {
+          "content": "procaryote",
+          "correct": false
+         },
+         {
+          "content": "sans ADN",
+          "correct": false
+         },
+         {
+          "content": "sans membrane plasmique",
+          "correct": false
+         }
+        ],
+        "hint": "Le noyau est un signe sûr."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Procaryote ou eucaryote : lire les indices",
+       "statement": "Dans cet exercice, tu suis la méthode de la fiche pour reconnaître le type de plusieurs cellules.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Une cellule de 3 µm n'a pas de noyau et son ADN est libre. C'est une cellule :",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Estimer la taille : 3 µm est petit. Étape 2 — Chercher le noyau : ADN libre, donc pas de noyau. Étape 4 — Conclure : procaryote. Pourquoi pas « eucaryote animale » : une cellule animale a un noyau délimité par une enveloppe.",
+         "answers": [
+          {
+           "content": "procaryote",
+           "correct": true
+          },
+          {
+           "content": "eucaryote animale",
+           "correct": false
+          },
+          {
+           "content": "eucaryote végétale",
+           "correct": false
+          },
+          {
+           "content": "sans ADN",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule eucaryote contient des organites entourés de membrane.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Chercher les organites entourés de membrane : mitochondries, réticulum et Golgi se trouvent chez les eucaryotes. Pourquoi pas « Faux » : c'est justement ce qui la distingue du procaryote.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles structures sont communes à la bactérie et à la cellule animale ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 3 — Chercher les organites entourés de membrane : seuls les ribosomes et la membrane plasmique existent dans les deux types. Pourquoi pas « Les mitochondries » : ce sont des organites à membrane, absents de la bactérie.",
+         "answers": [
+          {
+           "content": "La membrane plasmique",
+           "correct": true
+          },
+          {
+           "content": "Les ribosomes",
+           "correct": true
+          },
+          {
+           "content": "Le noyau limité par une enveloppe",
+           "correct": false
+          },
+          {
+           "content": "Les mitochondries",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Chez la bactérie, l'ADN est libre dans le ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 2 — Chercher le noyau : l'ADN bactérien n'est pas entouré d'une enveloppe, il est dans le cytoplasme. Pourquoi pas « noyau » : la bactérie n'en a pas.",
+         "answers": [
+          {
+           "content": "cytoplasme",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque cellule à ses caractéristiques.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Estimer la taille, étape 2 — Chercher le noyau, étape 3 — Chercher les organites : la bactérie est petite avec un ADN libre ; la cellule animale a noyau et organites sans paroi ; la cellule végétale a une paroi en plus. Pourquoi pas relier la paroi à la bactérie seule : la cellule végétale en a une aussi.",
+         "answers": [
+          {
+           "content": "Bactérie",
+           "match": "ADN libre, 1 à 10 µm"
+          },
+          {
+           "content": "Cellule animale",
+           "match": "Noyau et organites, pas de paroi"
+          },
+          {
+           "content": "Cellule végétale",
+           "match": "Noyau, organites et paroi"
+          }
+         ]
+        },
+        {
+         "content": "Une bactérie n'a pas d'ADN puisqu'elle n'a pas de noyau.",
+         "question_type": "true_false",
+         "explanation": "Étape 2 — Chercher le noyau : la bactérie a de l'ADN, libre dans le cytoplasme, sans noyau. Pourquoi pas « Vrai » : avoir un noyau et avoir de l'ADN sont deux choses différentes.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Des bactéries du lait caillé observées au microscope",
+       "statement": "Dans cet exercice, tu étudies des bactéries du lait caillé observées au microscope électronique par un élève (valeurs fictives).",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Sur une image à ×20 000, une bactérie mesure 40 mm. Quelle est sa taille réelle, en µm ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Estimer la taille : on divise la mesure par le grossissement, 40 ÷ 20 000 = 0,002 mm, soit 0,002 × 1 000 = 2 µm. La valeur est bien dans l'intervalle des procaryotes. Pourquoi pas « 800 000 µm » : multiplier 40 par 20 000 donne une taille énorme ; on divise par le grossissement.",
+         "answers": [
+          {
+           "content": "2",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "µm"
+        },
+        {
+         "content": "La cellule étudiée n'a ni noyau ni mitochondrie. Que conclure ?",
+         "question_type": "single_choice",
+         "explanation": "Étapes 2 et 3 — pas de noyau, pas d'organite à membrane. Étape 4 — Conclure : procaryote. Pourquoi pas « C'est une cellule animale » : la cellule animale a un noyau et des mitochondries.",
+         "answers": [
+          {
+           "content": "C'est une cellule procaryote",
+           "correct": true
+          },
+          {
+           "content": "C'est une cellule animale",
+           "correct": false
+          },
+          {
+           "content": "C'est une cellule végétale",
+           "correct": false
+          },
+          {
+           "content": "C'est une cellule sans ribosomes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La bactérie possède des ribosomes.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Chercher les organites entourés de membrane, sans compter les ribosomes : ils existent dans les deux types de cellules. Pourquoi pas « Faux » : la bactérie fabrique elle aussi des protéines.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule dont l'ADN est dans un noyau est une cellule ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 2 — Chercher le noyau : l'ADN entouré d'une enveloppe signe la cellule eucaryote. Pourquoi pas procaryote : l'ADN procaryote est libre dans le cytoplasme.",
+         "answers": [
+          {
+           "content": "eucaryote",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque taille moyenne au type de cellule.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Estimer la taille : la bactérie est la plus petite, la cellule animale mesure quelques dizaines de µm et la cellule végétale est la plus grande. Pourquoi pas inverser : un procaryote ne dépasse en général pas 10 µm.",
+         "answers": [
+          {
+           "content": "Environ 2 µm",
+           "match": "Bactérie"
+          },
+          {
+           "content": "Environ 20 µm",
+           "match": "Cellule animale"
+          },
+          {
+           "content": "Environ 100 µm",
+           "match": "Cellule végétale"
+          }
+         ]
+        },
+        {
+         "content": "Quels indices montrent qu'une cellule est eucaryote ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 2 — Chercher le noyau et étape 3 — Chercher les organites à membrane : noyau à enveloppe et mitochondries signent l'eucaryote. Pourquoi pas « Un ADN libre dans le cytoplasme » : c'est un indice de procaryote.",
+         "answers": [
+          {
+           "content": "Un noyau limité par une enveloppe",
+           "correct": true
+          },
+          {
+           "content": "Des mitochondries",
+           "correct": true
+          },
+          {
+           "content": "Un ADN libre dans le cytoplasme",
+           "correct": false
+          },
+          {
+           "content": "Une taille de 2 µm",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "title": "Les cellules d'une pelure d'oignon du marché",
+     "statement": "Une élève achète un oignon au marché et observe un fragment de pelure au microscope : d'abord avec un objectif ×10 et un oculaire ×10, puis avec un objectif ×40. Elle dessine une cellule et la mesure (valeurs fictives).",
+     "exercise_type": "fixation",
+     "figure": "microscope-demarche",
+     "questions": [
+      {
+       "content": "Avec un objectif ×10 et un oculaire ×10, quel est le grossissement total ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Repérer l'objectif ×10 et l'oculaire ×10. 2. Calculer le grossissement total : on multiplie, 10 × 10 = 100. Pourquoi pas « 20 » : on a additionné les deux grossissements au lieu de les multiplier.",
+       "answers": [
+        {
+         "content": "100",
+         "correct": true
+        }
+       ],
+       "tolerance": 0,
+       "unit": "×"
+      },
+      {
+       "content": "À ce grossissement, la cellule dessinée mesure 25 mm. Quelle est sa taille réelle, en µm ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Mesurer la cellule sur le dessin : 25 mm. 2. Calculer la taille réelle : 25 ÷ 100 = 0,25 mm. 3. Convertir : 0,25 × 1 000 = 250 µm. Pourquoi pas « 2 500 µm » : on aurait confondu le millimètre avec le centimètre lors de la conversion.",
+       "answers": [
+        {
+         "content": "250",
+         "correct": true
+        }
+       ],
+       "tolerance": 0,
+       "unit": "µm"
+      },
+      {
+       "content": "Pour voir plus de détails de la cellule, l'élève doit :",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Observer : on commence par le plus petit objectif pour trouver les cellules. 2. On passe ensuite à un objectif plus fort pour les détails. Pourquoi pas « commencer directement par l'objectif ×40 » : l'image serait difficile à trouver et la lentille risquerait de toucher la lame.",
+       "answers": [
+        {
+         "content": "passer à l'objectif ×40, après avoir fait la mise au point au plus petit objectif",
+         "correct": true
+        },
+        {
+         "content": "retirer la lamelle",
+         "correct": false
+        },
+        {
+         "content": "remplacer l'oculaire par une lamelle colorée",
+         "correct": false
+        },
+        {
+         "content": "commencer directement par l'objectif ×40 sur une lame neuve",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Les cellules d'une pelure d'oignon contiennent des chloroplastes.",
+       "question_type": "true_false",
+       "explanation": "Méthode : 1. Repérer : la pelure vient d'un bulbe enterré, sans lumière. 2. Repérer les structures propres à la cellule végétale : elle a une paroi, mais pas de chloroplaste. Pourquoi pas « Vrai » : les chloroplastes se forment dans les parties exposées à la lumière, comme les feuilles.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": false
+        },
+        {
+         "content": "Faux",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Que doit comporter le dessin légendé de la cellule ?",
+       "question_type": "multiple_correct_2",
+       "explanation": "Méthode : 1. Dessiner et légender : un titre, des traits de légende à la règle, le nom de chaque structure. 2. On ajoute le grossissement. Pourquoi pas « Un coloriage de toute la cellule » : le dessin d'observation est un schéma au crayon, pas un coloriage ; il ne montre rien de plus.",
+       "answers": [
+        {
+         "content": "Un titre",
+         "correct": true
+        },
+        {
+         "content": "Des légendes reliées aux structures par des traits à la règle",
+         "correct": true
+        },
+        {
+         "content": "Un coloriage de toute la cellule",
+         "correct": false
+        },
+        {
+         "content": "Le nom de l'élève à la place des légendes",
+         "correct": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Trois cellules au microscope électronique",
+     "statement": "Un biologiste compare trois cellules fictives au microscope électronique. La cellule X est très riche en réticulum rugueux et en appareil de Golgi. La cellule Y contient énormément de mitochondries. La cellule Z est entourée d'une paroi.",
+     "exercise_type": "fixation",
+     "figure": "ultrastructure-eucaryote",
+     "questions": [
+      {
+       "content": "La cellule X fabrique et exporte surtout :",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Repérer le réticulum rugueux et le Golgi. 2. Reconnaître leur rôle : le réticulum transporte les protéines fabriquées par les ribosomes, le Golgi les trie et les emballe. Pourquoi pas « de l'énergie lumineuse » : la lumière est utilisée par les chloroplastes, absents ici.",
+       "answers": [
+        {
+         "content": "des protéines",
+         "correct": true
+        },
+        {
+         "content": "de l'énergie lumineuse",
+         "correct": false
+        },
+        {
+         "content": "de la cellulose",
+         "correct": false
+        },
+        {
+         "content": "de l'ADN",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "La cellule Y, riche en mitochondries, est une cellule qui :",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Repérer les nombreuses mitochondries. 2. Associer leur rôle : elles libèrent l'énergie lors de la respiration cellulaire. Pourquoi pas « stocke de l'eau dans une grande vacuole » : c'est le rôle de la vacuole, pas des mitochondries.",
+       "answers": [
+        {
+         "content": "dépense beaucoup d'énergie",
+         "correct": true
+        },
+        {
+         "content": "fabrique de la cellulose",
+         "correct": false
+        },
+        {
+         "content": "stocke de l'eau dans une grande vacuole",
+         "correct": false
+        },
+        {
+         "content": "ne possède pas de noyau",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Relie chaque organite à son rôle.",
+       "question_type": "matching",
+       "explanation": "Méthode : 1. Reconnaître chaque organite. 2. Associer son rôle : ribosome, protéines ; Golgi, tri et emballage ; noyau, information génétique ; mitochondrie, énergie. Pourquoi pas associer le ribosome au tri : le tri est fait par le Golgi, le ribosome fabrique.",
+       "answers": [
+        {
+         "content": "Ribosome",
+         "match": "Fabrique les protéines"
+        },
+        {
+         "content": "Appareil de Golgi",
+         "match": "Trie et emballe les protéines"
+        },
+        {
+         "content": "Noyau",
+         "match": "Contient l'information génétique"
+        },
+        {
+         "content": "Mitochondrie",
+         "match": "Libère l'énergie"
+        }
+       ]
+      },
+      {
+       "content": "Les ribosomes fixés sur le réticulum lui donnent son aspect ___.",
+       "question_type": "fill_blank",
+       "explanation": "Méthode : 1. Reconnaître : des petits grains accrochés sur des sacs aplatis. 2. Associer : le réticulum devient rugueux. Pourquoi pas « lisse » : un réticulum lisse n'a pas de ribosomes accrochés.",
+       "answers": [
+        {
+         "content": "rugueux",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Sur une image à ×15 000, une mitochondrie mesure 30 mm. Quelle est sa taille réelle, en µm ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Mesurer : 30 mm sur l'image. 2. Calculer la taille réelle : 30 ÷ 15 000 = 0,002 mm. 3. Convertir : 0,002 × 1 000 = 2 µm. Pourquoi pas « 450 000 µm » : on aurait multiplié par le grossissement au lieu de diviser.",
+       "answers": [
+        {
+         "content": "2",
+         "correct": true
+        }
+       ],
+       "tolerance": 0,
+       "unit": "µm"
+      }
+     ]
+    },
+    {
+     "title": "Une feuille de manioc et une cellule de joue",
+     "statement": "Un élève prépare deux lames : un fragment de feuille de manioc et un frottis de la joue. Il observe les deux avec un objectif ×40 et un oculaire ×10 (valeurs fictives).",
+     "exercise_type": "evaluation",
+     "figure": "animale-vegetale",
+     "questions": [
+      {
+       "content": "Laquelle de ces cellules contient des chloroplastes ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Lister les structures de chaque cellule. 2. Repérer les structures propres à la cellule végétale : paroi, chloroplastes, grande vacuole ; la feuille est verte et éclairée. Pourquoi pas « La cellule de la joue » : la joue est une cellule animale, sans chloroplaste ni paroi.",
+       "answers": [
+        {
+         "content": "La cellule de la feuille de manioc",
+         "correct": true
+        },
+        {
+         "content": "La cellule de la joue",
+         "correct": false
+        },
+        {
+         "content": "Les deux",
+         "correct": false
+        },
+        {
+         "content": "Aucune des deux",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Quelles structures observe-t-on dans la cellule de feuille mais pas dans celle de joue ?",
+       "question_type": "multiple_correct_2",
+       "explanation": "Méthode : 1. Lister. 2. Repérer les structures communes (noyau, membrane plasmique). 3. Repérer les structures propres à la cellule végétale : paroi et chloroplastes. Pourquoi pas « Le noyau » : il est commun aux deux cellules.",
+       "answers": [
+        {
+         "content": "La paroi",
+         "correct": true
+        },
+        {
+         "content": "Les chloroplastes",
+         "correct": true
+        },
+        {
+         "content": "Le noyau",
+         "correct": false
+        },
+        {
+         "content": "La membrane plasmique",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Sur le dessin, une cellule de feuille mesure 40 mm. Quelle est sa taille réelle, en µm ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Calculer le grossissement total : 40 × 10 = 400. 2. Mesurer : 40 mm. 3. Calculer la taille réelle : 40 ÷ 400 = 0,1 mm, soit 100 µm. Pourquoi pas « 16 000 µm » : on a multiplié 40 par 400 au lieu de diviser.",
+       "answers": [
+        {
+         "content": "100",
+         "correct": true
+        }
+       ],
+       "tolerance": 0,
+       "unit": "µm"
+      },
+      {
+       "content": "Pourquoi la cellule de joue ne possède-t-elle ni paroi ni chloroplaste ?",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Repérer les structures propres à la cellule végétale : paroi et chloroplastes. 2. Conclure : la cellule de joue en est dépourvue, donc elle est animale. Pourquoi pas « Parce qu'elle n'a pas de noyau » : la cellule de joue a un noyau bien visible après coloration.",
+       "answers": [
+        {
+         "content": "Parce que c'est une cellule animale",
+         "correct": true
+        },
+        {
+         "content": "Parce qu'elle n'a pas de noyau",
+         "correct": false
+        },
+        {
+         "content": "Parce qu'elle est trop petite",
+         "correct": false
+        },
+        {
+         "content": "Parce qu'elle est morte",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Les deux cellules possèdent un noyau et des mitochondries.",
+       "question_type": "true_false",
+       "explanation": "Méthode : 1. Lister les structures de chaque cellule. 2. Repérer les structures communes : noyau et mitochondries se trouvent dans les cellules animales et végétales. Pourquoi pas « Faux » : ces deux structures ne sont pas propres à un seul type de cellule.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": true
+        },
+        {
+         "content": "Faux",
+         "correct": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Bilan : trois cellules à identifier",
+     "statement": "Trois cellules sont décrites (valeurs fictives). La cellule C1 mesure environ 2 µm, son ADN est libre, elle a des ribosomes et une paroi. La cellule C2 mesure environ 20 µm, avec un noyau, des mitochondries et sans paroi. La cellule C3 mesure environ 100 µm, avec un noyau, une paroi, des chloroplastes et une grande vacuole.",
+     "exercise_type": "evaluation",
+     "figure": "tailles-cellules",
+     "questions": [
+      {
+       "content": "La cellule C1 est :",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Estimer la taille : 2 µm, petite. 2. Chercher le noyau : l'ADN est libre, donc pas de noyau. 3. Chercher les organites à membrane : aucun. 4. Conclure : procaryote. Pourquoi pas « une cellule végétale » : la paroi seule ne suffit pas : la bactérie en a une aussi, mais elle n'a ni noyau ni organite à membrane.",
+       "answers": [
+        {
+         "content": "une cellule procaryote",
+         "correct": true
+        },
+        {
+         "content": "une cellule animale",
+         "correct": false
+        },
+        {
+         "content": "une cellule végétale",
+         "correct": false
+        },
+        {
+         "content": "une cellule sans ribosomes",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "La cellule C2 est :",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Lister : noyau, mitochondries. 2. Repérer les structures propres à la cellule végétale : aucune (ni paroi ni chloroplaste). 3. Conclure : cellule animale. Pourquoi pas « une cellule procaryote » : elle possède un noyau et des mitochondries, signes d'une cellule eucaryote.",
+       "answers": [
+        {
+         "content": "une cellule animale",
+         "correct": true
+        },
+        {
+         "content": "une cellule procaryote",
+         "correct": false
+        },
+        {
+         "content": "une cellule végétale",
+         "correct": false
+        },
+        {
+         "content": "une cellule sans mitochondries",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "La cellule C3 est :",
+       "question_type": "single_choice",
+       "explanation": "Méthode : 1. Lister : noyau, paroi, chloroplastes, grande vacuole. 2. Repérer les structures propres à la cellule végétale : elles sont toutes présentes. 3. Conclure : cellule végétale. Pourquoi pas « une cellule animale » : aucune cellule animale ne possède de paroi ni de chloroplaste.",
+       "answers": [
+        {
+         "content": "une cellule végétale",
+         "correct": true
+        },
+        {
+         "content": "une cellule animale",
+         "correct": false
+        },
+        {
+         "content": "une cellule procaryote",
+         "correct": false
+        },
+        {
+         "content": "une cellule sans noyau",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "La cellule C3 mesure 20 mm sur un dessin fait à ×200. Quelle est sa taille réelle, en µm ?",
+       "question_type": "numeric",
+       "explanation": "Méthode : 1. Mesurer : 20 mm. 2. Calculer la taille réelle : 20 ÷ 200 = 0,1 mm. 3. Convertir : 0,1 × 1 000 = 100 µm, ce qui correspond à une cellule végétale. Pourquoi pas « 4 000 µm » : on a multiplié 20 par 200 au lieu de diviser.",
+       "answers": [
+        {
+         "content": "100",
+         "correct": true
+        }
+       ],
+       "tolerance": 0,
+       "unit": "µm"
+      },
+      {
+       "content": "Quelles structures sont communes aux cellules C2 et C3 ?",
+       "question_type": "multiple_correct_3",
+       "explanation": "Méthode : 1. Lister les structures de C2 et de C3. 2. Repérer les structures communes : noyau, mitochondries, ribosomes (cellules eucaryotes). Pourquoi pas « La paroi » : elle n'existe que dans la cellule végétale C3, pas dans C2.",
+       "answers": [
+        {
+         "content": "Le noyau",
+         "correct": true
+        },
+        {
+         "content": "Les mitochondries",
+         "correct": true
+        },
+        {
+         "content": "Les ribosomes",
+         "correct": true
+        },
+        {
+         "content": "La paroi",
+         "correct": false
+        },
+        {
+         "content": "Les chloroplastes",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "La cellule C1 possède des organites entourés de membrane.",
+       "question_type": "true_false",
+       "explanation": "Méthode : 1. Chercher les organites entourés de membrane : C1 n'a que des ribosomes, qui ne sont pas entourés de membrane. 2. Conclure : C1 est procaryote. Pourquoi pas « Vrai » : les mitochondries, le réticulum et le Golgi sont des organites à membrane propres aux eucaryotes.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": false
+        },
+        {
+         "content": "Faux",
+         "correct": true
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "subjects": [
+    {
+     "title": "Sujet 1 · Les savoirs de base sur la cellule",
+     "notions": "Microscope optique, grossissement, taille réelle ; organites et leur rôle ; cellule animale et cellule végétale ; cellule procaryote et eucaryote.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Dans cet exercice, tu utilises le microscope optique et la formule de la taille réelle.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "La cellule est l'unité structurale et fonctionnelle de tout être vivant.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Rappeler la définition de la fiche : la cellule est l'unité de structure (le corps est fait de cellules) et de fonctionnement. 2. Conclure : l'affirmation est vraie. Pourquoi pas « Faux » : même les êtres formés d'une seule cellule sont vivants.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un objectif ×40 et un oculaire ×10 donnent quel grossissement total ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Calculer le grossissement total : objectif × oculaire. 2. 40 × 10 = 400. Pourquoi pas « 50 » : on aurait additionné au lieu de multiplier.",
+         "answers": [
+          {
+           "content": "400",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "×"
+        },
+        {
+         "content": "1 mm = ___ µm.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Repérer l'unité : le micromètre est mille fois plus petit que le millimètre. 2. Conclure : 1 mm = 1 000 µm. Pourquoi pas 100 : un centimètre vaut 10 mm, mais un millimètre vaut bien 1 000 micromètres.",
+         "answers": [
+          {
+           "content": "1000",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Une cellule mesure 40 mm sur un dessin fait à ×400. Quelle est sa taille réelle, en µm ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Mesurer : 40 mm. 2. Calculer la taille réelle : 40 ÷ 400 = 0,1 mm. 3. Convertir : 0,1 × 1 000 = 100 µm. Pourquoi pas « 16 000 µm » : multiplier donnerait une cellule plus grande que son dessin.",
+         "answers": [
+          {
+           "content": "100",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "µm"
+        },
+        {
+         "content": "Que fait-on en premier lorsqu'on observe une lame au microscope ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Observer : on commence par le plus petit objectif. 2. On passe ensuite à un objectif plus fort. Pourquoi pas « On utilise le plus fort objectif » : l'image serait floue et la lentille pourrait toucher la lame.",
+         "answers": [
+          {
+           "content": "On utilise le plus petit objectif",
+           "correct": true
+          },
+          {
+           "content": "On utilise le plus fort objectif",
+           "correct": false
+          },
+          {
+           "content": "On retire la lamelle",
+           "correct": false
+          },
+          {
+           "content": "On colore la lentille",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Multiplie les deux grossissements, puis divise la mesure du dessin par le résultat."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Dans cet exercice, tu associes les organites de la cellule à leur aspect et à leur rôle.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Relie chaque organite à son rôle.",
+         "question_type": "matching",
+         "explanation": "Méthode : 1. Reconnaître chaque organite. 2. Associer son rôle : noyau, information génétique ; mitochondrie, énergie ; ribosome, protéines ; Golgi, tri et emballage. Pourquoi pas associer le ribosome au tri : il fabrique les protéines sans les trier.",
+         "answers": [
+          {
+           "content": "Noyau",
+           "match": "Contient l'information génétique"
+          },
+          {
+           "content": "Mitochondrie",
+           "match": "Libère l'énergie"
+          },
+          {
+           "content": "Ribosome",
+           "match": "Fabrique les protéines"
+          },
+          {
+           "content": "Appareil de Golgi",
+           "match": "Trie et emballe les protéines"
+          }
+         ]
+        },
+        {
+         "content": "Quelle structure limite la cellule ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer la limite de la cellule. 2. C'est la membrane plasmique, qui contrôle les échanges. Pourquoi pas « Le nucléole » : le nucléole est un petit corps situé dans le noyau.",
+         "answers": [
+          {
+           "content": "La membrane plasmique",
+           "correct": true
+          },
+          {
+           "content": "Le nucléole",
+           "correct": false
+          },
+          {
+           "content": "Le ribosome",
+           "correct": false
+          },
+          {
+           "content": "La mitochondrie",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le noyau contient un petit corps arrondi appelé ___.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Reconnaître le noyau : enveloppe percée de pores et un nucléole. 2. Nommer le petit corps arrondi : le nucléole. Pourquoi pas « ribosome » : le ribosome est un grain du cytoplasme, hors du noyau.",
+         "answers": [
+          {
+           "content": "nucléole",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Les mitochondries ont une membrane interne repliée en crêtes.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Reconnaître la mitochondrie : forme ovale, double membrane. 2. Repérer ses crêtes, replis de la membrane interne. Pourquoi pas « Faux » : les crêtes sont justement le signe qui permet de la reconnaître.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quel appareil est formé de sacs aplatis empilés ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Reconnaître l'organite à sa forme : sacs empilés. 2. Associer : appareil de Golgi. Pourquoi pas « La paroi » : elle entoure la cellule végétale à l'extérieur et n'est pas faite de sacs empilés.",
+         "answers": [
+          {
+           "content": "L'appareil de Golgi",
+           "correct": true
+          },
+          {
+           "content": "Le noyau",
+           "correct": false
+          },
+          {
+           "content": "Le ribosome",
+           "correct": false
+          },
+          {
+           "content": "La paroi",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Pour chaque organite, retiens un seul rôle principal."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Dans cet exercice, tu compares la cellule animale et la cellule végétale.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Quelle structure est propre à la cellule végétale ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Lister. 2. Repérer les structures communes (noyau, membrane, ribosomes). 3. Repérer les structures propres : la paroi. Pourquoi pas « Le noyau » : il existe aussi dans la cellule animale.",
+         "answers": [
+          {
+           "content": "La paroi",
+           "correct": true
+          },
+          {
+           "content": "Le noyau",
+           "correct": false
+          },
+          {
+           "content": "La membrane plasmique",
+           "correct": false
+          },
+          {
+           "content": "Les ribosomes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La cellule animale possède des chloroplastes.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Repérer les structures propres à la cellule végétale : chloroplastes, paroi, grande vacuole. 2. Conclure : la cellule animale n'en a pas. Pourquoi pas « Vrai » : la photosynthèse est réalisée dans les chloroplastes des cellules végétales.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelles structures sont propres à la cellule végétale ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Repérer les structures communes : noyau et mitochondries. 2. Repérer les structures propres : paroi et chloroplastes. Pourquoi pas « Les mitochondries » : elles existent dans les deux cellules.",
+         "answers": [
+          {
+           "content": "La paroi",
+           "correct": true
+          },
+          {
+           "content": "Les chloroplastes",
+           "correct": true
+          },
+          {
+           "content": "Le noyau",
+           "correct": false
+          },
+          {
+           "content": "Les mitochondries",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les chloroplastes contiennent un pigment vert, la ___.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Repérer les structures propres à la cellule végétale. 2. Nommer le pigment des chloroplastes : la chlorophylle. Pourquoi pas la cellulose : elle compose la paroi, pas le pigment vert.",
+         "answers": [
+          {
+           "content": "chlorophylle",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque structure à son rôle.",
+         "question_type": "matching",
+         "explanation": "Méthode : 1. Repérer chaque structure. 2. Associer son rôle : paroi, soutien ; chloroplaste, photosynthèse ; vacuole, stockage ; mitochondrie, énergie. Pourquoi pas relier le chloroplaste à l'énergie : la mitochondrie libère l'énergie, le chloroplaste réalise la photosynthèse.",
+         "answers": [
+          {
+           "content": "Paroi",
+           "match": "Soutient la cellule"
+          },
+          {
+           "content": "Chloroplaste",
+           "match": "Photosynthèse"
+          },
+          {
+           "content": "Grande vacuole",
+           "match": "Stockage d'eau"
+          },
+          {
+           "content": "Mitochondrie",
+           "match": "Libère l'énergie"
+          }
+         ]
+        }
+       ],
+       "hint": "Cherche d'abord la paroi."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Dans cet exercice, tu distingues la cellule procaryote et la cellule eucaryote.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Où se trouve l'ADN d'une bactérie ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Chercher le noyau. 2. La bactérie n'en a pas : son ADN est libre dans le cytoplasme. Pourquoi pas « Dans un noyau à enveloppe » : c'est le cas des eucaryotes, pas des procaryotes.",
+         "answers": [
+          {
+           "content": "Libre dans le cytoplasme",
+           "correct": true
+          },
+          {
+           "content": "Dans un noyau à enveloppe",
+           "correct": false
+          },
+          {
+           "content": "Dans une mitochondrie",
+           "correct": false
+          },
+          {
+           "content": "Dans une vacuole",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule eucaryote a un noyau limité par une enveloppe.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Chercher le noyau : l'enveloppe entoure l'ADN. 2. Conclure : c'est la définition de l'eucaryote. Pourquoi pas « Faux » : sans enveloppe autour de l'ADN, la cellule serait procaryote.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule sans noyau est dite ___.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Chercher le noyau : absent. 2. Conclure : cellule procaryote. Pourquoi pas eucaryote : une cellule eucaryote a un noyau.",
+         "answers": [
+          {
+           "content": "procaryote",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelles structures sont présentes chez la bactérie ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Chercher les organites entourés de membrane : aucun. 2. Les ribosomes et la membrane plasmique existent dans tous les types de cellules. Pourquoi pas « Des mitochondries » : ce sont des organites à membrane propres aux eucaryotes.",
+         "answers": [
+          {
+           "content": "Des ribosomes",
+           "correct": true
+          },
+          {
+           "content": "Une membrane plasmique",
+           "correct": true
+          },
+          {
+           "content": "Un noyau à enveloppe",
+           "correct": false
+          },
+          {
+           "content": "Des mitochondries",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une bactérie mesure 15 mm sur un dessin fait à ×300. Quelle est sa taille réelle, en µm ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Mesurer : 15 mm. 2. Calculer la taille réelle : 15 ÷ 300 = 0,05 mm. 3. Convertir : 0,05 × 1 000 = 50 µm. Pourquoi pas « 4 500 µm » : on a multiplié 15 par 300 au lieu de diviser.",
+         "answers": [
+          {
+           "content": "50",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "µm"
+        }
+       ],
+       "hint": "Cherche le noyau, puis les organites à membrane."
+      }
+     ]
+    },
+    {
+     "title": "Sujet 2 · Des cellules dans la vie courante en Côte d'Ivoire",
+     "notions": "Observation de cellules d'oignon et de joue au microscope ; calcul de taille réelle ; cellule de feuille et de racine de manioc ; bactéries du lait caillé.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "À Adjamé, une vendeuse d'oignons laisse une élève prélever un fragment de pelure. L'élève l'observe avec un objectif ×10 et un oculaire ×10 (valeurs fictives).",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Quel est le grossissement total ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Calculer le grossissement total : 10 × 10 = 100. Pourquoi pas « 20 » : c'est la somme des deux grossissements, alors qu'ils se multiplient.",
+         "answers": [
+          {
+           "content": "100",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "×"
+        },
+        {
+         "content": "Une cellule dessinée mesure 25 mm. Quelle est sa taille réelle, en µm ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Mesurer : 25 mm. 2. Calculer la taille réelle : 25 ÷ 100 = 0,25 mm, soit 250 µm. Pourquoi pas « 2 500 µm » : l'erreur de conversion donnerait une cellule dix fois trop grande.",
+         "answers": [
+          {
+           "content": "250",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "µm"
+        },
+        {
+         "content": "Dans quoi dépose-t-on la pelure pour la préparer ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Préparer : le fragment mince est déposé dans une goutte d'eau, puis recouvert d'une lamelle. Pourquoi pas « Sur la lamelle sèche » : un fragment sec, sans eau ni lamelle, se déforme et protège mal la lentille.",
+         "answers": [
+          {
+           "content": "Dans une goutte d'eau, sur la lame",
+           "correct": true
+          },
+          {
+           "content": "Dans du sable",
+           "correct": false
+          },
+          {
+           "content": "Sur la lamelle sèche",
+           "correct": false
+          },
+          {
+           "content": "Dans un tube fermé",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les cellules de la pelure d'oignon n'ont pas de chloroplastes.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Repérer : le bulbe pousse sous terre, sans lumière. 2. Conclure : les cellules ont une paroi mais pas de chloroplaste. Pourquoi pas « Faux » : les chloroplastes apparaissent dans les parties éclairées de la plante.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule d'oignon est une cellule ___.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Repérer la paroi de cellulose. 2. Conclure : la paroi désigne une cellule végétale. Pourquoi pas « animale » : aucune cellule animale n'a de paroi.",
+         "answers": [
+          {
+           "content": "végétale",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Calcule d'abord le grossissement total."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Dans un lycée d'Abidjan, un élève frotte doucement l'intérieur de sa joue avec un coton-tige propre, étale le contenu dans une goutte de bleu de méthylène sur une lame et recouvre d'une lamelle (valeurs fictives).",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Pourquoi ajoute-t-on du bleu de méthylène ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Préparer : on colore pour que les structures ressortent. Pourquoi pas « Pour grossir les cellules » : le grossissement vient des lentilles, pas du colorant.",
+         "answers": [
+          {
+           "content": "Pour mieux voir les cellules transparentes",
+           "correct": true
+          },
+          {
+           "content": "Pour grossir les cellules",
+           "correct": false
+          },
+          {
+           "content": "Pour tuer le microscope",
+           "correct": false
+          },
+          {
+           "content": "Pour remplacer la lamelle",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre la préparation du frottis.",
+         "question_type": "ordering",
+         "explanation": "Méthode : 1. Préparer : prélever, déposer dans le colorant, poser la lamelle. 2. Observer : commencer par le plus petit objectif. Pourquoi pas observer d'abord : sans lamelle ni colorant, rien n'est visible correctement.",
+         "answers": [
+          {
+           "content": "Prélever quelques cellules de la joue"
+          },
+          {
+           "content": "Les étaler dans une goutte de colorant sur la lame"
+          },
+          {
+           "content": "Poser doucement la lamelle"
+          },
+          {
+           "content": "Observer au plus petit objectif"
+          }
+         ]
+        },
+        {
+         "content": "Avec un objectif ×40 et un oculaire ×10, une cellule mesure 24 mm sur le dessin. Quelle est sa taille réelle, en µm ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Calculer le grossissement total : 400. 2. Mesurer : 24 mm. 3. Calculer la taille réelle : 24 ÷ 400 = 0,06 mm, soit 60 µm. Pourquoi pas « 9 600 µm » : on a multiplié au lieu de diviser.",
+         "answers": [
+          {
+           "content": "60",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "µm"
+        },
+        {
+         "content": "Les cellules de la joue sont entourées d'une paroi de cellulose.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Repérer les structures propres à la cellule végétale : la paroi. 2. Conclure : la cellule de joue est animale, sans paroi. Pourquoi pas « Vrai » : la paroi de cellulose n'existe que chez les végétaux.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelles structures voit-on dans une cellule de joue colorée ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Lister les structures d'une cellule animale. 2. Elle a un noyau et une membrane plasmique. Pourquoi pas « Des chloroplastes » : ils sont propres à la cellule végétale.",
+         "answers": [
+          {
+           "content": "Un noyau",
+           "correct": true
+          },
+          {
+           "content": "Une membrane plasmique",
+           "correct": true
+          },
+          {
+           "content": "Une paroi de cellulose",
+           "correct": false
+          },
+          {
+           "content": "Des chloroplastes",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Pense à la préparation, puis au calcul."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Dans un champ de manioc, un élève compare une cellule de feuille et une cellule de racine (valeurs fictives).",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Quelle cellule contient des chloroplastes ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Lister. 2. Repérer les structures propres à la cellule végétale : la feuille, exposée à la lumière, a des chloroplastes. Pourquoi pas « La cellule de la racine » : la racine est dans le sol, sans lumière.",
+         "answers": [
+          {
+           "content": "La cellule de la feuille",
+           "correct": true
+          },
+          {
+           "content": "La cellule de la racine",
+           "correct": false
+          },
+          {
+           "content": "Les deux",
+           "correct": false
+          },
+          {
+           "content": "Aucune des deux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La cellule de racine est une cellule végétale.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Repérer la paroi. 2. Conclure : la cellule de racine a une paroi, elle est végétale, même sans chloroplaste. Pourquoi pas « Faux » : l'absence de chloroplaste ne suffit pas à en faire une cellule animale.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles structures possède la cellule de racine ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Lister les structures. 2. La cellule de racine a une paroi et un noyau. Pourquoi pas « Des chloroplastes » : la racine ne reçoit pas de lumière.",
+         "answers": [
+          {
+           "content": "Une paroi",
+           "correct": true
+          },
+          {
+           "content": "Un noyau",
+           "correct": true
+          },
+          {
+           "content": "Des chloroplastes",
+           "correct": false
+          },
+          {
+           "content": "Une enveloppe bactérienne",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La photosynthèse se déroule dans les ___.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Repérer les structures propres à la cellule végétale. 2. Associer le rôle : la photosynthèse se déroule dans les chloroplastes. Pourquoi pas « mitochondries » : elles libèrent l'énergie par la respiration.",
+         "answers": [
+          {
+           "content": "chloroplastes",
+           "correct": true
+          },
+          {
+           "content": "chloroplaste",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelle structure donne sa forme rigide à la cellule végétale ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer les structures propres. 2. Associer : la paroi de cellulose soutient la cellule. Pourquoi pas « Le ribosome » : il fabrique des protéines, il ne soutient pas la cellule.",
+         "answers": [
+          {
+           "content": "La paroi",
+           "correct": true
+          },
+          {
+           "content": "Le ribosome",
+           "correct": false
+          },
+          {
+           "content": "Le nucléole",
+           "correct": false
+          },
+          {
+           "content": "L'appareil de Golgi",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Cherche où se trouve la lumière."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Dans un village, un élève examine du lait caillé au microscope électronique. Il y repère de minuscules cellules, des bactéries, et mesure l'une d'elles (valeurs fictives).",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Sur une image à ×4 000, une bactérie mesure 8 mm. Quelle est sa taille réelle, en µm ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Mesurer : 8 mm. 2. Calculer la taille réelle : 8 ÷ 4 000 = 0,002 mm, soit 2 µm. Pourquoi pas « 32 000 µm » : on a multiplié au lieu de diviser.",
+         "answers": [
+          {
+           "content": "2",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "µm"
+        },
+        {
+         "content": "La bactérie observée est une cellule :",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Estimer la taille : 2 µm. 2. Chercher le noyau : absent. 3. Conclure : procaryote. Pourquoi pas « eucaryote » : une cellule eucaryote a un noyau et mesure en général plus de 10 µm.",
+         "answers": [
+          {
+           "content": "procaryote",
+           "correct": true
+          },
+          {
+           "content": "eucaryote",
+           "correct": false
+          },
+          {
+           "content": "végétale",
+           "correct": false
+          },
+          {
+           "content": "animale",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La bactérie possède de l'ADN.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Chercher le noyau : absent. 2. L'ADN existe pourtant, libre dans le cytoplasme. Pourquoi pas « Faux » : pas de noyau ne veut pas dire pas d'ADN.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles structures la bactérie possède-t-elle ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Chercher les organites entourés de membrane : aucun. 2. Ribosomes et membrane plasmique sont communs. Pourquoi pas « Des mitochondries » : c'est un organite à membrane propre aux eucaryotes.",
+         "answers": [
+          {
+           "content": "Des ribosomes",
+           "correct": true
+          },
+          {
+           "content": "Une membrane plasmique",
+           "correct": true
+          },
+          {
+           "content": "Des mitochondries",
+           "correct": false
+          },
+          {
+           "content": "Un appareil de Golgi",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les bactéries sont des cellules sans ___.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Chercher le noyau. 2. Conclure : les bactéries n'en ont pas, leur ADN est libre. Pourquoi pas « ADN » : elles en possèdent une molécule.",
+         "answers": [
+          {
+           "content": "noyau",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Compare la taille et cherche le noyau."
+      }
+     ]
+    },
+    {
+     "title": "Sujet 3 · Raisonner à partir d'observations",
+     "notions": "Retrouver un grossissement ou une taille ; relier organites et activité de la cellule ; identifier un type de cellule à partir d'indices ; comparer procaryote et eucaryote.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Dans cet exercice, tu raisonnes à partir de mesures sur des dessins d'observation.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Une cellule de 80 µm mesure 32 mm sur le dessin. Quel est le grossissement du dessin ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Convertir : 32 mm = 32 000 µm. 2. Calculer le grossissement : 32 000 ÷ 80 = 400. Pourquoi pas « 2 560 » : on a multiplié 32 par 80 au lieu de convertir et diviser.",
+         "answers": [
+          {
+           "content": "400",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "×"
+        },
+        {
+         "content": "Le grossissement est ×400 et l'oculaire ×10. Quel est le grossissement de l'objectif ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Calculer le grossissement total : objectif × oculaire = 400. 2. Objectif = 400 ÷ 10 = 40. Pourquoi pas « 4 000 » : on a multiplié 400 par 10 au lieu de diviser.",
+         "answers": [
+          {
+           "content": "40",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "×"
+        },
+        {
+         "content": "Un élève trouve une cellule de 5 m. Quelle est son erreur la plus probable ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Calculer la taille réelle : on divise la mesure par le grossissement. 2. Une cellule de plusieurs mètres est absurde : la division a été remplacée par une multiplication. Pourquoi pas « Il a oublié la lamelle » : la lamelle protège la préparation, mais ne change pas le calcul.",
+         "answers": [
+          {
+           "content": "Il a multiplié par le grossissement au lieu de diviser",
+           "correct": true
+          },
+          {
+           "content": "Il a oublié la lamelle",
+           "correct": false
+          },
+          {
+           "content": "Il a utilisé un colorant",
+           "correct": false
+          },
+          {
+           "content": "Il a dessiné au crayon",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Si on double le grossissement, la mesure du dessin double aussi.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Écrire la formule : mesure du dessin = taille réelle × grossissement. 2. Si le grossissement double, la mesure double aussi. Pourquoi pas « Faux » : la taille réelle ne change pas, mais le dessin est agrandi.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles erreurs rendent un dessin d'observation incorrect ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Dessiner et légender : titre, traits à la règle, noms des structures, grossissement. Pourquoi pas « Écrire le grossissement » : c'est une bonne pratique, pas une erreur.",
+         "answers": [
+          {
+           "content": "Oublier le titre",
+           "correct": true
+          },
+          {
+           "content": "Tracer les légendes à main levée sans traits à la règle",
+           "correct": true
+          },
+          {
+           "content": "Écrire le grossissement",
+           "correct": false
+          },
+          {
+           "content": "Nommer les structures",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Retrouve le grossissement avec la formule, en inversant le calcul."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Dans cet exercice, tu relies la quantité d'organites à l'activité de la cellule. Deux cellules fictives sont comparées : la cellule P est riche en réticulum rugueux et en appareil de Golgi, la cellule M contient de très nombreuses mitochondries.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "La cellule P est spécialisée dans :",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer le réticulum rugueux et le Golgi. 2. Associer leur rôle : transport, tri et emballage des protéines. Pourquoi pas « la production d'énergie lumineuse » : la lumière est utilisée par les chloroplastes, absents ici.",
+         "answers": [
+          {
+           "content": "la fabrication et la sécrétion de protéines",
+           "correct": true
+          },
+          {
+           "content": "la production d'énergie lumineuse",
+           "correct": false
+          },
+          {
+           "content": "le stockage de l'eau",
+           "correct": false
+          },
+          {
+           "content": "la rigidité de la paroi",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La cellule M a probablement :",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer les nombreuses mitochondries. 2. Associer leur rôle : elles libèrent l'énergie. Pourquoi pas « un noyau absent » : la présence d'organites montre une cellule eucaryote, donc avec noyau.",
+         "answers": [
+          {
+           "content": "un grand besoin en énergie",
+           "correct": true
+          },
+          {
+           "content": "une paroi très épaisse",
+           "correct": false
+          },
+          {
+           "content": "un noyau absent",
+           "correct": false
+          },
+          {
+           "content": "de nombreux chloroplastes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un réticulum rugueux fabrique lui-même les protéines.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Reconnaître : le réticulum rugueux porte des ribosomes. 2. Associer : ce sont les ribosomes qui fabriquent, le réticulum transporte. Pourquoi pas « Vrai » : l'aspect rugueux vient des ribosomes, qui sont les vrais fabricants.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre le trajet d'une protéine exportée.",
+         "question_type": "ordering",
+         "explanation": "Méthode : 1. Associer à chaque organite son rôle. 2. Le ribosome fabrique, le réticulum transporte, le Golgi trie et emballe, la vésicule libère. Pourquoi pas le Golgi avant le réticulum : le Golgi reçoit des protéines déjà transportées.",
+         "answers": [
+          {
+           "content": "Fabrication par un ribosome"
+          },
+          {
+           "content": "Transport par le réticulum"
+          },
+          {
+           "content": "Tri et emballage par le Golgi"
+          },
+          {
+           "content": "Libération dans une vésicule"
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque organite abondant à l'activité qu'il suggère.",
+         "question_type": "matching",
+         "explanation": "Méthode : 1. Repérer l'organite abondant. 2. Associer son rôle à l'activité de la cellule. Pourquoi pas relier les chloroplastes à l'énergie des muscles : ils servent à la photosynthèse des cellules végétales éclairées.",
+         "answers": [
+          {
+           "content": "Mitochondries nombreuses",
+           "match": "Forte dépense d'énergie"
+          },
+          {
+           "content": "Réticulum rugueux étendu",
+           "match": "Forte fabrication de protéines"
+          },
+          {
+           "content": "Chloroplastes nombreux",
+           "match": "Photosynthèse intense"
+          }
+         ]
+        }
+       ],
+       "hint": "Associe chaque organite abondant à son rôle."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Dans cet exercice, tu identifies le type de cellules à partir d'indices. Cellule 1 : paroi, noyau, pas de chloroplaste, prélevée sur un bulbe. Cellule 2 : membrane seule, noyau, mitochondries. Cellule 3 : paroi, noyau, chloroplastes.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "La cellule 1 est :",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Lister : paroi, noyau. 2. Repérer les structures propres : la paroi. 3. Conclure : végétale. Pourquoi pas « une cellule animale » : une cellule animale n'a jamais de paroi.",
+         "answers": [
+          {
+           "content": "une cellule végétale",
+           "correct": true
+          },
+          {
+           "content": "une cellule animale",
+           "correct": false
+          },
+          {
+           "content": "une cellule procaryote",
+           "correct": false
+          },
+          {
+           "content": "une cellule morte",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La cellule 2 est :",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Lister : noyau, mitochondries. 2. Aucune structure propre au végétal. 3. Conclure : animale. Pourquoi pas « une cellule procaryote » : un noyau est présent, donc elle est eucaryote.",
+         "answers": [
+          {
+           "content": "une cellule animale",
+           "correct": true
+          },
+          {
+           "content": "une cellule végétale",
+           "correct": false
+          },
+          {
+           "content": "une cellule procaryote",
+           "correct": false
+          },
+          {
+           "content": "une cellule sans noyau",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La cellule 3 provient probablement d'un organe vert exposé à la lumière.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Repérer les chloroplastes. 2. Les chloroplastes se trouvent dans les parties éclairées, comme les feuilles. Pourquoi pas « Faux » : une cellule à chloroplastes vient d'une partie exposée à la lumière.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La cellule 1 n'a pas de chloroplaste car le bulbe est ___.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Repérer l'absence de chloroplaste. 2. Expliquer : le bulbe est enterré, sans lumière, donc sans chloroplaste. Pourquoi pas « vert » : un organe vert, éclairé, contiendrait des chloroplastes.",
+         "answers": [
+          {
+           "content": "enterré",
+           "correct": true
+          },
+          {
+           "content": "souterrain",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelles structures sont communes aux cellules 1, 2 et 3 ?",
+         "question_type": "multiple_correct_3",
+         "explanation": "Méthode : 1. Lister les structures de chaque cellule. 2. Repérer les structures communes : noyau, membrane, cytoplasme. Pourquoi pas « La paroi » : la cellule 2 n'en possède pas.",
+         "answers": [
+          {
+           "content": "Le noyau",
+           "correct": true
+          },
+          {
+           "content": "La membrane plasmique",
+           "correct": true
+          },
+          {
+           "content": "Le cytoplasme",
+           "correct": true
+          },
+          {
+           "content": "La paroi",
+           "correct": false
+          },
+          {
+           "content": "Les chloroplastes",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Cherche la paroi, puis les chloroplastes."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Dans cet exercice, tu compares les tailles et les structures de deux cellules fictives : une bactérie B de 2 µm et une cellule animale A de 100 µm.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Combien de fois la cellule A est-elle plus grande que la bactérie B ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Estimer les deux tailles : 100 µm et 2 µm. 2. Diviser : 100 ÷ 2 = 50. Pourquoi pas « 98 » : on a soustrait 2 de 100 au lieu de faire le rapport.",
+         "answers": [
+          {
+           "content": "50",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "fois"
+        },
+        {
+         "content": "Quelle est la cellule qui possède un noyau ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Chercher le noyau. 2. La cellule A est eucaryote, donc nucléée ; la bactérie est procaryote. Pourquoi pas « La bactérie B » : son ADN est libre dans le cytoplasme.",
+         "answers": [
+          {
+           "content": "La cellule animale A",
+           "correct": true
+          },
+          {
+           "content": "La bactérie B",
+           "correct": false
+          },
+          {
+           "content": "Les deux",
+           "correct": false
+          },
+          {
+           "content": "Aucune des deux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles structures ont les deux cellules en commun ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Chercher les organites entourés de membrane. 2. Les ribosomes et la membrane plasmique sont communs. Pourquoi pas « Des mitochondries » : la bactérie n'en possède pas.",
+         "answers": [
+          {
+           "content": "Des ribosomes",
+           "correct": true
+          },
+          {
+           "content": "Une membrane plasmique",
+           "correct": true
+          },
+          {
+           "content": "Des mitochondries",
+           "correct": false
+          },
+          {
+           "content": "Un noyau à enveloppe",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Parce que la bactérie n'a pas de noyau, elle ne contient aucun ADN.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Chercher le noyau : absent. 2. Pourtant l'ADN existe, libre dans le cytoplasme. Pourquoi pas « Vrai » : avoir un noyau et avoir de l'ADN sont deux choses différentes.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Une cellule dont l'ADN est dans un noyau est ___.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Chercher le noyau : présent. 2. Conclure : eucaryote. Pourquoi pas procaryote : l'ADN procaryote n'est pas dans un noyau.",
+         "answers": [
+          {
+           "content": "eucaryote",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Fais un rapport de tailles, puis compare les structures."
+      }
+     ]
+    },
+    {
+     "title": "Sujet 4 · Bilan sur l'organisation de la cellule",
+     "notions": "Toutes les notions de la leçon : microscope et taille réelle ; organites ; cellule animale et végétale ; cellule procaryote et eucaryote.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Dans cet exercice, tu fais le bilan sur le microscope et la taille réelle. Un élève observe des cellules avec un objectif ×40 et un oculaire ×10 (valeurs fictives).",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Quel est le grossissement total ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Calculer le grossissement total : 40 × 10 = 400. Pourquoi pas « 50 » : on a additionné les deux grossissements.",
+         "answers": [
+          {
+           "content": "400",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "×"
+        },
+        {
+         "content": "Une cellule mesure 44 mm sur le dessin. Quelle est sa taille réelle, en µm ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Mesurer : 44 mm. 2. Calculer la taille réelle : 44 ÷ 400 = 0,11 mm. 3. Convertir : 0,11 × 1 000 = 110 µm. Pourquoi pas « 17 600 µm » : on a multiplié 44 par 400 au lieu de diviser.",
+         "answers": [
+          {
+           "content": "110",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "µm"
+        },
+        {
+         "content": "Le microscope électronique permet de voir l'ultrastructure de la cellule.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Repérer l'instrument : le microscope électronique grossit des dizaines de milliers de fois. 2. Conclure : il montre l'ultrastructure. Pourquoi pas « Faux » : le microscope optique ne grossit pas assez pour voir les ribosomes.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Avec une barre d'échelle de 20 mm représentant 50 µm, une cellule mesure 36 mm. Quelle est sa taille réelle ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Mesurer : 36 mm. 2. Règle de trois : 36 × 50 ÷ 20 = 90 µm. Pourquoi pas « 14,4 µm » : on a divisé 36 par 50 puis multiplié par 20 : le rapport était à l'envers.",
+         "answers": [
+          {
+           "content": "90 µm",
+           "correct": true
+          },
+          {
+           "content": "72 µm",
+           "correct": false
+          },
+          {
+           "content": "14,4 µm",
+           "correct": false
+          },
+          {
+           "content": "1 800 µm",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La cellule est l'unité structurale et ___ des êtres vivants.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Rappeler la définition de la fiche. 2. La cellule est l'unité de structure et de fonctionnement. Pourquoi pas « chimique » : cette notion n'est pas la définition vue en cours.",
+         "answers": [
+          {
+           "content": "fonctionnelle",
+           "correct": true
+          }
+         ]
+        }
+       ],
+       "hint": "Pense au grossissement total avant de mesurer."
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Dans cet exercice, tu fais le bilan sur les organites.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Relie chaque organite à ce qu'on voit au microscope électronique.",
+         "question_type": "matching",
+         "explanation": "Méthode : 1. Reconnaître chaque organite à sa forme. 2. Noyau, enveloppe à pores ; mitochondrie, crêtes ; Golgi, sacs empilés ; ribosome, petit grain. Pourquoi pas relier les crêtes au Golgi : elles sont propres à la mitochondrie.",
+         "answers": [
+          {
+           "content": "Noyau",
+           "match": "Enveloppe percée de pores"
+          },
+          {
+           "content": "Mitochondrie",
+           "match": "Ovale avec des crêtes"
+          },
+          {
+           "content": "Appareil de Golgi",
+           "match": "Sacs empilés"
+          },
+          {
+           "content": "Ribosome",
+           "match": "Petits grains"
+          }
+         ]
+        },
+        {
+         "content": "Quel organite libère l'énergie lors de la respiration cellulaire ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Associer à chaque organite son rôle. 2. La respiration cellulaire se fait dans la mitochondrie. Pourquoi pas « Le noyau » : il contient l'information génétique.",
+         "answers": [
+          {
+           "content": "La mitochondrie",
+           "correct": true
+          },
+          {
+           "content": "Le ribosome",
+           "correct": false
+          },
+          {
+           "content": "Le noyau",
+           "correct": false
+          },
+          {
+           "content": "La vacuole",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Les ribosomes fabriquent les protéines.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Associer le rôle. 2. Les ribosomes sont le lieu de fabrication des protéines. Pourquoi pas « Faux » : le réticulum et le Golgi les transportent et les trient, mais ne les fabriquent pas.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "L'enveloppe du noyau est percée de ___.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Reconnaître le noyau. 2. Son enveloppe est percée de pores qui permettent les échanges. Pourquoi pas « crêtes » : les crêtes sont des replis de la mitochondrie.",
+         "answers": [
+          {
+           "content": "pores",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quels organites interviennent dans le transport et le tri des protéines ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Associer le rôle. 2. Le réticulum transporte, le Golgi trie et emballe. Pourquoi pas « La mitochondrie » : elle libère l'énergie, elle ne trie pas les protéines.",
+         "answers": [
+          {
+           "content": "Le réticulum endoplasmique",
+           "correct": true
+          },
+          {
+           "content": "L'appareil de Golgi",
+           "correct": true
+          },
+          {
+           "content": "La mitochondrie",
+           "correct": false
+          },
+          {
+           "content": "Le chloroplaste",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Pour chaque organite, retiens sa forme et son rôle."
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Dans cet exercice, tu fais le bilan sur la cellule animale et la cellule végétale.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Quelle cellule possède une paroi, des chloroplastes et une grande vacuole ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer les structures propres à la cellule végétale. 2. Elles sont toutes présentes : végétale. Pourquoi pas « La cellule animale » : aucune cellule animale n'a de paroi.",
+         "answers": [
+          {
+           "content": "La cellule végétale",
+           "correct": true
+          },
+          {
+           "content": "La cellule animale",
+           "correct": false
+          },
+          {
+           "content": "La bactérie",
+           "correct": false
+          },
+          {
+           "content": "Aucune",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une cellule sans chloroplaste est toujours une cellule animale.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Repérer la paroi, critère le plus sûr. 2. Une cellule de racine a une paroi sans chloroplaste : elle est végétale. Pourquoi pas « Vrai » : l'absence de chloroplaste s'explique parfois par l'absence de lumière.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quelles structures sont communes aux cellules animale et végétale ?",
+         "question_type": "multiple_correct_3",
+         "explanation": "Méthode : 1. Lister. 2. Noyau, mitochondries, ribosomes sont communs. Pourquoi pas « La paroi » : elle est propre à la cellule végétale.",
+         "answers": [
+          {
+           "content": "Le noyau",
+           "correct": true
+          },
+          {
+           "content": "Les mitochondries",
+           "correct": true
+          },
+          {
+           "content": "Les ribosomes",
+           "correct": true
+          },
+          {
+           "content": "La paroi",
+           "correct": false
+          },
+          {
+           "content": "Les chloroplastes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La paroi des cellules végétales est faite de ___.",
+         "question_type": "fill_blank",
+         "explanation": "Méthode : 1. Repérer la paroi. 2. Elle est faite de cellulose. Pourquoi pas « chlorophylle » : c'est le pigment vert des chloroplastes.",
+         "answers": [
+          {
+           "content": "cellulose",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quel est le rôle de la grande vacuole ?",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Repérer les structures propres. 2. Associer : la vacuole stocke l'eau et des substances. Pourquoi pas « Fabriquer les protéines » : c'est le rôle des ribosomes.",
+         "answers": [
+          {
+           "content": "Stocker l'eau et des substances",
+           "correct": true
+          },
+          {
+           "content": "Fabriquer les protéines",
+           "correct": false
+          },
+          {
+           "content": "Libérer l'énergie",
+           "correct": false
+          },
+          {
+           "content": "Contenir l'information génétique",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Cherche la paroi avant de conclure."
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Dans cet exercice, tu fais le bilan de toute la leçon. Trois cellules fictives sont décrites : S1 de 2 µm sans noyau, avec ADN libre et paroi ; S2 de 20 µm avec noyau et mitochondries, sans paroi ; S3 de 100 µm avec noyau, paroi et chloroplastes.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "S1 est :",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Estimer la taille : 2 µm. 2. Chercher le noyau : absent. 3. Conclure : procaryote. Pourquoi pas « une cellule végétale » : la paroi de S1 ne suffit pas : elle n'a ni noyau ni chloroplaste.",
+         "answers": [
+          {
+           "content": "une cellule procaryote",
+           "correct": true
+          },
+          {
+           "content": "une cellule animale",
+           "correct": false
+          },
+          {
+           "content": "une cellule végétale",
+           "correct": false
+          },
+          {
+           "content": "une cellule eucaryote",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "S2 est :",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Lister : noyau, mitochondries. 2. Pas de paroi ni de chloroplaste. 3. Conclure : animale. Pourquoi pas « une cellule végétale » : elle n'a pas de paroi.",
+         "answers": [
+          {
+           "content": "une cellule animale",
+           "correct": true
+          },
+          {
+           "content": "une cellule végétale",
+           "correct": false
+          },
+          {
+           "content": "une cellule procaryote",
+           "correct": false
+          },
+          {
+           "content": "une cellule à chloroplastes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "S3 est :",
+         "question_type": "single_choice",
+         "explanation": "Méthode : 1. Lister : noyau, paroi, chloroplastes. 2. Ces structures sont propres au végétal. 3. Conclure : végétale. Pourquoi pas « une cellule animale » : aucune cellule animale n'a de chloroplastes.",
+         "answers": [
+          {
+           "content": "une cellule végétale",
+           "correct": true
+          },
+          {
+           "content": "une cellule animale",
+           "correct": false
+          },
+          {
+           "content": "une cellule procaryote",
+           "correct": false
+          },
+          {
+           "content": "une cellule sans noyau",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Combien de fois S3 est-elle plus grande que S1 ?",
+         "question_type": "numeric",
+         "explanation": "Méthode : 1. Estimer les tailles : 100 µm et 2 µm. 2. Diviser : 100 ÷ 2 = 50. Pourquoi pas « 98 » : on a soustrait au lieu de diviser.",
+         "answers": [
+          {
+           "content": "50",
+           "correct": true
+          }
+         ],
+         "tolerance": 0,
+         "unit": "fois"
+        },
+        {
+         "content": "S1 possède des organites entourés de membrane.",
+         "question_type": "true_false",
+         "explanation": "Méthode : 1. Chercher les organites à membrane : aucun dans S1. 2. Conclure : procaryote. Pourquoi pas « Vrai » : les organites à membrane sont propres aux eucaryotes.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quels organites S2 et S3 possèdent-elles toutes deux ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Méthode : 1. Lister les structures de S2 et de S3. 2. Repérer les structures communes : noyau et mitochondries. Pourquoi pas « Des chloroplastes » : S2 n'en possède pas.",
+         "answers": [
+          {
+           "content": "Des mitochondries",
+           "correct": true
+          },
+          {
+           "content": "Un noyau",
+           "correct": true
+          },
+          {
+           "content": "Des chloroplastes",
+           "correct": false
+          },
+          {
+           "content": "Une paroi",
+           "correct": false
+          }
+         ]
+        }
+       ],
+       "hint": "Pour chaque cellule, estime la taille, cherche le noyau puis la paroi."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
