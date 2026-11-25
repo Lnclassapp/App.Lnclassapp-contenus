@@ -182,14 +182,14 @@
             "Conclure : dans l'un de ces deux cas, pas d'effet de rotation ; sinon la force fait tourner le solide, dans le sens horaire ou antihoraire selon son côté."
           ],
           "example": {
-            "statement": "Une porte de classe tourne autour de l'axe vertical de ses gonds. Un élève pousse la poignée avec une force $\\vec F_1$ horizontale, perpendiculaire à la porte. Une élève tire la poignée avec une force $\\vec F_2$ horizontale, dirigée droit vers les gonds. Chaque force fait-elle tourner la porte ?",
+            "statement": "Une porte de classe tourne autour de l'axe vertical de ses gonds. Un élève pousse la poignée avec une force $\\vec F_1$ horizontale, perpendiculaire à la porte. Une élève pousse la poignée avec une force $\\vec F_2$ horizontale, dirigée droit vers les gonds. Chaque force fait-elle tourner la porte ?",
             "steps": [
               "Repérer : l'axe est la verticale des gonds. La droite d'action de $\\vec F_1$ est perpendiculaire à la porte ; celle de $\\vec F_2$ suit la porte jusqu'aux gonds.",
               "Chercher : la droite d'action de $\\vec F_1$ ne coupe pas l'axe et ne lui est pas parallèle ; celle de $\\vec F_2$ coupe l'axe.",
               "Conclure : $\\vec F_1$ fait tourner la porte ; $\\vec F_2$ n'a aucun effet de rotation."
             ]
           },
-          "pitfall": "Croire qu'une grande force fait toujours tourner le solide. Contre-exemple : une force de 500 N dont la droite d'action coupe l'axe (on tire la porte droit vers les gonds) ne fait pas tourner la porte, alors qu'une force de 5 N appliquée à la poignée, perpendiculairement à la porte, la fait tourner. Même chose pour une force parallèle à l'axe, comme le poids de la porte. Ce n'est pas l'intensité seule qui compte, c'est la **position de la droite d'action** par rapport à l'axe.",
+          "pitfall": "Croire qu'une grande force fait toujours tourner le solide. Contre-exemple : une force de 500 N dont la droite d'action coupe l'axe (on pousse la porte droit vers les gonds) ne fait pas tourner la porte, alors qu'une force de 5 N appliquée à la poignée, perpendiculairement à la porte, la fait tourner. Même chose pour une force parallèle à l'axe, comme le poids de la porte. Ce n'est pas l'intensité seule qui compte, c'est la **position de la droite d'action** par rapport à l'axe.",
           "figure": "porte-dessus",
           "practice": {
             "statement": "Tu t'entraînes à reconnaître si une force fait tourner un solide autour d'un axe fixe.",
@@ -378,14 +378,14 @@
                 {
                   "content": "Une porte tourne autour de l'axe vertical de ses gonds. Relie chaque force à son effet.",
                   "question_type": "matching",
-                  "explanation": "Étape 1 — Repérer l'axe de rotation et la droite d'action : l'axe est vertical ; on trace la droite d'action de chaque force. Étape 2 — Chercher si la droite d'action est parallèle à l'axe ou coupe l'axe : la poussée perpendiculaire ne coupe pas l'axe ; la traction vers les gonds le coupe ; le sac tire verticalement, parallèlement à l'axe. Étape 3 — Conclure : on associe donc chaque force à son effet.",
+                  "explanation": "Étape 1 — Repérer l'axe de rotation et la droite d'action : l'axe est vertical ; on trace la droite d'action de chaque force. Étape 2 — Chercher si la droite d'action est parallèle à l'axe ou coupe l'axe : la poussée perpendiculaire ne coupe pas l'axe ; la poussée vers les gonds le coupe ; le sac tire verticalement, parallèlement à l'axe. Étape 3 — Conclure : on associe donc chaque force à son effet.",
                   "answers": [
                     {
                       "content": "On pousse la poignée horizontalement, perpendiculairement à la porte",
                       "match": "Effet de rotation"
                     },
                     {
-                      "content": "On tire la poignée horizontalement, droit vers les gonds",
+                      "content": "On pousse la poignée horizontalement, droit vers les gonds",
                       "match": "Aucun effet : la droite d'action coupe l'axe"
                     },
                     {
@@ -470,7 +470,7 @@
                 {
                   "content": "Une balançoire tourne autour de son pivot horizontal. Parmi ces forces appliquées à la planche, lesquelles n'ont aucun effet de rotation autour du pivot ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Étape 1 — Repérer l'axe de rotation et la droite d'action : l'axe est l'horizontale du pivot ; on trace la droite d'action de chaque force. Étape 2 — Chercher si la droite d'action est parallèle à l'axe ou coupe l'axe : la réaction du pivot et la force dirigée vers le pivot ont des droites d'action qui coupent l'axe ; le poids de l'enfant et la force à l'extrémité sont à distance de l'axe. Étape 3 — Conclure : seules les deux premières n'ont aucun effet de rotation.",
+                  "explanation": "Étape 1 — Repérer l'axe de rotation et la droite d'action : l'axe est l'horizontale du pivot ; on trace la droite d'action de chaque force. Étape 2 — Chercher si la droite d'action est parallèle à l'axe ou coupe l'axe : la réaction du pivot et la force dirigée vers le pivot ont des droites d'action qui coupent l'axe ; le poids de l'enfant et la force à l'extrémité sont à distance de l'axe. Étape 3 — Conclure : seules la réaction du pivot et la force dirigée vers le pivot n'ont aucun effet de rotation.",
                   "answers": [
                     {
                       "content": "La réaction du pivot, dont la droite d'action passe par l'axe",
@@ -496,7 +496,7 @@
         },
         {
           "name": "Calculer le moment d'une force par rapport à un axe",
-          "remember": "Le **moment** d'une force $\\vec F$ par rapport à un axe mesure son pouvoir de faire tourner le solide. Il vaut $M = \\pm F \\times d$, où $F$ est l'intensité de la force (en N) et $d$ le **bras de levier** (en m) : la distance de l'axe à la **droite d'action** de la force, mesurée perpendiculairement. Le moment s'exprime en **N·m**. On choisit un **sens positif** de rotation : le moment est $+$ si la force tend à faire tourner dans ce sens, $-$ sinon. Pour une force perpendiculaire à la barre, $d$ est la distance de l'axe au point d'application ; pour une force inclinée d'un angle $\\alpha$ avec la barre, $d = L \\times \\sin\\alpha$. Si la droite d'action coupe l'axe ou lui est parallèle, le moment est nul.",
+          "remember": "Le **moment** d'une force $\\vec F$ par rapport à un axe mesure son pouvoir de faire tourner le solide. Il vaut $M = \\pm F \\times d$, où $F$ est l'intensité de la force (en N) et $d$ le **bras de levier** (en m) : la distance de l'axe à la **droite d'action** de la force, mesurée perpendiculairement. Le moment s'exprime en **N·m**. On choisit un **sens positif** de rotation : le moment est $+$ si la force tend à faire tourner dans ce sens, $-$ sinon. Pour une force perpendiculaire à la barre, $d$ est la distance de l'axe au point d'application ; pour une force inclinée d'un angle $\\alpha$ avec la barre, $d = L \\times \\sin\\alpha$, où $L$ est la distance de l'axe au point d'application. Si la droite d'action coupe l'axe ou lui est parallèle, le moment est nul.",
           "method": [
             "Choisir le sens positif de rotation.",
             "Tracer la droite d'action de la force et mesurer le bras de levier $d$, en mètres.",
@@ -579,7 +579,7 @@
               "figure": "cle-oblique",
               "questions": [
                 {
-                  "content": "Une clé plate de 40 cm est fixée sur un boulon. On appuie à son extrémité avec une force de 60 N, perpendiculaire à la clé, qui la fait tourner dans le sens positif (le sens contraire des aiguilles d'une montre). Quel est le moment de cette force par rapport à l'axe du boulon, en N·m ?",
+                  "content": "Une clé plate de 40 cm est fixée sur un boulon. On appuie à son extrémité avec une force de 60 N, perpendiculaire à la clé, qui la fait tourner dans le sens positif (le sens contraire des aiguilles d'une montre). Quel est le moment de cette force par rapport à l'axe du boulon, en N·m (sans écrire le signe +) ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Choisir le sens positif : le sens positif est le sens contraire des aiguilles d'une montre. Étape 2 — Tracer la droite d'action et mesurer le bras de levier : la force est perpendiculaire à la clé : $d = 40$ cm $= 0{,}4$ m. Étape 3 — Calculer l'intensité du moment : $F \\times d = 60 \\times 0{,}4 = 24$ N·m. Étape 4 — Donner le signe : la force tourne dans le sens positif : $M = +24$ N·m.",
                   "answers": [
@@ -605,7 +605,7 @@
                   "tolerance": 0
                 },
                 {
-                  "content": "Une force de 60 N, inclinée de 30° par rapport à la clé, est appliquée à 0,2 m du boulon. Son bras de levier vaut 0,1 m, et elle tend à faire tourner la clé dans le sens positif. Quel est son moment par rapport à l'axe du boulon, en N·m ?",
+                  "content": "Une force de 60 N, inclinée de 30° par rapport à la clé, est appliquée à 0,2 m du boulon. Son bras de levier vaut 0,1 m, et elle tend à faire tourner la clé dans le sens positif. Quel est son moment par rapport à l'axe du boulon, en N·m (sans écrire le signe +) ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Choisir le sens positif : le sens positif est celui où la force tourne la clé. Étape 2 — Tracer la droite d'action et mesurer le bras de levier : le bras de levier est donné : $d = 0{,}1$ m. Étape 3 — Calculer l'intensité du moment : $F \\times d = 60 \\times 0{,}1 = 6$ N·m. Étape 4 — Donner le signe : la force tourne dans le sens positif : $M = +6$ N·m.",
                   "answers": [
@@ -680,7 +680,7 @@
                 {
                   "content": "Pour arracher un clou, un ouvrier appuie avec 80 N sur un pied-de-biche, perpendiculairement à celui-ci, à 50 cm du point d'appui. Quelle est l'intensité du moment de sa force par rapport au point d'appui ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Choisir le sens positif : le sens positif n'est pas demandé. Étape 2 — Tracer la droite d'action et mesurer le bras de levier : la force est perpendiculaire : $d = 50$ cm $= 0{,}5$ m. Étape 3 — Calculer l'intensité du moment : $F \\times d = 80 \\times 0{,}5 = 40$ N·m. Étape 4 — Donner le signe : on donne l'intensité. 4 000 vient de $80 \\times 50$ avec des centimètres ; 130 vient d'une addition : un moment est un produit.",
+                  "explanation": "Étape 1 — Choisir le sens positif : le sens positif n'est pas demandé. Étape 2 — Tracer la droite d'action et mesurer le bras de levier : la force est perpendiculaire : $d = 50$ cm $= 0{,}5$ m. Étape 3 — Calculer l'intensité du moment : $F \\times d = 80 \\times 0{,}5 = 40$ N·m. Étape 4 — Donner le signe : on donne l'intensité. 4 000 vient de $80 \\times 50$ avec des centimètres ; 130 vient d'une addition et 160 de $80 \\div 0{,}5$ : un moment est un produit de la force par le bras de levier.",
                   "answers": [
                     {
                       "content": "40 N·m",
@@ -853,7 +853,7 @@
               "figure": "balancoire-planche",
               "questions": [
                 {
-                  "content": "Une planche de balançoire repose en son milieu sur un pivot. À gauche, à 1 m du pivot, un enfant de poids 400 N tend à faire descendre le côté gauche. Le sens positif est celui où tourne la planche quand le côté gauche descend. Quel est le moment de son poids par rapport au pivot, en N·m ?",
+                  "content": "Une planche de balançoire repose en son milieu sur un pivot. À gauche, à 1 m du pivot, un enfant de poids 400 N tend à faire descendre le côté gauche. Le sens positif est celui où tourne la planche quand le côté gauche descend. Quel est le moment de son poids par rapport au pivot, en N·m (sans écrire le signe +) ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : le sens positif est celui où le côté gauche descend ; la force est le poids de 400 N. Étape 2 — Écrire le moment de chaque force : le poids de l'enfant tourne dans le sens positif : $M_1 = +400 \\times 1 = +400$ N·m. Étape 3 — Écrire le théorème des moments : on garde ce moment pour la somme. Étape 4 — Résoudre : $M_1 = +400$ N·m.",
                   "answers": [
@@ -1045,7 +1045,7 @@
           "figure": null,
           "questions": [
             {
-              "content": "Une porte large de 0,90 m est poussée à sa poignée par une force de 20 N, horizontale et perpendiculaire à la porte. Cette force fait tourner la porte dans le sens positif choisi. Quel est son moment par rapport à l'axe des gonds, en N·m ?",
+              "content": "Une porte large de 0,90 m est poussée à sa poignée par une force de 20 N, horizontale et perpendiculaire à la porte. Cette force fait tourner la porte dans le sens positif choisi. Quel est son moment par rapport à l'axe des gonds, en N·m (sans écrire le signe +) ?",
               "question_type": "numeric",
               "explanation": "Étape 1 — Choisir le sens positif : le sens positif est celui dans lequel cette force fait tourner la porte. Étape 2 — Tracer la droite d'action et mesurer le bras de levier : la force est perpendiculaire à la porte, appliquée à la poignée : $d = 0{,}9$ m. Étape 3 — Calculer l'intensité du moment : $F \\times d = 20 \\times 0{,}9 = 18$ N·m. Étape 4 — Donner le signe : la force tourne dans le sens positif : $M_1 = +18$ N·m.",
               "answers": [
@@ -1058,7 +1058,7 @@
               "tolerance": 0
             },
             {
-              "content": "Une porte large de 0,90 m est poussée en son milieu par une force de 40 N, horizontale et perpendiculaire à la porte, dans le sens qui fait tourner la porte dans le sens négatif choisi. Quel est son moment par rapport à l'axe des gonds, en N·m ?",
+              "content": "Une porte large de 0,90 m est poussée en son milieu par une force de 40 N, horizontale et perpendiculaire à la porte, Le sens positif choisi est le sens opposé à celui où tourne cette force. Quel est son moment par rapport à l'axe des gonds, en N·m ?",
               "question_type": "numeric",
               "explanation": "Étape 1 — Choisir le sens positif : le sens positif est le sens opposé à celui de cette force. Étape 2 — Tracer la droite d'action et mesurer le bras de levier : la force est appliquée au milieu : $d = 0{,}9 \\div 2 = 0{,}45$ m. Étape 3 — Calculer l'intensité du moment : $F \\times d = 40 \\times 0{,}45 = 18$ N·m. Étape 4 — Donner le signe : la force tourne dans le sens négatif : $M_2 = -18$ N·m.",
               "answers": [
@@ -1125,12 +1125,12 @@
         },
         {
           "title": "La balance romaine du marché",
-          "statement": "Au marché, une vendeuse utilise une balance romaine : une tige horizontale suspendue par un crochet fixe O. À gauche de O, à 0,05 m, on accroche la charge. À droite, un curseur de poids 20 N glisse le long de la tige. La balance est réglée à vide, donc on néglige le poids de la tige. Un sac de 8 kg est accroché, la tige est horizontale et immobile. On prend $g = 10$ N/kg. Le sens positif est celui dans lequel le sac fait tourner la tige.",
+          "statement": "Au marché, une vendeuse utilise une balance romaine : une tige horizontale suspendue par un crochet fixe O. À gauche de O, à 0,05 m, on accroche la charge. À droite, un curseur de poids 20 N glisse le long de la tige. On néglige le poids de la tige. Un sac de 8 kg est accroché, la tige est horizontale et immobile. On prend $g = 10$ N/kg. Le sens positif est celui dans lequel le sac fait tourner la tige.",
           "exercise_type": "fixation",
           "figure": null,
           "questions": [
             {
-              "content": "Un sac de 8 kg est accroché à 0,05 m du crochet de suspension d'une balance romaine. On prend $g = 10$ N/kg. Le sens positif est celui où le sac fait tourner la tige. Quel est le moment du poids du sac par rapport au crochet, en N·m ?",
+              "content": "Un sac de 8 kg est accroché à 0,05 m du crochet de suspension d'une balance romaine. On prend $g = 10$ N/kg. Le sens positif est celui où le sac fait tourner la tige. Quel est le moment du poids du sac par rapport au crochet, en N·m (sans écrire le signe +) ?",
               "question_type": "numeric",
               "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : le poids du sac est $P = 8 \\times 10 = 80$ N ; sens positif : celui où le sac tourne la tige. Étape 2 — Écrire le moment de chaque force : $M_{sac} = +80 \\times 0{,}05 = +4$ N·m. Étape 3 — Écrire le théorème des moments : ce moment sera compensé par celui du curseur. Étape 4 — Résoudre : $M_{sac} = +4$ N·m.",
               "answers": [
@@ -1169,7 +1169,7 @@
               "tolerance": 0
             },
             {
-              "content": "Sur une balance romaine, le crochet de charge est à 0,05 m du crochet de suspension et le curseur pèse 20 N. On pèse un sac de 16 kg, soit 160 N, avec $g = 10$ N/kg. La tige est horizontale. À quelle distance du crochet de suspension se place le curseur ?",
+              "content": "Sur une balance romaine, le crochet de charge est à 0,05 m du crochet de suspension et le curseur pèse 20 N. On pèse un sac de 16 kg, soit 160 N, avec $g = 10$ N/kg. La tige, de poids négligé, est horizontale. À quelle distance du crochet de suspension se place le curseur ?",
               "question_type": "single_choice",
               "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : les forces sont le poids du sac (160 N), celui du curseur (20 N) et la tension du crochet. Étape 2 — Écrire le moment de chaque force : $M_{sac} = +160 \\times 0{,}05 = +8$ N·m ; $M_{curseur} = -20 \\times x$. Étape 3 — Écrire le théorème des moments : $\\sum M = 0$ donne $8 - 20 \\times x = 0$. Étape 4 — Résoudre : $x = 8 \\div 20 = 0{,}4$ m. Pourquoi pas 0,20 m : c'est la distance trouvée pour un sac de 8 kg ; un sac deux fois plus lourd demande un curseur deux fois plus loin.",
               "answers": [
@@ -1192,7 +1192,7 @@
               ]
             },
             {
-              "content": "Si on double la masse accrochée à une balance romaine, il faut doubler la distance du curseur au crochet de suspension.",
+              "content": "La tige d'une balance romaine a un poids négligé. Si on double la masse accrochée, il faut doubler la distance du curseur au crochet de suspension.",
               "question_type": "true_false",
               "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : les forces sont le poids de la charge et celui du curseur (fixe). Étape 2 — Écrire le moment de chaque force : $M_{charge} = P \\times 0{,}05$ et $M_{curseur} = -20 \\times x$. Étape 3 — Écrire le théorème des moments : $P \\times 0{,}05 = 20 \\times x$. Étape 4 — Résoudre : $x = P \\times 0{,}05 \\div 20$ est proportionnel à $P$ : si $P$ double, $x$ double. L'affirmation est vraie.",
               "answers": [
@@ -1207,7 +1207,7 @@
               ]
             },
             {
-              "content": "Sur une balance romaine, le crochet de charge est à 0,05 m du crochet de suspension et le curseur pèse 20 N. On ajoute 1 kg à la charge (10 N de plus avec $g = 10$ N/kg). De combien de centimètres faut-il éloigner le curseur pour garder la tige horizontale ?",
+              "content": "Sur une balance romaine, le crochet de charge est à 0,05 m du crochet de suspension et le curseur pèse 20 N. La tige a un poids négligé. On ajoute 1 kg à la charge (10 N de plus avec $g = 10$ N/kg). De combien de centimètres faut-il éloigner le curseur pour garder la tige horizontale ?",
               "question_type": "numeric",
               "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : le poids ajouté est 10 N ; le sens positif est celui où la charge tourne la tige. Étape 2 — Écrire le moment de chaque force : le moment supplémentaire est $+10 \\times 0{,}05 = +0{,}5$ N·m ; le curseur doit le compenser : $-20 \\times \\Delta x$. Étape 3 — Écrire le théorème des moments : $0{,}5 - 20 \\times \\Delta x = 0$. Étape 4 — Résoudre : $\\Delta x = 0{,}5 \\div 20 = 0{,}025$ m, soit 2,5 cm.",
               "answers": [
@@ -1228,7 +1228,7 @@
           "figure": null,
           "questions": [
             {
-              "content": "Le poids total d'une brouette chargée est de 800 N, appliqué à 0,50 m de l'axe de la roue. Le sens positif est celui où le poids fait tourner la brouette autour de l'axe de la roue. Quel est le moment du poids par rapport à cet axe, en N·m ?",
+              "content": "Le poids total d'une brouette chargée est de 800 N, appliqué à 0,50 m de l'axe de la roue. Le sens positif est celui où le poids fait tourner la brouette autour de l'axe de la roue. Quel est le moment du poids par rapport à cet axe, en N·m (sans écrire le signe +) ?",
               "question_type": "numeric",
               "explanation": "Étape 1 — Choisir le sens positif : le sens positif est celui où le poids tourne la brouette. Étape 2 — Tracer la droite d'action et mesurer le bras de levier : le poids est vertical, à 0,5 m de l'axe de la roue : $d = 0{,}5$ m. Étape 3 — Calculer l'intensité du moment : $P \\times d = 800 \\times 0{,}5 = 400$ N·m. Étape 4 — Donner le signe : le poids tourne dans le sens positif : $M_P = +400$ N·m.",
               "answers": [
@@ -1284,7 +1284,7 @@
                   "correct": false
                 },
                 {
-                  "content": "Elle devient nulle",
+                  "content": "Elle est divisée par quatre : elle vaut 62,5 N",
                   "correct": false
                 }
               ]
@@ -1325,7 +1325,7 @@
               "tolerance": 0
             },
             {
-              "content": "Une corde de tension 120 N passe sur une poulie de rayon 0,10 m. La corde est tangente à la poulie, donc son bras de levier est le rayon. Le sens positif est celui où cette corde fait tourner la poulie. Quel est le moment de la tension de cette corde par rapport à l'axe de la poulie, en N·m ?",
+              "content": "Une corde de tension 120 N passe sur une poulie de rayon 0,10 m. La corde est tangente à la poulie, donc son bras de levier est le rayon. Le sens positif est celui où cette corde fait tourner la poulie. Quel est le moment de la tension de cette corde par rapport à l'axe de la poulie, en N·m (sans écrire le signe +) ?",
               "question_type": "numeric",
               "explanation": "Étape 1 — Choisir le sens positif : le sens positif est celui dans lequel cette corde tourne la poulie. Étape 2 — Tracer la droite d'action et mesurer le bras de levier : la corde est tangente à la poulie : le bras de levier est le rayon, $d = 0{,}1$ m. Étape 3 — Calculer l'intensité du moment : $F \\times d = 120 \\times 0{,}1 = 12$ N·m. Étape 4 — Donner le signe : la corde tourne la poulie dans le sens positif : $M = +12$ N·m.",
               "answers": [
@@ -1381,7 +1381,7 @@
                   "correct": false
                 },
                 {
-                  "content": "Elle devient nulle",
+                  "content": "Elle est divisée par quatre car le rayon double",
                   "correct": false
                 }
               ]
@@ -1615,7 +1615,7 @@
                   ]
                 },
                 {
-                  "content": "Un solide mobile autour d'un axe fixe est en équilibre. Il est soumis à deux forces : l'une a un moment de +15 N·m par rapport à l'axe. On néglige les autres forces. Quel est le moment de l'autre force, en N·m ?",
+                  "content": "Un solide mobile autour d'un axe fixe est en équilibre. Il est soumis à deux forces : l'une a un moment de +15 N·m par rapport à l'axe. Les autres forces ont un moment nul par rapport à l'axe. On a choisi un sens positif. Quel est le moment de l'autre force, en N·m ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : le bilan est de deux forces ; le moment de la première est +15 N·m. Étape 2 — Écrire le moment de chaque force : on note $M_2$ le moment de la seconde. Étape 3 — Écrire le théorème des moments : $\\sum M = 0$ donne $15 + M_2 = 0$. Étape 4 — Résoudre : $M_2 = -15$ N·m. Pourquoi pas +15 N·m : avec deux moments égaux de même signe, la somme vaudrait 30 N·m, pas 0 : le second moment doit être de signe opposé.",
                   "answers": [
@@ -1690,7 +1690,7 @@
                 {
                   "content": "Mariam a une masse de 20 kg. On prend $g = 10$ N/kg. Quel est son poids, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : la force est le poids de Mariam. Étape 2 — Écrire le moment de chaque force : le moment sera calculé ensuite ; pour l'instant, on cherche l'intensité du poids. Étape 3 — Écrire le théorème des moments : on applique $P = m \\times g$. Étape 4 — Résoudre : $P = 20 \\times 10 = 200$ N. Pourquoi pas 20 N : 20 est la masse en kg ; le poids se calcule avec $P = m \\times g$ et se compte en newtons.",
+                  "explanation": "Étape 1 — Données : $m = 20$ kg et $g = 10$ N/kg. Étape 2 — Formule : $P = m \\times g$. Étape 3 — Application numérique : $P = 20 \\times 10 = 200$ N. Étape 4 — Unité : le poids se compte en newtons. Pourquoi pas 20 N : 20 est la masse en kg ; le poids se calcule avec $P = m \\times g$ et se compte en newtons.",
                   "answers": [
                     {
                       "content": "200",
@@ -1701,7 +1701,7 @@
                   "tolerance": 0
                 },
                 {
-                  "content": "Une enfant de poids 200 N est assise à 1,5 m du pivot, à gauche. Le sens positif est celui où le côté gauche descend. Quel est le moment de son poids par rapport au pivot, en N·m ?",
+                  "content": "Une enfant de poids 200 N est assise à 1,5 m du pivot, à gauche. Le sens positif est celui où le côté gauche descend. Quel est le moment de son poids par rapport au pivot, en N·m (sans écrire le signe +) ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : le poids est 200 N ; sens positif : le côté gauche qui descend. Étape 2 — Écrire le moment de chaque force : $M = +200 \\times 1{,}5 = +300$ N·m. Étape 3 — Écrire le théorème des moments : ce moment sera compensé par celui de Yao. Étape 4 — Résoudre : $M = +300$ N·m. Pourquoi pas 200 N·m : ce serait oublier le bras de levier : il faut multiplier 200 N par 1,5 m.",
                   "answers": [
@@ -1780,7 +1780,7 @@
                 {
                   "content": "Un sac de riz de 10 kg est accroché à une balance romaine. On prend $g = 10$ N/kg. Quel est le poids du sac, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : la force est le poids du sac ; on cherche son intensité. Étape 2 — Écrire le moment de chaque force : on calculera le moment ensuite. Étape 3 — Écrire le théorème des moments : on applique $P = m \\times g$. Étape 4 — Résoudre : $P = 10 \\times 10 = 100$ N. Pourquoi pas 10 N : 10 est la masse en kg ; le poids se calcule avec $P = m \\times g$.",
+                  "explanation": "Étape 1 — Données : $m = 10$ kg et $g = 10$ N/kg. Étape 2 — Formule : $P = m \\times g$. Étape 3 — Application numérique : $P = 10 \\times 10 = 100$ N. Étape 4 — Unité : le poids se compte en newtons. Pourquoi pas 10 N : 10 est la masse en kg ; le poids se calcule avec $P = m \\times g$.",
                   "answers": [
                     {
                       "content": "100",
@@ -1791,7 +1791,7 @@
                   "tolerance": 0
                 },
                 {
-                  "content": "Un sac de poids 100 N est accroché à 0,05 m du crochet de suspension d'une balance romaine. Le sens positif est celui où le sac fait tourner la tige. Quel est le moment du poids du sac par rapport au crochet, en N·m ?",
+                  "content": "Un sac de poids 100 N est accroché à 0,05 m du crochet de suspension d'une balance romaine. Le sens positif est celui où le sac fait tourner la tige. Quel est le moment du poids du sac par rapport au crochet, en N·m (sans écrire le signe +) ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : le poids est 100 N ; sens positif : celui où le sac tourne la tige. Étape 2 — Écrire le moment de chaque force : $M = +100 \\times 0{,}05 = +5$ N·m. Étape 3 — Écrire le théorème des moments : ce moment sera compensé par celui du curseur. Étape 4 — Résoudre : $M = +5$ N·m. Pourquoi pas 500 N·m : ce résultat vient de $100 \\times 5$ avec des centimètres : il faut convertir 5 cm en 0,05 m.",
                   "answers": [
@@ -1856,7 +1856,7 @@
             },
             {
               "title": "Exercice 2",
-              "statement": "Sur un chantier d'Abidjan, un ouvrier utilise une brouette et un pied-de-biche. On prend $g = 10$ N/kg.",
+              "statement": "Sur un chantier d'Abidjan, un ouvrier utilise une brouette et un pied-de-biche.",
               "exercise_type": "evaluation",
               "figure": null,
               "hint": "Théorème des moments par rapport au point d'appui : moment de la main = moment du clou.",
@@ -1890,7 +1890,7 @@
                 {
                   "content": "Un pied-de-biche permet d'exercer sur le clou une force plus grande que celle de la main.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : les forces sont celles de la main et du clou. Étape 2 — Écrire le moment de chaque force : $F_{main} \\times d_{main}$ = $F_{clou} \\times d_{clou}$. Étape 3 — Écrire le théorème des moments : le bras de levier de la main est plus grand que celui du clou. Étape 4 — Résoudre : donc $F_{clou} > F_{main}$ : l'affirmation est vraie. Pourquoi pas « Faux » : à l'équilibre, ce sont les moments qui sont égaux ; la force est plus grande du côté du petit bras de levier.",
+                  "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : les forces sont celles de la main et du clou. Étape 2 — Écrire le moment de chaque force : $M_{main} = F_{main} \\times d_{main}$ et $M_{clou} = F_{clou} \\times d_{clou}$ ; la réaction du point d'appui a un moment nul. Étape 3 — Écrire le théorème des moments : $\\sum M = 0$ : ces deux moments sont égaux en intensité ; le bras de levier de la main est plus grand que celui du clou. Étape 4 — Résoudre : donc $F_{clou} > F_{main}$ : l'affirmation est vraie. Pourquoi pas « Faux » : à l'équilibre, ce sont les moments qui sont égaux ; la force est plus grande du côté du petit bras de levier.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -1903,7 +1903,7 @@
                   ]
                 },
                 {
-                  "content": "Un ouvrier tire sur un pied-de-biche avec une force de 200 N dirigée suivant le pied-de-biche, droit vers le point d'appui. Quel est le moment de cette force par rapport au point d'appui ?",
+                  "content": "Un ouvrier pousse sur un pied-de-biche avec une force de 200 N dirigée suivant le pied-de-biche, droit vers le point d'appui. Quel est le moment de cette force par rapport au point d'appui ?",
                   "question_type": "single_choice",
                   "explanation": "Étape 1 — Choisir le sens positif : on choisit un sens positif, sans effet ici. Étape 2 — Tracer la droite d'action et mesurer le bras de levier : la droite d'action suit le pied-de-biche jusqu'au point d'appui : le bras de levier est $d = 0$. Étape 3 — Calculer l'intensité du moment : $F \\times d = 200 \\times 0 = 0$ N·m. Étape 4 — Donner le signe : le moment est nul, sans signe. Pourquoi pas positif : un moment nul n'a pas de signe : la force ne fait pas tourner le pied-de-biche.",
                   "answers": [
@@ -2057,7 +2057,7 @@
                   "tolerance": 0
                 },
                 {
-                  "content": "Une corde de tension 150 N passe sur une poulie de rayon 0,12 m ; elle est tangente à la poulie, donc son bras de levier est le rayon. Le sens positif est celui où cette corde fait tourner la poulie. Quel est le moment de la tension par rapport à l'axe de la poulie, en N·m ?",
+                  "content": "Une corde de tension 150 N passe sur une poulie de rayon 0,12 m ; elle est tangente à la poulie, donc son bras de levier est le rayon. Le sens positif est celui où cette corde fait tourner la poulie. Quel est le moment de la tension par rapport à l'axe de la poulie, en N·m (sans écrire le signe +) ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Choisir le sens positif : le sens positif est celui où cette corde tourne la poulie. Étape 2 — Tracer la droite d'action et mesurer le bras de levier : la corde est tangente : $d = 0{,}12$ m. Étape 3 — Calculer l'intensité du moment : $F \\times d = 150 \\times 0{,}12 = 18$ N·m. Étape 4 — Donner le signe : $M = +18$ N·m. Pourquoi pas 150 N·m : il faut multiplier par le rayon 0,12 m : le moment n'est pas égal à la tension.",
                   "answers": [
@@ -2120,13 +2120,13 @@
           "exercises": [
             {
               "title": "Exercice 1",
-              "statement": "Koffi dit : « Je tire la poignée de la porte de la classe, droit vers les gonds, avec 100 N, et la porte ne tourne pas ! » La porte, large de 0,80 m, tourne autour de l'axe vertical de ses gonds. Adjoua lui répond que c'est normal.",
+              "statement": "Koffi dit : « Je pousse la poignée de la porte de la classe, droit vers les gonds, avec 100 N, et la porte ne tourne pas ! » La porte, large de 0,80 m, tourne autour de l'axe vertical de ses gonds. Adjoua lui répond que c'est normal.",
               "exercise_type": "evaluation",
               "figure": null,
               "hint": "Pense à la droite d'action de la force de Koffi et à son bras de levier.",
               "questions": [
                 {
-                  "content": "Koffi tire la poignée d'une porte avec une force de 100 N, horizontale et dirigée droit vers les gonds. La porte tourne autour de l'axe vertical de ses gonds. Comme 100 N est une grande force, la porte doit tourner.",
+                  "content": "Koffi pousse la poignée d'une porte avec une force de 100 N, horizontale et dirigée droit vers les gonds. La porte tourne autour de l'axe vertical de ses gonds. Comme 100 N est une grande force, la porte doit tourner.",
                   "question_type": "true_false",
                   "explanation": "Étape 1 — Repérer l'axe de rotation et la droite d'action : l'axe est la verticale des gonds ; la droite d'action de la force suit la porte jusqu'aux gonds. Étape 2 — Chercher si la droite d'action est parallèle à l'axe ou coupe l'axe : cette droite coupe l'axe. Étape 3 — Conclure : la force n'a aucun effet de rotation, quelle que soit son intensité : l'affirmation est fausse. Pourquoi pas « Vrai » : une grande intensité ne compense pas une droite d'action qui coupe l'axe : le bras de levier est nul.",
                   "answers": [
@@ -2141,7 +2141,7 @@
                   ]
                 },
                 {
-                  "content": "Koffi tire la poignée d'une porte avec 100 N, horizontalement et droit vers les gonds. Pourquoi la porte ne tourne-t-elle pas ?",
+                  "content": "Koffi pousse la poignée d'une porte avec 100 N, horizontalement et droit vers les gonds. Pourquoi la porte ne tourne-t-elle pas ?",
                   "question_type": "single_choice",
                   "explanation": "Étape 1 — Repérer l'axe de rotation et la droite d'action : l'axe est la verticale des gonds ; on trace la droite d'action de la force. Étape 2 — Chercher si la droite d'action est parallèle à l'axe ou coupe l'axe : elle est horizontale et suit la porte : elle coupe l'axe, elle ne lui est pas parallèle. Étape 3 — Conclure : sans effet de rotation : le bras de levier est nul. Pourquoi pas la droite d'action est parallèle à l'axe : une droite horizontale n'est pas parallèle à un axe vertical : elle le coupe.",
                   "answers": [
@@ -2164,7 +2164,7 @@
                   ]
                 },
                 {
-                  "content": "Koffi tire la poignée d'une porte large de 0,80 m avec 100 N, horizontalement et droit vers les gonds. Quel est le moment de cette force par rapport à l'axe des gonds, en N·m ?",
+                  "content": "Koffi pousse la poignée d'une porte large de 0,80 m avec 100 N, horizontalement et droit vers les gonds. Quel est le moment de cette force par rapport à l'axe des gonds, en N·m ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Choisir le sens positif : le sens positif n'importe pas : le moment est nul. Étape 2 — Tracer la droite d'action et mesurer le bras de levier : la droite d'action coupe l'axe : $d = 0$. Étape 3 — Calculer l'intensité du moment : $F \\times d = 100 \\times 0 = 0$ N·m. Étape 4 — Donner le signe : le moment est nul, sans signe. Pourquoi pas 80 N·m : ce serait $100 \\times 0{,}8$, qui suppose une force perpendiculaire à la porte ; ici le bras de levier est nul.",
                   "answers": [
@@ -2192,7 +2192,7 @@
                 {
                   "content": "Explique à Koffi pourquoi sa force de 100 N n'a pas fait tourner la porte, et dis-lui comment appliquer la force pour la faire tourner.",
                   "question_type": "written",
-                  "explanation": "Corrigé modèle : la porte tourne autour de l'axe vertical de ses gonds. Koffi tire droit vers les gonds : la droite d'action de sa force coupe l'axe, donc son bras de levier est nul et son moment $F \\times d = 100 \\times 0 = 0$. La force n'a aucun effet de rotation, même si elle est grande. Pour faire tourner la porte, il doit pousser ou tirer la poignée perpendiculairement à la porte : le bras de levier vaut alors la largeur de la porte, par exemple $d = 0{,}8$ m. Barème : droite d'action qui coupe l'axe (1), bras de levier nul donc moment nul (1), conseil de la force perpendiculaire (1).",
+                  "explanation": "Corrigé modèle : la porte tourne autour de l'axe vertical de ses gonds. Koffi pousse droit vers les gonds : la droite d'action de sa force coupe l'axe, donc son bras de levier est nul et son moment $F \\times d = 100 \\times 0 = 0$. La force n'a aucun effet de rotation, même si elle est grande. Pour faire tourner la porte, il doit pousser ou tirer la poignée perpendiculairement à la porte : le bras de levier vaut alors la largeur de la porte, par exemple $d = 0{,}8$ m. Barème : droite d'action qui coupe l'axe (1), bras de levier nul donc moment nul (1), intensité seule insuffisante (0,5), conseil de la force perpendiculaire (0,5).",
                   "answers": [],
                   "points": 3,
                   "criteria": [
@@ -2213,7 +2213,7 @@
               "hint": "Compare les deux moments : leur somme est-elle nulle ?",
               "questions": [
                 {
-                  "content": "Sur une planche de balançoire, un enfant de poids 200 N est assis à 0,6 m du pivot, à gauche. Le sens positif est celui où le côté gauche descend. Quel est le moment de son poids par rapport au pivot, en N·m ?",
+                  "content": "Sur une planche de balançoire, un enfant de poids 200 N est assis à 0,6 m du pivot, à gauche. Le sens positif est celui où le côté gauche descend. Quel est le moment de son poids par rapport au pivot, en N·m (sans écrire le signe +) ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : le poids est 200 N ; sens positif : le côté gauche qui descend. Étape 2 — Écrire le moment de chaque force : $M_1 = +200 \\times 0{,}6 = +120$ N·m. Étape 3 — Écrire le théorème des moments : ce moment sera comparé à celui de l'enfant de droite. Étape 4 — Résoudre : $M_1 = +120$ N·m. Pourquoi pas +12 N·m : ce résultat vient de $200 \\times 0{,}06$ : 0,6 m est bien la distance, pas 6 cm.",
                   "answers": [
@@ -2318,9 +2318,9 @@
                   ]
                 },
                 {
-                  "content": "Sur une planche de balançoire posée en son milieu sur un pivot, deux enfants de même poids 300 N sont assis, l'un à 1 m et l'autre à 2 m du pivot, de part et d'autre. Que fait la planche ?",
+                  "content": "Sur une planche de balançoire posée en son milieu sur un pivot, deux enfants de même poids 300 N sont assis, l'un à 1 m et l'autre à 2 m du pivot, de part et d'autre. Le sens positif est celui où tourne la planche quand le côté de l'enfant le plus proche descend. Que fait la planche ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : les forces sont les deux poids de 300 N et la réaction du pivot. Étape 2 — Écrire le moment de chaque force : les moments ont pour intensité $300 \\times 1 = 300$ N·m et $300 \\times 2 = 600$ N·m, de signes opposés. Étape 3 — Écrire le théorème des moments : $\\sum M = 300 - 600 = -300$ N·m, qui n'est pas nulle (si le côté proche est positif). Étape 4 — Résoudre : le moment le plus grand l'emporte : le côté de l'enfant éloigné descend. Pourquoi pas la planche reste en équilibre : des poids égaux ne suffisent pas ; le bras de levier plus grand donne un moment plus grand.",
+                  "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : les forces sont les deux poids de 300 N et la réaction du pivot ; sens positif : celui où le côté de l'enfant le plus proche descend. Étape 2 — Écrire le moment de chaque force : $M_1 = +300 \\times 1 = +300$ N·m et $M_2 = -300 \\times 2 = -600$ N·m. Étape 3 — Écrire le théorème des moments : $\\sum M = 300 - 600 = -300$ N·m, qui n'est pas nulle. Étape 4 — Résoudre : le moment le plus grand l'emporte : le côté de l'enfant éloigné descend. Pourquoi pas la planche reste en équilibre : des poids égaux ne suffisent pas ; le bras de levier plus grand donne un moment plus grand.",
                   "answers": [
                     {
                       "content": "Le côté de l'enfant le plus éloigné descend",
@@ -2486,7 +2486,7 @@
                 {
                   "content": "Une porte tourne autour de l'axe vertical de ses gonds. Parmi ces forces, lesquelles ont un effet de rotation ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Étape 1 — Repérer l'axe de rotation et la droite d'action : l'axe est la verticale des gonds ; on trace la droite d'action de chaque force. Étape 2 — Chercher si la droite d'action est parallèle à l'axe ou coupe l'axe : la traction vers les gonds coupe l'axe ; le poids est vertical donc parallèle à l'axe ; les deux poussées perpendiculaires ne le coupent pas. Étape 3 — Conclure : seules les deux poussées perpendiculaires font tourner la porte. Pourquoi pas la traction de 80 N : c'est la plus grande force, mais sa droite d'action coupe l'axe : elle n'a aucun effet de rotation.",
+                  "explanation": "Étape 1 — Repérer l'axe de rotation et la droite d'action : l'axe est la verticale des gonds ; on trace la droite d'action de chaque force. Étape 2 — Chercher si la droite d'action est parallèle à l'axe ou coupe l'axe : la poussée vers les gonds coupe l'axe ; le poids est vertical donc parallèle à l'axe ; les deux poussées perpendiculaires ne le coupent pas. Étape 3 — Conclure : seules les deux poussées perpendiculaires font tourner la porte. Pourquoi pas la poussée de 80 N : c'est la plus grande force, mais sa droite d'action coupe l'axe : elle n'a aucun effet de rotation.",
                   "answers": [
                     {
                       "content": "Une poussée de 25 N à la poignée, horizontale et perpendiculaire à la porte",
@@ -2497,7 +2497,7 @@
                       "correct": true
                     },
                     {
-                      "content": "Une traction de 80 N dirigée droit vers les gonds",
+                      "content": "Une poussée de 80 N dirigée droit vers les gonds",
                       "correct": false
                     },
                     {
@@ -2593,7 +2593,7 @@
                   "tolerance": 0
                 },
                 {
-                  "content": "Une force de 40 N, inclinée de 30° par rapport à une clé de 0,50 m, est appliquée à son extrémité. Son bras de levier vaut 0,25 m, et elle tourne la clé dans le sens positif. Quel est son moment, en N·m ?",
+                  "content": "Une force de 40 N, inclinée de 30° par rapport à une clé de 0,50 m, est appliquée à son extrémité. Son bras de levier vaut 0,25 m, et elle tourne la clé dans le sens positif. Quel est son moment, en N·m (sans écrire le signe +) ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Choisir le sens positif : le sens positif est celui où la force tourne la clé. Étape 2 — Tracer la droite d'action et mesurer le bras de levier : le bras de levier est donné : $d = 0{,}25$ m. Étape 3 — Calculer l'intensité du moment : $F \\times d = 40 \\times 0{,}25 = 10$ N·m. Étape 4 — Donner le signe : la force tourne dans le sens positif : $M = +10$ N·m. Pourquoi pas 20 N·m : ce serait le moment de la force perpendiculaire ; la force inclinée a un moment plus petit.",
                   "answers": [
@@ -2679,9 +2679,9 @@
                   "tolerance": 0
                 },
                 {
-                  "content": "Un pied-de-biche est en équilibre : la main appuie vers le bas avec 120 N, le clou tire vers le bas avec 1 800 N, de l'autre côté du point d'appui. Quelle est l'intensité de la réaction du point d'appui, en N ?",
+                  "content": "Un pied-de-biche est en équilibre : la main appuie vers le bas avec 120 N, le clou tire vers le bas avec 1 800 N, de l'autre côté du point d'appui. Les trois forces sont verticales. Quelle est l'intensité de la réaction du point d'appui, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : les forces verticales sont celle de la main (120 N), celle du clou (1 800 N), toutes deux vers le bas, et la réaction $\\vec R$ (vers le haut). Étape 2 — Écrire le moment de chaque force : la réaction passe par le point d'appui : son moment est nul. Étape 3 — Écrire le théorème des moments : on utilise la somme vectorielle des forces. Étape 4 — Résoudre : $R = 120 + 1\\,800 = 1\\,920$ N. Pourquoi pas 1 800 N : le point d'appui porte aussi la force de la main, pas seulement celle du clou.",
+                  "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : les forces verticales sont celle de la main (120 N), celle du clou (1 800 N), toutes deux vers le bas, et la réaction $\\vec R$ (vers le haut). Étape 2 — Écrire le moment de chaque force : la réaction passe par le point d'appui : son moment est nul, elle n'apparaît pas dans la somme des moments. Étape 3 — Écrire le théorème des moments : on utilise la somme vectorielle des forces verticales, qui est nulle. Étape 4 — Résoudre : $R = 120 + 1\\,800 = 1\\,920$ N. Pourquoi pas 1 800 N : le point d'appui porte aussi la force de la main, pas seulement celle du clou.",
                   "answers": [
                     {
                       "content": "1920",
@@ -2707,7 +2707,7 @@
                 {
                   "content": "La réaction du point d'appui d'un pied-de-biche en équilibre est égale à la force exercée par la main.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : les forces sont celles de la main, du clou et du point d'appui. Étape 2 — Écrire le moment de chaque force : la réaction a un moment nul : elle n'est pas dans la somme des moments. Étape 3 — Écrire le théorème des moments : elle équilibre la somme des deux autres forces : $R = F_{main} + F_{clou}$. Étape 4 — Résoudre : elle est donc plus grande que la force de la main : l'affirmation est fausse. Pourquoi pas « Vrai » : le point d'appui doit équilibrer à la fois la main et le clou.",
+                  "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : les forces sont celles de la main, du clou et du point d'appui. Étape 2 — Écrire le moment de chaque force : la réaction a un moment nul : elle n'est pas dans la somme des moments, on utilise la somme vectorielle. Étape 3 — Écrire le théorème des moments : la somme vectorielle des forces verticales est nulle : $R = F_{main} + F_{clou}$. Étape 4 — Résoudre : elle est donc plus grande que la force de la main : l'affirmation est fausse. Pourquoi pas « Vrai » : le point d'appui doit équilibrer à la fois la main et le clou.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2733,11 +2733,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Le moment de la main est plus grand que celui du clou",
-                      "correct": false
-                    },
-                    {
-                      "content": "Le pied-de-biche allège le clou",
+                      "content": "Le moment du clou est plus grand que celui de la main",
                       "correct": false
                     }
                   ]
@@ -2791,7 +2787,7 @@
                   "tolerance": 0
                 },
                 {
-                  "content": "Le poids d'une planche de balançoire posée en son milieu sur le pivot a un moment nul par rapport au pivot.",
+                  "content": "Le poids d'une planche homogène de balançoire posée en son milieu sur le pivot a un moment nul par rapport au pivot.",
                   "question_type": "true_false",
                   "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : le poids de la planche s'applique en son milieu, c'est-à-dire sur le pivot. Étape 2 — Écrire le moment de chaque force : sa droite d'action passe par l'axe : le bras de levier est nul. Étape 3 — Écrire le théorème des moments : son moment est nul et il n'apparaît pas dans la somme des moments. Étape 4 — Résoudre : l'affirmation est vraie. Pourquoi pas « Faux » : le poids de la planche existe, mais son moment est nul car il passe par l'axe ; le poids ne disparaît que dans la somme des moments.",
                   "answers": [
