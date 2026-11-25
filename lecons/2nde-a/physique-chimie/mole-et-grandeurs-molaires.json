@@ -436,9 +436,9 @@
         },
         {
           "name": "Masse molaire atomique et moléculaire",
-          "remember": "La **masse molaire** $M$ est la masse d'**une mole** d'entités ; elle s'exprime en **g/mol**. La **masse molaire atomique** d'un élément se lit dans un tableau : $M(H) = 1$ g/mol, $M(C) = 12$ g/mol, $M(O) = 16$ g/mol. La **masse molaire moléculaire** est la **somme** des masses molaires atomiques de tous les atomes de la formule : $M(H_2O) = 2 \\times 1 + 16 = 18$ g/mol. Pour un échantillon de masse $m$ (en g) : $n = \\frac{m}{M}$, donc $m = n \\times M$.",
+          "remember": "La **masse molaire** $M$ est la masse d'**une mole** d'entités ; elle s'exprime en **g/mol**. La **masse molaire atomique** d'un élément se lit dans un tableau : $M(H) = 1$ g/mol, $M(C) = 12$ g/mol, $M(O) = 16$ g/mol. La **masse molaire moléculaire** est la **somme** des masses molaires atomiques de tous les atomes de la formule : $M(H_2O) = 2 \\times 1 + 16 = 18$ g/mol. Pour un composé ionique comme le sel NaCl, on additionne de même les masses molaires atomiques des éléments de sa formule : $M(NaCl) = 23 + 35{,}5 = 58{,}5$ g/mol (la masse des électrons gagnés ou perdus est négligeable). Pour un échantillon de masse $m$ (en g) : $n = \\frac{m}{M}$, donc $m = n \\times M$.",
           "method": [
-            "Écrire la formule de l'espèce et compter les atomes de chaque élément (les indices).",
+            "Écrire la formule de l'espèce et compter les atomes (ou les ions) de chaque élément : ce sont les indices.",
             "Lire dans le tableau la masse molaire atomique de chaque élément, en g/mol.",
             "Calculer la masse molaire $M$ en additionnant : (nombre d'atomes × masse molaire atomique) pour chaque élément.",
             "Appliquer $n = \\frac{m}{M}$ (ou $m = n \\times M$) avec $m$ en g et $M$ en g/mol, puis conclure avec l'unité."
@@ -498,7 +498,7 @@
               {
                 "content": "Quelle quantité de matière contiennent 117 g de sel NaCl ? Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol.",
                 "question_type": "numeric",
-                "explanation": "Étape 1 — Écrire : NaCl compte 1 atome Na et 1 atome Cl. Étape 2 — Lire : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : n = m / M = 117 / 58,5 = 2 mol. Pourquoi pas 117 / 23 : il faut la masse molaire de tout le composé, pas d'un seul élément.",
+                "explanation": "Étape 1 — Écrire : NaCl compte 1 Na et 1 Cl. Étape 2 — Lire : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : n = m / M = 117 / 58,5 = 2 mol. Pourquoi pas 117 / 23 : il faut la masse molaire de tout le composé, pas d'un seul élément.",
                 "answers": [
                   {
                     "content": "2",
@@ -533,7 +533,7 @@
                 {
                   "content": "Calcule la masse molaire du sel de cuisine NaCl. Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol.",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Écrire : NaCl compte 1 atome Na et 1 atome Cl. Étape 2 — Lire : M(Na) = 23 g/mol et M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : cette valeur sert ensuite dans n = m / M. Pourquoi pas 58 g/mol : 35,5 ne s'arrondit pas à 35 dans cet exercice, on garde la valeur du tableau.",
+                  "explanation": "Étape 1 — Écrire : NaCl compte 1 Na et 1 Cl. Étape 2 — Lire : M(Na) = 23 g/mol et M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : cette valeur sert ensuite dans n = m / M. Pourquoi pas 58 g/mol : 35,5 ne s'arrondit pas à 35 dans cet exercice, on garde la valeur du tableau.",
                   "answers": [
                     {
                       "content": "58,5",
@@ -741,7 +741,7 @@
           "name": "Volume molaire des gaz",
           "remember": "Dans les mêmes conditions de température et de pression, **une mole de n'importe quel gaz** occupe **le même volume** : le **volume molaire** $V_m$, en **L/mol**. Dans les conditions normales (0 °C et pression normale), $V_m = 22{,}4$ L/mol ; à une autre température, l'énoncé donne la valeur (par exemple 24 L/mol à 20 °C). Pour un gaz de volume $V$ : $n = \\frac{V}{V_m}$, donc $V = n \\times V_m$. Cette relation ne vaut que pour les **gaz**, pas pour un solide ni un liquide. Conversions : 1 L = 1000 mL et 1 m³ = 1000 L.",
           "method": [
-            "Relever le volume $V$ du gaz, le convertir en litres, et repérer la valeur du volume molaire $V_m$ (22,4 L/mol si l'énoncé ne dit rien d'autre aux conditions normales).",
+            "Relever le volume $V$ du gaz, le convertir en litres, et repérer la valeur du volume molaire $V_m$ : 22,4 L/mol dans les conditions normales, sinon la valeur donnée par l'énoncé.",
             "Écrire la relation $n = \\frac{V}{V_m}$ (ou $V = n \\times V_m$), avec $V$ en L et $V_m$ en L/mol.",
             "Calculer la quantité de matière $n$ (ou le volume $V$), puis conclure avec l'unité."
           ],
@@ -1359,7 +1359,7 @@
             {
               "content": "Calcule la masse molaire du sel NaCl. Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol.",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Écrire : NaCl compte 1 atome Na et 1 atome Cl. Étape 2 — Lire : M(Na) = 23 g/mol et M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : cette valeur servira dans n = m / M. Pourquoi pas 23 g/mol : la masse molaire d'un composé additionne tous ses atomes, pas seulement le premier.",
+              "explanation": "Étape 1 — Écrire : NaCl compte 1 Na et 1 Cl. Étape 2 — Lire : M(Na) = 23 g/mol et M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : cette valeur servira dans n = m / M. Pourquoi pas 23 g/mol : la masse molaire d'un composé additionne tous ses atomes, pas seulement le premier.",
               "answers": [
                 {
                   "content": "58,5",
@@ -1372,7 +1372,7 @@
             {
               "content": "Quelle quantité de matière contiennent 11,7 g de sel NaCl ? Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol.",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Écrire : NaCl compte 1 atome Na et 1 atome Cl. Étape 2 — Lire : M(Na) = 23 g/mol et M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : n = m / M = 11,7 / 58,5 = 0,2 mol. Pourquoi pas 5 mol : c'est 58,5 / 11,7, le quotient inversé.",
+              "explanation": "Étape 1 — Écrire : NaCl compte 1 Na et 1 Cl. Étape 2 — Lire : M(Na) = 23 g/mol et M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : n = m / M = 11,7 / 58,5 = 0,2 mol. Pourquoi pas 5 mol : c'est 58,5 / 11,7, le quotient inversé.",
               "answers": [
                 {
                   "content": "0,2",
@@ -1435,7 +1435,7 @@
         },
         {
           "title": "La bouteille de gaz butane du ménage",
-          "statement": "Une bouteille de gaz de ménage contient 5,8 kg de butane C₄H₁₀. Données : M(C) = 12 g/mol, M(H) = 1 g/mol ; N_A = 6,02×10²³ mol⁻¹ ; à la température de la cuisine, V_m = 24 L/mol.",
+          "statement": "Une bouteille de gaz de ménage contient 5,8 kg de butane C₄H₁₀. Données : M(C) = 12 g/mol, M(H) = 1 g/mol ; N_A = 6,02×10²³ mol⁻¹ ; dans les conditions de l'exercice, on prend V_m = 24 L/mol.",
           "exercise_type": "fixation",
           "figure": "butane-formule",
           "questions": [
@@ -1504,12 +1504,12 @@
               ]
             },
             {
-              "content": "Une famille brûle 0,5 mol de butane pour un repas. Quelle masse de butane est-ce ? (M = 58 g/mol)",
+              "content": "Une famille brûle 2 mol de butane pour préparer un repas. Quelle masse de butane est-ce ? (M = 58 g/mol)",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Identifier : donnée n = 0,5 mol, cherchée m. Étape 2 — Calculer : n = 0,5 mol est connue. Étape 3 — Passer : m = n × M = 0,5 × 58 = 29 g. Étape 4 — Conclure : 29 g de butane. Pourquoi pas 116 g : c'est 58 / 0,5, une division au lieu d'une multiplication.",
+              "explanation": "Étape 1 — Identifier : donnée n = 2 mol, cherchée m. Étape 2 — Calculer : n = 2 mol est connue. Étape 3 — Passer : m = n × M = 2 × 58 = 116 g. Étape 4 — Conclure : 116 g de butane. Pourquoi pas 29 g : c'est 58 / 2, une division au lieu d'une multiplication.",
               "answers": [
                 {
-                  "content": "29",
+                  "content": "116",
                   "correct": true
                 }
               ],
@@ -1528,7 +1528,7 @@
             {
               "content": "Calcule la masse molaire du carbonate de calcium CaCO₃. Données : M(Ca) = 40 g/mol, M(C) = 12 g/mol, M(O) = 16 g/mol.",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Écrire : CaCO₃ compte 1 atome Ca, 1 atome C et 3 atomes O. Étape 2 — Lire : M(Ca) = 40, M(C) = 12, M(O) = 16 g/mol. Étape 3 — Calculer : M = 40 + 12 + 3 × 16 = 100 g/mol. Étape 4 — Appliquer : cette valeur sert dans n = m / M. Pourquoi pas 68 g/mol : c'est 40 + 12 + 16, avec un seul atome d'oxygène au lieu de trois.",
+              "explanation": "Étape 1 — Écrire : CaCO₃ compte 1 Ca, 1 C et 3 O. Étape 2 — Lire : M(Ca) = 40, M(C) = 12, M(O) = 16 g/mol. Étape 3 — Calculer : M = 40 + 12 + 3 × 16 = 100 g/mol. Étape 4 — Appliquer : cette valeur sert dans n = m / M. Pourquoi pas 68 g/mol : c'est 40 + 12 + 16, avec un seul atome d'oxygène au lieu de trois.",
               "answers": [
                 {
                   "content": "100",
@@ -1626,7 +1626,7 @@
             {
               "content": "L'échantillon B est une masse de 12 g de soude NaOH. Quelle quantité de matière contient-il ? Données : M(Na) = 23 g/mol, M(O) = 16 g/mol, M(H) = 1 g/mol.",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Écrire : NaOH compte 1 atome Na, 1 atome O et 1 atome H. Étape 2 — Lire : M(Na) = 23, M(O) = 16, M(H) = 1 g/mol. Étape 3 — Calculer : M = 23 + 16 + 1 = 40 g/mol. Étape 4 — Appliquer : n = 12 / 40 = 0,3 mol. Pourquoi pas 3,3 mol : c'est 40 / 12, le quotient inversé de n = m / M.",
+              "explanation": "Étape 1 — Écrire : NaOH compte 1 Na, 1 O et 1 H. Étape 2 — Lire : M(Na) = 23, M(O) = 16, M(H) = 1 g/mol. Étape 3 — Calculer : M = 23 + 16 + 1 = 40 g/mol. Étape 4 — Appliquer : n = 12 / 40 = 0,3 mol. Pourquoi pas 3,3 mol : c'est 40 / 12, le quotient inversé de n = m / M.",
               "answers": [
                 {
                   "content": "0,3",
@@ -2088,7 +2088,7 @@
                 {
                   "content": "Calcule la masse molaire du sel NaCl. Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol.",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Écrire : NaCl compte 1 atome Na et 1 atome Cl. Étape 2 — Lire : M(Na) = 23 g/mol et M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : cette valeur sert dans n = m / M. Pourquoi pas 58 g/mol : la masse molaire du chlore est 35,5 g/mol et non 35 dans ce tableau.",
+                  "explanation": "Étape 1 — Écrire : NaCl compte 1 Na et 1 Cl. Étape 2 — Lire : M(Na) = 23 g/mol et M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : cette valeur sert dans n = m / M. Pourquoi pas 58 g/mol : la masse molaire du chlore est 35,5 g/mol et non 35 dans ce tableau.",
                   "answers": [
                     {
                       "content": "58,5",
@@ -2249,7 +2249,7 @@
             },
             {
               "title": "Exercice 3",
-              "statement": "La famille de Koffi utilise une bouteille de gaz de cuisine qui contient 11,6 kg de butane C₄H₁₀. Données : M(C) = 12 g/mol, M(H) = 1 g/mol ; N_A = 6,02×10²³ mol⁻¹ ; à la température de la cuisine, V_m = 24 L/mol.",
+              "statement": "La famille de Koffi utilise une bouteille de gaz de cuisine qui contient 11,6 kg de butane C₄H₁₀. Données : M(C) = 12 g/mol, M(H) = 1 g/mol ; N_A = 6,02×10²³ mol⁻¹ ; dans les conditions de l'exercice, on prend V_m = 24 L/mol.",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [

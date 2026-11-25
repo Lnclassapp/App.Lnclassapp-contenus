@@ -768,7 +768,7 @@
         },
         {
           "name": "Appliquer le théorème des moments",
-          "remember": "Un solide **mobile autour d'un axe fixe** est en **équilibre** (immobile) quand la **somme algébrique des moments** des forces par rapport à l'axe est nulle : $\\sum M = 0$. Autrement dit, les moments qui tournent dans le sens positif compensent ceux qui tournent dans l'autre sens. C'est le **théorème des moments**. La **réaction de l'axe** a un moment nul, car sa droite d'action passe par l'axe ; elle se trouve avec la condition sur les forces : $\\sum \\vec F = \\vec 0$. Applications : le levier (pied-de-biche), la balance romaine, la balançoire, la brouette (axe : l'axe de la roue) et la poulie (le bras de levier est le rayon : la corde a la même tension de chaque côté).",
+          "remember": "Un solide **mobile autour d'un axe fixe** est en **équilibre** (immobile) quand la **somme algébrique des moments** des forces par rapport à l'axe est nulle : $\\sum M = 0$. Autrement dit, les moments qui tournent dans le sens positif compensent ceux qui tournent dans l'autre sens. C'est le **théorème des moments**. La **réaction de l'axe** a un moment nul quand les frottements sont négligés, car sa droite d'action passe alors par l'axe ; elle se trouve avec la condition sur les forces : $\\sum \\vec F = \\vec 0$. Applications : le levier (pied-de-biche), la balance romaine, la balançoire, la brouette (axe : l'axe de la roue) et la poulie (les deux brins ont le même bras de levier, le rayon : à l'équilibre, ils ont donc la même tension).",
           "method": [
             "Faire le bilan des forces et choisir le sens positif de rotation.",
             "Écrire le moment de chaque force par rapport à l'axe, avec son signe ; la réaction de l'axe a un moment nul.",
@@ -1058,7 +1058,7 @@
               "tolerance": 0
             },
             {
-              "content": "Une porte large de 0,90 m est poussée en son milieu par une force de 40 N, horizontale et perpendiculaire à la porte, Le sens positif choisi est le sens opposé à celui où tourne cette force. Quel est son moment par rapport à l'axe des gonds, en N·m ?",
+              "content": "Une porte large de 0,90 m est poussée en son milieu par une force de 40 N, horizontale et perpendiculaire à la porte. Le sens positif choisi est le sens opposé à celui où tourne cette force. Quel est son moment par rapport à l'axe des gonds, en N·m ?",
               "question_type": "numeric",
               "explanation": "Étape 1 — Choisir le sens positif : le sens positif est le sens opposé à celui de cette force. Étape 2 — Tracer la droite d'action et mesurer le bras de levier : la force est appliquée au milieu : $d = 0{,}9 \\div 2 = 0{,}45$ m. Étape 3 — Calculer l'intensité du moment : $F \\times d = 40 \\times 0{,}45 = 18$ N·m. Étape 4 — Donner le signe : la force tourne dans le sens négatif : $M_2 = -18$ N·m.",
               "answers": [
@@ -1307,7 +1307,7 @@
         },
         {
           "title": "La poulie du puits",
-          "statement": "Au puits du village, un seau de 12 kg est retenu, immobile, par une corde qui passe sur une poulie de rayon 0,10 m, mobile autour de son axe fixe horizontal. Une femme tient l'autre bout de la corde, verticale. La corde et la poulie sont idéales : pas de frottement, poids de la poulie négligé, et la corde a la même tension de chaque côté de la poulie. On prend $g = 10$ N/kg. Le sens positif est celui dans lequel le seau fait tourner la poulie.",
+          "statement": "Au puits du village, un seau de 12 kg est retenu, immobile, par une corde qui passe sur une poulie de rayon 0,10 m, mobile autour de son axe fixe horizontal. Une femme tient l'autre bout de la corde, verticale. La corde et la poulie sont idéales : pas de frottement, poids de la poulie négligé. On prend $g = 10$ N/kg. Le sens positif est celui dans lequel le seau fait tourner la poulie.",
           "exercise_type": "evaluation",
           "figure": null,
           "questions": [
@@ -1615,9 +1615,9 @@
                   ]
                 },
                 {
-                  "content": "Un solide mobile autour d'un axe fixe est en équilibre. Il est soumis à deux forces : l'une a un moment de +15 N·m par rapport à l'axe. Les autres forces ont un moment nul par rapport à l'axe. On a choisi un sens positif. Quel est le moment de l'autre force, en N·m ?",
+                  "content": "Un solide mobile autour d'un axe fixe est en équilibre sous l'action de trois forces : la réaction de l'axe, une force F1 et une force F2. Le sens positif choisi est celui dans lequel F1 tend à faire tourner le solide ; le moment de F1 vaut +15 N·m. Quel est le moment de F2 par rapport à l'axe, en N·m ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : le bilan est de deux forces ; le moment de la première est +15 N·m. Étape 2 — Écrire le moment de chaque force : on note $M_2$ le moment de la seconde. Étape 3 — Écrire le théorème des moments : $\\sum M = 0$ donne $15 + M_2 = 0$. Étape 4 — Résoudre : $M_2 = -15$ N·m. Pourquoi pas +15 N·m : avec deux moments égaux de même signe, la somme vaudrait 30 N·m, pas 0 : le second moment doit être de signe opposé.",
+                  "explanation": "Étape 1 — Faire le bilan des forces et choisir le sens positif : les forces sont la réaction de l'axe, F1 et F2 ; le sens positif est celui où F1 tend à faire tourner le solide. Étape 2 — Écrire le moment de chaque force : la réaction de l'axe a un moment nul, $M_1 = +15$ N·m, on note $M_2$ le moment de F2. Étape 3 — Écrire le théorème des moments : $\\sum M = 0$ donne $0 + 15 + M_2 = 0$. Étape 4 — Résoudre : $M_2 = -15$ N·m ; F2 tend à faire tourner le solide dans le sens négatif. Pourquoi pas +15 N·m : avec deux moments de même signe, la somme vaudrait 30 N·m, pas 0 : le moment de F2 est de signe opposé.",
                   "answers": [
                     {
                       "content": "-15",
@@ -2038,7 +2038,7 @@
             },
             {
               "title": "Exercice 4",
-              "statement": "Au puits d'un village, un seau de 15 kg est retenu, immobile, par une corde verticale qui passe sur une poulie de rayon 0,12 m, mobile autour de son axe fixe horizontal. Une femme tient l'autre bout de la corde, verticale. La corde et la poulie sont idéales : pas de frottement, poids de la poulie négligé, même tension de chaque côté. On prend $g = 10$ N/kg. Le sens positif est celui où le brin du seau fait tourner la poulie.",
+              "statement": "Au puits d'un village, un seau de 15 kg est retenu, immobile, par une corde verticale qui passe sur une poulie de rayon 0,12 m, mobile autour de son axe fixe horizontal. Une femme tient l'autre bout de la corde, verticale. La corde et la poulie sont idéales : pas de frottement, poids de la poulie négligé. On prend $g = 10$ N/kg. Le sens positif est celui où le brin du seau fait tourner la poulie.",
               "exercise_type": "evaluation",
               "figure": null,
               "hint": "Avec une poulie idéale, les deux brins de corde ont la même tension.",
