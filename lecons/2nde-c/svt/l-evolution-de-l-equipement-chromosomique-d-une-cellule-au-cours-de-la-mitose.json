@@ -105,7 +105,7 @@
     {
      "key": "courbe-adn-cycle",
      "kind": "stat_chart",
-     "description": "Courbe fictive de la quantité d'ADN par noyau, en unités arbitraires, au cours d'un cycle cellulaire : 2 en G1 et au début de la phase S, 3 au milieu de S, 4 en fin de S, en G2 et en métaphase, puis retour à 2 à la fin de l'anaphase et dans la cellule fille. La courbe monte pendant la réplication et redescend à la séparation des chromatides.",
+     "description": "Courbe fictive de la quantité d'ADN par noyau, en unités arbitraires, au cours d'un cycle cellulaire : 2 en G1 et au début de la phase S, 3 au milieu de S, 4 en fin de S, en G2 et en métaphase, puis retour à 2 à la télophase et dans la cellule fille. La courbe monte pendant la réplication et redescend à la séparation des chromatides.",
      "params": {
       "chart": "line",
       "series": [
@@ -125,7 +125,7 @@
        "Fin de S",
        "G2",
        "Métaphase",
-       "Fin d'anaphase",
+       "Télophase",
        "G1 (cellule fille)"
       ]
      },
@@ -176,7 +176,7 @@
     {
      "key": "courbe-adn-mais",
      "kind": "stat_chart",
-     "description": "Courbe fictive de la quantité d'ADN par noyau, en unités arbitraires, dans une cellule de racine de maïs : 4 en G1 et au début de la phase S, 6 au milieu de S, 8 en fin de S, en G2 et en métaphase, puis retour à 4 à la fin de l'anaphase et dans la cellule fille. La quantité double pendant la phase S puis revient à sa valeur de départ.",
+     "description": "Courbe fictive de la quantité d'ADN par noyau, en unités arbitraires, dans une cellule de racine de maïs : 4 en G1 et au début de la phase S, 6 au milieu de S, 8 en fin de S, en G2 et en métaphase, puis retour à 4 à la télophase et dans la cellule fille. La quantité double pendant la phase S puis revient à sa valeur de départ.",
      "params": {
       "chart": "line",
       "series": [
@@ -196,7 +196,7 @@
        "Fin de S",
        "G2",
        "Métaphase",
-       "Fin d'anaphase",
+       "Télophase",
        "G1 (cellule fille)"
       ]
      },
@@ -205,7 +205,7 @@
     {
      "key": "courbe-adn-6",
      "kind": "stat_chart",
-     "description": "Courbe fictive de la quantité d'ADN par noyau, en unités arbitraires : 6 en G1 et au début de la phase S, 9 au milieu de S, 12 en fin de S, en G2 et en métaphase, puis retour à 6 à la fin de l'anaphase et dans la cellule fille. La courbe monte pendant la réplication et redescend à la séparation des chromatides.",
+     "description": "Courbe fictive de la quantité d'ADN par noyau, en unités arbitraires : 6 en G1 et au début de la phase S, 9 au milieu de S, 12 en fin de S, en G2 et en métaphase, puis retour à 6 à la télophase et dans la cellule fille. La courbe monte pendant la réplication et redescend à la séparation des chromatides.",
      "params": {
       "chart": "line",
       "series": [
@@ -225,7 +225,7 @@
        "Fin de S",
        "G2",
        "Métaphase",
-       "Fin d'anaphase",
+       "Télophase",
        "G1 (cellule fille)"
       ]
      },
@@ -235,9 +235,9 @@
    "notions": [
     {
      "name": "Décrire un chromosome et compter ses chromatides",
-     "remember": "Un **chromosome** est un bâtonnet fait d'**ADN**, visible au microscope seulement pendant la division de la cellule ; entre deux divisions, l'ADN est étalé en filaments fins, invisibles. Un chromosome peut avoir **une chromatide** (avant la réplication de l'ADN, ou juste après la séparation) ou **deux chromatides** identiques (après la réplication, jusqu'à l'anaphase). Les deux chromatides sont reliées par le **centromère**, un étranglement. Chaque chromatide contient une molécule d'ADN : un chromosome à deux chromatides a donc deux molécules d'ADN identiques.",
+     "remember": "Un **chromosome** est un bâtonnet fait d'**ADN** associé à des protéines, visible au microscope seulement pendant la division de la cellule ; entre deux divisions, l'ADN est étalé dans le noyau en filaments très fins, qu'on ne distingue pas au microscope. Un chromosome peut avoir **une chromatide** (avant la réplication de l'ADN, ou juste après la séparation) ou **deux chromatides** identiques (après la réplication, jusqu'à l'anaphase). Les deux chromatides sont reliées par le **centromère**, un étranglement. Chaque chromatide contient une molécule d'ADN : un chromosome à deux chromatides a donc deux molécules d'ADN identiques.",
      "method": [
-      "Repérer le chromosome : un bâtonnet visible pendant la division, fait d'ADN.",
+      "Repérer le chromosome : un bâtonnet visible pendant la division, fait d'ADN et de protéines.",
       "Localiser le centromère : l'étranglement qui relie les chromatides.",
       "Compter les chromatides : une seule, ou deux chromatides identiques côte à côte.",
       "Conclure : dire si l'ADN du chromosome a été répliqué (deux chromatides) ou non (une chromatide) et compter une molécule d'ADN par chromatide."
@@ -504,7 +504,7 @@
         {
          "content": "Pendant l'interphase, les chromosomes sont visibles au microscope sous forme de bâtonnets.",
          "question_type": "true_false",
-         "explanation": "Étape 1 — Repérer le chromosome : il n'est visible comme bâtonnet que pendant la division. En interphase, l'ADN est étalé en filaments fins invisibles. L'affirmation est fausse. Pourquoi pas « Vrai » : les bâtonnets sont observés en prophase et en métaphase, pas entre deux divisions.",
+         "explanation": "Étape 1 — Repérer le chromosome : il n'est visible comme bâtonnet que pendant la division. En interphase, l'ADN est étalé en filaments très fins, qu'on ne distingue pas au microscope. L'affirmation est fausse. Pourquoi pas « Vrai » : les bâtonnets sont observés en prophase et en métaphase, pas entre deux divisions.",
          "answers": [
           {
            "content": "Vrai",
@@ -862,7 +862,7 @@
     },
     {
      "name": "Suivre la quantité d'ADN au cours du cycle cellulaire",
-     "remember": "L'**ADN** constitue les chromosomes : il porte l'information génétique et se trouve dans le noyau. On mesure la **quantité d'ADN par noyau**, notée Q (unités arbitraires). Elle est constante en **G1** (Q). Elle **double pendant la phase S** (de Q à 2Q) : c'est la **réplication** de l'ADN. Elle reste égale à 2Q en G2, puis de la prophase à la métaphase. Elle **revient à Q à la séparation des chromatides en anaphase** : chaque futur noyau fils reçoit une chromatide de chaque chromosome. La courbe est donc faite de paliers reliés par une montée et une descente.",
+     "remember": "L'**ADN**, associé à des protéines, forme les chromosomes : il porte l'information génétique et se trouve dans le noyau. On mesure la **quantité d'ADN par noyau**, notée Q (unités arbitraires). Elle est constante en **G1** (Q). Elle **double pendant la phase S** (de Q à 2Q) : c'est la **réplication** de l'ADN. Elle reste égale à 2Q en G2, puis de la prophase à la métaphase. Elle **revient à Q à la séparation des chromatides en anaphase** : chaque lot de chromosomes, qui devient un noyau fils à la télophase, reçoit une chromatide de chaque chromosome. Pendant la mitose, l'enveloppe du noyau a disparu : la quantité mesurée est alors celle de tous les chromosomes de la cellule jusqu'à la métaphase, puis celle de chaque lot à partir de l'anaphase. La courbe est donc faite de paliers reliés par une montée et une descente.",
      "method": [
       "Lire les axes : repérer ce que mesure l'axe vertical (la quantité d'ADN) et les phases du cycle sur l'axe horizontal.",
       "Lire le palier de départ : relever la quantité d'ADN avant toute variation, en G1.",
@@ -871,7 +871,7 @@
       "Conclure : comparer la quantité finale à la quantité de départ."
      ],
      "example": {
-      "statement": "Une courbe fictive donne la quantité d'ADN par noyau : 2 unités en G1, 4 unités en fin de phase S, 4 unités en métaphase, puis 2 unités à la fin de l'anaphase. Interpréter cette courbe.",
+      "statement": "Une courbe fictive donne la quantité d'ADN par noyau : 2 unités en G1, 4 unités en fin de phase S, 4 unités en métaphase, puis 2 unités à la télophase. Interpréter cette courbe.",
       "steps": [
        "Lire les axes : l'axe vertical donne la quantité d'ADN par noyau, l'axe horizontal les phases du cycle.",
        "Lire le palier de départ : en G1, la quantité d'ADN est de 2 unités.",
@@ -886,7 +886,7 @@
       "statement": "Tu t'entraînes à lire l'évolution de la quantité d'ADN par noyau.",
       "questions": [
        {
-        "content": "L'ADN est le constituant des ___, bâtonnets visibles pendant la division.",
+        "content": "L'ADN, associé à des protéines, forme les ___, bâtonnets visibles pendant la division.",
         "question_type": "fill_blank",
         "explanation": "Étape 1 — Lire les axes : la grandeur mesurée est l'ADN, constituant des chromosomes situés dans le noyau. Pourquoi pas « ribosomes » : les ribosomes fabriquent des protéines dans le cytoplasme et ne portent pas l'information génétique.",
         "answers": [
@@ -944,7 +944,7 @@
      "exercise": [
       {
        "title": "Lire la courbe de la quantité d'ADN",
-       "statement": "Dans cet exercice, tu lis une courbe fictive de la quantité d'ADN par noyau : 2 unités en G1, 4 unités en fin de phase S et en métaphase, puis 2 unités à la fin de l'anaphase.",
+       "statement": "Dans cet exercice, tu lis une courbe fictive de la quantité d'ADN par noyau : 2 unités en G1, 4 unités en fin de phase S et en métaphase, puis 2 unités à la télophase.",
        "exercise_type": "fixation",
        "figure": "courbe-adn-cycle",
        "questions": [
@@ -1110,10 +1110,10 @@
         {
          "content": "Quelles affirmations sont vraies ?",
          "question_type": "multiple_correct_2",
-         "explanation": "Étape 4 — Relier : la réplication, en phase S de l'interphase, précède la mitose ; l'ADN forme les chromosomes. Pourquoi pas « La quantité d'ADN diminue de moitié en phase S » : la phase S est celle du doublement, la diminution a lieu à la séparation des chromatides.",
+         "explanation": "Étape 4 — Relier : la réplication, en phase S de l'interphase, précède la mitose ; l'ADN, associé à des protéines, forme les chromosomes. Pourquoi pas « La quantité d'ADN diminue de moitié en phase S » : la phase S est celle du doublement, la diminution a lieu à la séparation des chromatides.",
          "answers": [
           {
-           "content": "L'ADN est le constituant principal des chromosomes",
+           "content": "L'ADN, associé à des protéines, forme les chromosomes",
            "correct": true
           },
           {
@@ -1596,7 +1596,7 @@
     },
     {
      "title": "La courbe d'ADN d'une cellule de racine de maïs",
-     "statement": "Un élève de 2nde observe une racine de maïs, plante cultivée dans de nombreux champs de Côte d'Ivoire (2n = 20). Il mesure la quantité d'ADN par noyau, en unités arbitraires (valeurs fictives) : 4 en G1 et au début de la phase S, 6 au milieu de S, 8 en fin de S, en G2 et en métaphase, puis 4 à la fin de l'anaphase.",
+     "statement": "Un élève de 2nde observe une racine de maïs, plante cultivée dans de nombreux champs de Côte d'Ivoire (2n = 20). Il mesure la quantité d'ADN par noyau, en unités arbitraires (valeurs fictives) : 4 en G1 et au début de la phase S, 6 au milieu de S, 8 en fin de S, en G2 et en métaphase, puis 4 à la télophase.",
      "exercise_type": "fixation",
      "figure": "courbe-adn-mais",
      "questions": [
@@ -3186,7 +3186,7 @@
         {
          "content": "Les chromosomes sont visibles sous forme de bâtonnets pendant la division cellulaire.",
          "question_type": "true_false",
-         "explanation": "Méthode : 1. Rappeler : l'ADN se condense pendant la division. 2. Conclure : les chromosomes apparaissent alors comme des bâtonnets. Pourquoi pas « Faux » : en interphase, l'ADN est étalé en filaments fins et invisibles, mais pendant la division les bâtonnets sont bien visibles.",
+         "explanation": "Méthode : 1. Rappeler : l'ADN se condense pendant la division. 2. Conclure : les chromosomes apparaissent alors comme des bâtonnets. Pourquoi pas « Faux » : en interphase, l'ADN est étalé en filaments très fins, qu'on ne distingue pas au microscope, mais pendant la division les bâtonnets sont bien visibles.",
          "answers": [
           {
            "content": "Vrai",
@@ -3459,7 +3459,7 @@
         {
          "content": "Quelles affirmations sont vraies à propos de la mitose ?",
          "question_type": "multiple_correct_2",
-         "explanation": "Méthode : 4. Conclure : deux cellules filles identiques, même 2n. Pourquoi pas « Le nombre de chromosomes est divisé par deux » : c'est ce qui arrive dans une autre division, pas dans la mitose qui conserve 2n.",
+         "explanation": "Méthode : 4. Conclure : deux cellules filles identiques, même 2n. Pourquoi pas « Le nombre de chromosomes est divisé par deux » : la mitose conserve 2n : chaque cellule fille a autant de chromosomes que la cellule mère.",
          "answers": [
           {
            "content": "Elle donne deux cellules filles identiques entre elles",
