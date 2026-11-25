@@ -179,7 +179,7 @@
    "notions": [
     {
      "name": "Mettre en évidence la division cellulaire dans une racine",
-     "remember": "Les cellules d'un être vivant se **divisent** : une cellule mère donne deux cellules filles. Chez la plante, la division a lieu surtout dans le **méristème**, un tissu de petites cellules situé à l'extrémité de la racine, juste derrière la **coiffe**. Pour la voir, on prélève cette extrémité, on la **fixe et on la colore** avec de l'orcéine acétique (un colorant acide qui fige les cellules et teinte les **chromosomes**), puis on l'**écrase** entre lame et lamelle et on l'observe au microscope. Une cellule dont les chromosomes colorés sont visibles est **en division**. Une cellule dont le noyau arrondi est délimité par une enveloppe est au repos (**interphase**). La préparation fige les cellules : on voit chacune à un seul instant.",
+     "remember": "Les cellules d'un être vivant se **divisent** : une cellule mère donne deux cellules filles. Chez la plante, la division a lieu surtout dans le **méristème**, un tissu de petites cellules situé à l'extrémité de la racine, juste derrière la **coiffe**. Pour la voir, on prélève cette extrémité, on la **fixe et on la colore** avec de l'orcéine acétique (un colorant acide qui fige les cellules et teinte les **chromosomes**), puis on l'**écrase** entre lame et lamelle et on l'observe au microscope. Une cellule dont les chromosomes colorés sont visibles est **en division**. Une cellule dont le noyau arrondi est délimité par une enveloppe est en **interphase** : elle ne se divise pas à ce moment. La préparation fige les cellules : on voit chacune à un seul instant.",
      "method": [
       "Prélever l'extrémité de la racine : couper quelques millimètres de la pointe, juste derrière la coiffe, là où se trouve le méristème.",
       "Colorer le fragment avec de l'orcéine acétique, colorant acide qui fixe les cellules et teint les chromosomes en rouge ou en violet.",
@@ -307,7 +307,7 @@
         {
          "content": "Pourquoi colore-t-on le fragment de racine avant l'observation ?",
          "question_type": "single_choice",
-         "explanation": "Étape 2 — Colorer : le colorant teinte les chromosomes. Étape 4 — Repérer et conclure : sans lui, on ne distinguerait pas une cellule en division d'une cellule au repos. Pourquoi pas « Pour faire diviser les cellules plus vite » : le colorant ne déclenche rien, il rend seulement visible ce qui existe déjà.",
+         "explanation": "Étape 2 — Colorer : le colorant teinte les chromosomes. Étape 4 — Repérer et conclure : sans lui, on ne distinguerait pas une cellule en division d'une cellule en interphase. Pourquoi pas « Pour faire diviser les cellules plus vite » : le colorant ne déclenche rien, il rend seulement visible ce qui existe déjà.",
          "answers": [
           {
            "content": "Pour rendre les chromosomes visibles",
@@ -345,7 +345,7 @@
         {
          "content": "Dans un champ du microscope, une élève compte 40 cellules : 36 ont un noyau arrondi, les autres ont des chromosomes colorés visibles. Combien de cellules sont en division ?",
          "question_type": "numeric",
-         "explanation": "Étape 3 — Observer : 40 cellules dans le champ. Étape 4 — Repérer et conclure : les cellules à noyau arrondi sont en interphase, soit 36 ; les autres sont en division, donc 40 − 36 = 4. Pourquoi pas « 36 » : ce sont les cellules au repos, à noyau arrondi, et non celles qui se divisent.",
+         "explanation": "Étape 3 — Observer : 40 cellules dans le champ. Étape 4 — Repérer et conclure : les cellules à noyau arrondi sont en interphase, soit 36 ; les autres sont en division, donc 40 − 36 = 4. Pourquoi pas « 36 » : ce sont les cellules en interphase, à noyau arrondi, et non celles qui se divisent.",
          "answers": [
           {
            "content": "4",
@@ -358,7 +358,7 @@
         {
          "content": "Choisis les deux observations qui montrent une cellule en division.",
          "question_type": "multiple_correct_2",
-         "explanation": "Étape 4 — Repérer et conclure : une cellule est en division si ses chromosomes colorés sont visibles ; la disposition (alignés, ou en deux groupes) précise le stade. Les noyaux arrondis sont en interphase. Pourquoi pas « Un noyau arrondi et coloré, délimité par une enveloppe, avec un nucléole » : un noyau bien délimité avec un nucléole est typique d'une cellule au repos.",
+         "explanation": "Étape 4 — Repérer et conclure : une cellule est en division si ses chromosomes colorés sont visibles ; la disposition (alignés, ou en deux groupes) précise le stade. Les noyaux arrondis sont en interphase. Pourquoi pas « Un noyau arrondi et coloré, délimité par une enveloppe, avec un nucléole » : un noyau bien délimité avec un nucléole est typique d'une cellule en interphase.",
          "answers": [
           {
            "content": "Des chromosomes colorés, courts et épais, alignés au milieu de la cellule",
@@ -483,7 +483,7 @@
         {
          "content": "Un champ montre 60 cellules, dont 54 à noyau arrondi. Combien de cellules ont des chromosomes visibles ?",
          "question_type": "numeric",
-         "explanation": "Étape 4 — Repérer et conclure : les noyaux arrondis sont en interphase, soit 54 ; les autres ont des chromosomes visibles : 60 − 54 = 6. Pourquoi pas « 54 » : c'est le nombre de cellules au repos, pas celui des cellules en division.",
+         "explanation": "Étape 4 — Repérer et conclure : les noyaux arrondis sont en interphase, soit 54 ; les autres ont des chromosomes visibles : 60 − 54 = 6. Pourquoi pas « 54 » : c'est le nombre de cellules en interphase, pas celui des cellules en division.",
          "answers": [
           {
            "content": "6",
@@ -494,13 +494,13 @@
          "unit": "cellules"
         }
        ],
-       "hint": "Un noyau arrondi est au repos ; ce sont les chromosomes visibles qui signalent une division."
+       "hint": "Un noyau arrondi signale l'interphase ; ce sont les chromosomes visibles qui signalent une division."
       }
      ]
     },
     {
      "name": "Le cycle cellulaire et les phases de la mitose",
-     "remember": "Le **cycle cellulaire** est la suite des étapes d'une cellule, de sa formation à sa propre division. Il comprend l'**interphase**, période la plus longue : le noyau est délimité par une enveloppe et les chromosomes ne sont pas visibles. Vient ensuite la **mitose**, courte, qui répartit les chromosomes en deux lots identiques, puis la **cytodiérèse**, qui coupe la cellule en deux. La mitose a quatre phases. **Prophase** : les chromosomes se condensent et deviennent visibles (chacun a deux chromatides), l'enveloppe du noyau disparaît, le fuseau se forme. **Métaphase** : les chromosomes sont alignés au milieu de la cellule, dans la plaque équatoriale. **Anaphase** : les deux chromatides de chaque chromosome se séparent et migrent vers les pôles opposés. **Télophase** : deux noyaux se reforment. Cytodiérèse : par **étranglement** chez la cellule animale, par un **phragmoplaste** qui construit une paroi au milieu chez la cellule végétale. On obtient deux cellules filles identiques.",
+     "remember": "Le **cycle cellulaire** est la suite des étapes d'une cellule, de sa formation à sa propre division. Il comprend l'**interphase**, période la plus longue : le noyau est délimité par une enveloppe et les chromosomes ne sont pas visibles. Ce n'est pas un repos : la cellule y grandit et prépare sa division. Vient ensuite la **mitose**, courte, qui répartit les chromosomes en deux lots identiques, puis la **cytodiérèse**, qui coupe la cellule en deux. La mitose a quatre phases. **Prophase** : les chromosomes se condensent et deviennent visibles (chacun est formé de deux **chromatides**, deux filaments identiques accolés), l'enveloppe du noyau disparaît, le fuseau se forme. **Métaphase** : les chromosomes sont alignés au milieu de la cellule, dans la plaque équatoriale. **Anaphase** : les deux chromatides de chaque chromosome se séparent et migrent vers les pôles opposés. **Télophase** : deux noyaux se reforment. Cytodiérèse : par **étranglement** chez la cellule animale, par la construction d'une nouvelle **paroi** au milieu chez la cellule végétale. On obtient deux cellules filles identiques.",
      "method": [
       "Observer le noyau : dire si une enveloppe le délimite et si les chromosomes sont visibles.",
       "Repérer l'aspect et la position des chromosomes, ainsi que le fuseau : dispersés, alignés au milieu ou séparés vers deux pôles.",
@@ -651,9 +651,9 @@
          ]
         },
         {
-         "content": "Deux lots de chromatides sont aux extrémités d'une cellule végétale ; une enveloppe se reforme autour de chaque lot et une paroi se construit au milieu. Quelle phase est-ce ?",
+         "content": "Deux lots de chromosomes sont aux extrémités d'une cellule végétale ; une enveloppe se reforme autour de chaque lot et une paroi se construit au milieu. Quelle phase est-ce ?",
          "question_type": "single_choice",
-         "explanation": "Étape 2 — Repérer : deux lots de chromatides sont arrivés aux pôles. Étape 3 — Nommer la phase : les enveloppes se reforment, c'est la télophase. Étape 5 — Conclure : deux noyaux apparaissent. Pourquoi pas « L'anaphase » : en anaphase, les chromatides sont encore en migration et aucune enveloppe n'entoure les lots.",
+         "explanation": "Étape 2 — Repérer : deux lots de chromosomes sont arrivés aux pôles. Étape 3 — Nommer la phase : les enveloppes se reforment, c'est la télophase. Étape 5 — Conclure : deux noyaux apparaissent. Pourquoi pas « L'anaphase » : en anaphase, les chromatides sont encore en migration et aucune enveloppe n'entoure les lots.",
          "answers": [
           {
            "content": "La télophase",
@@ -699,7 +699,7 @@
         {
          "content": "Une cellule d'oignon termine sa division. Comment son cytoplasme se coupe-t-il en deux ?",
          "question_type": "single_choice",
-         "explanation": "Étape 5 — Conclure : chez la cellule végétale, un phragmoplaste construit une paroi au milieu, entre les deux noyaux de la télophase. Pourquoi pas « La cellule s'étrangle jusqu'à se couper en deux » : c'est la cytodiérèse de la cellule animale ; la paroi rigide d'une cellule végétale l'empêche de se pincer.",
+         "explanation": "Étape 5 — Conclure : chez la cellule végétale, une nouvelle paroi se construit au milieu, entre les deux noyaux de la télophase. Pourquoi pas « La cellule s'étrangle jusqu'à se couper en deux » : c'est la cytodiérèse de la cellule animale ; la paroi rigide d'une cellule végétale l'empêche de se pincer.",
          "answers": [
           {
            "content": "Une nouvelle paroi se construit au milieu de la cellule",
@@ -1869,7 +1869,7 @@
       {
        "content": "Une cellule du champ d'Aya est une cellule végétale en fin de division. Comment son cytoplasme se coupe-t-il en deux ?",
        "question_type": "single_choice",
-       "explanation": "Méthode : 1. Observer : télophase, deux noyaux. 2. Conclure : la cellule végétale bâtit une nouvelle paroi au milieu (phragmoplaste). Pourquoi pas « La cellule s'étrangle au milieu » : c'est la cytodiérèse d'une cellule animale, dépourvue de paroi rigide.",
+       "explanation": "Méthode : 1. Observer : télophase, deux noyaux. 2. Conclure : la cellule végétale bâtit une nouvelle paroi au milieu. Pourquoi pas « La cellule s'étrangle au milieu » : c'est la cytodiérèse d'une cellule animale, dépourvue de paroi rigide.",
        "answers": [
         {
          "content": "Une paroi se construit au milieu de la cellule",
@@ -2035,7 +2035,7 @@
         {
          "content": "Un champ montre 80 cellules, dont 72 à noyau arrondi. Combien de cellules ont des chromosomes visibles ?",
          "question_type": "numeric",
-         "explanation": "Méthode : 1. Repérer : les noyaux arrondis sont en interphase, soit 72. 2. Calculer : 80 − 72 = 8 cellules aux chromosomes visibles. Pourquoi pas « 72 » : ce sont les cellules au repos, pas celles qui se divisent.",
+         "explanation": "Méthode : 1. Repérer : les noyaux arrondis sont en interphase, soit 72. 2. Calculer : 80 − 72 = 8 cellules aux chromosomes visibles. Pourquoi pas « 72 » : ce sont les cellules en interphase, pas celles qui se divisent.",
          "answers": [
           {
            "content": "8",
@@ -2253,7 +2253,7 @@
         {
          "content": "En télophase, deux noyaux se reforment.",
          "question_type": "true_false",
-         "explanation": "Méthode : 1. Repérer : deux lots de chromatides aux pôles. 2. Conclure : une enveloppe se reforme autour de chaque lot, donc deux noyaux. Pourquoi pas « Faux » : c'est en prophase, au contraire, que l'enveloppe disparaît.",
+         "explanation": "Méthode : 1. Repérer : deux lots de chromosomes aux pôles. 2. Conclure : une enveloppe se reforme autour de chaque lot, donc deux noyaux. Pourquoi pas « Faux » : c'est en prophase, au contraire, que l'enveloppe disparaît.",
          "answers": [
           {
            "content": "Vrai",
@@ -2268,14 +2268,14 @@
         {
          "content": "Chez une cellule animale, comment le cytoplasme se divise-t-il ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1. Situer : cytodiérèse. 2. Conclure : la membrane de la cellule animale se pince au milieu. Pourquoi pas « Par construction d'un phragmoplaste » : le phragmoplaste construit une paroi, ce qui caractérise la cellule végétale.",
+         "explanation": "Méthode : 1. Situer : cytodiérèse. 2. Conclure : la membrane de la cellule animale se pince au milieu. Pourquoi pas « Par construction d'une paroi au milieu » : la construction d'une paroi caractérise la cellule végétale.",
          "answers": [
           {
            "content": "Par étranglement",
            "correct": true
           },
           {
-           "content": "Par construction d'un phragmoplaste",
+           "content": "Par construction d'une paroi au milieu",
            "correct": false
           },
           {
@@ -2391,7 +2391,7 @@
     },
     {
      "title": "Sujet 2 · La division cellulaire dans la vie courante",
-     "notions": "Situations ivoiriennes : oignon du marché de Bouaké, plaie après un match de football, racine de maïs près de Korhogo, coup de soleil à Grand-Bassam ; préparation, réparation, croissance, renouvellement.",
+     "notions": "Situations ivoiriennes : oignon du marché de Bouaké, plaie après un match de football, racine de maïs près de Korhogo, peaux mortes sous la douche à Grand-Bassam ; préparation, réparation, croissance, renouvellement.",
      "exercises": [
       {
        "title": "Exercice 1",
@@ -2706,14 +2706,14 @@
       },
       {
        "title": "Exercice 4",
-       "statement": "Après une journée à la plage de Grand-Bassam, un élève a un coup de soleil : sa peau pèle et de petits morceaux de peau morte se détachent, mais l'épaisseur de sa peau reste la même (situation fictive).",
+       "statement": "Sous la douche, à Grand-Bassam, un élève frotte sa peau avec une éponge : chaque jour, de petites peaux mortes se détachent, mais l'épaisseur de sa peau reste la même (situation fictive).",
        "exercise_type": "evaluation",
        "figure": null,
        "questions": [
         {
          "content": "Pourquoi l'épaisseur de la peau reste-t-elle la même malgré les cellules mortes perdues ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1. Repérer : la peau perd des cellules en surface. 2. Comparer : l'épaisseur est constante. 3. Relier : les cellules filles remplacent les cellules mortes. Pourquoi pas « La peau ne perd aucune cellule » : l'élève voit bien des morceaux de peau se détacher.",
+         "explanation": "Méthode : 1. Repérer : la peau perd des cellules en surface. 2. Comparer : l'épaisseur est constante. 3. Relier : les cellules filles remplacent les cellules mortes. Pourquoi pas « La peau ne perd aucune cellule » : l'élève voit bien des peaux mortes se détacher.",
          "answers": [
           {
            "content": "Des divisions en profondeur remplacent les cellules perdues",
@@ -2959,7 +2959,7 @@
        "figure": null,
        "questions": [
         {
-         "content": "Remets dans l'ordre ces observations, en partant de la cellule au repos.",
+         "content": "Remets dans l'ordre ces observations, en partant de la cellule en interphase.",
          "question_type": "ordering",
          "explanation": "Méthode : 1. Observer le noyau. 2. Repérer les chromosomes. 3. Nommer : interphase, prophase, métaphase, anaphase, télophase. 4. Situer dans le cycle. Pourquoi pas « Chromatides en migration » avant « Chromosomes alignés » : les chromatides ne migrent qu'après l'alignement des chromosomes.",
          "answers": [
@@ -3036,7 +3036,7 @@
            "correct": true
           },
           {
-           "content": "Les deux lots de chromatides se dirigent vers des pôles opposés",
+           "content": "Les deux lots de chromosomes se dirigent vers des pôles opposés",
            "correct": true
           },
           {
@@ -3050,7 +3050,7 @@
          ]
         },
         {
-         "content": "À la fin de la télophase, chaque noyau reçoit un lot de chromatides identique à celui de l'autre.",
+         "content": "À la fin de la télophase, chaque noyau reçoit un lot de chromosomes identique à celui de l'autre.",
          "question_type": "true_false",
          "explanation": "Méthode : 1. Rappeler : la mitose répartit les chromosomes en deux lots identiques. 2. Conclure : deux noyaux identiques. Pourquoi pas « Faux » : la répartition des lots est égale et ne laisse aucun noyau différent.",
          "answers": [
@@ -3065,7 +3065,7 @@
          ]
         }
        ],
-       "hint": "Suis le noyau et les chromosomes, de la cellule au repos jusqu'aux deux cellules filles."
+       "hint": "Suis le noyau et les chromosomes, de la cellule en interphase jusqu'aux deux cellules filles."
       },
       {
        "title": "Exercice 3",
@@ -3074,7 +3074,7 @@
        "figure": null,
        "questions": [
         {
-         "content": "La cellule A construit une nouvelle paroi au milieu, du centre vers l'extérieur. De quelle cellule s'agit-il ?",
+         "content": "La cellule A construit une nouvelle paroi au milieu. De quelle cellule s'agit-il ?",
          "question_type": "single_choice",
          "explanation": "Méthode : 1. Observer : télophase. 2. Conclure : une paroi qui se construit au milieu signale une cellule végétale. Pourquoi pas « D'une cellule animale » : la cellule animale n'a pas de paroi et se coupe par étranglement.",
          "answers": [
@@ -3120,12 +3120,16 @@
          ]
         },
         {
-         "content": "Chez la cellule végétale, la cytodiérèse se fait grâce à un ___ qui construit une nouvelle paroi.",
+         "content": "Chez la cellule végétale, la cytodiérèse se fait par la construction d'une nouvelle ___ au milieu de la cellule.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 1. Situer : télophase. 2. Conclure : le phragmoplaste construit la paroi au milieu de la cellule. Pourquoi pas « fuseau » : le fuseau sert à la migration des chromatides, pas à construire la paroi.",
+         "explanation": "Méthode : 1. Situer : télophase. 2. Conclure : une nouvelle paroi se construit au milieu de la cellule et sépare les deux cellules filles. Pourquoi pas « enveloppe » : l'enveloppe se reforme autour de chaque noyau, elle ne sépare pas les deux cellules.",
          "answers": [
           {
-           "content": "phragmoplaste",
+           "content": "paroi",
+           "correct": true
+          },
+          {
+           "content": "cloison",
            "correct": true
           }
          ]
@@ -3477,7 +3481,7 @@
         {
          "content": "En télophase, deux noyaux se reforment, un à chaque pôle de la cellule.",
          "question_type": "true_false",
-         "explanation": "Méthode : 1. Nommer : télophase. 2. Conclure : une enveloppe se reforme autour de chaque lot de chromatides, un noyau à chaque pôle. Pourquoi pas « Faux » : c'est la prophase, au contraire, où l'enveloppe disparaît ; en télophase elle se reforme.",
+         "explanation": "Méthode : 1. Nommer : télophase. 2. Conclure : une enveloppe se reforme autour de chaque lot de chromosomes, un noyau à chaque pôle. Pourquoi pas « Faux » : c'est la prophase, au contraire, où l'enveloppe disparaît ; en télophase elle se reforme.",
          "answers": [
           {
            "content": "Vrai",
@@ -3550,7 +3554,7 @@
         {
          "content": "Pourquoi les cellules en interphase comptent-elles dans le total ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1. Compter toutes les cellules du champ. 2. Rapporter celles qui sont en mitose à ce total. Pourquoi pas « Parce qu'elles sont en mitose » : une cellule en interphase est au repos, elle n'est pas en mitose.",
+         "explanation": "Méthode : 1. Compter toutes les cellules du champ. 2. Rapporter celles qui sont en mitose à ce total. Pourquoi pas « Parce qu'elles sont en mitose » : une cellule en interphase ne se divise pas à ce moment : elle n'est pas en mitose.",
          "answers": [
           {
            "content": "Parce que l'indice mesure la part des cellules en mitose parmi toutes les cellules comptées",
@@ -3561,7 +3565,7 @@
            "correct": false
           },
           {
-           "content": "Parce que seules les cellules au repos se comptent",
+           "content": "Parce que seules les cellules en interphase se comptent",
            "correct": false
           },
           {
@@ -3658,7 +3662,7 @@
            "correct": false
           },
           {
-           "content": "Elles diffèrent de la cellule mère par leur information génétique",
+           "content": "Elles sont deux fois plus grosses que la cellule mère",
            "correct": false
           }
          ]
