@@ -624,14 +624,15 @@
           ]
         },
         {
-          "name": "Déterminer le centre d'inertie d'un système de deux solides",
-          "remember": "Pour un solide homogène de forme simple, le **centre d'inertie** G se trouve par symétrie : c'est le **centre de symétrie** (centre d'une boule, d'un disque ou d'un cube, milieu d'une tige) ou l'**intersection des axes de symétrie** (rectangle : ses deux axes ; disque : ses diamètres). Pour un **système de deux solides** homogènes $S_1$ et $S_2$, de masses $m_1$ et $m_2$ et de centres d'inertie $G_1$ et $G_2$, le centre d'inertie G du système vérifie la **relation barycentrique** : $$m_1 \\overrightarrow{GG_1} + m_2 \\overrightarrow{GG_2} = \\vec 0$$ On en déduit que G est sur le segment $[G_1G_2]$, **plus près du solide le plus lourd**, avec $G_1G = \\dfrac{m_2}{m_1 + m_2} \\times G_1G_2$ (et $G_2G = \\dfrac{m_1}{m_1 + m_2} \\times G_1G_2$). Si les deux masses sont égales, G est au milieu de $[G_1G_2]$. Quand un solide se déplace, son **mouvement d'ensemble** est le mouvement de son centre d'inertie G ; son **mouvement propre** est le mouvement des autres points du solide autour de G, comme une rotation. Une clé lancée sur une table à coussin d'air tourne sur elle-même (mouvement propre) pendant que G glisse en ligne droite à vitesse constante (mouvement d'ensemble).",
+          "name": "Déterminer le centre d'inertie d'un système de deux solides et décrire son mouvement",
+          "remember": "Pour un solide homogène de forme simple, le **centre d'inertie** G se trouve par symétrie : c'est le **centre de symétrie** (centre d'une boule, d'un disque ou d'un cube, milieu d'une tige) ou l'**intersection des axes de symétrie** (rectangle : ses deux axes ; disque : ses diamètres) ; pour une **plaque triangulaire**, c'est l'**intersection de ses médianes**. Pour un **système de deux solides** homogènes $S_1$ et $S_2$, de masses $m_1$ et $m_2$ et de centres d'inertie $G_1$ et $G_2$, le centre d'inertie G du système vérifie la **relation barycentrique** : $$m_1 \\overrightarrow{GG_1} + m_2 \\overrightarrow{GG_2} = \\vec 0$$ On en déduit que G est sur le segment $[G_1G_2]$, **plus près du solide le plus lourd**, avec $G_1G = \\dfrac{m_2}{m_1 + m_2} \\times G_1G_2$. Si les deux masses sont égales, G est au milieu de $[G_1G_2]$. Quand un solide bouge, son **mouvement d'ensemble** est le mouvement de son centre d'inertie G ; son **mouvement propre** est le mouvement des autres points du solide autour de G, comme une rotation. Une clé lancée sur une table à coussin d'air tourne sur elle-même (mouvement propre) et G glisse en ligne droite à vitesse constante (mouvement d'ensemble).",
           "method": [
-            "Repérer le centre d'inertie $G_1$ et $G_2$ de chaque solide homogène (centre de symétrie ou intersection des axes de symétrie).",
+            "Repérer le centre d'inertie $G_1$ et $G_2$ de chaque solide homogène (centre de symétrie, intersection des axes de symétrie ou, pour un triangle, des médianes).",
             "Relever les masses $m_1$ et $m_2$ et la distance $G_1G_2$.",
             "Écrire la relation barycentrique $m_1 \\overrightarrow{GG_1} + m_2 \\overrightarrow{GG_2} = \\vec 0$, d'où $G_1G = \\dfrac{m_2}{m_1 + m_2} \\times G_1G_2$.",
             "Calculer $G_1G$, dans la même unité que $G_1G_2$.",
-            "Placer G sur le segment $[G_1G_2]$, à la distance $G_1G$ de $G_1$ : il est plus près du solide le plus lourd."
+            "Placer G sur le segment $[G_1G_2]$, à la distance $G_1G$ de $G_1$ : il est plus près du solide le plus lourd.",
+            "Décrire le mouvement du système : le mouvement d'ensemble est celui de G ; le mouvement propre est celui des autres points autour de G."
           ],
           "example": {
             "statement": "Un haltère est formé de deux boules pleines et homogènes reliées par une tige de masse négligeable. La boule 1 a une masse $m_1 = 2$ kg, la boule 2 une masse $m_2 = 6$ kg, et la distance entre leurs centres vaut $G_1G_2 = 40$ cm. Où se trouve le centre d'inertie G de l'haltère ?",
@@ -640,7 +641,8 @@
               "Relever : $m_1 = 2$ kg, $m_2 = 6$ kg et $G_1G_2 = 40$ cm.",
               "Écrire : $m_1 \\overrightarrow{GG_1} + m_2 \\overrightarrow{GG_2} = \\vec 0$, d'où $G_1G = \\dfrac{m_2}{m_1 + m_2} \\times G_1G_2$.",
               "Calculer : $G_1G = \\dfrac{6}{2 + 6} \\times 40 = 30$ cm.",
-              "Placer : G est sur le segment $[G_1G_2]$, à 30 cm de $G_1$ et donc à 10 cm de $G_2$, plus près de la boule la plus lourde."
+              "Placer : G est sur le segment $[G_1G_2]$, à 30 cm de $G_1$ et donc à 10 cm de $G_2$, plus près de la boule la plus lourde.",
+              "Décrire : si l'haltère est lancé en tournant sur une surface horizontale sans frottement, son mouvement d'ensemble est celui de G, rectiligne uniforme ; la rotation des deux boules autour de G est son mouvement propre."
             ]
           },
           "pitfall": "Ne place pas G au milieu du segment $[G_1G_2]$ quand les masses sont différentes : il est plus près du solide le plus lourd. Ne confonds pas non plus les deux fractions : $G_1G$ se calcule avec la masse **de l'autre solide**, $m_2$, au numérateur. Dans l'exemple, prendre $m_1$ donnerait $\\dfrac{2}{8} \\times 40 = 10$ cm, qui est en fait la distance $G_2G$. Enfin, la rotation d'un solide sur lui-même ne fait pas partie de son mouvement d'ensemble : le mouvement d'ensemble est celui de G seul ; la rotation autour de G est son mouvement propre.",
@@ -689,7 +691,7 @@
               {
                 "content": "Une clé lancée sur une table à coussin d'air tourne sur elle-même, tandis que son centre d'inertie G glisse en ligne droite à vitesse constante. Quel est son mouvement d'ensemble ?",
                 "question_type": "single_choice",
-                "explanation": "Étape 1 — Repérer : on cherche le centre d'inertie G de la clé. Étape 2 — Relever : G a une trajectoire rectiligne et une vitesse constante. Étape 3 — Écrire : le mouvement d'ensemble est celui de G ; la rotation autour de G est le mouvement propre. Conclusion : le mouvement d'ensemble est rectiligne uniforme. Une rotation autour de G est un mouvement propre, pas le mouvement d'ensemble.",
+                "explanation": "Étape 1 — Repérer : le centre d'inertie G de la clé. Étape 6 — Décrire : G glisse en ligne droite à vitesse constante, donc le mouvement d'ensemble de la clé est le mouvement rectiligne uniforme de G ; la rotation de la clé autour de G est son mouvement propre. Pourquoi pas la rotation autour de G : c'est le mouvement propre. Pourquoi pas un mouvement circulaire ou accéléré : G va en ligne droite à vitesse constante.",
                 "hint": "Le mouvement d'ensemble est celui d'un seul point : lequel ?",
                 "answers": [
                   {
@@ -713,7 +715,7 @@
               {
                 "content": "Le centre d'inertie d'une tige homogène est situé en son ___.",
                 "question_type": "fill_blank",
-                "explanation": "Étape 1 — Repérer : une tige homogène a un centre de symétrie. Étape 2 — Relever : sa forme est simple et sa matière est la même partout. Étape 3 — Écrire : G est le centre de symétrie. Conclusion : G est au milieu de la tige.",
+                "explanation": "Étape 1 — Repérer : une tige homogène a un centre de symétrie, son milieu ; c'est son centre d'inertie G. Conclusion : G est au milieu de la tige.",
                 "hint": "Quel point de la tige la partage en deux parties identiques ?",
                 "answers": [
                   {
@@ -738,7 +740,7 @@
                 {
                   "content": "Où se trouve le centre d'inertie d'une plaque rectangulaire homogène ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Repérer : le rectangle homogène a deux axes de symétrie, et G est à leur intersection. Étape 2 — Relever : la plaque est homogène et de forme simple. Conclusion : G est au centre de la plaque, à l'intersection de ses axes de symétrie. Pourquoi pas un sommet ou le milieu d'un côté : ces points ne sont pas des centres de symétrie.",
+                  "explanation": "Étape 1 — Repérer : la plaque rectangulaire homogène a deux axes de symétrie ; son centre d'inertie G est à leur intersection, au centre de la plaque. Pourquoi pas un sommet ou le milieu d'un côté : ces points ne sont pas sur les deux axes de symétrie. Pourquoi pas le point le plus proche du sol : G ne dépend que de la forme et de la matière du solide.",
                   "answers": [
                     {
                       "content": "À l'intersection de ses axes de symétrie",
@@ -860,7 +862,7 @@
                 {
                   "content": "Remets dans l'ordre les étapes de la méthode pour trouver le centre d'inertie d'un système de deux solides.",
                   "question_type": "ordering",
-                  "explanation": "La méthode commence par Repérer $G_1$ et $G_2$, puis Relever les masses et la distance, puis Écrire la relation barycentrique, puis Calculer $G_1G$, et se termine par Placer G. On ne calcule qu'une fois la relation écrite et les données relevées.",
+                  "explanation": "La méthode commence par Repérer $G_1$ et $G_2$, puis Relever les masses et la distance, puis Écrire la relation barycentrique, puis Calculer $G_1G$, puis Placer G, et se termine par Décrire le mouvement d'ensemble (celui de G) et le mouvement propre. On ne calcule qu'une fois la relation écrite et les données relevées, et on ne décrit le mouvement de G qu'une fois G placé.",
                   "answers": [
                     {
                       "content": "Repérer $G_1$ et $G_2$"
@@ -876,13 +878,16 @@
                     },
                     {
                       "content": "Placer G sur le segment"
+                    },
+                    {
+                      "content": "Décrire le mouvement d'ensemble et le mouvement propre"
                     }
                   ]
                 },
                 {
                   "content": "Relie chaque solide homogène à la position de son centre d'inertie.",
                   "question_type": "matching",
-                  "explanation": "Étape 1 — Repérer : quatre solides homogènes de forme simple. Étape 2 — Relever : chacun a un centre ou des axes de symétrie. Étape 3 — Écrire : G est le centre de symétrie ou l'intersection des axes de symétrie. Conclusion : chaque solide est relié à la position de son G.",
+                  "explanation": "Étape 1 — Repérer : pour un solide homogène de forme simple, G est le centre de symétrie (boule : son centre ; tige : son milieu), l'intersection des axes de symétrie (rectangle : ses deux axes ; disque : ses diamètres) ou, pour une plaque triangulaire, l'intersection de ses médianes. Chaque solide est relié à la position de son G.",
                   "answers": [
                     {
                       "content": "Une boule",
@@ -899,6 +904,10 @@
                     {
                       "content": "Un disque",
                       "match": "L'intersection de ses diamètres"
+                    },
+                    {
+                      "content": "Une plaque triangulaire",
+                      "match": "L'intersection de ses médianes"
                     }
                   ]
                 },
@@ -918,7 +927,7 @@
                 {
                   "content": "Une clé lancée sur une table à coussin d'air tourne sur elle-même, tandis que son centre d'inertie G glisse en ligne droite à vitesse constante. Quelles affirmations sont vraies ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Étape 1 — Repérer : on repère le centre d'inertie G de la clé. Étape 2 — Relever : G a un mouvement rectiligne uniforme, et les autres points tournent autour de G. Étape 3 — Écrire : le mouvement d'ensemble est celui de G ; le mouvement propre est la rotation autour de G. Conclusion : les deux affirmations exactes sont celles sur G et sur la rotation. Pourquoi pas « Le mouvement d'ensemble est la rotation autour de G » : la rotation est le mouvement propre. Pourquoi pas « La rotation de la clé prouve que son centre d'inertie G accélère » : G garde un mouvement rectiligne uniforme.",
+                  "explanation": "Étape 1 — Repérer : le centre d'inertie G de la clé. Étape 6 — Décrire : G a un mouvement rectiligne uniforme, c'est le mouvement d'ensemble ; les autres points tournent autour de G, c'est le mouvement propre. Les deux affirmations exactes sont celles sur G et sur la rotation. Pourquoi pas « Le mouvement d'ensemble est la rotation autour de G » : la rotation est le mouvement propre. Pourquoi pas « La rotation de la clé prouve que son centre d'inertie G accélère » : G garde un mouvement rectiligne uniforme.",
                   "answers": [
                     {
                       "content": "Le mouvement d'ensemble est celui de G",
@@ -964,7 +973,7 @@
                 {
                   "content": "Le mouvement d'ensemble d'un solide est le mouvement de son centre d'inertie G.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Repérer : on cherche le centre d'inertie G du solide. Étape 2 — Relever : G représente le mouvement d'ensemble du solide. Étape 3 — Écrire : le mouvement d'ensemble est celui de G ; le mouvement propre est celui des autres points autour de G. Conclusion : l'affirmation est vraie.",
+                  "explanation": "Étape 1 — Repérer : le centre d'inertie G du solide. Étape 6 — Décrire : le mouvement d'ensemble est celui de G ; le mouvement propre est celui des autres points autour de G. L'affirmation est vraie.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2018,7 +2027,7 @@
             {
               "content": "Un mobile autoporteur tourne sur lui-même tout en glissant sur une table à coussin d'air, son centre d'inertie G ayant un mouvement rectiligne uniforme. Quel est son mouvement d'ensemble ?",
               "question_type": "single_choice",
-              "explanation": "Étape 1 — Repérer : on cherche le centre d'inertie G du mobile. Étape 2 — Relever : G a une trajectoire rectiligne et une vitesse constante. Étape 3 — Écrire : le mouvement d'ensemble est celui de G ; la rotation autour de G est le mouvement propre. Étape 4 — Conclure : le mouvement d'ensemble est rectiligne uniforme. Pourquoi pas « la rotation autour de G » : c'est le mouvement propre, celui des autres points autour de G.",
+              "explanation": "Étape 1 — Repérer : le centre d'inertie G du mobile. Étape 6 — Décrire : G a une trajectoire rectiligne et une vitesse constante ; le mouvement d'ensemble est celui de G, donc rectiligne uniforme ; la rotation autour de G est le mouvement propre. Pourquoi pas « la rotation autour de G » : c'est le mouvement propre, celui des autres points autour de G. Pourquoi pas un mouvement circulaire ou accéléré : G va en ligne droite à vitesse constante.",
               "answers": [
                 {
                   "content": "Le mouvement rectiligne uniforme de G",
@@ -2077,7 +2086,7 @@
             {
               "content": "Le mobile autoporteur est un disque homogène. Où faut-il placer la marque qui repère son centre d'inertie G ?",
               "question_type": "single_choice",
-              "explanation": "Étape 1 — Repérer : le mobile est un disque homogène, qui a un centre et des axes de symétrie. Étape 2 — Relever : sa forme est simple et sa matière est la même partout. Étape 3 — Écrire : G est le centre de symétrie, à l'intersection des diamètres. Étape 4 — Conclure : la marque se place au centre du disque. Pourquoi pas sur le bord : le bord n'est pas un centre de symétrie.",
+              "explanation": "Étape 1 — Repérer : le mobile est un disque homogène ; son centre d'inertie G est son centre de symétrie, à l'intersection de ses diamètres. Conclusion : la marque se place au centre du disque. Pourquoi pas sur le bord ou au milieu d'un rayon : ces points ne sont pas le centre de symétrie. Pourquoi pas là où l'on pousse : G ne dépend que de la forme et de la matière du solide.",
               "answers": [
                 {
                   "content": "Au centre du disque, intersection de ses diamètres",
@@ -2214,7 +2223,7 @@
         },
         {
           "title": "Le wôrô-wôrô sur la route d'Abobo",
-          "statement": "Un wôrô-wôrô roule sur une route droite et horizontale. Phase A : il roule à vitesse constante, avec une force motrice de 900 N vers l'avant. Phase B : le chauffeur accélère, la force motrice vaut 1 400 N et le frottement garde la même valeur qu'en phase A. Référentiel terrestre galiléen.",
+          "statement": "Un wôrô-wôrô roule sur une route droite et horizontale. Phase A : il roule à vitesse constante, avec une force motrice de 900 N vers l'avant. Phase B : le chauffeur accélère, la force motrice vaut 1 400 N et le frottement garde la même valeur qu'en phase A. Sur son porte-bagages, deux colis homogènes de 1 kg et de 5 kg sont reliés par une sangle de masse négligeable. Référentiel terrestre galiléen.",
           "exercise_type": "evaluation",
           "figure": null,
           "questions": [
@@ -3730,7 +3739,7 @@
                 {
                   "content": "Un mobile autoporteur est un disque homogène. Où se trouve son centre d'inertie G ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Repérer : le mobile est un disque homogène, de centre et d'axes de symétrie. Étape 2 — Relever : la matière est la même partout. Étape 3 — Écrire : G est le centre de symétrie, à l'intersection des diamètres. Étape 4 — Conclure : G est au centre du disque. Pourquoi pas sur le bord : le bord n'est pas un centre de symétrie, G est en son centre.",
+                  "explanation": "Étape 1 — Repérer : le mobile est un disque homogène ; son centre d'inertie G est son centre de symétrie, à l'intersection de ses diamètres. Conclusion : G est au centre du disque. Pourquoi pas sur le bord ou au milieu d'un rayon : ces points ne sont pas le centre de symétrie. Pourquoi pas là où il est lancé : G ne dépend que de la forme et de la matière du solide.",
                   "answers": [
                     {
                       "content": "Au centre du disque",
@@ -3776,7 +3785,7 @@
                 {
                   "content": "Un mobile autoporteur tourne sur lui-même en glissant sur la table, son centre d'inertie G allant à vitesse constante en ligne droite. Le mouvement propre du mobile est…",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Repérer : on repère le centre d'inertie G du mobile. Étape 2 — Relever : G a un mouvement rectiligne uniforme ; les autres points tournent autour de G. Étape 3 — Écrire : le mouvement d'ensemble est celui de G ; le mouvement propre est celui des points autour de G. Étape 4 — Conclure : le mouvement propre est la rotation autour de G. Pourquoi pas le mouvement rectiligne uniforme : c'est le mouvement d'ensemble, celui de G.",
+                  "explanation": "Étape 1 — Repérer : le centre d'inertie G du mobile. Étape 6 — Décrire : G a un mouvement rectiligne uniforme, c'est le mouvement d'ensemble ; les autres points tournent autour de G, c'est le mouvement propre. Conclusion : le mouvement propre est la rotation des points autour de G. Pourquoi pas le mouvement rectiligne uniforme de G : c'est le mouvement d'ensemble.",
                   "answers": [
                     {
                       "content": "la rotation des points autour de G",
@@ -3815,7 +3824,7 @@
             },
             {
               "title": "Exercice 3",
-              "statement": "Un gbaka roule en ligne droite à 36 km/h sur une route horizontale. Le chauffeur freine. Un passager sans ceinture est sur un siège dont on néglige les frottements. Référentiel terrestre galiléen.",
+              "statement": "Un gbaka roule en ligne droite à 36 km/h sur une route horizontale. Le chauffeur freine. Un passager sans ceinture est sur un siège dont on néglige les frottements. Dans le gbaka, deux sacs homogènes de 1 kg et de 3 kg sont reliés par une sangle de masse négligeable. Référentiel terrestre galiléen.",
               "exercise_type": "evaluation",
               "figure": null,
               "hint": "Avant le freinage : mouvement rectiligne uniforme. Pendant : la vitesse du gbaka change.",

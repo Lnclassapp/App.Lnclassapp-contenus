@@ -1603,7 +1603,7 @@
         },
         {
           "name": "La liaison covalente et les formules d'une molécule",
-          "remember": "Une **molécule** est un groupe d'atomes liés, électriquement neutre (H₂O, CH₄). Une **liaison covalente** est la mise en commun de **deux électrons**, un de chaque atome : ce **doublet liant** se dessine par un trait. Chaque atome forme autant de liaisons qu'il lui manque d'électrons pour avoir le duet ou l'octet : **H 1, F 1, Cl 1, O 2, N 3, C 4**. Ce nombre de liaisons est la **valence** de l'atome. Entre deux atomes, la liaison peut être **double** (O=C=O) ou **triple** (N≡N). La **formule développée** montre tous les atomes et toutes les liaisons. La **formule semi-développée** ne dessine pas les liaisons avec l'hydrogène : on écrit CH₃–CH₃ au lieu de dessiner chaque liaison C–H.",
+          "remember": "Une **molécule** est un groupe d'atomes liés, électriquement neutre (H₂O, CH₄). Une **liaison covalente** est la mise en commun de **deux électrons**, un de chaque atome : ce **doublet liant** se dessine par un trait. Chaque atome forme autant de liaisons qu'il lui manque d'électrons pour avoir le duet ou l'octet : **H 1, F 1, Cl 1, O 2, N 3, C 4**. Ce nombre de liaisons est la **valence** de l'atome. Entre deux atomes, la liaison peut être **double** (O=C=O) ou **triple** (N≡N). La **formule développée** montre tous les atomes et toutes les liaisons. La **formule semi-développée** ne dessine pas les liaisons avec l'hydrogène : on écrit CH₃–CH₃ au lieu de dessiner chaque liaison C–H. Une molécule a une **forme dans l'espace**, que montrent les modèles moléculaires : CO₂ est linéaire (angle de 180°), H₂O est coudée (angle d'environ 105°), les 4 liaisons de CH₄ pointent vers les sommets d'un tétraèdre (angles d'environ 109°). Une liaison mesure environ un dixième de nanomètre (O–H dans l'eau : 0,096 nm).",
           "method": [
             "Écrire la structure électronique de chaque atome et compter les électrons qui lui manquent pour atteindre le duet ou l'octet.",
             "Associer les atomes : chaque liaison met en commun un doublet, et chaque atome forme autant de liaisons que d'électrons manquants.",
@@ -1960,7 +1960,7 @@
         },
         {
           "name": "Les représentations de Lewis de quelques molécules",
-          "remember": "La **représentation de Lewis** d'une molécule montre **tous les doublets de la couche externe**. Un **doublet liant** est partagé entre deux atomes : c'est un trait entre eux (deux traits pour une liaison double, trois pour une triple). Un **doublet non liant** reste sur un seul atome : on le décrit ici en mots. Pour un atome : doublets liants = liaisons = électrons manquants ; doublets non liants = (électrons externes − liaisons) ÷ 2. Exemples : H₂ (H–H) ; Cl₂ (Cl–Cl, 3 doublets non liants sur chaque Cl) ; HCl (H–Cl, 3 sur Cl) ; H₂O (H–O–H, 2 sur O) ; NH₃ (3 liaisons, 1 sur N) ; CH₄ (4 liaisons, aucun) ; O₂ (O=O, 2 sur chaque O) ; N₂ (N≡N, 1 sur chaque N) ; CO₂ (O=C=O, 2 sur chaque O, aucun sur C) ; C₂H₄ (liaison double C=C, aucun). **Règle** : dans la représentation, chaque H a 1 doublet (duet), chaque autre atome 4 doublets, liants et non liants confondus (octet).",
+          "remember": "La **représentation de Lewis** d'une molécule montre **tous les doublets de la couche externe**. Un **doublet liant** est partagé entre deux atomes : c'est un trait entre eux (deux traits pour une liaison double, trois pour une triple). Un **doublet non liant** reste sur un seul atome : sur ta copie, il se dessine par un petit trait placé contre cet atome ; ici, on le décrit en mots. Pour un atome : doublets liants = liaisons = électrons manquants ; doublets non liants = (électrons externes − liaisons) ÷ 2. Exemples : H₂ (H–H) ; Cl₂ (Cl–Cl, 3 doublets non liants sur chaque Cl) ; HCl (H–Cl, 3 sur Cl) ; H₂O (H–O–H, 2 sur O) ; NH₃ (3 liaisons, 1 sur N) ; CH₄ (4 liaisons, aucun) ; O₂ (O=O, 2 sur chaque O) ; N₂ (N≡N, 1 sur chaque N) ; CO₂ (O=C=O, 2 sur chaque O, aucun sur C) ; C₂H₄ (liaison double C=C, aucun). **Règle** : dans la représentation, chaque H a 1 doublet (duet), chaque autre atome 4 doublets, liants et non liants confondus (octet).",
           "method": [
             "Compter les électrons de la couche externe de chaque atome, à partir de sa structure électronique.",
             "Calculer les doublets liants de chaque atome : c'est le nombre d'électrons qui lui manquent pour le duet (H) ou l'octet (autres atomes).",
@@ -2314,7 +2314,7 @@
         },
         {
           "name": "Corps purs, mélanges, composés ioniques et moléculaires",
-          "remember": "Un **corps pur** est formé d'une seule espèce chimique ; un **mélange** en contient plusieurs (l'air, l'eau de mer, l'eau sucrée). Un **corps pur simple** ne contient qu'une seule sorte d'atomes (Fe, O₂, N₂, H₂, Cl₂) ; un **corps pur composé** en contient plusieurs (H₂O, CO₂, NaCl, NH₃). Un composé est **ionique** s'il est formé de cations et d'anions, neutre dans l'ensemble (NaCl, MgCl₂, Ca(OH)₂) : on y trouve un métal ou l'ion ammonium NH₄⁺ associé à un anion. Un composé est **moléculaire** s'il est formé de molécules, c'est-à-dire de non-métaux liés par covalence (H₂O, CO₂, CH₄, HCl). La formule d'une molécule donne son nombre réel d'atomes (H₂O : 3 atomes). La formule d'un composé ionique, dite **formule statistique**, ne donne que la proportion des ions (NaCl : autant de Na⁺ que de Cl⁻) : un composé ionique n'est pas fait de molécules.",
+          "remember": "Un **corps pur** est formé d'une seule espèce chimique ; un **mélange** en contient plusieurs (l'air, l'eau de mer, l'eau sucrée). Un **corps pur simple** ne contient qu'une seule sorte d'atomes (Fe, O₂, N₂, H₂, Cl₂) ; un **corps pur composé** en contient plusieurs (H₂O, CO₂, NaCl, NH₃). Un composé est **ionique** s'il est formé de cations et d'anions, neutre dans l'ensemble (NaCl, MgCl₂, Ca(OH)₂) : on y trouve en général un métal ou l'ion ammonium NH₄⁺ associé à un anion. Un composé est **moléculaire** s'il est formé de molécules, c'est-à-dire de non-métaux liés par covalence (H₂O, CO₂, CH₄, HCl). La formule d'une molécule donne son nombre réel d'atomes (H₂O : 3 atomes). La formule d'un composé ionique, dite **formule statistique**, ne donne que la proportion des ions (NaCl : autant de Na⁺ que de Cl⁻) : un composé ionique n'est pas fait de molécules.",
           "method": [
             "Dire si la matière contient une seule espèce chimique (corps pur) ou plusieurs (mélange).",
             "Compter les sortes d'atomes de la formule du corps pur : une seule sorte, c'est un corps pur simple ; plusieurs sortes, c'est un corps pur composé.",
@@ -4408,7 +4408,7 @@
             },
             {
               "title": "Exercice 3",
-              "statement": "On compare quelques molécules du quotidien : l'eau, le méthane du gaz naturel, le dioxygène de l'air, le diazote et le butane.",
+              "statement": "On compare quelques molécules du quotidien : l'eau, le méthane du gaz naturel, le dioxygène de l'air, le diazote et le propane, un des gaz du gaz de cuisine.",
               "exercise_type": "evaluation",
               "figure": null,
               "hint": "Pour chaque molécule, compte les électrons manquants de chaque atome.",
@@ -4439,7 +4439,7 @@
                 {
                   "content": "Dans la molécule de diazote N₂, quelle est la valence de chaque atome d'azote ($Z = 7$), c'est-à-dire son nombre de liaisons covalentes ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Compter : N a (K)²(L)⁵, soit 5 électrons externes. Étape 2 — Calculer : pour l'octet, il manque 8 − 5 = 3 électrons, donc la valence est 3. Étape 3 — Placer : les deux atomes N sont reliés par 3 traits, N≡N. Pourquoi pas 5 : 5 est le nombre d'électrons externes, pas le nombre de liaisons.",
+                  "explanation": "Étape 1 — Écrire : N a (K)²(L)⁵, soit 5 électrons externes ; pour l'octet, il lui manque 8 − 5 = 3 électrons. Étape 2 — Associer : chaque atome forme autant de liaisons que d'électrons manquants, donc 3 liaisons : la valence de l'azote est 3. Étape 3 — Dessiner : les deux atomes N sont reliés par 3 traits, N≡N. Pourquoi pas 5 : 5 est le nombre d'électrons externes, pas le nombre de liaisons.",
                   "answers": [
                     {
                       "content": "3",
