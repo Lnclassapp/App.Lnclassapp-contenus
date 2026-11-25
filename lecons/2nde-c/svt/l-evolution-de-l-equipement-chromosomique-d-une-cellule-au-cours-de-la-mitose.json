@@ -13,7 +13,7 @@
     {
      "key": "chromosome-structure",
      "kind": "diagram",
-     "description": "Schéma en arbre d'un chromosome à deux chromatides, observé en métaphase : le chromosome porte deux chromatides identiques, chacune contenant une molécule d'ADN, et un centromère, étranglement qui les relie. Le chromosome à une seule chromatide n'a pas encore été répliqué.",
+     "description": "Schéma en arbre d'un chromosome à deux chromatides, observé en métaphase : le chromosome porte deux chromatides identiques, chacune contenant une molécule d'ADN, et un centromère, étranglement qui les relie. Le chromosome à une seule chromatide n'a pas encore été répliqué ou vient d'être séparé.",
      "params": {
       "layout": "tree",
       "direction": "down",
@@ -201,6 +201,35 @@
       ]
      },
      "controls": []
+    },
+    {
+     "key": "courbe-adn-6",
+     "kind": "stat_chart",
+     "description": "Courbe fictive de la quantité d'ADN par noyau, en unités arbitraires : 6 en G1 et au début de la phase S, 9 au milieu de S, 12 en fin de S, en G2 et en métaphase, puis retour à 6 à la fin de l'anaphase et dans la cellule fille. La courbe monte pendant la réplication et redescend à la séparation des chromatides.",
+     "params": {
+      "chart": "line",
+      "series": [
+       6,
+       6,
+       9,
+       12,
+       12,
+       12,
+       6,
+       6
+      ],
+      "labels": [
+       "G1",
+       "Début de S",
+       "Milieu de S",
+       "Fin de S",
+       "G2",
+       "Métaphase",
+       "Fin d'anaphase",
+       "G1 (cellule fille)"
+      ]
+     },
+     "controls": []
     }
    ],
    "notions": [
@@ -357,6 +386,10 @@
          "answers": [
           {
            "content": "réplication",
+           "correct": true
+          },
+          {
+           "content": "duplication",
            "correct": true
           }
          ]
@@ -524,7 +557,7 @@
     },
     {
      "name": "Lire un caryotype et compter les chromosomes",
-     "remember": "Un **caryotype** est la photographie des chromosomes d'une cellule en division, classés **par paires** de chromosomes **homologues** (même taille, même forme, même position du centromère ; l'un vient du père, l'autre de la mère). Une cellule du corps a **2n chromosomes**, donc **n paires**. L'Homme a **2n = 46** : 23 paires, dont 22 paires de chromosomes ordinaires et une paire de chromosomes sexuels (XX chez la fille, XY chez le garçon). Le nombre de chromosomes est **caractéristique de l'espèce** : drosophile 2n = 8, petit pois 2n = 14, maïs 2n = 20. Il ne dépend pas de la taille de l'être vivant.",
+     "remember": "Un **caryotype** est la photographie des chromosomes d'une cellule en division, classés **par paires** de chromosomes **homologues** (même taille, même forme, même position du centromère ; l'un vient du père, l'autre de la mère) (sauf X et Y chez le garçon). Une cellule du corps a **2n chromosomes**, donc **n paires**. L'Homme a **2n = 46** : 23 paires, dont 22 paires de chromosomes ordinaires et une paire de chromosomes sexuels (XX chez la fille, XY chez le garçon). Le nombre de chromosomes est **caractéristique de l'espèce** : drosophile 2n = 8, petit pois 2n = 14, maïs 2n = 20. Il ne dépend pas de la taille de l'être vivant.",
      "method": [
       "Compter tous les chromosomes du caryotype.",
       "Former les paires : associer les chromosomes de même taille et de même forme, les homologues.",
@@ -795,7 +828,7 @@
         {
          "content": "Le nombre de chromosomes est caractéristique de l'espèce.",
          "question_type": "true_false",
-         "explanation": "Étape 4 — Conclure : tous les individus d'une espèce ont le même 2n, comme 46 pour l'Homme. L'affirmation est vraie. Pourquoi pas « Faux » : le nombre de chromosomes change bien d'une espèce à l'autre, mais reste le même dans toutes les cellules du corps d'une espèce.",
+         "explanation": "Étape 4 — Conclure : tous les individus d'une espèce ont le même 2n, comme 46 pour l'Homme. L'affirmation est vraie. Pourquoi pas « Faux » : le nombre de chromosomes change bien d'une espèce à l'autre, mais reste le même dans une autre cellule de la peau du même individu.",
          "answers": [
           {
            "content": "Vrai",
@@ -814,6 +847,10 @@
          "answers": [
           {
            "content": "4",
+           "correct": true
+          },
+          {
+           "content": "quatre",
            "correct": true
           }
          ]
@@ -849,7 +886,7 @@
       "statement": "Tu t'entraînes à lire l'évolution de la quantité d'ADN par noyau.",
       "questions": [
        {
-        "content": "L'ADN est le constituant des ___ et porte l'information génétique.",
+        "content": "L'ADN est le constituant des ___, bâtonnets visibles pendant la division.",
         "question_type": "fill_blank",
         "explanation": "Étape 1 — Lire les axes : la grandeur mesurée est l'ADN, constituant des chromosomes situés dans le noyau. Pourquoi pas « ribosomes » : les ribosomes fabriquent des protéines dans le cytoplasme et ne portent pas l'information génétique.",
         "answers": [
@@ -865,7 +902,7 @@
         "hint": "Pense aux bâtonnets du noyau."
        },
        {
-        "content": "Une courbe passe de 5 à 10 unités puis revient à 5. À quoi correspond la montée ?",
+        "content": "Une courbe de la quantité d'ADN par noyau passe de 5 à 10 unités puis revient à 5. À quoi correspond la montée ?",
         "question_type": "single_choice",
         "explanation": "Étape 4 — Relier chaque variation à son événement : la montée correspond à la réplication de l'ADN en phase S. Pourquoi pas « La séparation des chromatides » : elle fait au contraire redescendre la quantité d'ADN par noyau.",
         "answers": [
@@ -882,7 +919,7 @@
           "correct": false
          },
          {
-          "content": "À la disparition de l'ADN",
+          "content": "À la condensation des chromosomes en prophase",
           "correct": false
          }
         ],
@@ -947,9 +984,9 @@
          ]
         },
         {
-         "content": "À la séparation des chromatides en anaphase, la quantité d'ADN par noyau ___.",
+         "content": "Dans chaque noyau fils formé après la séparation des chromatides, la quantité d'ADN ___.",
          "question_type": "select",
-         "explanation": "Étape 3 — Repérer les variations : la courbe redescend de 4 à 2 unités. Étape 4 — Relier : c'est la séparation des chromatides. Pourquoi pas « reste égale à 4 unités » : la cellule entière garde 4 unités, mais chaque lot de chromatides, futur noyau fils, n'en reçoit que 2.",
+         "explanation": "Étape 3 — Repérer les variations : la courbe redescend de 4 à 2 unités. Étape 4 — Relier : c'est la séparation des chromatides. Pourquoi pas « reste égale à 4 unités » : 4 unités est la quantité avant la séparation ; chaque noyau fils n'en reçoit que 2.",
          "answers": [
           {
            "content": "revient à sa valeur de départ",
@@ -989,6 +1026,14 @@
          "answers": [
           {
            "content": "réplication",
+           "correct": true
+          },
+          {
+           "content": "duplication",
+           "correct": true
+          },
+          {
+           "content": "synthèse",
            "correct": true
           }
          ]
@@ -1434,6 +1479,10 @@
           {
            "content": "92",
            "correct": true
+          },
+          {
+           "content": "quatre-vingt-douze",
+           "correct": true
           }
          ]
         }
@@ -1510,9 +1559,9 @@
        "tolerance": 0
       },
       {
-       "content": "Si on réalisait ce caryotype sur une autre cellule du corps du même enfant, on compterait aussi 46 chromosomes.",
+       "content": "Si on réalisait ce caryotype sur une autre cellule de la peau du même enfant, on compterait aussi 46 chromosomes.",
        "question_type": "true_false",
-       "explanation": "Méthode : toutes les cellules du corps d'une espèce contiennent 2n chromosomes, car elles proviennent de mitoses qui conservent le nombre de chromosomes : 46 chez l'Homme. L'affirmation est vraie. Pourquoi pas « Faux » : la mitose copie puis répartit l'ADN, donc toutes les cellules issues de la mitose gardent 2n.",
+       "explanation": "Méthode : une autre cellule de la peau contient aussi 2n chromosomes, car elle provient de mitoses qui conservent le nombre de chromosomes : 46 chez l'Homme. L'affirmation est vraie. Pourquoi pas « Faux » : la mitose copie puis répartit l'ADN, donc toutes les cellules issues de la mitose gardent 2n.",
        "answers": [
         {
          "content": "Vrai",
@@ -1645,7 +1694,7 @@
          "correct": false
         },
         {
-         "content": "télophase tardive",
+         "content": "la séparation des chromatides",
          "correct": false
         }
        ]
@@ -1687,7 +1736,7 @@
        "explanation": "Méthode : confronter l'hypothèse aux faits : 46 chromosomes dans toutes les cellules et un nombre qui ne peut pas être divisé par deux à chaque division sans disparaître. Pourquoi pas « La cellule fille est plus petite que la cellule mère » : la taille ne renseigne pas sur le nombre de chromosomes, et la cellule fille grandit ensuite.",
        "answers": [
         {
-         "content": "Les cellules de l'enfant contiennent toutes 46 chromosomes",
+         "content": "Les cellules du corps humain contiennent toutes 46 chromosomes",
          "correct": true
         },
         {
@@ -1703,7 +1752,7 @@
          "correct": false
         },
         {
-         "content": "Le caryotype de l'enfant montre 23 chromosomes",
+         "content": "Le caryotype humain montre 23 chromosomes",
          "correct": false
         }
        ]
@@ -1766,6 +1815,14 @@
         {
          "content": "conservée",
          "correct": true
+        },
+        {
+         "content": "maintenue",
+         "correct": true
+        },
+        {
+         "content": "préservée",
+         "correct": true
         }
        ]
       }
@@ -1773,7 +1830,7 @@
     },
     {
      "title": "Analyse complète d'une mitose chez l'oignon",
-     "statement": "Une classe de 2nde observe des cellules d'une racine d'oignon (2n = 16). Les élèves relèvent le nombre de chromosomes, de chromatides et la quantité d'ADN par noyau (Q en G1, valeurs de la fiche) à trois moments : en G1, en métaphase et dans une cellule fille.",
+     "statement": "Une classe de 2nde observe des cellules d'une racine d'oignon (2n = 16). Les élèves relèvent le nombre de chromosomes, de chromatides et la quantité d'ADN par noyau (Q en G1, 2Q après la réplication) à trois moments : en G1, en métaphase et dans une cellule fille.",
      "exercise_type": "evaluation",
      "figure": null,
      "questions": [
@@ -1846,7 +1903,7 @@
       {
        "content": "Quelles affirmations sur cette mitose sont vraies ?",
        "question_type": "multiple_correct_2",
-       "explanation": "Méthode : relier chaque affirmation à son événement : réplication en phase S, conservation de l'information par la séparation des chromatides. Pourquoi pas « Le nombre de chromosomes double en phase S » : les chromatides doublent, mais leur nombre de chromosomes reste 16 jusqu'à l'anaphase.",
+       "explanation": "Méthode : relier chaque affirmation à son événement : réplication en phase S, conservation de l'information par la séparation des chromatides. Pourquoi pas « Le nombre de chromosomes double en phase S » : les chromatides doublent, mais le nombre de chromosomes reste 16.",
        "answers": [
         {
          "content": "La réplication de l'ADN a lieu en phase S, avant la mitose",
@@ -2130,9 +2187,9 @@
          "unit": "unités"
         },
         {
-         "content": "À la fin de l'anaphase, la quantité d'ADN par noyau ___.",
+         "content": "Dans chaque noyau fils, à la fin de la mitose, la quantité d'ADN ___.",
          "question_type": "select",
-         "explanation": "Méthode : 1. Repérer la descente. 2. Relier : elle correspond à la séparation des chromatides ; la quantité revient à celle de G1. Pourquoi pas « reste au niveau de la métaphase » : la cellule entière garde son ADN, mais chaque lot de chromatides reçoit la moitié de la quantité de la métaphase.",
+         "explanation": "Méthode : 1. Repérer la descente. 2. Relier : elle correspond à la séparation des chromatides ; la quantité revient à celle de G1. Pourquoi pas « reste au niveau de la métaphase » : la quantité de la métaphase est celle de la cellule avant la séparation ; chaque noyau fils n'en reçoit que la moitié.",
          "answers": [
           {
            "content": "revient à sa valeur de départ",
@@ -2213,7 +2270,7 @@
            "correct": false
           },
           {
-           "content": "2",
+           "content": "32",
            "correct": false
           }
          ]
@@ -2263,7 +2320,7 @@
         {
          "content": "Quelles étapes assurent la conservation de l'information génétique ?",
          "question_type": "multiple_correct_2",
-         "explanation": "Méthode : 1. Suivre la réplication. 2. Suivre la séparation. 3. Conclure : copie fidèle puis distribution complète. Pourquoi pas « Le doublement du nombre de chromosomes à chaque division » : le nombre de chromosomes ne change pas d'une génération de cellules à l'autre : il est doublé puis ramené à 2n.",
+         "explanation": "Méthode : 1. Suivre la réplication. 2. Suivre la séparation. 3. Conclure : copie fidèle puis distribution complète. Pourquoi pas « Le doublement du nombre de chromosomes à chaque division » : c'est la quantité d'ADN qui double puis revient à Q ; chaque cellule fille garde 2n.",
          "answers": [
           {
            "content": "La réplication de l'ADN en phase S",
@@ -2551,12 +2608,16 @@
          ]
         },
         {
-         "content": "Après la séparation, la cellule fille a la même quantité d'ADN qu'en ___.",
+         "content": "Après la séparation, la cellule fille a la même quantité d'ADN qu'en ___, avant la réplication.",
          "question_type": "fill_blank",
          "explanation": "Méthode : 1. Lire le palier de départ : en G1, 4 unités. 2. Conclure : la cellule fille retrouve 4 unités, comme en G1. Pourquoi pas « G2 » : en G2, la quantité est doublée, 8 unités, ce qui n'est plus le cas dans une cellule fille.",
          "answers": [
           {
            "content": "G1",
+           "correct": true
+          },
+          {
+           "content": "phase G1",
            "correct": true
           }
          ]
@@ -2698,7 +2759,7 @@
          ]
         },
         {
-         "content": "Si chaque cellule fille recevait 23 chromosomes, la génération suivante en aurait 11,5.",
+         "content": "Selon l'hypothèse d'Awa, chaque cellule fille reçoit 23 chromosomes : la génération suivante en aurait alors 11,5.",
          "question_type": "true_false",
          "explanation": "Méthode : 1. Calculer : 23 ÷ 2 = 11,5. 2. Raisonner : un nombre de chromosomes est un entier. 3. Conclure : l'hypothèse d'Awa est impossible. L'affirmation est vraie. Pourquoi pas « Faux » : 23 ÷ 2 ne donne pas un nombre entier : le partage par moitié ne pourrait pas durer.",
          "answers": [
@@ -2746,7 +2807,7 @@
            "correct": false
           },
           {
-           "content": "Le noyau disparaît définitivement",
+           "content": "Le nombre de chromosomes est doublé dans chaque cellule fille",
            "correct": false
           }
          ]
@@ -2769,7 +2830,7 @@
        "title": "Exercice 2",
        "statement": "Un élève interprète une courbe de la quantité d'ADN par noyau (valeurs fictives, en unités arbitraires) : 6 en G1, 12 en fin de S et en G2, puis 6 après la séparation des chromatides.",
        "exercise_type": "evaluation",
-       "figure": "courbe-adn-cycle",
+       "figure": "courbe-adn-6",
        "questions": [
         {
          "content": "De quel facteur la quantité d'ADN est-elle multipliée pendant la phase S ?",
@@ -2789,7 +2850,7 @@
          "explanation": "Méthode : 1. Repérer la descente. 2. Relier à l'événement : séparation des chromatides en anaphase. 3. Conclure : la quantité par noyau revient à 6. Pourquoi pas « Le nombre de chromosomes a été divisé par deux » : la descente concerne la quantité d'ADN par noyau ; le nombre de chromosomes de chaque noyau fils reste 2n.",
          "answers": [
           {
-           "content": "Les chromatides se sont séparées et chaque noyau fils a reçu la moitié de l'ADN de la cellule mère",
+           "content": "Les chromatides se sont séparées et chaque noyau fils a retrouvé la quantité de départ, 6 unités",
            "correct": true
           },
           {
@@ -3102,22 +3163,22 @@
         {
          "content": "Quel constituant des chromosomes porte l'information génétique ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1. Rappeler : les chromosomes sont faits d'ADN. 2. Conclure : l'information génétique est portée par l'ADN. Pourquoi pas « Les mitochondries » : les mitochondries libèrent l'énergie de la cellule, elles ne constituent pas les chromosomes.",
+         "explanation": "Méthode : 1. Rappeler : les chromosomes sont faits d'ADN. 2. Conclure : l'information génétique est portée par l'ADN. Pourquoi pas « Le cytoplasme » : le cytoplasme entoure le noyau, il ne constitue pas les chromosomes.",
          "answers": [
           {
            "content": "L'ADN",
            "correct": true
           },
           {
-           "content": "Les ribosomes",
+           "content": "Les protéines du chromosome",
            "correct": false
           },
           {
-           "content": "La membrane plasmique",
+           "content": "Le centromère",
            "correct": false
           },
           {
-           "content": "Les mitochondries",
+           "content": "Le cytoplasme",
            "correct": false
           }
          ]
@@ -3324,7 +3385,7 @@
            "correct": false
           },
           {
-           "content": "égal à 8",
+           "content": "égal à 80",
            "correct": false
           }
          ]
@@ -3336,6 +3397,10 @@
          "answers": [
           {
            "content": "G1",
+           "correct": true
+          },
+          {
+           "content": "phase G1",
            "correct": true
           }
          ]
