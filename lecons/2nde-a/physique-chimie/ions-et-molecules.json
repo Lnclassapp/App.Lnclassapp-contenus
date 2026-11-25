@@ -202,7 +202,7 @@
         {
           "key": "ammoniac-developpee",
           "kind": "molecule",
-          "description": "La formule développée de la molécule d'ammoniac NH₃, dessinée atome par atome : un atome d'azote relié par un trait simple à chacun des trois atomes d'hydrogène. Les trois traits sont les trois doublets liants. Le doublet non liant de l'azote n'est pas dessiné : c'est à toi de le placer.",
+          "description": "La formule développée de la molécule d'ammoniac NH₃, dessinée atome par atome : un atome d'azote relié par un trait simple à chacun des trois atomes d'hydrogène. Les trois traits sont les trois doublets liants. Le doublet non liant de l'azote n'est pas dessiné : la fiche le décrit en mots.",
           "params": {
             "mode": "custom",
             "atoms": [
@@ -2139,6 +2139,10 @@
                     {
                       "content": "zéro",
                       "correct": true
+                    },
+                    {
+                      "content": "aucun",
+                      "correct": true
                     }
                   ]
                 },
@@ -2269,6 +2273,14 @@
                     },
                     {
                       "content": "liants",
+                      "correct": true
+                    },
+                    {
+                      "content": "partagé",
+                      "correct": true
+                    },
+                    {
+                      "content": "commun",
                       "correct": true
                     }
                   ]
@@ -2444,16 +2456,16 @@
                   ]
                 },
                 {
-                  "content": "Le chlorure de sodium NaCl, le sel de cuisine, est un composé :",
+                  "content": "Le chlorure de sodium NaCl, le sel de cuisine, est :",
                   "question_type": "single_choice",
                   "explanation": "Étape 1 — Dire : NaCl est une seule espèce, un corps pur. Étape 2 — Compter : 2 sortes d'atomes, Na et Cl : c'est un corps pur composé. Étape 3 — Chercher : il est formé des ions Na⁺ et Cl⁻ (un métal et un non-métal) : c'est un composé ionique. Étape 4 — Conclure : le chlorure de sodium est un corps pur composé ionique. Pourquoi pas moléculaire : il ne contient pas de molécules NaCl.",
                   "answers": [
                     {
-                      "content": "ionique : Na⁺ et Cl⁻",
+                      "content": "un composé ionique : Na⁺ et Cl⁻",
                       "correct": true
                     },
                     {
-                      "content": "moléculaire : molécules NaCl",
+                      "content": "un composé moléculaire : molécules NaCl",
                       "correct": false
                     },
                     {
@@ -2830,7 +2842,7 @@
             {
               "content": "Quelle est la valence de l'atome de carbone ($Z = 6$), c'est-à-dire son nombre de liaisons covalentes ?",
               "question_type": "single_choice",
-              "explanation": "Étape 1 — Écrire : C a (K)²(L)⁴, soit 4 électrons externes. Étape 2 — Associer : il en manque 8 − 4 = 4, donc 4 liaisons. 6 est le numéro atomique du carbone, pas son nombre de liaisons.",
+              "explanation": "Étape 1 — Écrire : C a (K)²(L)⁴, soit 4 électrons externes. Étape 2 — Associer : il en manque 8 − 4 = 4, donc 4 liaisons. 6 est le numéro atomique du carbone, pas son nombre de liaisons. Pourquoi pas 8 : c'est le nombre d'électrons de l'octet, pas le nombre de liaisons.",
               "answers": [
                 {
                   "content": "4",
@@ -4249,7 +4261,7 @@
                 {
                   "content": "Quelle est la formule statistique du chlorure de magnésium, formé d'ions Mg²⁺ et Cl⁻ ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Repérer : Mg²⁺ (+2) et Cl⁻ (−1). Étape 2 — Chercher : 1 ion Mg²⁺ pour 2 ions Cl⁻. Étape 3 — Écrire : MgCl₂. Étape 4 — Vérifier : +2 − 2 = 0. MgCl donnerait +2 − 1 = +1.",
+                  "explanation": "Étape 1 — Repérer : Mg²⁺ (+2) et Cl⁻ (−1). Étape 2 — Chercher : 1 ion Mg²⁺ pour 2 ions Cl⁻. Étape 3 — Écrire : MgCl₂. Étape 4 — Vérifier : +2 − 2 = 0. Pourquoi pas MgCl : +2 − 1 = +1, le composé ne serait pas neutre.",
                   "answers": [
                     {
                       "content": "MgCl₂",
