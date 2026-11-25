@@ -205,6 +205,14 @@
                   {
                     "content": "croissance",
                     "correct": true
+                  },
+                  {
+                    "content": "multiplication",
+                    "correct": true
+                  },
+                  {
+                    "content": "division",
+                    "correct": true
                   }
                 ],
                 "hint": "Cette zone permet à la racine de grandir."
@@ -244,7 +252,7 @@
                 {
                   "content": "Remets dans l'ordre la préparation et l'observation d'une racine d'oignon.",
                   "question_type": "ordering",
-                  "explanation": "Étape 1 — Choisir : on coupe l'extrémité. Étape 2 — Préparer : on la colore, puis on l'écrase entre lame et lamelle. Étape 3 — Observer : on regarde au microscope.  Pourquoi pas « observer avant d'écraser » : les cellules seraient superposées et on ne verrait ni noyau ni chromosome.",
+                  "explanation": "Étape 1 — Choisir l'extrémité. Étape 2 — Préparer la lame : on la coupe, on la colore, puis on l'écrase entre lame et lamelle. Étape 3 — Observer : on regarde au microscope.  Pourquoi pas « observer avant d'écraser » : les cellules seraient superposées et on ne verrait ni noyau ni chromosome.",
                   "answers": [
                     {
                       "content": "Couper l'extrémité de la racine"
@@ -592,7 +600,7 @@
                   ]
                 },
                 {
-                  "content": "Remets les phases dans l'ordre du cycle.",
+                  "content": "Remets les phases dans l'ordre du cycle, en commençant par l'interphase.",
                   "question_type": "ordering",
                   "explanation": "Étape 4 — Placer : le cycle va de l'interphase à la télophase : interphase, prophase, métaphase, anaphase, télophase.  Pourquoi pas « anaphase avant métaphase » : les chromosomes doivent d'abord s'aligner au milieu avant de pouvoir se séparer.",
                   "answers": [
@@ -713,7 +721,7 @@
                   ]
                 },
                 {
-                  "content": "La mitose comprend les phases prophase, métaphase, anaphase et télophase, sans compter l'interphase. Combien de phases de mitose y a-t-il ?",
+                  "content": "Combien de phases compte la mitose, sans compter l'interphase ?",
                   "question_type": "numeric",
                   "tolerance": 0,
                   "explanation": "Étape 4 — Placer : prophase, métaphase, anaphase, télophase, cela fait 4 phases de mitose ; l'interphase est l'étape entre deux divisions.  Pourquoi pas « 5 » : ce nombre inclut l'interphase, qui n'est pas une phase de la mitose proprement dite.",
@@ -963,11 +971,11 @@
                       "correct": false
                     },
                     {
-                      "content": "interphase",
+                      "content": "reproduction sexuée",
                       "correct": false
                     },
                     {
-                      "content": "mitose de la coiffe",
+                      "content": "germination",
                       "correct": false
                     }
                   ]
@@ -1068,7 +1076,7 @@
               "unit": "cellules"
             },
             {
-              "content": "Quel pourcentage des 80 cellules est en mitose ?",
+              "content": "Sur 80 cellules, 20 sont en mitose (prophase, métaphase, anaphase ou télophase). Quel pourcentage des 80 cellules cela représente-t-il ?",
               "question_type": "numeric",
               "tolerance": 0,
               "explanation": "Méthode : 1. Compter les cellules en mitose : 20 sur 80. 2. Calculer 20 ÷ 80 = 0,25, soit 25 %. Pourquoi pas « 20 % » : ce serait confondre le nombre de cellules en mitose (20) avec le pourcentage, qui compare 20 au total de 80.",
@@ -1081,7 +1089,7 @@
               "unit": "%"
             },
             {
-              "content": "Sur ces 80 cellules, quelle phase est la plus rarement observée ?",
+              "content": "Sur ces 80 cellules, quelles phases sont les plus rarement observées ?",
               "question_type": "single_choice",
               "explanation": "Méthode : 1. Lire les valeurs : interphase 60, prophase 10, métaphase 4, anaphase 3, télophase 3. 2. Repérer les plus petites : 3 et 3, donc anaphase et télophase. Pourquoi pas « la métaphase » : elle compte 4 cellules, donc un peu plus que l'anaphase et la télophase.",
               "answers": [
@@ -1581,7 +1589,7 @@
                       "correct": false
                     },
                     {
-                      "content": "plus nombreuses que la cellule mère à elles seules",
+                      "content": "deux cellules avec la moitié des chromosomes de la cellule mère",
                       "correct": false
                     }
                   ]
@@ -1695,7 +1703,7 @@
             },
             {
               "title": "Exercice 3",
-              "statement": "Un dessin d'une racine d'oignon montre cinq cellules, A à E, à des stades différents de la mitose.",
+              "statement": "On étudie les phases de la mitose d'une cellule de racine d'oignon.",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [
@@ -1723,7 +1731,7 @@
                   ]
                 },
                 {
-                  "content": "Remets les phases dans l'ordre du cycle.",
+                  "content": "Remets les phases dans l'ordre du cycle, en commençant par l'interphase.",
                   "question_type": "ordering",
                   "explanation": "Méthode : 1. Placer chaque phase dans l'ordre du cycle : interphase, prophase, métaphase, anaphase, télophase. 2. La télophase termine la division. Pourquoi pas « métaphase avant prophase » : les chromosomes doivent d'abord devenir visibles avant de s'aligner.",
                   "answers": [
@@ -1919,7 +1927,7 @@
                       "correct": true
                     },
                     {
-                      "content": "Près du bulbe, dans la zone des poils absorbants",
+                      "content": "Plus haut, dans la zone des poils absorbants",
                       "correct": false
                     },
                     {
@@ -1986,6 +1994,14 @@
                   "answers": [
                     {
                       "content": "croissance",
+                      "correct": true
+                    },
+                    {
+                      "content": "multiplication",
+                      "correct": true
+                    },
+                    {
+                      "content": "division",
                       "correct": true
                     }
                   ]
@@ -2086,7 +2102,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Elle fabrique des cellules de racine",
+                      "content": "Elle fabrique des cellules aux chromosomes différents",
                       "correct": false
                     }
                   ]
@@ -2164,11 +2180,11 @@
                       "correct": false
                     },
                     {
-                      "content": "interphase",
+                      "content": "reproduction sexuée",
                       "correct": false
                     },
                     {
-                      "content": "télophase",
+                      "content": "germination",
                       "correct": false
                     }
                   ]
@@ -2211,7 +2227,7 @@
                       "correct": false
                     },
                     {
-                      "content": "La coloration des cellules au carmin",
+                      "content": "Le renouvellement des cellules de la peau",
                       "correct": false
                     }
                   ]
@@ -2245,7 +2261,7 @@
                   ]
                 },
                 {
-                  "content": "Remets dans l'ordre la division d'une cellule d'enfant.",
+                  "content": "Remets dans l'ordre les phases du cycle d'une cellule d'enfant, en commençant par l'interphase.",
                   "question_type": "ordering",
                   "explanation": "Méthode : 1. Placer chaque phase : interphase, prophase, métaphase, anaphase, télophase. 2. À la fin, il y a deux cellules filles. Pourquoi pas « télophase avant anaphase » : les lots de chromosomes doivent d'abord se séparer.",
                   "answers": [
@@ -2382,6 +2398,18 @@
                     {
                       "content": "pourcentage",
                       "correct": true
+                    },
+                    {
+                      "content": "taux",
+                      "correct": true
+                    },
+                    {
+                      "content": "rapport",
+                      "correct": true
+                    },
+                    {
+                      "content": "indice",
+                      "correct": true
                     }
                   ]
                 }
@@ -2412,7 +2440,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Aucune des deux, car elles contiennent des cellules colorées",
+                      "content": "Aucune des deux, car la zone de croissance ne contient pas de cellules en division",
                       "correct": false
                     }
                   ]
@@ -2476,6 +2504,10 @@
                     {
                       "content": "croissance",
                       "correct": true
+                    },
+                    {
+                      "content": "multiplication",
+                      "correct": true
                     }
                   ]
                 }
@@ -2510,7 +2542,7 @@
                       "correct": true
                     },
                     {
-                      "content": "Les cellules de la peau n'ont pas de chromosomes",
+                      "content": "Les cellules filles sont plus petites que la cellule mère",
                       "correct": false
                     },
                     {
@@ -2518,7 +2550,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Seules les cellules de racine ont des chromosomes",
+                      "content": "Les cellules se divisent plus vite chez l'enfant que chez l'adulte",
                       "correct": false
                     }
                   ]
@@ -2691,22 +2723,22 @@
                 {
                   "content": "Quelle phrase définit la mitose ?",
                   "question_type": "single_choice",
-                  "explanation": "Méthode : 1. Définir : la mitose est la division d'une cellule mère en deux cellules filles identiques. 2. Écarter ce qui n'est pas une division. Pourquoi pas « quatre cellules différentes » : la mitose donne deux cellules identiques.",
+                  "explanation": "Méthode : 1. Définir : la mitose est la division d'une cellule mère en deux cellules filles identiques. 2. Écarter ce qui n'est pas une division. Pourquoi pas « quatre cellules à partir d'une seule » : la mitose donne deux cellules identiques.",
                   "answers": [
                     {
                       "content": "La division d'une cellule mère en deux cellules filles identiques",
                       "correct": true
                     },
                     {
-                      "content": "La fabrication de quatre cellules différentes",
+                      "content": "La fabrication de quatre cellules à partir d'une seule",
                       "correct": false
                     },
                     {
-                      "content": "Le passage de l'oignon à la plante adulte",
+                      "content": "La germination d'une graine",
                       "correct": false
                     },
                     {
-                      "content": "La coloration des chromosomes au carmin",
+                      "content": "La reproduction sexuée de deux parents",
                       "correct": false
                     }
                   ]
@@ -2789,22 +2821,22 @@
                 {
                   "content": "Pourquoi écrase-t-on l'extrémité entre lame et lamelle ?",
                   "question_type": "single_choice",
-                  "explanation": "Méthode : 1. Préparer la lame : on écrase l'extrémité. 2. Les cellules s'étalent en une seule couche et se voient une à une. Pourquoi pas « tuer les cellules » : l'écrasement ne vise pas à tuer, mais à étaler.",
+                  "explanation": "Méthode : 1. Préparer la lame : on écrase l'extrémité. 2. Les cellules s'étalent en une seule couche et se voient une à une. Pourquoi pas « colorer les chromosomes » : la coloration se fait avec le carmin acétique ; l'écrasement sert à étaler les cellules.",
                   "answers": [
                     {
                       "content": "Pour étaler les cellules en une seule couche",
                       "correct": true
                     },
                     {
-                      "content": "Pour tuer toutes les cellules en division",
+                      "content": "Pour colorer les chromosomes",
                       "correct": false
                     },
                     {
-                      "content": "Pour rendre la racine plus grosse",
+                      "content": "Pour séparer les chromosomes en deux lots",
                       "correct": false
                     },
                     {
-                      "content": "Pour enlever les chromosomes",
+                      "content": "Pour agrandir l'image au microscope",
                       "correct": false
                     }
                   ]
@@ -2884,12 +2916,12 @@
             },
             {
               "title": "Exercice 3",
-              "statement": "Le schéma décrit une cellule d'oignon à plusieurs moments de sa division. On cherche à reconnaître les phases et à les remettre dans l'ordre.",
+              "statement": "On étudie une cellule d'oignon à plusieurs moments de sa division.",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [
                 {
-                  "content": "Remets les phases dans l'ordre.",
+                  "content": "Remets les phases dans l'ordre du cycle, en commençant par l'interphase.",
                   "question_type": "ordering",
                   "explanation": "Méthode : 1. Placer chaque phase dans l'ordre du cycle : interphase, prophase, métaphase, anaphase, télophase. 2. La télophase termine la division. Pourquoi pas « anaphase avant métaphase » : les chromosomes doivent s'aligner avant de se séparer.",
                   "answers": [
@@ -3069,9 +3101,9 @@
                   ]
                 },
                 {
-                  "content": "Le nombre de chromosomes d'une cellule humaine est ___.",
+                  "content": "Le nombre de chromosomes d'une cellule de la peau humaine est ___.",
                   "question_type": "fill_blank",
-                  "explanation": "Méthode : 1. Repérer : une cellule humaine a 46 chromosomes. 2. Elle les conserve à chaque mitose. Pourquoi pas « 23 » : ce serait la moitié, nombre qui ne correspond pas à une cellule du corps humain.",
+                  "explanation": "Méthode : 1. Repérer : une cellule humaine a 46 chromosomes. 2. Elle les conserve à chaque mitose. Pourquoi pas « 23 » : c'est le nombre de chromosomes d'un gamète, pas celui d'une cellule de la peau.",
                   "answers": [
                     {
                       "content": "46",

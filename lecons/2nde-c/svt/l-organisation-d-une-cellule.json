@@ -564,7 +564,7 @@
     },
     {
      "name": "Identifier les organites d'une cellule eucaryote et leur rôle",
-     "remember": "Le **microscope électronique** grossit des dizaines de milliers de fois : il montre l'**ultrastructure** de la cellule. La **membrane plasmique** limite la cellule et contrôle les échanges. Le **noyau** est entouré d'une **enveloppe** percée de pores et contient un **nucléole** et l'information génétique. Le **cytoplasme** contient les **organites** (compartiments spécialisés) : les **mitochondries** (ovales, membrane interne repliée en crêtes) libèrent l'énergie lors de la respiration cellulaire ; le **réticulum endoplasmique** (sacs aplatis, rugueux s'il porte des ribosomes) transporte les protéines ; l'**appareil de Golgi** (sacs empilés) trie et emballe en vésicules ; les **ribosomes** (petits grains) fabriquent les protéines.",
+     "remember": "Le **microscope électronique** grossit bien plus que le microscope optique (souvent des dizaines de milliers de fois, et davantage) : il montre l'**ultrastructure** de la cellule. La **membrane plasmique** limite la cellule et contrôle les échanges. Le **noyau** est entouré d'une **enveloppe** percée de pores et contient un **nucléole** et l'information génétique. Le **cytoplasme** contient les **organites** (compartiments spécialisés) : les **mitochondries** (ovales, membrane interne repliée en crêtes) libèrent l'énergie lors de la respiration cellulaire ; le **réticulum endoplasmique** (sacs aplatis, rugueux s'il porte des ribosomes) transporte les protéines ; l'**appareil de Golgi** (sacs empilés) trie et emballe en vésicules ; les **ribosomes** (petits grains) fabriquent les protéines.",
      "method": [
       "Repérer sur l'image la limite de la cellule, puis les structures de l'intérieur : le noyau et les organites du cytoplasme.",
       "Reconnaître chaque organite à sa forme : noyau (enveloppe à pores, nucléole), mitochondrie (ovale, crêtes), réticulum (sacs aplatis), Golgi (sacs empilés, vésicules), ribosomes (petits grains).",
@@ -788,7 +788,7 @@
       },
       {
        "title": "Rôles des organites : énergie, transport et protéines",
-       "statement": "Dans cet exercice, tu associes chaque organite de la cellule à son rôle, avec les mots de la méthode de la fiche.",
+       "statement": "Dans cet exercice, tu associes chaque organite de la cellule à son rôle, avec les mots de la méthode de la fiche (valeurs fictives).",
        "exercise_type": "fixation",
        "figure": null,
        "questions": [
@@ -911,7 +911,7 @@
     },
     {
      "name": "Comparer une cellule animale et une cellule végétale",
-     "remember": "Les cellules animale et végétale sont des cellules **eucaryotes**. Elles ont en commun : la **membrane plasmique**, le **cytoplasme**, le **noyau**, les **mitochondries**, le réticulum endoplasmique, l'appareil de Golgi et les ribosomes. La cellule **végétale** a en plus : une **paroi** de cellulose, rigide, qui entoure la membrane et donne sa forme à la cellule ; des **chloroplastes**, verts grâce à la chlorophylle, où se fait la photosynthèse ; une **grande vacuole** qui stocke l'eau et des substances. La cellule **animale** n'a ni paroi ni chloroplaste et ses vacuoles sont petites. Les chloroplastes manquent dans les cellules non éclairées, comme celles d'une racine : la paroi est le critère le plus sûr.",
+     "remember": "Les cellules animale et végétale sont des cellules **eucaryotes**. Elles ont en commun : la **membrane plasmique**, le **cytoplasme**, le **noyau**, les **mitochondries**, le réticulum endoplasmique, l'appareil de Golgi et les ribosomes. La cellule **végétale** a en plus : une **paroi** de cellulose, rigide, qui entoure la membrane et donne sa forme à la cellule ; des **chloroplastes**, verts grâce à la chlorophylle, où se fait la photosynthèse ; une **grande vacuole** qui stocke l'eau et des substances. La cellule **animale** n'a ni paroi ni chloroplaste et ses vacuoles sont petites. Les chloroplastes ne se trouvent que dans les parties vertes de la plante, exposées à la lumière : ils manquent dans une racine ou un bulbe d'oignon : la paroi est le critère le plus sûr.",
      "method": [
       "Lister les structures visibles dans chaque cellule : limite, noyau, organites du cytoplasme.",
       "Repérer les structures communes : membrane plasmique, noyau, mitochondries, ribosomes.",
@@ -927,7 +927,7 @@
        "Conclure : A, sans paroi ni chloroplaste, est une cellule animale ; B, avec paroi et chloroplastes, est une cellule végétale."
       ]
      },
-     "pitfall": "Ne conclus pas « pas de chloroplaste, donc cellule animale ». Contre-exemple : une cellule de pelure d'oignon n'a pas de chloroplaste, car le bulbe pousse sous terre, loin de la lumière, mais elle a une paroi : c'est une cellule végétale. De même, une cellule de racine. Cherche d'abord la paroi : toutes les cellules végétales en ont une, aucune cellule animale n'en a.",
+     "pitfall": "Ne conclus pas « pas de chloroplaste, donc cellule animale ». Contre-exemple : une cellule de pelure d'oignon n'a pas de chloroplaste, car le bulbe n'est pas une partie verte de la plante, mais elle a une paroi : c'est une cellule végétale. De même, une cellule de racine. Cherche d'abord la paroi : toutes les cellules végétales en ont une, aucune cellule animale n'en a.",
      "figure": "animale-vegetale",
      "practice": {
       "statement": "Tu t'entraînes à comparer une cellule animale et une cellule végétale.",
@@ -1264,12 +1264,12 @@
     },
     {
      "name": "Distinguer une cellule procaryote et une cellule eucaryote",
-     "remember": "Il existe deux grands types de cellules. La cellule **procaryote**, comme la **bactérie**, est petite (en général 1 à 10 µm) : son ADN est libre dans le cytoplasme, dans une zone appelée nucléoïde, sans noyau ; elle n'a aucun organite entouré de membrane ; elle a une membrane plasmique, des ribosomes et le plus souvent une paroi. La cellule **eucaryote** (animale ou végétale) est plus grande (en général 10 à 100 µm) : son ADN est dans un **noyau** limité par une enveloppe, et son cytoplasme contient des organites entourés de membrane (mitochondries, réticulum, Golgi). Toutes les cellules ont une membrane plasmique, des ribosomes et de l'ADN.",
+     "remember": "Il existe deux grands types de cellules. La cellule **procaryote**, comme la **bactérie**, est petite (en général 1 à 10 µm) : son ADN est libre dans le cytoplasme, dans une zone appelée nucléoïde, sans noyau ; elle n'a aucun organite entouré de membrane ; elle a une membrane plasmique, des ribosomes et le plus souvent une paroi, qui n'est pas en cellulose. La cellule **eucaryote** (animale ou végétale) est plus grande (en général 10 à 100 µm) : son ADN est dans un **noyau** limité par une enveloppe, et son cytoplasme contient des organites entourés de membrane (mitochondries, réticulum, Golgi). Toutes les cellules ont une membrane plasmique, des ribosomes et de l'ADN.",
      "method": [
       "Estimer la taille de la cellule avec l'échelle de l'image : en général 1 à 10 µm pour un procaryote, 10 à 100 µm pour un eucaryote.",
       "Chercher le noyau : une enveloppe qui entoure l'ADN, ou un ADN libre dans le cytoplasme.",
       "Chercher les organites entourés de membrane (mitochondries, réticulum, Golgi), sans compter les ribosomes, présents dans les deux types.",
-      "Conclure : ni noyau ni organite à membrane, cellule procaryote ; noyau et organites à membrane, cellule eucaryote."
+      "Conclure : ADN libre dans le cytoplasme, sans noyau, et aucun organite à membrane, cellule procaryote ; noyau et organites à membrane, cellule eucaryote."
      ],
      "example": {
       "statement": "Une cellule observée au microscope électronique mesure 2 µm. Son ADN est dispersé dans le cytoplasme, sans enveloppe. On y voit des ribosomes et une paroi, mais ni mitochondrie ni réticulum. De quel type de cellule s'agit-il ?",
@@ -1280,7 +1280,7 @@
        "Conclure : sans noyau ni organite à membrane, c'est une cellule procaryote, comme une bactérie."
       ]
      },
-     "pitfall": "Ne dis pas que la bactérie n'a pas d'ADN. Contre-exemple : une bactérie a bien une molécule d'ADN, mais elle est libre dans le cytoplasme, dans le nucléoïde, sans enveloppe : « pas de noyau » ne veut pas dire « pas d'ADN ». Ne te fie pas non plus à la paroi : la bactérie en a une, alors que ce n'est pas une cellule végétale.",
+     "pitfall": "Ne dis pas que la bactérie n'a pas d'ADN. Contre-exemple : une bactérie a bien une molécule d'ADN, mais elle est libre dans le cytoplasme, dans le nucléoïde, sans enveloppe : « pas de noyau » ne veut pas dire « pas d'ADN ». Ne te fie pas non plus à la paroi : la bactérie en a une (qui n'est pas en cellulose), alors que ce n'est pas une cellule végétale. Et « pas de noyau » ne suffit pas : l'hématie humaine perd son noyau en mûrissant, mais elle n'a pas d'ADN libre ; c'est une cellule eucaryote.",
      "figure": "procaryote-eucaryote",
      "practice": {
       "statement": "Tu t'entraînes à distinguer une cellule procaryote et une cellule eucaryote.",
@@ -1498,9 +1498,9 @@
          "unit": "µm"
         },
         {
-         "content": "La cellule étudiée n'a ni noyau ni mitochondrie. Que conclure ?",
+         "content": "La cellule étudiée a son ADN libre dans le cytoplasme ; elle n'a ni noyau ni mitochondrie. Que conclure ?",
          "question_type": "single_choice",
-         "explanation": "Étapes 2 et 3 — pas de noyau, pas d'organite à membrane. Étape 4 — Conclure : procaryote. Pourquoi pas « C'est une cellule animale » : la cellule animale a un noyau et des mitochondries.",
+         "explanation": "Étape 2 — Chercher le noyau : l'ADN est libre, sans enveloppe, donc pas de noyau. Étape 3 — Chercher les organites : aucune mitochondrie, aucun organite à membrane. Étape 4 — Conclure : procaryote. Pourquoi pas « C'est une cellule animale » : une cellule animale a son ADN enfermé dans un noyau.",
          "answers": [
           {
            "content": "C'est une cellule procaryote",
@@ -1653,7 +1653,7 @@
       {
        "content": "Les cellules d'une pelure d'oignon contiennent des chloroplastes.",
        "question_type": "true_false",
-       "explanation": "Méthode : 1. Repérer : la pelure vient d'un bulbe enterré, sans lumière. 2. Repérer les structures propres à la cellule végétale : elle a une paroi, mais pas de chloroplaste. Pourquoi pas « Vrai » : les chloroplastes se forment dans les parties exposées à la lumière, comme les feuilles.",
+       "explanation": "Méthode : 1. Repérer : la pelure vient d'un bulbe, qui n'est pas une partie verte de la plante. 2. Repérer les structures propres à la cellule végétale : elle a une paroi, mais pas de chloroplaste. Pourquoi pas « Vrai » : les chloroplastes se trouvent dans les parties vertes exposées à la lumière, comme les feuilles.",
        "answers": [
         {
          "content": "Vrai",
@@ -1692,12 +1692,12 @@
     },
     {
      "title": "Trois cellules au microscope électronique",
-     "statement": "Un biologiste compare trois cellules fictives au microscope électronique. La cellule X est très riche en réticulum rugueux et en appareil de Golgi. La cellule Y contient énormément de mitochondries.",
+     "statement": "Un biologiste compare deux cellules fictives au microscope électronique (valeurs fictives). La cellule X est très riche en réticulum rugueux et en appareil de Golgi. La cellule Y contient énormément de mitochondries.",
      "exercise_type": "fixation",
      "figure": "ultrastructure-eucaryote",
      "questions": [
       {
-       "content": "La cellule X fabrique et exporte surtout :",
+       "content": "Sa richesse en réticulum rugueux et en Golgi montre que la cellule X fabrique et exporte surtout :",
        "question_type": "single_choice",
        "explanation": "Méthode : 1. Repérer le réticulum rugueux et le Golgi. 2. Reconnaître leur rôle : le réticulum transporte les protéines fabriquées par les ribosomes, le Golgi les trie et les emballe. Pourquoi pas « de l'énergie » : l'énergie est libérée par les mitochondries ; le réticulum et le Golgi ne la produisent pas.",
        "answers": [
@@ -1710,7 +1710,7 @@
          "correct": false
         },
         {
-         "content": "de la cellulose",
+         "content": "de l'amidon",
          "correct": false
         },
         {
@@ -1720,7 +1720,7 @@
        ]
       },
       {
-       "content": "La cellule Y, riche en mitochondries, est une cellule qui :",
+       "content": "Sa richesse en mitochondries montre que la cellule Y :",
        "question_type": "single_choice",
        "explanation": "Méthode : 1. Repérer les nombreuses mitochondries. 2. Associer leur rôle : elles libèrent l'énergie lors de la respiration cellulaire. Pourquoi pas « stocke de l'eau dans une grande vacuole » : c'est le rôle de la vacuole, pas des mitochondries.",
        "answers": [
@@ -2332,7 +2332,7 @@
       },
       {
        "title": "Exercice 4",
-       "statement": "Dans cet exercice, tu distingues la cellule procaryote et la cellule eucaryote.",
+       "statement": "Dans cet exercice, tu distingues la cellule procaryote et la cellule eucaryote (valeurs fictives).",
        "exercise_type": "evaluation",
        "figure": null,
        "questions": [
@@ -2488,7 +2488,7 @@
         {
          "content": "Les cellules de la pelure d'oignon n'ont pas de chloroplastes.",
          "question_type": "true_false",
-         "explanation": "Méthode : 1. Repérer : le bulbe pousse sous terre, sans lumière. 2. Conclure : les cellules ont une paroi mais pas de chloroplaste. Pourquoi pas « Faux » : les chloroplastes apparaissent dans les parties éclairées de la plante.",
+         "explanation": "Méthode : 1. Repérer : le bulbe n'est pas une partie verte de la plante. 2. Conclure : les cellules ont une paroi mais pas de chloroplaste. Pourquoi pas « Faux » : les chloroplastes se trouvent dans les parties vertes, éclairées, de la plante.",
          "answers": [
           {
            "content": "Vrai",
@@ -3096,20 +3096,12 @@
          ]
         },
         {
-         "content": "La cellule 1 n'a pas de chloroplaste car le bulbe est ___.",
+         "content": "La cellule 1 n'a pas de chloroplaste car le bulbe n'est pas une partie ___ de la plante.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 1. Repérer l'absence de chloroplaste. 2. Expliquer : le bulbe est enterré, sans lumière, donc sans chloroplaste. Pourquoi pas « vert » : un organe vert, éclairé, contiendrait des chloroplastes.",
+         "explanation": "Méthode : 1. Repérer l'absence de chloroplaste. 2. Expliquer : les chloroplastes ne se trouvent que dans les parties vertes de la plante, exposées à la lumière ; le bulbe n'en est pas une. Pourquoi pas « enterrée » : un bulbe d'oignon est souvent en partie hors du sol ; ce qui compte, c'est qu'il n'est pas vert.",
          "answers": [
           {
-           "content": "enterré",
-           "correct": true
-          },
-          {
-           "content": "souterrain",
-           "correct": true
-          },
-          {
-           "content": "sous terre",
+           "content": "verte",
            "correct": true
           }
          ]
