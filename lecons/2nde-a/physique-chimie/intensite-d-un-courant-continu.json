@@ -1,0 +1,3346 @@
+{
+ "format": "lnclass.course-tree",
+ "version": 3,
+ "courses": [
+  {
+   "name": "Intensité d'un courant continu",
+   "subtitle": "Leçon 10 — progression DPFC 2026-2027",
+   "level_name": "2nde",
+   "series_name": "A",
+   "material_name": "Physique-Chimie",
+   "theme": "teal",
+   "figures": [
+    {
+     "key": "circuit-ampere",
+     "kind": "diagram",
+     "description": "Schéma fléché d'une lampe torche avec un ampèremètre monté en série, lu dans le sens conventionnel du courant : de la borne + de la pile vers la borne A ou mA de l'ampèremètre, puis de sa borne COM vers la lampe, puis vers la borne − de la pile, et retour à la borne + à l'intérieur de la pile. Tout le courant de la boucle traverse l'ampèremètre.",
+     "params": {
+      "layout": "cycle",
+      "nodes": [
+       {
+        "id": "plus",
+        "label": "Borne + de la pile"
+       },
+       {
+        "id": "amA",
+        "label": "Ampèremètre, borne A ou mA"
+       },
+       {
+        "id": "amCOM",
+        "label": "Ampèremètre, borne COM"
+       },
+       {
+        "id": "lampe",
+        "label": "Lampe"
+       },
+       {
+        "id": "moins",
+        "label": "Borne − de la pile"
+       }
+      ],
+      "edges": [
+       {
+        "from": "plus",
+        "to": "amA"
+       },
+       {
+        "from": "amA",
+        "to": "amCOM",
+        "label": "dans l'appareil"
+       },
+       {
+        "from": "amCOM",
+        "to": "lampe"
+       },
+       {
+        "from": "lampe",
+        "to": "moins"
+       },
+       {
+        "from": "moins",
+        "to": "plus",
+        "label": "dans la pile"
+       }
+      ],
+      "legend": [
+       "Flèches : sens conventionnel du courant"
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "echelle-ampermetre",
+     "kind": "number_line",
+     "description": "Échelle d'un ampèremètre à aiguille de 100 divisions, graduée de 0 à 100 de dix en dix. L'aiguille s'arrête devant la division 40. Pour obtenir l'intensité, il faut encore connaître le calibre : l'intensité vaut le calibre multiplié par 40 et divisé par 100.",
+     "params": {
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "points": [
+       {
+        "value": 40,
+        "label": "aiguille : n = 40"
+       }
+      ]
+     },
+     "controls": []
+    }
+   ],
+   "notions": [
+    {
+     "name": "Exprimer une intensité en ampères et en milliampères",
+     "remember": "L'**intensité du courant** mesure le **débit de charges électriques** : plus il passe de charges chaque seconde à travers un fil, plus l'intensité est grande. On la note **I**. Son unité est l'**ampère**, de symbole **A**. Pour les petites intensités, on utilise le **milliampère**, de symbole **mA**. 1 mA = 0,001 A et 1 A = 1 000 mA. Pour passer des **mA aux A**, on **divise par 1 000**. Pour passer des **A aux mA**, on **multiplie par 1 000**. Le nombre en mA est donc toujours 1 000 fois plus grand que le nombre en A. Exemple : 250 mA = 0,25 A. Une lampe torche demande souvent quelques centaines de mA ; un appareil de la maison peut demander plusieurs ampères.",
+     "method": [
+      "Repérer l'unité de la valeur donnée et l'unité demandée (mA ou A).",
+      "Choisir l'opération : diviser par 1 000 pour passer des mA aux A, multiplier par 1 000 pour passer des A aux mA.",
+      "Calculer le résultat et l'écrire avec son unité.",
+      "Vérifier que le nombre en mA est 1 000 fois plus grand que le nombre en A."
+     ],
+     "example": {
+      "statement": "L'ampoule de la lampe torche de Koffi est traversée par une intensité de 300 mA. Exprimer cette intensité en ampères.",
+      "steps": [
+       "Repérer : la valeur donnée, 300, est en mA ; l'unité demandée est l'ampère (A).",
+       "Choisir : pour passer des mA aux A, on divise par 1 000.",
+       "Calculer : 300 mA ÷ 1 000 = 0,3 A. L'intensité est I = 0,3 A.",
+       "Vérifier : 300 est bien 1 000 fois plus grand que 0,3, donc la conversion est juste."
+      ]
+     },
+     "pitfall": "Ne divise pas quand il faut multiplier. Contre-exemple : 40 mA ne font pas 40 000 A, mais 0,04 A. Le milliampère est une **petite** unité : un nombre de mA est toujours **plus grand** que le même courant en A. Pour contrôler, compare avec 1 A : 40 mA est bien plus petit que 1 A, donc le résultat en A doit être plus petit que 1.",
+     "figure": null,
+     "practice": {
+      "statement": "Tu t'entraînes à convertir des intensités entre milliampères et ampères avec des appareils du quotidien.",
+      "questions": [
+       {
+        "content": "Une ampoule de lampe torche est traversée par une intensité de 300 mA. Exprime cette intensité en ampères.",
+        "question_type": "numeric",
+        "unit": "A",
+        "tolerance": 0,
+        "explanation": "Étape 1 — Repérer : la valeur donnée est en mA et on demande des A. Étape 2 — Choisir : de mA vers A, on divise par 1 000. Étape 3 — Calculer : 300 mA ÷ 1 000 = 0,3 A. Étape 4 — Vérifier : le nombre en mA (300) est bien 1 000 fois plus grand que le nombre en A (0,3). Pourquoi pas « 300 000 A » : ce serait multiplier par 1 000 au lieu de diviser : l'intensité deviendrait 1 000 fois trop grande.",
+        "answers": [
+         {
+          "content": "0,3",
+          "correct": true
+         }
+        ],
+        "hint": "Du mA vers l'A, le nombre devient plus petit."
+       },
+       {
+        "content": "Un chargeur de téléphone est parcouru par une intensité de 2 A. Exprime cette intensité en milliampères.",
+        "question_type": "numeric",
+        "unit": "mA",
+        "tolerance": 0,
+        "explanation": "Étape 1 — Repérer : la valeur donnée est en A et on demande des mA. Étape 2 — Choisir : de A vers mA, on multiplie par 1 000. Étape 3 — Calculer : 2 A × 1 000 = 2 000 mA. Étape 4 — Vérifier : le nombre en mA (2 000) est bien 1 000 fois plus grand que le nombre en A (2). Pourquoi pas « 0,002 mA » : ce serait diviser par 1 000 au lieu de multiplier : le nombre en mA doit être le plus grand.",
+        "answers": [
+         {
+          "content": "2000",
+          "correct": true
+         }
+        ],
+        "hint": "De l'A vers le mA, le nombre devient plus grand."
+       },
+       {
+        "content": "Un ventilateur est traversé par une intensité de 0,45 A. Quelle écriture donne la même intensité ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Repérer : la valeur est en A, on cherche une écriture en mA. Étape 2 — Choisir : des A aux mA, on multiplie par 1 000. Étape 3 — Calculer : 0,45 × 1 000 = 450 mA. Étape 4 — Vérifier : 450 est bien 1 000 fois plus grand que 0,45. Pourquoi pas « 0,45 mA » : l'unité a changé sans que le nombre change : on a oublié de multiplier par 1 000.",
+        "answers": [
+         {
+          "content": "450 mA",
+          "correct": true
+         },
+         {
+          "content": "0,45 mA",
+          "correct": false
+         },
+         {
+          "content": "45 mA",
+          "correct": false
+         },
+         {
+          "content": "4 500 mA",
+          "correct": false
+         }
+        ],
+        "hint": "Multiplie 0,45 par 1 000."
+       },
+       {
+        "content": "Une intensité de 80 mA est plus petite qu'une intensité de 0,5 A.",
+        "question_type": "true_false",
+        "explanation": "Étape 1 — Repérer : les deux valeurs n'ont pas la même unité. Étape 2 — Choisir : on met tout en A, donc on divise par 1 000. Étape 3 — Calculer : 80 mA = 0,08 A. Étape 4 — Vérifier : 0,08 A est bien plus petit que 0,5 A. Pourquoi pas « Faux » : on comparerait 80 et 0,5 sans convertir, alors que 80 mA ne vaut que 0,08 A.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": true
+         },
+         {
+          "content": "Faux",
+          "correct": false
+         }
+        ],
+        "hint": "Mets les deux valeurs dans la même unité."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Convertir des intensités du quotidien",
+       "statement": "Des appareils de la maison et de la lampe torche sont traversés par des courants d'intensités différentes. Tu les convertis avec la méthode de la fiche.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Que mesure l'intensité du courant électrique dans un fil ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : on cherche ce que l'intensité décrit dans un fil. Étape 2 — Choisir : l'intensité est un débit, comme le nombre de personnes qui passent une porte chaque seconde. Étape 3 — Calculer : plus il passe de charges par seconde, plus I est grande. Étape 4 — Vérifier : elle se mesure en ampères, pas en mètres ni en joules. Pourquoi pas « La force avec laquelle la pile pousse les charges » : on confond l'intensité, qui compte les charges qui passent, avec ce qui les met en mouvement.",
+         "answers": [
+          {
+           "content": "Le débit de charges : la quantité de charges qui passe en une seconde",
+           "correct": true
+          },
+          {
+           "content": "La force avec laquelle la pile pousse les charges dans le fil pendant leur trajet",
+           "correct": false
+          },
+          {
+           "content": "La quantité de chaleur dégagée par le fil quand le courant le traverse",
+           "correct": false
+          },
+          {
+           "content": "La longueur de fil que les charges parcourent entre les deux bornes de la pile",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelle est l'unité de l'intensité du courant dans le Système international ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : on cherche l'unité de l'intensité. Étape 2 — Choisir : l'intensité s'exprime en ampères ; le milliampère n'en est qu'un sous-multiple. Étape 3 — Calculer : 1 A = 1 000 mA. Étape 4 — Vérifier : le symbole de l'unité est A. Pourquoi pas « Le volt, de symbole V » : le volt est l'unité d'une autre grandeur électrique, qui se mesure avec un autre appareil.",
+         "answers": [
+          {
+           "content": "L'ampère, de symbole A",
+           "correct": true
+          },
+          {
+           "content": "Le volt, de symbole V",
+           "correct": false
+          },
+          {
+           "content": "Le watt, de symbole W",
+           "correct": false
+          },
+          {
+           "content": "Le joule, de symbole J",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un ventilateur de la maison est traversé par une intensité de 120 mA. Exprime cette intensité en ampères.",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Repérer : la valeur donnée est en mA et on demande des A. Étape 2 — Choisir : de mA vers A, on divise par 1 000. Étape 3 — Calculer : 120 mA ÷ 1 000 = 0,12 A. Étape 4 — Vérifier : le nombre en mA (120) est bien 1 000 fois plus grand que le nombre en A (0,12). Pourquoi pas « 120 000 A » : ce serait multiplier par 1 000 au lieu de diviser : l'intensité deviendrait 1 000 fois trop grande.",
+         "answers": [
+          {
+           "content": "0,12",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un petit moteur de l'atelier d'Adjamé est traversé par une intensité de 0,75 A. Exprime cette intensité en milliampères.",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Repérer : la valeur donnée est en A et on demande des mA. Étape 2 — Choisir : de A vers mA, on multiplie par 1 000. Étape 3 — Calculer : 0,75 A × 1 000 = 750 mA. Étape 4 — Vérifier : le nombre en mA (750) est bien 1 000 fois plus grand que le nombre en A (0,75). Pourquoi pas « 0,00075 mA » : ce serait diviser par 1 000 au lieu de multiplier : le nombre en mA doit être le plus grand.",
+         "answers": [
+          {
+           "content": "750",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un élève écrit : « 40 mA = 40 000 A ». Quelle est son erreur ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : la valeur est en mA et on veut des A. Étape 2 — Choisir : on divise par 1 000. Étape 3 — Calculer : 40 mA ÷ 1 000 = 0,04 A. Étape 4 — Vérifier : 40 est bien 1 000 fois plus grand que 0,04. Pourquoi pas « Il a divisé par 100 au lieu de 1 000 » : le facteur est 1 000, pas 100 : 40 ÷ 100 = 0,4 ne donne pas 0,04.",
+         "answers": [
+          {
+           "content": "Il a multiplié au lieu de diviser : 40 mA = 0,04 A",
+           "correct": true
+          },
+          {
+           "content": "Il a divisé par 100 au lieu de 1 000 : 40 mA = 0,4 A",
+           "correct": false
+          },
+          {
+           "content": "Il n'a pas d'erreur, car 1 mA vaut 1 000 A",
+           "correct": false
+          },
+          {
+           "content": "Il a oublié la virgule : 40 mA = 40 A",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Intensités à la maison et à l'atelier d'Adjamé",
+       "statement": "Dans cet exercice, tu convertis des intensités relevées à la maison et à l'atelier de réparation d'Adjamé, en ampères et en milliampères.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Des mA aux A on divise par 1 000 ; des A aux mA on multiplie par 1 000.",
+       "questions": [
+        {
+         "content": "Relie chaque intensité en milliampères à la même intensité en ampères.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Repérer : chaque valeur est en mA et on veut des A. Étape 2 — Choisir : on divise par 1 000. Étape 3 — Calculer : 500 mA = 0,5 A ; 25 mA = 0,025 A ; 1 200 mA = 1,2 A ; 5 mA = 0,005 A. Étape 4 — Vérifier : chaque nombre en mA est 1 000 fois plus grand. Pourquoi pas « 25 mA = 0,25 A » : diviser par 100 au lieu de 1 000 donne un résultat 10 fois trop grand.",
+         "answers": [
+          {
+           "content": "500 mA",
+           "match": "0,5 A"
+          },
+          {
+           "content": "25 mA",
+           "match": "0,025 A"
+          },
+          {
+           "content": "1 200 mA",
+           "match": "1,2 A"
+          },
+          {
+           "content": "5 mA",
+           "match": "0,005 A"
+          }
+         ]
+        },
+        {
+         "content": "Un ampère est égal à ___ milliampères.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Repérer : on compare l'ampère et le milliampère. Étape 2 — Choisir : des A aux mA, on multiplie par 1 000. Étape 3 — Calculer : 1 A × 1 000 = 1 000 mA. Étape 4 — Vérifier : le milliampère est une unité 1 000 fois plus petite. Pourquoi pas « 100 » : le préfixe milli veut dire millième, pas centième.",
+         "answers": [
+          {
+           "content": "1000",
+           "correct": true
+          },
+          {
+           "content": "1 000",
+           "correct": true
+          },
+          {
+           "content": "mille",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les étapes pour convertir 350 mA en ampères.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Repérer les unités. Étape 2 — Choisir l'opération. Étape 3 — Calculer et écrire l'unité. Étape 4 — Vérifier le résultat. On vérifie en dernier, quand le résultat existe. Pourquoi pas « calculer avant de choisir l'opération » : on ne sait pas encore s'il faut diviser ou multiplier.",
+         "answers": [
+          {
+           "content": "Repérer que la valeur est en mA et que l'unité demandée est l'A."
+          },
+          {
+           "content": "Choisir l'opération : diviser par 1 000."
+          },
+          {
+           "content": "Calculer : 350 ÷ 1 000 = 0,35 A."
+          },
+          {
+           "content": "Vérifier que 350 est 1 000 fois plus grand que 0,35."
+          }
+         ]
+        },
+        {
+         "content": "Une intensité de 0,02 A est égale à 20 mA.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Repérer : la valeur est en A et on cherche des mA. Étape 2 — Choisir : on multiplie par 1 000. Étape 3 — Calculer : 0,02 × 1 000 = 20 mA. Étape 4 — Vérifier : 20 est bien 1 000 fois plus grand que 0,02. Pourquoi pas « Faux » : on croirait que 0,02 A ne vaut que 0,02 mA, alors qu'il faut multiplier par 1 000.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pour passer de 0,6 A à des milliampères, on ___ le nombre 0,6 par 1 000.",
+         "question_type": "select",
+         "explanation": "Étape 1 — Repérer : on part d'une valeur en A. Étape 2 — Choisir : des A aux mA, on multiplie. Étape 3 — Calculer : 0,6 × 1 000 = 600 mA. Étape 4 — Vérifier : 600 est bien 1 000 fois plus grand que 0,6. Pourquoi pas « divise » : diviser donnerait 0,0006, un nombre plus petit, alors que le nombre en mA doit être plus grand.",
+         "answers": [
+          {
+           "content": "multiplie",
+           "correct": true
+          },
+          {
+           "content": "divise",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Parmi ces écritures, lesquelles valent 1,5 A ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Repérer : on compare des valeurs en A et en mA. Étape 2 — Choisir : on convertit en mA en multipliant par 1 000. Étape 3 — Calculer : 1,5 × 1 000 = 1 500 mA, et 1,50 A est la même valeur qu'1,5 A. Étape 4 — Vérifier : 1 500 est 1 000 fois plus grand que 1,5. Pourquoi pas « 150 mA » : 150 ne vaut que 0,15 A : on a multiplié par 100 au lieu de 1 000.",
+         "answers": [
+          {
+           "content": "1 500 mA",
+           "correct": true
+          },
+          {
+           "content": "1,50 A",
+           "correct": true
+          },
+          {
+           "content": "150 mA",
+           "correct": false
+          },
+          {
+           "content": "15 mA",
+           "correct": false
+          },
+          {
+           "content": "15 000 mA",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Brancher un ampèremètre et choisir son calibre",
+     "remember": "L'**ampèremètre** mesure l'intensité du courant. Son symbole est un **cercle contenant la lettre A**. Il se branche **en série** dans la branche étudiée : on ouvre cette branche et on y intercale l'appareil, pour que tout le courant de la branche le traverse. Le courant doit **entrer** par la borne **A** (ou **mA**) et **sortir** par la borne **COM** : la borne A ou mA est donc du côté de la borne **+** du générateur, et la borne COM du côté de la borne **−**. Un ampèremètre a plusieurs **calibres**, c'est-à-dire plusieurs intensités maximales mesurables. On commence par le **plus grand calibre**, puis on le **diminue** jusqu'au plus petit calibre qui reste plus grand que l'intensité mesurée. Un calibre trop petit risque d'abîmer l'appareil. Un ampèremètre ne se branche jamais en dérivation, ni seul aux bornes d'un générateur : ce serait un court-circuit.",
+     "method": [
+      "Placer l'ampèremètre en série dans la branche étudiée, en ouvrant cette branche pour l'y intercaler.",
+      "Orienter l'appareil : la borne A (ou mA) du côté de la borne + du générateur, la borne COM du côté de la borne −.",
+      "Choisir le plus grand calibre au départ, puis fermer l'interrupteur.",
+      "Affiner : diminuer le calibre tant que l'aiguille (ou l'affichage) reste dans l'échelle, et garder le plus petit calibre possible."
+     ],
+     "example": {
+      "statement": "Au laboratoire du lycée, Awa veut mesurer l'intensité dans la lampe L d'un circuit simple : borne + de la pile, interrupteur, lampe L, borne − de la pile. Son ampèremètre a les calibres 3 A, 1 A, 300 mA et 100 mA. La lampe est traversée par environ 120 mA (valeur fictive). Où et comment branche-t-elle l'ampèremètre, et quel calibre garde-t-elle ?",
+      "steps": [
+       "Placer : le circuit est une seule boucle ; Awa ouvre le fil entre l'interrupteur et la lampe L et y intercale l'ampèremètre, donc en série.",
+       "Orienter : l'interrupteur est du côté de la borne + de la pile, donc la borne A (ou mA) est reliée à l'interrupteur et la borne COM à la lampe L.",
+       "Choisir : elle commence par le calibre 3 A, puis ferme l'interrupteur.",
+       "Affiner : elle passe à 1 A, puis à 300 mA, où l'aiguille reste dans l'échelle ; 100 mA serait dépassé par 120 mA. Elle garde 300 mA."
+      ]
+     },
+     "pitfall": "Ne branche jamais l'ampèremètre aux bornes d'une lampe, en dérivation. Contre-exemple : relié aux deux bornes de la lampe, l'ampèremètre offre au courant un chemin presque sans obstacle : la lampe s'éteint (elle est court-circuitée) et un courant trop grand traverse l'appareil, qui peut être abîmé. Pour mesurer l'intensité dans la lampe, on ouvre la branche et on y place l'ampèremètre **en série**.",
+     "figure": "circuit-ampere",
+     "practice": {
+      "statement": "Tu t'entraînes à brancher un ampèremètre et à choisir son calibre.",
+      "questions": [
+       {
+        "content": "Comment branche-t-on un ampèremètre pour mesurer l'intensité dans une lampe ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Placer : pour que tout le courant de la branche le traverse, l'ampèremètre s'intercale dans la branche, donc en série. Étape 2 — Orienter : la borne A ou mA vers la borne +, la borne COM vers la borne −. Les étapes suivantes règlent le calibre. Pourquoi pas « En dérivation, entre les deux bornes de la lampe » : il court-circuiterait la lampe et ne mesurerait pas son intensité.",
+        "answers": [
+         {
+          "content": "En série avec la lampe, dans la même branche",
+          "correct": true
+         },
+         {
+          "content": "En dérivation, entre les deux bornes de la lampe",
+          "correct": false
+         },
+         {
+          "content": "En dérivation, entre les deux bornes de la pile",
+          "correct": false
+         },
+         {
+          "content": "En série, mais seulement après la lampe, jamais avant",
+          "correct": false
+         }
+        ],
+        "hint": "Pour mesurer un débit, on place le compteur sur le passage."
+       },
+       {
+        "content": "Le courant doit entrer dans l'ampèremètre par la borne A (ou mA) et en sortir par la borne ___.",
+        "question_type": "fill_blank",
+        "explanation": "Étape 1 — Placer : l'ampèremètre est en série, le courant le traverse d'une borne à l'autre. Étape 2 — Orienter : il entre par la borne A ou mA, du côté de la borne +, et sort par la borne COM, du côté de la borne −. Pourquoi pas « A » : la borne A est celle d'entrée, du côté de la borne + du générateur.",
+        "answers": [
+         {
+          "content": "COM",
+          "correct": true
+         }
+        ],
+        "hint": "Elle est reliée vers la borne − du générateur."
+       },
+       {
+        "content": "Quand on ne connaît pas l'intensité, on commence par le plus petit calibre de l'ampèremètre.",
+        "question_type": "true_false",
+        "explanation": "Étape 3 — Choisir : on commence toujours par le plus grand calibre, puis on ferme l'interrupteur. Étape 4 — Affiner : on diminue ensuite le calibre pas à pas. Pourquoi pas « Vrai » : un calibre trop petit peut être dépassé tout de suite et abîmer l'appareil.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": false
+         },
+         {
+          "content": "Faux",
+          "correct": true
+         }
+        ],
+        "hint": "Que risque-t-on si l'intensité dépasse le calibre ?"
+       },
+       {
+        "content": "On mesure une intensité d'environ 0,2 A avec un ampèremètre de calibres 3 A, 1 A, 300 mA et 100 mA. Quel calibre garde-t-on à la fin ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 3 — Choisir : on part de 3 A. Étape 4 — Affiner : 0,2 A = 200 mA. Le calibre 100 mA est trop petit, 200 mA le dépasse. Le plus petit calibre qui reste plus grand que 200 mA est 300 mA. Pourquoi pas « 1 A » : il convient aussi, mais ce n'est pas le plus petit calibre possible : la mesure y serait moins précise.",
+        "answers": [
+         {
+          "content": "300 mA",
+          "correct": true
+         },
+         {
+          "content": "1 A",
+          "correct": false
+         },
+         {
+          "content": "100 mA",
+          "correct": false
+         },
+         {
+          "content": "3 A",
+          "correct": false
+         }
+        ],
+        "hint": "Convertis 0,2 A en mA."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Brancher l'ampèremètre dans le circuit de la lampe torche",
+       "statement": "Koffi veut mesurer l'intensité dans sa lampe torche. Le circuit comporte une pile, un interrupteur et une ampoule, tous en série.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Koffi veut mesurer l'intensité dans l'ampoule de sa lampe torche : pile, interrupteur et ampoule en série. Où place-t-il l'ampèremètre ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Placer : on ouvre la boucle et on y intercale l'ampèremètre, donc en série avec l'ampoule. Étape 2 — Orienter : A ou mA du côté de la borne +, COM du côté de la borne −. Pourquoi pas « Aux bornes de l'ampoule, en dérivation sur l'ampoule » : l'ampèremètre court-circuiterait l'ampoule au lieu de mesurer son courant.",
+         "answers": [
+          {
+           "content": "En série avec l'ampoule, en ouvrant la boucle",
+           "correct": true
+          },
+          {
+           "content": "Aux bornes de l'ampoule, en dérivation sur l'ampoule",
+           "correct": false
+          },
+          {
+           "content": "Aux bornes de la pile, sans passer par l'ampoule",
+           "correct": false
+          },
+          {
+           "content": "Aux bornes de l'interrupteur, en dérivation sur lui",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans la lampe torche de Koffi, la borne + de la pile est du côté de l'interrupteur et la borne − du côté de l'ampoule. L'ampèremètre est placé entre l'interrupteur et l'ampoule. Où est sa borne COM ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Placer : l'ampèremètre est en série entre l'interrupteur et l'ampoule. Étape 2 — Orienter : la borne A ou mA est du côté de la borne +, donc vers l'interrupteur ; la borne COM est du côté de la borne −, donc vers l'ampoule. Pourquoi pas « Du côté de l'interrupteur, qui mène à la borne + » : ce serait la place de la borne A ou mA, pas de la borne COM.",
+         "answers": [
+          {
+           "content": "Du côté de l'ampoule, qui mène à la borne −",
+           "correct": true
+          },
+          {
+           "content": "Du côté de l'interrupteur, qui mène à la borne +",
+           "correct": false
+          },
+          {
+           "content": "Peu importe : l'ampèremètre fonctionne dans les deux sens",
+           "correct": false
+          },
+          {
+           "content": "Reliée directement à la borne + de la pile, sans interrupteur",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Koffi ne sait pas quelle intensité traverse son ampoule. Quel calibre de l'ampèremètre choisit-il en premier ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Choisir : on commence par le plus grand calibre, puis on ferme l'interrupteur. Étape 4 — Affiner : on diminue ensuite le calibre tant que l'aiguille reste dans l'échelle. Pourquoi pas « Le plus petit, pour que la mesure soit précise » : c'est le but de l'étape finale ; au départ, un calibre trop petit risque d'être dépassé.",
+         "answers": [
+          {
+           "content": "Le plus grand calibre disponible",
+           "correct": true
+          },
+          {
+           "content": "Le plus petit, pour que la mesure soit précise",
+           "correct": false
+          },
+          {
+           "content": "Le calibre 100 mA, car une lampe torche demande peu de courant",
+           "correct": false
+          },
+          {
+           "content": "Un calibre moyen, pour ne rien risquer",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un ampèremètre branché aux bornes d'une ampoule, en dérivation sur elle, éteint l'ampoule.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Placer : un ampèremètre doit être en série. Étape 2 — Orienter : mal placé, il crée un chemin direct entre les deux bornes de l'ampoule. Le courant passe par lui et plus par l'ampoule : elle s'éteint. Pourquoi pas « Faux » : on croirait qu'un ampèremètre ne change rien au circuit, alors que monté en dérivation il court-circuite la lampe.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un élève branche l'ampèremètre entre les deux bornes de l'ampoule. L'ampoule s'éteint et l'ampèremètre indique une grande valeur. Pourquoi ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Placer : l'ampèremètre doit être en série, il est ici en dérivation. Étape 2 — Orienter : l'orientation des bornes ne change pas ce défaut. Le courant passe par l'ampèremètre et non par l'ampoule, qui s'éteint. Pourquoi pas « L'ampoule est grillée » : une ampoule grillée n'explique pas la grande valeur lue : c'est le montage de l'ampèremètre qui est faux.",
+         "answers": [
+          {
+           "content": "Il est en dérivation sur l'ampoule : il la court-circuite",
+           "correct": true
+          },
+          {
+           "content": "L'ampoule est grillée et l'ampèremètre mesure son intensité",
+           "correct": false
+          },
+          {
+           "content": "Le calibre est trop petit, ce qui éteint l'ampoule",
+           "correct": false
+          },
+          {
+           "content": "Les bornes A et COM sont inversées, ce qui coupe la lampe",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Ampèremètre, bornes et calibres au laboratoire du lycée",
+       "statement": "Dans cet exercice, tu retrouves les règles de branchement d'un ampèremètre et le choix du calibre, comme au laboratoire du lycée.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "L'ampèremètre se branche en série, A ou mA vers la borne +, COM vers la borne −, en partant du plus grand calibre.",
+       "questions": [
+        {
+         "content": "Relie chaque élément de l'ampèremètre à son rôle.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Placer : l'ampèremètre est en série dans la branche. Étape 2 — Orienter : A ou mA du côté de la borne +, COM du côté de la borne −. Étape 3 — Choisir : le calibre est l'intensité maximale mesurable. Pourquoi pas « Borne COM : entrée du courant » : c'est la borne A ou mA qui est reliée du côté de la borne +, COM est la sortie.",
+         "answers": [
+          {
+           "content": "Borne A ou mA",
+           "match": "Entrée du courant, du côté de la borne + du générateur"
+          },
+          {
+           "content": "Borne COM",
+           "match": "Sortie du courant, du côté de la borne − du générateur"
+          },
+          {
+           "content": "Calibre",
+           "match": "Intensité maximale que l'on peut mesurer"
+          },
+          {
+           "content": "Branchement de l'appareil",
+           "match": "En série dans la branche étudiée"
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les étapes pour mesurer une intensité inconnue.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Placer. Étape 2 — Orienter. Étape 3 — Choisir le plus grand calibre et fermer l'interrupteur. Étape 4 — Affiner le calibre. On affine à la fin, une fois le circuit fermé et la mesure possible. Pourquoi pas « diminuer le calibre avant de fermer l'interrupteur » : il n'y a aucune mesure à affiner tant que le courant ne passe pas.",
+         "answers": [
+          {
+           "content": "Placer l'ampèremètre en série dans la branche."
+          },
+          {
+           "content": "Orienter la borne A ou mA vers la borne + et la borne COM vers la borne −."
+          },
+          {
+           "content": "Choisir le plus grand calibre et fermer l'interrupteur."
+          },
+          {
+           "content": "Diminuer le calibre tant que l'aiguille reste dans l'échelle."
+          }
+         ]
+        },
+        {
+         "content": "Un ampèremètre mesure l'intensité dans un dipôle s'il est monté ___ avec ce dipôle.",
+         "question_type": "select",
+         "explanation": "Étape 1 — Placer : tout le courant du dipôle doit traverser l'ampèremètre, donc l'appareil est en série. Étape 2 — Orienter : on règle ensuite les bornes. Pourquoi pas « en dérivation » : en dérivation, l'ampèremètre court-circuite le dipôle au lieu de mesurer son courant.",
+         "answers": [
+          {
+           "content": "en série",
+           "correct": true
+          },
+          {
+           "content": "en dérivation",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un ampèremètre a les calibres 3 A, 1 A, 300 mA et 100 mA. On mesure une intensité d'environ 60 mA. Quel calibre, en mA, garde-t-on à la fin ?",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 3 — Choisir : on part du plus grand calibre, 3 A. Étape 4 — Affiner : on descend à 1 A, puis 300 mA, puis 100 mA. 60 mA est plus petit que 100 mA, donc le calibre 100 mA ne sera pas dépassé et c'est le plus petit possible. Pourquoi pas « 300 mA » : il convient, mais ce n'est pas le plus petit calibre qui reste plus grand que 60 mA.",
+         "answers": [
+          {
+           "content": "100",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Avant de mesurer une intensité inconnue, quelles précautions faut-il prendre ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Placer : en série dans la branche. Étape 3 — Choisir : le plus grand calibre au départ. Les bornes se branchent comme à l'étape 2 : A ou mA vers la borne +, COM vers la borne −. Pourquoi pas « Commencer par le plus petit calibre » : il risque d'être dépassé tout de suite, et la précision se cherche seulement à l'étape finale.",
+         "answers": [
+          {
+           "content": "Brancher l'ampèremètre en série dans la branche étudiée",
+           "correct": true
+          },
+          {
+           "content": "Commencer par le plus grand calibre",
+           "correct": true
+          },
+          {
+           "content": "Commencer par le plus petit calibre, pour avoir plus de précision",
+           "correct": false
+          },
+          {
+           "content": "Inverser les bornes A et COM, pour une mesure plus fiable",
+           "correct": false
+          },
+          {
+           "content": "Brancher l'ampèremètre seul aux bornes de la pile, sans récepteur",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un ampèremètre branché seul entre les deux bornes d'une pile provoque un ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Placer : l'ampèremètre doit être en série avec un récepteur. Étape 2 — Orienter : même bien orienté, branché seul il relie directement les deux bornes de la pile. C'est un court-circuit : les fils chauffent et l'appareil peut être détruit. Pourquoi pas « dérivation » : la dérivation est un type de montage, ce n'est pas le nom du danger de ce branchement.",
+         "answers": [
+          {
+           "content": "court-circuit",
+           "correct": true
+          },
+          {
+           "content": "court circuit",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Lire une intensité sur un ampèremètre",
+     "remember": "Sur un ampèremètre à **aiguille**, l'échelle est partagée en **N divisions** (par exemple 100). L'aiguille s'arrête devant la division **n**. Avec un **calibre C**, l'intensité est $I = \\dfrac{C \\times n}{N}$. Elle s'exprime dans la **même unité que le calibre** : calibre en mA, I en mA ; calibre en A, I en A. Si l'aiguille est à fond d'échelle ($n = N$), l'intensité est égale au calibre. Sur un **multimètre numérique**, on lit directement la valeur affichée et son unité (A ou mA), et on vérifie que cette unité correspond à la borne et au calibre choisis. Un signe **−** devant la valeur montre que les bornes sont branchées à l'envers : la valeur, sans le signe, donne quand même l'intensité.",
+     "method": [
+      "Relever le calibre C utilisé et le nombre total N de divisions de l'échelle.",
+      "Lire le nombre n de divisions parcourues par l'aiguille.",
+      "Appliquer la formule $I = \\dfrac{C \\times n}{N}$ avec les valeurs relevées.",
+      "Écrire le résultat avec l'unité du calibre, puis le convertir si l'énoncé le demande."
+     ],
+     "example": {
+      "statement": "Au laboratoire du lycée, un ampèremètre à aiguille de 100 divisions est réglé sur le calibre 300 mA. L'aiguille s'arrête devant la division 40. Quelle est l'intensité, en mA puis en A ?",
+      "steps": [
+       "Relever : le calibre est C = 300 mA et l'échelle compte N = 100 divisions.",
+       "Lire : l'aiguille est devant la division n = 40.",
+       "Appliquer : $I = \\dfrac{300 \\times 40}{100} = 120$.",
+       "Écrire : I = 120 mA, l'unité du calibre ; en ampères, 120 mA ÷ 1 000 = 0,12 A."
+      ]
+     },
+     "pitfall": "Ne lis pas le nombre de divisions comme si c'était l'intensité : tout dépend du calibre. Contre-exemple : l'aiguille est devant la division 30 d'une échelle de 100 divisions. Sur le calibre 1 A, $I = \\dfrac{1 \\times 30}{100} = 0{,}30$ A, et non 30 A. Sur le calibre 100 mA, la même position donne $I = \\dfrac{100 \\times 30}{100} = 30$ mA. Même position, deux intensités différentes : relève toujours le calibre avant de lire.",
+     "figure": "echelle-ampermetre",
+     "practice": {
+      "statement": "Tu t'entraînes à lire une intensité sur un ampèremètre à aiguille et sur un multimètre numérique.",
+      "questions": [
+       {
+        "content": "Dans une lampe torche, l'ampèremètre à aiguille a 100 divisions et le calibre 1 A est utilisé. L'aiguille s'arrête devant la division 25. Quelle est l'intensité, en ampères ?",
+        "question_type": "numeric",
+        "unit": "A",
+        "tolerance": 0,
+        "explanation": "Étape 1 — Relever : le calibre est C = 1 A et l'échelle compte N = 100 divisions. Étape 2 — Lire : l'aiguille est devant n = 25 divisions. Étape 3 — Appliquer : I = C × n / N = 1 × 25 / 100 = 0,25 A. Étape 4 — Écrire : I = 0,25 A, avec l'unité du calibre. Pourquoi pas « 25 A » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+        "answers": [
+         {
+          "content": "0,25",
+          "correct": true
+         }
+        ],
+        "hint": "I = C × n / N, avec C = 1 A."
+       },
+       {
+        "content": "Dans un petit moteur de l'atelier d'Adjamé, l'ampèremètre à aiguille a 50 divisions et le calibre 100 mA est utilisé. L'aiguille s'arrête devant la division 35. Quelle est l'intensité, en milliampères ?",
+        "question_type": "numeric",
+        "unit": "mA",
+        "tolerance": 0,
+        "explanation": "Étape 1 — Relever : le calibre est C = 100 mA et l'échelle compte N = 50 divisions. Étape 2 — Lire : l'aiguille est devant n = 35 divisions. Étape 3 — Appliquer : I = C × n / N = 100 × 35 / 50 = 70 mA. Étape 4 — Écrire : I = 70 mA, avec l'unité du calibre. Pourquoi pas « 35 mA » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+        "answers": [
+         {
+          "content": "70",
+          "correct": true
+         }
+        ],
+        "hint": "Ici N n'est pas 100."
+       },
+       {
+        "content": "Quand l'aiguille est à fond d'échelle, l'intensité mesurée est égale au calibre.",
+        "question_type": "true_false",
+        "explanation": "Étape 1 — Relever : on note C et N. Étape 2 — Lire : à fond d'échelle, n = N. Étape 3 — Appliquer : I = C × N / N = C. Étape 4 — Écrire : I est égale au calibre, avec son unité. Pourquoi pas « Faux » : on croirait que la lecture à fond d'échelle donne une valeur sans lien avec le calibre.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": true
+         },
+         {
+          "content": "Faux",
+          "correct": false
+         }
+        ],
+        "hint": "Remplace n par N dans la formule."
+       },
+       {
+        "content": "Un multimètre numérique affiche « −0,35 A ». Que signifie le signe − ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Relever : le multimètre affiche directement une valeur et son unité. Étape 2 — Lire : l'écran donne −0,35 A. Étape 4 — Écrire : le signe − signale des bornes inversées ; sans lui, l'intensité vaut 0,35 A. Pourquoi pas « L'intensité est négative : il n'y a pas de courant » : il y a bien un courant de 0,35 A, c'est seulement le branchement qui est à l'envers.",
+        "answers": [
+         {
+          "content": "Les bornes sont branchées à l'envers ; l'intensité vaut 0,35 A",
+          "correct": true
+         },
+         {
+          "content": "L'intensité est négative : il n'y a pas de courant dans le circuit",
+          "correct": false
+         },
+         {
+          "content": "Le calibre est trop petit : il faut en prendre un plus grand",
+          "correct": false
+         },
+         {
+          "content": "La pile est déchargée : l'intensité vaut −0,35 A",
+          "correct": false
+         }
+        ],
+        "hint": "Pense à l'ordre des bornes A et COM."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Lire des ampèremètres à aiguille",
+       "statement": "Dans cet exercice, tu lis des ampèremètres à aiguille avec la méthode de la fiche : calibre, divisions, formule, unité.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Dans le circuit d'un ventilateur, l'ampèremètre à aiguille a 30 divisions et le calibre 3 A est utilisé. L'aiguille s'arrête devant la division 21. Quelle est l'intensité, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 3 A et l'échelle compte N = 30 divisions. Étape 2 — Lire : l'aiguille est devant n = 21 divisions. Étape 3 — Appliquer : I = C × n / N = 3 × 21 / 30 = 2,1 A. Étape 4 — Écrire : I = 2,1 A, avec l'unité du calibre. Pourquoi pas « 21 A » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+         "answers": [
+          {
+           "content": "2,1",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans le circuit d'une lampe torche, l'ampèremètre à aiguille a 100 divisions et le calibre 300 mA est utilisé. L'aiguille s'arrête devant la division 65. Quelle est l'intensité, en milliampères ?",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 300 mA et l'échelle compte N = 100 divisions. Étape 2 — Lire : l'aiguille est devant n = 65 divisions. Étape 3 — Appliquer : I = C × n / N = 300 × 65 / 100 = 195 mA. Étape 4 — Écrire : I = 195 mA, avec l'unité du calibre. Pourquoi pas « 65 mA » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+         "answers": [
+          {
+           "content": "195",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un ampèremètre à aiguille de 100 divisions est réglé sur le calibre 100 mA. L'aiguille s'arrête devant la division 48. Que lit-on ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Relever : C = 100 mA et N = 100. Étape 2 — Lire : n = 48. Étape 3 — Appliquer : I = 100 × 48 / 100 = 48. Étape 4 — Écrire : I = 48 mA, l'unité du calibre. Pourquoi pas « 48 A » : l'unité à écrire est celle du calibre, ici le mA, pas l'ampère.",
+         "answers": [
+          {
+           "content": "48 mA",
+           "correct": true
+          },
+          {
+           "content": "48 A",
+           "correct": false
+          },
+          {
+           "content": "4,8 mA",
+           "correct": false
+          },
+          {
+           "content": "0,48 mA",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans le circuit d'un chargeur de l'atelier d'Adjamé, l'ampèremètre à aiguille a 100 divisions et le calibre 1 A est utilisé. L'aiguille s'arrête devant la division 45. Quelle est l'intensité, en milliampères ?",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 1 A et l'échelle compte N = 100 divisions. Étape 2 — Lire : l'aiguille est devant n = 45 divisions. Étape 3 — Appliquer : I = C × n / N = 1 × 45 / 100 = 0,45 A. Étape 4 — Écrire : I = 0,45 A, soit 450 mA (on multiplie par 1 000). Pourquoi pas « 45 mA » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+         "answers": [
+          {
+           "content": "450",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "L'aiguille d'un ampèremètre de 100 divisions s'arrête devant la division 30. Le calibre est 1 A. Un élève répond « 30 A ». Quelle est la bonne valeur de l'intensité ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Relever : C = 1 A et N = 100. Étape 2 — Lire : n = 30. Étape 3 — Appliquer : I = 1 × 30 / 100 = 0,3 A. Étape 4 — Écrire : I = 0,3 A, avec l'unité du calibre. Pourquoi pas « 30 A » : 30 est le nombre de divisions, pas l'intensité : il faut tenir compte du calibre et de N.",
+         "answers": [
+          {
+           "content": "0,3 A",
+           "correct": true
+          },
+          {
+           "content": "30 A",
+           "correct": false
+          },
+          {
+           "content": "30 mA",
+           "correct": false
+          },
+          {
+           "content": "3 A",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Lire un ampèremètre à aiguille et un multimètre numérique",
+       "statement": "Dans cet exercice, tu lis des intensités sur des ampèremètres à aiguille et sur un multimètre numérique.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Pour un ampèremètre à aiguille, relève C et N, lis n, puis calcule I = C × n / N.",
+       "questions": [
+        {
+         "content": "Un ampèremètre à aiguille de 100 divisions est réglé sur le calibre 300 mA. L'intensité mesurée est 150 mA. Devant quelle division l'aiguille s'arrête-t-elle ?",
+         "question_type": "numeric",
+         "unit": "div",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : C = 300 mA et N = 100. Étape 2 — Lire : on cherche n. Étape 3 — Appliquer : I = C × n / N donne 150 = 300 × n / 100, donc n = 150 × 100 / 300 = 50. Étape 4 — Écrire : l'aiguille est devant la division 50, soit la moitié de l'échelle. Pourquoi pas « 150 » : 150 est l'intensité en mA, pas un nombre de divisions : l'échelle n'a que 100 divisions.",
+         "answers": [
+          {
+           "content": "50",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Sur un ampèremètre à aiguille, l'intensité s'exprime dans la même unité que le ___ choisi.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Relever : on note le calibre C et son unité. Étape 3 — Appliquer : I = C × n / N, où n / N est un simple rapport sans unité. Étape 4 — Écrire : I a donc l'unité de C, celle du calibre. Pourquoi pas « fil » : la nature du fil ne fixe pas l'unité du résultat, c'est le calibre qui la fixe.",
+         "answers": [
+          {
+           "content": "calibre",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque lecture à l'intensité correspondante.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Relever : on note C et N pour chaque lecture. Étape 2 — Lire : n = 60, 60, 60 puis 20. Étape 3 — Appliquer : 1 × 60 / 100 = 0,6 ; 100 × 60 / 100 = 60 ; 300 × 60 / 100 = 180 ; 3 × 20 / 30 = 2. Étape 4 — Écrire : chaque résultat prend l'unité de son calibre. Pourquoi pas « 60 mA pour le calibre 1 A » : même position d'aiguille ne veut pas dire même intensité : le calibre change tout.",
+         "answers": [
+          {
+           "content": "Calibre 1 A, 100 divisions, aiguille en 60",
+           "match": "0,6 A"
+          },
+          {
+           "content": "Calibre 100 mA, 100 divisions, aiguille en 60",
+           "match": "60 mA"
+          },
+          {
+           "content": "Calibre 300 mA, 100 divisions, aiguille en 60",
+           "match": "180 mA"
+          },
+          {
+           "content": "Calibre 3 A, 30 divisions, aiguille en 20",
+           "match": "2 A"
+          }
+         ]
+        },
+        {
+         "content": "Si un multimètre numérique affiche un signe − devant la valeur, il faut ignorer ce signe et choisir un calibre plus grand.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Relever : le calibre est déjà adapté si la valeur s'affiche. Étape 2 — Lire : le signe − est affiché. Étape 4 — Écrire : le signe − signale des bornes inversées ; il suffit de rebrancher A ou mA vers la borne + et COM vers la borne −. Pourquoi pas « Vrai » : le signe − ne dit rien sur le calibre : il dit que les bornes sont à l'envers.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les étapes pour lire une intensité sur un ampèremètre à aiguille.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Relever C et N. Étape 2 — Lire n. Étape 3 — Appliquer la formule. Étape 4 — Écrire le résultat avec son unité. La formule a besoin de C, N et n : on les trouve avant de calculer. Pourquoi pas « appliquer la formule avant de lire n » : on n'a pas encore toutes les valeurs à mettre dans la formule.",
+         "answers": [
+          {
+           "content": "Relever le calibre C et le nombre total N de divisions."
+          },
+          {
+           "content": "Lire le nombre n de divisions parcourues par l'aiguille."
+          },
+          {
+           "content": "Appliquer la formule I = C × n / N."
+          },
+          {
+           "content": "Écrire le résultat avec l'unité du calibre."
+          }
+         ]
+        },
+        {
+         "content": "Aya lit sur l'écran de son multimètre « 0,215 » avec le calibre en ampères. Quelle est l'intensité, en milliampères ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Relever : le calibre est en A, l'écran donne 0,215. Étape 2 — Lire : la valeur affichée est 0,215 A. Étape 4 — Écrire : on convertit en multipliant par 1 000, 0,215 × 1 000 = 215 mA. Pourquoi pas « 0,215 mA » : on a changé l'unité sans multiplier par 1 000 : 0,215 A et 0,215 mA ne sont pas la même intensité.",
+         "answers": [
+          {
+           "content": "215 mA",
+           "correct": true
+          },
+          {
+           "content": "0,215 mA",
+           "correct": false
+          },
+          {
+           "content": "21,5 mA",
+           "correct": false
+          },
+          {
+           "content": "2 150 mA",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Appliquer l'intensité en série et la loi des nœuds",
+     "remember": "Dans un circuit **en série**, l'intensité est **la même en tout point** de la boucle : peu importe l'ordre des dipôles, un ampèremètre placé avant ou après une lampe indique la même valeur, car la lampe ne consomme pas de charges. Dans un circuit **en dérivation**, la **loi des nœuds** dit que, en un nœud, la **somme des intensités des courants qui arrivent** est égale à la **somme des intensités des courants qui repartent**. Si I est l'intensité dans la branche principale et I₁, I₂ celles des branches dérivées, alors $I = I_1 + I_2$. L'intensité d'une branche dérivée est donc plus petite que celle de la branche principale, et les branches dérivées peuvent avoir des intensités différentes. Toutes les intensités d'un calcul doivent être exprimées dans la même unité.",
+     "method": [
+      "Nommer le montage : en série s'il n'y a aucun nœud, en dérivation s'il y a des nœuds.",
+      "Repérer : en série, une seule intensité pour toute la boucle ; en dérivation, au nœud, les courants qui arrivent et ceux qui repartent.",
+      "Calculer : en série, recopier l'intensité connue ; en dérivation, écrire somme des intensités qui arrivent = somme de celles qui repartent, puis isoler l'inconnue.",
+      "Vérifier que toutes les intensités sont dans la même unité et que l'intensité d'une branche dérivée est plus petite que celle de la branche principale."
+     ],
+     "example": {
+      "statement": "Dans un petit montage de la maison, un kit solaire alimente deux appareils en dérivation. La branche principale arrive au nœud A avec une intensité de 0,60 A. Deux branches dérivées repartent de A : la lampe, traversée par 0,25 A, et le ventilateur, d'intensité I₂ inconnue. Calculer I₂.",
+      "steps": [
+       "Nommer : A est un nœud où se rejoignent trois fils ; le montage est en dérivation.",
+       "Repérer : au nœud A arrive 0,60 A ; repartent 0,25 A (lampe) et I₂ (ventilateur).",
+       "Calculer : 0,60 = 0,25 + I₂, donc I₂ = 0,60 − 0,25 = 0,35 A.",
+       "Vérifier : toutes les valeurs sont en A, et 0,35 A est plus petit que 0,60 A, l'intensité de la branche principale."
+      ]
+     },
+     "pitfall": "Ne crois pas que l'intensité diminue quand le courant traverse une lampe. Contre-exemple : dans un circuit en série, un premier ampèremètre placé entre la borne + de la pile et la lampe indique 0,30 A. Un second, placé entre la lampe et la borne −, indique aussi 0,30 A. La lampe n'a rien « usé » : elle transforme de l'énergie, mais les charges qui entrent sont aussi nombreuses que celles qui sortent. En série, l'intensité est la même partout.",
+     "figure": null,
+     "practice": {
+      "statement": "Tu t'entraînes à utiliser l'intensité en série et la loi des nœuds.",
+      "questions": [
+       {
+        "content": "Un circuit en série contient une pile, un interrupteur et deux lampes. Un ampèremètre placé entre les deux lampes indique 0,25 A. Quelle intensité, en ampères, indiquerait un ampèremètre placé juste à la sortie de la borne + de la pile ?",
+        "question_type": "numeric",
+        "unit": "A",
+        "tolerance": 0,
+        "explanation": "Étape 1 — Nommer : il n'y a aucun nœud, le montage est en série. Étape 2 — Repérer : une seule intensité pour toute la boucle. Étape 3 — Calculer : l'intensité est la même partout, donc I = 0,25 A. Étape 4 — Vérifier : même unité, et aucune branche dérivée à comparer. Pourquoi pas « 0 A » : le courant ne disparaît pas dans les lampes : l'intensité est la même en tout point de la boucle.",
+        "answers": [
+         {
+          "content": "0,25",
+          "correct": true
+         }
+        ],
+        "hint": "En série, l'intensité ne change pas."
+       },
+       {
+        "content": "Au nœud A d'un circuit de la maison, il arrive un courant de 0,50 A. Il repart par deux branches : une lampe traversée par 0,20 A et un ventilateur. Quelle est l'intensité du ventilateur, en ampères ?",
+        "question_type": "numeric",
+        "unit": "A",
+        "tolerance": 0,
+        "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 0,5 A ; repartent 0,2 A et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 0,5 = 0,2 + I, donc I = 0,5 − 0,2 = 0,3 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est plus petite que l'intensité qui arrive. Pourquoi pas « 0,7 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+        "answers": [
+         {
+          "content": "0,3",
+          "correct": true
+         }
+        ],
+        "hint": "Arrivée = somme des départs."
+       },
+       {
+        "content": "Dans un circuit en dérivation, les intensités dans les branches dérivées sont toujours égales entre elles.",
+        "question_type": "true_false",
+        "explanation": "Étape 1 — Nommer : un montage en dérivation a des nœuds. Étape 2 — Repérer : chaque branche dérivée porte son propre courant. Étape 3 — Calculer : seule la somme des courants dérivés est imposée par la loi des nœuds, pas leurs valeurs : 0,20 A + 0,30 A = 0,50 A par exemple. Pourquoi pas « Vrai » : la loi des nœuds fixe la somme des intensités, pas chacune d'elles.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": false
+         },
+         {
+          "content": "Faux",
+          "correct": true
+         }
+        ],
+        "hint": "Pense à une lampe et à un ventilateur sur la même prise."
+       },
+       {
+        "content": "Au nœud B d'un circuit, deux courants arrivent avec des intensités de 0,15 A et 0,25 A. Un seul fil repart. Quelle est l'intensité du courant qui repart ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Nommer : B est un nœud, le montage est en dérivation. Étape 2 — Repérer : arrivent 0,15 A et 0,25 A ; repart I. Étape 3 — Calculer : 0,15 + 0,25 = I, donc I = 0,40 A. Étape 4 — Vérifier : I est plus grande que chacune des deux intensités qui arrivent. Pourquoi pas « 0,10 A » : ce serait soustraire les deux valeurs, alors que les courants qui arrivent s'ajoutent.",
+        "answers": [
+         {
+          "content": "0,40 A",
+          "correct": true
+         },
+         {
+          "content": "0,10 A",
+          "correct": false
+         },
+         {
+          "content": "0,20 A",
+          "correct": false
+         },
+         {
+          "content": "0,25 A",
+          "correct": false
+         }
+        ],
+        "hint": "Les courants qui arrivent s'additionnent."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Intensités dans la lampe torche et dans le salon",
+       "statement": "Dans cet exercice, tu appliques l'intensité en série et la loi des nœuds à la lampe torche de Koffi et au salon de la famille Traoré.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "questions": [
+        {
+         "content": "Koffi place deux ampèremètres en série dans sa lampe torche : l'un entre la borne + de la pile et l'interrupteur, l'autre entre l'ampoule et la borne −. Le premier indique 0,32 A. Quelle intensité, en ampères, indique le second ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : il n'y a aucun nœud, le montage est en série. Étape 2 — Repérer : une seule intensité pour toute la boucle. Étape 3 — Calculer : on recopie l'intensité connue, I = 0,32 A. Étape 4 — Vérifier : même unité. Pourquoi pas « 0 A » : le courant ne s'arrête pas dans l'ampoule : la boucle est fermée et l'intensité est la même partout.",
+         "answers": [
+          {
+           "content": "0,32",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans un circuit en série, un ampèremètre placé avant une lampe indique 0,40 A. Un élève affirme que celui placé après la lampe indiquera moins, car la lampe a utilisé du courant. Pourquoi a-t-il tort ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Nommer : il n'y a aucun nœud, le montage est en série. Étape 2 — Repérer : une seule intensité pour toute la boucle. Étape 3 — Calculer : les deux ampèremètres indiquent la même valeur, 0,40 A. Étape 4 — Vérifier : aucune intensité ne change d'un point à l'autre. Pourquoi pas « La lampe fabrique des charges » : une lampe ne crée ni ne détruit de charges : elle laisse passer le même débit.",
+         "answers": [
+          {
+           "content": "La lampe ne consomme pas de charges : l'intensité est la même partout",
+           "correct": true
+          },
+          {
+           "content": "La lampe fabrique des charges : l'ampèremètre placé après elle indiquera plus",
+           "correct": false
+          },
+          {
+           "content": "Les deux ampèremètres indiqueront 0 A, car ils sont en série avec la lampe",
+           "correct": false
+          },
+          {
+           "content": "L'ampèremètre placé après indiquera moins seulement si la lampe est grosse",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans le salon de la famille Traoré, la branche principale d'un kit solaire arrive au nœud A avec 0,90 A. Deux branches dérivées en repartent : une télévision traversée par 0,35 A et un ventilateur. Quelle est l'intensité du ventilateur, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 0,9 A ; repartent 0,35 A et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 0,9 = 0,35 + I, donc I = 0,9 − 0,35 = 0,55 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est plus petite que l'intensité qui arrive. Pourquoi pas « 1,25 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+         "answers": [
+          {
+           "content": "0,55",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Au nœud B d'un circuit, deux courants d'intensités I₁ = 0,3 A et I₂ = 0,2 A arrivent ; un seul fil repart avec l'intensité I₃. Quelle relation est correcte ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Nommer : B est un nœud, le montage est en dérivation. Étape 2 — Repérer : I₁ et I₂ arrivent, I₃ repart. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui repartent, soit I₁ + I₂ = I₃, ici 0,5 A. Étape 4 — Vérifier : I₃ est plus grande que I₁ et que I₂. Pourquoi pas « I₃ = I₁ − I₂ » : la loi des nœuds additionne les courants du même côté, elle ne les soustrait pas.",
+         "answers": [
+          {
+           "content": "I₃ = I₁ + I₂",
+           "correct": true
+          },
+          {
+           "content": "I₃ = I₁ − I₂",
+           "correct": false
+          },
+          {
+           "content": "I₁ = I₂ + I₃",
+           "correct": false
+          },
+          {
+           "content": "I₃ = I₁ = I₂",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans un circuit en dérivation, l'intensité dans la branche principale est égale à la somme des intensités dans les branches dérivées.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Nommer : un montage en dérivation a des nœuds. Étape 2 — Repérer : au nœud, le courant de la branche principale arrive et ceux des branches dérivées repartent. Étape 3 — Calculer : I = I₁ + I₂ par la loi des nœuds. Pourquoi pas « Faux » : on croirait que la branche principale a la même intensité que chaque branche dérivée, alors qu'elle les porte toutes ensemble.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Intensités à la maison et à l'atelier d'Adjamé",
+       "statement": "Dans cet exercice, tu utilises l'égalité des intensités en série et la loi des nœuds, avec des circuits de la maison et de l'atelier d'Adjamé.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "En série, l'intensité est la même partout ; au nœud, arrivée = somme des départs, dans une même unité.",
+       "questions": [
+        {
+         "content": "À l'atelier d'Adjamé, la branche principale d'un circuit de test arrive au nœud A avec 1,2 A. Trois branches dérivées en repartent : une lampe L1 traversée par 0,45 A, une lampe L2 traversée par 0,35 A et une lampe L3. Quelle est l'intensité dans la lampe L3, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 1,2 A ; repartent 0,45 A, 0,35 A et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 1,2 = 0,45 + 0,35 + I, donc I = 1,2 − 0,8 = 0,4 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est plus petite que l'intensité qui arrive. Pourquoi pas « 2 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+         "answers": [
+          {
+           "content": "0,4",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque situation à la règle qui s'applique.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Nommer : on distingue série et dérivation. Étape 2 — Repérer : la loi des nœuds s'applique au nœud. Étape 3 — Calculer : en série on recopie l'intensité, au nœud on égale les sommes. Étape 4 — Vérifier : une branche dérivée porte seulement une part du courant. Pourquoi pas « Circuit en série : la somme des intensités qui arrivent est égale à celle des départs » : il n'y a aucun nœud en série, donc c'est l'égalité de l'intensité en tout point qui s'applique.",
+         "answers": [
+          {
+           "content": "Circuit en série",
+           "match": "L'intensité est la même en tout point"
+          },
+          {
+           "content": "Nœud d'un circuit en dérivation",
+           "match": "Somme des intensités qui arrivent = somme de celles qui repartent"
+          },
+          {
+           "content": "Branche dérivée",
+           "match": "Son intensité est plus petite que celle de la branche principale"
+          },
+          {
+           "content": "Unité de l'intensité",
+           "match": "L'ampère, de symbole A"
+          }
+         ]
+        },
+        {
+         "content": "Au nœud d'un circuit, la somme des intensités qui arrivent est égale à la somme des intensités qui ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Nommer : le nœud appartient à un montage en dérivation. Étape 2 — Repérer : les courants arrivent par certains fils et repartent par d'autres. Étape 3 — Calculer : somme des intensités qui arrivent = somme des intensités qui repartent. Pourquoi pas « arrivent » : les courants qui arrivent forment déjà le premier membre de l'égalité.",
+         "answers": [
+          {
+           "content": "repartent",
+           "correct": true
+          },
+          {
+           "content": "partent",
+           "correct": true
+          },
+          {
+           "content": "sortent",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les étapes pour trouver l'intensité d'une branche dérivée.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Nommer. Étape 2 — Repérer. Étape 3 — Calculer avec la loi des nœuds. Étape 4 — Vérifier. On calcule seulement après avoir repéré ce qui arrive et ce qui repart. Pourquoi pas « calculer avant de repérer les courants » : on ne sait pas quelles valeurs mettre de chaque côté de l'égalité.",
+         "answers": [
+          {
+           "content": "Nommer le montage : en dérivation, car il y a des nœuds."
+          },
+          {
+           "content": "Repérer les courants qui arrivent au nœud et ceux qui repartent."
+          },
+          {
+           "content": "Calculer avec la loi des nœuds : arrivée = somme des départs."
+          },
+          {
+           "content": "Vérifier l'unité et que la branche dérivée a la plus petite intensité."
+          }
+         ]
+        },
+        {
+         "content": "Un circuit en série est formé d'une pile, d'une lampe et d'un ventilateur. Quelles affirmations sont vraies ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Nommer : il n'y a aucun nœud, le montage est en série. Étape 2 — Repérer : une seule intensité pour toute la boucle. Étape 3 — Calculer : I est la même dans la pile, la lampe et le ventilateur. Pourquoi pas « L'intensité diminue après chaque dipôle traversé » : les dipôles ne consomment pas de charges, l'intensité reste la même.",
+         "answers": [
+          {
+           "content": "L'intensité est la même dans la lampe et dans le ventilateur",
+           "correct": true
+          },
+          {
+           "content": "L'intensité est la même dans la pile et dans la lampe",
+           "correct": true
+          },
+          {
+           "content": "La lampe, plus proche de la borne +, est traversée par une intensité plus grande",
+           "correct": false
+          },
+          {
+           "content": "L'intensité diminue après chaque dipôle traversé",
+           "correct": false
+          },
+          {
+           "content": "L'intensité dans la pile est la somme des intensités de la lampe et du ventilateur",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans le salon de la famille Traoré, la branche principale d'un kit solaire arrive au nœud A avec 0,8 A. Deux branches dérivées en repartent : une lampe traversée par 250 mA, soit 0,25 A, et un ventilateur. Quelle est l'intensité du ventilateur, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 0,8 A ; repartent 0,25 A et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 0,8 = 0,25 + I, donc I = 0,8 − 0,25 = 0,55 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est plus petite que l'intensité qui arrive. Pourquoi pas « 1,05 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+         "answers": [
+          {
+           "content": "0,55",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "title": "La lampe torche de Koffi",
+     "statement": "Koffi veut mesurer l'intensité dans sa lampe torche : une pile, un interrupteur et une ampoule sont reliés en série. Il dispose d'un ampèremètre à aiguille de 100 divisions et de calibres 3 A, 1 A, 300 mA et 100 mA. Les valeurs de l'exercice sont fictives.",
+     "exercise_type": "fixation",
+     "figure": null,
+     "questions": [
+      {
+       "content": "Koffi veut mesurer l'intensité dans l'ampoule de sa lampe torche (pile, interrupteur et ampoule en série). Comment branche-t-il l'ampèremètre ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 1 — Placer : pour que tout le courant de la boucle le traverse, l'ampèremètre s'intercale dans la boucle, donc en série avec l'ampoule. Étape 2 — Orienter : le courant entre par la borne A ou mA, du côté de la borne +, et sort par la borne COM, du côté de la borne −. Pourquoi pas « en dérivation aux bornes de l'ampoule » : l'ampèremètre offrirait un chemin direct au courant et court-circuiterait l'ampoule.",
+       "answers": [
+        {
+         "content": "En série : il ouvre la boucle et y intercale l'ampèremètre, A ou mA du côté de la borne +",
+         "correct": true
+        },
+        {
+         "content": "En dérivation : il relie l'ampèremètre aux deux bornes de l'ampoule, A ou mA du côté de la borne +",
+         "correct": false
+        },
+        {
+         "content": "En dérivation : il relie l'ampèremètre aux deux bornes de la pile, COM du côté de la borne +",
+         "correct": false
+        },
+        {
+         "content": "En série, mais avec la borne COM du côté de la borne + de la pile et A ou mA du côté de la borne −",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Koffi ne connaît pas l'intensité qui traverse l'ampoule de sa lampe torche. Il dispose des calibres 3 A, 1 A, 300 mA et 100 mA. Quel calibre choisit-il en premier ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 3 — Choisir : on commence par le plus grand calibre, ici 3 A, puis on ferme l'interrupteur. Étape 4 — Affiner : on diminue ensuite le calibre tant que l'aiguille reste dans l'échelle. Pourquoi pas « 100 mA » : si l'intensité dépasse 100 mA, l'aiguille sort de l'échelle et l'appareil peut être abîmé.",
+       "answers": [
+        {
+         "content": "3 A, le plus grand calibre",
+         "correct": true
+        },
+        {
+         "content": "100 mA, le plus petit, pour une lecture précise dès le départ",
+         "correct": false
+        },
+        {
+         "content": "300 mA, car une ampoule de lampe torche demande peu de courant",
+         "correct": false
+        },
+        {
+         "content": "1 A, un calibre moyen qui ne risque rien",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Koffi est passé au calibre 300 mA pour mesurer l'intensité dans l'ampoule de sa lampe torche. L'ampèremètre à aiguille a 100 divisions et le calibre 300 mA est utilisé. L'aiguille s'arrête devant la division 70. Quelle est l'intensité, en milliampères ?",
+       "question_type": "numeric",
+       "unit": "mA",
+       "tolerance": 0,
+       "explanation": "Étape 1 — Relever : le calibre est C = 300 mA et l'échelle compte N = 100 divisions. Étape 2 — Lire : l'aiguille est devant n = 70 divisions. Étape 3 — Appliquer : I = C × n / N = 300 × 70 / 100 = 210 mA. Étape 4 — Écrire : I = 210 mA, avec l'unité du calibre. Pourquoi pas « 70 mA » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+       "answers": [
+        {
+         "content": "210",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Dans la lampe torche de Koffi, l'ampèremètre indique 210 mA. Exprime cette intensité en ampères.",
+       "question_type": "numeric",
+       "unit": "A",
+       "tolerance": 0,
+       "explanation": "Étape 1 — Repérer : la valeur donnée est en mA et on demande des A. Étape 2 — Choisir : de mA vers A, on divise par 1 000. Étape 3 — Calculer : 210 mA ÷ 1 000 = 0,21 A. Étape 4 — Vérifier : le nombre en mA (210) est bien 1 000 fois plus grand que le nombre en A (0,21). Pourquoi pas « 210 000 A » : ce serait multiplier par 1 000 au lieu de diviser : l'intensité deviendrait 1 000 fois trop grande.",
+       "answers": [
+        {
+         "content": "0,21",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Koffi place un second ampèremètre entre l'ampoule et la borne − de la pile. Le premier, placé entre l'interrupteur et l'ampoule, indique 210 mA. Quelle intensité indique le second ?",
+       "question_type": "numeric",
+       "unit": "mA",
+       "tolerance": 0,
+       "explanation": "Étape 1 — Nommer : il n'y a aucun nœud, le montage est en série. Étape 2 — Repérer : une seule intensité pour toute la boucle. Étape 3 — Calculer : on recopie l'intensité connue, I = 210 mA. Étape 4 — Vérifier : même unité, et aucune branche dérivée à comparer. Pourquoi pas « 0 » : le courant ne disparaît pas dans un dipôle : la boucle est fermée et l'intensité est la même partout.",
+       "answers": [
+        {
+         "content": "210",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Le calibre 100 mA aurait convenu pour mesurer une intensité de 210 mA.",
+       "question_type": "true_false",
+       "explanation": "Étape 3 — Choisir : le calibre doit rester plus grand que l'intensité mesurée. Étape 4 — Affiner : 210 mA est plus grand que 100 mA, donc l'aiguille sortirait de l'échelle ; le plus petit calibre possible est 300 mA. Pourquoi pas « Vrai » : un calibre plus petit que l'intensité est dépassé : la mesure est impossible et l'appareil risque d'être abîmé.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": false
+        },
+        {
+         "content": "Faux",
+         "correct": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Le salon de la famille Traoré",
+     "statement": "Dans le salon de la famille Traoré, un kit solaire alimente trois appareils en dérivation : une ampoule, un ventilateur et une télévision. La branche principale, qui contient la batterie, arrive à un nœud A où partent les trois branches dérivées. Elles se rejoignent au nœud B, d'où un fil retourne à la batterie. Un ampèremètre dans la branche principale indique 0,95 A, un autre dans la branche de l'ampoule 0,25 A et un autre dans celle de la télévision 0,30 A. Les valeurs sont fictives.",
+     "exercise_type": "fixation",
+     "figure": null,
+     "questions": [
+      {
+       "content": "Dans le salon, la branche principale d'un kit solaire se partage au nœud A en trois branches dérivées (ampoule, ventilateur, télévision) qui se rejoignent au nœud B. Combien y a-t-il de nœuds ?",
+       "question_type": "numeric",
+       "unit": "nœuds",
+       "tolerance": 0,
+       "explanation": "Étape 1 — Nommer : les points où se rejoignent au moins trois fils sont des nœuds. Étape 2 — Repérer : en A se rejoignent la branche principale et trois branches dérivées, en B les trois branches dérivées et le fil de retour. Il y a donc deux nœuds et le montage est en dérivation. Pourquoi pas « 3 » : on compterait les trois appareils, mais un appareil est dans une branche, il n'est pas un nœud. Pourquoi pas « 3 » : chaque appareil se trouve dans une branche, entre les nœuds A et B, il n'est pas lui-même un nœud.",
+       "answers": [
+        {
+         "content": "2",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Dans le salon, la branche principale du kit solaire arrive au nœud A avec 0,95 A. Trois branches dérivées en repartent : l'ampoule traversée par 0,25 A, la télévision traversée par 0,30 A et le ventilateur. Quelle est l'intensité dans le ventilateur, en ampères ?",
+       "question_type": "numeric",
+       "unit": "A",
+       "tolerance": 0,
+       "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 0,95 A ; repartent 0,25 A, 0,3 A et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 0,95 = 0,25 + 0,3 + I, donc I = 0,95 − 0,55 = 0,4 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est plus petite que l'intensité qui arrive. Pourquoi pas « 1,5 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+       "answers": [
+        {
+         "content": "0,4",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Dans le salon, trois branches dérivées arrivent au nœud B avec des intensités de 0,25 A (ampoule), 0,40 A (ventilateur) et 0,30 A (télévision). Un seul fil repart de B vers la batterie. Quelle est l'intensité dans le fil qui repart vers la batterie, en ampères ?",
+       "question_type": "numeric",
+       "unit": "A",
+       "tolerance": 0,
+       "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 0,25 A, 0,4 A, 0,3 A ; repartent I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 0,25 + 0,4 + 0,3 = I, donc I = 0,95 A. Étape 4 — Vérifier : toutes les intensités sont en A et les deux côtés du nœud ont bien la même somme. Pourquoi pas « 0,95 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+       "answers": [
+        {
+         "content": "0,95",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Dans le salon, l'ampoule du kit solaire est traversée par une intensité de 0,25 A. Exprime cette intensité en milliampères.",
+       "question_type": "numeric",
+       "unit": "mA",
+       "tolerance": 0,
+       "explanation": "Étape 1 — Repérer : la valeur donnée est en A et on demande des mA. Étape 2 — Choisir : de A vers mA, on multiplie par 1 000. Étape 3 — Calculer : 0,25 A × 1 000 = 250 mA. Étape 4 — Vérifier : le nombre en mA (250) est bien 1 000 fois plus grand que le nombre en A (0,25). Pourquoi pas « 0,00025 mA » : ce serait diviser par 1 000 au lieu de multiplier : le nombre en mA doit être le plus grand.",
+       "answers": [
+        {
+         "content": "250",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Dans le salon, l'ampoule (0,25 A) et la télévision (0,30 A) gardent leur intensité quand on débranche le ventilateur. La branche principale était traversée par 0,95 A. Quelle est la nouvelle intensité dans la branche principale ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 1 — Nommer : le montage est en dérivation, avec des nœuds. Étape 2 — Repérer : il arrive I au nœud A ; repartent 0,25 A et 0,30 A. Étape 3 — Calculer : I = 0,25 + 0,30 = 0,55 A. Étape 4 — Vérifier : I reste plus grande que chaque branche dérivée. Pourquoi pas « 0,95 A » : la branche principale porte la somme des branches qui restent, et il y en a une de moins.",
+       "answers": [
+        {
+         "content": "0,55 A",
+         "correct": true
+        },
+        {
+         "content": "0,95 A, car la branche principale ne change pas",
+         "correct": false
+        },
+        {
+         "content": "0,40 A, l'intensité qui disparaît avec le ventilateur",
+         "correct": false
+        },
+        {
+         "content": "0,30 A, la plus grande des deux branches restantes",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Dans le salon, la branche principale du kit solaire est parcourue par la plus grande intensité du circuit.",
+       "question_type": "true_false",
+       "explanation": "Étape 1 — Nommer : le montage est en dérivation. Étape 2 — Repérer : la branche principale arrive au nœud, les branches dérivées en repartent. Étape 3 — Calculer : I = I₁ + I₂ + I₃ est plus grande que chacune des intensités I₁, I₂ et I₃. Étape 4 — Vérifier : 0,95 A est plus grand que 0,25 A, 0,40 A et 0,30 A. Pourquoi pas « Faux » : on croirait qu'une branche dérivée peut dépasser la branche principale, alors qu'elle n'en porte qu'une part.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": true
+        },
+        {
+         "content": "Faux",
+         "correct": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "La boutique de réparation d'Adjamé",
+     "statement": "Aya teste une batterie avec deux lampes L1 et L2 montées en dérivation. La branche principale contient la batterie et un interrupteur ; elle arrive au nœud A, d'où partent la branche de L1 et la branche de L2, qui se rejoignent au nœud B relié à la batterie. Aya dispose d'un ampèremètre à aiguille de 100 divisions et d'un multimètre numérique. Les valeurs sont fictives.",
+     "exercise_type": "evaluation",
+     "figure": null,
+     "questions": [
+      {
+       "content": "Aya veut mesurer l'intensité dans la lampe L1 seulement (L1 et L2 sont en dérivation entre les nœuds A et B). Où place-t-elle l'ampèremètre ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 1 — Placer : l'ampèremètre mesure l'intensité de la branche où il est intercalé. Pour L1 seulement, on ouvre la branche de L1 et on y place l'appareil, donc en série avec L1. Étape 2 — Orienter : A ou mA du côté de la borne +, COM du côté de la borne −. Pourquoi pas « dans la branche principale » : il mesurerait l'intensité totale, somme de celles de L1 et de L2.",
+       "answers": [
+        {
+         "content": "En série avec L1, dans sa branche, entre A et B",
+         "correct": true
+        },
+        {
+         "content": "Dans la branche principale, en série avec la batterie",
+         "correct": false
+        },
+        {
+         "content": "Aux deux bornes de L1, en dérivation sur L1",
+         "correct": false
+        },
+        {
+         "content": "Aux deux bornes de la batterie, sans passer par les lampes",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Dans la branche principale du montage d'Aya, l'ampèremètre à aiguille est réglé sur le calibre 1 A. L'ampèremètre à aiguille a 100 divisions et le calibre 1 A est utilisé. L'aiguille s'arrête devant la division 50. Quelle est l'intensité, en ampères ?",
+       "question_type": "numeric",
+       "unit": "A",
+       "tolerance": 0,
+       "explanation": "Étape 1 — Relever : le calibre est C = 1 A et l'échelle compte N = 100 divisions. Étape 2 — Lire : l'aiguille est devant n = 50 divisions. Étape 3 — Appliquer : I = C × n / N = 1 × 50 / 100 = 0,5 A. Étape 4 — Écrire : I = 0,5 A, avec l'unité du calibre. Pourquoi pas « 50 A » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+       "answers": [
+        {
+         "content": "0,5",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Aya mesure 0,5 A dans la branche principale, qui arrive au nœud A. Un multimètre numérique placé dans la branche de la lampe L1 affiche 0,18 A. L'autre branche dérivée contient la lampe L2. Quelle est l'intensité dans la lampe L2, en ampères ?",
+       "question_type": "numeric",
+       "unit": "A",
+       "tolerance": 0,
+       "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 0,5 A ; repartent 0,18 A et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 0,5 = 0,18 + I, donc I = 0,5 − 0,18 = 0,32 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est plus petite que l'intensité qui arrive. Pourquoi pas « 0,68 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+       "answers": [
+        {
+         "content": "0,32",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Dans la lampe L2 du montage d'Aya, l'intensité est de 0,32 A. Exprime cette intensité en milliampères.",
+       "question_type": "numeric",
+       "unit": "mA",
+       "tolerance": 0,
+       "explanation": "Étape 1 — Repérer : la valeur donnée est en A et on demande des mA. Étape 2 — Choisir : de A vers mA, on multiplie par 1 000. Étape 3 — Calculer : 0,32 A × 1 000 = 320 mA. Étape 4 — Vérifier : le nombre en mA (320) est bien 1 000 fois plus grand que le nombre en A (0,32). Pourquoi pas « 0,00032 mA » : ce serait diviser par 1 000 au lieu de multiplier : le nombre en mA doit être le plus grand.",
+       "answers": [
+        {
+         "content": "320",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Aya branche un multimètre numérique dans une branche et lit « −0,18 A ». Que doit-elle conclure ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 1 — Relever : le multimètre affiche directement une valeur et son unité. Étape 2 — Lire : l'écran indique −0,18 A. Étape 4 — Écrire : le signe − signale des bornes inversées ; sans lui, I = 0,18 A. Pour corriger, A ou mA va du côté de la borne + et COM du côté de la borne −. Pourquoi pas « le courant circule dans l'autre sens » : le sens du courant ne change pas, c'est l'appareil qui est branché à l'envers.",
+       "answers": [
+        {
+         "content": "Les bornes sont inversées : l'intensité vaut 0,18 A, il faut rebrancher",
+         "correct": true
+        },
+        {
+         "content": "L'intensité vaut −0,18 A : le courant circule dans l'autre sens du circuit",
+         "correct": false
+        },
+        {
+         "content": "Le calibre est trop petit : il faut passer à un calibre plus grand",
+         "correct": false
+        },
+        {
+         "content": "La lampe de cette branche est grillée : il n'y a plus de courant",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Aya relie son multimètre aux deux bornes de la lampe L1, au lieu de l'intercaler dans la branche. Explique en trois ou quatre phrases ce qui se passe, puis comment elle doit corriger son branchement.",
+       "question_type": "written",
+       "points": 3,
+       "criteria": [
+        "Dit que l'ampèremètre est en dérivation sur L1 et la court-circuite",
+        "Dit que L1 s'éteint ou que l'appareil risque d'être abîmé par un courant trop grand",
+        "Dit qu'il faut ouvrir la branche de L1 et y placer l'ampèremètre en série, A ou mA vers la borne +"
+       ],
+       "explanation": "Corrigé modèle : Étape 1 — Placer : l'ampèremètre doit être en série dans la branche. Ici il est relié aux deux bornes de L1, donc en dérivation sur L1. Il offre au courant un chemin presque sans obstacle : L1 est court-circuitée, elle s'éteint, et un courant trop grand traverse l'ampèremètre, qui risque d'être abîmé. Étape 2 — Orienter : pour corriger, Aya ouvre la branche de L1, y intercale l'ampèremètre en série, la borne A ou mA du côté de la borne + et la borne COM du côté de la borne −, puis elle commence par le plus grand calibre. Barème sur 3 : 1 point par critère.",
+       "answers": [],
+       "starter": "L'ampèremètre est en dérivation sur L1, donc…"
+      }
+     ]
+    },
+    {
+     "title": "Le laboratoire du lycée",
+     "statement": "Au laboratoire du lycée, Yao étudie un montage : un générateur, un interrupteur et une lampe L1 forment la branche principale, qui arrive à un nœud A. Deux branches dérivées partent de A : l'une contient la lampe L2, l'autre la lampe L3. Elles se rejoignent au nœud B, relié au générateur. Yao dispose d'un ampèremètre à aiguille de 100 divisions et de calibres 3 A, 1 A, 300 mA et 100 mA. Les valeurs sont fictives.",
+     "exercise_type": "evaluation",
+     "figure": null,
+     "questions": [
+      {
+       "content": "Yao veut mesurer l'intensité dans la lampe L2. Remets dans l'ordre ses actions.",
+       "question_type": "ordering",
+       "explanation": "Étape 1 — Placer : on commence par intercaler l'appareil en série dans la branche de L2. Étape 2 — Orienter : on respecte les bornes, A ou mA vers la borne +, COM vers la borne −. Étape 3 — Choisir : le plus grand calibre, puis on ferme l'interrupteur. Étape 4 — Affiner : on diminue le calibre à la fin, quand le courant passe. Pourquoi pas « diminuer le calibre avant de fermer l'interrupteur » : sans courant, l'aiguille ne bouge pas et il n'y a rien à affiner.",
+       "answers": [
+        {
+         "content": "Placer l'ampèremètre en série dans la branche de L2."
+        },
+        {
+         "content": "Orienter la borne A ou mA vers la borne + du générateur et COM vers la borne −."
+        },
+        {
+         "content": "Choisir le calibre 3 A, le plus grand, puis fermer l'interrupteur."
+        },
+        {
+         "content": "Diminuer le calibre jusqu'au plus petit calibre qui reste plus grand que l'intensité."
+        }
+       ]
+      },
+      {
+       "content": "Dans la branche principale du montage de Yao, l'ampèremètre est réglé sur le calibre 1 A. L'ampèremètre à aiguille a 100 divisions et le calibre 1 A est utilisé. L'aiguille s'arrête devant la division 90. Quelle est l'intensité, en ampères ?",
+       "question_type": "numeric",
+       "unit": "A",
+       "tolerance": 0,
+       "explanation": "Étape 1 — Relever : le calibre est C = 1 A et l'échelle compte N = 100 divisions. Étape 2 — Lire : l'aiguille est devant n = 90 divisions. Étape 3 — Appliquer : I = C × n / N = 1 × 90 / 100 = 0,9 A. Étape 4 — Écrire : I = 0,9 A, avec l'unité du calibre. Pourquoi pas « 90 A » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+       "answers": [
+        {
+         "content": "0,9",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Dans la branche de la lampe L2 du montage de Yao, l'ampèremètre est réglé sur le calibre 300 mA. L'ampèremètre à aiguille a 100 divisions et le calibre 300 mA est utilisé. L'aiguille s'arrête devant la division 50. Quelle est l'intensité, en milliampères ?",
+       "question_type": "numeric",
+       "unit": "mA",
+       "tolerance": 0,
+       "explanation": "Étape 1 — Relever : le calibre est C = 300 mA et l'échelle compte N = 100 divisions. Étape 2 — Lire : l'aiguille est devant n = 50 divisions. Étape 3 — Appliquer : I = C × n / N = 300 × 50 / 100 = 150 mA. Étape 4 — Écrire : I = 150 mA, avec l'unité du calibre. Pourquoi pas « 50 mA » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+       "answers": [
+        {
+         "content": "150",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Dans le montage de Yao, la branche principale arrive au nœud A avec 0,9 A. La lampe L2 est traversée par 150 mA, soit 0,15 A. La lampe L3 est dans l'autre branche dérivée. Quelle est l'intensité dans la lampe L3, en ampères ?",
+       "question_type": "numeric",
+       "unit": "A",
+       "tolerance": 0,
+       "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 0,9 A ; repartent 0,15 A et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 0,9 = 0,15 + I, donc I = 0,9 − 0,15 = 0,75 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est plus petite que l'intensité qui arrive. Pourquoi pas « 1,05 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+       "answers": [
+        {
+         "content": "0,75",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Yao veut mesurer 0,75 A dans la lampe L3 avec un ampèremètre de calibres 3 A, 1 A, 300 mA et 100 mA. Quel calibre garde-t-il à la fin ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 3 — Choisir : on commence par le plus grand calibre, 3 A. Étape 4 — Affiner : 0,75 A = 750 mA est plus grand que 300 mA et 100 mA, qui seraient dépassés. Le plus petit calibre qui reste plus grand que 750 mA est 1 A. Pourquoi pas « 3 A » : il convient mais n'est pas le plus petit calibre possible, la lecture serait moins précise.",
+       "answers": [
+        {
+         "content": "1 A",
+         "correct": true
+        },
+        {
+         "content": "3 A",
+         "correct": false
+        },
+        {
+         "content": "300 mA",
+         "correct": false
+        },
+        {
+         "content": "100 mA",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Dans le montage de Yao, l'intensité dans la lampe L1 est égale à l'intensité qui sort du générateur.",
+       "question_type": "true_false",
+       "explanation": "Étape 1 — Nommer : la lampe L1 et le générateur sont dans la même branche principale, sans nœud entre eux. Étape 2 — Repérer : le courant n'a qu'un seul chemin. Étape 3 — Calculer : en série, l'intensité est la même, donc celle de L1 est celle du générateur, 0,9 A. Étape 4 — Vérifier : même unité des deux côtés. Pourquoi pas « Faux » : on croirait que la lampe a utilisé du courant, alors que l'intensité est la même en série.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": true
+        },
+        {
+         "content": "Faux",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Sans la mesurer directement, explique comment Yao retrouve l'intensité dans la lampe L3 à partir de deux mesures : 0,9 A dans la branche principale et 150 mA dans la branche de L2. Donne la valeur en ampères et en milliampères.",
+       "question_type": "written",
+       "points": 4,
+       "criteria": [
+        "Reconnaît un montage en dérivation avec le nœud A",
+        "Convertit 150 mA en 0,15 A pour avoir la même unité",
+        "Applique la loi des nœuds : 0,9 = 0,15 + I₃",
+        "Donne I₃ = 0,75 A, soit 750 mA"
+       ],
+       "explanation": "Corrigé modèle : Étape 1 — Nommer : en A se rejoignent la branche principale et deux branches dérivées, le montage est en dérivation. Étape 2 — Repérer : arrive 0,9 A ; repartent 150 mA et I₃. On convertit 150 mA en 0,15 A (on divise par 1 000) pour travailler en ampères. Étape 3 — Calculer : 0,9 = 0,15 + I₃, donc I₃ = 0,9 − 0,15 = 0,75 A, soit 750 mA. Étape 4 — Vérifier : 0,75 A est plus petit que 0,9 A. Barème sur 4 : 1 point par critère.",
+       "answers": [],
+       "starter": "C'est un montage en dérivation, donc…"
+      }
+     ]
+    }
+   ],
+   "subjects": [
+    {
+     "title": "Sujet 1 · Les savoirs de base",
+     "notions": "Intensité du courant, ampère et milliampère, conversions ; branchement de l'ampèremètre (série, bornes A ou mA et COM, calibre) ; lecture d'un ampèremètre à aiguille et d'un multimètre numérique ; intensité en série et loi des nœuds.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Cet exercice vérifie ton cours sur l'intensité du courant et sur ses unités : l'ampère et le milliampère.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Pour passer des mA aux A, divise par 1 000 ; des A aux mA, multiplie par 1 000.",
+       "questions": [
+        {
+         "content": "Quel appareil permet de mesurer l'intensité du courant électrique dans un circuit ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : on cherche l'appareil de l'intensité, dont l'unité est l'ampère. Étape 2 — Choisir : l'appareil qui mesure en ampères est l'ampèremètre. Étape 3 — Calculer : il donne une valeur en A ou en mA. Étape 4 — Vérifier : son symbole est un cercle contenant la lettre A. Pourquoi pas « le voltmètre » : il mesure une autre grandeur électrique, la tension, avec une autre unité.",
+         "answers": [
+          {
+           "content": "L'ampèremètre",
+           "correct": true
+          },
+          {
+           "content": "Le voltmètre, qui est le compteur du courant",
+           "correct": false
+          },
+          {
+           "content": "Le dynamomètre, qui sert à mesurer le courant",
+           "correct": false
+          },
+          {
+           "content": "Le thermomètre, qui indique le courant par la chaleur",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Une ampoule de lampe torche est traversée par une intensité de 450 mA. Exprime cette intensité en ampères.",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Repérer : la valeur donnée est en mA et on demande des A. Étape 2 — Choisir : de mA vers A, on divise par 1 000. Étape 3 — Calculer : 450 mA ÷ 1 000 = 0,45 A. Étape 4 — Vérifier : le nombre en mA (450) est bien 1 000 fois plus grand que le nombre en A (0,45). Pourquoi pas « 450 000 A » : ce serait multiplier par 1 000 au lieu de diviser : l'intensité deviendrait 1 000 fois trop grande.",
+         "answers": [
+          {
+           "content": "0,45",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un petit ventilateur est traversé par une intensité de 1,5 A. Exprime cette intensité en milliampères.",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Repérer : la valeur donnée est en A et on demande des mA. Étape 2 — Choisir : de A vers mA, on multiplie par 1 000. Étape 3 — Calculer : 1,5 A × 1 000 = 1 500 mA. Étape 4 — Vérifier : le nombre en mA (1 500) est bien 1 000 fois plus grand que le nombre en A (1,5). Pourquoi pas « 0,0015 mA » : ce serait diviser par 1 000 au lieu de multiplier : le nombre en mA doit être le plus grand.",
+         "answers": [
+          {
+           "content": "1500",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un milliampère est égal à 0,001 ampère.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Repérer : on compare le mA et l'A. Étape 2 — Choisir : des mA aux A, on divise par 1 000. Étape 3 — Calculer : 1 mA ÷ 1 000 = 0,001 A. Étape 4 — Vérifier : 1 est bien 1 000 fois plus grand que 0,001. Pourquoi pas « Faux » : on croirait que 1 mA vaut 0,01 A ou 0,1 A, alors que le milli est un millième.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le symbole du milliampère est ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Repérer : l'ampère s'écrit A. Étape 2 — Choisir : le préfixe milli s'écrit m, donc le milliampère s'écrit mA. Étape 3 — Calculer : 1 A = 1 000 mA. Étape 4 — Vérifier : le nombre en mA est 1 000 fois plus grand que le nombre en A. Pourquoi pas « A » : A est le symbole de l'ampère, pas du milliampère.",
+         "answers": [
+          {
+           "content": "mA",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Cet exercice vérifie ton cours sur le branchement de l'ampèremètre : symbole, montage en série, bornes et calibre.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "L'ampèremètre se branche en série, A ou mA du côté de la borne +, COM du côté de la borne −, en commençant par le plus grand calibre.",
+       "questions": [
+        {
+         "content": "Quel est le symbole normalisé de l'ampèremètre dans un schéma de circuit ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Placer : on reconnaît d'abord un appareil de mesure placé dans le circuit. Étape 2 — Orienter : sur le schéma, A est l'initiale de ampèremètre. Étape 3 — Choisir : un cercle avec la lettre A. Étape 4 — Affiner : on ne le confond pas avec le moteur, la lampe ou la pile. Pourquoi pas « un cercle contenant la lettre M » : c'est le symbole du moteur.",
+         "answers": [
+          {
+           "content": "Un cercle contenant la lettre A",
+           "correct": true
+          },
+          {
+           "content": "Un cercle contenant la lettre M",
+           "correct": false
+          },
+          {
+           "content": "Un cercle traversé d'une croix",
+           "correct": false
+          },
+          {
+           "content": "Deux traits parallèles, l'un long et l'autre court",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un ampèremètre se branche en dérivation, entre les deux bornes du dipôle étudié.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Placer : l'ampèremètre se branche en série dans la branche étudiée, pour que tout le courant de la branche le traverse. Étape 2 — Orienter : on règle ensuite A ou mA et COM. En dérivation sur un dipôle, il le court-circuiterait. Pourquoi pas « Vrai » : on le confond avec un autre appareil de mesure ; l'ampèremètre, lui, doit être traversé par le courant à mesurer.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Le courant entre dans l'ampèremètre par la borne A (ou mA), du côté de la borne ___ du générateur.",
+         "question_type": "select",
+         "explanation": "Étape 1 — Placer : l'ampèremètre est en série. Étape 2 — Orienter : le courant sort du générateur par la borne +, entre dans l'ampèremètre par A ou mA, puis sort par COM, du côté de la borne −. On respecte ce sens pour que l'aiguille ou l'affichage soit correct. Pourquoi pas « − » : la borne COM est celle du côté de la borne −, la borne A ou mA est du côté de la borne +.",
+         "answers": [
+          {
+           "content": "+",
+           "correct": true
+          },
+          {
+           "content": "−",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Tu ne connais pas l'intensité à mesurer. Quel calibre de l'ampèremètre règles-tu en premier ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Choisir : on commence par le plus grand calibre, puis on ferme l'interrupteur. Étape 4 — Affiner : on diminue ensuite le calibre tant que l'aiguille reste dans l'échelle. Pourquoi pas « le plus petit calibre » : il serait peut-être dépassé et l'appareil risquerait d'être abîmé.",
+         "answers": [
+          {
+           "content": "Le plus grand calibre disponible",
+           "correct": true
+          },
+          {
+           "content": "Le plus petit calibre, pour une lecture précise",
+           "correct": false
+          },
+          {
+           "content": "Le calibre du milieu, par prudence",
+           "correct": false
+          },
+          {
+           "content": "Le calibre que tu devines d'après la taille de la lampe",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un ampèremètre a les calibres 3 A, 1 A, 300 mA et 100 mA. On mesure une intensité d'environ 0,5 A. Quel calibre, en mA, garde-t-on à la fin ?",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 3 — Choisir : on part de 3 A. Étape 4 — Affiner : 0,5 A = 500 mA, donc 300 mA et 100 mA sont trop petits. Le plus petit calibre qui reste plus grand que 500 mA est 1 A, soit 1 000 mA. Pourquoi pas 300 : ce calibre serait dépassé par 500 mA.",
+         "answers": [
+          {
+           "content": "1000",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Cet exercice vérifie ton cours sur la lecture d'une intensité : formule de l'ampèremètre à aiguille et unités.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Pour un ampèremètre à aiguille, I = C × n / N, avec l'unité du calibre.",
+       "questions": [
+        {
+         "content": "Dans le circuit d'une lampe torche, l'ampèremètre à aiguille a 100 divisions et le calibre 1 A est utilisé. L'aiguille s'arrête devant la division 35. Quelle est l'intensité, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 1 A et l'échelle compte N = 100 divisions. Étape 2 — Lire : l'aiguille est devant n = 35 divisions. Étape 3 — Appliquer : I = C × n / N = 1 × 35 / 100 = 0,35 A. Étape 4 — Écrire : I = 0,35 A, avec l'unité du calibre. Pourquoi pas « 35 A » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+         "answers": [
+          {
+           "content": "0,35",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans le circuit d'un ventilateur, l'ampèremètre à aiguille a 30 divisions et le calibre 300 mA est utilisé. L'aiguille s'arrête devant la division 12. Quelle est l'intensité, en milliampères ?",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 300 mA et l'échelle compte N = 30 divisions. Étape 2 — Lire : l'aiguille est devant n = 12 divisions. Étape 3 — Appliquer : I = C × n / N = 300 × 12 / 30 = 120 mA. Étape 4 — Écrire : I = 120 mA, avec l'unité du calibre. Pourquoi pas « 12 mA » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+         "answers": [
+          {
+           "content": "120",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans le circuit d'un chargeur de téléphone, l'ampèremètre à aiguille a 30 divisions et le calibre 3 A est utilisé. L'aiguille s'arrête devant la division 9. Quelle est l'intensité, en milliampères ?",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 3 A et l'échelle compte N = 30 divisions. Étape 2 — Lire : l'aiguille est devant n = 9 divisions. Étape 3 — Appliquer : I = C × n / N = 3 × 9 / 30 = 0,9 A. Étape 4 — Écrire : I = 0,9 A, soit 900 mA (on multiplie par 1 000). Pourquoi pas « 9 mA » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+         "answers": [
+          {
+           "content": "900",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Sur un ampèremètre à aiguille réglé sur le calibre 300 mA, l'intensité lue s'exprime en milliampères.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Relever : le calibre est 300 mA. Étape 3 — Appliquer : I = C × n / N, où n / N est un rapport sans unité. Étape 4 — Écrire : le résultat prend l'unité du calibre, donc le mA. Pourquoi pas « Faux » : on croirait que la graduation est toujours en ampères, alors que l'unité est celle du calibre.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Sur un ampèremètre à aiguille de N divisions, réglé sur le calibre C, l'aiguille s'arrête devant la division n. Quelle formule donne l'intensité ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Relever : le calibre C et le nombre de divisions N. Étape 2 — Lire : n. Étape 3 — Appliquer : I = C × n / N ; à fond d'échelle (n = N), on retrouve I = C. Étape 4 — Écrire : avec l'unité du calibre. Pourquoi pas « I = C ÷ n × N » : à fond d'échelle elle donnerait aussi C, mais pour n petit elle donnerait une intensité énorme.",
+         "answers": [
+          {
+           "content": "I = C × n / N",
+           "correct": true
+          },
+          {
+           "content": "I = C ÷ n × N",
+           "correct": false
+          },
+          {
+           "content": "I = n × N ÷ C",
+           "correct": false
+          },
+          {
+           "content": "I = C ÷ (n × N)",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Cet exercice vérifie ton cours sur l'intensité en série et sur la loi des nœuds en dérivation.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "En série, l'intensité est la même partout ; au nœud, arrivée = somme des départs.",
+       "questions": [
+        {
+         "content": "Dans un circuit en série, un ampèremètre placé entre la pile et une lampe indique 0,40 A. Un second ampèremètre est placé entre la lampe et la borne − de la pile. Quelle intensité indique le second ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : il n'y a aucun nœud, le montage est en série. Étape 2 — Repérer : une seule intensité pour toute la boucle. Étape 3 — Calculer : on recopie l'intensité connue, I = 0,4 A. Étape 4 — Vérifier : même unité, et aucune branche dérivée à comparer. Pourquoi pas « 0 » : le courant ne disparaît pas dans un dipôle : la boucle est fermée et l'intensité est la même partout.",
+         "answers": [
+          {
+           "content": "0,4",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un circuit en dérivation arrive au nœud A avec une intensité de 0,60 A. Deux branches dérivées repartent : la première est traversée par 0,20 A, la seconde par une intensité I. Quelle est l'intensité I, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 0,6 A ; repartent 0,2 A et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 0,6 = 0,2 + I, donc I = 0,6 − 0,2 = 0,4 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est plus petite que l'intensité qui arrive. Pourquoi pas « 0,8 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+         "answers": [
+          {
+           "content": "0,4",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un circuit en dérivation a deux branches dérivées, traversées par 0,15 A et 0,35 A. Elles arrivent au nœud B, d'où repart la branche principale. Quelle est l'intensité dans la branche principale, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent I ; repartent 0,15 A, 0,35 A. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit I = 0,15 + 0,35, donc I = 0,5 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est la plus grande intensité du nœud, car elle est la somme des autres. Pourquoi pas « 0,5 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+         "answers": [
+          {
+           "content": "0,5",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans un circuit en dérivation à deux branches, les deux branches dérivées sont forcément traversées par la même intensité.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Nommer : il y a des nœuds, le montage est en dérivation. Étape 2 — Repérer : chaque branche a son propre courant. Étape 3 — Calculer : la loi des nœuds fixe seulement leur somme, par exemple 0,15 A + 0,35 A = 0,50 A. Étape 4 — Vérifier : les deux valeurs sont différentes. Pourquoi pas « Vrai » : on confond le partage d'un courant en dérivation avec l'égalité d'un circuit en série.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "En série, l'intensité est la ___ en tout point du circuit.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Nommer : il n'y a aucun nœud, le montage est en série. Étape 2 — Repérer : une seule boucle. Étape 3 — Calculer : l'intensité est la même partout. Étape 4 — Vérifier : un ampèremètre placé avant ou après un dipôle indique la même valeur. Pourquoi pas « moitié » : la lampe ne garde pas la moitié des charges : tout le débit qui entre ressort.",
+         "answers": [
+          {
+           "content": "même",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Au nœud A, un courant de 0,50 A arrive. Il repart par deux branches : 0,30 A dans l'une et I dans l'autre. Quelle est l'intensité I ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Nommer : A est un nœud, le montage est en dérivation. Étape 2 — Repérer : arrive 0,50 A ; repartent 0,30 A et I. Étape 3 — Calculer : 0,50 = 0,30 + I, donc I = 0,20 A. Étape 4 — Vérifier : 0,20 A est plus petit que 0,50 A. Pourquoi pas « 0,80 A » : ce serait additionner le courant qui arrive et celui qui repart.",
+         "answers": [
+          {
+           "content": "0,20 A",
+           "correct": true
+          },
+          {
+           "content": "0,80 A",
+           "correct": false
+          },
+          {
+           "content": "0,30 A",
+           "correct": false
+          },
+          {
+           "content": "0,15 A",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Sujet 2 · La vie courante en Côte d'Ivoire",
+     "notions": "Lampe torche de Koffi, salon de la famille Traoré (kit solaire, ampoule, ventilateur, télévision), atelier de réparation d'Adjamé et laboratoire du lycée : conversions mA et A, branchement et calibre de l'ampèremètre, lecture d'une intensité, intensité en série et loi des nœuds.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Koffi étudie sa lampe torche : une pile, un interrupteur et une ampoule sont reliés en série. Les valeurs sont fictives.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Dans la boucle en série, l'intensité est la même partout.",
+       "questions": [
+        {
+         "content": "L'ampoule de la lampe torche de Koffi est traversée par une intensité de 250 mA. Exprime cette intensité en ampères.",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Repérer : la valeur donnée est en mA et on demande des A. Étape 2 — Choisir : de mA vers A, on divise par 1 000. Étape 3 — Calculer : 250 mA ÷ 1 000 = 0,25 A. Étape 4 — Vérifier : le nombre en mA (250) est bien 1 000 fois plus grand que le nombre en A (0,25). Pourquoi pas « 250 000 A » : ce serait multiplier par 1 000 au lieu de diviser : l'intensité deviendrait 1 000 fois trop grande.",
+         "answers": [
+          {
+           "content": "0,25",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Koffi ouvre la boucle de sa lampe torche entre la borne + de la pile et l'interrupteur, et y place l'ampèremètre pour mesurer l'intensité dans l'ampoule. Son montage est-il correct ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Placer : dans une boucle en série, l'ampèremètre peut s'intercaler n'importe où, car tout le courant le traverse. Étape 2 — Orienter : placé côté borne +, il a sa borne A ou mA vers la borne +. En série, l'intensité est la même avant et après l'ampoule. Pourquoi pas « il doit être juste à côté de l'ampoule » : la place dans la boucle ne change pas l'intensité en série.",
+         "answers": [
+          {
+           "content": "Oui : il est en série dans la boucle, A ou mA du côté de la borne +",
+           "correct": true
+          },
+          {
+           "content": "Non : il doit être juste à côté de l'ampoule, car c'est elle que l'on mesure",
+           "correct": false
+          },
+          {
+           "content": "Non : il doit être en dérivation sur l'ampoule pour la mesurer",
+           "correct": false
+          },
+          {
+           "content": "Non : il doit être placé après l'ampoule, car le courant s'y réduit",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans la lampe torche de Koffi, l'ampèremètre à aiguille a 100 divisions et le calibre 300 mA est utilisé. L'aiguille s'arrête devant la division 60. Quelle est l'intensité, en milliampères ?",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 300 mA et l'échelle compte N = 100 divisions. Étape 2 — Lire : l'aiguille est devant n = 60 divisions. Étape 3 — Appliquer : I = C × n / N = 300 × 60 / 100 = 180 mA. Étape 4 — Écrire : I = 180 mA, avec l'unité du calibre. Pourquoi pas « 60 mA » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+         "answers": [
+          {
+           "content": "180",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Koffi place un second ampèremètre entre l'ampoule et la borne − de la pile. Le premier, placé entre la borne + et l'interrupteur, indique 180 mA. Quelle intensité indique le second ?",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : il n'y a aucun nœud, le montage est en série. Étape 2 — Repérer : une seule intensité pour toute la boucle. Étape 3 — Calculer : on recopie l'intensité connue, I = 180 mA. Étape 4 — Vérifier : même unité, et aucune branche dérivée à comparer. Pourquoi pas « 0 » : le courant ne disparaît pas dans un dipôle : la boucle est fermée et l'intensité est la même partout.",
+         "answers": [
+          {
+           "content": "180",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un ampèremètre relié aux deux bornes de l'ampoule de la lampe torche, en dérivation sur elle, éteint l'ampoule.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Placer : l'ampèremètre doit être en série. Étape 2 — Orienter : en dérivation sur l'ampoule, il lui offre un chemin direct entre ses bornes. Le courant passe par lui et plus par l'ampoule : elle s'éteint. Pourquoi pas « Faux » : on croirait que l'ampèremètre ne change rien au circuit, alors qu'il court-circuite l'ampoule.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Dans le salon de la famille Traoré, un kit solaire alimente une ampoule, un ventilateur et une télévision en dérivation. Les valeurs sont fictives.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Au nœud, la somme des intensités qui arrivent est égale à la somme de celles qui repartent.",
+       "questions": [
+        {
+         "content": "Dans le salon, la branche principale du kit solaire arrive au nœud A avec 0,70 A. Trois branches dérivées en repartent : l'ampoule (0,30 A), la télévision (0,25 A) et le ventilateur. Quelle est l'intensité dans le ventilateur, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 0,7 A ; repartent 0,3 A, 0,25 A et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 0,7 = 0,3 + 0,25 + I, donc I = 0,7 − 0,55 = 0,15 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est plus petite que l'intensité qui arrive. Pourquoi pas « 1,25 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+         "answers": [
+          {
+           "content": "0,15",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "La télévision du salon est traversée par une intensité de 0,25 A. Exprime cette intensité en milliampères.",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Repérer : la valeur donnée est en A et on demande des mA. Étape 2 — Choisir : de A vers mA, on multiplie par 1 000. Étape 3 — Calculer : 0,25 A × 1 000 = 250 mA. Étape 4 — Vérifier : le nombre en mA (250) est bien 1 000 fois plus grand que le nombre en A (0,25). Pourquoi pas « 0,00025 mA » : ce serait diviser par 1 000 au lieu de multiplier : le nombre en mA doit être le plus grand.",
+         "answers": [
+          {
+           "content": "250",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans le salon, la branche principale était traversée par 0,70 A, l'ampoule par 0,30 A, la télévision par 0,25 A et le ventilateur par 0,15 A. On débranche la télévision, les autres appareils gardent leur intensité. Quelle est la nouvelle intensité dans la branche principale ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Nommer : le montage est en dérivation. Étape 2 — Repérer : il arrive I au nœud A ; repartent 0,30 A et 0,15 A. Étape 3 — Calculer : I = 0,30 + 0,15 = 0,45 A. Étape 4 — Vérifier : I est plus grande que chaque branche dérivée restante. Pourquoi pas « 0,70 A » : la branche principale porte la somme des branches qui restent, et il y en a une de moins.",
+         "answers": [
+          {
+           "content": "0,45 A",
+           "correct": true
+          },
+          {
+           "content": "0,70 A, car la branche principale ne change pas",
+           "correct": false
+          },
+          {
+           "content": "0,25 A, l'intensité qui disparaît avec la télévision",
+           "correct": false
+          },
+          {
+           "content": "0,15 A, la plus petite des branches restantes",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans le salon, l'ampoule et le ventilateur sont en dérivation : ils sont forcément traversés par la même intensité.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Nommer : l'ampoule et le ventilateur sont dans deux branches dérivées. Étape 2 — Repérer : chacune porte son propre courant. Étape 3 — Calculer : la loi des nœuds fixe la somme des courants, pas chacun d'eux ; ici 0,30 A et 0,15 A. Étape 4 — Vérifier : les deux valeurs sont différentes. Pourquoi pas « Vrai » : on confond le montage en dérivation avec l'égalité de l'intensité d'un circuit en série.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans le salon, la branche principale du kit solaire contient la batterie et se partage au nœud A en trois branches dérivées (ampoule, ventilateur, télévision). En comptant la branche principale, combien de branches ce circuit compte-t-il ?",
+         "question_type": "numeric",
+         "unit": "branches",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : les nœuds A et B montrent un montage en dérivation. Étape 2 — Repérer : les branches sont les portions entre deux nœuds consécutifs. Étape 3 — Calculer : la branche principale plus trois branches dérivées, soit 1 + 3 = 4. Étape 4 — Vérifier : chaque appareil est seul dans sa branche. Pourquoi pas 3 : ce serait oublier la branche principale, qui contient la batterie.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "À l'atelier de réparation d'Adjamé, Aya teste des appareils avec un ampèremètre à aiguille et un multimètre numérique. Les valeurs sont fictives.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Place, oriente, choisis le calibre, puis lis I = C × n / N.",
+       "questions": [
+        {
+         "content": "Aya veut mesurer une intensité inconnue dans un chargeur. Remets dans l'ordre ses actions.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Placer : on intercale l'ampèremètre en série. Étape 2 — Orienter : A ou mA vers la borne +, COM vers la borne −. Étape 3 — Choisir : le plus grand calibre, puis on ferme l'interrupteur. Étape 4 — Affiner : on diminue le calibre. Pourquoi pas « choisir le calibre avant de placer l'appareil » : on règle le calibre une fois l'appareil branché, pour protéger l'ampèremètre.",
+         "answers": [
+          {
+           "content": "Placer l'ampèremètre en série dans la branche étudiée."
+          },
+          {
+           "content": "Orienter la borne A ou mA vers la borne + et COM vers la borne −."
+          },
+          {
+           "content": "Choisir le plus grand calibre, puis fermer l'interrupteur."
+          },
+          {
+           "content": "Diminuer le calibre jusqu'au plus petit calibre possible."
+          }
+         ]
+        },
+        {
+         "content": "Dans un chargeur testé à l'atelier d'Adjamé, l'ampèremètre à aiguille a 50 divisions et le calibre 100 mA est utilisé. L'aiguille s'arrête devant la division 30. Quelle est l'intensité, en milliampères ?",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 100 mA et l'échelle compte N = 50 divisions. Étape 2 — Lire : l'aiguille est devant n = 30 divisions. Étape 3 — Appliquer : I = C × n / N = 100 × 30 / 50 = 60 mA. Étape 4 — Écrire : I = 60 mA, avec l'unité du calibre. Pourquoi pas « 30 mA » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+         "answers": [
+          {
+           "content": "60",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Aya mesure une intensité d'environ 0,06 A avec un ampèremètre de calibres 3 A, 1 A, 300 mA et 100 mA. Quel calibre garde-t-elle à la fin ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Choisir : elle part de 3 A. Étape 4 — Affiner : 0,06 A = 60 mA, donc le calibre 100 mA reste plus grand que 60 mA ; le plus petit calibre possible est 100 mA. Pourquoi pas « 300 mA » : il convient, mais ce n'est pas le plus petit calibre qui reste plus grand que 60 mA.",
+         "answers": [
+          {
+           "content": "100 mA",
+           "correct": true
+          },
+          {
+           "content": "300 mA",
+           "correct": false
+          },
+          {
+           "content": "1 A",
+           "correct": false
+          },
+          {
+           "content": "3 A",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le multimètre numérique d'Aya affiche « −0,12 A ». Que doit-elle faire ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Relever : le multimètre affiche une valeur et son unité. Étape 2 — Lire : l'écran donne −0,12 A. Étape 4 — Écrire : le signe − signale des bornes inversées ; on rebranche A ou mA vers la borne +, COM vers la borne −. L'intensité vaut 0,12 A. Pourquoi pas « noter −0,12 A » : une intensité n'est pas négative, le signe vient du branchement à l'envers.",
+         "answers": [
+          {
+           "content": "Inverser les bornes : A ou mA vers +, COM vers −",
+           "correct": true
+          },
+          {
+           "content": "Noter une intensité de −0,12 A et continuer",
+           "correct": false
+          },
+          {
+           "content": "Passer à un calibre plus grand, car le − signale un dépassement",
+           "correct": false
+          },
+          {
+           "content": "Changer la pile, car le − signale une pile usée",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Aya mesure 0,80 A dans la branche principale d'un montage de test, qui arrive au nœud A. Deux branches dérivées en repartent : l'une est traversée par 0,50 A, l'autre par une intensité I. Quelle est l'intensité I, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 0,8 A ; repartent 0,5 A et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 0,8 = 0,5 + I, donc I = 0,8 − 0,5 = 0,3 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est plus petite que l'intensité qui arrive. Pourquoi pas « 1,3 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+         "answers": [
+          {
+           "content": "0,3",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Au laboratoire du lycée, Fatou monte un circuit : un générateur, un interrupteur et une lampe L1 forment la branche principale, qui se partage au nœud A en deux branches dérivées contenant les lampes L2 et L3. Les valeurs sont fictives.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Pour l'intensité totale, place l'ampèremètre dans la branche principale ; au nœud, arrivée = somme des départs.",
+       "questions": [
+        {
+         "content": "Fatou veut mesurer l'intensité totale fournie par le générateur de son montage. Où place-t-elle l'ampèremètre ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Placer : l'intensité totale est celle de la branche principale, donc on y intercale l'ampèremètre, en série avec le générateur. Étape 2 — Orienter : A ou mA du côté de la borne +, COM du côté de la borne −. Pourquoi pas « dans la branche de L2 seulement » : il mesurerait seulement l'intensité de L2, une part du courant total.",
+         "answers": [
+          {
+           "content": "Dans la branche principale, en série",
+           "correct": true
+          },
+          {
+           "content": "Aux deux bornes de L1, en dérivation sur L1",
+           "correct": false
+          },
+          {
+           "content": "Dans la branche de L2 seulement, en série avec L2",
+           "correct": false
+          },
+          {
+           "content": "Entre les branches de L2 et de L3, en dérivation",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans le montage de Fatou, la branche principale arrive au nœud A avec 0,60 A. Les lampes L2 et L3 sont dans deux branches dérivées ; L2 est traversée par 0,25 A. Quelle est l'intensité dans la lampe L3, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 0,6 A ; repartent 0,25 A et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 0,6 = 0,25 + I, donc I = 0,6 − 0,25 = 0,35 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est plus petite que l'intensité qui arrive. Pourquoi pas « 0,85 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+         "answers": [
+          {
+           "content": "0,35",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans la branche principale du montage de Fatou, l'ampèremètre à aiguille a 100 divisions et le calibre 1 A est utilisé. L'aiguille s'arrête devant la division 60. Quelle est l'intensité, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 1 A et l'échelle compte N = 100 divisions. Étape 2 — Lire : l'aiguille est devant n = 60 divisions. Étape 3 — Appliquer : I = C × n / N = 1 × 60 / 100 = 0,6 A. Étape 4 — Écrire : I = 0,6 A, avec l'unité du calibre. Pourquoi pas « 60 A » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+         "answers": [
+          {
+           "content": "0,6",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans le montage de Fatou, la lampe L1 est traversée par la même intensité que le générateur.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Nommer : L1 et le générateur sont dans la branche principale, sans nœud entre eux. Étape 2 — Repérer : le courant n'a qu'un chemin. Étape 3 — Calculer : en série, l'intensité est la même, donc celle de L1 est celle du générateur. Étape 4 — Vérifier : même unité des deux côtés. Pourquoi pas « Faux » : on croirait que la lampe L1 garde une partie du courant, alors qu'elle laisse passer tout le débit.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "L'unité de l'intensité du courant électrique est l'___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Repérer : on cherche l'unité de l'intensité. Étape 2 — Choisir : c'est l'ampère, de symbole A. Étape 3 — Calculer : 1 A = 1 000 mA. Étape 4 — Vérifier : le milliampère est le sous-multiple, mille fois plus petit. Pourquoi pas « volt » : le volt est l'unité d'une autre grandeur électrique, qui se mesure avec un autre appareil.",
+         "answers": [
+          {
+           "content": "ampère",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quand l'aiguille s'arrête devant la dernière division de l'échelle, l'intensité lue est ___ au calibre.",
+         "question_type": "select",
+         "explanation": "Étape 1 — Relever : on note C et N. Étape 2 — Lire : la dernière division, donc n = N. Étape 3 — Appliquer : I = C × N / N = C. Étape 4 — Écrire : l'intensité est égale au calibre. Pour éviter ce fond d'échelle, on choisit le plus petit calibre qui reste plus grand que l'intensité. Pourquoi pas « inférieure » : à fond d'échelle, n = N, donc I est exactement égale à C.",
+         "answers": [
+          {
+           "content": "égale",
+           "correct": true
+          },
+          {
+           "content": "supérieure",
+           "correct": false
+          },
+          {
+           "content": "inférieure",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Sujet 3 · Raisonner et justifier",
+     "notions": "Corriger des affirmations d'élèves ; déduire un montage ou une valeur à partir de mesures d'intensité ; choisir un calibre et justifier une lecture ; loi des nœuds avec plusieurs branches ; justifier que l'intensité reste la même en série.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Des élèves du lycée proposent des affirmations sur les intensités. Tu repères leurs erreurs avec le cours.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Compare chaque affirmation avec la méthode : unité, calibre, série et dérivation.",
+       "questions": [
+        {
+         "content": "Un élève lit l'aiguille devant la division 40 d'une échelle de 100 divisions, avec le calibre 300 mA, et écrit « I = 40 mA ». Quelle est son erreur ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Relever : C = 300 mA et N = 100. Étape 2 — Lire : n = 40. Étape 3 — Appliquer : I = C × n / N = 300 × 40 / 100 = 120 mA. Étape 4 — Écrire : I = 120 mA. Pourquoi pas « I = 40 mA » : 40 est un nombre de divisions, pas l'intensité ; il faut tenir compte du calibre.",
+         "answers": [
+          {
+           "content": "Il n'a pas utilisé le calibre : I = 300 × 40 / 100 = 120 mA",
+           "correct": true
+          },
+          {
+           "content": "Il a oublié d'ajouter le calibre : I = 300 + 40 = 340 mA",
+           "correct": false
+          },
+          {
+           "content": "Il n'a pas d'erreur : le nombre de divisions est toujours l'intensité en mA",
+           "correct": false
+          },
+          {
+           "content": "Il a oublié de convertir en ampères : I = 0,04 A",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelle égalité est correcte ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : on compare des A et des mA. Étape 2 — Choisir : des A aux mA, on multiplie par 1 000. Étape 3 — Calculer : 2 × 1 000 = 2 000 mA. Étape 4 — Vérifier : le nombre en mA est 1 000 fois plus grand que le nombre en A. Pourquoi pas « 2 A = 0,002 mA » : ce serait diviser par 1 000 au lieu de multiplier.",
+         "answers": [
+          {
+           "content": "2 A = 2 000 mA",
+           "correct": true
+          },
+          {
+           "content": "2 A = 0,002 mA",
+           "correct": false
+          },
+          {
+           "content": "2 A = 200 mA",
+           "correct": false
+          },
+          {
+           "content": "2 mA = 2 000 A",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans un circuit en série, un ampèremètre placé avant une lampe indique 0,30 A. Un élève prévoit que celui placé après la lampe indiquera 0,25 A, car la lampe « garde » un peu de courant. Que peut-on lui répondre ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Nommer : il n'y a aucun nœud, le montage est en série. Étape 2 — Repérer : une seule intensité pour toute la boucle. Étape 3 — Calculer : l'intensité est la même, 0,30 A, avant et après la lampe. Étape 4 — Vérifier : aucune branche dérivée n'existe pour emporter une part du courant. Pourquoi pas « la lampe transforme du courant en lumière » : elle transforme de l'énergie, mais les charges qui entrent sont aussi nombreuses que celles qui sortent.",
+         "answers": [
+          {
+           "content": "Faux : en série, l'intensité est la même partout, donc 0,30 A aussi",
+           "correct": true
+          },
+          {
+           "content": "Il a raison : après la lampe, l'intensité est toujours un peu plus petite",
+           "correct": false
+          },
+          {
+           "content": "Il a raison : la lampe transforme du courant en lumière, donc il en reste moins",
+           "correct": false
+          },
+          {
+           "content": "Faux : après la lampe, l'ampèremètre indiquera 0 A",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans un circuit en dérivation où la branche principale est traversée par 0,4 A, une branche dérivée peut être traversée par 0,5 A.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Nommer : il y a des nœuds, le montage est en dérivation. Étape 2 — Repérer : 0,4 A arrive au nœud et se partage entre les branches dérivées. Étape 3 — Calculer : la somme des branches dérivées vaut 0,4 A, donc chacune est plus petite que 0,4 A. Étape 4 — Vérifier : 0,5 A est plus grand que 0,4 A, c'est impossible. Pourquoi pas « Vrai » : on croirait qu'une branche dérivée peut porter plus de courant que la branche principale qui l'alimente.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un élève mesure une intensité de 0,6 A. Quelles écritures désignent la même intensité ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Repérer : la valeur est en A. Étape 2 — Choisir : des A aux mA, on multiplie par 1 000. Étape 3 — Calculer : 0,6 × 1 000 = 600 mA, et 0,60 A est la même valeur que 0,6 A. Étape 4 — Vérifier : 600 est 1 000 fois plus grand que 0,6. Pourquoi pas « 60 mA » : ce serait multiplier par 100 au lieu de 1 000.",
+         "answers": [
+          {
+           "content": "600 mA",
+           "correct": true
+          },
+          {
+           "content": "0,60 A",
+           "correct": true
+          },
+          {
+           "content": "60 mA",
+           "correct": false
+          },
+          {
+           "content": "6 000 mA",
+           "correct": false
+          },
+          {
+           "content": "0,6 mA",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Un technicien d'Adjamé relève des intensités dans des montages de lampes. Il raisonne à partir de ses mesures. Les valeurs sont fictives.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "En série, les intensités sont égales ; en dérivation, la branche principale porte la somme des branches dérivées.",
+       "questions": [
+        {
+         "content": "Un ampèremètre dans le fil de la batterie indique 0,9 A ; deux autres, placés dans les lampes L1 et L2, indiquent 0,4 A et 0,5 A. Que peut-on conclure ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Nommer : les intensités des lampes sont différentes, donc elles ne sont pas en série. Étape 2 — Repérer : 0,9 A arrive, 0,4 A et 0,5 A repartent. Étape 3 — Calculer : 0,4 + 0,5 = 0,9, la loi des nœuds est vérifiée. Étape 4 — Vérifier : chaque branche est plus petite que 0,9 A. Pourquoi pas « elles sont en série » : en série, l'intensité est la même dans les deux lampes.",
+         "answers": [
+          {
+           "content": "L1 et L2 sont en dérivation : 0,4 + 0,5 = 0,9",
+           "correct": true
+          },
+          {
+           "content": "L1 et L2 sont en série : leurs intensités s'ajoutent",
+           "correct": false
+          },
+          {
+           "content": "Les mesures sont fausses : les intensités devraient être égales",
+           "correct": false
+          },
+          {
+           "content": "L1 et L2 sont en série : 0,9 est la moyenne de 0,4 et 0,5",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un montage de deux lampes en dérivation a une branche principale traversée par 0,9 A. La lampe L1 est traversée par 0,4 A. Quelle est l'intensité dans la lampe L2, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 0,9 A ; repartent 0,4 A et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 0,9 = 0,4 + I, donc I = 0,9 − 0,4 = 0,5 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est plus petite que l'intensité qui arrive. Pourquoi pas « 1,3 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+         "answers": [
+          {
+           "content": "0,5",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Deux lampes sont montées en série avec une batterie. La lampe L1 est traversée par 0,3 A. La lampe L2 est alors traversée par 0,3 A.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Nommer : deux lampes sur une seule boucle, sans nœud, c'est un montage en série. Étape 2 — Repérer : une seule intensité pour toute la boucle. Étape 3 — Calculer : L2 est traversée par la même intensité que L1, 0,3 A. Étape 4 — Vérifier : même unité. Pourquoi pas « Faux » : on croirait que la première lampe garde du courant, alors qu'en série l'intensité est la même.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un technicien relève 0,50 A dans la branche principale, puis 0,30 A dans la lampe L1 et 0,30 A dans la lampe L2, placées en dérivation. Que doit-il penser de ses mesures ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Nommer : les lampes sont en dérivation. Étape 2 — Repérer : arrive 0,50 A ; repartent 0,30 A et 0,30 A. Étape 3 — Calculer : 0,30 + 0,30 = 0,60 A, différent de 0,50 A. Étape 4 — Vérifier : la loi des nœuds n'est pas respectée, une mesure est fausse. Pourquoi pas « chaque branche devrait avoir 0,50 A » : en dérivation, c'est la somme des branches qui est égale à la branche principale.",
+         "answers": [
+          {
+           "content": "Incohérentes : 0,30 + 0,30 = 0,60 A, différent de 0,50 A",
+           "correct": true
+          },
+          {
+           "content": "Elles sont cohérentes : les deux lampes ont la même intensité, 0,30 A",
+           "correct": false
+          },
+          {
+           "content": "Elles sont incohérentes : chaque branche devrait avoir 0,50 A",
+           "correct": false
+          },
+          {
+           "content": "Elles sont cohérentes : 0,50 A est la moyenne des deux branches",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Au laboratoire du lycée, l'ampèremètre à aiguille a 100 divisions et le calibre 1 A est utilisé. L'intensité mesurée est 0,35 A. Devant quelle division l'aiguille s'arrête-t-elle ?",
+         "question_type": "numeric",
+         "unit": "div",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 1 A et l'échelle compte N = 100 divisions. Étape 2 — Lire : on cherche n. Étape 3 — Appliquer : I = C × n / N donne 0,35 = 1 × n / 100, donc n = 0,35 × 100 / 1 = 35. Étape 4 — Écrire : l'aiguille s'arrête devant la division 35. Pourquoi pas « 0,35 » : c'est l'intensité en A, pas un nombre de divisions.",
+         "answers": [
+          {
+           "content": "35",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un élève affirme : « Dans un circuit en série, l'intensité diminue après chaque lampe. » Explique en deux ou trois phrases pourquoi c'est faux, avec un exemple de deux mesures.",
+         "question_type": "written",
+         "points": 3,
+         "criteria": [
+          "Dit qu'en série l'intensité est la même en tout point de la boucle",
+          "Dit que la lampe ne consomme pas de charges",
+          "Donne un exemple chiffré avec deux ampèremètres indiquant la même valeur"
+         ],
+         "explanation": "Corrigé modèle : Étape 1 — Nommer : en série, il n'y a aucun nœud, une seule boucle. Étape 2 — Repérer : une seule intensité pour toute la boucle. Étape 3 — Calculer : si un premier ampèremètre avant la lampe indique 0,30 A, un second après la lampe indique aussi 0,30 A. La lampe ne consomme pas de charges : celles qui entrent sortent aussi nombreuses. Étape 4 — Vérifier : l'affirmation de l'élève est fausse. Barème sur 3 : 1 point par critère.",
+         "answers": [],
+         "starter": "En série, il n'y a qu'une seule boucle, donc…"
+        }
+       ]
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Au laboratoire du lycée, on choisit un calibre et on lit des ampèremètres à aiguille. Tu justifies chaque choix. Les valeurs sont fictives.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Garde le plus petit calibre qui reste plus grand que l'intensité ; lis I = C × n / N.",
+       "questions": [
+        {
+         "content": "Un élève mesure une intensité d'environ 0,08 A avec un ampèremètre de calibres 3 A, 1 A, 300 mA et 100 mA. Quel calibre garde-t-il à la fin ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Choisir : on part de 3 A. Étape 4 — Affiner : 0,08 A = 80 mA, donc le calibre 100 mA reste plus grand que 80 mA ; c'est le plus petit possible. Pourquoi pas « 3 A » : il convient, mais l'aiguille y bougerait à peine et la lecture serait peu précise.",
+         "answers": [
+          {
+           "content": "100 mA",
+           "correct": true
+          },
+          {
+           "content": "300 mA",
+           "correct": false
+          },
+          {
+           "content": "1 A",
+           "correct": false
+          },
+          {
+           "content": "3 A",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Sur le calibre 100 mA, l'aiguille d'un ampèremètre sort de l'échelle dès que l'on ferme l'interrupteur. Que faut-il faire ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Choisir : le calibre doit rester plus grand que l'intensité ; ici il est dépassé, donc trop petit. Étape 4 — Affiner : on ouvre l'interrupteur et on remonte au calibre supérieur, puis on redescend si possible. Pourquoi pas « passer à un calibre plus petit » : il serait dépassé encore plus vite et l'appareil risquerait d'être abîmé.",
+         "answers": [
+          {
+           "content": "Ouvrir l'interrupteur et passer à un calibre plus grand",
+           "correct": true
+          },
+          {
+           "content": "Garder le calibre et attendre que l'aiguille revienne",
+           "correct": false
+          },
+          {
+           "content": "Passer à un calibre plus petit, pour avoir plus de précision",
+           "correct": false
+          },
+          {
+           "content": "Inverser les bornes A et COM de l'appareil",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Au laboratoire du lycée, l'ampèremètre à aiguille a 30 divisions et le calibre 300 mA est utilisé. L'aiguille s'arrête devant la division 7. Quelle est l'intensité, en milliampères ?",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 300 mA et l'échelle compte N = 30 divisions. Étape 2 — Lire : l'aiguille est devant n = 7 divisions. Étape 3 — Appliquer : I = C × n / N = 300 × 7 / 30 = 70 mA. Étape 4 — Écrire : I = 70 mA, avec l'unité du calibre. Pourquoi pas « 7 mA » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+         "answers": [
+          {
+           "content": "70",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Au laboratoire du lycée, l'ampèremètre à aiguille a 100 divisions et le calibre 3 A est utilisé. L'aiguille s'arrête devant la division 24. Quelle est l'intensité, en milliampères ?",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 3 A et l'échelle compte N = 100 divisions. Étape 2 — Lire : l'aiguille est devant n = 24 divisions. Étape 3 — Appliquer : I = C × n / N = 3 × 24 / 100 = 0,72 A. Étape 4 — Écrire : I = 0,72 A, soit 720 mA (on multiplie par 1 000). Pourquoi pas « 24 mA » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+         "answers": [
+          {
+           "content": "720",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Avec 100 divisions, une aiguille devant la division 50 indique la même intensité sur le calibre 1 A et sur le calibre 100 mA.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Relever : C = 1 A, puis C = 100 mA, avec N = 100. Étape 2 — Lire : n = 50 dans les deux cas. Étape 3 — Appliquer : 1 × 50 / 100 = 0,5 A, et 100 × 50 / 100 = 50 mA. Étape 4 — Écrire : 0,5 A = 500 mA est dix fois plus grand que 50 mA. Pourquoi pas « Vrai » : on croirait que la même position d'aiguille donne toujours la même intensité, alors que le calibre change la valeur.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Dans un montage en dérivation, tu appliques la loi des nœuds avec plusieurs branches et dans différentes unités. Les valeurs sont fictives.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Écris toujours : somme des intensités qui arrivent = somme de celles qui repartent, avec la même unité.",
+       "questions": [
+        {
+         "content": "Dans un montage de l'atelier d'Adjamé, la branche principale arrive au nœud A avec 1,0 A. Trois branches dérivées en repartent : 0,3 A, 0,2 A et une troisième. Quelle est l'intensité dans la troisième branche, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 1 A ; repartent 0,3 A, 0,2 A et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 1 = 0,3 + 0,2 + I, donc I = 1 − 0,5 = 0,5 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est plus petite que l'intensité qui arrive. Pourquoi pas « 1,5 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+         "answers": [
+          {
+           "content": "0,5",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Au nœud N d'un circuit, deux courants arrivent : le premier a une intensité de 0,40 A, le second une intensité I. Le fil de sortie est traversé par 0,70 A. Quelle est l'intensité I, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 0,4 A et I ; repartent 0,7 A. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 0,4 + I = 0,7, donc I = 0,7 − 0,4 = 0,3 A. Étape 4 — Vérifier : toutes les intensités sont en A et les deux côtés du nœud ont bien la même somme. Pourquoi pas « 1,1 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+         "answers": [
+          {
+           "content": "0,3",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans le salon de la famille Traoré, la branche principale arrive au nœud A avec 900 mA. Une branche dérivée, traversée par 350 mA, repart de A avec une seconde branche d'intensité I. Quelle est l'intensité I, en milliampères ?",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 900 mA ; repartent 350 mA et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 900 = 350 + I, donc I = 900 − 350 = 550 mA. Étape 4 — Vérifier : toutes les intensités sont en mA et I est plus petite que l'intensité qui arrive. Pourquoi pas « 1250 mA » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+         "answers": [
+          {
+           "content": "550",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Au nœud A, un courant de 0,6 A arrive. Deux courants repartent : I₁ = 0,2 A et I₂ = 0,5 A. Que doit-on en conclure ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Nommer : A est un nœud. Étape 2 — Repérer : arrive 0,6 A ; repartent 0,2 A et 0,5 A. Étape 3 — Calculer : 0,2 + 0,5 = 0,7 A, différent de 0,6 A. Étape 4 — Vérifier : la loi des nœuds n'est pas respectée, une mesure est fausse. Pourquoi pas « les mesures sont justes parce que 0,5 est plus petit que 0,6 » : il faut comparer la somme des départs à l'arrivée, pas chaque valeur seule.",
+         "answers": [
+          {
+           "content": "Une mesure est fausse : 0,2 + 0,5 = 0,7 A, différent de 0,6 A",
+           "correct": true
+          },
+          {
+           "content": "Les mesures sont justes : 0,5 A est plus petit que 0,6 A",
+           "correct": false
+          },
+          {
+           "content": "Les mesures sont justes : 0,6 A est la moyenne de 0,2 A et 0,5 A",
+           "correct": false
+          },
+          {
+           "content": "Il manque un courant : il doit arriver 0,1 A de plus",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans un montage en dérivation, une branche dérivée peut être traversée par une intensité plus grande que la branche principale.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Nommer : il y a des nœuds, le montage est en dérivation. Étape 2 — Repérer : la branche principale arrive au nœud, les branches dérivées en repartent. Étape 3 — Calculer : I = I₁ + I₂, donc I₁ est plus petit que I. Étape 4 — Vérifier : une branche dérivée est toujours plus petite que la branche principale. Pourquoi pas « Vrai » : on oublie que la branche principale porte la somme de toutes les branches dérivées.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Sujet 4 · Bilan de toutes les notions",
+     "notions": "Bilan : conversions entre mA et A ; branchement de l'ampèremètre, bornes, calibre et sécurité ; lecture d'une intensité sur un ampèremètre à aiguille et sur un multimètre ; intensité en série et loi des nœuds en dérivation.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Dans cet exercice, tu passes du calibre à l'intensité, puis aux bonnes unités. Les valeurs sont fictives.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Relève C et N, lis n, applique I = C × n / N, puis convertis si on te le demande.",
+       "questions": [
+        {
+         "content": "Dans la lampe torche de Koffi, l'ampèremètre à aiguille a 100 divisions et le calibre 1 A est utilisé. L'aiguille s'arrête devant la division 72. Quelle est l'intensité, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 1 A et l'échelle compte N = 100 divisions. Étape 2 — Lire : l'aiguille est devant n = 72 divisions. Étape 3 — Appliquer : I = C × n / N = 1 × 72 / 100 = 0,72 A. Étape 4 — Écrire : I = 0,72 A, avec l'unité du calibre. Pourquoi pas « 72 A » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+         "answers": [
+          {
+           "content": "0,72",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans le circuit d'un ventilateur, l'ampèremètre à aiguille a 30 divisions et le calibre 3 A est utilisé. L'aiguille s'arrête devant la division 5. Quelle est l'intensité, en milliampères ?",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 3 A et l'échelle compte N = 30 divisions. Étape 2 — Lire : l'aiguille est devant n = 5 divisions. Étape 3 — Appliquer : I = C × n / N = 3 × 5 / 30 = 0,5 A. Étape 4 — Écrire : I = 0,5 A, soit 500 mA (on multiplie par 1 000). Pourquoi pas « 5 mA » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+         "answers": [
+          {
+           "content": "500",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans un chargeur testé à l'atelier d'Adjamé, l'ampèremètre indique 105 mA. Exprime cette intensité en ampères.",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Repérer : la valeur donnée est en mA et on demande des A. Étape 2 — Choisir : de mA vers A, on divise par 1 000. Étape 3 — Calculer : 105 mA ÷ 1 000 = 0,105 A. Étape 4 — Vérifier : le nombre en mA (105) est bien 1 000 fois plus grand que le nombre en A (0,105). Pourquoi pas « 105 000 A » : ce serait multiplier par 1 000 au lieu de diviser : l'intensité deviendrait 1 000 fois trop grande.",
+         "answers": [
+          {
+           "content": "0,105",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un ampèremètre a les calibres 3 A, 1 A, 300 mA et 100 mA. On mesure une intensité d'environ 0,25 A. Quel calibre garde-t-on à la fin ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Choisir : on part de 3 A. Étape 4 — Affiner : 0,25 A = 250 mA, donc 100 mA est dépassé ; le plus petit calibre qui reste plus grand que 250 mA est 300 mA. Pourquoi pas « 100 mA » : il serait dépassé par 250 mA et l'appareil risquerait d'être abîmé.",
+         "answers": [
+          {
+           "content": "300 mA",
+           "correct": true
+          },
+          {
+           "content": "100 mA, car 0,25 est proche de 0,1",
+           "correct": false
+          },
+          {
+           "content": "1 A, car c'est un calibre sans risque",
+           "correct": false
+          },
+          {
+           "content": "3 A, car c'est le calibre de départ",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Si un multimètre affiche un signe − devant la valeur, les bornes sont branchées à l'envers.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Relever : le multimètre affiche une valeur et son unité. Étape 2 — Lire : un signe − précède la valeur. Étape 4 — Écrire : le signe − signale des bornes inversées ; sans lui, la valeur donne l'intensité. Pourquoi pas « Faux » : on croirait que le signe − dit que l'intensité est négative, alors qu'il indique seulement un branchement à l'envers.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Dans cet exercice, tu justifies le branchement d'un ampèremètre et les précautions à prendre.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "L'ampèremètre se branche en série, jamais seul aux bornes d'un générateur.",
+       "questions": [
+        {
+         "content": "Aya branche son ampèremètre seul entre les deux bornes d'une pile, sans lampe. Que se passe-t-il ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Placer : un ampèremètre doit être en série avec un récepteur. Étape 2 — Orienter : même bien orienté, branché seul il relie directement les deux bornes de la pile. Étape 3 — Choisir : aucun calibre ne protège de ce montage. Étape 4 — Affiner : on ne mesure rien, on évite le court-circuit. Pourquoi pas « rien de grave » : un courant très grand fait chauffer les fils, comme dans un court-circuit.",
+         "answers": [
+          {
+           "content": "Un court-circuit : un courant très grand chauffe les fils",
+           "correct": true
+          },
+          {
+           "content": "Rien de grave : l'ampèremètre mesure alors l'intensité maximale de la pile",
+           "correct": false
+          },
+          {
+           "content": "L'appareil indique 0 A, car aucun récepteur ne consomme de courant",
+           "correct": false
+          },
+          {
+           "content": "L'ampèremètre indique l'intensité de la lampe qui est dans le circuit",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque élément au rôle qu'il joue dans une mesure d'intensité.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Placer : en série dans la branche. Étape 2 — Orienter : A ou mA du côté de la borne +, COM du côté de la borne −. Étape 3 — Choisir : le plus grand calibre au départ. Étape 4 — Affiner : on le diminue ensuite. Pourquoi pas « borne COM du côté de la borne + » : c'est la borne A ou mA qui y va.",
+         "answers": [
+          {
+           "content": "Branchement de l'ampèremètre",
+           "match": "En série dans la branche étudiée"
+          },
+          {
+           "content": "Borne A ou mA",
+           "match": "Du côté de la borne + du générateur"
+          },
+          {
+           "content": "Borne COM",
+           "match": "Du côté de la borne − du générateur"
+          },
+          {
+           "content": "Premier calibre choisi",
+           "match": "Le plus grand calibre disponible"
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les étapes pour mesurer l'intensité dans une lampe.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Placer l'ampèremètre en série. Étape 2 — Orienter les bornes. Étape 3 — Choisir le plus grand calibre et fermer l'interrupteur. Étape 4 — Affiner le calibre. Pourquoi pas « fermer l'interrupteur avant de placer l'ampèremètre » : il faut d'abord brancher l'appareil, puis laisser passer le courant.",
+         "answers": [
+          {
+           "content": "Ouvrir la branche de la lampe et y placer l'ampèremètre en série."
+          },
+          {
+           "content": "Relier A ou mA vers la borne + et COM vers la borne −."
+          },
+          {
+           "content": "Régler le plus grand calibre, puis fermer l'interrupteur."
+          },
+          {
+           "content": "Diminuer le calibre jusqu'au plus petit calibre possible."
+          }
+         ]
+        },
+        {
+         "content": "Un ampèremètre qui mesure l'intensité dans une lampe est monté ___ avec cette lampe.",
+         "question_type": "select",
+         "explanation": "Étape 1 — Placer : tout le courant de la branche de la lampe doit traverser l'ampèremètre, donc il est en série. Étape 2 — Orienter : on règle ensuite les bornes. Pourquoi pas « en dérivation » : il court-circuiterait la lampe au lieu de mesurer son intensité.",
+         "answers": [
+          {
+           "content": "en série",
+           "correct": true
+          },
+          {
+           "content": "en dérivation",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un calibre plus petit que l'intensité à mesurer risque d'abîmer l'ampèremètre.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Choisir : le calibre est l'intensité maximale mesurable. Étape 4 — Affiner : si l'intensité le dépasse, l'aiguille sort de l'échelle et l'appareil risque d'être abîmé ; on part donc du plus grand calibre. Pourquoi pas « Faux » : on croirait qu'un calibre trop petit ne fait que fausser la lecture, alors qu'il peut aussi abîmer l'appareil.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Dans le salon de la famille Traoré, un kit solaire alimente plusieurs appareils en dérivation. Les valeurs sont fictives.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Au nœud, arrivée = somme des départs ; convertis tout dans la même unité.",
+       "questions": [
+        {
+         "content": "Dans le salon, la branche principale du kit solaire arrive au nœud A avec 1,10 A. Trois branches dérivées en repartent : l'ampoule (0,40 A), la télévision (0,30 A) et le ventilateur. Quelle est l'intensité dans le ventilateur, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 1,1 A ; repartent 0,4 A, 0,3 A et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 1,1 = 0,4 + 0,3 + I, donc I = 1,1 − 0,7 = 0,4 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est plus petite que l'intensité qui arrive. Pourquoi pas « 1,8 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+         "answers": [
+          {
+           "content": "0,4",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans le salon, deux branches dérivées arrivent au nœud B avec des intensités de 0,35 A (ampoule) et 0,45 A (ventilateur). Un seul fil repart de B vers la batterie. Quelle est l'intensité dans le fil de retour, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent I ; repartent 0,35 A, 0,45 A. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit I = 0,35 + 0,45, donc I = 0,8 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est la plus grande intensité du nœud, car elle est la somme des autres. Pourquoi pas « 0,8 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+         "answers": [
+          {
+           "content": "0,8",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans le salon, le ventilateur est traversé par une intensité de 0,45 A. Exprime cette intensité en milliampères.",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Repérer : la valeur donnée est en A et on demande des mA. Étape 2 — Choisir : de A vers mA, on multiplie par 1 000. Étape 3 — Calculer : 0,45 A × 1 000 = 450 mA. Étape 4 — Vérifier : le nombre en mA (450) est bien 1 000 fois plus grand que le nombre en A (0,45). Pourquoi pas « 0,00045 mA » : ce serait diviser par 1 000 au lieu de multiplier : le nombre en mA doit être le plus grand.",
+         "answers": [
+          {
+           "content": "450",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans le salon, la branche principale arrive au nœud A avec 0,8 A. L'ampoule est traversée par 400 mA. Quelle est l'intensité dans l'autre branche dérivée, celle de la télévision ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Nommer : A est un nœud, le montage est en dérivation. Étape 2 — Repérer : arrive 0,8 A ; repartent 400 mA et I. Étape 3 — Calculer : on convertit 400 mA = 0,4 A, puis 0,8 = 0,4 + I, donc I = 0,4 A. Étape 4 — Vérifier : même unité, et 0,4 A est plus petit que 0,8 A. Pourquoi pas « 1,2 A » : ce serait additionner le courant qui arrive et celui qui repart.",
+         "answers": [
+          {
+           "content": "0,4 A, car 0,8 − 0,4 = 0,4",
+           "correct": true
+          },
+          {
+           "content": "400,8 A, en additionnant directement 0,8 et 400",
+           "correct": false
+          },
+          {
+           "content": "0,4 mA, en gardant le nombre sans convertir l'unité",
+           "correct": false
+          },
+          {
+           "content": "1,2 A, en additionnant 0,8 A et 0,4 A",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans une lampe du salon alimentée par une batterie, deux ampèremètres sont placés en série, l'un avant la lampe, l'autre après. Le premier indique 0,28 A. Quelle intensité indique le second, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : il n'y a aucun nœud, le montage est en série. Étape 2 — Repérer : une seule intensité pour toute la boucle. Étape 3 — Calculer : on recopie l'intensité connue, I = 0,28 A. Étape 4 — Vérifier : même unité, et aucune branche dérivée à comparer. Pourquoi pas « 0 » : le courant ne disparaît pas dans un dipôle : la boucle est fermée et l'intensité est la même partout.",
+         "answers": [
+          {
+           "content": "0,28",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Au laboratoire du lycée, tu rédiges une démarche complète qui mêle conversions, lecture et loi des nœuds. Les valeurs sont fictives.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Cite la méthode : place, oriente, choisis, affine ; relève, lis, applique, écris ; nomme, repère, calcule, vérifie.",
+       "questions": [
+        {
+         "content": "Dans la branche principale d'un montage en dérivation du laboratoire, l'ampèremètre à aiguille a 100 divisions et le calibre 300 mA est utilisé. L'aiguille s'arrête devant la division 80. Quelle est l'intensité, en milliampères ?",
+         "question_type": "numeric",
+         "unit": "mA",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 300 mA et l'échelle compte N = 100 divisions. Étape 2 — Lire : l'aiguille est devant n = 80 divisions. Étape 3 — Appliquer : I = C × n / N = 300 × 80 / 100 = 240 mA. Étape 4 — Écrire : I = 240 mA, avec l'unité du calibre. Pourquoi pas « 80 mA » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+         "answers": [
+          {
+           "content": "240",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans une branche dérivée du même montage, l'ampèremètre à aiguille a 50 divisions et le calibre 100 mA est utilisé. L'aiguille s'arrête devant la division 25. Quelle est l'intensité, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Relever : le calibre est C = 100 mA et l'échelle compte N = 50 divisions. Étape 2 — Lire : l'aiguille est devant n = 25 divisions. Étape 3 — Appliquer : I = C × n / N = 100 × 25 / 50 = 50 mA. Étape 4 — Écrire : I = 50 mA, soit 0,05 A (on divise par 1 000). Pourquoi pas « 25 A » : n est un nombre de divisions, pas une intensité : il faut le multiplier par C et le diviser par N.",
+         "answers": [
+          {
+           "content": "0,05",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans un montage en dérivation du laboratoire, la branche principale arrive au nœud A avec 240 mA, soit 0,24 A. Une branche dérivée est traversée par 0,05 A ; l'autre est traversée par une intensité I. Quelle est l'intensité I, en ampères ?",
+         "question_type": "numeric",
+         "unit": "A",
+         "tolerance": 0,
+         "explanation": "Étape 1 — Nommer : le circuit a des nœuds, c'est un montage en dérivation. Étape 2 — Repérer : au nœud, arrivent 0,24 A ; repartent 0,05 A et I. Étape 3 — Calculer : somme des intensités qui arrivent = somme de celles qui partent, soit 0,24 = 0,05 + I, donc I = 0,24 − 0,05 = 0,19 A. Étape 4 — Vérifier : toutes les intensités sont en A et I est plus petite que l'intensité qui arrive. Pourquoi pas « 0,29 A » : ce serait additionner toutes les valeurs sans distinguer celles qui arrivent de celles qui partent.",
+         "answers": [
+          {
+           "content": "0,19",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans le montage du laboratoire, la branche principale est traversée par 240 mA et une branche dérivée par 0,05 A : ces deux valeurs sont compatibles avec la loi des nœuds.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Nommer : le montage est en dérivation. Étape 2 — Repérer : 240 mA arrive, une branche repart avec 0,05 A. Étape 3 — Calculer : 240 mA = 0,24 A, et 0,05 A est plus petit que 0,24 A, donc c'est possible. Étape 4 — Vérifier : même unité après conversion. Pourquoi pas « Faux » : on comparerait 0,05 et 240 sans convertir, et on penserait que 0,05 est trop petit pour être une partie de 240.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un ampèremètre qui reste à fond d'échelle sur un calibre est ___ : il faut passer à un calibre plus grand.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Choisir : le calibre doit rester plus grand que l'intensité. Étape 4 — Affiner : une aiguille à fond d'échelle ou au-delà signale que le calibre est dépassé, donc on remonte au calibre supérieur avant de redescendre. Pourquoi pas « précis » : à fond d'échelle on ne sait même pas si l'intensité est au-dessus du calibre. Pourquoi pas « précis » : la précision se gagne en choisissant le plus petit calibre qui n'est pas dépassé, pas en restant à fond d'échelle.",
+         "answers": [
+          {
+           "content": "dépassé",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Au laboratoire, Yao mesure 0,8 A dans la branche principale et 0,3 A dans une branche dérivée d'un montage à deux branches dérivées. Rédige la démarche pour trouver l'intensité dans l'autre branche, puis donne sa valeur en A et en mA.",
+         "question_type": "written",
+         "points": 4,
+         "criteria": [
+          "Reconnaît un montage en dérivation avec un nœud",
+          "Écrit la loi des nœuds : 0,8 = 0,3 + I",
+          "Calcule I = 0,8 − 0,3 = 0,5 A",
+          "Convertit en mA : 0,5 A = 500 mA"
+         ],
+         "explanation": "Corrigé modèle : Étape 1 — Nommer : le montage a un nœud où la branche principale se partage, c'est un montage en dérivation. Étape 2 — Repérer : arrive 0,8 A ; repartent 0,3 A et I. Étape 3 — Calculer : 0,8 = 0,3 + I, donc I = 0,8 − 0,3 = 0,5 A ; en mA, 0,5 × 1 000 = 500 mA. Étape 4 — Vérifier : 0,5 A est plus petit que 0,8 A, et toutes les valeurs sont en A. Barème sur 4 : 1 point par critère.",
+         "answers": [],
+         "starter": "Le montage est en dérivation, donc…"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
