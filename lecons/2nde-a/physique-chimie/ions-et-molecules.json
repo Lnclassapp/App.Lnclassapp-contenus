@@ -198,6 +198,58 @@
               "label": "Nombre d'atomes de carbone"
             }
           ]
+        },
+        {
+          "key": "ammoniac-developpee",
+          "kind": "molecule",
+          "description": "La formule développée de la molécule d'ammoniac NH₃, dessinée atome par atome : un atome d'azote relié par un trait simple à chacun des trois atomes d'hydrogène. Les trois traits sont les trois doublets liants. Le doublet non liant de l'azote n'est pas dessiné : la fiche le décrit en mots.",
+          "params": {
+            "mode": "custom",
+            "atoms": [
+              {
+                "id": "n",
+                "element": "N",
+                "x": 6,
+                "y": 5
+              },
+              {
+                "id": "h1",
+                "element": "H",
+                "x": 3,
+                "y": 7
+              },
+              {
+                "id": "h2",
+                "element": "H",
+                "x": 9,
+                "y": 7
+              },
+              {
+                "id": "h3",
+                "element": "H",
+                "x": 6,
+                "y": 9
+              }
+            ],
+            "bonds": [
+              [
+                "n",
+                "h1",
+                1
+              ],
+              [
+                "n",
+                "h2",
+                1
+              ],
+              [
+                "n",
+                "h3",
+                1
+              ]
+            ]
+          },
+          "controls": []
         }
       ],
       "notions": [
@@ -1206,7 +1258,7 @@
         },
         {
           "name": "La formule d'un composé ionique",
-          "remember": "Un **composé ionique** (comme le sel de cuisine) est formé de **cations** et d'**anions**. Il est **électriquement neutre** : c'est l'**électroneutralité**. La somme des charges positives est égale à l'opposé de la somme des charges négatives. Sa **formule** écrit le cation, puis l'anion, avec des **indices** qui donnent le plus petit nombre d'ions de chaque sorte ; l'indice 1 ne s'écrit pas et les charges ne s'écrivent pas. Un ion polyatomique d'indice supérieur à 1 se met entre parenthèses : Ca(OH)₂. Son **nom** commence par l'anion, puis le cation : chlorure de sodium NaCl, oxyde de magnésium MgO.",
+          "remember": "Un **composé ionique** (comme le sel de cuisine) est formé de **cations** et d'**anions**. Il est **électriquement neutre** : c'est l'**électroneutralité**. La somme des charges positives est égale à l'opposé de la somme des charges négatives. Sa **formule**, dite aussi **formule statistique**, écrit le cation, puis l'anion, avec des **indices** qui donnent le plus petit nombre d'ions de chaque sorte ; l'indice 1 ne s'écrit pas et les charges ne s'écrivent pas. Un ion polyatomique d'indice supérieur à 1 se met entre parenthèses : Ca(OH)₂. Son **nom** commence par l'anion, puis le cation : chlorure de sodium NaCl, oxyde de magnésium MgO.",
           "method": [
             "Repérer le cation et l'anion, avec leurs charges.",
             "Chercher les nombres d'ions qui rendent la charge totale nulle (plus petit multiple commun des charges).",
@@ -1551,7 +1603,7 @@
         },
         {
           "name": "La liaison covalente et les formules d'une molécule",
-          "remember": "Une **molécule** est un groupe d'atomes liés, électriquement neutre (H₂O, CH₄). Une **liaison covalente** est la mise en commun de **deux électrons**, un de chaque atome : ce **doublet liant** se dessine par un trait. Chaque atome forme autant de liaisons qu'il lui manque d'électrons pour avoir le duet ou l'octet : **H 1, F 1, Cl 1, O 2, N 3, C 4**. Entre deux atomes, la liaison peut être **double** (O=C=O) ou **triple** (N≡N). La **formule développée** montre tous les atomes et toutes les liaisons. La **formule semi-développée** ne dessine pas les liaisons avec l'hydrogène : on écrit CH₃–CH₃ au lieu de dessiner chaque liaison C–H.",
+          "remember": "Une **molécule** est un groupe d'atomes liés, électriquement neutre (H₂O, CH₄). Une **liaison covalente** est la mise en commun de **deux électrons**, un de chaque atome : ce **doublet liant** se dessine par un trait. Chaque atome forme autant de liaisons qu'il lui manque d'électrons pour avoir le duet ou l'octet : **H 1, F 1, Cl 1, O 2, N 3, C 4**. Ce nombre de liaisons est la **valence** de l'atome. Entre deux atomes, la liaison peut être **double** (O=C=O) ou **triple** (N≡N). La **formule développée** montre tous les atomes et toutes les liaisons. La **formule semi-développée** ne dessine pas les liaisons avec l'hydrogène : on écrit CH₃–CH₃ au lieu de dessiner chaque liaison C–H. Une molécule a une **forme dans l'espace**, que montrent les modèles moléculaires : CO₂ est linéaire (angle de 180°), H₂O est coudée (angle d'environ 105°), les 4 liaisons de CH₄ pointent vers les sommets d'un tétraèdre (angles d'environ 109°). Une liaison mesure environ un dixième de nanomètre (O–H dans l'eau : 0,096 nm).",
           "method": [
             "Écrire la structure électronique de chaque atome et compter les électrons qui lui manquent pour atteindre le duet ou l'octet.",
             "Associer les atomes : chaque liaison met en commun un doublet, et chaque atome forme autant de liaisons que d'électrons manquants.",
@@ -1596,7 +1648,7 @@
                 "hint": "Combien d'électrons manque-t-il à la couche L ?"
               },
               {
-                "content": "Combien de liaisons covalentes l'atome d'oxygène ($Z = 8$) forme-t-il ?",
+                "content": "Quelle est la valence de l'atome d'oxygène ($Z = 8$), c'est-à-dire son nombre de liaisons covalentes ?",
                 "question_type": "numeric",
                 "explanation": "Étape 1 — Écrire : O a (K)²(L)⁶. Étape 2 — Associer : il manque 8 − 6 = 2 électrons, donc 2 liaisons.",
                 "answers": [
@@ -1905,6 +1957,684 @@
               "hint": "Pour chaque atome, compte les électrons manquants : c'est son nombre de liaisons."
             }
           ]
+        },
+        {
+          "name": "Les représentations de Lewis de quelques molécules",
+          "remember": "La **représentation de Lewis** d'une molécule montre **tous les doublets de la couche externe**. Un **doublet liant** est partagé entre deux atomes : c'est un trait entre eux (deux traits pour une liaison double, trois pour une triple). Un **doublet non liant** reste sur un seul atome : sur ta copie, il se dessine par un petit trait placé contre cet atome ; ici, on le décrit en mots. Pour un atome : doublets liants = liaisons = électrons manquants ; doublets non liants = (électrons externes − liaisons) ÷ 2. Exemples : H₂ (H–H) ; Cl₂ (Cl–Cl, 3 doublets non liants sur chaque Cl) ; HCl (H–Cl, 3 sur Cl) ; H₂O (H–O–H, 2 sur O) ; NH₃ (3 liaisons, 1 sur N) ; CH₄ (4 liaisons, aucun) ; O₂ (O=O, 2 sur chaque O) ; N₂ (N≡N, 1 sur chaque N) ; CO₂ (O=C=O, 2 sur chaque O, aucun sur C) ; C₂H₄ (liaison double C=C, aucun). **Règle** : dans la représentation, chaque H a 1 doublet (duet), chaque autre atome 4 doublets, liants et non liants confondus (octet).",
+          "method": [
+            "Compter les électrons de la couche externe de chaque atome, à partir de sa structure électronique.",
+            "Calculer les doublets liants de chaque atome : c'est le nombre d'électrons qui lui manquent pour le duet (H) ou l'octet (autres atomes).",
+            "Placer un trait entre deux atomes pour chaque doublet liant.",
+            "Compléter par les doublets non liants de chaque atome : (électrons externes − liaisons de l'atome) ÷ 2.",
+            "Vérifier : chaque H est entouré de 1 doublet (duet), chaque autre atome de 4 doublets, liants et non liants confondus (octet)."
+          ],
+          "example": {
+            "statement": "Donner la représentation de Lewis de l'ammoniac NH₃ (azote $Z = 7$, hydrogène $Z = 1$).",
+            "steps": [
+              "Compter : N a (K)²(L)⁵, soit 5 électrons externes ; H a (K)¹, soit 1 électron externe.",
+              "Calculer : N manque de 8 − 5 = 3 électrons, donc 3 doublets liants ; chaque H manque de 2 − 1 = 1 électron, donc 1 doublet liant.",
+              "Placer : N est relié à chacun des 3 H par un trait, soit 3 doublets liants. La figure montre ces trois traits.",
+              "Compléter : sur N, (5 − 3) ÷ 2 = 1 doublet non liant ; sur chaque H, (1 − 1) ÷ 2 = 0.",
+              "Vérifier : N est entouré de 3 + 1 = 4 doublets (octet) ; chaque H est entouré de 1 doublet (duet)."
+            ]
+          },
+          "pitfall": "Ne pas oublier les doublets non liants. Contre-exemple : H–O–H dessiné avec seulement ses 2 traits laisse l'oxygène avec 2 doublets, soit 4 électrons. L'oxygène a 6 électrons externes : 2 sont dans les liaisons, il reste (6 − 2) ÷ 2 = 2 doublets non liants, ce qui fait 4 doublets et 8 électrons. Vérifie toujours le duet et l'octet.",
+          "figure": "ammoniac-developpee",
+          "practice": {
+            "statement": "Tu t'entraînes à placer les doublets liants et non liants d'une molécule.",
+            "questions": [
+              {
+                "content": "Dans la molécule de dichlore Cl₂ (Cl–Cl), combien de doublets non liants chaque atome de chlore ($Z = 17$) porte-t-il ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Compter : Cl a 7 électrons externes. Étape 2 — Calculer : il manque 1 électron, donc 1 doublet liant. Étape 4 — Compléter : (7 − 1) ÷ 2 = 3 doublets non liants. Étape 5 — Vérifier : 1 + 3 = 4 doublets, c'est l'octet. 7 est le nombre d'électrons externes, pas celui des doublets.",
+                "answers": [
+                  {
+                    "content": "3",
+                    "correct": true
+                  },
+                  {
+                    "content": "7",
+                    "correct": false
+                  },
+                  {
+                    "content": "1",
+                    "correct": false
+                  },
+                  {
+                    "content": "6",
+                    "correct": false
+                  }
+                ],
+                "hint": "Chaque Cl a 7 électrons externes, 1 sert à la liaison."
+              },
+              {
+                "content": "Combien de doublets liants relient les deux atomes d'azote dans la molécule de diazote N₂ ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Compter : N a 5 électrons externes. Étape 2 — Calculer : il manque 8 − 5 = 3 électrons, donc 3 doublets liants. Étape 3 — Placer : N≡N, trois traits entre les deux atomes.",
+                "answers": [
+                  {
+                    "content": "3",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "Compte les électrons qui manquent à N pour l'octet."
+              },
+              {
+                "content": "Dans la représentation de Lewis du dihydrogène H₂ (H–H), aucun atome ne porte de doublet non liant.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Compter : H a 1 électron externe. Étape 2 — Calculer : il manque 1 électron pour le duet, donc 1 doublet liant. Étape 3 — Placer : H–H. Étape 4 — Compléter : (1 − 1) ÷ 2 = 0 doublet non liant. Étape 5 — Vérifier : chaque H a 1 doublet, c'est le duet.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Pour H, le duet est atteint avec la seule liaison."
+              },
+              {
+                "content": "Dans la molécule de dioxygène O=O, chaque atome d'oxygène porte ___ doublets non liants.",
+                "question_type": "select",
+                "explanation": "Étape 1 — Compter : O a 6 électrons externes. Étape 2 — Calculer : il manque 2 électrons, donc 2 doublets liants. Étape 3 — Placer : O=O, deux traits. Étape 4 — Compléter : (6 − 2) ÷ 2 = 2 doublets non liants par atome. Étape 5 — Vérifier : 2 + 2 = 4 doublets, c'est l'octet.",
+                "answers": [
+                  {
+                    "content": "2",
+                    "correct": true
+                  },
+                  {
+                    "content": "0",
+                    "correct": false
+                  },
+                  {
+                    "content": "1",
+                    "correct": false
+                  },
+                  {
+                    "content": "4",
+                    "correct": false
+                  }
+                ],
+                "hint": "La double liaison compte pour 2 liaisons de chaque atome."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Doublets liants et non liants dans des molécules simples",
+              "statement": "Dans cet exercice, tu écris les doublets liants et non liants de molécules simples avec la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Dans la molécule de chlorure d'hydrogène HCl (H–Cl), combien de doublets non liants l'atome de chlore ($Z = 17$) porte-t-il ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Compter : Cl a (K)²(L)⁸(M)⁷, soit 7 électrons externes. Étape 2 — Calculer : il lui manque 8 − 7 = 1 électron, donc 1 doublet liant. Étape 3 — Placer : un trait H–Cl. Étape 4 — Compléter : (7 − 1) ÷ 2 = 3 doublets non liants. Étape 5 — Vérifier : 1 + 3 = 4 doublets, c'est l'octet. Pourquoi pas 6 : 6 est le nombre d'électrons non liants, et un doublet en contient deux.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    },
+                    {
+                      "content": "7",
+                      "correct": false
+                    },
+                    {
+                      "content": "6",
+                      "correct": false
+                    },
+                    {
+                      "content": "1",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans la molécule d'eau H–O–H, combien de doublets non liants l'atome d'oxygène ($Z = 8$) porte-t-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Compter : O a (K)²(L)⁶, soit 6 électrons externes. Étape 2 — Calculer : il lui manque 2 électrons, donc 2 doublets liants. Étape 3 — Placer : deux traits O–H. Étape 4 — Compléter : (6 − 2) ÷ 2 = 2 doublets non liants. Étape 5 — Vérifier : 2 + 2 = 4 doublets, c'est l'octet.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle description est la représentation de Lewis de la molécule d'eau H₂O ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Compter : H a 1 électron externe, O en a 6. Étape 2 — Calculer : H forme 1 liaison, O en forme 2. Étape 3 — Placer : H–O–H, deux doublets liants. Étape 4 — Compléter : sur O, (6 − 2) ÷ 2 = 2 doublets non liants ; sur chaque H, (1 − 1) ÷ 2 = 0. Étape 5 — Vérifier : O a 2 + 2 = 4 doublets (octet), chaque H a 1 doublet (duet). Pourquoi pas la description sans doublet non liant : O n'aurait que 2 doublets, donc 4 électrons.",
+                  "answers": [
+                    {
+                      "content": "H–O–H, l'oxygène porte 2 doublets non liants",
+                      "correct": true
+                    },
+                    {
+                      "content": "H–O–H, l'oxygène ne porte aucun doublet non liant",
+                      "correct": false
+                    },
+                    {
+                      "content": "H–O–H, l'oxygène porte 4 doublets non liants",
+                      "correct": false
+                    },
+                    {
+                      "content": "H–O–H, chaque hydrogène porte 1 doublet non liant",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans la représentation de Lewis du méthane CH₄, l'atome de carbone porte ___ doublet non liant.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Compter : C a (K)²(L)⁴, soit 4 électrons externes. Étape 2 — Calculer : il lui manque 8 − 4 = 4 électrons, donc 4 doublets liants. Étape 3 — Placer : un trait C–H pour chacun des 4 hydrogènes. Étape 4 — Compléter : (4 − 4) ÷ 2 = 0 doublet non liant. Étape 5 — Vérifier : les 4 doublets liants font l'octet.",
+                  "answers": [
+                    {
+                      "content": "0",
+                      "correct": true
+                    },
+                    {
+                      "content": "zéro",
+                      "correct": true
+                    },
+                    {
+                      "content": "aucun",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans la représentation de Lewis de la molécule de dioxyde de carbone CO₂ (O=C=O), combien de doublets liants y a-t-il en tout ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Compter : C a 4 électrons externes, O en a 6. Étape 2 — Calculer : C forme 4 liaisons, chaque O en forme 2. Étape 3 — Placer : O=C=O, deux liaisons doubles, soit 2 traits de chaque côté de C. Chaque trait est un doublet liant : 2 × 2 = 4 doublets liants. Étape 5 — Vérifier : C est entouré de 4 doublets liants (octet).",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Dans la représentation de Lewis de l'eau, l'écriture H–O–H avec seulement 2 traits suffit : l'atome d'oxygène a alors son octet.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Compter : O a 6 électrons externes. Étape 3 — Placer : H–O–H donne 2 doublets liants. Étape 4 — Compléter : il reste (6 − 2) ÷ 2 = 2 doublets non liants à placer sur O. Étape 5 — Vérifier : sans eux, O n'est entouré que de 2 doublets, soit 4 électrons : pas d'octet. Avec eux : 4 doublets, soit 8 électrons.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Représentations de Lewis : liants, non liants et octet",
+              "statement": "Dans cet exercice, tu décris des représentations de Lewis et tu vérifies le duet et l'octet de chaque atome.",
+              "hint": "Pour un atome : doublets liants = électrons manquants ; doublets non liants = (électrons externes − liaisons) ÷ 2.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Relie chaque molécule à la description de sa représentation de Lewis.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Compter les électrons externes : O 6, N 5, C 4, Cl 7, H 1. Étape 2 — Calculer les doublets liants : O 2, N 3, C 4, Cl 1. Étape 4 — Compléter : O (6 − 2) ÷ 2 = 2 ; N (5 − 3) ÷ 2 = 1 ; C (4 − 4) ÷ 2 = 0 ; Cl (7 − 1) ÷ 2 = 3 doublets non liants. Étape 5 — Vérifier : chaque atome autre que H est entouré de 4 doublets.",
+                  "answers": [
+                    {
+                      "content": "H₂O",
+                      "match": "2 doublets liants, 2 non liants sur O"
+                    },
+                    {
+                      "content": "NH₃",
+                      "match": "3 doublets liants, 1 non liant sur N"
+                    },
+                    {
+                      "content": "CH₄",
+                      "match": "4 doublets liants, aucun non liant sur C"
+                    },
+                    {
+                      "content": "HCl",
+                      "match": "1 doublet liant, 3 non liants sur Cl"
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans quelles molécules l'atome central (O, N ou C) porte-t-il au moins un doublet non liant ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Compter : O 6, N 5, C 4 électrons externes. Étape 2 — Calculer : O forme 2 liaisons, N 3, C 4. Étape 4 — Compléter : O (6 − 2) ÷ 2 = 2 et N (5 − 3) ÷ 2 = 1 doublets non liants ; C (4 − 4) ÷ 2 = 0, dans CH₄ comme dans CO₂. Pourquoi pas CO₂ : ce sont les atomes d'oxygène qui portent des doublets non liants, pas le carbone central.",
+                  "answers": [
+                    {
+                      "content": "H₂O",
+                      "correct": true
+                    },
+                    {
+                      "content": "NH₃",
+                      "correct": true
+                    },
+                    {
+                      "content": "CH₄",
+                      "correct": false
+                    },
+                    {
+                      "content": "CO₂",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour écrire la représentation de Lewis d'une molécule.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Compter les électrons externes de chaque atome. Étape 2 — Calculer les doublets liants (électrons manquants). Étape 3 — Placer un trait par doublet liant. Étape 4 — Compléter par les doublets non liants. Étape 5 — Vérifier le duet et l'octet. On ne peut pas compléter avant d'avoir placé les liaisons.",
+                  "answers": [
+                    {
+                      "content": "Compter les électrons externes de chaque atome"
+                    },
+                    {
+                      "content": "Calculer les doublets liants de chaque atome"
+                    },
+                    {
+                      "content": "Placer un trait par doublet liant"
+                    },
+                    {
+                      "content": "Compléter par les doublets non liants"
+                    },
+                    {
+                      "content": "Vérifier le duet et l'octet"
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien de doublets non liants contient en tout la molécule de diazote N₂ (N≡N) ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Compter : N a (K)²(L)⁵, soit 5 électrons externes. Étape 2 — Calculer : il manque 3 électrons, donc 3 doublets liants. Étape 3 — Placer : N≡N, trois traits. Étape 4 — Compléter : (5 − 3) ÷ 2 = 1 doublet non liant par atome, soit 2 en tout. Étape 5 — Vérifier : 3 + 1 = 4 doublets autour de chaque N. Pourquoi pas 1 : il y a deux atomes d'azote, chacun avec son doublet non liant.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Dans la molécule de dichlore Cl₂ (Cl–Cl), les deux atomes sont reliés par un doublet ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Compter : Cl a 7 électrons externes. Étape 2 — Calculer : il lui manque 1 électron, donc 1 doublet liant. Étape 3 — Placer : un trait Cl–Cl, c'est le doublet partagé entre les deux atomes : un doublet liant. Étape 4 — Compléter : (7 − 1) ÷ 2 = 3 doublets non liants sur chaque Cl, qui ne sont pas partagés.",
+                  "answers": [
+                    {
+                      "content": "liant",
+                      "correct": true
+                    },
+                    {
+                      "content": "liants",
+                      "correct": true
+                    },
+                    {
+                      "content": "partagé",
+                      "correct": true
+                    },
+                    {
+                      "content": "commun",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans la molécule d'ammoniac NH₃, combien de doublets, liants et non liants confondus, entourent l'atome d'azote ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Compter : N a 5 électrons externes. Étape 2 — Calculer : 3 doublets liants. Étape 3 — Placer : N–H trois fois. Étape 4 — Compléter : (5 − 3) ÷ 2 = 1 doublet non liant. Étape 5 — Vérifier : 3 + 1 = 4 doublets, soit 8 électrons : l'octet. Pourquoi pas 3 : cela oublie le doublet non liant de l'azote.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    },
+                    {
+                      "content": "3",
+                      "correct": false
+                    },
+                    {
+                      "content": "5",
+                      "correct": false
+                    },
+                    {
+                      "content": "8",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Corps purs, mélanges, composés ioniques et moléculaires",
+          "remember": "Un **corps pur** est formé d'une seule espèce chimique ; un **mélange** en contient plusieurs (l'air, l'eau de mer, l'eau sucrée). Un **corps pur simple** ne contient qu'une seule sorte d'atomes (Fe, O₂, N₂, H₂, Cl₂) ; un **corps pur composé** en contient plusieurs (H₂O, CO₂, NaCl, NH₃). Un composé est **ionique** s'il est formé de cations et d'anions, neutre dans l'ensemble (NaCl, MgCl₂, Ca(OH)₂) : on y trouve en général un métal ou l'ion ammonium NH₄⁺ associé à un anion. Un composé est **moléculaire** s'il est formé de molécules, c'est-à-dire de non-métaux liés par covalence (H₂O, CO₂, CH₄, HCl). La formule d'une molécule donne son nombre réel d'atomes (H₂O : 3 atomes). La formule d'un composé ionique, dite **formule statistique**, ne donne que la proportion des ions (NaCl : autant de Na⁺ que de Cl⁻) : un composé ionique n'est pas fait de molécules.",
+          "method": [
+            "Dire si la matière contient une seule espèce chimique (corps pur) ou plusieurs (mélange).",
+            "Compter les sortes d'atomes de la formule du corps pur : une seule sorte, c'est un corps pur simple ; plusieurs sortes, c'est un corps pur composé.",
+            "Chercher la nature du composé : des cations et des anions (un métal ou l'ion ammonium avec un anion) donnent un composé ionique ; des non-métaux liés par covalence donnent un composé moléculaire.",
+            "Conclure en une phrase avec le nom et la formule de l'espèce."
+          ],
+          "example": {
+            "statement": "Classer le dioxyde de carbone CO₂, gaz des boissons gazeuses.",
+            "steps": [
+              "Dire : le dioxyde de carbone est décrit par une seule formule, CO₂ : c'est un corps pur, pas un mélange.",
+              "Compter : CO₂ contient 2 sortes d'atomes, C et O : c'est un corps pur composé.",
+              "Chercher : C et O sont deux non-métaux liés par covalence (O=C=O), sans cations ni anions : c'est un composé moléculaire.",
+              "Conclure : le dioxyde de carbone CO₂ est un corps pur composé moléculaire."
+            ]
+          },
+          "pitfall": "Compte les **sortes** d'atomes, pas les atomes. Contre-exemple : la molécule de dioxygène O₂ contient 2 atomes, mais une seule sorte, O : c'est un corps pur simple, pas un composé. De même, l'air contient du diazote N₂ et du dioxygène O₂ : plusieurs espèces, donc un mélange et non un corps pur. Enfin, le sel de cuisine NaCl est un composé ionique : il n'est pas fait de molécules NaCl.",
+          "figure": null,
+          "practice": {
+            "statement": "Tu t'entraînes à classer des espèces chimiques de la vie courante.",
+            "questions": [
+              {
+                "content": "L'eau sucrée, obtenue en dissolvant du sucre dans l'eau, est :",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Dire : l'eau sucrée contient de l'eau et du sucre : plusieurs espèces chimiques, donc un mélange. Les étapes suivantes ne concernent que les corps purs.",
+                "answers": [
+                  {
+                    "content": "un mélange",
+                    "correct": true
+                  },
+                  {
+                    "content": "un corps pur simple",
+                    "correct": false
+                  },
+                  {
+                    "content": "un corps pur composé",
+                    "correct": false
+                  }
+                ],
+                "hint": "Combien d'espèces chimiques y a-t-il dedans ?"
+              },
+              {
+                "content": "Le fer Fe est un corps pur simple.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Dire : le fer est une seule espèce chimique, un corps pur. Étape 2 — Compter : sa formule Fe ne contient qu'une sorte d'atomes : c'est un corps pur simple.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Combien de sortes d'atomes dans Fe ?"
+              },
+              {
+                "content": "Le chlorure de magnésium MgCl₂ est formé des ions Mg²⁺ et Cl⁻ : c'est un composé ___.",
+                "question_type": "select",
+                "explanation": "Étape 1 — Dire : MgCl₂ est un corps pur. Étape 2 — Compter : 2 sortes d'atomes, Mg et Cl : corps pur composé. Étape 3 — Chercher : il est formé de cations et d'anions : c'est un composé ionique. Il n'est pas fait de molécules.",
+                "answers": [
+                  {
+                    "content": "ionique",
+                    "correct": true
+                  },
+                  {
+                    "content": "moléculaire",
+                    "correct": false
+                  }
+                ],
+                "hint": "Cherche des cations et des anions."
+              },
+              {
+                "content": "Combien de sortes d'atomes le chlorure d'hydrogène HCl contient-il ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Dire : HCl est un corps pur. Étape 2 — Compter : la formule HCl contient de l'hydrogène H et du chlore Cl, soit 2 sortes d'atomes : c'est un corps pur composé.",
+                "answers": [
+                  {
+                    "content": "2",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "Lis la formule symbole par symbole."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Mélange, corps pur simple ou corps pur composé",
+              "statement": "Dans cet exercice, tu classes des espèces chimiques avec la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Lequel de ces systèmes est un mélange ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Dire : l'air contient du diazote, du dioxygène et d'autres gaz : plusieurs espèces chimiques, c'est un mélange. Le dioxygène O₂, l'eau pure H₂O et le chlorure de sodium NaCl sont chacun une seule espèce : ce sont des corps purs. Pourquoi pas l'eau pure H₂O : elle contient deux sortes d'atomes, mais ses molécules sont toutes identiques.",
+                  "answers": [
+                    {
+                      "content": "L'air",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le dioxygène O₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'eau pure H₂O",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le chlorure de sodium NaCl",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Lequel de ces corps purs est un corps pur simple ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Dire : les quatre propositions sont des corps purs. Étape 2 — Compter : N₂ ne contient qu'une sorte d'atomes, N : c'est un corps pur simple. H₂O (H et O), CO₂ (C et O) et NH₃ (N et H) contiennent deux sortes d'atomes : ce sont des corps purs composés. Pourquoi pas NH₃ : il contient de l'azote, mais aussi de l'hydrogène.",
+                  "answers": [
+                    {
+                      "content": "Le diazote N₂",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'eau H₂O",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le dioxyde de carbone CO₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'ammoniac NH₃",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le chlorure de sodium NaCl, le sel de cuisine, est :",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Dire : NaCl est une seule espèce, un corps pur. Étape 2 — Compter : 2 sortes d'atomes, Na et Cl : c'est un corps pur composé. Étape 3 — Chercher : il est formé des ions Na⁺ et Cl⁻ (un métal et un non-métal) : c'est un composé ionique. Étape 4 — Conclure : le chlorure de sodium est un corps pur composé ionique. Pourquoi pas moléculaire : il ne contient pas de molécules NaCl.",
+                  "answers": [
+                    {
+                      "content": "un composé ionique : Na⁺ et Cl⁻",
+                      "correct": true
+                    },
+                    {
+                      "content": "un composé moléculaire : molécules NaCl",
+                      "correct": false
+                    },
+                    {
+                      "content": "un mélange de sodium et de chlore",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien de sortes d'atomes différentes l'ammoniac NH₃ contient-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Dire : NH₃ est une seule espèce, un corps pur. Étape 2 — Compter : la formule NH₃ contient de l'azote N et de l'hydrogène H, soit 2 sortes d'atomes ; c'est donc un corps pur composé. Le nombre d'atomes (4) n'est pas le nombre de sortes d'atomes.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "L'eau de mer contient de l'eau et du sel dissous : c'est un ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Dire : l'eau de mer contient plusieurs espèces chimiques, de l'eau et des sels dissous : ce n'est pas un corps pur, c'est un mélange. Les étapes suivantes ne s'appliquent qu'à un corps pur.",
+                  "answers": [
+                    {
+                      "content": "mélange",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Le dioxygène O₂ est un corps pur composé, car sa molécule contient 2 atomes.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Dire : O₂ est une seule espèce, un corps pur. Étape 2 — Compter : la formule O₂ ne contient qu'une seule sorte d'atomes, O, même si elle en contient 2 : c'est un corps pur simple. Pour un composé, il faut plusieurs sortes d'atomes, comme H et O dans H₂O.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Classer des espèces chimiques de la vie courante",
+              "statement": "Dans cet exercice, tu classes des espèces chimiques de la vie courante : mélange, corps pur simple ou composé, composé ionique ou moléculaire.",
+              "hint": "Compte les sortes d'atomes de la formule, puis cherche des ions ou des atomes liés par covalence.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Relie chaque espèce à sa classe.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Dire : l'air contient plusieurs espèces, c'est un mélange ; les trois autres sont des corps purs. Étape 2 — Compter : O₂ a une seule sorte d'atomes (simple) ; H₂O et NaCl en ont deux (composés). Étape 3 — Chercher : H₂O est formé de non-métaux liés par covalence (moléculaire) ; NaCl est formé des ions Na⁺ et Cl⁻ (ionique).",
+                  "answers": [
+                    {
+                      "content": "L'air",
+                      "match": "Mélange"
+                    },
+                    {
+                      "content": "Le dioxygène O₂",
+                      "match": "Corps pur simple"
+                    },
+                    {
+                      "content": "L'eau pure H₂O",
+                      "match": "Corps pur composé moléculaire"
+                    },
+                    {
+                      "content": "Le chlorure de sodium NaCl",
+                      "match": "Corps pur composé ionique"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels corps purs sont des composés moléculaires ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 3 — Chercher : CO₂ (C et O) et NH₃ (N et H) sont formés de non-métaux liés par covalence : ce sont des composés moléculaires. NaCl (Na⁺ et Cl⁻) et MgO (Mg²⁺ et O²⁻) contiennent un métal et des ions : ce sont des composés ioniques. Pourquoi pas NaCl : c'est le sel de cuisine, formé d'ions et non de molécules.",
+                  "answers": [
+                    {
+                      "content": "Le dioxyde de carbone CO₂",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'ammoniac NH₃",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le chlorure de sodium NaCl",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'oxyde de magnésium MgO",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour classer une espèce chimique.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Dire si c'est un corps pur ou un mélange. Étape 2 — Compter les sortes d'atomes (simple ou composé). Étape 3 — Chercher la nature du composé (ionique ou moléculaire). Étape 4 — Conclure par une phrase. On ne cherche la nature d'un composé qu'après avoir vu que c'est un corps pur composé.",
+                  "answers": [
+                    {
+                      "content": "Dire si c'est un corps pur ou un mélange"
+                    },
+                    {
+                      "content": "Compter les sortes d'atomes de la formule"
+                    },
+                    {
+                      "content": "Chercher si le composé est ionique ou moléculaire"
+                    },
+                    {
+                      "content": "Conclure en une phrase"
+                    }
+                  ]
+                },
+                {
+                  "content": "Un corps pur dont la formule contient plusieurs sortes d'atomes est un corps pur ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Compter : une seule sorte d'atomes donne un corps pur simple ; plusieurs sortes d'atomes, comme H et O dans H₂O, donnent un corps pur composé.",
+                  "answers": [
+                    {
+                      "content": "composé",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Laquelle de ces formules est celle d'un composé ionique ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Chercher : KCl est formé des ions K⁺ et Cl⁻, un métal et un anion : c'est un composé ionique. CO₂, HCl et NH₃ sont formés de non-métaux liés par covalence : ce sont des composés moléculaires. Pourquoi pas HCl : il contient du chlore, comme KCl, mais l'hydrogène est un non-métal lié à lui par covalence.",
+                  "answers": [
+                    {
+                      "content": "KCl",
+                      "correct": true
+                    },
+                    {
+                      "content": "CO₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "HCl",
+                      "correct": false
+                    },
+                    {
+                      "content": "NH₃",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Parmi O₂, H₂O, NaCl, N₂, CO₂ et Fe, combien sont des corps purs composés ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Dire : les six sont des corps purs. Étape 2 — Compter les sortes d'atomes : O₂ (O), N₂ (N) et Fe (Fe) n'en ont qu'une : corps purs simples. H₂O (H, O), NaCl (Na, Cl) et CO₂ (C, O) en ont deux : corps purs composés, soit 3. Pourquoi pas 5 : O₂ et N₂ ont 2 atomes mais une seule sorte.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                }
+              ]
+            }
+          ]
         }
       ],
       "exercises": [
@@ -1973,7 +2703,7 @@
               "tolerance": 0
             },
             {
-              "content": "Le chlorure de sodium est formé d'ions Na⁺ et Cl⁻ : sa formule est ___.",
+              "content": "Le chlorure de sodium est formé d'ions Na⁺ et Cl⁻ : sa formule statistique est ___.",
               "question_type": "fill_blank",
               "explanation": "Étape 1 — Repérer : Na⁺ (+1) et Cl⁻ (−1). Étape 2 — Chercher : 1 ion de chaque sorte compense les charges. Étape 3 — Écrire : NaCl, sans charges ni indice 1. Étape 4 — Vérifier : +1 − 1 = 0.",
               "answers": [
@@ -2078,16 +2808,27 @@
               ]
             },
             {
-              "content": "Combien d'atomes contient une unité de formule Mg(OH)₂ ?",
-              "question_type": "numeric",
-              "explanation": "Étape 1 — Lire : 1 atome de magnésium, et 2 ions HO⁻ de 2 atomes chacun. Étape 3 — Calculer : 1 + 2 × 2 = 5 atomes. Compter 3 atomes oublierait que l'indice 2 concerne O et H.",
+              "content": "Le lait de magnésie est de l'eau qui contient de l'hydroxyde de magnésium Mg(OH)₂ en suspension. Que sont, dans l'ordre, le lait de magnésie et l'hydroxyde de magnésium ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Dire : le lait de magnésie contient de l'eau et de l'hydroxyde de magnésium, plusieurs espèces : c'est un mélange. L'hydroxyde de magnésium seul est un corps pur. Étape 2 — Compter : Mg(OH)₂ contient 3 sortes d'atomes (Mg, O, H) : corps pur composé. Étape 3 — Chercher : il est formé des ions Mg²⁺ et HO⁻ : composé ionique. Étape 4 — Conclure : un mélange, puis un corps pur composé ionique. Pourquoi pas un composé moléculaire : Mg²⁺ et HO⁻ sont des ions, pas des molécules.",
               "answers": [
                 {
-                  "content": "5",
+                  "content": "Un mélange ; un corps pur composé ionique",
                   "correct": true
+                },
+                {
+                  "content": "Un corps pur composé ; un composé moléculaire",
+                  "correct": false
+                },
+                {
+                  "content": "Un mélange ; un composé moléculaire",
+                  "correct": false
+                },
+                {
+                  "content": "Un corps pur simple ; un composé ionique",
+                  "correct": false
                 }
-              ],
-              "tolerance": 0
+              ]
             }
           ],
           "hint": "Repère les ions et leurs charges ; l'indice d'une parenthèse multiplie tous les atomes qu'elle contient."
@@ -2099,9 +2840,9 @@
           "figure": "eau-developpee",
           "questions": [
             {
-              "content": "Combien de liaisons covalentes l'atome de carbone ($Z = 6$) forme-t-il ?",
+              "content": "Quelle est la valence de l'atome de carbone ($Z = 6$), c'est-à-dire son nombre de liaisons covalentes ?",
               "question_type": "single_choice",
-              "explanation": "Étape 1 — Écrire : C a (K)²(L)⁴, soit 4 électrons externes. Étape 2 — Associer : il en manque 8 − 4 = 4, donc 4 liaisons. 6 est le numéro atomique du carbone, pas son nombre de liaisons.",
+              "explanation": "Étape 1 — Écrire : C a (K)²(L)⁴, soit 4 électrons externes. Étape 2 — Associer : il en manque 8 − 4 = 4, donc 4 liaisons. 6 est le numéro atomique du carbone, pas son nombre de liaisons. Pourquoi pas 8 : c'est le nombre d'électrons de l'octet, pas le nombre de liaisons.",
               "answers": [
                 {
                   "content": "4",
@@ -2168,12 +2909,12 @@
               ]
             },
             {
-              "content": "Dans la molécule d'éthane C₂H₆ (2 carbones liés entre eux), combien de liaisons C–H contient-elle ?",
+              "content": "Dans la représentation de Lewis du dioxyde de carbone CO₂ (O=C=O), combien de doublets non liants chaque atome d'oxygène ($Z = 8$) porte-t-il ?",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Écrire : chaque carbone forme 4 liaisons, chaque hydrogène 1. Étape 2 — Associer : 2 × 4 = 8 liaisons de carbone, dont 2 servent à l'unique liaison C–C : il reste 8 − 2 = 6 liaisons C–H. Étape 3 — Dessiner : 3 traits C–H sur chaque carbone, soit 6 traits.",
+              "explanation": "Étape 1 — Compter : O a (K)²(L)⁶, soit 6 électrons externes. Étape 2 — Calculer : il manque 8 − 6 = 2 électrons, donc 2 doublets liants (la liaison double). Étape 3 — Placer : O=C=O, deux traits entre O et C. Étape 4 — Compléter : (6 − 2) ÷ 2 = 2 doublets non liants sur chaque O. Étape 5 — Vérifier : 2 + 2 = 4 doublets, c'est l'octet. Pourquoi pas 0 : sans doublet non liant, O n'aurait que 4 électrons autour de lui.",
               "answers": [
                 {
-                  "content": "6",
+                  "content": "2",
                   "correct": true
                 }
               ],
@@ -3473,7 +4214,7 @@
         },
         {
           "title": "Sujet 4 · Bilan de la leçon",
-          "notions": "Bilan : règles du duet et de l'octet, ions monoatomiques, ions polyatomiques, formule d'un composé ionique et électroneutralité, liaison covalente et formules d'une molécule.",
+          "notions": "Bilan : règles du duet et de l'octet, ions monoatomiques, ions polyatomiques, formule statistique d'un composé ionique et électroneutralité, liaison covalente et valence, formules d'une molécule, représentation de Lewis d'une molécule, corps purs, mélanges, composés ioniques et moléculaires.",
           "exercises": [
             {
               "title": "Exercice 1",
@@ -3518,9 +4259,9 @@
                   ]
                 },
                 {
-                  "content": "Quelle est la formule du chlorure de magnésium, formé d'ions Mg²⁺ et Cl⁻ ?",
+                  "content": "Quelle est la formule statistique du chlorure de magnésium, formé d'ions Mg²⁺ et Cl⁻ ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Repérer : Mg²⁺ (+2) et Cl⁻ (−1). Étape 2 — Chercher : 1 ion Mg²⁺ pour 2 ions Cl⁻. Étape 3 — Écrire : MgCl₂. Étape 4 — Vérifier : +2 − 2 = 0. MgCl donnerait +2 − 1 = +1.",
+                  "explanation": "Étape 1 — Repérer : Mg²⁺ (+2) et Cl⁻ (−1). Étape 2 — Chercher : 1 ion Mg²⁺ pour 2 ions Cl⁻. Étape 3 — Écrire : MgCl₂. Étape 4 — Vérifier : +2 − 2 = 0. Pourquoi pas MgCl : +2 − 1 = +1, le composé ne serait pas neutre.",
                   "answers": [
                     {
                       "content": "MgCl₂",
@@ -3667,41 +4408,41 @@
             },
             {
               "title": "Exercice 3",
-              "statement": "On compare quelques molécules du quotidien : l'eau, le méthane du gaz naturel, le dioxygène de l'air, le diazote et le butane.",
+              "statement": "On compare quelques molécules du quotidien : l'eau, le méthane du gaz naturel, le dioxygène de l'air, le diazote et le propane, un des gaz du gaz de cuisine.",
               "exercise_type": "evaluation",
               "figure": null,
               "hint": "Pour chaque molécule, compte les électrons manquants de chaque atome.",
               "questions": [
                 {
-                  "content": "Quelle est la formule développée de la molécule d'eau H₂O ?",
+                  "content": "Quelle description est la représentation de Lewis du dioxygène O₂ ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Écrire : H manque d'1 électron, O de 2. Étape 2 — Associer : O forme 2 liaisons simples avec 2 H. Étape 3 — Dessiner : H–O–H. H ne peut former qu'une liaison.",
+                  "explanation": "Étape 1 — Compter : O a (K)²(L)⁶, soit 6 électrons externes. Étape 2 — Calculer : il manque 2 électrons, donc 2 doublets liants. Étape 3 — Placer : O=O, une liaison double entre les deux atomes. Étape 4 — Compléter : (6 − 2) ÷ 2 = 2 doublets non liants sur chaque O. Étape 5 — Vérifier : 2 + 2 = 4 doublets, soit 8 électrons : l'octet. Pourquoi pas la description sans doublet non liant : chaque O n'aurait que 4 électrons autour de lui.",
                   "answers": [
                     {
-                      "content": "H–O–H",
+                      "content": "O=O, 2 doublets non liants sur chaque O",
                       "correct": true
                     },
                     {
-                      "content": "H=O=H",
+                      "content": "O–O, 3 doublets non liants sur chaque O",
                       "correct": false
                     },
                     {
-                      "content": "O–H–O",
+                      "content": "O=O, aucun doublet non liant sur O",
                       "correct": false
                     },
                     {
-                      "content": "H–H–O",
+                      "content": "O=O, 4 doublets non liants sur chaque O",
                       "correct": false
                     }
                   ]
                 },
                 {
-                  "content": "Dans la molécule de butane C₄H₁₀ (4 carbones en chaîne), combien de liaisons C–H y a-t-il ?",
+                  "content": "Dans la molécule de diazote N₂, quelle est la valence de chaque atome d'azote ($Z = 7$), c'est-à-dire son nombre de liaisons covalentes ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Écrire : C forme 4 liaisons, H une seule. Étape 2 — Associer : 4 × 4 = 16 liaisons de carbone ; 3 liaisons C–C en utilisent 2 × 3 = 6 ; il reste 16 − 6 = 10 liaisons C–H. Étape 3 — Dessiner : 10 traits C–H, un par atome d'hydrogène.",
+                  "explanation": "Étape 1 — Écrire : N a (K)²(L)⁵, soit 5 électrons externes ; pour l'octet, il lui manque 8 − 5 = 3 électrons. Étape 2 — Associer : chaque atome forme autant de liaisons que d'électrons manquants, donc 3 liaisons : la valence de l'azote est 3. Étape 3 — Dessiner : les deux atomes N sont reliés par 3 traits, N≡N. Pourquoi pas 5 : 5 est le nombre d'électrons externes, pas le nombre de liaisons.",
                   "answers": [
                     {
-                      "content": "10",
+                      "content": "3",
                       "correct": true
                     }
                   ],
@@ -3832,24 +4573,24 @@
                   "tolerance": 0
                 },
                 {
-                  "content": "Quelle espèce est électriquement neutre ?",
+                  "content": "Le dioxyde de carbone CO₂ des boissons gazeuses est :",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Repérer : un ion a une charge ; une molécule est neutre. Étape 2 — Vérifier : SO₄²⁻, Na⁺ et Cl⁻ sont des ions chargés ; O₂ est une molécule. Un composé ionique est neutre dans son ensemble, mais ses ions sont chargés.",
+                  "explanation": "Étape 1 — Dire : CO₂ est décrit par une seule formule : un corps pur. Étape 2 — Compter : 2 sortes d'atomes, C et O : corps pur composé. Étape 3 — Chercher : C et O sont des non-métaux liés par covalence (O=C=O) : composé moléculaire. Étape 4 — Conclure : un corps pur composé moléculaire. Pourquoi pas un mélange de carbone et d'oxygène : ses atomes sont liés dans une même molécule, ce n'est pas un mélange.",
                   "answers": [
                     {
-                      "content": "La molécule de dioxygène O₂",
+                      "content": "Un corps pur composé moléculaire",
                       "correct": true
                     },
                     {
-                      "content": "L'ion sulfate SO₄²⁻",
+                      "content": "Un corps pur simple",
                       "correct": false
                     },
                     {
-                      "content": "L'ion sodium Na⁺",
+                      "content": "Un mélange de carbone et d'oxygène",
                       "correct": false
                     },
                     {
-                      "content": "L'ion chlorure Cl⁻",
+                      "content": "Un corps pur composé ionique",
                       "correct": false
                     }
                   ]

@@ -145,6 +145,68 @@
             ]
           },
           "controls": []
+        },
+        {
+          "key": "plan-incline",
+          "kind": "coordinate_plane",
+          "description": "Un plan à carreaux. Une planche rugueuse monte vers la droite : c'est le segment qui part de (0 ; 0) et finit en (8 ; 6). Une caisse posée dessus est réduite à son centre de gravité G, en (4 ; 3,8), juste au-dessus du point de contact C (4 ; 3). Le poids P part de G vers le bas. La réaction R part de C, verticale vers le haut, de même longueur que P. Elle se décompose en RN, perpendiculaire à la planche, et RT, parallèle à la planche vers le haut.",
+          "params": {
+            "xmin": 0,
+            "xmax": 10,
+            "ymin": -3,
+            "ymax": 9,
+            "points": [
+              {
+                "id": "G",
+                "x": 4,
+                "y": 3.8
+              },
+              {
+                "id": "C",
+                "x": 4,
+                "y": 3
+              }
+            ],
+            "segments": [
+              {
+                "x1": 0,
+                "y1": 0,
+                "x2": 8,
+                "y2": 6
+              }
+            ],
+            "vectors": [
+              {
+                "label": "P",
+                "dx": 0,
+                "dy": -5,
+                "ox": 4,
+                "oy": 3.8
+              },
+              {
+                "label": "R",
+                "dx": 0,
+                "dy": 5,
+                "ox": 4,
+                "oy": 3
+              },
+              {
+                "label": "RN",
+                "dx": -2.4,
+                "dy": 3.2,
+                "ox": 4,
+                "oy": 3
+              },
+              {
+                "label": "RT",
+                "dx": 2.4,
+                "dy": 1.8,
+                "ox": 4,
+                "oy": 3
+              }
+            ]
+          },
+          "controls": []
         }
       ],
       "notions": [
@@ -801,6 +863,340 @@
           ]
         },
         {
+          "name": "Réactions normale et tangentielle sur un plan incliné",
+          "remember": "La **réaction** $\\vec R$ d'un support est la force de contact que le support exerce sur le solide. On la décompose en deux forces : la **réaction normale** $\\vec R_N$, **perpendiculaire** au support, et la **réaction tangentielle** $\\vec R_T$, **parallèle** au support. $\\vec R_T$ est la **force de frottement**. On a $\\vec R = \\vec R_N + \\vec R_T$. Si le contact est **sans frottement**, $\\vec R_T = \\vec 0$ : la réaction est perpendiculaire au support. Un solide simplement posé et en équilibre sur un **plan incliné** subit deux forces seulement : son poids $\\vec P$ et la réaction $\\vec R$. Par l'équilibre sous deux forces, $\\vec R$ est **verticale**, **vers le haut**, et $R = P$. Le plan est incliné : la verticale n'est pas perpendiculaire au plan. Donc $\\vec R$ n'est **pas** perpendiculaire au plan : elle a une composante tangentielle, dirigée vers le haut du plan. **Sans frottement**, le solide glisse : il ne reste pas en équilibre sur un plan incliné.",
+          "method": [
+            "Dresser le bilan : écrire les deux forces exercées sur le solide posé sur le support, son poids et la réaction du support.",
+            "Appliquer l'équilibre : la réaction a la même droite d'action que le poids (la verticale), un sens opposé (vers le haut) et la même intensité.",
+            "Comparer la direction de la réaction avec le support : est-elle perpendiculaire au support, oui ou non ?",
+            "Nommer les composantes : la réaction normale $\\vec R_N$ est perpendiculaire au support, la réaction tangentielle $\\vec R_T$ est parallèle au support.",
+            "Conclure sur les frottements : si $\\vec R_T \\neq \\vec 0$, il y a des frottements ; si le contact est sans frottement, $\\vec R_T = \\vec 0$ et un solide simplement posé ne peut pas rester en équilibre sur un plan incliné."
+          ],
+          "example": {
+            "statement": "Une caisse de 10 kg reste immobile sur une planche rugueuse inclinée. Donner la direction, le sens et l'intensité de la réaction de la planche, puis dire si elle a une réaction tangentielle. On prend $g = 10$ N/kg.",
+            "steps": [
+              "Dresser le bilan : le système est la caisse ; ses deux forces sont son poids $\\vec P$ et la réaction $\\vec R$ de la planche.",
+              "Appliquer l'équilibre : $\\vec R$ est verticale, vers le haut, et $R = P = 10 \\times 10 = 100$ N.",
+              "Comparer : la planche est inclinée, donc la verticale n'est pas perpendiculaire à la planche : $\\vec R$ n'est pas perpendiculaire à la planche.",
+              "Nommer les composantes : $\\vec R$ se décompose en $\\vec R_N$ (perpendiculaire à la planche) et $\\vec R_T$ (parallèle à la planche, vers le haut de la planche) ; $\\vec R_T \\neq \\vec 0$.",
+              "Conclure : $\\vec R_T$ est la force de frottement. La caisse reste immobile grâce aux frottements ; sur une planche sans frottement, elle glisserait."
+            ]
+          },
+          "pitfall": "Ne pas croire que la réaction d'un support est toujours perpendiculaire au support : elle l'est quand $\\vec R_T = \\vec 0$, par exemple sans frottement ou pour un solide simplement posé sur un support horizontal ; sur un plan incliné rugueux, elle ne l'est pas. Contre-exemple : une caisse de 10 kg est immobile sur une planche rugueuse inclinée. Si $\\vec R$ était perpendiculaire à la planche, elle ne serait pas opposée au poids vertical : $\\vec P + \\vec R$ ne serait pas nul et la caisse glisserait. À l'équilibre, $\\vec R$ est verticale, avec $R = 100$ N, et elle a une composante tangentielle.",
+          "figure": "plan-incline",
+          "practice": {
+            "statement": "Tu t'entraînes à décomposer la réaction d'un support et à l'utiliser sur un plan incliné.",
+            "questions": [
+              {
+                "content": "La composante de la réaction d'un support qui est perpendiculaire au support s'appelle la réaction ___.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 3 — Comparer la direction avec le support : on regarde la composante perpendiculaire au support. Étape 4 — Nommer les composantes : la composante perpendiculaire est la réaction normale $\\vec R_N$ (« normale » veut dire perpendiculaire) ; la composante parallèle est la réaction tangentielle $\\vec R_T$.",
+                "answers": [
+                  {
+                    "content": "normale",
+                    "correct": true
+                  },
+                  {
+                    "content": "la normale",
+                    "correct": true
+                  },
+                  {
+                    "content": "normal",
+                    "correct": true
+                  }
+                ],
+                "hint": "Normale veut dire perpendiculaire."
+              },
+              {
+                "content": "Une caisse est immobile sur une planche rugueuse inclinée. Quelle est la direction de la réaction de la planche sur la caisse ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Dresser le bilan : la caisse subit son poids $\\vec P$ et la réaction $\\vec R$. Étape 2 — Appliquer l'équilibre : $\\vec R$ a la même droite d'action que $\\vec P$ (la verticale) et un sens opposé : verticale, vers le haut. Pourquoi pas « perpendiculaire à la planche » : une réaction perpendiculaire à la planche inclinée n'est pas sur la verticale, elle ne compenserait pas le poids.",
+                "answers": [
+                  {
+                    "content": "Verticale, vers le haut",
+                    "correct": true
+                  },
+                  {
+                    "content": "Perpendiculaire à la planche, vers le haut",
+                    "correct": false
+                  },
+                  {
+                    "content": "Parallèle à la planche, vers le haut de la planche",
+                    "correct": false
+                  },
+                  {
+                    "content": "Verticale, vers le bas",
+                    "correct": false
+                  }
+                ],
+                "hint": "La réaction est opposée au poids."
+              },
+              {
+                "content": "Un seau de 3 kg est immobile sur un plan incliné rugueux. On prend $g = 10$ N/kg. Quelle est l'intensité de la réaction du plan, en N ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Dresser le bilan : le seau subit son poids $\\vec P$ et la réaction $\\vec R$. Étape 2 — Appliquer l'équilibre : $R = P = 3 \\times 10 = 30$ N, même si le plan est incliné.",
+                "answers": [
+                  {
+                    "content": "30",
+                    "correct": true
+                  }
+                ],
+                "unit": "N",
+                "tolerance": 0,
+                "hint": "À l'équilibre, $R = P = m \\times g$."
+              },
+              {
+                "content": "Sur un plan incliné sans frottement, un solide soumis à son poids et à la réaction du plan peut rester immobile.",
+                "question_type": "true_false",
+                "explanation": "Étape 4 — Nommer les composantes : sans frottement, $\\vec R_T = \\vec 0$ et la réaction est perpendiculaire au plan. Étape 5 — Conclure sur les frottements : cette réaction n'est pas opposée au poids vertical, donc le solide glisse ; l'affirmation est fausse. Pourquoi pas vrai : il faut la composante tangentielle, donc des frottements, pour que $\\vec R$ soit verticale.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Sans frottement, la réaction est perpendiculaire au plan."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Une caisse immobile sur une planche inclinée",
+              "statement": "Au marché, une caisse de 8 kg reste immobile sur une planche rugueuse inclinée. La figure montre le poids P, la réaction R de la planche et ses deux composantes RN et RT. On prend $g = 10$ N/kg. Tu fais le bilan des forces et tu nommes les composantes de la réaction.",
+              "exercise_type": "fixation",
+              "figure": "plan-incline",
+              "questions": [
+                {
+                  "content": "Une caisse est immobile sur une planche rugueuse inclinée. Quelles forces sont exercées sur la caisse ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Dresser le bilan : on ne compte que les forces exercées sur la caisse : le poids (la Terre) et la réaction de la planche (le contact). Pourquoi pas « la force pressante » : elle s'exerce sur la planche, pas sur la caisse. Pourquoi pas « une force de montée » : aucun objet ne tire la caisse vers le haut de la planche ; c'est la réaction tangentielle de la planche qui joue ce rôle.",
+                  "answers": [
+                    {
+                      "content": "Son poids",
+                      "correct": true
+                    },
+                    {
+                      "content": "La réaction de la planche",
+                      "correct": true
+                    },
+                    {
+                      "content": "La force pressante de la caisse sur la planche",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une force de montée dirigée vers le haut de la planche",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une caisse de 8 kg est immobile sur une planche rugueuse inclinée. On prend $g = 10$ N/kg. Quelle est l'intensité de la réaction de la planche, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Dresser le bilan : $\\vec P$ et $\\vec R$. Étape 2 — Appliquer l'équilibre : $R = P = 8 \\times 10 = 80$ N. Pourquoi pas 8 N : c'est la masse en kg ; on calcule d'abord le poids.",
+                  "answers": [
+                    {
+                      "content": "80",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une caisse de 8 kg est immobile sur une planche rugueuse inclinée. Quelle est la direction de la réaction de la planche ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Dresser le bilan : $\\vec P$ et $\\vec R$ seulement. Étape 2 — Appliquer l'équilibre : $\\vec R$ est sur la même droite que $\\vec P$, de sens opposé : verticale, vers le haut. Étape 3 — Comparer : cette verticale n'est pas perpendiculaire à la planche inclinée. Pourquoi pas « perpendiculaire à la planche » : c'est la direction de $\\vec R_N$ seule, qui ne suffit pas à équilibrer le poids.",
+                  "answers": [
+                    {
+                      "content": "Verticale, vers le haut",
+                      "correct": true
+                    },
+                    {
+                      "content": "Perpendiculaire à la planche, vers le haut",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parallèle à la planche, vers le haut de la planche",
+                      "correct": false
+                    },
+                    {
+                      "content": "Verticale, vers le bas, comme le poids",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une caisse est immobile sur une planche rugueuse inclinée. Parmi les composantes de la réaction de la planche, laquelle représente la force de frottement ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 3 — Comparer la direction avec le support : la composante parallèle à la planche est la réaction tangentielle. Étape 4 — Nommer les composantes : $\\vec R_T$ est la force de frottement. Pourquoi pas la réaction normale : elle est perpendiculaire à la planche, elle empêche la caisse de s'enfoncer, elle ne retient pas la caisse le long de la planche.",
+                  "answers": [
+                    {
+                      "content": "La réaction tangentielle, parallèle à la planche",
+                      "correct": true
+                    },
+                    {
+                      "content": "La réaction normale, perpendiculaire à la planche",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le poids de la caisse, vertical vers le bas",
+                      "correct": false
+                    },
+                    {
+                      "content": "La force pressante de la caisse sur la planche",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une caisse est immobile sur une planche rugueuse inclinée. Sa réaction est perpendiculaire à la planche, puisque la caisse ne s'enfonce pas dans la planche.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Appliquer l'équilibre : $\\vec R$ est opposée au poids, donc verticale. Étape 3 — Comparer : la planche est inclinée, la verticale n'est pas perpendiculaire à la planche. Étape 4 — Nommer les composantes : $\\vec R$ a une composante tangentielle. Pourquoi pas vrai : une réaction perpendiculaire à la planche inclinée n'aurait pas de composante tangentielle, et la caisse glisserait ; empêcher la caisse de s'enfoncer, c'est le rôle de la seule réaction normale.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "À l'équilibre, la réaction est verticale, vers le haut, et $R = P$ ; elle a une composante parallèle à la planche."
+            },
+            {
+              "title": "Réaction normale, réaction tangentielle et frottements",
+              "statement": "Dans cet exercice, tu nommes les composantes de la réaction d'un support et tu vérifies si un solide peut rester en équilibre sur un plan incliné. On prend $g = 10$ N/kg.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Relie chaque force à sa description.",
+                  "question_type": "matching",
+                  "explanation": "Étape 3 — Comparer avec le support : $\\vec R_N$ est perpendiculaire, $\\vec R_T$ est parallèle. Étape 4 — Nommer les composantes : $\\vec R_T$ est la force de frottement ; la réaction complète est la somme $\\vec R = \\vec R_N + \\vec R_T$.",
+                  "answers": [
+                    {
+                      "content": "Réaction normale $\\vec R_N$",
+                      "match": "Perpendiculaire au support"
+                    },
+                    {
+                      "content": "Réaction tangentielle $\\vec R_T$",
+                      "match": "Parallèle au support : force de frottement"
+                    },
+                    {
+                      "content": "Réaction $\\vec R$ du support",
+                      "match": "Somme de $\\vec R_N$ et de $\\vec R_T$"
+                    }
+                  ]
+                },
+                {
+                  "content": "Un solide est posé sur un support sans frottement. Sa réaction tangentielle est ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 4 — Nommer les composantes : la réaction tangentielle est la force de frottement. Étape 5 — Conclure sur les frottements : sans frottement, $\\vec R_T = \\vec 0$ : elle est nulle. Pourquoi pas « égale à son poids » : le poids est vertical et vers le bas, il n'a rien à voir avec une composante de la réaction.",
+                  "answers": [
+                    {
+                      "content": "nulle",
+                      "correct": true
+                    },
+                    {
+                      "content": "égale à son poids",
+                      "correct": false
+                    },
+                    {
+                      "content": "égale à sa réaction normale",
+                      "correct": false
+                    },
+                    {
+                      "content": "dirigée vers le bas",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un solide de 6 kg est immobile sur un plan incliné rugueux. On prend $g = 10$ N/kg. Quelle est l'intensité de la réaction du plan, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Dresser le bilan : $\\vec P$ et $\\vec R$. Étape 2 — Appliquer l'équilibre : $R = P = 6 \\times 10 = 60$ N.",
+                  "answers": [
+                    {
+                      "content": "60",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "On pose une caisse sur une planche inclinée très glissante, sans aucun frottement. Que se passe-t-il ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Dresser le bilan : $\\vec P$ et $\\vec R$. Étape 3 — Comparer : sans frottement, $\\vec R$ est perpendiculaire à la planche, donc pas verticale. Étape 5 — Conclure sur les frottements : $\\vec P + \\vec R \\neq \\vec 0$, la caisse glisse vers le bas. Pourquoi pas « elle reste immobile » : il faudrait une composante tangentielle, donc des frottements.",
+                  "answers": [
+                    {
+                      "content": "La caisse glisse : la réaction, perpendiculaire à la planche, ne compense pas le poids",
+                      "correct": true
+                    },
+                    {
+                      "content": "La caisse reste immobile, car la réaction de la planche compense exactement le poids",
+                      "correct": false
+                    },
+                    {
+                      "content": "La caisse reste immobile, car la planche inclinée la retient comme une main",
+                      "correct": false
+                    },
+                    {
+                      "content": "La caisse monte le long de la planche, poussée par la réaction",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour étudier un solide en équilibre sur un plan incliné rugueux.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Dresser le bilan ; Étape 2 — Appliquer l'équilibre ; Étape 3 — Comparer la direction avec le support ; Étape 4 — Nommer les composantes ; Étape 5 — Conclure sur les frottements. On ne compare pas la réaction au support avant de savoir qu'elle est verticale.",
+                  "answers": [
+                    {
+                      "content": "Dresser le bilan : le poids et la réaction du support"
+                    },
+                    {
+                      "content": "Appliquer l'équilibre : réaction verticale, vers le haut, de même intensité que le poids"
+                    },
+                    {
+                      "content": "Comparer la direction de la réaction avec le support"
+                    },
+                    {
+                      "content": "Nommer la réaction normale et la réaction tangentielle"
+                    },
+                    {
+                      "content": "Conclure sur les frottements"
+                    }
+                  ]
+                },
+                {
+                  "content": "Un solide est en équilibre sur un plan incliné rugueux. Sa réaction est plus petite que son poids, parce que la réaction est inclinée.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Appliquer l'équilibre : $\\vec R$ est opposée à $\\vec P$ : $R = P$. Étape 3 — Comparer : la réaction est verticale, pas inclinée. Pourquoi pas vrai : c'est la composante normale $R_N$ qui est plus petite que $R$ ; la réaction totale $R$ garde la valeur du poids.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "La réaction normale est perpendiculaire au support ; la réaction tangentielle est parallèle au support et représente le frottement."
+            }
+          ]
+        },
+        {
           "name": "Trouver et représenter une force inconnue",
           "remember": "Un solide est en équilibre sous deux forces. Si on connaît l'une, on en déduit l'autre : **même direction** (même droite d'action), **sens opposé**, **même intensité**. Le **point d'application** de la force inconnue n'est pas forcément le même : on le lit sur la situation (centre de gravité G pour le poids, point d'attache pour la tension d'un fil, point de contact pour la réaction d'un support). Pour **représenter** les forces, on choisit une **échelle**, par exemple 1 cm pour 10 N : longueur de la flèche (en cm) = intensité (en N) ÷ nombre de newtons pour 1 cm. Deux forces de même intensité ont des flèches de **même longueur**.",
           "method": [
@@ -1429,8 +1825,8 @@
           "hint": "Poids : $P = m \\times g$. À l'équilibre : $R = P$. Longueur de flèche = intensité ÷ échelle."
         },
         {
-          "title": "Un solide au laboratoire : dynamomètre et paillasse",
-          "statement": "Au laboratoire, un élève accroche un solide S à un dynamomètre de calibre 10 N. Le solide est immobile et le dynamomètre indique 6 N. L'élève pose ensuite S sur la paillasse horizontale. On prend $g = 10$ N/kg et l'échelle 1 cm pour 2 N.",
+          "title": "Un solide au laboratoire : dynamomètre, paillasse et planche inclinée",
+          "statement": "Au laboratoire, un élève accroche un solide S à un dynamomètre de calibre 10 N. Le solide est immobile et le dynamomètre indique 6 N. L'élève pose ensuite S sur la paillasse horizontale, puis sur une planche rugueuse inclinée : S y reste immobile. On prend $g = 10$ N/kg et l'échelle 1 cm pour 2 N.",
           "exercise_type": "evaluation",
           "figure": null,
           "questions": [
@@ -1487,53 +1883,53 @@
               "tolerance": 0
             },
             {
-              "content": "Un dynamomètre de calibre 10 N sert à suspendre, au repos, un second solide de masse 0,8 kg. On prend $g = 10$ N/kg. Le dynamomètre peut-il être utilisé sans risque ?",
+              "content": "Un solide S de poids 6 N est immobile sur une planche rugueuse inclinée. Quelles sont les caractéristiques de la réaction de la planche sur S ?",
               "question_type": "single_choice",
-              "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le second solide ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 0{,}8 \\times 10 = 8$ N : le ressort tire avec 8 N, moins que le calibre de 10 N. Pourquoi pas « 8 N est supérieur à 6 N » : 6 N était la lecture pour un autre solide, ce n'est pas une limite du dynamomètre. Pourquoi pas « il indiquera 0,8 N » : 0,8 est la masse en kg, il indiquera 8 N.",
+              "explanation": "Étape 1 — Dresser le bilan : S subit deux forces, son poids $\\vec P$ (6 N) et la réaction $\\vec R$ de la planche. Étape 2 — Appliquer l'équilibre : $\\vec R$ a la même droite d'action que $\\vec P$, un sens opposé et la même intensité : verticale, vers le haut, $R = 6$ N. Étape 3 — Comparer : cette verticale n'est pas perpendiculaire à la planche inclinée. Pourquoi pas « perpendiculaire à la planche » : cette direction est celle de $\\vec R_N$ seule ; avec la composante tangentielle, la réaction totale est verticale. Pourquoi pas « inférieure à 6 N » : l'équilibre sous deux forces impose $R = P$.",
               "answers": [
                 {
-                  "content": "Oui : le poids de 8 N est inférieur au calibre de 10 N",
+                  "content": "Verticale, vers le haut, intensité 6 N",
                   "correct": true
                 },
                 {
-                  "content": "Non : 8 N est supérieur à 6 N",
+                  "content": "Perpendiculaire à la planche, vers le haut, intensité 6 N",
                   "correct": false
                 },
                 {
-                  "content": "Oui : il indiquera 0,8 N",
+                  "content": "Verticale, vers le haut, intensité inférieure à 6 N car la planche est inclinée",
                   "correct": false
                 },
                 {
-                  "content": "Non : 0,8 kg est supérieur à 0,6 kg",
+                  "content": "Parallèle à la planche, vers le haut de la planche, intensité 6 N",
                   "correct": false
                 }
               ]
             },
             {
-              "content": "Un solide, soumis à ces deux seules forces, est tiré vers la gauche par un fil avec 6 N et vers la droite par un autre fil avec 6 N. Les deux fils sont attachés en deux points du solide, sur deux droites parallèles différentes. La somme vectorielle des deux forces est nulle. Que peut-on affirmer ?",
-              "question_type": "single_choice",
-              "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le solide ; il subit deux forces de 6 N. Étape 2 — Vérifier la direction et le sens : les sens sont opposés, mais les droites d'action sont différentes. Étape 3 — Écrire l'égalité des intensités : les intensités sont égales : $F_1 = F_2 = 6$ N. Étape 4 — Calculer l'inconnue : une condition manque : le solide n'est pas en équilibre. Pourquoi pas « il est en équilibre car la somme vectorielle est nulle » : cette condition est nécessaire mais pas suffisante, il faut aussi la même droite d'action.",
+              "content": "Le solide S est immobile sur la planche rugueuse inclinée. Quelles affirmations sur la réaction de la planche sont justes ?",
+              "question_type": "multiple_correct_2",
+              "explanation": "Étape 3 — Comparer avec le support : la réaction est verticale, donc elle n'est pas perpendiculaire à la planche inclinée ; elle a une composante parallèle à la planche. Étape 4 — Nommer les composantes : la composante parallèle est la réaction tangentielle $\\vec R_T$, qui est la force de frottement. Étape 5 — Conclure sur les frottements : sur une planche sans frottement, $\\vec R_T = \\vec 0$ et S glisserait. Pourquoi pas « perpendiculaire comme sur la paillasse » : sur la paillasse horizontale, la verticale est perpendiculaire au support ; sur la planche inclinée, elle ne l'est plus.",
               "answers": [
                 {
-                  "content": "Le solide n'est pas en équilibre, car les deux forces n'ont pas la même droite d'action",
+                  "content": "Elle a une composante tangentielle, parallèle à la planche",
                   "correct": true
                 },
                 {
-                  "content": "Le solide est en équilibre, car la somme vectorielle est nulle",
+                  "content": "Cette composante tangentielle représente la force de frottement",
+                  "correct": true
+                },
+                {
+                  "content": "Elle est perpendiculaire à la planche, comme sur la paillasse",
                   "correct": false
                 },
                 {
-                  "content": "Le solide est en équilibre, car les sens sont opposés",
-                  "correct": false
-                },
-                {
-                  "content": "Le solide n'est pas en équilibre, car 6 N est trop faible pour le retenir",
+                  "content": "Elle serait la même sur une planche sans frottement",
                   "correct": false
                 }
               ]
             }
           ],
-          "hint": "Lecture du dynamomètre = poids ; sur la paillasse, $R = P$ ; masse $m = P \\div g$."
+          "hint": "Lecture du dynamomètre = poids ; sur la paillasse, $R = P$ ; sur la planche inclinée, $R = P$ aussi, mais $\\vec R$ a une composante tangentielle ; masse $m = P \\div g$."
         }
       ],
       "subjects": [
@@ -2659,7 +3055,7 @@
         },
         {
           "title": "Sujet 4 · Bilan de la leçon",
-          "notions": "Bilan des forces, équilibre d'un solide soumis à deux forces, détermination et représentation d'une force inconnue : lampe suspendue, bassine posée, balance à ressort, dynamomètre du laboratoire.",
+          "notions": "Bilan des forces, équilibre d'un solide soumis à deux forces, réactions normale et tangentielle d'un support, solide en équilibre sur un plan incliné avec frottements, détermination et représentation d'une force inconnue : lampe suspendue, bassine posée, balance à ressort, solide au laboratoire sur la paillasse puis sur une planche inclinée.",
           "exercises": [
             {
               "title": "Exercice 1",
@@ -2929,7 +3325,7 @@
             },
             {
               "title": "Exercice 4",
-              "statement": "Au laboratoire, un solide S de masse 2,4 kg est accroché à un dynamomètre de calibre 25 N, puis posé sur la paillasse horizontale. On prend $g = 10$ N/kg et l'échelle 1 cm pour 6 N.",
+              "statement": "Au laboratoire, un solide S de masse 2,4 kg est accroché à un dynamomètre, puis posé sur la paillasse horizontale, puis sur une planche rugueuse inclinée où il reste immobile. On prend $g = 10$ N/kg.",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [
@@ -2947,29 +3343,6 @@
                   "tolerance": 0
                 },
                 {
-                  "content": "Un solide de 2,4 kg est accroché à un dynamomètre de calibre 25 N. On prend $g = 10$ N/kg. Le dynamomètre convient-il ?",
-                  "question_type": "single_choice",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le solide ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P = 24$ N. Étape 4 — Calculer l'inconnue : 24 N est inférieur à 25 N : le calibre n'est pas dépassé. Pourquoi pas « il indiquera 25 N » : le dynamomètre indique le poids, 24 N, et non son calibre. Pourquoi pas « 24 N dépasse 2,4 kg » : on ne compare pas une force en N à une masse en kg ; 24 est plus petit que 25. Pourquoi pas « il indiquera 2,4 N » : 2,4 est la masse en kg.",
-                  "answers": [
-                    {
-                      "content": "Oui : 24 N est inférieur au calibre de 25 N",
-                      "correct": true
-                    },
-                    {
-                      "content": "Non : 24 N dépasse 2,4 kg, donc la masse est trop grande pour le dynamomètre",
-                      "correct": false
-                    },
-                    {
-                      "content": "Oui : il indiquera 2,4 N",
-                      "correct": false
-                    },
-                    {
-                      "content": "Oui : il indiquera 25 N, la valeur du calibre",
-                      "correct": false
-                    }
-                  ]
-                },
-                {
                   "content": "Le solide S, de poids 24 N, est posé, immobile, sur la paillasse horizontale. Quelle est l'intensité de la réaction de la paillasse, en N ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est S ; $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $R = 24$ N. Pourquoi pas 0 N : S est immobile parce que la paillasse le porte.",
@@ -2980,19 +3353,6 @@
                     }
                   ],
                   "unit": "N",
-                  "tolerance": 0
-                },
-                {
-                  "content": "La réaction de la paillasse sur un solide vaut 24 N. On la représente avec l'échelle 1 cm pour 6 N. Quelle est la longueur de la flèche, en cm ?",
-                  "question_type": "numeric",
-                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $R = 24$ N. Étape 2 — Déduire celles de la force inconnue : la réaction est la force connue. Étape 3 — Calculer la longueur de chaque flèche : longueur = $24 \\div 6 = 4$ cm. Étape 4 — Tracer les deux flèches : on trace une flèche de 4 cm vers le haut. Pourquoi pas 144 cm : on multiplierait au lieu de diviser.",
-                  "answers": [
-                    {
-                      "content": "4",
-                      "correct": true
-                    }
-                  ],
-                  "unit": "cm",
                   "tolerance": 0
                 },
                 {
@@ -3008,9 +3368,47 @@
                     "Le calcul $P = 2{,}4 \\times 10 = 24$ N, donc $R = 24$ N, est juste avec l'unité"
                   ],
                   "starter": "Le système est…"
+                },
+                {
+                  "content": "Le solide S, de poids 24 N, est immobile sur une planche rugueuse inclinée. Quelles sont les caractéristiques de la réaction de la planche ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Dresser le bilan : S subit son poids $\\vec P$ (24 N) et la réaction $\\vec R$ de la planche. Étape 2 — Appliquer l'équilibre : $\\vec R$ est sur la même droite que $\\vec P$, de sens opposé, de même intensité : verticale, vers le haut, 24 N. Étape 3 — Comparer : cette verticale n'est pas perpendiculaire à la planche. Pourquoi pas « perpendiculaire à la planche » : c'est la direction de la seule composante $\\vec R_N$ ; la réaction totale, qui équilibre le poids, est verticale.",
+                  "answers": [
+                    {
+                      "content": "Verticale, vers le haut, intensité 24 N",
+                      "correct": true
+                    },
+                    {
+                      "content": "Perpendiculaire à la planche, vers le haut, intensité 24 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parallèle à la planche, vers le haut de la planche, intensité 24 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "Verticale, vers le haut, intensité inférieure à 24 N car la planche est inclinée",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur la planche rugueuse inclinée, la réaction de la planche se décompose en une réaction normale et une réaction ___, qui est la force de frottement.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 3 — Comparer la direction de la réaction avec le support : une composante est perpendiculaire à la planche, l'autre est parallèle. Étape 4 — Nommer les composantes : la composante perpendiculaire est la réaction normale ; la composante parallèle est la réaction tangentielle, qui représente la force de frottement. Pourquoi pas « normale » : c'est déjà le nom de la composante perpendiculaire, citée dans la phrase.",
+                  "answers": [
+                    {
+                      "content": "tangentielle",
+                      "correct": true
+                    },
+                    {
+                      "content": "la tangentielle",
+                      "correct": true
+                    }
+                  ]
                 }
               ],
-              "hint": "Poids : $P = m \\times g$ ; sur la paillasse, $R = P$ ; compare 24 N au calibre."
+              "hint": "Poids : $P = m \\times g$ ; sur la paillasse, $R = P$ ; sur la planche inclinée, $R = P$ aussi, et $\\vec R$ a une composante tangentielle (frottement)."
             }
           ]
         }

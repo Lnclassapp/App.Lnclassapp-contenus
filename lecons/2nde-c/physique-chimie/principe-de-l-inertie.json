@@ -251,6 +251,44 @@
             ]
           },
           "controls": []
+        },
+        {
+          "key": "haltere-centre-inertie",
+          "kind": "coordinate_plane",
+          "description": "Un repère à carreaux où 1 unité représente 10 cm, vu de profil. L'haltère est une tige de masse négligeable qui relie deux boules : G1, centre d'inertie de la boule de 2 kg, est en (1 ; 2) et G2, centre d'inertie de la boule de 6 kg, est en (5 ; 2). La distance G1G2 vaut 4 unités, soit 40 cm. Le centre d'inertie G de l'haltère est en (4 ; 2) : G1G vaut 3 unités, soit 30 cm, et G2G vaut 1 unité, soit 10 cm. G est sur le segment G1G2, plus près de la boule la plus lourde.",
+          "params": {
+            "xmin": 0,
+            "xmax": 6,
+            "ymin": 0,
+            "ymax": 4,
+            "points": [
+              {
+                "id": "G1",
+                "x": 1,
+                "y": 2
+              },
+              {
+                "id": "G2",
+                "x": 5,
+                "y": 2
+              },
+              {
+                "id": "G",
+                "x": 4,
+                "y": 2
+              }
+            ],
+            "segments": [
+              {
+                "x1": 1,
+                "y1": 2,
+                "x2": 5,
+                "y2": 2
+              }
+            ],
+            "vectors": []
+          },
+          "controls": []
         }
       ],
       "notions": [
@@ -570,6 +608,372 @@
                   "content": "À la surface de la Terre, le centre d'inertie d'un solide homogène de forme simple est confondu avec son centre de gravité G.",
                   "question_type": "true_false",
                   "explanation": "Étape 1 — Définir le système : un solide homogène de forme simple. Étape 2 — Repérer le centre d'inertie G : son centre d'inertie est le point dont le mouvement est le plus simple. Étape 3 — Comparer avec le centre de symétrie ou de gravité : à la surface de la Terre, ce point est son centre de gravité, où l'on place le poids. Étape 4 — Conclure : l'affirmation est vraie.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Déterminer le centre d'inertie d'un système de deux solides et décrire son mouvement",
+          "remember": "Pour un solide homogène de forme simple, le **centre d'inertie** G se trouve par symétrie : c'est le **centre de symétrie** (centre d'une boule, d'un disque ou d'un cube, milieu d'une tige) ou l'**intersection des axes de symétrie** (rectangle : ses deux axes ; disque : ses diamètres) ; pour une **plaque triangulaire**, c'est l'**intersection de ses médianes**. Pour un **système de deux solides** homogènes $S_1$ et $S_2$, de masses $m_1$ et $m_2$ et de centres d'inertie $G_1$ et $G_2$, le centre d'inertie G du système vérifie la **relation barycentrique** : $$m_1 \\overrightarrow{GG_1} + m_2 \\overrightarrow{GG_2} = \\vec 0$$ On en déduit que G est sur le segment $[G_1G_2]$, **plus près du solide le plus lourd**, avec $G_1G = \\dfrac{m_2}{m_1 + m_2} \\times G_1G_2$. Si les deux masses sont égales, G est au milieu de $[G_1G_2]$. Quand un solide bouge, son **mouvement d'ensemble** est le mouvement de son centre d'inertie G ; son **mouvement propre** est le mouvement des autres points du solide autour de G, comme une rotation. Une clé lancée sur une table à coussin d'air tourne sur elle-même (mouvement propre) et G glisse en ligne droite à vitesse constante (mouvement d'ensemble).",
+          "method": [
+            "Repérer le centre d'inertie $G_1$ et $G_2$ de chaque solide homogène (centre de symétrie, intersection des axes de symétrie ou, pour un triangle, des médianes).",
+            "Relever les masses $m_1$ et $m_2$ et la distance $G_1G_2$.",
+            "Écrire la relation barycentrique $m_1 \\overrightarrow{GG_1} + m_2 \\overrightarrow{GG_2} = \\vec 0$, d'où $G_1G = \\dfrac{m_2}{m_1 + m_2} \\times G_1G_2$.",
+            "Calculer $G_1G$, dans la même unité que $G_1G_2$.",
+            "Placer G sur le segment $[G_1G_2]$, à la distance $G_1G$ de $G_1$ : il est plus près du solide le plus lourd.",
+            "Décrire le mouvement du système : le mouvement d'ensemble est celui de G ; le mouvement propre est celui des autres points autour de G."
+          ],
+          "example": {
+            "statement": "Un haltère est formé de deux boules pleines et homogènes reliées par une tige de masse négligeable. La boule 1 a une masse $m_1 = 2$ kg, la boule 2 une masse $m_2 = 6$ kg, et la distance entre leurs centres vaut $G_1G_2 = 40$ cm. Où se trouve le centre d'inertie G de l'haltère ?",
+            "steps": [
+              "Repérer : le centre d'inertie de chaque boule homogène est son centre de symétrie, notés $G_1$ et $G_2$.",
+              "Relever : $m_1 = 2$ kg, $m_2 = 6$ kg et $G_1G_2 = 40$ cm.",
+              "Écrire : $m_1 \\overrightarrow{GG_1} + m_2 \\overrightarrow{GG_2} = \\vec 0$, d'où $G_1G = \\dfrac{m_2}{m_1 + m_2} \\times G_1G_2$.",
+              "Calculer : $G_1G = \\dfrac{6}{2 + 6} \\times 40 = 30$ cm.",
+              "Placer : G est sur le segment $[G_1G_2]$, à 30 cm de $G_1$ et donc à 10 cm de $G_2$, plus près de la boule la plus lourde.",
+              "Décrire : si l'haltère est lancé en tournant sur une surface horizontale sans frottement, son mouvement d'ensemble est celui de G, rectiligne uniforme ; la rotation des deux boules autour de G est son mouvement propre."
+            ]
+          },
+          "pitfall": "Ne place pas G au milieu du segment $[G_1G_2]$ quand les masses sont différentes : il est plus près du solide le plus lourd. Ne confonds pas non plus les deux fractions : $G_1G$ se calcule avec la masse **de l'autre solide**, $m_2$, au numérateur. Dans l'exemple, prendre $m_1$ donnerait $\\dfrac{2}{8} \\times 40 = 10$ cm, qui est en fait la distance $G_2G$. Enfin, la rotation d'un solide sur lui-même ne fait pas partie de son mouvement d'ensemble : le mouvement d'ensemble est celui de G seul ; la rotation autour de G est son mouvement propre.",
+          "figure": "haltere-centre-inertie",
+          "practice": {
+            "statement": "Tu t'entraînes à trouver le centre d'inertie d'un système de deux solides.",
+            "questions": [
+              {
+                "content": "Deux solides homogènes de masses $m_1 = 1$ kg et $m_2 = 3$ kg ont des centres d'inertie distants de $G_1G_2 = 20$ cm. Quelle est la distance $G_1G$, en cm ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Repérer : $G_1$ et $G_2$ sont les centres d'inertie des deux solides. Étape 2 — Relever : $m_1 = 1$ kg, $m_2 = 3$ kg, $G_1G_2 = 20$ cm. Étape 3 — Écrire : $G_1G = \\dfrac{m_2}{m_1 + m_2} \\times G_1G_2$. Étape 4 — Calculer : $G_1G = \\dfrac{3}{1 + 3} \\times 20 = 15$ cm. Étape 5 — Placer : G est à 15 cm de $G_1$, plus près du solide de 3 kg.",
+                "hint": "On multiplie $G_1G_2$ par la masse de l'autre solide divisée par la somme des masses.",
+                "unit": "cm",
+                "tolerance": 0,
+                "answers": [
+                  {
+                    "content": "15",
+                    "correct": true
+                  }
+                ]
+              },
+              {
+                "content": "Deux solides homogènes ont des masses de 2 kg ($S_1$) et de 8 kg ($S_2$). Où se trouve le centre d'inertie G du système ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Repérer : $G_1$ et $G_2$ sont les centres d'inertie de $S_1$ et de $S_2$. Étape 2 — Relever : $m_1 = 2$ kg et $m_2 = 8$ kg. Étape 3 — Écrire : $m_1 \\overrightarrow{GG_1}$ + $m_2 \\overrightarrow{GG_2}$ = $\\vec 0$ ; $G_1G = \\dfrac{8}{10} \\times G_1G_2$. Étape 4 — Calculer : $G_1G$ vaut les $\\dfrac{4}{5}$ de $G_1G_2$. Étape 5 — Placer : G est sur le segment, plus près de $G_2$, le solide le plus lourd.",
+                "hint": "Le solide le plus lourd attire G vers lui.",
+                "answers": [
+                  {
+                    "content": "Sur $[G_1G_2]$, plus près de $G_2$",
+                    "correct": true
+                  },
+                  {
+                    "content": "Au milieu de $[G_1G_2]$, à égale distance des deux",
+                    "correct": false
+                  },
+                  {
+                    "content": "Sur $[G_1G_2]$, plus près de $G_1$, le plus léger",
+                    "correct": false
+                  },
+                  {
+                    "content": "Sur la droite $(G_1G_2)$, au-delà du point $G_2$",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "content": "Une clé lancée sur une table à coussin d'air tourne sur elle-même, tandis que son centre d'inertie G glisse en ligne droite à vitesse constante. Quel est son mouvement d'ensemble ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Repérer : le centre d'inertie G de la clé. Étape 6 — Décrire : G glisse en ligne droite à vitesse constante, donc le mouvement d'ensemble de la clé est le mouvement rectiligne uniforme de G ; la rotation de la clé autour de G est son mouvement propre. Pourquoi pas la rotation autour de G : c'est le mouvement propre. Pourquoi pas un mouvement circulaire ou accéléré : G va en ligne droite à vitesse constante.",
+                "hint": "Le mouvement d'ensemble est celui d'un seul point : lequel ?",
+                "answers": [
+                  {
+                    "content": "Le mouvement rectiligne uniforme de G",
+                    "correct": true
+                  },
+                  {
+                    "content": "La rotation de la clé autour de son point G",
+                    "correct": false
+                  },
+                  {
+                    "content": "Un mouvement circulaire uniforme de G",
+                    "correct": false
+                  },
+                  {
+                    "content": "Un mouvement rectiligne de G qui accélère",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "content": "Le centre d'inertie d'une tige homogène est situé en son ___.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Repérer : une tige homogène a un centre de symétrie, son milieu ; c'est son centre d'inertie G. Conclusion : G est au milieu de la tige.",
+                "hint": "Quel point de la tige la partage en deux parties identiques ?",
+                "answers": [
+                  {
+                    "content": "milieu",
+                    "correct": true
+                  },
+                  {
+                    "content": "centre",
+                    "correct": true
+                  }
+                ]
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Placer le centre d'inertie d'un système de deux solides",
+              "statement": "Dans cet exercice, tu repères $G_1$ et $G_2$, tu appliques la relation barycentrique et tu places G. Les solides sont homogènes et les tiges qui les relient ont une masse négligeable.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Où se trouve le centre d'inertie d'une plaque rectangulaire homogène ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : la plaque rectangulaire homogène a deux axes de symétrie ; son centre d'inertie G est à leur intersection, au centre de la plaque. Pourquoi pas un sommet ou le milieu d'un côté : ces points ne sont pas sur les deux axes de symétrie. Pourquoi pas le point le plus proche du sol : G ne dépend que de la forme et de la matière du solide.",
+                  "answers": [
+                    {
+                      "content": "À l'intersection de ses axes de symétrie",
+                      "correct": true
+                    },
+                    {
+                      "content": "Au milieu de son plus long côté, sur le bord",
+                      "correct": false
+                    },
+                    {
+                      "content": "À l'un de ses quatre sommets, au choix libre",
+                      "correct": false
+                    },
+                    {
+                      "content": "Au point de la plaque le plus proche du sol",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Deux solides homogènes de masses $m_1 = 2$ kg et $m_2 = 3$ kg ont des centres d'inertie distants de $G_1G_2 = 50$ cm. Quelle est la distance $G_1G$, en cm ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : $G_1$ et $G_2$ sont les centres d'inertie des deux solides. Étape 2 — Relever : $m_1 = 2$ kg, $m_2 = 3$ kg, $G_1G_2 = 50$ cm. Étape 3 — Écrire : $G_1G = \\dfrac{m_2}{m_1 + m_2} \\times G_1G_2$. Étape 4 — Calculer : $G_1G = \\dfrac{3}{5} \\times 50 = 30$ cm. Étape 5 — Placer : G est à 30 cm de $G_1$, plus près du solide de 3 kg.",
+                  "unit": "cm",
+                  "tolerance": 0,
+                  "answers": [
+                    {
+                      "content": "30",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quand deux solides homogènes ont des masses différentes, le centre d'inertie du système est au milieu du segment $[G_1G_2]$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer : $G_1$ et $G_2$ sont les centres d'inertie des deux solides. Étape 2 — Relever : les masses $m_1$ et $m_2$ sont différentes. Étape 3 — Écrire : $G_1G = \\dfrac{m_2}{m_1 + m_2} \\times G_1G_2$, qui n'est la moitié de $G_1G_2$ que si $m_1 = m_2$. Étape 4 — Calculer : avec 2 kg et 6 kg, $G_1G$ vaut les $\\dfrac{3}{4}$ de $G_1G_2$. Étape 5 — Placer : G est plus près du solide le plus lourd ; l'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un solide $S_1$ de 5 kg et un solide $S_2$ de 1 kg forment un système. Le centre d'inertie G du système est…",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : $G_1$ et $G_2$ sont les centres d'inertie de $S_1$ et de $S_2$. Étape 2 — Relever : $m_1 = 5$ kg et $m_2 = 1$ kg. Étape 3 — Écrire : $G_1G = \\dfrac{1}{6} \\times G_1G_2$. Étape 4 — Calculer : $G_1G$ vaut le sixième de $G_1G_2$. Étape 5 — Placer : G est tout près de $G_1$, le centre du solide le plus lourd. Pourquoi pas au milieu : les masses sont très différentes.",
+                  "answers": [
+                    {
+                      "content": "sur $[G_1G_2]$, très près de $G_1$",
+                      "correct": true
+                    },
+                    {
+                      "content": "au milieu du segment $[G_1G_2]$ des deux centres",
+                      "correct": false
+                    },
+                    {
+                      "content": "sur $[G_1G_2]$, très près de $G_2$, le plus léger",
+                      "correct": false
+                    },
+                    {
+                      "content": "en dehors de $[G_1G_2]$, du côté de $G_1$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La somme $m_1 \\overrightarrow{GG_1}$ + $m_2 \\overrightarrow{GG_2}$ est égale au vecteur ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Repérer : G est le centre d'inertie du système, $G_1$ et $G_2$ ceux des solides. Étape 2 — Relever : les masses $m_1$ et $m_2$ interviennent. Étape 3 — Écrire : la relation barycentrique est $m_1 \\overrightarrow{GG_1}$ + $m_2 \\overrightarrow{GG_2}$ = $\\vec 0$. Conclusion : la somme est égale au vecteur nul.",
+                  "answers": [
+                    {
+                      "content": "nul",
+                      "correct": true
+                    },
+                    {
+                      "content": "vecteur nul",
+                      "correct": true
+                    },
+                    {
+                      "content": "le vecteur nul",
+                      "correct": true
+                    },
+                    {
+                      "content": "zéro",
+                      "correct": true
+                    },
+                    {
+                      "content": "0",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans un repère où 1 unité représente 10 cm, deux solides homogènes de masses $m_1 = 3$ kg et $m_2 = 1$ kg ont leurs centres d'inertie $G_1$ et $G_2$ placés sur l'axe des abscisses, en $x = 1$ et en $x = 5$. Quelle est l'abscisse du centre d'inertie G du système ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : $G_1$ est en $x = 1$ et $G_2$ en $x = 5$. Étape 2 — Relever : $m_1 = 3$ kg, $m_2 = 1$ kg, $G_1G_2 = 4$ unités. Étape 3 — Écrire : $G_1G = \\dfrac{m_2}{m_1 + m_2} \\times G_1G_2$. Étape 4 — Calculer : $G_1G = \\dfrac{1}{4} \\times 4 = 1$ unité. Étape 5 — Placer : G est à 1 unité de $G_1$ vers $G_2$, donc en $x = 1 + 1 = 2$.",
+                  "tolerance": 0,
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Haltère, clé lancée et centre d'inertie : situations variées",
+              "statement": "Dans cet exercice, tu ordonnes les étapes de la méthode, tu relies des solides à leur centre d'inertie, tu calcules une distance et tu distingues mouvement d'ensemble et mouvement propre.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "hint": "Pense à $G_1G = \\dfrac{m_2}{m_1 + m_2} \\times G_1G_2$ et à placer G plus près du solide le plus lourd.",
+              "questions": [
+                {
+                  "content": "Remets dans l'ordre les étapes de la méthode pour trouver le centre d'inertie d'un système de deux solides.",
+                  "question_type": "ordering",
+                  "explanation": "La méthode commence par Repérer $G_1$ et $G_2$, puis Relever les masses et la distance, puis Écrire la relation barycentrique, puis Calculer $G_1G$, puis Placer G, et se termine par Décrire le mouvement d'ensemble (celui de G) et le mouvement propre. On ne calcule qu'une fois la relation écrite et les données relevées, et on ne décrit le mouvement de G qu'une fois G placé.",
+                  "answers": [
+                    {
+                      "content": "Repérer $G_1$ et $G_2$"
+                    },
+                    {
+                      "content": "Relever les masses et $G_1G_2$"
+                    },
+                    {
+                      "content": "Écrire la relation barycentrique"
+                    },
+                    {
+                      "content": "Calculer $G_1G$"
+                    },
+                    {
+                      "content": "Placer G sur le segment"
+                    },
+                    {
+                      "content": "Décrire le mouvement d'ensemble et le mouvement propre"
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque solide homogène à la position de son centre d'inertie.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Repérer : pour un solide homogène de forme simple, G est le centre de symétrie (boule : son centre ; tige : son milieu), l'intersection des axes de symétrie (rectangle : ses deux axes ; disque : ses diamètres) ou, pour une plaque triangulaire, l'intersection de ses médianes. Chaque solide est relié à la position de son G.",
+                  "answers": [
+                    {
+                      "content": "Une boule",
+                      "match": "Son centre"
+                    },
+                    {
+                      "content": "Une tige",
+                      "match": "Son milieu"
+                    },
+                    {
+                      "content": "Un rectangle",
+                      "match": "L'intersection de ses deux axes de symétrie"
+                    },
+                    {
+                      "content": "Un disque",
+                      "match": "L'intersection de ses diamètres"
+                    },
+                    {
+                      "content": "Une plaque triangulaire",
+                      "match": "L'intersection de ses médianes"
+                    }
+                  ]
+                },
+                {
+                  "content": "Un haltère est formé d'une boule de 3 kg et d'une boule de 1 kg reliées par une tige de masse négligeable ; leurs centres d'inertie sont distants de 80 cm. À quelle distance de la boule de 3 kg se trouve le centre d'inertie de l'haltère, en cm ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : $G_1$ est le centre de la boule de 3 kg, $G_2$ celui de la boule de 1 kg. Étape 2 — Relever : $m_1 = 3$ kg, $m_2 = 1$ kg, $G_1G_2 = 80$ cm. Étape 3 — Écrire : $G_1G = \\dfrac{m_2}{m_1 + m_2} \\times G_1G_2$. Étape 4 — Calculer : $G_1G = \\dfrac{1}{4} \\times 80 = 20$ cm. Étape 5 — Placer : G est à 20 cm de la boule de 3 kg, donc plus près d'elle.",
+                  "unit": "cm",
+                  "tolerance": 0,
+                  "answers": [
+                    {
+                      "content": "20",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Une clé lancée sur une table à coussin d'air tourne sur elle-même, tandis que son centre d'inertie G glisse en ligne droite à vitesse constante. Quelles affirmations sont vraies ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Repérer : le centre d'inertie G de la clé. Étape 6 — Décrire : G a un mouvement rectiligne uniforme, c'est le mouvement d'ensemble ; les autres points tournent autour de G, c'est le mouvement propre. Les deux affirmations exactes sont celles sur G et sur la rotation. Pourquoi pas « Le mouvement d'ensemble est la rotation autour de G » : la rotation est le mouvement propre. Pourquoi pas « La rotation de la clé prouve que son centre d'inertie G accélère » : G garde un mouvement rectiligne uniforme.",
+                  "answers": [
+                    {
+                      "content": "Le mouvement d'ensemble est celui de G",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le mouvement propre est la rotation autour de G",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le mouvement d'ensemble est la rotation autour de G",
+                      "correct": false
+                    },
+                    {
+                      "content": "La rotation de la clé prouve que son centre d'inertie G accélère",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour deux solides homogènes de masses différentes, le centre d'inertie G du système est situé ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Repérer : $G_1$ et $G_2$ sont les centres d'inertie des deux solides. Étape 2 — Relever : les masses $m_1$ et $m_2$ sont différentes. Étape 3 — Écrire : la relation barycentrique place G sur le segment $[G_1G_2]$. Étape 5 — Placer : G est plus près du solide le plus lourd. Pourquoi pas au milieu : le milieu ne convient que pour des masses égales.",
+                  "answers": [
+                    {
+                      "content": "sur $[G_1G_2]$, plus près du solide le plus lourd",
+                      "correct": true
+                    },
+                    {
+                      "content": "au milieu du segment $[G_1G_2]$ dans tous les cas",
+                      "correct": false
+                    },
+                    {
+                      "content": "sur $[G_1G_2]$, plus près du solide le plus léger",
+                      "correct": false
+                    },
+                    {
+                      "content": "en dehors du segment $[G_1G_2]$, loin des deux solides",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le mouvement d'ensemble d'un solide est le mouvement de son centre d'inertie G.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer : le centre d'inertie G du solide. Étape 6 — Décrire : le mouvement d'ensemble est celui de G ; le mouvement propre est celui des autres points autour de G. L'affirmation est vraie.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -1621,15 +2025,25 @@
               ]
             },
             {
-              "content": "Un mobile est enregistré toutes les 40 ms ; deux positions consécutives, alignées, sont distantes de 3 cm. Quelle est sa vitesse, en m/s ?",
-              "question_type": "numeric",
-              "explanation": "Étape 1 — Relever : $d = 0{,}03$ m ; $\\Delta t = 0{,}04$ s. Étape 2 — Examiner : positions alignées. Étape 3 — Mesurer : distances égales à 0,03 m. Étape 4 — Calculer : $v = 0{,}03 / 0{,}04 = 0{,}75$ m/s. Étape 5 — Conclure : vitesse de 0,75 m/s.",
-              "unit": "m/s",
-              "tolerance": 0.01,
+              "content": "Un mobile autoporteur tourne sur lui-même tout en glissant sur une table à coussin d'air, son centre d'inertie G ayant un mouvement rectiligne uniforme. Quel est son mouvement d'ensemble ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Repérer : le centre d'inertie G du mobile. Étape 6 — Décrire : G a une trajectoire rectiligne et une vitesse constante ; le mouvement d'ensemble est celui de G, donc rectiligne uniforme ; la rotation autour de G est le mouvement propre. Pourquoi pas « la rotation autour de G » : c'est le mouvement propre, celui des autres points autour de G. Pourquoi pas un mouvement circulaire ou accéléré : G va en ligne droite à vitesse constante.",
               "answers": [
                 {
-                  "content": "0,75",
+                  "content": "Le mouvement rectiligne uniforme de G",
                   "correct": true
+                },
+                {
+                  "content": "La rotation des points du mobile autour de G",
+                  "correct": false
+                },
+                {
+                  "content": "Un mouvement rectiligne de G qui accélère",
+                  "correct": false
+                },
+                {
+                  "content": "Un mouvement circulaire uniforme de G",
+                  "correct": false
                 }
               ]
             },
@@ -1670,24 +2084,24 @@
               ]
             },
             {
-              "content": "Un mobile est en mouvement rectiligne uniforme sur une table à coussin d'air. Est-il pseudo-isolé, et pourquoi ?",
+              "content": "Le mobile autoporteur est un disque homogène. Où faut-il placer la marque qui repère son centre d'inertie G ?",
               "question_type": "single_choice",
-              "explanation": "Étape 1 — Choisir le système et le référentiel : le mobile, référentiel terrestre galiléen. Étape 2 — Décrire le mouvement de G : mouvement rectiligne uniforme. Étape 3 — Appliquer le principe : d'après le principe de l'inertie, la somme des forces est nulle. Étape 4 — Conclure : il est pseudo-isolé (poids et réaction se compensent), pas isolé. Pourquoi pas « Non : une force doit le pousser » : une force motrice le ferait accélérer.",
+              "explanation": "Étape 1 — Repérer : le mobile est un disque homogène ; son centre d'inertie G est son centre de symétrie, à l'intersection de ses diamètres. Conclusion : la marque se place au centre du disque. Pourquoi pas sur le bord ou au milieu d'un rayon : ces points ne sont pas le centre de symétrie. Pourquoi pas là où l'on pousse : G ne dépend que de la forme et de la matière du solide.",
               "answers": [
                 {
-                  "content": "Oui : son mouvement est rectiligne uniforme, donc la somme des forces est nulle",
+                  "content": "Au centre du disque, intersection de ses diamètres",
                   "correct": true
                 },
                 {
-                  "content": "Non : une force doit le pousser pour qu'il avance",
+                  "content": "Sur le bord du disque, à l'endroit le plus proche du sol",
                   "correct": false
                 },
                 {
-                  "content": "Non : il est soumis à deux forces, or deux forces ne peuvent jamais se compenser",
+                  "content": "Au milieu d'un rayon du disque, à mi-chemin du bord",
                   "correct": false
                 },
                 {
-                  "content": "Oui : aucune force ne s'exerce sur lui",
+                  "content": "À l'endroit où l'on pousse le mobile pour le lancer",
                   "correct": false
                 }
               ]
@@ -1809,19 +2223,19 @@
         },
         {
           "title": "Le wôrô-wôrô sur la route d'Abobo",
-          "statement": "Un wôrô-wôrô de masse 1 000 kg roule sur une route droite et horizontale. Phase A : il roule à vitesse constante, avec une force motrice de 900 N vers l'avant. Phase B : le chauffeur accélère, la force motrice vaut 1 400 N et le frottement garde la même valeur qu'en phase A. Référentiel terrestre galiléen ; $g = 10$ N/kg.",
+          "statement": "Un wôrô-wôrô roule sur une route droite et horizontale. Phase A : il roule à vitesse constante, avec une force motrice de 900 N vers l'avant. Phase B : le chauffeur accélère, la force motrice vaut 1 400 N et le frottement garde la même valeur qu'en phase A. Sur son porte-bagages, deux colis homogènes de 1 kg et de 5 kg sont reliés par une sangle de masse négligeable. Référentiel terrestre galiléen.",
           "exercise_type": "evaluation",
           "figure": null,
           "questions": [
             {
-              "content": "Un wôrô-wôrô a une masse de 1 000 kg. Quelle est l'intensité de son poids ? On prend $g = 10$ N/kg.",
+              "content": "Sur le porte-bagages d'un wôrô-wôrô, deux colis homogènes de 1 kg et de 5 kg, reliés par une sangle de masse négligeable, ont leurs centres d'inertie distants de $G_1G_2 = 30$ cm. Quelle est la distance $G_1G$ du centre d'inertie G du système au colis de 1 kg, en cm ?",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Relever : la masse vaut 1 000 kg et $g = 10$ N/kg. Étape 2 — Convertir : la masse est déjà en kg, rien à convertir. Étape 3 — Écrire la formule : $P = m \\times g$. Étape 4 — Calculer : $P = 1 000 \\times 10 = 10\\,000$ N.",
-              "unit": "N",
+              "explanation": "Étape 1 — Repérer : $G_1$ et $G_2$ sont les centres d'inertie des deux solides. Étape 2 — Relever : $m_1 = 1$ kg, $m_2 = 5$ kg, $G_1G_2 = 30$ cm. Étape 3 — Écrire : $G_1G = \\dfrac{m_2}{m_1 + m_2} \\times G_1G_2$. Étape 4 — Calculer : $G_1G = \\dfrac{5}{6} \\times 30 = 25$ cm. Étape 5 — Placer : G est à 25 cm de $G_1$ et à 5 cm de $G_2$, plus près du solide de 5 kg. Pourquoi pas 5 : c'est $G_2G$, la distance au solide le plus lourd.",
+              "unit": "cm",
               "tolerance": 0,
               "answers": [
                 {
-                  "content": "10000",
+                  "content": "25",
                   "correct": true
                 }
               ]
@@ -3206,7 +3620,7 @@
         },
         {
           "title": "Sujet 4 · Bilan de toutes les notions",
-          "notions": "Système pseudo-isolé, principe de l'inertie, exploitation d'un enregistrement, freinage et ceinture, palet qui entre dans une zone rugueuse : un bilan des quatre notions de la leçon.",
+          "notions": "Système pseudo-isolé, centre d'inertie d'un solide homogène et d'un système de deux solides (relation barycentrique), mouvement d'ensemble et mouvement propre, principe de l'inertie, exploitation d'un enregistrement : un bilan des cinq notions de la leçon.",
           "exercises": [
             {
               "title": "Exercice 1",
@@ -3323,15 +3737,25 @@
                   ]
                 },
                 {
-                  "content": "Deux positions consécutives d'un mobile, alignées, sont distantes de 1,5 cm ; l'intervalle de temps est de 25 ms. Quelle est sa vitesse, en m/s ?",
-                  "question_type": "numeric",
-                  "explanation": "Étape 1 — Relever : $d = 0{,}015$ m ; $\\Delta t = 0{,}025$ s. Étape 2 — Examiner : positions alignées. Étape 3 — Mesurer : distances égales à 0,015 m. Étape 4 — Calculer : $v = 0{,}015 / 0{,}025 = 0{,}6$ m/s. Étape 5 — Conclure : vitesse de 0,6 m/s ; la conversion en mètres est indispensable. Pourquoi pas 60 : c'est la valeur en cm/s, alors que la question demande des m/s.",
-                  "unit": "m/s",
-                  "tolerance": 0.01,
+                  "content": "Un mobile autoporteur est un disque homogène. Où se trouve son centre d'inertie G ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : le mobile est un disque homogène ; son centre d'inertie G est son centre de symétrie, à l'intersection de ses diamètres. Conclusion : G est au centre du disque. Pourquoi pas sur le bord ou au milieu d'un rayon : ces points ne sont pas le centre de symétrie. Pourquoi pas là où il est lancé : G ne dépend que de la forme et de la matière du solide.",
                   "answers": [
                     {
-                      "content": "0,6",
+                      "content": "Au centre du disque",
                       "correct": true
+                    },
+                    {
+                      "content": "Sur le bord du disque, côté sol",
+                      "correct": false
+                    },
+                    {
+                      "content": "Au milieu d'un rayon du disque",
+                      "correct": false
+                    },
+                    {
+                      "content": "À l'endroit où le mobile est lancé",
+                      "correct": false
                     }
                   ]
                 },
@@ -3359,15 +3783,25 @@
                   ]
                 },
                 {
-                  "content": "Un mobile est enregistré toutes les 25 ms. Quelle durée s'écoule entre la deuxième et la huitième position, en ms ?",
-                  "question_type": "numeric",
-                  "explanation": "Étape 1 — Relever : $\\Delta t = 25$ ms. Étape 2 — Examiner : huit positions alignées. Étape 3 — Mesurer : de la deuxième à la huitième, il y a 6 intervalles, et non 7. Étape 4 — Calculer : durée $= 6 \\times 25 = 150$ ms. Étape 5 — Conclure : durée de 150 ms ; compter 7 intervalles donnerait 175 ms. Pourquoi pas 175 : c'est 7 × 25, qui compte 7 intervalles ; il y en a 6.",
-                  "unit": "ms",
-                  "tolerance": 0,
+                  "content": "Un mobile autoporteur tourne sur lui-même en glissant sur la table, son centre d'inertie G allant à vitesse constante en ligne droite. Le mouvement propre du mobile est…",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : le centre d'inertie G du mobile. Étape 6 — Décrire : G a un mouvement rectiligne uniforme, c'est le mouvement d'ensemble ; les autres points tournent autour de G, c'est le mouvement propre. Conclusion : le mouvement propre est la rotation des points autour de G. Pourquoi pas le mouvement rectiligne uniforme de G : c'est le mouvement d'ensemble.",
                   "answers": [
                     {
-                      "content": "150",
+                      "content": "la rotation des points autour de G",
                       "correct": true
+                    },
+                    {
+                      "content": "le mouvement rectiligne uniforme de G",
+                      "correct": false
+                    },
+                    {
+                      "content": "un mouvement de G qui ralentit sans cesse",
+                      "correct": false
+                    },
+                    {
+                      "content": "un mouvement circulaire uniforme de G",
+                      "correct": false
                     }
                   ]
                 },
@@ -3390,7 +3824,7 @@
             },
             {
               "title": "Exercice 3",
-              "statement": "Un gbaka de masse 3 000 kg roule en ligne droite à 36 km/h sur une route horizontale. Le chauffeur freine. Un passager sans ceinture est sur un siège dont on néglige les frottements. Référentiel terrestre galiléen ; $g = 10$ N/kg.",
+              "statement": "Un gbaka roule en ligne droite à 36 km/h sur une route horizontale. Le chauffeur freine. Un passager sans ceinture est sur un siège dont on néglige les frottements. Dans le gbaka, deux sacs homogènes de 1 kg et de 3 kg sont reliés par une sangle de masse négligeable. Référentiel terrestre galiléen.",
               "exercise_type": "evaluation",
               "figure": null,
               "hint": "Avant le freinage : mouvement rectiligne uniforme. Pendant : la vitesse du gbaka change.",
@@ -3409,14 +3843,14 @@
                   ]
                 },
                 {
-                  "content": "Un gbaka a une masse de 3 000 kg. Quelle est l'intensité de son poids, en N ? On prend $g = 10$ N/kg.",
+                  "content": "Dans un gbaka, deux sacs homogènes de 1 kg et de 3 kg, reliés par une sangle de masse négligeable, ont leurs centres d'inertie distants de $G_1G_2 = 60$ cm. Quelle est la distance $G_1G$ du centre d'inertie G du système au sac de 1 kg, en cm ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Relever : la masse vaut 3 000 kg et $g = 10$ N/kg. Étape 2 — Convertir : la masse est déjà en kg, rien à convertir. Étape 3 — Écrire la formule : $P = m \\times g$. Étape 4 — Calculer : $P = 3 000 \\times 10 = 30\\,000$ N. La masse en kg est multipliée par 10 N/kg. Pourquoi pas 3000 : c'est la masse en kg ; le poids vaut 3 000 × 10 = 30 000 N.",
-                  "unit": "N",
+                  "explanation": "Étape 1 — Repérer : $G_1$ et $G_2$ sont les centres d'inertie des deux solides. Étape 2 — Relever : $m_1 = 1$ kg, $m_2 = 3$ kg, $G_1G_2 = 60$ cm. Étape 3 — Écrire : $G_1G = \\dfrac{m_2}{m_1 + m_2} \\times G_1G_2$. Étape 4 — Calculer : $G_1G = \\dfrac{3}{4} \\times 60 = 45$ cm. Étape 5 — Placer : G est à 45 cm de $G_1$, plus près du solide de 3 kg. Pourquoi pas 15 : c'est $G_2G$, la distance au solide le plus lourd.",
+                  "unit": "cm",
                   "tolerance": 0,
                   "answers": [
                     {
-                      "content": "30000",
+                      "content": "45",
                       "correct": true
                     }
                   ]
