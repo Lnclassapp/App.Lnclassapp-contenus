@@ -519,15 +519,15 @@
                     "correct": true
                   },
                   {
-                    "content": "opposé",
-                    "correct": true
-                  },
-                  {
                     "content": "contraires",
                     "correct": true
                   },
                   {
-                    "content": "contraire",
+                    "content": "inverses",
+                    "correct": true
+                  },
+                  {
+                    "content": "inverse",
                     "correct": true
                   }
                 ],
@@ -550,14 +550,14 @@
               {
                 "content": "Un solide soumis à deux forces $\\vec F_1$ et $\\vec F_2$ est en équilibre. Quelle égalité est vraie ?",
                 "question_type": "single_choice",
-                "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit $\\vec F_1$ et $\\vec F_2$. Étape 2 — Vérifier la direction et le sens : elles sont opposées. Étape 3 — Écrire l'égalité des intensités : leurs intensités sont égales : la somme vectorielle est nulle, $\\vec F_1 + \\vec F_2 = \\vec 0$. Pourquoi pas $\\vec F_1 = \\vec F_2$ : deux vecteurs égaux auraient le même sens et ne s'annuleraient pas.",
+                "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit $\\vec F_1$ et $\\vec F_2$. Étape 2 — Vérifier la direction et le sens : elles sont opposées. Étape 3 — Écrire l'égalité des intensités : leurs intensités sont égales : la somme vectorielle est nulle, $\\vec F_1 + \\vec F_2 = \\vec 0$. Pourquoi pas $\\vec F_1 - \\vec F_2 = \\vec 0$ : cela veut dire $\\vec F_1 = \\vec F_2$, deux vecteurs égaux de même sens, qui ne s'annuleraient pas. Pourquoi pas $F_1 = 2F_2$ : les intensités sont égales, pas doubles.",
                 "answers": [
                   {
                     "content": "$\\vec F_1 + \\vec F_2 = \\vec 0$",
                     "correct": true
                   },
                   {
-                    "content": "$\\vec F_1 = \\vec F_2$",
+                    "content": "$F_1 = 2F_2$",
                     "correct": false
                   },
                   {
@@ -565,7 +565,7 @@
                     "correct": false
                   },
                   {
-                    "content": "$F_1 \\times F_2 = 0$",
+                    "content": "$\\vec F_1 - \\vec F_2 = \\vec 0$",
                     "correct": false
                   }
                 ],
@@ -576,7 +576,7 @@
           "exercise": [
             {
               "title": "Fil, plan horizontal et dynamomètre",
-              "statement": "Au marché, une vendeuse accroche un régime de bananes plantain au crochet d'un dynamomètre à ressort : on lit l'intensité de la force du ressort. On prend $g = 10$ N/kg. Tu appliques l'équilibre d'un solide soumis à deux forces.",
+              "statement": "Au marché, une vendeuse accroche un régime de bananes plantain au crochet d'un dynamomètre à ressort : on lit l'intensité de la force du ressort. On étudie aussi un solide au bout d'un fil, une bassine posée sur une table et une latte tirée par deux cordes. On prend $g = 10$ N/kg. Tu appliques l'équilibre d'un solide soumis à deux forces.",
               "exercise_type": "fixation",
               "figure": "dynamometre-equilibre",
               "questions": [
@@ -653,7 +653,7 @@
                   ]
                 },
                 {
-                  "content": "Une latte de bois est tirée vers la gauche par une corde avec 20 N et vers la droite par une autre corde avec 20 N. Les deux cordes sont attachées en deux points de la latte, sur deux droites parallèles différentes. Laquelle des trois conditions d'équilibre n'est pas respectée ?",
+                  "content": "Une latte de bois, de poids négligeable, est tirée vers la gauche par une corde avec 20 N et vers la droite par une autre corde avec 20 N. Les deux cordes sont attachées en deux points de la latte, sur deux droites parallèles différentes. Laquelle des trois conditions d'équilibre n'est pas respectée ?",
                   "question_type": "single_choice",
                   "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la latte ; elle subit deux forces de 20 N. Étape 2 — Vérifier la direction et le sens : les sens sont opposés, mais les droites d'action sont différentes. Étape 3 — Écrire l'égalité des intensités : les intensités sont égales, 20 N chacune. Pourquoi pas « la même intensité » : les deux forces valent 20 N ; c'est la droite d'action qui manque. Pourquoi pas « aucune » : sans la même droite d'action, la latte tourne au lieu de rester immobile.",
                   "answers": [
@@ -693,15 +693,15 @@
                       "correct": true
                     },
                     {
-                      "content": "opposé",
-                      "correct": true
-                    },
-                    {
                       "content": "contraires",
                       "correct": true
                     },
                     {
-                      "content": "contraire",
+                      "content": "inverses",
+                      "correct": true
+                    },
+                    {
+                      "content": "inverse",
                       "correct": true
                     }
                   ]
@@ -876,9 +876,9 @@
                 "hint": "Intensité = longueur × nombre de newtons pour 1 cm."
               },
               {
-                "content": "Un solide est en équilibre sous deux forces. La force inconnue a la même ___ que la force connue, mais un sens opposé.",
+                "content": "La force inconnue a la même ___, en newtons, que la force connue.",
                 "question_type": "fill_blank",
-                "explanation": "Étape 2 — Déduire celles de la force inconnue : on déduit de la force connue la direction, le sens opposé et l'intensité. Les deux mots intensité et direction sont corrects : les deux forces ont la même intensité et la même direction.",
+                "explanation": "Étape 2 — Déduire celles de la force inconnue : on déduit de la force connue la direction, le sens opposé et l'intensité. L'intensité, mesurée en newtons, est la même pour les deux forces : c'est la valeur à reprendre pour la force inconnue.",
                 "answers": [
                   {
                     "content": "intensité",
@@ -887,13 +887,9 @@
                   {
                     "content": "valeur",
                     "correct": true
-                  },
-                  {
-                    "content": "direction",
-                    "correct": true
                   }
                 ],
-                "hint": "Pense à la valeur en newtons."
+                "hint": "Pense à la grandeur qui se mesure en newtons."
               }
             ]
           },
@@ -1057,7 +1053,7 @@
                   ]
                 },
                 {
-                  "content": "Deux forces qui s'équilibrent sont représentées par deux flèches de même ___.",
+                  "content": "Avec la même échelle, deux forces qui s'équilibrent sont représentées par deux flèches de même ___, mesurée en cm.",
                   "question_type": "fill_blank",
                   "explanation": "Étape 2 — Déduire celles de la force inconnue : elles ont la même intensité. Étape 3 — Calculer la longueur de chaque flèche : à la même échelle, la même intensité donne la même longueur de flèche.",
                   "answers": [
@@ -1303,15 +1299,15 @@
                   "correct": true
                 },
                 {
-                  "content": "Le dynamomètre indique 6 N",
+                  "content": "Le dynamomètre indique 6 N, car il affiche la masse du régime en kg",
                   "correct": false
                 },
                 {
-                  "content": "Le poids de 6 N est inférieur au calibre : aucun risque",
+                  "content": "Le poids de 6 N est inférieur au calibre de 50 N : aucun risque pour le ressort",
                   "correct": false
                 },
                 {
-                  "content": "Le dynamomètre indique 0 N",
+                  "content": "Le dynamomètre indique 0 N, car le régime est immobile et les forces s'annulent",
                   "correct": false
                 }
               ]
@@ -1514,7 +1510,7 @@
               ]
             },
             {
-              "content": "Un solide est tiré vers la gauche par un fil avec 6 N et vers la droite par un autre fil avec 6 N. Les deux fils sont attachés en deux points du solide, sur deux droites parallèles différentes. La somme vectorielle des deux forces est nulle. Que peut-on affirmer ?",
+              "content": "Un solide, soumis à ces deux seules forces, est tiré vers la gauche par un fil avec 6 N et vers la droite par un autre fil avec 6 N. Les deux fils sont attachés en deux points du solide, sur deux droites parallèles différentes. La somme vectorielle des deux forces est nulle. Que peut-on affirmer ?",
               "question_type": "single_choice",
               "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le solide ; il subit deux forces de 6 N. Étape 2 — Vérifier la direction et le sens : les sens sont opposés, mais les droites d'action sont différentes. Étape 3 — Écrire l'égalité des intensités : les intensités sont égales : $F_1 = F_2 = 6$ N. Étape 4 — Calculer l'inconnue : une condition manque : le solide n'est pas en équilibre. Pourquoi pas « il est en équilibre car la somme vectorielle est nulle » : cette condition est nécessaire mais pas suffisante, il faut aussi la même droite d'action.",
               "answers": [
@@ -1707,6 +1703,14 @@
                     {
                       "content": "zéro",
                       "correct": true
+                    },
+                    {
+                      "content": "nulle",
+                      "correct": true
+                    },
+                    {
+                      "content": "0",
+                      "correct": true
                     }
                   ]
                 },
@@ -1734,21 +1738,21 @@
                   ]
                 },
                 {
-                  "content": "Remets dans l'ordre les étapes pour étudier l'équilibre d'un solide soumis à deux forces.",
+                  "content": "Un sac de 3 kg est suspendu, immobile, à un fil. On prend $g = 10$ N/kg. Remets dans l'ordre le raisonnement qui donne la tension du fil.",
                   "question_type": "ordering",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan ; Étape 2 — Vérifier la direction et le sens ; Étape 3 — Écrire l'égalité des intensités ; Étape 4 — Calculer l'inconnue. Pourquoi pas écrire l'égalité en premier : on ne peut l'écrire qu'une fois les deux forces identifiées et reconnues opposées.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : on choisit le sac et on liste $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : les deux forces sont verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 3 \\times 10 = 30$ N, donc $T = 30$ N. Pourquoi pas calculer avant de lister les forces : sans bilan des forces, on ne sait pas quelle égalité écrire.",
                   "answers": [
                     {
-                      "content": "Définir le système et dresser le bilan des deux forces"
+                      "content": "Choisir le sac comme système et lister son poids et la tension du fil"
                     },
                     {
-                      "content": "Vérifier la direction et le sens des deux forces"
+                      "content": "Constater que les deux forces sont verticales et de sens opposés"
                     },
                     {
-                      "content": "Écrire l'égalité des intensités"
+                      "content": "Écrire que la tension et le poids ont la même intensité"
                     },
                     {
-                      "content": "Calculer l'inconnue et écrire l'unité"
+                      "content": "Calculer le poids du sac, puis en déduire la tension en newtons"
                     }
                   ]
                 }
@@ -1910,16 +1914,12 @@
                   ]
                 },
                 {
-                  "content": "Deux forces qui s'équilibrent sont représentées par deux flèches de même ___.",
+                  "content": "Deux forces s'équilibrent. L'une est représentée par une flèche de 4 cm, avec l'échelle 1 cm pour 5 N. À la même échelle, l'autre force est représentée par une flèche de ___ cm.",
                   "question_type": "fill_blank",
-                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : on relève l'intensité de la force connue. Étape 2 — Déduire celles de la force inconnue : la force inconnue a la même intensité. Étape 3 — Calculer la longueur de chaque flèche : à la même échelle, même intensité donne même longueur de flèche. Étape 4 — Tracer les deux flèches : les deux flèches ont donc la même longueur. Pourquoi pas « sens » : les deux flèches ont des sens opposés, pas le même.",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : la flèche de 4 cm représente $4 \\times 5 = 20$ N. Étape 2 — Déduire celles de la force inconnue : l'autre force a la même intensité, donc 20 N. Étape 3 — Calculer la longueur de chaque flèche : à la même échelle, $20 \\div 5 = 4$ cm. Étape 4 — Tracer les deux flèches : on trace deux flèches de 4 cm, de sens opposés. Pourquoi pas 20 cm : 20 est l'intensité en N, pas la longueur de la flèche.",
                   "answers": [
                     {
-                      "content": "longueur",
-                      "correct": true
-                    },
-                    {
-                      "content": "taille",
+                      "content": "4",
                       "correct": true
                     }
                   ]
@@ -2062,7 +2062,7 @@
                 {
                   "content": "Un fil peut supporter au plus 80 N. On y suspend, immobile, une enseigne de 9 kg. On prend $g = 10$ N/kg. Que se passe-t-il ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est l'enseigne ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 9 \\times 10 = 90$ N, donc il faut $T = 90$ N, plus que les 80 N supportés. Pourquoi pas « la tension est nulle » : l'enseigne est immobile justement parce que la tension compense son poids. Pourquoi pas « 9 est inférieur à 80 » : on compare la masse en kg à une force en N.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est l'enseigne ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 9 \\times 10 = 90$ N, donc il faut $T = 90$ N, plus que les 80 N supportés. Pourquoi pas « la tension est nulle » : l'enseigne est immobile justement parce que la tension compense son poids. Pourquoi pas « 9 est inférieur à 80 » : on compare la masse en kg à une force en N. Pourquoi pas 180 N : ce serait additionner le poids et la tension, alors que la tension est égale au poids.",
                   "answers": [
                     {
                       "content": "Le fil casse, car la tension nécessaire est de 90 N",
@@ -2077,7 +2077,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Le fil casse, car la tension nécessaire est de 9 N",
+                      "content": "Le fil casse, car la tension nécessaire est de 180 N",
                       "correct": false
                     }
                   ]
@@ -2161,7 +2161,7 @@
                 {
                   "content": "On vide la moitié de l'eau d'une bassine : il reste 4,25 kg d'eau dans la bassine de 1,5 kg, posée et immobile sur la table. On prend $g = 10$ N/kg. Quelle est la nouvelle réaction de la table, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la bassine avec l'eau restante, de masse $1{,}5 + 4{,}25 = 5{,}75$ kg ; $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $P = 5{,}75 \\times 10 = 57,5$ N, donc $R = 57,5$ N. Pourquoi pas 100 N : c'est la réaction avant d'avoir vidé l'eau ; la réaction suit le poids, qui a diminué.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la bassine avec l'eau restante, de masse $1{,}5 + 4{,}25 = 5{,}75$ kg ; $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $P = 5{,}75 \\times 10 = 57{,}5$ N, donc $R = 57{,}5$ N. Pourquoi pas 100 N : c'est la réaction avant d'avoir vidé l'eau ; la réaction suit le poids, qui a diminué.",
                   "answers": [
                     {
                       "content": "57,5",
@@ -2276,7 +2276,7 @@
                   ]
                 },
                 {
-                  "content": "On ajoute 5 kg de mangues au panier de 15 kg : il pèse maintenant 20 kg et reste immobile, suspendu à la corde. On prend $g = 10$ N/kg. Quelle est la nouvelle tension de la corde, en N ?",
+                  "content": "On ajoute 5 kg de mangues au panier de 15 kg : il a maintenant une masse de 20 kg et reste immobile, suspendu à la corde. On prend $g = 10$ N/kg. Quelle est la nouvelle tension de la corde, en N ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le panier de 20 kg ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 20 \\times 10 = 200$ N, donc $T = 200$ N. Pourquoi pas 155 N : on ajouterait 5 N, au lieu d'ajouter le poids de 5 kg, soit 50 N, aux 150 N précédents.",
                   "answers": [
@@ -2318,12 +2318,12 @@
                   "starter": "Le système est…"
                 },
                 {
-                  "content": "Une lampe de 2 kg est suspendue, immobile, à un fil. On prend $g = 10$ N/kg. Quelle est l'intensité de la tension du fil, en N ?",
+                  "content": "Un cartable de 4 kg est suspendu, immobile, à un crochet par une sangle. On prend $g = 10$ N/kg. Quelle est l'intensité de la tension de la sangle, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la lampe ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 2 \\times 10 = 20$ N, donc $T = 20$ N. Pourquoi pas 2 N : c'est la masse en kg.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le cartable ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 4 \\times 10 = 40$ N, donc $T = 40$ N. Pourquoi pas 4 N : c'est la masse en kg.",
                   "answers": [
                     {
-                      "content": "20",
+                      "content": "40",
                       "correct": true
                     }
                   ],
@@ -2392,12 +2392,12 @@
             },
             {
               "title": "Exercice 2",
-              "statement": "Des élèves proposent des couples de deux forces appliquées à un solide. Tu dois dire si le solide peut rester en équilibre.",
+              "statement": "Des élèves proposent des paires de forces appliquées à un solide. Tu dois dire si le solide peut rester en équilibre.",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [
                 {
-                  "content": "Deux forces de 30 N, toutes deux verticales et dirigées vers le bas, sont appliquées à un solide. Laquelle des trois conditions d'équilibre n'est pas respectée ?",
+                  "content": "Deux forces de 30 N, toutes deux dirigées vers le bas sur la même verticale, sont appliquées à un solide. Laquelle des trois conditions d'équilibre n'est pas respectée ?",
                   "question_type": "single_choice",
                   "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit deux forces de 30 N. Étape 2 — Vérifier la direction et le sens : elles sont sur la même verticale, mais dans le même sens. Étape 3 — Écrire l'égalité des intensités : les intensités sont égales : 30 N chacune. Étape 4 — Calculer l'inconnue : la condition des sens opposés manque : leur somme vaut 60 N vers le bas. Pourquoi pas « la même intensité » : les deux forces valent 30 N. Pourquoi pas « aucune » : le solide serait alors immobile, alors que 60 N le tirent vers le bas.",
                   "answers": [
@@ -2443,9 +2443,9 @@
                   ]
                 },
                 {
-                  "content": "Quels couples de forces peuvent équilibrer un solide soumis à ces deux seules forces ?",
+                  "content": "Quelles paires de forces peuvent équilibrer un solide soumis à ces deux seules forces ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan : on examine chaque couple de deux forces. Étape 2 — Vérifier la direction et le sens : il faut la même droite d'action et des sens opposés. Étape 3 — Écrire l'égalité des intensités : il faut aussi des intensités égales. Étape 4 — Calculer l'inconnue : seuls les deux premiers couples respectent les trois conditions. Pourquoi pas « deux verticales différentes » : les intensités et les sens conviennent, mais la droite d'action est différente. Pourquoi pas « 20 N et 40 N » : les intensités ne sont pas égales.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : on examine chaque paire de forces. Étape 2 — Vérifier la direction et le sens : il faut la même droite d'action et des sens opposés. Étape 3 — Écrire l'égalité des intensités : il faut aussi des intensités égales. Étape 4 — Calculer l'inconnue : seules les paires 20 N vers le haut et 20 N vers le bas sur la même verticale, et 35 N vers la gauche et 35 N vers la droite sur la même horizontale, respectent les trois conditions. Pourquoi pas « deux verticales différentes » : les intensités et les sens conviennent, mais la droite d'action est différente. Pourquoi pas « 20 N et 40 N » : les intensités ne sont pas égales.",
                   "answers": [
                     {
                       "content": "20 N vers le haut et 20 N vers le bas, sur la même verticale",
@@ -2875,15 +2875,15 @@
                       "correct": true
                     },
                     {
-                      "content": "La balance indiquera 11 N",
+                      "content": "La balance indiquera 11 N, car elle affiche la masse du sac en kg",
                       "correct": false
                     },
                     {
-                      "content": "Le poids de 11 N est inférieur au calibre : aucun risque",
+                      "content": "Le poids de 11 N est inférieur au calibre de 100 N : aucun risque pour le ressort",
                       "correct": false
                     },
                     {
-                      "content": "La balance indiquera 100 N sans aucun risque",
+                      "content": "La balance indiquera 100 N, son calibre, sans aucun risque pour le ressort",
                       "correct": false
                     }
                   ]
@@ -2949,14 +2949,14 @@
                 {
                   "content": "Un solide de 2,4 kg est accroché à un dynamomètre de calibre 25 N. On prend $g = 10$ N/kg. Le dynamomètre convient-il ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le solide ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P = 24$ N. Étape 4 — Calculer l'inconnue : 24 N est inférieur à 25 N : le calibre n'est pas dépassé. Pourquoi pas « 24 N dépasse le calibre de 25 N » : 24 est plus petit que 25. Pourquoi pas « il indiquera 2,4 N » : 2,4 est la masse en kg.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le solide ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P = 24$ N. Étape 4 — Calculer l'inconnue : 24 N est inférieur à 25 N : le calibre n'est pas dépassé. Pourquoi pas « il indiquera 25 N » : le dynamomètre indique le poids, 24 N, et non son calibre. Pourquoi pas « 24 N dépasse 2,4 kg » : on ne compare pas une force en N à une masse en kg ; 24 est plus petit que 25. Pourquoi pas « il indiquera 2,4 N » : 2,4 est la masse en kg.",
                   "answers": [
                     {
                       "content": "Oui : 24 N est inférieur au calibre de 25 N",
                       "correct": true
                     },
                     {
-                      "content": "Non : 24 N dépasse 2,4 kg",
+                      "content": "Non : 24 N dépasse 2,4 kg, donc la masse est trop grande pour le dynamomètre",
                       "correct": false
                     },
                     {
@@ -2964,7 +2964,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Non : 24 N dépasse le calibre de 25 N",
+                      "content": "Oui : il indiquera 25 N, la valeur du calibre",
                       "correct": false
                     }
                   ]
