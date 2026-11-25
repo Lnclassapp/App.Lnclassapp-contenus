@@ -608,7 +608,7 @@
                 {
                   "content": "Un élève branche l'ampèremètre entre les deux bornes de l'ampoule. L'ampoule s'éteint et l'ampèremètre indique une grande valeur. Pourquoi ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Placer : l'ampèremètre doit être en série, il est ici en dérivation sur l'ampoule. Le courant passe par l'ampèremètre et non par l'ampoule, qui s'éteint, et l'appareil lit une grande valeur. Pourquoi pas « Les bornes A et COM sont inversées » : une orientation inversée donnerait au pire une valeur négative, pas une ampoule éteinte. Pourquoi pas « L'ampoule est grillée » : une ampoule grillée n'explique pas la grande valeur lue.",
+                  "explanation": "Étape 1 — Placer : l'ampèremètre doit être en série, il est ici en dérivation sur l'ampoule. Le courant passe par l'ampèremètre et non par l'ampoule, qui s'éteint, et l'appareil lit une grande valeur. Pourquoi pas « Les bornes A et COM sont inversées » : des bornes inversées font dévier l'aiguille à l'envers (ou afficher un signe − sur un multimètre), mais elles n'éteignent pas l'ampoule. Pourquoi pas « L'ampoule est grillée » : une ampoule grillée n'explique pas la grande valeur lue.",
                   "answers": [
                     {
                       "content": "Il est en dérivation sur l'ampoule : il la court-circuite",
@@ -1065,7 +1065,7 @@
             "Vérifier que toutes les intensités sont dans la même unité et que l'intensité d'une branche dérivée est plus petite que celle de la branche principale."
           ],
           "example": {
-            "statement": "Dans un petit montage de la maison, un kit solaire alimente deux appareils en dérivation. La branche principale arrive au nœud A avec une intensité de 0,60 A. Deux branches dérivées repartent de A : la lampe, traversée par 0,25 A, et le ventilateur, d'intensité I₂ inconnue. Calculer I₂.",
+            "statement": "Dans un petit montage de la maison, un kit solaire alimente deux appareils en dérivation (valeurs fictives). La branche principale arrive au nœud A avec une intensité de 0,60 A. Deux branches dérivées repartent de A : la lampe, traversée par 0,25 A, et le ventilateur, d'intensité I₂ inconnue. Calculer I₂.",
             "steps": [
               "Nommer : A est un nœud où se rejoignent trois fils ; le montage est en dérivation.",
               "Repérer : au nœud A arrive 0,60 A ; repartent 0,25 A (lampe) et I₂ (ventilateur).",
@@ -1151,7 +1151,7 @@
           "exercise": [
             {
               "title": "Intensités dans la lampe torche et dans le salon",
-              "statement": "Dans cet exercice, tu appliques l'intensité en série et la loi des nœuds à la lampe torche de Koffi et au salon de la famille Traoré.",
+              "statement": "Dans cet exercice, tu appliques l'intensité en série et la loi des nœuds à la lampe torche de Koffi et au salon de la famille Traoré. Les valeurs sont fictives.",
               "exercise_type": "fixation",
               "figure": null,
               "questions": [
@@ -1246,7 +1246,7 @@
             },
             {
               "title": "Intensités à la maison et à l'atelier d'Adjamé",
-              "statement": "Dans cet exercice, tu utilises l'égalité des intensités en série et la loi des nœuds, avec des circuits de la maison et de l'atelier d'Adjamé.",
+              "statement": "Dans cet exercice, tu utilises l'égalité des intensités en série et la loi des nœuds, avec des circuits de la maison et de l'atelier d'Adjamé. Les valeurs sont fictives.",
               "exercise_type": "fixation",
               "figure": null,
               "hint": "En série, l'intensité est la même partout ; au nœud, arrivée = somme des départs, dans une même unité.",

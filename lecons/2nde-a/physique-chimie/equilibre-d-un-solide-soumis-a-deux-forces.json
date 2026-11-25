@@ -150,7 +150,7 @@
       "notions": [
         {
           "name": "Faire le bilan des forces exercées sur un solide",
-          "remember": "Le **système** est le solide que l'on étudie. Les **forces extérieures** sont celles que les autres objets exercent **sur** lui. Le **bilan des forces** est la liste de ces forces avec leurs caractéristiques. Le **poids** $\\vec P$ : exercé à distance par la Terre, appliqué au centre de gravité G, vertical, vers le bas, $P = m \\times g$. La **tension** $\\vec T$ d'un fil ou d'un ressort : contact localisé, appliquée au point d'attache, dirigée suivant le fil, du solide vers le fil. La **réaction** $\\vec R$ d'un support : contact réparti, dirigée du support vers le solide, perpendiculaire au support quand il n'y a pas de frottements. Dans cette leçon, on néglige les frottements et on prend $g = 10$ N/kg. La force qu'un solide exerce sur son support est la **force pressante** : elle s'exerce sur le support, pas sur le solide.",
+          "remember": "Le **système** est le solide que l'on étudie. Les **forces extérieures** sont celles que les autres objets exercent **sur** lui. Le **bilan des forces** est la liste de ces forces avec leurs caractéristiques. Le **poids** $\\vec P$ : exercé à distance par la Terre, appliqué au centre de gravité G, vertical, vers le bas, $P = m \\times g$. La **tension** $\\vec T$ d'un fil ou d'un ressort : contact localisé, appliquée au point d'attache, dirigée suivant le fil, du solide vers le fil. La **réaction** $\\vec R$ d'un support : contact réparti, dirigée du support vers le solide ; pour un solide simplement posé sur un support horizontal, elle est verticale, vers le haut. Dans cette leçon, on prend $g = 10$ N/kg. La force qu'un solide exerce sur son support est la **force pressante** : elle s'exerce sur le support, pas sur le solide.",
           "method": [
             "Définir le système : choisir le solide que l'on étudie.",
             "Lister les objets qui agissent sur le système : la Terre (à distance), puis chaque objet qui le touche.",
@@ -474,7 +474,7 @@
         },
         {
           "name": "Équilibre d'un solide soumis à deux forces",
-          "remember": "Un solide est **en équilibre** quand il reste immobile par rapport au sol. S'il n'est soumis qu'à **deux forces** $\\vec F_1$ et $\\vec F_2$, il faut et il suffit que : (1) les deux forces aient la **même droite d'action** ; (2) elles aient des **sens opposés** ; (3) elles aient la **même intensité** : $F_1 = F_2$. On écrit $\\vec F_1 + \\vec F_2 = \\vec 0$ : la somme vectorielle est nulle. Cette condition est nécessaire, mais elle ne suffit pas : il faut aussi la même droite d'action. Applications : un solide suspendu à un fil, $T = P$ ; un solide posé sur un plan horizontal, $R = P$ ; un solide accroché à un dynamomètre, la lecture est $T = P = m \\times g$.",
+          "remember": "Un solide est **en équilibre** quand il reste immobile par rapport au sol. Si un solide soumis à **deux forces** $\\vec F_1$ et $\\vec F_2$ est en équilibre, alors : (1) les deux forces ont la **même droite d'action** ; (2) elles ont des **sens opposés** ; (3) elles ont la **même intensité** : $F_1 = F_2$. Si l'une de ces conditions manque, le solide n'est pas en équilibre. On écrit $\\vec F_1 + \\vec F_2 = \\vec 0$ : la somme vectorielle est nulle. La somme nulle ne suffit pas : les deux forces doivent aussi avoir la même droite d'action. Applications : un solide suspendu à un fil, $T = P$ ; un solide posé sur un plan horizontal, $R = P$ ; un solide accroché à un dynamomètre, la lecture est $T = P = m \\times g$.",
           "method": [
             "Définir le système et dresser le bilan : écrire les deux forces exercées sur lui.",
             "Vérifier la direction et le sens : même droite d'action et sens opposés.",
@@ -1644,7 +1644,7 @@
                 {
                   "content": "Un solide est soumis à deux forces $\\vec F_1$ et $\\vec F_2$ et reste immobile. Quelles conditions les deux forces respectent-elles ?",
                   "question_type": "multiple_correct_3",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit $\\vec F_1$ et $\\vec F_2$. Étape 2 — Vérifier la direction et le sens : elles ont la même droite d'action et des sens opposés. Étape 3 — Écrire l'égalité des intensités : $F_1 = F_2$. Étape 4 — Calculer l'inconnue : ces trois conditions suffisent à l'équilibre. Pourquoi pas « même point d'application » : le poids est appliqué en G et la tension au point d'attache, et l'équilibre est pourtant possible.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit $\\vec F_1$ et $\\vec F_2$. Étape 2 — Vérifier la direction et le sens : elles ont la même droite d'action et des sens opposés. Étape 3 — Écrire l'égalité des intensités : $F_1 = F_2$. Étape 4 — Calculer l'inconnue : un solide en équilibre sous deux forces respecte ces trois conditions à la fois. Pourquoi pas « même point d'application » : le poids est appliqué en G et la tension au point d'attache, et l'équilibre est pourtant possible.",
                   "answers": [
                     {
                       "content": "Même droite d'action",
