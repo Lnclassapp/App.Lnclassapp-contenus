@@ -13,7 +13,7 @@
         {
           "key": "palet-sur-glace",
           "kind": "coordinate_plane",
-          "description": "Un plan à carreaux. Un palet de 0,3 kg glisse sur la glace ; son centre d'inertie G est en (3 ; 3). Deux flèches partent de G : le poids P, vertical vers le bas, de 3 carreaux, et la réaction R de la glace, verticale vers le haut, de 3 carreaux. Échelle : 1 carreau pour 1 N. Les deux forces ont la même droite d'action, des sens opposés et la même intensité, 3 N : leur somme est nulle.",
+          "description": "Un plan à carreaux. La glace horizontale est la droite y = 2 ; le palet de 0,3 kg, vu de profil, est le carré posé dessus, de centre d'inertie G en (3 ; 3). Le poids P part de G, vertical vers le bas, de 3 carreaux. La réaction R de la glace part du point de contact I, en (3 ; 2), verticale vers le haut, de 3 carreaux. Échelle : 1 carreau pour 1 N. Les deux forces ont la même droite d'action (la verticale de G), des sens opposés et la même intensité, 3 N : leur somme est nulle.",
           "params": {
             "xmin": 0,
             "xmax": 6,
@@ -24,6 +24,37 @@
                 "id": "G",
                 "x": 3,
                 "y": 3
+              },
+              {
+                "id": "I",
+                "x": 3,
+                "y": 2
+              }
+            ],
+            "segments": [
+              {
+                "x1": 0,
+                "y1": 2,
+                "x2": 6,
+                "y2": 2
+              },
+              {
+                "x1": 2,
+                "y1": 2,
+                "x2": 2,
+                "y2": 4
+              },
+              {
+                "x1": 2,
+                "y1": 4,
+                "x2": 4,
+                "y2": 4
+              },
+              {
+                "x1": 4,
+                "y1": 4,
+                "x2": 4,
+                "y2": 2
               }
             ],
             "vectors": [
@@ -39,7 +70,7 @@
                 "dx": 0,
                 "dy": 3,
                 "ox": 3,
-                "oy": 3
+                "oy": 2
               }
             ]
           },
@@ -225,7 +256,7 @@
       "notions": [
         {
           "name": "Reconnaître un solide pseudo-isolé",
-          "remember": "Le **système** est le solide étudié. Les **forces extérieures** sont celles que les autres objets exercent sur lui. Un système est **isolé** quand il ne subit **aucune** force ; il est **pseudo-isolé** quand les forces qu'il subit **se compensent** : leur somme vectorielle est nulle, $\\sum \\vec F = \\vec 0$. Pour deux forces, cela veut dire : même droite d'action, sens opposés, même intensité. Le **centre d'inertie** G d'un solide est le point dont le mouvement est le plus simple ; à la surface de la Terre, il est confondu avec le centre de gravité (pour un solide homogène de forme simple, c'est son centre de symétrie). Dans cette leçon, on néglige les frottements sauf mention contraire et on prend $g = 10$ N/kg.",
+          "remember": "Le **système** est le solide étudié. Les **forces extérieures** sont celles que les autres objets exercent sur lui. Un système est **isolé** quand il ne subit **aucune** force ; il est **pseudo-isolé** quand les forces qu'il subit **se compensent** : leur somme vectorielle est nulle, $\\sum \\vec F = \\vec 0$. Pour deux forces, cela veut dire : même droite d'action, sens opposés, même intensité. Le **centre d'inertie** G d'un solide est le point dont le mouvement est le plus simple ; à la surface de la Terre, il est confondu avec le centre de gravité (pour un solide homogène qui a un centre de symétrie, comme une boule ou un disque, c'est ce centre). Dans cette leçon, on néglige les frottements sauf mention contraire et on prend $g = 10$ N/kg.",
           "method": [
             "Définir le système : nommer le solide étudié et repérer son centre d'inertie G.",
             "Faire le bilan des forces extérieures : la Terre (le poids), puis chaque objet qui touche le solide.",
@@ -233,7 +264,7 @@
             "Conclure : somme nulle, le solide est pseudo-isolé (isolé s'il ne subit aucune force) ; sinon il ne l'est pas."
           ],
           "example": {
-            "statement": "Un palet de 0,3 kg glisse sur la glace d'une patinoire, frottements négligés. Il subit son poids $\\vec P$ et la réaction $\\vec R$ de la glace, qui est perpendiculaire à la glace. Ce palet est-il pseudo-isolé ? On prend $g = 10$ N/kg.",
+            "statement": "Un palet de 0,3 kg glisse sur la glace horizontale d'une patinoire, frottements négligés. Il subit son poids $\\vec P$ et la réaction $\\vec R$ de la glace, qui est perpendiculaire à la glace. Ce palet est-il pseudo-isolé ? On prend $g = 10$ N/kg.",
             "steps": [
               "Définir : le système est le palet ; on repère son centre d'inertie G, en son centre.",
               "Faire le bilan : la Terre exerce le poids $\\vec P$ ; la glace, qui touche le palet, exerce la réaction $\\vec R$. Il n'y a pas d'autre force.",
@@ -247,7 +278,7 @@
             "statement": "Tu t'entraînes à décider si un solide est pseudo-isolé ou non.",
             "questions": [
               {
-                "content": "Un palet glisse sur la glace d'une patinoire, frottements négligés. Il subit son poids $\\vec P$ et la réaction $\\vec R$ de la glace : même droite d'action, sens opposés, même intensité. Ce palet est…",
+                "content": "Un palet glisse sur la glace horizontale d'une patinoire, frottements négligés. Il subit son poids $\\vec P$ et la réaction $\\vec R$ de la glace : même droite d'action, sens opposés, même intensité. Ce palet est…",
                 "question_type": "single_choice",
                 "explanation": "Étape 1 — Définir le système : le palet, avec son centre d'inertie G. Étape 2 — Faire le bilan des forces extérieures : le poids $\\vec P$ et la réaction $\\vec R$. Étape 3 — Additionner les forces : elles ont même droite d'action, des sens opposés et la même intensité : $\\vec P + \\vec R = \\vec 0$. Étape 4 — Conclure : la somme est nulle, le palet est pseudo-isolé. Dire « isolé » oublie que deux forces s'exercent bien sur lui ; elles se compensent seulement.",
                 "hint": "Deux forces peuvent se compenser sans disparaître.",
@@ -271,7 +302,7 @@
                 ]
               },
               {
-                "content": "Un palet de 0,5 kg glisse sur la glace, frottements négligés. Pour qu'il soit pseudo-isolé, quelle doit être l'intensité de la réaction de la glace ? On prend $g = 10$ N/kg.",
+                "content": "Un palet de 0,5 kg glisse sur la glace horizontale, frottements négligés. Pour qu'il soit pseudo-isolé, quelle doit être l'intensité de la réaction de la glace ? On prend $g = 10$ N/kg.",
                 "question_type": "numeric",
                 "explanation": "Étape 1 — Définir le système : le palet de 0,5 kg. Étape 2 — Faire le bilan des forces extérieures : le poids $\\vec P$ et la réaction $\\vec R$ ; $P = 0{,}5 \\times 10 = 5$ N. Étape 3 — Additionner les forces : pour que la somme soit nulle, $R$ doit avoir la même intensité que $P$. Étape 4 — Conclure : $R = 5$ N.",
                 "hint": "Calcule d'abord le poids, $P = m \\times g$.",
@@ -322,7 +353,7 @@
               "figure": null,
               "questions": [
                 {
-                  "content": "Une bille de 20 g repose sur le sol de la cour. Quelles forces s'exercent sur elle ?",
+                  "content": "Une bille de 20 g repose sur le sol horizontal de la cour. Quelles forces s'exercent sur elle ?",
                   "question_type": "single_choice",
                   "explanation": "Étape 1 — Définir le système : la bille, avec son centre d'inertie G. Étape 2 — Faire le bilan des forces extérieures : la Terre exerce le poids ; le sol, qui touche la bille, exerce la réaction. Étape 3 — Additionner les forces : les deux forces sont verticales, de sens opposés et de même intensité : leur somme est nulle. Étape 4 — Conclure : la bille est pseudo-isolée. Pourquoi pas « Son poids seulement » : le sol touche la bille et exerce une réaction ; sans elle, la bille tomberait.",
                   "answers": [
@@ -345,7 +376,7 @@
                   ]
                 },
                 {
-                  "content": "Un mobile autoporteur de 0,6 kg glisse sur une table à coussin d'air. Pour qu'il soit pseudo-isolé, quelle doit être l'intensité de la réaction de la table ? On prend $g = 10$ N/kg.",
+                  "content": "Un mobile autoporteur de 0,6 kg glisse sur une table à coussin d'air horizontale. Pour qu'il soit pseudo-isolé, quelle doit être l'intensité de la réaction de la table ? On prend $g = 10$ N/kg.",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Définir le système : le mobile de 0,6 kg. Étape 2 — Faire le bilan des forces extérieures : le poids $\\vec P$ (de la Terre) et la réaction $\\vec R$ (de la table). Étape 3 — Additionner les forces : la somme est nulle si $R = P$. Étape 4 — Conclure : $P = 0{,}6 \\times 10 = 6$ N, donc $R = 6$ N.",
                   "unit": "N",
@@ -409,7 +440,7 @@
                 {
                   "content": "Où se trouve le centre d'inertie d'un ballon plein et homogène ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Définir le système : le ballon plein et homogène. Étape 2 — Repérer le centre d'inertie G : on cherche le point dont le mouvement est le plus simple. Étape 3 — Comparer avec le centre de symétrie ou de gravité : pour un solide homogène de forme simple, c'est son centre de symétrie. Étape 4 — Conclure : le centre d'inertie G est au centre du ballon. Pourquoi pas « Au point qui touche le sol » : ce point change à chaque tour, son mouvement est compliqué.",
+                  "explanation": "Étape 1 — Définir le système : le ballon plein et homogène. Étape 2 — Repérer le centre d'inertie G : on cherche le point dont le mouvement est le plus simple. Étape 3 — Comparer avec le centre de symétrie ou de gravité : pour un solide homogène qui a un centre de symétrie, c'est ce centre. Étape 4 — Conclure : le centre d'inertie G est au centre du ballon. Pourquoi pas « Au point qui touche le sol » : ce point change à chaque tour, son mouvement est compliqué.",
                   "answers": [
                     {
                       "content": "Au centre du ballon",
@@ -463,7 +494,7 @@
                   "explanation": "Étape 1 — Définir le système : trois solides. Étape 2 — Faire le bilan des forces extérieures : le palet subit $P$ et $R$ ; la bille subit son poids seul ; le chariot subit 100 N et 40 N horizontales. Étape 3 — Additionner les forces : palet : $3 - 3 = 0$ ; bille : $P \\neq 0$ vers le bas ; chariot : $100 - 40 = 60$ N vers l'avant. Étape 4 — Conclure : seul le palet est pseudo-isolé.",
                   "answers": [
                     {
-                      "content": "Un palet de 0,3 kg glisse sur la glace, avec $P = 3$ N et $R = 3$ N",
+                      "content": "Un palet de 0,3 kg glisse sur la glace horizontale, avec $P = 3$ N et $R = 3$ N",
                       "match": "Somme des forces nulle"
                     },
                     {
@@ -482,11 +513,11 @@
                   "explanation": "Étape 1 — Définir le système : quatre solides. Étape 2 — Faire le bilan des forces extérieures : mobile : poids et réaction ; bille : poids et réaction ; pierre et ballon : poids seul. Étape 3 — Additionner les forces : poids et réaction se compensent pour le mobile et la bille, pas pour la pierre ni le ballon. Étape 4 — Conclure : le mobile et la bille sont pseudo-isolés. Pourquoi pas la pierre : son poids n'est compensé par aucune autre force.",
                   "answers": [
                     {
-                      "content": "Un mobile autoporteur glisse sur une table à coussin d'air",
+                      "content": "Un mobile autoporteur glisse sur une table à coussin d'air horizontale",
                       "correct": true
                     },
                     {
-                      "content": "Une bille de 20 g est immobile sur le sol de la cour",
+                      "content": "Une bille de 20 g est immobile sur le sol horizontal de la cour",
                       "correct": true
                     },
                     {
@@ -1239,7 +1270,7 @@
             "steps": [
               "Décrire : avant le freinage, le gbaka et le passager ont la même vitesse constante ; pendant le freinage, la vitesse du gbaka diminue.",
               "Comparer : la vitesse du gbaka change ; pour le passager, aucune force horizontale ne s'exerce, sa vitesse est conservée.",
-              "Appliquer : le gbaka ralentit, donc ses forces ne se compensent pas (les freins agissent) ; le passager garde sa vitesse, donc les forces horizontales sur lui se compensent (il n'y en a pas).",
+              "Appliquer : le gbaka ralentit, donc ses forces ne se compensent pas (la route exerce sur ses roues freinées une force de frottement vers l'arrière) ; le passager garde sa vitesse, donc les forces horizontales sur lui se compensent (il n'y en a pas).",
               "Conclure : par inertie, le passager garde sa vitesse et part vers l'avant par rapport au gbaka ; il manque une force qui le ralentisse, celle de la ceinture."
             ]
           },
@@ -1410,7 +1441,7 @@
                   ]
                 },
                 {
-                  "content": "Pourquoi une bille lancée sur le sol de terre de la cour finit-elle par s'arrêter ?",
+                  "content": "Pourquoi une bille lancée sur le sol de terre horizontal de la cour finit-elle par s'arrêter ?",
                   "question_type": "single_choice",
                   "explanation": "Étape 1 — Décrire : la bille roule, puis s'arrête. Étape 2 — Comparer : sa vitesse diminue. Étape 3 — Appliquer le principe : la somme des forces n'est pas nulle. Étape 4 — Conclure : la force de frottement du sol freine la bille. Pourquoi pas « Elle n'a plus de force en elle » : un solide n'a pas besoin de force pour avancer.",
                   "answers": [
@@ -1491,7 +1522,7 @@
                   ]
                 },
                 {
-                  "content": "Un palet lancé sur la glace s'arrête peu à peu. Quelles affirmations sont vraies ?",
+                  "content": "Un palet lancé sur une glace horizontale s'arrête peu à peu. Quelles affirmations sont vraies ?",
                   "question_type": "multiple_correct_2",
                   "explanation": "Étape 1 — Décrire : le palet glisse, puis s'arrête. Étape 2 — Comparer : sa vitesse diminue. Étape 3 — Appliquer le principe : la somme des forces n'est pas nulle. Étape 4 — Conclure : une force de frottement le ralentit. Pourquoi pas « il ne reçoit plus de force vers l'avant » : sans frottement, il garderait sa vitesse.",
                   "answers": [
@@ -1514,7 +1545,7 @@
                   ]
                 },
                 {
-                  "content": "Un palet est lancé à 2 m/s sur une glace parfaitement lisse, frottements négligés. Quelle sera sa vitesse, en m/s, 5 s plus tard ?",
+                  "content": "Un palet est lancé à 2 m/s sur une glace horizontale parfaitement lisse, frottements négligés. Quelle sera sa vitesse, en m/s, 5 s plus tard ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Décrire : le palet glisse à 2 m/s. Étape 2 — Comparer : aucune force ne change sa vitesse. Étape 3 — Appliquer le principe : poids et réaction se compensent : pseudo-isolé, mouvement rectiligne uniforme. Étape 4 — Conclure : sa vitesse reste 2 m/s.",
                   "unit": "m/s",
@@ -1708,7 +1739,7 @@
             {
               "content": "Pendant le freinage, la vitesse du gbaka diminue. Que peut-on dire des forces qui s'exercent sur lui ?",
               "question_type": "single_choice",
-              "explanation": "Étape 1 — Décrire : pendant le freinage, la vitesse du gbaka diminue. Étape 2 — Comparer : la valeur de sa vitesse change. Étape 3 — Appliquer le principe : ce n'est pas un mouvement rectiligne uniforme. Étape 4 — Conclure : la somme des forces n'est pas nulle : les freins exercent une force. Pourquoi pas « pseudo-isolé » : il le serait en mouvement rectiligne uniforme.",
+              "explanation": "Étape 1 — Décrire : pendant le freinage, la vitesse du gbaka diminue. Étape 2 — Comparer : la valeur de sa vitesse change. Étape 3 — Appliquer le principe : ce n'est pas un mouvement rectiligne uniforme. Étape 4 — Conclure : la somme des forces n'est pas nulle : la route exerce sur les roues freinées une force de frottement vers l'arrière. Pourquoi pas « pseudo-isolé » : il le serait en mouvement rectiligne uniforme.",
               "answers": [
                 {
                   "content": "Leur somme n'est pas nulle",
@@ -1862,7 +1893,7 @@
         },
         {
           "title": "Un palet qui entre dans une zone rugueuse",
-          "statement": "Au laboratoire, un palet glisse sur une table lisse puis entre dans une zone rugueuse. Sa position est enregistrée toutes les 40 ms. Les positions A0 à A6 sont alignées ; les distances entre positions consécutives valent 4, 4, 4, 3, 2 puis 1 cm (valeurs fictives). Référentiel terrestre galiléen.",
+          "statement": "Au laboratoire, un palet glisse sur une table horizontale lisse puis entre dans une zone rugueuse. Sa position est enregistrée toutes les 40 ms. Les positions A0 à A6 sont alignées ; les distances entre positions consécutives valent 4, 4, 4, 3, 2 puis 1 cm (valeurs fictives). Référentiel terrestre galiléen.",
           "exercise_type": "evaluation",
           "figure": "enregistrement-palet-zone",
           "questions": [
@@ -2005,9 +2036,9 @@
                   ]
                 },
                 {
-                  "content": "Le centre d'inertie d'un solide homogène de forme simple est situé en son centre de symétrie.",
+                  "content": "Le centre d'inertie d'un solide homogène qui a un centre de symétrie est situé en ce centre.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Définir le système : un solide homogène de forme simple. Étape 2 — Repérer le centre d'inertie G : son centre d'inertie est le point dont le mouvement est le plus simple. Étape 3 — Comparer avec le centre de symétrie ou de gravité : pour un tel solide, c'est son centre de symétrie. Étape 4 — Conclure : l'affirmation est vraie. Pourquoi pas « Faux » : le centre d'inertie n'est pas un point de la surface mais le point central du solide.",
+                  "explanation": "Étape 1 — Définir le système : un solide homogène qui a un centre de symétrie (boule, cube, disque). Étape 2 — Repérer le centre d'inertie G : son centre d'inertie est le point dont le mouvement est le plus simple. Étape 3 — Comparer avec le centre de symétrie ou de gravité : pour un tel solide, c'est son centre de symétrie. Étape 4 — Conclure : l'affirmation est vraie. Pourquoi pas « Faux » : le centre d'inertie n'est pas un point de la surface mais le point central du solide.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2257,7 +2288,7 @@
             },
             {
               "title": "Exercice 4",
-              "statement": "Un palet de 2 kg glisse sur la glace d'une patinoire, frottements négligés. On prend $g = 10$ N/kg.",
+              "statement": "Un palet de 2 kg glisse sur la glace horizontale d'une patinoire, frottements négligés. On prend $g = 10$ N/kg.",
               "exercise_type": "evaluation",
               "figure": null,
               "hint": "Calcule le poids avec $P = m \\times g$ puis compare avec la réaction.",
@@ -2276,7 +2307,7 @@
                   ]
                 },
                 {
-                  "content": "Un palet de 2 kg glisse sur la glace. Pour qu'il soit pseudo-isolé, quelle doit être l'intensité de la réaction de la glace ? On prend $g = 10$ N/kg.",
+                  "content": "Un palet de 2 kg glisse sur la glace horizontale. Pour qu'il soit pseudo-isolé, quelle doit être l'intensité de la réaction de la glace ? On prend $g = 10$ N/kg.",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Définir le système : le palet de 2 kg. Étape 2 — Faire le bilan des forces extérieures : poids $P = 20$ N et réaction $R$. Étape 3 — Additionner les forces : somme nulle si $R = P$. Étape 4 — Conclure : $R = 20$ N ; la réaction compense exactement le poids. Pourquoi pas 2 : c'est la masse en kg ; la réaction doit être égale au poids, 20 N.",
                   "unit": "N",
@@ -2289,7 +2320,7 @@
                   ]
                 },
                 {
-                  "content": "Un palet glisse sur la glace, avec son poids et la réaction de la glace. Que dire de ces deux forces ?",
+                  "content": "Un palet glisse sur la glace horizontale, avec son poids et la réaction de la glace. Que dire de ces deux forces ?",
                   "question_type": "single_choice",
                   "explanation": "Étape 1 — Définir le système : le palet. Étape 2 — Faire le bilan des forces extérieures : le poids vers le bas, la réaction vers le haut. Étape 3 — Additionner les forces : même droite verticale, sens opposés, même intensité : somme nulle. Étape 4 — Conclure : le palet est pseudo-isolé. Pourquoi pas « intensités différentes » : la somme ne serait pas nulle et le palet ne pourrait pas être pseudo-isolé.",
                   "answers": [
@@ -2565,7 +2596,7 @@
             },
             {
               "title": "Exercice 3",
-              "statement": "Awa joue aux billes dans la cour. Elle lance une bille qui roule en ligne droite sur le sol de terre et s'arrête au bout de quelques mètres. Référentiel terrestre galiléen.",
+              "statement": "Awa joue aux billes dans la cour. Elle lance une bille qui roule en ligne droite sur le sol de terre horizontal et s'arrête au bout de quelques mètres. Référentiel terrestre galiléen.",
               "exercise_type": "evaluation",
               "figure": null,
               "hint": "Une bille qui ralentit change de vitesse : relis ce que cela dit des forces.",
@@ -2617,7 +2648,7 @@
                   ]
                 },
                 {
-                  "content": "Sur une surface parfaitement lisse, sans frottements, la bille roulerait indéfiniment à vitesse constante en ligne droite.",
+                  "content": "Sur une surface horizontale parfaitement lisse, sans frottements, la bille roulerait indéfiniment à vitesse constante en ligne droite.",
                   "question_type": "true_false",
                   "explanation": "Étape 1 — Décrire : la bille sur surface lisse. Étape 2 — Comparer : sans frottement, poids et réaction se compensent. Étape 3 — Appliquer le principe : la somme des forces est nulle : pseudo-isolée. Étape 4 — Conclure : elle garde sa vitesse : l'affirmation est vraie. Pourquoi pas « Faux » : sans force qui la freine, la bille garde sa vitesse.",
                   "answers": [
@@ -2632,7 +2663,7 @@
                   ]
                 },
                 {
-                  "content": "Une bille roule à 0,5 m/s en ligne droite sur une surface parfaitement lisse. Quelle distance parcourt-elle en 8 s, en m ?",
+                  "content": "Une bille roule à 0,5 m/s en ligne droite sur une surface horizontale parfaitement lisse. Quelle distance parcourt-elle en 8 s, en m ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Décrire : la bille roule à 0,5 m/s. Étape 2 — Comparer : sa vitesse est conservée. Étape 3 — Appliquer le principe : mouvement rectiligne uniforme : $d = v \\times t$. Étape 4 — Conclure : $d = 0{,}5 \\times 8 = 4$ m ; la vitesse en m/s et la durée en s donnent des mètres. Pourquoi pas 16 : c'est 8 / 0,5, qui divise la durée par la vitesse au lieu de les multiplier.",
                   "unit": "m",
@@ -2645,7 +2676,7 @@
                   ]
                 },
                 {
-                  "content": "La bille est immobile sur le sol de la cour. Quelles affirmations sont vraies ?",
+                  "content": "La bille est immobile sur le sol horizontal de la cour. Quelles affirmations sont vraies ?",
                   "question_type": "multiple_correct_2",
                   "explanation": "Étape 1 — Choisir le système et le référentiel : la bille, référentiel terrestre. Étape 2 — Décrire le mouvement de G : elle est au repos. Étape 3 — Appliquer le principe : la somme des forces est nulle : poids et réaction se compensent. Étape 4 — Conclure : elle est pseudo-isolée. Pourquoi pas « Aucune force » : le poids et la réaction existent.",
                   "answers": [
@@ -2671,7 +2702,7 @@
             },
             {
               "title": "Exercice 4",
-              "statement": "Au laboratoire du lycée, un mobile autoporteur de 0,4 kg glisse sur une table à coussin d'air. Son centre d'inertie est enregistré toutes les 20 ms ; les positions sont alignées et distantes de 1 cm (valeurs fictives). On prend $g = 10$ N/kg.",
+              "statement": "Au laboratoire du lycée, un mobile autoporteur de 0,4 kg glisse sur une table à coussin d'air horizontale. Son centre d'inertie est enregistré toutes les 20 ms ; les positions sont alignées et distantes de 1 cm (valeurs fictives). On prend $g = 10$ N/kg.",
               "exercise_type": "evaluation",
               "figure": null,
               "hint": "$\\Delta t = 20$ ms $= 0{,}02$ s ; $d = 1$ cm $= 0{,}01$ m.",
@@ -3050,7 +3081,7 @@
                   ]
                 },
                 {
-                  "content": "Remets dans l'ordre les étapes de la méthode pour expliquer pourquoi le passager part vers l'avant par rapport au gbaka.",
+                  "content": "Remets dans l'ordre les étapes de la méthode pour expliquer pourquoi le passager part vers l'avant par rapport au car.",
                   "question_type": "ordering",
                   "explanation": "La méthode a quatre étapes : Décrire le mouvement, Comparer, Appliquer le principe, puis Conclure. Pourquoi pas conclure avant de comparer : on ne peut parler d'inertie qu'après avoir constaté ce qui change et ce qui est conservé.",
                   "answers": [
@@ -3158,14 +3189,14 @@
                 {
                   "content": "Explique en quatre phrases comment savoir, à partir d'un enregistrement, si un mobile est pseudo-isolé.",
                   "question_type": "written",
-                  "points": 3,
+                  "points": 4,
                   "criteria": [
                     "Dit qu'il faut des positions alignées",
                     "Dit qu'il faut des distances égales entre positions consécutives, à intervalles de temps égaux",
                     "Conclut mouvement rectiligne uniforme, donc somme des forces nulle",
                     "Précise que sinon le mobile n'est pas pseudo-isolé"
                   ],
-                  "explanation": "Corrigé modèle : on relève les positions du centre d'inertie à intervalles de temps égaux et on regarde si elles sont alignées (1 point). On compare les distances entre positions consécutives : si elles sont égales, la vitesse est constante (1 point). Alors le mouvement est rectiligne uniforme et, d'après le principe de l'inertie, la somme des forces est nulle : le mobile est pseudo-isolé (1 point). Si les positions ne sont pas alignées ou si les distances changent, il ne l'est pas.",
+                  "explanation": "Corrigé modèle : on relève les positions du centre d'inertie à intervalles de temps égaux et on regarde si elles sont alignées (1 point). On compare les distances entre positions consécutives : si elles sont égales, la vitesse est constante (1 point). Alors le mouvement est rectiligne uniforme et, d'après le principe de l'inertie, la somme des forces est nulle : le mobile est pseudo-isolé (1 point). Si les positions ne sont pas alignées ou si les distances changent, il ne l'est pas (1 point).",
                   "starter": "On relève les positions à intervalles de temps égaux, puis…",
                   "answers": []
                 }
@@ -3463,7 +3494,7 @@
             },
             {
               "title": "Exercice 4",
-              "statement": "Un palet de 0,2 kg est lancé sur la glace puis entre dans une zone rugueuse. Sa position est enregistrée toutes les 40 ms : les positions A0 à A5 sont alignées, aux abscisses 0 ; 5 ; 10 ; 15 ; 19 puis 22 cm (valeurs fictives). Référentiel terrestre galiléen.",
+              "statement": "Un palet de 0,2 kg est lancé sur une glace horizontale puis entre dans une zone rugueuse. Sa position est enregistrée toutes les 40 ms : les positions A0 à A5 sont alignées, aux abscisses 0 ; 5 ; 10 ; 15 ; 19 puis 22 cm (valeurs fictives). Référentiel terrestre galiléen.",
               "exercise_type": "evaluation",
               "figure": null,
               "hint": "Calcule les distances entre positions consécutives : 5, 5, 5, 4, 3 cm.",
