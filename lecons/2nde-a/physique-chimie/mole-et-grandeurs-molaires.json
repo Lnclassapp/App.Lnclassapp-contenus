@@ -742,7 +742,7 @@
           "remember": "**Loi d'Avogadro-Ampère** : dans les mêmes conditions de température et de pression, des **volumes égaux** de gaz différents contiennent le **même nombre de molécules**. Conséquence : une mole de n'importe quel gaz (donc $N_A$ molécules) occupe **le même volume**, le **volume molaire** $V_m$, en **L/mol**. Dans les conditions normales (0 °C et pression normale), $V_m = 22{,}4$ L/mol ; à une autre température, l'énoncé donne la valeur (par exemple 24 L/mol à 20 °C). Pour un gaz de volume $V$ : $n = \\frac{V}{V_m}$, donc $V = n \\times V_m$. Cette relation ne vaut que pour les **gaz**, pas pour un solide ni un liquide. Conversions : 1 L = 1000 mL et 1 m³ = 1000 L.",
           "method": [
             "Relever le volume $V$ du gaz, le convertir en litres, et repérer la valeur du volume molaire $V_m$ : 22,4 L/mol dans les conditions normales, sinon la valeur donnée par l'énoncé.",
-            "Écrire la relation $n = \\frac{V}{V_m}$ (ou $V = n \\times V_m$), avec $V$ en L et $V_m$ en L/mol.",
+            "Écrire la relation $n = \\frac{V}{V_m}$ (ou $V = n \\times V_m$), avec $V$ en L et $V_m$ en L/mol (loi d'Avogadro-Ampère : même volume et mêmes conditions donnent la même quantité de matière).",
             "Calculer la quantité de matière $n$ (ou le volume $V$), puis conclure avec l'unité."
           ],
           "example": {
@@ -813,7 +813,7 @@
               {
                 "content": "Un ballon de 5 L de dioxygène et un ballon de 5 L de dihydrogène sont à la même température et à la même pression. Ils contiennent le même nombre de molécules.",
                 "question_type": "true_false",
-                "explanation": "Étape 1 — Relever : mêmes volumes (5 L) de gaz différents, mêmes conditions de température et de pression. Étape 2 — Écrire : loi d'Avogadro-Ampère, des volumes égaux de gaz contiennent le même nombre de molécules, car n = V / V_m avec le même V_m. Étape 3 — Calculer : n est la même pour les deux ballons, donc N = n × N_A aussi. Pourquoi pas Faux : le dioxygène est plus lourd que le dihydrogène, mais le nombre de molécules ne dépend pas de la masse d'une molécule.",
+                "explanation": "Étape 1 — Relever : mêmes volumes (5 L) de gaz différents, mêmes conditions de température et de pression. Étape 2 — Écrire : la loi d'Avogadro-Ampère donne le même nombre de molécules, donc la même quantité de matière n. Étape 3 — Calculer : n est la même pour les deux ballons, donc N = n × N_A aussi. Pourquoi pas Faux : le dioxygène est plus lourd que le dihydrogène, mais le nombre de molécules ne dépend pas de la masse d'une molécule.",
                 "answers": [
                   {
                     "content": "Vrai",
@@ -900,7 +900,7 @@
                 {
                   "content": "Un ballon A de 6 L de dihydrogène contient 0,25 mol de gaz. Un ballon B de 6 L de dioxyde de carbone est à la même température et à la même pression. Quelle quantité de matière de gaz contient le ballon B ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Relever : les ballons ont le même volume (6 L), les mêmes conditions de température et de pression, et le ballon A contient 0,25 mol. Étape 2 — Écrire : loi d'Avogadro-Ampère, des volumes égaux de gaz contiennent le même nombre de molécules, donc la même quantité de matière n = V / V_m avec le même V_m. Étape 3 — Calculer : le ballon B contient lui aussi 0,25 mol. Pourquoi pas 11 mol : c'est 0,25 × 44, une multiplication par la masse molaire du dioxyde de carbone, qui n'intervient pas ici.",
+                  "explanation": "Étape 1 — Relever : les ballons ont le même volume (6 L), les mêmes conditions de température et de pression, et le ballon A contient 0,25 mol. Étape 2 — Écrire : la loi d'Avogadro-Ampère donne le même nombre de molécules, donc la même quantité de matière n. Étape 3 — Calculer : le ballon B contient lui aussi 0,25 mol. Pourquoi pas 11 mol : c'est 0,25 × 44, une multiplication par la masse molaire du dioxyde de carbone, qui n'intervient pas ici.",
                   "answers": [
                     {
                       "content": "0,25",
@@ -935,7 +935,7 @@
                 {
                   "content": "Dans les mêmes conditions de température et de pression, 10 L de dioxygène et 10 L de dioxyde de carbone contiennent le même nombre de molécules.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Relever : volumes égaux (10 L) de deux gaz différents, mêmes conditions. Étape 2 — Écrire : loi d'Avogadro-Ampère, des volumes égaux de gaz contiennent le même nombre de molécules ; avec n = V / V_m, le même V_m donne la même quantité de matière. Étape 3 — Calculer : par exemple avec V_m = 24 L/mol, n = 10 / 24 ≈ 0,42 mol pour chaque gaz, donc le même N. Pourquoi pas Faux : le dioxyde de carbone est plus lourd, mais cela change la masse du ballon, pas le nombre de molécules.",
+                  "explanation": "Étape 1 — Relever : volumes égaux (10 L) de deux gaz différents, mêmes conditions. Étape 2 — Écrire : la loi d'Avogadro-Ampère donne le même nombre de molécules, donc la même quantité de matière n. Étape 3 — Calculer : par exemple avec V_m = 24 L/mol, n = 10 / 24 ≈ 0,42 mol pour chaque gaz, donc le même nombre de molécules. Pourquoi pas Faux : le dioxyde de carbone est plus lourd, mais cela change la masse du ballon, pas le nombre de molécules.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -1038,7 +1038,7 @@
         },
         {
           "name": "Densité d'un gaz par rapport à l'air",
-          "remember": "La **densité** $d$ d'un gaz par rapport à l'air compare la masse d'un certain volume de ce gaz à la masse du même volume d'air, dans les mêmes conditions. Elle n'a **pas d'unité**. Elle se calcule avec la masse molaire $M$ du gaz (en g/mol) : $d = \\frac{M}{29}$, donc $M = 29 \\times d$. Le nombre 29 g/mol est la masse molaire de l'air (environ 80 % de diazote $N_2$ et 20 % de dioxygène $O_2$). Si $d > 1$, le gaz est **plus lourd** que l'air : il s'accumule en bas, près du sol (butane, dioxyde de carbone). Si $d < 1$, il est **plus léger** que l'air : il monte (dihydrogène, ammoniac, méthane). Si $d = 1$, il a la même masse que l'air.",
+          "remember": "La **densité** $d$ d'un gaz par rapport à l'air compare la masse d'un certain volume de ce gaz à la masse du même volume d'air, dans les mêmes conditions. Elle n'a **pas d'unité**. Elle se calcule avec la masse molaire $M$ du gaz (en g/mol) : $d = \\frac{M}{29}$, donc $M = 29 \\times d$. Le nombre 29 g/mol est la masse molaire moyenne de l'air (environ 80 % de diazote $N_2$ et 20 % de dioxygène $O_2$). Si $d > 1$, le gaz est **plus lourd** que l'air : il s'accumule en bas, près du sol (butane, dioxyde de carbone). Si $d < 1$, il est **plus léger** que l'air : il monte (dihydrogène, ammoniac, méthane). Si $d = 1$, un volume de ce gaz a la même masse que le même volume d'air.",
           "method": [
             "Repérer le gaz et sa formule, puis calculer sa masse molaire $M$ en g/mol (ou relever la densité $d$ si elle est donnée).",
             "Écrire la relation $d = \\frac{M}{29}$ (ou $M = 29 \\times d$), avec $M$ en g/mol et $d$ sans unité.",
@@ -1060,7 +1060,7 @@
             "statement": "Tu t'entraînes à calculer la densité d'un gaz par rapport à l'air et à conclure sur son comportement.",
             "questions": [
               {
-                "content": "Un gaz a pour masse molaire 116 g/mol. Quelle est sa densité par rapport à l'air ?",
+                "content": "Un gaz fictif a pour masse molaire 116 g/mol. Quelle est sa densité par rapport à l'air ?",
                 "question_type": "numeric",
                 "explanation": "Étape 1 — Repérer : la masse molaire est donnée, M = 116 g/mol. Étape 2 — Écrire : d = M / 29. Étape 3 — Calculer : d = 116 / 29 = 4. Étape 4 — Comparer : d = 4 est supérieur à 1, ce gaz est plus lourd que l'air. Pourquoi pas 0,25 : c'est 29 / 116, la relation inversée.",
                 "answers": [
@@ -1073,7 +1073,7 @@
                 "hint": "d = M / 29."
               },
               {
-                "content": "Un gaz a une densité de 3 par rapport à l'air. Quelle est sa masse molaire ?",
+                "content": "Un gaz fictif a une densité de 3 par rapport à l'air. Quelle est sa masse molaire ?",
                 "question_type": "numeric",
                 "explanation": "Étape 1 — Repérer : la densité est donnée, d = 3. Étape 2 — Écrire : M = 29 × d. Étape 3 — Calculer : M = 29 × 3 = 87 g/mol. Étape 4 — Comparer : d = 3 est supérieur à 1, le gaz est plus lourd que l'air. Pourquoi pas 9,7 g/mol : c'est 29 / 3, une division au lieu d'une multiplication.",
                 "answers": [
@@ -1243,12 +1243,16 @@
                   "tolerance": 0
                 },
                 {
-                  "content": "Un gaz a pour masse molaire 145 g/mol. Sa densité par rapport à l'air est ___.",
+                  "content": "Un gaz fictif a pour masse molaire 145 g/mol. Sa densité par rapport à l'air est ___.",
                   "question_type": "fill_blank",
                   "explanation": "Étape 1 — Repérer : M = 145 g/mol. Étape 2 — Écrire : d = M / 29. Étape 3 — Calculer : d = 145 / 29 = 5. Étape 4 — Comparer : d = 5 est supérieur à 1, ce gaz est plus lourd que l'air. Pourquoi pas 0,2 : c'est 29 / 145, la relation inversée.",
                   "answers": [
                     {
                       "content": "5",
+                      "correct": true
+                    },
+                    {
+                      "content": "5,0",
                       "correct": true
                     }
                   ]
@@ -1273,7 +1277,7 @@
                   ]
                 },
                 {
-                  "content": "Relie chaque masse molaire de gaz à sa densité par rapport à l'air.",
+                  "content": "Relie chaque masse molaire de gaz fictif à sa densité par rapport à l'air.",
                   "question_type": "matching",
                   "explanation": "Étape 1 — Repérer : quatre masses molaires données en g/mol. Étape 2 — Écrire : d = M / 29. Étape 3 — Calculer : 29 / 29 = 1 ; 58 / 29 = 2 ; 87 / 29 = 3 ; 14,5 / 29 = 0,5. Étape 4 — Comparer : seul le gaz de 14,5 g/mol est plus léger que l'air. Pourquoi pas une paire décalée : 58 g/mol donne 2 et non 0,5, qui correspond au quotient inversé 29 / 58.",
                   "answers": [
@@ -1995,7 +1999,7 @@
                 "Calcule m = n × M : 32 g et 44 g",
                 "Explique que M diffère d'une espèce à l'autre"
               ],
-              "explanation": "Corrigé modèle : Étape 1 — Relever : V = 22,4 L pour chaque gaz, dans les mêmes conditions, et V_m = 22,4 L/mol ; d'après la loi d'Avogadro-Ampère, des volumes égaux de gaz contiennent le même nombre de molécules. Étape 2 — Calculer : n = V / V_m = 22,4 / 22,4 = 1 mol pour chaque gaz, donc N = 1 × 6,02×10²³ molécules pour chacun : le même nombre. Étape 3 — Passer : m = n × M donne 32 g pour le dioxygène et 44 g pour le dioxyde de carbone. Conclusion : le volume molaire est le même pour tous les gaz, mais la masse molaire dépend de l'espèce. Barème sur 3 : n et nombre de molécules (1,5 point), masses (1 point), explication (0,5 point).",
+              "explanation": "Corrigé modèle : Étape 1 — Relever : V = 22,4 L pour chaque gaz, dans les mêmes conditions, et V_m = 22,4 L/mol ; d'après la loi d'Avogadro-Ampère, des volumes égaux de gaz contiennent le même nombre de molécules. Étape 2 — Calculer : n = V / V_m = 22,4 / 22,4 = 1 mol pour chaque gaz, donc N = 1 × 6,02×10²³ molécules pour chacun : le même nombre. Étape 3 — Passer : m = n × M donne 32 g pour le dioxygène et 44 g pour le dioxyde de carbone. Conclusion : le volume molaire est le même pour tous les gaz, mais la masse molaire dépend de l'espèce. Barème sur 3 : loi énoncée et n (1 point), nombre de molécules (0,5 point), masses (1 point), explication (0,5 point).",
               "answers": [],
               "starter": "Dans les mêmes conditions ..."
             }
@@ -3218,7 +3222,7 @@
             },
             {
               "title": "Exercice 3",
-              "statement": "Un ballon contient 8 g de méthane CH₄, le gaz naturel. Données : M(C) = 12 g/mol, M(H) = 1 g/mol ; N_A = 6,02×10²³ mol⁻¹ ; conditions normales, V_m = 22,4 L/mol.",
+              "statement": "Un ballon contient 8 g de méthane CH₄, le gaz naturel. Données : M(C) = 12 g/mol, M(H) = 1 g/mol ; conditions normales, V_m = 22,4 L/mol.",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [
@@ -3262,7 +3266,7 @@
                   "unit": "L"
                 },
                 {
-                  "content": "Calcule la densité du méthane CH₄ par rapport à l'air (M = 16 g/mol), arrondie au centième. Le méthane est-il plus lourd ou plus léger que l'air ?",
+                  "content": "Calcule la densité du méthane CH₄ par rapport à l'air (M = 16 g/mol), arrondie au centième.",
                   "question_type": "numeric",
                   "explanation": "Méthode : 1. Repérer : méthane CH₄, M = 12 + 4 × 1 = 16 g/mol. 2. Écrire : d = M / 29, avec M en g/mol. 3. Calculer : d = 16 / 29 ≈ 0,55. 4. Comparer : d = 0,55 est inférieur à 1, donc le méthane est plus léger que l'air : en cas de fuite, il monte vers le plafond. Réponse attendue : 0,55. Pourquoi pas 1,81 : c'est 29 / 16, le quotient inversé, qui ferait croire à un gaz plus lourd que l'air.",
                   "answers": [
@@ -3274,7 +3278,7 @@
                   "tolerance": 0.01
                 },
                 {
-                  "content": "Un ballon de 5,6 L de méthane et un ballon de 5,6 L de dioxygène sont à la même température et à la même pression. Que dit la loi d'Avogadro-Ampère à propos de leur nombre de molécules ?",
+                  "content": "Un autre ballon de 5,6 L de méthane et un ballon de 5,6 L de dioxygène sont à la même température et à la même pression. Que dit la loi d'Avogadro-Ampère à propos de leur nombre de molécules ?",
                   "question_type": "single_choice",
                   "explanation": "Méthode : 1. Relever : deux gaz différents, mêmes volumes (5,6 L), mêmes conditions de température et de pression. 2. Écrire : loi d'Avogadro-Ampère, des volumes égaux de gaz contiennent le même nombre de molécules, car n = V / V_m avec le même V_m. 3. Calculer : avec V_m = 22,4 L/mol, n = 5,6 / 22,4 = 0,25 mol pour chaque ballon, donc N = 0,25 × N_A pour chacun. 4. Conclure : même nombre de molécules. Pourquoi pas plus de molécules dans le dioxygène : il est plus lourd (32 g/mol contre 16 g/mol), mais la masse d'une molécule ne change pas le nombre de molécules d'un volume donné.",
                   "answers": [
