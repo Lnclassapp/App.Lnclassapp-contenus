@@ -1,0 +1,3814 @@
+{
+ "format": "lnclass.course-tree",
+ "version": 3,
+ "courses": [
+  {
+   "name": "Le courant électrique",
+   "subtitle": "Leçon 9 — progression DPFC 2026-2027",
+   "level_name": "2nde",
+   "series_name": "A",
+   "material_name": "Physique-Chimie",
+   "theme": "blue",
+   "figures": [
+    {
+     "key": "circuit-simple",
+     "kind": "diagram",
+     "description": "Schéma fléché d'un circuit simple de lampe torche, lu dans le sens conventionnel du courant : de la borne + de la pile vers l'interrupteur fermé, puis vers la lampe, puis vers la borne −, et retour à la borne + à l'intérieur de la pile. Les flèches montrent le sens conventionnel, pas le déplacement des électrons dans les fils.",
+     "params": {
+      "layout": "cycle",
+      "nodes": [
+       {
+        "id": "plus",
+        "label": "Borne + de la pile"
+       },
+       {
+        "id": "inter",
+        "label": "Interrupteur fermé"
+       },
+       {
+        "id": "lampe",
+        "label": "Lampe"
+       },
+       {
+        "id": "moins",
+        "label": "Borne − de la pile"
+       }
+      ],
+      "edges": [
+       {
+        "from": "plus",
+        "to": "inter"
+       },
+       {
+        "from": "inter",
+        "to": "lampe"
+       },
+       {
+        "from": "lampe",
+        "to": "moins"
+       },
+       {
+        "from": "moins",
+        "to": "plus",
+        "label": "dans la pile"
+       }
+      ],
+      "legend": [
+       "Flèches : sens conventionnel du courant"
+      ]
+     },
+     "controls": []
+    },
+    {
+     "key": "circuit-derivation",
+     "kind": "diagram",
+     "description": "Schéma fléché d'un montage en dérivation : la pile alimente le nœud A, d'où partent deux branches dérivées, une avec la lampe L1 et une avec la lampe L2, qui se rejoignent au nœud B, puis le courant retourne à la pile. Il y a 2 nœuds (A et B) et 3 branches : la branche de la pile et les deux branches de lampes.",
+     "params": {
+      "layout": "flow",
+      "direction": "right",
+      "nodes": [
+       {
+        "id": "pile",
+        "label": "Pile",
+        "category": 1
+       },
+       {
+        "id": "a",
+        "label": "Nœud A",
+        "category": 2
+       },
+       {
+        "id": "l1",
+        "label": "Lampe L1"
+       },
+       {
+        "id": "l2",
+        "label": "Lampe L2"
+       },
+       {
+        "id": "b",
+        "label": "Nœud B",
+        "category": 2
+       }
+      ],
+      "edges": [
+       {
+        "from": "pile",
+        "to": "a"
+       },
+       {
+        "from": "a",
+        "to": "l1"
+       },
+       {
+        "from": "a",
+        "to": "l2"
+       },
+       {
+        "from": "l1",
+        "to": "b"
+       },
+       {
+        "from": "l2",
+        "to": "b"
+       },
+       {
+        "from": "b",
+        "to": "pile",
+        "label": "retour"
+       }
+      ],
+      "legend": [
+       "Générateur",
+       "Nœud"
+      ]
+     },
+     "controls": []
+    }
+   ],
+   "notions": [
+    {
+     "name": "Reconnaître un circuit qui fonctionne",
+     "remember": "Un **circuit électrique** simple comporte un **générateur** (pile, batterie), un ou plusieurs **récepteurs** (lampe, moteur, sonnerie), un **interrupteur** et des **fils de connexion**. Chaque élément à deux bornes est un **dipôle**. Le courant circule seulement dans un **circuit fermé** : une boucle sans coupure, avec l'interrupteur fermé. Si l'interrupteur est ouvert ou si un fil est coupé, le circuit est **ouvert** et le courant ne passe pas. Un **conducteur** laisse passer le courant (métaux comme le cuivre, le fer, l'aluminium ; graphite ; eau salée). Un **isolant** ne le laisse pas passer (plastique, bois sec, verre, caoutchouc). **Symboles normalisés** : pile = deux traits parallèles, le long est la borne +, le court la borne − ; lampe = cercle traversé d'une croix ; moteur = cercle contenant la lettre M ; interrupteur = deux bornes reliées par un levier (fermé) ou un levier écarté (ouvert) ; fil = trait droit.",
+     "method": [
+      "Repérer le générateur, les récepteurs, l'interrupteur et les fils du circuit.",
+      "Vérifier que chaque élément du trajet est conducteur.",
+      "Contrôler que le circuit est fermé : l'interrupteur est fermé et aucun fil n'est coupé.",
+      "Conclure : le courant circule si le circuit est fermé, sinon il ne circule pas."
+     ],
+     "example": {
+      "statement": "Dans une lampe torche, une pile, un interrupteur et une ampoule sont reliés par des fils de cuivre. L'interrupteur est fermé et les fils sont intacts. L'ampoule brille-t-elle ?",
+      "steps": [
+       "Repérer : le générateur est la pile, le récepteur est l'ampoule, puis il y a l'interrupteur et les fils de cuivre.",
+       "Vérifier : le cuivre est un métal, donc un conducteur ; le trajet pile, interrupteur, ampoule, fils est conducteur.",
+       "Contrôler : l'interrupteur est fermé et aucun fil n'est coupé, donc le circuit est fermé.",
+       "Conclure : le circuit est fermé, le courant circule et l'ampoule brille."
+      ]
+     },
+     "pitfall": "Ne crois pas qu'un seul fil entre la pile et la lampe suffit. Le courant a besoin d'une **boucle complète** qui passe par les deux bornes de la pile. Contre-exemple : une lampe reliée à la borne + d'une pile par un fil, et à rien d'autre, ne brille pas. Avec un deuxième fil de la lampe vers la borne −, la boucle est fermée et la lampe brille. Cherche toujours la boucle fermée.",
+     "figure": null,
+     "practice": {
+      "statement": "Tu t'entraînes à reconnaître un circuit qui fonctionne, avec une lampe torche et des matériaux du quotidien.",
+      "questions": [
+       {
+        "content": "Dans une lampe torche, une pile, un interrupteur et une ampoule sont reliés par des fils de cuivre. L'interrupteur est ouvert. Pourquoi l'ampoule ne brille-t-elle pas ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Repérer : pile (générateur), ampoule (récepteur), interrupteur, fils de cuivre. Étape 2 — Vérifier : le cuivre est conducteur. Étape 3 — Contrôler : l'interrupteur est ouvert, donc la boucle est coupée. Étape 4 — Conclure : le circuit est ouvert, le courant ne circule pas. Pourquoi pas « les fils sont isolants » : le cuivre est un métal, donc conducteur.",
+        "answers": [
+         {
+          "content": "Le circuit est ouvert : l'interrupteur coupe la boucle",
+          "correct": true
+         },
+         {
+          "content": "Les fils de cuivre sont des isolants",
+          "correct": false
+         },
+         {
+          "content": "La pile est un récepteur",
+          "correct": false
+         },
+         {
+          "content": "L'ampoule est un conducteur",
+          "correct": false
+         }
+        ],
+        "hint": "Regarde l'interrupteur : est-il fermé ?"
+       },
+       {
+        "content": "Le plastique qui entoure un fil électrique est un isolant.",
+        "question_type": "true_false",
+        "explanation": "Étape 1 — Repérer : un fil comporte un cœur de cuivre et une gaine de plastique. Étape 2 — Vérifier : le cuivre est conducteur, le plastique est isolant. Étape 4 — Conclure : la gaine protège l'utilisateur car elle ne laisse pas passer le courant. Pourquoi pas « Faux » : si le plastique conduisait, toucher un fil serait dangereux.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": true
+         },
+         {
+          "content": "Faux",
+          "correct": false
+         }
+        ],
+        "hint": "Pense à la gaine colorée d'un fil."
+       },
+       {
+        "content": "Un matériau qui laisse passer le courant électrique est un ___.",
+        "question_type": "fill_blank",
+        "explanation": "Étape 2 — Vérifier : on classe chaque matériau. Un matériau qui laisse passer le courant, comme le cuivre ou le fer, est un conducteur. Un matériau qui ne le laisse pas passer, comme le verre, est un isolant. Pourquoi pas « isolant » : c'est le contraire, il bloque le courant.",
+        "answers": [
+         {
+          "content": "conducteur",
+          "correct": true
+         }
+        ],
+        "hint": "Le cuivre est un exemple."
+       },
+       {
+        "content": "Relie chaque description au symbole ou à l'élément qu'elle désigne.",
+        "question_type": "matching",
+        "explanation": "Étape 1 — Repérer : on lit la forme de chaque symbole. Le cercle croisé est la lampe, le cercle avec M est le moteur, les deux traits inégaux sont la pile, le levier écarté est l'interrupteur ouvert. Pourquoi pas « moteur » pour le cercle croisé : seul le cercle contenant la lettre M désigne un moteur.",
+        "answers": [
+         {
+          "content": "Cercle traversé d'une croix",
+          "match": "Lampe"
+         },
+         {
+          "content": "Cercle contenant la lettre M",
+          "match": "Moteur"
+         },
+         {
+          "content": "Deux traits parallèles, l'un long et l'autre court",
+          "match": "Pile"
+         },
+         {
+          "content": "Deux bornes reliées par un levier écarté",
+          "match": "Interrupteur ouvert"
+         }
+        ],
+        "hint": "Un seul symbole porte la lettre M."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Circuits fermés, circuits ouverts et matériaux",
+       "statement": "Dans cet exercice, tu repères les éléments d'un circuit, tu juges les matériaux et tu dis si le courant circule.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Repère les éléments, vérifie les matériaux, puis cherche la boucle fermée.",
+       "questions": [
+        {
+         "content": "Dans une lampe torche, une ampoule est reliée à une pile par des fils. Quel élément joue le rôle de générateur ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : le générateur fournit le courant, le récepteur l'utilise. Ici la pile est le générateur, l'ampoule est le récepteur. Étape 2 — Vérifier : les fils de cuivre sont conducteurs, ils relient seulement les dipôles. Pourquoi pas « l'ampoule » : elle reçoit l'énergie, elle ne la fournit pas.",
+         "answers": [
+          {
+           "content": "La pile",
+           "correct": true
+          },
+          {
+           "content": "L'ampoule",
+           "correct": false
+          },
+          {
+           "content": "L'interrupteur",
+           "correct": false
+          },
+          {
+           "content": "Les fils de cuivre",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un enfant relie une pile à une ampoule par deux fils et veut ajouter un objet dans la boucle. Quel objet laisse passer le courant ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : la boucle contient la pile, l'ampoule, les fils et l'objet ajouté. Étape 2 — Vérifier : le fer est un métal, donc un conducteur ; le plastique, le bois sec et le caoutchouc sont des isolants. Étape 3 — Contrôler : avec la clé, la boucle reste fermée. Pourquoi pas la règle en plastique : elle est isolante et ouvrirait le circuit.",
+         "answers": [
+          {
+           "content": "Une clé en fer",
+           "correct": true
+          },
+          {
+           "content": "Une règle en plastique",
+           "correct": false
+          },
+          {
+           "content": "Un morceau de bois sec",
+           "correct": false
+          },
+          {
+           "content": "Un bouchon en caoutchouc",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans une lampe torche dont l'interrupteur est ouvert, le circuit est fermé.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Repérer : la lampe torche contient pile, interrupteur, ampoule et fils. Étape 3 — Contrôler : un interrupteur ouvert coupe la boucle. Étape 4 — Conclure : le circuit est ouvert, le courant ne circule pas. Pourquoi pas « Vrai » : il faudrait que l'interrupteur soit fermé pour avoir une boucle sans coupure.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Une pile est reliée par un seul fil à une ampoule. L'autre borne de la pile et l'autre borne de l'ampoule ne sont reliées à rien. L'ampoule brille-t-elle ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : une pile, une ampoule, un fil. Étape 2 — Vérifier : le fil est conducteur. Étape 3 — Contrôler : le trajet ne revient pas à la borne de la pile, donc il n'y a pas de boucle fermée. Étape 4 — Conclure : le circuit est ouvert. Pourquoi pas « un seul fil suffit » : c'est l'erreur du piège, il faut une boucle complète.",
+         "answers": [
+          {
+           "content": "Non : il n'y a pas de boucle, le circuit est ouvert",
+           "correct": true
+          },
+          {
+           "content": "Oui : un seul fil suffit pour qu'elle brille",
+           "correct": false
+          },
+          {
+           "content": "Oui : la pile seule suffit à allumer l'ampoule",
+           "correct": false
+          },
+          {
+           "content": "Non : l'ampoule est un isolant",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque description au symbole ou à l'élément qu'elle désigne.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Repérer : chaque symbole normalisé a une forme précise. Le cercle croisé est une lampe, le cercle avec M est un moteur, les deux traits inégaux sont une pile, le levier écarté est un interrupteur ouvert. Pourquoi pas « interrupteur fermé » pour le levier écarté : fermé, le levier touche les deux bornes.",
+         "answers": [
+          {
+           "content": "Cercle traversé d'une croix",
+           "match": "Lampe"
+          },
+          {
+           "content": "Cercle contenant la lettre M",
+           "match": "Moteur"
+          },
+          {
+           "content": "Deux traits parallèles, l'un long et l'autre court",
+           "match": "Pile"
+          },
+          {
+           "content": "Deux bornes reliées par un levier écarté",
+           "match": "Interrupteur ouvert"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Reconnaître un circuit qui fonctionne dans la maison et à la boutique",
+       "statement": "Dans cet exercice, tu appliques les quatre étapes à des appareils de la maison et de la boutique de réparation d'Adjamé.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Repère les éléments, vérifie les matériaux, puis cherche une boucle fermée.",
+       "questions": [
+        {
+         "content": "Dans un circuit, le moteur d'un ventilateur est un ___.",
+         "question_type": "select",
+         "explanation": "Étape 1 — Repérer : le générateur fournit le courant, l'interrupteur ouvre ou ferme la boucle, le récepteur utilise le courant. Le moteur du ventilateur utilise le courant pour tourner : c'est un récepteur. Pourquoi pas « générateur » : le moteur ne fournit pas de courant au circuit.",
+         "answers": [
+          {
+           "content": "récepteur",
+           "correct": true
+          },
+          {
+           "content": "générateur",
+           "correct": false
+          },
+          {
+           "content": "interrupteur",
+           "correct": false
+          },
+          {
+           "content": "isolant",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Parmi ces matériaux, lesquels sont des conducteurs ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 2 — Vérifier : le cuivre est un métal conducteur ; l'eau salée laisse aussi passer le courant. Le verre, le bois sec et le caoutchouc sont des isolants. Pourquoi pas le verre : il ne laisse pas passer le courant, il est isolant.",
+         "answers": [
+          {
+           "content": "Le cuivre",
+           "correct": true
+          },
+          {
+           "content": "L'eau salée",
+           "correct": true
+          },
+          {
+           "content": "Le verre",
+           "correct": false
+          },
+          {
+           "content": "Le bois sec",
+           "correct": false
+          },
+          {
+           "content": "Le caoutchouc",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un fil électrique est entouré de plastique parce que le plastique est un ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 2 — Vérifier : le cuivre conduit, le plastique ne conduit pas. Étape 4 — Conclure : la gaine de plastique est un isolant, elle évite qu'on touche le conducteur. Pourquoi pas « conducteur » : une gaine conductrice ne protégerait personne.",
+         "answers": [
+          {
+           "content": "isolant",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les quatre étapes pour savoir si une lampe brille.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Repérer les éléments. Étape 2 — Vérifier les matériaux. Étape 3 — Contrôler que le circuit est fermé. Étape 4 — Conclure. On ne conclut qu'à la fin : conclure avant de contrôler la boucle mène à l'erreur du piège.",
+         "answers": [
+          {
+           "content": "Repérer le générateur, la lampe, l'interrupteur et les fils."
+          },
+          {
+           "content": "Vérifier que chaque élément du trajet est conducteur."
+          },
+          {
+           "content": "Contrôler que l'interrupteur est fermé et qu'aucun fil n'est coupé."
+          },
+          {
+           "content": "Conclure : le courant circule, la lampe brille."
+          }
+         ]
+        },
+        {
+         "content": "À la boutique d'Adjamé, un fil de cuivre de l'intérieur d'un chargeur est coupé en deux. Le circuit du chargeur est alors ouvert.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Repérer : le fil de cuivre relie deux dipôles du chargeur. Étape 3 — Contrôler : un fil coupé interrompt la boucle. Étape 4 — Conclure : le circuit est ouvert, le chargeur ne fonctionne plus. Pourquoi pas « Faux » : un fil coupé est une coupure, comme un interrupteur ouvert.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un élève relie une borne de la pile à une lampe par un fil et laisse l'autre borne de la lampe libre. Il dit : « La lampe brille, car le courant part de la pile. » Où est son erreur ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : une pile, une lampe, un fil. Étape 3 — Contrôler : l'autre borne de la lampe est libre, donc il n'y a pas de boucle fermée. Étape 4 — Conclure : le circuit est ouvert. Pourquoi pas « il faut deux piles » : une seule pile suffit si la boucle est fermée.",
+         "answers": [
+          {
+           "content": "Il manque un fil vers l'autre borne de la pile : sans boucle fermée, le courant ne passe pas",
+           "correct": true
+          },
+          {
+           "content": "La lampe est un isolant",
+           "correct": false
+          },
+          {
+           "content": "Il faut deux piles pour allumer une lampe",
+           "correct": false
+          },
+          {
+           "content": "Le fil devrait être en plastique",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Distinguer un montage en série et un montage en dérivation",
+     "remember": "Dans un circuit **en série**, tous les dipôles sont placés les uns à la suite des autres sur une seule boucle : il n'y a aucun nœud. Si on retire un dipôle ou si on ouvre l'interrupteur, le courant s'arrête partout. Dans un circuit **en dérivation**, des dipôles sont placés sur des chemins séparés qui partent d'un même point et se rejoignent en un autre. Un **nœud** est un point où se rejoignent au moins trois fils. Une **branche** est une portion de circuit comprise entre deux nœuds consécutifs. La **branche principale** contient le générateur ; les autres sont des **branches dérivées**. Une **boucle** est un chemin fermé formé de branches. En dérivation, retirer une lampe d'une branche dérivée n'arrête pas les autres branches. Un interrupteur dans la branche principale commande tout le circuit ; dans une branche dérivée, il ne commande que cette branche. Dans une maison, les lampes et les prises sont en dérivation.",
+     "method": [
+      "Repérer les nœuds : les points où se rejoignent au moins trois fils.",
+      "Compter les branches : les portions de circuit comprises entre deux nœuds.",
+      "Nommer le montage : en série s'il n'y a aucun nœud, en dérivation s'il y a des nœuds.",
+      "Prévoir ce qui arrive aux autres dipôles quand l'un d'eux est retiré ou que son interrupteur s'ouvre."
+     ],
+     "example": {
+      "statement": "Une pile et un interrupteur sont reliés à deux points A et B. Deux lampes L1 et L2 sont reliées chacune à A par un fil et à B par un fil. On retire la lampe L1. Que devient L2 ?",
+      "steps": [
+       "Repérer : en A et en B se rejoignent trois fils (pile, L1, L2) : il y a 2 nœuds.",
+       "Compter : la branche principale (pile et interrupteur), la branche de L1 et la branche de L2 : 3 branches.",
+       "Nommer : il y a des nœuds, donc le montage est en dérivation.",
+       "Prévoir : retirer L1 ouvre seulement sa branche ; la branche principale et celle de L2 restent fermées, donc L2 continue de briller."
+      ]
+     },
+     "pitfall": "Ne juge pas un montage d'après la place des lampes sur le dessin, mais d'après les **nœuds**. Contre-exemple : deux lampes dessinées côte à côte, reliées bout à bout dans une seule boucle avec la pile, sont en série (aucun nœud). Deux lampes dessinées l'une sous l'autre ne sont en dérivation que si leurs fils se rejoignent en deux nœuds. Compte toujours les nœuds avant de nommer le montage.",
+     "figure": "circuit-derivation",
+     "practice": {
+      "statement": "Tu t'entraînes à repérer les nœuds et les branches, et à nommer le montage.",
+      "questions": [
+       {
+        "content": "Une pile et un interrupteur sont dans la branche principale. Quatre lampes sont montées chacune entre deux nœuds A et B. En comptant la branche principale, combien ce circuit compte-t-il de branches ?",
+        "question_type": "numeric",
+        "explanation": "Étape 1 — Repérer : A et B sont les 2 nœuds. Étape 2 — Compter : la branche principale (pile et interrupteur) plus 4 branches de lampes, soit 1 + 4 = 5 branches. Pourquoi pas 4 : ce serait oublier la branche qui contient la pile.",
+        "answers": [
+         {
+          "content": "5",
+          "correct": true
+         }
+        ],
+        "tolerance": 0,
+        "hint": "N'oublie pas la branche de la pile."
+       },
+       {
+        "content": "Les lampes d'une guirlande sont placées l'une après l'autre sur une seule boucle, sans point où trois fils se rejoignent. Quel est ce montage ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Repérer : aucun point où se rejoignent trois fils, donc 0 nœud. Étape 3 — Nommer : sans nœud, le montage est en série. Pourquoi pas « en dérivation parce qu'il y a plusieurs lampes » : le nombre de lampes ne décide pas, ce sont les nœuds qui décident.",
+        "answers": [
+         {
+          "content": "En série",
+          "correct": true
+         },
+         {
+          "content": "En dérivation",
+          "correct": false
+         },
+         {
+          "content": "En dérivation, car il y a plusieurs lampes",
+          "correct": false
+         },
+         {
+          "content": "Ni en série ni en dérivation",
+          "correct": false
+         }
+        ],
+        "hint": "Combien de nœuds y a-t-il ?"
+       },
+       {
+        "content": "Dans un circuit en dérivation, retirer une lampe d'une branche dérivée éteint toutes les autres lampes.",
+        "question_type": "true_false",
+        "explanation": "Étape 1 — Repérer : il y a des nœuds, donc des branches séparées. Étape 4 — Prévoir : retirer une lampe n'ouvre que sa branche ; les autres branches restent fermées et les lampes continuent de briller. Pourquoi pas « Vrai » : c'est ce qui se passe en série, pas en dérivation.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": false
+         },
+         {
+          "content": "Faux",
+          "correct": true
+         }
+        ],
+        "hint": "Pense aux lampes d'une maison."
+       },
+       {
+        "content": "Une portion de circuit comprise entre deux nœuds consécutifs s'appelle une ___.",
+        "question_type": "fill_blank",
+        "explanation": "Étape 2 — Compter : on compte les branches, c'est-à-dire les portions entre deux nœuds. Une portion entre deux nœuds consécutifs est donc une branche. Pourquoi pas « boucle » : une boucle est un chemin fermé formé de plusieurs branches.",
+        "answers": [
+         {
+          "content": "branche",
+          "correct": true
+         }
+        ],
+        "hint": "Le mot est aussi celui d'un arbre."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Nœuds, branches et montages",
+       "statement": "Dans cet exercice, tu comptes les nœuds et les branches de circuits décrits en détail, puis tu nommes le montage.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Repère les points A et B, compte les branches, puis nomme le montage.",
+       "questions": [
+        {
+         "content": "Une pile est reliée à un point A et à un point B. Deux lampes L1 et L2 sont chacune reliées à A par un fil et à B par un fil. Combien ce circuit compte-t-il de nœuds ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Repérer : en A se rejoignent trois fils (pile, L1, L2), en B aussi. Il y a donc 2 nœuds. Pourquoi pas 3 : chaque lampe n'ajoute pas de nœud, elle se branche sur les deux mêmes points A et B.",
+         "answers": [
+          {
+           "content": "2",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Une pile est reliée à un point A et à un point B. Deux lampes L1 et L2 sont chacune reliées à A et à B. Combien ce circuit compte-t-il de branches ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Repérer : les nœuds sont A et B. Étape 2 — Compter : la branche de la pile, la branche de L1 et la branche de L2, soit 3 branches. Pourquoi pas 2 : on oublie la branche principale qui contient la pile.",
+         "answers": [
+          {
+           "content": "3",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Une pile, un interrupteur et deux lampes sont placés dans une seule boucle, les uns à la suite des autres, sans point où trois fils se rejoignent. Comment sont montées les lampes ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : aucun point où trois fils se rejoignent, 0 nœud. Étape 3 — Nommer : sans nœud, le montage est en série. Pourquoi pas « en dérivation, car il y a plusieurs lampes » : plusieurs lampes peuvent aussi être en série.",
+         "answers": [
+          {
+           "content": "En série",
+           "correct": true
+          },
+          {
+           "content": "En dérivation, car il y a plusieurs lampes",
+           "correct": false
+          },
+          {
+           "content": "En dérivation, car la boucle est fermée",
+           "correct": false
+          },
+          {
+           "content": "Ni en série ni en dérivation",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans une guirlande de lampes montées en série, si une lampe grille, toutes les autres s'éteignent.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Nommer : une guirlande en série n'a qu'une seule boucle. Étape 4 — Prévoir : une lampe grillée coupe la boucle unique, le courant ne passe plus nulle part. Pourquoi pas « Faux » : en dérivation seulement, les autres branches continueraient de fonctionner.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans une maison, deux lampes sont montées en dérivation. On dévisse la lampe du salon. Que devient la lampe de la cuisine ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Compter : la lampe du salon et celle de la cuisine sont sur deux branches différentes. Étape 3 — Nommer : montage en dérivation. Étape 4 — Prévoir : dévisser la lampe du salon n'ouvre que sa branche, la branche de la cuisine reste fermée. Pourquoi pas « elle s'éteint » : c'est la règle d'un montage en série.",
+         "answers": [
+          {
+           "content": "Elle continue de briller",
+           "correct": true
+          },
+          {
+           "content": "Elle s'éteint, car le circuit est ouvert partout",
+           "correct": false
+          },
+          {
+           "content": "Elle s'éteint aussi, car le courant doit traverser les deux lampes",
+           "correct": false
+          },
+          {
+           "content": "Elle clignote",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Montages de la maison et de la boutique",
+       "statement": "Dans cet exercice, tu repères les nœuds et les branches de montages de la maison et de la boutique, et tu prévois ce qui arrive quand un dipôle est retiré.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Repère les nœuds, compte les branches, puis nomme le montage.",
+       "questions": [
+        {
+         "content": "Un point où se rejoignent au moins trois fils s'appelle un ___.",
+         "question_type": "select",
+         "explanation": "Étape 1 — Repérer : on cherche les points où au moins trois fils se rejoignent ; ce sont les nœuds. Une branche est la portion entre deux nœuds. Pourquoi pas « boucle » : une boucle est un chemin fermé, pas un point.",
+         "answers": [
+          {
+           "content": "nœud",
+           "correct": true
+          },
+          {
+           "content": "branche",
+           "correct": false
+          },
+          {
+           "content": "boucle",
+           "correct": false
+          },
+          {
+           "content": "générateur",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque description au mot qui convient.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Repérer les nœuds. Étape 2 — Compter les branches. Étape 3 — Nommer : sans nœud, c'est la série ; avec des chemins séparés entre deux nœuds, c'est la dérivation. Pourquoi pas « branche » pour un point : une branche est une portion de circuit, le nœud est un point.",
+         "answers": [
+          {
+           "content": "Une seule boucle, aucun point où trois fils se rejoignent",
+           "match": "Montage en série"
+          },
+          {
+           "content": "Deux chemins séparés qui partent du point A et se rejoignent au point B",
+           "match": "Montage en dérivation"
+          },
+          {
+           "content": "Point où se rejoignent trois fils",
+           "match": "Nœud"
+          },
+          {
+           "content": "Portion de circuit comprise entre deux nœuds consécutifs",
+           "match": "Branche"
+          }
+         ]
+        },
+        {
+         "content": "Une pile est reliée à deux nœuds A et B. Trois lampes sont chacune reliées à A et à B. Combien ce circuit compte-t-il de branches ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Repérer : les nœuds sont A et B. Étape 2 — Compter : une branche pour la pile et une pour chacune des trois lampes, soit 1 + 3 = 4 branches. Pourquoi pas 3 : on oublie la branche de la pile.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Dans un montage en dérivation, un interrupteur placé dans une branche dérivée commande tout le circuit.",
+         "question_type": "true_false",
+         "explanation": "Étape 2 — Compter : une branche dérivée est une portion entre deux nœuds. Étape 4 — Prévoir : son interrupteur n'ouvre que cette branche, les autres restent fermées. Seul un interrupteur de la branche principale commande tout. Pourquoi pas « Vrai » : on confond branche dérivée et branche principale.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans un atelier d'Adjamé, deux lampes sont montées en dérivation sur la même batterie. L'ampoule de la lampe 1 grille. Que peut-on dire de la lampe 2 ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : deux nœuds. Étape 2 — Compter : trois branches (batterie, lampe 1, lampe 2). Étape 3 — Nommer : montage en dérivation. Étape 4 — Prévoir : l'ampoule grillée ouvre seulement la branche de la lampe 1. Pourquoi pas « elle s'éteint » : la branche principale n'est pas coupée.",
+         "answers": [
+          {
+           "content": "Elle reste allumée, car sa branche est toujours fermée",
+           "correct": true
+          },
+          {
+           "content": "Elle s'éteint, car la branche principale est coupée",
+           "correct": false
+          },
+          {
+           "content": "Elle s'éteint, car les deux lampes sont en série",
+           "correct": false
+          },
+          {
+           "content": "Elle ne s'allume que si on retire la lampe 1",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles affirmations décrivent un montage en dérivation ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Repérer : une dérivation a des nœuds (au moins deux). Étape 4 — Prévoir : retirer une lampe d'une branche dérivée n'arrête pas les autres. Pourquoi pas « une seule boucle sans nœud » : c'est la définition de la série.",
+         "answers": [
+          {
+           "content": "Il comporte au moins deux nœuds",
+           "correct": true
+          },
+          {
+           "content": "Retirer une lampe d'une branche dérivée laisse les autres branches fermées",
+           "correct": true
+          },
+          {
+           "content": "Tous les dipôles sont sur une seule boucle sans nœud",
+           "correct": false
+          },
+          {
+           "content": "Retirer une lampe éteint tout le circuit",
+           "correct": false
+          },
+          {
+           "content": "Il ne comporte aucune branche",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Orienter le courant et nommer ses porteurs de charge",
+     "remember": "À l'extérieur du générateur, le **sens conventionnel du courant** va de la **borne +** vers la **borne −**, en traversant les dipôles. C'est un choix fait avant la découverte de l'électron. Dans un **métal** (fil de cuivre, filament), le courant est un déplacement d'**électrons libres**. Les électrons sont chargés négativement : ils vont de la borne − vers la borne +, donc **en sens inverse du sens conventionnel**. Dans une **solution** (eau salée), le courant est un déplacement d'**ions** : les cations (charges +) vont dans le sens conventionnel, les anions (charges −) en sens inverse. Le sens conventionnel est le même dans tous les cas : seuls les porteurs de charge changent d'un milieu à l'autre.",
+     "method": [
+      "Repérer les bornes + et − du générateur.",
+      "Tracer le sens conventionnel à l'extérieur du générateur : de la borne + vers la borne −, à travers les dipôles.",
+      "Identifier les porteurs de charge : des électrons dans un métal, des ions dans une solution.",
+      "Donner leur sens de déplacement : les électrons vont de la borne − vers la borne + ; en solution, les cations suivent le sens conventionnel et les anions vont en sens inverse."
+     ],
+     "example": {
+      "statement": "Dans une lampe torche, la borne + de la pile est reliée à l'interrupteur, puis à l'ampoule, qui est reliée à la borne −. Les fils sont en cuivre. Donne le sens conventionnel du courant et le sens de déplacement des électrons.",
+      "steps": [
+       "Repérer : la borne + est du côté de l'interrupteur, la borne − du côté de l'ampoule.",
+       "Tracer : le sens conventionnel va de la borne + vers l'interrupteur, puis vers l'ampoule, puis vers la borne −.",
+       "Identifier : les fils sont en cuivre, un métal : les porteurs de charge sont des électrons libres.",
+       "Donner : les électrons vont de la borne − vers l'ampoule, puis l'interrupteur, puis la borne + : c'est le sens inverse du sens conventionnel."
+      ]
+     },
+     "pitfall": "Ne confonds pas le sens conventionnel avec le sens des électrons. Contre-exemple : dans le fil de cuivre d'une lampe torche, le sens conventionnel va de la borne + vers la borne −, mais les électrons, chargés négativement, vont de la borne − vers la borne + : ils vont dans le sens inverse. Le sens conventionnel est un choix, ce n'est pas le trajet des électrons.",
+     "figure": "circuit-simple",
+     "practice": {
+      "statement": "Tu t'entraînes à orienter le courant et à dire comment se déplacent les électrons et les ions.",
+      "questions": [
+       {
+        "content": "À l'extérieur du générateur, le sens conventionnel du courant sort par la borne ___ du générateur.",
+        "question_type": "fill_blank",
+        "explanation": "Étape 1 — Repérer : un générateur a une borne + et une borne −. Étape 2 — Tracer : à l'extérieur, le sens conventionnel va de la borne + vers la borne −, donc il sort par la borne positive. Pourquoi pas « négative » : c'est la borne par laquelle il revient.",
+        "answers": [
+         {
+          "content": "positive",
+          "correct": true
+         },
+         {
+          "content": "plus",
+          "correct": true
+         },
+         {
+          "content": "+",
+          "correct": true
+         }
+        ],
+        "hint": "Il va de + vers −."
+       },
+       {
+        "content": "Dans un fil de cuivre, les électrons se déplacent de la borne − vers la borne +.",
+        "question_type": "true_false",
+        "explanation": "Étape 3 — Identifier : dans un métal, les porteurs de charge sont des électrons. Étape 4 — Donner : chargés négativement, ils vont de la borne − vers la borne +, en sens inverse du sens conventionnel. Pourquoi pas « Faux » : on confondrait leur sens avec le sens conventionnel.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": true
+         },
+         {
+          "content": "Faux",
+          "correct": false
+         }
+        ],
+        "hint": "Les électrons sont négatifs."
+       },
+       {
+        "content": "Dans une solution d'eau salée traversée par le courant, quels porteurs de charge assurent le passage du courant ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 3 — Identifier : dans une solution, ce sont des ions qui se déplacent, cations et anions. Pourquoi pas « des électrons libres » : les électrons libres sont les porteurs dans un métal, pas dans une solution.",
+        "answers": [
+         {
+          "content": "Des ions",
+          "correct": true
+         },
+         {
+          "content": "Des électrons libres seulement",
+          "correct": false
+         },
+         {
+          "content": "Des atomes neutres",
+          "correct": false
+         },
+         {
+          "content": "Des protons du noyau",
+          "correct": false
+         }
+        ],
+        "hint": "Pense aux ions Na⁺ et Cl⁻."
+       },
+       {
+        "content": "Un fil de cuivre relie la borne + d'une batterie de moto à un phare. Le sens conventionnel va de la batterie vers le phare. Dans quel sens se déplacent les électrons dans ce fil ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 2 — Tracer : le sens conventionnel va de la batterie vers le phare. Étape 3 — Identifier : le cuivre est un métal, donc ce sont des électrons. Étape 4 — Donner : les électrons vont en sens inverse, du phare vers la batterie. Pourquoi pas « de la batterie vers le phare » : c'est le sens conventionnel, pas celui des électrons.",
+        "answers": [
+         {
+          "content": "Du phare vers la batterie",
+          "correct": true
+         },
+         {
+          "content": "De la batterie vers le phare",
+          "correct": false
+         },
+         {
+          "content": "Ils restent sur place",
+          "correct": false
+         },
+         {
+          "content": "Ils tournent en rond dans le fil",
+          "correct": false
+         }
+        ],
+        "hint": "Les électrons vont à l'inverse du sens conventionnel."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Sens conventionnel et porteurs de charge",
+       "statement": "Dans cet exercice, tu donnes le sens conventionnel du courant et tu dis comment se déplacent les électrons et les ions.",
+       "exercise_type": "fixation",
+       "figure": "circuit-simple",
+       "hint": "Trace d'abord le sens conventionnel, puis donne le sens des porteurs de charge.",
+       "questions": [
+        {
+         "content": "Dans un circuit simple, à l'extérieur de la pile, dans quel sens va le sens conventionnel du courant ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : la pile a une borne + et une borne −. Étape 2 — Tracer : à l'extérieur du générateur, le sens conventionnel va de la borne + vers la borne −. Pourquoi pas « de − vers + » : c'est le sens de déplacement des électrons.",
+         "answers": [
+          {
+           "content": "De la borne + vers la borne −",
+           "correct": true
+          },
+          {
+           "content": "De la borne − vers la borne +",
+           "correct": false
+          },
+          {
+           "content": "Il change selon la position de l'interrupteur",
+           "correct": false
+          },
+          {
+           "content": "Il dépend de la lampe utilisée",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans un fil de cuivre, le courant est un déplacement de particules appelées ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Identifier : le cuivre est un métal, donc les porteurs de charge sont des électrons libres. Pourquoi pas « ions » : les ions assurent le courant dans une solution, pas dans un métal.",
+         "answers": [
+          {
+           "content": "électrons",
+           "correct": true
+          },
+          {
+           "content": "électrons libres",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans le fil de cuivre d'une lampe torche, dans quel sens les électrons se déplacent-ils ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Tracer : le sens conventionnel va de + vers −. Étape 3 — Identifier : les électrons sont les porteurs. Étape 4 — Donner : chargés négativement, ils vont de la borne − vers la borne +, en sens inverse. Pourquoi pas « comme le sens conventionnel » : c'est l'erreur du piège.",
+         "answers": [
+          {
+           "content": "De la borne − vers la borne +, en sens inverse du sens conventionnel",
+           "correct": true
+          },
+          {
+           "content": "De la borne + vers la borne −, comme le sens conventionnel",
+           "correct": false
+          },
+          {
+           "content": "Ils restent immobiles",
+           "correct": false
+          },
+          {
+           "content": "Dans les deux sens à la fois",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans une solution d'eau salée traversée par le courant, ce sont des ions qui se déplacent.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Identifier : une solution contient des ions, comme Na⁺ et Cl⁻. Ce sont eux qui se déplacent et assurent le passage du courant. Pourquoi pas « Faux » : il n'y a pas d'électrons libres dans l'eau salée comme dans un métal.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans une solution traversée par le courant, comment se déplacent les ions positifs (cations) ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Tracer : le sens conventionnel va de + vers −. Étape 4 — Donner : en solution, les cations suivent le sens conventionnel et les anions vont en sens inverse. Pourquoi pas « en sens inverse » : c'est le sens des anions, chargés négativement.",
+         "answers": [
+          {
+           "content": "Dans le sens conventionnel du courant",
+           "correct": true
+          },
+          {
+           "content": "En sens inverse du sens conventionnel",
+           "correct": false
+          },
+          {
+           "content": "Ils restent immobiles",
+           "correct": false
+          },
+          {
+           "content": "Ils se transforment en électrons",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Sens du courant dans la lampe torche et la moto",
+       "statement": "Dans cet exercice, tu orientes le courant dans des circuits de la lampe torche et de la moto, et tu donnes le déplacement des porteurs de charge.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Trace le sens conventionnel, puis inverse-le pour les électrons.",
+       "questions": [
+        {
+         "content": "Remets dans l'ordre les quatre étapes pour orienter le courant et nommer ses porteurs de charge.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Repérer les bornes. Étape 2 — Tracer le sens conventionnel. Étape 3 — Identifier les porteurs de charge. Étape 4 — Donner leur sens. On ne peut pas donner le sens des électrons avant d'avoir tracé le sens conventionnel, car il se déduit par inversion.",
+         "answers": [
+          {
+           "content": "Repérer les bornes + et − du générateur."
+          },
+          {
+           "content": "Tracer le sens conventionnel de la borne + vers la borne −, à l'extérieur du générateur."
+          },
+          {
+           "content": "Identifier les porteurs de charge : électrons dans un métal, ions dans une solution."
+          },
+          {
+           "content": "Donner leur sens de déplacement par rapport au sens conventionnel."
+          }
+         ]
+        },
+        {
+         "content": "Le phare d'une moto est relié à la batterie par des fils de cuivre. À l'extérieur de la batterie, par quelle borne le sens conventionnel du courant sort-il de la batterie ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : la batterie a une borne + et une borne −. Étape 2 — Tracer : à l'extérieur, le sens conventionnel va de la borne + vers la borne −, donc il sort par la borne +. Pourquoi pas la borne −, symbolisée par le trait le plus court : c'est par elle que le sens conventionnel revient.",
+         "answers": [
+          {
+           "content": "Par la borne +",
+           "correct": true
+          },
+          {
+           "content": "Par la borne −",
+           "correct": false
+          },
+          {
+           "content": "Par les deux bornes en même temps",
+           "correct": false
+          },
+          {
+           "content": "Par la borne dont le trait est le plus court",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles affirmations sur le courant dans un fil de cuivre sont vraies ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 3 — Identifier : dans un métal, les porteurs de charge sont des électrons libres. Étape 4 — Donner : ils vont de la borne − vers la borne +. Pourquoi pas « le sens conventionnel est le sens des électrons » : les deux sens sont opposés dans un métal.",
+         "answers": [
+          {
+           "content": "Il est dû au déplacement d'électrons libres",
+           "correct": true
+          },
+          {
+           "content": "Les électrons y circulent de la borne − vers la borne +",
+           "correct": true
+          },
+          {
+           "content": "Les électrons y circulent de la borne + vers la borne −",
+           "correct": false
+          },
+          {
+           "content": "Il est dû au déplacement d'ions",
+           "correct": false
+          },
+          {
+           "content": "Le sens conventionnel est le sens des électrons",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque milieu à ce qui assure le passage du courant.",
+         "question_type": "matching",
+         "explanation": "Étape 3 — Identifier : un métal conduit par ses électrons libres, une solution par ses ions, un isolant n'a pas de porteur de charge libre. Pourquoi pas « des ions » pour le fil de cuivre : les ions assurent le courant dans une solution.",
+         "answers": [
+          {
+           "content": "Un fil de cuivre",
+           "match": "Des électrons libres"
+          },
+          {
+           "content": "De l'eau salée",
+           "match": "Des ions positifs et négatifs"
+          },
+          {
+           "content": "Un morceau de plastique",
+           "match": "Aucun porteur libre : c'est un isolant"
+          }
+         ]
+        },
+        {
+         "content": "Dans l'eau salée traversée par le courant, les anions se déplacent en sens inverse du sens ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Identifier : les porteurs sont des ions. Étape 4 — Donner : les cations suivent le sens conventionnel, les anions vont en sens inverse du sens conventionnel. Pourquoi pas « des électrons » : ce ne sont pas des électrons qui circulent dans une solution.",
+         "answers": [
+          {
+           "content": "conventionnel",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un élève dit : « Les électrons quittent la borne + de la pile et vont vers la borne −, comme le courant. » Que lui répondre ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Tracer : le sens conventionnel va de + vers −. Étape 3 — Identifier : dans un fil, les porteurs sont des électrons. Étape 4 — Donner : ils vont de − vers +, en sens inverse. Pourquoi pas « même sens » : c'est l'erreur du piège, le sens conventionnel est un choix historique.",
+         "answers": [
+          {
+           "content": "Le sens conventionnel va de + vers −, mais les électrons vont de − vers +",
+           "correct": true
+          },
+          {
+           "content": "Il a raison : électrons et sens conventionnel vont dans le même sens",
+           "correct": false
+          },
+          {
+           "content": "Les électrons ne sortent jamais de la pile",
+           "correct": false
+          },
+          {
+           "content": "Les électrons vont de + vers − seulement dans une solution",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Reconnaître un effet du courant et appliquer une règle de sécurité",
+     "remember": "Le passage du courant a des **effets** que l'on observe. **Effet thermique** : le conducteur s'échauffe (fer à repasser, bouilloire, fer à souder, fusible qui fond). **Effet lumineux** : une lampe émet de la lumière (lampe torche, ampoule). **Effet chimique** : le courant provoque des transformations chimiques (recharge d'une batterie, dépôt d'un métal dans une solution, dégagement de gaz). **Effet magnétique** : un fil parcouru par le courant agit sur une aiguille aimantée, et un électroaimant attire le fer ; c'est ce qui fait tourner un moteur. Un appareil peut avoir plusieurs effets à la fois : on nomme celui que l'on cherche. **Sécurité** : le corps humain est conducteur, surtout quand la peau est mouillée. Le courant de la prise peut le traverser et être mortel. Ne touche jamais un fil dénudé ni une prise avec les mains mouillées, ne branche pas trop d'appareils sur une même prise, et fais remplacer tout câble abîmé.",
+     "method": [
+      "Observer ce que fait l'appareil quand le courant passe.",
+      "Associer l'observation à l'effet du courant : chaleur, lumière, transformation chimique ou action magnétique.",
+      "Appliquer la règle de sécurité liée à l'appareil ou à l'installation."
+     ],
+     "example": {
+      "statement": "Dans la boutique de réparation d'Adjamé, un technicien utilise un fer à souder branché sur la prise. La panne du fer devient très chaude. Quel effet du courant utilise-t-il ? Quelle règle doit-il respecter ?",
+      "steps": [
+       "Observer : quand le courant passe, la panne du fer à souder devient très chaude.",
+       "Associer : l'échauffement du conducteur est l'effet thermique du courant.",
+       "Appliquer : le fer est branché sur la prise, donc le technicien a les mains sèches, vérifie que le câble n'est pas abîmé et pose le fer sur son support."
+      ]
+     },
+     "pitfall": "Ne confonds pas l'effet que l'on cherche et l'effet qui accompagne. Une ampoule à filament éclaire, c'est son effet lumineux, mais elle chauffe aussi : l'effet thermique n'est pas celui que l'on cherche. Un fer à repasser, lui, est fait pour chauffer. Pour nommer l'effet d'un appareil, demande-toi ce que l'on attend de lui.",
+     "figure": null,
+     "practice": {
+      "statement": "Tu t'entraînes à relier un appareil à l'effet du courant qu'il utilise et à choisir le bon geste de sécurité.",
+      "questions": [
+       {
+        "content": "Une lampe torche éclaire dans le noir. Quel effet du courant est utilisé ?",
+        "question_type": "single_choice",
+        "explanation": "Étape 1 — Observer : l'ampoule émet de la lumière. Étape 2 — Associer : la lumière est l'effet lumineux du courant. Pourquoi pas l'effet thermique : l'ampoule peut chauffer, mais ce n'est pas l'effet cherché dans une lampe torche.",
+        "answers": [
+         {
+          "content": "L'effet lumineux",
+          "correct": true
+         },
+         {
+          "content": "L'effet thermique",
+          "correct": false
+         },
+         {
+          "content": "L'effet chimique",
+          "correct": false
+         },
+         {
+          "content": "L'effet magnétique",
+          "correct": false
+         }
+        ],
+        "hint": "Que voit-on quand on appuie sur l'interrupteur ?"
+       },
+       {
+        "content": "Un fer à repasser chauffe grâce à l'effet ___ du courant.",
+        "question_type": "fill_blank",
+        "explanation": "Étape 1 — Observer : le fer devient chaud. Étape 2 — Associer : l'échauffement est l'effet thermique du courant. Pourquoi pas « lumineux » : un fer à repasser n'est pas fait pour éclairer.",
+        "answers": [
+         {
+          "content": "thermique",
+          "correct": true
+         }
+        ],
+        "hint": "Il s'agit de la chaleur."
+       },
+       {
+        "content": "On peut brancher un chargeur avec les mains mouillées sans risque, car l'eau est un isolant.",
+        "question_type": "true_false",
+        "explanation": "Étape 3 — Appliquer : la règle est de ne jamais toucher une prise avec les mains mouillées. Le corps humain est conducteur, surtout mouillé, donc le courant peut le traverser. Pourquoi pas « Vrai » : l'eau salée ou impure conduit le courant, et la peau mouillée aussi.",
+        "answers": [
+         {
+          "content": "Vrai",
+          "correct": false
+         },
+         {
+          "content": "Faux",
+          "correct": true
+         }
+        ],
+        "hint": "Le corps humain est conducteur."
+       }
+      ]
+     },
+     "exercise": [
+      {
+       "title": "Effets du courant et règles de sécurité",
+       "statement": "Dans cet exercice, tu nommes l'effet du courant utilisé par un appareil et tu choisis la bonne règle de sécurité.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Observe l'appareil, associe l'effet, puis applique la règle de sécurité.",
+       "questions": [
+        {
+         "content": "Une bouilloire électrique chauffe l'eau quand elle est branchée. Quel effet du courant est utilisé ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Observer : la résistance de la bouilloire chauffe l'eau. Étape 2 — Associer : l'échauffement est l'effet thermique. Étape 3 — Appliquer : on ne touche pas la bouilloire branchée avec les mains mouillées. Pourquoi pas l'effet lumineux : on attend de la chaleur, pas de la lumière.",
+         "answers": [
+          {
+           "content": "L'effet thermique",
+           "correct": true
+          },
+          {
+           "content": "L'effet lumineux",
+           "correct": false
+          },
+          {
+           "content": "L'effet chimique",
+           "correct": false
+          },
+          {
+           "content": "L'effet magnétique",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un moteur de ventilateur tourne quand le courant passe. Quel effet du courant fait tourner un moteur ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Observer : le moteur tourne. Étape 2 — Associer : un moteur tourne grâce à l'action magnétique du courant sur des aimants et des bobines. Pourquoi pas l'effet thermique : un moteur peut chauffer un peu, mais ce n'est pas ce qui le fait tourner.",
+         "answers": [
+          {
+           "content": "L'effet magnétique",
+           "correct": true
+          },
+          {
+           "content": "L'effet thermique, car il chauffe",
+           "correct": false
+          },
+          {
+           "content": "L'effet chimique",
+           "correct": false
+          },
+          {
+           "content": "L'effet lumineux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "On recharge la batterie d'une moto : des transformations chimiques se produisent à l'intérieur. Quel effet du courant est mis en jeu ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Observer : la batterie se recharge, donc des transformations chimiques se produisent. Étape 2 — Associer : une transformation chimique provoquée par le courant est son effet chimique. Pourquoi pas l'effet thermique : la chaleur n'est pas ce qui recharge la batterie.",
+         "answers": [
+          {
+           "content": "L'effet chimique",
+           "correct": true
+          },
+          {
+           "content": "L'effet thermique",
+           "correct": false
+          },
+          {
+           "content": "L'effet lumineux",
+           "correct": false
+          },
+          {
+           "content": "L'effet magnétique",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le corps humain est un isolant : on peut toucher une prise avec les mains mouillées sans danger.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Appliquer : la règle est de ne pas toucher une prise avec les mains mouillées. Le corps humain est conducteur, surtout quand la peau est mouillée, et le courant peut le traverser. Pourquoi pas « Vrai » : on prendrait le corps pour un isolant.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Une ampoule à filament éclaire une pièce et devient chaude. Quel est l'effet du courant que l'on cherche à obtenir avec une ampoule ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Observer : l'ampoule éclaire et chauffe. Étape 2 — Associer : on attend de la lumière, c'est l'effet lumineux ; la chaleur est un effet qui accompagne. Pourquoi pas « thermique » : c'est l'erreur du piège, on confond l'effet cherché et l'effet qui accompagne.",
+         "answers": [
+          {
+           "content": "L'effet lumineux : l'échauffement accompagne seulement",
+           "correct": true
+          },
+          {
+           "content": "L'effet thermique, car l'ampoule chauffe",
+           "correct": false
+          },
+          {
+           "content": "L'effet chimique",
+           "correct": false
+          },
+          {
+           "content": "L'effet magnétique",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Effets du courant à la maison, à la boutique et sur la moto",
+       "statement": "Dans cet exercice, tu associes des appareils à leur effet du courant et tu choisis le bon geste de sécurité.",
+       "exercise_type": "fixation",
+       "figure": null,
+       "hint": "Observe l'appareil, associe l'effet, puis applique la règle de sécurité.",
+       "questions": [
+        {
+         "content": "Relie chaque observation à l'effet du courant qu'elle montre.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Observer chaque appareil. Étape 2 — Associer : la chaleur est l'effet thermique, la lumière l'effet lumineux, la rotation d'un moteur l'effet magnétique, un dépôt de métal l'effet chimique. Pourquoi pas « thermique » pour le moteur : il chauffe un peu, mais il tourne grâce à l'effet magnétique.",
+         "answers": [
+          {
+           "content": "Un fer à repasser qui chauffe",
+           "match": "Effet thermique"
+          },
+          {
+           "content": "Une lampe torche qui éclaire",
+           "match": "Effet lumineux"
+          },
+          {
+           "content": "Un moteur de ventilateur qui tourne",
+           "match": "Effet magnétique"
+          },
+          {
+           "content": "Un dépôt de cuivre sur une pièce plongée dans une solution",
+           "match": "Effet chimique"
+          }
+         ]
+        },
+        {
+         "content": "Quels appareils utilisent surtout l'effet thermique ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Observer : le fer à repasser et le fer à souder sont faits pour chauffer. Étape 2 — Associer : c'est l'effet thermique. Pourquoi pas la lampe torche : on y cherche de la lumière, c'est l'effet lumineux.",
+         "answers": [
+          {
+           "content": "Un fer à repasser",
+           "correct": true
+          },
+          {
+           "content": "Un fer à souder",
+           "correct": true
+          },
+          {
+           "content": "Une lampe torche",
+           "correct": false
+          },
+          {
+           "content": "Un moteur de ventilateur",
+           "correct": false
+          },
+          {
+           "content": "Un électroaimant",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "En cas de court-circuit, un fusible chauffe et fond : il utilise l'effet ___ du courant.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Observer : le fil du fusible chauffe puis fond. Étape 2 — Associer : l'échauffement est l'effet thermique du courant. Pourquoi pas « magnétique » : aucune aiguille aimantée ni aucun aimant n'intervient.",
+         "answers": [
+          {
+           "content": "thermique",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Awa veut changer une ampoule du salon. Quel est le bon geste ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Observer : l'ampoule est reliée au secteur. Étape 3 — Appliquer : on coupe le courant avant de toucher la douille et on garde les mains sèches. Pourquoi pas « changer très vite » : le courant peut traverser le corps en un instant.",
+         "answers": [
+          {
+           "content": "Couper l'interrupteur ou le disjoncteur, puis changer l'ampoule les mains sèches",
+           "correct": true
+          },
+          {
+           "content": "Dévisser l'ampoule allumée avec un chiffon mouillé",
+           "correct": false
+          },
+          {
+           "content": "La changer sans couper le courant, mais très vite",
+           "correct": false
+          },
+          {
+           "content": "Enfoncer un tournevis métallique dans la douille",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un câble de prise dont le plastique est déchiré et le cuivre visible doit être réparé ou remplacé avant d'être utilisé.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Observer : le cuivre conducteur est à nu. Étape 3 — Appliquer : on débranche le câble et on le fait remplacer. Pourquoi pas « Faux » : une gaine déchirée laisse le conducteur accessible, donc le courant peut traverser le corps de celui qui le touche.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les trois étapes pour nommer l'effet d'un appareil et le manipuler en sécurité.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Observer l'appareil. Étape 2 — Associer l'effet. Étape 3 — Appliquer la règle de sécurité. On observe avant d'associer : nommer l'effet sans observer mène à l'erreur du piège.",
+         "answers": [
+          {
+           "content": "Observer ce que fait l'appareil quand le courant passe."
+          },
+          {
+           "content": "Associer l'observation à l'effet du courant."
+          },
+          {
+           "content": "Appliquer la règle de sécurité liée à l'appareil."
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "title": "La lampe torche de Koffi",
+     "statement": "Koffi ouvre sa lampe torche : elle contient une pile, un interrupteur et une ampoule à filament, reliés par des fils de cuivre. La lampe ne s'allume pas, alors que l'interrupteur est sur « marche ».",
+     "exercise_type": "fixation",
+     "figure": null,
+     "hint": "Reprends les quatre étapes : repérer, vérifier, contrôler, conclure.",
+     "questions": [
+      {
+       "content": "Koffi découvre qu'un fil de cuivre de sa lampe torche est coupé en deux. L'interrupteur est fermé. Que dire du circuit ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 1 — Repérer : pile, interrupteur, ampoule, fils de cuivre. Étape 2 — Vérifier : le cuivre est conducteur. Étape 3 — Contrôler : un fil coupé interrompt la boucle, même si l'interrupteur est fermé. Étape 4 — Conclure : le circuit est ouvert, le courant ne circule pas. Pourquoi pas « fermé » : un interrupteur fermé ne suffit pas si un fil est coupé.",
+       "answers": [
+        {
+         "content": "Il est ouvert : le courant ne circule pas",
+         "correct": true
+        },
+        {
+         "content": "Il est fermé : le courant circule",
+         "correct": false
+        },
+        {
+         "content": "Il est fermé, mais l'ampoule est isolante",
+         "correct": false
+        },
+        {
+         "content": "Il est ouvert, mais le courant circule quand même",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Koffi remplace le fil coupé par un petit cordon de plastique de même longueur. Que se passe-t-il ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 2 — Vérifier : le plastique est un isolant, donc le trajet n'est pas conducteur. Étape 3 — Contrôler : le plastique agit comme une coupure, le circuit reste ouvert. Étape 4 — Conclure : l'ampoule ne brille pas. Pourquoi pas « il relie les deux morceaux » : relier physiquement ne suffit pas, il faut un matériau conducteur.",
+       "answers": [
+        {
+         "content": "L'ampoule ne brille toujours pas : le plastique est un isolant",
+         "correct": true
+        },
+        {
+         "content": "L'ampoule brille : le plastique laisse passer le courant",
+         "correct": false
+        },
+        {
+         "content": "L'ampoule brille, car le cordon relie les deux morceaux",
+         "correct": false
+        },
+        {
+         "content": "La pile se décharge instantanément",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Koffi remplace enfin le fil coupé par un fil d'aluminium. L'ampoule brille. Pourquoi ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 2 — Vérifier : l'aluminium est un métal, donc un conducteur. Étape 3 — Contrôler : avec ce fil, plus aucune coupure, la boucle est fermée. Étape 4 — Conclure : le courant circule et l'ampoule brille. Pourquoi pas « l'aluminium fournit le courant » : seul le générateur, la pile, fournit le courant.",
+       "answers": [
+        {
+         "content": "L'aluminium est un métal conducteur : la boucle est refermée",
+         "correct": true
+        },
+        {
+         "content": "L'aluminium est un isolant qui protège l'ampoule",
+         "correct": false
+        },
+        {
+         "content": "L'aluminium fournit lui-même le courant",
+         "correct": false
+        },
+        {
+         "content": "L'aluminium ferme l'interrupteur",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Dans les fils de cuivre de la lampe torche, le courant est dû au déplacement de particules appelées ___.",
+       "question_type": "fill_blank",
+       "explanation": "Étape 3 — Identifier : le cuivre est un métal, donc les porteurs de charge sont des électrons libres. Étape 4 — Donner : ils vont de la borne − vers la borne +, en sens inverse du sens conventionnel. Pourquoi pas « ions » : les ions assurent le courant dans une solution, pas dans un métal.",
+       "answers": [
+        {
+         "content": "électrons",
+         "correct": true
+        },
+        {
+         "content": "électrons libres",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Quand la lampe torche brille, les électrons des fils vont de la borne + vers la borne − de la pile.",
+       "question_type": "true_false",
+       "explanation": "Étape 1 — Repérer : la pile a une borne + et une borne −. Étape 2 — Tracer : le sens conventionnel va de + vers −. Étape 4 — Donner : les électrons, chargés négativement, vont de − vers +, en sens inverse. Pourquoi pas « Vrai » : on confondrait le sens des électrons et le sens conventionnel.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": false
+        },
+        {
+         "content": "Faux",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Quand l'ampoule à filament d'une lampe torche brille longtemps, quels effets du courant observe-t-on ?",
+       "question_type": "multiple_correct_2",
+       "explanation": "Étape 1 — Observer : l'ampoule émet de la lumière et chauffe. Étape 2 — Associer : la lumière est l'effet lumineux, l'échauffement est l'effet thermique. Pourquoi pas « magnétique » : l'ampoule ne tourne pas ; c'est un moteur qui tourne grâce à l'effet magnétique.",
+       "answers": [
+        {
+         "content": "Un effet lumineux : l'ampoule éclaire",
+         "correct": true
+        },
+        {
+         "content": "Un effet thermique : l'ampoule chauffe",
+         "correct": true
+        },
+        {
+         "content": "Un effet chimique dans le fil de cuivre",
+         "correct": false
+        },
+        {
+         "content": "Un effet magnétique : l'ampoule se met à tourner",
+         "correct": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Le salon de la famille Traoré",
+     "statement": "Dans le salon de la famille Traoré, un générateur alimente trois récepteurs : une lampe L1, une lampe L2 et un ventilateur. Les trois récepteurs sont montés entre deux nœuds A et B, et chacun a son interrupteur dans sa propre branche.",
+     "exercise_type": "fixation",
+     "figure": null,
+     "hint": "Compte les branches, puis raisonne branche par branche.",
+     "questions": [
+      {
+       "content": "Dans le salon, un générateur est relié aux deux nœuds A et B. Une lampe L1, une lampe L2 et un ventilateur sont chacun reliés à A et à B. En comptant la branche du générateur, combien ce circuit compte-t-il de branches ?",
+       "question_type": "numeric",
+       "explanation": "Étape 1 — Repérer : les nœuds sont A et B. Étape 2 — Compter : une branche pour le générateur, une pour L1, une pour L2, une pour le ventilateur, soit 1 + 3 = 4 branches. Pourquoi pas 3 : on oublie la branche principale qui contient le générateur.",
+       "answers": [
+        {
+         "content": "4",
+         "correct": true
+        }
+       ],
+       "tolerance": 0
+      },
+      {
+       "content": "Un générateur alimente en dérivation deux lampes et un ventilateur, chacun avec son interrupteur dans sa propre branche. On ouvre l'interrupteur du ventilateur. Que deviennent les deux lampes ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 1 — Repérer : deux nœuds. Étape 3 — Nommer : montage en dérivation. Étape 4 — Prévoir : l'interrupteur du ventilateur est dans sa branche dérivée ; l'ouvrir n'ouvre que cette branche. Pourquoi pas « elles s'éteignent » : cela serait vrai en série ou pour un interrupteur de la branche principale.",
+       "answers": [
+        {
+         "content": "Elles restent allumées : seule la branche du ventilateur est ouverte",
+         "correct": true
+        },
+        {
+         "content": "Elles s'éteignent, car l'interrupteur coupe tout le circuit",
+         "correct": false
+        },
+        {
+         "content": "L'une s'éteint, l'autre reste allumée",
+         "correct": false
+        },
+        {
+         "content": "Elles s'éteignent, car les trois appareils sont en série",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Pourquoi installe-t-on les lampes et les prises d'une maison en dérivation plutôt qu'en série ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 3 — Nommer : en dérivation, chaque appareil est sur sa propre branche. Étape 4 — Prévoir : une lampe qui grille ou qu'on éteint n'arrête pas les autres. Pourquoi pas « tous s'éteignent ensemble » : c'est un défaut de la série, pas un avantage.",
+       "answers": [
+        {
+         "content": "Chaque appareil peut fonctionner ou s'arrêter sans gêner les autres",
+         "correct": true
+        },
+        {
+         "content": "Pour que tous les appareils s'éteignent ensemble en cas de panne",
+         "correct": false
+        },
+        {
+         "content": "Parce qu'un montage en série n'a pas de fils de cuivre",
+         "correct": false
+        },
+        {
+         "content": "Parce qu'un montage en série ne comporte pas de générateur",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Relie chaque élément du salon à son rôle dans le circuit.",
+       "question_type": "matching",
+       "explanation": "Étape 1 — Repérer : le générateur fournit le courant, le récepteur l'utilise. Étape 2 — Vérifier : le cuivre est un conducteur, le plastique un isolant. Pourquoi pas « conducteur » pour le plastique : la gaine est faite pour ne pas laisser passer le courant.",
+       "answers": [
+        {
+         "content": "La prise du secteur",
+         "match": "Générateur"
+        },
+        {
+         "content": "La lampe L1",
+         "match": "Récepteur"
+        },
+        {
+         "content": "Le plastique autour des fils",
+         "match": "Isolant"
+        },
+        {
+         "content": "Les fils de cuivre",
+         "match": "Conducteur"
+        }
+       ]
+      },
+      {
+       "content": "Un enfant touche une prise avec les mains mouillées : il n'y a aucun danger, car le courant ne traverse pas le corps humain.",
+       "question_type": "true_false",
+       "explanation": "Étape 3 — Appliquer : la règle est de ne pas toucher une prise avec les mains mouillées. Le corps humain est conducteur, surtout quand la peau est mouillée, donc le courant peut le traverser. Pourquoi pas « Vrai » : on prend le corps pour un isolant.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": false
+        },
+        {
+         "content": "Faux",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "Le câble du ventilateur a son plastique déchiré et le cuivre est visible. Que faire ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 1 — Observer : le cuivre conducteur est à nu. Étape 3 — Appliquer : on débranche d'abord, puis on fait remplacer le câble. Pourquoi pas « ruban adhésif sur un câble branché » : on risque d'être traversé par le courant en le touchant.",
+       "answers": [
+        {
+         "content": "Débrancher l'appareil et faire remplacer le câble",
+         "correct": true
+        },
+        {
+         "content": "Entourer le câble de ruban adhésif et continuer à l'utiliser branché",
+         "correct": false
+        },
+        {
+         "content": "Toucher le câble pour voir s'il chauffe",
+         "correct": false
+        },
+        {
+         "content": "Brancher d'autres appareils pour partager le courant",
+         "correct": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "La boutique de réparation d'Adjamé",
+     "statement": "Aya tient une boutique de réparation de téléphones à Adjamé. Pour tester des ampoules, elle a monté un circuit : une batterie et une lampe L1 forment la branche principale, qui arrive à un point A. Deux lampes, L2 et L3, sont montées chacune entre A et un point B, relié à la batterie.",
+     "exercise_type": "evaluation",
+     "figure": null,
+     "hint": "Compte d'abord les nœuds et les branches, puis ouvre une branche à la fois.",
+     "questions": [
+      {
+       "content": "Dans le circuit d'Aya, combien y a-t-il de nœuds ?",
+       "question_type": "numeric",
+       "explanation": "Étape 1 — Repérer : en A se rejoignent trois fils (branche principale, L2, L3), et en B aussi. Il y a donc 2 nœuds. Pourquoi pas 3 : la lampe L1 est dans la branche principale, elle ne crée pas de nœud.",
+       "answers": [
+        {
+         "content": "2",
+         "correct": true
+        }
+       ],
+       "tolerance": 0
+      },
+      {
+       "content": "Dans le circuit d'Aya, combien y a-t-il de branches ?",
+       "question_type": "numeric",
+       "explanation": "Étape 1 — Repérer : les nœuds sont A et B. Étape 2 — Compter : la branche principale (batterie et L1), la branche de L2 et la branche de L3, soit 3 branches. Pourquoi pas 4 : L1 est dans la branche principale avec la batterie, elle ne forme pas une branche à part.",
+       "answers": [
+        {
+         "content": "3",
+         "correct": true
+        }
+       ],
+       "tolerance": 0
+      },
+      {
+       "content": "Dans le circuit d'Aya, la batterie et L1 sont dans la branche principale ; L2 et L3 sont en dérivation entre A et B. On retire L2. Quelles lampes restent allumées ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 3 — Nommer : montage avec des nœuds, donc en dérivation. Étape 4 — Prévoir : retirer L2 n'ouvre que sa branche ; la branche principale (avec L1) et la branche de L3 restent fermées. Pourquoi pas « seulement L3 » : L1 est dans la branche principale, qui reste fermée.",
+       "answers": [
+        {
+         "content": "L1 et L3",
+         "correct": true
+        },
+        {
+         "content": "Seulement L3",
+         "correct": false
+        },
+        {
+         "content": "Seulement L1",
+         "correct": false
+        },
+        {
+         "content": "Aucune",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Dans le même circuit, la batterie et L1 sont dans la branche principale ; L2 et L3 sont en dérivation. On dévisse L1. Quelles lampes restent allumées ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 2 — Compter : L1 est dans la branche principale, qui contient aussi la batterie. Étape 4 — Prévoir : dévisser L1 coupe cette branche, donc le courant ne peut plus atteindre A. Pourquoi pas « L2 et L3 restent allumées » : la dérivation protège une lampe d'une panne de l'autre branche, pas d'une coupure de la branche principale.",
+       "answers": [
+        {
+         "content": "Aucune : L1 est dans la branche principale, le circuit est ouvert partout",
+         "correct": true
+        },
+        {
+         "content": "L2 et L3, car elles sont en dérivation",
+         "correct": false
+        },
+        {
+         "content": "Seulement L2",
+         "correct": false
+        },
+        {
+         "content": "Seulement L3",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Aya veut savoir si un objet est conducteur. Elle le place dans un circuit simple, en série avec une pile et une ampoule. Quel résultat montre que l'objet est un isolant ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 2 — Vérifier : on place l'objet dans la boucle. Étape 3 — Contrôler : si l'objet est isolant, il coupe la boucle. Étape 4 — Conclure : l'ampoule ne brille pas. Pourquoi pas « l'ampoule brille » : cela prouverait que l'objet laisse passer le courant, donc qu'il est conducteur.",
+       "answers": [
+        {
+         "content": "L'ampoule ne brille pas",
+         "correct": true
+        },
+        {
+         "content": "L'ampoule brille",
+         "correct": false
+        },
+        {
+         "content": "L'ampoule brille puis s'éteint",
+         "correct": false
+        },
+        {
+         "content": "L'objet devient très chaud",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Dans un fil de cuivre de la batterie d'Aya, quelles affirmations sont vraies ?",
+       "question_type": "multiple_correct_2",
+       "explanation": "Étape 2 — Tracer : le sens conventionnel va de + vers −. Étape 3 — Identifier : le cuivre est un métal, les porteurs sont des électrons. Étape 4 — Donner : les électrons vont de − vers +, en sens inverse. Pourquoi pas « ce sont des ions » : les ions concernent les solutions.",
+       "answers": [
+        {
+         "content": "Les électrons y circulent de la borne − vers la borne +",
+         "correct": true
+        },
+        {
+         "content": "Le sens conventionnel va de la borne + vers la borne −",
+         "correct": true
+        },
+        {
+         "content": "Les électrons suivent le sens conventionnel",
+         "correct": false
+        },
+        {
+         "content": "Ce sont des ions qui se déplacent dans le cuivre",
+         "correct": false
+        },
+        {
+         "content": "Le sens conventionnel est le sens des électrons",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Explique en trois phrases pourquoi dévisser L1 éteint toutes les lampes du circuit d'Aya, alors que dévisser L2 laisse L3 allumée.",
+       "question_type": "written",
+       "points": 3,
+       "criteria": [
+        "Repère que L1 est dans la branche principale avec la batterie",
+        "Dit que dévisser L1 ouvre la boucle pour tout le circuit",
+        "Dit que L2 est dans une branche dérivée : dévisser L2 n'ouvre que cette branche"
+       ],
+       "explanation": "Corrigé modèle : L1 est dans la branche principale, avec la batterie ; dévisser L1 coupe le circuit, donc le courant ne passe plus nulle part et toutes les lampes s'éteignent. L2 et L3 sont dans deux branches dérivées entre les nœuds A et B ; dévisser L2 n'ouvre que sa branche, la branche principale et celle de L3 restent fermées, donc L3 reste allumée. Barème sur 3 : 1 point pour la place de L1, 1 point pour l'effet de son retrait, 1 point pour les branches dérivées.",
+       "answers": [],
+       "starter": "L1 est dans la branche principale, donc…"
+      }
+     ]
+    },
+    {
+     "title": "La moto de Moussa",
+     "statement": "Moussa répare sa moto. Une batterie alimente trois récepteurs montés en dérivation : le phare, le feu arrière et le klaxon. Le fil qui relie la borne + de la batterie au phare est en cuivre et entouré de plastique.",
+     "exercise_type": "evaluation",
+     "figure": null,
+     "hint": "Reprends les méthodes : circuit qui fonctionne, dérivation, sens du courant, effets.",
+     "questions": [
+      {
+       "content": "Le phare de la moto ne s'allume pas. Remets dans l'ordre les quatre étapes du dépannage.",
+       "question_type": "ordering",
+       "explanation": "Étape 1 — Repérer les éléments. Étape 2 — Vérifier que chaque élément est conducteur. Étape 3 — Contrôler que le circuit est fermé. Étape 4 — Conclure. Pourquoi pas conclure après l'étape 1 : repérer les éléments ne suffit pas à trouver la coupure, il faut vérifier les matériaux et contrôler la boucle.",
+       "answers": [
+        {
+         "content": "Repérer la batterie, le phare, l'interrupteur et les fils."
+        },
+        {
+         "content": "Vérifier que chaque élément du trajet est conducteur."
+        },
+        {
+         "content": "Contrôler que l'interrupteur est fermé et qu'aucun fil n'est coupé."
+        },
+        {
+         "content": "Conclure : si le circuit est fermé le courant circule, sinon il faut réparer la coupure."
+        }
+       ]
+      },
+      {
+       "content": "Le feu arrière de la moto grille. Le phare, le feu arrière et le klaxon sont montés en dérivation sur la batterie. Que deviennent le phare et le klaxon ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 1 — Repérer : deux nœuds, trois branches dérivées et la branche de la batterie. Étape 3 — Nommer : montage en dérivation. Étape 4 — Prévoir : le feu arrière grillé n'ouvre que sa branche. Pourquoi pas « ils s'éteignent » : cela serait vrai en série.",
+       "answers": [
+        {
+         "content": "Ils restent alimentés : leurs branches sont toujours fermées",
+         "correct": true
+        },
+        {
+         "content": "Ils s'éteignent, car le circuit est ouvert partout",
+         "correct": false
+        },
+        {
+         "content": "Seul le phare s'éteint",
+         "correct": false
+        },
+        {
+         "content": "Seul le klaxon s'arrête",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Moussa recharge la batterie de sa moto avec un chargeur. Quel effet du courant se produit dans la batterie ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 1 — Observer : la batterie se recharge, donc des transformations chimiques s'y produisent. Étape 2 — Associer : une transformation chimique provoquée par le courant est son effet chimique. Pourquoi pas l'effet thermique : un peu de chaleur peut accompagner la charge, mais ce n'est pas ce qui recharge la batterie.",
+       "answers": [
+        {
+         "content": "L'effet chimique",
+         "correct": true
+        },
+        {
+         "content": "L'effet thermique",
+         "correct": false
+        },
+        {
+         "content": "L'effet lumineux",
+         "correct": false
+        },
+        {
+         "content": "L'effet magnétique",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Le plastique d'un fil de la moto a fondu près d'un court-circuit : le courant a eu un effet ___.",
+       "question_type": "fill_blank",
+       "explanation": "Étape 1 — Observer : le plastique fond, donc le fil a beaucoup chauffé. Étape 2 — Associer : l'échauffement est l'effet thermique du courant. Étape 3 — Appliquer : on débranche la batterie et on remplace le fil abîmé. Pourquoi pas « lumineux » : aucune lumière n'est cherchée ici.",
+       "answers": [
+        {
+         "content": "thermique",
+         "correct": true
+        }
+       ]
+      },
+      {
+       "content": "La borne + de la batterie est reliée au phare par un fil de cuivre, et l'autre borne du phare est reliée à la borne −. Dans le fil entre le phare et la borne −, quels sont le sens conventionnel et le sens des électrons ?",
+       "question_type": "single_choice",
+       "explanation": "Étape 1 — Repérer : borne + côté phare, borne − à l'autre bout. Étape 2 — Tracer : le sens conventionnel va de + vers − : phare, puis borne −. Étape 3 — Identifier : le cuivre est un métal, donc des électrons. Étape 4 — Donner : les électrons vont de − vers +, donc de la borne − vers le phare. Pourquoi pas « même sens pour les deux » : ils sont toujours opposés dans un métal.",
+       "answers": [
+        {
+         "content": "Sens conventionnel : du phare vers la borne − ; électrons : de la borne − vers le phare",
+         "correct": true
+        },
+        {
+         "content": "Sens conventionnel : de la borne − vers le phare ; électrons : du phare vers la borne −",
+         "correct": false
+        },
+        {
+         "content": "Sens conventionnel et électrons : du phare vers la borne −",
+         "correct": false
+        },
+        {
+         "content": "Sens conventionnel et électrons : de la borne − vers le phare",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Avant de changer le fusible d'un chargeur branché sur le secteur, il faut d'abord le débrancher.",
+       "question_type": "true_false",
+       "explanation": "Étape 1 — Observer : le chargeur est relié au secteur. Étape 3 — Appliquer : on débranche avant de toucher ses éléments, car le corps humain est conducteur et le courant peut le traverser. Pourquoi pas « Faux » : travailler sur un appareil branché expose à une électrisation.",
+       "answers": [
+        {
+         "content": "Vrai",
+         "correct": true
+        },
+        {
+         "content": "Faux",
+         "correct": false
+        }
+       ]
+      },
+      {
+       "content": "Explique en trois ou quatre phrases pourquoi le phare, le feu arrière et le klaxon d'une moto sont montés en dérivation sur la batterie et non en série.",
+       "question_type": "written",
+       "points": 3,
+       "criteria": [
+        "Dit qu'en dérivation chaque récepteur est sur sa propre branche",
+        "Dit qu'un récepteur en panne n'arrête pas les autres",
+        "Dit qu'en série une panne couperait toute la boucle, donc tous les récepteurs"
+       ],
+       "explanation": "Corrigé modèle : en dérivation, le phare, le feu arrière et le klaxon sont chacun sur leur branche entre les deux nœuds. Si le feu arrière grille, seule sa branche est ouverte, le phare et le klaxon continuent de fonctionner. En série, il n'y aurait qu'une seule boucle : une lampe grillée la couperait et tout s'éteindrait, ce qui serait dangereux en roulant. Barème sur 3 : 1 point par critère.",
+       "answers": [],
+       "starter": "En dérivation, chaque récepteur…"
+      }
+     ]
+    }
+   ],
+   "subjects": [
+    {
+     "title": "Sujet 1 · Les savoirs de base",
+     "notions": "Éléments et symboles d'un circuit, circuit ouvert et fermé, conducteurs et isolants ; montages en série et en dérivation (nœuds, branches) ; sens conventionnel du courant, électrons et ions ; effets du courant et sécurité.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Dans cet exercice, tu reconnais les éléments d'un circuit et ses symboles.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Un circuit fermé est une boucle sans coupure.",
+       "questions": [
+        {
+         "content": "Relie chaque élément d'un circuit à son rôle.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Repérer : le générateur fournit le courant, le récepteur l'utilise, l'interrupteur ouvre ou ferme la boucle, les fils relient les dipôles. Chaque rôle correspond à un seul élément. Pourquoi pas « interrupteur » pour la pile : l'interrupteur ne fournit pas de courant, il commande seulement la boucle.",
+         "answers": [
+          {
+           "content": "Pile",
+           "match": "Fournit le courant au circuit"
+          },
+          {
+           "content": "Lampe",
+           "match": "Utilise le courant pour éclairer"
+          },
+          {
+           "content": "Interrupteur",
+           "match": "Ouvre ou ferme la boucle"
+          },
+          {
+           "content": "Fil de cuivre",
+           "match": "Relie les dipôles entre eux"
+          }
+         ]
+        },
+        {
+         "content": "Que signifie « circuit fermé » ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Contrôler : un circuit fermé est une boucle complète avec l'interrupteur fermé et aucun fil coupé. Étape 4 — Conclure : le courant y circule. Pourquoi pas « interrupteur ouvert » : un interrupteur ouvert coupe la boucle, c'est un circuit ouvert.",
+         "answers": [
+          {
+           "content": "Une boucle sans coupure contenant le générateur, avec l'interrupteur fermé",
+           "correct": true
+          },
+          {
+           "content": "Un circuit dont l'interrupteur est ouvert",
+           "correct": false
+          },
+          {
+           "content": "Un circuit sans générateur",
+           "correct": false
+          },
+          {
+           "content": "Un circuit dans lequel le courant ne passe pas",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un interrupteur ouvert laisse passer le courant.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Contrôler : un interrupteur ouvert est une coupure dans la boucle. Étape 4 — Conclure : le circuit est ouvert, le courant ne passe pas. Pourquoi pas « Vrai » : seul un interrupteur fermé laisse passer le courant.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quel élément est représenté par un cercle traversé d'une croix ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : chaque symbole normalisé a une forme précise. Le cercle traversé d'une croix est le symbole de la lampe. Pourquoi pas « moteur » : le moteur est un cercle contenant la lettre M, sans croix.",
+         "answers": [
+          {
+           "content": "Une lampe",
+           "correct": true
+          },
+          {
+           "content": "Un moteur",
+           "correct": false
+          },
+          {
+           "content": "Une pile",
+           "correct": false
+          },
+          {
+           "content": "Un interrupteur",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Sur le symbole de la pile, le trait le plus long représente la borne ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Repérer : la pile est représentée par deux traits parallèles de longueurs différentes. Le trait long est la borne positive (+), le court la borne négative (−). Pourquoi pas « négative » : c'est le trait court qui représente la borne −.",
+         "answers": [
+          {
+           "content": "positive",
+           "correct": true
+          },
+          {
+           "content": "plus",
+           "correct": true
+          },
+          {
+           "content": "+",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Fatou teste des objets avec une pile, une ampoule et deux fils. Elle place chaque objet dans la boucle, à la place d'un fil.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Un conducteur est souvent un métal ; le plastique, le verre et le bois sec isolent.",
+       "questions": [
+        {
+         "content": "Quels objets laissent passer le courant ?",
+         "question_type": "multiple_correct_3",
+         "explanation": "Étape 2 — Vérifier : le cuivre, le fer et le graphite sont conducteurs. Le plastique et le bois sec sont isolants. Étape 4 — Conclure : trois objets laissent passer le courant. Pourquoi pas le bois sec : il bloque le courant, c'est un isolant.",
+         "answers": [
+          {
+           "content": "Une pièce de cuivre",
+           "correct": true
+          },
+          {
+           "content": "Un clou en fer",
+           "correct": true
+          },
+          {
+           "content": "Une mine de crayon en graphite",
+           "correct": true
+          },
+          {
+           "content": "Une règle en plastique",
+           "correct": false
+          },
+          {
+           "content": "Un morceau de bois sec",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le verre est un conducteur.",
+         "question_type": "true_false",
+         "explanation": "Étape 2 — Vérifier : le verre ne laisse pas passer le courant, c'est un isolant. Étape 4 — Conclure : placé dans la boucle, il l'ouvrirait. Pourquoi pas « Vrai » : seuls les métaux, le graphite et certaines solutions comme l'eau salée conduisent.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi les poignées des outils d'un électricien sont-elles en plastique ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Vérifier : le plastique est un isolant. Étape 4 — Conclure : il empêche le courant de passer dans la main de l'électricien. Pourquoi pas « bon conducteur » : une poignée conductrice ne protégerait pas, elle rendrait l'outil dangereux.",
+         "answers": [
+          {
+           "content": "Le plastique est un isolant : il protège la main du courant",
+           "correct": true
+          },
+          {
+           "content": "Le plastique est un très bon conducteur",
+           "correct": false
+          },
+          {
+           "content": "Le plastique produit de l'électricité",
+           "correct": false
+          },
+          {
+           "content": "Le plastique est un récepteur",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "L'air sec est un ___ : il ne laisse pas passer le courant.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 2 — Vérifier : on classe l'air sec parmi les matériaux qui ne laissent pas passer le courant. Étape 4 — Conclure : c'est un isolant. Pourquoi pas « conducteur » : si l'air conduisait, deux fils nus voisins relieraient toujours le circuit.",
+         "answers": [
+          {
+           "content": "isolant",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Fatou place un objet dans la boucle et l'ampoule brille. Que peut-on dire de l'objet ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Vérifier : l'objet fait partie du trajet. Étape 3 — Contrôler : l'ampoule brille, donc la boucle est fermée avec l'objet dedans. Étape 4 — Conclure : il laisse passer le courant, c'est un conducteur. Pourquoi pas « isolant » : un isolant ouvrirait la boucle.",
+         "answers": [
+          {
+           "content": "C'est un conducteur",
+           "correct": true
+          },
+          {
+           "content": "C'est un isolant",
+           "correct": false
+          },
+          {
+           "content": "C'est un isolant, car l'ampoule brille grâce à lui",
+           "correct": false
+          },
+          {
+           "content": "C'est un interrupteur ouvert",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Dans cet exercice, tu distingues les montages en série et en dérivation.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Compte les nœuds : aucun nœud signifie série.",
+       "questions": [
+        {
+         "content": "Une pile et trois lampes sont montées les unes à la suite des autres sur une seule boucle. Comment s'appelle ce montage ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : une seule boucle, aucun point où trois fils se rejoignent, donc 0 nœud. Étape 3 — Nommer : sans nœud, c'est un montage en série. Pourquoi pas « en dérivation » : il faudrait des nœuds et des branches séparées.",
+         "answers": [
+          {
+           "content": "Un montage en série",
+           "correct": true
+          },
+          {
+           "content": "Un montage en dérivation",
+           "correct": false
+          },
+          {
+           "content": "Un montage ouvert",
+           "correct": false
+          },
+          {
+           "content": "Un montage à trois nœuds",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un point où se rejoignent au moins trois fils s'appelle un ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Repérer : on cherche les points où au moins trois fils se rejoignent. Ces points sont des nœuds. Pourquoi pas « branche » : une branche est la portion de circuit entre deux nœuds.",
+         "answers": [
+          {
+           "content": "nœud",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un générateur est relié à deux nœuds A et B. Deux lampes sont montées chacune entre A et B. En comptant la branche du générateur, combien ce circuit compte-t-il de branches ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Repérer : les nœuds sont A et B. Étape 2 — Compter : une branche pour le générateur et une pour chaque lampe, soit 1 + 2 = 3 branches. Pourquoi pas 2 : on oublie la branche du générateur.",
+         "answers": [
+          {
+           "content": "3",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Dans un montage en série, retirer une lampe éteint toutes les autres.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Nommer : en série, il n'y a qu'une seule boucle. Étape 4 — Prévoir : retirer une lampe coupe cette boucle, donc plus aucun courant ne circule. Pourquoi pas « Faux » : cela serait vrai seulement en dérivation, où les branches sont séparées.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans un montage en dérivation, quelle est la branche principale ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Compter : on compte les branches entre les nœuds. Étape 3 — Nommer : la branche principale est celle qui porte le générateur ; les autres sont dérivées. Pourquoi pas « la plus grosse lampe » : la taille d'une lampe ne définit pas la branche principale.",
+         "answers": [
+          {
+           "content": "Celle qui contient le générateur",
+           "correct": true
+          },
+          {
+           "content": "Celle qui contient la plus grosse lampe",
+           "correct": false
+          },
+          {
+           "content": "Celle qui contient le moins de dipôles",
+           "correct": false
+          },
+          {
+           "content": "Celle qui contient un isolant",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Dans cet exercice, tu orientes le courant et tu relies un appareil à son effet.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Le sens conventionnel va de la borne + vers la borne − à l'extérieur du générateur.",
+       "questions": [
+        {
+         "content": "À l'extérieur de la pile, dans quel sens va le sens conventionnel du courant ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : la pile a une borne + et une borne −. Étape 2 — Tracer : à l'extérieur du générateur, le sens conventionnel va de + vers −. Pourquoi pas « de − vers + » : c'est le sens de déplacement des électrons.",
+         "answers": [
+          {
+           "content": "De la borne + vers la borne −",
+           "correct": true
+          },
+          {
+           "content": "De la borne − vers la borne +",
+           "correct": false
+          },
+          {
+           "content": "Du récepteur vers le générateur, toujours",
+           "correct": false
+          },
+          {
+           "content": "Il dépend de la lampe",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans un fil de cuivre, les électrons se déplacent dans le sens conventionnel du courant.",
+         "question_type": "true_false",
+         "explanation": "Étape 2 — Tracer : le sens conventionnel va de + vers −. Étape 4 — Donner : les électrons vont de − vers +, en sens inverse. Pourquoi pas « Vrai » : c'est l'erreur du piège, on confond le sens conventionnel et le sens des électrons.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Dans un fil métallique, quels porteurs de charge assurent le passage du courant ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Identifier : dans un métal, ce sont des électrons libres. Les ions assurent le courant dans une solution. Pourquoi pas « des ions positifs » : dans un métal, les ions restent à leur place dans le réseau.",
+         "answers": [
+          {
+           "content": "Des électrons libres",
+           "correct": true
+          },
+          {
+           "content": "Des ions positifs",
+           "correct": false
+          },
+          {
+           "content": "Des atomes neutres",
+           "correct": false
+          },
+          {
+           "content": "Des protons",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque observation à l'effet du courant correspondant.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Observer chaque appareil. Étape 2 — Associer : chaleur pour la bouilloire (thermique), lumière pour la lampe (lumineux), rotation du moteur (magnétique), recharge de la batterie (chimique). Pourquoi pas « thermique » pour le moteur : il tourne grâce à l'effet magnétique.",
+         "answers": [
+          {
+           "content": "Une bouilloire qui chauffe l'eau",
+           "match": "Effet thermique"
+          },
+          {
+           "content": "Une lampe torche qui éclaire",
+           "match": "Effet lumineux"
+          },
+          {
+           "content": "Un moteur qui tourne",
+           "match": "Effet magnétique"
+          },
+          {
+           "content": "Une batterie qui se recharge",
+           "match": "Effet chimique"
+          }
+         ]
+        },
+        {
+         "content": "Quelle règle de sécurité faut-il respecter avec une prise de courant ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Appliquer : le corps humain est conducteur, surtout mouillé. Il ne faut donc pas toucher une prise avec les mains mouillées. Pourquoi pas « brancher le plus d'appareils possible » : cela peut faire chauffer les fils, c'est l'effet thermique.",
+         "answers": [
+          {
+           "content": "Ne jamais la toucher avec les mains mouillées",
+           "correct": true
+          },
+          {
+           "content": "La toucher avec les mains mouillées pour la nettoyer",
+           "correct": false
+          },
+          {
+           "content": "Y brancher le plus d'appareils possible",
+           "correct": false
+          },
+          {
+           "content": "La réparer sans la débrancher",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans une solution d'eau salée, le courant est dû au déplacement de particules chargées appelées ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Identifier : une solution contient des ions positifs et négatifs. Ce sont eux qui se déplacent. Pourquoi pas « électrons » : les électrons libres assurent le courant dans un métal, pas dans l'eau salée.",
+         "answers": [
+          {
+           "content": "ions",
+           "correct": true
+          },
+          {
+           "content": "des ions",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Sujet 2 · La vie courante en Côte d'Ivoire",
+     "notions": "Lampe torche, maison (lampes, prises, ventilateur, fer à repasser), boutique de réparation de téléphones à Adjamé et moto : circuit fermé ou ouvert, conducteurs et isolants, série et dérivation, sens du courant, effets du courant et sécurité.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Pendant une coupure de courant, Mariam utilise sa lampe torche : une pile, un interrupteur et une ampoule reliés par des fils.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Cherche d'abord où la boucle peut être coupée.",
+       "questions": [
+        {
+         "content": "La lampe torche ne s'allume pas alors que l'interrupteur est sur « marche ». Quelle cause est possible ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : pile, interrupteur, ampoule, fils. Étape 3 — Contrôler : un fil coupé ou mal fixé ouvre la boucle même si l'interrupteur est fermé. Étape 4 — Conclure : le circuit est ouvert. Pourquoi pas « les électrons vont de − vers + » : c'est le sens normal des électrons, cela n'empêche pas la lampe de briller.",
+         "answers": [
+          {
+           "content": "Un fil est coupé ou mal fixé : le circuit est ouvert",
+           "correct": true
+          },
+          {
+           "content": "Les fils sont trop conducteurs",
+           "correct": false
+          },
+          {
+           "content": "L'ampoule est un générateur",
+           "correct": false
+          },
+          {
+           "content": "Les électrons vont de la borne − vers la borne +",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les quatre étapes pour dépanner la lampe torche.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Repérer les éléments. Étape 2 — Vérifier les matériaux. Étape 3 — Contrôler la boucle. Étape 4 — Conclure. On ne peut pas conclure sur la panne avant d'avoir contrôlé la boucle. Pourquoi pas conclure d'abord : on risquerait de changer la pile alors qu'un fil est coupé.",
+         "answers": [
+          {
+           "content": "Repérer la pile, l'interrupteur, l'ampoule et les fils."
+          },
+          {
+           "content": "Vérifier que chaque élément du trajet est conducteur."
+          },
+          {
+           "content": "Contrôler que l'interrupteur est fermé et qu'aucun fil n'est coupé."
+          },
+          {
+           "content": "Conclure : réparer la coupure si le circuit est ouvert."
+          }
+         ]
+        },
+        {
+         "content": "Si on retourne la pile, les bornes + et − sont échangées et le sens conventionnel du courant s'inverse aussi.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Repérer : les bornes + et − changent de côté. Étape 2 — Tracer : le sens conventionnel va toujours de + vers −, donc il s'inverse dans le circuit extérieur. Pourquoi pas « Faux » : le sens conventionnel dépend des bornes du générateur, pas du dessin.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le boîtier d'une lampe torche est en plastique. Pourquoi est-ce utile ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Vérifier : le plastique est un isolant. Étape 4 — Conclure : il empêche la main de toucher des parties conductrices. Pourquoi pas « conduit mieux que le métal » : le plastique ne conduit pas, il isole.",
+         "answers": [
+          {
+           "content": "Le plastique est un isolant : la main ne touche pas les parties conductrices",
+           "correct": true
+          },
+          {
+           "content": "Le plastique conduit mieux que le métal",
+           "correct": false
+          },
+          {
+           "content": "Le plastique fournit le courant",
+           "correct": false
+          },
+          {
+           "content": "Le plastique est un récepteur",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La lampe torche éclaire grâce à l'effet ___ du courant.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 1 — Observer : l'ampoule émet de la lumière. Étape 2 — Associer : la lumière est l'effet lumineux du courant. Pourquoi pas « thermique » : l'ampoule chauffe, mais on attend d'elle de la lumière.",
+         "answers": [
+          {
+           "content": "lumineux",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Chez Mme Konan, une prise alimente en dérivation deux lampes, un ventilateur et un fer à repasser.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Compte les nœuds et les branches, puis pense à l'effet de chaque appareil.",
+       "questions": [
+        {
+         "content": "Dans le salon de Mme Konan, une ampoule grille et l'autre lampe reste allumée. Que peut-on conclure ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Nommer : si une lampe s'éteint sans arrêter l'autre, la boucle n'est pas unique, il y a des branches séparées. Étape 4 — Prévoir : l'ampoule grillée n'ouvre que sa branche. Pourquoi pas « en série » : en série, l'ampoule grillée éteindrait aussi l'autre.",
+         "answers": [
+          {
+           "content": "Les lampes ne sont pas montées en série : elles sont sur des branches séparées",
+           "correct": true
+          },
+          {
+           "content": "Les lampes sont montées en série",
+           "correct": false
+          },
+          {
+           "content": "Le circuit n'a pas de générateur",
+           "correct": false
+          },
+          {
+           "content": "L'ampoule grillée est dans la branche principale",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans la maison, un générateur est relié aux nœuds A et B. Deux lampes, un ventilateur et un fer à repasser sont chacun reliés à A et à B. En comptant la branche du générateur, combien ce circuit compte-t-il de branches ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Repérer : les nœuds sont A et B. Étape 2 — Compter : une branche pour le générateur et quatre pour les quatre récepteurs, soit 1 + 4 = 5 branches. Pourquoi pas 4 : on oublie la branche du générateur.",
+         "answers": [
+          {
+           "content": "5",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Relie chaque appareil de la maison à l'effet du courant qu'il utilise.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Observer : l'ampoule éclaire, le fer chauffe, le moteur tourne. Étape 2 — Associer : lumière (lumineux), chaleur (thermique), rotation du moteur (magnétique). Pourquoi pas « thermique » pour le ventilateur : le moteur tourne grâce à l'effet magnétique.",
+         "answers": [
+          {
+           "content": "L'ampoule du salon",
+           "match": "Effet lumineux"
+          },
+          {
+           "content": "Le fer à repasser",
+           "match": "Effet thermique"
+          },
+          {
+           "content": "Le moteur du ventilateur",
+           "match": "Effet magnétique"
+          }
+         ]
+        },
+        {
+         "content": "Après la pluie, Yao a les mains mouillées et veut brancher un fer à repasser. Que doit-il faire ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Observer : Yao a les mains mouillées. Étape 3 — Appliquer : le corps humain est conducteur, surtout mouillé ; il doit donc s'essuyer les mains avant de toucher la prise. Pourquoi pas « brancher vite » : l'eau conduit le courant, aller vite ne protège pas.",
+         "answers": [
+          {
+           "content": "S'essuyer les mains et se mettre au sec avant de brancher",
+           "correct": true
+          },
+          {
+           "content": "Brancher vite, car l'eau est isolante",
+           "correct": false
+          },
+          {
+           "content": "Brancher en tenant la prise avec un chiffon mouillé",
+           "correct": false
+          },
+          {
+           "content": "Brancher en gardant les mains mouillées pour mieux serrer",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Brancher beaucoup d'appareils sur une même prise multiple peut faire chauffer les fils : c'est l'effet thermique du courant.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Observer : les fils de la prise multiple chauffent. Étape 2 — Associer : l'échauffement d'un conducteur est l'effet thermique. Étape 3 — Appliquer : on limite le nombre d'appareils par prise. Pourquoi pas « Faux » : un fil qui chauffe est bien un effet thermique, et il peut être dangereux.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Dans une boutique de réparation de téléphones à Adjamé, le technicien utilise un fer à souder, des chargeurs et un testeur formé d'une pile et d'une ampoule.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Un fil coupé ouvre le circuit ; le corps humain est conducteur.",
+       "questions": [
+        {
+         "content": "Le technicien utilise un fer à souder branché sur la prise. Quel effet du courant fait chauffer sa panne ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Observer : la panne du fer devient très chaude. Étape 2 — Associer : l'échauffement est l'effet thermique. Étape 3 — Appliquer : il pose le fer sur son support. Pourquoi pas l'effet lumineux : on attend de la chaleur.",
+         "answers": [
+          {
+           "content": "L'effet thermique",
+           "correct": true
+          },
+          {
+           "content": "L'effet lumineux",
+           "correct": false
+          },
+          {
+           "content": "L'effet chimique",
+           "correct": false
+          },
+          {
+           "content": "L'effet magnétique",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un chargeur a un câble dont le cuivre est à nu. Quel est le danger ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Observer : le cuivre conducteur n'est plus protégé par le plastique. Étape 3 — Appliquer : on débranche et on fait remplacer le câble, car le corps humain est conducteur. Pourquoi pas « le cuivre est un isolant » : c'est un métal, donc un conducteur.",
+         "answers": [
+          {
+           "content": "On peut toucher un conducteur : le courant peut traverser le corps",
+           "correct": true
+          },
+          {
+           "content": "Aucun, le cuivre est un isolant",
+           "correct": false
+          },
+          {
+           "content": "Le plastique va conduire le courant",
+           "correct": false
+          },
+          {
+           "content": "Le téléphone se chargera plus vite",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pour tester un câble, le technicien forme une boucle avec une pile, une ampoule et le câble. L'ampoule ne brille pas. Que conclure ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : pile, ampoule, câble. Étape 3 — Contrôler : l'ampoule ne brille pas, donc la boucle n'est pas fermée. Étape 4 — Conclure : le câble est coupé. Pourquoi pas « le câble est en bon état » : un câble en bon état fermerait la boucle.",
+         "answers": [
+          {
+           "content": "Le circuit est ouvert : un fil du câble est coupé quelque part",
+           "correct": true
+          },
+          {
+           "content": "Le câble est en bon état",
+           "correct": false
+          },
+          {
+           "content": "Le câble est un générateur",
+           "correct": false
+          },
+          {
+           "content": "Les électrons vont de la borne − vers la borne +",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le technicien recharge la batterie d'un téléphone. Quel effet du courant est mis en jeu ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Observer : la batterie se recharge. Étape 2 — Associer : des transformations chimiques ont lieu, c'est l'effet chimique du courant. Pourquoi pas « thermique » : la batterie peut chauffer un peu, mais la recharge est une transformation chimique.",
+         "answers": [
+          {
+           "content": "L'effet chimique",
+           "correct": true
+          },
+          {
+           "content": "L'effet lumineux",
+           "correct": false
+          },
+          {
+           "content": "L'effet magnétique",
+           "correct": false
+          },
+          {
+           "content": "L'effet thermique, seulement",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles règles le technicien doit-il respecter ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 3 — Appliquer : on débranche avant d'intervenir sur un appareil et on garde les mains sèches, car le corps est conducteur. Pourquoi pas « câbles abîmés branchés » : le cuivre à nu peut être touché et le courant peut traverser le corps.",
+         "answers": [
+          {
+           "content": "Débrancher le fer à souder avant de changer sa panne",
+           "correct": true
+          },
+          {
+           "content": "Ne pas toucher les prises avec les mains mouillées",
+           "correct": true
+          },
+          {
+           "content": "Garder les mains mouillées pour refroidir le fer",
+           "correct": false
+          },
+          {
+           "content": "Laisser les câbles abîmés branchés sur l'établi",
+           "correct": false
+          },
+          {
+           "content": "Brancher tous les appareils sur une seule prise multiple",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Moussa roule en moto. Une batterie alimente le phare et le feu arrière, montés en dérivation, chacun avec son interrupteur dans sa propre branche.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Dans un métal, les électrons vont de la borne − vers la borne +.",
+       "questions": [
+        {
+         "content": "À l'extérieur de la batterie, par quelle borne le sens conventionnel du courant sort-il ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : la batterie a une borne + et une borne −. Étape 2 — Tracer : à l'extérieur, le sens conventionnel va de + vers −, donc il sort par la borne +. Pourquoi pas la borne − : c'est par elle que le sens conventionnel revient.",
+         "answers": [
+          {
+           "content": "Par la borne +",
+           "correct": true
+          },
+          {
+           "content": "Par la borne −",
+           "correct": false
+          },
+          {
+           "content": "Par les deux bornes à la fois",
+           "correct": false
+          },
+          {
+           "content": "Par aucune borne",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Moussa ouvre l'interrupteur du phare, placé dans la branche du phare. Que devient le feu arrière ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Nommer : phare et feu arrière sont sur des branches dérivées. Étape 4 — Prévoir : l'interrupteur du phare n'ouvre que sa branche, celle du feu arrière reste fermée. Pourquoi pas « il s'éteint » : cela supposerait un montage en série.",
+         "answers": [
+          {
+           "content": "Il reste allumé",
+           "correct": true
+          },
+          {
+           "content": "Il s'éteint, car le circuit est ouvert partout",
+           "correct": false
+          },
+          {
+           "content": "Il s'éteint, car les deux lampes sont en série",
+           "correct": false
+          },
+          {
+           "content": "Il clignote",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans les fils de cuivre de la moto, comment se déplacent les électrons par rapport au sens conventionnel ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Tracer : le sens conventionnel va de + vers −. Étape 3 — Identifier : dans le cuivre, ce sont des électrons. Étape 4 — Donner : ils vont de − vers +, en sens inverse. Pourquoi pas « dans le même sens » : c'est l'erreur du piège.",
+         "answers": [
+          {
+           "content": "En sens inverse, de la borne − vers la borne +",
+           "correct": true
+          },
+          {
+           "content": "Dans le même sens",
+           "correct": false
+          },
+          {
+           "content": "Ils ne se déplacent pas",
+           "correct": false
+          },
+          {
+           "content": "Ils vont et viennent sans direction",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "La recharge de la batterie de la moto fait intervenir l'effet chimique du courant.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Observer : la batterie se recharge. Étape 2 — Associer : la recharge est une transformation chimique provoquée par le courant, c'est l'effet chimique. Pourquoi pas « Faux » : aucun autre effet n'explique la recharge d'une batterie.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans les fils de la moto, le cuivre est un ___ et le plastique est un isolant.",
+         "question_type": "select",
+         "explanation": "Étape 2 — Vérifier : le cuivre laisse passer le courant, c'est un conducteur ; le plastique de la gaine est un isolant. Pourquoi pas « isolant » : un fil en isolant ne laisserait pas passer le courant jusqu'au phare.",
+         "answers": [
+          {
+           "content": "conducteur",
+           "correct": true
+          },
+          {
+           "content": "isolant",
+           "correct": false
+          },
+          {
+           "content": "récepteur",
+           "correct": false
+          },
+          {
+           "content": "générateur",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Sujet 3 · Raisonner et justifier",
+     "notions": "Raisonner sur un circuit ouvert ou fermé, sur un montage en série ou en dérivation à partir d'observations, sur le sens du courant et des porteurs de charge (électrons, ions), et sur les effets du courant et la sécurité.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Cinq montages sont réalisés avec une pile, une ampoule et des fils. Dans chaque cas, tu dois dire si l'ampoule brille et pourquoi.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Une ampoule brille seulement si la boucle est fermée et conductrice.",
+       "questions": [
+        {
+         "content": "Montage A : la pile, l'ampoule, l'interrupteur fermé et les fils forment une boucle, mais un des fils est remplacé par un cordon en nylon. L'ampoule brille-t-elle ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Vérifier : le nylon est un isolant, donc un élément du trajet n'est pas conducteur. Étape 3 — Contrôler : il agit comme une coupure. Étape 4 — Conclure : le circuit est ouvert, l'ampoule ne brille pas. Pourquoi pas « oui, l'interrupteur est fermé » : un interrupteur fermé ne suffit pas si un autre élément isole.",
+         "answers": [
+          {
+           "content": "Non : le nylon est un isolant, le circuit est ouvert",
+           "correct": true
+          },
+          {
+           "content": "Oui : l'interrupteur est fermé",
+           "correct": false
+          },
+          {
+           "content": "Oui : le nylon relie bien les deux morceaux",
+           "correct": false
+          },
+          {
+           "content": "Non : l'ampoule est un conducteur",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Montage B : une pile, une ampoule et des fils de cuivre sont reliés en boucle, l'interrupteur est ouvert. On ferme l'interrupteur sans rien changer d'autre. Que se passe-t-il ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : pile, ampoule, interrupteur, fils de cuivre. Étape 2 — Vérifier : tout le trajet est conducteur. Étape 3 — Contrôler : l'interrupteur fermé ferme la boucle. Étape 4 — Conclure : le courant circule, l'ampoule brille. Pourquoi pas « rien ne change » : la fermeture supprime la seule coupure.",
+         "answers": [
+          {
+           "content": "L'ampoule brille : le circuit devient fermé",
+           "correct": true
+          },
+          {
+           "content": "Rien ne change : le courant ne circule toujours pas",
+           "correct": false
+          },
+          {
+           "content": "L'ampoule brille car les électrons changent de sens",
+           "correct": false
+          },
+          {
+           "content": "La pile devient un récepteur",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Montage C : les deux fils de l'ampoule sont reliés à la même borne de la pile ; l'autre borne de la pile n'est reliée à rien. L'ampoule brille-t-elle ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : une borne de la pile est libre. Étape 3 — Contrôler : le courant a besoin d'une boucle passant par les deux bornes ; ici il n'y en a pas. Étape 4 — Conclure : le circuit est ouvert. Pourquoi pas « une seule borne suffit » : sans la seconde borne, rien ne ferme la boucle.",
+         "answers": [
+          {
+           "content": "Non : la boucle ne passe pas par les deux bornes de la pile",
+           "correct": true
+          },
+          {
+           "content": "Oui : les deux fils sont bien reliés à la pile",
+           "correct": false
+          },
+          {
+           "content": "Oui : une seule borne suffit",
+           "correct": false
+          },
+          {
+           "content": "Non : le cuivre est un isolant",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quelles modifications rendent un circuit ouvert ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 3 — Contrôler : un circuit est ouvert dès qu'il y a une coupure dans la boucle. Ouvrir l'interrupteur et couper un fil créent une coupure. Pourquoi pas le fil d'aluminium : c'est un métal, un conducteur, qui laisse la boucle fermée.",
+         "answers": [
+          {
+           "content": "Ouvrir l'interrupteur",
+           "correct": true
+          },
+          {
+           "content": "Couper un fil de cuivre",
+           "correct": true
+          },
+          {
+           "content": "Fermer l'interrupteur",
+           "correct": false
+          },
+          {
+           "content": "Remplacer un fil de cuivre par un fil d'aluminium",
+           "correct": false
+          },
+          {
+           "content": "Ajouter un fil de cuivre entre deux dipôles",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Si la pile est neuve, une ampoule reliée à la pile par un seul fil brille quand même.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Contrôler : avec un seul fil, la boucle n'est pas fermée. Étape 4 — Conclure : le circuit est ouvert, une pile neuve n'y change rien. Pourquoi pas « Vrai » : l'état de la pile ne remplace pas la boucle fermée.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Dans un circuit à lampes, tu dois raisonner à partir d'observations pour trouver le montage et prévoir ce qui arrive.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Pour prévoir, repère les nœuds, compte les branches et nomme le montage.",
+       "questions": [
+        {
+         "content": "Dans un circuit, on dévisse la lampe L1 : trois autres lampes restent allumées. Que peut-on conclure ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Nommer : si les autres lampes restent allumées, la boucle n'est pas unique. Étape 4 — Prévoir : dévisser L1 n'a ouvert que sa branche, donc L1 est dans une branche dérivée. Pourquoi pas « L1 est dans la branche principale » : dévisser une lampe de la branche principale éteindrait tout.",
+         "answers": [
+          {
+           "content": "Les lampes ne sont pas toutes en série : L1 est dans une branche dérivée",
+           "correct": true
+          },
+          {
+           "content": "Toutes les lampes sont en série",
+           "correct": false
+          },
+          {
+           "content": "Le circuit n'a pas de générateur",
+           "correct": false
+          },
+          {
+           "content": "L1 est dans la branche principale",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Combien de nœuds comporte un montage où une pile et trois lampes forment une seule boucle ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Repérer : dans une seule boucle, il n'y a aucun point où trois fils se rejoignent. Il y a donc 0 nœud. Étape 3 — Nommer : le montage est en série. Pourquoi pas 1 : un nœud demande au moins trois fils, et chaque point de la boucle n'en a que deux.",
+         "answers": [
+          {
+           "content": "0",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "Une pile et une lampe L1 forment la branche principale. Deux lampes L2 et L3 sont en dérivation entre les nœuds A et B. On dévisse L1. Que deviennent L2 et L3 ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Compter : L1 est dans la branche principale avec la pile. Étape 4 — Prévoir : dévisser L1 coupe cette branche, le courant n'atteint plus A. Pourquoi pas « elles restent allumées » : la dérivation protège des pannes des autres branches, pas de celle de la branche principale.",
+         "answers": [
+          {
+           "content": "Elles s'éteignent : L1 est dans la branche principale",
+           "correct": true
+          },
+          {
+           "content": "Elles restent allumées : elles sont en dérivation",
+           "correct": false
+          },
+          {
+           "content": "Seule L2 s'éteint",
+           "correct": false
+          },
+          {
+           "content": "Seule L3 s'éteint",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans un circuit en dérivation, un interrupteur placé dans la branche principale commande toutes les branches.",
+         "question_type": "true_false",
+         "explanation": "Étape 2 — Compter : la branche principale contient le générateur. Étape 4 — Prévoir : l'ouvrir coupe le courant pour toutes les branches dérivées. Pourquoi pas « Faux » : on le confond avec un interrupteur d'une branche dérivée, qui ne commande que sa branche.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Remets dans l'ordre les étapes pour prévoir l'effet du retrait de la lampe L2.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Repérer les nœuds. Étape 2 — Compter les branches. Étape 3 — Nommer le montage. Étape 4 — Prévoir l'effet du retrait. On nomme le montage avant de prévoir, sinon on applique la mauvaise règle. Pourquoi pas prévoir d'abord : on risquerait de supposer une série alors qu'il y a des nœuds.",
+         "answers": [
+          {
+           "content": "Repérer les nœuds du circuit."
+          },
+          {
+           "content": "Compter les branches."
+          },
+          {
+           "content": "Nommer le montage."
+          },
+          {
+           "content": "Prévoir ce qui arrive aux autres lampes."
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi une guirlande en série devient-elle inutilisable quand une seule lampe grille ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Nommer : une guirlande en série n'a qu'une boucle. Étape 4 — Prévoir : une lampe grillée coupe cette boucle, donc toutes les lampes s'éteignent. Pourquoi pas « les autres lampes deviennent isolantes » : elles n'ont pas changé, c'est la boucle coupée qui arrête le courant.",
+         "answers": [
+          {
+           "content": "La boucle unique est ouverte : le courant ne passe plus nulle part",
+           "correct": true
+          },
+          {
+           "content": "Les autres lampes deviennent isolantes",
+           "correct": false
+          },
+          {
+           "content": "Les électrons changent de sens",
+           "correct": false
+          },
+          {
+           "content": "Le générateur ne fournit plus de courant",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Dans cet exercice, tu justifies le sens du courant et le déplacement des porteurs de charge.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Le sens conventionnel va de + vers − ; les électrons vont à l'inverse.",
+       "questions": [
+        {
+         "content": "Une pile alimente un moteur. La borne + est reliée au moteur par le fil F1, la borne − par le fil F2. Par quel fil les électrons arrivent-ils au moteur ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : F1 est relié à la borne +, F2 à la borne −. Étape 2 — Tracer : le sens conventionnel arrive au moteur par F1. Étape 4 — Donner : les électrons vont en sens inverse, de la borne − vers le moteur, donc par F2. Pourquoi pas F1 : c'est le fil du sens conventionnel.",
+         "answers": [
+          {
+           "content": "Par le fil F2, relié à la borne −",
+           "correct": true
+          },
+          {
+           "content": "Par le fil F1, relié à la borne +",
+           "correct": false
+          },
+          {
+           "content": "Par les deux fils dans le même sens",
+           "correct": false
+          },
+          {
+           "content": "Par aucun fil : les électrons ne quittent jamais la pile",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Le sens conventionnel du courant a été choisi avant que l'on découvre que, dans les métaux, ce sont des électrons qui se déplacent.",
+         "question_type": "true_false",
+         "explanation": "Étape 2 — Tracer : on avait choisi le sens de + vers −. Étape 3 — Identifier : on a découvert ensuite que les porteurs, dans un métal, sont des électrons de charge négative. Étape 4 — Donner : ils vont en sens inverse du sens choisi. Pourquoi pas « Faux » : c'est cet ordre historique qui explique le sens inverse.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans une solution d'eau salée contenant des ions Na⁺ et Cl⁻, le courant passe. Comment se déplacent les ions Na⁺ ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Identifier : en solution, les porteurs sont des ions. Étape 4 — Donner : les cations, comme Na⁺, suivent le sens conventionnel ; les anions, comme Cl⁻, vont en sens inverse. Pourquoi pas « en sens inverse » : c'est le sens des anions Cl⁻.",
+         "answers": [
+          {
+           "content": "Dans le sens conventionnel du courant",
+           "correct": true
+          },
+          {
+           "content": "En sens inverse du sens conventionnel",
+           "correct": false
+          },
+          {
+           "content": "Ils ne bougent pas",
+           "correct": false
+          },
+          {
+           "content": "Ils se transforment en électrons",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans la solution, les ions Cl⁻ se déplacent vers la borne ___ du générateur.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Identifier : les ions Cl⁻ sont des anions, chargés négativement. Étape 4 — Donner : ils vont en sens inverse du sens conventionnel, donc vers la borne positive. Pourquoi pas « négative » : une charge négative est attirée vers la borne +.",
+         "answers": [
+          {
+           "content": "positive",
+           "correct": true
+          },
+          {
+           "content": "plus",
+           "correct": true
+          },
+          {
+           "content": "+",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Un élève affirme : « Dans le fil de cuivre, les électrons vont de la borne + vers la borne − puisque le courant va de + vers −. » Corrige cette affirmation en trois phrases.",
+         "question_type": "written",
+         "points": 2,
+         "criteria": [
+          "Distingue le sens conventionnel du sens des électrons",
+          "Donne le sens des électrons : de la borne − vers la borne +",
+          "Précise que ce sens est inverse du sens conventionnel"
+         ],
+         "explanation": "Corrigé modèle : le sens conventionnel du courant va bien de la borne + vers la borne −, mais c'est un choix. Dans un fil de cuivre, les porteurs de charge sont des électrons, chargés négativement, qui vont de la borne − vers la borne +. Leur sens est donc inverse du sens conventionnel. Barème sur 2 : 1 point pour la distinction, 1 point pour le sens des électrons et son opposition.",
+         "answers": [],
+         "starter": "Le sens conventionnel est un choix, mais les électrons…"
+        }
+       ]
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Dans cet exercice, tu justifies des effets du courant et des règles de sécurité.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Associe l'observation à l'effet, puis la règle au danger.",
+       "questions": [
+        {
+         "content": "Pourquoi un fusible fond-il en cas de court-circuit ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Observer : le fil du fusible chauffe puis fond. Étape 2 — Associer : l'échauffement d'un conducteur est l'effet thermique. Pourquoi pas l'effet chimique : aucune transformation chimique ne fait fondre le fil, c'est la chaleur.",
+         "answers": [
+          {
+           "content": "Le courant échauffe son fil : c'est l'effet thermique",
+           "correct": true
+          },
+          {
+           "content": "Le courant le dissout : c'est l'effet chimique",
+           "correct": false
+          },
+          {
+           "content": "Le courant l'aimante : c'est l'effet magnétique",
+           "correct": false
+          },
+          {
+           "content": "Le courant l'éclaire : c'est l'effet lumineux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quand on recharge la batterie d'un téléphone qui chauffe un peu, quels effets du courant sont en jeu ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Observer : la batterie se recharge et chauffe un peu. Étape 2 — Associer : la recharge est l'effet chimique, l'échauffement est l'effet thermique. Pourquoi pas l'effet lumineux : la batterie n'émet pas de lumière.",
+         "answers": [
+          {
+           "content": "L'effet chimique : des transformations ont lieu dans la batterie",
+           "correct": true
+          },
+          {
+           "content": "L'effet thermique : la batterie chauffe",
+           "correct": true
+          },
+          {
+           "content": "L'effet magnétique : un aimant tourne dans le téléphone",
+           "correct": false
+          },
+          {
+           "content": "L'effet lumineux : la batterie éclaire",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Pourquoi dit-on de ne pas toucher un fil électrique dénudé ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Observer : le cuivre est à nu, donc accessible. Étape 3 — Appliquer : le corps humain est conducteur, le courant peut le traverser, d'où la règle de ne pas toucher. Pourquoi pas « le courant ne passe jamais dans le corps » : c'est faux, et c'est ce qui rend le contact dangereux.",
+         "answers": [
+          {
+           "content": "Le corps humain est conducteur : le courant peut le traverser",
+           "correct": true
+          },
+          {
+           "content": "Le fil dénudé est un isolant dangereux",
+           "correct": false
+          },
+          {
+           "content": "Le courant ne passe que dans les métaux, jamais dans le corps",
+           "correct": false
+          },
+          {
+           "content": "Le fil chaud risque de fondre",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque observation à l'effet du courant qu'elle montre.",
+         "question_type": "matching",
+         "explanation": "Étape 1 — Observer la situation. Étape 2 — Associer : l'aiguille déviée montre l'effet magnétique, le dépôt de cuivre l'effet chimique, le fer brûlant l'effet thermique. Pourquoi pas « thermique » pour le dépôt de cuivre : aucune chaleur n'est en cause, c'est une transformation chimique.",
+         "answers": [
+          {
+           "content": "Une aiguille aimantée qui dévie près d'un fil",
+           "match": "Effet magnétique"
+          },
+          {
+           "content": "Un dépôt de cuivre dans une solution",
+           "match": "Effet chimique"
+          },
+          {
+           "content": "Un fer à repasser qui devient brûlant",
+           "match": "Effet thermique"
+          }
+         ]
+        },
+        {
+         "content": "Un appareil qui utilise un moteur n'a aucun effet du courant : seul un fer à repasser en a.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Observer : le moteur tourne. Étape 2 — Associer : un moteur tourne grâce à l'effet magnétique du courant. Étape 3 — Appliquer : il faut donc le manipuler avec les mêmes précautions. Pourquoi pas « Vrai » : tous les appareils électriques utilisent au moins un effet du courant.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Sujet 4 · Bilan de toutes les notions",
+     "notions": "Bilan : circuit fermé, conducteurs et isolants, symboles ; série et dérivation, nœuds et branches ; sens conventionnel, électrons et ions ; effets du courant et sécurité.",
+     "exercises": [
+      {
+       "title": "Exercice 1",
+       "statement": "Une lampe torche contient une pile, un interrupteur et une ampoule à filament, reliés par des fils de cuivre.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Reprends les quatre étapes : repérer, vérifier, contrôler, conclure.",
+       "questions": [
+        {
+         "content": "Remets dans l'ordre les étapes pour savoir si la lampe torche s'allume.",
+         "question_type": "ordering",
+         "explanation": "Étape 1 — Repérer les éléments. Étape 2 — Vérifier les matériaux. Étape 3 — Contrôler la boucle. Étape 4 — Conclure. Pourquoi pas conclure avant de contrôler : un fil coupé échapperait à l'examen et le verdict serait faux.",
+         "answers": [
+          {
+           "content": "Repérer la pile, l'interrupteur, l'ampoule et les fils."
+          },
+          {
+           "content": "Vérifier que chaque élément du trajet est conducteur."
+          },
+          {
+           "content": "Contrôler que l'interrupteur est fermé et qu'aucun fil n'est coupé."
+          },
+          {
+           "content": "Conclure : le courant circule si le circuit est fermé."
+          }
+         ]
+        },
+        {
+         "content": "Un élève remplace le fil de cuivre entre la pile et l'interrupteur par un bâtonnet de bois sec. Que se passe-t-il ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Vérifier : le bois sec est un isolant, donc un élément du trajet n'est plus conducteur. Étape 3 — Contrôler : il crée une coupure. Étape 4 — Conclure : le circuit est ouvert. Pourquoi pas « il relie les deux éléments » : relier ne suffit pas, il faut un conducteur.",
+         "answers": [
+          {
+           "content": "L'ampoule ne brille plus : le bois sec est un isolant",
+           "correct": true
+          },
+          {
+           "content": "L'ampoule brille car le bâtonnet relie les deux éléments",
+           "correct": false
+          },
+          {
+           "content": "L'ampoule brille plus fort",
+           "correct": false
+          },
+          {
+           "content": "La pile change de borne",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quels matériaux peut-on utiliser à la place du fil de cuivre sans changer le fonctionnement ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 2 — Vérifier : l'aluminium et le fer sont des métaux conducteurs, ils gardent la boucle fermée. Le nylon, le caoutchouc et le bois sec isolent. Pourquoi pas le caoutchouc : c'est un isolant, il ouvrirait la boucle.",
+         "answers": [
+          {
+           "content": "Un fil d'aluminium",
+           "correct": true
+          },
+          {
+           "content": "Un fil de fer",
+           "correct": true
+          },
+          {
+           "content": "Un fil de nylon",
+           "correct": false
+          },
+          {
+           "content": "Un cordon de caoutchouc",
+           "correct": false
+          },
+          {
+           "content": "Un bâtonnet de bois sec",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Sur le symbole de la pile, le trait court représente la borne −.",
+         "question_type": "true_false",
+         "explanation": "Étape 1 — Repérer : le symbole de la pile a deux traits parallèles inégaux. Le long est la borne +, le court est la borne −. Pourquoi pas « Faux » : on inverserait les bornes, et donc le sens conventionnel.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": true
+          },
+          {
+           "content": "Faux",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Quand l'interrupteur est ouvert, le circuit est ___.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 3 — Contrôler : un interrupteur ouvert coupe la boucle. Étape 4 — Conclure : le circuit est ouvert et le courant ne circule pas. Pourquoi pas « fermé » : un circuit fermé a l'interrupteur fermé et aucune coupure.",
+         "answers": [
+          {
+           "content": "ouvert",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 2",
+       "statement": "Dans une maison, une prise alimente en dérivation trois lampes, chacune étant reliée aux deux mêmes nœuds A et B.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Compte les nœuds, puis les branches, puis nomme le montage.",
+       "questions": [
+        {
+         "content": "Combien de nœuds comporte ce circuit ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Repérer : en A et en B se rejoignent au moins trois fils (le générateur et les trois lampes). Il y a donc 2 nœuds. Pourquoi pas 3 : trois lampes ne font pas trois nœuds, elles se branchent sur les deux mêmes points.",
+         "answers": [
+          {
+           "content": "2",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "En comptant la branche de la prise, combien de branches ce circuit comporte-t-il ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Repérer : A et B sont les nœuds. Étape 2 — Compter : une branche pour la prise et une pour chacune des trois lampes, soit 1 + 3 = 4 branches. Pourquoi pas 3 : on oublie la branche de la prise.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "On ouvre l'interrupteur de la lampe L2, placé dans sa propre branche. Que deviennent L1 et L3 ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Nommer : montage en dérivation. Étape 4 — Prévoir : l'interrupteur de L2 n'ouvre que sa branche, les branches de L1 et L3 restent fermées. Pourquoi pas « elles s'éteignent » : cela serait vrai en série.",
+         "answers": [
+          {
+           "content": "Elles restent allumées",
+           "correct": true
+          },
+          {
+           "content": "Elles s'éteignent, car le circuit est ouvert partout",
+           "correct": false
+          },
+          {
+           "content": "Elles clignotent",
+           "correct": false
+          },
+          {
+           "content": "L1 reste allumée, L3 s'éteint",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans un montage en dérivation, si une lampe grille dans sa branche, le générateur ne peut plus faire fonctionner les autres.",
+         "question_type": "true_false",
+         "explanation": "Étape 2 — Compter : chaque lampe est sur sa propre branche. Étape 4 — Prévoir : une lampe grillée n'ouvre que sa branche, donc le générateur alimente toujours les autres. Pourquoi pas « Vrai » : c'est la règle d'un montage en série.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Quel comportement est dangereux ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Appliquer : le corps humain est conducteur, surtout mouillé, donc toucher une prise avec les mains mouillées est dangereux. Les trois autres gestes sont des règles de sécurité. Pourquoi pas « débrancher avant de nettoyer » : c'est une précaution, pas un danger.",
+         "answers": [
+          {
+           "content": "Toucher une prise avec les mains mouillées",
+           "correct": true
+          },
+          {
+           "content": "Débrancher un appareil avant de le nettoyer",
+           "correct": false
+          },
+          {
+           "content": "Faire remplacer un câble abîmé",
+           "correct": false
+          },
+          {
+           "content": "Se tenir sur un sol sec pour changer une ampoule",
+           "correct": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 3",
+       "statement": "Un phare de moto est alimenté par une batterie à travers un fil de cuivre. La batterie sert aussi à alimenter un klaxon.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Dans un métal, les électrons vont à l'inverse du sens conventionnel.",
+       "questions": [
+        {
+         "content": "La borne + de la batterie est reliée au phare par un fil de cuivre. Dans ce fil, quel est le sens conventionnel et quel est le sens des électrons ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Repérer : borne + côté phare. Étape 2 — Tracer : le sens conventionnel va de + vers −, donc de la batterie vers le phare dans ce fil. Étape 3 — Identifier : des électrons. Étape 4 — Donner : en sens inverse, du phare vers la batterie. Pourquoi pas « même sens pour les deux » : ils sont toujours opposés dans un métal.",
+         "answers": [
+          {
+           "content": "Sens conventionnel : de la batterie vers le phare ; électrons : du phare vers la batterie",
+           "correct": true
+          },
+          {
+           "content": "Sens conventionnel : du phare vers la batterie ; électrons : de la batterie vers le phare",
+           "correct": false
+          },
+          {
+           "content": "Sens conventionnel et électrons : de la batterie vers le phare",
+           "correct": false
+          },
+          {
+           "content": "Sens conventionnel et électrons : du phare vers la batterie",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Relie chaque description à la notion qu'elle désigne.",
+         "question_type": "matching",
+         "explanation": "Étape 2 — Tracer : le sens conventionnel va de + vers −. Étape 4 — Donner : les électrons vont de − vers +, les anions vers la borne +, les cations dans le sens conventionnel. Pourquoi pas « anions » pour le sens conventionnel : les anions vont en sens inverse.",
+         "answers": [
+          {
+           "content": "De la borne + vers la borne − à l'extérieur du générateur",
+           "match": "Sens conventionnel du courant"
+          },
+          {
+           "content": "De la borne − vers la borne + dans un fil de cuivre",
+           "match": "Déplacement des électrons"
+          },
+          {
+           "content": "Ions chargés négativement qui vont vers la borne +",
+           "match": "Anions"
+          },
+          {
+           "content": "Ions chargés positivement qui suivent le sens conventionnel",
+           "match": "Cations"
+          }
+         ]
+        },
+        {
+         "content": "Quels appareils utilisent l'effet magnétique du courant ?",
+         "question_type": "multiple_correct_2",
+         "explanation": "Étape 1 — Observer : le moteur tourne, l'électroaimant attire le fer. Étape 2 — Associer : c'est l'effet magnétique. Pourquoi pas la bouilloire : elle utilise l'effet thermique.",
+         "answers": [
+          {
+           "content": "Un moteur de ventilateur",
+           "correct": true
+          },
+          {
+           "content": "Un électroaimant",
+           "correct": true
+          },
+          {
+           "content": "Une bouilloire",
+           "correct": false
+          },
+          {
+           "content": "Une ampoule à filament",
+           "correct": false
+          },
+          {
+           "content": "Un fer à souder",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Un technicien utilise un fer à souder branché sur la prise. Quelle précaution est exacte ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Observer : le fer chauffe, effet thermique. Étape 3 — Appliquer : on garde les mains sèches et on pose le fer sur son support. Pourquoi pas « le toucher mouillé » : le corps humain mouillé conduit le courant, c'est dangereux.",
+         "answers": [
+          {
+           "content": "Garder les mains sèches et poser le fer sur son support",
+           "correct": true
+          },
+          {
+           "content": "Le toucher mouillé pour le refroidir",
+           "correct": false
+          },
+          {
+           "content": "Le laisser branché sur le sol mouillé",
+           "correct": false
+          },
+          {
+           "content": "Tirer sur le câble pour le débrancher à toute vitesse",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans une solution, ce sont des électrons libres qui assurent le passage du courant.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Identifier : dans une solution, les porteurs de charge sont des ions. Les électrons libres sont les porteurs dans un métal. Pourquoi pas « Vrai » : on confond solution et métal.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "Exercice 4",
+       "statement": "Dans une boutique de réparation d'Adjamé, une batterie alimente en dérivation une lampe, un ventilateur et un chargeur, chacun relié aux nœuds A et B.",
+       "exercise_type": "evaluation",
+       "figure": null,
+       "hint": "Pense à la place de l'interrupteur : branche principale ou branche dérivée.",
+       "questions": [
+        {
+         "content": "On ouvre l'interrupteur placé dans la branche principale, avec la batterie. Que devient l'ensemble ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 2 — Compter : la branche principale contient la batterie. Étape 4 — Prévoir : l'ouvrir coupe le courant pour toutes les branches dérivées. Pourquoi pas « seule la lampe s'éteint » : ce serait vrai pour un interrupteur placé dans la branche de la lampe.",
+         "answers": [
+          {
+           "content": "Tout s'arrête : le courant ne peut plus atteindre A",
+           "correct": true
+          },
+          {
+           "content": "Seule la lampe s'éteint",
+           "correct": false
+          },
+          {
+           "content": "Seul le chargeur s'arrête",
+           "correct": false
+          },
+          {
+           "content": "Rien ne change",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "En comptant la branche principale, combien de branches ce circuit comporte-t-il ?",
+         "question_type": "numeric",
+         "explanation": "Étape 1 — Repérer : A et B sont les nœuds. Étape 2 — Compter : une branche pour la batterie et une pour la lampe, le ventilateur et le chargeur, soit 1 + 3 = 4 branches. Pourquoi pas 3 : on oublie la branche de la batterie.",
+         "answers": [
+          {
+           "content": "4",
+           "correct": true
+          }
+         ],
+         "tolerance": 0
+        },
+        {
+         "content": "À l'extérieur du générateur, le sens ___ du courant va de la borne + vers la borne −.",
+         "question_type": "fill_blank",
+         "explanation": "Étape 2 — Tracer : à l'extérieur du générateur, le sens conventionnel va de + vers −. Pourquoi pas « inverse » : le sens des électrons est l'inverse de ce sens, pas le sens conventionnel lui-même.",
+         "answers": [
+          {
+           "content": "conventionnel",
+           "correct": true
+          }
+         ]
+        },
+        {
+         "content": "Le chargeur recharge la batterie d'un téléphone. Quel effet du courant est mis en jeu ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 1 — Observer : la batterie se recharge. Étape 2 — Associer : la recharge est une transformation chimique provoquée par le courant. Pourquoi pas « thermique » : un peu de chaleur peut accompagner la charge, mais elle ne la réalise pas.",
+         "answers": [
+          {
+           "content": "L'effet chimique",
+           "correct": true
+          },
+          {
+           "content": "L'effet lumineux",
+           "correct": false
+          },
+          {
+           "content": "L'effet magnétique",
+           "correct": false
+          },
+          {
+           "content": "L'effet thermique, seulement",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Dans les fils de cuivre du circuit, comment se déplacent les électrons ?",
+         "question_type": "single_choice",
+         "explanation": "Étape 3 — Identifier : le cuivre est un métal, les porteurs sont des électrons. Étape 4 — Donner : chargés négativement, ils vont de la borne − vers la borne +, en sens inverse du sens conventionnel. Pourquoi pas « de + vers − » : c'est le sens conventionnel.",
+         "answers": [
+          {
+           "content": "De la borne − vers la borne +",
+           "correct": true
+          },
+          {
+           "content": "De la borne + vers la borne −",
+           "correct": false
+          },
+          {
+           "content": "Ils restent sur place",
+           "correct": false
+          },
+          {
+           "content": "Ils se déplacent dans les deux sens à la fois",
+           "correct": false
+          }
+         ]
+        },
+        {
+         "content": "Retirer une lampe d'un montage en série laisse les autres allumées.",
+         "question_type": "true_false",
+         "explanation": "Étape 3 — Nommer : en série, il n'y a qu'une boucle. Étape 4 — Prévoir : retirer une lampe coupe cette boucle, donc toutes les lampes s'éteignent. Pourquoi pas « Vrai » : cela décrit la dérivation.",
+         "answers": [
+          {
+           "content": "Vrai",
+           "correct": false
+          },
+          {
+           "content": "Faux",
+           "correct": true
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
