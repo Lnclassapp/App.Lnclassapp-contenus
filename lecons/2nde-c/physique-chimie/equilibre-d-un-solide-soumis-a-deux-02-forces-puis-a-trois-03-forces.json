@@ -190,7 +190,7 @@
         {
           "key": "plan-incline-frottement",
           "kind": "coordinate_plane",
-          "description": "Un plan à carreaux, échelle 1 carreau pour 20 N. Un plan rugueux monte vers la droite, du point (0 ; 0) au point (8 ; 6) : sinus de l'angle = 0,6 et cosinus = 0,8. Une caisse de 100 N, réduite à son centre de gravité G (4 ; 3,8), repose au point de contact C (4 ; 3). Le poids P (5 carreaux) part de G vers le bas. La réaction R (5 carreaux) part de C vers le haut. Elle se décompose en RN, perpendiculaire au plan (4 carreaux, 80 N), et RT, parallèle au plan vers le haut (3 carreaux, 60 N).",
+          "description": "Un plan à carreaux. Un plan rugueux monte vers la droite, du point (0 ; 0) au point (8 ; 6) : sinus de l'angle = 0,6 et cosinus = 0,8. Un solide de poids P, réduit à son centre de gravité G (4 ; 3,8), repose au point de contact C (4 ; 3). Le poids P (5 carreaux) part de G vers le bas. La réaction R (5 carreaux) part de C vers le haut. Elle se décompose en RN, perpendiculaire au plan (4 carreaux), et RT, parallèle au plan vers le haut (3 carreaux).",
           "params": {
             "xmin": 0,
             "xmax": 10,
@@ -253,7 +253,7 @@
       "notions": [
         {
           "name": "Faire le bilan des forces exercées sur un solide",
-          "remember": "Le **système** est le solide que l'on étudie. Les **forces extérieures** sont celles que les autres objets exercent **sur** lui. Le **bilan des forces** est la liste de ces forces avec leurs caractéristiques. Trois forces reviennent souvent. Le **poids** $\\vec P$ : exercé à distance par la Terre, appliqué au centre de gravité G, vertical, vers le bas, d'intensité $P = m \\times g$. La **tension** $\\vec T$ d'un fil : contact localisé, appliquée au point d'attache, dirigée suivant le fil, du solide vers le fil. La **réaction** $\\vec R$ d'un support : contact réparti, dirigée du support vers le solide ; si le support est lisse (sans frottements), elle est perpendiculaire au support. Avec des frottements, la réaction a en plus une composante parallèle au support : la réaction tangentielle (voir la dernière notion). Sauf dans cette dernière notion, on néglige les frottements et on prend $g = 10$ N/kg. La force qu'un solide exerce sur son support est la **force pressante** : elle s'exerce sur le support, pas sur le solide.",
+          "remember": "Le **système** est le solide que l'on étudie. Les **forces extérieures** sont celles que les autres objets exercent **sur** lui. Le **bilan des forces** est la liste de ces forces avec leurs caractéristiques. Trois forces reviennent souvent. Le **poids** $\\vec P$ : exercé à distance par la Terre, appliqué au centre de gravité G, vertical, vers le bas, d'intensité $P = m \\times g$. La **tension** $\\vec T$ d'un fil : contact localisé, appliquée au point d'attache, dirigée suivant le fil, du solide vers le fil. La **réaction** $\\vec R$ d'un support : contact réparti, dirigée du support vers le solide ; si le support est lisse (sans frottements), elle est perpendiculaire au support. Avec des frottements, la réaction a en plus une composante parallèle au support : la réaction tangentielle (voir la dernière notion). Sauf dans cette dernière notion et quand l'énoncé dit « rugueux », on néglige les frottements et on prend $g = 10$ N/kg. La force qu'un solide exerce sur son support est la **force pressante** : elle s'exerce sur le support, pas sur le solide.",
           "method": [
             "Définir le système : choisir le solide étudié.",
             "Lister les objets qui agissent sur le système : la Terre (à distance), puis chaque objet qui le touche (fil, support, main).",
@@ -1261,7 +1261,7 @@
         },
         {
           "name": "Calculer une intensité par projection sur deux axes",
-          "remember": "On choisit deux axes perpendiculaires $Ox$ et $Oy$. La **composante** d'une force sur un axe est sa projection sur cet axe. Si une force d'intensité $F$ fait l'angle $\\alpha$ avec l'axe $Ox$, ses composantes sont $\\pm F\\cos\\alpha$ sur $Ox$ et $\\pm F\\sin\\alpha$ sur $Oy$ ; le signe est + si la composante va dans le sens de l'axe, − sinon. À l'équilibre, la somme des composantes est nulle sur chaque axe : $\\sum F_x = 0$ et $\\sum F_y = 0$. Valeurs utiles : $\\sin 0^\\circ = 0$ ; $\\cos 0^\\circ = 1$ ; $\\sin 30^\\circ = \\cos 60^\\circ = 0{,}5$ ; $\\cos 30^\\circ = \\sin 60^\\circ = \\frac{\\sqrt 3}{2}$, soit environ 0,87. Sur une rampe lisse, la réaction n'a pas de composante le long de la rampe ; sur une rampe rugueuse, elle en a une, la réaction tangentielle.",
+          "remember": "On choisit deux axes perpendiculaires $Ox$ et $Oy$. La **composante** d'une force sur un axe est sa projection sur cet axe. Si une force d'intensité $F$ fait l'angle $\\alpha$ avec l'axe $Ox$, ses composantes sont $\\pm F\\cos\\alpha$ sur $Ox$ et $\\pm F\\sin\\alpha$ sur $Oy$ ; le signe est + si la composante va dans le sens de l'axe, − sinon. À l'équilibre, la somme des composantes est nulle sur chaque axe : $\\sum F_x = 0$ et $\\sum F_y = 0$. Valeurs utiles : $\\sin 0^\\circ = 0$ ; $\\cos 0^\\circ = 1$ ; $\\sin 30^\\circ = \\cos 60^\\circ = 0{,}5$ ; $\\cos 30^\\circ = \\sin 60^\\circ = \\frac{\\sqrt 3}{2}$, soit environ 0,87. Sur une rampe lisse, la réaction n'a pas de composante le long de la rampe ; sur une rampe rugueuse, elle peut en avoir une, la réaction tangentielle.",
           "method": [
             "Choisir deux axes perpendiculaires (si possible, un axe qui porte une force inconnue) et faire le bilan des forces avec leurs angles.",
             "Projeter chaque force sur les deux axes : intensité × cosinus ou sinus de l'angle, avec le signe du sens.",
@@ -1596,9 +1596,9 @@
             "statement": "Tu t'entraînes à décomposer la réaction d'un plan incliné en réaction normale et réaction tangentielle.",
             "questions": [
               {
-                "content": "Un solide de poids 200 N est immobile sur un plan incliné rugueux. L'angle $\\alpha$ vérifie $\\cos\\alpha = 0{,}6$ et $\\sin\\alpha = 0{,}8$. Quelle est l'intensité de la réaction normale $R_N$, en N ?",
+                "content": "Un solide de poids 150 N est immobile sur un plan incliné rugueux. L'angle $\\alpha$ vérifie $\\cos\\alpha = 0{,}8$ et $\\sin\\alpha = 0{,}6$. Quelle est l'intensité de la réaction normale $R_N$, en N ?",
                 "question_type": "numeric",
-                "explanation": "Étape 1 — Faire le bilan : $\\vec P$ et $\\vec R$. Étape 2 — Appliquer l'équilibre : $R = P = 200$ N. Étape 3 — Choisir les axes : $Oy$ perpendiculaire au plan, l'angle entre $\\vec R$ et $Oy$ est $\\alpha$. Étape 4 — Projeter : $R_N = R\\cos\\alpha = 200 \\times 0{,}6 = 120$ N. Pourquoi pas 160 N : ce serait $200 \\times 0{,}8$, le sinus ; c'est la valeur de $R_T$.",
+                "explanation": "Étape 1 — Faire le bilan : $\\vec P$ et $\\vec R$. Étape 2 — Appliquer l'équilibre : $R = P = 150$ N. Étape 3 — Choisir les axes : $Oy$ perpendiculaire au plan, l'angle entre $\\vec R$ et $Oy$ est $\\alpha$. Étape 4 — Projeter : $R_N = R\\cos\\alpha = 150 \\times 0{,}8 = 120$ N. Pourquoi pas 90 N : ce serait $150 \\times 0{,}6$, le sinus ; c'est la valeur de $R_T$.",
                 "answers": [
                   {
                     "content": "120",
@@ -1641,14 +1641,14 @@
                     "correct": false
                   },
                   {
-                    "content": "Le poids $\\vec P$ projeté sur le plan, parallèle au plan",
+                    "content": "La force pressante du solide sur le plan",
                     "correct": false
                   }
                 ],
                 "hint": "Le frottement est parallèle au support."
               },
               {
-                "content": "Un solide est en équilibre sous deux forces sur un plan incliné lisse, sans aucun frottement.",
+                "content": "Un solide soumis seulement à son poids et à la réaction du plan peut rester en équilibre sur un plan incliné lisse, sans aucun frottement.",
                 "question_type": "true_false",
                 "explanation": "Étape 1 — Faire le bilan : $\\vec P$ et $\\vec R$. Étape 2 — Appliquer l'équilibre : il faudrait $\\vec R$ verticale. Étape 5 — Interpréter : sur un plan lisse, $R_T = 0$ et $\\vec R$ est perpendiculaire au plan, donc pas verticale. Pourquoi pas vrai : sans frottement, il faut une troisième force (un câble) pour retenir le solide.",
                 "answers": [
@@ -2221,7 +2221,7 @@
           "figure": null,
           "questions": [
             {
-              "content": "Quelle est l'intensité du poids du chariot, en N ?",
+              "content": "Sur la rampe lisse, quelle est l'intensité du poids du chariot, en N ?",
               "question_type": "numeric",
               "explanation": "Étape 1 — Relever : $m = 120$ kg, $g = 10$ N/kg. Étape 2 — Formule : $P = m \\times g$. Étape 3 — Calculer : $P = 120 \\times 10 = 1\\,200$ N. Pourquoi pas 120 N : c'est la masse en kg ; le poids est $m \\times g$.",
               "answers": [
@@ -2234,7 +2234,7 @@
               "tolerance": 0
             },
             {
-              "content": "Quel est le bilan des forces exercées sur le chariot ?",
+              "content": "Sur la rampe lisse, le chariot est retenu par le câble. Quel est le bilan des forces exercées sur le chariot ?",
               "question_type": "single_choice",
               "explanation": "Étape 1 — Définir le système : le chariot. Étape 2 — Lister : la Terre agit à distance ; le câble et la rampe touchent le chariot. Étape 3 — Nommer : poids, tension, réaction. Étape 4 — Écrire le bilan : trois forces. La force du chariot sur la rampe s'exerce sur la rampe ; sans la réaction, le chariot s'enfoncerait.",
               "answers": [
@@ -2259,14 +2259,14 @@
             {
               "content": "Une rampe lisse est inclinée de 30°. Un chariot y est retenu par un câble. Que peut-on dire de la réaction de la rampe ?",
               "question_type": "single_choice",
-              "explanation": "Étape 1 — Faire le bilan : le chariot subit $\\vec P$, $\\vec T$ et $\\vec R$. Étape 3 — Choisir les axes : $Ox$ le long de la rampe, $Oy$ perpendiculaire. Étape 5 — Interpréter : la rampe est lisse (sans frottement), donc $R_T = 0$ et $\\vec R = \\vec R_N$ est perpendiculaire à la rampe. Pourquoi pas « verticale » : la réaction est verticale seulement si le chariot n'est soumis qu'à deux forces et que la rampe est rugueuse.",
+              "explanation": "Étape 1 — Faire le bilan : le chariot subit $\\vec P$, $\\vec T$ et $\\vec R$. Étape 3 — Choisir les axes : $Ox$ le long de la rampe, $Oy$ perpendiculaire. Étape 5 — Interpréter : la rampe est lisse (sans frottement), donc $R_T = 0$ et $\\vec R = \\vec R_N$ est perpendiculaire à la rampe. Pourquoi pas « verticale » : sur une rampe inclinée, la réaction n'est verticale que si le chariot n'est soumis qu'à deux forces, ce qui exige une rampe rugueuse ; ici la rampe est lisse et il y a le câble.",
               "answers": [
                 {
                   "content": "Elle est perpendiculaire à la rampe : sa réaction tangentielle est nulle",
                   "correct": true
                 },
                 {
-                  "content": "Elle est verticale : sa réaction normale est nulle",
+                  "content": "Elle est verticale, opposée au poids",
                   "correct": false
                 },
                 {
@@ -2280,7 +2280,7 @@
               ]
             },
             {
-              "content": "Quelle est l'intensité de la tension du câble, en N ?",
+              "content": "Sur la rampe lisse, quelle est l'intensité de la tension du câble, en N ?",
               "question_type": "numeric",
               "explanation": "Étape 1 — Choisir : $Ox$ le long de la rampe vers le haut, $Oy$ perpendiculaire. Étape 2 — Projeter : $T_x = +T$, $R_x = 0$, $P_x = -P\\sin 30^\\circ$. Étape 3 — Écrire : $T - P\\sin 30^\\circ = 0$. Étape 4 — Résoudre : $T = 1\\,200 \\times 0{,}5 = 600$ N. Étape 5 — Vérifier : $T < P$ ; à 0°, $T$ serait nulle. Pourquoi pas 1 039 N : c'est $P\\cos 30^\\circ$, la composante perpendiculaire à la rampe ; le long de la rampe, on prend le sinus.",
               "answers": [
@@ -2293,7 +2293,7 @@
               "tolerance": 0
             },
             {
-              "content": "Quelle est l'intensité de la réaction de la rampe, en N ? Arrondis à 10 N près.",
+              "content": "Sur la rampe lisse, avec le câble, quelle est l'intensité de la réaction de la rampe, en N ? Arrondis à 10 N près.",
               "question_type": "numeric",
               "explanation": "Étape 1 — Choisir : $Oy$ perpendiculaire à la rampe vers le haut. Étape 2 — Projeter : $R_y = +R$, $P_y = -P\\cos 30^\\circ$, $T_y = 0$. Étape 3 — Écrire : $R - P\\cos 30^\\circ = 0$. Étape 4 — Résoudre : $R = 1\\,200 \\times \\frac{\\sqrt 3}{2}$, soit $R \\approx 1\\,039$ N, soit environ 1 040 N. Étape 5 — Vérifier : $T^2 + R^2 \\approx 600^2 + 1\\,039^2$, soit environ $1\\,200^2$.",
               "answers": [
@@ -3058,7 +3058,7 @@
                 {
                   "content": "Quelle est la direction de la réaction de la rampe lisse ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Choisir deux axes : un le long de la rampe, un perpendiculaire à la rampe. Étape 2 — Projeter chaque force : la rampe est lisse, sans frottements, donc la réaction est perpendiculaire à la rampe. Étape 3 — Conclure : elle est perpendiculaire à la rampe, et elle n'a aucune composante le long de la rampe. Pourquoi pas « Verticale » : la réaction n'est verticale que sur un plan horizontal ; sur une rampe inclinée elle s'incline avec elle.",
+                  "explanation": "Étape 1 — Choisir deux axes : un le long de la rampe, un perpendiculaire à la rampe. Étape 2 — Projeter chaque force : la rampe est lisse, sans frottements, donc la réaction est perpendiculaire à la rampe. Étape 3 — Conclure : elle est perpendiculaire à la rampe, et elle n'a aucune composante le long de la rampe. Pourquoi pas « Verticale » : la rampe est lisse, donc sans réaction tangentielle ; la réaction est perpendiculaire à la rampe. Elle ne serait verticale que sur un plan horizontal, ou sur une rampe rugueuse avec deux forces seulement.",
                   "answers": [
                     {
                       "content": "Perpendiculaire à la rampe",

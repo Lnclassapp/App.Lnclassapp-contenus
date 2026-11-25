@@ -864,7 +864,7 @@
         },
         {
           "name": "Réactions normale et tangentielle sur un plan incliné",
-          "remember": "La **réaction** $\\vec R$ d'un support est la force de contact que le support exerce sur le solide. On la décompose en deux forces : la **réaction normale** $\\vec R_N$, **perpendiculaire** au support, et la **réaction tangentielle** $\\vec R_T$, **parallèle** au support. $\\vec R_T$ est la **force de frottement**. On a $\\vec R = \\vec R_N + \\vec R_T$. Si le contact est **sans frottement**, $\\vec R_T = \\vec 0$ : la réaction est perpendiculaire au support. Un solide en équilibre sur un **plan incliné** subit deux forces seulement : son poids $\\vec P$ et la réaction $\\vec R$. Par l'équilibre sous deux forces, $\\vec R$ est **verticale**, **vers le haut**, et $R = P$. Le plan est incliné : la verticale n'est pas perpendiculaire au plan. Donc $\\vec R$ n'est **pas** perpendiculaire au plan : elle a une composante tangentielle, dirigée vers le haut du plan. **Sans frottement**, le solide glisse : il ne reste pas en équilibre sur un plan incliné.",
+          "remember": "La **réaction** $\\vec R$ d'un support est la force de contact que le support exerce sur le solide. On la décompose en deux forces : la **réaction normale** $\\vec R_N$, **perpendiculaire** au support, et la **réaction tangentielle** $\\vec R_T$, **parallèle** au support. $\\vec R_T$ est la **force de frottement**. On a $\\vec R = \\vec R_N + \\vec R_T$. Si le contact est **sans frottement**, $\\vec R_T = \\vec 0$ : la réaction est perpendiculaire au support. Un solide simplement posé et en équilibre sur un **plan incliné** subit deux forces seulement : son poids $\\vec P$ et la réaction $\\vec R$. Par l'équilibre sous deux forces, $\\vec R$ est **verticale**, **vers le haut**, et $R = P$. Le plan est incliné : la verticale n'est pas perpendiculaire au plan. Donc $\\vec R$ n'est **pas** perpendiculaire au plan : elle a une composante tangentielle, dirigée vers le haut du plan. **Sans frottement**, le solide glisse : il ne reste pas en équilibre sur un plan incliné.",
           "method": [
             "Dresser le bilan : écrire les deux forces exercées sur le solide posé sur le support, son poids et la réaction du support.",
             "Appliquer l'équilibre : la réaction a la même droite d'action que le poids (la verticale), un sens opposé (vers le haut) et la même intensité.",
@@ -882,7 +882,7 @@
               "Conclure : $\\vec R_T$ est la force de frottement. La caisse reste immobile grâce aux frottements ; sur une planche sans frottement, elle glisserait."
             ]
           },
-          "pitfall": "Ne pas croire que la réaction d'un support est toujours perpendiculaire au support : elle l'est seulement sans frottement. Contre-exemple : une caisse de 10 kg est immobile sur une planche rugueuse inclinée. Si $\\vec R$ était perpendiculaire à la planche, elle ne serait pas opposée au poids vertical : $\\vec P + \\vec R$ ne serait pas nul et la caisse glisserait. À l'équilibre, $\\vec R$ est verticale, avec $R = 100$ N, et elle a une composante tangentielle. Ne confonds pas non plus « normale » (perpendiculaire au support) avec « ordinaire ».",
+          "pitfall": "Ne pas croire que la réaction d'un support est toujours perpendiculaire au support : elle l'est seulement sans frottement. Contre-exemple : une caisse de 10 kg est immobile sur une planche rugueuse inclinée. Si $\\vec R$ était perpendiculaire à la planche, elle ne serait pas opposée au poids vertical : $\\vec P + \\vec R$ ne serait pas nul et la caisse glisserait. À l'équilibre, $\\vec R$ est verticale, avec $R = 100$ N, et elle a une composante tangentielle.",
           "figure": "plan-incline",
           "practice": {
             "statement": "Tu t'entraînes à décomposer la réaction d'un support et à l'utiliser sur un plan incliné.",
@@ -898,6 +898,10 @@
                   },
                   {
                     "content": "la normale",
+                    "correct": true
+                  },
+                  {
+                    "content": "normal",
                     "correct": true
                   }
                 ],
@@ -3321,7 +3325,7 @@
             },
             {
               "title": "Exercice 4",
-              "statement": "Au laboratoire, un solide S de masse 2,4 kg est accroché à un dynamomètre, puis posé sur la paillasse horizontale, puis sur une planche rugueuse inclinée où il reste immobile. On prend $g = 10$ N/kg et l'échelle 1 cm pour 6 N.",
+              "statement": "Au laboratoire, un solide S de masse 2,4 kg est accroché à un dynamomètre, puis posé sur la paillasse horizontale, puis sur une planche rugueuse inclinée où il reste immobile. On prend $g = 10$ N/kg.",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [
@@ -3337,6 +3341,33 @@
                   ],
                   "unit": "N",
                   "tolerance": 0
+                },
+                {
+                  "content": "Le solide S, de poids 24 N, est posé, immobile, sur la paillasse horizontale. Quelle est l'intensité de la réaction de la paillasse, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est S ; $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $R = 24$ N. Pourquoi pas 0 N : S est immobile parce que la paillasse le porte.",
+                  "answers": [
+                    {
+                      "content": "24",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Le solide S de 2,4 kg est posé, immobile, sur la paillasse horizontale. On prend $g = 10$ N/kg. Fais le bilan des forces exercées sur S, écris la condition d'équilibre et calcule la réaction de la paillasse.",
+                  "question_type": "written",
+                  "explanation": "Corrigé modèle : Le système est le solide S. La Terre agit à distance et la paillasse touche S : S subit son poids $\\vec P$ (G, verticale, vers le bas, $P = 2{,}4 \\times 10 = 24$ N) et la réaction $\\vec R$ de la paillasse (point de contact, verticale, vers le haut). S est immobile : les deux forces ont la même droite d'action, des sens opposés et la même intensité, donc $R = P = 24$ N. Barème : système et objets (1), forces et caractéristiques (1), condition d'équilibre (1), calcul avec unité (1). Pourquoi pas $R = 2{,}4$ N : c'est la masse en kg, pas le poids.",
+                  "answers": [],
+                  "points": 4,
+                  "criteria": [
+                    "Le système (S) est défini et les objets qui agissent sont listés",
+                    "Le poids et la réaction sont nommés avec leurs caractéristiques",
+                    "La condition est écrite : même droite d'action, sens opposés, $R = P$",
+                    "Le calcul $P = 2{,}4 \\times 10 = 24$ N, donc $R = 24$ N, est juste avec l'unité"
+                  ],
+                  "starter": "Le système est…"
                 },
                 {
                   "content": "Le solide S, de poids 24 N, est immobile sur une planche rugueuse inclinée. Quelles sont les caractéristiques de la réaction de la planche ?",
@@ -3362,19 +3393,6 @@
                   ]
                 },
                 {
-                  "content": "Le solide S, de poids 24 N, est posé, immobile, sur la paillasse horizontale. Quelle est l'intensité de la réaction de la paillasse, en N ?",
-                  "question_type": "numeric",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est S ; $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $R = 24$ N. Pourquoi pas 0 N : S est immobile parce que la paillasse le porte.",
-                  "answers": [
-                    {
-                      "content": "24",
-                      "correct": true
-                    }
-                  ],
-                  "unit": "N",
-                  "tolerance": 0
-                },
-                {
                   "content": "Sur la planche rugueuse inclinée, la réaction de la planche se décompose en une réaction normale et une réaction ___, qui est la force de frottement.",
                   "question_type": "fill_blank",
                   "explanation": "Étape 3 — Comparer la direction de la réaction avec le support : une composante est perpendiculaire à la planche, l'autre est parallèle. Étape 4 — Nommer les composantes : la composante perpendiculaire est la réaction normale ; la composante parallèle est la réaction tangentielle, qui représente la force de frottement. Pourquoi pas « normale » : c'est déjà le nom de la composante perpendiculaire, citée dans la phrase.",
@@ -3388,20 +3406,6 @@
                       "correct": true
                     }
                   ]
-                },
-                {
-                  "content": "Le solide S de 2,4 kg est posé, immobile, sur la paillasse horizontale. On prend $g = 10$ N/kg. Fais le bilan des forces exercées sur S, écris la condition d'équilibre et calcule la réaction de la paillasse.",
-                  "question_type": "written",
-                  "explanation": "Corrigé modèle : Le système est le solide S. La Terre agit à distance et la paillasse touche S : S subit son poids $\\vec P$ (G, verticale, vers le bas, $P = 2{,}4 \\times 10 = 24$ N) et la réaction $\\vec R$ de la paillasse (point de contact, verticale, vers le haut). S est immobile : les deux forces ont la même droite d'action, des sens opposés et la même intensité, donc $R = P = 24$ N. Barème : système et objets (1), forces et caractéristiques (1), condition d'équilibre (1), calcul avec unité (1). Pourquoi pas $R = 2{,}4$ N : c'est la masse en kg, pas le poids.",
-                  "answers": [],
-                  "points": 4,
-                  "criteria": [
-                    "Le système (S) est défini et les objets qui agissent sont listés",
-                    "Le poids et la réaction sont nommés avec leurs caractéristiques",
-                    "La condition est écrite : même droite d'action, sens opposés, $R = P$",
-                    "Le calcul $P = 2{,}4 \\times 10 = 24$ N, donc $R = 24$ N, est juste avec l'unité"
-                  ],
-                  "starter": "Le système est…"
                 }
               ],
               "hint": "Poids : $P = m \\times g$ ; sur la paillasse, $R = P$ ; sur la planche inclinée, $R = P$ aussi, et $\\vec R$ a une composante tangentielle (frottement)."
