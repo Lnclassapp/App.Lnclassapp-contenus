@@ -103,6 +103,25 @@ Vérification hors dépôt : format, intitulé et rang de la progression, `valid
 | 4 | `6eme/edhc/la-constitution.json` | La Constitution | 4 | 3 | 28 | 161 |
 | 5 | `6eme/edhc/le-president-de-la-republique.json` | Le Président de la République | 3 | 1 | 26 | 149 |
 
+### 2nde, Physique-Chimie, leçons 6 à 10 (chantier `lecons-2nde-6-a-10`)
+
+Depuis le 2026-11-25, les leçons 6 à 10 de Physique-Chimie de 2nde A et de 2nde C de la progression DPFC 2026-2027 sont rédigées au format v3 complet : 10 fichiers, 8 leçons distinctes. « Ions et molécules » (A rang 6, C rang 7) et « Mole et grandeurs molaires » (A rang 8, C rang 9) sont écrites une fois et recopiées avec le `series_name` et le rang de chaque série. « Équilibre d'un solide soumis à deux forces » (2nde A) est écrite à part de la leçon de 2nde C, qui traite aussi trois forces. Chaque notion a son « Je m'entraîne » et 2 exercices (le second de 6 questions d'au moins 4 types), chaque leçon 4 problèmes et 4 sujets de devoir de 4 exercices.
+
+Vérification : `valider.rb` sur la leçon et sur chaque sujet, format ; relecture IA indépendante de chaque leçon (sympy sur tous les calculs : structures électroniques, intensités de forces et projections, moments, masses et volumes molaires, lectures d'ampèremètre et loi des nœuds, vitesses d'enregistrements) ; 106 points pédagogiques tranchés par le validateur pédagogique le 2026-11-25 (rattachement au programme, conditions d'équilibre, loi du ressort, volume molaire, effets du courant, branchement de l'ampèremètre, principe de l'inertie sans « force d'inertie »), relevés dans le journal du chantier `lecons-2nde-6-a-10` de l'application. Écartés par prudence, faute de pouvoir lire le programme officiel : le couple de forces (2nde C, rang 8), la quantité d'électricité Q = I × t (2nde A, rang 10) et la relation barycentrique (2nde C, rang 10).
+
+| Fichier | Titre | Rang | Notions | Exercices | Questions | Figures |
+|---|---|---:|---:|---:|---:|---:|
+| `2nde-a/physique-chimie/ions-et-molecules.json` | Ions et molécules | 6 | 5 | 30 | 182 | 5 |
+| `2nde-a/physique-chimie/equilibre-d-un-solide-soumis-a-deux-forces.json` | Équilibre d'un solide soumis à deux forces | 7 | 3 | 26 | 149 | 3 |
+| `2nde-a/physique-chimie/mole-et-grandeurs-molaires.json` | Mole et grandeurs molaires | 8 | 4 | 28 | 161 | 4 |
+| `2nde-a/physique-chimie/le-courant-electrique.json` | Le courant électrique | 9 | 4 | 28 | 168 | 1 |
+| `2nde-a/physique-chimie/intensite-d-un-courant-continu.json` | Intensité d'un courant continu | 10 | 4 | 28 | 169 | 2 |
+| `2nde-c/physique-chimie/equilibre-d-un-solide-soumis-a-deux-02-forces-puis-a-trois-03-forces.json` | Équilibre d'un solide soumis à deux (02) forces, puis à trois (03) forces | 6 | 4 | 28 | 170 | 4 |
+| `2nde-c/physique-chimie/ions-et-molecules.json` | Ions et molécules | 7 | 5 | 30 | 182 | 5 |
+| `2nde-c/physique-chimie/equilibre-d-un-solide-mobile-autour-d-un-axe-fixe.json` | Équilibre d'un solide mobile autour d'un axe fixe | 8 | 3 | 26 | 144 | 3 |
+| `2nde-c/physique-chimie/mole-et-grandeurs-molaires.json` | Mole et grandeurs molaires | 9 | 4 | 28 | 161 | 4 |
+| `2nde-c/physique-chimie/principe-de-l-inertie.json` | Principe de l'inertie | 10 | 4 | 28 | 164 | 5 |
+
 ### 2nde, SVT, leçons 6 à 10 (chantier `lecons-2nde-6-a-10`)
 
 Depuis le 2026-11-25, les leçons 6 à 9 de SVT de 2nde A (fin de la progression de la série) et 6 à 10 de 2nde C de la progression DPFC 2026-2027 sont rédigées au format v3 complet : 9 fichiers. « Le changement climatique » (2nde C, rang 6) est la copie de la leçon déjà relue de 2nde A, avec le `series_name` C. Chaque notion a son « Je m'entraîne » et 2 exercices (le second de 6 questions d'au moins 4 types), chaque leçon 4 problèmes et 4 sujets de devoir de 4 exercices entièrement corrigés automatiquement.
