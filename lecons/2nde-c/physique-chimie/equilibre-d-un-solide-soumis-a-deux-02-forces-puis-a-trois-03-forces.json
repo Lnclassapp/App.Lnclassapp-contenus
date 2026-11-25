@@ -530,12 +530,12 @@
         },
         {
           "name": "Équilibre d'un solide soumis à deux forces",
-          "remember": "Un solide est **en équilibre** quand il reste immobile par rapport au sol. S'il n'est soumis qu'à **deux forces** $\\vec F_1$ et $\\vec F_2$, il faut et il suffit que : (1) les deux forces aient la **même droite d'action** ; (2) elles aient des **sens opposés** ; (3) elles aient la **même intensité** : $F_1 = F_2$. On écrit $\\vec F_1 + \\vec F_2 = \\vec 0$ : la somme vectorielle est nulle. Applications : un solide suspendu à un fil, $T = P$ ; un solide posé sur un plan horizontal lisse, $R = P$ ; un solide accroché à un dynamomètre, la lecture est $T = P = m \\times g$. La somme nulle ne suffit pas : les deux forces doivent aussi avoir la même droite d'action.",
+          "remember": "Un solide est **en équilibre** quand il reste immobile par rapport au sol. Si un solide soumis à **deux forces** $\\vec F_1$ et $\\vec F_2$ est en équilibre, alors : (1) les deux forces ont la **même droite d'action** ; (2) elles ont des **sens opposés** ; (3) elles ont la **même intensité** : $F_1 = F_2$. Si l'une de ces conditions manque, le solide n'est pas en équilibre. On écrit $\\vec F_1 + \\vec F_2 = \\vec 0$ : la somme vectorielle est nulle. Applications : un solide suspendu à un fil, $T = P$ ; un solide posé sur un plan horizontal lisse, $R = P$ ; un solide accroché à un dynamomètre, la lecture est $T = P = m \\times g$ ; un solide suspendu à un ressort de raideur $k$ (en N/m), d'allongement $\\Delta l$ (en m), $T = k \\times \\Delta l = P$. La somme nulle ne suffit pas : les deux forces doivent aussi avoir la même droite d'action.",
           "method": [
             "Définir le système et dresser le bilan : écrire les deux forces exercées sur lui.",
             "Vérifier la direction et le sens : même droite d'action et sens opposés.",
             "Écrire l'égalité des intensités : $F_1 = F_2$.",
-            "Calculer l'inconnue (tension, réaction, masse, lecture du dynamomètre) et écrire l'unité."
+            "Calculer l'inconnue (tension, réaction, masse, lecture du dynamomètre, allongement d'un ressort) et écrire l'unité."
           ],
           "example": {
             "statement": "Une lampe de chantier de masse 3 kg est suspendue, immobile, à un fil. Quelle est l'intensité de la tension $T$ du fil ? On prend $g = 10$ N/kg.",
@@ -620,6 +620,20 @@
                   }
                 ],
                 "hint": "Deux vecteurs opposés s'annulent."
+              },
+              {
+                "content": "Un solide de 0,5 kg est suspendu, immobile, à un ressort de raideur $k = 25$ N/m. On prend $g = 10$ N/kg. De combien le ressort s'est-il allongé, en cm ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le solide ; ses deux forces sont le poids $\\vec P$ et la tension $\\vec T$ du ressort. Étape 2 — Vérifier la direction et le sens : elles ont la même droite d'action (l'axe vertical du ressort) et des sens opposés. Étape 3 — Écrire l'égalité des intensités : à l'équilibre, $T = P$, soit $k \\times \\Delta l = m \\times g$. Étape 4 — Calculer l'inconnue : $P = 0{,}5 \\times 10 = 5$ N, donc $\\Delta l = 5 \\div 25 = 0{,}2$ m, soit 20 cm. Pourquoi pas 0,2 : c'est l'allongement en mètres ; la question le demande en centimètres.",
+                "answers": [
+                  {
+                    "content": "20",
+                    "correct": true
+                  }
+                ],
+                "unit": "cm",
+                "tolerance": 0,
+                "hint": "À l'équilibre, $k \\times \\Delta l = P$."
               }
             ]
           },
@@ -1988,7 +2002,7 @@
                 {
                   "content": "La tension de la corde a pour direction celle de la ___.",
                   "question_type": "fill_blank",
-                  "explanation": "Étape 1 — Définir le système : le seau. Étape 2 — Lister les objets qui agissent : la corde touche le seau en son point d'attache. Étape 3 — Nommer la force de chaque objet : la tension de la corde. Étape 4 — Écrire le bilan : sa direction est celle de la corde tendue, son sens va du seau vers la corde, donc vers le haut. Pourquoi pas « poids » : le poids est la force de la Terre, vertical et appliqué en G ; la tension, elle, suit la corde, quelle que soit son inclinaison.",
+                  "explanation": "Étape 1 — Définir le système : le seau. Étape 2 — Lister les objets qui agissent : la corde touche le seau en son point d'attache. Étape 3 — Nommer la force de chaque objet : la tension de la corde. Étape 4 — Écrire le bilan : sa direction est celle de la corde tendue, son sens va du seau vers la corde, donc vers le haut. Ici la corde qui porte le seau immobile est verticale : « la verticale » est aussi acceptée. Pourquoi pas « poids » : le poids est la force de la Terre, vertical et appliqué en G ; la tension, elle, suit la corde, quelle que soit son inclinaison.",
                   "answers": [
                     {
                       "content": "corde",
@@ -1996,6 +2010,14 @@
                     },
                     {
                       "content": "la corde",
+                      "correct": true
+                    },
+                    {
+                      "content": "verticale",
+                      "correct": true
+                    },
+                    {
+                      "content": "la verticale",
                       "correct": true
                     }
                   ]
@@ -2577,7 +2599,7 @@
                 {
                   "content": "Quelle est la tension de chaque fil, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical vers le haut ; $T_1 = T_2 = T$. Étape 2 — Projeter chaque force : $T_y = T\\sin 30^\\circ$ pour chaque fil, $P_y = -P = -60$ N. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $2T\\sin 30^\\circ - P = 0$. Étape 4 — Résoudre les équations : $2 \\times T \\times 0{,}5 = 60$, donc $T = 60$ N. Étape 5 — Vérifier le résultat : à 30°, $2\\sin 30^\\circ = 1$, donc $T = P$. Pourquoi pas 30 N : c'est $P \\div 2$, valable seulement pour des fils verticaux ; à 30° de l'horizontale chaque fil tire plus fort.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical vers le haut ; $T_1 = T_2 = T$. Étape 2 — Projeter chaque force : $T_y = T\\sin 30^\\circ$ pour chaque fil, $P_y = -P = -60$ N. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $2T\\sin 30^\\circ - P = 0$. Étape 4 — Résoudre les équations : $2 \\times T \\times 0{,}5 = 60$, donc $T = 60$ N. Étape 5 — Vérifier le résultat : à 30°, $2\\sin 30^\\circ = 1$, donc $T = P$. Pourquoi pas 30 N : c'est $P \\div 2$, le poids partagé entre les deux fils sans projeter les tensions ; seule la composante verticale $T\\sin 30^\\circ$ de chaque fil soutient le tableau, donc chaque fil tire plus fort.",
                   "answers": [
                     {
                       "content": "60",
@@ -2648,7 +2670,7 @@
                     }
                   ],
                   "unit": "N",
-                  "tolerance": 10
+                  "tolerance": 5
                 },
                 {
                   "content": "Quelle est la direction de la réaction de la rampe lisse ?",
@@ -3021,7 +3043,7 @@
                 {
                   "content": "Quelle est la tension de chaque fil, en N ? Arrondis à l'unité.",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical vers le haut. Étape 2 — Projeter chaque force : $T\\sin 45^\\circ$ par fil, $-P$ pour le poids. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $2T\\sin 45^\\circ = 100$. Étape 4 — Résoudre les équations : $T = \\frac{100}{\\sqrt 2} \\approx 70{,}7$ N, soit 71 N. Étape 5 — Vérifier le résultat : $T > P \\div 2 = 50$ N car les fils sont inclinés. Pourquoi pas 50 N : c'est le résultat de fils verticaux ; ici seule une partie de chaque tension soutient la lampe.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical vers le haut. Étape 2 — Projeter chaque force : $T\\sin 45^\\circ$ par fil, $-P$ pour le poids. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $2T\\sin 45^\\circ = 100$. Étape 4 — Résoudre les équations : $T = \\frac{100}{\\sqrt 2} \\approx 70{,}7$ N, soit 71 N. Étape 5 — Vérifier le résultat : $T > P \\div 2 = 50$ N car les fils sont inclinés. Pourquoi pas 50 N : c'est $P \\div 2$, le poids partagé sans projeter les tensions ; seule la composante verticale $T\\sin 45^\\circ$ de chaque fil soutient la lampe.",
                   "answers": [
                     {
                       "content": "71",
@@ -3034,7 +3056,7 @@
                 {
                   "content": "Chaque fil porte exactement la moitié du poids, 50 N.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical. Étape 2 — Projeter chaque force : seule la composante verticale $T\\sin 45^\\circ$ de chaque fil soutient la lampe. Étape 3 — Écrire la condition d'équilibre : $2T\\sin 45^\\circ = P$. Étape 4 — Résoudre : $T \\approx 71$ N. Étape 5 — Vérifier : 71 N est supérieur à 50 N. Pourquoi pas « Vrai » : la moitié du poids n'est la tension de chaque fil que pour des fils verticaux ; des fils inclinés tirent plus fort.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical. Étape 2 — Projeter chaque force : seule la composante verticale $T\\sin 45^\\circ$ de chaque fil soutient la lampe. Étape 3 — Écrire la condition d'équilibre : $2T\\sin 45^\\circ = P$. Étape 4 — Résoudre : $T \\approx 71$ N. Étape 5 — Vérifier : 71 N est supérieur à 50 N. Pourquoi pas « Vrai » : 50 N, c'est $P \\div 2$, le poids partagé sans projeter les tensions ; des fils inclinés tirent plus fort que la moitié du poids.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -3047,17 +3069,17 @@
                   ]
                 },
                 {
-                  "content": "Explique pourquoi, si les fils devenaient verticaux, chaque tension vaudrait 50 N.",
+                  "content": "Projette les forces sur l'axe horizontal $Ox$ et explique pourquoi les deux fils ont la même tension.",
                   "question_type": "written",
-                  "explanation": "Corrigé modèle : Étape 1 — Choisir deux axes : $Oy$ vertical vers le haut. Étape 2 — Projeter chaque force : $T_y = T\\sin\\alpha$ par fil, $P_y = -P$. Étape 3 — Écrire la condition d'équilibre : $2T\\sin\\alpha - P = 0$. Étape 4 — Résoudre : fils verticaux, l'angle avec l'horizontale vaut 90° et $\\sin 90^\\circ = 1$, donc $2T - P = 0$ et $T = 100 \\div 2 = 50$ N. Étape 5 — Vérifier : à 45° on avait 71 N, plus que 50 N. Pourquoi pas « chaque fil porte tout le poids, 100 N » : deux fils se partagent le poids, chacun en porte la moitié quand ils sont verticaux. Barème : angle et sinus (0,5), équation (1), calcul (0,5).",
+                  "explanation": "Corrigé modèle : Étape 1 — Choisir deux axes : $Ox$ horizontal vers la droite ; bilan $\\vec P$, $\\vec T_1$ (fil de droite) et $\\vec T_2$ (fil de gauche). Étape 2 — Projeter chaque force : $T_{1x} = +T_1\\cos 45^\\circ$, $T_{2x} = -T_2\\cos 45^\\circ$, et $P_x = 0$ car le poids est vertical. Étape 3 — Écrire la condition d'équilibre sur chaque axe : sur $Ox$, $T_1\\cos 45^\\circ - T_2\\cos 45^\\circ = 0$. Étape 4 — Résoudre les équations : $\\cos 45^\\circ \\neq 0$, donc $T_1 = T_2$, environ 71 N chacune. Étape 5 — Vérifier le résultat : les fils sont identiques et inclinés du même angle, il est normal que leurs tensions soient égales. Pourquoi l'axe vertical ne suffit pas : il donne seulement $T_1\\sin 45^\\circ + T_2\\sin 45^\\circ = P$, une équation à deux inconnues ; c'est l'axe horizontal qui donne $T_1 = T_2$. Barème : projections sur $Ox$, poids compris (0,5), équation (1), conclusion (0,5).",
                   "answers": [],
                   "points": 2,
                   "criteria": [
-                    "Avec des fils verticaux, $\\sin 90^\\circ = 1$",
-                    "L'équation devient $2T = P$",
-                    "$T = 100 \\div 2 = 50$ N"
+                    "Projections sur $Ox$ : $+T_1\\cos 45^\\circ$, $-T_2\\cos 45^\\circ$, poids nul",
+                    "Équation $T_1\\cos 45^\\circ - T_2\\cos 45^\\circ = 0$",
+                    "Conclusion $T_1 = T_2$, car $\\cos 45^\\circ \\neq 0$"
                   ],
-                  "starter": "Si les fils sont verticaux, …"
+                  "starter": "Sur l'axe horizontal, …"
                 }
               ],
               "hint": "Projette sur l'axe vertical."
@@ -3404,7 +3426,7 @@
                 {
                   "content": "Quelle est la tension de chaque câble, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical vers le haut ; $T_1 = T_2 = T$. Étape 2 — Projeter chaque force : $T\\sin 30^\\circ$ par câble, $-P$ pour le poids. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $2T\\sin 30^\\circ - P = 0$. Étape 4 — Résoudre les équations : $T = 400 \\div (2 \\times 0{,}5) = 400$ N. Étape 5 — Vérifier le résultat : $T = P$ car $2\\sin 30^\\circ = 1$. Pourquoi pas 200 N : c'est $P \\div 2$, qui vaudrait pour des câbles verticaux ; à 30° de l'horizontale, chaque câble tire plus fort.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical vers le haut ; $T_1 = T_2 = T$. Étape 2 — Projeter chaque force : $T\\sin 30^\\circ$ par câble, $-P$ pour le poids. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $2T\\sin 30^\\circ - P = 0$. Étape 4 — Résoudre les équations : $T = 400 \\div (2 \\times 0{,}5) = 400$ N. Étape 5 — Vérifier le résultat : $T = P$ car $2\\sin 30^\\circ = 1$. Pourquoi pas 200 N : c'est $P \\div 2$, le poids partagé sans projeter les tensions ; à 30° de l'horizontale, chaque câble tire plus fort.",
                   "answers": [
                     {
                       "content": "400",
@@ -3432,7 +3454,7 @@
                 {
                   "content": "Si on rend les câbles plus inclinés vers la verticale (angle plus grand sur l'horizontale), la tension de chaque câble…",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical. Étape 2 — Projeter chaque force : $T\\sin\\alpha$ par câble. Étape 3 — Écrire la condition d'équilibre : $2T\\sin\\alpha = P$. Étape 4 — Résoudre les équations : $T = P \\div (2\\sin\\alpha)$ ; quand $\\alpha$ augmente, $\\sin\\alpha$ augmente, donc $T$ diminue. Étape 5 — Vérifier le résultat : à 90°, $T = P \\div 2 = 200$ N. Pourquoi pas « augmente » : on divise par $2\\sin\\alpha$, un nombre qui grandit avec $\\alpha$ ; le quotient diminue.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical. Étape 2 — Projeter chaque force : $T\\sin\\alpha$ par câble. Étape 3 — Écrire la condition d'équilibre : $2T\\sin\\alpha = P$. Étape 4 — Résoudre les équations : $T = P \\div (2\\sin\\alpha)$ ; quand $\\alpha$ augmente, $\\sin\\alpha$ augmente, donc $T$ diminue. Étape 5 — Vérifier le résultat : à 60°, $T = 400 \\div (2 \\times 0{,}87) \\approx 230$ N, moins que les 400 N trouvés à 30°. Pourquoi pas « augmente » : on divise par $2\\sin\\alpha$, un nombre qui grandit avec $\\alpha$ ; le quotient diminue.",
                   "answers": [
                     {
                       "content": "diminue",
