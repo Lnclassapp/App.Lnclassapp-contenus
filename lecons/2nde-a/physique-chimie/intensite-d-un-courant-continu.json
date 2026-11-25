@@ -88,8 +88,312 @@
       ],
       "notions": [
         {
+          "name": "Calculer une quantité d'électricité transportée par le courant",
+          "remember": "La **quantité d'électricité** $Q$ est la charge totale transportée par les porteurs de charge à travers une section du circuit pendant une durée $t$. Pour un courant continu d'intensité $I$ : $Q = I \\times t$. Son unité légale est le **coulomb**, de symbole **C**, avec $I$ en **ampères** (A) et $t$ en **secondes** (s) : 1 C = 1 A × 1 s. On en déduit l'intensité $I = \\dfrac{Q}{t}$ (le courant est la quantité d'électricité qui passe en 1 s) et la durée $t = \\dfrac{Q}{I}$. Avant de calculer, convertis : 1 min = 60 s, 1 h = 3 600 s, 1 mA = 0,001 A. Exemple : 0,5 A pendant 20 s transportent $Q = 0,5 \\times 20 = 10$ C.",
+          "method": [
+            "Relever les données de l'énoncé (I, t ou Q) et la grandeur cherchée.",
+            "Convertir le temps en secondes et l'intensité en ampères : 1 min = 60 s, 1 mA = 0,001 A.",
+            "Écrire la formule qui relie les trois grandeurs : $Q = I \\times t$, ou $I = \\dfrac{Q}{t}$, ou $t = \\dfrac{Q}{I}$.",
+            "Calculer avec les valeurs converties et écrire le résultat avec son unité : C pour Q, A pour I, s pour t."
+          ],
+          "example": {
+            "statement": "L'ampoule de la lampe torche de Koffi est traversée par une intensité de 300 mA pendant 2 min. Quelle quantité d'électricité traverse l'ampoule ?",
+            "steps": [
+              "Relever : I = 300 mA et t = 2 min ; on cherche la quantité d'électricité Q.",
+              "Convertir : 300 mA = 0,3 A et 2 min = 2 × 60 = 120 s.",
+              "Écrire la formule : $Q = I \\times t$, car on cherche Q.",
+              "Calculer : $Q = 0,3 \\times 120 = 36$ C. La quantité d'électricité est Q = 36 C."
+            ]
+          },
+          "pitfall": "Ne calcule pas avec un temps en minutes ou une intensité en mA. Contre-exemple : 2 A pendant 3 min ne font pas $2 \\times 3 = 6$ C, mais $2 \\times 180 = 360$ C, car 3 min = 180 s. Le coulomb suppose des **secondes** et des **ampères** : convertis toujours avant de calculer, puis écris l'unité.",
+          "figure": null,
+          "practice": {
+            "statement": "Tu t'entraînes à calculer une quantité d'électricité, une intensité ou une durée avec des appareils du quotidien.",
+            "questions": [
+              {
+                "content": "Une ampoule du salon est traversée par une intensité de 0,5 A pendant 20 s. Quelle quantité d'électricité la traverse, en coulombs ?",
+                "question_type": "numeric",
+                "unit": "C",
+                "tolerance": 0,
+                "explanation": "Étape 1 — Relever : I = 0,5 A et t = 20 s ; on cherche Q. Étape 2 — Convertir : I est déjà en A et t en s : rien à convertir. Étape 3 — Écrire la formule : Q = I × t. Étape 4 — Calculer : Q = 0,5 × 20 = 10 C. Pourquoi pas « 20,5 C » : ce serait additionner I et t au lieu de les multiplier.",
+                "answers": [
+                  {
+                    "content": "10",
+                    "correct": true
+                  }
+                ],
+                "hint": "Multiplie l'intensité par la durée en secondes."
+              },
+              {
+                "content": "Un petit ventilateur est traversé par une intensité de 250 mA pendant 2 min. Quelle quantité d'électricité le traverse, en coulombs ?",
+                "question_type": "numeric",
+                "unit": "C",
+                "tolerance": 0,
+                "explanation": "Étape 1 — Relever : I = 250 mA et t = 2 min ; on cherche Q. Étape 2 — Convertir : 250 mA = 0,25 A et 2 min = 120 s. Étape 3 — Écrire la formule : Q = I × t. Étape 4 — Calculer : Q = 0,25 × 120 = 30 C. Pourquoi pas « 500 C » : ce serait multiplier 250 par 2 sans convertir le mA en A ni la minute en secondes.",
+                "answers": [
+                  {
+                    "content": "30",
+                    "correct": true
+                  }
+                ],
+                "hint": "Convertis d'abord les mA en A et les minutes en secondes."
+              },
+              {
+                "content": "Une quantité d'électricité de 90 C traverse une lampe en 30 s. Quelle est l'intensité du courant, en ampères ?",
+                "question_type": "numeric",
+                "unit": "A",
+                "tolerance": 0,
+                "explanation": "Étape 1 — Relever : Q = 90 C et t = 30 s ; on cherche I. Étape 2 — Convertir : t est déjà en s et Q en C : rien à convertir. Étape 3 — Écrire la formule : I = Q / t. Étape 4 — Calculer : I = 90 / 30 = 3 A. Pourquoi pas « 2 700 A » : ce serait multiplier Q par t, alors que I est la quantité d'électricité par seconde.",
+                "answers": [
+                  {
+                    "content": "3",
+                    "correct": true
+                  }
+                ],
+                "hint": "L'intensité est la quantité d'électricité qui passe en 1 s : divise Q par t."
+              },
+              {
+                "content": "Un courant de 3 A qui circule pendant 10 s transporte une quantité d'électricité de 30 C.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Relever : I = 3 A et t = 10 s ; on cherche Q. Étape 2 — Convertir : I est en A et t en s : rien à convertir. Étape 3 — Écrire la formule : Q = I × t. Étape 4 — Calculer : Q = 3 × 10 = 30 C, donc l'affirmation est juste. Pourquoi pas « Faux » : on aurait divisé 3 par 10 au lieu de multiplier, ou on aurait oublié que le coulomb vaut 1 A × 1 s.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Q = I × t avec t en secondes."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Calculer des quantités d'électricité dans la lampe torche et à l'atelier",
+              "statement": "La lampe torche de Koffi et un moteur de l'atelier d'Adjamé sont traversés par des courants. Tu calcules les quantités d'électricité avec la méthode de la fiche. Les valeurs sont fictives.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Que représente la quantité d'électricité Q dans un circuit ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Relever : on cherche ce que Q désigne. Règle de la fiche : la quantité d'électricité est la charge totale transportée par les porteurs de charge à travers une section du circuit pendant une durée t. Pourquoi pas « La durée pendant laquelle le courant circule » : la durée est t, une autre grandeur, qui se mesure en secondes.",
+                  "answers": [
+                    {
+                      "content": "La charge totale transportée par les porteurs de charge à travers une section",
+                      "correct": true
+                    },
+                    {
+                      "content": "La durée pendant laquelle le courant circule dans le circuit électrique",
+                      "correct": false
+                    },
+                    {
+                      "content": "La chaleur dégagée dans le fil par le passage des porteurs de charge",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le nombre de piles nécessaires pour faire circuler le courant du circuit",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est l'unité légale de la quantité d'électricité ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Calculer : avec I en ampères et t en secondes, Q = I × t s'écrit en coulombs, de symbole C (1 C = 1 A × 1 s). Pourquoi pas « L'ampère » : l'ampère est l'unité de l'intensité I, pas celle de la quantité d'électricité Q.",
+                  "answers": [
+                    {
+                      "content": "Le coulomb, de symbole C",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'ampère, de symbole A",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le volt, de symbole V",
+                      "correct": false
+                    },
+                    {
+                      "content": "La seconde, de symbole s",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans la lampe torche de Koffi, l'ampoule est traversée par une intensité de 0,4 A pendant 30 s. Quelle quantité d'électricité la traverse, en coulombs ?",
+                  "question_type": "numeric",
+                  "unit": "C",
+                  "tolerance": 0,
+                  "explanation": "Étape 1 — Relever : I = 0,4 A et t = 30 s ; on cherche Q. Étape 2 — Convertir : I est déjà en A et t en s : rien à convertir. Étape 3 — Écrire la formule : Q = I × t. Étape 4 — Calculer : Q = 0,4 × 30 = 12 C. Pourquoi pas « 30,4 C » : ce serait additionner I et t au lieu de les multiplier.",
+                  "answers": [
+                    {
+                      "content": "12",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un petit moteur de l'atelier d'Adjamé est traversé par une intensité de 0,5 A pendant 4 min. Quelle quantité d'électricité le traverse, en coulombs ?",
+                  "question_type": "numeric",
+                  "unit": "C",
+                  "tolerance": 0,
+                  "explanation": "Étape 1 — Relever : I = 0,5 A et t = 4 min ; on cherche Q. Étape 2 — Convertir : I est déjà en A ; 4 min = 4 × 60 = 240 s. Étape 3 — Écrire la formule : Q = I × t. Étape 4 — Calculer : Q = 0,5 × 240 = 120 C. Pourquoi pas « 2 C » : ce serait calculer 0,5 × 4 sans convertir les minutes en secondes.",
+                  "answers": [
+                    {
+                      "content": "120",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un élève écrit : « 2 A pendant 3 min : Q = 2 × 3 = 6 C ». Quelle est son erreur ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Relever : I = 2 A et t = 3 min ; on cherche Q. Étape 2 — Convertir : 3 min = 3 × 60 = 180 s ; I est déjà en A. Étape 3 — Écrire la formule : Q = I × t. Étape 4 — Calculer : Q = 2 × 180 = 360 C. Pourquoi pas « Il a oublié de diviser par la durée » : la quantité d'électricité se calcule par une multiplication, c'est l'intensité qui se calcule par une division.",
+                  "answers": [
+                    {
+                      "content": "Il n'a pas converti 3 min en secondes : il faut 2 × 180 = 360 C",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il a oublié de diviser par la durée : il faut 2 / 3 C environ",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il a oublié de convertir l'intensité en mA : il faut 2 000 × 3 C",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il a utilisé la bonne formule et sa réponse est correcte : 6 C",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Trouver une intensité ou une durée à partir de la quantité d'électricité",
+              "statement": "Dans cet exercice, tu retrouves une intensité, une durée ou une unité à partir de la quantité d'électricité, au salon et à l'atelier d'Adjamé. Les valeurs sont fictives.",
+              "hint": "Q = I × t ; I = Q / t ; t = Q / I. Convertis d'abord le temps en secondes et l'intensité en ampères.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Le kit solaire du salon de la famille Traoré transporte 240 C à travers une section d'un fil en 2 min. Quelle est l'intensité du courant, en ampères ?",
+                  "question_type": "numeric",
+                  "unit": "A",
+                  "tolerance": 0,
+                  "explanation": "Étape 1 — Relever : Q = 240 C et t = 2 min ; on cherche I. Étape 2 — Convertir : 2 min = 2 × 60 = 120 s ; Q est déjà en C. Étape 3 — Écrire la formule : I = Q / t. Étape 4 — Calculer : I = 240 / 120 = 2 A. Pourquoi pas « 120 A » : ce serait diviser 240 par 2 sans convertir les minutes en secondes.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un chargeur testé à l'atelier d'Adjamé est traversé par une intensité de 0,3 A. Combien de secondes faut-il pour qu'il transporte 90 C ?",
+                  "question_type": "numeric",
+                  "unit": "s",
+                  "tolerance": 0,
+                  "explanation": "Étape 1 — Relever : Q = 90 C et I = 0,3 A ; on cherche t. Étape 2 — Convertir : Q est en C et I en A : rien à convertir ; le résultat sera en secondes. Étape 3 — Écrire la formule : t = Q / I. Étape 4 — Calculer : t = 90 / 0,3 = 300 s. Pourquoi pas « 27 s » : ce serait multiplier 90 par 0,3, alors que la durée se calcule par une division.",
+                  "answers": [
+                    {
+                      "content": "300",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque valeur à son équivalent dans l'unité demandée pour calculer Q.",
+                  "question_type": "matching",
+                  "explanation": "Étape 2 — Convertir : 1 min = 60 s, donc 2 min = 120 s et 5 min = 300 s. Pour les intensités, 1 mA = 0,001 A, donc 250 mA = 0,25 A et 40 mA = 0,04 A. Pourquoi pas « 2 min = 2 s » : on oublierait que la minute vaut 60 secondes avant de calculer en coulombs.",
+                  "answers": [
+                    {
+                      "content": "2 min",
+                      "match": "120 s"
+                    },
+                    {
+                      "content": "5 min",
+                      "match": "300 s"
+                    },
+                    {
+                      "content": "250 mA",
+                      "match": "0,25 A"
+                    },
+                    {
+                      "content": "40 mA",
+                      "match": "0,04 A"
+                    }
+                  ]
+                },
+                {
+                  "content": "Une intensité de 1 A correspond à une quantité d'électricité de 1 C transportée chaque seconde.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 3 — Écrire la formule : Q = I × t. Étape 4 — Calculer : avec I = 1 A et t = 1 s, Q = 1 × 1 = 1 C, donc 1 C = 1 A × 1 s. Pourquoi pas « Faux » : on confondrait le coulomb, unité de Q, avec une durée ou une tension.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Avec I en ampères et t en secondes, la quantité d'électricité Q = I × t s'exprime en ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 4 — Calculer : le résultat s'écrit avec son unité, le coulomb, de symbole C (1 C = 1 A × 1 s). Pourquoi pas « ampère » : l'ampère est l'unité de l'intensité I, qui sert à calculer Q.",
+                  "answers": [
+                    {
+                      "content": "coulomb",
+                      "correct": true
+                    },
+                    {
+                      "content": "coulombs",
+                      "correct": true
+                    },
+                    {
+                      "content": "C",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour trouver la durée t connaissant Q et I, on calcule Q ___ I.",
+                  "question_type": "select",
+                  "explanation": "Étape 3 — Écrire la formule : de Q = I × t on tire t = Q / I, donc on divise Q par I. Pourquoi pas « multiplié par » : on aurait recopié Q = I × t sans l'isoler pour trouver t.",
+                  "answers": [
+                    {
+                      "content": "divisé par",
+                      "correct": true
+                    },
+                    {
+                      "content": "multiplié par",
+                      "correct": false
+                    },
+                    {
+                      "content": "plus",
+                      "correct": false
+                    },
+                    {
+                      "content": "moins",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Exprimer une intensité en ampères et en milliampères",
-          "remember": "L'**intensité du courant** mesure le **débit de charges électriques** : plus il passe de charges chaque seconde à travers un fil, plus l'intensité est grande. On la note **I**. Son unité est l'**ampère**, de symbole **A**. Pour les petites intensités, on utilise le **milliampère**, de symbole **mA**. 1 mA = 0,001 A et 1 A = 1 000 mA. Pour passer des **mA aux A**, on **divise par 1 000**. Pour passer des **A aux mA**, on **multiplie par 1 000**. Le nombre en mA est donc toujours 1 000 fois plus grand que le nombre en A. Exemple : 250 mA = 0,25 A. Une lampe torche demande souvent quelques centaines de mA ; un appareil de la maison peut demander plusieurs ampères.",
+          "remember": "L'**intensité du courant** mesure le **débit de charges électriques** : c'est la quantité d'électricité $Q$ qui traverse une section du fil pendant une durée $t$, soit $I = \\dfrac{Q}{t}$. On la note **I**. Son unité est l'**ampère**, de symbole **A** (1 A = 1 C par seconde). Pour les petites intensités, on utilise le **milliampère** (**mA**) : 1 mA = 0,001 A et 1 A = 1 000 mA. Des **mA aux A**, on **divise par 1 000** ; des **A aux mA**, on **multiplie par 1 000**. Exemple : 250 mA = 0,25 A. **Ordres de grandeur** (valeurs approximatives, qui dépendent de l'appareil) : lampe de poche, quelques centaines de mA ; ampoule de la maison, de quelques dizaines de mA à quelques centaines de mA ; téléphone qui charge, de l'ordre de 1 A ; démarreur de voiture, de l'ordre de la centaine d'ampères.",
           "method": [
             "Repérer l'unité de la valeur donnée et l'unité demandée (mA ou A).",
             "Choisir l'opération : diviser par 1 000 pour passer des mA aux A, multiplier par 1 000 pour passer des A aux mA.",
@@ -353,9 +657,9 @@
                   ]
                 },
                 {
-                  "content": "Une intensité de 0,02 A est égale à 20 mA.",
+                  "content": "Une lampe de poche est traversée par quelques centaines de mA, alors qu'un démarreur de voiture demande de l'ordre de la centaine d'ampères : le démarreur demande une intensité bien plus grande.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Repérer : la valeur est en A et on cherche des mA. Étape 2 — Choisir : on multiplie par 1 000. Étape 3 — Calculer : 0,02 × 1 000 = 20 mA. Étape 4 — Vérifier : 20 est bien 1 000 fois plus grand que 0,02. Pourquoi pas « Faux » : on croirait que 0,02 A ne vaut que 0,02 mA, alors qu'il faut multiplier par 1 000.",
+                  "explanation": "Étape 1 — Repérer : les deux valeurs n'ont pas la même unité (mA et A). Étape 2 — Choisir : on met tout en A, donc quelques centaines de mA font quelques dixièmes d'ampère, par exemple 0,3 A. Étape 3 — Calculer : une centaine d'ampères est environ 300 fois plus grande que 0,3 A. Étape 4 — Vérifier : le démarreur a donc la plus grande intensité. Pourquoi pas « Faux » : on comparerait « quelques centaines » et « une centaine » sans convertir, alors qu'un ampère vaut 1 000 mA.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -368,16 +672,24 @@
                   ]
                 },
                 {
-                  "content": "Pour passer de 0,6 A à des milliampères, on ___ le nombre 0,6 par 1 000.",
+                  "content": "Parmi une lampe de poche, un téléphone qui charge et un démarreur de voiture, l'appareil traversé par la plus grande intensité est ___.",
                   "question_type": "select",
-                  "explanation": "Étape 1 — Repérer : on part d'une valeur en A. Étape 2 — Choisir : des A aux mA, on multiplie. Étape 3 — Calculer : 0,6 × 1 000 = 600 mA. Étape 4 — Vérifier : 600 est bien 1 000 fois plus grand que 0,6. Pourquoi pas « divise » : diviser donnerait 0,0006, un nombre plus petit, alors que le nombre en mA doit être plus grand.",
+                  "explanation": "Étape 1 — Repérer : on compare des ordres de grandeur d'intensité. Étape 2 — Choisir : lampe de poche, quelques centaines de mA (quelques dixièmes d'A) ; téléphone qui charge, de l'ordre de 1 A ; démarreur, de l'ordre de la centaine d'ampères. Étape 3 — Calculer : 100 A est très supérieur à 1 A et à 0,3 A. Étape 4 — Vérifier : le démarreur a la plus grande intensité. Pourquoi pas « le téléphone qui charge » : 1 A est bien plus petit que la centaine d'ampères du démarreur.",
                   "answers": [
                     {
-                      "content": "multiplie",
+                      "content": "le démarreur de voiture",
                       "correct": true
                     },
                     {
-                      "content": "divise",
+                      "content": "le téléphone qui charge",
+                      "correct": false
+                    },
+                    {
+                      "content": "la lampe de poche",
+                      "correct": false
+                    },
+                    {
+                      "content": "ils ont tous la même intensité",
                       "correct": false
                     }
                   ]
@@ -1463,16 +1775,14 @@
               ]
             },
             {
-              "content": "Le calibre 100 mA aurait convenu pour mesurer une intensité de 210 mA.",
-              "question_type": "true_false",
-              "explanation": "Étape 3 — Choisir : le calibre doit rester plus grand que l'intensité mesurée. Étape 4 — Affiner : 210 mA est plus grand que 100 mA, donc l'aiguille sortirait de l'échelle ; le plus petit calibre possible est 300 mA. Pourquoi pas « Vrai » : un calibre plus petit que l'intensité est dépassé : la mesure est impossible et l'appareil risque d'être abîmé.",
+              "content": "L'ampoule de la lampe torche de Koffi est traversée par une intensité de 210 mA pendant 2 min. Quelle quantité d'électricité la traverse, en coulombs ?",
+              "question_type": "numeric",
+              "unit": "C",
+              "tolerance": 0,
+              "explanation": "Étape 1 — Relever : I = 210 mA et t = 2 min ; on cherche Q. Étape 2 — Convertir : 210 mA = 0,21 A et 2 min = 120 s. Étape 3 — Écrire la formule : Q = I × t. Étape 4 — Calculer : Q = 0,21 × 120 = 25,2 C. Pourquoi pas « 420 C » : ce serait multiplier 210 par 2 sans convertir le mA en A ni la minute en secondes.",
               "answers": [
                 {
-                  "content": "Vrai",
-                  "correct": false
-                },
-                {
-                  "content": "Faux",
+                  "content": "25,2",
                   "correct": true
                 }
               ]
@@ -1561,16 +1871,24 @@
               ]
             },
             {
-              "content": "Dans le salon, la branche principale du kit solaire est parcourue par la plus grande intensité du circuit.",
-              "question_type": "true_false",
-              "explanation": "Étape 1 — Nommer : le montage est en dérivation. Étape 2 — Repérer : la branche principale arrive au nœud, les branches dérivées en repartent. Étape 3 — Calculer : I = I₁ + I₂ + I₃ est plus grande que chacune des intensités I₁, I₂ et I₃. Étape 4 — Vérifier : 0,95 A est plus grand que 0,25 A, 0,40 A et 0,30 A. Pourquoi pas « Faux » : on croirait qu'une branche dérivée peut dépasser la branche principale, alors qu'elle n'en porte qu'une part.",
+              "content": "Dans le salon, la famille charge un téléphone avec un chargeur branché sur le kit solaire. Quelle valeur est un bon ordre de grandeur pour l'intensité qui traverse le téléphone en charge ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Repérer : on cherche l'ordre de grandeur de l'intensité d'un téléphone qui charge. Étape 2 — Choisir : on compare avec les ordres de grandeur de la fiche : lampe de poche, quelques centaines de mA ; téléphone qui charge, de l'ordre de 1 A ; démarreur, de l'ordre de la centaine d'ampères. Étape 3 — Calculer : 0,001 A ne ferait même pas briller une lampe de poche. Étape 4 — Vérifier : de l'ordre de 1 A convient. Pourquoi pas « De l'ordre de 100 A » : c'est l'ordre de grandeur d'un démarreur de voiture, bien trop grand pour un téléphone.",
               "answers": [
                 {
-                  "content": "Vrai",
+                  "content": "De l'ordre de 1 A",
                   "correct": true
                 },
                 {
-                  "content": "Faux",
+                  "content": "De l'ordre de 1 000 A",
+                  "correct": false
+                },
+                {
+                  "content": "De l'ordre de 100 A",
+                  "correct": false
+                },
+                {
+                  "content": "De l'ordre de 0,001 A",
                   "correct": false
                 }
               ]
@@ -1771,17 +2089,15 @@
               ]
             },
             {
-              "content": "Dans le montage de Yao, l'intensité dans la lampe L1 est égale à l'intensité qui sort du générateur.",
-              "question_type": "true_false",
-              "explanation": "Étape 1 — Nommer : la lampe L1 et le générateur sont dans la même branche principale, sans nœud entre eux. Étape 2 — Repérer : le courant n'a qu'un seul chemin. Étape 3 — Calculer : en série, l'intensité est la même, donc celle de L1 est celle du générateur, 0,9 A. Étape 4 — Vérifier : même unité des deux côtés. Pourquoi pas « Faux » : on croirait que la lampe a utilisé du courant, alors que l'intensité est la même en série.",
+              "content": "Dans le montage de Yao, une quantité d'électricité de 90 C traverse la lampe L2 en 5 min. Quelle est l'intensité du courant dans L2, en ampères ?",
+              "question_type": "numeric",
+              "unit": "A",
+              "tolerance": 0,
+              "explanation": "Étape 1 — Relever : Q = 90 C et t = 5 min ; on cherche I. Étape 2 — Convertir : 5 min = 5 × 60 = 300 s. Étape 3 — Écrire la formule : I = Q / t. Étape 4 — Calculer : I = 90 / 300 = 0,3 A. Pourquoi pas « 18 A » : ce serait diviser 90 par 5 sans convertir les minutes en secondes.",
               "answers": [
                 {
-                  "content": "Vrai",
+                  "content": "0,3",
                   "correct": true
-                },
-                {
-                  "content": "Faux",
-                  "correct": false
                 }
               ]
             },
@@ -2974,14 +3290,14 @@
         },
         {
           "title": "Sujet 4 · Bilan de toutes les notions",
-          "notions": "Bilan : conversions entre mA et A ; branchement de l'ampèremètre, bornes, calibre et sécurité ; lecture d'une intensité sur un ampèremètre à aiguille et sur un multimètre ; intensité en série et loi des nœuds en dérivation.",
+          "notions": "Bilan : quantité d'électricité Q = I × t en coulombs, intensité I = Q / t ; conversions entre mA et A ; ordres de grandeur de l'intensité ; branchement de l'ampèremètre, bornes, calibre et sécurité ; lecture d'une intensité sur un ampèremètre à aiguille et sur un multimètre ; intensité en série et loi des nœuds en dérivation.",
           "exercises": [
             {
               "title": "Exercice 1",
-              "statement": "Dans cet exercice, tu passes du calibre à l'intensité, puis aux bonnes unités. Les valeurs sont fictives.",
+              "statement": "Dans cet exercice, tu passes du calibre à l'intensité, puis aux bonnes unités et à la quantité d'électricité. Les valeurs sont fictives.",
               "exercise_type": "evaluation",
               "figure": null,
-              "hint": "Relève C et N, lis n, applique I = C × n / N, puis convertis si on te le demande.",
+              "hint": "Relève C et N, lis n, applique I = C × n / N ; pour Q, convertis puis calcule Q = I × t.",
               "questions": [
                 {
                   "content": "Dans la lampe torche de Koffi, l'ampèremètre à aiguille a 100 divisions et le calibre 1 A est utilisé. L'aiguille s'arrête devant la division 72. Quelle est l'intensité, en ampères ?",
@@ -3010,14 +3326,14 @@
                   ]
                 },
                 {
-                  "content": "Dans un chargeur testé à l'atelier d'Adjamé, l'ampèremètre indique 105 mA. Exprime cette intensité en ampères.",
+                  "content": "Un chargeur testé à l'atelier d'Adjamé est traversé par une intensité de 105 mA pendant 10 min. Quelle quantité d'électricité le traverse, en coulombs ?",
                   "question_type": "numeric",
-                  "unit": "A",
+                  "unit": "C",
                   "tolerance": 0,
-                  "explanation": "Étape 1 — Repérer : la valeur donnée est en mA et on demande des A. Étape 2 — Choisir : de mA vers A, on divise par 1 000. Étape 3 — Calculer : 105 mA ÷ 1 000 = 0,105 A. Étape 4 — Vérifier : le nombre en mA (105) est bien 1 000 fois plus grand que le nombre en A (0,105). Pourquoi pas « 105 000 A » : ce serait multiplier par 1 000 au lieu de diviser : l'intensité deviendrait 1 000 fois trop grande.",
+                  "explanation": "Étape 1 — Relever : I = 105 mA et t = 10 min ; on cherche Q. Étape 2 — Convertir : 105 mA = 0,105 A et 10 min = 600 s. Étape 3 — Écrire la formule : Q = I × t. Étape 4 — Calculer : Q = 0,105 × 600 = 63 C. Pourquoi pas « 1 050 C » : ce serait multiplier 105 par 10 sans convertir le mA en A ni les minutes en secondes.",
                   "answers": [
                     {
-                      "content": "0,105",
+                      "content": "63",
                       "correct": true
                     }
                   ]
@@ -3213,24 +3529,24 @@
                   ]
                 },
                 {
-                  "content": "Dans le salon, la branche principale arrive au nœud A avec 0,8 A. L'ampoule est traversée par 400 mA. Quelle est l'intensité dans l'autre branche dérivée, celle de la télévision ?",
+                  "content": "Aya compare des appareils à l'atelier d'Adjamé. Lequel est traversé par une intensité de l'ordre de la centaine d'ampères ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Nommer : A est un nœud, le montage est en dérivation. Étape 2 — Repérer : arrive 0,8 A ; repartent 400 mA et I. Étape 3 — Calculer : on convertit 400 mA = 0,4 A, puis 0,8 = 0,4 + I, donc I = 0,4 A. Étape 4 — Vérifier : même unité, et 0,4 A est plus petit que 0,8 A. Pourquoi pas « 1,2 A » : ce serait additionner le courant qui arrive et celui qui repart.",
+                  "explanation": "Étape 1 — Repérer : on cherche l'appareil dont l'intensité est de l'ordre de 100 A. Étape 2 — Choisir : lampe de poche, quelques centaines de mA ; ampoule de la maison, au plus quelques centaines de mA ; téléphone, de l'ordre de 1 A. Étape 3 — Calculer : seul le démarreur atteint l'ordre de la centaine d'ampères. Étape 4 — Vérifier : les autres appareils sont au plus de l'ordre de 1 A. Pourquoi pas « Un téléphone qui charge » : son intensité est de l'ordre de 1 A, cent fois plus petite.",
                   "answers": [
                     {
-                      "content": "0,4 A, car 0,8 − 0,4 = 0,4",
+                      "content": "Le démarreur d'une voiture",
                       "correct": true
                     },
                     {
-                      "content": "399,2 mA, en soustrayant 0,8 de 400 sans convertir",
+                      "content": "Une lampe de poche",
                       "correct": false
                     },
                     {
-                      "content": "0,4 mA, en gardant le nombre sans convertir l'unité",
+                      "content": "Un téléphone qui charge",
                       "correct": false
                     },
                     {
-                      "content": "1,2 A, en additionnant 0,8 A et 0,4 A",
+                      "content": "Une ampoule de la maison",
                       "correct": false
                     }
                   ]
@@ -3252,7 +3568,7 @@
             },
             {
               "title": "Exercice 4",
-              "statement": "Au laboratoire du lycée, tu rédiges une démarche complète qui mêle conversions, lecture et loi des nœuds. Les valeurs sont fictives.",
+              "statement": "Au laboratoire du lycée, tu rédiges une démarche complète qui mêle conversions, lecture, quantité d'électricité et loi des nœuds. Les valeurs sont fictives.",
               "exercise_type": "evaluation",
               "figure": null,
               "hint": "Cite la méthode : place, oriente, choisis, affine ; relève, lis, applique, écris ; nomme, repère, calcule, vérifie.",
@@ -3297,17 +3613,15 @@
                   ]
                 },
                 {
-                  "content": "Dans le montage du laboratoire, la branche principale est traversée par 240 mA et une branche dérivée par 0,05 A : ces deux valeurs sont compatibles avec la loi des nœuds.",
-                  "question_type": "true_false",
-                  "explanation": "Étape 1 — Nommer : le montage est en dérivation. Étape 2 — Repérer : 240 mA arrive, une branche repart avec 0,05 A. Étape 3 — Calculer : 240 mA = 0,24 A, et 0,05 A est plus petit que 0,24 A, donc c'est possible. Étape 4 — Vérifier : même unité après conversion. Pourquoi pas « Faux » : on comparerait 0,05 et 240 sans convertir, et on penserait que 0,05 est trop petit pour être une partie de 240.",
+                  "content": "Au laboratoire, une quantité d'électricité de 150 C traverse une lampe en 5 min. Quelle est l'intensité du courant, en ampères ?",
+                  "question_type": "numeric",
+                  "unit": "A",
+                  "tolerance": 0,
+                  "explanation": "Étape 1 — Relever : Q = 150 C et t = 5 min ; on cherche I. Étape 2 — Convertir : 5 min = 300 s. Étape 3 — Écrire la formule : I = Q / t. Étape 4 — Calculer : I = 150 / 300 = 0,5 A. Pourquoi pas « 30 A » : ce serait diviser 150 par 5 sans convertir les minutes en secondes.",
                   "answers": [
                     {
-                      "content": "Vrai",
+                      "content": "0,5",
                       "correct": true
-                    },
-                    {
-                      "content": "Faux",
-                      "correct": false
                     }
                   ]
                 },
