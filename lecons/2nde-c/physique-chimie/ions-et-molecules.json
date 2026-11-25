@@ -203,7 +203,7 @@
       "notions": [
         {
           "name": "Les règles du duet et de l'octet",
-          "remember": "Les **gaz nobles** (hélium, néon, argon) sont **chimiquement stables** : ils réagissent très peu, car leur couche externe est saturée. L'**hélium** ($Z = 2$) a 2 électrons sur la couche K : c'est un **duet**. Le **néon** ($Z = 10$) et l'**argon** ($Z = 18$) ont 8 électrons sur leur couche externe : c'est un **octet**. **Règle du duet** : un atome proche de l'hélium (H, Li, Be) tend à avoir 2 électrons sur la couche K. **Règle de l'octet** : un autre atome ($Z \\leq 18$) tend à avoir 8 électrons sur sa couche externe. Pour y arriver, il peut perdre, gagner ou mettre en commun des électrons.",
+          "remember": "Les **gaz nobles** (hélium, néon, argon) sont **chimiquement stables** : ils réagissent très peu, car leur couche externe est saturée. L'**hélium** ($Z = 2$) a 2 électrons sur la couche K : c'est un **duet**. Le **néon** ($Z = 10$) et l'**argon** ($Z = 18$) ont 8 électrons sur leur couche externe : c'est un **octet**. **Règle du duet** : un atome de numéro atomique proche de celui de l'hélium (H, Li, Be, soit $Z \\leq 4$) tend à avoir 2 électrons sur la couche K. **Règle de l'octet** : un autre atome étudié ici (de $Z = 6$ à $Z = 18$) tend à avoir 8 électrons sur sa couche externe. Pour y arriver, il peut perdre, gagner ou mettre en commun des électrons.",
           "method": [
             "Écrire la structure électronique de l'atome ou de l'ion, en remplissant K, L puis M.",
             "Repérer la couche externe et compter les électrons qu'elle contient.",
@@ -1398,7 +1398,7 @@
                   ]
                 },
                 {
-                  "content": "Le composé de formule Fe₂O₃ (rouille) est formé d'ions Fe³⁺ et O²⁻. Pour 3 ions O²⁻, combien d'ions Fe³⁺ faut-il ?",
+                  "content": "Le composé de formule Fe₂O₃ (principal constituant de la rouille) est formé d'ions Fe³⁺ et O²⁻. Pour 3 ions O²⁻, combien d'ions Fe³⁺ faut-il ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Repérer : Fe³⁺ (+3) et O²⁻ (−2). Étape 2 — Chercher : 3 × (−2) = −6, il faut +6 : 2 ions Fe³⁺. Étape 3 — Écrire : Fe₂O₃. Étape 4 — Vérifier : 2 × 3 − 3 × 2 = 0.",
                   "answers": [
@@ -1986,7 +1986,7 @@
             {
               "content": "Un morceau de sel de cuisine est chargé positivement parce qu'il contient des ions sodium Na⁺.",
               "question_type": "true_false",
-              "explanation": "Étape 1 — Repérer : le sel contient des ions Na⁺ (+) et des ions Cl⁻ (−) en nombres égaux. Étape 2 — Chercher : les charges se compensent. Étape 3 — Vérifier : +1 − 1 = 0 : l'électroneutralité rend le morceau neutre.",
+              "explanation": "Étape 1 — Repérer : le sel contient des ions Na⁺ (+) et des ions Cl⁻ (−) en nombres égaux. Étape 2 — Chercher : les charges se compensent. Étape 4 — Vérifier : +1 − 1 = 0 : l'électroneutralité rend le morceau neutre.",
               "answers": [
                 {
                   "content": "Vrai",
@@ -2080,7 +2080,7 @@
             {
               "content": "Combien d'atomes contient une unité de formule Mg(OH)₂ ?",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Lire : 1 atome de magnésium, et 2 ions HO⁻ de 2 atomes chacun. Étape 2 — Calculer : 1 + 2 × 2 = 5 atomes. Compter 3 atomes oublierait que l'indice 2 concerne O et H.",
+              "explanation": "Étape 1 — Lire : 1 atome de magnésium, et 2 ions HO⁻ de 2 atomes chacun. Étape 3 — Calculer : 1 + 2 × 2 = 5 atomes. Compter 3 atomes oublierait que l'indice 2 concerne O et H.",
               "answers": [
                 {
                   "content": "5",
@@ -2219,7 +2219,7 @@
             {
               "content": "Quels ions forment le nitrate d'ammonium NH₄NO₃ ?",
               "question_type": "single_choice",
-              "explanation": "Étape 1 — Lire : NH₄ (1 N, 4 H) et NO₃ (1 N, 3 O). Étape 2 — Relever : l'ammonium est un cation (+1), le nitrate un anion (−1). Étape 3 — Nommer : NH₄⁺ et NO₃⁻. Vérifier : +1 − 1 = 0. NH₄⁻ et NO₃⁺ inversent les signes.",
+              "explanation": "Étape 1 — Lire : NH₄ (1 N, 4 H) et NO₃ (1 N, 3 O). Étape 2 — Relever : l'ammonium est un cation (+1), le nitrate un anion (−1). Étape 4 — Nommer : NH₄⁺ et NO₃⁻. Vérifier : +1 − 1 = 0. NH₄⁻ et NO₃⁺ inversent les signes.",
               "answers": [
                 {
                   "content": "NH₄⁺ et NO₃⁻",
@@ -2277,7 +2277,7 @@
             {
               "content": "Combien d'atomes d'hydrogène contient une unité de formule (NH₄)₂SO₄ ?",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Lire : l'indice 2 de la parenthèse concerne tout l'ion NH₄⁺. Étape 2 — Calculer : 2 × 4 = 8 atomes d'hydrogène. 4 oublierait l'indice 2 de la parenthèse.",
+              "explanation": "Étape 1 — Lire : l'indice 2 de la parenthèse concerne tout l'ion NH₄⁺. Étape 3 — Calculer : 2 × 4 = 8 atomes d'hydrogène. 4 oublierait l'indice 2 de la parenthèse.",
               "answers": [
                 {
                   "content": "8",
@@ -2289,7 +2289,7 @@
             {
               "content": "Le sulfate d'ammonium est électriquement neutre : 2 × (+1) + (−2) = 0.",
               "question_type": "true_false",
-              "explanation": "Étape 1 — Repérer : 2 ions NH₄⁺ (+1 chacun) et 1 ion SO₄²⁻ (−2). Étape 2 — Vérifier : 2 × (+1) + (−2) = 0 : l'électroneutralité est respectée.",
+              "explanation": "Étape 1 — Repérer : 2 ions NH₄⁺ (+1 chacun) et 1 ion SO₄²⁻ (−2). Étape 4 — Vérifier : 2 × (+1) + (−2) = 0 : l'électroneutralité est respectée.",
               "answers": [
                 {
                   "content": "Vrai",
@@ -3171,7 +3171,7 @@
                     "Calcule 8 − 7 = 1 électron gagné",
                     "Écrit l'ion Cl⁻ avec sa charge"
                   ],
-                  "explanation": "Corrigé modèle : Étape 1, l'atome de chlore a 17 électrons : (K)²(L)⁸(M)⁷. Étape 2, le gaz noble le plus proche est l'argon (K)²(L)⁸(M)⁸, avec un octet. Étape 3, il manque 8 − 7 = 1 électron : l'atome en gagne 1. Étape 4, il forme l'ion Cl⁻, qui a 18 électrons. Barème sur 3 : structure électronique (1 point), électron gagné (1 point), ion avec sa charge (1 point).",
+                  "explanation": "Corrigé modèle : Étape 1, l'atome de chlore a 17 électrons : (K)²(L)⁸(M)⁷. Étape 2, le gaz noble le plus proche est l'argon (K)²(L)⁸(M)⁸, avec un octet. Étape 3, il manque 8 − 7 = 1 électron : l'atome en gagne 1. Étape 4, il forme l'ion Cl⁻, qui a 18 électrons. Barème sur 3 : structure électronique (1 point), gaz noble voisin (0,5 point), électron gagné (1 point), ion avec sa charge (0,5 point).",
                   "answers": [],
                   "starter": "L'atome de chlore a 17 électrons ..."
                 }
@@ -3368,7 +3368,7 @@
                     "Compare la couche externe à l'octet",
                     "Conclut sur la stabilité"
                   ],
-                  "explanation": "Corrigé modèle : Étape 1, l'atome de sodium a 11 électrons : (K)²(L)⁸(M)¹ ; sa couche externe M n'a qu'1 électron, ce n'est pas un octet. Étape 2, l'ion Na⁺ a perdu cet électron : (K)²(L)⁸. Étape 3, sa couche externe L contient 8 électrons : c'est un octet, comme le néon. Étape 4, l'ion Na⁺ est donc stable, l'atome non. Barème sur 3 : structures électroniques (1 point), comparaison à l'octet (1 point), conclusion (1 point).",
+                  "explanation": "Corrigé modèle : Étape 1, l'atome de sodium a 11 électrons : (K)²(L)⁸(M)¹ ; sa couche externe M n'a qu'1 électron, ce n'est pas un octet. Étape 2, l'ion Na⁺ a perdu cet électron : (K)²(L)⁸. Étape 3, sa couche externe L contient 8 électrons : c'est un octet, comme le néon. Étape 4, l'ion Na⁺ est donc stable, l'atome non. Barème sur 3 : structure de l'atome (0,5 point), structure de l'ion (0,5 point), comparaison à l'octet (1 point), conclusion (1 point).",
                   "answers": [],
                   "starter": "L'atome de sodium a un seul électron sur ..."
                 }
