@@ -1038,7 +1038,7 @@
         },
         {
           "name": "Densité d'un gaz par rapport à l'air",
-          "remember": "La **densité** $d$ d'un gaz par rapport à l'air compare la masse d'un certain volume de ce gaz à la masse du même volume d'air, dans les mêmes conditions. Elle n'a **pas d'unité**. Elle se calcule avec la masse molaire $M$ du gaz (en g/mol) : $d = \\frac{M}{29}$, donc $M = 29 \\times d$. Le nombre 29 g/mol est la masse molaire moyenne de l'air (environ 80 % de diazote $N_2$ et 20 % de dioxygène $O_2$). Si $d > 1$, le gaz est **plus lourd** que l'air : il s'accumule en bas, près du sol (butane, dioxyde de carbone). Si $d < 1$, il est **plus léger** que l'air : il monte (dihydrogène, ammoniac, méthane). Si $d = 1$, un volume de ce gaz a la même masse que le même volume d'air.",
+          "remember": "La **densité** $d$ d'un gaz par rapport à l'air compare la masse d'un certain volume de ce gaz à la masse du même volume d'air, dans les mêmes conditions. Elle n'a **pas d'unité**. Elle se calcule avec la masse molaire $M$ du gaz (en g/mol) : $d = \\frac{M}{29}$, donc $M = 29 \\times d$. Le nombre 29 g/mol est la masse molaire moyenne de l'air (environ 80 % de diazote $N_2$ et 20 % de dioxygène $O_2$). Si $d > 1$, le gaz est **plus lourd** que l'air : lors d'une fuite, il s'accumule d'abord en bas, près du sol (butane, dioxyde de carbone). Si $d < 1$, il est **plus léger** que l'air : il monte d'abord vers le plafond (dihydrogène, ammoniac, méthane). Si $d = 1$, un volume de ce gaz a la même masse que le même volume d'air. Après une fuite, le gaz finit par se mélanger lentement à l'air de la pièce.",
           "method": [
             "Repérer le gaz et sa formule, puis calculer sa masse molaire $M$ en g/mol (ou relever la densité $d$ si elle est donnée).",
             "Écrire la relation $d = \\frac{M}{29}$ (ou $M = 29 \\times d$), avec $M$ en g/mol et $d$ sans unité.",
@@ -1107,7 +1107,7 @@
                 "hint": "Compare M à 29 g/mol."
               },
               {
-                "content": "Un gaz de densité 1,5 par rapport à l'air s'accumule près du sol.",
+                "content": "Lors d'une fuite, un gaz de densité 1,5 par rapport à l'air s'accumule d'abord près du sol.",
                 "question_type": "true_false",
                 "explanation": "Étape 1 — Repérer : la densité est donnée, d = 1,5. Étape 2 — Écrire : on compare d à 1, ce qui revient à comparer M = 29 × d à 29 g/mol. Étape 3 — Calculer : M = 29 × 1,5 = 43,5 g/mol, plus grande que 29. Étape 4 — Comparer : d = 1,5 est supérieur à 1, le gaz est plus lourd que l'air et s'accumule en bas. Pourquoi pas Faux : on croit qu'un gaz monte toujours, mais un gaz plus lourd que l'air descend.",
                 "answers": [
@@ -1180,9 +1180,9 @@
                   "unit": "g/mol"
                 },
                 {
-                  "content": "Le dihydrogène a une densité d'environ 0,07 par rapport à l'air. Où le trouve-t-on dans une pièce fermée ?",
+                  "content": "Le dihydrogène a une densité d'environ 0,07 par rapport à l'air. Lors d'une fuite dans une pièce fermée, où s'accumule-t-il d'abord ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Repérer : la densité est donnée, d = 0,07. Étape 2 — Écrire : on utilise d = M / 29, qui donne M = 29 × 0,07 ≈ 2 g/mol. Étape 3 — Calculer : M ≈ 2 g/mol, bien inférieure à 29 g/mol. Étape 4 — Comparer : d est inférieur à 1, le gaz est plus léger que l'air : il monte vers le plafond. Pourquoi pas près du sol : ce serait le cas d'un gaz de densité supérieure à 1.",
+                  "explanation": "Étape 1 — Repérer : la densité est donnée, d = 0,07. Étape 2 — Écrire : on utilise d = M / 29, qui donne M = 29 × 0,07 ≈ 2 g/mol. Étape 3 — Calculer : M ≈ 2 g/mol, bien inférieure à 29 g/mol. Étape 4 — Comparer : d est inférieur à 1, le gaz est plus léger que l'air : il monte vers le plafond. Pourquoi pas près du sol : ce serait le cas d'un gaz de densité supérieure à 1 ; et pas à mi-hauteur : 0,07 est très loin de 1.",
                   "answers": [
                     {
                       "content": "Près du plafond",
@@ -1193,7 +1193,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Uniformément partout, comme l'air",
+                      "content": "À mi-hauteur, car sa densité est proche de 1",
                       "correct": false
                     }
                   ]
@@ -1799,9 +1799,9 @@
               ]
             },
             {
-              "content": "En cas de fuite dans la cuisine, où le butane (M = 58 g/mol) s'accumule-t-il ? Calcule sa densité d par rapport à l'air avec d = M / 29, puis compare à 1.",
+              "content": "En cas de fuite dans la cuisine, où le butane (M = 58 g/mol) s'accumule-t-il d'abord ? Calcule sa densité d par rapport à l'air avec d = M / 29, puis compare à 1.",
               "question_type": "single_choice",
-              "explanation": "Méthode : 1. Repérer : le butane a pour masse molaire M = 58 g/mol. 2. Écrire : d = M / 29, avec M en g/mol. 3. Calculer : d = 58 / 29 = 2. 4. Comparer : d = 2 est supérieur à 1, donc le butane est plus lourd que l'air : il s'accumule près du sol, d'où le danger d'une fuite dans une cuisine (on aère en bas, on évite toute flamme ou étincelle). Pourquoi pas au plafond : ce serait le cas d'un gaz de densité inférieure à 1, comme le dihydrogène ; on obtient 0,5 seulement en inversant le quotient 29 / 58.",
+              "explanation": "Étape 1 — Repérer : le butane a pour masse molaire M = 58 g/mol. Étape 2 — Écrire : d = M / 29, avec M en g/mol. Étape 3 — Calculer : d = 58 / 29 = 2. Étape 4 — Comparer : d = 2 est supérieur à 1, donc le butane est plus lourd que l'air : il s'accumule d'abord près du sol, d'où le danger d'une fuite dans une cuisine (on aère en bas, on évite toute flamme ou étincelle). Pourquoi pas au plafond : ce serait le cas d'un gaz de densité inférieure à 1, comme le dihydrogène ; on obtient 0,5 seulement en inversant le quotient 29 / 58. Pourquoi pas à mi-hauteur : d vaut 2, pas 1.",
               "answers": [
                 {
                   "content": "Près du sol, car d = 2 est supérieur à 1",
@@ -1812,7 +1812,7 @@
                   "correct": false
                 },
                 {
-                  "content": "Partout de la même façon, car un gaz se mélange toujours à l'air",
+                  "content": "À mi-hauteur, car d = 1",
                   "correct": false
                 }
               ]
@@ -3268,7 +3268,7 @@
                 {
                   "content": "Calcule la densité du méthane CH₄ par rapport à l'air (M = 16 g/mol), arrondie au centième.",
                   "question_type": "numeric",
-                  "explanation": "Méthode : 1. Repérer : méthane CH₄, M = 12 + 4 × 1 = 16 g/mol. 2. Écrire : d = M / 29, avec M en g/mol. 3. Calculer : d = 16 / 29 ≈ 0,55. 4. Comparer : d = 0,55 est inférieur à 1, donc le méthane est plus léger que l'air : en cas de fuite, il monte vers le plafond. Réponse attendue : 0,55. Pourquoi pas 1,81 : c'est 29 / 16, le quotient inversé, qui ferait croire à un gaz plus lourd que l'air.",
+                  "explanation": "Étape 1 — Repérer : méthane CH₄, M = 12 + 4 × 1 = 16 g/mol. Étape 2 — Écrire : d = M / 29, avec M en g/mol. Étape 3 — Calculer : d = 16 / 29 ≈ 0,55. Étape 4 — Comparer : d = 0,55 est inférieur à 1, donc le méthane est plus léger que l'air : en cas de fuite, il monte vers le plafond. Réponse attendue : 0,55. Pourquoi pas 1,81 : c'est 29 / 16, le quotient inversé, qui ferait croire à un gaz plus lourd que l'air.",
                   "answers": [
                     {
                       "content": "0,55",
@@ -3280,7 +3280,7 @@
                 {
                   "content": "Un autre ballon de 5,6 L de méthane et un ballon de 5,6 L de dioxygène sont à la même température et à la même pression. Que dit la loi d'Avogadro-Ampère à propos de leur nombre de molécules ?",
                   "question_type": "single_choice",
-                  "explanation": "Méthode : 1. Relever : deux gaz différents, mêmes volumes (5,6 L), mêmes conditions de température et de pression. 2. Écrire : loi d'Avogadro-Ampère, des volumes égaux de gaz contiennent le même nombre de molécules, car n = V / V_m avec le même V_m. 3. Calculer : avec V_m = 22,4 L/mol, n = 5,6 / 22,4 = 0,25 mol pour chaque ballon, donc N = 0,25 × N_A pour chacun. 4. Conclure : même nombre de molécules. Pourquoi pas plus de molécules dans le dioxygène : il est plus lourd (32 g/mol contre 16 g/mol), mais la masse d'une molécule ne change pas le nombre de molécules d'un volume donné.",
+                  "explanation": "Étape 1 — Relever : deux gaz différents, mêmes volumes (5,6 L), mêmes conditions de température et de pression. Étape 2 — Écrire : loi d'Avogadro-Ampère, des volumes égaux de gaz contiennent le même nombre de molécules, car n = V / V_m avec le même V_m. Étape 3 — Calculer : avec V_m = 22,4 L/mol, n = 5,6 / 22,4 = 0,25 mol pour chaque ballon, donc N = 0,25 × N_A pour chacun. Étape 4 — Conclure : même nombre de molécules. Pourquoi pas plus de molécules dans le dioxygène : il est plus lourd (32 g/mol contre 16 g/mol), mais la masse d'une molécule ne change pas le nombre de molécules d'un volume donné.",
                   "answers": [
                     {
                       "content": "Les deux ballons contiennent le même nombre de molécules.",
