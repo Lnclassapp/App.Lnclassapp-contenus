@@ -140,23 +140,23 @@
       "notions": [
         {
           "name": "Observer des cellules en division",
-          "remember": "La **mitose** est la division d'une **cellule mère** en **deux cellules filles** identiques à elle. On l'observe dans les tissus qui grandissent, comme l'**extrémité d'une racine** d'oignon, dans la **zone de croissance** située juste au-dessus de la coiffe. On prélève cette extrémité, on la colore au carmin acétique, puis on l'écrase entre lame et lamelle pour étaler les cellules en une seule couche, et on l'observe au microscope. Dans la zone de croissance, beaucoup de cellules sont en division ; plus haut, dans la zone des poils absorbants, presque aucune ne l'est.",
+          "remember": "La **mitose** est la division d'une **cellule mère** en **deux cellules filles** identiques à elle. On l'observe dans les tissus qui grandissent, comme l'**extrémité d'une racine** d'oignon, dans la **zone de multiplication** (ou méristème) située juste au-dessus de la coiffe. On prélève cette extrémité, on la colore au carmin acétique, puis on l'écrase entre lame et lamelle pour étaler les cellules en une seule couche, et on l'observe au microscope. Dans cette zone, beaucoup de cellules sont en division ; plus haut, dans la zone des poils absorbants, presque aucune ne l'est.",
           "method": [
-            "Choisir la zone à observer : l'extrémité de la racine, dans la zone de croissance.",
+            "Choisir la zone à observer : l'extrémité de la racine, dans la zone de multiplication.",
             "Préparer la lame : couper l'extrémité, la colorer, puis l'écraser entre lame et lamelle.",
             "Observer au microscope : commencer au faible grossissement, puis grossir sur une zone de cellules bien étalées.",
-            "Conclure : repérer les cellules en division (chromosomes visibles, deux noyaux) et en déduire que la zone se multiplie par mitose."
+            "Conclure : repérer les cellules en division (chromosomes visibles, deux noyaux) et en déduire que les cellules de cette zone se multiplient par mitose."
           ],
           "example": {
             "statement": "Un élève veut montrer que des cellules se divisent dans une racine d'oignon qui a poussé dans l'eau. Décrire sa démarche et sa conclusion.",
             "steps": [
-              "Choisir : il prélève l'extrémité de la racine, dans la zone de croissance juste au-dessus de la coiffe.",
+              "Choisir : il prélève l'extrémité de la racine, dans la zone de multiplication juste au-dessus de la coiffe.",
               "Préparer : il coupe l'extrémité, la colore au carmin acétique, puis l'écrase entre lame et lamelle.",
               "Observer : au faible grossissement, il trouve une zone de cellules bien étalées, puis il grossit.",
-              "Conclure : il voit des cellules aux chromosomes visibles et d'autres à deux noyaux : elles sont en division, la zone de croissance se multiplie par mitose."
+              "Conclure : il voit des cellules aux chromosomes visibles et d'autres à deux noyaux : elles sont en division, donc les cellules de cette zone se multiplient par mitose."
             ]
           },
-          "pitfall": "Ne pas croire qu'on voit des cellules en division n'importe où dans la racine. Contre-exemple : sur une lame faite avec la zone des poils absorbants, tous les noyaux se ressemblent et aucune cellule n'est en division ; sur une lame faite avec l'extrémité, on en voit beaucoup. Il faut donc prélever l'extrémité, puis l'écraser : sans écrasement, les cellules se superposent et on ne distingue rien.",
+          "pitfall": "Ne pas croire qu'on voit des cellules en division n'importe où dans la racine. Contre-exemple : sur une lame faite avec la zone des poils absorbants, tous les noyaux se ressemblent et on ne trouve presque aucune cellule en division ; sur une lame faite avec l'extrémité, on en voit beaucoup. Il faut donc prélever l'extrémité, puis l'écraser : sans écrasement, les cellules se superposent et on ne distingue rien.",
           "figure": "protocole-racine-oignon",
           "practice": {
             "statement": "Tu t'entraînes à choisir la bonne zone de la racine et à lire une observation.",
@@ -164,10 +164,10 @@
               {
                 "content": "On veut observer des cellules en division dans une racine d'oignon. Quelle zone faut-il prélever ?",
                 "question_type": "single_choice",
-                "explanation": "Étape 1 — Choisir : la zone à observer est l'extrémité de la racine, la zone de croissance, car c'est là que les cellules se divisent.  Pourquoi pas « la zone des poils absorbants » : ses cellules ne se divisent presque plus, la lame ne montrerait aucune division.",
+                "explanation": "Étape 1 — Choisir : la zone à observer est l'extrémité de la racine, la zone de multiplication, car c'est là que les cellules se divisent.  Pourquoi pas « la zone des poils absorbants » : ses cellules ne se divisent presque plus, la lame ne montrerait aucune division.",
                 "answers": [
                   {
-                    "content": "L'extrémité, dans la zone de croissance",
+                    "content": "L'extrémité, dans la zone de multiplication",
                     "correct": true
                   },
                   {
@@ -200,7 +200,7 @@
               {
                 "content": "Dans la racine, les cellules se divisent dans la zone de ___.",
                 "question_type": "fill_blank",
-                "explanation": "Étape 4 — Conclure : les cellules en division se trouvent dans la zone de croissance, juste au-dessus de la coiffe, là où la racine se multiplie par mitose.  Pourquoi pas « la zone des poils » : cette zone absorbe l'eau mais ses cellules ne se divisent presque plus.",
+                "explanation": "Étape 4 — Conclure : les cellules en division se trouvent dans la zone de multiplication, juste au-dessus de la coiffe, là où les cellules se multiplient par mitose.  Pourquoi pas « la zone des poils » : cette zone absorbe l'eau mais ses cellules ne se divisent presque plus.",
                 "answers": [
                   {
                     "content": "croissance",
@@ -229,10 +229,10 @@
                 {
                   "content": "Dans quelle partie d'une racine d'oignon trouve-t-on beaucoup de cellules en division ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Choisir la zone : les divisions ont lieu dans la zone de croissance, juste au-dessus de la coiffe.  Pourquoi pas « la coiffe » : elle protège l'extrémité, mais ce sont les cellules situées juste au-dessus d'elle qui se divisent.",
+                  "explanation": "Étape 1 — Choisir la zone : les divisions ont lieu dans la zone de multiplication, juste au-dessus de la coiffe.  Pourquoi pas « la coiffe » : elle protège l'extrémité, mais ce sont les cellules situées juste au-dessus d'elle qui se divisent.",
                   "answers": [
                     {
-                      "content": "L'extrémité, dans la zone de croissance",
+                      "content": "L'extrémité, dans la zone de multiplication",
                       "correct": true
                     },
                     {
@@ -332,10 +332,10 @@
                 {
                   "content": "Relie chaque zone de la racine à ce qu'on y observe.",
                   "question_type": "matching",
-                  "explanation": "Étape 1 — Choisir : la zone de croissance contient beaucoup de cellules en division ; plus haut, la zone des poils absorbants presque aucune ; la coiffe protège l'extrémité.  Pourquoi pas « tout relier à la division » : seule la zone de croissance multiplie ses cellules par mitose.",
+                  "explanation": "Étape 1 — Choisir : la zone de multiplication contient beaucoup de cellules en division ; plus haut, la zone des poils absorbants presque aucune ; la coiffe protège l'extrémité.  Pourquoi pas « tout relier à la division » : seule la zone de multiplication multiplie ses cellules par mitose.",
                   "answers": [
                     {
-                      "content": "Extrémité, zone de croissance",
+                      "content": "Extrémité, zone de multiplication",
                       "match": "Beaucoup de cellules en division"
                     },
                     {
@@ -398,10 +398,10 @@
                 {
                   "content": "Un élève prélève la zone des poils absorbants et ne voit aucune cellule en division. Pourquoi ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Choisir : il fallait prélever l'extrémité, dans la zone de croissance. Étape 4 — Conclure : la zone des poils n'a presque aucune cellule en division.  Pourquoi pas « les cellules ne se divisent jamais » : elles se divisent bien, mais dans l'extrémité, pas dans la zone des poils.",
+                  "explanation": "Étape 1 — Choisir : il fallait prélever l'extrémité, dans la zone de multiplication. Étape 4 — Conclure : la zone des poils n'a presque aucune cellule en division.  Pourquoi pas « les cellules ne se divisent jamais » : elles se divisent bien, mais dans l'extrémité, pas dans la zone des poils.",
                   "answers": [
                     {
-                      "content": "Cette zone n'est pas la zone de croissance : ses cellules ne se divisent presque plus",
+                      "content": "Cette zone n'est pas la zone de multiplication : ses cellules ne se divisent presque plus",
                       "correct": true
                     },
                     {
@@ -448,7 +448,7 @@
         },
         {
           "name": "Reconnaître les phases de la mitose",
-          "remember": "Entre deux divisions, la cellule est en **interphase** : le noyau est net, les chromosomes ne se voient pas, et ils se dédoublent. La mitose comprend alors quatre phases, toujours dans le même ordre. **Prophase** : le noyau disparaît et les chromosomes, dédoublés, deviennent visibles. **Métaphase** : les chromosomes sont alignés au milieu de la cellule. **Anaphase** : chaque chromosome dédoublé se sépare en deux, et les deux lots sont tirés vers les deux pôles de la cellule. **Télophase** : les deux lots arrivent aux pôles, un nouveau noyau se forme autour de chacun et la cellule se partage en deux cellules filles.",
+          "remember": "Entre deux divisions, la cellule est en **interphase** : le noyau est net, les chromosomes ne se voient pas, et ils se dédoublent. La mitose comprend alors quatre phases, toujours dans le même ordre. **Prophase** : l'enveloppe du noyau disparaît (le noyau n'est plus visible) et les chromosomes, dédoublés (chacun formé de deux chromatides), deviennent visibles. **Métaphase** : les chromosomes sont alignés au milieu de la cellule. **Anaphase** : chaque chromosome dédoublé se sépare en deux, et les deux lots sont tirés vers les deux pôles de la cellule. **Télophase** : les deux lots arrivent aux pôles, un nouveau noyau se forme autour de chacun et la cellule se partage en deux cellules filles (chez l'oignon, une cloison se forme au milieu de la cellule).",
           "method": [
             "Observer le noyau et les chromosomes : noyau visible ou non, chromosomes visibles ou non.",
             "Repérer la place des chromosomes : dispersés, alignés au milieu, tirés vers les pôles ou regroupés aux deux extrémités.",
@@ -550,9 +550,9 @@
                   ]
                 },
                 {
-                  "content": "Le noyau a disparu et des chromosomes dédoublés deviennent visibles, répartis dans toute la cellule. Quelle est la phase ?",
+                  "content": "Le noyau n'est plus visible et des chromosomes dédoublés deviennent visibles, répartis dans toute la cellule. Quelle est la phase ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Observer : le noyau disparaît, les chromosomes apparaissent. Étape 2 — Repérer : ils ne sont pas encore alignés. Étape 3 — Nommer : c'est la prophase.  Pourquoi pas « l'interphase » : en interphase le noyau est net et les chromosomes ne se voient pas du tout.",
+                  "explanation": "Étape 1 — Observer : l'enveloppe du noyau disparaît, les chromosomes apparaissent. Étape 2 — Repérer : ils ne sont pas encore alignés. Étape 3 — Nommer : c'est la prophase.  Pourquoi pas « l'interphase » : en interphase le noyau est net et les chromosomes ne se voient pas du tout.",
                   "answers": [
                     {
                       "content": "La prophase",
@@ -583,7 +583,7 @@
                     },
                     {
                       "content": "Prophase",
-                      "match": "Noyau disparu, chromosomes visibles dispersés"
+                      "match": "Noyau plus visible, chromosomes visibles dispersés"
                     },
                     {
                       "content": "Métaphase",
@@ -734,7 +734,7 @@
                   "unit": "phases"
                 },
                 {
-                  "content": "Deux lots de chromosomes sont regroupés aux deux extrémités de la cellule, entourés chacun d'un noyau, et la cellule s'étrangle. Quelle est la phase ?",
+                  "content": "Deux lots de chromosomes sont regroupés aux deux extrémités de la cellule, entourés chacun d'un noyau, et une cloison commence à se former au milieu de la cellule. Quelle est la phase ?",
                   "question_type": "single_choice",
                   "explanation": "Étape 1 — Observer : deux noyaux se forment. Étape 2 — Repérer : les lots sont aux deux extrémités. Étape 3 — Nommer : c'est la télophase.  Pourquoi pas « l'anaphase » : les lots y sont encore en route vers les pôles et il n'y a pas encore de noyau.",
                   "answers": [
@@ -1266,7 +1266,7 @@
         },
         {
           "title": "Une bouture de manioc",
-          "statement": "Un cultivateur de Man plante une bouture de tige de manioc. Elle donne un nouveau plant identique à la plante mère. Une cellule de cette plante a 36 chromosomes (valeur choisie pour l'exercice).",
+          "statement": "Un cultivateur de Man plante une bouture de tige de manioc. Elle donne un nouveau plant identique à la plante mère. Une cellule de cette plante a 36 chromosomes.",
           "exercise_type": "evaluation",
           "figure": null,
           "questions": [
@@ -1294,7 +1294,7 @@
               ]
             },
             {
-              "content": "Une cellule de manioc de la bouture a 36 chromosomes (valeur fictive). Combien de chromosomes ont ses cellules filles ?",
+              "content": "Une cellule de manioc de la bouture a 36 chromosomes. Combien de chromosomes ont ses cellules filles ?",
               "question_type": "numeric",
               "tolerance": 0,
               "explanation": "Méthode : 1. Repérer : 36 chromosomes dans la cellule mère. 2. Suivre : ils se dédoublent puis se séparent. 3. Compter : chaque cellule fille a 36 chromosomes. Pourquoi pas « 18 » : ce serait partager le nombre de chromosomes, ce que la mitose ne fait pas.",
@@ -1381,7 +1381,7 @@
               "explanation": "Méthode : 1. Observer : 25 cellules en division sur la lame A, 1 sur la lame B. 2. Comparer puis conclure : l'extrémité se multiplie bien plus que la zone des poils. Pourquoi pas « les deux zones se divisent autant » : 25 et 1 sont des valeurs très différentes.",
               "answers": [
                 {
-                  "content": "La zone de croissance de l'extrémité contient beaucoup plus de cellules en division que la zone des poils",
+                  "content": "La zone de multiplication de l'extrémité contient beaucoup plus de cellules en division que la zone des poils",
                   "correct": true
                 },
                 {
@@ -1464,7 +1464,7 @@
             {
               "content": "Quel rôle de la mitose explique l'allongement de la racine ?",
               "question_type": "single_choice",
-              "explanation": "Méthode : 1. Observer : les divisions sont nombreuses dans la zone de croissance. 2. Relier au rôle : plus de cellules signifie une racine qui grandit, c'est la croissance. Pourquoi pas « la cicatrisation » : aucune plaie n'est à réparer dans cette expérience.",
+              "explanation": "Méthode : 1. Observer : les divisions sont nombreuses dans la zone de multiplication. 2. Relier au rôle : plus de cellules signifie une racine qui grandit, c'est la croissance. Pourquoi pas « la cicatrisation » : aucune plaie n'est à réparer dans cette expérience.",
               "answers": [
                 {
                   "content": "La croissance",
@@ -1609,7 +1609,7 @@
                   "explanation": "Méthode : 1. Choisir la zone à observer : l'extrémité de la racine, juste au-dessus de la coiffe. 2. C'est là que les cellules se divisent. Pourquoi pas « la zone des poils absorbants » : presque aucune cellule n'y est en division.",
                   "answers": [
                     {
-                      "content": "L'extrémité, dans la zone de croissance",
+                      "content": "L'extrémité, dans la zone de multiplication",
                       "correct": true
                     },
                     {
@@ -1699,7 +1699,7 @@
                   ]
                 }
               ],
-              "hint": "Pense à la zone de croissance de l'extrémité."
+              "hint": "Pense à la zone de multiplication de l'extrémité."
             },
             {
               "title": "Exercice 3",
@@ -1714,7 +1714,7 @@
                   "answers": [
                     {
                       "content": "Prophase",
-                      "match": "Noyau disparu, chromosomes visibles dispersés"
+                      "match": "Noyau plus visible, chromosomes visibles dispersés"
                     },
                     {
                       "content": "Métaphase",
@@ -1755,7 +1755,7 @@
                 {
                   "content": "Une cellule a un noyau net et aucun chromosome visible. Quelle est la phase ?",
                   "question_type": "single_choice",
-                  "explanation": "Méthode : 1. Observer : noyau net, chromosomes invisibles. 2. Nommer : c'est l'interphase. Pourquoi pas « la prophase » : en prophase le noyau disparaît et les chromosomes deviennent visibles.",
+                  "explanation": "Méthode : 1. Observer : noyau net, chromosomes invisibles. 2. Nommer : c'est l'interphase. Pourquoi pas « la prophase » : en prophase l'enveloppe du noyau disparaît et les chromosomes deviennent visibles.",
                   "answers": [
                     {
                       "content": "L'interphase",
@@ -1923,7 +1923,7 @@
                   "explanation": "Méthode : 1. Choisir la zone à observer : l'extrémité, juste au-dessus de la coiffe. 2. Les cellules s'y divisent pour faire grandir la racine. Pourquoi pas « près du bulbe » : cette zone contient des cellules qui ne se divisent presque plus.",
                   "answers": [
                     {
-                      "content": "À l'extrémité de la racine, dans la zone de croissance",
+                      "content": "À l'extrémité de la racine, dans la zone de multiplication",
                       "correct": true
                     },
                     {
@@ -1990,7 +1990,7 @@
                 {
                   "content": "Les cellules qui se divisent se trouvent dans la zone de ___ de la racine.",
                   "question_type": "fill_blank",
-                  "explanation": "Méthode : 1. Choisir la zone : la zone de croissance. 2. Conclure : c'est elle qui fait grandir la racine. Pourquoi pas « poils » : la zone des poils absorbants ne se divise presque plus.",
+                  "explanation": "Méthode : 1. Choisir la zone : la zone de multiplication. 2. Conclure : c'est elle qui fait grandir la racine. Pourquoi pas « poils » : la zone des poils absorbants ne se divise presque plus.",
                   "answers": [
                     {
                       "content": "croissance",
@@ -2007,7 +2007,7 @@
                   ]
                 }
               ],
-              "hint": "Cherche toujours la zone de croissance à l'extrémité."
+              "hint": "Cherche toujours la zone de multiplication à l'extrémité."
             },
             {
               "title": "Exercice 2",
@@ -2155,7 +2155,7 @@
                   ]
                 },
                 {
-                  "content": "Une cellule de la tige de manioc a 36 chromosomes (valeur fictive). Combien de chromosomes ont ses cellules filles ?",
+                  "content": "Une cellule de la tige de manioc a 36 chromosomes. Combien de chromosomes ont ses cellules filles ?",
                   "question_type": "numeric",
                   "tolerance": 0,
                   "explanation": "Méthode : 1. Repérer : 36 chromosomes dans la cellule mère. 2. Suivre : ils se dédoublent puis se séparent. 3. Compter : 36 dans chaque cellule fille. Pourquoi pas « 18 » : ce serait partager le nombre de chromosomes, ce que la mitose ne fait pas.",
@@ -2289,7 +2289,7 @@
                   "answers": [
                     {
                       "content": "Prophase",
-                      "match": "Chromosomes visibles, noyau disparu"
+                      "match": "Chromosomes visibles, noyau plus visible"
                     },
                     {
                       "content": "Métaphase",
@@ -2378,7 +2378,7 @@
                 {
                   "content": "Si l'élève avait compté dans la zone des poils absorbants, il aurait trouvé autant de cellules en mitose.",
                   "question_type": "true_false",
-                  "explanation": "Méthode : 1. Choisir la zone : les cellules se divisent dans la zone de croissance. 2. Conclure : dans la zone des poils, presque aucune cellule n'est en mitose. Pourquoi pas « Vrai » : cette zone ne sert plus à multiplier les cellules.",
+                  "explanation": "Méthode : 1. Choisir la zone : les cellules se divisent dans la zone de multiplication. 2. Conclure : dans la zone des poils, presque aucune cellule n'est en mitose. Pourquoi pas « Vrai » : cette zone ne sert plus à multiplier les cellules.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2440,7 +2440,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Aucune des deux, car la zone de croissance ne contient pas de cellules en division",
+                      "content": "Aucune des deux, car la zone de multiplication ne contient pas de cellules en division",
                       "correct": false
                     }
                   ]
@@ -2461,7 +2461,7 @@
                 {
                   "content": "La différence entre les lames prouve que toute la racine se divise de la même façon.",
                   "question_type": "true_false",
-                  "explanation": "Méthode : 1. Comparer : 30 % contre 2 %. 2. Conclure : les divisions se concentrent dans la zone de croissance. Pourquoi pas « Vrai » : les deux valeurs sont très différentes.",
+                  "explanation": "Méthode : 1. Comparer : 30 % contre 2 %. 2. Conclure : les divisions se concentrent dans la zone de multiplication. Pourquoi pas « Vrai » : les deux valeurs sont très différentes.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2476,10 +2476,10 @@
                 {
                   "content": "Quelles conclusions sont correctes ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Méthode : 1. Conclure d'après les comptages. 2. La zone de croissance fait grandir la racine. Pourquoi pas « la racine grandit par sa zone des poils » : ce sont les divisions de l'extrémité qui la font grandir.",
+                  "explanation": "Méthode : 1. Conclure d'après les comptages. 2. La zone de multiplication fait grandir la racine. Pourquoi pas « la racine grandit par sa zone des poils » : ce sont les divisions de l'extrémité qui la font grandir.",
                   "answers": [
                     {
-                      "content": "La zone de croissance fabrique de nouvelles cellules par mitose",
+                      "content": "La zone de multiplication fabrique de nouvelles cellules par mitose",
                       "correct": true
                     },
                     {
@@ -2491,7 +2491,7 @@
                       "correct": false
                     },
                     {
-                      "content": "La coiffe se divise plus que la zone de croissance",
+                      "content": "La coiffe se divise plus que la zone de multiplication",
                       "correct": false
                     }
                   ]
@@ -2499,7 +2499,7 @@
                 {
                   "content": "La racine grandit grâce aux divisions de la zone de ___.",
                   "question_type": "fill_blank",
-                  "explanation": "Méthode : 1. Conclure : les cellules de la zone de croissance se multiplient par mitose. 2. La racine s'allonge. Pourquoi pas « poils » : elle sert à absorber l'eau, pas à multiplier les cellules.",
+                  "explanation": "Méthode : 1. Conclure : les cellules de la zone de multiplication se multiplient par mitose. 2. La racine s'allonge. Pourquoi pas « poils » : elle sert à absorber l'eau, pas à multiplier les cellules.",
                   "answers": [
                     {
                       "content": "croissance",
@@ -2789,7 +2789,7 @@
                 {
                   "content": "Relie chaque terme à sa définition.",
                   "question_type": "matching",
-                  "explanation": "Méthode : 1. Définir chaque terme. 2. La zone de croissance est la zone de l'extrémité où les cellules se divisent, et l'interphase est la période entre deux divisions. Pourquoi pas « interphase pour division » : l'interphase n'est pas la division.",
+                  "explanation": "Méthode : 1. Définir chaque terme. 2. La zone de multiplication est la zone de l'extrémité où les cellules se divisent, et l'interphase est la période entre deux divisions. Pourquoi pas « interphase pour division » : l'interphase n'est pas la division.",
                   "answers": [
                     {
                       "content": "Cellule mère",
@@ -2800,7 +2800,7 @@
                       "match": "Cellule qui résulte de la division"
                     },
                     {
-                      "content": "Zone de croissance",
+                      "content": "Zone de multiplication",
                       "match": "Zone de la racine où les cellules se divisent"
                     },
                     {
@@ -2847,7 +2847,7 @@
                   "explanation": "Méthode : 1. Choisir la zone : l'extrémité, juste au-dessus de la coiffe. 2. C'est là que les cellules se divisent. Pourquoi pas « la zone des poils absorbants » : ses cellules ne se divisent presque plus.",
                   "answers": [
                     {
-                      "content": "L'extrémité, dans la zone de croissance",
+                      "content": "L'extrémité, dans la zone de multiplication",
                       "correct": true
                     },
                     {
@@ -2953,7 +2953,7 @@
                     },
                     {
                       "content": "Prophase",
-                      "match": "Noyau disparu, chromosomes visibles"
+                      "match": "Noyau plus visible, chromosomes visibles"
                     },
                     {
                       "content": "Métaphase",
@@ -3008,9 +3008,9 @@
                   ]
                 },
                 {
-                  "content": "Pendant la ___, le noyau disparaît et les chromosomes deviennent visibles.",
+                  "content": "Pendant la ___, l'enveloppe du noyau disparaît et les chromosomes deviennent visibles.",
                   "question_type": "fill_blank",
-                  "explanation": "Méthode : 1. Observer : le noyau disparaît et les chromosomes apparaissent. 2. Nommer : c'est la prophase. Pourquoi pas « interphase » : en interphase les chromosomes restent invisibles.",
+                  "explanation": "Méthode : 1. Observer : l'enveloppe du noyau disparaît et les chromosomes apparaissent. 2. Nommer : c'est la prophase. Pourquoi pas « interphase » : en interphase les chromosomes restent invisibles.",
                   "answers": [
                     {
                       "content": "prophase",
