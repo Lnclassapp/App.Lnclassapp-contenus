@@ -1,0 +1,3085 @@
+{
+  "format": "lnclass.course-tree",
+  "version": 3,
+  "courses": [
+    {
+      "name": "Mole et grandeurs molaires",
+      "subtitle": "Leçon 9 — progression DPFC 2026-2027",
+      "level_name": "2nde",
+      "series_name": "C",
+      "material_name": "Physique-Chimie",
+      "theme": "teal",
+      "figures": [
+        {
+          "key": "eau-molecule",
+          "kind": "molecule",
+          "description": "La molécule d'eau H₂O dessinée atome par atome : un atome d'oxygène au centre, relié par un trait simple à chacun des deux atomes d'hydrogène. En comptant les atomes de la formule, on trouve 2 atomes H et 1 atome O pour calculer la masse molaire.",
+          "params": {
+            "mode": "custom",
+            "atoms": [
+              {
+                "id": "o",
+                "element": "O",
+                "x": 6,
+                "y": 5
+              },
+              {
+                "id": "h1",
+                "element": "H",
+                "x": 4,
+                "y": 7
+              },
+              {
+                "id": "h2",
+                "element": "H",
+                "x": 8,
+                "y": 7
+              }
+            ],
+            "bonds": [
+              [
+                "o",
+                "h1",
+                1
+              ],
+              [
+                "o",
+                "h2",
+                1
+              ]
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "butane-formule",
+          "kind": "molecule",
+          "description": "Une molécule d'alcane dessinée en formule développée, avec son nom et sa formule brute sous le dessin. Le butane du gaz de cuisine compte 4 atomes de carbone et 10 atomes d'hydrogène. Le curseur règle le nombre de carbones de 1 à 10 pour comparer les alcanes.",
+          "params": {
+            "mode": "alkane",
+            "carbons": 4,
+            "display": "developed"
+          },
+          "controls": [
+            {
+              "param": "carbons",
+              "min": 1,
+              "max": 10,
+              "step": 1,
+              "label": "Nombre d'atomes de carbone"
+            }
+          ]
+        },
+        {
+          "key": "volume-une-mole",
+          "kind": "stat_chart",
+          "description": "Un diagramme en barres qui donne le volume occupé par une mole de trois gaz dans les conditions normales : 22,4 litres pour le dihydrogène, 22,4 litres pour le dioxygène et 22,4 litres pour le dioxyde de carbone. Les trois barres sont égales : le volume molaire ne dépend pas du gaz.",
+          "params": {
+            "chart": "bars",
+            "series": [
+              22.4,
+              22.4,
+              22.4
+            ],
+            "labels": [
+              "H₂",
+              "O₂",
+              "CO₂"
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "passage-grandeurs",
+          "kind": "diagram",
+          "description": "Un arbre dont la racine est la quantité de matière n, en mol. Elle se relie à la masse m par la masse molaire M, au nombre d'entités N par la constante d'Avogadro N_A et au volume V d'un gaz par le volume molaire V_m. On passe toujours par n pour aller d'une grandeur à une autre.",
+          "params": {
+            "layout": "tree",
+            "direction": "down",
+            "nodes": [
+              {
+                "id": "n",
+                "label": "Quantité de matière n (mol)"
+              },
+              {
+                "id": "m",
+                "label": "Masse m (g) : m = n × M"
+              },
+              {
+                "id": "nn",
+                "label": "Nombre d'entités N : N = n × N_A"
+              },
+              {
+                "id": "v",
+                "label": "Volume de gaz V (L) : V = n × V_m"
+              }
+            ],
+            "edges": [
+              {
+                "from": "n",
+                "to": "m",
+                "label": "× M"
+              },
+              {
+                "from": "n",
+                "to": "nn",
+                "label": "× N_A"
+              },
+              {
+                "from": "n",
+                "to": "v",
+                "label": "× V_m"
+              }
+            ]
+          },
+          "controls": []
+        }
+      ],
+      "notions": [
+        {
+          "name": "La mole et la constante d'Avogadro",
+          "remember": "La **quantité de matière** $n$ mesure un nombre d'entités (atomes, molécules, ions) ; elle s'exprime en **mole** (mol). **1 mol** d'entités contient toujours le même nombre d'entités : $N_A = 6{,}02 \\times 10^{23}$ mol⁻¹, la **constante d'Avogadro**. Pour $N$ entités : $n = \\frac{N}{N_A}$, donc $N = n \\times N_A$. Une mole de molécules d'eau, d'entités NaCl ou d'atomes de fer contient le même nombre d'entités.",
+          "method": [
+            "Identifier l'entité que l'on compte (atome, molécule ou ion) et relever la donnée avec son unité : le nombre $N$ ou la quantité $n$.",
+            "Écrire la relation $n = \\frac{N}{N_A}$ (ou $N = n \\times N_A$) avec $N_A = 6{,}02 \\times 10^{23}$ mol⁻¹.",
+            "Calculer en traitant à part le nombre décimal et la puissance de 10, puis conclure avec l'unité (mol ou nombre d'entités)."
+          ],
+          "example": {
+            "statement": "Un verre d'eau contient $3{,}01 \\times 10^{24}$ molécules d'eau. Quelle quantité de matière d'eau cela représente-t-il ?",
+            "steps": [
+              "Identifier : l'entité est la molécule d'eau ; la donnée est $N = 3{,}01 \\times 10^{24}$ molécules ; on cherche $n$ en mol.",
+              "Écrire : $n = \\frac{N}{N_A}$ avec $N_A = 6{,}02 \\times 10^{23}$ mol⁻¹.",
+              "Calculer : $n =$ $\\frac{3{,}01\\times 10^{24}}{6{,}02\\times 10^{23}}$, puis $n = 0{,}5 \\times 10 = 5$ mol. Conclure : le verre contient 5 mol d'eau."
+            ]
+          },
+          "pitfall": "Attention à la **puissance de 10**. Contre-exemple : le quotient $\\frac{3{,}01\\times 10^{24}}{6{,}02\\times 10^{23}}$ ; on a $3{,}01 / 6{,}02 = 0{,}5$, mais $10^{24} = 10 \\times 10^{23}$, donc $n = 0{,}5 \\times 10 = 5$ mol, pas 0,5 mol. Écris toujours les deux puissances de 10 avec la même puissance avant de diviser, ou compte la différence des exposants.",
+          "figure": null,
+          "practice": {
+            "statement": "Tu t'entraînes à passer du nombre d'entités à la quantité de matière, et inversement, avec la constante d'Avogadro.",
+            "questions": [
+              {
+                "content": "Un échantillon contient 1,204×10²⁴ atomes de fer. Quelle quantité de matière de fer cela représente-t-il ? (N_A = 6,02×10²³ mol⁻¹)",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Identifier : l'entité est l'atome de fer, N = 1,204×10²⁴. Étape 2 — Écrire : n = N / N_A. Étape 3 — Calculer : n = 1,204×10²⁴ / 6,02×10²³ = 0,2 × 10 = 2 mol. Pourquoi pas 0,2 mol : on a oublié que 10²⁴ vaut 10 fois 10²³.",
+                "answers": [
+                  {
+                    "content": "2 mol",
+                    "correct": true
+                  },
+                  {
+                    "content": "0,2 mol",
+                    "correct": false
+                  },
+                  {
+                    "content": "20 mol",
+                    "correct": false
+                  },
+                  {
+                    "content": "7,25×10⁴⁷ mol",
+                    "correct": false
+                  }
+                ],
+                "hint": "Divise N par N_A et compte l'écart entre les exposants."
+              },
+              {
+                "content": "Quelle quantité de matière d'eau correspond à 3,01×10²³ molécules d'eau ? (N_A = 6,02×10²³ mol⁻¹)",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Identifier : N = 3,01×10²³ molécules d'eau. Étape 2 — Écrire : n = N / N_A. Étape 3 — Calculer : n = 3,01×10²³ / 6,02×10²³ = 0,5 mol. Pourquoi pas 2 mol : on a divisé N_A par N au lieu de N par N_A.",
+                "answers": [
+                  {
+                    "content": "0,5",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "unit": "mol",
+                "hint": "Les deux puissances de 10 sont identiques : elles se simplifient."
+              },
+              {
+                "content": "Combien de molécules contiennent 3 mol d'eau ? Donne le nombre a tel que N = a × 10²³ molécules. (N_A = 6,02×10²³ mol⁻¹)",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Identifier : n = 3 mol ; on cherche N. Étape 2 — Écrire : N = n × N_A. Étape 3 — Calculer : N = 3 × 6,02×10²³ = 18,06×10²³ molécules, donc a = 18,06. Pourquoi pas 1,806 : c'est le coefficient devant 10²⁴, pas devant 10²³.",
+                "answers": [
+                  {
+                    "content": "18,06",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "N = n × N_A, puis garde la puissance 10²³."
+              },
+              {
+                "content": "1 mol de molécules d'eau et 1 mol d'atomes de fer contiennent le même nombre d'entités.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Identifier : dans les deux cas n = 1 mol. Étape 2 — Écrire : N = n × N_A. Étape 3 — Calculer : N = 1 × 6,02×10²³ pour l'eau comme pour le fer. Pourquoi pas Faux : la mole compte des entités, quelle que soit leur taille ou leur nature.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "La mole est un paquet d'un nombre fixe d'entités."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "La mole et la constante d'Avogadro",
+              "statement": "Tu compares des nombres d'entités et des quantités de matière avec la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Que représente 1 mol d'entités (atomes, molécules ou ions) ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : la mole est une unité de quantité de matière, donc elle compte des entités. Étape 2 — Écrire : 1 mol correspond à N_A = 6,02×10²³ entités. Étape 3 — Calculer : N = 1 × 6,02×10²³ entités. Conclure : 1 mol contient 6,02×10²³ entités. Pourquoi pas 6,02×10²³ g : le nombre d'Avogadro compte des entités ; une masse se mesure en grammes et dépend de l'espèce.",
+                  "answers": [
+                    {
+                      "content": "6,02×10²³ entités",
+                      "correct": true
+                    },
+                    {
+                      "content": "6,02×10²³ g",
+                      "correct": false
+                    },
+                    {
+                      "content": "6,02×10²³ L",
+                      "correct": false
+                    },
+                    {
+                      "content": "6,02×10⁻²³ entités",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien de molécules contiennent 2 mol d'eau ? Donne le nombre a tel que N = a × 10²³ molécules. (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : n = 2 mol d'eau ; on cherche N. Étape 2 — Écrire : N = n × N_A. Étape 3 — Calculer : N = 2 × 6,02×10²³ = 12,04×10²³ molécules, donc a = 12,04. Pourquoi pas 1,204 : ce coefficient va avec 10²⁴ (1,204×10²⁴ = 12,04×10²³) ; ici la puissance imposée est 10²³.",
+                  "answers": [
+                    {
+                      "content": "12,04",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "1 mol d'atomes de carbone contient ___ × 10²³ atomes (écris le nombre décimal qui complète).",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Identifier : l'entité est l'atome de carbone, n = 1 mol. Étape 2 — Écrire : N = n × N_A. Étape 3 — Calculer : N = 1 × 6,02×10²³. Conclure : 6,02×10²³ atomes, donc le nombre cherché est 6,02. Pourquoi pas 602 : c'est 6,02×10², la puissance 10²³ est déjà écrite dans la question.",
+                  "answers": [
+                    {
+                      "content": "6,02",
+                      "correct": true
+                    },
+                    {
+                      "content": "6.02",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour passer d'un nombre d'entités N à une quantité de matière n, on ___ N par N_A.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Identifier : on part de N et on cherche n. Étape 2 — Écrire : n = N / N_A. Étape 3 — Calculer : on divise N par N_A. Conclure : on divise. Pourquoi pas multiplie : N = n × N_A est la relation inverse, pour aller de n vers N.",
+                  "answers": [
+                    {
+                      "content": "divise",
+                      "correct": true
+                    },
+                    {
+                      "content": "multiplie",
+                      "correct": false
+                    },
+                    {
+                      "content": "additionne",
+                      "correct": false
+                    },
+                    {
+                      "content": "soustrait",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un verre d'eau contient 3,01×10²⁴ molécules d'eau. Quelle quantité de matière cela représente-t-il ? (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : N = 3,01×10²⁴ molécules d'eau, on cherche n. Étape 2 — Écrire : n = N / N_A. Étape 3 — Calculer : n = 3,01×10²⁴ / 6,02×10²³ = 0,5 × 10 = 5 mol. Pourquoi pas 0,5 mol : on a divisé 3,01 par 6,02 sans tenir compte de 10²⁴ = 10 × 10²³.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                }
+              ],
+              "hint": "Identifie l'entité, écris n = N / N_A ou N = n × N_A, puis calcule les puissances de 10."
+            },
+            {
+              "title": "Compter des entités avec le sel, le sucre et l'eau",
+              "statement": "Dans cet exercice, tu passes du nombre d'entités à la quantité de matière, et inversement, avec du sel, du sucre et de l'eau de la cuisine.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Relie chaque quantité de matière au nombre d'entités qui lui correspond. (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Identifier : chaque quantité est donnée en mol, on cherche N. Étape 2 — Écrire : N = n × N_A. Étape 3 — Calculer : 0,5 × 6,02×10²³ = 3,01×10²³ ; 2 × 6,02×10²³ = 1,204×10²⁴ ; 0,1 × 6,02×10²³ = 6,02×10²² ; 10 × 6,02×10²³ = 6,02×10²⁴. Pourquoi pas une paire croisée : décaler la virgule d'un rang donne une puissance de 10 fausse ; recalcule chaque produit.",
+                  "answers": [
+                    {
+                      "content": "0,5 mol",
+                      "match": "3,01×10²³ entités"
+                    },
+                    {
+                      "content": "2 mol",
+                      "match": "1,204×10²⁴ entités"
+                    },
+                    {
+                      "content": "0,1 mol",
+                      "match": "6,02×10²² entités"
+                    },
+                    {
+                      "content": "10 mol",
+                      "match": "6,02×10²⁴ entités"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels échantillons contiennent exactement 1 mol d'entités ? (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Identifier : on connaît N dans chaque échantillon. Étape 2 — Écrire : n = N / N_A avec N_A = 6,02×10²³ mol⁻¹. Étape 3 — Calculer : 6,02×10²³ / 6,02×10²³ = 1 mol (eau et fer) ; 6,02×10²⁴ donne 10 mol ; 6,02×10²² donne 0,1 mol. Pourquoi pas 6,02×10²⁴ molécules : c'est 10 mol, car l'exposant est plus grand de 1.",
+                  "answers": [
+                    {
+                      "content": "6,02×10²³ molécules d'eau",
+                      "correct": true
+                    },
+                    {
+                      "content": "6,02×10²³ atomes de fer",
+                      "correct": true
+                    },
+                    {
+                      "content": "6,02×10²⁴ molécules d'eau",
+                      "correct": false
+                    },
+                    {
+                      "content": "6,02×10²² ions sodium",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une cuillère de sucre contient 1,204×10²² molécules de saccharose. Quelle quantité de matière de sucre est-ce ? (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : N = 1,204×10²² molécules de saccharose, on cherche n. Étape 2 — Écrire : n = N / N_A. Étape 3 — Calculer : n = 1,204×10²² / 6,02×10²³ = 0,2 × 10⁻¹ = 0,02 mol. Pourquoi pas 0,2 mol : 10²² est 10 fois plus petit que 10²³, il faut donc diviser le résultat 0,2 par 10.",
+                  "answers": [
+                    {
+                      "content": "0,02",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour trouver la quantité de matière de 1,204×10²⁴ atomes de fer.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Identifier : d'abord on nomme l'entité et on relève N. Étape 2 — Écrire : ensuite on choisit la relation n = N / N_A. Étape 3 — Calculer : enfin 1,204×10²⁴ / 6,02×10²³ = 2 mol, avec l'unité. Pourquoi pas calculer d'abord : sans entité ni relation écrite, on ne sait pas quoi diviser par quoi.",
+                  "answers": [
+                    {
+                      "content": "Identifier l'entité (atome de fer) et la donnée N = 1,204×10²⁴."
+                    },
+                    {
+                      "content": "Écrire la relation n = N / N_A avec N_A = 6,02×10²³ mol⁻¹."
+                    },
+                    {
+                      "content": "Calculer n = 2 mol et conclure avec l'unité."
+                    }
+                  ]
+                },
+                {
+                  "content": "1 mol de molécules d'eau contient 6,02×10²³ molécules, donc 6,02×10²³ atomes au total.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : une molécule d'eau H₂O compte 3 atomes (2 H et 1 O). Étape 2 — Écrire : N(atomes) = 3 × N(molécules). Étape 3 — Calculer : 3 × 6,02×10²³ = 1,806×10²⁴ atomes. Pourquoi pas Vrai : N_A compte les molécules ; chaque molécule contient plusieurs atomes.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un grand verre contient 6,02×10²⁴ molécules d'eau, soit une quantité de matière de ___ mol. (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Identifier : N = 6,02×10²⁴ molécules d'eau. Étape 2 — Écrire : n = N / N_A. Étape 3 — Calculer : n = 6,02×10²⁴ / 6,02×10²³ = 10 mol. Pourquoi pas 1 mol : 6,02×10²⁴ est 10 fois N_A, pas égal à N_A.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Identifie l'entité, utilise n = N / N_A ou N = n × N_A, puis compte les puissances de 10."
+            }
+          ]
+        },
+        {
+          "name": "Masse molaire atomique et moléculaire",
+          "remember": "La **masse molaire** $M$ est la masse d'**une mole** d'entités ; elle s'exprime en **g/mol**. La **masse molaire atomique** d'un élément se lit dans un tableau : $M(H) = 1$ g/mol, $M(C) = 12$ g/mol, $M(O) = 16$ g/mol. La **masse molaire moléculaire** est la **somme** des masses molaires atomiques de tous les atomes de la formule : $M(H_2O) = 2 \\times 1 + 16 = 18$ g/mol. Pour un composé ionique comme le sel NaCl, on additionne de même les masses molaires atomiques des éléments de sa formule : $M(NaCl) = 23 + 35{,}5 = 58{,}5$ g/mol (la masse des électrons gagnés ou perdus est négligeable). Pour un échantillon de masse $m$ (en g) : $n = \\frac{m}{M}$, donc $m = n \\times M$.",
+          "method": [
+            "Écrire la formule de l'espèce et compter les atomes (ou les ions) de chaque élément : ce sont les indices.",
+            "Lire dans le tableau la masse molaire atomique de chaque élément, en g/mol.",
+            "Calculer la masse molaire $M$ en additionnant : (nombre d'atomes × masse molaire atomique) pour chaque élément.",
+            "Appliquer $n = \\frac{m}{M}$ (ou $m = n \\times M$) avec $m$ en g et $M$ en g/mol, puis conclure avec l'unité."
+          ],
+          "example": {
+            "statement": "Un morceau de sucre contient 6,84 g de saccharose $C_{12}H_{22}O_{11}$. Données : M(C) = 12 g/mol, M(H) = 1 g/mol, M(O) = 16 g/mol. Quelle est sa quantité de matière ?",
+            "steps": [
+              "Écrire : la formule $C_{12}H_{22}O_{11}$ compte 12 atomes de C, 22 atomes de H et 11 atomes de O.",
+              "Lire : M(C) = 12 g/mol, M(H) = 1 g/mol et M(O) = 16 g/mol.",
+              "Calculer : $M = 12 \\times 12 + 22 \\times 1 + 11 \\times 16$, soit $M = 144 + 22 + 176 = 342$ g/mol.",
+              "Appliquer : $n = \\frac{m}{M} = \\frac{6{,}84}{342} = 0{,}02$ mol. Conclure : le morceau contient 0,02 mol de saccharose."
+            ]
+          },
+          "pitfall": "N'oublie pas de **multiplier par l'indice**. Contre-exemple : pour l'eau $H_2O$, écrire $M = 1 + 16 = 17$ g/mol est faux, car il y a 2 atomes d'hydrogène : $M = 2 \\times 1 + 16 = 18$ g/mol. Pour 36 g d'eau : $\\frac{36}{18} = 2$ mol avec la bonne valeur, mais $\\frac{36}{17} \\approx 2{,}12$ mol avec l'erreur. Compte les atomes avant d'additionner.",
+          "figure": "eau-molecule",
+          "practice": {
+            "statement": "Tu t'entraînes à calculer une masse molaire moléculaire, puis à passer de la masse à la quantité de matière.",
+            "questions": [
+              {
+                "content": "Calcule la masse molaire de l'eau H₂O. Données : M(H) = 1 g/mol, M(O) = 16 g/mol.",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Écrire : H₂O compte 2 atomes H et 1 atome O. Étape 2 — Lire : M(H) = 1 g/mol, M(O) = 16 g/mol. Étape 3 — Calculer : M = 2 × 1 + 16 = 18 g/mol. Pourquoi pas 17 g/mol : on a oublié l'indice 2 de l'hydrogène.",
+                "answers": [
+                  {
+                    "content": "18",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "unit": "g/mol",
+                "hint": "Multiplie par l'indice de chaque atome."
+              },
+              {
+                "content": "Quelle est la masse molaire du dioxyde de carbone CO₂ ? Données : M(C) = 12 g/mol, M(O) = 16 g/mol.",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Écrire : CO₂ compte 1 atome C et 2 atomes O. Étape 2 — Lire : M(C) = 12 g/mol, M(O) = 16 g/mol. Étape 3 — Calculer : M = 12 + 2 × 16 = 44 g/mol. Pourquoi pas 28 g/mol : c'est 12 + 16, avec un seul atome d'oxygène.",
+                "answers": [
+                  {
+                    "content": "44 g/mol",
+                    "correct": true
+                  },
+                  {
+                    "content": "28 g/mol",
+                    "correct": false
+                  },
+                  {
+                    "content": "56 g/mol",
+                    "correct": false
+                  },
+                  {
+                    "content": "32 g/mol",
+                    "correct": false
+                  }
+                ],
+                "hint": "Il y a deux atomes d'oxygène."
+              },
+              {
+                "content": "Quelle quantité de matière contiennent 117 g de sel NaCl ? Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol.",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Écrire : NaCl compte 1 Na et 1 Cl. Étape 2 — Lire : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : n = m / M = 117 / 58,5 = 2 mol. Pourquoi pas 117 / 23 : il faut la masse molaire de tout le composé, pas d'un seul élément.",
+                "answers": [
+                  {
+                    "content": "2",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "unit": "mol",
+                "hint": "M(NaCl) = 58,5 g/mol."
+              },
+              {
+                "content": "La masse de 0,5 mol de dioxyde de carbone (M = 44 g/mol) est de ___ g.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Écrire : on connaît n = 0,5 mol et M = 44 g/mol. Étape 2 — Lire : M = 44 g/mol est donnée. Étape 3 — Calculer : M est donnée, il n'y a pas d'addition à faire. Étape 4 — Appliquer : m = n × M = 0,5 × 44 = 22 g. Pourquoi pas 88 g : on a divisé 44 par 0,5 au lieu de multiplier.",
+                "answers": [
+                  {
+                    "content": "22",
+                    "correct": true
+                  }
+                ],
+                "hint": "m = n × M."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Masse molaire et quantité de matière",
+              "statement": "Tu calcules des masses molaires puis des quantités de matière avec la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": "butane-formule",
+              "questions": [
+                {
+                  "content": "Calcule la masse molaire du sel de cuisine NaCl. Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : NaCl compte 1 Na et 1 Cl. Étape 2 — Lire : M(Na) = 23 g/mol et M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : cette valeur sert ensuite dans n = m / M. Pourquoi pas 58 g/mol : 35,5 ne s'arrondit pas à 35 dans cet exercice, on garde la valeur du tableau.",
+                  "answers": [
+                    {
+                      "content": "58,5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g/mol"
+                },
+                {
+                  "content": "Quelle est la masse molaire du butane C₄H₁₀ ? Données : M(C) = 12 g/mol, M(H) = 1 g/mol.",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : C₄H₁₀ compte 4 atomes C et 10 atomes H. Étape 2 — Lire : M(C) = 12 g/mol, M(H) = 1 g/mol. Étape 3 — Calculer : M = 4 × 12 + 10 × 1 = 48 + 10 = 58 g/mol. Pourquoi pas 48 g/mol : c'est la masse des 4 carbones seuls ; les 10 hydrogènes comptent aussi.",
+                  "answers": [
+                    {
+                      "content": "58 g/mol",
+                      "correct": true
+                    },
+                    {
+                      "content": "22 g/mol",
+                      "correct": false
+                    },
+                    {
+                      "content": "48 g/mol",
+                      "correct": false
+                    },
+                    {
+                      "content": "120 g/mol",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un sac contient 68,4 g de sucre (saccharose C₁₂H₂₂O₁₁). Quelle quantité de matière est-ce ? Données : M(C) = 12 g/mol, M(H) = 1 g/mol, M(O) = 16 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : C₁₂H₂₂O₁₁ compte 12 C, 22 H et 11 O. Étape 2 — Lire : M(C) = 12, M(H) = 1, M(O) = 16 g/mol. Étape 3 — Calculer : M = 144 + 22 + 176 = 342 g/mol. Étape 4 — Appliquer : n = 68,4 / 342 = 0,2 mol. Pourquoi pas 5 mol : c'est 342 / 68,4, le quotient inversé.",
+                  "answers": [
+                    {
+                      "content": "0,2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Quelle est la masse de 0,5 mol de sel NaCl ? Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : NaCl, n = 0,5 mol. Étape 2 — Lire : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 58,5 g/mol. Étape 4 — Appliquer : m = n × M = 0,5 × 58,5 = 29,25 g. Pourquoi pas 117 g : c'est 58,5 / 0,5, une division au lieu d'une multiplication.",
+                  "answers": [
+                    {
+                      "content": "29,25",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g"
+                },
+                {
+                  "content": "Quelle quantité de matière contiennent 36 g d'eau H₂O ? Données : M(H) = 1 g/mol, M(O) = 16 g/mol.",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : H₂O compte 2 H et 1 O. Étape 2 — Lire : M(H) = 1 g/mol, M(O) = 16 g/mol. Étape 3 — Calculer : M = 2 × 1 + 16 = 18 g/mol. Étape 4 — Appliquer : n = 36 / 18 = 2 mol. Pourquoi pas 2,12 mol : c'est 36 / 17, avec la masse molaire 1 + 16 qui oublie l'indice 2.",
+                  "answers": [
+                    {
+                      "content": "2 mol",
+                      "correct": true
+                    },
+                    {
+                      "content": "2,12 mol",
+                      "correct": false
+                    },
+                    {
+                      "content": "36 mol",
+                      "correct": false
+                    },
+                    {
+                      "content": "0,5 mol",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Écris la formule, lis les masses molaires atomiques, additionne pour M, puis utilise n = m / M."
+            },
+            {
+              "title": "Masses molaires de la cuisine, du labo et de la pharmacie",
+              "statement": "Dans cet exercice, tu calcules des masses molaires puis tu passes de la masse à la quantité de matière, avec du sel, de l'eau et un comprimé.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Relie chaque espèce à sa masse molaire. Données : M(H) = 1 g/mol, M(O) = 16 g/mol, M(C) = 12 g/mol, M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol, M(Ca) = 40 g/mol.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Écrire : H₂O (2 H, 1 O), CO₂ (1 C, 2 O), NaCl (1 Na, 1 Cl), CaCO₃ (1 Ca, 1 C, 3 O). Étape 2 — Lire : les masses molaires atomiques de l'énoncé. Étape 3 — Calculer : 2 + 16 = 18 ; 12 + 32 = 44 ; 23 + 35,5 = 58,5 ; 40 + 12 + 48 = 100 g/mol. Étape 4 — Appliquer : ces valeurs servent dans n = m / M. Pourquoi pas 68 g/mol pour CaCO₃ : c'est 40 + 12 + 16, avec un seul atome d'oxygène ; il y en a 3, qui pèsent 3 × 16 = 48 g.",
+                  "answers": [
+                    {
+                      "content": "H₂O",
+                      "match": "18 g/mol"
+                    },
+                    {
+                      "content": "CO₂",
+                      "match": "44 g/mol"
+                    },
+                    {
+                      "content": "NaCl",
+                      "match": "58,5 g/mol"
+                    },
+                    {
+                      "content": "CaCO₃",
+                      "match": "100 g/mol"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles relations sont correctes ? (n en mol, m en g, M en g/mol)",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Écrire : M est la masse d'une mole, donc pour n mol on a m = n × M. Étape 2 — Lire : m s'exprime en g, M en g/mol et n en mol. Étape 3 — Calculer : avec m = 36 g et M = 18 g/mol, n = 36 / 18 = 2 mol, et n × M = 36 g. Étape 4 — Appliquer : n = m / M et m = n × M sont justes ; n = m × M donnerait 36 × 18 = 648 mol, une valeur sans sens. Pourquoi pas M = n / m : l'unité serait mol/g au lieu de g/mol ; la bonne relation est M = m / n.",
+                  "answers": [
+                    {
+                      "content": "n = m / M",
+                      "correct": true
+                    },
+                    {
+                      "content": "m = n × M",
+                      "correct": true
+                    },
+                    {
+                      "content": "n = m × M",
+                      "correct": false
+                    },
+                    {
+                      "content": "M = n / m",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un comprimé de vitamine C contient de l'acide ascorbique C₆H₈O₆. Quelle est sa masse molaire ? Données : M(C) = 12 g/mol, M(H) = 1 g/mol, M(O) = 16 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : C₆H₈O₆ compte 6 C, 8 H et 6 O. Étape 2 — Lire : M(C) = 12, M(H) = 1, M(O) = 16 g/mol. Étape 3 — Calculer : M = 6 × 12 + 8 × 1 + 6 × 16 = 72 + 8 + 96 = 176 g/mol. Étape 4 — Appliquer : cette valeur permet de passer de la masse du comprimé à n. Pourquoi pas 20 g/mol : c'est 6 + 8 + 6, la somme des indices sans les masses molaires des atomes.",
+                  "answers": [
+                    {
+                      "content": "176",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g/mol"
+                },
+                {
+                  "content": "18 g d'eau et 44 g de dioxyde de carbone contiennent la même quantité de matière. Données : M(H) = 1 g/mol, M(O) = 16 g/mol, M(C) = 12 g/mol.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Écrire : H₂O et CO₂. Étape 2 — Lire : M(H₂O) = 18 g/mol et M(CO₂) = 44 g/mol. Étape 3 — Calculer : M(H₂O) = 2 + 16 = 18 ; M(CO₂) = 12 + 32 = 44. Étape 4 — Appliquer : n(eau) = 18 / 18 = 1 mol et n(CO₂) = 44 / 44 = 1 mol. Pourquoi pas Faux : les masses sont différentes, mais la quantité de matière compte des entités, pas des grammes.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La masse de 3 mol d'eau est de ___ g. Données : M(H) = 1 g/mol, M(O) = 16 g/mol.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Écrire : H₂O, n = 3 mol. Étape 2 — Lire : M(H) = 1 g/mol et M(O) = 16 g/mol. Étape 3 — Calculer : M = 18 g/mol. Étape 4 — Appliquer : m = n × M = 3 × 18 = 54 g. Pourquoi pas 6 g : c'est 18 / 3, une division au lieu d'une multiplication.",
+                  "answers": [
+                    {
+                      "content": "54",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour une même espèce, si on double la masse m de l'échantillon, la quantité de matière n ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Écrire : n = m / M, M est fixe pour une espèce. Étape 2 — Lire : n est proportionnelle à m. Étape 3 — Calculer : avec 2m, on a 2m / M = 2n. Étape 4 — Appliquer : donc n double. Pourquoi pas est divisée par deux : c'est le résultat si on double M, c'est-à-dire si on change d'espèce.",
+                  "answers": [
+                    {
+                      "content": "double",
+                      "correct": true
+                    },
+                    {
+                      "content": "reste la même",
+                      "correct": false
+                    },
+                    {
+                      "content": "est divisée par deux",
+                      "correct": false
+                    },
+                    {
+                      "content": "est multipliée par quatre",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Écris la formule, additionne les masses molaires atomiques, puis utilise n = m / M ou m = n × M."
+            }
+          ]
+        },
+        {
+          "name": "Volume molaire des gaz",
+          "remember": "Dans les mêmes conditions de température et de pression, **une mole de n'importe quel gaz** occupe **le même volume** : le **volume molaire** $V_m$, en **L/mol**. Dans les conditions normales (0 °C et pression normale), $V_m = 22{,}4$ L/mol ; à une autre température, l'énoncé donne la valeur (par exemple 24 L/mol à 20 °C). Pour un gaz de volume $V$ : $n = \\frac{V}{V_m}$, donc $V = n \\times V_m$. Cette relation ne vaut que pour les **gaz**, pas pour un solide ni un liquide. Conversions : 1 L = 1000 mL et 1 m³ = 1000 L.",
+          "method": [
+            "Relever le volume $V$ du gaz, le convertir en litres, et repérer la valeur du volume molaire $V_m$ : 22,4 L/mol dans les conditions normales, sinon la valeur donnée par l'énoncé.",
+            "Écrire la relation $n = \\frac{V}{V_m}$ (ou $V = n \\times V_m$), avec $V$ en L et $V_m$ en L/mol.",
+            "Calculer la quantité de matière $n$ (ou le volume $V$), puis conclure avec l'unité."
+          ],
+          "example": {
+            "statement": "Un ballon contient 5,6 L de dioxyde de carbone. Le volume molaire dans les conditions de l'expérience est $V_m = 22{,}4$ L/mol. Quelle quantité de matière de gaz contient-il ?",
+            "steps": [
+              "Relever : $V = 5{,}6$ L (déjà en litres) et $V_m = 22{,}4$ L/mol.",
+              "Écrire : $n = \\frac{V}{V_m}$ avec $V$ en L et $V_m$ en L/mol.",
+              "Calculer : $n = \\frac{5{,}6}{22{,}4} = 0{,}25$ mol. Conclure : le ballon contient 0,25 mol de dioxyde de carbone."
+            ]
+          },
+          "pitfall": "Convertis le volume en **litres** avant de diviser. Contre-exemple : pour 560 mL de gaz avec $V_m = 22{,}4$ L/mol, écrire $n = \\frac{560}{22{,}4} = 25$ mol est absurde. Il faut $560$ mL $= 0{,}56$ L, puis $n = \\frac{0{,}56}{22{,}4} = 0{,}025$ mol. Le volume molaire ne s'applique pas non plus à l'eau liquide.",
+          "figure": "volume-une-mole",
+          "practice": {
+            "statement": "Tu t'entraînes à passer du volume d'un gaz à sa quantité de matière, et inversement, avec le volume molaire.",
+            "questions": [
+              {
+                "content": "Quel volume occupent 2 mol de gaz dans les conditions normales (V_m = 22,4 L/mol) ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Relever : n = 2 mol et V_m = 22,4 L/mol ; on cherche V en L. Étape 2 — Écrire : V = n × V_m. Étape 3 — Calculer : V = 2 × 22,4 = 44,8 L. Pourquoi pas 11,2 L : c'est 22,4 / 2, une division au lieu d'une multiplication.",
+                "answers": [
+                  {
+                    "content": "44,8",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "unit": "L",
+                "hint": "V = n × V_m."
+              },
+              {
+                "content": "Quelle quantité de matière contiennent 11,2 L de dioxygène dans les conditions normales (V_m = 22,4 L/mol) ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Relever : V = 11,2 L et V_m = 22,4 L/mol. Étape 2 — Écrire : n = V / V_m. Étape 3 — Calculer : n = 11,2 / 22,4 = 0,5 mol. Pourquoi pas 2 mol : c'est 22,4 / 11,2, le quotient inversé.",
+                "answers": [
+                  {
+                    "content": "0,5",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "unit": "mol",
+                "hint": "n = V / V_m."
+              },
+              {
+                "content": "Un gaz occupe 12 L à 20 °C, où V_m = 24 L/mol. Quelle quantité de matière contient-il ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Relever : V = 12 L et V_m = 24 L/mol (valeur donnée). Étape 2 — Écrire : n = V / V_m. Étape 3 — Calculer : n = 12 / 24 = 0,5 mol. Pourquoi pas 2 mol : c'est 24 / 12, le quotient inversé.",
+                "answers": [
+                  {
+                    "content": "0,5 mol",
+                    "correct": true
+                  },
+                  {
+                    "content": "2 mol",
+                    "correct": false
+                  },
+                  {
+                    "content": "288 mol",
+                    "correct": false
+                  },
+                  {
+                    "content": "12 mol",
+                    "correct": false
+                  }
+                ],
+                "hint": "Utilise la valeur de V_m donnée dans l'énoncé."
+              },
+              {
+                "content": "Dans les mêmes conditions, 1 mol de dioxygène et 1 mol de dihydrogène occupent le même volume.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Relever : dans les deux cas n = 1 mol, avec les mêmes conditions. Étape 2 — Écrire : V = n × V_m, et V_m ne dépend pas du gaz. Étape 3 — Calculer : V = 1 × V_m pour les deux gaz. Pourquoi pas Faux : le dihydrogène est plus léger, mais le volume molaire ne dépend pas de la masse des molécules.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Le volume molaire est le même pour tous les gaz."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Volume molaire et quantité de matière d'un gaz",
+              "statement": "Tu relies le volume d'un gaz à sa quantité de matière avec la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle est la valeur du volume molaire d'un gaz dans les conditions normales (0 °C, pression normale) ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Relever : on cherche V_m aux conditions normales. Étape 2 — Écrire : V_m = V / n, donc un volume par mole, en L/mol. Étape 3 — Calculer : une mole de gaz occupe 22,4 L. Conclure : V_m = 22,4 L/mol. Pourquoi pas 24 L/mol : cette valeur est celle d'une température de 20 °C, que l'énoncé doit alors indiquer ; elle n'est pas celle de 0 °C.",
+                  "answers": [
+                    {
+                      "content": "22,4 L/mol",
+                      "correct": true
+                    },
+                    {
+                      "content": "22,4 g/mol",
+                      "correct": false
+                    },
+                    {
+                      "content": "24 L/mol",
+                      "correct": false
+                    },
+                    {
+                      "content": "2,24 L/mol",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle quantité de matière contiennent 44,8 L d'un gaz dans les conditions normales (V_m = 22,4 L/mol) ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever : V = 44,8 L (en litres) et V_m = 22,4 L/mol. Étape 2 — Écrire : n = V / V_m. Étape 3 — Calculer : n = 44,8 / 22,4 = 2 mol. Pourquoi pas 0,5 mol : c'est 22,4 / 44,8, le quotient inversé.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Un flacon contient 560 mL de gaz dans les conditions normales (V_m = 22,4 L/mol). Quelle quantité de matière est-ce ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever : V = 560 mL = 0,56 L et V_m = 22,4 L/mol. Étape 2 — Écrire : n = V / V_m avec V en litres. Étape 3 — Calculer : n = 0,56 / 22,4 = 0,025 mol. Pourquoi pas 25 mol : on a divisé 560 mL par 22,4 sans convertir en litres.",
+                  "answers": [
+                    {
+                      "content": "0,025",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Quel volume occupent 0,5 mol de dioxygène dans les conditions normales (V_m = 22,4 L/mol) ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever : n = 0,5 mol et V_m = 22,4 L/mol. Étape 2 — Écrire : V = n × V_m. Étape 3 — Calculer : V = 0,5 × 22,4 = 11,2 L. Pourquoi pas 44,8 L : c'est 22,4 / 0,5, une division au lieu d'une multiplication.",
+                  "answers": [
+                    {
+                      "content": "11,2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "L"
+                },
+                {
+                  "content": "Un gaz occupe 250 mL à une température où V_m = 25 L/mol. Quelle quantité de matière contient-il ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Relever : V = 250 mL = 0,25 L et V_m = 25 L/mol. Étape 2 — Écrire : n = V / V_m avec V en litres. Étape 3 — Calculer : n = 0,25 / 25 = 0,01 mol. Pourquoi pas 10 mol : c'est 250 / 25, sans conversion de mL en L ; et pas 6,25 mol, qui multiplie 0,25 par 25.",
+                  "answers": [
+                    {
+                      "content": "0,01 mol",
+                      "correct": true
+                    },
+                    {
+                      "content": "10 mol",
+                      "correct": false
+                    },
+                    {
+                      "content": "100 mol",
+                      "correct": false
+                    },
+                    {
+                      "content": "6,25 mol",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Convertis V en litres, repère V_m, puis utilise n = V / V_m ou V = n × V_m."
+            },
+            {
+              "title": "Gaz de la cuisine, de l'air et du laboratoire",
+              "statement": "Dans cet exercice, tu utilises le volume molaire avec le gaz de cuisine, le dioxygène de l'air et les gaz du laboratoire du lycée.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Un réservoir contient 2,24 m³ de gaz dans les conditions normales (V_m = 22,4 L/mol). Quelle quantité de matière est-ce ? (1 m³ = 1000 L)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever : V = 2,24 m³ = 2240 L et V_m = 22,4 L/mol. Étape 2 — Écrire : n = V / V_m. Étape 3 — Calculer : n = 2240 / 22,4 = 100 mol. Pourquoi pas 0,1 mol : c'est 2,24 / 22,4, sans convertir les m³ en litres.",
+                  "answers": [
+                    {
+                      "content": "100",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "À 0 °C et à pression normale, 1 mol de dioxygène occupe un volume différent de 1 mol de dioxyde de carbone.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Relever : mêmes conditions, n = 1 mol pour chaque gaz. Étape 2 — Écrire : V = n × V_m. Étape 3 — Calculer : V = 1 × 22,4 = 22,4 L pour les deux gaz. Pourquoi pas Vrai : le dioxyde de carbone est plus lourd, mais le volume molaire est le même pour tous les gaz.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans les conditions normales (V_m = 22,4 L/mol), 3 mol de gaz occupent ___ L.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Relever : n = 3 mol et V_m = 22,4 L/mol. Étape 2 — Écrire : V = n × V_m. Étape 3 — Calculer : V = 3 × 22,4 = 67,2 L. Pourquoi pas 7,47 L : c'est 22,4 / 3, une division au lieu d'une multiplication.",
+                  "answers": [
+                    {
+                      "content": "67,2",
+                      "correct": true
+                    },
+                    {
+                      "content": "67.2",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Avec V_m en L/mol, le volume V doit être exprimé en ___ pour obtenir n en mol.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Relever : V_m s'exprime en L/mol. Étape 2 — Écrire : n = V / V_m ; le litre du numérateur doit se simplifier avec celui du dénominateur. Étape 3 — Calculer : n (mol) = V (L) / V_m (L/mol). Pourquoi pas millilitres : il faudrait alors un V_m en mL/mol, soit 22 400 mL/mol.",
+                  "answers": [
+                    {
+                      "content": "litres",
+                      "correct": true
+                    },
+                    {
+                      "content": "millilitres",
+                      "correct": false
+                    },
+                    {
+                      "content": "mètres cubes",
+                      "correct": false
+                    },
+                    {
+                      "content": "centimètres cubes",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque volume de gaz (conditions normales, V_m = 22,4 L/mol) à sa quantité de matière.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Relever : chaque volume est en litres, V_m = 22,4 L/mol. Étape 2 — Écrire : n = V / V_m. Étape 3 — Calculer : 11,2 / 22,4 = 0,5 ; 22,4 / 22,4 = 1 ; 44,8 / 22,4 = 2 ; 2,24 / 22,4 = 0,1 mol. Pourquoi pas une paire décalée : 2,24 L ne vaut que 0,1 mol, pas 1 mol ; un décalage de virgule change la quantité d'un facteur 10.",
+                  "answers": [
+                    {
+                      "content": "11,2 L",
+                      "match": "0,5 mol"
+                    },
+                    {
+                      "content": "22,4 L",
+                      "match": "1 mol"
+                    },
+                    {
+                      "content": "44,8 L",
+                      "match": "2 mol"
+                    },
+                    {
+                      "content": "2,24 L",
+                      "match": "0,1 mol"
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour lesquels de ces corps peut-on utiliser n = V / V_m avec V_m = 22,4 L/mol ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Relever : on vérifie que le corps est un gaz. Étape 2 — Écrire : n = V / V_m ne vaut que pour un gaz. Étape 3 — Calculer : butane gazeux et dioxygène sont des gaz ; l'eau liquide et le sucre solide ne le sont pas. Pourquoi pas l'eau liquide : 1 mol d'eau liquide (18 g) n'occupe qu'environ 18 mL, pas 22,4 L.",
+                  "answers": [
+                    {
+                      "content": "Le butane gazeux sorti d'une bouteille",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le dioxygène contenu dans un ballon",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'eau liquide d'un verre",
+                      "correct": false
+                    },
+                    {
+                      "content": "Un morceau de sucre solide",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Convertis V en litres, repère V_m, puis utilise n = V / V_m ou V = n × V_m."
+            }
+          ]
+        },
+        {
+          "name": "Passer d'une grandeur à l'autre",
+          "remember": "La quantité de matière $n$ est le **pont** entre les grandeurs : $n = \\frac{m}{M} = \\frac{N}{N_A} = \\frac{V}{V_m}$ (le volume $V$ ne concerne que les **gaz**). Pour passer d'une grandeur à une autre, on **passe toujours par $n$** : de la masse au nombre d'entités ($m \\to n \\to N$), du volume à la masse ($V \\to n \\to m$), etc. On ne passe jamais directement de $m$ à $N$ ni de $V$ à $m$.",
+          "method": [
+            "Identifier la grandeur donnée et la grandeur cherchée parmi la masse $m$, le nombre d'entités $N$ et le volume de gaz $V$.",
+            "Calculer la quantité de matière $n$ à partir de la donnée : $n = \\frac{m}{M}$, $n = \\frac{N}{N_A}$ ou $n = \\frac{V}{V_m}$.",
+            "Passer de $n$ à la grandeur cherchée : $m = n \\times M$, $N = n \\times N_A$ ou $V = n \\times V_m$.",
+            "Conclure avec l'unité de la grandeur cherchée (g, nombre d'entités ou L)."
+          ],
+          "example": {
+            "statement": "Un briquet contient 5,8 g de butane $C_4H_{10}$. Données : $M(C_4H_{10}) = 58$ g/mol et $N_A = 6{,}02 \\times 10^{23}$ mol⁻¹. Combien de molécules de butane contient-il ?",
+            "steps": [
+              "Identifier : la donnée est la masse $m = 5{,}8$ g ; la grandeur cherchée est le nombre de molécules $N$.",
+              "Calculer : $n = \\frac{m}{M} = \\frac{5{,}8}{58} = 0{,}1$ mol.",
+              "Passer : $N = n \\times N_A$, donc $N = 0{,}1 \\times 6{,}02 \\times 10^{23}$, soit $N = 6{,}02 \\times 10^{22}$.",
+              "Conclure : le briquet contient $6{,}02 \\times 10^{22}$ molécules de butane."
+            ]
+          },
+          "pitfall": "Ne multiplie jamais une masse directement par $N_A$. Contre-exemple : pour 5,8 g de butane, écrire $N = 5{,}8 \\times 6{,}02 \\times 10^{23}$, soit $N \\approx 3{,}49 \\times 10^{24}$, est faux : c'est 58 fois trop grand. Il faut passer par $n = \\frac{5{,}8}{58} = 0{,}1$ mol, puis $N = 0{,}1 \\times 6{,}02 \\times 10^{23}$, soit $N = 6{,}02 \\times 10^{22}$.",
+          "figure": "passage-grandeurs",
+          "practice": {
+            "statement": "Tu t'entraînes à enchaîner deux relations en passant par la quantité de matière.",
+            "questions": [
+              {
+                "content": "Quelle est la masse de 11,2 L de dioxygène O₂ dans les conditions normales ? Données : V_m = 22,4 L/mol et M(O₂) = 32 g/mol.",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Identifier : donnée V = 11,2 L, cherchée m. Étape 2 — Calculer : n = V / V_m = 11,2 / 22,4 = 0,5 mol. Étape 3 — Passer : m = n × M = 0,5 × 32 = 16 g. Étape 4 — Conclure : 11,2 L de dioxygène pèsent 16 g. Pourquoi pas 358,4 g : c'est 11,2 × 32, qui multiplie le volume par la masse molaire sans passer par n.",
+                "answers": [
+                  {
+                    "content": "16",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "unit": "g",
+                "hint": "V → n → m."
+              },
+              {
+                "content": "Combien de molécules contiennent 9 g d'eau ? Données : M(H₂O) = 18 g/mol et N_A = 6,02×10²³ mol⁻¹.",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Identifier : donnée m = 9 g, cherchée N. Étape 2 — Calculer : n = m / M = 9 / 18 = 0,5 mol. Étape 3 — Passer : N = n × N_A = 0,5 × 6,02×10²³ = 3,01×10²³. Étape 4 — Conclure : 3,01×10²³ molécules. Pourquoi pas 5,418×10²⁴ : c'est 9 × 6,02×10²³, une masse multipliée directement par N_A.",
+                "answers": [
+                  {
+                    "content": "3,01×10²³",
+                    "correct": true
+                  },
+                  {
+                    "content": "3,01×10²⁴",
+                    "correct": false
+                  },
+                  {
+                    "content": "5,418×10²⁴",
+                    "correct": false
+                  },
+                  {
+                    "content": "6,02×10²³",
+                    "correct": false
+                  }
+                ],
+                "hint": "m → n → N."
+              },
+              {
+                "content": "Le volume occupé par 4,4 g de dioxyde de carbone (M = 44 g/mol, V_m = 22,4 L/mol) est de ___ L.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Identifier : donnée m = 4,4 g, cherché V. Étape 2 — Calculer : n = m / M = 4,4 / 44 = 0,1 mol. Étape 3 — Passer : V = n × V_m = 0,1 × 22,4 = 2,24 L. Étape 4 — Conclure : 2,24 L. Pourquoi pas 98,56 L : c'est 4,4 × 22,4, sans passer par n.",
+                "answers": [
+                  {
+                    "content": "2,24",
+                    "correct": true
+                  },
+                  {
+                    "content": "2.24",
+                    "correct": true
+                  }
+                ],
+                "hint": "m → n → V."
+              },
+              {
+                "content": "Remets dans l'ordre les étapes pour trouver le volume d'un gaz à partir de sa masse.",
+                "question_type": "ordering",
+                "explanation": "Étape 1 — Identifier : on nomme d'abord la donnée et l'inconnue. Étape 2 — Calculer : puis n = m / M. Étape 3 — Passer : ensuite V = n × V_m. Étape 4 — Conclure : enfin on écrit le résultat en litres. Pourquoi pas V = n × V_m en premier : n n'est pas encore connu, il vient de la masse.",
+                "answers": [
+                  {
+                    "content": "Identifier la masse donnée et le volume cherché."
+                  },
+                  {
+                    "content": "Calculer la quantité de matière avec n = m / M."
+                  },
+                  {
+                    "content": "Passer de n au volume avec V = n × V_m."
+                  },
+                  {
+                    "content": "Conclure avec l'unité, le litre."
+                  }
+                ],
+                "hint": "Ordre : donnée, n, grandeur cherchée, unité."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Enchaîner les relations avec le butane de la cuisine",
+              "statement": "Tu passes d'une grandeur à une autre pour une bouteille de gaz butane, en suivant la méthode de la fiche. Une bouteille de ménage contient 2,9 kg de butane C₄H₁₀ (M = 58 g/mol).",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle quantité de matière de butane contient une bouteille de 2,9 kg de butane C₄H₁₀ ? Donnée : M(C₄H₁₀) = 58 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée m = 2,9 kg = 2900 g, cherchée n. Étape 2 — Calculer : n = m / M = 2900 / 58 = 50 mol. Étape 3 — Passer : la grandeur cherchée est n, il n'y a rien à convertir de plus. Étape 4 — Conclure : la bouteille contient 50 mol de butane. Pourquoi pas 0,05 mol : c'est 2,9 / 58, sans convertir les kilogrammes en grammes.",
+                  "answers": [
+                    {
+                      "content": "50",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Une bouteille contient 50 mol de butane. Combien de molécules cela fait-il ? Donne le nombre a tel que N = a × 10²⁵. (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 50 mol, cherché N. Étape 2 — Calculer : n est déjà connue (50 mol). Étape 3 — Passer : N = n × N_A = 50 × 6,02×10²³ = 301×10²³ = 3,01×10²⁵. Étape 4 — Conclure : a = 3,01. Pourquoi pas 30,1 : c'est le coefficient devant 10²⁴ ; avec 10²⁵ il faut 3,01.",
+                  "answers": [
+                    {
+                      "content": "3,01",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Si les 50 mol de butane d'une bouteille étaient libérés à l'état gazeux, quel volume occuperaient-ils à 20 °C, où V_m = 24 L/mol ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 50 mol, cherché V. Étape 2 — Calculer : n est déjà connue (50 mol). Étape 3 — Passer : V = n × V_m = 50 × 24 = 1200 L. Étape 4 — Conclure : 1200 L de gaz. Pourquoi pas 22,4 × 50 = 1120 L : l'énoncé donne V_m = 24 L/mol à 20 °C, on utilise cette valeur.",
+                  "answers": [
+                    {
+                      "content": "1200",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "L"
+                },
+                {
+                  "content": "Quelle est la masse de 5,6 L de diazote N₂ dans les conditions normales ? Données : V_m = 22,4 L/mol et M(N₂) = 28 g/mol.",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : donnée V = 5,6 L, cherchée m. Étape 2 — Calculer : n = V / V_m = 5,6 / 22,4 = 0,25 mol. Étape 3 — Passer : m = n × M = 0,25 × 28 = 7 g. Étape 4 — Conclure : 5,6 L de diazote pèsent 7 g. Pourquoi pas 156,8 g : c'est 5,6 × 28, qui multiplie le volume par la masse molaire sans passer par n.",
+                  "answers": [
+                    {
+                      "content": "7 g",
+                      "correct": true
+                    },
+                    {
+                      "content": "5,6 g",
+                      "correct": false
+                    },
+                    {
+                      "content": "28 g",
+                      "correct": false
+                    },
+                    {
+                      "content": "156,8 g",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle masse de dioxyde de carbone contient 6,02×10²² molécules ? Données : M(CO₂) = 44 g/mol et N_A = 6,02×10²³ mol⁻¹.",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : donnée N = 6,02×10²² molécules, cherchée m. Étape 2 — Calculer : n = N / N_A = 6,02×10²² / 6,02×10²³ = 0,1 mol. Étape 3 — Passer : m = n × M = 0,1 × 44 = 4,4 g. Étape 4 — Conclure : 4,4 g. Pourquoi pas 2,65×10²⁴ g : c'est N × M, un nombre de molécules multiplié directement par la masse molaire.",
+                  "answers": [
+                    {
+                      "content": "4,4 g",
+                      "correct": true
+                    },
+                    {
+                      "content": "44 g",
+                      "correct": false
+                    },
+                    {
+                      "content": "440 g",
+                      "correct": false
+                    },
+                    {
+                      "content": "2,65×10²⁴ g",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Identifie la donnée et l'inconnue, calcule n, puis passe de n à la grandeur cherchée."
+            },
+            {
+              "title": "À la pharmacie, à la cuisine et au laboratoire",
+              "statement": "Dans cet exercice, tu enchaînes les relations avec un comprimé de vitamine C (acide ascorbique C₆H₈O₆, M = 176 g/mol), du sel et des gaz du laboratoire.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une boîte contient 17,6 g d'acide ascorbique C₆H₈O₆ (M = 176 g/mol). Quelle quantité de matière est-ce ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée m = 17,6 g, cherchée n. Étape 2 — Calculer : n = m / M = 17,6 / 176 = 0,1 mol. Étape 3 — Passer : la grandeur cherchée est n, rien d'autre à calculer. Étape 4 — Conclure : 0,1 mol. Pourquoi pas 10 mol : c'est 176 / 17,6, le quotient inversé.",
+                  "answers": [
+                    {
+                      "content": "0,1",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Une quantité de 0,1 mol d'acide ascorbique contient N = ___ × 10²² molécules (N_A = 6,02×10²³ mol⁻¹).",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Identifier : donnée n = 0,1 mol, cherché N. Étape 2 — Calculer : n = 0,1 mol est connue. Étape 3 — Passer : N = n × N_A = 0,1 × 6,02×10²³ = 6,02×10²². Étape 4 — Conclure : le coefficient devant 10²² est 6,02. Pourquoi pas 60,2 : c'est le coefficient devant 10²¹ ; devant 10²² on écrit 6,02.",
+                  "answers": [
+                    {
+                      "content": "6,02",
+                      "correct": true
+                    },
+                    {
+                      "content": "6.02",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour trouver la masse de 3,01×10²³ entités NaCl (M(NaCl) = 58,5 g/mol).",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Identifier : on nomme la donnée N et l'inconnue m. Étape 2 — Calculer : n = N / N_A = 0,5 mol. Étape 3 — Passer : m = n × M = 0,5 × 58,5 = 29,25 g. Étape 4 — Conclure : on écrit la masse en grammes. Pourquoi pas m = n × M en premier : on ne connaît pas encore n, il vient du nombre d'entités.",
+                  "answers": [
+                    {
+                      "content": "Identifier le nombre d'entités donné et la masse cherchée."
+                    },
+                    {
+                      "content": "Calculer la quantité de matière avec n = N / N_A."
+                    },
+                    {
+                      "content": "Passer de n à la masse avec m = n × M."
+                    },
+                    {
+                      "content": "Conclure avec l'unité, le gramme."
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque grandeur à la relation qui donne n (ou m) à partir d'elle.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Identifier : on repère la grandeur donnée dans chaque cas. Étape 2 — Calculer : pour trouver n, on divise par la grandeur molaire correspondante : M, N_A ou V_m. Étape 3 — Passer : de n vers m, on multiplie par M. Étape 4 — Conclure : chaque grandeur a sa relation propre. Pourquoi pas n = m × M : l'unité serait g²/mol, alors que n s'exprime en mol.",
+                  "answers": [
+                    {
+                      "content": "Masse m (g)",
+                      "match": "n = m / M"
+                    },
+                    {
+                      "content": "Nombre d'entités N",
+                      "match": "n = N / N_A"
+                    },
+                    {
+                      "content": "Volume de gaz V (L)",
+                      "match": "n = V / V_m"
+                    },
+                    {
+                      "content": "Quantité de matière n (mol), pour obtenir la masse",
+                      "match": "m = n × M"
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour passer d'un volume de gaz à une masse, on multiplie directement le volume par la masse molaire.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : on part de V et on cherche m. Étape 2 — Calculer : n = V / V_m d'abord. Étape 3 — Passer : m = n × M ensuite. Étape 4 — Conclure : on passe par n, jamais en une seule multiplication V × M. Pourquoi pas Vrai : V × M a pour unité L·g/mol, qui n'est pas une masse en g ; il faut diviser par V_m.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel volume occupent 8,8 g de dioxyde de carbone (M = 44 g/mol) dans les conditions normales ? Donnée : V_m = 22,4 L/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée m = 8,8 g, cherché V. Étape 2 — Calculer : n = m / M = 8,8 / 44 = 0,2 mol. Étape 3 — Passer : V = n × V_m = 0,2 × 22,4 = 4,48 L. Étape 4 — Conclure : 4,48 L. Pourquoi pas 197,12 L : c'est 8,8 × 22,4, sans passer par n.",
+                  "answers": [
+                    {
+                      "content": "4,48",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "L"
+                }
+              ],
+              "hint": "Identifie la donnée et l'inconnue, calcule n, puis passe de n à la grandeur cherchée."
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Le sel et le sucre de la sauce",
+          "statement": "Pour préparer une sauce, Maman utilise 11,7 g de sel de cuisine (chlorure de sodium NaCl) et 17,1 g de sucre (saccharose C₁₂H₂₂O₁₁). Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol, M(C) = 12 g/mol, M(H) = 1 g/mol, M(O) = 16 g/mol ; N_A = 6,02×10²³ mol⁻¹.",
+          "exercise_type": "fixation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Calcule la masse molaire du sel NaCl. Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol.",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Écrire : NaCl compte 1 Na et 1 Cl. Étape 2 — Lire : M(Na) = 23 g/mol et M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : cette valeur servira dans n = m / M. Pourquoi pas 23 g/mol : la masse molaire d'un composé additionne tous ses atomes, pas seulement le premier.",
+              "answers": [
+                {
+                  "content": "58,5",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "g/mol"
+            },
+            {
+              "content": "Quelle quantité de matière contiennent 11,7 g de sel NaCl ? Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol.",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Écrire : NaCl compte 1 Na et 1 Cl. Étape 2 — Lire : M(Na) = 23 g/mol et M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : n = m / M = 11,7 / 58,5 = 0,2 mol. Pourquoi pas 5 mol : c'est 58,5 / 11,7, le quotient inversé.",
+              "answers": [
+                {
+                  "content": "0,2",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "mol"
+            },
+            {
+              "content": "Combien d'entités NaCl contiennent 0,2 mol de sel ? Donne le nombre a tel que N = a × 10²² entités. (N_A = 6,02×10²³ mol⁻¹)",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Identifier : donnée n = 0,2 mol, cherché N. Étape 2 — Calculer : n = 0,2 mol est connue. Étape 3 — Passer : N = n × N_A = 0,2 × 6,02×10²³ = 1,204×10²³ = 12,04×10²². Étape 4 — Conclure : a = 12,04. Pourquoi pas 1,204 : ce coefficient va avec 10²³ ; ici la puissance imposée est 10²².",
+              "answers": [
+                {
+                  "content": "12,04",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Quelle quantité de matière contiennent 17,1 g de sucre C₁₂H₂₂O₁₁ ? Données : M(C) = 12 g/mol, M(H) = 1 g/mol, M(O) = 16 g/mol.",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Écrire : C₁₂H₂₂O₁₁ compte 12 C, 22 H et 11 O. Étape 2 — Lire : M(C) = 12, M(H) = 1, M(O) = 16 g/mol. Étape 3 — Calculer : M = 144 + 22 + 176 = 342 g/mol. Étape 4 — Appliquer : n = 17,1 / 342 = 0,05 mol. Pourquoi pas 0,5 mol : c'est 171 / 342, avec une virgule décalée dans 17,1.",
+              "answers": [
+                {
+                  "content": "0,05",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "mol"
+            },
+            {
+              "content": "Maman a mis 11,7 g de sel NaCl (0,2 mol) et 17,1 g de sucre C₁₂H₂₂O₁₁ (0,05 mol). Quel ingrédient contient le plus d'entités ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Identifier : on compare des nombres d'entités, donc des quantités de matière. Étape 2 — Calculer : n(sel) = 0,2 mol et n(sucre) = 0,05 mol. Étape 3 — Passer : N est proportionnel à n, donc le sel en contient 4 fois plus. Étape 4 — Conclure : le sel contient le plus d'entités. Pourquoi pas le sucre : sa masse est plus grande parce que ses molécules sont bien plus lourdes (342 g/mol contre 58,5 g/mol), pas parce qu'elles sont plus nombreuses.",
+              "answers": [
+                {
+                  "content": "Le sel, malgré sa masse plus petite",
+                  "correct": true
+                },
+                {
+                  "content": "Le sucre, parce que sa masse est plus grande",
+                  "correct": false
+                },
+                {
+                  "content": "Les deux, autant d'entités",
+                  "correct": false
+                },
+                {
+                  "content": "On ne peut pas comparer des entités différentes",
+                  "correct": false
+                }
+              ]
+            }
+          ],
+          "hint": "Calcule M, puis n = m / M pour chaque ingrédient."
+        },
+        {
+          "title": "La bouteille de gaz butane du ménage",
+          "statement": "Une bouteille de gaz de ménage contient 5,8 kg de butane C₄H₁₀. Données : M(C) = 12 g/mol, M(H) = 1 g/mol ; N_A = 6,02×10²³ mol⁻¹ ; dans les conditions de l'exercice, on prend V_m = 24 L/mol.",
+          "exercise_type": "fixation",
+          "figure": "butane-formule",
+          "questions": [
+            {
+              "content": "Calcule la masse molaire du butane C₄H₁₀. Données : M(C) = 12 g/mol, M(H) = 1 g/mol.",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Écrire : C₄H₁₀ compte 4 atomes C et 10 atomes H. Étape 2 — Lire : M(C) = 12 g/mol et M(H) = 1 g/mol. Étape 3 — Calculer : M = 4 × 12 + 10 × 1 = 58 g/mol. Étape 4 — Appliquer : cette valeur sert à passer de m à n. Pourquoi pas 22 g/mol : c'est 12 + 10, les indices du carbone sont oubliés.",
+              "answers": [
+                {
+                  "content": "58",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "g/mol"
+            },
+            {
+              "content": "Quelle quantité de matière de butane contient la bouteille de 5,8 kg (M = 58 g/mol) ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Identifier : donnée m = 5,8 kg = 5800 g, cherchée n. Étape 2 — Calculer : n = m / M = 5800 / 58 = 100 mol. Étape 3 — Passer : la grandeur cherchée est n, rien à ajouter. Étape 4 — Conclure : la bouteille contient 100 mol de butane. Pourquoi pas 0,1 mol : c'est 5,8 / 58, sans convertir les kilogrammes en grammes.",
+              "answers": [
+                {
+                  "content": "100",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "mol"
+            },
+            {
+              "content": "Une bouteille contient 100 mol de butane, soit N = ___ × 10²⁵ molécules (N_A = 6,02×10²³ mol⁻¹).",
+              "question_type": "fill_blank",
+              "explanation": "Étape 1 — Identifier : donnée n = 100 mol, cherché N. Étape 2 — Calculer : n = 100 mol est connue. Étape 3 — Passer : N = 100 × 6,02×10²³ = 602×10²³ = 6,02×10²⁵. Étape 4 — Conclure : le coefficient devant 10²⁵ est 6,02. Pourquoi pas 60,2 : c'est le coefficient devant 10²⁴ ; devant 10²⁵ il faut 6,02.",
+              "answers": [
+                {
+                  "content": "6,02",
+                  "correct": true
+                },
+                {
+                  "content": "6.02",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Si les 100 mol de butane étaient libérés à l'état gazeux, quel volume occuperaient-ils avec V_m = 24 L/mol ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Identifier : donnée n = 100 mol, cherché V. Étape 2 — Calculer : n = 100 mol est connue. Étape 3 — Passer : V = n × V_m = 100 × 24 = 2400 L. Étape 4 — Conclure : 2400 L de gaz. Pourquoi pas 2240 L : c'est 100 × 22,4, la valeur des conditions normales, alors que l'énoncé donne V_m = 24 L/mol.",
+              "answers": [
+                {
+                  "content": "2400 L",
+                  "correct": true
+                },
+                {
+                  "content": "2240 L",
+                  "correct": false
+                },
+                {
+                  "content": "240 L",
+                  "correct": false
+                },
+                {
+                  "content": "139 200 L",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Une famille brûle 2 mol de butane pour préparer un repas. Quelle masse de butane est-ce ? (M = 58 g/mol)",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Identifier : donnée n = 2 mol, cherchée m. Étape 2 — Calculer : n = 2 mol est connue. Étape 3 — Passer : m = n × M = 2 × 58 = 116 g. Étape 4 — Conclure : 116 g de butane. Pourquoi pas 29 g : c'est 58 / 2, une division au lieu d'une multiplication.",
+              "answers": [
+                {
+                  "content": "116",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "g"
+            }
+          ],
+          "hint": "Convertis les kg en g, calcule n, puis passe à N ou à V."
+        },
+        {
+          "title": "Le comprimé antiacide du pharmacien",
+          "statement": "Un pharmacien vend des comprimés antiacides. Chaque comprimé contient 0,5 g de carbonate de calcium CaCO₃ ; la boîte compte 20 comprimés. Données : M(Ca) = 40 g/mol, M(C) = 12 g/mol, M(O) = 16 g/mol ; N_A = 6,02×10²³ mol⁻¹.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Calcule la masse molaire du carbonate de calcium CaCO₃. Données : M(Ca) = 40 g/mol, M(C) = 12 g/mol, M(O) = 16 g/mol.",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Écrire : CaCO₃ compte 1 Ca, 1 C et 3 O. Étape 2 — Lire : M(Ca) = 40, M(C) = 12, M(O) = 16 g/mol. Étape 3 — Calculer : M = 40 + 12 + 3 × 16 = 100 g/mol. Étape 4 — Appliquer : cette valeur sert dans n = m / M. Pourquoi pas 68 g/mol : c'est 40 + 12 + 16, avec un seul atome d'oxygène au lieu de trois.",
+              "answers": [
+                {
+                  "content": "100",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "g/mol"
+            },
+            {
+              "content": "Quelle quantité de matière de CaCO₃ contient un comprimé de 0,5 g ? (M = 100 g/mol)",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Identifier : donnée m = 0,5 g, cherchée n. Étape 2 — Calculer : n = m / M = 0,5 / 100 = 0,005 mol. Étape 3 — Passer : la grandeur cherchée est n. Étape 4 — Conclure : un comprimé contient 0,005 mol de CaCO₃. Pourquoi pas 50 mol : c'est 100 / 0,5, le quotient inversé.",
+              "answers": [
+                {
+                  "content": "0,005",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "mol"
+            },
+            {
+              "content": "Quelle quantité de matière de CaCO₃ contient la boîte de 20 comprimés de 0,5 g ? (M = 100 g/mol)",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Identifier : la masse totale est m = 20 × 0,5 = 10 g ; on cherche n. Étape 2 — Calculer : n = m / M = 10 / 100 = 0,1 mol. Étape 3 — Passer : rien d'autre à calculer. Étape 4 — Conclure : la boîte contient 0,1 mol de CaCO₃. Pourquoi pas 0,005 mol : c'est la quantité d'un seul comprimé, pas celle de la boîte entière.",
+              "answers": [
+                {
+                  "content": "0,1",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "mol"
+            },
+            {
+              "content": "Combien d'entités de formule CaCO₃ contient un comprimé de 0,005 mol ? (N_A = 6,02×10²³ mol⁻¹)",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Identifier : donnée n = 0,005 mol, cherché N. Étape 2 — Calculer : n = 0,005 mol est connue. Étape 3 — Passer : N = n × N_A = 0,005 × 6,02×10²³ = 3,01×10²¹. Étape 4 — Conclure : 3,01×10²¹ entités CaCO₃. Pourquoi pas 1,204×10²⁶ : c'est N_A / n = 6,02×10²³ / 0,005, une division au lieu d'une multiplication ; N = n × N_A = 0,005 × 6,02×10²³ donne bien 3,01×10²¹.",
+              "answers": [
+                {
+                  "content": "3,01×10²¹",
+                  "correct": true
+                },
+                {
+                  "content": "1,204×10²⁶",
+                  "correct": false
+                },
+                {
+                  "content": "3,01×10²⁰",
+                  "correct": false
+                },
+                {
+                  "content": "3,01×10²³",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Rédige la méthode complète pour trouver le nombre d'entités CaCO₃ contenues dans toute la boîte de 20 comprimés de 0,5 g.",
+              "question_type": "written",
+              "points": 3,
+              "criteria": [
+                "Calcule la masse totale 20 × 0,5 = 10 g",
+                "Calcule n = m / M = 10 / 100 = 0,1 mol",
+                "Calcule N = n × N_A = 6,02×10²² entités",
+                "Conclut avec l'unité et passe bien par n"
+              ],
+              "explanation": "Corrigé modèle : Étape 1 — Identifier : la masse totale est 20 × 0,5 = 10 g et on cherche N. Étape 2 — Calculer : n = m / M = 10 / 100 = 0,1 mol. Étape 3 — Passer : N = n × N_A = 0,1 × 6,02×10²³ = 6,02×10²² entités. Étape 4 — Conclure : la boîte contient 6,02×10²² entités de formule CaCO₃. On passe par n : multiplier directement 10 g par N_A serait faux. Barème sur 3 : masse totale et n (1 point), N (1 point), conclusion avec unité (1 point).",
+              "answers": [],
+              "starter": "La masse totale est ..."
+            }
+          ],
+          "hint": "Passe toujours par la quantité de matière n."
+        },
+        {
+          "title": "Trois échantillons au laboratoire du lycée",
+          "statement": "Au laboratoire du lycée, le professeur prépare trois échantillons : A, 4,48 L de dioxyde de carbone CO₂ dans les conditions normales (V_m = 22,4 L/mol) ; B, 12 g de soude NaOH ; C, 3,01×10²² molécules d'eau H₂O. Données : M(C) = 12 g/mol, M(O) = 16 g/mol, M(Na) = 23 g/mol, M(H) = 1 g/mol ; N_A = 6,02×10²³ mol⁻¹.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "L'échantillon A est un volume de 4,48 L de dioxyde de carbone dans les conditions normales (V_m = 22,4 L/mol). Quelle quantité de matière contient-il ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Relever : V = 4,48 L et V_m = 22,4 L/mol. Étape 2 — Écrire : n = V / V_m. Étape 3 — Calculer : n = 4,48 / 22,4 = 0,2 mol. Pourquoi pas 5 mol : c'est 22,4 / 4,48, le quotient inversé.",
+              "answers": [
+                {
+                  "content": "0,2",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "mol"
+            },
+            {
+              "content": "L'échantillon B est une masse de 12 g de soude NaOH. Quelle quantité de matière contient-il ? Données : M(Na) = 23 g/mol, M(O) = 16 g/mol, M(H) = 1 g/mol.",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Écrire : NaOH compte 1 Na, 1 O et 1 H. Étape 2 — Lire : M(Na) = 23, M(O) = 16, M(H) = 1 g/mol. Étape 3 — Calculer : M = 23 + 16 + 1 = 40 g/mol. Étape 4 — Appliquer : n = 12 / 40 = 0,3 mol. Pourquoi pas 3,3 mol : c'est 40 / 12, le quotient inversé de n = m / M.",
+              "answers": [
+                {
+                  "content": "0,3",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "mol"
+            },
+            {
+              "content": "L'échantillon C est formé de 3,01×10²² molécules d'eau. Quelle quantité de matière contient-il ? (N_A = 6,02×10²³ mol⁻¹)",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Identifier : donnée N = 3,01×10²² molécules, cherchée n. Étape 2 — Écrire : n = N / N_A. Étape 3 — Calculer : n = 3,01×10²² / 6,02×10²³ = 0,5 × 10⁻¹ = 0,05 mol. Pourquoi pas 0,5 mol : 10²² est dix fois plus petit que 10²³, le résultat 0,5 doit être divisé par 10.",
+              "answers": [
+                {
+                  "content": "0,05",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0,
+              "unit": "mol"
+            },
+            {
+              "content": "Les échantillons ont pour quantités de matière : A 0,2 mol, B 0,3 mol, C 0,05 mol. Lequel contient le plus d'entités ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Identifier : le nombre d'entités se compare par la quantité de matière. Étape 2 — Calculer : 0,3 mol > 0,2 mol > 0,05 mol. Étape 3 — Passer : N = n × N_A, donc N est le plus grand quand n est le plus grand. Étape 4 — Conclure : l'échantillon B. Pourquoi pas C, au motif que ses molécules sont les plus légères : la légèreté des molécules n'a aucun lien avec leur nombre ; seule la quantité de matière compte.",
+              "answers": [
+                {
+                  "content": "B, la soude",
+                  "correct": true
+                },
+                {
+                  "content": "A, parce que c'est le seul gaz",
+                  "correct": false
+                },
+                {
+                  "content": "C, car ses molécules sont les plus légères",
+                  "correct": false
+                },
+                {
+                  "content": "Ils contiennent autant d'entités",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Classe les échantillons du moins lourd au plus lourd : A (0,2 mol de CO₂, M = 44 g/mol), B (0,3 mol de NaOH, M = 40 g/mol), C (0,05 mol d'eau, M = 18 g/mol).",
+              "question_type": "ordering",
+              "explanation": "Étape 1 — Identifier : on cherche la masse de chaque échantillon. Étape 2 — Calculer : n est donnée pour A, B et C. Étape 3 — Passer : m = n × M : A 0,2 × 44 = 8,8 g ; B 0,3 × 40 = 12 g ; C 0,05 × 18 = 0,9 g. Étape 4 — Conclure : 0,9 g < 8,8 g < 12 g, soit C, A, B. Pourquoi pas A avant C : A contient plus de matière (0,2 mol) et ses molécules sont plus lourdes, il pèse donc plus que C.",
+              "answers": [
+                {
+                  "content": "Échantillon C (eau)"
+                },
+                {
+                  "content": "Échantillon A (dioxyde de carbone)"
+                },
+                {
+                  "content": "Échantillon B (soude)"
+                }
+              ]
+            },
+            {
+              "content": "Explique pourquoi 22,4 L de dioxygène et 22,4 L de dioxyde de carbone, dans les conditions normales, contiennent le même nombre de molécules mais n'ont pas la même masse. Données : V_m = 22,4 L/mol, M(O₂) = 32 g/mol, M(CO₂) = 44 g/mol.",
+              "question_type": "written",
+              "points": 3,
+              "criteria": [
+                "Calcule n = V / V_m = 1 mol pour chaque gaz",
+                "Dit que 1 mol contient N_A = 6,02×10²³ molécules",
+                "Calcule m = n × M : 32 g et 44 g",
+                "Explique que M diffère d'une espèce à l'autre"
+              ],
+              "explanation": "Corrigé modèle : Étape 1 — Relever : V = 22,4 L pour chaque gaz et V_m = 22,4 L/mol. Étape 2 — Calculer : n = V / V_m = 22,4 / 22,4 = 1 mol pour chaque gaz, donc N = 1 × 6,02×10²³ molécules pour chacun : le même nombre. Étape 3 — Passer : m = n × M donne 32 g pour le dioxygène et 44 g pour le dioxyde de carbone. Conclusion : le volume molaire est le même pour tous les gaz, mais la masse molaire dépend de l'espèce. Barème sur 3 : n et nombre de molécules (1,5 point), masses (1 point), explication (0,5 point).",
+              "answers": [],
+              "starter": "Dans les mêmes conditions ..."
+            }
+          ],
+          "hint": "Calcule la quantité de matière de chaque échantillon, puis compare."
+        }
+      ],
+      "subjects": [
+        {
+          "title": "Sujet 1 · Les savoirs de base",
+          "notions": "La mole et la constante d'Avogadro ; masse molaire atomique et moléculaire, n = m / M ; volume molaire des gaz, n = V / V_m ; passage d'une grandeur à une autre par la quantité de matière.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Un élève révise la mole et la constante d'Avogadro, N_A = 6,02×10²³ mol⁻¹.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle est l'unité de la quantité de matière ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : la quantité de matière compte des entités (atomes, molécules, ions). Étape 2 — Écrire : son unité est la mole, de symbole mol. Étape 3 — Calculer : 1 mol correspond à 6,02×10²³ entités, donc un nombre, pas une masse ni un volume. Pourquoi pas g/mol : c'est l'unité de la masse molaire, la masse d'une mole, et non celle de la quantité de matière.",
+                  "answers": [
+                    {
+                      "content": "La mole (mol)",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le gramme par mole (g/mol)",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le gramme (g)",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le litre (L)",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La constante d'Avogadro vaut 6,02×10²³ mol⁻¹ : une mole contient 6,02×10²³ entités.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : N_A donne le nombre d'entités par mole. Étape 2 — Écrire : N = n × N_A, donc pour n = 1 mol, N = N_A. Étape 3 — Calculer : N = 1 × 6,02×10²³ entités. Pourquoi pas Faux : N_A est par définition le nombre d'entités par mole, et sa valeur est 6,02×10²³ mol⁻¹.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un échantillon contient 1,806×10²⁴ atomes de cuivre. Quelle quantité de matière cela représente-t-il ? (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : l'entité est l'atome de cuivre, N = 1,806×10²⁴. Étape 2 — Écrire : n = N / N_A. Étape 3 — Calculer : n = 1,806×10²⁴ / 6,02×10²³ = 0,3 × 10 = 3 mol. Pourquoi pas 0,3 mol : on a oublié que 10²⁴ vaut 10 fois 10²³, donc le résultat 0,3 doit être multiplié par 10.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Combien de molécules contiennent 0,5 mol d'eau ? Donne le nombre a tel que N = a × 10²³ molécules. (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : n = 0,5 mol, on cherche N. Étape 2 — Écrire : N = n × N_A. Étape 3 — Calculer : N = 0,5 × 6,02×10²³ = 3,01×10²³, donc a = 3,01. Pourquoi pas 12,04 : ce nombre correspond à 2 mol (2 × 6,02), pas à 0,5 mol.",
+                  "answers": [
+                    {
+                      "content": "3,01",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pour obtenir la quantité de matière n à partir du nombre d'entités N, on calcule n = N / ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Identifier : on part de N et on cherche n. Étape 2 — Écrire : n = N / N_A, où N_A est la constante d'Avogadro. Étape 3 — Calculer : on divise N par N_A. Pourquoi pas M : la masse molaire sert à passer de la masse à n (n = m / M), pas du nombre d'entités.",
+                  "answers": [
+                    {
+                      "content": "N_A",
+                      "correct": true
+                    },
+                    {
+                      "content": "M",
+                      "correct": false
+                    },
+                    {
+                      "content": "V_m",
+                      "correct": false
+                    },
+                    {
+                      "content": "22,4",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "n = N / N_A et N = n × N_A ; compte les puissances de 10."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Un élève calcule des masses molaires à l'aide du tableau. Données : M(N) = 14 g/mol, M(H) = 1 g/mol, M(C) = 12 g/mol, M(O) = 16 g/mol.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Calcule la masse molaire de l'ammoniac NH₃. Données : M(N) = 14 g/mol, M(H) = 1 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : NH₃ compte 1 atome N et 3 atomes H. Étape 2 — Lire : M(N) = 14 g/mol et M(H) = 1 g/mol. Étape 3 — Calculer : M = 14 + 3 × 1 = 17 g/mol. Étape 4 — Appliquer : cette valeur sert dans n = m / M. Pourquoi pas 15 g/mol : c'est 14 + 1, avec un seul atome d'hydrogène au lieu de trois.",
+                  "answers": [
+                    {
+                      "content": "17",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g/mol"
+                },
+                {
+                  "content": "Calcule la masse molaire du méthane CH₄ (gaz naturel). Données : M(C) = 12 g/mol, M(H) = 1 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : CH₄ compte 1 atome C et 4 atomes H. Étape 2 — Lire : M(C) = 12 g/mol et M(H) = 1 g/mol. Étape 3 — Calculer : M = 12 + 4 × 1 = 16 g/mol. Étape 4 — Appliquer : cette valeur sert dans n = m / M. Pourquoi pas 13 g/mol : c'est 12 + 1, l'indice 4 de l'hydrogène est oublié.",
+                  "answers": [
+                    {
+                      "content": "16",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g/mol"
+                },
+                {
+                  "content": "Quelle quantité de matière contiennent 34 g d'ammoniac NH₃ ? Donnée : M(NH₃) = 17 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : NH₃ ; la masse molaire est donnée. Étape 2 — Lire : M = 17 g/mol et m = 34 g. Étape 3 — Calculer : M = 17 g/mol, déjà connue. Étape 4 — Appliquer : n = m / M = 34 / 17 = 2 mol. Pourquoi pas 0,5 mol : c'est 17 / 34, le quotient inversé.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Quelle est la masse de 0,25 mol de dioxyde de carbone CO₂ ? Donnée : M(CO₂) = 44 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : CO₂ ; la masse molaire est donnée. Étape 2 — Lire : M = 44 g/mol et n = 0,25 mol. Étape 3 — Calculer : M = 44 g/mol, déjà connue. Étape 4 — Appliquer : m = n × M = 0,25 × 44 = 11 g. Pourquoi pas 176 g : c'est 44 / 0,25, une division au lieu d'une multiplication.",
+                  "answers": [
+                    {
+                      "content": "11",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g"
+                },
+                {
+                  "content": "Quelle est la masse molaire de l'éthanol C₂H₆O ? Données : M(C) = 12 g/mol, M(H) = 1 g/mol, M(O) = 16 g/mol.",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : C₂H₆O compte 2 C, 6 H et 1 O. Étape 2 — Lire : M(C) = 12, M(H) = 1, M(O) = 16 g/mol. Étape 3 — Calculer : M = 2 × 12 + 6 × 1 + 16 = 24 + 6 + 16 = 46 g/mol. Étape 4 — Appliquer : cette valeur permettrait d'obtenir n = m / M. Pourquoi pas 30 g/mol : c'est 24 + 6, l'atome d'oxygène est oublié.",
+                  "answers": [
+                    {
+                      "content": "46 g/mol",
+                      "correct": true
+                    },
+                    {
+                      "content": "30 g/mol",
+                      "correct": false
+                    },
+                    {
+                      "content": "34 g/mol",
+                      "correct": false
+                    },
+                    {
+                      "content": "44 g/mol",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Compte les atomes de chaque élément, additionne, puis n = m / M ou m = n × M."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Un élève utilise le volume molaire des gaz dans les conditions normales : V_m = 22,4 L/mol.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle quantité de matière contiennent 4,48 L de gaz dans les conditions normales (V_m = 22,4 L/mol) ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever : V = 4,48 L et V_m = 22,4 L/mol. Étape 2 — Écrire : n = V / V_m. Étape 3 — Calculer : n = 4,48 / 22,4 = 0,2 mol. Pourquoi pas 5 mol : c'est 22,4 / 4,48, le quotient inversé.",
+                  "answers": [
+                    {
+                      "content": "0,2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Quel volume occupent 0,25 mol de gaz dans les conditions normales (V_m = 22,4 L/mol) ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever : n = 0,25 mol et V_m = 22,4 L/mol. Étape 2 — Écrire : V = n × V_m. Étape 3 — Calculer : V = 0,25 × 22,4 = 5,6 L. Pourquoi pas 89,6 L : c'est 22,4 / 0,25, une division au lieu d'une multiplication.",
+                  "answers": [
+                    {
+                      "content": "5,6",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "L"
+                },
+                {
+                  "content": "Dans les mêmes conditions de température et de pression, le volume molaire est le même pour tous les gaz.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Relever : on compare deux gaz dans les mêmes conditions. Étape 2 — Écrire : V = n × V_m avec le même V_m. Étape 3 — Calculer : pour n = 1 mol, V = V_m quel que soit le gaz. Pourquoi pas Faux : le volume molaire ne dépend ni de la nature du gaz ni de la masse de ses molécules.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour calculer avec V_m en L/mol, on convertit 300 mL en ___ L.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Relever : V = 300 mL. Étape 2 — Écrire : 1 L = 1000 mL, donc V (L) = V (mL) / 1000. Étape 3 — Calculer : 300 / 1000 = 0,3 L. Pourquoi pas 3 L : c'est 300 / 100, un facteur 100 au lieu de 1000.",
+                  "answers": [
+                    {
+                      "content": "0,3",
+                      "correct": true
+                    },
+                    {
+                      "content": "0.3",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un gaz occupe 500 mL à une température où V_m = 25 L/mol. Quelle quantité de matière contient-il ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Relever : V = 500 mL = 0,5 L et V_m = 25 L/mol. Étape 2 — Écrire : n = V / V_m avec V en litres. Étape 3 — Calculer : n = 0,5 / 25 = 0,02 mol. Pourquoi pas 20 mol : c'est 500 / 25, sans convertir les millilitres en litres ; et pas 12,5 mol, qui multiplie 0,5 par 25.",
+                  "answers": [
+                    {
+                      "content": "0,02 mol",
+                      "correct": true
+                    },
+                    {
+                      "content": "20 mol",
+                      "correct": false
+                    },
+                    {
+                      "content": "50 mol",
+                      "correct": false
+                    },
+                    {
+                      "content": "12,5 mol",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Convertis V en litres, puis n = V / V_m ou V = n × V_m."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Un élève passe d'une grandeur à une autre en passant par la quantité de matière. Données : M(H₂O) = 18 g/mol, M(O₂) = 32 g/mol, V_m = 22,4 L/mol, N_A = 6,02×10²³ mol⁻¹.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Remets dans l'ordre les étapes pour trouver le nombre de molécules contenues dans 18 g d'eau.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Identifier : on nomme la donnée m et l'inconnue N. Étape 2 — Calculer : n = m / M = 18 / 18 = 1 mol. Étape 3 — Passer : N = n × N_A = 1 × 6,02×10²³. Étape 4 — Conclure : 6,02×10²³ molécules. Pourquoi pas N = n × N_A en premier : n est inconnue tant qu'on n'a pas divisé la masse par M.",
+                  "answers": [
+                    {
+                      "content": "Identifier la masse donnée et le nombre de molécules cherché."
+                    },
+                    {
+                      "content": "Calculer la quantité de matière avec n = m / M."
+                    },
+                    {
+                      "content": "Passer de n à N avec N = n × N_A."
+                    },
+                    {
+                      "content": "Conclure avec l'unité (nombre de molécules)."
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien de molécules contiennent 18 g d'eau ? Donne le nombre a tel que N = a × 10²³ molécules. (M(H₂O) = 18 g/mol, N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée m = 18 g, cherché N. Étape 2 — Calculer : n = m / M = 18 / 18 = 1 mol. Étape 3 — Passer : N = n × N_A = 1 × 6,02×10²³. Étape 4 — Conclure : a = 6,02. Pourquoi pas 108,36 : c'est 18 × 6,02, une masse multipliée directement par N_A.",
+                  "answers": [
+                    {
+                      "content": "6,02",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Relie chaque calcul à la relation à écrire.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Identifier : chaque grandeur donnée a sa relation. Étape 2 — Calculer : on divise par M (masse), par N_A (nombre d'entités) ou par V_m (volume). Étape 3 — Passer : on obtient toujours n. Étape 4 — Conclure : trois relations, trois grandeurs. Pourquoi pas n = N / M : M est une masse molaire, elle ne convient pas à un nombre d'entités.",
+                  "answers": [
+                    {
+                      "content": "Passer de la masse à la quantité de matière",
+                      "match": "n = m / M"
+                    },
+                    {
+                      "content": "Passer du nombre d'entités à la quantité de matière",
+                      "match": "n = N / N_A"
+                    },
+                    {
+                      "content": "Passer du volume d'un gaz à la quantité de matière",
+                      "match": "n = V / V_m"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la masse de 4,48 L de dioxygène dans les conditions normales ? (V_m = 22,4 L/mol, M(O₂) = 32 g/mol)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée V = 4,48 L, cherchée m. Étape 2 — Calculer : n = V / V_m = 4,48 / 22,4 = 0,2 mol. Étape 3 — Passer : m = n × M = 0,2 × 32 = 6,4 g. Étape 4 — Conclure : 4,48 L de dioxygène pèsent 6,4 g. Pourquoi pas 143,36 g : c'est 4,48 × 32, qui multiplie le volume par M sans passer par n.",
+                  "answers": [
+                    {
+                      "content": "6,4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g"
+                },
+                {
+                  "content": "Quelles chaînes de calculs sont correctes ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Identifier : on part d'une grandeur et on veut une autre. Étape 2 — Calculer : on calcule d'abord n. Étape 3 — Passer : de n on rejoint la grandeur cherchée. Étape 4 — Conclure : on passe toujours par n. Pourquoi pas la multiplication directe de la masse par N_A : le résultat serait M fois trop grand (18 fois pour l'eau), car M n'est pas pris en compte.",
+                  "answers": [
+                    {
+                      "content": "Masse, puis quantité de matière, puis nombre d'entités",
+                      "correct": true
+                    },
+                    {
+                      "content": "Volume d'un gaz, puis quantité de matière, puis masse",
+                      "correct": true
+                    },
+                    {
+                      "content": "Masse, puis nombre d'entités en multipliant directement par N_A",
+                      "correct": false
+                    },
+                    {
+                      "content": "Volume d'un gaz, puis masse en multipliant directement par M",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "On passe toujours par n."
+            }
+          ]
+        },
+        {
+          "title": "Sujet 2 · La vie courante en Côte d'Ivoire",
+          "notions": "Le sel de cuisine au marché ; le comprimé de vitamine C de la pharmacie ; le gaz butane du ménage ; l'eau d'un verre et le gaz d'une boisson gazeuse : mole, masse molaire, volume molaire et passage d'une grandeur à l'autre.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Au marché, Awa achète un sachet de 117 g de sel de cuisine (chlorure de sodium NaCl). Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol ; N_A = 6,02×10²³ mol⁻¹.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Calcule la masse molaire du sel NaCl. Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : NaCl compte 1 Na et 1 Cl. Étape 2 — Lire : M(Na) = 23 g/mol et M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : cette valeur sert dans n = m / M. Pourquoi pas 58 g/mol : la masse molaire du chlore est 35,5 g/mol et non 35 dans ce tableau.",
+                  "answers": [
+                    {
+                      "content": "58,5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g/mol"
+                },
+                {
+                  "content": "Quelle quantité de matière contient le sachet de 117 g de sel NaCl ? Donnée : M(NaCl) = 58,5 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : NaCl ; la masse molaire est donnée. Étape 2 — Lire : m = 117 g et M = 58,5 g/mol. Étape 3 — Calculer : M = 58,5 g/mol, déjà connue. Étape 4 — Appliquer : n = m / M = 117 / 58,5 = 2 mol. Pourquoi pas 0,5 mol : c'est 58,5 / 117, le quotient inversé.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Combien d'entités NaCl contient le sachet de 2 mol de sel ? Donne le nombre a tel que N = a × 10²⁴ entités. (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 2 mol, cherché N. Étape 2 — Calculer : n = 2 mol est connue. Étape 3 — Passer : N = n × N_A = 2 × 6,02×10²³ = 12,04×10²³ = 1,204×10²⁴. Étape 4 — Conclure : a = 1,204. Pourquoi pas 12,04 : c'est le coefficient devant 10²³ ; devant 10²⁴ on écrit 1,204.",
+                  "answers": [
+                    {
+                      "content": "1,204",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Awa a besoin de 0,1 mol de sel pour un plat. Quelle masse de sel NaCl doit-elle peser ? (M = 58,5 g/mol)",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : donnée n = 0,1 mol, cherchée m. Étape 2 — Calculer : n = 0,1 mol est connue. Étape 3 — Passer : m = n × M = 0,1 × 58,5 = 5,85 g. Étape 4 — Conclure : 5,85 g de sel. Pourquoi pas 585 g : c'est 58,5 / 0,1, une division au lieu d'une multiplication ; avec 0,1 mol on multiplie 58,5 par 0,1.",
+                  "answers": [
+                    {
+                      "content": "5,85 g",
+                      "correct": true
+                    },
+                    {
+                      "content": "585 g",
+                      "correct": false
+                    },
+                    {
+                      "content": "58,5 g",
+                      "correct": false
+                    },
+                    {
+                      "content": "0,585 g",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un sachet de 58,5 g de sel NaCl contient 6,02×10²³ entités NaCl.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Identifier : donnée m = 58,5 g, cherché N. Étape 2 — Calculer : n = m / M = 58,5 / 58,5 = 1 mol. Étape 3 — Passer : N = n × N_A = 1 × 6,02×10²³. Étape 4 — Conclure : 6,02×10²³ entités. Pourquoi pas Faux : 58,5 g est exactement la masse d'une mole de NaCl, donc le sachet contient N_A entités.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Passe par n : n = m / M, puis N = n × N_A."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "À la pharmacie, un comprimé de vitamine C contient 0,176 g d'acide ascorbique C₆H₈O₆. Données : M(C) = 12 g/mol, M(H) = 1 g/mol, M(O) = 16 g/mol ; N_A = 6,02×10²³ mol⁻¹.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Calcule la masse molaire de l'acide ascorbique C₆H₈O₆. Données : M(C) = 12 g/mol, M(H) = 1 g/mol, M(O) = 16 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : C₆H₈O₆ compte 6 C, 8 H et 6 O. Étape 2 — Lire : M(C) = 12, M(H) = 1, M(O) = 16 g/mol. Étape 3 — Calculer : M = 6 × 12 + 8 × 1 + 6 × 16 = 72 + 8 + 96 = 176 g/mol. Étape 4 — Appliquer : cette valeur sert dans n = m / M. Pourquoi pas 96 g/mol : c'est 72 + 8 + 16, avec un seul atome d'oxygène au lieu de six ; les 6 atomes O pèsent 96 g.",
+                  "answers": [
+                    {
+                      "content": "176",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g/mol"
+                },
+                {
+                  "content": "Quelle quantité de matière d'acide ascorbique contient un comprimé de 0,176 g ? Donnée : M = 176 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : C₆H₈O₆ ; la masse molaire est donnée. Étape 2 — Lire : m = 0,176 g et M = 176 g/mol. Étape 3 — Calculer : M = 176 g/mol, déjà connue. Étape 4 — Appliquer : n = m / M = 0,176 / 176 = 0,001 mol. Pourquoi pas 1000 mol : c'est 176 / 0,176, le quotient inversé.",
+                  "answers": [
+                    {
+                      "content": "0,001",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Quelle quantité de matière d'acide ascorbique contient une boîte de 30 comprimés, soit 5,28 g ? Donnée : M = 176 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : C₆H₈O₆ ; la masse molaire est donnée. Étape 2 — Lire : m = 30 × 0,176 = 5,28 g et M = 176 g/mol. Étape 3 — Calculer : M = 176 g/mol, déjà connue. Étape 4 — Appliquer : n = 5,28 / 176 = 0,03 mol. Pourquoi pas 0,001 mol : c'est la quantité d'un seul comprimé, pas celle de la boîte.",
+                  "answers": [
+                    {
+                      "content": "0,03",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Combien de molécules d'acide ascorbique contient un comprimé de 0,001 mol ? Donne le nombre a tel que N = a × 10²⁰ molécules. (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 0,001 mol, cherché N. Étape 2 — Calculer : n = 0,001 mol est connue. Étape 3 — Passer : N = n × N_A = 10⁻³ × 6,02×10²³ = 6,02×10²⁰. Étape 4 — Conclure : a = 6,02. Pourquoi pas 602 : c'est 6,02×10²² ; 10⁻³ fait baisser la puissance de 10²³ à 10²⁰.",
+                  "answers": [
+                    {
+                      "content": "6,02",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle masse d'acide ascorbique contient 0,01 mol ? (M = 176 g/mol)",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : donnée n = 0,01 mol, cherchée m. Étape 2 — Calculer : n = 0,01 mol est connue. Étape 3 — Passer : m = n × M = 0,01 × 176 = 1,76 g. Étape 4 — Conclure : 1,76 g. Pourquoi pas 0,176 g : c'est la masse de 0,001 mol, dix fois moins que 0,01 mol.",
+                  "answers": [
+                    {
+                      "content": "1,76 g",
+                      "correct": true
+                    },
+                    {
+                      "content": "17,6 g",
+                      "correct": false
+                    },
+                    {
+                      "content": "0,176 g",
+                      "correct": false
+                    },
+                    {
+                      "content": "176 g",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "n = m / M ; N = n × N_A."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "La famille de Koffi utilise une bouteille de gaz de cuisine qui contient 11,6 kg de butane C₄H₁₀. Données : M(C) = 12 g/mol, M(H) = 1 g/mol ; N_A = 6,02×10²³ mol⁻¹ ; dans les conditions de l'exercice, on prend V_m = 24 L/mol.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Calcule la masse molaire du butane C₄H₁₀. Données : M(C) = 12 g/mol, M(H) = 1 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : C₄H₁₀ compte 4 C et 10 H. Étape 2 — Lire : M(C) = 12 g/mol et M(H) = 1 g/mol. Étape 3 — Calculer : M = 4 × 12 + 10 × 1 = 58 g/mol. Étape 4 — Appliquer : cette valeur sert dans n = m / M. Pourquoi pas 22 g/mol : c'est 12 + 10, l'indice 4 du carbone est oublié.",
+                  "answers": [
+                    {
+                      "content": "58",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g/mol"
+                },
+                {
+                  "content": "Quelle quantité de matière de butane contiennent 11,6 kg de butane ? Donnée : M(C₄H₁₀) = 58 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée m = 11,6 kg = 11 600 g, cherchée n. Étape 2 — Calculer : n = m / M = 11 600 / 58 = 200 mol. Étape 3 — Passer : la grandeur cherchée est n. Étape 4 — Conclure : 200 mol de butane. Pourquoi pas 0,2 mol : c'est 11,6 / 58, sans convertir les kilogrammes en grammes.",
+                  "answers": [
+                    {
+                      "content": "200",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Si les 200 mol de butane étaient libérés à l'état gazeux, quel volume occuperaient-ils avec V_m = 24 L/mol ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 200 mol, cherché V. Étape 2 — Calculer : n = 200 mol est connue. Étape 3 — Passer : V = n × V_m = 200 × 24 = 4800 L. Étape 4 — Conclure : 4800 L de gaz. Pourquoi pas 4480 L : c'est 200 × 22,4, la valeur des conditions normales, alors que l'énoncé donne 24 L/mol.",
+                  "answers": [
+                    {
+                      "content": "4800",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "L"
+                },
+                {
+                  "content": "Combien de molécules contiennent 200 mol de butane ? Donne le nombre a tel que N = a × 10²⁶ molécules. (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 200 mol, cherché N. Étape 2 — Calculer : n = 200 mol est connue. Étape 3 — Passer : N = n × N_A = 200 × 6,02×10²³ = 1204×10²³ = 1,204×10²⁶. Étape 4 — Conclure : a = 1,204. Pourquoi pas 12,04 : c'est le coefficient devant 10²⁵ ; devant 10²⁶ on écrit 1,204.",
+                  "answers": [
+                    {
+                      "content": "1,204",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Le volume molaire de 24 L/mol permet de calculer le volume du butane gazeux, mais pas celui du butane liquide qui reste dans la bouteille.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Relever : le butane est gazeux à la sortie de la bouteille et liquide dans la bouteille. Étape 2 — Écrire : V = n × V_m ne vaut que pour un gaz. Étape 3 — Calculer : le calcul V = 200 × 24 = 4800 L donne le volume du gaz libéré, pas celui du liquide. Pourquoi pas Faux : le volume molaire des gaz ne s'applique pas à un liquide, dont le volume est bien plus petit.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Convertis les kg en g, calcule n, puis passe à V ou à N."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Un verre contient 180 mL d'eau, de masse 180 g. Une canette de boisson gazeuse libère 1,12 L de dioxyde de carbone dans les conditions normales (V_m = 22,4 L/mol). Données : M(H) = 1 g/mol, M(O) = 16 g/mol, M(C) = 12 g/mol ; N_A = 6,02×10²³ mol⁻¹.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle quantité de matière d'eau contient un verre de 180 g d'eau ? Données : M(H) = 1 g/mol, M(O) = 16 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : H₂O compte 2 H et 1 O. Étape 2 — Lire : M(H) = 1 g/mol et M(O) = 16 g/mol. Étape 3 — Calculer : M = 2 × 1 + 16 = 18 g/mol. Étape 4 — Appliquer : n = m / M = 180 / 18 = 10 mol. Pourquoi pas 10,6 mol : c'est 180 / 17, avec l'indice 2 de l'hydrogène oublié dans M.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Combien de molécules d'eau contient le verre de 10 mol d'eau ? Donne le nombre a tel que N = a × 10²⁴ molécules. (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 10 mol, cherché N. Étape 2 — Calculer : n = 10 mol est connue. Étape 3 — Passer : N = n × N_A = 10 × 6,02×10²³ = 6,02×10²⁴. Étape 4 — Conclure : a = 6,02. Pourquoi pas 60,2 : c'est le coefficient devant 10²³ ; devant 10²⁴ on écrit 6,02.",
+                  "answers": [
+                    {
+                      "content": "6,02",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle quantité de matière de dioxyde de carbone contient 1,12 L de gaz dans les conditions normales ? (V_m = 22,4 L/mol)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever : V = 1,12 L et V_m = 22,4 L/mol. Étape 2 — Écrire : n = V / V_m. Étape 3 — Calculer : n = 1,12 / 22,4 = 0,05 mol. Pourquoi pas 20 mol : c'est 22,4 / 1,12, le quotient inversé.",
+                  "answers": [
+                    {
+                      "content": "0,05",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Quelle est la masse de 0,05 mol de dioxyde de carbone ? Donnée : M(CO₂) = 44 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 0,05 mol, cherchée m. Étape 2 — Calculer : n = 0,05 mol est connue. Étape 3 — Passer : m = n × M = 0,05 × 44 = 2,2 g. Étape 4 — Conclure : 2,2 g de dioxyde de carbone. Pourquoi pas 880 g : c'est 44 / 0,05, une division au lieu d'une multiplication.",
+                  "answers": [
+                    {
+                      "content": "2,2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g"
+                },
+                {
+                  "content": "Le verre contient 10 mol de molécules d'eau, la canette libère 0,05 mol de dioxyde de carbone. Qui contient le plus de molécules ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : on compare des nombres de molécules, donc des quantités de matière. Étape 2 — Calculer : n(eau) = 10 mol et n(CO₂) = 0,05 mol. Étape 3 — Passer : N = n × N_A, donc le verre en contient 200 fois plus. Étape 4 — Conclure : le verre d'eau. Pourquoi pas la canette, au motif que le gaz occupe plus de place : le volume d'un gaz est grand parce que les molécules sont écartées, pas parce qu'elles sont plus nombreuses.",
+                  "answers": [
+                    {
+                      "content": "Le verre d'eau",
+                      "correct": true
+                    },
+                    {
+                      "content": "La canette, parce que le gaz occupe plus de place",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les deux, autant de molécules",
+                      "correct": false
+                    },
+                    {
+                      "content": "La canette, parce que ses molécules sont plus lourdes",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Compare toujours des quantités de matière, pas des masses ni des volumes."
+            }
+          ]
+        },
+        {
+          "title": "Sujet 3 · Raisonner et rédiger",
+          "notions": "Comparer des échantillons par leur quantité de matière ; repérer et corriger une erreur de masse molaire ; enchaîner des calculs avec arrondis ; justifier une conversion d'unité.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Au laboratoire du lycée, le professeur pèse trois échantillons : 18 g d'eau H₂O, 44 g de dioxyde de carbone CO₂ et 32 g de dioxygène O₂. Données : M(H) = 1 g/mol, M(O) = 16 g/mol, M(C) = 12 g/mol.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle quantité de matière contiennent 18 g d'eau H₂O ? Données : M(H) = 1 g/mol, M(O) = 16 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : H₂O compte 2 H et 1 O. Étape 2 — Lire : M(H) = 1 g/mol et M(O) = 16 g/mol. Étape 3 — Calculer : M = 2 × 1 + 16 = 18 g/mol. Étape 4 — Appliquer : n = m / M = 18 / 18 = 1 mol. Pourquoi pas 18 mol : c'est la masse elle-même ; il faut la diviser par la masse molaire.",
+                  "answers": [
+                    {
+                      "content": "1",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Quelle quantité de matière contiennent 44 g de dioxyde de carbone CO₂ ? Données : M(C) = 12 g/mol, M(O) = 16 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : CO₂ compte 1 C et 2 O. Étape 2 — Lire : M(C) = 12 g/mol et M(O) = 16 g/mol. Étape 3 — Calculer : M = 12 + 2 × 16 = 44 g/mol. Étape 4 — Appliquer : n = m / M = 44 / 44 = 1 mol. Pourquoi pas 1,57 mol : c'est 44 / 28, avec M = 12 + 16 = 28 g/mol, un seul atome d'oxygène au lieu de deux.",
+                  "answers": [
+                    {
+                      "content": "1",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Les trois échantillons (18 g d'eau, 44 g de dioxyde de carbone, 32 g de dioxygène) contiennent le même nombre de molécules.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Écrire : H₂O, CO₂ et O₂ ; M = 18, 44 et 32 g/mol. Étape 2 — Lire : m = 18 g, 44 g et 32 g. Étape 3 — Calculer : M(O₂) = 2 × 16 = 32 g/mol. Étape 4 — Appliquer : n = 18 / 18 = 44 / 44 = 32 / 32 = 1 mol, donc N = N_A pour chacun. Pourquoi pas Faux : les masses diffèrent, mais le nombre de molécules ne dépend que de la quantité de matière, ici 1 mol pour chaque échantillon.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour 1 mol de chacun de ces corps (eau H₂O, dioxygène O₂, dioxyde de carbone CO₂), lequel a la plus grande masse ? Données : M(H) = 1 g/mol, M(O) = 16 g/mol, M(C) = 12 g/mol.",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : 1 mol de chaque espèce, soit N_A molécules. Étape 2 — Lire : M(H₂O) = 18, M(O₂) = 32 et M(CO₂) = 44 g/mol. Étape 3 — Calculer : m = n × M = 18 g, 32 g et 44 g. Étape 4 — Appliquer : la plus grande masse est 44 g, celle du dioxyde de carbone. Pourquoi pas Aucun, ils ont la même masse : un même nombre de molécules ne donne la même masse que si les molécules sont identiques, ce qui n'est pas le cas.",
+                  "answers": [
+                    {
+                      "content": "Le dioxyde de carbone (44 g)",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'eau (18 g)",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le dioxygène (32 g)",
+                      "correct": false
+                    },
+                    {
+                      "content": "Aucun : ils ont tous la même masse",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Explique pourquoi ces trois échantillons ont des masses différentes (18 g, 32 g et 44 g) et pourtant le même nombre de molécules.",
+                  "question_type": "written",
+                  "points": 3,
+                  "criteria": [
+                    "Calcule n = m / M = 1 mol pour chaque échantillon",
+                    "Dit que 1 mol contient N_A = 6,02×10²³ molécules",
+                    "Explique que M dépend de l'espèce chimique",
+                    "Conclut que la masse d'une mole varie, pas son nombre d'entités"
+                  ],
+                  "explanation": "Corrigé modèle : Étape 1 — Écrire : M(H₂O) = 18 g/mol, M(O₂) = 32 g/mol, M(CO₂) = 44 g/mol. Étape 2 — Lire : les masses sont 18 g, 32 g et 44 g. Étape 3 — Calculer : n = m / M = 1 mol pour chaque échantillon. Étape 4 — Appliquer : N = n × N_A = 6,02×10²³ molécules pour chacun. La masse d'une mole (la masse molaire) dépend de l'espèce, mais le nombre d'entités d'une mole est toujours N_A. Barème sur 3 : les trois quantités de matière (1 point), N_A (1 point), explication sur M (1 point).",
+                  "answers": [],
+                  "starter": "Chaque échantillon contient ..."
+                }
+              ],
+              "hint": "n = m / M pour chaque échantillon, puis compare."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Koffi veut calculer la quantité de matière de 90 g d'eau. Il écrit : M(H₂O) = 1 + 16 = 17 g/mol, puis n = 90 / 17 ≈ 5,3 mol. Données : M(H) = 1 g/mol, M(O) = 16 g/mol.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle est l'erreur de Koffi ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : H₂O compte 2 atomes H et 1 atome O. Étape 2 — Lire : M(H) = 1 g/mol et M(O) = 16 g/mol. Étape 3 — Calculer : M = 2 × 1 + 16 = 18 g/mol, et Koffi a trouvé 17. Étape 4 — Appliquer : n = m / M est la bonne relation ; seule la valeur de M est fausse. Pourquoi pas multiplier m par M : n = m / M est la bonne relation, et Koffi l'a bien utilisée.",
+                  "answers": [
+                    {
+                      "content": "Il a oublié l'indice 2 de l'hydrogène dans la masse molaire",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il aurait dû multiplier m par M",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il aurait dû utiliser 22,4 L/mol",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il a oublié la constante d'Avogadro",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la bonne masse molaire de l'eau H₂O ? Données : M(H) = 1 g/mol, M(O) = 16 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : H₂O compte 2 H et 1 O. Étape 2 — Lire : M(H) = 1 g/mol et M(O) = 16 g/mol. Étape 3 — Calculer : M = 2 × 1 + 16 = 18 g/mol. Étape 4 — Appliquer : cette valeur sert à corriger n = m / M. Pourquoi pas 17 g/mol : c'est 1 + 16, avec un seul atome d'hydrogène.",
+                  "answers": [
+                    {
+                      "content": "18",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g/mol"
+                },
+                {
+                  "content": "Quelle est la bonne quantité de matière de 90 g d'eau ? Donnée : M(H₂O) = 18 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : H₂O ; M = 18 g/mol. Étape 2 — Lire : m = 90 g. Étape 3 — Calculer : M = 18 g/mol, déjà connue. Étape 4 — Appliquer : n = m / M = 90 / 18 = 5 mol. Pourquoi pas 5,3 mol : c'est 90 / 17, la valeur obtenue avec l'erreur de Koffi.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Avec son erreur, Koffi trouve une quantité de matière plus grande que la bonne valeur.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Écrire : la bonne valeur est n = 90 / 18 = 5 mol. Étape 2 — Lire : Koffi obtient 90 / 17 ≈ 5,3 mol. Étape 3 — Calculer : 17 < 18, donc diviser 90 par 17 donne un résultat plus grand. Étape 4 — Appliquer : 5,3 mol > 5 mol. Pourquoi pas Faux : diviser par un nombre plus petit (17 au lieu de 18) donne un quotient plus grand.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Rédige la correction complète du calcul de Koffi, de la masse molaire à la quantité de matière de 90 g d'eau. Données : M(H) = 1 g/mol, M(O) = 16 g/mol.",
+                  "question_type": "written",
+                  "points": 3,
+                  "criteria": [
+                    "Compte les atomes de H₂O : 2 H et 1 O",
+                    "Calcule M = 2 × 1 + 16 = 18 g/mol",
+                    "Utilise n = m / M avec m en g et M en g/mol",
+                    "Conclut n = 90 / 18 = 5 mol avec l'unité"
+                  ],
+                  "explanation": "Corrigé modèle : Étape 1 — Écrire : H₂O compte 2 atomes d'hydrogène et 1 atome d'oxygène. Étape 2 — Lire : M(H) = 1 g/mol et M(O) = 16 g/mol. Étape 3 — Calculer : M = 2 × 1 + 16 = 18 g/mol. Étape 4 — Appliquer : n = m / M = 90 / 18 = 5 mol. Koffi avait oublié l'indice 2 de l'hydrogène. Barème sur 3 : comptage des atomes (0,5 point), masse molaire (1 point), application de n = m / M (1 point), conclusion avec l'unité (0,5 point).",
+                  "answers": [],
+                  "starter": "La formule H₂O compte ..."
+                }
+              ],
+              "hint": "Compte les atomes avant d'additionner les masses molaires."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Un laborantin dispose de 10 g de sel NaCl. Il compare ce sel à 10 g de sucre C₁₂H₂₂O₁₁. Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol, M(C) = 12 g/mol, M(H) = 1 g/mol, M(O) = 16 g/mol ; N_A = 6,02×10²³ mol⁻¹ ; V_m = 22,4 L/mol dans les conditions normales. Les résultats sont arrondis comme demandé.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle quantité de matière contiennent 10 g de sel NaCl ? Arrondis au centième. Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : NaCl compte 1 Na et 1 Cl. Étape 2 — Lire : M(Na) = 23 g/mol et M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : n = m / M = 10 / 58,5 ≈ 0,17 mol. Pourquoi pas 0,43 mol : c'est 10 / 23, avec la seule masse molaire du sodium.",
+                  "answers": [
+                    {
+                      "content": "0,17",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0.01,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Avec n = 10 / 58,5 mol de sel (valeur non arrondie), combien d'entités NaCl a-t-on ? Donne a tel que N = a × 10²², arrondi au dixième. (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 10 / 58,5 mol, cherché N. Étape 2 — Calculer : n = 10 / 58,5 ≈ 0,17094 mol. Étape 3 — Passer : N = n × N_A ≈ 0,17094 × 6,02×10²³ ≈ 1,029×10²³ = 10,29×10²². Étape 4 — Conclure : a ≈ 10,3 en arrondissant au dixième. Pourquoi pas 1,03 : c'est le coefficient devant 10²³, alors que l'énoncé impose 10²².",
+                  "answers": [
+                    {
+                      "content": "10,3",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0.1
+                },
+                {
+                  "content": "Quel volume de gaz dans les conditions normales contient autant de molécules que 10 g de sel contiennent d'entités NaCl (n ≈ 0,171 mol) ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Relever : n ≈ 0,171 mol et V_m = 22,4 L/mol. Étape 2 — Écrire : V = n × V_m. Étape 3 — Calculer : V ≈ 0,171 × 22,4 ≈ 3,8 L. Pourquoi pas 131 L : c'est 22,4 / 0,171, une division au lieu d'une multiplication.",
+                  "answers": [
+                    {
+                      "content": "Environ 3,8 L",
+                      "correct": true
+                    },
+                    {
+                      "content": "Environ 131 L",
+                      "correct": false
+                    },
+                    {
+                      "content": "Environ 0,008 L",
+                      "correct": false
+                    },
+                    {
+                      "content": "Environ 38 L",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "10 g de sel NaCl contiennent plus d'entités que 10 g de sucre C₁₂H₂₂O₁₁.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Écrire : NaCl (M = 58,5 g/mol) et C₁₂H₂₂O₁₁ (M = 342 g/mol). Étape 2 — Lire : m = 10 g dans les deux cas. Étape 3 — Calculer : n(sel) = 10 / 58,5 ≈ 0,17 mol et n(sucre) = 10 / 342 ≈ 0,03 mol. Étape 4 — Appliquer : n(sel) > n(sucre), donc N(sel) > N(sucre). Pourquoi pas Faux : à masse égale, la substance de plus petite masse molaire contient le plus d'entités.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "À masse égale (10 g), combien de fois plus d'entités contient le sel que le sucre ? Arrondis au dixième. (M(NaCl) = 58,5 g/mol, M(sucre) = 342 g/mol)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : NaCl (M = 58,5 g/mol) et C₁₂H₂₂O₁₁ (M = 342 g/mol). Étape 2 — Lire : n(sel) = 10 / 58,5 et n(sucre) = 10 / 342, donc rapport = n(sel) / n(sucre). Étape 3 — Calculer : rapport = 342 / 58,5 ≈ 5,846. Étape 4 — Appliquer : arrondi au dixième, le sel contient environ 5,8 fois plus d'entités. Pourquoi pas 0,17 : c'est l'inverse du rapport, soit 58,5 / 342.",
+                  "answers": [
+                    {
+                      "content": "5,8",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0.1
+                }
+              ],
+              "hint": "Garde les valeurs non arrondies dans les calculs enchaînés, arrondis à la fin."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Un technicien mesure 250 mL de diazote N₂ à une température où V_m = 25 L/mol. Données : M(N) = 14 g/mol.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Avant de calculer avec V_m en L/mol, on convertit 250 mL en ___ L.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Relever : V = 250 mL. Étape 2 — Écrire : 1 L = 1000 mL, donc V (L) = V (mL) / 1000. Étape 3 — Calculer : 250 / 1000 = 0,25 L. Pourquoi pas 2,5 L : c'est 250 / 100, un facteur 100 au lieu de 1000.",
+                  "answers": [
+                    {
+                      "content": "0,25",
+                      "correct": true
+                    },
+                    {
+                      "content": "0.25",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle quantité de matière de diazote contiennent 250 mL de gaz avec V_m = 25 L/mol ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever : V = 250 mL = 0,25 L et V_m = 25 L/mol. Étape 2 — Écrire : n = V / V_m. Étape 3 — Calculer : n = 0,25 / 25 = 0,01 mol. Pourquoi pas 10 mol : c'est 250 / 25, sans convertir les millilitres en litres.",
+                  "answers": [
+                    {
+                      "content": "0,01",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Quelle est la masse de ces 0,01 mol de diazote N₂ ? Données : M(N) = 14 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 0,01 mol, cherchée m ; M(N₂) = 2 × 14 = 28 g/mol. Étape 2 — Calculer : n = 0,01 mol est connue. Étape 3 — Passer : m = n × M = 0,01 × 28 = 0,28 g. Étape 4 — Conclure : 0,28 g de diazote. Pourquoi pas 0,14 g : c'est 0,01 × 14, avec la masse molaire d'un seul atome d'azote au lieu de la molécule N₂.",
+                  "answers": [
+                    {
+                      "content": "0,28",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g"
+                },
+                {
+                  "content": "Un élève trouve n = 10 mol pour 250 mL de gaz avec V_m = 25 L/mol. Quelle est son erreur ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Relever : V = 250 mL doit devenir 0,25 L. Étape 2 — Écrire : n = V / V_m avec V en litres. Étape 3 — Calculer : 250 / 25 = 10, alors que 0,25 / 25 = 0,01. Étape 4 — Conclure : l'erreur vient de l'unité du volume. Pourquoi pas multiplier V par V_m : cela donnerait 250 × 25 = 6250, pas 10.",
+                  "answers": [
+                    {
+                      "content": "Il a divisé 250 par 25 sans convertir les millilitres en litres",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il a multiplié V par V_m au lieu de diviser",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il a oublié la masse molaire",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il a utilisé la constante d'Avogadro",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Explique pourquoi il faut convertir un volume exprimé en millilitres en litres avant de calculer une quantité de matière avec V_m = 25 L/mol.",
+                  "question_type": "written",
+                  "points": 2,
+                  "criteria": [
+                    "Dit que V_m s'exprime en L/mol",
+                    "Dit que V et V_m doivent avoir la même unité de volume",
+                    "Donne l'exemple 250 mL = 0,25 L ou un résultat faux sans conversion"
+                  ],
+                  "explanation": "Corrigé modèle : Étape 1 — Relever : V_m s'exprime en L/mol et V = 250 mL. Étape 2 — Écrire : n = V / V_m ; pour que l'unité de n soit la mole, V doit être en litres. Étape 3 — Calculer : avec 250 mL laissés tels quels, 250 / 25 = 10 mol, faux ; avec 0,25 L, 0,25 / 25 = 0,01 mol. Barème sur 2 : unité de V_m (0,5 point), même unité pour V (0,5 point), exemple chiffré (1 point).",
+                  "answers": [],
+                  "starter": "Le volume molaire est en ..."
+                }
+              ],
+              "hint": "Convertis V en litres avant de diviser par V_m."
+            }
+          ]
+        },
+        {
+          "title": "Sujet 4 · Bilan : mole, masse molaire et volume molaire",
+          "notions": "Bilan de toute la leçon : la mole et N_A ; masses molaires atomique et moléculaire ; volume molaire des gaz ; passage d'une grandeur à l'autre à partir d'un liquide, d'une recette, d'un gaz et d'un engrais.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Au laboratoire du lycée, le professeur prépare 4,9 g d'acide sulfurique H₂SO₄, un liquide. Données : M(H) = 1 g/mol, M(S) = 32 g/mol, M(O) = 16 g/mol ; N_A = 6,02×10²³ mol⁻¹.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Calcule la masse molaire de l'acide sulfurique H₂SO₄. Données : M(H) = 1 g/mol, M(S) = 32 g/mol, M(O) = 16 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : H₂SO₄ compte 2 H, 1 S et 4 O. Étape 2 — Lire : M(H) = 1, M(S) = 32, M(O) = 16 g/mol. Étape 3 — Calculer : M = 2 × 1 + 32 + 4 × 16 = 2 + 32 + 64 = 98 g/mol. Étape 4 — Appliquer : cette valeur sert dans n = m / M. Pourquoi pas 50 g/mol : c'est 2 + 32 + 16, avec un seul atome d'oxygène au lieu de quatre.",
+                  "answers": [
+                    {
+                      "content": "98",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g/mol"
+                },
+                {
+                  "content": "Quelle quantité de matière contiennent 4,9 g d'acide sulfurique ? Donnée : M(H₂SO₄) = 98 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : H₂SO₄ ; M = 98 g/mol. Étape 2 — Lire : m = 4,9 g. Étape 3 — Calculer : M = 98 g/mol, déjà connue. Étape 4 — Appliquer : n = m / M = 4,9 / 98 = 0,05 mol. Pourquoi pas 20 mol : c'est 98 / 4,9, le quotient inversé.",
+                  "answers": [
+                    {
+                      "content": "0,05",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Combien de molécules contiennent 0,05 mol d'acide sulfurique ? Donne le nombre a tel que N = a × 10²² molécules. (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 0,05 mol, cherché N. Étape 2 — Calculer : n = 0,05 mol est connue. Étape 3 — Passer : N = n × N_A = 0,05 × 6,02×10²³ = 0,301×10²³ = 3,01×10²². Étape 4 — Conclure : a = 3,01. Pourquoi pas 30,1 : c'est le coefficient devant 10²¹ ; devant 10²² on écrit 3,01.",
+                  "answers": [
+                    {
+                      "content": "3,01",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle est la masse de 0,2 mol d'acide sulfurique ? Donnée : M(H₂SO₄) = 98 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 0,2 mol, cherchée m. Étape 2 — Calculer : n = 0,2 mol est connue. Étape 3 — Passer : m = n × M = 0,2 × 98 = 19,6 g. Étape 4 — Conclure : 19,6 g d'acide sulfurique. Pourquoi pas 490 g : c'est 98 / 0,2, une division au lieu d'une multiplication.",
+                  "answers": [
+                    {
+                      "content": "19,6",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g"
+                },
+                {
+                  "content": "On peut calculer le volume de ce liquide avec V = n × V_m, où V_m = 22,4 L/mol.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Relever : l'acide sulfurique est un liquide. Étape 2 — Écrire : V = n × V_m ne vaut que pour un gaz. Étape 3 — Calculer : 0,05 × 22,4 = 1,12 L serait un volume de gaz, pas celui du liquide. Étape 4 — Conclure : la relation n'est pas applicable. Pourquoi pas Vrai : le volume molaire de 22,4 L/mol décrit les gaz ; un liquide a un volume molaire bien plus petit.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Calcule M, puis n ; le volume molaire ne concerne que les gaz."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Une recette utilise 58,5 g de sel NaCl, 68,4 g de sucre C₁₂H₂₂O₁₁ et 90 g d'eau H₂O. Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol, M(C) = 12 g/mol, M(H) = 1 g/mol, M(O) = 16 g/mol ; N_A = 6,02×10²³ mol⁻¹.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle quantité de matière contiennent 58,5 g de sel NaCl ? Données : M(Na) = 23 g/mol, M(Cl) = 35,5 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : NaCl compte 1 Na et 1 Cl. Étape 2 — Lire : M(Na) = 23 g/mol et M(Cl) = 35,5 g/mol. Étape 3 — Calculer : M = 23 + 35,5 = 58,5 g/mol. Étape 4 — Appliquer : n = m / M = 58,5 / 58,5 = 1 mol. Pourquoi pas 58,5 mol : c'est la masse elle-même, qu'il faut diviser par M.",
+                  "answers": [
+                    {
+                      "content": "1",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Quelle quantité de matière contiennent 68,4 g de sucre C₁₂H₂₂O₁₁ ? Données : M(C) = 12 g/mol, M(H) = 1 g/mol, M(O) = 16 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : C₁₂H₂₂O₁₁ compte 12 C, 22 H et 11 O. Étape 2 — Lire : M(C) = 12, M(H) = 1, M(O) = 16 g/mol. Étape 3 — Calculer : M = 144 + 22 + 176 = 342 g/mol. Étape 4 — Appliquer : n = m / M = 68,4 / 342 = 0,2 mol. Pourquoi pas 5 mol : c'est 342 / 68,4, le quotient inversé.",
+                  "answers": [
+                    {
+                      "content": "0,2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Quelle quantité de matière contiennent 90 g d'eau H₂O ? Données : M(H) = 1 g/mol, M(O) = 16 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : H₂O compte 2 H et 1 O. Étape 2 — Lire : M(H) = 1 g/mol et M(O) = 16 g/mol. Étape 3 — Calculer : M = 2 × 1 + 16 = 18 g/mol. Étape 4 — Appliquer : n = m / M = 90 / 18 = 5 mol. Pourquoi pas 5,3 mol : c'est 90 / 17, avec l'indice 2 de l'hydrogène oublié.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "La recette contient 58,5 g de sel (1 mol), 68,4 g de sucre (0,2 mol) et 90 g d'eau (5 mol). Quel ingrédient a la plus petite quantité de matière ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : on compare des quantités de matière. Étape 2 — Calculer : n(sel) = 1 mol, n(sucre) = 0,2 mol, n(eau) = 5 mol. Étape 3 — Passer : 0,2 mol < 1 mol < 5 mol. Étape 4 — Conclure : le sucre a la plus petite quantité de matière. Pourquoi pas le sel, au motif que sa masse est plus petite que celle du sucre : 58,5 g de sel font 1 mol, alors que 68,4 g de sucre ne font que 0,2 mol, car une mole de sucre pèse 342 g ; la masse seule ne permet pas de comparer.",
+                  "answers": [
+                    {
+                      "content": "Le sucre, malgré une masse plus grande que celle du sel",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le sel, parce que sa masse est plus petite que celle du sucre",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'eau, parce que sa formule compte le moins d'atomes",
+                      "correct": false
+                    },
+                    {
+                      "content": "Aucun, ils ont la même quantité de matière",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien de molécules d'eau contiennent 90 g d'eau (5 mol) ? Donne le nombre a tel que N = a × 10²⁴ molécules. (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 5 mol, cherché N. Étape 2 — Calculer : n = 5 mol est connue. Étape 3 — Passer : N = n × N_A = 5 × 6,02×10²³ = 30,1×10²³ = 3,01×10²⁴. Étape 4 — Conclure : a = 3,01. Pourquoi pas 30,1 : c'est le coefficient devant 10²³ ; devant 10²⁴ on écrit 3,01.",
+                  "answers": [
+                    {
+                      "content": "3,01",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                }
+              ],
+              "hint": "n = m / M pour chaque ingrédient, puis compare ou passe à N."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Un ballon contient 8 g de méthane CH₄, le gaz naturel. Données : M(C) = 12 g/mol, M(H) = 1 g/mol ; N_A = 6,02×10²³ mol⁻¹ ; conditions normales, V_m = 22,4 L/mol.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Calcule la masse molaire du méthane CH₄. Données : M(C) = 12 g/mol, M(H) = 1 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : CH₄ compte 1 C et 4 H. Étape 2 — Lire : M(C) = 12 g/mol et M(H) = 1 g/mol. Étape 3 — Calculer : M = 12 + 4 × 1 = 16 g/mol. Étape 4 — Appliquer : cette valeur sert dans n = m / M. Pourquoi pas 13 g/mol : c'est 12 + 1, l'indice 4 de l'hydrogène est oublié.",
+                  "answers": [
+                    {
+                      "content": "16",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g/mol"
+                },
+                {
+                  "content": "Quelle quantité de matière contiennent 8 g de méthane ? Donnée : M(CH₄) = 16 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : CH₄ ; M = 16 g/mol. Étape 2 — Lire : m = 8 g. Étape 3 — Calculer : M = 16 g/mol, déjà connue. Étape 4 — Appliquer : n = m / M = 8 / 16 = 0,5 mol. Pourquoi pas 2 mol : c'est 16 / 8, le quotient inversé.",
+                  "answers": [
+                    {
+                      "content": "0,5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Quel volume occupent 0,5 mol de méthane dans les conditions normales ? (V_m = 22,4 L/mol)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 0,5 mol, cherché V. Étape 2 — Calculer : n = 0,5 mol est connue. Étape 3 — Passer : V = n × V_m = 0,5 × 22,4 = 11,2 L. Étape 4 — Conclure : 11,2 L de méthane. Pourquoi pas 44,8 L : c'est 22,4 / 0,5, une division au lieu d'une multiplication.",
+                  "answers": [
+                    {
+                      "content": "11,2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "L"
+                },
+                {
+                  "content": "Combien de molécules contiennent 0,5 mol de méthane ? Donne le nombre a tel que N = a × 10²³ molécules. (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 0,5 mol, cherché N. Étape 2 — Calculer : n = 0,5 mol est connue. Étape 3 — Passer : N = n × N_A = 0,5 × 6,02×10²³ = 3,01×10²³. Étape 4 — Conclure : a = 3,01. Pourquoi pas 6,02 : c'est le nombre d'entités de 1 mol, pas de 0,5 mol.",
+                  "answers": [
+                    {
+                      "content": "3,01",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "0,5 mol de dioxygène occupe, dans les mêmes conditions, le même volume que 0,5 mol de méthane.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Relever : n = 0,5 mol pour chaque gaz, mêmes conditions. Étape 2 — Écrire : V = n × V_m avec le même V_m. Étape 3 — Calculer : V = 0,5 × 22,4 = 11,2 L pour les deux. Étape 4 — Conclure : même volume. Pourquoi pas Faux : le dioxygène (32 g/mol) est plus lourd que le méthane (16 g/mol), mais le volume molaire ne dépend pas de la masse molaire.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "n = m / M, puis V = n × V_m et N = n × N_A."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Un planteur utilise de l'urée comme engrais ; sa formule est CH₄N₂O. Données : M(C) = 12 g/mol, M(H) = 1 g/mol, M(N) = 14 g/mol, M(O) = 16 g/mol ; N_A = 6,02×10²³ mol⁻¹.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Calcule la masse molaire de l'urée CH₄N₂O. Données : M(C) = 12 g/mol, M(H) = 1 g/mol, M(N) = 14 g/mol, M(O) = 16 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : CH₄N₂O compte 1 C, 4 H, 2 N et 1 O. Étape 2 — Lire : M(C) = 12, M(H) = 1, M(N) = 14, M(O) = 16 g/mol. Étape 3 — Calculer : M = 12 + 4 × 1 + 2 × 14 + 16 = 12 + 4 + 28 + 16 = 60 g/mol. Étape 4 — Appliquer : cette valeur sert dans n = m / M. Pourquoi pas 46 g/mol : c'est 12 + 4 + 14 + 16, avec un seul atome d'azote au lieu de deux.",
+                  "answers": [
+                    {
+                      "content": "60",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g/mol"
+                },
+                {
+                  "content": "Quelle quantité de matière contiennent 30 g d'urée ? Donnée : M(CH₄N₂O) = 60 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : CH₄N₂O ; M = 60 g/mol. Étape 2 — Lire : m = 30 g. Étape 3 — Calculer : M = 60 g/mol, déjà connue. Étape 4 — Appliquer : n = m / M = 30 / 60 = 0,5 mol. Pourquoi pas 2 mol : c'est 60 / 30, le quotient inversé.",
+                  "answers": [
+                    {
+                      "content": "0,5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "mol"
+                },
+                {
+                  "content": "Combien de molécules contiennent 0,5 mol d'urée ? Donne le nombre a tel que N = a × 10²³ molécules. (N_A = 6,02×10²³ mol⁻¹)",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 0,5 mol, cherché N. Étape 2 — Calculer : n = 0,5 mol est connue. Étape 3 — Passer : N = n × N_A = 0,5 × 6,02×10²³ = 3,01×10²³. Étape 4 — Conclure : a = 3,01. Pourquoi pas 30,1 : c'est le coefficient devant 10²², pas devant 10²³.",
+                  "answers": [
+                    {
+                      "content": "3,01",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle est la masse de 2 mol d'urée ? Donnée : M(CH₄N₂O) = 60 g/mol.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Identifier : donnée n = 2 mol, cherchée m. Étape 2 — Calculer : n = 2 mol est connue. Étape 3 — Passer : m = n × M = 2 × 60 = 120 g. Étape 4 — Conclure : 120 g d'urée. Pourquoi pas 30 g : c'est 60 / 2, une division au lieu d'une multiplication.",
+                  "answers": [
+                    {
+                      "content": "120",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0,
+                  "unit": "g"
+                },
+                {
+                  "content": "Quelle suite de calculs donne le nombre de molécules N contenues dans une masse m d'urée ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Identifier : donnée m, cherché N. Étape 2 — Calculer : n = m / M. Étape 3 — Passer : N = n × N_A. Étape 4 — Conclure : on passe toujours par n. Pourquoi pas N = m × N_A : on multiplie alors une masse par un nombre d'entités par mole, ce qui n'a pas de sens et donne un résultat M fois trop grand.",
+                  "answers": [
+                    {
+                      "content": "n = m / M, puis N = n × N_A",
+                      "correct": true
+                    },
+                    {
+                      "content": "N = m × N_A, directement",
+                      "correct": false
+                    },
+                    {
+                      "content": "n = m × M, puis N = n / N_A",
+                      "correct": false
+                    },
+                    {
+                      "content": "N = m / M, puis multiplier par V_m",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "n = m / M, puis N = n × N_A ou m = n × M."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

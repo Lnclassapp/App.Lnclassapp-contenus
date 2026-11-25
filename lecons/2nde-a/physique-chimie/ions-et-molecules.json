@@ -1,0 +1,3879 @@
+{
+  "format": "lnclass.course-tree",
+  "version": 3,
+  "courses": [
+    {
+      "name": "Ions et molécules",
+      "subtitle": "Leçon 6 — progression DPFC 2026-2027",
+      "level_name": "2nde",
+      "series_name": "A",
+      "material_name": "Physique-Chimie",
+      "theme": "teal",
+      "figures": [
+        {
+          "key": "couches-chlore",
+          "kind": "stat_chart",
+          "description": "Un diagramme en barres qui donne le nombre d'électrons de l'atome de chlore sur chacune de ses couches : 2 électrons sur la couche K, 8 électrons sur la couche L et 7 électrons sur la couche M. La couche externe M contient 7 électrons : il en manque 1 pour avoir l'octet.",
+          "params": {
+            "chart": "bars",
+            "series": [
+              2,
+              8,
+              7
+            ],
+            "labels": [
+              "K",
+              "L",
+              "M"
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "formation-ions",
+          "kind": "diagram",
+          "description": "Un arbre qui décrit la formation des ions monoatomiques. L'atome neutre se transforme en cation quand il perd des électrons (charge positive, comme Na⁺, Mg²⁺ et Al³⁺) et en anion quand il en gagne (charge négative, comme Cl⁻, F⁻ et O²⁻).",
+          "params": {
+            "layout": "tree",
+            "direction": "down",
+            "nodes": [
+              {
+                "id": "at",
+                "label": "Atome neutre"
+              },
+              {
+                "id": "ca",
+                "label": "Cation : a perdu des électrons (charge +)"
+              },
+              {
+                "id": "an",
+                "label": "Anion : a gagné des électrons (charge −)"
+              },
+              {
+                "id": "exc",
+                "label": "Exemples : Na⁺, Mg²⁺, Al³⁺"
+              },
+              {
+                "id": "exa",
+                "label": "Exemples : Cl⁻, F⁻, O²⁻"
+              }
+            ],
+            "edges": [
+              {
+                "from": "at",
+                "to": "ca",
+                "label": "perd"
+              },
+              {
+                "from": "at",
+                "to": "an",
+                "label": "gagne"
+              },
+              {
+                "from": "ca",
+                "to": "exc"
+              },
+              {
+                "from": "an",
+                "to": "exa"
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "types-ions",
+          "kind": "diagram",
+          "description": "Un arbre qui classe les ions. Un ion monoatomique n'a qu'un seul atome, comme Na⁺, Mg²⁺, Cl⁻ ou O²⁻. Un ion polyatomique a plusieurs atomes liés : les cations NH₄⁺ et H₃O⁺, et les anions NO₃⁻, SO₄²⁻, CO₃²⁻ et HO⁻.",
+          "params": {
+            "layout": "tree",
+            "direction": "down",
+            "nodes": [
+              {
+                "id": "io",
+                "label": "Ions"
+              },
+              {
+                "id": "mo",
+                "label": "Ion monoatomique : un seul atome"
+              },
+              {
+                "id": "po",
+                "label": "Ion polyatomique : plusieurs atomes liés"
+              },
+              {
+                "id": "me",
+                "label": "Na⁺, Mg²⁺, Cl⁻, O²⁻"
+              },
+              {
+                "id": "pc",
+                "label": "Cations : NH₄⁺, H₃O⁺"
+              },
+              {
+                "id": "pa",
+                "label": "Anions : NO₃⁻, SO₄²⁻, CO₃²⁻, HO⁻"
+              }
+            ],
+            "edges": [
+              {
+                "from": "io",
+                "to": "mo"
+              },
+              {
+                "from": "io",
+                "to": "po"
+              },
+              {
+                "from": "mo",
+                "to": "me"
+              },
+              {
+                "from": "po",
+                "to": "pc"
+              },
+              {
+                "from": "po",
+                "to": "pa"
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "eau-developpee",
+          "kind": "molecule",
+          "description": "La formule développée de la molécule d'eau, dessinée atome par atome : un atome d'oxygène au centre, relié par un trait simple à chacun des deux atomes d'hydrogène. L'oxygène forme 2 liaisons covalentes et chaque hydrogène en forme une seule.",
+          "params": {
+            "mode": "custom",
+            "atoms": [
+              {
+                "id": "o",
+                "element": "O",
+                "x": 6,
+                "y": 5
+              },
+              {
+                "id": "h1",
+                "element": "H",
+                "x": 4,
+                "y": 7
+              },
+              {
+                "id": "h2",
+                "element": "H",
+                "x": 8,
+                "y": 7
+              }
+            ],
+            "bonds": [
+              [
+                "o",
+                "h1",
+                1
+              ],
+              [
+                "o",
+                "h2",
+                1
+              ]
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "alcanes",
+          "kind": "molecule",
+          "description": "Une molécule d'alcane dessinée en formule développée, avec son nom et sa formule brute sous le dessin. Le curseur règle le nombre d'atomes de carbone de 1 à 10 : méthane, éthane (2 carbones, l'exemple de la fiche), propane, butane du gaz de cuisine, etc.",
+          "params": {
+            "mode": "alkane",
+            "carbons": 2,
+            "display": "developed"
+          },
+          "controls": [
+            {
+              "param": "carbons",
+              "min": 1,
+              "max": 10,
+              "step": 1,
+              "label": "Nombre d'atomes de carbone"
+            }
+          ]
+        }
+      ],
+      "notions": [
+        {
+          "name": "Les règles du duet et de l'octet",
+          "remember": "Les **gaz nobles** (hélium, néon, argon) sont **chimiquement stables** : ils réagissent très peu, car leur couche externe est saturée. L'**hélium** ($Z = 2$) a 2 électrons sur la couche K : c'est un **duet**. Le **néon** ($Z = 10$) et l'**argon** ($Z = 18$) ont 8 électrons sur leur couche externe : c'est un **octet**. **Règle du duet** : un atome de numéro atomique proche de celui de l'hélium (H, Li, Be, soit $Z \\leq 4$) tend à avoir 2 électrons sur la couche K. **Règle de l'octet** : un autre atome étudié ici (de $Z = 6$ à $Z = 18$) tend à avoir 8 électrons sur sa couche externe. Pour y arriver, il peut perdre, gagner ou mettre en commun des électrons.",
+          "method": [
+            "Écrire la structure électronique de l'atome ou de l'ion, en remplissant K, L puis M.",
+            "Repérer la couche externe et compter les électrons qu'elle contient.",
+            "Comparer au duet (2 électrons sur K) ou à l'octet (8 électrons sur la couche externe), puis conclure : stable ou non."
+          ],
+          "example": {
+            "statement": "L'atome de chlore a pour numéro atomique $Z = 17$. Respecte-t-il la règle de l'octet ? Est-il stable ?",
+            "steps": [
+              "Écrire : l'atome neutre a 17 électrons : (K)²(L)⁸(M)⁷.",
+              "Repérer : la couche externe est la couche M ; elle contient 7 électrons.",
+              "Comparer : l'octet demande 8 électrons sur la couche externe ; il en manque 1. Conclure : l'atome de chlore n'est pas stable, il tend à gagner 1 électron."
+            ]
+          },
+          "pitfall": "Ne confonds pas l'octet avec « 8 électrons au total ». L'octet ne concerne que la **couche externe**. Contre-exemple : le néon a 10 électrons, (K)²(L)⁸ : sa couche externe L en contient 8, c'est un octet. L'hélium n'a que 2 électrons, c'est un duet (pas un octet), et il est pourtant stable. Écris toujours la structure électronique avant de conclure.",
+          "practice": {
+            "statement": "Tu t'entraînes à comparer la couche externe d'un atome au duet et à l'octet.",
+            "questions": [
+              {
+                "content": "Quelle est la structure électronique de l'atome de soufre ($Z = 16$) ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Écrire : 16 électrons ; K en reçoit 2, L en reçoit 8, M reçoit les 6 restants : (K)²(L)⁸(M)⁶. Étape 2 — Repérer : la couche externe est M, avec 6 électrons. On remplit K, puis L, puis M : « (L)⁶(M)⁸ » entame M avant que L soit pleine, ce qui est faux.",
+                "answers": [
+                  {
+                    "content": "(K)²(L)⁸(M)⁶",
+                    "correct": true
+                  },
+                  {
+                    "content": "(K)²(L)⁸(M)⁴",
+                    "correct": false
+                  },
+                  {
+                    "content": "(K)²(L)⁶(M)⁸",
+                    "correct": false
+                  },
+                  {
+                    "content": "(K)²(L)⁷(M)⁷",
+                    "correct": false
+                  }
+                ],
+                "hint": "Remplis K (2), puis L (8), puis M avec le reste."
+              },
+              {
+                "content": "Combien d'électrons la couche externe de l'atome d'oxygène ($Z = 8$) contient-elle ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Écrire : 8 électrons, soit (K)²(L)⁶. Étape 2 — Repérer : la couche externe est L ; elle contient 6 électrons. Il manque donc 2 électrons pour l'octet.",
+                "answers": [
+                  {
+                    "content": "6",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "L'oxygène a 8 électrons : 2 sur K, le reste sur L."
+              },
+              {
+                "content": "L'atome de néon ($Z = 10$) respecte la règle de l'octet.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Écrire : 10 électrons, (K)²(L)⁸. Étape 2 — Repérer : la couche externe L contient 8 électrons. Étape 3 — Comparer : c'est un octet, donc l'atome de néon est stable.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Écris la structure électronique du néon."
+              },
+              {
+                "content": "L'atome d'hélium n'a que 2 électrons, sur la couche K : il respecte la règle du ___.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Écrire : 2 électrons, (K)². Étape 2 — Repérer : la couche externe est K, avec 2 électrons. Étape 3 — Comparer : 2 électrons sur K, c'est le duet.",
+                "answers": [
+                  {
+                    "content": "duet",
+                    "correct": true
+                  }
+                ],
+                "hint": "Deux électrons sur la couche K, ce n'est pas un octet."
+              }
+            ]
+          },
+          "figure": "couches-chlore",
+          "exercise": [
+            {
+              "title": "Stabilité des atomes et structure électronique",
+              "statement": "Dans cet exercice, tu écris des structures électroniques et tu relis le schéma du chlore pour dire si un atome est stable.",
+              "exercise_type": "fixation",
+              "figure": "couches-chlore",
+              "questions": [
+                {
+                  "content": "Parmi ces atomes, lequel est un gaz noble, donc chimiquement stable ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : néon (K)²(L)⁸, sodium (K)²(L)⁸(M)¹, chlore (K)²(L)⁸(M)⁷, oxygène (K)²(L)⁶. Étape 2 — Repérer : la couche externe contient 8, 1, 7 et 6 électrons. Étape 3 — Comparer : seul le néon a un octet, c'est un gaz noble. Le sodium, le chlore et l'oxygène ont une couche externe incomplète : ils ne sont pas stables.",
+                  "answers": [
+                    {
+                      "content": "Le néon ($Z = 10$)",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le sodium ($Z = 11$)",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le chlore ($Z = 17$)",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'oxygène ($Z = 8$)",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'atome de chlore a pour numéro atomique $Z = 17$. Combien d'électrons contient sa couche externe ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : 17 électrons, (K)²(L)⁸(M)⁷. Étape 2 — Repérer : la couche externe est M, avec 7 électrons. Compter les 17 électrons au total serait confondre l'atome et sa couche externe.",
+                  "answers": [
+                    {
+                      "content": "7",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle est la structure électronique de l'atome d'aluminium ($Z = 13$) ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : 13 électrons ; K en reçoit 2, L en reçoit 8, il reste 3 électrons sur M : (K)²(L)⁸(M)³. Étape 2 — Repérer : la couche externe est M, avec 3 électrons. Les autres écritures ne respectent pas l'ordre de remplissage K, L puis M (L doit être pleine avant M).",
+                  "answers": [
+                    {
+                      "content": "(K)²(L)⁸(M)³",
+                      "correct": true
+                    },
+                    {
+                      "content": "(K)²(L)⁶(M)⁵",
+                      "correct": false
+                    },
+                    {
+                      "content": "(K)²(L)⁷(M)⁴",
+                      "correct": false
+                    },
+                    {
+                      "content": "(K)²(L)⁸(M)¹(N)²",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'atome d'hélium respecte la règle de l'octet.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Écrire : 2 électrons, (K)². Étape 2 — Repérer : la couche externe K contient 2 électrons. Étape 3 — Comparer : c'est un duet, pas un octet. L'hélium est stable avec 2 électrons.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "L'atome de lithium ($Z = 3$) a pour structure (K)²(L)¹. En perdant 1 électron, il obtient la structure de l'hélium, c'est-à-dire un ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Écrire : Li (K)²(L)¹. Étape 2 — Repérer : si l'électron de L est perdu, il reste (K)². Étape 3 — Comparer : 2 électrons sur K, c'est un duet comme l'hélium.",
+                  "answers": [
+                    {
+                      "content": "duet",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Le néon a 10 électrons. Pourquoi dit-on qu'il respecte l'octet ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : (K)²(L)⁸. Étape 2 — Repérer : la couche externe est L, avec 8 électrons. Étape 3 — Comparer : l'octet porte sur la couche externe, pas sur le total. Dire « 8 électrons au total » est l'erreur du piège : le néon en a 10.",
+                  "answers": [
+                    {
+                      "content": "Sa couche externe L contient 8 électrons",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il a 8 électrons au total",
+                      "correct": false
+                    },
+                    {
+                      "content": "Sa couche K contient 8 électrons",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il a 8 protons",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Écris la structure électronique, repère la couche externe, compare avec 2 ou 8."
+            },
+            {
+              "title": "Reconnaître les atomes stables et ceux qui ne le sont pas",
+              "statement": "Dans cet exercice, tu associes des atomes à leur structure électronique, tu comptes des électrons externes et tu compares au duet et à l'octet.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Relie chaque atome à sa structure électronique.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Écrire : K reçoit 2 électrons, L jusqu'à 8, puis M reçoit le reste. Étape 2 — Repérer : 8 électrons donnent (K)²(L)⁶ ; 10 donnent (K)²(L)⁸ ; 12 donnent (K)²(L)⁸(M)² ; 17 donnent (K)²(L)⁸(M)⁷. Chaque somme d'électrons vaut bien le numéro atomique.",
+                  "answers": [
+                    {
+                      "content": "Oxygène ($Z = 8$)",
+                      "match": "(K)²(L)⁶"
+                    },
+                    {
+                      "content": "Néon ($Z = 10$)",
+                      "match": "(K)²(L)⁸"
+                    },
+                    {
+                      "content": "Magnésium ($Z = 12$)",
+                      "match": "(K)²(L)⁸(M)²"
+                    },
+                    {
+                      "content": "Chlore ($Z = 17$)",
+                      "match": "(K)²(L)⁸(M)⁷"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels atomes respectent déjà le duet ou l'octet ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Écrire : hélium (K)² ; argon (K)²(L)⁸(M)⁸ ; carbone (K)²(L)⁴ ; sodium (K)²(L)⁸(M)¹. Étape 2 — Repérer : couches externes de 2, 8, 4 et 1 électrons. Étape 3 — Comparer : l'hélium a un duet et l'argon un octet ; le carbone et le sodium n'en ont pas.",
+                  "answers": [
+                    {
+                      "content": "L'hélium ($Z = 2$)",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'argon ($Z = 18$)",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le carbone ($Z = 6$)",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le sodium ($Z = 11$)",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'atome de phosphore a pour numéro atomique $Z = 15$. Combien d'électrons contient sa couche externe ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : 15 électrons, (K)²(L)⁸(M)⁵. Étape 2 — Repérer : la couche externe est M, avec 5 électrons. Il lui en manque 3 pour l'octet.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour savoir si un atome est stable.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Écrire la structure électronique. Étape 2 — Repérer la couche externe et compter ses électrons. Étape 3 — Comparer au duet ou à l'octet et conclure. On ne peut comparer qu'après avoir compté les électrons de la couche externe.",
+                  "answers": [
+                    {
+                      "content": "Écrire la structure électronique de l'atome ou de l'ion, en remplissant K, L puis M."
+                    },
+                    {
+                      "content": "Repérer la couche externe et compter les électrons qu'elle contient."
+                    },
+                    {
+                      "content": "Comparer au duet (2 électrons sur K) ou à l'octet (8 électrons sur la couche externe), puis conclure : stable ou non."
+                    }
+                  ]
+                },
+                {
+                  "content": "L'atome d'argon ($Z = 18$) a pour structure (K)²(L)⁸(M)⁸ : sa couche externe contient ___ électrons.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Écrire : (K)²(L)⁸(M)⁸. Étape 2 — Repérer : la couche externe est M, avec 8 électrons. Étape 3 — Comparer : c'est un octet, l'argon est un gaz noble. 18 est le nombre total d'électrons, pas celui de la couche externe.",
+                  "answers": [
+                    {
+                      "content": "8",
+                      "correct": true
+                    },
+                    {
+                      "content": "2",
+                      "correct": false
+                    },
+                    {
+                      "content": "6",
+                      "correct": false
+                    },
+                    {
+                      "content": "18",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'atome de fluor ($Z = 9$) est stable parce qu'il possède 9 électrons.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Écrire : 9 électrons, (K)²(L)⁷. Étape 2 — Repérer : la couche externe L contient 7 électrons. Étape 3 — Comparer : l'octet en demande 8 ; il manque 1 électron, l'atome n'est pas stable. Le nombre total d'électrons ne dit rien sur la stabilité.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Pour chaque atome : structure électronique, électrons de la couche externe, comparaison avec 2 ou 8."
+            }
+          ]
+        },
+        {
+          "name": "La formation des ions monoatomiques",
+          "remember": "Un **ion monoatomique** est un atome qui a **gagné ou perdu des électrons**. Son noyau ne change pas (même $Z$), mais l'ion n'est plus neutre. Un atome qui **perd** $n$ électrons devient un **cation**, de charge $+ne$, noté $X^{n+}$. Un atome qui **gagne** $n$ électrons devient un **anion**, de charge $-ne$, noté $X^{n-}$. Pour être stable, l'atome cherche la structure du gaz noble le plus proche (duet ou octet). Exemples : Na⁺, Mg²⁺, Al³⁺, Li⁺ (cations) ; Cl⁻, F⁻, O²⁻, S²⁻ (anions).",
+          "method": [
+            "Écrire la structure électronique de l'atome.",
+            "Chercher le gaz noble le plus proche et la structure à atteindre : duet ou octet.",
+            "Déterminer le nombre d'électrons perdus ou gagnés pour l'obtenir.",
+            "Écrire l'ion : son symbole avec sa charge, puis sa nouvelle structure électronique."
+          ],
+          "example": {
+            "statement": "L'atome de magnésium a pour numéro atomique $Z = 12$. Quel ion monoatomique forme-t-il ?",
+            "steps": [
+              "Écrire : l'atome a 12 électrons : (K)²(L)⁸(M)².",
+              "Chercher : le gaz noble le plus proche est le néon, (K)²(L)⁸ : il faut un octet sur la couche L.",
+              "Déterminer : l'atome perd les 2 électrons de la couche M, il perd donc 2 électrons.",
+              "Écrire l'ion : Mg²⁺, qui a 12 protons et 10 électrons : (K)²(L)⁸. Sa charge est $12e - 10e = +2e$."
+            ]
+          },
+          "pitfall": "Un atome qui perd des électrons ne devient pas négatif : les électrons sont négatifs, en perdre laisse un excès de charge positive. Contre-exemple : l'atome de sodium a 11 protons ($+11e$) et 11 électrons ($-11e$). Il perd 1 électron : 11 protons ($+11e$) et 10 électrons ($-10e$) donnent $+e$, c'est le cation Na⁺. Et on ne retire jamais de proton : le noyau reste le même.",
+          "practice": {
+            "statement": "Tu t'entraînes à trouver l'ion formé par un atome.",
+            "questions": [
+              {
+                "content": "Quel ion se forme quand l'atome de sodium ($Z = 11$) perd 1 électron ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Écrire : Na (K)²(L)⁸(M)¹. Étape 2 — Chercher : le néon (K)²(L)⁸ est le plus proche. Étape 3 — Déterminer : l'atome perd 1 électron, celui de la couche M. Étape 4 — Écrire l'ion : Na⁺, structure (K)²(L)⁸. Na⁻ serait un anion : il aurait gagné un électron, ce qui est faux ici.",
+                "answers": [
+                  {
+                    "content": "Na⁺",
+                    "correct": true
+                  },
+                  {
+                    "content": "Na⁻",
+                    "correct": false
+                  },
+                  {
+                    "content": "Na²⁺",
+                    "correct": false
+                  },
+                  {
+                    "content": "Ne⁺",
+                    "correct": false
+                  }
+                ],
+                "hint": "Perdre un électron rend l'ion positif."
+              },
+              {
+                "content": "L'atome de fluor ($Z = 9$) gagne des électrons pour obtenir la structure du néon. Combien d'électrons gagne-t-il ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Écrire : F (K)²(L)⁷. Étape 2 — Chercher : le néon (K)²(L)⁸ a 8 électrons sur L. Étape 3 — Déterminer : 8 − 7 = 1, l'atome gagne 1 électron. Étape 4 — Écrire l'ion : F⁻.",
+                "answers": [
+                  {
+                    "content": "1",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "Combien d'électrons manque-t-il à la couche L pour avoir 8 ?"
+              },
+              {
+                "content": "L'ion Cl⁻ est un cation.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Écrire : Cl (K)²(L)⁸(M)⁷. Étape 2 — Chercher : l'argon (K)²(L)⁸(M)⁸ est le plus proche. Étape 3 — Déterminer : l'atome gagne 1 électron. Étape 4 — Écrire l'ion : Cl⁻ est un anion, pas un cation.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Un cation a perdu des électrons ; un anion en a gagné."
+              },
+              {
+                "content": "L'atome de magnésium perd 2 électrons : il forme un ___ de charge +2e.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Écrire : Mg (K)²(L)⁸(M)². Étape 2 — Chercher : le néon (K)²(L)⁸. Étape 3 — Déterminer : il perd 2 électrons. Étape 4 — Écrire l'ion : Mg²⁺, un ion positif, donc un cation.",
+                "answers": [
+                  {
+                    "content": "cation",
+                    "correct": true
+                  }
+                ],
+                "hint": "Un ion positif porte un nom précis."
+              }
+            ]
+          },
+          "figure": "formation-ions",
+          "exercise": [
+            {
+              "title": "Du schéma électronique à l'ion",
+              "statement": "Dans cet exercice, tu prévois l'ion formé par un atome et tu relis le schéma qui distingue cation et anion.",
+              "exercise_type": "fixation",
+              "figure": "formation-ions",
+              "questions": [
+                {
+                  "content": "Quel ion monoatomique forme l'atome d'aluminium ($Z = 13$) ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : Al (K)²(L)⁸(M)³. Étape 2 — Chercher : le néon (K)²(L)⁸, avec un octet sur L. Étape 3 — Déterminer : l'atome perd les 3 électrons de la couche M. Étape 4 — Écrire l'ion : Al³⁺ ((K)²(L)⁸). Al³⁻ aurait gagné 3 électrons, ce qui l'éloignerait de l'octet.",
+                  "answers": [
+                    {
+                      "content": "Al³⁺",
+                      "correct": true
+                    },
+                    {
+                      "content": "Al⁻",
+                      "correct": false
+                    },
+                    {
+                      "content": "Al²⁺",
+                      "correct": false
+                    },
+                    {
+                      "content": "Al³⁻",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel ion monoatomique forme l'atome d'oxygène ($Z = 8$) ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : O (K)²(L)⁶. Étape 2 — Chercher : le néon (K)²(L)⁸. Étape 3 — Déterminer : 8 − 6 = 2, l'atome gagne 2 électrons. Étape 4 — Écrire l'ion : O²⁻. O²⁺ confond le signe : gagner des électrons donne un anion.",
+                  "answers": [
+                    {
+                      "content": "O²⁻",
+                      "correct": true
+                    },
+                    {
+                      "content": "O²⁺",
+                      "correct": false
+                    },
+                    {
+                      "content": "O⁶⁻",
+                      "correct": false
+                    },
+                    {
+                      "content": "O⁻",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'ion Mg²⁺ provient de l'atome de magnésium ($Z = 12$). Combien d'électrons contient-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : l'atome a 12 électrons. Étape 2 — Chercher : il vise l'octet du néon, (K)²(L)⁸. Étape 3 — Déterminer : il perd 2 électrons : 12 − 2 = 10. Étape 4 — Écrire l'ion : Mg²⁺ a 12 protons et 10 électrons.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle est la structure électronique de l'ion chlorure Cl⁻ ($Z = 17$) ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : Cl (K)²(L)⁸(M)⁷. Étape 2 — Chercher : l'argon (K)²(L)⁸(M)⁸. Étape 3 — Déterminer : l'atome gagne 1 électron. Étape 4 — Écrire l'ion : Cl⁻ a 18 électrons : (K)²(L)⁸(M)⁸. (K)²(L)⁸(M)⁷ est celle de l'atome, pas celle de l'ion.",
+                  "answers": [
+                    {
+                      "content": "(K)²(L)⁸(M)⁸",
+                      "correct": true
+                    },
+                    {
+                      "content": "(K)²(L)⁸(M)⁷",
+                      "correct": false
+                    },
+                    {
+                      "content": "(K)²(L)⁸(M)⁶",
+                      "correct": false
+                    },
+                    {
+                      "content": "(K)²(L)⁸",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'ion lithium Li⁺ ($Z = 3$) a la même structure électronique que l'atome d'hélium.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Écrire : Li (K)²(L)¹. Étape 2 — Chercher : l'hélium (K)² est le gaz noble le plus proche, avec un duet. Étape 3 — Déterminer : l'atome perd 1 électron. Étape 4 — Écrire l'ion : Li⁺ a 2 électrons : (K)², comme l'hélium.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un atome perd des électrons. Quel est le signe de la charge de l'ion obtenu ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : l'atome neutre a autant de protons (+) que d'électrons (−). Étape 3 — Déterminer : s'il perd des électrons, les charges positives l'emportent. Étape 4 — Écrire l'ion : un cation, de charge positive. Négatif est l'erreur du piège : les électrons sont négatifs, en perdre rend positif.",
+                  "answers": [
+                    {
+                      "content": "Positif",
+                      "correct": true
+                    },
+                    {
+                      "content": "Négatif",
+                      "correct": false
+                    },
+                    {
+                      "content": "Nul",
+                      "correct": false
+                    },
+                    {
+                      "content": "Cela dépend du noyau",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Perdre des électrons donne un cation, en gagner donne un anion. Vise le gaz noble le plus proche."
+            },
+            {
+              "title": "Prévoir la charge des ions",
+              "statement": "Dans cet exercice, tu associes des atomes à leurs ions, tu distingues cations et anions et tu comptes les électrons d'un ion.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Relie chaque atome à l'ion monoatomique qu'il forme.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Écrire : Na (M)¹, Mg (M)², Cl (M)⁷, O (L)⁶. Étape 2 — Chercher : l'octet du néon ou de l'argon. Étape 3 — Déterminer : Na perd 1, Mg perd 2, Cl gagne 1, O gagne 2. Étape 4 — Écrire l'ion : Na⁺, Mg²⁺, Cl⁻, O²⁻.",
+                  "answers": [
+                    {
+                      "content": "Sodium ($Z = 11$)",
+                      "match": "Na⁺"
+                    },
+                    {
+                      "content": "Magnésium ($Z = 12$)",
+                      "match": "Mg²⁺"
+                    },
+                    {
+                      "content": "Chlore ($Z = 17$)",
+                      "match": "Cl⁻"
+                    },
+                    {
+                      "content": "Oxygène ($Z = 8$)",
+                      "match": "O²⁻"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels ions sont des anions ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Écrire : Cl, F gagnent un électron ; Na, Mg en perdent. Étape 3 — Déterminer : gagner donne une charge négative. Étape 4 — Écrire l'ion : Cl⁻ et F⁻ sont des anions ; Na⁺ et Mg²⁺ sont des cations.",
+                  "answers": [
+                    {
+                      "content": "Cl⁻",
+                      "correct": true
+                    },
+                    {
+                      "content": "F⁻",
+                      "correct": true
+                    },
+                    {
+                      "content": "Na⁺",
+                      "correct": false
+                    },
+                    {
+                      "content": "Mg²⁺",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'atome de soufre ($Z = 16$) forme l'ion S²⁻. Combien d'électrons cet ion contient-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : S (K)²(L)⁸(M)⁶, 16 électrons. Étape 2 — Chercher : l'argon (K)²(L)⁸(M)⁸. Étape 3 — Déterminer : l'atome gagne 2 électrons : 16 + 2 = 18. Étape 4 — Écrire l'ion : S²⁻ a 16 protons et 18 électrons.",
+                  "answers": [
+                    {
+                      "content": "18",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "L'atome de béryllium ($Z = 4$) a pour structure (K)²(L)². Pour obtenir le duet de l'hélium, il forme l'ion ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Écrire : Be (K)²(L)². Étape 2 — Chercher : l'hélium (K)². Étape 3 — Déterminer : il perd les 2 électrons de L. Étape 4 — Écrire l'ion : Be²⁺, avec 4 protons et 2 électrons. Be⁴⁺ confond la charge avec Z.",
+                  "answers": [
+                    {
+                      "content": "Be²⁺",
+                      "correct": true
+                    },
+                    {
+                      "content": "Be²⁻",
+                      "correct": false
+                    },
+                    {
+                      "content": "Be⁺",
+                      "correct": false
+                    },
+                    {
+                      "content": "Be⁴⁺",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour trouver l'ion formé par un atome.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Écrire la structure électronique. Étape 2 — Chercher le gaz noble le plus proche. Étape 3 — Déterminer les électrons perdus ou gagnés. Étape 4 — Écrire l'ion avec sa charge. Le nombre d'électrons perdus ou gagnés ne se détermine qu'après le choix du gaz noble.",
+                  "answers": [
+                    {
+                      "content": "Écrire la structure électronique de l'atome."
+                    },
+                    {
+                      "content": "Chercher le gaz noble le plus proche et la structure à atteindre : duet ou octet."
+                    },
+                    {
+                      "content": "Déterminer le nombre d'électrons perdus ou gagnés pour l'obtenir."
+                    },
+                    {
+                      "content": "Écrire l'ion : son symbole avec sa charge, puis sa nouvelle structure électronique."
+                    }
+                  ]
+                },
+                {
+                  "content": "Quand un atome devient un ion, son nombre de protons ne change pas : l'ion Na⁺ a ___ protons.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Écrire : Na a 11 protons ($Z = 11$). Étape 3 — Déterminer : seuls les électrons sont perdus ou gagnés. Étape 4 — Écrire l'ion : Na⁺ a toujours 11 protons, mais 10 électrons.",
+                  "answers": [
+                    {
+                      "content": "11",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Pour chaque atome : structure électronique, gaz noble voisin, électrons perdus ou gagnés, puis l'ion."
+            }
+          ]
+        },
+        {
+          "name": "Les ions polyatomiques usuels",
+          "remember": "Un **ion polyatomique** est un groupe d'atomes liés entre eux qui porte une **charge globale**. Sa formule donne chaque atome avec son **indice** (nombre d'atomes), puis la charge de l'ion entier. **Cations** : ammonium NH₄⁺, hydronium H₃O⁺. **Anions** : hydroxyde HO⁻, nitrate NO₃⁻, sulfate SO₄²⁻, carbonate CO₃²⁻, permanganate MnO₄⁻. Son nombre d'électrons est la somme des numéros atomiques de ses atomes, diminuée des électrons perdus (cation) ou augmentée des électrons gagnés (anion).",
+          "method": [
+            "Lire la formule de l'ion : relever chaque atome et son indice.",
+            "Relever la charge de l'ion pour dire si c'est un cation ou un anion.",
+            "Calculer le nombre d'atomes, puis le nombre d'électrons : somme des numéros atomiques, moins les électrons perdus (cation) ou plus les électrons gagnés (anion).",
+            "Nommer l'ion avec la liste des ions usuels."
+          ],
+          "example": {
+            "statement": "Étudier l'ion sulfate SO₄²⁻ (soufre $Z = 16$, oxygène $Z = 8$).",
+            "steps": [
+              "Lire : un atome de soufre et 4 atomes d'oxygène (indice 4).",
+              "Relever : la charge est 2− : c'est un anion, qui a gagné 2 électrons.",
+              "Calculer : 1 + 4 = 5 atomes ; électrons : 16 + 4 × 8 + 2 = 50.",
+              "Nommer : c'est l'ion sulfate."
+            ]
+          },
+          "pitfall": "Ne confonds pas l'indice et la charge. L'indice, écrit en bas, compte les atomes ; la charge, écrite en haut, concerne l'ion entier. Contre-exemple : dans NH₄⁺, le 4 donne 4 atomes d'hydrogène, mais la charge est +1 (écrite +), pas +4. Dans SO₄²⁻, il y a 4 atomes d'oxygène et la charge de l'ion entier est 2−, pas celle de l'oxygène.",
+          "practice": {
+            "statement": "Tu t'entraînes à lire la formule d'un ion polyatomique.",
+            "questions": [
+              {
+                "content": "Quelle est la formule de l'ion nitrate ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Lire : 1 atome d'azote et 3 atomes d'oxygène, soit NO₃. Étape 2 — Relever : le nitrate est un anion de charge 1−. Étape 4 — Nommer : NO₃⁻ est l'ion nitrate. NO₃⁺ est un cation, ce qui ne correspond pas au nitrate.",
+                "answers": [
+                  {
+                    "content": "NO₃⁻",
+                    "correct": true
+                  },
+                  {
+                    "content": "NO₃⁺",
+                    "correct": false
+                  },
+                  {
+                    "content": "N₃O⁻",
+                    "correct": false
+                  },
+                  {
+                    "content": "NO₃²⁻",
+                    "correct": false
+                  }
+                ],
+                "hint": "Un atome d'azote, trois d'oxygène, charge 1−."
+              },
+              {
+                "content": "Combien d'atomes contient l'ion ammonium NH₄⁺ ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Lire : 1 atome d'azote et 4 atomes d'hydrogène. Étape 3 — Calculer : 1 + 4 = 5 atomes. La charge + n'est pas un nombre d'atomes.",
+                "answers": [
+                  {
+                    "content": "5",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "Additionne les indices : N compte 1."
+              },
+              {
+                "content": "L'ion hydroxyde HO⁻ est un cation.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Lire : un atome d'oxygène et un atome d'hydrogène. Étape 2 — Relever : la charge est 1− : c'est un anion. Étape 4 — Nommer : l'ion hydroxyde est un anion.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Regarde le signe de la charge."
+              },
+              {
+                "content": "L'ion H₃O⁺ s'appelle l'ion ___.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Lire : 3 atomes d'hydrogène et 1 atome d'oxygène. Étape 2 — Relever : charge 1+, c'est un cation. Étape 4 — Nommer : c'est l'ion hydronium.",
+                "answers": [
+                  {
+                    "content": "hydronium",
+                    "correct": true
+                  },
+                  {
+                    "content": "oxonium",
+                    "correct": true
+                  }
+                ],
+                "hint": "Son nom évoque l'hydrogène et l'eau."
+              }
+            ]
+          },
+          "figure": "types-ions",
+          "exercise": [
+            {
+              "title": "Lire la formule d'un ion polyatomique",
+              "statement": "Dans cet exercice, tu lis des formules d'ions polyatomiques, tu comptes leurs atomes et leurs électrons et tu t'aides du schéma des deux sortes d'ions.",
+              "exercise_type": "fixation",
+              "figure": "types-ions",
+              "questions": [
+                {
+                  "content": "Parmi ces ions, lequel est un cation polyatomique ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Lire : chaque formule a plusieurs atomes. Étape 2 — Relever : seul NH₄⁺ a une charge positive. Étape 4 — Nommer : c'est l'ion ammonium. Les trois autres sont des anions : leur charge est négative.",
+                  "answers": [
+                    {
+                      "content": "L'ion ammonium NH₄⁺",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'ion sulfate SO₄²⁻",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'ion nitrate NO₃⁻",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'ion hydroxyde HO⁻",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien d'atomes d'oxygène contient l'ion carbonate CO₃²⁻ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Lire : 1 atome de carbone et 3 atomes d'oxygène (indice 3). Étape 3 — Calculer : le nombre d'atomes d'oxygène est 3. Le 2 de 2⁻ est la charge, pas un nombre d'atomes.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle est la charge de l'ion sulfate SO₄²⁻ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Lire : SO₄ avec la charge 2⁻. Étape 2 — Relever : la charge est 2−, donc −2e. Étape 4 — Nommer : l'ion sulfate. −4e prend l'indice pour la charge ; +2e se trompe de signe.",
+                  "answers": [
+                    {
+                      "content": "−2e",
+                      "correct": true
+                    },
+                    {
+                      "content": "−4e",
+                      "correct": false
+                    },
+                    {
+                      "content": "+2e",
+                      "correct": false
+                    },
+                    {
+                      "content": "−6e",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'ion hydroxyde HO⁻ contient un atome d'oxygène ($Z = 8$) et un atome d'hydrogène ($Z = 1$). Combien d'électrons contient-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Lire : 1 atome O et 1 atome H. Étape 2 — Relever : charge 1−, c'est un anion : il a gagné 1 électron. Étape 3 — Calculer : 8 + 1 + 1 = 10 électrons.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Relie chaque formule au nom de l'ion.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Lire : on repère les atomes de chaque formule. Étape 4 — Nommer : NH₄⁺ ammonium, NO₃⁻ nitrate, CO₃²⁻ carbonate, MnO₄⁻ permanganate.",
+                  "answers": [
+                    {
+                      "content": "NH₄⁺",
+                      "match": "Ion ammonium"
+                    },
+                    {
+                      "content": "NO₃⁻",
+                      "match": "Ion nitrate"
+                    },
+                    {
+                      "content": "CO₃²⁻",
+                      "match": "Ion carbonate"
+                    },
+                    {
+                      "content": "MnO₄⁻",
+                      "match": "Ion permanganate"
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans l'ion SO₄²⁻, l'indice 4 donne la charge de l'ion.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Lire : l'indice 4 est écrit en bas, à côté de O. Étape 2 — Relever : la charge est écrite en haut : 2−. Étape 3 — Calculer : l'indice compte 4 atomes d'oxygène ; il ne donne pas la charge.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Indice en bas : nombre d'atomes. Charge en haut : ion entier. Électrons = somme des Z, plus 1 par charge négative."
+            },
+            {
+              "title": "Reconnaître et compter dans les ions polyatomiques",
+              "statement": "Dans cet exercice, tu classes des ions polyatomiques, tu les nommes et tu comptes leurs électrons.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quels ions sont des anions polyatomiques ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Lire : tous ont plusieurs atomes. Étape 2 — Relever : NO₃⁻ et CO₃²⁻ ont une charge négative ; NH₄⁺ et H₃O⁺ une charge positive. Étape 4 — Nommer : nitrate et carbonate sont des anions.",
+                  "answers": [
+                    {
+                      "content": "NO₃⁻",
+                      "correct": true
+                    },
+                    {
+                      "content": "CO₃²⁻",
+                      "correct": true
+                    },
+                    {
+                      "content": "NH₄⁺",
+                      "correct": false
+                    },
+                    {
+                      "content": "H₃O⁺",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'ion ammonium NH₄⁺ contient un atome d'azote ($Z = 7$) et 4 atomes d'hydrogène ($Z = 1$). Combien d'électrons contient-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Lire : 1 atome N et 4 atomes H. Étape 2 — Relever : charge 1+, c'est un cation : il a perdu 1 électron. Étape 3 — Calculer : 7 + 4 × 1 − 1 = 10 électrons.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "L'ion MnO₄⁻ s'appelle l'ion ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Lire : 1 atome Mn et 4 atomes O. Étape 2 — Relever : charge 1−, un anion. Étape 4 — Nommer : c'est l'ion permanganate. Le nitrate est NO₃⁻ et le carbonate CO₃²⁻.",
+                  "answers": [
+                    {
+                      "content": "permanganate",
+                      "correct": true
+                    },
+                    {
+                      "content": "manganate",
+                      "correct": false
+                    },
+                    {
+                      "content": "nitrate",
+                      "correct": false
+                    },
+                    {
+                      "content": "carbonate",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'ion NH₄⁺ s'appelle l'ion ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Lire : 1 atome N, 4 atomes H. Étape 2 — Relever : charge 1+, un cation. Étape 4 — Nommer : c'est l'ion ammonium.",
+                  "answers": [
+                    {
+                      "content": "ammonium",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour étudier un ion polyatomique.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Lire la formule. Étape 2 — Relever la charge. Étape 3 — Calculer atomes et électrons. Étape 4 — Nommer l'ion. On ne peut calculer les électrons qu'après avoir lu la formule et relevé la charge.",
+                  "answers": [
+                    {
+                      "content": "Lire la formule de l'ion : relever chaque atome et son indice."
+                    },
+                    {
+                      "content": "Relever la charge de l'ion pour dire si c'est un cation ou un anion."
+                    },
+                    {
+                      "content": "Calculer le nombre d'atomes, puis le nombre d'électrons : somme des numéros atomiques, moins les électrons perdus (cation) ou plus les électrons gagnés (anion)."
+                    },
+                    {
+                      "content": "Nommer l'ion avec la liste des ions usuels."
+                    }
+                  ]
+                },
+                {
+                  "content": "L'ion carbonate CO₃²⁻ contient un atome de carbone ($Z = 6$) et 3 atomes d'oxygène ($Z = 8$). Combien d'électrons contient-il ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Lire : 1 atome C et 3 atomes O. Étape 2 — Relever : charge 2−, un anion : il a gagné 2 électrons. Étape 3 — Calculer : 6 + 3 × 8 + 2 = 32. 30 oublie les 2 électrons gagnés ; 28 les retire comme pour un cation.",
+                  "answers": [
+                    {
+                      "content": "32",
+                      "correct": true
+                    },
+                    {
+                      "content": "30",
+                      "correct": false
+                    },
+                    {
+                      "content": "28",
+                      "correct": false
+                    },
+                    {
+                      "content": "24",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Lis les indices, regarde le signe de la charge, puis additionne les numéros atomiques avant d'ajuster."
+            }
+          ]
+        },
+        {
+          "name": "La formule d'un composé ionique",
+          "remember": "Un **composé ionique** (comme le sel de cuisine) est formé de **cations** et d'**anions**. Il est **électriquement neutre** : c'est l'**électroneutralité**. La somme des charges positives est égale à l'opposé de la somme des charges négatives. Sa **formule** écrit le cation, puis l'anion, avec des **indices** qui donnent le plus petit nombre d'ions de chaque sorte ; l'indice 1 ne s'écrit pas et les charges ne s'écrivent pas. Un ion polyatomique d'indice supérieur à 1 se met entre parenthèses : Ca(OH)₂. Son **nom** commence par l'anion, puis le cation : chlorure de sodium NaCl, oxyde de magnésium MgO.",
+          "method": [
+            "Repérer le cation et l'anion, avec leurs charges.",
+            "Chercher les nombres d'ions qui rendent la charge totale nulle (plus petit multiple commun des charges).",
+            "Écrire la formule : le cation, puis l'anion, avec leurs indices et sans les charges (parenthèses autour d'un ion polyatomique d'indice supérieur à 1).",
+            "Vérifier l'électroneutralité : somme des charges positives plus somme des charges négatives égale 0."
+          ],
+          "example": {
+            "statement": "Écrire la formule du composé ionique formé des ions aluminium Al³⁺ et oxyde O²⁻.",
+            "steps": [
+              "Repérer : le cation est Al³⁺ (charge +3) et l'anion est O²⁻ (charge −2).",
+              "Chercher : le plus petit multiple commun de 3 et 2 est 6 : il faut 2 ions Al³⁺ (+6) et 3 ions O²⁻ (−6).",
+              "Écrire : le cation d'abord, puis l'anion, avec les indices et sans les charges : Al₂O₃.",
+              "Vérifier : 2 × (+3) + 3 × (−2) = +6 − 6 = 0. Le composé est neutre : c'est l'oxyde d'aluminium."
+            ]
+          },
+          "pitfall": "Écris l'indice le plus simple et n'écris pas les charges. Contre-exemple : Mg²⁺ et O²⁻ donnent MgO, pas Mg₂O₂ : 1 ion Mg²⁺ (+2) et 1 ion O²⁻ (−2) suffisent. Mg₂O₂ est bien neutre aussi (+4 − 4 = 0), mais ce n'est pas le plus petit nombre d'ions. Et Na⁺Cl⁻ n'est pas une formule : on écrit NaCl.",
+          "practice": {
+            "statement": "Tu t'entraînes à écrire la formule d'un composé ionique.",
+            "questions": [
+              {
+                "content": "Quelle est la formule du composé formé des ions Na⁺ et Cl⁻ ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Repérer : Na⁺ (+1) et Cl⁻ (−1). Étape 2 — Chercher : une charge +1 compense une charge −1 : 1 ion de chaque sorte. Étape 3 — Écrire : NaCl, sans charges et sans indice 1. Étape 4 — Vérifier : +1 − 1 = 0. Na₂Cl donnerait +2 − 1 = +1 : le composé ne serait pas neutre.",
+                "answers": [
+                  {
+                    "content": "NaCl",
+                    "correct": true
+                  },
+                  {
+                    "content": "Na₂Cl",
+                    "correct": false
+                  },
+                  {
+                    "content": "NaCl₂",
+                    "correct": false
+                  },
+                  {
+                    "content": "Na⁺Cl⁻",
+                    "correct": false
+                  }
+                ],
+                "hint": "Une charge +1 et une charge −1 se compensent."
+              },
+              {
+                "content": "Pour 1 ion calcium Ca²⁺, combien d'ions chlorure Cl⁻ faut-il pour obtenir un composé neutre ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Repérer : Ca²⁺ (+2) et Cl⁻ (−1). Étape 2 — Chercher : il faut 2 ions Cl⁻ pour compenser +2. Étape 3 — Écrire : CaCl₂. Étape 4 — Vérifier : +2 + 2 × (−1) = 0.",
+                "answers": [
+                  {
+                    "content": "2",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "La charge +2 doit être compensée par des charges −1."
+              },
+              {
+                "content": "Les ions Mg²⁺ et Cl⁻ forment le composé de formule ___.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Repérer : Mg²⁺ (+2) et Cl⁻ (−1). Étape 2 — Chercher : 1 ion Mg²⁺ pour 2 ions Cl⁻. Étape 3 — Écrire : MgCl₂. Étape 4 — Vérifier : +2 − 2 = 0.",
+                "answers": [
+                  {
+                    "content": "MgCl2",
+                    "correct": true
+                  },
+                  {
+                    "content": "MgCl₂",
+                    "correct": true
+                  }
+                ],
+                "hint": "L'indice 2 se place après Cl."
+              },
+              {
+                "content": "Un composé ionique solide porte une charge globale positive.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Repérer : un composé ionique contient des cations (+) et des anions (−). Étape 2 — Chercher : leurs nombres sont tels que les charges se compensent. Étape 4 — Vérifier : la somme des charges est nulle, donc le composé est neutre.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Pense à l'électroneutralité."
+              }
+            ]
+          },
+          "figure": null,
+          "exercise": [
+            {
+              "title": "Écrire des formules de composés ioniques",
+              "statement": "Dans cet exercice, tu écris la formule de composés ioniques en cherchant les nombres d'ions qui rendent le composé neutre.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle est la formule du composé formé des ions Ca²⁺ et Cl⁻ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : Ca²⁺ (+2) et Cl⁻ (−1). Étape 2 — Chercher : 1 ion Ca²⁺ pour 2 ions Cl⁻. Étape 3 — Écrire : CaCl₂. Étape 4 — Vérifier : +2 − 2 = 0. CaCl donnerait +2 − 1 = +1 ; Ca₂Cl₂ donnerait +4 − 2 = +2 ; Ca₂Cl donnerait +4 − 1 = +3 : aucun n'est neutre.",
+                  "answers": [
+                    {
+                      "content": "CaCl₂",
+                      "correct": true
+                    },
+                    {
+                      "content": "CaCl",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ca₂Cl",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ca₂Cl₂",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la formule du composé formé des ions Na⁺ et SO₄²⁻ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : Na⁺ (+1) et SO₄²⁻ (−2). Étape 2 — Chercher : il faut 2 ions Na⁺ pour 1 ion SO₄²⁻. Étape 3 — Écrire : Na₂SO₄ (1 seul ion sulfate : pas de parenthèses). Étape 4 — Vérifier : +2 − 2 = 0. NaSO₄ donnerait +1 − 2 = −1, non neutre.",
+                  "answers": [
+                    {
+                      "content": "Na₂SO₄",
+                      "correct": true
+                    },
+                    {
+                      "content": "NaSO₄",
+                      "correct": false
+                    },
+                    {
+                      "content": "Na(SO₄)₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "Na₂(SO₄)₂",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la formule du composé formé des ions Al³⁺ et Cl⁻ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : Al³⁺ (+3) et Cl⁻ (−1). Étape 2 — Chercher : 1 ion Al³⁺ pour 3 ions Cl⁻. Étape 3 — Écrire : AlCl₃. Étape 4 — Vérifier : +3 − 3 = 0. Al₃Cl inverse les indices.",
+                  "answers": [
+                    {
+                      "content": "AlCl₃",
+                      "correct": true
+                    },
+                    {
+                      "content": "Al₃Cl",
+                      "correct": false
+                    },
+                    {
+                      "content": "AlCl",
+                      "correct": false
+                    },
+                    {
+                      "content": "Al₃Cl₃",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la formule du composé formé des ions Ca²⁺ et HO⁻ (hydroxyde) ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : Ca²⁺ (+2) et HO⁻ (−1). Étape 2 — Chercher : 1 ion Ca²⁺ pour 2 ions HO⁻. Étape 3 — Écrire : Ca(OH)₂, avec des parenthèses autour de l'ion polyatomique d'indice 2. Étape 4 — Vérifier : +2 − 2 = 0. CaOH₂ ferait croire que l'indice 2 ne concerne que H.",
+                  "answers": [
+                    {
+                      "content": "Ca(OH)₂",
+                      "correct": true
+                    },
+                    {
+                      "content": "CaOH₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "CaOH",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ca₂OH",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le composé de formule Fe₂O₃ (principal constituant de la rouille) est formé d'ions Fe³⁺ et O²⁻. Pour 3 ions O²⁻, combien d'ions Fe³⁺ faut-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : Fe³⁺ (+3) et O²⁻ (−2). Étape 2 — Chercher : 3 × (−2) = −6, il faut +6 : 2 ions Fe³⁺. Étape 3 — Écrire : Fe₂O₃. Étape 4 — Vérifier : 2 × 3 − 3 × 2 = 0.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Les ions Mg²⁺ et O²⁻ donnent le composé de formule Mg₂O₂.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer : Mg²⁺ (+2) et O²⁻ (−2). Étape 2 — Chercher : 1 ion de chaque sorte suffit. Étape 3 — Écrire : MgO. Étape 4 — Vérifier : +2 − 2 = 0 ; Mg₂O₂ n'est pas la formule la plus simple.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Cherche le plus petit nombre d'ions pour que les charges se compensent, puis écris la formule sans les charges."
+            },
+            {
+              "title": "Formules, charges et noms de composés ioniques",
+              "statement": "Dans cet exercice, tu relies des formules à leur nom, tu choisis des formules justes et tu comptes les atomes d'un composé ionique.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Relie chaque formule à son nom.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Repérer : NaCl est formé de Na⁺ et Cl⁻ ; MgO de Mg²⁺ et O²⁻ ; CaCO₃ de Ca²⁺ et CO₃²⁻ ; KNO₃ de K⁺ et NO₃⁻. Étape 3 — Écrire : le nom commence par l'anion, puis le cation.",
+                  "answers": [
+                    {
+                      "content": "NaCl",
+                      "match": "chlorure de sodium"
+                    },
+                    {
+                      "content": "MgO",
+                      "match": "oxyde de magnésium"
+                    },
+                    {
+                      "content": "CaCO₃",
+                      "match": "carbonate de calcium"
+                    },
+                    {
+                      "content": "KNO₃",
+                      "match": "nitrate de potassium"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles formules sont celles d'un composé ionique neutre ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Repérer : Mg²⁺, Cl⁻, Na⁺, O²⁻, Al³⁺. Étape 4 — Vérifier : MgCl₂ donne +2 − 2 = 0 ; Na₂O donne +2 − 2 = 0 ; NaO donne +1 − 2 = −1 ; AlCl₂ donne +3 − 2 = +1.",
+                  "answers": [
+                    {
+                      "content": "MgCl₂",
+                      "correct": true
+                    },
+                    {
+                      "content": "Na₂O",
+                      "correct": true
+                    },
+                    {
+                      "content": "NaO",
+                      "correct": false
+                    },
+                    {
+                      "content": "AlCl₂",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le nitrate d'ammonium, un engrais, a pour formule NH₄NO₃. Combien d'atomes contient une unité de formule ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Repérer : un ion ammonium NH₄⁺ et un ion nitrate NO₃⁻. Étape 3 — Écrire : l'unité de formule contient NH₄⁺ (1 + 4 = 5 atomes) et NO₃⁻ (1 + 3 = 4 atomes). Étape 4 — Vérifier : 5 + 4 = 9 atomes, et +1 − 1 = 0 pour la charge.",
+                  "answers": [
+                    {
+                      "content": "9",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Le composé formé d'ions Na⁺ et HO⁻ a pour formule ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Repérer : Na⁺ (+1) et HO⁻ (−1). Étape 2 — Chercher : 1 ion de chaque sorte. Étape 3 — Écrire : NaOH, sans parenthèses car l'indice est 1. Étape 4 — Vérifier : +1 − 1 = 0. Na(OH)₂ donnerait +1 − 2 = −1.",
+                  "answers": [
+                    {
+                      "content": "NaOH",
+                      "correct": true
+                    },
+                    {
+                      "content": "Na(OH)₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "Na₂OH",
+                      "correct": false
+                    },
+                    {
+                      "content": "NaO₂H",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour écrire la formule d'un composé ionique.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Repérer les ions et leurs charges. Étape 2 — Chercher les nombres d'ions. Étape 3 — Écrire la formule. Étape 4 — Vérifier l'électroneutralité. On ne peut écrire les indices qu'après avoir cherché les nombres d'ions.",
+                  "answers": [
+                    {
+                      "content": "Repérer le cation et l'anion, avec leurs charges."
+                    },
+                    {
+                      "content": "Chercher les nombres d'ions qui rendent la charge totale nulle (plus petit multiple commun des charges)."
+                    },
+                    {
+                      "content": "Écrire la formule : le cation, puis l'anion, avec leurs indices et sans les charges (parenthèses autour d'un ion polyatomique d'indice supérieur à 1)."
+                    },
+                    {
+                      "content": "Vérifier l'électroneutralité : somme des charges positives plus somme des charges négatives égale 0."
+                    }
+                  ]
+                },
+                {
+                  "content": "L'oxyde de zinc, utilisé dans des pommades, est formé d'ions Zn²⁺ et O²⁻ : sa formule est ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Repérer : Zn²⁺ (+2) et O²⁻ (−2). Étape 2 — Chercher : 1 ion de chaque sorte. Étape 3 — Écrire : ZnO. Étape 4 — Vérifier : +2 − 2 = 0.",
+                  "answers": [
+                    {
+                      "content": "ZnO",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Compare toujours les charges : la somme des charges positives doit compenser celle des charges négatives."
+            }
+          ]
+        },
+        {
+          "name": "La liaison covalente et les formules d'une molécule",
+          "remember": "Une **molécule** est un groupe d'atomes liés, électriquement neutre (H₂O, CH₄). Une **liaison covalente** est la mise en commun de **deux électrons**, un de chaque atome : ce **doublet liant** se dessine par un trait. Chaque atome forme autant de liaisons qu'il lui manque d'électrons pour avoir le duet ou l'octet : **H 1, F 1, Cl 1, O 2, N 3, C 4**. Entre deux atomes, la liaison peut être **double** (O=C=O) ou **triple** (N≡N). La **formule développée** montre tous les atomes et toutes les liaisons. La **formule semi-développée** ne dessine pas les liaisons avec l'hydrogène : on écrit CH₃–CH₃ au lieu de dessiner chaque liaison C–H.",
+          "method": [
+            "Écrire la structure électronique de chaque atome et compter les électrons qui lui manquent pour atteindre le duet ou l'octet.",
+            "Associer les atomes : chaque liaison met en commun un doublet, et chaque atome forme autant de liaisons que d'électrons manquants.",
+            "Dessiner la formule développée : un trait par liaison, tous les atomes visibles.",
+            "Déduire la formule semi-développée en regroupant chaque atome avec les atomes d'hydrogène qui lui sont liés."
+          ],
+          "example": {
+            "statement": "Écrire les formules développée et semi-développée de l'éthane, de formule brute C₂H₆.",
+            "steps": [
+              "Écrire : H a (K)¹, il lui manque 1 électron ; C a (K)²(L)⁴, il lui en manque 4.",
+              "Associer : chaque carbone forme 4 liaisons et chaque hydrogène 1. Les deux carbones se lient entre eux ; chacun porte alors 3 atomes d'hydrogène : 1 + 3 = 4 liaisons, et 2 × 3 = 6 atomes d'hydrogène.",
+              "Dessiner : un trait entre les 2 carbones, puis 3 traits C–H sur chaque carbone. La figure montre cette formule développée.",
+              "Déduire : chaque carbone est regroupé avec ses 3 atomes d'hydrogène : CH₃–CH₃."
+            ]
+          },
+          "pitfall": "Le nombre de liaisons d'un atome n'est pas son nombre d'électrons externes : c'est le nombre d'électrons qui lui **manquent**. Contre-exemple : l'oxygène a 6 électrons sur sa couche externe, (K)²(L)⁶, mais il en manque 2 pour l'octet : il forme 2 liaisons, comme dans H–O–H, et non 6. Vérifie aussi que chaque atome a bien son nombre de liaisons.",
+          "practice": {
+            "statement": "Tu t'entraînes à trouver le nombre de liaisons d'un atome et à écrire une formule de molécule.",
+            "questions": [
+              {
+                "content": "Combien de liaisons covalentes l'atome d'azote ($Z = 7$) forme-t-il ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Écrire : N a (K)²(L)⁵, soit 5 électrons externes. Étape 2 — Associer : pour l'octet, il en manque 8 − 5 = 3 : l'atome forme 3 liaisons. 5 est le nombre d'électrons externes, pas celui des liaisons.",
+                "answers": [
+                  {
+                    "content": "3",
+                    "correct": true
+                  },
+                  {
+                    "content": "5",
+                    "correct": false
+                  },
+                  {
+                    "content": "7",
+                    "correct": false
+                  },
+                  {
+                    "content": "2",
+                    "correct": false
+                  }
+                ],
+                "hint": "Combien d'électrons manque-t-il à la couche L ?"
+              },
+              {
+                "content": "Combien de liaisons covalentes l'atome d'oxygène ($Z = 8$) forme-t-il ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Écrire : O a (K)²(L)⁶. Étape 2 — Associer : il manque 8 − 6 = 2 électrons, donc 2 liaisons.",
+                "answers": [
+                  {
+                    "content": "2",
+                    "correct": true
+                  }
+                ],
+                "tolerance": 0,
+                "hint": "Octet : 8 électrons sur L."
+              },
+              {
+                "content": "Dans la formule développée de l'eau, chaque atome d'hydrogène est lié à l'atome d'oxygène par un trait.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Écrire : H manque d'1 électron, O de 2. Étape 2 — Associer : O forme 2 liaisons, chacune avec un H. Étape 3 — Dessiner : H–O–H, soit 2 traits.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "O forme 2 liaisons et chaque H une seule."
+              },
+              {
+                "content": "L'ammoniac contient 1 atome d'azote lié à 3 atomes d'hydrogène : sa formule brute est ___.",
+                "question_type": "select",
+                "explanation": "Étape 1 — Écrire : N manque de 3 électrons, H de 1. Étape 2 — Associer : N forme 3 liaisons, chacune avec un H. Étape 4 — Déduire : 1 atome N et 3 atomes H, NH₃. NH ou NH₂ laisserait des liaisons de l'azote sans partenaire.",
+                "answers": [
+                  {
+                    "content": "NH₃",
+                    "correct": true
+                  },
+                  {
+                    "content": "N₃H",
+                    "correct": false
+                  },
+                  {
+                    "content": "NH",
+                    "correct": false
+                  },
+                  {
+                    "content": "NH₂",
+                    "correct": false
+                  }
+                ],
+                "hint": "Un azote, trois hydrogène."
+              }
+            ]
+          },
+          "figure": "alcanes",
+          "exercise": [
+            {
+              "title": "Compter les liaisons et dessiner une molécule",
+              "statement": "Dans cet exercice, tu comptes les liaisons de chaque atome et tu écris la formule de molécules simples, comme l'eau dont le schéma est donné.",
+              "exercise_type": "fixation",
+              "figure": "eau-developpee",
+              "questions": [
+                {
+                  "content": "Combien de liaisons covalentes l'atome de chlore ($Z = 17$) forme-t-il, par exemple dans HCl ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : Cl a (K)²(L)⁸(M)⁷, soit 7 électrons externes. Étape 2 — Associer : 8 − 7 = 1 électron manque, donc 1 liaison. Étape 3 — Dessiner : H–Cl, avec un seul trait. 7 est le nombre d'électrons externes : c'est l'erreur du piège.",
+                  "answers": [
+                    {
+                      "content": "1",
+                      "correct": true
+                    },
+                    {
+                      "content": "7",
+                      "correct": false
+                    },
+                    {
+                      "content": "8",
+                      "correct": false
+                    },
+                    {
+                      "content": "3",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans la molécule de méthane CH₄, combien de liaisons covalentes l'atome de carbone forme-t-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : C a (K)²(L)⁴ ; il manque 4 électrons. Étape 2 — Associer : 4 liaisons, chacune avec un atome d'hydrogène (1 liaison chacun). Étape 3 — Dessiner : un C central et 4 traits vers 4 H.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle formule développée représente la molécule d'eau H₂O ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : H manque d'1 électron, O de 2. Étape 2 — Associer : O forme 2 liaisons simples avec 2 H. Étape 3 — Dessiner : H–O–H. Un H ne peut former qu'une liaison : il ne peut pas être au milieu, ni avoir une double liaison.",
+                  "answers": [
+                    {
+                      "content": "H–O–H",
+                      "correct": true
+                    },
+                    {
+                      "content": "H=O=H",
+                      "correct": false
+                    },
+                    {
+                      "content": "O–H–O",
+                      "correct": false
+                    },
+                    {
+                      "content": "H–H–O",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans la molécule d'ammoniac NH₃, l'atome d'azote est lié :",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : N manque de 3 électrons, H d'un seul. Étape 2 — Associer : N forme 3 liaisons, chaque H une seule : donc 3 liaisons simples N–H. Étape 3 — Dessiner : N au centre, 3 traits vers 3 H. Un hydrogène ne peut pas former de liaison double ou triple.",
+                  "answers": [
+                    {
+                      "content": "à trois atomes d'hydrogène par trois liaisons simples",
+                      "correct": true
+                    },
+                    {
+                      "content": "à un atome d'hydrogène par une liaison triple",
+                      "correct": false
+                    },
+                    {
+                      "content": "à deux atomes d'hydrogène par deux liaisons doubles",
+                      "correct": false
+                    },
+                    {
+                      "content": "à trois atomes d'hydrogène par une seule liaison",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle formule développée représente le dioxyde de carbone CO₂ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : C manque de 4 électrons, chaque O de 2. Étape 2 — Associer : C forme 2 liaisons doubles, une avec chaque O. Étape 3 — Dessiner : O=C=O, chaque atome a bien son nombre de liaisons. O–C–O laisserait C avec 2 liaisons seulement.",
+                  "answers": [
+                    {
+                      "content": "O=C=O",
+                      "correct": true
+                    },
+                    {
+                      "content": "O–C–O",
+                      "correct": false
+                    },
+                    {
+                      "content": "C=O=C",
+                      "correct": false
+                    },
+                    {
+                      "content": "O≡C≡O",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'oxygène a 6 électrons sur sa couche externe : il forme donc 6 liaisons covalentes.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Écrire : O a (K)²(L)⁶. Étape 2 — Associer : il lui manque 8 − 6 = 2 électrons, donc 2 liaisons. Étape 3 — Dessiner : H–O–H ou O=C=O ; jamais 6 traits autour de l'oxygène.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Nombre de liaisons = électrons manquants pour l'octet (ou le duet pour H)."
+            },
+            {
+              "title": "Formules développées et semi-développées de molécules simples",
+              "statement": "Dans cet exercice, tu écris des formules développées et semi-développées de molécules simples, comme le propane, un des gaz du gaz de cuisine.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Relie chaque molécule à sa formule développée.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Écrire : H et Cl manquent d'1 électron, O de 2, N de 3. Étape 2 — Associer : H–H et Cl–Cl ont 1 liaison, O=O en a 2, N≡N en a 3. Étape 3 — Dessiner : H–H, Cl–Cl, O=O, N≡N.",
+                  "answers": [
+                    {
+                      "content": "Dihydrogène H₂",
+                      "match": "H–H"
+                    },
+                    {
+                      "content": "Dichlore Cl₂",
+                      "match": "Cl–Cl"
+                    },
+                    {
+                      "content": "Dioxygène O₂",
+                      "match": "O=O"
+                    },
+                    {
+                      "content": "Diazote N₂",
+                      "match": "N≡N"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels atomes forment une seule liaison covalente ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Écrire : H manque d'1 électron (duet), Cl d'1 (octet), O de 2, N de 3. Étape 2 — Associer : H et Cl forment 1 liaison ; O en forme 2, N en forme 3.",
+                  "answers": [
+                    {
+                      "content": "L'hydrogène",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le chlore",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'oxygène",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'azote",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans la molécule de propane C₃H₈ (un des gaz du gaz de cuisine), les 3 carbones sont liés en chaîne. Combien de liaisons C–H contient-elle ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : C manque de 4 électrons, H d'1. Étape 2 — Associer : 3 × 4 = 12 liaisons de carbone, dont 2 × 2 = 4 servent aux 2 liaisons C–C : il reste 12 − 4 = 8 liaisons C–H. Étape 3 — Dessiner : 8 traits C–H, soit 1 par atome d'hydrogène.",
+                  "answers": [
+                    {
+                      "content": "8",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle est la formule semi-développée de l'éthane C₂H₆ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : C forme 4 liaisons, H une seule. Étape 2 — Associer : chaque C a 1 liaison C–C et 3 liaisons C–H. Étape 3 — Dessiner : un trait entre les 2 C, 3 traits C–H sur chacun. Étape 4 — Déduire : chaque C regroupé avec ses 3 H : CH₃–CH₃. C₂H₆ est la formule brute, qui ne montre pas l'enchaînement des atomes.",
+                  "answers": [
+                    {
+                      "content": "CH₃–CH₃",
+                      "correct": true
+                    },
+                    {
+                      "content": "C₂H₆",
+                      "correct": false
+                    },
+                    {
+                      "content": "CH₂–CH₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "CH₄–CH₄",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour écrire les formules d'une molécule.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Écrire les structures électroniques et compter les électrons manquants. Étape 2 — Associer les atomes par des liaisons. Étape 3 — Dessiner la formule développée. Étape 4 — Déduire la formule semi-développée. La semi-développée se déduit de la développée, qui se dessine après avoir associé les atomes.",
+                  "answers": [
+                    {
+                      "content": "Écrire la structure électronique de chaque atome et compter les électrons qui lui manquent pour atteindre le duet ou l'octet."
+                    },
+                    {
+                      "content": "Associer les atomes : chaque liaison met en commun un doublet, et chaque atome forme autant de liaisons que d'électrons manquants."
+                    },
+                    {
+                      "content": "Dessiner la formule développée : un trait par liaison, tous les atomes visibles."
+                    },
+                    {
+                      "content": "Déduire la formule semi-développée en regroupant chaque atome avec les atomes d'hydrogène qui lui sont liés."
+                    }
+                  ]
+                },
+                {
+                  "content": "La formule semi-développée du propane est CH₃–CH₂–CH₃ : le carbone du milieu est lié à ___ atomes d'hydrogène.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Écrire : C forme 4 liaisons. Étape 2 — Associer : le carbone du milieu a 2 liaisons C–C ; il lui reste 4 − 2 = 2 liaisons. Étape 3 — Dessiner : 2 traits vers 2 atomes d'hydrogène. Étape 4 — Déduire : ce carbone s'écrit CH₂.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    },
+                    {
+                      "content": "deux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Pour chaque atome, compte les électrons manquants : c'est son nombre de liaisons."
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Le sel de cuisine",
+          "statement": "Awa prépare une sauce et y ajoute du sel de cuisine, le chlorure de sodium, formé d'ions sodium et d'ions chlorure. On étudie l'atome de sodium ($Z = 11$) et l'atome de chlore ($Z = 17$).",
+          "exercise_type": "fixation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Quelle est la structure électronique de l'atome de sodium ($Z = 11$) ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Écrire : l'atome neutre a 11 électrons ; K en reçoit 2, L en reçoit 8, il reste 1 électron sur M : (K)²(L)⁸(M)¹. Étape 2 — Repérer : la couche externe est M, avec 1 électron. Les autres écritures ne respectent pas l'ordre de remplissage ; (K)²(L)⁹ dépasse la capacité de L.",
+              "answers": [
+                {
+                  "content": "(K)²(L)⁸(M)¹",
+                  "correct": true
+                },
+                {
+                  "content": "(K)²(L)⁷(M)²",
+                  "correct": false
+                },
+                {
+                  "content": "(K)²(L)⁹",
+                  "correct": false
+                },
+                {
+                  "content": "(K)¹(L)⁸(M)²",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quel ion monoatomique forme l'atome de sodium ($Z = 11$) ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Écrire : Na (K)²(L)⁸(M)¹. Étape 2 — Chercher : le gaz noble le plus proche est le néon (K)²(L)⁸, avec un octet sur L. Étape 3 — Déterminer : l'atome perd son électron de la couche M, donc 1 électron. Étape 4 — Écrire l'ion : Na⁺, de charge +e, avec 11 protons et 10 électrons : (K)²(L)⁸. Na⁻ aurait gagné un électron : il s'éloignerait de l'octet.",
+              "answers": [
+                {
+                  "content": "Na⁺",
+                  "correct": true
+                },
+                {
+                  "content": "Na⁻",
+                  "correct": false
+                },
+                {
+                  "content": "Na⁷⁺",
+                  "correct": false
+                },
+                {
+                  "content": "Na²⁺",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "L'atome de chlore ($Z = 17$) forme l'ion chlorure Cl⁻. Combien d'électrons cet ion contient-il ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Écrire : Cl (K)²(L)⁸(M)⁷, 17 électrons. Étape 2 — Chercher : l'argon (K)²(L)⁸(M)⁸, avec un octet sur M. Étape 3 — Déterminer : 8 − 7 = 1 : l'atome gagne 1 électron. Étape 4 — Écrire l'ion : Cl⁻ a 17 protons et 17 + 1 = 18 électrons. 17 est le nombre d'électrons de l'atome, pas celui de l'ion.",
+              "answers": [
+                {
+                  "content": "18",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Le chlorure de sodium est formé d'ions Na⁺ et Cl⁻ : sa formule est ___.",
+              "question_type": "fill_blank",
+              "explanation": "Étape 1 — Repérer : Na⁺ (+1) et Cl⁻ (−1). Étape 2 — Chercher : 1 ion de chaque sorte compense les charges. Étape 3 — Écrire : NaCl, sans charges ni indice 1. Étape 4 — Vérifier : +1 − 1 = 0.",
+              "answers": [
+                {
+                  "content": "NaCl",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Un morceau de sel de cuisine est chargé positivement parce qu'il contient des ions sodium Na⁺.",
+              "question_type": "true_false",
+              "explanation": "Étape 1 — Repérer : le sel contient des ions Na⁺ (+) et des ions Cl⁻ (−) en nombres égaux. Étape 2 — Chercher : les charges se compensent. Étape 4 — Vérifier : +1 − 1 = 0 : l'électroneutralité rend le morceau neutre.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            }
+          ],
+          "hint": "Structure électronique, gaz noble voisin, électrons perdus ou gagnés, puis formule neutre."
+        },
+        {
+          "title": "L'antiacide de la pharmacie",
+          "statement": "Le lait de magnésie, vendu en pharmacie, contient de l'hydroxyde de magnésium, un composé ionique formé d'ions magnésium (atome $Z = 12$) et d'ions hydroxyde HO⁻ (oxygène $Z = 8$, hydrogène $Z = 1$).",
+          "exercise_type": "fixation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Quel ion monoatomique forme l'atome de magnésium ($Z = 12$) ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Écrire : Mg (K)²(L)⁸(M)². Étape 2 — Chercher : le néon (K)²(L)⁸, avec un octet sur L. Étape 3 — Déterminer : l'atome perd les 2 électrons de la couche M. Étape 4 — Écrire l'ion : Mg²⁺. Mg²⁻ aurait gagné des électrons, alors que la couche M n'en a que 2.",
+              "answers": [
+                {
+                  "content": "Mg²⁺",
+                  "correct": true
+                },
+                {
+                  "content": "Mg⁺",
+                  "correct": false
+                },
+                {
+                  "content": "Mg²⁻",
+                  "correct": false
+                },
+                {
+                  "content": "Mg⁶⁺",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Combien d'électrons contient l'ion Mg²⁺ ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Écrire : l'atome a 12 électrons. Étape 3 — Déterminer : il en perd 2, soit 12 − 2 = 10. Étape 4 — Écrire l'ion : Mg²⁺ a 10 électrons et 12 protons.",
+              "answers": [
+                {
+                  "content": "10",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Combien d'électrons contient l'ion hydroxyde HO⁻ ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Lire : 1 atome d'oxygène et 1 atome d'hydrogène. Étape 2 — Relever : charge 1−, c'est un anion : il a gagné 1 électron. Étape 3 — Calculer : 8 + 1 + 1 = 10 électrons.",
+              "answers": [
+                {
+                  "content": "10",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Quelle est la formule de l'hydroxyde de magnésium ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Repérer : Mg²⁺ (+2) et HO⁻ (−1). Étape 2 — Chercher : 1 ion Mg²⁺ pour 2 ions HO⁻. Étape 3 — Écrire : Mg(OH)₂, avec des parenthèses autour de l'ion polyatomique d'indice 2. Étape 4 — Vérifier : +2 − 2 = 0. MgOH₂ ferait croire que l'indice 2 ne concerne que H.",
+              "answers": [
+                {
+                  "content": "Mg(OH)₂",
+                  "correct": true
+                },
+                {
+                  "content": "MgOH₂",
+                  "correct": false
+                },
+                {
+                  "content": "MgOH",
+                  "correct": false
+                },
+                {
+                  "content": "Mg₂OH",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Combien d'atomes contient une unité de formule Mg(OH)₂ ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Lire : 1 atome de magnésium, et 2 ions HO⁻ de 2 atomes chacun. Étape 3 — Calculer : 1 + 2 × 2 = 5 atomes. Compter 3 atomes oublierait que l'indice 2 concerne O et H.",
+              "answers": [
+                {
+                  "content": "5",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            }
+          ],
+          "hint": "Repère les ions et leurs charges ; l'indice d'une parenthèse multiplie tous les atomes qu'elle contient."
+        },
+        {
+          "title": "Les molécules du laboratoire",
+          "statement": "Au laboratoire du lycée, le professeur présente des gaz : le dioxyde de carbone CO₂ des boissons gazeuses, l'ammoniac NH₃ d'un produit d'entretien, le diazote N₂ de l'air et le butane C₄H₁₀ du gaz de cuisine. Il rappelle que l'eau a pour schéma H–O–H.",
+          "exercise_type": "evaluation",
+          "figure": "eau-developpee",
+          "questions": [
+            {
+              "content": "Combien de liaisons covalentes l'atome de carbone ($Z = 6$) forme-t-il ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Écrire : C a (K)²(L)⁴, soit 4 électrons externes. Étape 2 — Associer : il en manque 8 − 4 = 4, donc 4 liaisons. 6 est le numéro atomique du carbone, pas son nombre de liaisons.",
+              "answers": [
+                {
+                  "content": "4",
+                  "correct": true
+                },
+                {
+                  "content": "2",
+                  "correct": false
+                },
+                {
+                  "content": "6",
+                  "correct": false
+                },
+                {
+                  "content": "8",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quelle formule développée représente le dioxygène O₂ ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Écrire : O a (K)²(L)⁶ ; il lui manque 2 électrons. Étape 2 — Associer : les 2 atomes mettent en commun 2 doublets : une liaison double. Étape 3 — Dessiner : O=O, chaque atome a bien 2 liaisons. O–O ne donnerait qu'une liaison à chaque oxygène.",
+              "answers": [
+                {
+                  "content": "O=O",
+                  "correct": true
+                },
+                {
+                  "content": "O–O",
+                  "correct": false
+                },
+                {
+                  "content": "O≡O",
+                  "correct": false
+                },
+                {
+                  "content": "O=O–O",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quelles molécules contiennent au moins une liaison double ?",
+              "question_type": "multiple_correct_2",
+              "explanation": "Étape 1 — Écrire : O manque de 2 électrons, N de 3, H de 1, C de 4. Étape 2 — Associer : O₂ donne O=O ; CO₂ donne O=C=O ; N₂ donne N≡N (liaison triple) ; H₂O donne H–O–H (liaisons simples). Étape 3 — Dessiner : O=O et O=C=O ont des liaisons doubles.",
+              "answers": [
+                {
+                  "content": "Le dioxygène O₂",
+                  "correct": true
+                },
+                {
+                  "content": "Le dioxyde de carbone CO₂",
+                  "correct": true
+                },
+                {
+                  "content": "Le diazote N₂",
+                  "correct": false
+                },
+                {
+                  "content": "L'eau H₂O",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Dans la molécule d'éthane C₂H₆ (2 carbones liés entre eux), combien de liaisons C–H contient-elle ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Écrire : chaque carbone forme 4 liaisons, chaque hydrogène 1. Étape 2 — Associer : 2 × 4 = 8 liaisons de carbone, dont 2 servent à l'unique liaison C–C : il reste 8 − 2 = 6 liaisons C–H. Étape 3 — Dessiner : 3 traits C–H sur chaque carbone, soit 6 traits.",
+              "answers": [
+                {
+                  "content": "6",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "La molécule de diazote N₂ contient une liaison double entre les deux atomes d'azote.",
+              "question_type": "true_false",
+              "explanation": "Étape 1 — Écrire : N a (K)²(L)⁵ ; il lui manque 3 électrons. Étape 2 — Associer : les 2 atomes N mettent en commun 3 doublets : liaison triple. Étape 3 — Dessiner : N≡N. Une liaison double ne donnerait que 2 liaisons à chaque azote.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Explique pourquoi l'atome d'oxygène ($Z = 8$) forme 2 liaisons covalentes.",
+              "question_type": "written",
+              "points": 3,
+              "criteria": [
+                "Écrit la structure (K)²(L)⁶ et compte 6 électrons externes",
+                "Calcule les électrons manquants : 8 − 6 = 2",
+                "Conclut : 2 liaisons"
+              ],
+              "explanation": "Corrigé modèle : l'atome d'oxygène a 8 électrons : (K)²(L)⁶. Sa couche externe L en contient 6. Pour avoir l'octet, il lui manque 8 − 6 = 2 électrons. Chaque liaison covalente met en commun un doublet et apporte un électron à l'atome : il forme donc 2 liaisons, comme dans H–O–H. Barème sur 3 : structure électronique (1 point), électrons manquants (1 point), conclusion (1 point).",
+              "answers": [],
+              "starter": "L'atome d'oxygène a ..."
+            }
+          ],
+          "hint": "Nombre de liaisons = électrons manquants pour l'octet (duet pour H)."
+        },
+        {
+          "title": "L'engrais du planteur de cacao",
+          "statement": "Koffi, planteur de cacao, utilise un engrais qui contient du nitrate d'ammonium NH₄NO₃ et du sulfate d'ammonium (NH₄)₂SO₄. Données : hydrogène $Z = 1$, azote $Z = 7$, oxygène $Z = 8$, soufre $Z = 16$.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Quels ions forment le nitrate d'ammonium NH₄NO₃ ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Lire : NH₄ (1 N, 4 H) et NO₃ (1 N, 3 O). Étape 2 — Relever : l'ammonium est un cation (+1), le nitrate un anion (−1). Étape 4 — Nommer : NH₄⁺ et NO₃⁻. Vérifier : +1 − 1 = 0. NH₄⁻ et NO₃⁺ inversent les signes.",
+              "answers": [
+                {
+                  "content": "NH₄⁺ et NO₃⁻",
+                  "correct": true
+                },
+                {
+                  "content": "NH₄⁻ et NO₃⁺",
+                  "correct": false
+                },
+                {
+                  "content": "N⁺ et H₄O₃⁻",
+                  "correct": false
+                },
+                {
+                  "content": "NH₄²⁺ et NO₃²⁻",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Combien d'électrons contient l'ion nitrate NO₃⁻ ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Lire : 1 atome d'azote et 3 atomes d'oxygène. Étape 2 — Relever : charge 1−, un anion : il a gagné 1 électron. Étape 3 — Calculer : 7 + 3 × 8 + 1 = 32. 31 oublierait l'électron gagné.",
+              "answers": [
+                {
+                  "content": "32",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Quelle est la formule du sulfate d'ammonium, formé d'ions NH₄⁺ et SO₄²⁻ ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Repérer : NH₄⁺ (+1) et SO₄²⁻ (−2). Étape 2 — Chercher : il faut 2 ions NH₄⁺ pour 1 ion SO₄²⁻. Étape 3 — Écrire : (NH₄)₂SO₄, avec des parenthèses autour de l'ion polyatomique d'indice 2. Étape 4 — Vérifier : +2 − 2 = 0. NH₄SO₄ donnerait +1 − 2 = −1, non neutre.",
+              "answers": [
+                {
+                  "content": "(NH₄)₂SO₄",
+                  "correct": true
+                },
+                {
+                  "content": "NH₄SO₄",
+                  "correct": false
+                },
+                {
+                  "content": "NH₄₂SO₄",
+                  "correct": false
+                },
+                {
+                  "content": "(NH₄)₂(SO₄)₂",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Combien d'atomes d'hydrogène contient une unité de formule (NH₄)₂SO₄ ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Lire : l'indice 2 de la parenthèse concerne tout l'ion NH₄⁺. Étape 3 — Calculer : 2 × 4 = 8 atomes d'hydrogène. 4 oublierait l'indice 2 de la parenthèse.",
+              "answers": [
+                {
+                  "content": "8",
+                  "correct": true
+                }
+              ],
+              "tolerance": 0
+            },
+            {
+              "content": "Le sulfate d'ammonium est électriquement neutre : 2 × (+1) + (−2) = 0.",
+              "question_type": "true_false",
+              "explanation": "Étape 1 — Repérer : 2 ions NH₄⁺ (+1 chacun) et 1 ion SO₄²⁻ (−2). Étape 4 — Vérifier : 2 × (+1) + (−2) = 0 : l'électroneutralité est respectée.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": true
+                },
+                {
+                  "content": "Faux",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Écris la formule du nitrate de calcium, formé d'ions Ca²⁺ et NO₃⁻, et justifie-la.",
+              "question_type": "written",
+              "points": 3,
+              "criteria": [
+                "Repère les charges +2 et −1 et trouve 1 Ca²⁺ pour 2 NO₃⁻",
+                "Écrit Ca(NO₃)₂ avec parenthèses",
+                "Vérifie +2 − 2 = 0"
+              ],
+              "explanation": "Corrigé modèle : Étape 1, le cation est Ca²⁺ (+2) et l'anion NO₃⁻ (−1). Étape 2, il faut 2 ions NO₃⁻ pour compenser +2. Étape 3, la formule est Ca(NO₃)₂, avec des parenthèses car l'ion polyatomique a l'indice 2. Étape 4, +2 + 2 × (−1) = 0 : le composé est neutre. Barème sur 3 : charges et nombres d'ions (1 point), formule avec parenthèses (1 point), vérification (1 point).",
+              "answers": [],
+              "starter": "Le cation est Ca²⁺ ..."
+            }
+          ],
+          "hint": "Repère les ions, trouve leurs nombres pour que les charges se compensent, écris la formule sans charges."
+        }
+      ],
+      "subjects": [
+        {
+          "title": "Sujet 1 · Les savoirs de base",
+          "notions": "Règles du duet et de l'octet ; formation des ions monoatomiques ; ions polyatomiques usuels ; formule d'un composé ionique ; liaison covalente et formule d'une molécule.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "On étudie des atomes dont le numéro atomique $Z$ est donné.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Écris la structure électronique, repère la couche externe, compare avec 2 ou 8.",
+              "questions": [
+                {
+                  "content": "Quelle est la structure électronique de l'atome de fluor ($Z = 9$) ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : l'atome a 9 électrons ; K en reçoit 2, il reste 7 électrons sur L : (K)²(L)⁷. Étape 2 — Repérer : la couche externe est L, avec 7 électrons. (K)⁹ dépasse la capacité de la couche K, qui est de 2 électrons.",
+                  "answers": [
+                    {
+                      "content": "(K)²(L)⁷",
+                      "correct": true
+                    },
+                    {
+                      "content": "(K)²(L)⁸(M)¹",
+                      "correct": false
+                    },
+                    {
+                      "content": "(K)²(L)⁶",
+                      "correct": false
+                    },
+                    {
+                      "content": "(K)⁹",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien d'électrons la couche externe de l'atome de silicium ($Z = 14$) contient-elle ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : 14 électrons, (K)²(L)⁸(M)⁴. Étape 2 — Repérer : la couche externe est M, avec 4 électrons. Il en manque 4 pour l'octet.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "L'atome d'argon ($Z = 18$) respecte la règle du duet.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Écrire : 18 électrons, (K)²(L)⁸(M)⁸. Étape 2 — Repérer : la couche externe M contient 8 électrons. Étape 3 — Comparer : c'est un octet, pas un duet ; le duet est celui de l'hélium.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel gaz noble a pour structure électronique (K)², c'est-à-dire un duet ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : hélium (K)² ; néon (K)²(L)⁸ ; argon (K)²(L)⁸(M)⁸. Étape 2 — Comparer : seul l'hélium a 2 électrons sur sa couche externe K. Le krypton est un gaz noble, mais sa couche externe contient 8 électrons : c'est un octet, pas un duet.",
+                  "answers": [
+                    {
+                      "content": "L'hélium",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le néon",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'argon",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le krypton",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'atome de néon a 8 électrons sur sa couche externe : il respecte la règle de l'___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Écrire : néon (K)²(L)⁸. Étape 2 — Repérer : la couche externe L contient 8 électrons. Étape 3 — Comparer : 8 électrons sur la couche externe, c'est l'octet.",
+                  "answers": [
+                    {
+                      "content": "octet",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "On étudie les ions monoatomiques formés par quelques atomes.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Perdre des électrons donne un cation, en gagner donne un anion. Vise le gaz noble le plus proche.",
+              "questions": [
+                {
+                  "content": "Quel ion monoatomique forme l'atome de lithium ($Z = 3$) ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : Li (K)²(L)¹. Étape 2 — Chercher : l'hélium (K)², avec un duet. Étape 3 — Déterminer : l'atome perd son électron de la couche L, donc 1 électron. Étape 4 — Écrire l'ion : Li⁺, avec 3 protons et 2 électrons. Li³⁺ aurait perdu tous ses électrons, ce qui n'est pas nécessaire pour avoir un duet.",
+                  "answers": [
+                    {
+                      "content": "Li⁺",
+                      "correct": true
+                    },
+                    {
+                      "content": "Li⁻",
+                      "correct": false
+                    },
+                    {
+                      "content": "Li²⁺",
+                      "correct": false
+                    },
+                    {
+                      "content": "Li³⁺",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'atome de fluor ($Z = 9$) forme l'ion F⁻. Combien d'électrons cet ion contient-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : F (K)²(L)⁷. Étape 2 — Chercher : le néon (K)²(L)⁸. Étape 3 — Déterminer : l'atome gagne 1 électron : 9 + 1 = 10. Étape 4 — Écrire l'ion : F⁻ a 9 protons et 10 électrons.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un anion est un atome qui a perdu des électrons.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Écrire : un atome neutre a autant de protons que d'électrons. Étape 2 — Déterminer : un anion a gagné des électrons, un cation en a perdu. Étape 3 — Écrire l'ion : un anion est de charge négative.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "L'ion Al³⁺ s'obtient quand l'atome d'aluminium perd ___ électrons.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Écrire : Al (K)²(L)⁸(M)³. Étape 2 — Chercher : le néon (K)²(L)⁸. Étape 3 — Déterminer : l'atome perd les 3 électrons de M. Étape 4 — Écrire l'ion : Al³⁺.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    },
+                    {
+                      "content": "trois",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la structure électronique de l'ion sodium Na⁺ ($Z = 11$) ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : Na (K)²(L)⁸(M)¹. Étape 2 — Chercher : le néon (K)²(L)⁸. Étape 3 — Déterminer : l'atome perd 1 électron : il en reste 10. Étape 4 — Écrire l'ion : Na⁺ a pour structure (K)²(L)⁸. (K)²(L)⁸(M)¹ est celle de l'atome de sodium.",
+                  "answers": [
+                    {
+                      "content": "(K)²(L)⁸",
+                      "correct": true
+                    },
+                    {
+                      "content": "(K)²(L)⁸(M)¹",
+                      "correct": false
+                    },
+                    {
+                      "content": "(K)²(L)⁷",
+                      "correct": false
+                    },
+                    {
+                      "content": "(K)²(L)⁹",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "On étudie des ions polyatomiques et des composés ioniques.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Compare les charges : la somme des charges positives compense celle des charges négatives.",
+              "questions": [
+                {
+                  "content": "Relie chaque formule au nom de l'ion.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Lire : on repère les atomes de chaque formule. Étape 2 — Nommer : SO₄²⁻ sulfate, HO⁻ hydroxyde, NH₄⁺ ammonium, H₃O⁺ hydronium.",
+                  "answers": [
+                    {
+                      "content": "SO₄²⁻",
+                      "match": "Ion sulfate"
+                    },
+                    {
+                      "content": "HO⁻",
+                      "match": "Ion hydroxyde"
+                    },
+                    {
+                      "content": "NH₄⁺",
+                      "match": "Ion ammonium"
+                    },
+                    {
+                      "content": "H₃O⁺",
+                      "match": "Ion hydronium"
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien d'atomes contient l'ion nitrate NO₃⁻ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Lire : 1 atome d'azote et 3 atomes d'oxygène. Étape 2 — Calculer : 1 + 3 = 4 atomes. La charge 1− n'est pas un nombre d'atomes.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle est la formule de l'oxyde de sodium, formé d'ions Na⁺ et O²⁻ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : Na⁺ (+1) et O²⁻ (−2). Étape 2 — Chercher : il faut 2 ions Na⁺ (+2) pour 1 ion O²⁻ (−2). Étape 3 — Écrire : Na₂O. Étape 4 — Vérifier : +2 − 2 = 0. NaO donnerait +1 − 2 = −1, non neutre.",
+                  "answers": [
+                    {
+                      "content": "Na₂O",
+                      "correct": true
+                    },
+                    {
+                      "content": "NaO",
+                      "correct": false
+                    },
+                    {
+                      "content": "Na₂O₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "NaO₂",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un composé ionique est électriquement neutre.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer : il contient des cations (+) et des anions (−). Étape 2 — Vérifier : leurs nombres sont tels que la somme des charges est nulle : c'est l'électroneutralité.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Les ions K⁺ et Cl⁻ forment le composé de formule ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Repérer : K⁺ (+1) et Cl⁻ (−1). Étape 2 — Chercher : 1 ion de chaque sorte. Étape 3 — Écrire : KCl. Étape 4 — Vérifier : +1 − 1 = 0.",
+                  "answers": [
+                    {
+                      "content": "KCl",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "On étudie la liaison covalente et la formule de quelques molécules.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Nombre de liaisons = électrons manquants pour avoir le duet ou l'octet.",
+              "questions": [
+                {
+                  "content": "Combien de liaisons covalentes l'atome d'hydrogène forme-t-il ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : H a (K)¹ ; il lui manque 1 électron pour le duet. Étape 2 — Associer : il forme donc 1 liaison. L'hydrogène ne forme jamais 2 liaisons.",
+                  "answers": [
+                    {
+                      "content": "1",
+                      "correct": true
+                    },
+                    {
+                      "content": "2",
+                      "correct": false
+                    },
+                    {
+                      "content": "4",
+                      "correct": false
+                    },
+                    {
+                      "content": "0",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien de liaisons covalentes l'atome de carbone ($Z = 6$) forme-t-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : C a (K)²(L)⁴. Étape 2 — Associer : il manque 8 − 4 = 4 électrons, donc 4 liaisons.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle formule développée représente le diazote N₂ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : N a (K)²(L)⁵ ; il lui manque 3 électrons. Étape 2 — Associer : chaque atome forme 3 liaisons, donc une liaison triple entre les deux N. Étape 3 — Dessiner : N≡N. N–N ne donnerait qu'une liaison à chaque azote.",
+                  "answers": [
+                    {
+                      "content": "N≡N",
+                      "correct": true
+                    },
+                    {
+                      "content": "N–N",
+                      "correct": false
+                    },
+                    {
+                      "content": "N=N",
+                      "correct": false
+                    },
+                    {
+                      "content": "N≡N≡N",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La mise en commun d'un doublet d'électrons entre deux atomes s'appelle une liaison ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Associer : chaque liaison met en commun 2 électrons, un de chaque atome. Étape 2 — Dessiner : elle se représente par un trait entre les deux atomes ; c'est la liaison covalente.",
+                  "answers": [
+                    {
+                      "content": "covalente",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "La formule semi-développée ne dessine pas les liaisons avec l'hydrogène.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Dessiner : la formule développée montre toutes les liaisons, y compris C–H. Étape 2 — Déduire : la formule semi-développée regroupe chaque atome avec ses H, par exemple CH₃–CH₃.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 2 · La vie courante en Côte d'Ivoire",
+          "notions": "Sel de cuisine et chlorure de potassium ; produits de la pharmacie (oxyde de zinc, permanganate, hydroxyde de magnésium) ; gaz de cuisine, boissons gazeuses et eau ; engrais du planteur.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Adjoua cuisine avec du sel de cuisine, le chlorure de sodium NaCl. Son voisin utilise un substitut, le chlorure de potassium KCl, formé d'ions K⁺ et Cl⁻.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Un composé ionique est neutre : les charges positives compensent les charges négatives.",
+              "questions": [
+                {
+                  "content": "Quels ions forment le chlorure de sodium NaCl ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : le sodium perd 1 électron (Na⁺), le chlore en gagne 1 (Cl⁻). Étape 2 — Vérifier : +1 − 1 = 0, le composé est neutre. Na⁻ et Cl⁺ inversent les signes.",
+                  "answers": [
+                    {
+                      "content": "Na⁺ et Cl⁻",
+                      "correct": true
+                    },
+                    {
+                      "content": "Na⁻ et Cl⁺",
+                      "correct": false
+                    },
+                    {
+                      "content": "Na²⁺ et Cl²⁻",
+                      "correct": false
+                    },
+                    {
+                      "content": "Na et Cl",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien d'électrons contient l'ion sodium Na⁺ ($Z = 11$) ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : l'atome a 11 électrons. Étape 2 — Déterminer : il en perd 1 : 11 − 1 = 10. Étape 3 — Écrire l'ion : Na⁺ a 10 électrons.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Le composé formé d'ions K⁺ et Cl⁻ a pour formule ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Repérer : K⁺ (+1) et Cl⁻ (−1). Étape 2 — Chercher : 1 ion de chaque sorte. Étape 3 — Écrire : KCl. Étape 4 — Vérifier : +1 − 1 = 0.",
+                  "answers": [
+                    {
+                      "content": "KCl",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans le chlorure de sodium NaCl, il y a autant d'ions Na⁺ que d'ions Cl⁻.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer : Na⁺ (+1) et Cl⁻ (−1). Étape 2 — Écrire : NaCl a pour indices 1 et 1. Étape 3 — Vérifier : +1 − 1 = 0 avec autant d'ions de chaque sorte.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la charge totale d'un grain de sel de cuisine ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : un grain contient des cations et des anions. Étape 2 — Vérifier : leurs charges se compensent, c'est l'électroneutralité. Les ions Na⁺ sont positifs, mais ils sont compensés par les ions Cl⁻.",
+                  "answers": [
+                    {
+                      "content": "Nulle",
+                      "correct": true
+                    },
+                    {
+                      "content": "Positive",
+                      "correct": false
+                    },
+                    {
+                      "content": "Négative",
+                      "correct": false
+                    },
+                    {
+                      "content": "+e",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Un pharmacien prépare une pommade à l'oxyde de zinc (ions Zn²⁺ et O²⁻), un antiseptique au permanganate de potassium (ions K⁺ et MnO₄⁻) et un antiacide à l'hydroxyde de magnésium (ions Mg²⁺ et HO⁻).",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Repère les ions et leurs charges, puis cherche leurs nombres pour compenser les charges.",
+              "questions": [
+                {
+                  "content": "Quelle est la formule de l'oxyde de zinc ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : Zn²⁺ (+2) et O²⁻ (−2). Étape 2 — Chercher : 1 ion de chaque sorte. Étape 3 — Écrire : ZnO. Étape 4 — Vérifier : +2 − 2 = 0. Zn₂O₂ est neutre aussi, mais ce n'est pas la formule la plus simple.",
+                  "answers": [
+                    {
+                      "content": "ZnO",
+                      "correct": true
+                    },
+                    {
+                      "content": "Zn₂O₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "ZnO₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "Zn₂O",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Les ions K⁺ et MnO₄⁻ forment le composé de formule ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Repérer : K⁺ (+1) et MnO₄⁻ (−1). Étape 2 — Chercher : 1 ion de chaque sorte. Étape 3 — Écrire : KMnO₄. Étape 4 — Vérifier : +1 − 1 = 0.",
+                  "answers": [
+                    {
+                      "content": "KMnO4",
+                      "correct": true
+                    },
+                    {
+                      "content": "KMnO₄",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien d'atomes contient l'ion permanganate MnO₄⁻ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Lire : 1 atome de manganèse et 4 atomes d'oxygène. Étape 2 — Calculer : 1 + 4 = 5 atomes.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle est la formule de l'hydroxyde de calcium (eau de chaux), formé d'ions Ca²⁺ et HO⁻ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : Ca²⁺ (+2) et HO⁻ (−1). Étape 2 — Chercher : 1 ion Ca²⁺ pour 2 ions HO⁻. Étape 3 — Écrire : Ca(OH)₂, avec des parenthèses. Étape 4 — Vérifier : +2 − 2 = 0. CaOH donnerait +2 − 1 = +1, non neutre.",
+                  "answers": [
+                    {
+                      "content": "Ca(OH)₂",
+                      "correct": true
+                    },
+                    {
+                      "content": "CaOH",
+                      "correct": false
+                    },
+                    {
+                      "content": "CaOH₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "Ca₂OH",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans le permanganate de potassium KMnO₄, l'ion permanganate est un cation.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Lire : l'ion permanganate s'écrit MnO₄⁻. Étape 2 — Relever : sa charge est 1− : c'est un anion. Étape 3 — Nommer : l'ion potassium K⁺ est le cation.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Dans la cuisine d'Aminata, la bouteille de gaz contient du butane C₄H₁₀, les boissons gazeuses contiennent du dioxyde de carbone CO₂ et l'eau a pour formule H₂O.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Compte les électrons qui manquent à chaque atome pour le duet ou l'octet.",
+              "questions": [
+                {
+                  "content": "Combien de liaisons covalentes l'atome de carbone ($Z = 6$) forme-t-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : C a (K)²(L)⁴. Étape 2 — Associer : il manque 4 électrons, donc 4 liaisons.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Dans la molécule de dioxyde de carbone CO₂, combien de liaisons doubles y a-t-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : C manque de 4 électrons, chaque O de 2. Étape 2 — Associer : C forme 2 liaisons doubles, une avec chaque O. Étape 3 — Dessiner : O=C=O, soit 2 liaisons doubles.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Dans la molécule de butane C₄H₁₀, les 4 carbones sont liés en chaîne. Combien de liaisons C–C contient-elle ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : chaque carbone forme 4 liaisons. Étape 2 — Associer : 4 carbones en chaîne se lient par 3 liaisons C–C. Étape 3 — Dessiner : C–C–C–C, soit 3 traits.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle est la formule semi-développée du butane, dont les 4 carbones sont en chaîne ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : C forme 4 liaisons, H une seule. Étape 2 — Associer : les carbones des bouts ont 1 liaison C–C et 3 liaisons C–H ; ceux du milieu ont 2 liaisons C–C et 2 liaisons C–H. Étape 3 — Dessiner : C–C–C–C, avec 3 traits C–H sur chaque carbone du bout et 2 sur chaque carbone du milieu. Étape 4 — Déduire : CH₃–CH₂–CH₂–CH₃. C₄H₁₀ est la formule brute.",
+                  "answers": [
+                    {
+                      "content": "CH₃–CH₂–CH₂–CH₃",
+                      "correct": true
+                    },
+                    {
+                      "content": "CH₃–CH₃–CH₃–CH₃",
+                      "correct": false
+                    },
+                    {
+                      "content": "C₄H₁₀",
+                      "correct": false
+                    },
+                    {
+                      "content": "CH₂–CH₂–CH₂–CH₂",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La formule brute de l'eau est H–O–H.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Dessiner : H–O–H est la formule développée, avec les liaisons. Étape 2 — Déduire : la formule brute s'écrit H₂O, sans traits.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Koffi, planteur, épand un engrais contenant du nitrate de potassium KNO₃ et du sulfate d'ammonium (NH₄)₂SO₄. Il y a aussi du sulfate d'aluminium dans un produit de traitement de l'eau.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Un indice après une parenthèse multiplie tous les atomes de la parenthèse.",
+              "questions": [
+                {
+                  "content": "Quels ions forment le nitrate de potassium KNO₃ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Lire : KNO₃ contient K et NO₃. Étape 2 — Relever : le potassium forme le cation K⁺ et le nitrate l'anion NO₃⁻. Étape 3 — Vérifier : +1 − 1 = 0. K⁻ et NO₃⁺ inversent les signes.",
+                  "answers": [
+                    {
+                      "content": "K⁺ et NO₃⁻",
+                      "correct": true
+                    },
+                    {
+                      "content": "K⁻ et NO₃⁺",
+                      "correct": false
+                    },
+                    {
+                      "content": "K⁺ et N⁻",
+                      "correct": false
+                    },
+                    {
+                      "content": "KNO₃⁺ et O⁻",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien d'atomes contient une unité de formule (NH₄)₂SO₄ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Lire : 2 ions NH₄⁺ de 5 atomes chacun, et 1 ion SO₄²⁻ de 5 atomes. Étape 2 — Calculer : 2 × 5 + 5 = 15 atomes. 10 oublierait l'ion sulfate.",
+                  "answers": [
+                    {
+                      "content": "15",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Dans (NH₄)₂SO₄, il y a ___ ions ammonium.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Lire : l'indice 2 est écrit après la parenthèse de NH₄. Étape 2 — Calculer : il y a donc 2 ions ammonium pour 1 ion sulfate.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    },
+                    {
+                      "content": "deux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "L'ion potassium K⁺ a gagné un électron.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Relever : la charge est 1+. Étape 2 — Déterminer : un cation a perdu des électrons ; K⁺ a perdu 1 électron.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la formule du sulfate d'aluminium, formé d'ions Al³⁺ et SO₄²⁻ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : Al³⁺ (+3) et SO₄²⁻ (−2). Étape 2 — Chercher : le plus petit multiple commun de 3 et 2 est 6 : 2 ions Al³⁺ et 3 ions SO₄²⁻. Étape 3 — Écrire : Al₂(SO₄)₃, avec des parenthèses autour de l'ion polyatomique d'indice 3. Étape 4 — Vérifier : +6 − 6 = 0. Al₃(SO₄)₂ inverse les indices : +9 − 4 ne vaut pas 0.",
+                  "answers": [
+                    {
+                      "content": "Al₂(SO₄)₃",
+                      "correct": true
+                    },
+                    {
+                      "content": "Al₃(SO₄)₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "AlSO₄",
+                      "correct": false
+                    },
+                    {
+                      "content": "Al₂SO₄₃",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 3 · Raisonner et justifier",
+          "notions": "Justifier la formation d'un ion ; repérer des erreurs de formules et d'ions ; comparer les structures électroniques d'ions et d'atomes ; raisonner sur le nombre de liaisons d'un atome.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "On étudie l'atome d'aluminium ($Z = 13$) et l'atome de soufre ($Z = 16$).",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Écris la structure électronique, cherche le gaz noble voisin, compte les électrons perdus ou gagnés.",
+              "questions": [
+                {
+                  "content": "Pourquoi l'atome d'aluminium forme-t-il l'ion Al³⁺ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : Al (K)²(L)⁸(M)³. Étape 2 — Chercher : le néon (K)²(L)⁸. Étape 3 — Déterminer : l'atome perd 3 électrons. Étape 4 — Écrire l'ion : Al³⁺ a 10 électrons. Un atome ne perd jamais de protons ; gagner 3 électrons ne donnerait pas un octet.",
+                  "answers": [
+                    {
+                      "content": "Il perd 3 électrons et obtient l'octet du néon",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il gagne 3 électrons et obtient l'octet du néon",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il perd 3 protons",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il gagne 5 électrons et obtient l'octet de l'argon",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pourquoi l'atome de soufre forme-t-il l'ion S²⁻ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : S (K)²(L)⁸(M)⁶. Étape 2 — Chercher : l'argon (K)²(L)⁸(M)⁸. Étape 3 — Déterminer : 8 − 6 = 2, l'atome gagne 2 électrons. Étape 4 — Écrire l'ion : S²⁻ a 18 électrons. Perdre 2 électrons laisserait (M)⁴, loin de l'octet.",
+                  "answers": [
+                    {
+                      "content": "Il gagne 2 électrons et obtient l'octet de l'argon",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il perd 2 électrons et obtient l'octet du néon",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il gagne 6 électrons",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il perd 6 protons",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'ion S²⁻ a combien d'électrons de plus que de protons ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : S a 16 protons et 16 électrons. Étape 2 — Déterminer : S²⁻ a gagné 2 électrons : 16 + 2 = 18. Étape 3 — Écrire l'ion : 18 − 16 = 2 électrons de plus que de protons.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "L'atome d'aluminium peut former l'ion Al³⁻ parce qu'il est proche d'un octet.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Écrire : Al (K)²(L)⁸(M)³. Étape 2 — Chercher : il a 3 électrons sur M ; il est plus proche de l'octet de L en les perdant. Étape 3 — Déterminer : il perd 3 électrons, ce qui donne Al³⁺, un cation.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Justifie, en écrivant la structure électronique, que l'atome de chlore ($Z = 17$) forme l'ion Cl⁻.",
+                  "question_type": "written",
+                  "points": 3,
+                  "criteria": [
+                    "Écrit la structure (K)²(L)⁸(M)⁷",
+                    "Repère le gaz noble voisin : l'argon",
+                    "Calcule 8 − 7 = 1 électron gagné",
+                    "Écrit l'ion Cl⁻ avec sa charge"
+                  ],
+                  "explanation": "Corrigé modèle : Étape 1, l'atome de chlore a 17 électrons : (K)²(L)⁸(M)⁷. Étape 2, le gaz noble le plus proche est l'argon (K)²(L)⁸(M)⁸, avec un octet. Étape 3, il manque 8 − 7 = 1 électron : l'atome en gagne 1. Étape 4, il forme l'ion Cl⁻, qui a 18 électrons. Barème sur 3 : structure électronique (1 point), gaz noble voisin (0,5 point), électron gagné (1 point), ion avec sa charge (0,5 point).",
+                  "answers": [],
+                  "starter": "L'atome de chlore a 17 électrons ..."
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Un élève a écrit plusieurs formules et plusieurs ions. Tu dois repérer ses erreurs.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Pour chaque formule, vérifie que la somme des charges est nulle.",
+              "questions": [
+                {
+                  "content": "NaCl₂ est la formule du chlorure de sodium.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer : Na⁺ (+1) et Cl⁻ (−1). Étape 2 — Chercher : 1 ion de chaque sorte. Étape 3 — Écrire : NaCl ; NaCl₂ donnerait +1 − 2 = −1.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Les ions Al³⁺ et O²⁻ donnent le composé de formule Al₂O₃.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer : Al³⁺ (+3) et O²⁻ (−2). Étape 2 — Chercher : 2 ions Al³⁺ (+6) et 3 ions O²⁻ (−6). Étape 3 — Écrire : Al₂O₃. Étape 4 — Vérifier : +6 − 6 = 0.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Laquelle de ces formules est fausse ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : Mg²⁺ (+2) et O²⁻ (−2) ; Ca²⁺ et Cl⁻ ; K⁺ et SO₄²⁻ ; Na⁺ et O²⁻. Étape 2 — Vérifier : CaCl₂, K₂SO₄ et Na₂O sont neutres ; MgO₂ donnerait +2 − 4 = −2. Étape 3 — Écrire : la bonne formule est MgO. Les trois autres formules respectent l'électroneutralité.",
+                  "answers": [
+                    {
+                      "content": "MgO₂",
+                      "correct": true
+                    },
+                    {
+                      "content": "CaCl₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "K₂SO₄",
+                      "correct": false
+                    },
+                    {
+                      "content": "Na₂O",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'élève a écrit Mg₂O₂ pour l'oxyde de magnésium. La formule la plus simple est ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Repérer : Mg²⁺ (+2) et O²⁻ (−2). Étape 2 — Chercher : 1 ion de chaque sorte suffit. Étape 3 — Écrire : MgO. Étape 4 — Vérifier : +2 − 2 = 0. Mg₂O₂ est neutre mais pas la formule la plus simple.",
+                  "answers": [
+                    {
+                      "content": "MgO",
+                      "correct": true
+                    },
+                    {
+                      "content": "MgO₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "Mg₂O",
+                      "correct": false
+                    },
+                    {
+                      "content": "Mg₂O₃",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles écritures sont justes ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Déterminer : un cation a perdu des électrons (charge +), un anion en a gagné (charge −). Étape 2 — Écrire l'ion : Cl⁻ est un anion et Mg²⁺ un cation ; O²⁺ et Al³⁻ associent un mauvais signe.",
+                  "answers": [
+                    {
+                      "content": "Cl⁻ est un anion",
+                      "correct": true
+                    },
+                    {
+                      "content": "Mg²⁺ est un cation",
+                      "correct": true
+                    },
+                    {
+                      "content": "O²⁺ est un anion",
+                      "correct": false
+                    },
+                    {
+                      "content": "Al³⁻ est un cation",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "On compare des atomes et des ions de numéro atomique inférieur ou égal à 18.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Écris les deux structures électroniques et compare chaque couche externe à l'octet.",
+              "questions": [
+                {
+                  "content": "Quelles espèces ont pour structure électronique (K)²(L)⁸, celle du néon ?",
+                  "question_type": "multiple_correct_3",
+                  "explanation": "Étape 1 — Écrire : Na⁺ a 11 − 1 = 10 électrons ; Mg²⁺ a 12 − 2 = 10 ; O²⁻ a 8 + 2 = 10 ; Cl⁻ a 17 + 1 = 18 ; Li⁺ a 3 − 1 = 2. Étape 2 — Repérer : 10 électrons donnent (K)²(L)⁸. Étape 3 — Comparer : Cl⁻ a la structure de l'argon et Li⁺ celle de l'hélium.",
+                  "answers": [
+                    {
+                      "content": "Na⁺",
+                      "correct": true
+                    },
+                    {
+                      "content": "Mg²⁺",
+                      "correct": true
+                    },
+                    {
+                      "content": "O²⁻",
+                      "correct": true
+                    },
+                    {
+                      "content": "Cl⁻",
+                      "correct": false
+                    },
+                    {
+                      "content": "Li⁺",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'atome de sodium et l'ion Na⁺ ont la même structure électronique.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Écrire : Na (K)²(L)⁸(M)¹ ; Na⁺ (K)²(L)⁸. Étape 2 — Comparer : l'ion a perdu l'électron de la couche M : les deux structures sont différentes.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "L'ion fluorure F⁻ provient de l'atome de fluor ($Z = 9$). Combien de protons contient-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : l'atome de fluor a 9 protons. Étape 2 — Déterminer : gagner un électron ne change pas le noyau. Étape 3 — Écrire l'ion : F⁻ a 9 protons et 10 électrons.",
+                  "answers": [
+                    {
+                      "content": "9",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Combien d'électrons contient l'ion Al³⁺ ($Z = 13$) ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : l'atome a 13 électrons. Étape 2 — Déterminer : il en perd 3 : 13 − 3 = 10. Étape 3 — Écrire l'ion : Al³⁺ a 10 électrons.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Explique pourquoi l'ion Na⁺ est stable alors que l'atome de sodium ne l'est pas.",
+                  "question_type": "written",
+                  "points": 3,
+                  "criteria": [
+                    "Écrit (K)²(L)⁸(M)¹ pour l'atome",
+                    "Écrit (K)²(L)⁸ pour l'ion",
+                    "Compare la couche externe à l'octet",
+                    "Conclut sur la stabilité"
+                  ],
+                  "explanation": "Corrigé modèle : Étape 1, l'atome de sodium a 11 électrons : (K)²(L)⁸(M)¹ ; sa couche externe M n'a qu'1 électron, ce n'est pas un octet. Étape 2, l'ion Na⁺ a perdu cet électron : (K)²(L)⁸. Étape 3, sa couche externe L contient 8 électrons : c'est un octet, comme le néon. Étape 4, l'ion Na⁺ est donc stable, l'atome non. Barème sur 3 : structure de l'atome (0,5 point), structure de l'ion (0,5 point), comparaison à l'octet (1 point), conclusion (1 point).",
+                  "answers": [],
+                  "starter": "L'atome de sodium a un seul électron sur ..."
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "On raisonne sur le nombre de liaisons covalentes de quelques atomes.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Nombre de liaisons = électrons manquants pour avoir le duet ou l'octet.",
+              "questions": [
+                {
+                  "content": "Pourquoi l'atome de carbone ($Z = 6$) forme-t-il 4 liaisons covalentes ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : C a (K)²(L)⁴, avec 4 électrons sur sa couche externe. Étape 2 — Associer : il en manque 8 − 4 = 4 pour l'octet, donc 4 liaisons. Il a 6 protons et 4 électrons externes ; le nombre de liaisons vient des électrons manquants.",
+                  "answers": [
+                    {
+                      "content": "Il lui manque 4 électrons pour avoir l'octet",
+                      "correct": true
+                    },
+                    {
+                      "content": "Il a 4 protons",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il a 6 électrons sur sa couche externe",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il perd 4 électrons",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La molécule de chlorure d'hydrogène peut s'écrire H=Cl.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Écrire : H et Cl manquent chacun d'1 électron. Étape 2 — Associer : chaque atome forme 1 liaison. Étape 3 — Dessiner : H–Cl, avec un seul trait.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien de liaisons covalentes la molécule de méthane CH₄ contient-elle au total ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : C manque de 4 électrons, chaque H d'1. Étape 2 — Associer : C forme 4 liaisons, chacune avec un H. Étape 3 — Dessiner : 4 traits C–H, soit 4 liaisons au total.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Laquelle de ces formules développées est impossible ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : H manque d'1 électron, Cl d'1, O de 2, N de 3. Étape 2 — Associer : H ne peut former qu'1 liaison. Étape 3 — Dessiner : H–Cl, O=O et N≡N sont possibles ; H=H donnerait 2 liaisons à H. H=H est impossible car l'hydrogène ne forme qu'une liaison.",
+                  "answers": [
+                    {
+                      "content": "H=H",
+                      "correct": true
+                    },
+                    {
+                      "content": "H–Cl",
+                      "correct": false
+                    },
+                    {
+                      "content": "O=O",
+                      "correct": false
+                    },
+                    {
+                      "content": "N≡N",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Écris la formule développée de l'ammoniac NH₃ et justifie-la avec le nombre de liaisons de N et de H.",
+                  "question_type": "written",
+                  "points": 3,
+                  "criteria": [
+                    "Donne 3 liaisons pour N (8 − 5) et 1 pour chaque H",
+                    "Dessine N relié à 3 H par des traits simples",
+                    "Écrit une formule cohérente avec ces nombres de liaisons"
+                  ],
+                  "explanation": "Corrigé modèle : Étape 1, N a (K)²(L)⁵ : il lui manque 3 électrons, donc 3 liaisons ; H a (K)¹ : il lui manque 1 électron, donc 1 liaison. Étape 2, N est lié à 3 atomes H, chacun par une liaison simple. Étape 3, la formule développée est un atome N au centre, relié par 3 traits simples à 3 atomes H. Barème sur 3 : liaisons de N et de H (1 point), 3 liaisons simples N–H (1 point), formule cohérente (1 point).",
+                  "answers": [],
+                  "starter": "L'atome d'azote forme ..."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sujet 4 · Bilan de la leçon",
+          "notions": "Bilan : règles du duet et de l'octet, ions monoatomiques, ions polyatomiques, formule d'un composé ionique et électroneutralité, liaison covalente et formules d'une molécule.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "On étudie le magnésium ($Z = 12$) et le chlore ($Z = 17$), qui forment le chlorure de magnésium.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Structure électronique, gaz noble voisin, ions, puis formule neutre.",
+              "questions": [
+                {
+                  "content": "Combien d'électrons la couche externe de l'atome de magnésium ($Z = 12$) contient-elle ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : 12 électrons, (K)²(L)⁸(M)². Étape 2 — Repérer : la couche externe M contient 2 électrons.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quel ion monoatomique forme l'atome de magnésium ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : Mg (K)²(L)⁸(M)². Étape 2 — Chercher : le néon (K)²(L)⁸. Étape 3 — Déterminer : l'atome perd 2 électrons. Étape 4 — Écrire l'ion : Mg²⁺. Mg²⁻ aurait gagné des électrons.",
+                  "answers": [
+                    {
+                      "content": "Mg²⁺",
+                      "correct": true
+                    },
+                    {
+                      "content": "Mg²⁻",
+                      "correct": false
+                    },
+                    {
+                      "content": "Mg⁶⁺",
+                      "correct": false
+                    },
+                    {
+                      "content": "Mg⁺",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la formule du chlorure de magnésium, formé d'ions Mg²⁺ et Cl⁻ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : Mg²⁺ (+2) et Cl⁻ (−1). Étape 2 — Chercher : 1 ion Mg²⁺ pour 2 ions Cl⁻. Étape 3 — Écrire : MgCl₂. Étape 4 — Vérifier : +2 − 2 = 0. MgCl donnerait +2 − 1 = +1.",
+                  "answers": [
+                    {
+                      "content": "MgCl₂",
+                      "correct": true
+                    },
+                    {
+                      "content": "MgCl",
+                      "correct": false
+                    },
+                    {
+                      "content": "Mg₂Cl",
+                      "correct": false
+                    },
+                    {
+                      "content": "Mg₂Cl₂",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le chlorure de magnésium porte une charge globale négative à cause des deux ions Cl⁻.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer : 1 ion Mg²⁺ (+2) et 2 ions Cl⁻ (−1 chacun). Étape 2 — Vérifier : +2 + 2 × (−1) = 0 : le composé est neutre.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Le composé MgCl₂ est formé d'un cation Mg²⁺ et de deux ___ Cl⁻.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Repérer : Cl⁻ est un ion de charge négative. Étape 2 — Déterminer : un ion négatif est un anion ; il y en a donc 2 par cation.",
+                  "answers": [
+                    {
+                      "content": "anions",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Le calcaire des bouilloires, CaCO₃, est formé d'ions calcium Ca²⁺ et d'ions carbonate CO₃²⁻.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Repère les ions ; compare les charges positives et négatives.",
+              "questions": [
+                {
+                  "content": "Combien d'atomes contient l'ion carbonate CO₃²⁻ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Lire : 1 atome de carbone et 3 atomes d'oxygène. Étape 2 — Calculer : 1 + 3 = 4 atomes. La charge 2− n'est pas un nombre d'atomes.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    },
+                    {
+                      "content": "2",
+                      "correct": false
+                    },
+                    {
+                      "content": "3",
+                      "correct": false
+                    },
+                    {
+                      "content": "5",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "L'ion Ca²⁺ s'obtient en retirant 2 électrons à l'atome de calcium ($Z = 20$). Combien d'électrons contient-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : l'atome a 20 électrons. Étape 2 — Déterminer : il en perd 2 : 20 − 2 = 18. Étape 3 — Écrire l'ion : Ca²⁺ a 20 protons et 18 électrons.",
+                  "answers": [
+                    {
+                      "content": "18",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Le carbonate de calcium CaCO₃ est électriquement neutre.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Repérer : Ca²⁺ (+2) et CO₃²⁻ (−2). Étape 2 — Chercher : 1 ion de chaque sorte. Étape 3 — Vérifier : +2 − 2 = 0.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Les ions Ca²⁺ et Cl⁻ forment le composé de formule ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Repérer : Ca²⁺ (+2) et Cl⁻ (−1). Étape 2 — Chercher : 1 ion Ca²⁺ pour 2 ions Cl⁻. Étape 3 — Écrire : CaCl₂. Étape 4 — Vérifier : +2 − 2 = 0.",
+                  "answers": [
+                    {
+                      "content": "CaCl2",
+                      "correct": true
+                    },
+                    {
+                      "content": "CaCl₂",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle est la charge de l'ion carbonate CO₃²⁻ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Lire : CO₃ avec la charge 2⁻. Étape 2 — Relever : la charge est 2−, donc −2e : c'est un anion. −3e prend l'indice 3 pour la charge.",
+                  "answers": [
+                    {
+                      "content": "−2e",
+                      "correct": true
+                    },
+                    {
+                      "content": "−3e",
+                      "correct": false
+                    },
+                    {
+                      "content": "+2e",
+                      "correct": false
+                    },
+                    {
+                      "content": "−4e",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "On compare quelques molécules du quotidien : l'eau, le méthane du gaz naturel, le dioxygène de l'air, le diazote et le butane.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Pour chaque molécule, compte les électrons manquants de chaque atome.",
+              "questions": [
+                {
+                  "content": "Quelle est la formule développée de la molécule d'eau H₂O ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : H manque d'1 électron, O de 2. Étape 2 — Associer : O forme 2 liaisons simples avec 2 H. Étape 3 — Dessiner : H–O–H. H ne peut former qu'une liaison.",
+                  "answers": [
+                    {
+                      "content": "H–O–H",
+                      "correct": true
+                    },
+                    {
+                      "content": "H=O=H",
+                      "correct": false
+                    },
+                    {
+                      "content": "O–H–O",
+                      "correct": false
+                    },
+                    {
+                      "content": "H–H–O",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans la molécule de butane C₄H₁₀ (4 carbones en chaîne), combien de liaisons C–H y a-t-il ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Écrire : C forme 4 liaisons, H une seule. Étape 2 — Associer : 4 × 4 = 16 liaisons de carbone ; 3 liaisons C–C en utilisent 2 × 3 = 6 ; il reste 16 − 6 = 10 liaisons C–H. Étape 3 — Dessiner : 10 traits C–H, un par atome d'hydrogène.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle est la formule semi-développée du propane C₃H₈ ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Écrire : C forme 4 liaisons, H une seule. Étape 2 — Associer : les carbones des bouts portent 3 H, celui du milieu 2 H. Étape 3 — Déduire : CH₃–CH₂–CH₃. C₃H₈ est la formule brute.",
+                  "answers": [
+                    {
+                      "content": "CH₃–CH₂–CH₃",
+                      "correct": true
+                    },
+                    {
+                      "content": "CH₃–CH₃–CH₃",
+                      "correct": false
+                    },
+                    {
+                      "content": "CH₂–CH₂–CH₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "C₃H₈",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le dioxygène O₂ contient une liaison double entre les deux atomes d'oxygène.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Écrire : O manque de 2 électrons. Étape 2 — Associer : les 2 atomes mettent en commun 2 doublets : une liaison double. Étape 3 — Dessiner : O=O.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles molécules ne contiennent que des liaisons simples ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Écrire : O manque de 2 électrons, N de 3, C de 4, H de 1. Étape 2 — Associer : H–O–H et CH₄ n'ont que des traits simples. Étape 3 — Dessiner : O=O est double et N≡N est triple.",
+                  "answers": [
+                    {
+                      "content": "L'eau H₂O",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le méthane CH₄",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le dioxygène O₂",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le diazote N₂",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Pour finir, on classe des espèces rencontrées dans la leçon.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "hint": "Distingue ions, composés ioniques et molécules.",
+              "questions": [
+                {
+                  "content": "Relie chaque espèce à sa nature.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Lire : Na⁺ est un ion d'un seul atome, de charge +. Étape 2 — Relever : SO₄²⁻ est un ion de plusieurs atomes, de charge −. Étape 3 — Nommer : NaCl est formé de Na⁺ et Cl⁻ ; CH₄ est un groupe d'atomes liés, neutre.",
+                  "answers": [
+                    {
+                      "content": "Na⁺",
+                      "match": "Cation monoatomique"
+                    },
+                    {
+                      "content": "SO₄²⁻",
+                      "match": "Anion polyatomique"
+                    },
+                    {
+                      "content": "NaCl",
+                      "match": "Composé ionique"
+                    },
+                    {
+                      "content": "CH₄",
+                      "match": "Molécule"
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour écrire la formule d'un composé ionique.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Repérer les ions. Étape 2 — Chercher les nombres d'ions. Étape 3 — Écrire la formule. Étape 4 — Vérifier l'électroneutralité. Les indices se déduisent des nombres d'ions, donc après la recherche de ces nombres.",
+                  "answers": [
+                    {
+                      "content": "Repérer le cation et l'anion avec leurs charges"
+                    },
+                    {
+                      "content": "Chercher les nombres d'ions qui rendent la charge totale nulle"
+                    },
+                    {
+                      "content": "Écrire la formule avec les indices et sans les charges"
+                    },
+                    {
+                      "content": "Vérifier l'électroneutralité"
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien d'atomes contient une unité de formule Al₂(SO₄)₃ ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Lire : 2 atomes d'aluminium et 3 ions SO₄²⁻ de 5 atomes chacun. Étape 2 — Calculer : 2 + 3 × 5 = 17 atomes. 5 serait le nombre d'atomes d'un seul ion sulfate.",
+                  "answers": [
+                    {
+                      "content": "17",
+                      "correct": true
+                    }
+                  ],
+                  "tolerance": 0
+                },
+                {
+                  "content": "Quelle espèce est électriquement neutre ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : un ion a une charge ; une molécule est neutre. Étape 2 — Vérifier : SO₄²⁻, Na⁺ et Cl⁻ sont des ions chargés ; O₂ est une molécule. Un composé ionique est neutre dans son ensemble, mais ses ions sont chargés.",
+                  "answers": [
+                    {
+                      "content": "La molécule de dioxygène O₂",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'ion sulfate SO₄²⁻",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'ion sodium Na⁺",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'ion chlorure Cl⁻",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Les atomes d'une molécule sont liés par des liaisons ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Associer : dans une molécule, chaque liaison met en commun un doublet d'électrons. Étape 2 — Dessiner : c'est une liaison covalente, pas une attraction entre ions.",
+                  "answers": [
+                    {
+                      "content": "covalentes",
+                      "correct": true
+                    },
+                    {
+                      "content": "covalente",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
