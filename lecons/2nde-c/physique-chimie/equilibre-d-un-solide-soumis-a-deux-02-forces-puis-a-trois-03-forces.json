@@ -186,12 +186,74 @@
             ]
           },
           "controls": []
+        },
+        {
+          "key": "plan-incline-frottement",
+          "kind": "coordinate_plane",
+          "description": "Un plan à carreaux, échelle 1 carreau pour 20 N. Un plan rugueux monte vers la droite, du point (0 ; 0) au point (8 ; 6) : sinus de l'angle = 0,6 et cosinus = 0,8. Une caisse de 100 N, réduite à son centre de gravité G (4 ; 3,8), repose au point de contact C (4 ; 3). Le poids P (5 carreaux) part de G vers le bas. La réaction R (5 carreaux) part de C vers le haut. Elle se décompose en RN, perpendiculaire au plan (4 carreaux, 80 N), et RT, parallèle au plan vers le haut (3 carreaux, 60 N).",
+          "params": {
+            "xmin": 0,
+            "xmax": 10,
+            "ymin": -3,
+            "ymax": 9,
+            "points": [
+              {
+                "id": "G",
+                "x": 4,
+                "y": 3.8
+              },
+              {
+                "id": "C",
+                "x": 4,
+                "y": 3
+              }
+            ],
+            "segments": [
+              {
+                "x1": 0,
+                "y1": 0,
+                "x2": 8,
+                "y2": 6
+              }
+            ],
+            "vectors": [
+              {
+                "label": "P",
+                "dx": 0,
+                "dy": -5,
+                "ox": 4,
+                "oy": 3.8
+              },
+              {
+                "label": "R",
+                "dx": 0,
+                "dy": 5,
+                "ox": 4,
+                "oy": 3
+              },
+              {
+                "label": "RN",
+                "dx": -2.4,
+                "dy": 3.2,
+                "ox": 4,
+                "oy": 3
+              },
+              {
+                "label": "RT",
+                "dx": 2.4,
+                "dy": 1.8,
+                "ox": 4,
+                "oy": 3
+              }
+            ]
+          },
+          "controls": []
         }
       ],
       "notions": [
         {
           "name": "Faire le bilan des forces exercées sur un solide",
-          "remember": "Le **système** est le solide que l'on étudie. Les **forces extérieures** sont celles que les autres objets exercent **sur** lui. Le **bilan des forces** est la liste de ces forces avec leurs caractéristiques. Trois forces reviennent souvent. Le **poids** $\\vec P$ : exercé à distance par la Terre, appliqué au centre de gravité G, vertical, vers le bas, d'intensité $P = m \\times g$. La **tension** $\\vec T$ d'un fil : contact localisé, appliquée au point d'attache, dirigée suivant le fil, du solide vers le fil. La **réaction** $\\vec R$ d'un support : contact réparti, dirigée du support vers le solide ; si le support est lisse (sans frottements), elle est perpendiculaire au support. Dans cette leçon, on néglige les frottements et on prend $g = 10$ N/kg. La force qu'un solide exerce sur son support est la **force pressante** : elle s'exerce sur le support, pas sur le solide.",
+          "remember": "Le **système** est le solide que l'on étudie. Les **forces extérieures** sont celles que les autres objets exercent **sur** lui. Le **bilan des forces** est la liste de ces forces avec leurs caractéristiques. Trois forces reviennent souvent. Le **poids** $\\vec P$ : exercé à distance par la Terre, appliqué au centre de gravité G, vertical, vers le bas, d'intensité $P = m \\times g$. La **tension** $\\vec T$ d'un fil : contact localisé, appliquée au point d'attache, dirigée suivant le fil, du solide vers le fil. La **réaction** $\\vec R$ d'un support : contact réparti, dirigée du support vers le solide ; si le support est lisse (sans frottements), elle est perpendiculaire au support. Avec des frottements, la réaction a en plus une composante parallèle au support : la réaction tangentielle (voir la dernière notion). Sauf dans cette dernière notion, on néglige les frottements et on prend $g = 10$ N/kg. La force qu'un solide exerce sur son support est la **force pressante** : elle s'exerce sur le support, pas sur le solide.",
           "method": [
             "Définir le système : choisir le solide étudié.",
             "Lister les objets qui agissent sur le système : la Terre (à distance), puis chaque objet qui le touche (fil, support, main).",
@@ -1199,7 +1261,7 @@
         },
         {
           "name": "Calculer une intensité par projection sur deux axes",
-          "remember": "On choisit deux axes perpendiculaires $Ox$ et $Oy$. La **composante** d'une force sur un axe est sa projection sur cet axe. Si une force d'intensité $F$ fait l'angle $\\alpha$ avec l'axe $Ox$, ses composantes sont $\\pm F\\cos\\alpha$ sur $Ox$ et $\\pm F\\sin\\alpha$ sur $Oy$ ; le signe est + si la composante va dans le sens de l'axe, − sinon. À l'équilibre, la somme des composantes est nulle sur chaque axe : $\\sum F_x = 0$ et $\\sum F_y = 0$. Valeurs utiles : $\\sin 0^\\circ = 0$ ; $\\cos 0^\\circ = 1$ ; $\\sin 30^\\circ = \\cos 60^\\circ = 0{,}5$ ; $\\cos 30^\\circ = \\sin 60^\\circ = \\frac{\\sqrt 3}{2}$, soit environ 0,87.",
+          "remember": "On choisit deux axes perpendiculaires $Ox$ et $Oy$. La **composante** d'une force sur un axe est sa projection sur cet axe. Si une force d'intensité $F$ fait l'angle $\\alpha$ avec l'axe $Ox$, ses composantes sont $\\pm F\\cos\\alpha$ sur $Ox$ et $\\pm F\\sin\\alpha$ sur $Oy$ ; le signe est + si la composante va dans le sens de l'axe, − sinon. À l'équilibre, la somme des composantes est nulle sur chaque axe : $\\sum F_x = 0$ et $\\sum F_y = 0$. Valeurs utiles : $\\sin 0^\\circ = 0$ ; $\\cos 0^\\circ = 1$ ; $\\sin 30^\\circ = \\cos 60^\\circ = 0{,}5$ ; $\\cos 30^\\circ = \\sin 60^\\circ = \\frac{\\sqrt 3}{2}$, soit environ 0,87. Sur une rampe lisse, la réaction n'a pas de composante le long de la rampe ; sur une rampe rugueuse, elle en a une, la réaction tangentielle.",
           "method": [
             "Choisir deux axes perpendiculaires (si possible, un axe qui porte une force inconnue) et faire le bilan des forces avec leurs angles.",
             "Projeter chaque force sur les deux axes : intensité × cosinus ou sinus de l'angle, avec le signe du sens.",
@@ -1505,6 +1567,329 @@
                 }
               ],
               "hint": "Une équation par axe : somme des composantes égale à 0."
+            }
+          ]
+        },
+        {
+          "name": "Réactions normale et tangentielle d'un support (frottements)",
+          "remember": "La **réaction** $\\vec R$ d'un support se décompose en deux composantes : la **réaction normale** $\\vec R_N$, **perpendiculaire** au support, et la **réaction tangentielle** $\\vec R_T$, **parallèle** au support. On a $\\vec R = \\vec R_N + \\vec R_T$ et $R^2 = R_N^2 + R_T^2$. $\\vec R_T$ est la **force de frottement** : elle est nulle si le contact est **lisse** (sans frottement). Un solide en équilibre sur un **plan incliné rugueux** d'angle $\\alpha$ n'a que deux forces : $\\vec P$ et $\\vec R$. Donc $\\vec R$ est verticale, vers le haut, avec $R = P$. Elle fait l'angle $\\alpha$ avec la perpendiculaire au plan. Par projection : $R_N = P\\cos\\alpha$ et $R_T = P\\sin\\alpha$. Sans frottement ($R_T = 0$), le solide ne reste pas en équilibre sous deux forces sur un plan incliné : il faut une troisième force, comme le câble de la notion précédente.",
+          "method": [
+            "Faire le bilan : écrire les deux seules forces exercées sur le solide, son poids $\\vec P$ et la réaction $\\vec R$ du plan.",
+            "Appliquer l'équilibre sous deux forces : $\\vec R$ est verticale, vers le haut, et $R = P$.",
+            "Choisir les axes : $Ox$ le long du plan vers le haut, $Oy$ perpendiculaire au plan ; repérer l'angle $\\alpha$ entre $\\vec R$ et l'axe $Oy$ (c'est l'angle d'inclinaison du plan).",
+            "Projeter $\\vec R$ sur les deux axes : $R_N = R\\cos\\alpha$ sur $Oy$ et $R_T = R\\sin\\alpha$ sur $Ox$ ; calculer avec $R = P$.",
+            "Interpréter : $R_N$ est la réaction normale ; $R_T$ est la réaction tangentielle, la force de frottement ; vérifier que $R_N^2 + R_T^2 = R^2$."
+          ],
+          "example": {
+            "statement": "Une caisse de 10 kg reste immobile sur une planche rugueuse inclinée d'un angle $\\alpha$ tel que $\\cos\\alpha = 0{,}8$ et $\\sin\\alpha = 0{,}6$. Calculer la réaction normale $R_N$ et la réaction tangentielle $R_T$. On prend $g = 10$ N/kg.",
+            "steps": [
+              "Faire le bilan : le système est la caisse ; ses deux seules forces sont le poids $\\vec P$ et la réaction $\\vec R$ de la planche.",
+              "Appliquer l'équilibre : $\\vec R$ est verticale, vers le haut, et $R = P = 10 \\times 10 = 100$ N.",
+              "Choisir les axes : $Ox$ le long de la planche vers le haut, $Oy$ perpendiculaire à la planche ; l'angle entre $\\vec R$ et $Oy$ est $\\alpha$.",
+              "Projeter : $R_N = R\\cos\\alpha = 100 \\times 0{,}8 = 80$ N et $R_T = R\\sin\\alpha = 100 \\times 0{,}6 = 60$ N.",
+              "Interpréter : $R_N = 80$ N est la réaction normale ; $R_T = 60$ N est la force de frottement, dirigée vers le haut de la planche. Vérification : $80^2 + 60^2 = 6\\,400 + 3\\,600 = 10\\,000 = 100^2$."
+            ]
+          },
+          "pitfall": "Ne confonds pas $R_N$ avec $R$, ni le sinus avec le cosinus. Sur un plan incliné, $R_N$ n'est pas égale au poids : $R_N = P\\cos\\alpha$ est plus petite que $P$. Contre-exemple : pour $P = 100$ N et $\\cos\\alpha = 0{,}8$, $R_N = 80$ N et non 100 N. Pour le sinus et le cosinus, teste le plan horizontal ($\\alpha = 0^\\circ$) : il n'y a pas de frottement à fournir, donc $R_T = P\\sin 0^\\circ = 0$ convient, alors que $P\\cos 0^\\circ = P$ ne convient pas pour $R_T$. Rappel : la réaction n'est perpendiculaire au plan que si le plan est lisse.",
+          "figure": "plan-incline-frottement",
+          "practice": {
+            "statement": "Tu t'entraînes à décomposer la réaction d'un plan incliné en réaction normale et réaction tangentielle.",
+            "questions": [
+              {
+                "content": "Un solide de poids 200 N est immobile sur un plan incliné rugueux. L'angle $\\alpha$ vérifie $\\cos\\alpha = 0{,}6$ et $\\sin\\alpha = 0{,}8$. Quelle est l'intensité de la réaction normale $R_N$, en N ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Faire le bilan : $\\vec P$ et $\\vec R$. Étape 2 — Appliquer l'équilibre : $R = P = 200$ N. Étape 3 — Choisir les axes : $Oy$ perpendiculaire au plan, l'angle entre $\\vec R$ et $Oy$ est $\\alpha$. Étape 4 — Projeter : $R_N = R\\cos\\alpha = 200 \\times 0{,}6 = 120$ N. Pourquoi pas 160 N : ce serait $200 \\times 0{,}8$, le sinus ; c'est la valeur de $R_T$.",
+                "answers": [
+                  {
+                    "content": "120",
+                    "correct": true
+                  }
+                ],
+                "unit": "N",
+                "tolerance": 0,
+                "hint": "$R_N = R\\cos\\alpha$ avec $R = P$."
+              },
+              {
+                "content": "Un sac de 5 kg est immobile sur un plan rugueux incliné de 30° sur l'horizontale. On prend $g = 10$ N/kg et $\\sin 30^\\circ = 0{,}5$. Quelle est l'intensité de la réaction tangentielle $R_T$, en N ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Faire le bilan : $\\vec P$ et $\\vec R$. Étape 2 — Appliquer l'équilibre : $R = P = 5 \\times 10 = 50$ N. Étape 3 — Choisir les axes : $Ox$ le long du plan, l'angle entre $\\vec R$ et $Oy$ est 30°. Étape 4 — Projeter : $R_T = R\\sin 30^\\circ = 50 \\times 0{,}5 = 25$ N.",
+                "answers": [
+                  {
+                    "content": "25",
+                    "correct": true
+                  }
+                ],
+                "unit": "N",
+                "tolerance": 0,
+                "hint": "$R_T = R\\sin\\alpha$ avec $R = m \\times g$."
+              },
+              {
+                "content": "Un solide est en équilibre sur un plan incliné rugueux. Quelle composante de la réaction représente la force de frottement ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 4 — Projeter $\\vec R$ sur les deux axes : on obtient $R_N$ sur $Oy$ et $R_T$ sur $Ox$. Étape 5 — Interpréter : $R_T$, parallèle au plan, est la force de frottement. Pourquoi pas $R_N$ : elle est perpendiculaire au plan et empêche le solide de s'enfoncer ; elle ne le retient pas le long du plan.",
+                "answers": [
+                  {
+                    "content": "La réaction tangentielle $\\vec R_T$, parallèle au plan",
+                    "correct": true
+                  },
+                  {
+                    "content": "La réaction normale $\\vec R_N$, perpendiculaire au plan",
+                    "correct": false
+                  },
+                  {
+                    "content": "La réaction totale $\\vec R$, car elle est verticale",
+                    "correct": false
+                  },
+                  {
+                    "content": "Le poids $\\vec P$ projeté sur le plan, parallèle au plan",
+                    "correct": false
+                  }
+                ],
+                "hint": "Le frottement est parallèle au support."
+              },
+              {
+                "content": "Un solide est en équilibre sous deux forces sur un plan incliné lisse, sans aucun frottement.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Faire le bilan : $\\vec P$ et $\\vec R$. Étape 2 — Appliquer l'équilibre : il faudrait $\\vec R$ verticale. Étape 5 — Interpréter : sur un plan lisse, $R_T = 0$ et $\\vec R$ est perpendiculaire au plan, donc pas verticale. Pourquoi pas vrai : sans frottement, il faut une troisième force (un câble) pour retenir le solide.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Sans frottement, $R_T = 0$."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Une caisse immobile sur une planche rugueuse",
+              "statement": "Sur un chantier, une caisse de 20 kg reste immobile sur une planche rugueuse inclinée d'un angle $\\alpha$ tel que $\\cos\\alpha = 0{,}8$ et $\\sin\\alpha = 0{,}6$. La figure montre le poids P, la réaction R et ses composantes RN et RT. On prend $g = 10$ N/kg. Tu décomposes la réaction de la planche.",
+              "exercise_type": "fixation",
+              "figure": "plan-incline-frottement",
+              "questions": [
+                {
+                  "content": "Une caisse de 20 kg est immobile sur une planche rugueuse inclinée. On prend $g = 10$ N/kg. Quelle est l'intensité de la réaction $R$ de la planche, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Faire le bilan : le poids $\\vec P$ et la réaction $\\vec R$. Étape 2 — Appliquer l'équilibre : $R = P = 20 \\times 10 = 200$ N. Pourquoi pas 20 N : c'est la masse en kg ; il faut calculer le poids.",
+                  "answers": [
+                    {
+                      "content": "200",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une caisse de 20 kg est immobile sur une planche rugueuse inclinée. Quelle est la direction de la réaction $\\vec R$ de la planche ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Faire le bilan : $\\vec P$ et $\\vec R$ seulement. Étape 2 — Appliquer l'équilibre : $\\vec R$ est sur la même droite que $\\vec P$ et de sens opposé : verticale, vers le haut. Pourquoi pas « perpendiculaire à la planche » : c'est la direction de $\\vec R_N$ seule ; la réaction totale est verticale.",
+                  "answers": [
+                    {
+                      "content": "Verticale, vers le haut",
+                      "correct": true
+                    },
+                    {
+                      "content": "Perpendiculaire à la planche, vers le haut",
+                      "correct": false
+                    },
+                    {
+                      "content": "Parallèle à la planche, vers le haut de la planche",
+                      "correct": false
+                    },
+                    {
+                      "content": "Verticale, vers le bas, comme le poids de la caisse",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une caisse de poids 200 N est immobile sur une planche rugueuse inclinée d'un angle $\\alpha$ avec $\\cos\\alpha = 0{,}8$. Quelle est l'intensité de la réaction normale $R_N$, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Faire le bilan : $\\vec P$ et $\\vec R$. Étape 2 — Appliquer l'équilibre : $R = P = 200$ N. Étape 3 — Choisir les axes : $Oy$ perpendiculaire à la planche, l'angle entre $\\vec R$ et $Oy$ est $\\alpha$. Étape 4 — Projeter : $R_N = R\\cos\\alpha = 200 \\times 0{,}8 = 160$ N. Pourquoi pas 200 N : c'est $R$, pas sa composante normale.",
+                  "answers": [
+                    {
+                      "content": "160",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une caisse de poids 200 N est immobile sur une planche rugueuse inclinée d'un angle $\\alpha$ avec $\\sin\\alpha = 0{,}6$. Quelle est l'intensité de la réaction tangentielle $R_T$, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Faire le bilan : $\\vec P$ et $\\vec R$. Étape 2 — Appliquer l'équilibre : $R = P = 200$ N. Étape 3 — Choisir les axes : $Ox$ le long de la planche vers le haut. Étape 4 — Projeter : $R_T = R\\sin\\alpha = 200 \\times 0{,}6 = 120$ N. Étape 5 — Interpréter : $R_T$ est la force de frottement. Pourquoi pas 160 N : c'est $200 \\times 0{,}8$, la valeur de $R_N$.",
+                  "answers": [
+                    {
+                      "content": "120",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une caisse est immobile sur une planche rugueuse inclinée. Quelles affirmations sur les composantes de la réaction sont justes ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 3 — Choisir les axes : $Oy$ est perpendiculaire à la planche, $Ox$ est parallèle à la planche. Étape 4 — Projeter : $R_N$ est la composante sur $Oy$, $R_T$ celle sur $Ox$. Étape 5 — Interpréter : $R_T$ est la force de frottement. Pourquoi pas « tangentielle perpendiculaire » : tangentielle veut dire parallèle au support.",
+                  "answers": [
+                    {
+                      "content": "La réaction normale est perpendiculaire à la planche",
+                      "correct": true
+                    },
+                    {
+                      "content": "La réaction tangentielle est parallèle à la planche et représente le frottement",
+                      "correct": true
+                    },
+                    {
+                      "content": "La réaction tangentielle est perpendiculaire à la planche et représente le frottement",
+                      "correct": false
+                    },
+                    {
+                      "content": "La réaction normale est parallèle à la planche et représente le frottement",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur un plan incliné rugueux, la réaction normale est égale au poids : $R_N = P$.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Appliquer l'équilibre : c'est la réaction totale qui vaut $R = P$. Étape 4 — Projeter : $R_N = R\\cos\\alpha$, plus petite que $P$ dès que $\\alpha \\neq 0^\\circ$. Pour 200 N et $\\cos\\alpha = 0{,}8$ : $R_N = 160$ N, pas 200 N. Pourquoi pas vrai : $R_N = P$ n'est vrai que sur un plan horizontal.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "$R = P$ ; $R_N = R\\cos\\alpha$ ; $R_T = R\\sin\\alpha$."
+            },
+            {
+              "title": "Décomposer la réaction sur un plan incliné",
+              "statement": "Dans cet exercice, tu nommes et tu calcules les composantes de la réaction d'un support, avec ou sans frottement. On prend $g = 10$ N/kg.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "La composante de la réaction d'un support perpendiculaire au support s'appelle la réaction ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 3 — Choisir les axes : $Oy$ est perpendiculaire au support. Étape 4 — Projeter : la composante sur $Oy$ est $R_N$, la réaction normale (« normale » veut dire perpendiculaire). Pourquoi pas « tangentielle » : c'est la composante parallèle au support, $R_T$.",
+                  "answers": [
+                    {
+                      "content": "normale",
+                      "correct": true
+                    },
+                    {
+                      "content": "la normale",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque force à sa description.",
+                  "question_type": "matching",
+                  "explanation": "Étape 3 — Choisir les axes : $Oy$ perpendiculaire, $Ox$ parallèle au support. Étape 4 — Projeter : $R_N$ sur $Oy$, $R_T$ sur $Ox$. Étape 5 — Interpréter : $R_T$ est la force de frottement ; $\\vec R = \\vec R_N + \\vec R_T$.",
+                  "answers": [
+                    {
+                      "content": "Réaction normale $\\vec R_N$",
+                      "match": "Perpendiculaire au support"
+                    },
+                    {
+                      "content": "Réaction tangentielle $\\vec R_T$",
+                      "match": "Parallèle au support : force de frottement"
+                    },
+                    {
+                      "content": "Réaction $\\vec R$",
+                      "match": "Somme vectorielle de $\\vec R_N$ et de $\\vec R_T$"
+                    }
+                  ]
+                },
+                {
+                  "content": "Un sac de 40 kg est immobile sur un plan rugueux incliné de 30° sur l'horizontale. On prend $g = 10$ N/kg et $\\sin 30^\\circ = 0{,}5$. Quelle est l'intensité de la réaction tangentielle, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Faire le bilan : $\\vec P$ et $\\vec R$. Étape 2 — Appliquer l'équilibre : $R = P = 40 \\times 10 = 400$ N. Étape 3 — Choisir les axes : $Ox$ le long du plan, l'angle entre $\\vec R$ et $Oy$ est 30°. Étape 4 — Projeter : $R_T = R\\sin 30^\\circ$, soit $R_T = 400 \\times 0{,}5$, donc $R_T = 200$ N.",
+                  "answers": [
+                    {
+                      "content": "200",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une caisse de 30 kg est posée, immobile, sur un sol horizontal. On prend $g = 10$ N/kg. Sa réaction tangentielle vaut ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 2 — Appliquer l'équilibre : $R = P = 300$ N, verticale. Étape 3 — Choisir les axes : le sol est horizontal, donc $\\alpha = 0^\\circ$. Étape 4 — Projeter : $R_T = R\\sin 0^\\circ = 0$ N et $R_N = 300$ N. Pourquoi pas 300 N : c'est la réaction normale $R_N$.",
+                  "answers": [
+                    {
+                      "content": "0 N",
+                      "correct": true
+                    },
+                    {
+                      "content": "300 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "150 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "30 N",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur un plan incliné sans frottement, la réaction du plan est perpendiculaire au plan : sa réaction tangentielle est nulle.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 4 — Projeter : sans frottement, il n'y a aucune composante parallèle au plan : $R_T = 0$. Étape 5 — Interpréter : $R_T$ est la force de frottement ; elle est nulle, donc $\\vec R = \\vec R_N$ est perpendiculaire au plan. Pourquoi pas faux : c'est exactement la propriété d'un plan lisse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour calculer $R_N$ et $R_T$ d'un solide en équilibre sur un plan incliné rugueux.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Faire le bilan ; Étape 2 — Appliquer l'équilibre ; Étape 3 — Choisir les axes ; Étape 4 — Projeter ; Étape 5 — Interpréter. On ne projette qu'après avoir trouvé $R = P$ et choisi les axes.",
+                  "answers": [
+                    {
+                      "content": "Faire le bilan : le poids et la réaction du plan"
+                    },
+                    {
+                      "content": "Appliquer l'équilibre sous deux forces : $R = P$"
+                    },
+                    {
+                      "content": "Choisir les axes et repérer l'angle $\\alpha$"
+                    },
+                    {
+                      "content": "Projeter la réaction : $R_N = R\\cos\\alpha$ et $R_T = R\\sin\\alpha$"
+                    },
+                    {
+                      "content": "Interpréter : réaction normale, force de frottement, vérification"
+                    }
+                  ]
+                }
+              ],
+              "hint": "Sur un plan incliné rugueux : $R = P$, $R_N = P\\cos\\alpha$, $R_T = P\\sin\\alpha$ ; sans frottement, $R_T = 0$."
             }
           ]
         }
@@ -1831,7 +2216,7 @@
         },
         {
           "title": "Un chariot sur la rampe du port",
-          "statement": "Au port de San-Pédro, un chariot chargé de 120 kg est retenu, immobile, sur une rampe lisse inclinée de 30° sur l'horizontale, par un câble parallèle à la rampe. On prend $g = 10$ N/kg, $\\sin 30^\\circ = 0{,}5$ et $\\cos 30^\\circ = \\frac{\\sqrt 3}{2}$.",
+          "statement": "Au port de San-Pédro, un chariot chargé de 120 kg est retenu, immobile, sur une rampe lisse inclinée de 30° sur l'horizontale, par un câble parallèle à la rampe. On prend $g = 10$ N/kg, $\\sin 30^\\circ = 0{,}5$ et $\\cos 30^\\circ = \\frac{\\sqrt 3}{2}$. Au retour, sans câble, le même chariot est posé, immobile, sur une rampe rugueuse de même inclinaison.",
           "exercise_type": "evaluation",
           "figure": null,
           "questions": [
@@ -1872,24 +2257,24 @@
               ]
             },
             {
-              "content": "Quelle est la direction de la réaction de la rampe lisse ?",
+              "content": "Une rampe lisse est inclinée de 30°. Un chariot y est retenu par un câble. Que peut-on dire de la réaction de la rampe ?",
               "question_type": "single_choice",
-              "explanation": "Étape 1 — Définir le système : le chariot. Étape 2 — Lister : la rampe le touche sur une grande surface. Étape 3 — Nommer : réaction $\\vec R$. Étape 4 — Écrire : la rampe est lisse (sans frottements), donc $\\vec R$ est perpendiculaire à la rampe, et non verticale.",
+              "explanation": "Étape 1 — Faire le bilan : le chariot subit $\\vec P$, $\\vec T$ et $\\vec R$. Étape 3 — Choisir les axes : $Ox$ le long de la rampe, $Oy$ perpendiculaire. Étape 5 — Interpréter : la rampe est lisse (sans frottement), donc $R_T = 0$ et $\\vec R = \\vec R_N$ est perpendiculaire à la rampe. Pourquoi pas « verticale » : la réaction est verticale seulement si le chariot n'est soumis qu'à deux forces et que la rampe est rugueuse.",
               "answers": [
                 {
-                  "content": "Perpendiculaire à la rampe",
+                  "content": "Elle est perpendiculaire à la rampe : sa réaction tangentielle est nulle",
                   "correct": true
                 },
                 {
-                  "content": "Verticale",
+                  "content": "Elle est verticale : sa réaction normale est nulle",
                   "correct": false
                 },
                 {
-                  "content": "Parallèle à la rampe",
+                  "content": "Elle est parallèle à la rampe : sa réaction normale est nulle",
                   "correct": false
                 },
                 {
-                  "content": "Horizontale",
+                  "content": "Elle est perpendiculaire à la rampe : sa réaction tangentielle vaut la moitié du poids",
                   "correct": false
                 }
               ]
@@ -1921,19 +2306,17 @@
               "tolerance": 5
             },
             {
-              "content": "Le câble, qui supporte au plus 500 N, retient le chariot sans casser.",
-              "question_type": "true_false",
-              "explanation": "Étape 1 — Calculer : $T = 600$ N. Étape 2 — Comparer : 600 N est supérieur à 500 N. Étape 3 — Conclure : le câble casse ; l'affirmation est fausse.",
+              "content": "Le chariot de 120 kg (poids 1 200 N) est posé, sans câble, sur une rampe rugueuse inclinée de 30° et reste immobile. On prend $\\sin 30^\\circ = 0{,}5$. Quelle est l'intensité de la réaction tangentielle $R_T$, en N ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Faire le bilan : sans câble, deux seules forces : $\\vec P$ et $\\vec R$. Étape 2 — Appliquer l'équilibre sous deux forces : $R = P = 1\\,200$ N, verticale vers le haut. Étape 3 — Choisir les axes : $Ox$ le long de la rampe, $Oy$ perpendiculaire ; l'angle entre $\\vec R$ et $Oy$ est 30°. Étape 4 — Projeter : $R_T = R\\sin 30^\\circ = 1\\,200 \\times 0{,}5 = 600$ N. Étape 5 — Interpréter : $R_T$ est la force de frottement ; elle remplace la tension du câble. Pourquoi pas 1 040 N : c'est $R\\cos 30^\\circ$, la réaction normale $R_N$.",
               "answers": [
                 {
-                  "content": "Vrai",
-                  "correct": false
-                },
-                {
-                  "content": "Faux",
+                  "content": "600",
                   "correct": true
                 }
-              ]
+              ],
+              "unit": "N",
+              "tolerance": 0
             },
             {
               "content": "Explique, avec la projection sur l'axe de la rampe, comment la tension du câble change si la rampe est moins inclinée (15° au lieu de 30°). Le poids reste le même.",
@@ -3088,7 +3471,7 @@
         },
         {
           "title": "Sujet 4 · Bilan de toutes les notions",
-          "notions": "Toutes les notions de la leçon : bilan des forces, équilibre sous deux forces (fil, plan, dynamomètre), équilibre sous trois forces et triangle des forces, projection sur deux axes. On prend g = 10 N/kg.",
+          "notions": "Toutes les notions de la leçon : bilan des forces, équilibre sous deux forces (fil, plan, dynamomètre), équilibre sous trois forces et triangle des forces, projection sur deux axes, réactions normale et tangentielle d'un support (frottements, plan incliné rugueux). On prend g = 10 N/kg.",
           "exercises": [
             {
               "title": "Exercice 1",
@@ -3291,7 +3674,7 @@
             },
             {
               "title": "Exercice 3",
-              "statement": "Une brouette chargée de 100 kg est retenue, immobile, sur une rampe lisse inclinée de 30° sur l'horizontale, par une corde parallèle à la rampe. On prend $g = 10$ N/kg et $\\sin 30^\\circ = 0{,}5$.",
+              "statement": "Une brouette chargée de 100 kg est retenue, immobile, sur une rampe lisse inclinée de 30° sur l'horizontale, par une corde parallèle à la rampe. Plus tard, sans corde, elle est posée, immobile, sur une rampe rugueuse de même inclinaison. On prend $g = 10$ N/kg, $\\sin 30^\\circ = 0{,}5$ et $\\cos 30^\\circ = \\frac{\\sqrt 3}{2}$, soit environ 0,87.",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [
@@ -3345,41 +3728,33 @@
                   "tolerance": 0
                 },
                 {
-                  "content": "La réaction de la rampe a une composante nulle sur l'axe $Ox$ le long de la rampe.",
-                  "question_type": "true_false",
-                  "explanation": "Étape 1 — Choisir deux axes : $Ox$ le long de la rampe, $Oy$ perpendiculaire. Étape 2 — Projeter chaque force : la rampe est lisse, donc $\\vec R$ est perpendiculaire à la rampe et $R_x = 0$. Étape 3 — Écrire la condition d'équilibre : sur $Ox$ ne figurent que $T$ et $P_x$. Pourquoi pas « Faux » : la réaction d'un support lisse n'a aucune composante le long du support ; seuls des frottements lui en donneraient une.",
+                  "content": "Une brouette de 100 kg est posée, sans corde, sur une rampe rugueuse inclinée de 30°, et reste immobile. On prend $g = 10$ N/kg et $\\cos 30^\\circ = \\frac{\\sqrt 3}{2}$. Quelle est l'intensité de la réaction normale $R_N$, en N ? Arrondis à 10 N près.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Faire le bilan : sans corde, deux seules forces : $\\vec P$ et $\\vec R$. Étape 2 — Appliquer l'équilibre : $R = P = 100 \\times 10 = 1\\,000$ N. Étape 3 — Choisir les axes : $Oy$ perpendiculaire à la rampe ; l'angle entre $\\vec R$ et $Oy$ est 30°. Étape 4 — Projeter : $R_N = R\\cos 30^\\circ$, soit $R_N = 1\\,000 \\times \\frac{\\sqrt 3}{2}$, donc $R_N \\approx 866$ N, soit environ 870 N. Pourquoi pas 500 N : c'est $R\\sin 30^\\circ$, la réaction tangentielle.",
                   "answers": [
                     {
-                      "content": "Vrai",
+                      "content": "870",
                       "correct": true
-                    },
-                    {
-                      "content": "Faux",
-                      "correct": false
                     }
-                  ]
+                  ],
+                  "unit": "N",
+                  "tolerance": 5
                 },
                 {
-                  "content": "Sur une rampe horizontale, la corde devrait tirer avec une force de ___.",
-                  "question_type": "select",
-                  "explanation": "Étape 1 — Choisir deux axes : $Ox$ le long de la rampe, horizontal si $\\alpha = 0^\\circ$. Étape 2 — Projeter chaque force : $P_x = -P\\sin 0^\\circ = 0$. Étape 3 — Écrire la condition d'équilibre : $T - P\\sin 0^\\circ = 0$. Étape 4 — Résoudre les équations : $T = 0$ N. Étape 5 — Vérifier le résultat : un solide posé sur un plan horizontal lisse n'a pas besoin d'être retenu. Pourquoi pas « 1 000 N » : ce serait $P\\cos 0^\\circ$, la confusion du sinus et du cosinus ; sur le plat, la corde ne retient rien.",
+                  "content": "Une brouette de 100 kg est posée, sans corde, sur une rampe rugueuse inclinée de 30°, et reste immobile. On prend $g = 10$ N/kg et $\\sin 30^\\circ = 0{,}5$. Quelle est l'intensité de la réaction tangentielle $R_T$, la force de frottement, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Faire le bilan : $\\vec P$ et $\\vec R$ seulement. Étape 2 — Appliquer l'équilibre : $R = P = 1\\,000$ N. Étape 3 — Choisir les axes : $Ox$ le long de la rampe vers le haut. Étape 4 — Projeter : $R_T = R\\sin 30^\\circ = 1\\,000 \\times 0{,}5 = 500$ N. Étape 5 — Interpréter : $R_T$ est la force de frottement ; c'est la valeur de la tension de la corde sur la rampe lisse. Pourquoi pas 0 N : sans frottement la brouette glisserait ; ici elle est immobile, donc $R_T \\neq 0$.",
                   "answers": [
                     {
-                      "content": "0 N",
+                      "content": "500",
                       "correct": true
-                    },
-                    {
-                      "content": "500 N",
-                      "correct": false
-                    },
-                    {
-                      "content": "1 000 N",
-                      "correct": false
                     }
-                  ]
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
                 }
               ],
-              "hint": "Une équation par axe."
+              "hint": "Une équation par axe ; sans corde sur la rampe rugueuse, $R = P$, $R_N = P\\cos\\alpha$ et $R_T = P\\sin\\alpha$."
             },
             {
               "title": "Exercice 4",
