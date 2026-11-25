@@ -153,7 +153,7 @@
    "notions": [
     {
      "name": "Observer une cellule au microscope optique",
-     "remember": "Les cellules sont trop petites pour l'œil nu : on les observe au **microscope optique**. On fabrique une **préparation** : un fragment très mince, dans une goutte d'eau ou de colorant, entre une **lame** et une **lamelle**. Le **grossissement** total est $G = G_{objectif} \\times G_{oculaire}$. La taille réelle est la taille du dessin divisée par $G$. Un **dessin d'observation** porte un titre, des légendes reliées par des traits et le grossissement.",
+     "remember": "L'œil nu ne distingue pas un objet de moins de 0,1 mm environ : la plupart des cellules sont trop petites pour lui : on les observe au **microscope optique**. On fabrique une **préparation** : un fragment très mince, dans une goutte d'eau ou de colorant, entre une **lame** et une **lamelle**. Le **grossissement** total est $G = G_{objectif} \\times G_{oculaire}$. La taille réelle est la taille du dessin divisée par $G$. Un **dessin d'observation** porte un titre, des légendes reliées par des traits et le grossissement.",
      "method": [
       "Préparer la lame : une goutte d'eau ou de colorant, un fragment très mince, puis la lamelle posée en biais pour chasser les bulles d'air.",
       "Régler le microscope : placer la lame sur la platine, choisir le plus petit objectif, puis faire la mise au point sans forcer.",
@@ -503,23 +503,23 @@
     },
     {
      "name": "Les constituants d'une cellule animale et d'une cellule végétale",
-     "remember": "Les cellules animales et végétales observées ont une **membrane** (elle la limite), un **cytoplasme** (le milieu qui la remplit) et un **noyau** (qui dirige la cellule ; l'hématie humaine adulte n'en a pas). La cellule végétale a en plus une **paroi** (enveloppe rigide autour de la membrane), une **vacuole** (grande poche d'eau et de substances dissoutes) et, dans les parties vertes, des **chloroplastes** (grains verts qui contiennent la chlorophylle). La cellule animale n'a ni paroi, ni grande vacuole, ni chloroplastes.",
+     "remember": "Les cellules animales et végétales observées ont une **membrane** (elle la limite), un **cytoplasme** (le milieu qui la remplit) et un **noyau** (qui dirige la cellule ; l'hématie humaine adulte n'en a pas). La cellule végétale a en plus une **paroi** (enveloppe rigide autour de la membrane), une **vacuole** (grande poche d'eau et de substances dissoutes) et, dans les parties vertes, des **chloroplastes** (grains verts qui contiennent la chlorophylle). Dans la cellule végétale, la membrane est plaquée contre la paroi : au microscope optique, on ne la distingue pas. La cellule animale n'a ni paroi, ni grande vacuole, ni chloroplastes.",
      "method": [
       "Repérer la membrane et le cytoplasme, présents dans les cellules observées.",
       "Identifier le noyau : une structure arrondie, souvent plus foncée, dans le cytoplasme.",
-      "Rechercher les éléments propres au végétal : la paroi, la vacuole, les chloroplastes.",
+      "Rechercher les éléments propres au végétal : la paroi, la grande vacuole, les chloroplastes.",
       "Conclure : cellule animale s'il n'y a aucun de ces éléments ; cellule végétale s'il y a une paroi."
      ],
      "example": {
       "statement": "On observe une cellule aux contours nets et rectangulaires, avec un noyau et une grande zone claire, sans grains verts. Est-elle animale ou végétale ?",
       "steps": [
-       "Repérer : on voit un contour et un contenu, donc une membrane et un cytoplasme.",
+       "Repérer : on voit un contenu, le cytoplasme, limité par une membrane ; ici elle est plaquée contre le contour, on ne la distingue pas.",
        "Identifier : une structure arrondie et foncée dans le contenu est le noyau.",
        "Rechercher : les contours nets montrent une paroi, la grande zone claire est une vacuole ; il n'y a pas de grains verts, donc pas de chloroplastes.",
        "Conclure : la paroi et la vacuole montrent une cellule végétale (sans chloroplastes, comme dans un bulbe)."
       ]
      },
-     "pitfall": "Ne pas conclure « animale » parce qu'on ne voit pas de chloroplastes. Contre-exemple : une cellule de bulbe d'oignon est végétale (paroi, vacuole) mais n'a pas de chloroplastes, car ils n'existent que dans les parties vertes. C'est la **paroi** qui décide.",
+     "pitfall": "Ne pas conclure « animale » parce qu'on ne voit pas de chloroplastes. Contre-exemple : une cellule de bulbe d'oignon est végétale (paroi, vacuole) mais n'a pas de chloroplastes, car ils ne se trouvent que dans les parties vertes de la plante (feuilles, jeunes tiges), exposées à la lumière. C'est la **paroi** qui décide.",
      "figure": "constituants-cellule",
      "practice": {
       "statement": "Tu t'entraînes à reconnaître les constituants d'une cellule et à distinguer cellule animale et cellule végétale.",
@@ -856,7 +856,7 @@
          "explanation": "Étape 3 — Rechercher : on cherche les chloroplastes : présents dans la feuille, absents du bulbe. Étape 4 — Conclure : les deux sont des cellules végétales. Pourquoi pas « le bulbe n'est pas formé de cellules végétales » : le bulbe a une paroi et une vacuole : c'est du végétal sans chloroplastes.",
          "answers": [
           {
-           "content": "La feuille contient des chloroplastes, que le bulbe souterrain n'a pas",
+           "content": "La feuille contient des chloroplastes, que le bulbe, qui n'est pas vert, n'a pas",
            "correct": true
           },
           {
@@ -880,7 +880,7 @@
     },
     {
      "name": "Comparer des cellules et leurs tailles",
-     "remember": "Les cellules animales et végétales ont des **ressemblances** (membrane, cytoplasme, noyau) et des **différences** (paroi, vacuole, chloroplastes pour le végétal) : la cellule est l'**unité du vivant**. Leur taille se mesure en **micromètres** (µm) : $1\\ mm = 1\\,000\\ µm$. Ordres de grandeur : hématie 7 µm, cellule de joue 50 µm, cellule d'épiderme d'oignon 200 µm. Ces cellules sont trop petites pour l'œil nu.",
+     "remember": "Les cellules animales et végétales ont des **ressemblances** (membrane, cytoplasme, noyau) et des **différences** (paroi, grande vacuole, chloroplastes pour le végétal) : la cellule est l'**unité du vivant**. Leur taille se mesure en **micromètres** (µm) : $1\\ mm = 1\\,000\\ µm$. Ordres de grandeur : hématie 7 µm, cellule de joue 50 µm, cellule d'épiderme d'oignon 200 µm. L'œil nu ne distingue pas un objet de moins de 0,1 mm (100 µm) environ : on ne voit pas une hématie ni une cellule de joue, et on ne distingue aucun constituant d'une cellule sans microscope.",
      "method": [
       "Lister les constituants observés dans chaque cellule.",
       "Comparer : un constituant présent dans les deux cellules est une ressemblance, présent dans une seule, une différence.",
@@ -1157,7 +1157,7 @@
         {
          "content": "Une cellule de 10 µm est visible à l'œil nu.",
          "question_type": "true_false",
-         "explanation": "Étape 3 — Convertir : 10 µm = 0,01 mm. Étape 4 — Conclure : une taille de quelques µm à quelques dizaines de µm est invisible à l'œil nu : il faut un microscope. Pourquoi pas « Vrai » : une taille en µm est invisible à l'œil nu.",
+         "explanation": "Étape 3 — Convertir : 10 µm = 0,01 mm. Étape 4 — Conclure : c'est dix fois moins que 0,1 mm, la limite de l'œil nu : il faut un microscope. Pourquoi pas « Vrai » : l'œil nu ne distingue pas un objet de moins de 0,1 mm environ.",
          "answers": [
           {
            "content": "Vrai",
@@ -1283,7 +1283,7 @@
       {
        "content": "Quels constituants peut-il légender sur son dessin ?",
        "question_type": "single_choice",
-       "explanation": "Étape 2 — Identifier : le noyau. Étape 3 — Rechercher : la paroi et la vacuole ; pas de chloroplastes dans un bulbe. Pourquoi pas « paroi, noyau et chloroplastes » : un bulbe d'oignon n'a pas de chloroplastes.",
+       "explanation": "Étape 1 — Repérer : le cytoplasme ; la membrane, plaquée contre la paroi, ne se distingue pas. Étape 2 — Identifier : le noyau. Étape 3 — Rechercher : la paroi et la vacuole ; pas de chloroplastes dans un bulbe. Pourquoi pas « paroi, noyau et chloroplastes » : un bulbe d'oignon n'a pas de chloroplastes.",
        "answers": [
         {
          "content": "Paroi, cytoplasme, noyau et vacuole",
@@ -1413,7 +1413,7 @@
       {
        "content": "Les cellules de la joue possèdent une paroi rigide.",
        "question_type": "true_false",
-       "explanation": "Étape 3 — Rechercher : la paroi est propre à la cellule végétale. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la vacuole, les chloroplastes. Pourquoi pas « Vrai » : la cellule animale n'a que sa membrane.",
+       "explanation": "Étape 3 — Rechercher : la paroi est propre à la cellule végétale. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la grande vacuole, les chloroplastes. Pourquoi pas « Vrai » : la cellule animale n'a que sa membrane.",
        "answers": [
         {
          "content": "Vrai",
@@ -1779,9 +1779,9 @@
          ]
         },
         {
-         "content": "Quels deux éléments ne se trouvent que dans des cellules végétales ?",
+         "content": "Dans cette liste, quels deux éléments ne se trouvent que dans des cellules végétales ?",
          "question_type": "multiple_correct_2",
-         "explanation": "Étape 3 — Rechercher : paroi et chloroplastes sont propres au végétal. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la vacuole, les chloroplastes. Pourquoi pas « le noyau » : il existe aussi dans la cellule animale.",
+         "explanation": "Étape 3 — Rechercher : dans la liste, paroi et chloroplastes sont propres au végétal (la grande vacuole aussi, mais elle n'est pas proposée). Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la grande vacuole, les chloroplastes. Pourquoi pas « le noyau » : il existe aussi dans la cellule animale.",
          "answers": [
           {
            "content": "La paroi",
@@ -1881,7 +1881,7 @@
         {
          "content": "Les grains verts dans le cytoplasme sont des ___.",
          "question_type": "select",
-         "explanation": "Étape 3 — Rechercher : les chloroplastes sont les grains verts. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la vacuole, les chloroplastes. Pourquoi pas « vacuoles » : ce sont des poches d'eau claires.",
+         "explanation": "Étape 3 — Rechercher : les chloroplastes sont les grains verts. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la grande vacuole, les chloroplastes. Pourquoi pas « vacuoles » : ce sont des poches d'eau claires.",
          "answers": [
           {
            "content": "chloroplastes",
@@ -2218,7 +2218,7 @@
         {
          "content": "Les cellules de la joue ont une paroi rigide.",
          "question_type": "true_false",
-         "explanation": "Étape 3 — Rechercher : la paroi est propre au végétal. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la vacuole, les chloroplastes. Pourquoi pas « Vrai » : la cellule animale n'a que sa membrane.",
+         "explanation": "Étape 3 — Rechercher : la paroi est propre au végétal. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la grande vacuole, les chloroplastes. Pourquoi pas « Vrai » : la cellule animale n'a que sa membrane.",
          "answers": [
           {
            "content": "Vrai",
@@ -2297,7 +2297,7 @@
         {
          "content": "La paroi se trouve dans les cellules de la feuille et dans celles de la racine.",
          "question_type": "true_false",
-         "explanation": "Étape 3 — Rechercher : la paroi est propre à toute cellule végétale. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la vacuole, les chloroplastes. Pourquoi pas « Faux » : toutes les cellules végétales ont une paroi.",
+         "explanation": "Étape 3 — Rechercher : la paroi est propre à toute cellule végétale. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la grande vacuole, les chloroplastes. Pourquoi pas « Faux » : toutes les cellules végétales ont une paroi.",
          "answers": [
           {
            "content": "Vrai",
@@ -2310,9 +2310,9 @@
          ]
         },
         {
-         "content": "Les cellules de la racine n'ont pas de ___ car elles ne reçoivent pas la lumière.",
+         "content": "Les cellules de la racine, blanche et sous terre, n'ont pas de ___.",
          "question_type": "fill_blank",
-         "explanation": "Étape 3 — Rechercher : les chloroplastes n'existent que dans les parties vertes éclairées. Pourquoi pas « noyau » : le noyau existe dans toutes ces cellules.",
+         "explanation": "Étape 3 — Rechercher : les chloroplastes ne se trouvent que dans les parties vertes de la plante, exposées à la lumière ; la racine n'est pas verte. Pourquoi pas « noyau » : le noyau existe dans toutes ces cellules.",
          "answers": [
           {
            "content": "chloroplastes",
@@ -2327,7 +2327,7 @@
         {
          "content": "Relie chaque cellule à ce qu'on y observe.",
          "question_type": "matching",
-         "explanation": "Étape 3 — Rechercher : on recherche paroi, vacuole et chloroplastes. Étape 4 — Conclure : on conclut animal ou végétal. Pourquoi pas « racine : chloroplastes » : la racine n'est pas éclairée.",
+         "explanation": "Étape 3 — Rechercher : on recherche paroi, vacuole et chloroplastes. Étape 4 — Conclure : on conclut animal ou végétal. Pourquoi pas « racine : chloroplastes » : la racine n'est pas verte : elle n'a pas de chloroplastes.",
          "answers": [
           {
            "content": "Feuille de manioc",
@@ -2499,7 +2499,7 @@
         {
          "content": "La préparation B montre des cellules animales parce qu'elles n'ont pas de paroi.",
          "question_type": "true_false",
-         "explanation": "Étape 3 — Rechercher : pas de paroi, ni vacuole. Étape 4 — Conclure : cellule animale. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la vacuole, les chloroplastes. Pourquoi pas « Faux » : sans paroi, c'est une cellule animale.",
+         "explanation": "Étape 3 — Rechercher : pas de paroi, ni vacuole. Étape 4 — Conclure : cellule animale. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la grande vacuole, les chloroplastes. Pourquoi pas « Faux » : sans paroi, c'est une cellule animale.",
          "answers": [
           {
            "content": "Vrai",
@@ -2540,7 +2540,7 @@
          "explanation": "Étape 3 — Rechercher : les chloroplastes n'existent que dans les parties vertes. Étape 4 — Conclure : la paroi suffit à conclure. Pourquoi pas « les cellules végétales n'ont jamais de chloroplastes » : elles en ont dans les feuilles.",
          "answers": [
           {
-           "content": "Les cellules des parties non éclairées, comme un bulbe, n'ont pas de chloroplastes",
+           "content": "Les cellules des parties non vertes, comme un bulbe, n'ont pas de chloroplastes",
            "correct": true
           },
           {
@@ -2898,9 +2898,9 @@
          "tolerance": 0
         },
         {
-         "content": "Quels constituants voit-on dans une cellule d'oignon ?",
+         "content": "Quels constituants possède une cellule d'épiderme de bulbe d'oignon ?",
          "question_type": "single_choice",
-         "explanation": "Étape 1 — Repérer : membrane et cytoplasme. Étape 2 — Identifier : noyau. Étape 3 — Rechercher : paroi et vacuole, mais pas de chloroplastes. Pourquoi pas « paroi, noyau et chloroplastes » : un bulbe n'a pas de chloroplastes.",
+         "explanation": "Étape 1 — Repérer : cytoplasme et membrane (plaquée contre la paroi, on ne la distingue pas au microscope). Étape 2 — Identifier : noyau. Étape 3 — Rechercher : paroi et vacuole, mais pas de chloroplastes. Pourquoi pas « paroi, noyau et chloroplastes » : un bulbe n'est pas vert : il n'a pas de chloroplastes.",
          "answers": [
           {
            "content": "Membrane, cytoplasme, noyau, paroi et vacuole",
@@ -2923,7 +2923,7 @@
         {
          "content": "Dans l'épiderme d'oignon, on trouve des chloroplastes.",
          "question_type": "true_false",
-         "explanation": "Étape 3 — Rechercher : les chloroplastes n'existent que dans les parties vertes éclairées. Pourquoi pas « Vrai » : un bulbe est souterrain, donc sans chloroplastes.",
+         "explanation": "Étape 3 — Rechercher : les chloroplastes ne se trouvent que dans les parties vertes de la plante, exposées à la lumière. Pourquoi pas « Vrai » : le bulbe d'oignon n'est pas vert : ses cellules n'ont pas de chloroplastes.",
          "answers": [
           {
            "content": "Vrai",
@@ -2938,7 +2938,7 @@
         {
          "content": "Une cellule de la joue n'a pas de ___.",
          "question_type": "select",
-         "explanation": "Étape 3 — Rechercher : paroi propre au végétal. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la vacuole, les chloroplastes. Pourquoi pas « noyau » : la joue a un noyau.",
+         "explanation": "Étape 3 — Rechercher : paroi propre au végétal. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la grande vacuole, les chloroplastes. Pourquoi pas « noyau » : la joue a un noyau.",
          "answers": [
           {
            "content": "paroi",
@@ -2985,7 +2985,7 @@
         {
          "content": "Quelles trois structures ne se trouvent que chez les cellules végétales ?",
          "question_type": "multiple_correct_3",
-         "explanation": "Étape 3 — Rechercher : paroi, vacuole et chloroplastes. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la vacuole, les chloroplastes. Pourquoi pas « le noyau » : il existe aussi dans la cellule animale.",
+         "explanation": "Étape 3 — Rechercher : paroi, vacuole et chloroplastes. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la grande vacuole, les chloroplastes. Pourquoi pas « le noyau » : il existe aussi dans la cellule animale.",
          "answers": [
           {
            "content": "La paroi",
@@ -3012,7 +3012,7 @@
         {
          "content": "La ___ est l'enveloppe rigide qui entoure la membrane d'une cellule végétale.",
          "question_type": "fill_blank",
-         "explanation": "Étape 3 — Rechercher : la paroi entoure la membrane. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la vacuole, les chloroplastes. Pourquoi pas « membrane » : la membrane est à l'intérieur de la paroi.",
+         "explanation": "Étape 3 — Rechercher : la paroi entoure la membrane. Consigne de l'étape 3 : rechercher les éléments propres au végétal : la paroi, la grande vacuole, les chloroplastes. Pourquoi pas « membrane » : la membrane est à l'intérieur de la paroi.",
          "answers": [
           {
            "content": "paroi",

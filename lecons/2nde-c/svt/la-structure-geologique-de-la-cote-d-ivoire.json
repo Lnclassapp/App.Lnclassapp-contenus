@@ -299,7 +299,7 @@
    "notions": [
     {
      "name": "Distinguer le socle précambrien et le bassin sédimentaire",
-     "remember": "La Côte d'Ivoire a **deux grands ensembles géologiques**. Le **socle précambrien** couvre l'essentiel du territoire, du nord jusqu'au voisinage de la côte : ce sont des roches très anciennes (plus de 500 millions d'années), dures, **cristallines** (comme le granite) ou **cristallophylliennes** (comme le gneiss, les schistes et les roches vertes), c'est-à-dire cristallisées en profondeur, souvent déformées et transformées par la chaleur et la pression. Le **bassin sédimentaire côtier** est une étroite bande le long de la côte, de l'ouest d'Abidjan jusqu'au Ghana ; à l'ouest (San Pedro, Tabou), le socle atteint la mer. Ce sont des **sédiments** (sables, argiles, grès) déposés en couches par l'eau, bien plus jeunes et en grande partie meubles. Une **roche sédimentaire** naît du dépôt puis du tassement de sédiments.",
+     "remember": "La Côte d'Ivoire a **deux grands ensembles géologiques**. Le **socle précambrien** couvre l'essentiel du territoire, du nord jusqu'au voisinage de la côte : ce sont des roches très anciennes (de l'ordre de 2 milliards d'années, parfois plus), dures, **cristallines** (comme le granite) ou **cristallophylliennes** (comme le gneiss, les schistes et les roches vertes), c'est-à-dire cristallisées en profondeur, souvent déformées et transformées par la chaleur et la pression. Le **bassin sédimentaire côtier** est une étroite bande le long de la côte, de l'ouest d'Abidjan jusqu'au Ghana ; à l'ouest (San Pedro, Tabou), le socle atteint la mer. Ce sont des **sédiments** (sables, argiles, grès) déposés en couches par l'eau, bien plus jeunes et en grande partie meubles. Une **roche sédimentaire** naît du dépôt puis du tassement de sédiments.",
      "method": [
       "Repérer la position de la région : au nord et à l'intérieur des terres, ou en bordure de l'océan. La position ne suffit pas : c'est la roche qui décide.",
       "Observer les roches de la région : cristaux serrés et feuillets, ou couches de sables et d'argiles.",
@@ -636,7 +636,7 @@
     },
     {
      "name": "Reconnaître les principales roches de Côte d'Ivoire",
-     "remember": "Une roche se reconnaît à sa **texture** (comment sont disposés les grains ou les cristaux) et à ses **minéraux**. Le **granite** : roche claire à gros cristaux soudés (quartz, feldspath, mica), sans orientation. Le **gneiss** : mêmes minéraux, mais rangés en bandes claires et sombres. Le **schiste** : roche à grains très fins qui se débite en feuillets minces. Les **roches vertes** : roches sombres, verdâtres, à minéraux fins. Le **sable** : grains libres qui s'écoulent entre les doigts. L'**argile** : grains si fins qu'on ne les voit pas ; mouillée, elle forme une pâte plastique. **Test à l'acide** : une goutte d'acide chlorhydrique dilué fait mousser les roches carbonatées, comme le **calcaire** (effervescence) ; le granite, le gneiss et le schiste ne mousseront pas.",
+     "remember": "Une roche se reconnaît à sa **texture** (comment sont disposés les grains ou les cristaux) et à ses **minéraux**. Le **granite** : roche claire à gros cristaux soudés (quartz, feldspath, mica), sans orientation. Le **gneiss** : mêmes minéraux, mais rangés en bandes claires et sombres. Le **schiste** : roche à grains très fins qui se débite en feuillets minces. Les **roches vertes** : roches sombres, verdâtres, à minéraux fins, le plus souvent d'anciennes laves transformées. Le **sable** : grains libres qui s'écoulent entre les doigts. L'**argile** : grains si fins qu'on ne les voit pas ; mouillée, elle forme une pâte plastique. **Test à l'acide** : une goutte d'acide chlorhydrique dilué fait mousser les roches carbonatées, comme le **calcaire** (effervescence) ; le granite, le gneiss et le schiste ne mousseront pas.",
      "method": [
       "Observer la roche à l'œil nu et à la loupe : couleur, taille des grains ou des cristaux, bandes ou feuillets.",
       "Tester la roche : goutte d'acide chlorhydrique dilué (effervescence ou non), grains qui se détachent ou non.",
@@ -1322,7 +1322,7 @@
     },
     {
      "name": "Relier les ressources du sous-sol aux ensembles géologiques",
-     "remember": "Une **ressource du sous-sol** est une matière utile que l'on extrait du sol ou du sous-sol. Où elle se trouve dépend de la roche qui la contient et de son origine. Dans le **socle précambrien** : l'**or** (dans des filons de quartz et des roches vertes), le **manganèse**, le **diamant** (souvent récolté dans des graviers de rivières, les alluvions) et le granite, pierre de construction. Dans le **bassin sédimentaire côtier** : le **pétrole** et le **gaz**, formés à partir de restes d'êtres vivants enfouis dans des couches de sédiments, exploités surtout en mer, au large (offshore) ; les **sables** et les **argiles**, utilisés en construction. Ces ressources sont **épuisables** : elles se forment en des millions d'années.",
+     "remember": "Une **ressource du sous-sol** est une matière utile que l'on extrait du sol ou du sous-sol. Où elle se trouve dépend de la roche qui la contient et de son origine. Dans le **socle précambrien** : l'**or** (dans des filons de quartz et des roches vertes), le **manganèse**, le **diamant** (souvent récolté dans des graviers de rivières, les alluvions) et le granite, pierre de construction. Dans le **bassin sédimentaire côtier** : le **pétrole** et le **gaz**, formés à partir de restes d'êtres vivants enfouis dans des couches de sédiments, exploités surtout en mer, au large (offshore) ; les **sables** et les **argiles** en couches, utilisés en construction (on en trouve aussi sur le socle, nés de l'altération de ses roches ou déposés par les rivières). Le pétrole, le gaz et les minerais sont **épuisables** : ils se sont formés en des millions d'années, bien plus lentement qu'on ne les extrait.",
      "method": [
       "Identifier la ressource et sa nature : métal, pierre précieuse, hydrocarbure ou matériau de construction.",
       "Rechercher la roche ou la structure qui la contient : filons dans le socle, graviers de rivière, couches de sédiments.",
@@ -1563,9 +1563,9 @@
          ]
         },
         {
-         "content": "Une ressource du sous-sol se renouvelle en quelques années.",
+         "content": "Le pétrole se renouvelle en quelques années.",
          "question_type": "true_false",
-         "explanation": "Étape 1 — Identifier : il s'agit d'une ressource du sous-sol. Étape 2 — Rechercher : elle se forme en des millions d'années. Étape 4 — Justifier : elle est épuisable : l'affirmation est fausse.",
+         "explanation": "Étape 1 — Identifier : le pétrole est une ressource du sous-sol, un hydrocarbure. Étape 2 — Rechercher : il se forme en des millions d'années. Étape 4 — Justifier : il est épuisable : l'affirmation est fausse.",
          "answers": [
           {
            "content": "Vrai",
@@ -1939,9 +1939,9 @@
        ]
       },
       {
-       "content": "Les ressources du sous-sol sont épuisables car elles se forment en des millions d'années.",
+       "content": "Le pétrole et les minerais sont épuisables car ils se forment en des millions d'années.",
        "question_type": "true_false",
-       "explanation": "Méthode détaillée. Étape 2 — Rechercher : il faut des millions d'années pour former du pétrole ou un gisement de métal. Étape 4 — Justifier : l'affirmation est vraie : on les extrait bien plus vite qu'elles ne se forment.",
+       "explanation": "Méthode détaillée. Étape 2 — Rechercher : il faut des millions d'années pour former du pétrole ou un gisement de métal. Étape 4 — Justifier : l'affirmation est vraie : on les extrait bien plus vite qu'ils ne se forment.",
        "answers": [
         {
          "content": "Vrai",
@@ -1970,19 +1970,19 @@
      "title": "De l'échantillon à la ressource : un bilan",
      "exercise_type": "evaluation",
      "figure": null,
-     "statement": "Un géologue étudie trois échantillons ramassés en Côte d'Ivoire. L'échantillon 1 a des feuillets minces et ne mousse pas avec l'acide. L'échantillon 2 mousse avec une goutte d'acide. L'échantillon 3 est fait de grains libres qui s'écoulent. Il étudie aussi un forage qui traverse, de haut en bas : sables, argiles, puis le socle, sans déformation.",
+     "statement": "Un géologue étudie trois échantillons de roches. L'échantillon 1 a des feuillets minces et ne mousse pas avec l'acide. L'échantillon 2 mousse avec une goutte d'acide. L'échantillon 3 est fait de grains libres qui s'écoulent. Il étudie aussi un forage qui traverse, de haut en bas : sables, argiles, puis le socle, sans déformation.",
      "questions": [
       {
        "content": "Un échantillon a des feuillets minces et ne mousse pas avec l'acide. Quelle est cette roche et dans quel ensemble est-elle ?",
        "question_type": "single_choice",
-       "explanation": "Méthode détaillée. Étape 1 — Observer : des feuillets minces, grains fins. Étape 2 — Tester : aucune effervescence : ce n'est pas un calcaire. Étape 3 — Comparer : des feuillets minces correspondent au schiste. Étape 4 — Nommer : c'est un schiste, roche du socle précambrien.",
+       "explanation": "Méthode détaillée. Étape 1 — Observer : des feuillets minces, grains fins. Étape 2 — Tester : aucune effervescence : ce n'est pas un calcaire. Étape 3 — Comparer : des feuillets minces correspondent au schiste. Étape 4 — Nommer : c'est un schiste, roche du socle précambrien, pas du bassin sédimentaire côtier.",
        "answers": [
         {
          "content": "Un schiste, dans le socle précambrien",
          "correct": true
         },
         {
-         "content": "Un calcaire, dans le bassin sédimentaire côtier",
+         "content": "Un schiste, dans le bassin sédimentaire côtier",
          "correct": false
         },
         {
@@ -2150,7 +2150,7 @@
         {
          "content": "Le socle précambrien est un ensemble de roches très ___.",
          "question_type": "fill_blank",
-         "explanation": "Étape 2 — Observer : des roches cristallines dures. Étape 3 — Rattacher : le socle date d'avant 500 millions d'années. Étape 4 — Conclure : il est très ancien. Pourquoi pas « jeunes » : ce mot décrit plutôt les sédiments du bassin côtier.",
+         "explanation": "Étape 2 — Observer : des roches cristallines dures. Étape 3 — Rattacher : le socle a de l'ordre de 2 milliards d'années. Étape 4 — Conclure : il est très ancien. Pourquoi pas « jeunes » : ce mot décrit plutôt les sédiments du bassin côtier.",
          "answers": [
           {
            "content": "anciennes",
@@ -3201,9 +3201,9 @@
          ]
         },
         {
-         "content": "Une ressource du sous-sol est inépuisable.",
+         "content": "Le pétrole et l'or sont des ressources inépuisables.",
          "question_type": "true_false",
-         "explanation": "Étape 1 — Identifier : il s'agit d'une ressource du sous-sol. Étape 2 — Rechercher : elle se forme en des millions d'années. Étape 4 — Justifier : on l'extrait bien plus vite qu'elle ne se forme : elle est épuisable. Pourquoi pas « Vrai » : la formation prend des millions d'années, l'extraction quelques décennies.",
+         "explanation": "Étape 1 — Identifier : le pétrole et l'or sont des ressources du sous-sol. Étape 2 — Rechercher : ils se forment en des millions d'années. Étape 4 — Justifier : on les extrait bien plus vite qu'ils ne se forment : ils sont épuisables. Pourquoi pas « Vrai » : leur formation prend des millions d'années, l'extraction quelques décennies.",
          "answers": [
           {
            "content": "Vrai",
@@ -3573,9 +3573,9 @@
          ]
         },
         {
-         "content": "Le sable est une roche du socle précambrien.",
+         "content": "Le sable est une roche cristalline du socle précambrien.",
          "question_type": "true_false",
-         "explanation": "Étape 2 — Observer : le sable est un dépôt de grains. Étape 3 — Rattacher : il se rattache au bassin sédimentaire côtier. Étape 4 — Conclure : l'affirmation est fausse. Pourquoi pas « Vrai » : le socle est fait de roches cristallines, pas de grains déposés.",
+         "explanation": "Étape 2 — Observer : le sable est un dépôt de grains libres, pas une roche cristalline. Étape 3 — Rattacher : c'est un sédiment, comme ceux du bassin sédimentaire côtier. Étape 4 — Conclure : l'affirmation est fausse. Pourquoi pas « Vrai » : le socle est fait de roches cristallines, pas de grains déposés.",
          "answers": [
           {
            "content": "Vrai",
@@ -3724,7 +3724,7 @@
         {
          "content": "Choisis les deux ressources du socle précambrien.",
          "question_type": "multiple_correct_2",
-         "explanation": "Étape 1 — Identifier : un métal et une pierre précieuse d'un côté, un hydrocarbure et un sédiment de l'autre. Étape 2 — Rechercher : or et diamant viennent de roches du socle. Étape 3 — Rattacher : ils se rattachent au socle précambrien. Étape 4 — Justifier : pétrole et argile relèvent du bassin. Pourquoi pas « Le pétrole » : il est piégé dans des couches de sédiments.",
+         "explanation": "Étape 1 — Identifier : un métal et une pierre précieuse d'un côté, deux hydrocarbures de l'autre. Étape 2 — Rechercher : or et diamant viennent de roches du socle. Étape 3 — Rattacher : ils se rattachent au socle précambrien. Étape 4 — Justifier : pétrole et gaz relèvent du bassin. Pourquoi pas « Le pétrole » : il est piégé dans des couches de sédiments.",
          "answers": [
           {
            "content": "L'or",
@@ -3739,7 +3739,7 @@
            "correct": false
           },
           {
-           "content": "L'argile",
+           "content": "Le gaz",
            "correct": false
           }
          ]
@@ -3775,9 +3775,9 @@
          ]
         },
         {
-         "content": "On extrait les sables et les argiles du ___ pour fabriquer des briques.",
+         "content": "Près d'Abidjan, on extrait les sables et les argiles du ___ pour fabriquer des briques.",
          "question_type": "select",
-         "explanation": "Étape 1 — Identifier : sables et argiles sont des matériaux de construction. Étape 2 — Rechercher : ce sont des sédiments en couches. Étape 3 — Rattacher : ils se rattachent au bassin sédimentaire côtier. Étape 4 — Justifier : on les extrait du bassin côtier. Pourquoi pas « socle précambrien » : il est fait de roches cristallines, pas de sédiments.",
+         "explanation": "Étape 1 — Identifier : sables et argiles sont des matériaux de construction. Étape 2 — Rechercher : près d'Abidjan, ce sont des sédiments en couches. Étape 3 — Rattacher : ils se rattachent au bassin sédimentaire côtier. Étape 4 — Justifier : à Abidjan, on les extrait du bassin côtier. Pourquoi pas « socle précambrien » : Abidjan n'est pas sur le socle, fait de roches cristallines dures.",
          "answers": [
           {
            "content": "bassin sédimentaire côtier",
