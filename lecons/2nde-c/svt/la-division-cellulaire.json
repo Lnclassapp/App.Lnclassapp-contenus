@@ -179,10 +179,10 @@
    "notions": [
     {
      "name": "Mettre en évidence la division cellulaire dans une racine",
-     "remember": "Les cellules d'un être vivant se **divisent** : une cellule mère donne deux cellules filles. Chez la plante, la division a lieu surtout dans le **méristème**, un tissu de petites cellules situé à l'extrémité de la racine, juste derrière la **coiffe**. Pour la voir, on prélève cette extrémité, on la **colore** avec de l'orcéine acétique (qui teinte les **chromosomes**), puis on l'**écrase** entre lame et lamelle et on l'observe au microscope. Une cellule dont les chromosomes colorés sont visibles est **en division**. Une cellule dont le noyau arrondi est délimité par une enveloppe est au repos (**interphase**). La préparation fige les cellules : on voit chacune à un seul instant.",
+     "remember": "Les cellules d'un être vivant se **divisent** : une cellule mère donne deux cellules filles. Chez la plante, la division a lieu surtout dans le **méristème**, un tissu de petites cellules situé à l'extrémité de la racine, juste derrière la **coiffe**. Pour la voir, on prélève cette extrémité, on la **fixe et on la colore** avec de l'orcéine acétique (un colorant acide qui fige les cellules et teinte les **chromosomes**), puis on l'**écrase** entre lame et lamelle et on l'observe au microscope. Une cellule dont les chromosomes colorés sont visibles est **en division**. Une cellule dont le noyau arrondi est délimité par une enveloppe est au repos (**interphase**). La préparation fige les cellules : on voit chacune à un seul instant.",
      "method": [
       "Prélever l'extrémité de la racine : couper quelques millimètres de la pointe, juste derrière la coiffe, là où se trouve le méristème.",
-      "Colorer le fragment avec un colorant des chromosomes (orcéine acétique), qui les teinte en rouge ou en violet.",
+      "Colorer le fragment avec de l'orcéine acétique, colorant acide qui fixe les cellules et teint les chromosomes en rouge ou en violet.",
       "Écraser et observer : poser une lamelle, écraser doucement, puis observer au microscope, du plus petit objectif au plus fort.",
       "Repérer et conclure : chercher les cellules aux chromosomes colorés visibles, les distinguer des noyaux arrondis, puis dire où la division a lieu."
      ],
@@ -261,9 +261,9 @@
         "hint": "Pense à ce qu'on voit en interphase."
        },
        {
-        "content": "Le colorant utilisé met en évidence les ___ des cellules.",
+        "content": "L'orcéine acétique rend visibles les ___ des cellules en division.",
         "question_type": "fill_blank",
-        "explanation": "Étape 2 — Colorer : l'orcéine acétique teinte les chromosomes en rouge ou en violet, ce qui permet de les voir à l'étape 4. Pourquoi pas « poils absorbants » : ce sont des prolongements de cellules de la racine, que le colorant ne cherche pas à mettre en évidence.",
+        "explanation": "Étape 2 — Colorer : l'orcéine acétique teinte les chromosomes en rouge ou en violet, ce qui permet de les voir à l'étape 4. Pourquoi pas « noyaux » : le noyau existe aussi en interphase ; ce que le colorant fait voir pendant la division, ce sont les chromosomes.",
         "answers": [
          {
           "content": "chromosomes",
@@ -710,11 +710,11 @@
            "correct": false
           },
           {
-           "content": "Le noyau éclate et libère deux cellules",
+           "content": "Le fuseau se contracte et coupe la cellule en deux",
            "correct": false
           },
           {
-           "content": "La cellule ne se coupe pas : les deux noyaux restent dans une seule cellule",
+           "content": "Les deux noyaux se séparent sans qu'aucune paroi ne se construise au milieu",
            "correct": false
           }
          ]
@@ -1006,14 +1006,14 @@
         {
          "content": "Un élève compte 20 cellules en mitose et 230 en interphase. Il calcule 20 ÷ 230 × 100, soit environ 8,7 %. Quelle est son erreur ?",
          "question_type": "single_choice",
-         "explanation": "Étape 1 — Compter : le total est 20 + 230 = 250. Étape 3 — Écrire le rapport : 20 ÷ 250. Étape 4 — Calculer : 20 ÷ 250 × 100 = 8 %, et non 8,7 %. Pourquoi pas « Il a oublié de multiplier par 100 » : il a bien multiplié par 100 ; l'erreur vient du dénominateur, qui doit être le total des cellules.",
+         "explanation": "Étape 1 — Compter : le total est 20 + 230 = 250. Étape 3 — Écrire le rapport : 20 ÷ 250. Étape 4 — Calculer : 20 ÷ 250 × 100 = 8 %, et non 8,7 %. Pourquoi pas « Il aurait dû diviser 230 par 20 » : ce serait diviser les cellules en interphase par celles en mitose, ce qui ne donne pas une part du total.",
          "answers": [
           {
            "content": "Il divise par les cellules en interphase au lieu du total de 250",
            "correct": true
           },
           {
-           "content": "Il a oublié de multiplier par 100",
+           "content": "Il aurait dû diviser 230 par 20",
            "correct": false
           },
           {
@@ -1050,7 +1050,7 @@
         {
          "content": "L'indice mitotique s'exprime en ___.",
          "question_type": "fill_blank",
-         "explanation": "Étape 4 — Calculer : on multiplie le rapport par 100, ce qui donne une valeur en pourcentage. Pourquoi pas « centimètres » : l'indice est un rapport entre deux nombres de cellules, sans longueur.",
+         "explanation": "Étape 4 — Calculer : on multiplie le rapport par 100, ce qui donne une valeur en pourcentage. Pourquoi pas « cellules » : l'indice est une part du total multipliée par 100, pas un nombre de cellules.",
          "answers": [
           {
            "content": "pourcentage",
@@ -1062,6 +1062,10 @@
           },
           {
            "content": "%",
+           "correct": true
+          },
+          {
+           "content": "pour cent",
            "correct": true
           }
          ]
@@ -1082,24 +1086,24 @@
          ]
         },
         {
-         "content": "Pour calculer l'indice mitotique, on divise le nombre de cellules en mitose par le nombre de cellules ___ comptées.",
+         "content": "Pour calculer l'indice mitotique, on divise le nombre de cellules en mitose par le ___ des cellules comptées.",
          "question_type": "select",
-         "explanation": "Étape 3 — Écrire le rapport : le dénominateur est le total des cellules comptées, en interphase comme en mitose. Pourquoi pas « en interphase » : ce serait ignorer les cellules en mitose, qui font partie du total.",
+         "explanation": "Étape 3 — Écrire le rapport : le dénominateur est le total des cellules comptées, en interphase comme en mitose. Pourquoi pas « nombre en interphase » : ce serait ignorer les cellules en mitose, qui font partie du total.",
          "answers": [
           {
-           "content": "au total",
+           "content": "nombre total",
            "correct": true
           },
           {
-           "content": "en interphase",
+           "content": "nombre en interphase",
            "correct": false
           },
           {
-           "content": "en prophase",
+           "content": "nombre en prophase",
            "correct": false
           },
           {
-           "content": "en télophase",
+           "content": "nombre en télophase",
            "correct": false
           }
          ]
@@ -1156,12 +1160,12 @@
     },
     {
      "name": "Le rôle de la division cellulaire : croissance et renouvellement",
-     "remember": "La division d'une cellule (mitose puis cytodiérèse) produit deux cellules filles identiques à la cellule mère. Elle joue deux rôles. La **croissance** : un organisme grandit parce que ses cellules se multiplient, puis s'allongent. Dans une racine, les cellules du méristème se divisent, puis les cellules formées s'allongent dans la zone d'allongement : la racine s'enfonce dans le sol. Le **renouvellement** : des cellules s'usent ou meurent sans cesse, par exemple à la surface de la peau ; elles sont remplacées par de nouvelles cellules formées par division, et le nombre de cellules reste à peu près constant. La division sert aussi à la **réparation** : sur les bords d'une plaie, les cellules se divisent pour combler la blessure.",
+     "remember": "La division d'une cellule (mitose puis cytodiérèse) produit deux cellules filles identiques à la cellule mère. Elle joue deux rôles. La **croissance** : un organisme grandit parce que ses cellules se multiplient, puis grandissent (chez la plante, elles s'allongent). Dans une racine, les cellules du méristème se divisent, puis les cellules formées s'allongent dans la zone d'allongement : la racine s'enfonce dans le sol. Le **renouvellement** : des cellules s'usent ou meurent sans cesse, par exemple à la surface de la peau ; elles sont remplacées par de nouvelles cellules formées par division, et le nombre de cellules reste à peu près constant. La division sert aussi à la **réparation** : sur les bords d'une plaie, les cellules se divisent pour combler la blessure.",
      "method": [
       "Repérer le tissu ou l'organe étudié et dire si ses cellules se divisent beaucoup ou peu.",
       "Comparer le nombre de cellules avant et après : il augmente, ou il reste constant malgré les pertes.",
       "Relier : chaque mitose donne deux cellules filles, qui s'ajoutent aux autres ou qui remplacent celles qui sont perdues.",
-      "Conclure : croissance si le nombre de cellules augmente, renouvellement s'il reste constant."
+      "Conclure : croissance si le nombre augmente, renouvellement s'il reste constant malgré les pertes, réparation s'il revient à son niveau après une blessure."
      ],
      "example": {
       "statement": "Chaque jour, des cellules mortes se détachent de la surface de la peau. Pourtant l'épaisseur de la peau reste la même. Au microscope, on voit des cellules en mitose dans la couche profonde de l'épiderme. Quel est le rôle de ces divisions ?",
@@ -1169,7 +1173,7 @@
        "Repérer : le tissu est l'épiderme, la couche superficielle de la peau ; ses cellules profondes se divisent.",
        "Comparer : des cellules sont perdues en surface chaque jour, mais l'épaisseur de la peau ne change pas, donc le nombre de cellules reste constant.",
        "Relier : chaque mitose donne deux cellules filles qui remplacent les cellules mortes détachées.",
-       "Conclure : le nombre de cellules reste constant, donc ces divisions assurent le renouvellement de la peau, et non sa croissance."
+       "Conclure : le nombre de cellules reste constant malgré les pertes, donc ces divisions assurent le renouvellement de la peau, et non sa croissance ni une réparation."
       ]
      },
      "pitfall": "Ne crois pas que des cellules qui se divisent beaucoup font toujours grandir un tissu. Contre-exemple : si une zone de peau perd 500 cellules par jour et en forme 500 par division, son nombre reste constant : c'est du renouvellement, pas de la croissance. N'oublie pas non plus que, dans une racine, la croissance vient à la fois de la multiplication des cellules et de leur allongement.",
@@ -1289,7 +1293,7 @@
            "correct": false
           },
           {
-           "content": "La réparation d'une plaie",
+           "content": "La réparation d'un os",
            "correct": false
           },
           {
@@ -1316,7 +1320,7 @@
         {
          "content": "Un tissu en croissance compte 2 000 cellules. En une journée, chaque cellule se divise une fois. Combien de cellules compte-t-il à la fin de la journée ?",
          "question_type": "numeric",
-         "explanation": "Étape 3 — Relier : chaque mitose donne deux cellules filles, donc le nombre double. Étape 4 — Conclure : 2 000 × 2 = 4 000 cellules. Pourquoi pas « 2 001 » : on n'ajouterait qu'une cellule, alors que chaque cellule mère donne deux filles.",
+         "explanation": "Étape 3 — Relier : chaque mitose donne deux cellules filles, donc le nombre double. Étape 4 — Conclure : 2 000 × 2 = 4 000 cellules. Pourquoi pas « 2 000 » : on ne compterait que les cellules mères, en oubliant que chacune donne deux filles.",
          "answers": [
           {
            "content": "4000",
@@ -1329,22 +1333,22 @@
         {
          "content": "Un élève affirme : « Si les cellules d'un tissu se divisent beaucoup, le tissu grandit forcément. » Pourquoi cette affirmation peut-elle être fausse ?",
          "question_type": "single_choice",
-         "explanation": "Étape 2 — Comparer : on regarde si le nombre de cellules augmente ou reste constant. Étape 4 — Conclure : s'il reste constant, c'est du renouvellement, même avec beaucoup de mitoses. Pourquoi pas « Une mitose ne forme qu'une seule cellule fille » : une mitose suivie de la cytodiérèse forme bien deux cellules filles.",
+         "explanation": "Étape 2 — Comparer : on regarde si le nombre de cellules augmente ou reste constant. Étape 4 — Conclure : s'il reste constant, c'est du renouvellement, même avec beaucoup de mitoses. Pourquoi pas « Seul l'allongement des cellules compte, jamais leur nombre » : dans une racine, l'allongement s'ajoute à la multiplication ; le nombre de cellules compte aussi.",
          "answers": [
           {
            "content": "Si les cellules perdues sont aussitôt remplacées, le nombre reste constant",
            "correct": true
           },
           {
-           "content": "La mitose ne produit jamais de nouvelles cellules",
+           "content": "Seul l'allongement des cellules compte, jamais leur nombre",
            "correct": false
           },
           {
-           "content": "Les cellules filles ne ressemblent pas à la cellule mère",
+           "content": "La division n'a lieu que dans les racines",
            "correct": false
           },
           {
-           "content": "Une mitose ne forme qu'une seule cellule fille",
+           "content": "Les cellules filles disparaissent aussitôt après la mitose",
            "correct": false
           }
          ]
@@ -1536,7 +1540,7 @@
       {
        "content": "Une cellule est dessinée avec une longueur de 24 mm à un grossissement total de ×400. Quelle est sa taille réelle, en micromètres ?",
        "question_type": "numeric",
-       "explanation": "Méthode : 1. Mesurer la cellule sur le dessin : 24 mm. 2. Diviser par le grossissement : 24 ÷ 400 = 0,06 mm. 3. Convertir : 0,06 × 1 000 = 60 µm. Pourquoi pas « 9 600 µm » : multiplier par le grossissement donnerait une cellule plus grande que son dessin, ce qui est impossible.",
+       "explanation": "Méthode : 1. Mesurer la cellule sur le dessin : 24 mm. 2. Diviser par le grossissement : 24 ÷ 400 = 0,06 mm. 3. Convertir : 0,06 × 1 000 = 60 µm. Pourquoi pas « multiplier : 24 × 400 = 9 600 mm » : cela donnerait une cellule de près de 10 m, bien plus grande que son dessin.",
        "answers": [
         {
          "content": "60",
@@ -1693,7 +1697,7 @@
        ]
       },
       {
-       "content": "Cellule 5 : remets dans l'ordre les quatre phases pour décrire l'ensemble de la mitose.",
+       "content": "Remets dans l'ordre les quatre phases pour décrire l'ensemble de la mitose.",
        "question_type": "ordering",
        "explanation": "Méthode : 1. Prophase : chromosomes visibles, fuseau. 2. Métaphase : alignement. 3. Anaphase : migration des chromatides. 4. Télophase : deux noyaux. Pourquoi pas « Anaphase » avant « Métaphase » : les chromatides ne se séparent qu'après l'alignement des chromosomes.",
        "answers": [
@@ -1828,7 +1832,7 @@
      "figure": null,
      "questions": [
       {
-       "content": "Remets dans l'ordre les périodes du cycle cellulaire qu'Aya peut observer dans une cellule qui se divise.",
+       "content": "Remets dans l'ordre les périodes du cycle cellulaire d'une cellule de méristème.",
        "question_type": "ordering",
        "explanation": "Méthode : 1. Observer le noyau. 2. Situer : l'interphase précède la mitose. 3. Dans la mitose : prophase, métaphase, anaphase, télophase. Pourquoi pas « Télophase » avant « Anaphase » : les deux noyaux ne se reforment qu'après la migration des chromatides.",
        "answers": [
@@ -1876,11 +1880,11 @@
          "correct": false
         },
         {
-         "content": "Le noyau se divise sans que le cytoplasme change",
+         "content": "Le fuseau se contracte et coupe la cellule",
          "correct": false
         },
         {
-         "content": "La paroi disparaît complètement",
+         "content": "Le cytoplasme se sépare sans qu'aucune paroi ne se forme",
          "correct": false
         }
        ]
@@ -1899,11 +1903,11 @@
          "correct": false
         },
         {
-         "content": "La disparition de la peau",
+         "content": "La réparation d'une plaie ouverte",
          "correct": false
         },
         {
-         "content": "La production de cellules sans noyau",
+         "content": "La protection de la peau contre le soleil",
          "correct": false
         }
        ]
@@ -1984,9 +1988,9 @@
          ]
         },
         {
-         "content": "Le colorant (orcéine acétique) met en évidence les ___ des cellules.",
+         "content": "L'orcéine acétique rend visibles les ___ des cellules en division.",
          "question_type": "fill_blank",
-         "explanation": "Méthode : 1. Colorer le fragment avec l'orcéine acétique. 2. Elle teinte les chromosomes, qu'on peut alors repérer au microscope. Pourquoi pas « vacuoles » : le colorant n'a pas pour but de teinter les poches de la cellule.",
+         "explanation": "Méthode : 1. Colorer le fragment avec l'orcéine acétique. 2. Elle teinte les chromosomes, qu'on peut alors repérer au microscope. Pourquoi pas « noyaux » : le noyau existe aussi en interphase ; ce que le colorant fait voir pendant la division, ce sont les chromosomes.",
          "answers": [
           {
            "content": "chromosomes",
@@ -2095,6 +2099,10 @@
          "answers": [
           {
            "content": "enveloppe",
+           "correct": true
+          },
+          {
+           "content": "membrane",
            "correct": true
           }
          ]
@@ -2316,7 +2324,7 @@
          "unit": "%"
         },
         {
-         "content": "Quelle division remplace les cellules mortes de la peau ?",
+         "content": "Quel rôle joue la division qui remplace les cellules mortes de la peau ?",
          "question_type": "single_choice",
          "explanation": "Méthode : 1. Repérer le tissu : la peau. 2. Comparer : cellules perdues, nombre constant. 3. Relier : les cellules filles remplacent les mortes. 4. Conclure : renouvellement. Pourquoi pas « La croissance » : le nombre de cellules ne s'accroît pas dans ce cas.",
          "answers": [
@@ -2329,11 +2337,11 @@
            "correct": false
           },
           {
-           "content": "La fabrication d'énergie",
+           "content": "La réparation d'une plaie",
            "correct": false
           },
           {
-           "content": "La protection contre le soleil",
+           "content": "La formation de la coiffe",
            "correct": false
           }
          ]
@@ -2387,7 +2395,7 @@
      "exercises": [
       {
        "title": "Exercice 1",
-       "statement": "Une élève de Bouaké met un oignon acheté au marché sur un verre d'eau. Quand les racines poussent, elle prélève 3 mm de l'extrémité d'une racine et prépare une lame colorée à l'orcéine (situation fictive).",
+       "statement": "Une élève de Bouaké met un oignon acheté au marché sur un verre d'eau. Quand les racines poussent, elle prépare une lame colorée à l'orcéine avec l'extrémité d'une racine (situation fictive).",
        "exercise_type": "evaluation",
        "figure": null,
        "questions": [
@@ -2397,7 +2405,7 @@
          "explanation": "Méthode : 1. Prélever l'extrémité de la racine, derrière la coiffe : le méristème. 2. C'est là que les cellules se divisent. Pourquoi pas « Un morceau pris au milieu de la racine » : les cellules du milieu de la racine se divisent peu et on y voit rarement des chromosomes.",
          "answers": [
           {
-           "content": "Les 3 mm de l'extrémité, derrière la coiffe",
+           "content": "L'extrémité, derrière la coiffe",
            "correct": true
           },
           {
@@ -2507,7 +2515,7 @@
            "correct": true
           },
           {
-           "content": "Les cellules mortes redeviennent vivantes sans division",
+           "content": "Les cellules des bords grossissent sans se diviser",
            "correct": false
           },
           {
@@ -2515,7 +2523,7 @@
            "correct": false
           },
           {
-           "content": "Les cellules sortent du corps",
+           "content": "Le sang apporte des cellules de peau toutes faites",
            "correct": false
           }
          ]
@@ -2562,11 +2570,11 @@
            "correct": false
           },
           {
-           "content": "Ajouter des chromosomes dans chaque cellule",
+           "content": "Produire une peau plus épaisse qu'avant",
            "correct": false
           },
           {
-           "content": "Éviter toute mitose pendant la guérison",
+           "content": "Remplacer les cellules du genou par des cellules différentes",
            "correct": false
           }
          ]
@@ -2574,16 +2582,13 @@
         {
          "content": "Remets dans l'ordre les événements de la guérison.",
          "question_type": "ordering",
-         "explanation": "Méthode : 1. Repérer : division des cellules des bords. 2. Comparer : le nombre augmente. 3. Relier : la peau se reconstitue. 4. Conclure : plaie refermée. Pourquoi pas « La plaie est refermée » en premier : la plaie ne peut se refermer qu'après la multiplication des cellules.",
+         "explanation": "Méthode : 1. Repérer : la peau écorchée a perdu des cellules. 2. Comparer et relier : les cellules des bords se divisent et leurs filles comblent la perte. 3. Conclure : la plaie est refermée, par réparation. Pourquoi pas « La plaie est refermée » en premier : la plaie ne peut se refermer qu'après la multiplication des cellules.",
          "answers": [
           {
-           "content": "Les cellules du bord de la plaie se divisent"
+           "content": "La peau est écorchée et perd des cellules"
           },
           {
-           "content": "Le nombre de cellules augmente à nouveau"
-          },
-          {
-           "content": "La couche de peau se reconstitue"
+           "content": "Les cellules des bords se divisent"
           },
           {
            "content": "La plaie est refermée"
@@ -2661,7 +2666,7 @@
         {
          "content": "Après les divisions du méristème, les nouvelles cellules ___ dans la zone d'allongement.",
          "question_type": "select",
-         "explanation": "Méthode : 1. Relier : les cellules filles s'ajoutent. 2. Elles s'allongent, ce qui fait grandir la racine. Pourquoi pas « forment la coiffe » : la coiffe est à la pointe, devant le méristème, et ne se forme pas dans cette zone.",
+         "explanation": "Méthode : 1. Relier : les cellules filles s'ajoutent. 2. Elles s'allongent, ce qui fait grandir la racine. Pourquoi pas « se divisent encore plus vite » : l'indice de 1 % montre qu'elles se divisent peu dans cette zone ; elles y grandissent.",
          "answers": [
           {
            "content": "s'allongent",
@@ -2676,7 +2681,7 @@
            "correct": false
           },
           {
-           "content": "se colorent en rouge",
+           "content": "se divisent encore plus vite",
            "correct": false
           }
          ]
@@ -2757,11 +2762,11 @@
            "correct": false
           },
           {
-           "content": "La réparation d'un os",
+           "content": "La réparation d'une plaie",
            "correct": false
           },
           {
-           "content": "La fabrication de poils absorbants",
+           "content": "La protection contre le soleil",
            "correct": false
           }
          ]
@@ -2777,6 +2782,18 @@
           },
           {
            "content": "mitose",
+           "correct": true
+          },
+          {
+           "content": "multiplication",
+           "correct": true
+          },
+          {
+           "content": "divisions",
+           "correct": true
+          },
+          {
+           "content": "mitoses",
            "correct": true
           }
          ]
@@ -2908,11 +2925,11 @@
            "correct": false
           },
           {
-           "content": "Toutes ses cellules sont mortes parce qu'elles sont en interphase",
+           "content": "La zone n'a pas été colorée par l'orcéine",
            "correct": false
           },
           {
-           "content": "Le colorant n'a coloré que cette zone",
+           "content": "Ses cellules se divisent trop vite pour être vues",
            "correct": false
           }
          ]
@@ -3131,22 +3148,22 @@
         {
          "content": "Pourquoi une cellule végétale ne peut-elle pas se couper par étranglement ?",
          "question_type": "single_choice",
-         "explanation": "Méthode : 1. Rappeler : paroi rigide autour de la cellule. 2. Conclure : on construit une nouvelle paroi pour séparer les deux cellules. Pourquoi pas « Parce qu'elle n'a pas de noyau » : la cellule végétale possède bien un noyau, qui se divise en mitose.",
+         "explanation": "Méthode : 1. Rappeler : paroi rigide autour de la cellule. 2. Conclure : on construit une nouvelle paroi pour séparer les deux cellules. Pourquoi pas « Parce qu'elle n'a pas de fuseau » : la cellule végétale a bien un fuseau, comme la cellule animale.",
          "answers": [
           {
            "content": "Parce qu'elle est entourée d'une paroi rigide qu'il faut construire au milieu",
            "correct": true
           },
           {
-           "content": "Parce qu'elle n'a pas de membrane",
+           "content": "Parce qu'elle n'a pas de fuseau",
            "correct": false
           },
           {
-           "content": "Parce qu'elle n'a pas de noyau",
+           "content": "Parce que son noyau est trop gros pour être pincé",
            "correct": false
           },
           {
-           "content": "Parce qu'elle ne se divise pas",
+           "content": "Parce que sa membrane est trop fragile",
            "correct": false
           }
          ]
@@ -3310,7 +3327,7 @@
         {
          "content": "Une cellule mesure 20 mm sur un dessin fait à un grossissement total de ×400. Quelle est sa taille réelle, en µm ?",
          "question_type": "numeric",
-         "explanation": "Méthode : 1. Mesurer : 20 mm. 2. Diviser : 20 ÷ 400 = 0,05 mm. 3. Convertir : 0,05 × 1 000 = 50 µm. Pourquoi pas « 8 000 µm » : multiplier donnerait une cellule plus grande que son dessin.",
+         "explanation": "Méthode : 1. Mesurer : 20 mm. 2. Diviser : 20 ÷ 400 = 0,05 mm. 3. Convertir : 0,05 × 1 000 = 50 µm. Pourquoi pas « multiplier : 20 × 400 = 8 000 mm » : cela donnerait une cellule de 8 m, bien plus grande que son dessin.",
          "answers": [
           {
            "content": "50",
@@ -3458,9 +3475,9 @@
          ]
         },
         {
-         "content": "En fin de télophase, le noyau est divisé en deux noyaux, avant la cytodiérèse.",
+         "content": "En télophase, deux noyaux se reforment, un à chaque pôle de la cellule.",
          "question_type": "true_false",
-         "explanation": "Méthode : 1. Nommer : télophase. 2. Conclure : deux noyaux se forment, puis le cytoplasme se coupe en deux. Pourquoi pas « Faux » : la cytodiérèse suit la télophase et sépare les deux noyaux déjà formés.",
+         "explanation": "Méthode : 1. Nommer : télophase. 2. Conclure : une enveloppe se reforme autour de chaque lot de chromatides, un noyau à chaque pôle. Pourquoi pas « Faux » : c'est la prophase, au contraire, où l'enveloppe disparaît ; en télophase elle se reforme.",
          "answers": [
           {
            "content": "Vrai",
@@ -3544,11 +3561,11 @@
            "correct": false
           },
           {
-           "content": "Parce qu'on ne peut pas les distinguer des autres",
+           "content": "Parce que seules les cellules au repos se comptent",
            "correct": false
           },
           {
-           "content": "Parce qu'elles n'ont pas de noyau",
+           "content": "Parce qu'elles sont les seules à avoir des chromosomes visibles",
            "correct": false
           }
          ]
@@ -3595,7 +3612,7 @@
            "correct": false
           },
           {
-           "content": "La digestion",
+           "content": "La protection de la plante",
            "correct": false
           }
          ]
