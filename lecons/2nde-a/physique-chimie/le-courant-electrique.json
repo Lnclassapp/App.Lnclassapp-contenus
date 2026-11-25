@@ -63,7 +63,7 @@
    "notions": [
     {
      "name": "Reconnaître un circuit qui fonctionne",
-     "remember": "Un **circuit électrique** simple comporte un **générateur** (pile, batterie), un ou plusieurs **récepteurs** (lampe, moteur, sonnerie), un **interrupteur** et des **fils de connexion**. Chaque élément à deux bornes est un **dipôle**. Le courant circule seulement dans un **circuit fermé** : une boucle sans coupure, avec l'interrupteur fermé. Si l'interrupteur est ouvert ou si un fil est coupé, le circuit est **ouvert** et le courant ne passe pas. Un **conducteur** laisse passer le courant (métaux comme le cuivre, le fer, l'aluminium ; graphite ; eau salée). Un **isolant** ne le laisse pas passer (plastique, bois sec, verre, caoutchouc). **Symboles normalisés** : pile = deux traits parallèles, le long est la borne +, le court la borne − ; lampe = cercle traversé d'une croix ; moteur = cercle contenant la lettre M ; interrupteur = deux bornes reliées par un levier (fermé) ou un levier écarté (ouvert) ; fil = trait droit.",
+     "remember": "Un **circuit électrique** simple comporte un **générateur** (pile, batterie ; dans une maison, la prise du secteur joue ce rôle), un ou plusieurs **récepteurs** (lampe, moteur, sonnerie), un **interrupteur** et des **fils de connexion**. Chaque élément à deux bornes est un **dipôle**. Le courant circule seulement dans un **circuit fermé** : une boucle sans coupure, avec l'interrupteur fermé. Si l'interrupteur est ouvert ou si un fil est coupé, le circuit est **ouvert** et le courant ne passe pas. Un **conducteur** laisse passer le courant (métaux comme le cuivre, le fer, l'aluminium ; graphite ; eau salée). Un **isolant** ne le laisse pas passer (plastique, bois sec, verre, caoutchouc). **Symboles normalisés** : pile = deux traits parallèles, le long est la borne +, le court la borne − ; lampe = cercle traversé d'une croix ; moteur = cercle contenant la lettre M ; interrupteur = deux bornes reliées par un levier (fermé) ou un levier écarté (ouvert) ; fil = trait droit.",
      "method": [
       "Repérer le générateur, les récepteurs, l'interrupteur et les fils du circuit.",
       "Vérifier que chaque élément du trajet est conducteur.",
@@ -410,7 +410,7 @@
     },
     {
      "name": "Distinguer un montage en série et un montage en dérivation",
-     "remember": "Dans un circuit **en série**, tous les dipôles sont placés les uns à la suite des autres sur une seule boucle : il n'y a aucun nœud. Si on retire un dipôle ou si on ouvre l'interrupteur, le courant s'arrête partout. Dans un circuit **en dérivation**, des dipôles sont placés sur des chemins séparés qui partent d'un même point et se rejoignent en un autre. Un **nœud** est un point où se rejoignent au moins trois fils. Une **branche** est une portion de circuit comprise entre deux nœuds consécutifs. La **branche principale** contient le générateur ; les autres sont des **branches dérivées**. Une **boucle** est un chemin fermé formé de branches. En dérivation, retirer une lampe d'une branche dérivée n'arrête pas les autres branches. Un interrupteur dans la branche principale commande tout le circuit ; dans une branche dérivée, il ne commande que cette branche. Dans une maison, les lampes et les prises sont en dérivation.",
+     "remember": "Dans un circuit **en série**, tous les dipôles sont placés les uns à la suite des autres sur une seule boucle : il n'y a aucun nœud. Si on retire un dipôle ou si on ouvre l'interrupteur, le courant s'arrête partout. Dans un circuit **en dérivation**, des dipôles sont placés sur des chemins séparés qui partent d'un même point et se rejoignent en un autre. Un **nœud** est un point où se rejoignent au moins trois fils. Une **branche** est une portion de circuit comprise entre deux nœuds consécutifs. La **branche principale** contient le générateur ; les autres sont des **branches dérivées**. Une **boucle** est un chemin fermé du circuit : un montage en série n'en a qu'une. En dérivation, retirer une lampe d'une branche dérivée n'arrête pas les autres branches. Un interrupteur dans la branche principale commande tout le circuit ; dans une branche dérivée, il ne commande que cette branche. Dans une maison, les lampes et les prises sont en dérivation.",
      "method": [
       "Repérer les nœuds : les points où se rejoignent au moins trois fils.",
       "Compter les branches : les portions de circuit comprises entre deux nœuds.",
@@ -487,7 +487,7 @@
        {
         "content": "Une portion de circuit comprise entre deux nœuds consécutifs s'appelle une ___.",
         "question_type": "fill_blank",
-        "explanation": "Étape 2 — Compter : on compte les branches, c'est-à-dire les portions entre deux nœuds. Une portion entre deux nœuds consécutifs est donc une branche. Pourquoi pas « boucle » : une boucle est un chemin fermé formé de plusieurs branches.",
+        "explanation": "Étape 2 — Compter : on compte les branches, c'est-à-dire les portions entre deux nœuds. Une portion entre deux nœuds consécutifs est donc une branche. Pourquoi pas « boucle » : une boucle est un chemin fermé, pas une portion comprise entre deux nœuds.",
         "answers": [
          {
           "content": "branche",
@@ -729,7 +729,7 @@
     },
     {
      "name": "Orienter le courant et nommer ses porteurs de charge",
-     "remember": "À l'extérieur du générateur, le **sens conventionnel du courant** va de la **borne +** vers la **borne −**, en traversant les dipôles. C'est un choix fait avant la découverte de l'électron. Dans un **métal** (fil de cuivre, filament), le courant est un déplacement d'**électrons libres**. Les électrons sont chargés négativement : ils vont de la borne − vers la borne +, donc **en sens inverse du sens conventionnel**. Dans une **solution** (eau salée), le courant est un déplacement d'**ions** : les cations (charges +) vont dans le sens conventionnel, les anions (charges −) en sens inverse. Le sens conventionnel est le même dans tous les cas : seuls les porteurs de charge changent d'un milieu à l'autre.",
+     "remember": "À l'extérieur du générateur (pile, batterie), le **sens conventionnel du courant** va de la **borne +** vers la **borne −**, en traversant les dipôles. C'est un choix fait avant la découverte de l'électron. Dans un **métal** (fil de cuivre, filament), le courant est un déplacement d'**électrons libres**. Les électrons sont chargés négativement : ils vont de la borne − vers la borne +, donc **en sens inverse du sens conventionnel**. Dans une **solution** (eau salée), le courant est un déplacement d'**ions** entre deux électrodes : les cations (charges +) vont dans le sens conventionnel, vers l'électrode reliée à la borne −, les anions (charges −) en sens inverse, vers l'électrode reliée à la borne +. Le sens conventionnel est le même dans tous les cas : seuls les porteurs de charge changent d'un milieu à l'autre.",
      "method": [
       "Repérer les bornes + et − du générateur.",
       "Tracer le sens conventionnel à l'extérieur du générateur : de la borne + vers la borne −, à travers les dipôles.",
@@ -1080,7 +1080,7 @@
     },
     {
      "name": "Reconnaître un effet du courant et appliquer une règle de sécurité",
-     "remember": "Le passage du courant a des **effets** que l'on observe. **Effet thermique** : le conducteur s'échauffe (fer à repasser, bouilloire, fer à souder, fusible qui fond). **Effet lumineux** : une lampe émet de la lumière (lampe torche, ampoule). **Effet chimique** : le courant provoque des transformations chimiques (recharge d'une batterie, dépôt d'un métal dans une solution, dégagement de gaz). **Effet magnétique** : un fil parcouru par le courant agit sur une aiguille aimantée, et un électroaimant attire le fer ; c'est ce qui fait tourner un moteur. Un appareil peut avoir plusieurs effets à la fois : on nomme celui que l'on cherche. **Sécurité** : le corps humain est conducteur, surtout quand la peau est mouillée. Le courant de la prise peut le traverser et être mortel. Ne touche jamais un fil dénudé ni une prise avec les mains mouillées, ne branche pas trop d'appareils sur une même prise, et fais remplacer tout câble abîmé. Un **court-circuit** relie directement deux points d'un circuit par un fil, sans récepteur : les fils chauffent et le danger est grand.",
+     "remember": "Le passage du courant a des **effets** que l'on observe. **Effet thermique** : le conducteur s'échauffe (fer à repasser, bouilloire, fer à souder, fusible qui fond). **Effet lumineux** : une lampe émet de la lumière (lampe torche, ampoule). **Effet chimique** : le courant provoque des transformations chimiques (recharge d'une batterie, électrolyse de l'eau avec dégagement de gaz, dépôt d'un métal sur une électrode). **Effet magnétique** : un fil parcouru par le courant agit sur une aiguille aimantée, et un électroaimant attire le fer ; c'est ce qui fait tourner un moteur. Un appareil peut avoir plusieurs effets à la fois : on nomme celui que l'on cherche. **Sécurité** : le corps humain est conducteur, surtout quand la peau est mouillée. Le courant de la prise peut le traverser (électrisation) et tuer (électrocution). Ne touche jamais un fil dénudé ni une prise avec les mains mouillées, ne branche pas trop d'appareils sur une même prise, et fais remplacer tout câble abîmé. Il y a **court-circuit** quand les deux bornes du générateur sont reliées directement par un fil, sans récepteur : les fils chauffent fortement ; un fusible, en fondant, ouvre alors le circuit.",
      "method": [
       "Observer ce que fait l'appareil quand le courant passe.",
       "Associer l'observation à l'effet du courant : chaleur, lumière, transformation chimique ou action magnétique.",
@@ -1597,7 +1597,7 @@
       {
        "content": "Relie chaque élément du salon à son rôle dans le circuit.",
        "question_type": "matching",
-       "explanation": "Étape 1 — Repérer : le générateur fournit le courant, le récepteur l'utilise. Étape 2 — Vérifier : le cuivre est un conducteur, le plastique un isolant. Pourquoi pas « conducteur » pour le plastique : la gaine est faite pour ne pas laisser passer le courant.",
+       "explanation": "Étape 1 — Repérer : le générateur fournit le courant, le récepteur l'utilise ; dans une maison, la prise du secteur joue le rôle du générateur. Étape 2 — Vérifier : le cuivre est un conducteur, le plastique un isolant. Pourquoi pas « conducteur » pour le plastique : la gaine est faite pour ne pas laisser passer le courant.",
        "answers": [
         {
          "content": "La prise du secteur",
@@ -3155,9 +3155,9 @@
          ]
         },
         {
-         "content": "Dans la solution, les ions Cl⁻ se déplacent vers la borne ___ du générateur.",
+         "content": "Dans la solution, les ions Cl⁻ se déplacent vers l'électrode reliée à la borne ___ du générateur.",
          "question_type": "fill_blank",
-         "explanation": "Étape 3 — Identifier : les ions Cl⁻ sont des anions, chargés négativement. Étape 4 — Donner : ils vont en sens inverse du sens conventionnel, donc vers la borne positive. Pourquoi pas « négative » : une charge négative est attirée vers la borne +.",
+         "explanation": "Étape 3 — Identifier : les ions Cl⁻ sont des anions, chargés négativement. Étape 4 — Donner : ils vont en sens inverse du sens conventionnel, donc vers l'électrode reliée à la borne positive. Pourquoi pas « négative » : une charge négative est attirée par l'électrode reliée à la borne +.",
          "answers": [
           {
            "content": "positive",
@@ -3537,7 +3537,7 @@
         {
          "content": "Relie chaque description à la notion qu'elle désigne.",
          "question_type": "matching",
-         "explanation": "Étape 2 — Tracer : le sens conventionnel va de + vers −. Étape 4 — Donner : les électrons vont de − vers +, les anions vers la borne +, les cations dans le sens conventionnel. Pourquoi pas « anions » pour le sens conventionnel : les anions vont en sens inverse.",
+         "explanation": "Étape 2 — Tracer : le sens conventionnel va de + vers −. Étape 4 — Donner : les électrons vont de − vers +, les anions vers l'électrode reliée à la borne +, les cations dans le sens conventionnel. Pourquoi pas « anions » pour le sens conventionnel : les anions vont en sens inverse.",
          "answers": [
           {
            "content": "De la borne + vers la borne − à l'extérieur du générateur",
@@ -3548,7 +3548,7 @@
            "match": "Déplacement des électrons"
           },
           {
-           "content": "Ions chargés négativement qui vont vers la borne +",
+           "content": "Ions chargés négativement qui vont vers l'électrode reliée à la borne +",
            "match": "Anions"
           },
           {
