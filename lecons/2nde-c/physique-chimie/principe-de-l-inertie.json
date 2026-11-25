@@ -303,8 +303,8 @@
               {
                 "content": "Le point d'un solide dont le mouvement est le plus simple s'appelle le centre d'___.",
                 "question_type": "fill_blank",
-                "explanation": "Étape 1 — Définir le système : un solide étudié. Étape 2 — Faire le bilan des forces extérieures : on cherche un point qui représente son mouvement. Étape 3 — Additionner les forces : ce point est celui dont le mouvement est le plus simple. Étape 4 — Conclure : il s'appelle le centre d'inertie, noté G ; à la surface de la Terre, il est confondu avec le centre de gravité.",
-                "hint": "Le mot attendu s'écrit comme le titre de la leçon : principe de l'...",
+                "explanation": "Étape 1 — Définir le système : un solide étudié. Étape 2 — Repérer le centre d'inertie G : on cherche le point qui représente le mouvement d'ensemble du solide ; c'est celui dont le mouvement est le plus simple. Étape 3 — Comparer avec le centre de symétrie ou de gravité : à la surface de la Terre, ce point est confondu avec le centre de gravité. Étape 4 — Conclure : ce point s'appelle le centre d'inertie, noté G.",
+                "hint": "C'est le point qui représente le mouvement d'ensemble du solide.",
                 "answers": [
                   {
                     "content": "inertie",
@@ -373,9 +373,9 @@
                   ]
                 },
                 {
-                  "content": "Un seau de 5 kg est tiré vers le haut par une corde avec une force de 30 N. Ce seau est-il pseudo-isolé ? On prend $g = 10$ N/kg.",
+                  "content": "Un seau de 5 kg, suspendu en l'air sans rien toucher d'autre, n'est soumis qu'à son poids et à la tension d'une corde de 30 N vers le haut. Ce seau est-il pseudo-isolé ? On prend $g = 10$ N/kg.",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Définir le système : le seau. Étape 2 — Faire le bilan des forces extérieures : le poids $P = 5 \\times 10 = 50$ N vers le bas et la tension $T = 30$ N vers le haut. Étape 3 — Additionner les forces : forces opposées : $50 - 30 = 20$ N vers le bas, ce n'est pas $\\vec 0$. Étape 4 — Conclure : le seau n'est pas pseudo-isolé. Pourquoi pas « Oui : il est soumis à deux forces » : deux forces ne suffisent pas, elles doivent avoir la même intensité.",
+                  "explanation": "Étape 1 — Définir le système : le seau. Étape 2 — Faire le bilan des forces extérieures : le poids $P = 5 \\times 10 = 50$ N vers le bas et la tension $T = 30$ N vers le haut. Étape 3 — Additionner les forces : forces opposées : $50 - 30 = 20$ N vers le bas, ce n'est pas $\\vec 0$. Étape 4 — Conclure : le seau n'est pas pseudo-isolé. Pourquoi pas « Oui : il est soumis à deux forces » : deux forces ne suffisent pas : elles doivent avoir la même droite d'action, des sens opposés ET la même intensité ; ici 50 N et 30 N ne sont pas égales.",
                   "answers": [
                     {
                       "content": "Non : la somme de ses forces vaut 20 N vers le bas",
@@ -409,7 +409,7 @@
                 {
                   "content": "Où se trouve le centre d'inertie d'un ballon plein et homogène ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Définir le système : le ballon. Étape 2 — Faire le bilan des forces extérieures : on cherche le point dont le mouvement est le plus simple. Étape 3 — Additionner les forces : pour un solide homogène de forme simple, c'est son centre de symétrie. Étape 4 — Conclure : le centre d'inertie G est au centre du ballon. Pourquoi pas « Au point qui touche le sol » : ce point change à chaque tour, son mouvement est compliqué.",
+                  "explanation": "Étape 1 — Définir le système : le ballon plein et homogène. Étape 2 — Repérer le centre d'inertie G : on cherche le point dont le mouvement est le plus simple. Étape 3 — Comparer avec le centre de symétrie ou de gravité : pour un solide homogène de forme simple, c'est son centre de symétrie. Étape 4 — Conclure : le centre d'inertie G est au centre du ballon. Pourquoi pas « Au point qui touche le sol » : ce point change à chaque tour, son mouvement est compliqué.",
                   "answers": [
                     {
                       "content": "Au centre du ballon",
@@ -432,7 +432,7 @@
               ]
             },
             {
-              "title": "Pseudo-isolé ou non : cinq situations",
+              "title": "Pseudo-isolé ou non : situations variées",
               "statement": "Dans cet exercice, tu ordonnes les étapes de la méthode, tu classes des situations et tu calcules une force qui manque. On néglige les frottements de l'air et on prend $g = 10$ N/kg.",
               "exercise_type": "fixation",
               "figure": null,
@@ -538,7 +538,7 @@
                 {
                   "content": "À la surface de la Terre, le centre d'inertie d'un solide homogène de forme simple est confondu avec son centre de gravité G.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Définir le système : un solide homogène de forme simple. Étape 2 — Faire le bilan des forces extérieures : son centre d'inertie est le point dont le mouvement est le plus simple. Étape 3 — Additionner les forces : à la surface de la Terre, ce point est son centre de gravité, où l'on place le poids. Étape 4 — Conclure : l'affirmation est vraie.",
+                  "explanation": "Étape 1 — Définir le système : un solide homogène de forme simple. Étape 2 — Repérer le centre d'inertie G : son centre d'inertie est le point dont le mouvement est le plus simple. Étape 3 — Comparer avec le centre de symétrie ou de gravité : à la surface de la Terre, ce point est son centre de gravité, où l'on place le poids. Étape 4 — Conclure : l'affirmation est vraie.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -556,7 +556,7 @@
         },
         {
           "name": "Appliquer le principe de l'inertie",
-          "remember": "**Principe de l'inertie** : dans un référentiel galiléen, si le centre d'inertie G d'un solide est **pseudo-isolé** (somme des forces nulle), alors G est **au repos** ou en **mouvement rectiligne uniforme**. **Réciproquement**, si G est au repos ou en mouvement rectiligne uniforme dans un référentiel galiléen, alors la somme des forces est nulle : $\\sum \\vec F = \\vec 0$. Si le mouvement de G est autre (la valeur ou la direction de la vitesse change), les forces ne se compensent pas. Un **référentiel galiléen** est un référentiel dans lequel le principe s'applique ; le référentiel terrestre, lié au sol, est galiléen pour des expériences de courte durée. Dans cette leçon, on travaille dans le référentiel terrestre.",
+          "remember": "**Principe de l'inertie** : dans un référentiel galiléen, si un solide est **isolé ou pseudo-isolé** (somme des forces nulle), alors son centre d'inertie G est **au repos** ou en **mouvement rectiligne uniforme**. **Réciproquement**, si G est au repos ou en mouvement rectiligne uniforme dans un référentiel galiléen, alors la somme des forces est nulle : $\\sum \\vec F = \\vec 0$. Si le mouvement de G est autre (la valeur ou la direction de la vitesse change), les forces ne se compensent pas. Un **référentiel galiléen** est un référentiel dans lequel le principe s'applique ; le référentiel terrestre, lié au sol, est galiléen pour des expériences de courte durée. Dans cette leçon, on travaille dans le référentiel terrestre.",
           "method": [
             "Choisir le système et un référentiel galiléen (ici le référentiel terrestre).",
             "Décrire le mouvement du centre d'inertie G dans ce référentiel : repos, mouvement rectiligne uniforme ou autre.",
@@ -699,7 +699,7 @@
                   ]
                 },
                 {
-                  "content": "Un mobile autoporteur de 0,8 kg est en mouvement rectiligne uniforme sur une table à coussin d'air horizontale, frottements négligés. Quelle est l'intensité de la réaction de la table ? On prend $g = 10$ N/kg.",
+                  "content": "Un mobile autoporteur de 0,8 kg est en mouvement rectiligne uniforme sur une table à coussin d'air, frottements négligés. Quelle est l'intensité de la réaction de la table ? On prend $g = 10$ N/kg.",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Choisir le système et le référentiel : le mobile, référentiel terrestre. Étape 2 — Décrire le mouvement de G : mouvement rectiligne uniforme. Étape 3 — Appliquer le principe : $\\vec P + \\vec R = \\vec 0$. Étape 4 — Conclure : $R = P = 0{,}8 \\times 10 = 8$ N.",
                   "unit": "N",
@@ -740,7 +740,7 @@
                   ]
                 },
                 {
-                  "content": "Un élève dit : « Ce palet avance, donc une force le pousse vers l'avant. » Cette affirmation est…",
+                  "content": "Un palet glisse en ligne droite à vitesse constante sur la glace, frottements négligés. Un élève dit : « Ce palet avance, donc une force le pousse vers l'avant. » Cette affirmation est…",
                   "question_type": "single_choice",
                   "explanation": "Étape 1 — Choisir le système et le référentiel : le palet, référentiel terrestre. Étape 2 — Décrire le mouvement de G : il glisse en ligne droite à vitesse constante. Étape 3 — Appliquer le principe : le principe dit que la somme des forces est nulle. Étape 4 — Conclure : aucune force n'est nécessaire pour continuer d'avancer. Pourquoi pas « vraie : sans force, un palet ne peut pas avancer » : c'est l'idée fausse que le principe de l'inertie corrige.",
                   "answers": [
@@ -765,7 +765,7 @@
               ]
             },
             {
-              "title": "Principe de l'inertie : cinq questions variées",
+              "title": "Principe de l'inertie : questions variées",
               "statement": "Dans cet exercice, tu ordonnes les étapes, tu relies mouvements et conclusions et tu calcules des forces. Référentiel terrestre galiléen, frottements négligés, $g = 10$ N/kg.",
               "exercise_type": "fixation",
               "figure": null,
@@ -812,7 +812,7 @@
                 {
                   "content": "Pour une expérience de courte durée, le référentiel terrestre est considéré comme ___.",
                   "question_type": "select",
-                  "explanation": "Étape 1 — Choisir le système et le référentiel : un référentiel lié au sol. Étape 2 — Décrire le mouvement de G : pour une courte durée, son mouvement est négligeable. Étape 3 — Appliquer le principe : le principe de l'inertie s'y applique. Étape 4 — Conclure : il est galiléen. Pourquoi pas « accéléré » : si le référentiel accélérait, le principe ne s'y appliquerait pas.",
+                  "explanation": "Étape 1 — Choisir le système et le référentiel : un référentiel lié au sol. Étape 2 — Décrire le mouvement de G : sur une courte durée, le mouvement du référentiel terrestre est négligeable. Étape 3 — Appliquer le principe : le principe de l'inertie s'y applique. Étape 4 — Conclure : il est galiléen. Pourquoi pas « accéléré » : si le référentiel accélérait, le principe ne s'y appliquerait pas.",
                   "answers": [
                     {
                       "content": "galiléen",
@@ -827,7 +827,7 @@
                       "correct": false
                     },
                     {
-                      "content": "immobile",
+                      "content": "non galiléen",
                       "correct": false
                     }
                   ]
@@ -1227,7 +1227,7 @@
         },
         {
           "name": "Interpréter une situation avec le principe de l'inertie",
-          "remember": "Un solide dont le centre d'inertie **n'a pas un mouvement rectiligne uniforme** (la valeur ou la direction de sa vitesse change) **n'est pas pseudo-isolé** : les forces qui s'exercent sur lui ne se compensent pas. Un objet qui n'est soumis à aucune force qui le retient **garde sa vitesse** : c'est son **inertie**. Dans le référentiel terrestre : un passager non retenu d'un gbaka qui freine garde sa vitesse et part vers l'avant par rapport au gbaka ; un passager non retenu d'un véhicule qui démarre reste au repos par rapport au sol et semble partir vers l'arrière ; la **ceinture de sécurité** exerce sur le passager une force qui le ralentit en même temps que le véhicule. Une bille qui s'arrête subit la force de frottement du sol. Dans cette leçon, on néglige les frottements entre le passager et son siège.",
+          "remember": "Un solide dont le centre d'inertie **n'a pas un mouvement rectiligne uniforme** (la valeur ou la direction de sa vitesse change) **n'est pas pseudo-isolé** : les forces qui s'exercent sur lui ne se compensent pas. Un objet sur lequel les forces se compensent (ou qui ne subit aucune force) **garde sa vitesse** : c'est son **inertie**. Dans le référentiel terrestre : un passager non retenu d'un gbaka qui freine garde sa vitesse et part vers l'avant par rapport au gbaka ; un passager debout, non retenu, dont on néglige les frottements sur le plancher, reste au repos par rapport au sol quand le véhicule démarre et semble partir vers l'arrière ; la **ceinture de sécurité** exerce sur le passager une force qui le ralentit en même temps que le véhicule. Une bille qui s'arrête subit la force de frottement du sol. Dans cette leçon, on néglige les frottements entre le passager et son siège ou le plancher.",
           "method": [
             "Décrire le mouvement de l'objet dans le référentiel terrestre, avant puis pendant l'événement.",
             "Comparer : la valeur ou la direction de la vitesse change-t-elle ? Repérer ce qui est conservé.",
@@ -1235,7 +1235,7 @@
             "Conclure : expliquer l'effet observé par l'inertie et nommer la force qui agit ou qui manque."
           ],
           "example": {
-            "statement": "Un gbaka roule à vitesse constante sur une route droite. Le chauffeur freine brusquement. Un passager assis, sans ceinture, sur un siège dont on néglige les frottements, est projeté vers l'avant. Explique pourquoi, dans le référentiel terrestre.",
+            "statement": "Un gbaka roule à vitesse constante sur une route droite. Le chauffeur freine brusquement. Un passager assis, sans ceinture, sur un siège dont on néglige les frottements, part vers l'avant par rapport au gbaka. Explique pourquoi, dans le référentiel terrestre.",
             "steps": [
               "Décrire : avant le freinage, le gbaka et le passager ont la même vitesse constante ; pendant le freinage, la vitesse du gbaka diminue.",
               "Comparer : la vitesse du gbaka change ; pour le passager, aucune force horizontale ne s'exerce, sa vitesse est conservée.",
@@ -1249,7 +1249,7 @@
             "statement": "Tu t'entraînes à expliquer une situation du quotidien avec le principe de l'inertie.",
             "questions": [
               {
-                "content": "Un gbaka roule en ligne droite à vitesse constante. Le chauffeur freine brusquement. Un passager sans ceinture, sur un siège dont on néglige les frottements, est projeté vers l'avant. Dans le référentiel terrestre, cela s'explique par…",
+                "content": "Un gbaka roule en ligne droite à vitesse constante. Le chauffeur freine brusquement. Un passager sans ceinture, sur un siège dont on néglige les frottements, part vers l'avant par rapport au gbaka. Dans le référentiel terrestre, cela s'explique par…",
                 "question_type": "single_choice",
                 "explanation": "Étape 1 — Décrire : le passager roule à la vitesse du gbaka, puis le gbaka ralentit. Étape 2 — Comparer : la vitesse du gbaka change, celle du passager non. Étape 3 — Appliquer le principe : aucune force horizontale n'agit sur le passager : il garde sa vitesse. Étape 4 — Conclure : par inertie, il continue vers l'avant. Dire qu'une force le pousse vers l'avant confond la vitesse conservée avec une force.",
                 "hint": "Cherche ce qui agit sur le passager, pas sur le gbaka.",
@@ -1331,12 +1331,12 @@
           "exercise": [
             {
               "title": "Expliquer le freinage et le démarrage d'un gbaka",
-              "statement": "Dans cet exercice, tu expliques des situations d'un gbaka, d'un wôrô-wôrô et d'une bille avec le principe de l'inertie. Référentiel terrestre galiléen ; on néglige les frottements entre le passager et son siège.",
+              "statement": "Dans cet exercice, tu expliques des situations d'un gbaka, d'un wôrô-wôrô et d'une bille avec le principe de l'inertie. Référentiel terrestre galiléen ; on néglige les frottements entre le passager et son siège ou le plancher.",
               "exercise_type": "fixation",
               "figure": null,
               "questions": [
                 {
-                  "content": "Un gbaka arrêté démarre brusquement. Dans le référentiel terrestre, un passager debout qui ne se tient pas…",
+                  "content": "Un gbaka arrêté démarre brusquement. Dans le référentiel terrestre, un passager debout, dont les chaussures glissent sans frottement sur le plancher et qui ne se tient pas…",
                   "question_type": "single_choice",
                   "explanation": "Étape 1 — Décrire : le gbaka est arrêté, puis démarre ; le passager est au repos. Étape 2 — Comparer : la vitesse du gbaka augmente, celle du passager reste nulle. Étape 3 — Appliquer le principe : aucune force horizontale n'agit sur le passager : il reste au repos. Étape 4 — Conclure : par inertie, il reste en place par rapport au sol et semble partir vers l'arrière par rapport au gbaka. Pourquoi pas « poussé vers l'arrière par une force » : aucune force horizontale ne s'exerce sur lui.",
                   "answers": [
@@ -1361,7 +1361,7 @@
                 {
                   "content": "Quel est le rôle de la ceinture de sécurité lors d'un freinage brusque ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Décrire : le véhicule freine. Étape 2 — Comparer : la vitesse du passager devrait rester la même, celle du véhicule diminue. Étape 3 — Appliquer le principe : sans force, le passager garde sa vitesse ; la ceinture exerce la force qui le ralentit. Étape 4 — Conclure : la ceinture le fait ralentir en même temps que le véhicule. Pourquoi pas « Supprimer l'inertie » : l'inertie existe toujours ; la ceinture la compense par une force.",
+                  "explanation": "Étape 1 — Décrire : le véhicule freine. Étape 2 — Comparer : la vitesse du passager devrait rester la même, celle du véhicule diminue. Étape 3 — Appliquer le principe : sans force, le passager garde sa vitesse ; la ceinture exerce la force qui le ralentit. Étape 4 — Conclure : la ceinture le fait ralentir en même temps que le véhicule. Pourquoi pas « Supprimer l'inertie » : l'inertie existe toujours ; la ceinture exerce sur le passager une force qui diminue sa vitesse.",
                   "answers": [
                     {
                       "content": "Exercer sur le passager une force qui le ralentit avec le véhicule",
@@ -1372,11 +1372,11 @@
                       "correct": false
                     },
                     {
-                      "content": "Empêcher le véhicule de ralentir quand le conducteur freine brusquement",
+                      "content": "Pousser le passager vers l'arrière pour compenser la force qui le tire vers l'avant",
                       "correct": false
                     },
                     {
-                      "content": "Annuler le poids du passager",
+                      "content": "Empêcher le passager de glisser sur le siège en augmentant les frottements du siège",
                       "correct": false
                     }
                   ]
@@ -1446,8 +1446,8 @@
               ]
             },
             {
-              "title": "Inertie, ceinture et frottements : cinq situations",
-              "statement": "Dans cet exercice, tu ordonnes les étapes de la méthode, tu relies observations et explications et tu raisonnes sur des mouvements de la vie courante. Référentiel terrestre galiléen.",
+              "title": "Inertie, ceinture et frottements : situations variées",
+              "statement": "Dans cet exercice, tu ordonnes les étapes de la méthode, tu relies observations et explications et tu raisonnes sur des mouvements de la vie courante. Référentiel terrestre galiléen ; on néglige les frottements entre le passager et le véhicule (siège, plancher).",
               "exercise_type": "fixation",
               "figure": null,
               "hint": "Pour chaque situation, demande-toi si la vitesse du solide change, en valeur ou en direction.",
@@ -1552,7 +1552,7 @@
                 {
                   "content": "Un solide dont la vitesse garde la même valeur mais dont la direction change est pseudo-isolé.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Décrire : un solide dont la direction change. Étape 2 — Comparer : la vitesse n'est pas constante : sa direction varie. Étape 3 — Appliquer le principe : ce n'est pas un mouvement rectiligne uniforme. Étape 4 — Conclure : la somme des forces n'est pas nulle : l'affirmation est fausse.",
+                  "explanation": "Étape 1 — Décrire : un solide dont la direction change. Étape 2 — Comparer : la valeur de la vitesse reste constante, mais sa direction change. Étape 3 — Appliquer le principe : ce n'est pas un mouvement rectiligne uniforme. Étape 4 — Conclure : la somme des forces n'est pas nulle : l'affirmation est fausse.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -1672,7 +1672,7 @@
             {
               "content": "Un gbaka roule à 54 km/h. Quelle est sa vitesse, en m/s ?",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Décrire : la vitesse est donnée en km/h. Étape 2 — Comparer : on veut des m/s. Étape 3 — Appliquer le principe : $1$ m/s $= 3{,}6$ km/h : on divise par 3,6. Étape 4 — Conclure : $54 / 3{,}6 = 15$ m/s.",
+              "explanation": "Étape 1 — Relever : la vitesse vaut 54 km/h. Étape 2 — Convertir : on veut des m/s ; $1$ m/s $= 3{,}6$ km/h, donc on divise par 3,6. Étape 3 — Écrire la formule : $v_{m/s} = \\dfrac{v_{km/h}}{3{,}6}$. Étape 4 — Calculer : $54 / 3{,}6 = 15$ m/s.",
               "unit": "m/s",
               "tolerance": 0,
               "answers": [
@@ -1761,7 +1761,7 @@
                   "correct": true
                 },
                 {
-                  "content": "Empêcher le gbaka de ralentir quand le chauffeur freine fort sur la route",
+                  "content": "Pousser le passager vers l'arrière pour compenser la force qui le tire vers l'avant",
                   "correct": false
                 },
                 {
@@ -1769,7 +1769,7 @@
                   "correct": false
                 },
                 {
-                  "content": "Augmenter le poids du passager",
+                  "content": "Empêcher le passager de glisser sur le siège en augmentant les frottements du siège",
                   "correct": false
                 }
               ]
@@ -1785,7 +1785,7 @@
             {
               "content": "Un wôrô-wôrô a une masse de 1 000 kg. Quelle est l'intensité de son poids ? On prend $g = 10$ N/kg.",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Définir le système : le wôrô-wôrô de 1 000 kg. Étape 2 — Faire le bilan des forces extérieures : la Terre exerce le poids. Étape 3 — Additionner les forces : $P = m \\times g$. Étape 4 — Conclure : $P = 1\\,000 \\times 10 = 10\\,000$ N.",
+              "explanation": "Étape 1 — Relever : la masse vaut 1 000 kg et $g = 10$ N/kg. Étape 2 — Convertir : la masse est déjà en kg, rien à convertir. Étape 3 — Écrire la formule : $P = m \\times g$. Étape 4 — Calculer : $P = 1 000 \\times 10 = 10\\,000$ N.",
               "unit": "N",
               "tolerance": 0,
               "answers": [
@@ -1990,12 +1990,16 @@
                   ]
                 },
                 {
-                  "content": "Un solide qui ne subit aucune force est dit ___.",
+                  "content": "Un solide soumis à des forces dont la somme est nulle est dit ___.",
                   "question_type": "fill_blank",
-                  "explanation": "Étape 1 — Définir le système : un solide étudié. Étape 2 — Faire le bilan des forces extérieures : on constate qu'aucune force ne s'exerce sur lui. Étape 3 — Additionner les forces : la somme des forces est nulle. Étape 4 — Conclure : il est isolé. Pourquoi pas « pseudo-isolé » : ce mot désigne un solide qui subit des forces, mais dont la somme est nulle.",
+                  "explanation": "Étape 1 — Définir le système : un solide étudié. Étape 2 — Faire le bilan des forces extérieures : il subit des forces extérieures. Étape 3 — Additionner les forces : leur somme vectorielle est nulle. Étape 4 — Conclure : il est pseudo-isolé. Pourquoi pas « isolé » : un solide isolé ne subit aucune force ; ici, des forces s'exercent bien sur le solide, mais elles se compensent.",
                   "answers": [
                     {
-                      "content": "isolé",
+                      "content": "pseudo-isolé",
+                      "correct": true
+                    },
+                    {
+                      "content": "pseudo isolé",
                       "correct": true
                     }
                   ]
@@ -2003,7 +2007,7 @@
                 {
                   "content": "Le centre d'inertie d'un solide homogène de forme simple est situé en son centre de symétrie.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Définir le système : un solide homogène de forme simple. Étape 2 — Faire le bilan des forces extérieures : son centre d'inertie est le point dont le mouvement est le plus simple. Étape 3 — Additionner les forces : pour un tel solide, c'est son centre de symétrie. Étape 4 — Conclure : l'affirmation est vraie. Pourquoi pas « Faux » : le centre d'inertie n'est pas un point de la surface mais le point central du solide.",
+                  "explanation": "Étape 1 — Définir le système : un solide homogène de forme simple. Étape 2 — Repérer le centre d'inertie G : son centre d'inertie est le point dont le mouvement est le plus simple. Étape 3 — Comparer avec le centre de symétrie ou de gravité : pour un tel solide, c'est son centre de symétrie. Étape 4 — Conclure : l'affirmation est vraie. Pourquoi pas « Faux » : le centre d'inertie n'est pas un point de la surface mais le point central du solide.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2261,7 +2265,7 @@
                 {
                   "content": "Un palet a une masse de 2 kg. Quelle est l'intensité de son poids ? On prend $g = 10$ N/kg.",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Définir le système : le palet de 2 kg. Étape 2 — Faire le bilan des forces extérieures : la Terre exerce le poids. Étape 3 — Additionner les forces : $P = m \\times g$. Étape 4 — Conclure : $P = 2 \\times 10 = 20$ N ; il faut multiplier la masse en kg par 10 N/kg. Pourquoi pas 2 : c'est la masse en kg, pas le poids ; il faut multiplier par 10 N/kg.",
+                  "explanation": "Étape 1 — Relever : la masse vaut 2 kg et $g = 10$ N/kg. Étape 2 — Convertir : la masse est déjà en kg, rien à convertir. Étape 3 — Écrire la formule : $P = m \\times g$. Étape 4 — Calculer : $P = 2 \\times 10 = 20$ N. Il faut multiplier la masse en kg par 10 N/kg. Pourquoi pas 2 : c'est la masse en kg, pas le poids ; il faut multiplier par 10 N/kg.",
                   "unit": "N",
                   "tolerance": 0,
                   "answers": [
@@ -2334,6 +2338,10 @@
                     {
                       "content": "nul",
                       "correct": true
+                    },
+                    {
+                      "content": "zéro",
+                      "correct": true
                     }
                   ]
                 }
@@ -2355,7 +2363,7 @@
                 {
                   "content": "Un gbaka roule à 72 km/h. Quelle est sa vitesse, en m/s ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Décrire : la vitesse est donnée en km/h. Étape 2 — Comparer : on veut des m/s. Étape 3 — Appliquer le principe : $1$ m/s $= 3{,}6$ km/h : on divise par 3,6. Étape 4 — Conclure : $72 / 3{,}6 = 20$ m/s ; garder 72 donnerait un résultat 3,6 fois trop grand. Pourquoi pas 259,2 : ce résultat vient d'une multiplication par 3,6 au lieu d'une division.",
+                  "explanation": "Étape 1 — Relever : la vitesse vaut 72 km/h. Étape 2 — Convertir : on veut des m/s ; $1$ m/s $= 3{,}6$ km/h, donc on divise par 3,6. Étape 3 — Écrire la formule : $v_{m/s} = \\dfrac{v_{km/h}}{3{,}6}$. Étape 4 — Calculer : $72 / 3{,}6 = 20$ m/s. Garder 72 donnerait un résultat 3,6 fois trop grand. Pourquoi pas 259,2 : ce résultat vient d'une multiplication par 3,6 au lieu d'une division.",
                   "unit": "m/s",
                   "tolerance": 0,
                   "answers": [
@@ -2425,24 +2433,24 @@
                   ]
                 },
                 {
-                  "content": "Pourquoi la ceinture de sécurité protège-t-elle le passager au freinage ?",
+                  "content": "Un gbaka roulant à 20 m/s freine brusquement. Quel passager garde sa vitesse de 20 m/s par rapport au sol juste après le début du freinage ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Décrire : le gbaka freine. Étape 2 — Comparer : le passager devrait garder sa vitesse. Étape 3 — Appliquer le principe : la ceinture exerce la force qui le ralentit. Étape 4 — Conclure : il ralentit avec le gbaka. Pourquoi pas « Elle supprime sa vitesse » : la ceinture ne supprime pas la vitesse, elle exerce une force qui la diminue.",
+                  "explanation": "Étape 1 — Décrire : avant le freinage, les passagers et le gbaka roulent à 20 m/s ; pendant le freinage, la vitesse du gbaka diminue. Étape 2 — Comparer : le passager sans ceinture n'est retenu par rien ; l'autre est retenu par sa ceinture. Étape 3 — Appliquer le principe : sans ceinture, aucune force horizontale n'agit sur le passager : sa vitesse est conservée ; avec la ceinture, une force le ralentit. Étape 4 — Conclure : par inertie, seul le passager sans ceinture garde 20 m/s. Pourquoi pas « Les deux passagers » : la ceinture exerce une force sur le passager, et cette force change sa vitesse.",
                   "answers": [
                     {
-                      "content": "Elle exerce une force qui le ralentit en même temps que le gbaka",
+                      "content": "Celui qui n'a pas de ceinture, sur un siège sans frottement",
                       "correct": true
                     },
                     {
-                      "content": "Elle supprime sa vitesse",
+                      "content": "Celui dont la ceinture est attachée et serrée contre le siège, car elle ne change rien à sa vitesse",
                       "correct": false
                     },
                     {
-                      "content": "Elle augmente son poids",
+                      "content": "Les deux passagers, car la ceinture ne modifie jamais la vitesse du passager",
                       "correct": false
                     },
                     {
-                      "content": "Elle empêche le gbaka de freiner quand le chauffeur appuie sur la pédale",
+                      "content": "Aucun des deux, car le gbaka freine pour tous les passagers à la fois",
                       "correct": false
                     }
                   ]
@@ -2731,7 +2739,7 @@
                   ]
                 },
                 {
-                  "content": "Les distances entre positions consécutives, relevées toutes les 20 ms, deviennent de plus en plus grandes. Que conclure ?",
+                  "content": "Sur un autre enregistrement, les distances entre positions consécutives, relevées toutes les 20 ms, deviennent de plus en plus grandes. Que conclure ?",
                   "question_type": "single_choice",
                   "explanation": "Étape 1 — Relever : $\\Delta t = 0{,}02$ s. Étape 2 — Examiner : positions alignées. Étape 3 — Mesurer : distances de plus en plus grandes. Étape 4 — Calculer : vitesse qui augmente. Étape 5 — Conclure : mouvement rectiligne qui accélère, somme des forces non nulle. Pourquoi pas « pseudo-isolé ; il accélère » : un solide pseudo-isolé ne change pas de vitesse.",
                   "answers": [
@@ -2782,7 +2790,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Il ne connaît pas le principe de l'inertie ni la notion de référentiel",
+                      "content": "Il croit que la vitesse doit être nulle pour que la somme soit nulle",
                       "correct": false
                     },
                     {
@@ -2970,7 +2978,7 @@
                 {
                   "content": "Un car roule à 90 km/h. Quelle est sa vitesse, en m/s ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Décrire : la vitesse est donnée en km/h. Étape 2 — Comparer : on veut des m/s. Étape 3 — Appliquer le principe : $1$ m/s $= 3{,}6$ km/h : on divise par 3,6. Étape 4 — Conclure : $90 / 3{,}6 = 25$ m/s ; on divise, on ne multiplie pas, car le m/s est la plus grande unité. Pourquoi pas 324 : ce résultat vient d'une multiplication par 3,6 au lieu d'une division.",
+                  "explanation": "Étape 1 — Relever : la vitesse vaut 90 km/h. Étape 2 — Convertir : on veut des m/s ; $1$ m/s $= 3{,}6$ km/h, donc on divise par 3,6. Étape 3 — Écrire la formule : $v_{m/s} = \\dfrac{v_{km/h}}{3{,}6}$. Étape 4 — Calculer : $90 / 3{,}6 = 25$ m/s. On divise, on ne multiplie pas, car 1 m/s = 3,6 km/h. Pourquoi pas 324 : ce résultat vient d'une multiplication par 3,6 au lieu d'une division.",
                   "unit": "m/s",
                   "tolerance": 0,
                   "answers": [
@@ -3036,13 +3044,13 @@
                       "correct": false
                     },
                     {
-                      "content": "Elle annule complètement l'effet du choc sur le car comme sur le passager",
+                      "content": "Elle pousse le passager vers l'arrière pour compenser la force qui le tire vers l'avant",
                       "correct": false
                     }
                   ]
                 },
                 {
-                  "content": "Remets dans l'ordre les étapes de la méthode pour expliquer pourquoi le passager est projeté vers l'avant.",
+                  "content": "Remets dans l'ordre les étapes de la méthode pour expliquer pourquoi le passager part vers l'avant par rapport au gbaka.",
                   "question_type": "ordering",
                   "explanation": "La méthode a quatre étapes : Décrire le mouvement, Comparer, Appliquer le principe, puis Conclure. Pourquoi pas conclure avant de comparer : on ne peut parler d'inertie qu'après avoir constaté ce qui change et ce qui est conservé.",
                   "answers": [
@@ -3110,7 +3118,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Elle est trop légère",
+                      "content": "Elle est soumise à son poids et à la réaction de l'air, qui se compensent exactement",
                       "correct": false
                     },
                     {
@@ -3238,7 +3246,7 @@
                 {
                   "content": "À la surface de la Terre, le centre d'inertie d'un solide homogène de forme simple est confondu avec son centre de gravité.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Définir le système : un solide homogène de forme simple. Étape 2 — Faire le bilan des forces extérieures : son centre d'inertie est le point dont le mouvement est le plus simple. Étape 3 — Additionner les forces : c'est aussi son centre de gravité. Étape 4 — Conclure : l'affirmation est vraie. Pourquoi pas « Faux » : à la surface de la Terre, le point d'application du poids est le centre d'inertie.",
+                  "explanation": "Étape 1 — Définir le système : un solide homogène de forme simple. Étape 2 — Repérer le centre d'inertie G : son centre d'inertie est le point dont le mouvement est le plus simple. Étape 3 — Comparer avec le centre de symétrie ou de gravité : à la surface de la Terre, c'est aussi son centre de gravité. Étape 4 — Conclure : l'affirmation est vraie. Pourquoi pas « Faux » : à la surface de la Terre, le point d'application du poids est le centre d'inertie.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -3359,7 +3367,7 @@
                 {
                   "content": "Un gbaka roule à 36 km/h. Quelle est sa vitesse, en m/s ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Décrire : la vitesse est donnée en km/h. Étape 2 — Comparer : on veut des m/s. Étape 3 — Appliquer le principe : on divise par 3,6. Étape 4 — Conclure : $36 / 3{,}6 = 10$ m/s ; on divise, on ne multiplie pas. Pourquoi pas 129,6 : ce résultat vient d'une multiplication par 3,6 au lieu d'une division.",
+                  "explanation": "Étape 1 — Relever : la vitesse vaut 36 km/h. Étape 2 — Convertir : on veut des m/s ; $1$ m/s $= 3{,}6$ km/h, donc on divise par 3,6. Étape 3 — Écrire la formule : $v_{m/s} = \\dfrac{v_{km/h}}{3{,}6}$. Étape 4 — Calculer : $36 / 3{,}6 = 10$ m/s. On divise, on ne multiplie pas. Pourquoi pas 129,6 : ce résultat vient d'une multiplication par 3,6 au lieu d'une division.",
                   "unit": "m/s",
                   "tolerance": 0,
                   "answers": [
@@ -3372,7 +3380,7 @@
                 {
                   "content": "Un gbaka a une masse de 3 000 kg. Quelle est l'intensité de son poids, en N ? On prend $g = 10$ N/kg.",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Définir le système : le gbaka de 3 000 kg. Étape 2 — Faire le bilan des forces extérieures : la Terre exerce le poids. Étape 3 — Additionner les forces : $P = m \\times g$. Étape 4 — Conclure : $P = 3\\,000 \\times 10 = 30\\,000$ N ; la masse en kg est multipliée par 10 N/kg. Pourquoi pas 3000 : c'est la masse en kg ; le poids vaut 3 000 × 10 = 30 000 N.",
+                  "explanation": "Étape 1 — Relever : la masse vaut 3 000 kg et $g = 10$ N/kg. Étape 2 — Convertir : la masse est déjà en kg, rien à convertir. Étape 3 — Écrire la formule : $P = m \\times g$. Étape 4 — Calculer : $P = 3 000 \\times 10 = 30\\,000$ N. La masse en kg est multipliée par 10 N/kg. Pourquoi pas 3000 : c'est la masse en kg ; le poids vaut 3 000 × 10 = 30 000 N.",
                   "unit": "N",
                   "tolerance": 0,
                   "answers": [
@@ -3429,24 +3437,24 @@
                   ]
                 },
                 {
-                  "content": "Quel est le rôle de la ceinture de sécurité ?",
+                  "content": "Un passager a attaché sa ceinture dans un gbaka qui freine. Pendant le freinage, sa vitesse par rapport au sol…",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Décrire : le gbaka freine. Étape 2 — Comparer : le passager devrait garder sa vitesse. Étape 3 — Appliquer le principe : la ceinture exerce la force qui le ralentit. Étape 4 — Conclure : il ralentit avec le gbaka. Pourquoi pas « Supprimer l'inertie » : l'inertie existe toujours, la ceinture la compense par une force.",
+                  "explanation": "Étape 1 — Décrire : le gbaka freine, sa vitesse diminue. Étape 2 — Comparer : le passager est retenu par sa ceinture. Étape 3 — Appliquer le principe : une force horizontale s'exerce sur lui : ses forces ne se compensent pas et sa vitesse change. Étape 4 — Conclure : il ralentit en même temps que le gbaka. Pourquoi pas « reste égale à celle d'avant » : c'est le cas du passager sans ceinture ; ici, la ceinture exerce une force qui diminue sa vitesse.",
                   "answers": [
                     {
-                      "content": "Exercer sur le passager une force qui le ralentit avec le gbaka",
+                      "content": "diminue avec celle du gbaka, car la ceinture exerce une force sur lui",
                       "correct": true
                     },
                     {
-                      "content": "Supprimer l'inertie du passager",
+                      "content": "reste égale à celle d'avant, car aucune force horizontale ne s'exerce sur lui",
                       "correct": false
                     },
                     {
-                      "content": "Diminuer le poids du passager",
+                      "content": "augmente, car la ceinture le tire vers l'avant du gbaka",
                       "correct": false
                     },
                     {
-                      "content": "Augmenter la force de freinage du gbaka quand le chauffeur appuie sur la pédale",
+                      "content": "devient nulle avant celle du gbaka, car la ceinture l'arrête net",
                       "correct": false
                     }
                   ]
@@ -3542,7 +3550,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Sa masse a augmenté",
+                      "content": "Le poids du palet n'est plus compensé par la réaction de la glace",
                       "correct": false
                     }
                   ]
