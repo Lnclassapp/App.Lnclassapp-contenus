@@ -103,6 +103,24 @@ Vérification hors dépôt : format, intitulé et rang de la progression, `valid
 | 4 | `6eme/edhc/la-constitution.json` | La Constitution | 4 | 3 | 28 | 161 |
 | 5 | `6eme/edhc/le-president-de-la-republique.json` | Le Président de la République | 3 | 1 | 26 | 149 |
 
+### 2nde, SVT, leçons 6 à 10 (chantier `lecons-2nde-6-a-10`)
+
+Depuis le 2026-11-25, les leçons 6 à 9 de SVT de 2nde A (fin de la progression de la série) et 6 à 10 de 2nde C de la progression DPFC 2026-2027 sont rédigées au format v3 complet : 9 fichiers. « Le changement climatique » (2nde C, rang 6) est la copie de la leçon déjà relue de 2nde A, avec le `series_name` C. Chaque notion a son « Je m'entraîne » et 2 exercices (le second de 6 questions d'au moins 4 types), chaque leçon 4 problèmes et 4 sujets de devoir de 4 exercices entièrement corrigés automatiquement.
+
+Vérification : `valider.rb` sur la leçon et sur chaque sujet, format ; relecture IA indépendante de chaque leçon (sympy sur les calculs de grossissement, de taille réelle, d'indice mitotique et de quantité d'ADN) ; 87 points pédagogiques tranchés par le validateur pédagogique les 2026-11-24 et 25 (alimentation et santé, cellule et organites, procaryote et eucaryote, mitose et chromosomes, géologie de la Côte d'Ivoire), relevés dans le journal du chantier `lecons-2nde-6-a-10` de l'application.
+
+| Fichier | Titre | Rang | Notions | Exercices | Questions | Figures |
+|---|---|---:|---:|---:|---:|---:|
+| `2nde-a/svt/la-diversite-des-comportements-alimentaires-de-l-homme.json` | La diversité des comportements alimentaires de l'Homme | 6 | 4 | 28 | 160 | 6 |
+| `2nde-a/svt/les-habitudes-alimentaires-et-la-sante-de-l-homme.json` | Les habitudes alimentaires et la santé de l'Homme | 7 | 4 | 28 | 162 | 5 |
+| `2nde-a/svt/la-structure-d-une-cellule.json` | La structure d'une cellule | 8 | 3 | 26 | 151 | 3 |
+| `2nde-a/svt/la-reproduction-conforme-ou-mitose.json` | La reproduction conforme ou mitose | 9 | 3 | 26 | 144 | 3 |
+| `2nde-c/svt/le-changement-climatique.json` | Le changement climatique | 6 | 5 | 30 | 175 | 9 |
+| `2nde-c/svt/l-organisation-d-une-cellule.json` | L'organisation d'une cellule | 7 | 4 | 28 | 166 | 5 |
+| `2nde-c/svt/la-division-cellulaire.json` | La division cellulaire | 8 | 4 | 28 | 166 | 4 |
+| `2nde-c/svt/l-evolution-de-l-equipement-chromosomique-d-une-cellule-au-cours-de-la-mitose.json` | L'évolution de l'équipement chromosomique d'une cellule au cours de la mitose | 9 | 4 | 28 | 165 | 6 |
+| `2nde-c/svt/la-structure-geologique-de-la-cote-d-ivoire.json` | La structure géologique de la Côte d'Ivoire | 10 | 4 | 28 | 161 | 4 |
+
 ### 2nde, Histoire-Géographie, leçons 6 à 10 (chantier `lecons-2nde-6-a-10`)
 
 Depuis le 2026-11-24, les leçons 6 à 10 d'Histoire-Géographie de la progression DPFC 2026-2027 de 2nde (Les techniques de représentation de la Terre, La préhistoire en Afrique et dans le reste du monde, La civilisation de l'Égypte ancienne, Le milieu subéquatorial ivoirien, La démocratie athénienne) sont rédigées au format v3 complet : 5 fichiers communs à toutes les séries. Chaque notion a son « Je m'entraîne » et 2 exercices (le second de 6 questions d'au moins 4 types), chaque leçon 4 problèmes et 4 sujets de devoir de 4 exercices entièrement corrigés automatiquement.
