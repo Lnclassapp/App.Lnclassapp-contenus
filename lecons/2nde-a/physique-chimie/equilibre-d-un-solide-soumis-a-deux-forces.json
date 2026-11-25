@@ -1,0 +1,3020 @@
+{
+  "format": "lnclass.course-tree",
+  "version": 3,
+  "courses": [
+    {
+      "name": "Équilibre d'un solide soumis à deux forces",
+      "subtitle": "Leçon 7 — progression DPFC 2026-2027",
+      "level_name": "2nde",
+      "material_name": "Physique-Chimie",
+      "series_name": "A",
+      "theme": "blue",
+      "figures": [
+        {
+          "key": "bilan-lampe",
+          "kind": "coordinate_plane",
+          "description": "Un plan à carreaux. Une lampe de 2 kg, suspendue à un fil dans la cour, est représentée par le segment AG : A est le point d'attache du fil, G le centre de gravité. Deux flèches : la tension T du fil, qui part de A vers le haut (2 carreaux), et le poids P, qui part de G vers le bas (2 carreaux). Échelle : 1 carreau pour 10 N. Les deux forces sont sur la même verticale.",
+          "params": {
+            "xmin": 0,
+            "xmax": 6,
+            "ymin": 0,
+            "ymax": 6,
+            "points": [
+              {
+                "id": "A",
+                "x": 3,
+                "y": 4
+              },
+              {
+                "id": "G",
+                "x": 3,
+                "y": 3
+              }
+            ],
+            "segments": [
+              {
+                "x1": 3,
+                "y1": 4,
+                "x2": 3,
+                "y2": 3
+              }
+            ],
+            "vectors": [
+              {
+                "label": "T",
+                "dx": 0,
+                "dy": 2,
+                "ox": 3,
+                "oy": 4
+              },
+              {
+                "label": "P",
+                "dx": 0,
+                "dy": -2,
+                "ox": 3,
+                "oy": 3
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "dynamometre-equilibre",
+          "kind": "plate",
+          "description": "Un dynamomètre à ressort vertical, comme celui du laboratoire. En haut, l'anneau le tient ; le ressort s'allonge dans le tube ; l'index se déplace devant la graduation en newtons ; en bas, le crochet porte le corps suspendu. Le ressort et le corps suspendu sont surlignés : à l'équilibre, la force du ressort sur le corps et le poids du corps ont la même intensité.",
+          "params": {
+            "plate": "dynamometer",
+            "numbering": "names",
+            "highlight": [
+              "spring",
+              "load"
+            ],
+            "labels": [
+              {
+                "part": "ring",
+                "text": "anneau"
+              },
+              {
+                "part": "spring",
+                "text": "ressort"
+              },
+              {
+                "part": "scale",
+                "text": "graduation (en N)"
+              },
+              {
+                "part": "pointer",
+                "text": "index"
+              },
+              {
+                "part": "hook",
+                "text": "crochet"
+              },
+              {
+                "part": "load",
+                "text": "corps suspendu"
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "bassine-table",
+          "kind": "coordinate_plane",
+          "description": "Un plan à carreaux. Une bassine d'eau de 4 kg est posée sur une table horizontale. Son centre de gravité G est en (3 ; 2) et le point de contact C avec la table, juste sous G, est en (3 ; 1). Deux flèches sur la même verticale : le poids P part de G vers le bas (4 carreaux), la réaction R de la table part de C vers le haut (4 carreaux). Échelle : 1 carreau pour 10 N.",
+          "params": {
+            "xmin": 0,
+            "xmax": 6,
+            "ymin": -2,
+            "ymax": 6,
+            "points": [
+              {
+                "id": "G",
+                "x": 3,
+                "y": 2
+              },
+              {
+                "id": "C",
+                "x": 3,
+                "y": 1
+              }
+            ],
+            "segments": [
+              {
+                "x1": 1,
+                "y1": 1,
+                "x2": 5,
+                "y2": 1
+              }
+            ],
+            "vectors": [
+              {
+                "label": "P",
+                "dx": 0,
+                "dy": -4,
+                "ox": 3,
+                "oy": 2
+              },
+              {
+                "label": "R",
+                "dx": 0,
+                "dy": 4,
+                "ox": 3,
+                "oy": 1
+              }
+            ]
+          },
+          "controls": []
+        }
+      ],
+      "notions": [
+        {
+          "name": "Faire le bilan des forces exercées sur un solide",
+          "remember": "Le **système** est le solide que l'on étudie. Les **forces extérieures** sont celles que les autres objets exercent **sur** lui. Le **bilan des forces** est la liste de ces forces avec leurs caractéristiques. Le **poids** $\\vec P$ : exercé à distance par la Terre, appliqué au centre de gravité G, vertical, vers le bas, $P = m \\times g$. La **tension** $\\vec T$ d'un fil ou d'un ressort : contact localisé, appliquée au point d'attache, dirigée suivant le fil, du solide vers le fil. La **réaction** $\\vec R$ d'un support : contact réparti, dirigée du support vers le solide, perpendiculaire au support quand il n'y a pas de frottements. Dans cette leçon, on néglige les frottements et on prend $g = 10$ N/kg. La force qu'un solide exerce sur son support est la **force pressante** : elle s'exerce sur le support, pas sur le solide.",
+          "method": [
+            "Définir le système : choisir le solide que l'on étudie.",
+            "Lister les objets qui agissent sur le système : la Terre (à distance), puis chaque objet qui le touche.",
+            "Nommer la force de chaque objet : poids, tension d'un fil ou d'un ressort, réaction d'un support.",
+            "Écrire le bilan : pour chaque force, son point d'application, sa direction, son sens et son intensité si on la connaît."
+          ],
+          "example": {
+            "statement": "Dans la cour de l'école, une lampe de masse 2 kg est suspendue, immobile, à un fil accroché à une potence. Faire le bilan des forces exercées sur la lampe. On prend $g = 10$ N/kg.",
+            "steps": [
+              "Définir le système : le système est la lampe.",
+              "Lister les objets : la Terre agit à distance ; le fil touche la lampe. La potence ne touche que le fil, elle n'agit pas directement sur la lampe.",
+              "Nommer la force : la Terre exerce le poids $\\vec P$ ; le fil exerce la tension $\\vec T$.",
+              "Écrire le bilan : $\\vec P$ : point G, verticale, vers le bas, $P = 2 \\times 10 = 20$ N ; $\\vec T$ : point d'attache du fil, verticale, vers le haut, intensité encore inconnue."
+            ]
+          },
+          "pitfall": "Ne mets dans le bilan que les forces exercées **sur** le système. Une bassine posée sur une table appuie sur la table : cette force pressante s'exerce sur la **table**, pas sur la bassine. Contre-exemple : pour une bassine de 5 kg posée sur une table, le bilan compte 2 forces ($\\vec P$ de 50 N et $\\vec R$). Si tu ajoutes la force pressante, tu en comptes 3 et tu fausses l'équilibre. N'oublie pas non plus le poids : il s'exerce même sur un solide immobile.",
+          "figure": "bilan-lampe",
+          "practice": {
+            "statement": "Tu t'entraînes à faire le bilan des forces exercées sur un solide.",
+            "questions": [
+              {
+                "content": "Une lampe de 2 kg est suspendue, immobile, à un fil accroché à une potence dans la cour. Quels objets exercent une force directement sur la lampe ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Définir le système : le système est la lampe. Étape 2 — Lister les objets : la Terre agit à distance ; le fil touche la lampe ; la potence ne touche que le fil. Étape 3 — Nommer la force : poids de la Terre et tension du fil. Étape 4 — Écrire le bilan : le bilan compte deux forces, $\\vec P$ et $\\vec T$. Pourquoi pas « le fil seulement » : on oublie la Terre, qui agit à distance ; le poids existe toujours.",
+                "answers": [
+                  {
+                    "content": "La Terre et le fil",
+                    "correct": true
+                  },
+                  {
+                    "content": "Le fil seulement",
+                    "correct": false
+                  },
+                  {
+                    "content": "La Terre, le fil et la potence",
+                    "correct": false
+                  },
+                  {
+                    "content": "La lampe et le fil",
+                    "correct": false
+                  }
+                ],
+                "hint": "Cherche ce qui touche la lampe, puis ce qui agit à distance."
+              },
+              {
+                "content": "La force que la Terre exerce à distance sur un solide s'appelle le ___.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 2 — Lister les objets : la Terre agit à distance sur tout solide. Étape 3 — Nommer la force : la force de la Terre sur le solide se nomme le poids $\\vec P$.",
+                "answers": [
+                  {
+                    "content": "poids",
+                    "correct": true
+                  },
+                  {
+                    "content": "le poids",
+                    "correct": true
+                  }
+                ],
+                "hint": "Elle est verticale et vers le bas."
+              },
+              {
+                "content": "Une lampe est suspendue à un fil. La force que la lampe exerce sur le fil fait partie du bilan des forces exercées sur la lampe.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Définir le système : le système est la lampe. Étape 2 — Lister les objets : on ne garde que les forces exercées sur la lampe. Étape 4 — Écrire le bilan : la force de la lampe sur le fil s'exerce sur le fil : elle n'est pas dans le bilan de la lampe. L'affirmation est fausse.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Dans le bilan, on ne met que les forces exercées sur le système."
+              },
+              {
+                "content": "Un régime de bananes a une masse de 4 kg. Quelle est l'intensité de son poids, en N ? On prend $g = 10$ N/kg.",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Définir le système : le système est le régime. Étape 4 — Écrire le bilan : l'intensité du poids est $P = m \\times g = 4 \\times 10 = 40$ N.",
+                "answers": [
+                  {
+                    "content": "40",
+                    "correct": true
+                  }
+                ],
+                "unit": "N",
+                "tolerance": 0,
+                "hint": "$P = m \\times g$."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Les forces exercées sur la bassine et sur la lampe",
+              "statement": "Au marché, une vendeuse pose une bassine d'eau sur une table horizontale. Dans la cour de l'école, une lampe est suspendue à un fil. Tu fais le bilan des forces avec la méthode de la fiche. On prend $g = 10$ N/kg.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une bassine d'eau est posée, immobile, sur une table horizontale. On étudie les forces exercées sur la bassine. Que choisit-on comme système ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système : le système est le solide dont on étudie les forces : la bassine avec son eau. Pourquoi pas « la bassine et la table ensemble » : la table serait alors à l'intérieur du système, et sa réaction ne compterait plus comme une force extérieure.",
+                  "answers": [
+                    {
+                      "content": "La bassine avec son eau",
+                      "correct": true
+                    },
+                    {
+                      "content": "La table",
+                      "correct": false
+                    },
+                    {
+                      "content": "La Terre",
+                      "correct": false
+                    },
+                    {
+                      "content": "La bassine et la table ensemble",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une bassine d'eau est posée, immobile, sur une table horizontale. Quels objets exercent une force directement sur la bassine ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système : le système est la bassine. Étape 2 — Lister les objets : la Terre agit à distance ; la table touche la bassine. Pourquoi pas « la table seulement » : on oublie la Terre, dont le poids s'exerce toujours. La bassine elle-même n'exerce pas de force sur elle-même.",
+                  "answers": [
+                    {
+                      "content": "La Terre et la table",
+                      "correct": true
+                    },
+                    {
+                      "content": "La table seulement",
+                      "correct": false
+                    },
+                    {
+                      "content": "La Terre seulement",
+                      "correct": false
+                    },
+                    {
+                      "content": "La bassine, la Terre et la table",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque situation à la force exercée.",
+                  "question_type": "matching",
+                  "explanation": "Étape 3 — Nommer la force : la Terre exerce le poids ; un fil exerce une tension ; un support exerce une réaction ; le solide qui appuie sur son support exerce la force pressante, qui s'exerce sur le support.",
+                  "answers": [
+                    {
+                      "content": "La Terre sur un régime de bananes",
+                      "match": "Le poids"
+                    },
+                    {
+                      "content": "Un fil qui retient une lampe",
+                      "match": "La tension du fil"
+                    },
+                    {
+                      "content": "La table qui porte une bassine",
+                      "match": "La réaction de la table"
+                    },
+                    {
+                      "content": "La bassine qui appuie sur la table",
+                      "match": "La force pressante"
+                    }
+                  ]
+                },
+                {
+                  "content": "L'ensemble formé par la bassine et son eau a une masse de 5 kg. Quelle est l'intensité de son poids, en N ? On prend $g = 10$ N/kg.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système : le système est la bassine avec son eau. Étape 3 — Nommer la force : la Terre exerce le poids $\\vec P$. Étape 4 — Écrire le bilan : $P = m \\times g = 5 \\times 10 = 50$ N. Pourquoi pas 5 N : c'est la masse en kg ; le poids se calcule avec $g = 10$ N/kg.",
+                  "answers": [
+                    {
+                      "content": "50",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une bassine est posée, immobile, sur une table horizontale. Combien de forces compte le bilan des forces exercées sur la bassine ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système : le système est la bassine. Étape 2 — Lister les objets : la Terre et la table. Étape 3 — Nommer la force : le poids $\\vec P$ et la réaction $\\vec R$. Étape 4 — Écrire le bilan : deux forces. Pourquoi pas 3 : on ajouterait la force pressante, mais elle s'exerce sur la table, pas sur la bassine. Pourquoi pas 1 : on oublierait soit le poids, soit la réaction de la table.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    },
+                    {
+                      "content": "3",
+                      "correct": false
+                    },
+                    {
+                      "content": "1",
+                      "correct": false
+                    },
+                    {
+                      "content": "4",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Bilans de forces au marché et à l'école",
+              "statement": "Dans cet exercice, tu fais le bilan des forces exercées sur des solides immobiles, avec la méthode de la fiche. On prend $g = 10$ N/kg.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Remets dans l'ordre les étapes pour faire le bilan des forces exercées sur un solide.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Définir le système ; Étape 2 — Lister les objets qui agissent sur lui ; Étape 3 — Nommer la force de chaque objet ; Étape 4 — Écrire le bilan. On ne peut pas lister les objets avant d'avoir choisi le solide étudié.",
+                  "answers": [
+                    {
+                      "content": "Définir le système"
+                    },
+                    {
+                      "content": "Lister les objets qui agissent sur le système"
+                    },
+                    {
+                      "content": "Nommer la force de chaque objet"
+                    },
+                    {
+                      "content": "Écrire le bilan avec les caractéristiques de chaque force"
+                    }
+                  ]
+                },
+                {
+                  "content": "Un régime de bananes de 3 kg est suspendu, immobile, à une corde attachée à une poutre de l'étal. Quelles forces sont exercées sur le régime ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Définir le système : le système est le régime. Étape 2 — Lister les objets : la Terre agit à distance ; la corde touche le régime ; la poutre ne touche que la corde. Étape 3 — Nommer la force : poids et tension de la corde. Étape 4 — Écrire le bilan : deux forces sur le régime. Pourquoi pas « la force du régime sur la corde » : elle s'exerce sur la corde, pas sur le régime. Pourquoi pas « la force de la poutre sur le régime » : la poutre ne touche pas le régime.",
+                  "answers": [
+                    {
+                      "content": "Le poids du régime",
+                      "correct": true
+                    },
+                    {
+                      "content": "La tension de la corde",
+                      "correct": true
+                    },
+                    {
+                      "content": "La force du régime sur la corde",
+                      "correct": false
+                    },
+                    {
+                      "content": "La force de la poutre sur le régime",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un régime de bananes plantain a une masse de 6,5 kg. Quelle est l'intensité de son poids, en N ? On prend $g = 10$ N/kg.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système : le système est le régime. Étape 3 — Nommer la force : la Terre exerce le poids $\\vec P$. Étape 4 — Écrire le bilan : $P = m \\times g = 6{,}5 \\times 10 = 65$ N. Pourquoi pas 6,5 N : c'est la masse en kg, pas le poids.",
+                  "answers": [
+                    {
+                      "content": "65",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "La force que la table exerce sur une bassine posée dessus s'appelle la ___ de la table.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 3 — Nommer la force : un support exerce une réaction sur le solide qu'il porte : c'est la réaction $\\vec R$ de la table.",
+                  "answers": [
+                    {
+                      "content": "réaction",
+                      "correct": true
+                    },
+                    {
+                      "content": "la réaction",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Le poids d'un solide a une direction ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 3 — Nommer la force : c'est l'attraction de la Terre. Étape 4 — Écrire le bilan : le poids est appliqué en G, de direction verticale, vers le bas. Pourquoi pas horizontale : un solide lâché tombe vers le bas, pas sur le côté.",
+                  "answers": [
+                    {
+                      "content": "verticale",
+                      "correct": true
+                    },
+                    {
+                      "content": "horizontale",
+                      "correct": false
+                    },
+                    {
+                      "content": "oblique",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un solide immobile n'est soumis à aucune force.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Lister les objets : même immobile, un solide subit l'attraction de la Terre et, souvent, la force d'un fil ou d'un support. Étape 3 — Nommer la force : le poids existe toujours. Étape 4 — Écrire le bilan : le solide immobile subit des forces qui s'équilibrent ; l'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Le bilan ne contient que les forces exercées sur le système : pense toujours au poids."
+            }
+          ]
+        },
+        {
+          "name": "Équilibre d'un solide soumis à deux forces",
+          "remember": "Un solide est **en équilibre** quand il reste immobile par rapport au sol. S'il n'est soumis qu'à **deux forces** $\\vec F_1$ et $\\vec F_2$, il faut et il suffit que : (1) les deux forces aient la **même droite d'action** ; (2) elles aient des **sens opposés** ; (3) elles aient la **même intensité** : $F_1 = F_2$. On écrit $\\vec F_1 + \\vec F_2 = \\vec 0$ : la somme vectorielle est nulle. Cette condition est nécessaire, mais elle ne suffit pas : il faut aussi la même droite d'action. Applications : un solide suspendu à un fil, $T = P$ ; un solide posé sur un plan horizontal, $R = P$ ; un solide accroché à un dynamomètre, la lecture est $T = P = m \\times g$.",
+          "method": [
+            "Définir le système et dresser le bilan : écrire les deux forces exercées sur lui.",
+            "Vérifier la direction et le sens : même droite d'action et sens opposés.",
+            "Écrire l'égalité des intensités : $F_1 = F_2$.",
+            "Calculer l'inconnue (tension, réaction, masse, lecture du dynamomètre) et écrire l'unité."
+          ],
+          "example": {
+            "statement": "Une lampe de masse 4 kg est suspendue, immobile, à un fil dans la cour. Quelle est l'intensité de la tension $T$ du fil ? On prend $g = 10$ N/kg.",
+            "steps": [
+              "Définir le système et dresser le bilan : le système est la lampe ; ses deux forces sont le poids $\\vec P$ et la tension $\\vec T$.",
+              "Vérifier la direction et le sens : $\\vec P$ et $\\vec T$ sont sur la même droite verticale (le fil), $\\vec P$ vers le bas et $\\vec T$ vers le haut.",
+              "Écrire l'égalité des intensités : $T = P$.",
+              "Calculer l'inconnue : $P = 4 \\times 10 = 40$ N, donc $T = 40$ N."
+            ]
+          },
+          "pitfall": "Même intensité ne suffit pas : il faut aussi **la même droite d'action** et des **sens opposés**. Contre-exemple : deux forces de 40 N dirigées toutes les deux vers le bas ont la même intensité, mais leur somme vaut 80 N vers le bas, pas 0. Autre erreur : écrire $R = P$ pour une bassine de 8 kg et répondre 8 N. Il faut d'abord calculer le poids : $P = 8 \\times 10 = 80$ N, donc $R = 80$ N.",
+          "figure": "dynamometre-equilibre",
+          "practice": {
+            "statement": "Tu t'entraînes à écrire l'équilibre d'un solide soumis à deux forces.",
+            "questions": [
+              {
+                "content": "Une bassine de 3 kg est posée, immobile, sur une table horizontale. On prend $g = 10$ N/kg. Quelle est l'intensité de la réaction de la table, en N ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la bassine ; ses deux forces sont $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : elles sont verticales et de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $P = 3 \\times 10 = 30$ N, donc $R = 30$ N.",
+                "answers": [
+                  {
+                    "content": "30",
+                    "correct": true
+                  }
+                ],
+                "unit": "N",
+                "tolerance": 0,
+                "hint": "Sur un plan horizontal, $R = P$."
+              },
+              {
+                "content": "Un solide est en équilibre sous l'action de deux forces. Ces deux forces ont la même intensité, la même droite d'action et des sens ___.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit deux forces. Étape 2 — Vérifier la direction et le sens : pour s'équilibrer, elles ont la même droite d'action et des sens opposés. Étape 3 — Écrire l'égalité des intensités : leurs intensités sont égales.",
+                "answers": [
+                  {
+                    "content": "opposés",
+                    "correct": true
+                  },
+                  {
+                    "content": "opposé",
+                    "correct": true
+                  },
+                  {
+                    "content": "contraires",
+                    "correct": true
+                  },
+                  {
+                    "content": "contraire",
+                    "correct": true
+                  }
+                ],
+                "hint": "Une force tire d'un côté, l'autre de l'autre côté."
+              },
+              {
+                "content": "Un dynamomètre indique 45 N quand un sac de riz est suspendu à son crochet, immobile. Quelle est la masse du sac, en kg ? On prend $g = 10$ N/kg.",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le sac ; ses deux forces sont $\\vec P$ et la force $\\vec T$ du ressort. Étape 2 — Vérifier la direction et le sens : elles sont verticales et de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P = T = 45$ N. Étape 4 — Calculer l'inconnue : $m = P \\div g = 45 \\div 10 = 4{,}5$ kg.",
+                "answers": [
+                  {
+                    "content": "4,5",
+                    "correct": true
+                  }
+                ],
+                "unit": "kg",
+                "tolerance": 0,
+                "hint": "$m = P \\div g$."
+              },
+              {
+                "content": "Un solide soumis à deux forces $\\vec F_1$ et $\\vec F_2$ est en équilibre. Quelle égalité est vraie ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit $\\vec F_1$ et $\\vec F_2$. Étape 2 — Vérifier la direction et le sens : elles sont opposées. Étape 3 — Écrire l'égalité des intensités : leurs intensités sont égales : la somme vectorielle est nulle, $\\vec F_1 + \\vec F_2 = \\vec 0$. Pourquoi pas $\\vec F_1 = \\vec F_2$ : deux vecteurs égaux auraient le même sens et ne s'annuleraient pas.",
+                "answers": [
+                  {
+                    "content": "$\\vec F_1 + \\vec F_2 = \\vec 0$",
+                    "correct": true
+                  },
+                  {
+                    "content": "$\\vec F_1 = \\vec F_2$",
+                    "correct": false
+                  },
+                  {
+                    "content": "$F_1 + F_2 = 0$ N",
+                    "correct": false
+                  },
+                  {
+                    "content": "$F_1 \\times F_2 = 0$",
+                    "correct": false
+                  }
+                ],
+                "hint": "Deux vecteurs opposés s'annulent."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Fil, plan horizontal et dynamomètre",
+              "statement": "Au marché, une vendeuse accroche un régime de bananes plantain au crochet d'un dynamomètre à ressort : on lit l'intensité de la force du ressort. On prend $g = 10$ N/kg. Tu appliques l'équilibre d'un solide soumis à deux forces.",
+              "exercise_type": "fixation",
+              "figure": "dynamometre-equilibre",
+              "questions": [
+                {
+                  "content": "Un régime de bananes de 5,5 kg est accroché, immobile, au crochet d'un dynamomètre. Que lit-on sur le dynamomètre, en N ? On prend $g = 10$ N/kg.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le régime ; ses deux forces sont $\\vec P$ et la tension $\\vec T$ du ressort. Étape 2 — Vérifier la direction et le sens : elles sont verticales et de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 5{,}5 \\times 10 = 55$ N : on lit 55 N.",
+                  "answers": [
+                    {
+                      "content": "55",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un fil peut supporter au plus une tension de 90 N. Une lampe est suspendue, immobile, à ce fil. Quelle masse maximale peut avoir la lampe sans casser le fil, en kg ? On prend $g = 10$ N/kg.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la lampe ; ses deux forces sont $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : elles sont verticales et de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P = T = 90$ N au maximum. Étape 4 — Calculer l'inconnue : $m = P \\div g = 90 \\div 10 = 9$ kg. Pourquoi pas 900 kg : on multiplierait par $g$ au lieu de diviser pour passer du poids à la masse.",
+                  "answers": [
+                    {
+                      "content": "9",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "kg",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une bassine de 8 kg est posée, immobile, sur une table horizontale. Quelle est la réaction de la table ? On prend $g = 10$ N/kg.",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la bassine ; ses deux forces sont $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $P = 8 \\times 10 = 80$ N, donc $R = 80$ N. Pourquoi pas 8 N : c'est la masse en kg prise pour le poids. Pourquoi pas 0 N : la bassine est immobile parce que la table agit sur elle, la réaction n'est pas nulle.",
+                  "answers": [
+                    {
+                      "content": "80 N",
+                      "correct": true
+                    },
+                    {
+                      "content": "8 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "0,8 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "0 N",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une bassine est posée, immobile, sur une table horizontale. Quelles affirmations sur son poids $\\vec P$ et la réaction $\\vec R$ de la table sont justes ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la bassine ; ses deux forces sont $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : même droite d'action verticale, sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$ : les intensités sont égales. Pourquoi pas « la réaction est plus grande » : si elle l'était, la bassine monterait ; à l'équilibre, $R = P$.",
+                  "answers": [
+                    {
+                      "content": "Elles ont la même droite d'action : la verticale",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elles ont des sens opposés",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elles ont le même sens",
+                      "correct": false
+                    },
+                    {
+                      "content": "La réaction est plus grande que le poids parce que la table porte la bassine",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une latte de bois est tirée vers la gauche par une corde avec 20 N et vers la droite par une autre corde avec 20 N. Les deux cordes sont attachées en deux points de la latte, sur deux droites parallèles différentes. Laquelle des trois conditions d'équilibre n'est pas respectée ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la latte ; elle subit deux forces de 20 N. Étape 2 — Vérifier la direction et le sens : les sens sont opposés, mais les droites d'action sont différentes. Étape 3 — Écrire l'égalité des intensités : les intensités sont égales, 20 N chacune. Pourquoi pas « la même intensité » : les deux forces valent 20 N ; c'est la droite d'action qui manque. Pourquoi pas « aucune » : sans la même droite d'action, la latte tourne au lieu de rester immobile.",
+                  "answers": [
+                    {
+                      "content": "La même droite d'action",
+                      "correct": true
+                    },
+                    {
+                      "content": "La même intensité",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les sens opposés",
+                      "correct": false
+                    },
+                    {
+                      "content": "Aucune : la latte est en équilibre",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Conditions d'équilibre, fil, table et dynamomètre",
+              "statement": "Dans cet exercice, tu écris l'égalité des intensités et tu calcules des forces pour des solides immobiles soumis à deux forces. On prend $g = 10$ N/kg.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Deux forces qui s'équilibrent ont la même intensité et la même droite d'action. Leurs sens sont ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit deux forces. Étape 2 — Vérifier la direction et le sens : même droite d'action et sens opposés. Étape 3 — Écrire l'égalité des intensités : $F_1 = F_2$.",
+                  "answers": [
+                    {
+                      "content": "opposés",
+                      "correct": true
+                    },
+                    {
+                      "content": "opposé",
+                      "correct": true
+                    },
+                    {
+                      "content": "contraires",
+                      "correct": true
+                    },
+                    {
+                      "content": "contraire",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Une caisse de 20 kg est posée, immobile, sur le sol horizontal. On prend $g = 10$ N/kg. La réaction du sol vaut ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la caisse ; ses deux forces sont $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $P = 20 \\times 10 = 200$ N, donc $R = 200$ N. Pourquoi pas 20 N : c'est la masse en kg. Pourquoi pas 2 N : on diviserait par $g$ au lieu de multiplier.",
+                  "answers": [
+                    {
+                      "content": "200 N",
+                      "correct": true
+                    },
+                    {
+                      "content": "20 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "2 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "0 N",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un dynamomètre de laboratoire indique 50 N quand un solide est suspendu à son crochet, immobile. Quelle est la masse du solide, en kg ? On prend $g = 10$ N/kg.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le solide ; ses deux forces sont $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P = T = 50$ N. Étape 4 — Calculer l'inconnue : $m = P \\div g = 50 \\div 10 = 5$ kg.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "kg",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Deux forces appliquées à un solide ont une somme vectorielle nulle. On est sûr que le solide est en équilibre.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit deux forces de somme nulle. Étape 2 — Vérifier la direction et le sens : il faut aussi vérifier qu'elles ont la même droite d'action. Étape 3 — Écrire l'égalité des intensités : même intensité et sens opposés ne suffisent pas ; l'affirmation est fausse. Pourquoi pas vrai : deux forces égales et opposées sur deux droites parallèles différentes font tourner le solide au lieu de l'immobiliser.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque situation à l'égalité qui traduit l'équilibre.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : on dresse le bilan : poids, plus tension du fil, réaction de la table ou force du ressort. Étape 3 — Écrire l'égalité des intensités : à l'équilibre, la force exercée par le fil, la table ou le ressort a la même intensité que le poids.",
+                  "answers": [
+                    {
+                      "content": "Une lampe est suspendue à un fil",
+                      "match": "$T = P$"
+                    },
+                    {
+                      "content": "Une bassine est posée sur une table horizontale",
+                      "match": "$R = P$"
+                    },
+                    {
+                      "content": "Un régime est accroché à un dynamomètre",
+                      "match": "La lecture est égale à $P = m \\times g$"
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour étudier l'équilibre d'un solide soumis à deux forces.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan ; Étape 2 — Vérifier la direction et le sens ; Étape 3 — Écrire l'égalité des intensités ; Étape 4 — Calculer l'inconnue. On n'écrit l'égalité qu'après avoir vérifié que les forces sont opposées.",
+                  "answers": [
+                    {
+                      "content": "Définir le système et dresser le bilan des deux forces"
+                    },
+                    {
+                      "content": "Vérifier la direction et le sens des deux forces"
+                    },
+                    {
+                      "content": "Écrire l'égalité des intensités"
+                    },
+                    {
+                      "content": "Calculer l'inconnue et écrire l'unité"
+                    }
+                  ]
+                }
+              ],
+              "hint": "À l'équilibre : même droite d'action, sens opposés, même intensité."
+            }
+          ]
+        },
+        {
+          "name": "Trouver et représenter une force inconnue",
+          "remember": "Un solide est en équilibre sous deux forces. Si on connaît l'une, on en déduit l'autre : **même direction** (même droite d'action), **sens opposé**, **même intensité**. Le **point d'application** de la force inconnue n'est pas forcément le même : on le lit sur la situation (centre de gravité G pour le poids, point d'attache pour la tension d'un fil, point de contact pour la réaction d'un support). Pour **représenter** les forces, on choisit une **échelle**, par exemple 1 cm pour 10 N : longueur de la flèche (en cm) = intensité (en N) ÷ nombre de newtons pour 1 cm. Deux forces de même intensité ont des flèches de **même longueur**.",
+          "method": [
+            "Relever les caractéristiques de la force connue (souvent le poids : $P = m \\times g$).",
+            "Déduire celles de la force inconnue : même direction, sens opposé, même intensité ; son point d'application se lit sur la situation.",
+            "Calculer la longueur de chaque flèche : intensité ÷ nombre de newtons pour 1 cm (la même longueur pour les deux).",
+            "Tracer les deux flèches sur la même droite, chacune à partir de son point d'application, avec son sens et sa longueur."
+          ],
+          "example": {
+            "statement": "Une bassine de 4 kg est posée, immobile, sur une table horizontale. Donner les caractéristiques de la réaction $\\vec R$ de la table et représenter le poids et la réaction avec l'échelle 1 cm pour 10 N. On prend $g = 10$ N/kg.",
+            "steps": [
+              "Relever : $\\vec P$ a pour point d'application G, pour direction la verticale, pour sens le bas, et $P = 4 \\times 10 = 40$ N.",
+              "Déduire : $\\vec R$ a la même direction (la verticale), le sens opposé (vers le haut) et la même intensité, $R = 40$ N ; son point d'application est le point de contact C entre la bassine et la table.",
+              "Calculer : $40 \\div 10 = 4$ cm : chaque flèche mesure 4 cm.",
+              "Tracer : sur la même verticale, la flèche de $\\vec P$ part de G vers le bas (4 cm) ; la flèche de $\\vec R$ part de C vers le haut (4 cm)."
+            ]
+          },
+          "pitfall": "Deux forces qui s'équilibrent ont la même direction et la même intensité, mais **pas le même sens**, et pas forcément le même point d'application. Contre-exemple : pour une lampe de 2 kg, $P = 20$ N et $T = 20$ N ; avec l'échelle 1 cm pour 10 N, les deux flèches mesurent 2 cm. Si tu dessines la tension vers le bas, comme le poids, la somme des deux forces vaut 40 N vers le bas : la lampe tomberait. La tension part du point d'attache du fil, vers le haut ; le poids part de G, vers le bas.",
+          "figure": "bassine-table",
+          "practice": {
+            "statement": "Tu t'entraînes à trouver et à représenter une force inconnue.",
+            "questions": [
+              {
+                "content": "Une force a une intensité de 60 N. On la représente avec l'échelle 1 cm pour 20 N. Quelle est la longueur de la flèche, en cm ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Relever les caractéristiques de la force connue : l'intensité est 60 N. Étape 3 — Calculer la longueur de chaque flèche : longueur = intensité ÷ nombre de newtons pour 1 cm = $60 \\div 20 = 3$ cm.",
+                "answers": [
+                  {
+                    "content": "3",
+                    "correct": true
+                  }
+                ],
+                "unit": "cm",
+                "tolerance": 0,
+                "hint": "Longueur = intensité ÷ échelle."
+              },
+              {
+                "content": "Un régime de bananes est suspendu, immobile, à une corde. Quelles sont la direction et le sens de la tension de la corde sur le régime ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Relever les caractéristiques de la force connue : le poids est vertical, vers le bas. Étape 2 — Déduire celles de la force inconnue : la tension a la même direction, le sens opposé : verticale, vers le haut. Pourquoi pas « verticale, vers le bas » : ce serait le sens du poids ; deux forces qui s'équilibrent ont des sens opposés.",
+                "answers": [
+                  {
+                    "content": "Verticale, vers le haut",
+                    "correct": true
+                  },
+                  {
+                    "content": "Verticale, vers le bas",
+                    "correct": false
+                  },
+                  {
+                    "content": "Horizontale, vers la droite",
+                    "correct": false
+                  },
+                  {
+                    "content": "Oblique, vers le haut",
+                    "correct": false
+                  }
+                ],
+                "hint": "La tension a le sens opposé au poids."
+              },
+              {
+                "content": "La flèche qui représente le poids d'un sac mesure 5 cm avec l'échelle 1 cm pour 10 N. Le sac est suspendu à un fil, immobile. Quelle est l'intensité de la tension du fil, en N ?",
+                "question_type": "numeric",
+                "explanation": "Étape 1 — Relever les caractéristiques de la force connue : le poids est représenté par 5 cm à l'échelle 1 cm pour 10 N : $P = 5 \\times 10 = 50$ N. Étape 2 — Déduire celles de la force inconnue : la tension a la même intensité : $T = 50$ N. Pourquoi pas 0,5 N : on divise la longueur par l'échelle au lieu de la multiplier pour revenir à l'intensité.",
+                "answers": [
+                  {
+                    "content": "50",
+                    "correct": true
+                  }
+                ],
+                "unit": "N",
+                "tolerance": 0,
+                "hint": "Intensité = longueur × nombre de newtons pour 1 cm."
+              },
+              {
+                "content": "Un solide est en équilibre sous deux forces. La force inconnue a la même ___ que la force connue, mais un sens opposé.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 2 — Déduire celles de la force inconnue : on déduit de la force connue la direction, le sens opposé et l'intensité. Les deux mots intensité et direction sont corrects : les deux forces ont la même intensité et la même direction.",
+                "answers": [
+                  {
+                    "content": "intensité",
+                    "correct": true
+                  },
+                  {
+                    "content": "valeur",
+                    "correct": true
+                  },
+                  {
+                    "content": "direction",
+                    "correct": true
+                  }
+                ],
+                "hint": "Pense à la valeur en newtons."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Tension, réaction et flèches à l'échelle",
+              "statement": "Dans la cour de l'école, un régime de bananes de 5 kg est suspendu, immobile, à une corde. On cherche les caractéristiques de la tension de la corde et on représente les forces. On prend $g = 10$ N/kg.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Un régime de bananes de 5 kg est suspendu, immobile, à une corde. On prend $g = 10$ N/kg. Quelle est l'intensité de la tension de la corde, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $\\vec P$ : G, verticale, vers le bas, $P = 5 \\times 10 = 50$ N. Étape 2 — Déduire celles de la force inconnue : la tension a la même intensité : $T = 50$ N. Pourquoi pas 5 N : c'est la masse en kg, pas le poids.",
+                  "answers": [
+                    {
+                      "content": "50",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un régime de bananes de 5 kg est suspendu, immobile, à une corde. Quelles sont la direction et le sens de la tension de la corde sur le régime ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : le poids est vertical, vers le bas. Étape 2 — Déduire celles de la force inconnue : la tension a la même direction et le sens opposé : verticale, vers le haut. Pourquoi pas oblique : les deux forces doivent être sur la même droite d'action, la verticale.",
+                  "answers": [
+                    {
+                      "content": "Verticale, vers le haut",
+                      "correct": true
+                    },
+                    {
+                      "content": "Verticale, vers le bas",
+                      "correct": false
+                    },
+                    {
+                      "content": "Oblique, vers le haut",
+                      "correct": false
+                    },
+                    {
+                      "content": "Horizontale",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La tension d'une corde vaut 50 N. On la représente avec l'échelle 1 cm pour 10 N. Quelle est la longueur de la flèche, en cm ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $T = 50$ N. Étape 3 — Calculer la longueur de chaque flèche : longueur = intensité ÷ nombre de newtons pour 1 cm = $50 \\div 10 = 5$ cm.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cm",
+                  "tolerance": 0
+                },
+                {
+                  "content": "La tension d'une corde vaut 50 N. On la représente avec l'échelle 1 cm pour 25 N. Quelle est la longueur de la flèche, en cm ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $T = 50$ N. Étape 3 — Calculer la longueur de chaque flèche : longueur = $50 \\div 25 = 2$ cm. Pourquoi pas 5 cm : ce serait l'échelle 1 cm pour 10 N. Une échelle plus grande donne une flèche plus courte.",
+                  "answers": [
+                    {
+                      "content": "2",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cm",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un régime est suspendu à une corde attachée à son sommet. Quel est le point d'application de la tension de la corde sur le régime ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 2 — Déduire celles de la force inconnue : le point d'application de la force inconnue se lit sur la situation : pour la tension d'un fil, c'est le point d'attache sur le solide. Pourquoi pas le centre de gravité G : c'est le point d'application du poids, pas celui de la tension.",
+                  "answers": [
+                    {
+                      "content": "Le point d'attache de la corde sur le régime",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le centre de gravité G du régime",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'autre extrémité de la corde, accrochée à la poutre",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le milieu de la corde",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Caractéristiques et échelle des deux forces",
+              "statement": "Dans cet exercice, tu déduis les caractéristiques d'une force inconnue et tu calcules la longueur de flèches. On prend $g = 10$ N/kg.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une bassine d'eau de 6 kg est posée, immobile, sur une table horizontale. Relie chaque caractéristique de la réaction de la table à sa valeur. On prend $g = 10$ N/kg.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $P = 6 \\times 10 = 60$ N, verticale, vers le bas. Étape 2 — Déduire celles de la force inconnue : la réaction a la même direction (verticale), le sens opposé (vers le haut), la même intensité (60 N) ; son point d'application est le point de contact avec la table.",
+                  "answers": [
+                    {
+                      "content": "Direction",
+                      "match": "Verticale"
+                    },
+                    {
+                      "content": "Sens",
+                      "match": "Vers le haut"
+                    },
+                    {
+                      "content": "Intensité",
+                      "match": "60 N"
+                    },
+                    {
+                      "content": "Point d'application",
+                      "match": "Le point de contact entre la bassine et la table"
+                    }
+                  ]
+                },
+                {
+                  "content": "Une lampe est retenue, immobile, par un fil. La flèche qui représente la tension du fil mesure 3 cm avec l'échelle 1 cm pour 20 N. Quelle est l'intensité du poids de la lampe, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : la tension vaut $3 \\times 20 = 60$ N. Étape 2 — Déduire celles de la force inconnue : le poids a la même intensité : $P = 60$ N. Pourquoi pas 6,7 N : on diviserait 20 par 3 au lieu de multiplier la longueur par l'échelle.",
+                  "answers": [
+                    {
+                      "content": "60",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une lampe de 2 kg est suspendue, immobile, à un fil. On représente le poids et la tension avec l'échelle 1 cm pour 10 N. On prend $g = 10$ N/kg. Quelles affirmations sont justes ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $P = 2 \\times 10 = 20$ N. Étape 2 — Déduire celles de la force inconnue : $T = 20$ N, sens opposé. Étape 3 — Calculer la longueur de chaque flèche : $20 \\div 10 = 2$ cm pour chaque flèche. Étape 4 — Tracer les deux flèches : les flèches sont sur la même droite, de sens opposés, de même longueur. Pourquoi pas « 4 cm » : la tension a la même intensité que le poids, pas le double. Pourquoi pas « même point » : le poids part de G, la tension du point d'attache.",
+                  "answers": [
+                    {
+                      "content": "Les deux flèches mesurent 2 cm",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les deux flèches ont des sens opposés",
+                      "correct": true
+                    },
+                    {
+                      "content": "La flèche de la tension mesure 4 cm parce qu'elle porte le poids et le fil",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les deux flèches partent obligatoirement du même point",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Deux forces qui s'équilibrent sont représentées par deux flèches de même ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 2 — Déduire celles de la force inconnue : elles ont la même intensité. Étape 3 — Calculer la longueur de chaque flèche : à la même échelle, la même intensité donne la même longueur de flèche.",
+                  "answers": [
+                    {
+                      "content": "longueur",
+                      "correct": true
+                    },
+                    {
+                      "content": "taille",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Le point d'application de la tension d'un fil est toujours le centre de gravité du solide.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Déduire celles de la force inconnue : le point d'application d'une force se lit sur la situation. Étape 4 — Tracer les deux flèches : la tension part du point d'attache du fil ; seul le poids est appliqué en G. L'affirmation est fausse.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un solide de 3 kg est posé, immobile, sur une table horizontale. On prend $g = 10$ N/kg et l'échelle 1 cm pour 5 N. La flèche de la réaction mesure ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $P = 3 \\times 10 = 30$ N. Étape 2 — Déduire celles de la force inconnue : $R = 30$ N. Étape 3 — Calculer la longueur de chaque flèche : $30 \\div 5 = 6$ cm. Pourquoi pas 15 cm : on multiplierait 3 par 5 au lieu de diviser 30 N par l'échelle. Pourquoi pas 0,6 cm : on diviserait la masse par 5.",
+                  "answers": [
+                    {
+                      "content": "6 cm",
+                      "correct": true
+                    },
+                    {
+                      "content": "3 cm",
+                      "correct": false
+                    },
+                    {
+                      "content": "0,6 cm",
+                      "correct": false
+                    },
+                    {
+                      "content": "15 cm",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Même direction, sens opposé, même intensité ; longueur = intensité ÷ échelle."
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "La lampe suspendue de la cour",
+          "statement": "Dans la cour de l'école, une lampe de masse 5 kg est suspendue, immobile, à un fil accroché à une potence. Elle ne touche aucun autre objet. On prend $g = 10$ N/kg.",
+          "exercise_type": "fixation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Une lampe de 5 kg est suspendue, immobile, à un fil accroché à une potence dans la cour. Quelles forces sont exercées sur la lampe ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Définir le système : le système est la lampe. Étape 2 — Lister les objets : la Terre agit à distance ; le fil touche la lampe ; la potence ne touche que le fil. Étape 3 — Nommer la force : la Terre exerce le poids $\\vec P$, le fil exerce la tension $\\vec T$. Étape 4 — Écrire le bilan : le bilan compte deux forces : $\\vec P$ et $\\vec T$. Pourquoi pas « le poids, la tension du fil et la force de la lampe sur le fil » : la force de la lampe sur le fil s'exerce sur le fil, pas sur la lampe, donc elle n'entre pas dans le bilan de la lampe.",
+              "answers": [
+                {
+                  "content": "Le poids et la tension du fil",
+                  "correct": true
+                },
+                {
+                  "content": "Le poids, la tension du fil et la force de la lampe sur le fil",
+                  "correct": false
+                },
+                {
+                  "content": "Le poids seulement",
+                  "correct": false
+                },
+                {
+                  "content": "La tension du fil et la force de la potence",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Une lampe a une masse de 5 kg. On prend $g = 10$ N/kg. Quelle est l'intensité de son poids, en N ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Définir le système : le système est la lampe. Étape 2 — Lister les objets : la Terre agit à distance. Étape 3 — Nommer la force : la Terre exerce le poids $\\vec P$. Étape 4 — Écrire le bilan : $P = m \\times g = 5 \\times 10 = 50$ N. Pourquoi pas 5 N : c'est la masse en kg, le poids se calcule avec $g = 10$ N/kg.",
+              "answers": [
+                {
+                  "content": "50",
+                  "correct": true
+                }
+              ],
+              "unit": "N",
+              "tolerance": 0
+            },
+            {
+              "content": "Une lampe de 5 kg est suspendue, immobile, à un fil. On prend $g = 10$ N/kg. Quelle est l'intensité de la tension du fil, en N ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la lampe ; ses deux forces sont $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : elles sont sur la même droite verticale, de sens opposés. Étape 3 — Écrire l'égalité des intensités : à l'équilibre, $T = P$. Étape 4 — Calculer l'inconnue : $P = 5 \\times 10 = 50$ N, donc $T = 50$ N. Pourquoi pas 5 N : c'est la masse de la lampe, pas son poids.",
+              "answers": [
+                {
+                  "content": "50",
+                  "correct": true
+                }
+              ],
+              "unit": "N",
+              "tolerance": 0
+            },
+            {
+              "content": "Une lampe de 5 kg est suspendue, immobile, à un fil. On prend $g = 10$ N/kg. Quelles sont les caractéristiques de la tension du fil sur la lampe ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $\\vec P$ : G, verticale, vers le bas, $P = 50$ N. Étape 2 — Déduire celles de la force inconnue : $\\vec T$ a la même direction, le sens opposé et la même intensité ; son point d'application est le point d'attache du fil. Étape 3 — Calculer la longueur de chaque flèche : sans objet ici : on demande seulement les caractéristiques. Étape 4 — Tracer les deux flèches : $\\vec T$ est donc dirigée vers le haut, le long du fil. Pourquoi pas « centre de gravité G » : G est le point d'application du poids, la tension s'applique au point d'attache. Pourquoi pas 5 N : l'intensité de la tension est celle du poids, 50 N.",
+              "answers": [
+                {
+                  "content": "Point d'attache du fil, verticale, vers le haut, 50 N",
+                  "correct": true
+                },
+                {
+                  "content": "Centre de gravité G, verticale, vers le haut, 50 N",
+                  "correct": false
+                },
+                {
+                  "content": "Point d'attache du fil, verticale, vers le bas, 50 N",
+                  "correct": false
+                },
+                {
+                  "content": "Point d'attache du fil, verticale, vers le haut, 5 N",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "La tension d'un fil vaut 50 N. On la représente avec l'échelle 1 cm pour 10 N. Quelle est la longueur de la flèche, en cm ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $T = 50$ N. Étape 2 — Déduire celles de la force inconnue : la tension est la force connue ici. Étape 3 — Calculer la longueur de chaque flèche : longueur = intensité ÷ nombre de newtons pour 1 cm = $50 \\div 10 = 5$ cm. Étape 4 — Tracer les deux flèches : on trace une flèche de 5 cm vers le haut, du point d'attache. Pourquoi pas 500 cm : on multiplierait l'intensité par l'échelle au lieu de la diviser.",
+              "answers": [
+                {
+                  "content": "5",
+                  "correct": true
+                }
+              ],
+              "unit": "cm",
+              "tolerance": 0
+            },
+            {
+              "content": "Dans un schéma à la même échelle, la flèche de la tension du fil et la flèche du poids d'une lampe immobile ont la même longueur et le même sens.",
+              "question_type": "true_false",
+              "explanation": "Étape 1 — Relever les caractéristiques de la force connue : la tension et le poids ont la même intensité. Étape 2 — Déduire celles de la force inconnue : elles ont la même direction mais des sens opposés. Étape 3 — Calculer la longueur de chaque flèche : même intensité, donc même longueur de flèche. Étape 4 — Tracer les deux flèches : les deux flèches sont de même longueur, mais l'une va vers le haut et l'autre vers le bas : l'affirmation est fausse. Pourquoi pas vrai : si les deux forces avaient le même sens, leur somme vaudrait 100 N et la lampe tomberait.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            }
+          ],
+          "hint": "Poids : $P = m \\times g$. À l'équilibre : même droite d'action, sens opposés, même intensité."
+        },
+        {
+          "title": "Le régime de bananes pesé au dynamomètre",
+          "statement": "Au marché, une vendeuse accroche un régime de bananes plantain au crochet d'un dynamomètre à ressort de calibre 50 N. Le régime est immobile et le dynamomètre indique 45 N. On prend $g = 10$ N/kg.",
+          "exercise_type": "fixation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Un régime de bananes est accroché, immobile, à un dynamomètre qui indique 45 N. Quelle est l'intensité du poids du régime, en N ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le régime ; ses deux forces sont $\\vec P$ et la tension $\\vec T$ du ressort. Étape 2 — Vérifier la direction et le sens : elles sont verticales et de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P = T$. Étape 4 — Calculer l'inconnue : $T$ est lue sur le dynamomètre : $P = 45$ N. Pourquoi pas 4,5 N : 4,5 est la masse en kg, pas l'intensité du poids.",
+              "answers": [
+                {
+                  "content": "45",
+                  "correct": true
+                }
+              ],
+              "unit": "N",
+              "tolerance": 0
+            },
+            {
+              "content": "Un régime de bananes est accroché, immobile, à un dynamomètre qui indique 45 N. On prend $g = 10$ N/kg. Quelle est la masse du régime, en kg ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le régime ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P = T = 45$ N. Étape 4 — Calculer l'inconnue : $m = P \\div g = 45 \\div 10 = 4{,}5$ kg. Pourquoi pas 450 kg : on multiplierait par $g$ au lieu de diviser.",
+              "answers": [
+                {
+                  "content": "4,5",
+                  "correct": true
+                }
+              ],
+              "unit": "kg",
+              "tolerance": 0
+            },
+            {
+              "content": "Un régime de bananes est accroché, immobile, au crochet d'un dynamomètre tenu par une vendeuse. Quelles forces sont exercées sur le régime ?",
+              "question_type": "multiple_correct_2",
+              "explanation": "Étape 1 — Définir le système : le système est le régime. Étape 2 — Lister les objets : la Terre agit à distance ; le crochet touche le régime ; la main ne touche que le dynamomètre. Étape 3 — Nommer la force : poids $\\vec P$ et tension $\\vec T$ du ressort. Étape 4 — Écrire le bilan : deux forces s'exercent sur le régime. Pourquoi pas « la force de la main » : la main ne touche pas le régime. Pourquoi pas « la force du régime sur le crochet » : elle s'exerce sur le crochet, pas sur le régime.",
+              "answers": [
+                {
+                  "content": "Le poids du régime",
+                  "correct": true
+                },
+                {
+                  "content": "La tension du ressort du dynamomètre",
+                  "correct": true
+                },
+                {
+                  "content": "La force de la main de la vendeuse sur le régime",
+                  "correct": false
+                },
+                {
+                  "content": "La force du régime sur le crochet",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Un dynamomètre a un calibre de 50 N, c'est-à-dire qu'il ne doit pas mesurer plus de 50 N. On prend $g = 10$ N/kg. Quelle est la masse maximale d'un solide immobile que l'on peut y accrocher, en kg ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le solide ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$, et $T$ ne doit pas dépasser 50 N. Étape 4 — Calculer l'inconnue : $m = 50 \\div 10 = 5$ kg. Pourquoi pas 500 kg : on multiplierait 50 par $g$ au lieu de diviser.",
+              "answers": [
+                {
+                  "content": "5",
+                  "correct": true
+                }
+              ],
+              "unit": "kg",
+              "tolerance": 0
+            },
+            {
+              "content": "Un dynamomètre de calibre 50 N est utilisé avec un autre régime de bananes, de masse 6 kg, accroché au repos. On prend $g = 10$ N/kg. Que se passe-t-il ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le régime ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 6 \\times 10 = 60$ N, donc le ressort devrait tirer avec 60 N, plus que le calibre de 50 N. Pourquoi pas « 6 N » : c'est la masse en kg, pas l'intensité du poids.",
+              "answers": [
+                {
+                  "content": "Le poids de 60 N dépasse le calibre : le ressort risque d'être abîmé",
+                  "correct": true
+                },
+                {
+                  "content": "Le dynamomètre indique 6 N",
+                  "correct": false
+                },
+                {
+                  "content": "Le poids de 6 N est inférieur au calibre : aucun risque",
+                  "correct": false
+                },
+                {
+                  "content": "Le dynamomètre indique 0 N",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Pour un régime de 4,5 kg accroché au repos, un dynamomètre indique 4,5 N.",
+              "question_type": "true_false",
+              "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le régime ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 4{,}5 \\times 10 = 45$ N : le dynamomètre indique 45 N, pas 4,5 N. L'affirmation est fausse. Pourquoi pas vrai : on confond la masse en kg et le poids en N.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            }
+          ],
+          "hint": "À l'équilibre, la lecture du dynamomètre est égale au poids : $T = P = m \\times g$."
+        },
+        {
+          "title": "La bassine d'eau posée sur la table",
+          "statement": "Dans une cuisine, une bassine vide de masse 1 kg contient 7 kg d'eau. Elle est posée, immobile, sur une table horizontale. On étudie les forces exercées sur la bassine avec son eau. On prend $g = 10$ N/kg et l'échelle 1 cm pour 20 N.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Une bassine vide de 1 kg contient 7 kg d'eau. On prend $g = 10$ N/kg. Quelle est l'intensité du poids de l'ensemble bassine et eau, en N ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Définir le système : le système est la bassine avec son eau, de masse $1 + 7 = 8$ kg. Étape 2 — Lister les objets : la Terre agit à distance. Étape 3 — Nommer la force : la Terre exerce le poids $\\vec P$. Étape 4 — Écrire le bilan : $P = m \\times g = 8 \\times 10 = 80$ N, appliqué en G, vertical, vers le bas. Pourquoi pas 70 N : on oublierait la masse de la bassine vide ; le système comprend la bassine et son eau.",
+              "answers": [
+                {
+                  "content": "80",
+                  "correct": true
+                }
+              ],
+              "unit": "N",
+              "tolerance": 0
+            },
+            {
+              "content": "Une bassine avec son eau, de poids 80 N, est posée, immobile, sur une table horizontale. Quelle est l'intensité de la réaction de la table, en N ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la bassine avec son eau ; ses deux forces sont $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : elles sont verticales et de sens opposés. Étape 3 — Écrire l'égalité des intensités : à l'équilibre, $R = P$. Étape 4 — Calculer l'inconnue : $R = 80$ N. Pourquoi pas 8 N : c'est la masse en kg. Le poids est déjà donné dans l'énoncé : 80 N.",
+              "answers": [
+                {
+                  "content": "80",
+                  "correct": true
+                }
+              ],
+              "unit": "N",
+              "tolerance": 0
+            },
+            {
+              "content": "Une bassine de poids 80 N est posée, immobile, sur une table horizontale. Quelles sont les caractéristiques de la réaction de la table sur la bassine ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $\\vec P$ : G, verticale, vers le bas, 80 N. Étape 2 — Déduire celles de la force inconnue : $\\vec R$ a la même direction, le sens opposé et la même intensité ; elle s'applique au point de contact avec la table. Étape 3 — Calculer la longueur de chaque flèche : sans objet ici. Étape 4 — Tracer les deux flèches : $\\vec R$ est donc verticale, vers le haut, 80 N, appliquée au point de contact. Pourquoi pas « centre de gravité G » : G est le point d'application du poids, pas de la réaction. Pourquoi pas « vers le bas » : ce serait le sens du poids, et la bassine s'enfoncerait dans la table.",
+              "answers": [
+                {
+                  "content": "Point de contact avec la table, verticale, vers le haut, 80 N",
+                  "correct": true
+                },
+                {
+                  "content": "Centre de gravité G, verticale, vers le haut, 80 N",
+                  "correct": false
+                },
+                {
+                  "content": "Point de contact avec la table, verticale, vers le bas, 80 N",
+                  "correct": false
+                },
+                {
+                  "content": "Point de contact avec la table, horizontale, vers la droite, 80 N",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "La réaction de la table vaut 80 N. On la représente avec l'échelle 1 cm pour 20 N. Quelle est la longueur de la flèche, en cm ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $R = 80$ N. Étape 2 — Déduire celles de la force inconnue : la réaction est la force connue ici. Étape 3 — Calculer la longueur de chaque flèche : longueur = $80 \\div 20 = 4$ cm. Étape 4 — Tracer les deux flèches : on trace une flèche de 4 cm vers le haut, du point de contact. Pourquoi pas 1 600 cm : on multiplierait 80 par 20 au lieu de diviser.",
+              "answers": [
+                {
+                  "content": "4",
+                  "correct": true
+                }
+              ],
+              "unit": "cm",
+              "tolerance": 0
+            },
+            {
+              "content": "On enlève 2 kg d'eau de la bassine. L'ensemble bassine et eau a maintenant une masse de 6 kg et reste immobile sur la table horizontale. On prend $g = 10$ N/kg. Quelle est la nouvelle réaction de la table, en N ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la bassine avec l'eau restante (6 kg) ; $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $P = 6 \\times 10 = 60$ N, donc $R = 60$ N. Pourquoi pas 80 N : cette valeur était celle de l'équilibre avant de vider l'eau ; la réaction suit le poids.",
+              "answers": [
+                {
+                  "content": "60",
+                  "correct": true
+                }
+              ],
+              "unit": "N",
+              "tolerance": 0
+            },
+            {
+              "content": "Une bassine d'eau de 8 kg est posée, immobile, sur une table horizontale. On prend $g = 10$ N/kg. Rédige l'étude de l'équilibre de la bassine : bilan des forces, condition d'équilibre et valeur de la réaction de la table.",
+              "question_type": "written",
+              "explanation": "Corrigé modèle : Le système est la bassine avec son eau. Elle subit son poids $\\vec P$ (G, verticale, vers le bas, $P = 8 \\times 10 = 80$ N) et la réaction $\\vec R$ de la table (point de contact, verticale, vers le haut). La bassine est immobile : les deux forces ont la même droite d'action, des sens opposés et la même intensité, donc $R = P = 80$ N. Barème : système (0,5), forces et caractéristiques (1), condition d'équilibre (1), calcul avec unité (0,5).",
+              "answers": [],
+              "points": 3,
+              "criteria": [
+                "Le système (la bassine avec son eau) est défini",
+                "Les deux forces sont nommées avec leurs caractéristiques",
+                "La condition est écrite : même droite d'action, sens opposés, $R = P$",
+                "Le calcul $P = 8 \\times 10 = 80$ N est juste, avec l'unité"
+              ],
+              "starter": "Le système est…"
+            }
+          ],
+          "hint": "Poids : $P = m \\times g$. À l'équilibre : $R = P$. Longueur de flèche = intensité ÷ échelle."
+        },
+        {
+          "title": "Un solide au laboratoire : dynamomètre et paillasse",
+          "statement": "Au laboratoire, un élève accroche un solide S à un dynamomètre de calibre 10 N. Le solide est immobile et le dynamomètre indique 6 N. L'élève pose ensuite S sur la paillasse horizontale. On prend $g = 10$ N/kg et l'échelle 1 cm pour 2 N.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Un solide S est accroché, immobile, à un dynamomètre qui indique 6 N. Quelle est l'intensité du poids de S, en N ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est S ; ses deux forces sont $\\vec P$ et la tension $\\vec T$ du ressort. Étape 2 — Vérifier la direction et le sens : elles sont verticales et de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P = T$. Étape 4 — Calculer l'inconnue : la lecture donne $T = 6$ N, donc $P = 6$ N. Pourquoi pas 60 N : on multiplierait la lecture par $g$, alors qu'elle donne déjà une force en N.",
+              "answers": [
+                {
+                  "content": "6",
+                  "correct": true
+                }
+              ],
+              "unit": "N",
+              "tolerance": 0
+            },
+            {
+              "content": "Un solide S de poids 6 N est immobile. On prend $g = 10$ N/kg. Quelle est sa masse, en kg ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Définir le système : le système est S. Étape 2 — Lister les objets : la Terre agit à distance. Étape 3 — Nommer la force : la Terre exerce le poids $\\vec P$, avec $P = m \\times g$. Étape 4 — Écrire le bilan : $m = P \\div g = 6 \\div 10 = 0{,}6$ kg. Pourquoi pas 60 kg : on multiplierait par $g$ au lieu de diviser.",
+              "answers": [
+                {
+                  "content": "0,6",
+                  "correct": true
+                }
+              ],
+              "unit": "kg",
+              "tolerance": 0
+            },
+            {
+              "content": "Le solide S, de poids 6 N, est posé, immobile, sur la paillasse horizontale. Quelle est l'intensité de la réaction de la paillasse, en N ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est S ; ses deux forces sont $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : elles sont verticales et de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $R = 6$ N. Pourquoi pas 0 N : S reste immobile parce que la paillasse agit sur lui.",
+              "answers": [
+                {
+                  "content": "6",
+                  "correct": true
+                }
+              ],
+              "unit": "N",
+              "tolerance": 0
+            },
+            {
+              "content": "La réaction de la paillasse sur un solide vaut 6 N. On la représente avec l'échelle 1 cm pour 2 N. Quelle est la longueur de la flèche, en cm ?",
+              "question_type": "numeric",
+              "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $R = 6$ N. Étape 2 — Déduire celles de la force inconnue : la réaction est connue ici. Étape 3 — Calculer la longueur de chaque flèche : longueur = $6 \\div 2 = 3$ cm. Étape 4 — Tracer les deux flèches : on trace une flèche de 3 cm vers le haut, du point de contact. Pourquoi pas 12 cm : on multiplierait 6 par 2 au lieu de diviser.",
+              "answers": [
+                {
+                  "content": "3",
+                  "correct": true
+                }
+              ],
+              "unit": "cm",
+              "tolerance": 0
+            },
+            {
+              "content": "Un dynamomètre de calibre 10 N sert à suspendre, au repos, un second solide de masse 0,8 kg. On prend $g = 10$ N/kg. Le dynamomètre peut-il être utilisé sans risque ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le second solide ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 0{,}8 \\times 10 = 8$ N : le ressort tire avec 8 N, moins que le calibre de 10 N. Pourquoi pas « 8 N est supérieur à 6 N » : 6 N était la lecture pour un autre solide, ce n'est pas une limite du dynamomètre. Pourquoi pas « il indiquera 0,8 N » : 0,8 est la masse en kg, il indiquera 8 N.",
+              "answers": [
+                {
+                  "content": "Oui : le poids de 8 N est inférieur au calibre de 10 N",
+                  "correct": true
+                },
+                {
+                  "content": "Non : 8 N est supérieur à 6 N",
+                  "correct": false
+                },
+                {
+                  "content": "Oui : il indiquera 0,8 N",
+                  "correct": false
+                },
+                {
+                  "content": "Non : 0,8 kg est supérieur à 0,6 kg",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Un solide est tiré vers la gauche par un fil avec 6 N et vers la droite par un autre fil avec 6 N. Les deux fils sont attachés en deux points du solide, sur deux droites parallèles différentes. La somme vectorielle des deux forces est nulle. Que peut-on affirmer ?",
+              "question_type": "single_choice",
+              "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le solide ; il subit deux forces de 6 N. Étape 2 — Vérifier la direction et le sens : les sens sont opposés, mais les droites d'action sont différentes. Étape 3 — Écrire l'égalité des intensités : les intensités sont égales : $F_1 = F_2 = 6$ N. Étape 4 — Calculer l'inconnue : une condition manque : le solide n'est pas en équilibre. Pourquoi pas « il est en équilibre car la somme vectorielle est nulle » : cette condition est nécessaire mais pas suffisante, il faut aussi la même droite d'action.",
+              "answers": [
+                {
+                  "content": "Le solide n'est pas en équilibre, car les deux forces n'ont pas la même droite d'action",
+                  "correct": true
+                },
+                {
+                  "content": "Le solide est en équilibre, car la somme vectorielle est nulle",
+                  "correct": false
+                },
+                {
+                  "content": "Le solide est en équilibre, car les sens sont opposés",
+                  "correct": false
+                },
+                {
+                  "content": "Le solide n'est pas en équilibre, car 6 N est trop faible pour le retenir",
+                  "correct": false
+                }
+              ]
+            }
+          ],
+          "hint": "Lecture du dynamomètre = poids ; sur la paillasse, $R = P$ ; masse $m = P \\div g$."
+        }
+      ],
+      "subjects": [
+        {
+          "title": "Sujet 1 · Les savoirs de base",
+          "notions": "Système et bilan des forces ; poids, tension, réaction ; conditions d'équilibre d'un solide soumis à deux forces ; calcul d'une tension ou d'une réaction ; flèches à l'échelle.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Dans la cour de l'école, une lampe est suspendue, immobile, à un fil. Sur l'étal du marché, une bassine est posée sur une table. On prend $g = 10$ N/kg.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "La force qu'un fil exerce sur un solide suspendu s'appelle la ___ du fil.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Définir le système : le système est le solide suspendu. Étape 2 — Lister les objets : la Terre agit à distance, le fil touche le solide. Étape 3 — Nommer la force : la force exercée par un fil se nomme la tension $\\vec T$. Étape 4 — Écrire le bilan : le bilan comprend donc le poids et la tension du fil. Pourquoi pas « réaction » : la réaction est la force d'un support sur lequel le solide est posé, pas celle d'un fil.",
+                  "answers": [
+                    {
+                      "content": "tension",
+                      "correct": true
+                    },
+                    {
+                      "content": "la tension",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans le bilan des forces exercées sur un solide, quelles forces compte-t-on ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système : le système est le solide étudié. Étape 2 — Lister les objets : on liste les objets qui agissent sur lui : la Terre à distance, puis ceux qui le touchent. Étape 3 — Nommer la force : on nomme chaque force : poids, tension, réaction. Étape 4 — Écrire le bilan : on écrit le bilan des forces exercées sur le solide. Pourquoi pas « les forces exercées par le solide » : la force pressante, par exemple, s'exerce sur le support et n'entre pas dans le bilan du solide.",
+                  "answers": [
+                    {
+                      "content": "Les forces exercées sur le solide par les autres objets",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les forces exercées par le solide sur les autres objets",
+                      "correct": false
+                    },
+                    {
+                      "content": "Seulement les forces de contact",
+                      "correct": false
+                    },
+                    {
+                      "content": "Seulement le poids",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le poids d'un solide est appliqué en son centre de gravité G.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Définir le système : le système est le solide. Étape 2 — Lister les objets : la Terre agit à distance. Étape 3 — Nommer la force : la force de la Terre est le poids $\\vec P$. Étape 4 — Écrire le bilan : son point d'application est le centre de gravité G, sa direction la verticale, son sens vers le bas : l'affirmation est vraie. Pourquoi pas faux : c'est la tension d'un fil qui s'applique au point d'attache, pas le poids.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La tension d'un fil sur le solide qu'il retient est dirigée ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Définir le système : le système est le solide retenu par le fil. Étape 2 — Lister les objets : le fil touche le solide en son point d'attache. Étape 3 — Nommer la force : la force du fil est la tension $\\vec T$. Étape 4 — Écrire le bilan : elle est appliquée au point d'attache et dirigée suivant le fil, vers le fil. Pourquoi pas « toujours vers le bas » : le poids va vers le bas, mais la tension d'un fil qui retient un solide va vers le fil, donc vers le haut pour un fil vertical.",
+                  "answers": [
+                    {
+                      "content": "suivant le fil",
+                      "correct": true
+                    },
+                    {
+                      "content": "perpendiculairement au fil",
+                      "correct": false
+                    },
+                    {
+                      "content": "toujours vers le bas",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une lampe de masse 7 kg est suspendue à un fil. On prend $g = 10$ N/kg. Quelle est l'intensité de son poids, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système : le système est la lampe. Étape 2 — Lister les objets : la Terre agit à distance. Étape 3 — Nommer la force : la Terre exerce le poids $\\vec P$. Étape 4 — Écrire le bilan : $P = m \\times g = 7 \\times 10 = 70$ N. Pourquoi pas 7 N : c'est la masse en kg, le poids se calcule avec $g = 10$ N/kg.",
+                  "answers": [
+                    {
+                      "content": "70",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                }
+              ],
+              "hint": "Dans le bilan, ne mets que les forces exercées sur le système."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Un solide est en équilibre sous l'action de deux forces. On cherche les conditions de cet équilibre.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Un solide est soumis à deux forces $\\vec F_1$ et $\\vec F_2$ et reste immobile. Quelles conditions les deux forces respectent-elles ?",
+                  "question_type": "multiple_correct_3",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit $\\vec F_1$ et $\\vec F_2$. Étape 2 — Vérifier la direction et le sens : elles ont la même droite d'action et des sens opposés. Étape 3 — Écrire l'égalité des intensités : $F_1 = F_2$. Étape 4 — Calculer l'inconnue : ces trois conditions suffisent à l'équilibre. Pourquoi pas « même point d'application » : le poids est appliqué en G et la tension au point d'attache, et l'équilibre est pourtant possible.",
+                  "answers": [
+                    {
+                      "content": "Même droite d'action",
+                      "correct": true
+                    },
+                    {
+                      "content": "Sens opposés",
+                      "correct": true
+                    },
+                    {
+                      "content": "Même intensité",
+                      "correct": true
+                    },
+                    {
+                      "content": "Même sens",
+                      "correct": false
+                    },
+                    {
+                      "content": "Même point d'application",
+                      "correct": false
+                    },
+                    {
+                      "content": "Intensités différentes",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Deux forces de même intensité et de même sens peuvent équilibrer un solide.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit deux forces de même sens. Étape 2 — Vérifier la direction et le sens : pour s'équilibrer, il faut des sens opposés. Étape 3 — Écrire l'égalité des intensités : leurs intensités égales s'additionneraient : 30 N et 30 N donneraient 60 N dans le même sens. Étape 4 — Calculer l'inconnue : la somme n'est pas nulle : l'affirmation est fausse. Pourquoi pas vrai : l'égalité des intensités est une condition, mais il faut aussi les sens opposés.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Un solide est en équilibre sous deux forces. La somme vectorielle de ces forces est le vecteur ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit $\\vec F_1$ et $\\vec F_2$. Étape 2 — Vérifier la direction et le sens : elles sont opposées. Étape 3 — Écrire l'égalité des intensités : leurs intensités sont égales. Étape 4 — Calculer l'inconnue : donc $\\vec F_1 + \\vec F_2 = \\vec 0$ : le vecteur nul. Pourquoi pas « le vecteur $\\vec F_1$ » : la somme de deux forces opposées de même intensité est nulle, elle n'est pas égale à l'une d'elles.",
+                  "answers": [
+                    {
+                      "content": "nul",
+                      "correct": true
+                    },
+                    {
+                      "content": "le vecteur nul",
+                      "correct": true
+                    },
+                    {
+                      "content": "zéro",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Une bassine est posée, immobile, sur une table horizontale. Elle est soumise à son poids $\\vec P$ et à la réaction $\\vec R$ de la table. Quelle relation entre les intensités est vraie ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la bassine ; $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : elles sont verticales et de sens opposés. Étape 3 — Écrire l'égalité des intensités : à l'équilibre, $R = P$. Étape 4 — Calculer l'inconnue : la réaction de la table est égale au poids. Pourquoi pas $R > P$ : si la réaction était plus grande, la bassine serait poussée vers le haut et ne resterait pas immobile.",
+                  "answers": [
+                    {
+                      "content": "$R = P$",
+                      "correct": true
+                    },
+                    {
+                      "content": "$R > P$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$R < P$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$R = 0$",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les étapes pour étudier l'équilibre d'un solide soumis à deux forces.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan ; Étape 2 — Vérifier la direction et le sens ; Étape 3 — Écrire l'égalité des intensités ; Étape 4 — Calculer l'inconnue. Pourquoi pas écrire l'égalité en premier : on ne peut l'écrire qu'une fois les deux forces identifiées et reconnues opposées.",
+                  "answers": [
+                    {
+                      "content": "Définir le système et dresser le bilan des deux forces"
+                    },
+                    {
+                      "content": "Vérifier la direction et le sens des deux forces"
+                    },
+                    {
+                      "content": "Écrire l'égalité des intensités"
+                    },
+                    {
+                      "content": "Calculer l'inconnue et écrire l'unité"
+                    }
+                  ]
+                }
+              ],
+              "hint": "Même droite d'action, sens opposés, même intensité."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Des solides immobiles sont suspendus ou posés. Pour chacun, tu calcules une force avec l'équilibre sous deux forces. On prend $g = 10$ N/kg.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une lampe de 6 kg est suspendue, immobile, à un fil. Quelle est l'intensité de la tension du fil, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la lampe ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 6 \\times 10 = 60$ N, donc $T = 60$ N. Pourquoi pas 6 N : c'est la masse en kg, pas le poids.",
+                  "answers": [
+                    {
+                      "content": "60",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une bassine de 4,5 kg est posée, immobile, sur une table horizontale. Quelle est l'intensité de la réaction de la table, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la bassine ; $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $P = 4{,}5 \\times 10 = 45$ N, donc $R = 45$ N. Pourquoi pas 4,5 N : c'est la masse en kg.",
+                  "answers": [
+                    {
+                      "content": "45",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un dynamomètre indique 28 N quand un solide est suspendu, immobile, à son crochet. Quelle est la masse du solide, en kg ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le solide ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P = T = 28$ N. Étape 4 — Calculer l'inconnue : $m = P \\div g = 28 \\div 10 = 2{,}8$ kg. Pourquoi pas 280 kg : on multiplierait par $g$ au lieu de diviser.",
+                  "answers": [
+                    {
+                      "content": "2,8",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "kg",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un seau de 12 kg est suspendu, immobile, à une corde. Quelle est la tension de la corde ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le seau ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 12 \\times 10 = 120$ N, donc $T = 120$ N. Pourquoi pas 12 N : c'est la masse en kg. Pourquoi pas 0 N : le seau est immobile parce que la corde le retient, la tension n'est pas nulle.",
+                  "answers": [
+                    {
+                      "content": "120 N",
+                      "correct": true
+                    },
+                    {
+                      "content": "12 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "1,2 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "0 N",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "À l'équilibre, la tension d'un fil est plus grande que le poids du solide suspendu.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le solide suspendu ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : à l'équilibre, $T = P$ : les intensités sont égales. Étape 4 — Calculer l'inconnue : la tension n'est donc ni plus grande ni plus petite que le poids : l'affirmation est fausse. Pourquoi pas vrai : si $T$ était plus grande que $P$, le solide monterait.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "À l'équilibre, $T = P$ ou $R = P$ ; le poids est $P = m \\times g$."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Des forces sont représentées par des flèches, avec une échelle donnée. Tu passes de l'intensité à la longueur, et inversement.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une force a une intensité de 30 N. On la représente avec l'échelle 1 cm pour 10 N. Quelle est la longueur de la flèche, en cm ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : l'intensité est 30 N. Étape 2 — Déduire celles de la force inconnue : la longueur ne dépend que de l'intensité et de l'échelle. Étape 3 — Calculer la longueur de chaque flèche : longueur = $30 \\div 10 = 3$ cm. Étape 4 — Tracer les deux flèches : on trace une flèche de 3 cm. Pourquoi pas 300 cm : on multiplierait au lieu de diviser par le nombre de newtons pour 1 cm.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cm",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une force a une intensité de 80 N. On la représente avec l'échelle 1 cm pour 20 N. Quelle est la longueur de la flèche, en cm ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : l'intensité est 80 N. Étape 2 — Déduire celles de la force inconnue : l'échelle est de 20 N pour 1 cm. Étape 3 — Calculer la longueur de chaque flèche : longueur = $80 \\div 20 = 4$ cm. Étape 4 — Tracer les deux flèches : on trace une flèche de 4 cm. Pourquoi pas 100 cm : on ferait $80 + 20$ au lieu de $80 \\div 20$.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cm",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une flèche mesure 7 cm. L'échelle est 1 cm pour 5 N. Quelle est l'intensité de la force représentée, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : la flèche mesure 7 cm. Étape 2 — Déduire celles de la force inconnue : l'échelle donne 5 N pour chaque cm. Étape 3 — Calculer la longueur de chaque flèche : intensité = longueur × nombre de newtons pour 1 cm = $7 \\times 5 = 35$ N. Étape 4 — Tracer les deux flèches : la force vaut 35 N. Pourquoi pas 1,4 N : on diviserait 7 par 5 alors qu'il faut multiplier pour revenir à l'intensité.",
+                  "answers": [
+                    {
+                      "content": "35",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un solide est posé, immobile, sur une table horizontale. Quel est le sens de la réaction de la table sur le solide ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : le poids est vertical, vers le bas. Étape 2 — Déduire celles de la force inconnue : la réaction a la même direction et le sens opposé : vers le haut. Étape 3 — Calculer la longueur de chaque flèche : sa longueur est la même que celle du poids. Étape 4 — Tracer les deux flèches : on trace la flèche vers le haut, du point de contact. Pourquoi pas « vers le bas » : ce serait le sens du poids, et le solide s'enfoncerait dans la table.",
+                  "answers": [
+                    {
+                      "content": "Vers le haut",
+                      "correct": true
+                    },
+                    {
+                      "content": "Vers le bas",
+                      "correct": false
+                    },
+                    {
+                      "content": "Vers la droite",
+                      "correct": false
+                    },
+                    {
+                      "content": "Vers la gauche",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Deux forces qui s'équilibrent sont représentées par deux flèches de même ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : on relève l'intensité de la force connue. Étape 2 — Déduire celles de la force inconnue : la force inconnue a la même intensité. Étape 3 — Calculer la longueur de chaque flèche : à la même échelle, même intensité donne même longueur de flèche. Étape 4 — Tracer les deux flèches : les deux flèches ont donc la même longueur. Pourquoi pas « sens » : les deux flèches ont des sens opposés, pas le même.",
+                  "answers": [
+                    {
+                      "content": "longueur",
+                      "correct": true
+                    },
+                    {
+                      "content": "taille",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Longueur = intensité ÷ échelle ; intensité = longueur × échelle."
+            }
+          ]
+        },
+        {
+          "title": "Sujet 2 · La vie courante en Côte d'Ivoire",
+          "notions": "Balance à ressort au marché ; lampe suspendue dans la cour ; bassine posée sur une table ; panier suspendu à une corde : bilan, équilibre sous deux forces, calcul de tension et de réaction, flèches à l'échelle.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Au marché, une vendeuse pèse ses produits avec une balance à ressort, c'est-à-dire un dynamomètre : on lit l'intensité de la force du ressort. Les produits sont immobiles pendant la mesure. On prend $g = 10$ N/kg.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une vendeuse accroche un régime de bananes plantain de 7 kg à une balance à ressort, immobile. Que lit-on sur la balance, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le régime ; $\\vec P$ et la tension $\\vec T$ du ressort. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 7 \\times 10 = 70$ N : on lit 70 N. Pourquoi pas 7 N : c'est la masse en kg, la balance indique une force en N.",
+                  "answers": [
+                    {
+                      "content": "70",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une balance à ressort indique 120 N pour un panier de mangues suspendu, immobile. Quelle est la masse du panier, en kg ? On prend $g = 10$ N/kg.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le panier ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P = T = 120$ N. Étape 4 — Calculer l'inconnue : $m = P \\div g = 120 \\div 10 = 12$ kg. Pourquoi pas 1 200 kg : on multiplierait par $g$ au lieu de diviser.",
+                  "answers": [
+                    {
+                      "content": "12",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "kg",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une balance à ressort indique 36 N pour un sac d'arachides suspendu, immobile. Le poids du sac vaut ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le sac ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P = T$. Étape 4 — Calculer l'inconnue : la lecture donne $T = 36$ N, donc $P = 36$ N. Pourquoi pas 3,6 N : c'est la masse en kg du sac, pas son poids. Pourquoi pas 0 N : le sac est immobile parce que le ressort tire sur lui avec 36 N.",
+                  "answers": [
+                    {
+                      "content": "36 N",
+                      "correct": true
+                    },
+                    {
+                      "content": "3,6 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "360 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "0 N",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un panier de mangues est suspendu, immobile, au crochet d'une balance à ressort tenue à la main. Quelles forces sont exercées sur le panier ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Définir le système : le système est le panier. Étape 2 — Lister les objets : la Terre agit à distance ; le crochet touche le panier ; la main ne touche que la balance. Étape 3 — Nommer la force : poids $\\vec P$ et tension $\\vec T$ du ressort. Étape 4 — Écrire le bilan : deux forces sont exercées sur le panier. Pourquoi pas « la force de la main » : la main ne touche pas le panier. Pourquoi pas « la force du panier sur le crochet » : elle s'exerce sur le crochet, pas sur le panier.",
+                  "answers": [
+                    {
+                      "content": "Le poids du panier",
+                      "correct": true
+                    },
+                    {
+                      "content": "La tension du ressort de la balance",
+                      "correct": true
+                    },
+                    {
+                      "content": "La force de la main sur le panier",
+                      "correct": false
+                    },
+                    {
+                      "content": "La force du panier sur le crochet",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une balance à ressort a un calibre de 200 N, c'est-à-dire qu'elle ne doit pas mesurer plus de 200 N. On prend $g = 10$ N/kg. Quelle masse maximale peut-on y suspendre, immobile, en kg ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la masse suspendue ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P = T$, avec $T \\leq 200$ N. Étape 4 — Calculer l'inconnue : $m = 200 \\div 10 = 20$ kg. Pourquoi pas 2 000 kg : on multiplierait 200 par $g$ au lieu de diviser.",
+                  "answers": [
+                    {
+                      "content": "20",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "kg",
+                  "tolerance": 0
+                }
+              ],
+              "hint": "À l'équilibre, la lecture est égale au poids : $T = P = m \\times g$."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Dans la cour de l'école, une lampe de masse 3,5 kg est suspendue, immobile, à un fil accroché à une potence. Le fil peut supporter au plus une tension de 80 N. On prend $g = 10$ N/kg.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une lampe de 3,5 kg est suspendue, immobile, à un fil. Quelle est l'intensité de la tension du fil, en N ? On prend $g = 10$ N/kg.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la lampe ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 3{,}5 \\times 10 = 35$ N, donc $T = 35$ N. Pourquoi pas 3,5 N : c'est la masse en kg.",
+                  "answers": [
+                    {
+                      "content": "35",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un fil peut supporter au plus une tension de 80 N. Quelle masse maximale peut-on y suspendre, immobile, en kg ? On prend $g = 10$ N/kg.",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la masse suspendue ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P = T$, avec $T \\leq 80$ N. Étape 4 — Calculer l'inconnue : $m = 80 \\div 10 = 8$ kg. Pourquoi pas 800 kg : on multiplierait 80 par $g$ au lieu de diviser.",
+                  "answers": [
+                    {
+                      "content": "8",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "kg",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un fil peut supporter au plus 80 N. On y suspend, immobile, une enseigne de 9 kg. On prend $g = 10$ N/kg. Que se passe-t-il ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est l'enseigne ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 9 \\times 10 = 90$ N, donc il faut $T = 90$ N, plus que les 80 N supportés. Pourquoi pas « la tension est nulle » : l'enseigne est immobile justement parce que la tension compense son poids. Pourquoi pas « 9 est inférieur à 80 » : on compare la masse en kg à une force en N.",
+                  "answers": [
+                    {
+                      "content": "Le fil casse, car la tension nécessaire est de 90 N",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le fil ne casse pas, car la tension est nulle quand l'enseigne est immobile",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le fil ne casse pas, car 9 est inférieur à 80",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le fil casse, car la tension nécessaire est de 9 N",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une lampe est suspendue à un fil accroché à une potence. La lampe ne touche pas la potence, mais celle-ci exerce quand même une force directement sur la lampe.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Définir le système : le système est la lampe. Étape 2 — Lister les objets : la Terre agit à distance ; le fil touche la lampe ; la potence ne touche que le fil. Étape 3 — Nommer la force : la potence n'exerce pas de force directement sur la lampe. Étape 4 — Écrire le bilan : le bilan de la lampe comprend le poids et la tension du fil : l'affirmation est fausse. Pourquoi pas vrai : la potence agit sur le fil, et c'est le fil qui agit sur la lampe.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "La tension d'un fil vaut 35 N. On la représente avec l'échelle 1 cm pour 5 N. Quelle est la longueur de la flèche, en cm ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $T = 35$ N. Étape 2 — Déduire celles de la force inconnue : la tension est la force connue. Étape 3 — Calculer la longueur de chaque flèche : longueur = $35 \\div 5 = 7$ cm. Étape 4 — Tracer les deux flèches : on trace une flèche de 7 cm vers le haut. Pourquoi pas 175 cm : on multiplierait au lieu de diviser par le nombre de newtons pour 1 cm.",
+                  "answers": [
+                    {
+                      "content": "7",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cm",
+                  "tolerance": 0
+                }
+              ],
+              "hint": "À l'équilibre, $T = P = m \\times g$ ; compare des forces avec des forces."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Dans une cuisine, une bassine vide de masse 1,5 kg contient 8,5 kg d'eau. Elle est posée, immobile, sur une table horizontale. On prend $g = 10$ N/kg et l'échelle 1 cm pour 25 N.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une bassine vide de 1,5 kg contient 8,5 kg d'eau. On prend $g = 10$ N/kg. Quelle est l'intensité du poids de l'ensemble bassine et eau, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système : le système est la bassine avec son eau, de masse $1{,}5 + 8{,}5 = 10$ kg. Étape 2 — Lister les objets : la Terre agit à distance. Étape 3 — Nommer la force : la Terre exerce le poids $\\vec P$. Étape 4 — Écrire le bilan : $P = 10 \\times 10 = 100$ N. Pourquoi pas 85 N : on oublierait la masse de la bassine vide.",
+                  "answers": [
+                    {
+                      "content": "100",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une bassine avec son eau, de poids 100 N, est posée, immobile, sur une table horizontale. Quelle est l'intensité de la réaction de la table, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la bassine avec son eau ; $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $R = 100$ N. Pourquoi pas 10 N : c'est la masse en kg ; le poids est déjà donné, 100 N.",
+                  "answers": [
+                    {
+                      "content": "100",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "La réaction de la table sur une bassine vaut 100 N. On la représente avec l'échelle 1 cm pour 25 N. Quelle est la longueur de la flèche, en cm ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $R = 100$ N. Étape 2 — Déduire celles de la force inconnue : la réaction est la force connue. Étape 3 — Calculer la longueur de chaque flèche : longueur = $100 \\div 25 = 4$ cm. Étape 4 — Tracer les deux flèches : on trace une flèche de 4 cm vers le haut. Pourquoi pas 2 500 cm : on multiplierait au lieu de diviser.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cm",
+                  "tolerance": 0
+                },
+                {
+                  "content": "On vide la moitié de l'eau d'une bassine : il reste 4,25 kg d'eau dans la bassine de 1,5 kg, posée et immobile sur la table. On prend $g = 10$ N/kg. Quelle est la nouvelle réaction de la table, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la bassine avec l'eau restante, de masse $1{,}5 + 4{,}25 = 5{,}75$ kg ; $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $P = 5{,}75 \\times 10 = 57,5$ N, donc $R = 57,5$ N. Pourquoi pas 100 N : c'est la réaction avant d'avoir vidé l'eau ; la réaction suit le poids, qui a diminué.",
+                  "answers": [
+                    {
+                      "content": "57,5",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une bassine d'eau est posée, immobile, sur une table horizontale. Quelles forces compte le bilan des forces exercées sur la bassine ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système : le système est la bassine avec son eau. Étape 2 — Lister les objets : la Terre agit à distance ; la table touche la bassine. Étape 3 — Nommer la force : poids $\\vec P$ et réaction $\\vec R$. Étape 4 — Écrire le bilan : le bilan compte deux forces. Pourquoi pas « avec la force pressante » : elle s'exerce sur la table, pas sur la bassine, donc elle n'entre pas dans le bilan de la bassine.",
+                  "answers": [
+                    {
+                      "content": "Le poids et la réaction de la table",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le poids, la réaction de la table et la force pressante",
+                      "correct": false
+                    },
+                    {
+                      "content": "La réaction de la table seulement",
+                      "correct": false
+                    },
+                    {
+                      "content": "La force pressante et la réaction de la table",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Le système comprend la bassine et son eau ; à l'équilibre, $R = P$."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Au marché, un panier de mangues de masse 15 kg est suspendu, immobile, à une corde attachée à un crochet fixé sous l'étal. On prend $g = 10$ N/kg.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Un panier de 15 kg est suspendu, immobile, à une corde. On prend $g = 10$ N/kg. Quelle est l'intensité de la tension de la corde, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le panier ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 15 \\times 10 = 150$ N, donc $T = 150$ N. Pourquoi pas 15 N : c'est la masse en kg.",
+                  "answers": [
+                    {
+                      "content": "150",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un panier de 15 kg est suspendu, immobile, à une corde. Quelles sont les caractéristiques de la tension de la corde sur le panier ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $\\vec P$ : G, verticale, vers le bas, $P = 150$ N. Étape 2 — Déduire celles de la force inconnue : $\\vec T$ a la même direction, le sens opposé et la même intensité ; elle s'applique au point d'attache. Étape 3 — Calculer la longueur de chaque flèche : sans objet ici. Étape 4 — Tracer les deux flèches : $\\vec T$ est donc verticale, vers le haut, 150 N. Pourquoi pas « G » : G est le point d'application du poids. Pourquoi pas 15 N : l'intensité de la tension est celle du poids, 150 N.",
+                  "answers": [
+                    {
+                      "content": "Point d'attache de la corde, verticale, vers le haut, 150 N",
+                      "correct": true
+                    },
+                    {
+                      "content": "Centre de gravité G, verticale, vers le haut, 150 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "Point d'attache de la corde, verticale, vers le bas, 150 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "Point d'attache de la corde, verticale, vers le haut, 15 N",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La tension d'une corde vaut 150 N. On la représente avec l'échelle 1 cm pour 30 N. Quelle est la longueur de la flèche, en cm ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $T = 150$ N. Étape 2 — Déduire celles de la force inconnue : la tension est la force connue. Étape 3 — Calculer la longueur de chaque flèche : longueur = $150 \\div 30 = 5$ cm. Étape 4 — Tracer les deux flèches : on trace une flèche de 5 cm vers le haut. Pourquoi pas 4 500 cm : on multiplierait au lieu de diviser.",
+                  "answers": [
+                    {
+                      "content": "5",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cm",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un panier est suspendu, immobile, à une corde. Quelles affirmations sur son poids $\\vec P$ et la tension $\\vec T$ de la corde sont justes ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le panier ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : même droite d'action verticale, sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$ : les intensités sont égales. Étape 4 — Calculer l'inconnue : la finesse de la corde ne change pas l'égalité. Pourquoi pas « plus petite » : si $T$ était plus petite que $P$, le panier tomberait. Pourquoi pas « même point » : le poids s'applique en G, la tension au point d'attache.",
+                  "answers": [
+                    {
+                      "content": "Elles ont la même droite d'action : la verticale",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elles ont des sens opposés",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elles sont appliquées au même point, le centre de gravité",
+                      "correct": false
+                    },
+                    {
+                      "content": "La tension est plus petite que le poids parce que la corde est fine",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "On ajoute 5 kg de mangues au panier de 15 kg : il pèse maintenant 20 kg et reste immobile, suspendu à la corde. On prend $g = 10$ N/kg. Quelle est la nouvelle tension de la corde, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le panier de 20 kg ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 20 \\times 10 = 200$ N, donc $T = 200$ N. Pourquoi pas 155 N : on ajouterait 5 N, au lieu d'ajouter le poids de 5 kg, soit 50 N, aux 150 N précédents.",
+                  "answers": [
+                    {
+                      "content": "200",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                }
+              ],
+              "hint": "À l'équilibre, $T = P = m \\times g$ ; une masse de plus, c'est un poids de plus."
+            }
+          ]
+        },
+        {
+          "title": "Sujet 3 · Raisonner et justifier",
+          "notions": "Justifier l'équilibre d'un solide soumis à deux forces ; reconnaître la condition qui manque ; choisir un dynamomètre selon son calibre ; retrouver les caractéristiques d'une force inconnue.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Dans la cour de l'école, une lampe de masse 2 kg est suspendue, immobile, à un fil. On prend $g = 10$ N/kg. Tu raisonnes sur les deux forces exercées sur la lampe.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une lampe de 2 kg est suspendue, immobile, à un fil. On prend $g = 10$ N/kg. Rédige le bilan des forces exercées sur la lampe, écris la condition d'équilibre et calcule la tension du fil.",
+                  "question_type": "written",
+                  "explanation": "Corrigé modèle : Le système est la lampe. Elle subit son poids $\\vec P$ (G, verticale, vers le bas, $P = 2 \\times 10 = 20$ N) et la tension $\\vec T$ du fil (point d'attache, verticale, vers le haut). La lampe est immobile : les deux forces ont la même droite d'action, des sens opposés et la même intensité, donc $T = P = 20$ N. Barème : système (0,5), forces et caractéristiques (1), condition (1), calcul avec unité (0,5). Pourquoi pas $T = 2$ N : c'est la masse de la lampe, pas son poids.",
+                  "answers": [],
+                  "points": 3,
+                  "criteria": [
+                    "Le système (la lampe) est défini",
+                    "Les deux forces sont nommées avec leurs caractéristiques",
+                    "La condition d'équilibre est écrite : même droite d'action, sens opposés, $T = P$",
+                    "Le calcul $T = 2 \\times 10 = 20$ N est juste, avec l'unité"
+                  ],
+                  "starter": "Le système est…"
+                },
+                {
+                  "content": "Une lampe de 2 kg est suspendue, immobile, à un fil. On prend $g = 10$ N/kg. Quelle est l'intensité de la tension du fil, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la lampe ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 2 \\times 10 = 20$ N, donc $T = 20$ N. Pourquoi pas 2 N : c'est la masse en kg.",
+                  "answers": [
+                    {
+                      "content": "20",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une lampe est suspendue, immobile, à un fil. Pourquoi ne tombe-t-elle pas ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la lampe ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : elles ont la même droite d'action et des sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$ : la tension compense exactement le poids. Étape 4 — Calculer l'inconnue : la lampe reste donc immobile. Pourquoi pas « son poids est nul » : le poids existe toujours, même pour un solide immobile. Pourquoi pas « la tension est plus grande » : la lampe monterait.",
+                  "answers": [
+                    {
+                      "content": "La tension du fil compense son poids",
+                      "correct": true
+                    },
+                    {
+                      "content": "Son poids est nul quand elle est immobile",
+                      "correct": false
+                    },
+                    {
+                      "content": "La potence qui porte le fil attire la lampe",
+                      "correct": false
+                    },
+                    {
+                      "content": "La tension du fil est plus grande que son poids",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Si l'on coupe le fil qui retient la lampe, la lampe n'est plus soumise qu'à son poids.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Définir le système : le système est la lampe. Étape 2 — Lister les objets : après la coupure, le fil ne touche plus la lampe ; la Terre agit toujours à distance. Étape 3 — Nommer la force : il ne reste que le poids $\\vec P$. Étape 4 — Écrire le bilan : le bilan ne compte plus qu'une force : la lampe tombe. L'affirmation est vraie. Pourquoi pas faux : sans la tension, rien ne compense le poids, et la lampe n'est plus en équilibre.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une lampe est en équilibre sous l'action de son poids et de la tension du fil. La somme vectorielle de ces deux forces est ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la lampe ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : même droite d'action, sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : la somme $\\vec P + \\vec T$ est donc le vecteur nul. Pourquoi pas « égale au poids » : ce serait le cas si la tension était nulle, et la lampe tomberait.",
+                  "answers": [
+                    {
+                      "content": "nulle",
+                      "correct": true
+                    },
+                    {
+                      "content": "égale au poids",
+                      "correct": false
+                    },
+                    {
+                      "content": "dirigée vers le bas",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Écris d'abord le bilan, puis la condition d'équilibre, puis le calcul avec l'unité."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Des élèves proposent des couples de deux forces appliquées à un solide. Tu dois dire si le solide peut rester en équilibre.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Deux forces de 30 N, toutes deux verticales et dirigées vers le bas, sont appliquées à un solide. Laquelle des trois conditions d'équilibre n'est pas respectée ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit deux forces de 30 N. Étape 2 — Vérifier la direction et le sens : elles sont sur la même verticale, mais dans le même sens. Étape 3 — Écrire l'égalité des intensités : les intensités sont égales : 30 N chacune. Étape 4 — Calculer l'inconnue : la condition des sens opposés manque : leur somme vaut 60 N vers le bas. Pourquoi pas « la même intensité » : les deux forces valent 30 N. Pourquoi pas « aucune » : le solide serait alors immobile, alors que 60 N le tirent vers le bas.",
+                  "answers": [
+                    {
+                      "content": "Les sens opposés",
+                      "correct": true
+                    },
+                    {
+                      "content": "La même intensité",
+                      "correct": false
+                    },
+                    {
+                      "content": "La même droite d'action",
+                      "correct": false
+                    },
+                    {
+                      "content": "Aucune : le solide est en équilibre",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un solide est tiré vers le haut avec 30 N et vers le bas avec 20 N, sur la même verticale. Laquelle des trois conditions d'équilibre n'est pas respectée ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit deux forces, 30 N et 20 N. Étape 2 — Vérifier la direction et le sens : elles ont la même droite d'action et des sens opposés. Étape 3 — Écrire l'égalité des intensités : les intensités sont 30 N et 20 N : elles sont différentes. Étape 4 — Calculer l'inconnue : la somme vaut 10 N vers le haut : le solide n'est pas en équilibre. Pourquoi pas « les sens opposés » : ils le sont bien, un vers le haut, l'autre vers le bas.",
+                  "answers": [
+                    {
+                      "content": "La même intensité",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les sens opposés",
+                      "correct": false
+                    },
+                    {
+                      "content": "La même droite d'action",
+                      "correct": false
+                    },
+                    {
+                      "content": "Aucune : le solide est en équilibre",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels couples de forces peuvent équilibrer un solide soumis à ces deux seules forces ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : on examine chaque couple de deux forces. Étape 2 — Vérifier la direction et le sens : il faut la même droite d'action et des sens opposés. Étape 3 — Écrire l'égalité des intensités : il faut aussi des intensités égales. Étape 4 — Calculer l'inconnue : seuls les deux premiers couples respectent les trois conditions. Pourquoi pas « deux verticales différentes » : les intensités et les sens conviennent, mais la droite d'action est différente. Pourquoi pas « 20 N et 40 N » : les intensités ne sont pas égales.",
+                  "answers": [
+                    {
+                      "content": "20 N vers le haut et 20 N vers le bas, sur la même verticale",
+                      "correct": true
+                    },
+                    {
+                      "content": "35 N vers la gauche et 35 N vers la droite, sur la même horizontale",
+                      "correct": true
+                    },
+                    {
+                      "content": "20 N vers le haut et 20 N vers le bas, sur deux verticales différentes",
+                      "correct": false
+                    },
+                    {
+                      "content": "20 N vers la droite et 40 N vers la gauche, sur la même horizontale",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un solide est soumis à deux forces de 30 N, verticales et toutes deux dirigées vers le bas. Explique pourquoi il ne peut pas être en équilibre.",
+                  "question_type": "written",
+                  "explanation": "Corrigé modèle : Pour qu'un solide soumis à deux forces soit en équilibre, les forces doivent avoir la même droite d'action, des sens opposés et la même intensité. Ici les deux forces ont le même sens : elles s'ajoutent, leur somme vaut 60 N vers le bas et n'est pas nulle. Le solide n'est donc pas en équilibre. Barème : même sens (0,5), somme non nulle (1), condition citée (0,5). Pourquoi pas « elles s'annulent car elles ont la même intensité » : l'égalité des intensités ne suffit pas, il faut des sens opposés.",
+                  "answers": [],
+                  "points": 2,
+                  "criteria": [
+                    "Les deux forces ont le même sens",
+                    "Leur somme vaut 60 N vers le bas et n'est pas nulle",
+                    "La condition de sens opposés est citée"
+                  ],
+                  "starter": "Les deux forces ont…"
+                },
+                {
+                  "content": "Un solide est en équilibre sous deux forces. L'une vaut 35 N. Quelle est l'intensité de l'autre, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit deux forces, 35 N et $F_2$. Étape 2 — Vérifier la direction et le sens : elles ont la même droite d'action et des sens opposés. Étape 3 — Écrire l'égalité des intensités : $F_1 = F_2$. Étape 4 — Calculer l'inconnue : donc $F_2 = 35$ N. Pourquoi pas 70 N : on additionnerait les intensités, alors qu'à l'équilibre elles sont égales.",
+                  "answers": [
+                    {
+                      "content": "35",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                }
+              ],
+              "hint": "Les trois conditions sont : même droite d'action, sens opposés, même intensité."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Au laboratoire, on dispose de trois dynamomètres de calibres 5 N, 10 N et 20 N. Le calibre est la plus grande valeur mesurable. On veut peser, au repos, un solide de masse 1,8 kg. On prend $g = 10$ N/kg.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Un solide de masse 1,8 kg est suspendu, immobile, à un dynamomètre. On prend $g = 10$ N/kg. Quelle est l'intensité de son poids, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système : le système est le solide. Étape 2 — Lister les objets : la Terre agit à distance. Étape 3 — Nommer la force : la Terre exerce le poids $\\vec P$. Étape 4 — Écrire le bilan : $P = 1{,}8 \\times 10 = 18$ N. Pourquoi pas 1,8 N : c'est la masse en kg.",
+                  "answers": [
+                    {
+                      "content": "18",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un solide de poids 18 N doit être suspendu, au repos, à un dynamomètre. On dispose de dynamomètres de calibres 5 N, 10 N et 20 N. Lequel peut être utilisé ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le solide ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P = 18$ N : le ressort doit tirer avec 18 N. Étape 4 — Calculer l'inconnue : seul le calibre de 20 N est supérieur à 18 N. Pourquoi pas « celui de 10 N » : 18 N dépasse 10 N, le ressort serait abîmé. Pourquoi pas « n'importe lequel » : le calibre est la limite à ne pas dépasser.",
+                  "answers": [
+                    {
+                      "content": "Celui de 20 N",
+                      "correct": true
+                    },
+                    {
+                      "content": "Celui de 10 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "Celui de 5 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "N'importe lequel des trois",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quand un solide est suspendu, immobile, à un dynamomètre, la valeur lue est égale au poids du solide.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le solide ; $\\vec P$ et la tension $\\vec T$ du ressort. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : la valeur lue est $T$, donc elle est égale au poids : l'affirmation est vraie. Pourquoi pas faux : la lecture donne l'intensité de la force du ressort, qui compense le poids à l'équilibre.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un solide de poids 18 N doit être suspendu, au repos, à un dynamomètre de calibre 10 N. Explique pourquoi ce dynamomètre ne convient pas.",
+                  "question_type": "written",
+                  "explanation": "Corrigé modèle : Quand le solide est immobile, la force du ressort a la même intensité que le poids : le ressort devrait tirer avec 18 N. Or le calibre est de 10 N, la plus grande valeur mesurable : 18 N est supérieur à 10 N, le ressort serait trop étiré et risquerait d'être abîmé. Barème : lecture égale au poids (0,5), comparaison 18 N et 10 N (1), conséquence pour le ressort (0,5). Pourquoi pas « le dynamomètre indiquerait 10 N » : le ressort ne peut pas indiquer plus que son calibre sans être abîmé.",
+                  "answers": [],
+                  "points": 2,
+                  "criteria": [
+                    "La lecture serait égale au poids, 18 N",
+                    "18 N dépasse le calibre de 10 N",
+                    "Le risque pour le ressort est cité"
+                  ],
+                  "starter": "À l'équilibre, la force du ressort est…"
+                },
+                {
+                  "content": "Un dynamomètre a un calibre de 5 N. On prend $g = 10$ N/kg. Quelle masse maximale peut-on y suspendre, au repos, en kg ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la masse suspendue ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P = T$, avec $T \\leq 5$ N. Étape 4 — Calculer l'inconnue : $m = 5 \\div 10 = 0{,}5$ kg. Pourquoi pas 50 kg : on multiplierait 5 par $g$ au lieu de diviser pour passer du poids à la masse.",
+                  "answers": [
+                    {
+                      "content": "0,5",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "kg",
+                  "tolerance": 0
+                }
+              ],
+              "hint": "Au repos, la lecture est égale au poids ; elle ne doit pas dépasser le calibre."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Sur un schéma à l'échelle 1 cm pour 10 N, la flèche qui représente le poids d'un sac suspendu, immobile, à un fil mesure 4,5 cm. On prend $g = 10$ N/kg.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Le poids d'un sac est représenté par une flèche de 4,5 cm avec l'échelle 1 cm pour 10 N. Quelle est l'intensité du poids, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : la flèche du poids mesure 4,5 cm. Étape 2 — Déduire celles de la force inconnue : l'échelle donne 10 N par cm. Étape 3 — Calculer la longueur de chaque flèche : intensité = $4{,}5 \\times 10 = 45$ N. Étape 4 — Tracer les deux flèches : le poids vaut 45 N. Pourquoi pas 0,45 N : on diviserait la longueur par l'échelle au lieu de la multiplier.",
+                  "answers": [
+                    {
+                      "content": "45",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Le poids d'un sac vaut 45 N. On prend $g = 10$ N/kg. Quelle est la masse du sac, en kg ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système : le système est le sac. Étape 2 — Lister les objets : la Terre agit à distance. Étape 3 — Nommer la force : la Terre exerce le poids, avec $P = m \\times g$. Étape 4 — Écrire le bilan : $m = P \\div g = 45 \\div 10 = 4{,}5$ kg. Pourquoi pas 450 kg : on multiplierait par $g$ au lieu de diviser.",
+                  "answers": [
+                    {
+                      "content": "4,5",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "kg",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un sac de poids 45 N est suspendu, immobile, à un fil. Quelle est l'intensité de la tension du fil, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le sac ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $T = 45$ N. Pourquoi pas 4,5 N : 4,5 est la masse en kg, pas une force.",
+                  "answers": [
+                    {
+                      "content": "45",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "La tension du fil vaut 45 N. On la représente avec une autre échelle : 1 cm pour 15 N. Quelle est la longueur de la flèche, en cm ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $T = 45$ N. Étape 2 — Déduire celles de la force inconnue : la tension est la force connue ; l'échelle est 15 N par cm. Étape 3 — Calculer la longueur de chaque flèche : longueur = $45 \\div 15 = 3$ cm. Étape 4 — Tracer les deux flèches : on trace une flèche de 3 cm vers le haut. Pourquoi pas 4,5 cm : ce serait la longueur avec l'ancienne échelle de 10 N par cm.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cm",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un sac est suspendu, immobile, à un fil. Son poids vaut 45 N. Donne les caractéristiques de la tension du fil et justifie-les.",
+                  "question_type": "written",
+                  "explanation": "Corrigé modèle : Le sac est immobile sous deux forces, son poids et la tension du fil : elles ont la même droite d'action, des sens opposés et la même intensité. La tension est donc verticale, dirigée vers le haut, d'intensité 45 N, et son point d'application est le point d'attache du fil sur le sac. Barème : direction (0,5), sens (0,5), intensité (1), point d'application (1). Pourquoi pas « appliquée en G » : G est le point d'application du poids, pas de la tension.",
+                  "answers": [],
+                  "points": 3,
+                  "criteria": [
+                    "Direction : verticale, la même que le poids",
+                    "Sens : vers le haut, opposé au poids",
+                    "Intensité : 45 N, égale à celle du poids",
+                    "Point d'application : le point d'attache du fil"
+                  ],
+                  "starter": "La tension est…"
+                }
+              ],
+              "hint": "Même direction, sens opposé, même intensité ; le point d'application se lit sur la situation."
+            }
+          ]
+        },
+        {
+          "title": "Sujet 4 · Bilan de la leçon",
+          "notions": "Bilan des forces, équilibre d'un solide soumis à deux forces, détermination et représentation d'une force inconnue : lampe suspendue, bassine posée, balance à ressort, dynamomètre du laboratoire.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Dans la cour de l'école, une lampe de masse 8 kg est suspendue, immobile, à un fil accroché à une potence. On prend $g = 10$ N/kg et l'échelle 1 cm pour 20 N.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une lampe de 8 kg est suspendue, immobile, à un fil accroché à une potence. Quelles forces sont exercées sur la lampe ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système : le système est la lampe. Étape 2 — Lister les objets : la Terre agit à distance ; le fil touche la lampe ; la potence ne touche que le fil. Étape 3 — Nommer la force : poids $\\vec P$ et tension $\\vec T$. Étape 4 — Écrire le bilan : le bilan compte deux forces. Pourquoi pas « le poids et la force de la potence » : la potence ne touche pas la lampe, c'est le fil qui agit sur elle.",
+                  "answers": [
+                    {
+                      "content": "Le poids et la tension du fil",
+                      "correct": true
+                    },
+                    {
+                      "content": "Le poids et la force de la potence",
+                      "correct": false
+                    },
+                    {
+                      "content": "La tension du fil seulement",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le poids, la tension du fil et la force pressante",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une lampe a une masse de 8 kg. On prend $g = 10$ N/kg. Quelle est l'intensité de son poids, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système : le système est la lampe. Étape 2 — Lister les objets : la Terre agit à distance. Étape 3 — Nommer la force : la Terre exerce le poids $\\vec P$. Étape 4 — Écrire le bilan : $P = 8 \\times 10 = 80$ N. Pourquoi pas 8 N : c'est la masse en kg.",
+                  "answers": [
+                    {
+                      "content": "80",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une lampe de 8 kg est suspendue, immobile, à un fil. On prend $g = 10$ N/kg. Quelle est l'intensité de la tension du fil, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la lampe ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 8 \\times 10 = 80$ N, donc $T = 80$ N. Pourquoi pas 0 N : la lampe est immobile parce que le fil la retient.",
+                  "answers": [
+                    {
+                      "content": "80",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "La tension d'un fil vaut 80 N. On la représente avec l'échelle 1 cm pour 20 N. Quelle est la longueur de la flèche, en cm ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $T = 80$ N. Étape 2 — Déduire celles de la force inconnue : la tension est la force connue. Étape 3 — Calculer la longueur de chaque flèche : longueur = $80 \\div 20 = 4$ cm. Étape 4 — Tracer les deux flèches : on trace une flèche de 4 cm vers le haut. Pourquoi pas 1 600 cm : on multiplierait au lieu de diviser.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cm",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Pour la lampe de 8 kg suspendue à son fil, la flèche du poids est dessinée vers le bas et la flèche de la tension vers le haut, avec la même longueur.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $P = 80$ N, vers le bas ; $T = 80$ N, vers le haut. Étape 2 — Déduire celles de la force inconnue : même direction, sens opposés, même intensité. Étape 3 — Calculer la longueur de chaque flèche : même échelle, même intensité : même longueur. Étape 4 — Tracer les deux flèches : les deux flèches ont 4 cm, de sens opposés : l'affirmation est vraie. Pourquoi pas faux : si la flèche de la tension était plus courte, la lampe descendrait.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Bilan, puis $T = P = m \\times g$, puis longueur = intensité ÷ échelle."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Au marché, une bassine contenant de l'eau, de masse totale 12 kg, est posée, immobile, sur une table horizontale. On prend $g = 10$ N/kg et l'échelle 1 cm pour 30 N.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une bassine avec son eau a une masse totale de 12 kg. On prend $g = 10$ N/kg. Quelle est l'intensité de son poids, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système : le système est la bassine avec son eau. Étape 2 — Lister les objets : la Terre agit à distance. Étape 3 — Nommer la force : la Terre exerce le poids $\\vec P$. Étape 4 — Écrire le bilan : $P = 12 \\times 10 = 120$ N. Pourquoi pas 12 N : c'est la masse en kg.",
+                  "answers": [
+                    {
+                      "content": "120",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une bassine de poids 120 N est posée, immobile, sur une table horizontale. Quelle est l'intensité de la réaction de la table, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la bassine ; $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $R = 120$ N. Pourquoi pas 240 N : on additionnerait le poids et la réaction, alors qu'à l'équilibre ils sont égaux.",
+                  "answers": [
+                    {
+                      "content": "120",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "La réaction de la table vaut 120 N. On la représente avec l'échelle 1 cm pour 30 N. Quelle est la longueur de la flèche, en cm ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $R = 120$ N. Étape 2 — Déduire celles de la force inconnue : la réaction est la force connue. Étape 3 — Calculer la longueur de chaque flèche : longueur = $120 \\div 30 = 4$ cm. Étape 4 — Tracer les deux flèches : on trace une flèche de 4 cm vers le haut, du point de contact. Pourquoi pas 3 600 cm : on multiplierait au lieu de diviser.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cm",
+                  "tolerance": 0
+                },
+                {
+                  "content": "La force pressante de la bassine sur la table fait partie du bilan des forces exercées sur la bassine.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 1 — Définir le système : le système est la bassine. Étape 2 — Lister les objets : la Terre agit à distance ; la table touche la bassine. Étape 3 — Nommer la force : poids et réaction de la table. Étape 4 — Écrire le bilan : la force pressante s'exerce sur la table, pas sur la bassine : l'affirmation est fausse. Pourquoi pas vrai : le bilan ne contient que les forces exercées sur le système.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Une bassine est posée, immobile, sur une table horizontale. Quelles sont les caractéristiques de la réaction de la table sur la bassine ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $\\vec P$ : G, verticale, vers le bas. Étape 2 — Déduire celles de la force inconnue : $\\vec R$ a la même direction, le sens opposé et la même intensité ; elle s'applique au point de contact. Étape 3 — Calculer la longueur de chaque flèche : sans objet ici. Étape 4 — Tracer les deux flèches : $\\vec R$ est verticale, vers le haut, appliquée au point de contact. Pourquoi pas « G » : G est le point d'application du poids, pas de la réaction.",
+                  "answers": [
+                    {
+                      "content": "Point de contact, verticale, vers le haut, même intensité que le poids",
+                      "correct": true
+                    },
+                    {
+                      "content": "Centre de gravité G, verticale, vers le haut, même intensité que le poids",
+                      "correct": false
+                    },
+                    {
+                      "content": "Point de contact, verticale, vers le bas, même intensité que le poids",
+                      "correct": false
+                    },
+                    {
+                      "content": "Point de contact, verticale, vers le haut, intensité plus grande que le poids",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "À l'équilibre, $R = P$ ; la réaction s'applique au point de contact."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Au marché, une vendeuse pèse un sac de 9 kg avec une balance à ressort de calibre 100 N. Le sac est suspendu et immobile pendant la mesure. On prend $g = 10$ N/kg et l'échelle 1 cm pour 30 N.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Un sac de 9 kg est suspendu, immobile, à une balance à ressort. On prend $g = 10$ N/kg. Que lit-on sur la balance, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le sac ; $\\vec P$ et la tension $\\vec T$ du ressort. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 9 \\times 10 = 90$ N : on lit 90 N. Pourquoi pas 9 N : c'est la masse en kg.",
+                  "answers": [
+                    {
+                      "content": "90",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une balance à ressort a un calibre de 100 N. On prend $g = 10$ N/kg. Quelle masse maximale peut-on y suspendre, au repos, en kg ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est la masse suspendue ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P = T$, avec $T \\leq 100$ N. Étape 4 — Calculer l'inconnue : $m = 100 \\div 10 = 10$ kg. Pourquoi pas 1 000 kg : on multiplierait 100 par $g$ au lieu de diviser.",
+                  "answers": [
+                    {
+                      "content": "10",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "kg",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Une balance à ressort de calibre 100 N sert à peser, au repos, un sac de 11 kg. On prend $g = 10$ N/kg. Que peut-on dire ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le sac ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 11 \\times 10 = 110$ N, supérieur au calibre de 100 N. Pourquoi pas « 11 N » : c'est la masse en kg. Pourquoi pas « 100 N sans risque » : le ressort ne peut pas tirer avec 110 N sans être trop étiré.",
+                  "answers": [
+                    {
+                      "content": "Le poids de 110 N dépasse le calibre : la balance n'est pas adaptée",
+                      "correct": true
+                    },
+                    {
+                      "content": "La balance indiquera 11 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le poids de 11 N est inférieur au calibre : aucun risque",
+                      "correct": false
+                    },
+                    {
+                      "content": "La balance indiquera 100 N sans aucun risque",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La tension d'un ressort sur un sac vaut 90 N. On la représente avec l'échelle 1 cm pour 30 N. Quelle est la longueur de la flèche, en cm ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $T = 90$ N. Étape 2 — Déduire celles de la force inconnue : la tension est la force connue. Étape 3 — Calculer la longueur de chaque flèche : longueur = $90 \\div 30 = 3$ cm. Étape 4 — Tracer les deux flèches : on trace une flèche de 3 cm vers le haut. Pourquoi pas 2 700 cm : on multiplierait au lieu de diviser.",
+                  "answers": [
+                    {
+                      "content": "3",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cm",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un sac est suspendu, immobile, à une balance à ressort. Quelles affirmations sur son poids $\\vec P$ et la tension $\\vec T$ du ressort sont justes ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le sac ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : même droite d'action, sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$ : même intensité. Étape 4 — Calculer l'inconnue : le sac est immobile parce que ces deux forces se compensent. Pourquoi pas « la tension est nulle » : un sac immobile reste suspendu grâce à la tension, qui compense son poids.",
+                  "answers": [
+                    {
+                      "content": "Elles ont la même intensité",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elles ont des sens opposés",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elles ont le même sens",
+                      "correct": false
+                    },
+                    {
+                      "content": "La tension est nulle parce que le sac est immobile",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Au repos, la lecture est égale au poids ; elle ne doit pas dépasser le calibre."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Au laboratoire, un solide S de masse 2,4 kg est accroché à un dynamomètre de calibre 25 N, puis posé sur la paillasse horizontale. On prend $g = 10$ N/kg et l'échelle 1 cm pour 6 N.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Un solide de 2,4 kg est accroché, immobile, à un dynamomètre. On prend $g = 10$ N/kg. Que lit-on sur le dynamomètre, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le solide ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 2{,}4 \\times 10 = 24$ N : on lit 24 N. Pourquoi pas 2,4 N : c'est la masse en kg.",
+                  "answers": [
+                    {
+                      "content": "24",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Un solide de 2,4 kg est accroché à un dynamomètre de calibre 25 N. On prend $g = 10$ N/kg. Le dynamomètre convient-il ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le solide ; $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P = 24$ N. Étape 4 — Calculer l'inconnue : 24 N est inférieur à 25 N : le calibre n'est pas dépassé. Pourquoi pas « 24 N dépasse le calibre de 25 N » : 24 est plus petit que 25. Pourquoi pas « il indiquera 2,4 N » : 2,4 est la masse en kg.",
+                  "answers": [
+                    {
+                      "content": "Oui : 24 N est inférieur au calibre de 25 N",
+                      "correct": true
+                    },
+                    {
+                      "content": "Non : 24 N dépasse 2,4 kg",
+                      "correct": false
+                    },
+                    {
+                      "content": "Oui : il indiquera 2,4 N",
+                      "correct": false
+                    },
+                    {
+                      "content": "Non : 24 N dépasse le calibre de 25 N",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le solide S, de poids 24 N, est posé, immobile, sur la paillasse horizontale. Quelle est l'intensité de la réaction de la paillasse, en N ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est S ; $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $R = 24$ N. Pourquoi pas 0 N : S est immobile parce que la paillasse le porte.",
+                  "answers": [
+                    {
+                      "content": "24",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "N",
+                  "tolerance": 0
+                },
+                {
+                  "content": "La réaction de la paillasse sur un solide vaut 24 N. On la représente avec l'échelle 1 cm pour 6 N. Quelle est la longueur de la flèche, en cm ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 1 — Relever les caractéristiques de la force connue : $R = 24$ N. Étape 2 — Déduire celles de la force inconnue : la réaction est la force connue. Étape 3 — Calculer la longueur de chaque flèche : longueur = $24 \\div 6 = 4$ cm. Étape 4 — Tracer les deux flèches : on trace une flèche de 4 cm vers le haut. Pourquoi pas 144 cm : on multiplierait au lieu de diviser.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cm",
+                  "tolerance": 0
+                },
+                {
+                  "content": "Le solide S de 2,4 kg est posé, immobile, sur la paillasse horizontale. On prend $g = 10$ N/kg. Fais le bilan des forces exercées sur S, écris la condition d'équilibre et calcule la réaction de la paillasse.",
+                  "question_type": "written",
+                  "explanation": "Corrigé modèle : Le système est le solide S. La Terre agit à distance et la paillasse touche S : S subit son poids $\\vec P$ (G, verticale, vers le bas, $P = 2{,}4 \\times 10 = 24$ N) et la réaction $\\vec R$ de la paillasse (point de contact, verticale, vers le haut). S est immobile : les deux forces ont la même droite d'action, des sens opposés et la même intensité, donc $R = P = 24$ N. Barème : système et objets (1), forces et caractéristiques (1), condition d'équilibre (1), calcul avec unité (1). Pourquoi pas $R = 2{,}4$ N : c'est la masse en kg, pas le poids.",
+                  "answers": [],
+                  "points": 4,
+                  "criteria": [
+                    "Le système (S) est défini et les objets qui agissent sont listés",
+                    "Le poids et la réaction sont nommés avec leurs caractéristiques",
+                    "La condition est écrite : même droite d'action, sens opposés, $R = P$",
+                    "Le calcul $P = 2{,}4 \\times 10 = 24$ N, donc $R = 24$ N, est juste avec l'unité"
+                  ],
+                  "starter": "Le système est…"
+                }
+              ],
+              "hint": "Poids : $P = m \\times g$ ; sur la paillasse, $R = P$ ; compare 24 N au calibre."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
