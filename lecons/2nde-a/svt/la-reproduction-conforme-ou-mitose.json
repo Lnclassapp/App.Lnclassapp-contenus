@@ -1,0 +1,3126 @@
+{
+  "format": "lnclass.course-tree",
+  "version": 3,
+  "courses": [
+    {
+      "name": "La reproduction conforme ou mitose",
+      "subtitle": "Leçon 9 — progression DPFC 2026-2027",
+      "level_name": "2nde",
+      "series_name": "A",
+      "material_name": "SVT",
+      "theme": "teal",
+      "figures": [
+        {
+          "key": "protocole-racine-oignon",
+          "kind": "diagram",
+          "description": "Schéma fléché du protocole d'observation de la mitose : on part d'une racine d'oignon, on coupe son extrémité, on la colore au carmin acétique, on l'écrase entre lame et lamelle, puis on l'observe au microscope. Les flèches donnent l'ordre des gestes.",
+          "params": {
+            "layout": "flow",
+            "direction": "down",
+            "nodes": [
+              {
+                "id": "a",
+                "label": "Racine d'oignon"
+              },
+              {
+                "id": "b",
+                "label": "Couper l'extrémité"
+              },
+              {
+                "id": "c",
+                "label": "Colorer (carmin acétique)"
+              },
+              {
+                "id": "d",
+                "label": "Écraser entre lame et lamelle"
+              },
+              {
+                "id": "e",
+                "label": "Observer au microscope"
+              }
+            ],
+            "edges": [
+              {
+                "from": "a",
+                "to": "b"
+              },
+              {
+                "from": "b",
+                "to": "c"
+              },
+              {
+                "from": "c",
+                "to": "d"
+              },
+              {
+                "from": "d",
+                "to": "e"
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "cycle-cellulaire",
+          "kind": "diagram",
+          "description": "Schéma en cycle des étapes d'une cellule qui se divise : interphase (noyau net, chromosomes invisibles), prophase (chromosomes visibles), métaphase (chromosomes alignés), anaphase (chromosomes tirés vers les pôles) et télophase (deux noyaux), puis retour à l'interphase.",
+          "params": {
+            "layout": "cycle",
+            "nodes": [
+              {
+                "id": "i",
+                "label": "Interphase : noyau net"
+              },
+              {
+                "id": "p",
+                "label": "Prophase : chromosomes visibles"
+              },
+              {
+                "id": "m",
+                "label": "Métaphase : chromosomes alignés"
+              },
+              {
+                "id": "a",
+                "label": "Anaphase : séparation vers les pôles"
+              },
+              {
+                "id": "t",
+                "label": "Télophase : deux noyaux"
+              }
+            ],
+            "edges": [
+              {
+                "from": "i",
+                "to": "p"
+              },
+              {
+                "from": "p",
+                "to": "m"
+              },
+              {
+                "from": "m",
+                "to": "a"
+              },
+              {
+                "from": "a",
+                "to": "t"
+              },
+              {
+                "from": "t",
+                "to": "i"
+              }
+            ]
+          },
+          "controls": []
+        },
+        {
+          "key": "comptage-phases",
+          "kind": "stat_chart",
+          "description": "Diagramme en barres du nombre de cellules observées à chaque phase sur 80 cellules de l'extrémité d'une racine d'oignon (valeurs fictives) : interphase 60, prophase 10, métaphase 4, anaphase 3, télophase 3.",
+          "params": {
+            "chart": "bars",
+            "series": [
+              60,
+              10,
+              4,
+              3,
+              3
+            ],
+            "labels": [
+              "Interphase",
+              "Prophase",
+              "Métaphase",
+              "Anaphase",
+              "Télophase"
+            ]
+          },
+          "controls": []
+        }
+      ],
+      "notions": [
+        {
+          "name": "Observer des cellules en division",
+          "remember": "La **mitose** est la division d'une **cellule mère** en **deux cellules filles** identiques à elle. On l'observe dans les tissus qui grandissent, comme l'**extrémité d'une racine** d'oignon, dans la **zone de multiplication** (ou méristème) située juste au-dessus de la coiffe. On prélève cette extrémité, on la colore au carmin acétique, puis on l'écrase entre lame et lamelle pour étaler les cellules en une seule couche, et on l'observe au microscope. Dans cette zone, beaucoup de cellules sont en division ; plus haut, dans la zone des poils absorbants, presque aucune ne l'est.",
+          "method": [
+            "Choisir la zone à observer : l'extrémité de la racine, dans la zone de multiplication.",
+            "Préparer la lame : couper l'extrémité, la colorer, puis l'écraser entre lame et lamelle.",
+            "Observer au microscope : commencer au faible grossissement, puis grossir sur une zone de cellules bien étalées.",
+            "Conclure : repérer les cellules en division (chromosomes visibles, deux noyaux) et en déduire que les cellules de cette zone se multiplient par mitose."
+          ],
+          "example": {
+            "statement": "Un élève veut montrer que des cellules se divisent dans une racine d'oignon qui a poussé dans l'eau. Décrire sa démarche et sa conclusion.",
+            "steps": [
+              "Choisir : il prélève l'extrémité de la racine, dans la zone de multiplication juste au-dessus de la coiffe.",
+              "Préparer : il coupe l'extrémité, la colore au carmin acétique, puis l'écrase entre lame et lamelle.",
+              "Observer : au faible grossissement, il trouve une zone de cellules bien étalées, puis il grossit.",
+              "Conclure : il voit des cellules aux chromosomes visibles et d'autres à deux noyaux : elles sont en division, donc les cellules de cette zone se multiplient par mitose."
+            ]
+          },
+          "pitfall": "Ne pas croire qu'on voit des cellules en division n'importe où dans la racine. Contre-exemple : sur une lame faite avec la zone des poils absorbants, tous les noyaux se ressemblent et on ne trouve presque aucune cellule en division ; sur une lame faite avec l'extrémité, on en voit beaucoup. Il faut donc prélever l'extrémité, puis l'écraser : sans écrasement, les cellules se superposent et on ne distingue rien.",
+          "figure": "protocole-racine-oignon",
+          "practice": {
+            "statement": "Tu t'entraînes à choisir la bonne zone de la racine et à lire une observation.",
+            "questions": [
+              {
+                "content": "On veut observer des cellules en division dans une racine d'oignon. Quelle zone faut-il prélever ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Choisir : la zone à observer est l'extrémité de la racine, la zone de multiplication, car c'est là que les cellules se divisent.  Pourquoi pas « la zone des poils absorbants » : ses cellules ne se divisent presque plus, la lame ne montrerait aucune division.",
+                "answers": [
+                  {
+                    "content": "L'extrémité, dans la zone de multiplication",
+                    "correct": true
+                  },
+                  {
+                    "content": "La zone des poils absorbants, plus haut",
+                    "correct": false
+                  },
+                  {
+                    "content": "La partie de la racine collée au bulbe",
+                    "correct": false
+                  }
+                ],
+                "hint": "Les cellules se divisent là où la racine grandit."
+              },
+              {
+                "content": "Au cours de la préparation de la lame, on écrase l'extrémité pour étaler les cellules en une seule couche.",
+                "question_type": "true_false",
+                "explanation": "Étape 2 — Préparer la lame : on coupe l'extrémité, on la colore, puis on l'écrase entre lame et lamelle. L'écrasement étale les cellules en une seule couche.  Pourquoi pas « Faux » : sans écrasement les cellules se superposent et on ne distingue plus les noyaux.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": true
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": false
+                  }
+                ],
+                "hint": "Pense à ce qui se passe si les cellules sont empilées."
+              },
+              {
+                "content": "Dans la racine, les cellules se divisent dans la zone de ___.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 4 — Conclure : les cellules en division se trouvent dans la zone de multiplication, juste au-dessus de la coiffe, là où les cellules se multiplient par mitose.  Pourquoi pas « la zone des poils » : cette zone absorbe l'eau mais ses cellules ne se divisent presque plus.",
+                "answers": [
+                  {
+                    "content": "croissance",
+                    "correct": true
+                  },
+                  {
+                    "content": "multiplication",
+                    "correct": true
+                  },
+                  {
+                    "content": "division",
+                    "correct": true
+                  }
+                ],
+                "hint": "Cette zone permet à la racine de grandir."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Reconnaître la zone et les gestes d'observation",
+              "statement": "Un élève observe une racine d'oignon au microscope. Réponds avec la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Dans quelle partie d'une racine d'oignon trouve-t-on beaucoup de cellules en division ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Choisir la zone : les divisions ont lieu dans la zone de multiplication, juste au-dessus de la coiffe.  Pourquoi pas « la coiffe » : elle protège l'extrémité, mais ce sont les cellules situées juste au-dessus d'elle qui se divisent.",
+                  "answers": [
+                    {
+                      "content": "L'extrémité, dans la zone de multiplication",
+                      "correct": true
+                    },
+                    {
+                      "content": "La zone des poils absorbants",
+                      "correct": false
+                    },
+                    {
+                      "content": "La coiffe, tout au bout de la racine",
+                      "correct": false
+                    },
+                    {
+                      "content": "Toute la racine, de la même façon",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre la préparation et l'observation d'une racine d'oignon.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 1 — Choisir l'extrémité. Étape 2 — Préparer la lame : on la coupe, on la colore, puis on l'écrase entre lame et lamelle. Étape 3 — Observer : on regarde au microscope.  Pourquoi pas « observer avant d'écraser » : les cellules seraient superposées et on ne verrait ni noyau ni chromosome.",
+                  "answers": [
+                    {
+                      "content": "Couper l'extrémité de la racine"
+                    },
+                    {
+                      "content": "Colorer l'extrémité au carmin acétique"
+                    },
+                    {
+                      "content": "Écraser entre lame et lamelle"
+                    },
+                    {
+                      "content": "Observer au microscope"
+                    }
+                  ]
+                },
+                {
+                  "content": "Au microscope, on commence toujours l'observation au ___ grossissement.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 3 — Observer au microscope : on commence au faible grossissement pour trouver une zone de cellules bien étalées, puis on grossit.  Pourquoi pas « fort grossissement d'emblée » : on ne trouve pas la zone à regarder et on risque d'abîmer la lame.",
+                  "answers": [
+                    {
+                      "content": "faible",
+                      "correct": true
+                    },
+                    {
+                      "content": "petit",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Une cellule mère qui se divise donne une seule cellule fille.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 4 — Conclure : la mitose est la division d'une cellule mère en deux cellules filles identiques. Le nombre de cellules double à chaque division.  Pourquoi pas « une seule cellule fille » : il n'y aurait alors aucune multiplication des cellules.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels signes montrent qu'une cellule est en division ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 4 — Conclure : on repère les cellules en division à leurs chromosomes visibles ou à leurs deux noyaux.  Pourquoi pas « un seul gros noyau net » : c'est une cellule qui ne se divise pas à cet instant, ses chromosomes ne se voient pas.",
+                  "answers": [
+                    {
+                      "content": "Ses chromosomes sont visibles dans la cellule",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elle a deux noyaux côte à côte avant de se séparer",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elle a un seul gros noyau net, sans chromosome visible",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle porte un poil absorbant à sa surface",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Préparer et lire une observation de racine",
+              "statement": "Dans cet exercice, tu prépares et tu lis une observation de racine d'oignon avec la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Relie chaque zone de la racine à ce qu'on y observe.",
+                  "question_type": "matching",
+                  "explanation": "Étape 1 — Choisir : la zone de multiplication contient beaucoup de cellules en division ; plus haut, la zone des poils absorbants presque aucune ; la coiffe protège l'extrémité.  Pourquoi pas « tout relier à la division » : seule la zone de multiplication multiplie ses cellules par mitose.",
+                  "answers": [
+                    {
+                      "content": "Extrémité, zone de multiplication",
+                      "match": "Beaucoup de cellules en division"
+                    },
+                    {
+                      "content": "Zone des poils absorbants",
+                      "match": "Presque aucune cellule en division"
+                    },
+                    {
+                      "content": "Coiffe",
+                      "match": "Cellules qui protègent l'extrémité"
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur une lame de racine d'oignon, un élève compte 50 cellules dont 10 en division. Quel pourcentage de cellules est en division ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Étape 4 — Conclure : il faut compter les cellules en division et les comparer au total. 10 sur 50, c'est 10 ÷ 50 = 0,2, soit 20 %.  Pourquoi pas « 10 % » : ce serait 10 cellules sur 100, mais l'élève en a compté 50 au total.",
+                  "answers": [
+                    {
+                      "content": "20",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "%"
+                },
+                {
+                  "content": "On colore la racine pour rendre ___ bien visibles.",
+                  "question_type": "select",
+                  "explanation": "Étape 2 — Préparer la lame : le carmin acétique colore le noyau et les chromosomes, ce qui permet de reconnaître les cellules en division.  Pourquoi pas « les poils absorbants » : ils sont à l'extérieur de la racine et ne servent pas à repérer une division.",
+                  "answers": [
+                    {
+                      "content": "le noyau et les chromosomes",
+                      "correct": true
+                    },
+                    {
+                      "content": "les poils absorbants",
+                      "correct": false
+                    },
+                    {
+                      "content": "la coiffe de la racine",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "On écrase l'extrémité entre lame et lamelle pour étaler les cellules en une seule couche.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 2 — Préparer la lame : l'écrasement étale les cellules en une seule couche, ce qui permet de les observer une par une.  Pourquoi pas « Faux » : sans écrasement, les cellules s'empilent et on ne distingue plus leurs noyaux.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Un élève prélève la zone des poils absorbants et ne voit aucune cellule en division. Pourquoi ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Choisir : il fallait prélever l'extrémité, dans la zone de multiplication. Étape 4 — Conclure : la zone des poils n'a presque aucune cellule en division.  Pourquoi pas « les cellules ne se divisent jamais » : elles se divisent bien, mais dans l'extrémité, pas dans la zone des poils.",
+                  "answers": [
+                    {
+                      "content": "Cette zone n'est pas la zone de multiplication : ses cellules ne se divisent presque plus",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les cellules d'une racine d'oignon ne se divisent jamais",
+                      "correct": false
+                    },
+                    {
+                      "content": "Il a oublié d'enlever la coiffe",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les cellules en division sont trop petites pour être vues",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles opérations font partie de la préparation de la lame ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 2 — Préparer la lame : on coupe l'extrémité, on la colore, puis on l'écrase entre lame et lamelle.  Pourquoi pas « observer la racine entière » : trop épaisse, elle ne laisse passer ni la lumière ni la vue des cellules.",
+                  "answers": [
+                    {
+                      "content": "Colorer l'extrémité au carmin acétique",
+                      "correct": true
+                    },
+                    {
+                      "content": "Écraser l'extrémité entre lame et lamelle",
+                      "correct": true
+                    },
+                    {
+                      "content": "Observer la racine entière sans la couper",
+                      "correct": false
+                    },
+                    {
+                      "content": "Prélever la racine au niveau du bulbe",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Retiens trois gestes : prélever l'extrémité, colorer, écraser."
+            }
+          ]
+        },
+        {
+          "name": "Reconnaître les phases de la mitose",
+          "remember": "Entre deux divisions, la cellule est en **interphase** : le noyau est net, les chromosomes ne se voient pas, et ils se dédoublent. La mitose comprend alors quatre phases, toujours dans le même ordre. **Prophase** : l'enveloppe du noyau disparaît (le noyau n'est plus visible) et les chromosomes, dédoublés (chacun formé de deux chromatides), deviennent visibles. **Métaphase** : les chromosomes sont alignés au milieu de la cellule. **Anaphase** : chaque chromosome dédoublé se sépare en deux, et les deux lots sont tirés vers les deux pôles de la cellule. **Télophase** : les deux lots arrivent aux pôles, un nouveau noyau se forme autour de chacun et la cellule se partage en deux cellules filles (chez l'oignon, une cloison se forme au milieu de la cellule).",
+          "method": [
+            "Observer le noyau et les chromosomes : noyau visible ou non, chromosomes visibles ou non.",
+            "Repérer la place des chromosomes : dispersés, alignés au milieu, tirés vers les pôles ou regroupés aux deux extrémités.",
+            "Nommer la phase d'après ces indices.",
+            "Placer la phase dans l'ordre du cycle : interphase, prophase, métaphase, anaphase, télophase."
+          ],
+          "example": {
+            "statement": "Un dessin montre une cellule sans noyau visible. Ses chromosomes, en forme de X, sont alignés au milieu de la cellule. Quelle est la phase ?",
+            "steps": [
+              "Observer : il n'y a pas de noyau visible, et les chromosomes sont bien visibles, en forme de X.",
+              "Repérer : les chromosomes sont tous alignés au milieu de la cellule.",
+              "Nommer : des chromosomes alignés au milieu, sans noyau, c'est la métaphase.",
+              "Placer : la métaphase vient après la prophase et avant l'anaphase."
+            ]
+          },
+          "pitfall": "Ne pas confondre l'anaphase et la télophase : dans les deux cas, les chromosomes sont près des pôles. Contre-exemple : en anaphase, les chromosomes sont encore en route vers les pôles et il n'y a pas de noyau ; en télophase, ils sont arrivés, un noyau s'est reformé autour de chaque lot et la cellule se partage. Ne pas croire non plus que l'interphase est un repos : la cellule s'y prépare et ses chromosomes s'y dédoublent.",
+          "figure": "cycle-cellulaire",
+          "practice": {
+            "statement": "Tu t'entraînes à reconnaître une phase et à la placer dans l'ordre.",
+            "questions": [
+              {
+                "content": "Dans une cellule sans noyau visible, les chromosomes se séparent et sont tirés vers les deux pôles. Quelle est la phase ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 1 — Observer : pas de noyau, chromosomes visibles. Étape 2 — Repérer : ils sont tirés vers les pôles. Étape 3 — Nommer : c'est l'anaphase.  Pourquoi pas « la télophase » : les chromosomes n'y sont plus en route, ils sont arrivés aux pôles et un noyau se reforme.",
+                "answers": [
+                  {
+                    "content": "L'anaphase",
+                    "correct": true
+                  },
+                  {
+                    "content": "La métaphase",
+                    "correct": false
+                  },
+                  {
+                    "content": "La télophase",
+                    "correct": false
+                  }
+                ],
+                "hint": "Les chromosomes sont encore en train de se déplacer."
+              },
+              {
+                "content": "Après l'anaphase vient la ___.",
+                "question_type": "fill_blank",
+                "explanation": "Étape 4 — Placer : l'ordre du cycle est interphase, prophase, métaphase, anaphase, puis télophase, qui termine la division.  Pourquoi pas « la métaphase » : elle précède l'anaphase, puisque les chromosomes sont d'abord alignés avant de se séparer.",
+                "answers": [
+                  {
+                    "content": "télophase",
+                    "correct": true
+                  }
+                ],
+                "hint": "C'est la phase qui termine la mitose."
+              },
+              {
+                "content": "En interphase, on voit les chromosomes en forme de bâtonnets.",
+                "question_type": "true_false",
+                "explanation": "Étape 1 — Observer : en interphase, le noyau est net et les chromosomes ne se voient pas. Ils ne deviennent visibles qu'en prophase.  Pourquoi pas « Vrai » : des chromosomes bien visibles en bâtonnets ou en X indiquent une cellule déjà en mitose.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Quand le noyau est net, les chromosomes sont invisibles."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Reconnaître les phases sur des dessins décrits",
+              "statement": "Un dessin décrit une cellule d'oignon en division. Nomme la phase avec la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une cellule a ses chromosomes alignés au milieu, sans noyau visible. Quelle est la phase ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Observer : pas de noyau, chromosomes visibles. Étape 2 — Repérer : ils sont alignés au milieu. Étape 3 — Nommer : c'est la métaphase.  Pourquoi pas « la prophase » : en prophase les chromosomes sont encore dispersés dans la cellule, ils ne sont pas alignés.",
+                  "answers": [
+                    {
+                      "content": "La métaphase",
+                      "correct": true
+                    },
+                    {
+                      "content": "La prophase",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'anaphase",
+                      "correct": false
+                    },
+                    {
+                      "content": "La télophase",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le noyau n'est plus visible et des chromosomes dédoublés deviennent visibles, répartis dans toute la cellule. Quelle est la phase ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Observer : l'enveloppe du noyau disparaît, les chromosomes apparaissent. Étape 2 — Repérer : ils ne sont pas encore alignés. Étape 3 — Nommer : c'est la prophase.  Pourquoi pas « l'interphase » : en interphase le noyau est net et les chromosomes ne se voient pas du tout.",
+                  "answers": [
+                    {
+                      "content": "La prophase",
+                      "correct": true
+                    },
+                    {
+                      "content": "La métaphase",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'interphase",
+                      "correct": false
+                    },
+                    {
+                      "content": "La télophase",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque phase à ce qu'on y observe.",
+                  "question_type": "matching",
+                  "explanation": "Étape 3 — Nommer : on relie chaque indice à sa phase d'après le noyau (Étape 1) et la place des chromosomes (Étape 2).  Pourquoi pas « mélanger anaphase et télophase » : en anaphase les lots voyagent, en télophase ils sont arrivés et entourés d'un noyau.",
+                  "answers": [
+                    {
+                      "content": "Interphase",
+                      "match": "Noyau net, chromosomes invisibles"
+                    },
+                    {
+                      "content": "Prophase",
+                      "match": "Noyau plus visible, chromosomes visibles dispersés"
+                    },
+                    {
+                      "content": "Métaphase",
+                      "match": "Chromosomes alignés au milieu"
+                    },
+                    {
+                      "content": "Anaphase",
+                      "match": "Deux lots de chromosomes tirés vers les pôles"
+                    },
+                    {
+                      "content": "Télophase",
+                      "match": "Deux noyaux qui se reforment"
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets les phases dans l'ordre du cycle, en commençant par l'interphase.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 4 — Placer : le cycle va de l'interphase à la télophase : interphase, prophase, métaphase, anaphase, télophase.  Pourquoi pas « anaphase avant métaphase » : les chromosomes doivent d'abord s'aligner au milieu avant de pouvoir se séparer.",
+                  "answers": [
+                    {
+                      "content": "Interphase"
+                    },
+                    {
+                      "content": "Prophase"
+                    },
+                    {
+                      "content": "Métaphase"
+                    },
+                    {
+                      "content": "Anaphase"
+                    },
+                    {
+                      "content": "Télophase"
+                    }
+                  ]
+                },
+                {
+                  "content": "Une cellule a un noyau net et aucun chromosome visible. Quelle est la phase ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Observer : noyau net, chromosomes invisibles. Étape 3 — Nommer : c'est l'interphase, où la cellule se prépare et où ses chromosomes se dédoublent.  Pourquoi pas « la télophase » : en télophase, les chromosomes sont encore visibles, regroupés aux deux extrémités de la cellule.",
+                  "answers": [
+                    {
+                      "content": "L'interphase",
+                      "correct": true
+                    },
+                    {
+                      "content": "La prophase",
+                      "correct": false
+                    },
+                    {
+                      "content": "La télophase",
+                      "correct": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Placer et nommer les phases de la mitose",
+              "statement": "Dans cet exercice, tu reconnais les phases de la mitose et tu les places dans l'ordre avec la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelles phases montrent des chromosomes visibles dans une cellule sans noyau ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 1 — Observer : en métaphase et en anaphase, il n'y a pas de noyau et les chromosomes se voient.  Pourquoi pas « la télophase » : un noyau s'y reforme déjà autour de chaque lot de chromosomes.",
+                  "answers": [
+                    {
+                      "content": "La métaphase",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'anaphase",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'interphase",
+                      "correct": false
+                    },
+                    {
+                      "content": "La télophase",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Au cours de la ___, les chromosomes se séparent et sont tirés vers les pôles.",
+                  "question_type": "select",
+                  "explanation": "Étape 2 — Repérer : les chromosomes sont tirés vers les pôles. Étape 3 — Nommer : c'est l'anaphase.  Pourquoi pas « métaphase » : à ce moment, les chromosomes sont seulement alignés au milieu, sans encore se séparer.",
+                  "answers": [
+                    {
+                      "content": "anaphase",
+                      "correct": true
+                    },
+                    {
+                      "content": "métaphase",
+                      "correct": false
+                    },
+                    {
+                      "content": "prophase",
+                      "correct": false
+                    },
+                    {
+                      "content": "interphase",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pendant l'___, les chromosomes se dédoublent et la cellule se prépare à se diviser.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 3 — Nommer : entre deux divisions, la cellule est en interphase ; ses chromosomes s'y dédoublent. Étape 4 — Placer : elle précède la prophase.  Pourquoi pas « prophase » : c'est la phase qui ouvre la mitose, où les chromosomes dédoublés deviennent visibles.",
+                  "answers": [
+                    {
+                      "content": "interphase",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "En télophase, un nouveau noyau se forme autour de chaque lot de chromosomes.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 3 — Nommer : en télophase, les deux lots sont arrivés aux pôles et un noyau se reforme autour de chacun.  Pourquoi pas « Faux » : ce serait confondre avec l'anaphase, où les chromosomes voyagent encore et où il n'y a pas de noyau.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Combien de phases compte la mitose, sans compter l'interphase ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Étape 4 — Placer : prophase, métaphase, anaphase, télophase, cela fait 4 phases de mitose ; l'interphase est l'étape entre deux divisions.  Pourquoi pas « 5 » : ce nombre inclut l'interphase, qui n'est pas une phase de la mitose proprement dite.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "phases"
+                },
+                {
+                  "content": "Deux lots de chromosomes sont regroupés aux deux extrémités de la cellule, entourés chacun d'un noyau, et une cloison commence à se former au milieu de la cellule. Quelle est la phase ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Observer : deux noyaux se forment. Étape 2 — Repérer : les lots sont aux deux extrémités. Étape 3 — Nommer : c'est la télophase.  Pourquoi pas « l'anaphase » : les lots y sont encore en route vers les pôles et il n'y a pas encore de noyau.",
+                  "answers": [
+                    {
+                      "content": "La télophase",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'anaphase",
+                      "correct": false
+                    },
+                    {
+                      "content": "La métaphase",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'interphase",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Regarde d'abord le noyau, puis la place des chromosomes."
+            }
+          ]
+        },
+        {
+          "name": "Conserver les chromosomes et assurer la croissance",
+          "remember": "Avant la division, chaque chromosome **se dédouble**. Pendant la mitose, chaque chromosome dédoublé se sépare en deux, et chaque cellule fille reçoit un lot complet. Les deux cellules filles ont donc **le même nombre de chromosomes** que la cellule mère, et des chromosomes identiques : 46 chez l'Homme. La mitose est une **reproduction conforme** de la cellule. Elle sert à la **croissance** (le nombre de cellules augmente), au **renouvellement** des cellules (peau, intestin), à la **cicatrisation** d'une plaie et à la **multiplication végétative** (une bouture donne une nouvelle plante identique).",
+          "method": [
+            "Repérer le nombre de chromosomes de la cellule mère.",
+            "Suivre les chromosomes : ils se dédoublent, puis chaque chromosome dédoublé se sépare en deux lots identiques.",
+            "Compter les chromosomes d'une cellule fille : c'est le même nombre que dans la cellule mère.",
+            "Relier la mitose à son rôle : croissance, renouvellement des cellules, cicatrisation ou multiplication végétative."
+          ],
+          "example": {
+            "statement": "Une cellule de la peau humaine, à 46 chromosomes, se divise par mitose pour remplacer une cellule usée. Donner le nombre de chromosomes des cellules filles et le rôle de cette mitose.",
+            "steps": [
+              "Repérer : la cellule mère a 46 chromosomes.",
+              "Suivre : les 46 chromosomes se dédoublent, puis chacun se sépare en deux : 46 chromosomes vont à chaque pôle.",
+              "Compter : chaque cellule fille a 46 chromosomes, le même nombre que la cellule mère.",
+              "Relier : cette mitose remplace une cellule usée, c'est le renouvellement des cellules de la peau."
+            ]
+          },
+          "pitfall": "Ne pas croire que le nombre de chromosomes est partagé en deux à chaque mitose. Contre-exemple : si 46 devenait 23, puis 11,5, il ne resterait bientôt plus rien ; or une cellule de la peau d'un enfant comme d'un adulte a toujours 46 chromosomes. Les chromosomes se dédoublent avant de se répartir : les deux cellules filles ont 46 chromosomes chacune, pas 23.",
+          "figure": null,
+          "practice": {
+            "statement": "Tu t'entraînes à compter les chromosomes des cellules filles et à relier la mitose à son rôle.",
+            "questions": [
+              {
+                "content": "Une cellule de la racine d'oignon a 16 chromosomes. Elle se divise par mitose. Combien de chromosomes a chaque cellule fille ?",
+                "question_type": "numeric",
+                "tolerance": 0,
+                "explanation": "Étape 1 — Repérer : la cellule mère a 16 chromosomes. Étape 3 — Compter : chaque cellule fille a le même nombre, donc 16.  Pourquoi pas « 8 » : ce serait partager le nombre de chromosomes en deux, ce que la mitose ne fait jamais.",
+                "answers": [
+                  {
+                    "content": "16",
+                    "correct": true
+                  }
+                ],
+                "hint": "La mitose conserve le nombre de chromosomes."
+              },
+              {
+                "content": "Une plaie à la jambe se referme en quelques jours. Quel rôle de la mitose est en jeu ?",
+                "question_type": "single_choice",
+                "explanation": "Étape 4 — Relier : de nouvelles cellules fabriquées par mitose comblent la plaie, c'est la cicatrisation.  Pourquoi pas « la multiplication végétative » : elle concerne la naissance d'une nouvelle plante à partir d'une bouture, pas la réparation d'une plaie.",
+                "answers": [
+                  {
+                    "content": "La cicatrisation",
+                    "correct": true
+                  },
+                  {
+                    "content": "La multiplication végétative",
+                    "correct": false
+                  },
+                  {
+                    "content": "La croissance d'une plante",
+                    "correct": false
+                  }
+                ],
+                "hint": "Il s'agit de réparer une blessure."
+              },
+              {
+                "content": "Les deux cellules filles ont chacune la moitié des chromosomes de la cellule mère.",
+                "question_type": "true_false",
+                "explanation": "Étape 2 — Suivre : les chromosomes se dédoublent avant de se séparer. Étape 3 — Compter : chaque cellule fille reçoit le même nombre que la cellule mère.  Pourquoi pas « Vrai » : ce serait oublier le dédoublement des chromosomes avant la division.",
+                "answers": [
+                  {
+                    "content": "Vrai",
+                    "correct": false
+                  },
+                  {
+                    "content": "Faux",
+                    "correct": true
+                  }
+                ],
+                "hint": "Les chromosomes se dédoublent avant la division."
+              }
+            ]
+          },
+          "exercise": [
+            {
+              "title": "Compter les chromosomes et relier la mitose à son rôle",
+              "statement": "Réponds avec la méthode de la fiche : compte les chromosomes, puis relie la mitose à son rôle.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une cellule humaine a 46 chromosomes. Elle se divise par mitose. Combien de chromosomes a chaque cellule fille ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Étape 1 — Repérer : la cellule mère a 46 chromosomes. Étape 3 — Compter : chaque cellule fille a le même nombre, donc 46.  Pourquoi pas « 23 » : ce serait la moitié, alors que les chromosomes se dédoublent avant de se répartir entre les deux cellules.",
+                  "answers": [
+                    {
+                      "content": "46",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Que reçoit chaque cellule fille à la fin d'une mitose ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 2 — Suivre : chaque chromosome dédoublé se sépare en deux et chaque cellule fille reçoit un lot complet.  Pourquoi pas « la moitié des chromosomes » : le dédoublement avant la division permet de donner un lot complet à chaque cellule.",
+                  "answers": [
+                    {
+                      "content": "Un lot complet de chromosomes identiques à ceux de la cellule mère",
+                      "correct": true
+                    },
+                    {
+                      "content": "La moitié des chromosomes de la cellule mère",
+                      "correct": false
+                    },
+                    {
+                      "content": "Des chromosomes différents de ceux de la cellule mère",
+                      "correct": false
+                    },
+                    {
+                      "content": "Deux fois plus de chromosomes que la cellule mère",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque situation au rôle de la mitose.",
+                  "question_type": "matching",
+                  "explanation": "Étape 4 — Relier : un organisme qui grandit relève de la croissance, des cellules remplacées du renouvellement, une plaie qui se ferme de la cicatrisation, une bouture de la multiplication végétative.  Pourquoi pas « confondre croissance et renouvellement » : la croissance augmente le nombre de cellules, le renouvellement remplace des cellules usées.",
+                  "answers": [
+                    {
+                      "content": "Un enfant devient plus grand",
+                      "match": "Croissance"
+                    },
+                    {
+                      "content": "Les cellules de la surface de la peau sont remplacées",
+                      "match": "Renouvellement"
+                    },
+                    {
+                      "content": "Une plaie du genou se referme",
+                      "match": "Cicatrisation"
+                    },
+                    {
+                      "content": "Une bouture de manioc donne un nouveau plant",
+                      "match": "Multiplication végétative"
+                    }
+                  ]
+                },
+                {
+                  "content": "Les deux cellules filles issues d'une mitose sont identiques à la cellule mère.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 3 — Compter : les cellules filles ont le même nombre de chromosomes, et des chromosomes identiques à ceux de la cellule mère.  Pourquoi pas « Faux » : cela supposerait que les chromosomes soient changés ou partagés, ce que la mitose ne fait pas.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La mitose assure la reproduction ___ de la cellule.",
+                  "question_type": "fill_blank",
+                  "explanation": "Étape 3 — Compter : les cellules filles sont identiques à la cellule mère, la reproduction est dite conforme.  Pourquoi pas « reproduction sexuée » : elle ne concerne pas la division d'une cellule en deux cellules identiques.",
+                  "answers": [
+                    {
+                      "content": "conforme",
+                      "correct": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Expliquer le rôle et la conservation du nombre de chromosomes",
+              "statement": "Dans cet exercice, tu expliques ce que devient le nombre de chromosomes et à quoi sert la mitose avec la méthode de la fiche.",
+              "exercise_type": "fixation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quels sont deux rôles de la mitose chez l'Homme ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Étape 4 — Relier : la mitose fabrique des cellules identiques, utiles à la croissance et à la cicatrisation.  Pourquoi pas « réduire de moitié le nombre de chromosomes » : la mitose conserve ce nombre, elle ne le partage pas.",
+                  "answers": [
+                    {
+                      "content": "La croissance de l'organisme",
+                      "correct": true
+                    },
+                    {
+                      "content": "La cicatrisation d'une plaie",
+                      "correct": true
+                    },
+                    {
+                      "content": "Réduire de moitié le nombre de chromosomes",
+                      "correct": false
+                    },
+                    {
+                      "content": "Fabriquer des cellules différentes de la cellule mère",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une bouture de manioc donne un nouveau plant : c'est une ___.",
+                  "question_type": "select",
+                  "explanation": "Étape 4 — Relier : une nouvelle plante identique obtenue à partir d'un morceau de plante est une multiplication végétative.  Pourquoi pas « cicatrisation » : elle désigne la réparation d'une plaie, pas la naissance d'une nouvelle plante.",
+                  "answers": [
+                    {
+                      "content": "multiplication végétative",
+                      "correct": true
+                    },
+                    {
+                      "content": "cicatrisation",
+                      "correct": false
+                    },
+                    {
+                      "content": "reproduction sexuée",
+                      "correct": false
+                    },
+                    {
+                      "content": "germination",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une cellule de drosophile a 8 chromosomes. Combien de chromosomes ont ses deux cellules filles après une mitose ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Étape 1 — Repérer : 8 chromosomes dans la cellule mère. Étape 3 — Compter : chaque cellule fille a le même nombre, donc 8.  Pourquoi pas « 16 » : ce serait le total des deux cellules filles ; chacune garde 8 chromosomes.",
+                  "answers": [
+                    {
+                      "content": "8",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre le suivi des chromosomes d'une cellule qui se divise.",
+                  "question_type": "ordering",
+                  "explanation": "Étape 2 — Suivre : les chromosomes se dédoublent d'abord, s'alignent, se séparent, puis chaque cellule fille reçoit un lot complet.  Pourquoi pas « séparer avant de dédoubler » : il n'y aurait pas assez de chromosomes pour remplir les deux cellules filles.",
+                  "answers": [
+                    {
+                      "content": "Les chromosomes se dédoublent"
+                    },
+                    {
+                      "content": "Les chromosomes dédoublés s'alignent au milieu"
+                    },
+                    {
+                      "content": "Chaque chromosome dédoublé se sépare en deux"
+                    },
+                    {
+                      "content": "Chaque cellule fille reçoit un lot complet"
+                    }
+                  ]
+                },
+                {
+                  "content": "Après une mitose, une cellule fille d'une racine d'oignon a moins de chromosomes que la cellule mère.",
+                  "question_type": "true_false",
+                  "explanation": "Étape 3 — Compter : la cellule fille a le même nombre de chromosomes que la cellule mère, 16 pour l'oignon.  Pourquoi pas « Vrai » : cela oublierait que les chromosomes se dédoublent avant la séparation.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Les cellules de la peau d'un joueur de foot sont remplacées sans cesse. Quel rôle de la mitose est en jeu ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 4 — Relier : des cellules usées sont remplacées par de nouvelles cellules fabriquées par mitose : c'est le renouvellement.  Pourquoi pas « la croissance d'une racine » : il s'agit ici de la peau et d'un remplacement, pas de l'allongement d'une racine.",
+                  "answers": [
+                    {
+                      "content": "Le renouvellement des cellules",
+                      "correct": true
+                    },
+                    {
+                      "content": "La multiplication végétative",
+                      "correct": false
+                    },
+                    {
+                      "content": "La reproduction sexuée de l'Homme",
+                      "correct": false
+                    },
+                    {
+                      "content": "La croissance d'une racine",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Compte toujours : la cellule fille garde le nombre de chromosomes de la cellule mère."
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Compter les phases dans une racine d'oignon",
+          "statement": "Un élève de seconde observe 80 cellules de l'extrémité d'une racine d'oignon (valeurs fictives) : 60 sont en interphase, 10 en prophase, 4 en métaphase, 3 en anaphase et 3 en télophase. Utilise le graphique et la méthode de la fiche.",
+          "exercise_type": "fixation",
+          "figure": "comptage-phases",
+          "questions": [
+            {
+              "content": "Sur 80 cellules, 60 sont en interphase. Combien de cellules sont en mitose (prophase, métaphase, anaphase ou télophase) ?",
+              "question_type": "numeric",
+              "tolerance": 0,
+              "explanation": "Méthode : 1. Observer la lame et repérer les cellules en division (celles dont les chromosomes sont visibles). 2. Compter : 10 + 4 + 3 + 3 = 20 cellules en mitose, soit 80 − 60 = 20. Pourquoi pas « 60 » : ce sont les cellules en interphase, qui ne sont pas en train de se diviser.",
+              "answers": [
+                {
+                  "content": "20",
+                  "correct": true
+                }
+              ],
+              "unit": "cellules"
+            },
+            {
+              "content": "Sur 80 cellules, 20 sont en mitose (prophase, métaphase, anaphase ou télophase). Quel pourcentage des 80 cellules cela représente-t-il ?",
+              "question_type": "numeric",
+              "tolerance": 0,
+              "explanation": "Méthode : 1. Compter les cellules en mitose : 20 sur 80. 2. Calculer 20 ÷ 80 = 0,25, soit 25 %. Pourquoi pas « 20 % » : ce serait confondre le nombre de cellules en mitose (20) avec le pourcentage, qui compare 20 au total de 80.",
+              "answers": [
+                {
+                  "content": "25",
+                  "correct": true
+                }
+              ],
+              "unit": "%"
+            },
+            {
+              "content": "Sur ces 80 cellules, quelles phases sont les plus rarement observées ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1. Lire les valeurs : interphase 60, prophase 10, métaphase 4, anaphase 3, télophase 3. 2. Repérer les plus petites : 3 et 3, donc anaphase et télophase. Pourquoi pas « la métaphase » : elle compte 4 cellules, donc un peu plus que l'anaphase et la télophase.",
+              "answers": [
+                {
+                  "content": "L'anaphase et la télophase, avec 3 cellules chacune",
+                  "correct": true
+                },
+                {
+                  "content": "La prophase, avec 10 cellules",
+                  "correct": false
+                },
+                {
+                  "content": "La métaphase, avec 4 cellules",
+                  "correct": false
+                },
+                {
+                  "content": "L'interphase, avec 60 cellules",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Dans cette observation, la phase la plus fréquente est l'interphase.",
+              "question_type": "true_false",
+              "explanation": "Méthode : 1. Lire le graphique : 60 cellules sur 80 sont en interphase. 2. Comparer aux autres phases (10, 4, 3, 3) : l'interphase est la plus fréquente, car la cellule y passe le plus de temps. Pourquoi pas « Faux » : aucune phase de la mitose n'atteint 60 cellules.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": true
+                },
+                {
+                  "content": "Faux",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Que peut-on conclure de ce comptage sur la durée des phases ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1. Observer : 60 cellules en interphase pour 20 en mitose. 2. Conclure : plus une phase est longue, plus on a de chances de voir des cellules dans cette phase, donc l'interphase est la plus longue. Pourquoi pas « elles ne se divisent pas » : 20 cellules sur 80 sont en mitose.",
+              "answers": [
+                {
+                  "content": "L'interphase dure bien plus longtemps que chacune des phases de la mitose",
+                  "correct": true
+                },
+                {
+                  "content": "La mitose dure plus longtemps que l'interphase",
+                  "correct": false
+                },
+                {
+                  "content": "Toutes les phases durent le même temps",
+                  "correct": false
+                },
+                {
+                  "content": "Les cellules de l'extrémité ne se divisent pas",
+                  "correct": false
+                }
+              ]
+            }
+          ],
+          "hint": "Additionne les cellules en mitose, puis compare au total de 80."
+        },
+        {
+          "title": "Une plaie qui se referme",
+          "statement": "Un footballeur de Daloa s'écorche le genou. En quelques jours, la plaie se referme. Ses cellules de peau ont 46 chromosomes. Réponds avec la méthode de la fiche.",
+          "exercise_type": "fixation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Quel rôle de la mitose permet à la plaie de se refermer ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1. Repérer la situation : une plaie qui se referme. 2. Relier au rôle : de nouvelles cellules fabriquées par mitose comblent la plaie, c'est la cicatrisation. Pourquoi pas « le renouvellement » : le renouvellement remplace des cellules usées, alors qu'ici il faut réparer une blessure.",
+              "answers": [
+                {
+                  "content": "La cicatrisation",
+                  "correct": true
+                },
+                {
+                  "content": "La multiplication végétative",
+                  "correct": false
+                },
+                {
+                  "content": "La croissance d'une plante",
+                  "correct": false
+                },
+                {
+                  "content": "Le renouvellement des cellules du sang",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Une cellule de peau du footballeur, à 46 chromosomes, se divise par mitose. Combien de chromosomes a chaque cellule fille ?",
+              "question_type": "numeric",
+              "tolerance": 0,
+              "explanation": "Méthode : 1. Repérer : la cellule mère a 46 chromosomes. 2. Suivre : ils se dédoublent puis se séparent en deux lots identiques. 3. Compter : chaque cellule fille a 46 chromosomes. Pourquoi pas « 23 » : ce serait oublier que les chromosomes se dédoublent avant la séparation.",
+              "answers": [
+                {
+                  "content": "46",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Remets dans l'ordre les phases de la mitose d'une cellule de peau.",
+              "question_type": "ordering",
+              "explanation": "Méthode : 1. Observer le noyau et les chromosomes. 2. Placer chaque phase dans l'ordre : prophase, métaphase, anaphase, télophase. Pourquoi pas « anaphase avant métaphase » : les chromosomes doivent s'aligner au milieu avant de se séparer.",
+              "answers": [
+                {
+                  "content": "Prophase"
+                },
+                {
+                  "content": "Métaphase"
+                },
+                {
+                  "content": "Anaphase"
+                },
+                {
+                  "content": "Télophase"
+                }
+              ]
+            },
+            {
+              "content": "Pendant l'___, les chromosomes de la cellule se dédoublent avant la mitose.",
+              "question_type": "fill_blank",
+              "explanation": "Méthode : 1. Observer : avant la division, le noyau est net et les chromosomes sont invisibles. 2. Nommer : c'est l'interphase, pendant laquelle les chromosomes se dédoublent. Pourquoi pas « prophase » : la prophase commence quand les chromosomes dédoublés deviennent visibles.",
+              "answers": [
+                {
+                  "content": "interphase",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Les deux cellules filles obtenues ont chacune 23 chromosomes.",
+              "question_type": "true_false",
+              "explanation": "Méthode : 1. Repérer les 46 chromosomes de la cellule mère. 2. Compter : chaque cellule fille reçoit un lot complet, soit 46. Pourquoi pas « Vrai » : 23 serait la moitié, or la mitose conserve le nombre de chromosomes.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Pourquoi les deux cellules filles sont-elles identiques à la cellule mère ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1. Suivre les chromosomes : ils se dédoublent, puis chaque chromosome dédoublé se sépare en deux lots identiques. 2. Compter : chaque cellule fille a un lot complet. Pourquoi pas « la moitié des chromosomes » : le dédoublement donne assez de chromosomes pour les deux cellules.",
+              "answers": [
+                {
+                  "content": "Chacune reçoit un lot complet de chromosomes identiques",
+                  "correct": true
+                },
+                {
+                  "content": "Elles reçoivent chacune des chromosomes pris au hasard",
+                  "correct": false
+                },
+                {
+                  "content": "Elles reçoivent chacune la moitié des chromosomes",
+                  "correct": false
+                },
+                {
+                  "content": "Elles fabriquent de nouveaux chromosomes différents",
+                  "correct": false
+                }
+              ]
+            }
+          ],
+          "hint": "Pense au rôle de la mitose : réparer une blessure."
+        },
+        {
+          "title": "Une bouture de manioc",
+          "statement": "Un cultivateur de Man plante une bouture de tige de manioc. Elle donne un nouveau plant identique à la plante mère. Une cellule de cette plante a 36 chromosomes.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Quel rôle de la mitose explique la naissance de ce nouveau plant ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1. Repérer la situation : un morceau de plante donne une nouvelle plante. 2. Relier au rôle : des mitoses fabriquent des cellules identiques, c'est la multiplication végétative. Pourquoi pas « la cicatrisation » : elle répare une plaie et ne donne pas une nouvelle plante.",
+              "answers": [
+                {
+                  "content": "La multiplication végétative",
+                  "correct": true
+                },
+                {
+                  "content": "La cicatrisation",
+                  "correct": false
+                },
+                {
+                  "content": "La reproduction sexuée",
+                  "correct": false
+                },
+                {
+                  "content": "Le renouvellement de la peau",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Une cellule de manioc de la bouture a 36 chromosomes. Combien de chromosomes ont ses cellules filles ?",
+              "question_type": "numeric",
+              "tolerance": 0,
+              "explanation": "Méthode : 1. Repérer : 36 chromosomes dans la cellule mère. 2. Suivre : ils se dédoublent puis se séparent. 3. Compter : chaque cellule fille a 36 chromosomes. Pourquoi pas « 18 » : ce serait partager le nombre de chromosomes, ce que la mitose ne fait pas.",
+              "answers": [
+                {
+                  "content": "36",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Le nouveau plant issu de la bouture est identique à la plante mère.",
+              "question_type": "true_false",
+              "explanation": "Méthode : 1. Suivre les chromosomes : la mitose donne des cellules filles qui reçoivent un lot complet de chromosomes identiques. 2. Relier : une plante formée de ces cellules est identique à la plante mère. Pourquoi pas « Faux » : aucun changement de chromosomes n'a lieu pendant une mitose.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": true
+                },
+                {
+                  "content": "Faux",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "La bouture grandit parce que le nombre de cellules ___ par mitose.",
+              "question_type": "select",
+              "explanation": "Méthode : 1. Observer : chaque mitose donne deux cellules filles à partir d'une cellule mère. 2. Relier : le nombre de cellules augmente, c'est la croissance de la plante. Pourquoi pas « reste le même » : une mitose fabrique deux cellules à partir d'une seule.",
+              "answers": [
+                {
+                  "content": "augmente",
+                  "correct": true
+                },
+                {
+                  "content": "diminue",
+                  "correct": false
+                },
+                {
+                  "content": "reste le même",
+                  "correct": false
+                },
+                {
+                  "content": "est divisé par deux",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quels rôles de la mitose interviennent quand la bouture s'enracine et grandit ?",
+              "question_type": "multiple_correct_2",
+              "explanation": "Méthode : 1. Relier la mitose à son rôle. 2. La plante grandit par multiplication de ses cellules (croissance) et la bouture donne un nouveau plant (multiplication végétative). Pourquoi pas « le partage des chromosomes en deux » : la mitose conserve le nombre de chromosomes.",
+              "answers": [
+                {
+                  "content": "La croissance de la plante",
+                  "correct": true
+                },
+                {
+                  "content": "La multiplication végétative",
+                  "correct": true
+                },
+                {
+                  "content": "La cicatrisation d'une plaie de la peau",
+                  "correct": false
+                },
+                {
+                  "content": "Le partage des chromosomes en deux",
+                  "correct": false
+                }
+              ]
+            }
+          ],
+          "hint": "La bouture est un morceau de plante qui redonne une plante entière."
+        },
+        {
+          "title": "Comparer deux zones d'une racine",
+          "statement": "Un élève compare deux lames d'une racine d'oignon (valeurs fictives). Sur la lame A, faite avec l'extrémité, il compte 100 cellules dont 25 en division. Sur la lame B, faite plus haut dans la zone des poils absorbants, il en compte 100 dont 1 en division.",
+          "exercise_type": "evaluation",
+          "figure": null,
+          "questions": [
+            {
+              "content": "Que peut-on conclure de la comparaison des lames A et B ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1. Observer : 25 cellules en division sur la lame A, 1 sur la lame B. 2. Comparer puis conclure : l'extrémité se multiplie bien plus que la zone des poils. Pourquoi pas « les deux zones se divisent autant » : 25 et 1 sont des valeurs très différentes.",
+              "answers": [
+                {
+                  "content": "La zone de multiplication de l'extrémité contient beaucoup plus de cellules en division que la zone des poils",
+                  "correct": true
+                },
+                {
+                  "content": "Les deux zones se divisent autant",
+                  "correct": false
+                },
+                {
+                  "content": "La zone des poils se divise plus que l'extrémité",
+                  "correct": false
+                },
+                {
+                  "content": "Aucune des deux zones ne se divise",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Quel pourcentage de cellules est en division sur la lame A ?",
+              "question_type": "numeric",
+              "tolerance": 0,
+              "explanation": "Méthode : 1. Compter les cellules en division : 25. 2. Calculer 25 sur 100, soit 25 %. Pourquoi pas « 1 % » : cette valeur est celle de la lame B, faite plus haut dans la zone des poils absorbants.",
+              "answers": [
+                {
+                  "content": "25",
+                  "correct": true
+                }
+              ],
+              "unit": "%"
+            },
+            {
+              "content": "La lame B a été faite avec l'extrémité de la racine.",
+              "question_type": "true_false",
+              "explanation": "Méthode : 1. Choisir la zone : l'extrémité contient beaucoup de cellules en division. 2. La lame B n'en montre presque pas, donc elle vient de la zone des poils absorbants. Pourquoi pas « Vrai » : l'extrémité aurait donné beaucoup de divisions, comme la lame A.",
+              "answers": [
+                {
+                  "content": "Vrai",
+                  "correct": false
+                },
+                {
+                  "content": "Faux",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Une cellule de la lame A a ses chromosomes alignés au milieu, sans noyau. Quelle est sa phase ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1. Observer : pas de noyau, chromosomes visibles. 2. Repérer : ils sont alignés au milieu. 3. Nommer : c'est la métaphase. Pourquoi pas « l'anaphase » : en anaphase les chromosomes se séparent et partent vers les pôles.",
+              "answers": [
+                {
+                  "content": "La métaphase",
+                  "correct": true
+                },
+                {
+                  "content": "La prophase",
+                  "correct": false
+                },
+                {
+                  "content": "L'anaphase",
+                  "correct": false
+                },
+                {
+                  "content": "La télophase",
+                  "correct": false
+                }
+              ]
+            },
+            {
+              "content": "Une cellule de cette racine a 16 chromosomes. Combien de chromosomes a chacune de ses cellules filles ?",
+              "question_type": "numeric",
+              "tolerance": 0,
+              "explanation": "Méthode : 1. Repérer : la cellule mère a 16 chromosomes. 2. Suivre : ils se dédoublent puis se séparent en deux lots identiques. 3. Compter : 16 dans chaque cellule fille. Pourquoi pas « 32 » : ce serait confondre avec le total des deux cellules filles.",
+              "answers": [
+                {
+                  "content": "16",
+                  "correct": true
+                }
+              ]
+            },
+            {
+              "content": "Quel rôle de la mitose explique l'allongement de la racine ?",
+              "question_type": "single_choice",
+              "explanation": "Méthode : 1. Observer : les divisions sont nombreuses dans la zone de multiplication. 2. Relier au rôle : plus de cellules signifie une racine qui grandit, c'est la croissance. Pourquoi pas « la cicatrisation » : aucune plaie n'est à réparer dans cette expérience.",
+              "answers": [
+                {
+                  "content": "La croissance",
+                  "correct": true
+                },
+                {
+                  "content": "La cicatrisation",
+                  "correct": false
+                },
+                {
+                  "content": "La multiplication végétative",
+                  "correct": false
+                },
+                {
+                  "content": "Le renouvellement de la coiffe uniquement",
+                  "correct": false
+                }
+              ]
+            }
+          ],
+          "hint": "Compare les deux pourcentages avant de conclure."
+        }
+      ],
+      "subjects": [
+        {
+          "title": "Sujet 1 · Les savoirs de base de la mitose",
+          "notions": "Définition de la mitose, observation d'une racine d'oignon, phases de la mitose, conservation des chromosomes, rôles de la mitose.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "On étudie la mitose, division d'une cellule en deux cellules.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Comment appelle-t-on la division d'une cellule mère en deux cellules filles identiques ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Définir : la division d'une cellule mère en deux cellules filles identiques porte le nom de mitose. 2. Retenir que la cellule fille ressemble à sa cellule mère. Pourquoi pas « l'interphase » : c'est l'étape entre deux divisions, et non la division elle-même.",
+                  "answers": [
+                    {
+                      "content": "La mitose",
+                      "correct": true
+                    },
+                    {
+                      "content": "La coloration",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'interphase",
+                      "correct": false
+                    },
+                    {
+                      "content": "La cicatrisation",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une cellule mère donne quatre cellules filles par mitose.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Définir : une mitose partage une cellule mère en deux cellules filles. 2. Compter : deux cellules, pas quatre. Pourquoi pas « Vrai » : quatre cellules supposeraient deux divisions successives et non une seule.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Une cellule qui se divise s'appelle la cellule ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Définir : la cellule qui se divise est la cellule mère. 2. Nommer ce qui en résulte : deux cellules filles. Pourquoi pas « fille » : les cellules filles sont celles qui résultent de la division.",
+                  "answers": [
+                    {
+                      "content": "mère",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque mot à sa définition.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1. Définir chaque mot : la cellule mère se divise, les cellules filles en résultent, la mitose est la division et l'interphase est l'étape entre deux divisions. Pourquoi pas « mitose pour l'interphase » : l'interphase n'est pas la division elle-même.",
+                  "answers": [
+                    {
+                      "content": "Cellule mère",
+                      "match": "Cellule qui se divise"
+                    },
+                    {
+                      "content": "Cellule fille",
+                      "match": "Cellule obtenue après la division"
+                    },
+                    {
+                      "content": "Mitose",
+                      "match": "Division d'une cellule en deux cellules identiques"
+                    },
+                    {
+                      "content": "Interphase",
+                      "match": "Période entre deux divisions"
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans une mitose, les deux cellules filles sont ...",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Définir : la mitose est une reproduction conforme. 2. Conclure : les cellules filles ressemblent à la cellule mère. Pourquoi pas « différentes de la cellule mère » : ce serait nier la reproduction conforme.",
+                  "answers": [
+                    {
+                      "content": "identiques à la cellule mère",
+                      "correct": true
+                    },
+                    {
+                      "content": "différentes de la cellule mère",
+                      "correct": false
+                    },
+                    {
+                      "content": "deux fois plus grandes que la cellule mère",
+                      "correct": false
+                    },
+                    {
+                      "content": "deux cellules avec la moitié des chromosomes de la cellule mère",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Une cellule mère donne deux cellules filles."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Un élève observe une racine d'oignon au microscope pour chercher des cellules en division.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle partie de la racine faut-il prélever pour observer des cellules en division ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Choisir la zone à observer : l'extrémité de la racine, juste au-dessus de la coiffe. 2. C'est là que les cellules se divisent. Pourquoi pas « la zone des poils absorbants » : presque aucune cellule n'y est en division.",
+                  "answers": [
+                    {
+                      "content": "L'extrémité, dans la zone de multiplication",
+                      "correct": true
+                    },
+                    {
+                      "content": "La zone des poils absorbants",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le bulbe de l'oignon",
+                      "correct": false
+                    },
+                    {
+                      "content": "Une feuille verte",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre la préparation de la lame.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1. Choisir et couper l'extrémité. 2. Préparer la lame : la colorer, puis l'écraser. 3. Observer au microscope. Pourquoi pas « écraser avant de couper » : on ne peut pas écraser une extrémité qu'on n'a pas encore prélevée.",
+                  "answers": [
+                    {
+                      "content": "Couper l'extrémité de la racine"
+                    },
+                    {
+                      "content": "Colorer au carmin acétique"
+                    },
+                    {
+                      "content": "Écraser entre lame et lamelle"
+                    },
+                    {
+                      "content": "Observer au microscope"
+                    }
+                  ]
+                },
+                {
+                  "content": "Le carmin acétique colore le noyau et les chromosomes.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Préparer la lame : on colore l'extrémité. 2. Le colorant rend le noyau et les chromosomes visibles, ce qui aide à repérer la division. Pourquoi pas « Faux » : sans colorant on distinguerait mal les chromosomes.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "On observe d'abord au ___ grossissement, puis on augmente.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Observer : au faible grossissement, on trouve une zone de cellules bien étalées. 2. On grossit ensuite. Pourquoi pas « fort » : on ne retrouverait pas la zone à étudier.",
+                  "answers": [
+                    {
+                      "content": "faible",
+                      "correct": true
+                    },
+                    {
+                      "content": "petit",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quels signes montrent qu'une cellule est en division ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1. Conclure : on repère les cellules en division à leurs chromosomes visibles ou à leurs deux noyaux. 2. Écarter les cellules sans chromosome visible. Pourquoi pas « un seul noyau net » : c'est une cellule en interphase, pas en division.",
+                  "answers": [
+                    {
+                      "content": "Ses chromosomes sont visibles",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elle a deux noyaux avant de se séparer",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elle a un seul noyau net et aucun chromosome visible",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle est située dans la coiffe",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Pense à la zone de multiplication de l'extrémité."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "On étudie les phases de la mitose d'une cellule de racine d'oignon.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Relie chaque phase à ce qu'on y observe.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1. Observer le noyau et les chromosomes. 2. Repérer leur place. 3. Nommer la phase. Pourquoi pas « anaphase pour télophase » : en anaphase les chromosomes voyagent encore, en télophase ils sont arrivés et entourés d'un noyau.",
+                  "answers": [
+                    {
+                      "content": "Prophase",
+                      "match": "Noyau plus visible, chromosomes visibles dispersés"
+                    },
+                    {
+                      "content": "Métaphase",
+                      "match": "Chromosomes alignés au milieu"
+                    },
+                    {
+                      "content": "Anaphase",
+                      "match": "Deux lots de chromosomes tirés vers les pôles"
+                    },
+                    {
+                      "content": "Télophase",
+                      "match": "Deux noyaux qui se reforment"
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets les phases dans l'ordre du cycle, en commençant par l'interphase.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1. Placer chaque phase dans l'ordre du cycle : interphase, prophase, métaphase, anaphase, télophase. 2. La télophase termine la division. Pourquoi pas « métaphase avant prophase » : les chromosomes doivent d'abord devenir visibles avant de s'aligner.",
+                  "answers": [
+                    {
+                      "content": "Interphase"
+                    },
+                    {
+                      "content": "Prophase"
+                    },
+                    {
+                      "content": "Métaphase"
+                    },
+                    {
+                      "content": "Anaphase"
+                    },
+                    {
+                      "content": "Télophase"
+                    }
+                  ]
+                },
+                {
+                  "content": "Une cellule a un noyau net et aucun chromosome visible. Quelle est la phase ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Observer : noyau net, chromosomes invisibles. 2. Nommer : c'est l'interphase. Pourquoi pas « la prophase » : en prophase l'enveloppe du noyau disparaît et les chromosomes deviennent visibles.",
+                  "answers": [
+                    {
+                      "content": "L'interphase",
+                      "correct": true
+                    },
+                    {
+                      "content": "La prophase",
+                      "correct": false
+                    },
+                    {
+                      "content": "La métaphase",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'anaphase",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Dans quelle phase les chromosomes sont-ils alignés au milieu de la cellule ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer la place des chromosomes : alignés au milieu. 2. Nommer : c'est la métaphase. Pourquoi pas « la prophase » : en prophase les chromosomes sont encore dispersés, pas alignés.",
+                  "answers": [
+                    {
+                      "content": "La métaphase",
+                      "correct": true
+                    },
+                    {
+                      "content": "La prophase",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'anaphase",
+                      "correct": false
+                    },
+                    {
+                      "content": "La télophase",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pendant l'___, les chromosomes d'une cellule se séparent et sont tirés vers les pôles.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Repérer la place des chromosomes : tirés vers les pôles. 2. Nommer : c'est l'anaphase. Pourquoi pas « télophase » : en télophase, les chromosomes sont déjà arrivés aux pôles.",
+                  "answers": [
+                    {
+                      "content": "anaphase",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Regarde le noyau, puis la place des chromosomes."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "On étudie ce que deviennent les chromosomes et à quoi sert la mitose.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une cellule humaine a 46 chromosomes. Combien de chromosomes a chaque cellule fille après une mitose ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1. Repérer : 46 chromosomes dans la cellule mère. 2. Suivre : ils se dédoublent puis se séparent. 3. Compter : 46 dans chaque cellule fille. Pourquoi pas « 23 » : les chromosomes se dédoublent avant de se répartir, le nombre ne se partage donc pas.",
+                  "answers": [
+                    {
+                      "content": "46",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "La mitose conserve le nombre de chromosomes.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Suivre : les chromosomes se dédoublent puis chaque lot passe dans une cellule fille. 2. Compter : même nombre que dans la cellule mère. Pourquoi pas « Faux » : cela oublierait le dédoublement avant la séparation.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque situation au rôle de la mitose.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1. Relier chaque situation à son rôle. 2. Croissance : le nombre de cellules augmente ; renouvellement : des cellules usées sont remplacées. Pourquoi pas « croissance pour une plaie » : une plaie qui se ferme relève de la cicatrisation.",
+                  "answers": [
+                    {
+                      "content": "Un enfant grandit",
+                      "match": "Croissance"
+                    },
+                    {
+                      "content": "Les cellules de la peau sont remplacées",
+                      "match": "Renouvellement"
+                    },
+                    {
+                      "content": "Une plaie se referme",
+                      "match": "Cicatrisation"
+                    },
+                    {
+                      "content": "Une bouture donne une nouvelle plante",
+                      "match": "Multiplication végétative"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle phrase est vraie à propos des cellules filles ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Compter : le nombre de chromosomes est conservé. 2. Conclure : les cellules filles ressemblent à la cellule mère. Pourquoi pas « la moitié » : le dédoublement donne assez de chromosomes pour les deux cellules filles.",
+                  "answers": [
+                    {
+                      "content": "Elles ont le même nombre de chromosomes que la cellule mère",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elles ont la moitié des chromosomes de la cellule mère",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elles ont le double des chromosomes de la cellule mère",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elles n'ont plus de chromosomes",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La mitose est une reproduction ___ de la cellule.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Compter : les cellules filles sont identiques à la cellule mère. 2. On dit que la reproduction est conforme. Pourquoi pas « sexuée » : ce mot désigne un autre type de reproduction, pas la division d'une cellule en deux.",
+                  "answers": [
+                    {
+                      "content": "conforme",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Compte les chromosomes de la cellule mère et d'une cellule fille."
+            }
+          ]
+        },
+        {
+          "title": "Sujet 2 · La mitose dans la vie courante en Côte d'Ivoire",
+          "notions": "Observation d'un oignon acheté au marché, cicatrisation d'un footballeur, bouture de manioc, croissance d'un enfant, phases et chromosomes dans des situations de la vie courante.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Une élève d'Abobo fait germer un oignon acheté au marché pour observer sa racine au lycée.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Où doit-elle prélever un morceau de racine pour voir des cellules en division ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Choisir la zone à observer : l'extrémité, juste au-dessus de la coiffe. 2. Les cellules s'y divisent pour faire grandir la racine. Pourquoi pas « près du bulbe » : cette zone contient des cellules qui ne se divisent presque plus.",
+                  "answers": [
+                    {
+                      "content": "À l'extrémité de la racine, dans la zone de multiplication",
+                      "correct": true
+                    },
+                    {
+                      "content": "Plus haut, dans la zone des poils absorbants",
+                      "correct": false
+                    },
+                    {
+                      "content": "Sur les feuilles vertes de l'oignon",
+                      "correct": false
+                    },
+                    {
+                      "content": "Sur l'écorce sèche du bulbe",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre ses gestes.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1. Choisir et couper l'extrémité. 2. Préparer la lame : colorer, puis écraser. 3. Observer. Pourquoi pas « colorer après avoir regardé » : le colorant doit être posé avant l'observation pour voir les chromosomes.",
+                  "answers": [
+                    {
+                      "content": "Couper l'extrémité de la racine"
+                    },
+                    {
+                      "content": "Colorer au carmin acétique"
+                    },
+                    {
+                      "content": "Écraser entre lame et lamelle"
+                    },
+                    {
+                      "content": "Observer au microscope"
+                    }
+                  ]
+                },
+                {
+                  "content": "Si elle n'écrase pas l'extrémité, les cellules sont superposées et difficiles à observer.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Préparer la lame : l'écrasement étale les cellules en une seule couche. 2. Sans écrasement, les cellules s'empilent et on ne distingue rien. Pourquoi pas « Faux » : l'écrasement est un geste indispensable de la préparation.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Elle compte 40 cellules dont 8 en division. Quel pourcentage de cellules est en division ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1. Conclure en comptant : 8 cellules en division sur 40. 2. Calculer 8 ÷ 40 = 0,2, soit 20 %. Pourquoi pas « 8 % » : ce serait confondre le nombre de cellules en division avec un pourcentage.",
+                  "answers": [
+                    {
+                      "content": "20",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "%"
+                },
+                {
+                  "content": "Les cellules qui se divisent se trouvent dans la zone de ___ de la racine.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Choisir la zone : la zone de multiplication. 2. Conclure : c'est elle qui fait grandir la racine. Pourquoi pas « poils » : la zone des poils absorbants ne se divise presque plus.",
+                  "answers": [
+                    {
+                      "content": "croissance",
+                      "correct": true
+                    },
+                    {
+                      "content": "multiplication",
+                      "correct": true
+                    },
+                    {
+                      "content": "division",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Cherche toujours la zone de multiplication à l'extrémité."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Un footballeur de Bouaké se blesse à la jambe. La plaie se referme en quelques jours.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quel rôle de la mitose referme la plaie ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer la situation : une plaie à réparer. 2. Relier au rôle : la mitose fabrique des cellules qui comblent la plaie, c'est la cicatrisation. Pourquoi pas « la croissance d'une racine » : la situation concerne un humain blessé, pas une racine.",
+                  "answers": [
+                    {
+                      "content": "La cicatrisation",
+                      "correct": true
+                    },
+                    {
+                      "content": "La multiplication végétative",
+                      "correct": false
+                    },
+                    {
+                      "content": "La croissance d'une racine",
+                      "correct": false
+                    },
+                    {
+                      "content": "La reproduction sexuée",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une cellule de peau du joueur a 46 chromosomes. Combien de chromosomes a chacune de ses cellules filles ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1. Repérer : 46 chromosomes. 2. Suivre : dédoublement puis séparation. 3. Compter : 46 dans chaque cellule fille. Pourquoi pas « 92 » : ce serait le nombre de chromosomes des deux cellules filles réunies, pas celui d'une seule.",
+                  "answers": [
+                    {
+                      "content": "46",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Les nouvelles cellules de la peau sont identiques aux anciennes.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Suivre : chaque cellule fille reçoit un lot complet de chromosomes identiques. 2. Conclure : les nouvelles cellules ressemblent aux anciennes. Pourquoi pas « Faux » : la mitose est une reproduction conforme.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque rôle de la mitose à un exemple.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1. Relier chaque exemple à son rôle. 2. Cicatrisation : réparer une plaie ; renouvellement : remplacer des cellules usées ; croissance : augmenter le nombre de cellules. Pourquoi pas « renouvellement pour une plaie » : il faut ici réparer une blessure.",
+                  "answers": [
+                    {
+                      "content": "Cicatrisation",
+                      "match": "Une plaie se referme"
+                    },
+                    {
+                      "content": "Renouvellement",
+                      "match": "La peau remplace ses cellules usées"
+                    },
+                    {
+                      "content": "Croissance",
+                      "match": "Un enfant devient plus grand"
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles affirmations sont vraies pour la cicatrisation ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1. Relier : la cicatrisation est un rôle de la mitose. 2. Compter : les cellules filles sont identiques et gardent leurs 46 chromosomes. Pourquoi pas « réduit de moitié » : la mitose conserve le nombre de chromosomes.",
+                  "answers": [
+                    {
+                      "content": "Elle utilise la mitose",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elle fabrique des cellules identiques aux cellules voisines",
+                      "correct": true
+                    },
+                    {
+                      "content": "Elle réduit de moitié le nombre de chromosomes",
+                      "correct": false
+                    },
+                    {
+                      "content": "Elle fabrique des cellules aux chromosomes différents",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Une blessure se répare par de nouvelles cellules."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Un cultivateur d'Odienné plante des boutures de tige de manioc. Chaque bouture donne un plant.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Comment appelle-t-on la naissance d'une plante à partir d'une bouture ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer : un morceau de plante donne une nouvelle plante. 2. Relier : c'est la multiplication végétative. Pourquoi pas « la cicatrisation » : elle répare une plaie et ne crée pas une plante.",
+                  "answers": [
+                    {
+                      "content": "La multiplication végétative",
+                      "correct": true
+                    },
+                    {
+                      "content": "La cicatrisation",
+                      "correct": false
+                    },
+                    {
+                      "content": "La reproduction sexuée",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le renouvellement des cellules",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le plant issu de la bouture est identique à la plante mère.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Suivre les chromosomes : les mitoses donnent des cellules identiques. 2. Conclure : le plant est identique à la plante mère. Pourquoi pas « Faux » : aucun mélange de chromosomes ne se produit pendant une mitose.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une cellule de la tige de manioc a 36 chromosomes. Combien de chromosomes ont ses cellules filles ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1. Repérer : 36 chromosomes dans la cellule mère. 2. Suivre : ils se dédoublent puis se séparent. 3. Compter : 36 dans chaque cellule fille. Pourquoi pas « 18 » : ce serait partager le nombre de chromosomes, ce que la mitose ne fait pas.",
+                  "answers": [
+                    {
+                      "content": "36",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour obtenir des plants identiques sans graines, on pratique la ___.",
+                  "question_type": "select",
+                  "explanation": "Méthode : 1. Relier à son rôle : une plante identique obtenue d'un morceau de plante est une multiplication végétative. 2. Écarter les autres mots. Pourquoi pas « cicatrisation » : elle désigne la fermeture d'une plaie.",
+                  "answers": [
+                    {
+                      "content": "multiplication végétative",
+                      "correct": true
+                    },
+                    {
+                      "content": "cicatrisation",
+                      "correct": false
+                    },
+                    {
+                      "content": "reproduction sexuée",
+                      "correct": false
+                    },
+                    {
+                      "content": "germination",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La mitose assure la reproduction ___ de la cellule.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Compter : les cellules filles sont identiques à la cellule mère. 2. La reproduction est dite conforme. Pourquoi pas « sexuée » : la reproduction sexuée mélange des caractères et n'est pas une simple division.",
+                  "answers": [
+                    {
+                      "content": "conforme",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Une bouture est un morceau de plante."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Un bébé du quartier de Cocody grandit et devient un enfant. Son corps compte de plus en plus de cellules.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quel rôle de la mitose explique que l'enfant grandisse ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Repérer la situation : un enfant qui grandit. 2. Relier au rôle : le nombre de cellules augmente par mitose, c'est la croissance. Pourquoi pas « la multiplication végétative » : elle concerne les plantes.",
+                  "answers": [
+                    {
+                      "content": "La croissance : le nombre de cellules augmente",
+                      "correct": true
+                    },
+                    {
+                      "content": "La cicatrisation : une plaie se referme",
+                      "correct": false
+                    },
+                    {
+                      "content": "La multiplication végétative : une bouture donne une plante",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le renouvellement des cellules de la peau",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une cellule d'un enfant se divise en deux cellules filles, puis chacune se divise encore une fois. Combien de cellules obtient-on au total ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1. Repérer : une cellule mère au départ. 2. Compter : 1 cellule donne 2 cellules, puis 2 cellules donnent 4 cellules. Pourquoi pas « 3 » : chaque cellule fille se divise à son tour, ce qui fait deux fois deux cellules.",
+                  "answers": [
+                    {
+                      "content": "4",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cellules"
+                },
+                {
+                  "content": "L'enfant a moins de chromosomes dans ses cellules qu'un adulte.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Compter : la mitose conserve le nombre de chromosomes. 2. Conclure : l'enfant et l'adulte ont 46 chromosomes dans leurs cellules. Pourquoi pas « Vrai » : l'enfant n'a pas moins de chromosomes, il a seulement moins de cellules.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les phases du cycle d'une cellule d'enfant, en commençant par l'interphase.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1. Placer chaque phase : interphase, prophase, métaphase, anaphase, télophase. 2. À la fin, il y a deux cellules filles. Pourquoi pas « télophase avant anaphase » : les lots de chromosomes doivent d'abord se séparer.",
+                  "answers": [
+                    {
+                      "content": "Interphase"
+                    },
+                    {
+                      "content": "Prophase"
+                    },
+                    {
+                      "content": "Métaphase"
+                    },
+                    {
+                      "content": "Anaphase"
+                    },
+                    {
+                      "content": "Télophase"
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque phase à une observation.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1. Observer le noyau et les chromosomes. 2. Repérer leur place. 3. Nommer la phase. Pourquoi pas « télophase pour métaphase » : en métaphase il n'y a pas de noyau, en télophase il y en a deux.",
+                  "answers": [
+                    {
+                      "content": "Prophase",
+                      "match": "Chromosomes visibles, noyau plus visible"
+                    },
+                    {
+                      "content": "Métaphase",
+                      "match": "Chromosomes alignés au milieu"
+                    },
+                    {
+                      "content": "Télophase",
+                      "match": "Deux noyaux qui se reforment"
+                    }
+                  ]
+                }
+              ],
+              "hint": "Le nombre de cellules augmente par mitose."
+            }
+          ]
+        },
+        {
+          "title": "Sujet 3 · Raisonner et justifier",
+          "notions": "Analyse de comptages de cellules, comparaison de zones d'une racine, raisonnement sur le dédoublement et la conservation des chromosomes, justification de la phase d'une cellule.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Un élève fait un comptage sur 100 cellules de l'extrémité d'une racine d'oignon (valeurs fictives) : 80 en interphase, 8 en prophase, 5 en métaphase, 4 en anaphase, 3 en télophase.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Combien de cellules sont en mitose sur ces 100 cellules ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1. Observer : les cellules en mitose sont celles en prophase, métaphase, anaphase et télophase. 2. Compter : 8 + 5 + 4 + 3 = 20. Pourquoi pas « 80 » : ce sont les cellules en interphase, qui ne sont pas en mitose.",
+                  "answers": [
+                    {
+                      "content": "20",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cellules"
+                },
+                {
+                  "content": "Quelle phase de la mitose est la plus fréquente dans ce comptage ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Lire les valeurs : 8, 5, 4 et 3. 2. Repérer la plus grande : 8, donc la prophase. Pourquoi pas « la métaphase » : elle compte 5 cellules, moins que la prophase.",
+                  "answers": [
+                    {
+                      "content": "La prophase, avec 8 cellules",
+                      "correct": true
+                    },
+                    {
+                      "content": "La métaphase, avec 5 cellules",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'anaphase, avec 4 cellules",
+                      "correct": false
+                    },
+                    {
+                      "content": "La télophase, avec 3 cellules",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Que peut-on en déduire sur la durée des phases ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Comparer : 8 cellules en prophase contre 3 en télophase. 2. Conclure : plus il y a de cellules dans une phase, plus cette phase dure. Pourquoi pas « l'interphase est la plus courte » : 80 cellules sur 100 y sont, elle est la plus longue.",
+                  "answers": [
+                    {
+                      "content": "La prophase dure plus longtemps que la télophase",
+                      "correct": true
+                    },
+                    {
+                      "content": "La télophase dure plus longtemps que la prophase",
+                      "correct": false
+                    },
+                    {
+                      "content": "Toutes les phases durent le même temps",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'interphase est la phase la plus courte",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Si l'élève avait compté dans la zone des poils absorbants, il aurait trouvé autant de cellules en mitose.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Choisir la zone : les cellules se divisent dans la zone de multiplication. 2. Conclure : dans la zone des poils, presque aucune cellule n'est en mitose. Pourquoi pas « Vrai » : cette zone ne sert plus à multiplier les cellules.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Pour comparer des comptages, on calcule un ___ de cellules en mitose.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Compter : on calcule le nombre de cellules en mitose sur le total. 2. On exprime ce rapport en pourcentage (ici 20 %). Pourquoi pas « nombre » : un nombre brut ne permet pas de comparer deux lames qui n'ont pas le même total.",
+                  "answers": [
+                    {
+                      "content": "pourcentage",
+                      "correct": true
+                    },
+                    {
+                      "content": "taux",
+                      "correct": true
+                    },
+                    {
+                      "content": "rapport",
+                      "correct": true
+                    },
+                    {
+                      "content": "indice",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Additionne les cellules en mitose avant de calculer."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Un élève compare deux lames de racine d'oignon (valeurs fictives). Lame A : 30 cellules en division sur 100. Lame B : 2 cellules en division sur 100.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Laquelle des lames vient de l'extrémité de la racine ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Choisir la zone : l'extrémité contient beaucoup de cellules en division. 2. Comparer : 30 contre 2. Pourquoi pas « la lame B » : 2 cellules sur 100 correspondent à la zone des poils.",
+                  "answers": [
+                    {
+                      "content": "La lame A, car elle contient beaucoup de cellules en division",
+                      "correct": true
+                    },
+                    {
+                      "content": "La lame B, car elle contient peu de cellules en division",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les deux, car elles contiennent des cellules en division",
+                      "correct": false
+                    },
+                    {
+                      "content": "Aucune des deux, car la zone de multiplication ne contient pas de cellules en division",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel pourcentage de cellules est en division sur la lame A ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1. Compter : 30 cellules en division sur 100. 2. Calculer : 30 sur 100, soit 30 %. Pourquoi pas « 2 % » : cette valeur correspond à la lame B.",
+                  "answers": [
+                    {
+                      "content": "30",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "%"
+                },
+                {
+                  "content": "La différence entre les lames prouve que toute la racine se divise de la même façon.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Comparer : 30 % contre 2 %. 2. Conclure : les divisions se concentrent dans la zone de multiplication. Pourquoi pas « Vrai » : les deux valeurs sont très différentes.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelles conclusions sont correctes ?",
+                  "question_type": "multiple_correct_2",
+                  "explanation": "Méthode : 1. Conclure d'après les comptages. 2. La zone de multiplication fait grandir la racine. Pourquoi pas « la racine grandit par sa zone des poils » : ce sont les divisions de l'extrémité qui la font grandir.",
+                  "answers": [
+                    {
+                      "content": "La zone de multiplication fabrique de nouvelles cellules par mitose",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les poils absorbants viennent d'une zone où les cellules ne se divisent presque plus",
+                      "correct": true
+                    },
+                    {
+                      "content": "La racine grandit uniquement par sa zone des poils",
+                      "correct": false
+                    },
+                    {
+                      "content": "La coiffe se divise plus que la zone de multiplication",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "La racine grandit grâce aux divisions de la zone de ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Conclure : les cellules de la zone de multiplication se multiplient par mitose. 2. La racine s'allonge. Pourquoi pas « poils » : elle sert à absorber l'eau, pas à multiplier les cellules.",
+                  "answers": [
+                    {
+                      "content": "croissance",
+                      "correct": true
+                    },
+                    {
+                      "content": "multiplication",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Une lame vient de l'extrémité, l'autre de la zone des poils absorbants."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "Un élève affirme : « Si les cellules filles avaient la moitié des chromosomes, elles auraient 23 chromosomes chez l'Homme. » On étudie cette affirmation.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une cellule humaine a 46 chromosomes. Combien de chromosomes ont ses deux cellules filles, chacune ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1. Repérer : 46 chromosomes. 2. Suivre : ils se dédoublent, puis se séparent en deux lots de 46. 3. Compter : 46 par cellule fille. Pourquoi pas « 23 » : le dédoublement donne deux lots complets.",
+                  "answers": [
+                    {
+                      "content": "46",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quel argument montre que le nombre de chromosomes ne peut pas être divisé par deux à chaque mitose ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Compter : un enfant et un adulte ont 46 chromosomes par cellule. 2. Conclure : si le nombre diminuait de moitié, il disparaîtrait au fil des divisions. Pourquoi pas « les chromosomes disparaissent » : ils se dédoublent, ils ne disparaissent pas.",
+                  "answers": [
+                    {
+                      "content": "Les cellules d'un adulte comme celles d'un enfant ont toujours 46 chromosomes",
+                      "correct": true
+                    },
+                    {
+                      "content": "Les cellules filles sont plus petites que la cellule mère",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les chromosomes disparaissent à chaque mitose",
+                      "correct": false
+                    },
+                    {
+                      "content": "Les cellules se divisent plus vite chez l'enfant que chez l'adulte",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre ce qui garantit 46 chromosomes à chaque cellule fille.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1. Suivre : les chromosomes se dédoublent. 2. Ils s'alignent puis se séparent. 3. Chaque cellule fille reçoit 46 chromosomes. Pourquoi pas « séparer avant de dédoubler » : il n'y aurait pas assez de chromosomes pour les deux cellules.",
+                  "answers": [
+                    {
+                      "content": "Les 46 chromosomes se dédoublent"
+                    },
+                    {
+                      "content": "Les chromosomes dédoublés s'alignent au milieu"
+                    },
+                    {
+                      "content": "Chaque chromosome dédoublé se sépare en deux"
+                    },
+                    {
+                      "content": "Chaque cellule fille reçoit 46 chromosomes"
+                    }
+                  ]
+                },
+                {
+                  "content": "En anaphase, 46 chromosomes vont à chaque pôle de la cellule humaine.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Repérer : la cellule mère a 46 chromosomes qui se sont dédoublés. 2. Suivre : en anaphase, 46 se dirigent vers chaque pôle. Pourquoi pas « Faux » : chaque pôle doit recevoir un lot complet.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle phrase justifie correctement que les cellules filles sont identiques à la cellule mère ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Suivre : les chromosomes se dédoublent puis se séparent en lots identiques. 2. Conclure : les cellules filles ressemblent à la cellule mère. Pourquoi pas « pris au hasard » : le partage n'est pas un tirage au sort, chaque chromosome dédoublé se sépare en deux.",
+                  "answers": [
+                    {
+                      "content": "Chaque cellule fille reçoit un lot complet de chromosomes identiques",
+                      "correct": true
+                    },
+                    {
+                      "content": "Chaque cellule fille reçoit des chromosomes pris au hasard",
+                      "correct": false
+                    },
+                    {
+                      "content": "Chaque cellule fille reçoit seulement la moitié des chromosomes",
+                      "correct": false
+                    },
+                    {
+                      "content": "Chaque cellule fille fabrique de nouveaux chromosomes",
+                      "correct": false
+                    }
+                  ]
+                }
+              ],
+              "hint": "Pense au dédoublement avant la division."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Une cellule est observée au microscope. Elle n'a pas de noyau visible, ses chromosomes sont visibles et se séparent en deux lots, en route vers les deux extrémités de la cellule.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle est la phase de cette cellule ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Observer : pas de noyau, chromosomes visibles. 2. Repérer : deux lots en route vers les pôles. 3. Nommer : anaphase. Pourquoi pas « la télophase » : en télophase les lots sont arrivés et un noyau se reforme.",
+                  "answers": [
+                    {
+                      "content": "L'anaphase",
+                      "correct": true
+                    },
+                    {
+                      "content": "La métaphase",
+                      "correct": false
+                    },
+                    {
+                      "content": "La télophase",
+                      "correct": false
+                    },
+                    {
+                      "content": "La prophase",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Cette cellule est en interphase.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Observer : en interphase, le noyau est net et les chromosomes invisibles. 2. Ici, il n'y a pas de noyau et les chromosomes sont visibles. Pourquoi pas « Vrai » : cette description correspond à une cellule déjà en mitose.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle phase vient juste après celle de cette cellule ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Placer la phase dans l'ordre : l'anaphase est suivie de la télophase. 2. Les lots arrivent aux pôles et un noyau se reforme. Pourquoi pas « la métaphase » : elle précède l'anaphase.",
+                  "answers": [
+                    {
+                      "content": "La télophase",
+                      "correct": true
+                    },
+                    {
+                      "content": "La métaphase",
+                      "correct": false
+                    },
+                    {
+                      "content": "L'interphase",
+                      "correct": false
+                    },
+                    {
+                      "content": "La prophase",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Après la télophase, la cellule revient en ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Placer : après la télophase, il y a deux cellules filles qui reviennent en interphase. 2. Le cycle recommence. Pourquoi pas « prophase » : la prophase ne vient qu'après l'interphase, où les chromosomes se dédoublent.",
+                  "answers": [
+                    {
+                      "content": "interphase",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Cette cellule d'oignon a 16 chromosomes. Combien de chromosomes arrivent à chaque pôle ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1. Repérer : 16 chromosomes dans la cellule mère. 2. Suivre : ils se dédoublent, puis les deux lots se séparent. 3. Compter : 16 vont à chaque pôle. Pourquoi pas « 8 » : chaque pôle doit recevoir un lot complet.",
+                  "answers": [
+                    {
+                      "content": "16",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Observe le noyau puis la place des chromosomes."
+            }
+          ]
+        },
+        {
+          "title": "Sujet 4 · Bilan de la mitose",
+          "notions": "Bilan : mitose et cellules filles, observation d'une racine d'oignon, phases de la mitose, nombre de chromosomes conservé, rôles de la mitose.",
+          "exercises": [
+            {
+              "title": "Exercice 1",
+              "statement": "Bilan sur la mitose : une cellule mère donne deux cellules filles.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Quelle phrase définit la mitose ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Définir : la mitose est la division d'une cellule mère en deux cellules filles identiques. 2. Écarter ce qui n'est pas une division. Pourquoi pas « quatre cellules à partir d'une seule » : la mitose donne deux cellules identiques.",
+                  "answers": [
+                    {
+                      "content": "La division d'une cellule mère en deux cellules filles identiques",
+                      "correct": true
+                    },
+                    {
+                      "content": "La fabrication de quatre cellules à partir d'une seule",
+                      "correct": false
+                    },
+                    {
+                      "content": "La germination d'une graine",
+                      "correct": false
+                    },
+                    {
+                      "content": "La reproduction sexuée de deux parents",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Les deux cellules filles d'une mitose sont identiques entre elles.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Suivre les chromosomes : chaque cellule fille reçoit un lot complet identique. 2. Conclure : les cellules filles sont identiques. Pourquoi pas « Faux » : la mitose est une reproduction conforme.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Une cellule se divise 3 fois de suite par mitose. Combien de cellules obtient-on au total à partir d'une seule cellule ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1. Compter : 1 cellule donne 2, puis 4, puis 8 après trois divisions. 2. Le nombre double à chaque division. Pourquoi pas « 6 » : ce serait ajouter 2 à chaque division alors que le nombre double.",
+                  "answers": [
+                    {
+                      "content": "8",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "cellules"
+                },
+                {
+                  "content": "Une cellule qui se divise donne deux cellules ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Définir : la cellule qui se divise est la cellule mère. 2. Elle donne deux cellules filles. Pourquoi pas « mères » : la cellule mère est celle qui se divise, pas celles qui en résultent.",
+                  "answers": [
+                    {
+                      "content": "filles",
+                      "correct": true
+                    },
+                    {
+                      "content": "fille",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque terme à sa définition.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1. Définir chaque terme. 2. La zone de multiplication est la zone de l'extrémité où les cellules se divisent, et l'interphase est la période entre deux divisions. Pourquoi pas « interphase pour division » : l'interphase n'est pas la division.",
+                  "answers": [
+                    {
+                      "content": "Cellule mère",
+                      "match": "Cellule qui se divise"
+                    },
+                    {
+                      "content": "Cellule fille",
+                      "match": "Cellule qui résulte de la division"
+                    },
+                    {
+                      "content": "Zone de multiplication",
+                      "match": "Zone de la racine où les cellules se divisent"
+                    },
+                    {
+                      "content": "Interphase",
+                      "match": "Période entre deux divisions"
+                    }
+                  ]
+                }
+              ],
+              "hint": "Une cellule mère donne deux cellules filles."
+            },
+            {
+              "title": "Exercice 2",
+              "statement": "Un élève prépare une lame avec une racine d'oignon et cherche des cellules en division.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Pourquoi écrase-t-on l'extrémité entre lame et lamelle ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Préparer la lame : on écrase l'extrémité. 2. Les cellules s'étalent en une seule couche et se voient une à une. Pourquoi pas « colorer les chromosomes » : la coloration se fait avec le carmin acétique ; l'écrasement sert à étaler les cellules.",
+                  "answers": [
+                    {
+                      "content": "Pour étaler les cellules en une seule couche",
+                      "correct": true
+                    },
+                    {
+                      "content": "Pour colorer les chromosomes",
+                      "correct": false
+                    },
+                    {
+                      "content": "Pour séparer les chromosomes en deux lots",
+                      "correct": false
+                    },
+                    {
+                      "content": "Pour agrandir l'image au microscope",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle zone doit-il observer ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Choisir la zone : l'extrémité, juste au-dessus de la coiffe. 2. C'est là que les cellules se divisent. Pourquoi pas « la zone des poils absorbants » : ses cellules ne se divisent presque plus.",
+                  "answers": [
+                    {
+                      "content": "L'extrémité, dans la zone de multiplication",
+                      "correct": true
+                    },
+                    {
+                      "content": "La zone des poils absorbants",
+                      "correct": false
+                    },
+                    {
+                      "content": "Le bulbe sec",
+                      "correct": false
+                    },
+                    {
+                      "content": "La zone la plus haute de la racine",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Remets dans l'ordre les gestes de l'élève.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1. Choisir : couper l'extrémité. 2. Préparer : colorer, écraser. 3. Observer. Pourquoi pas « observer d'abord » : sans préparation, on ne voit ni noyau ni chromosome.",
+                  "answers": [
+                    {
+                      "content": "Couper l'extrémité de la racine"
+                    },
+                    {
+                      "content": "Colorer au carmin acétique"
+                    },
+                    {
+                      "content": "Écraser entre lame et lamelle"
+                    },
+                    {
+                      "content": "Observer au microscope"
+                    }
+                  ]
+                },
+                {
+                  "content": "Un élève voit un seul noyau net et aucun chromosome visible dans une cellule : elle est en train de se diviser.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Observer : noyau net, chromosomes invisibles. 2. Nommer : c'est l'interphase, pas une division. Pourquoi pas « Vrai » : une cellule en division montre des chromosomes visibles.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": false
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Sur 50 cellules observées, 15 sont en division. Quel pourcentage cela représente-t-il ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1. Compter : 15 cellules en division sur 50. 2. Calculer 15 ÷ 50 = 0,3, soit 30 %. Pourquoi pas « 15 % » : ce serait prendre le nombre de cellules pour un pourcentage.",
+                  "answers": [
+                    {
+                      "content": "30",
+                      "correct": true
+                    }
+                  ],
+                  "unit": "%"
+                }
+              ],
+              "hint": "Chaque geste de la préparation a une raison."
+            },
+            {
+              "title": "Exercice 3",
+              "statement": "On étudie une cellule d'oignon à plusieurs moments de sa division.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Remets les phases dans l'ordre du cycle, en commençant par l'interphase.",
+                  "question_type": "ordering",
+                  "explanation": "Méthode : 1. Placer chaque phase dans l'ordre du cycle : interphase, prophase, métaphase, anaphase, télophase. 2. La télophase termine la division. Pourquoi pas « anaphase avant métaphase » : les chromosomes doivent s'aligner avant de se séparer.",
+                  "answers": [
+                    {
+                      "content": "Interphase"
+                    },
+                    {
+                      "content": "Prophase"
+                    },
+                    {
+                      "content": "Métaphase"
+                    },
+                    {
+                      "content": "Anaphase"
+                    },
+                    {
+                      "content": "Télophase"
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque phase à ce qu'on y observe.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1. Observer le noyau et les chromosomes. 2. Repérer leur place. 3. Nommer la phase. Pourquoi pas « télophase pour anaphase » : en télophase, les lots sont arrivés aux pôles.",
+                  "answers": [
+                    {
+                      "content": "Interphase",
+                      "match": "Noyau net, chromosomes invisibles"
+                    },
+                    {
+                      "content": "Prophase",
+                      "match": "Noyau plus visible, chromosomes visibles"
+                    },
+                    {
+                      "content": "Métaphase",
+                      "match": "Chromosomes alignés au milieu"
+                    },
+                    {
+                      "content": "Anaphase",
+                      "match": "Lots de chromosomes tirés vers les pôles"
+                    },
+                    {
+                      "content": "Télophase",
+                      "match": "Deux noyaux qui se reforment"
+                    }
+                  ]
+                },
+                {
+                  "content": "Une cellule a deux lots de chromosomes aux extrémités, chacun entouré d'un noyau. Quelle est la phase ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Observer : deux noyaux apparaissent. 2. Repérer : les lots sont aux extrémités. 3. Nommer : télophase. Pourquoi pas « l'anaphase » : en anaphase il n'y a pas encore de noyau.",
+                  "answers": [
+                    {
+                      "content": "La télophase",
+                      "correct": true
+                    },
+                    {
+                      "content": "L'anaphase",
+                      "correct": false
+                    },
+                    {
+                      "content": "La métaphase",
+                      "correct": false
+                    },
+                    {
+                      "content": "La prophase",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "En métaphase, les chromosomes sont alignés au milieu de la cellule.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Repérer la place des chromosomes : alignés au milieu. 2. Nommer : métaphase. Pourquoi pas « Faux » : c'est justement la caractéristique de la métaphase.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Pendant la ___, l'enveloppe du noyau disparaît et les chromosomes deviennent visibles.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Observer : l'enveloppe du noyau disparaît et les chromosomes apparaissent. 2. Nommer : c'est la prophase. Pourquoi pas « interphase » : en interphase les chromosomes restent invisibles.",
+                  "answers": [
+                    {
+                      "content": "prophase",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Regarde le noyau, puis la place des chromosomes."
+            },
+            {
+              "title": "Exercice 4",
+              "statement": "Dernier bilan : on relie la conservation du nombre de chromosomes aux rôles de la mitose.",
+              "exercise_type": "evaluation",
+              "figure": null,
+              "questions": [
+                {
+                  "content": "Une cellule humaine à 46 chromosomes se divise par mitose. Combien de chromosomes a chaque cellule fille ?",
+                  "question_type": "numeric",
+                  "tolerance": 0,
+                  "explanation": "Méthode : 1. Repérer : 46 chromosomes. 2. Suivre : dédoublement puis séparation. 3. Compter : 46 par cellule fille. Pourquoi pas « 23 » : ce serait oublier que les chromosomes se dédoublent.",
+                  "answers": [
+                    {
+                      "content": "46",
+                      "correct": true
+                    }
+                  ]
+                },
+                {
+                  "content": "Relie chaque situation à son rôle.",
+                  "question_type": "matching",
+                  "explanation": "Méthode : 1. Relier chaque situation à son rôle. 2. Une plaie relève de la cicatrisation, une bouture de la multiplication végétative. Pourquoi pas « croissance pour une bouture » : la bouture donne un nouveau plant, c'est une multiplication végétative.",
+                  "answers": [
+                    {
+                      "content": "Un enfant grandit",
+                      "match": "Croissance"
+                    },
+                    {
+                      "content": "Les cellules de l'intestin sont remplacées",
+                      "match": "Renouvellement"
+                    },
+                    {
+                      "content": "Une plaie se referme",
+                      "match": "Cicatrisation"
+                    },
+                    {
+                      "content": "Une bouture donne un plant",
+                      "match": "Multiplication végétative"
+                    }
+                  ]
+                },
+                {
+                  "content": "La mitose conserve le nombre de chromosomes.",
+                  "question_type": "true_false",
+                  "explanation": "Méthode : 1. Suivre : les chromosomes se dédoublent puis se séparent en lots identiques. 2. Compter : même nombre dans les cellules filles. Pourquoi pas « Faux » : la mitose ne partage pas le nombre de chromosomes.",
+                  "answers": [
+                    {
+                      "content": "Vrai",
+                      "correct": true
+                    },
+                    {
+                      "content": "Faux",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Quelle phrase est correcte ?",
+                  "question_type": "single_choice",
+                  "explanation": "Méthode : 1. Relier la mitose à son rôle. 2. Elle fabrique des cellules identiques pour grandir et cicatriser. Pourquoi pas « elle ne sert qu'aux plantes » : l'Homme aussi utilise la mitose, par exemple pour cicatriser.",
+                  "answers": [
+                    {
+                      "content": "La mitose fabrique des cellules identiques, utiles à la croissance et à la cicatrisation",
+                      "correct": true
+                    },
+                    {
+                      "content": "La mitose fabrique des cellules différentes de la cellule mère",
+                      "correct": false
+                    },
+                    {
+                      "content": "La mitose réduit de moitié le nombre de chromosomes",
+                      "correct": false
+                    },
+                    {
+                      "content": "La mitose ne sert qu'aux plantes",
+                      "correct": false
+                    }
+                  ]
+                },
+                {
+                  "content": "Le nombre de chromosomes d'une cellule de la peau humaine est ___.",
+                  "question_type": "fill_blank",
+                  "explanation": "Méthode : 1. Repérer : une cellule humaine a 46 chromosomes. 2. Elle les conserve à chaque mitose. Pourquoi pas « 23 » : c'est le nombre de chromosomes d'un gamète, pas celui d'une cellule de la peau.",
+                  "answers": [
+                    {
+                      "content": "46",
+                      "correct": true
+                    },
+                    {
+                      "content": "quarante-six",
+                      "correct": true
+                    }
+                  ]
+                }
+              ],
+              "hint": "Compte les chromosomes, puis relie la mitose à son rôle."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
