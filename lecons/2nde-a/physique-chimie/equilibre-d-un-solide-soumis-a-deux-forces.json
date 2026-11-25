@@ -870,7 +870,7 @@
             "Appliquer l'équilibre : la réaction a la même droite d'action que le poids (la verticale), un sens opposé (vers le haut) et la même intensité.",
             "Comparer la direction de la réaction avec le support : est-elle perpendiculaire au support, oui ou non ?",
             "Nommer les composantes : la réaction normale $\\vec R_N$ est perpendiculaire au support, la réaction tangentielle $\\vec R_T$ est parallèle au support.",
-            "Conclure sur les frottements : si $\\vec R_T \\neq \\vec 0$, il y a des frottements ; si le contact est sans frottement, $\\vec R_T = \\vec 0$ et un solide ne peut pas rester en équilibre sur un plan incliné."
+            "Conclure sur les frottements : si $\\vec R_T \\neq \\vec 0$, il y a des frottements ; si le contact est sans frottement, $\\vec R_T = \\vec 0$ et un solide simplement posé ne peut pas rester en équilibre sur un plan incliné."
           ],
           "example": {
             "statement": "Une caisse de 10 kg reste immobile sur une planche rugueuse inclinée. Donner la direction, le sens et l'intensité de la réaction de la planche, puis dire si elle a une réaction tangentielle. On prend $g = 10$ N/kg.",
@@ -882,7 +882,7 @@
               "Conclure : $\\vec R_T$ est la force de frottement. La caisse reste immobile grâce aux frottements ; sur une planche sans frottement, elle glisserait."
             ]
           },
-          "pitfall": "Ne pas croire que la réaction d'un support est toujours perpendiculaire au support : elle l'est seulement sans frottement. Contre-exemple : une caisse de 10 kg est immobile sur une planche rugueuse inclinée. Si $\\vec R$ était perpendiculaire à la planche, elle ne serait pas opposée au poids vertical : $\\vec P + \\vec R$ ne serait pas nul et la caisse glisserait. À l'équilibre, $\\vec R$ est verticale, avec $R = 100$ N, et elle a une composante tangentielle.",
+          "pitfall": "Ne pas croire que la réaction d'un support est toujours perpendiculaire au support : elle l'est quand $\\vec R_T = \\vec 0$, par exemple sans frottement ou pour un solide simplement posé sur un support horizontal ; sur un plan incliné rugueux, elle ne l'est pas. Contre-exemple : une caisse de 10 kg est immobile sur une planche rugueuse inclinée. Si $\\vec R$ était perpendiculaire à la planche, elle ne serait pas opposée au poids vertical : $\\vec P + \\vec R$ ne serait pas nul et la caisse glisserait. À l'équilibre, $\\vec R$ est verticale, avec $R = 100$ N, et elle a une composante tangentielle.",
           "figure": "plan-incline",
           "practice": {
             "statement": "Tu t'entraînes à décomposer la réaction d'un support et à l'utiliser sur un plan incliné.",
@@ -1055,7 +1055,7 @@
                 {
                   "content": "Une caisse est immobile sur une planche rugueuse inclinée. Sa réaction est perpendiculaire à la planche, puisque la caisse ne s'enfonce pas dans la planche.",
                   "question_type": "true_false",
-                  "explanation": "Étape 2 — Appliquer l'équilibre : $\\vec R$ est opposée au poids, donc verticale. Étape 3 — Comparer : la planche est inclinée, la verticale n'est pas perpendiculaire à la planche. Étape 4 — Nommer les composantes : $\\vec R$ a une composante tangentielle. Pourquoi pas vrai : la réaction n'est perpendiculaire qu'en l'absence de frottement, et alors la caisse glisserait.",
+                  "explanation": "Étape 2 — Appliquer l'équilibre : $\\vec R$ est opposée au poids, donc verticale. Étape 3 — Comparer : la planche est inclinée, la verticale n'est pas perpendiculaire à la planche. Étape 4 — Nommer les composantes : $\\vec R$ a une composante tangentielle. Pourquoi pas vrai : une réaction perpendiculaire à la planche inclinée n'aurait pas de composante tangentielle, et la caisse glisserait ; empêcher la caisse de s'enfoncer, c'est le rôle de la seule réaction normale.",
                   "answers": [
                     {
                       "content": "Vrai",
