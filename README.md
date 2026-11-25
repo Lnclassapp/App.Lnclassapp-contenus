@@ -109,18 +109,20 @@ Depuis le 2026-11-25, les leçons 6 à 10 de Physique-Chimie de 2nde A et de 2nd
 
 Vérification : `valider.rb` sur la leçon et sur chaque sujet, format ; relecture IA indépendante de chaque leçon (sympy sur tous les calculs : structures électroniques, intensités de forces et projections, moments, masses et volumes molaires, lectures d'ampèremètre et loi des nœuds, vitesses d'enregistrements) ; 106 points pédagogiques tranchés par le validateur pédagogique le 2026-11-25 (rattachement au programme, conditions d'équilibre, loi du ressort, volume molaire, effets du courant, branchement de l'ampèremètre, principe de l'inertie sans « force d'inertie »), relevés dans le journal du chantier `lecons-2nde-6-a-10` de l'application. Écartés par prudence, faute de pouvoir lire le programme officiel : le couple de forces (2nde C, rang 8), la quantité d'électricité Q = I × t (2nde A, rang 10) et la relation barycentrique (2nde C, rang 10).
 
+Complété le 2026-11-26 d'après le programme éducatif et le guide d'exécution DPFC de Physique-Chimie de 2nde A et de 2nde C (dpfc-ci.net) : quantité d'électricité Q = I × t et ordres de grandeur de l'intensité (A, rang 10) ; centre d'inertie d'un système de deux solides (relation barycentrique), mouvement d'ensemble et mouvement propre (C, rang 10) ; représentations de Lewis des molécules, corps purs et mélanges, composés ioniques et moléculaires (rangs A6 et C7) ; loi d'Avogadro-Ampère et densité d'un gaz d = M/29 (rangs A8 et C9) ; réactions normale et tangentielle et plan incliné (A7 et C6). Relecture IA indépendante des ajouts puis 58 points tranchés par le validateur pédagogique. Le couple de forces, vérifié, n'est pas au programme de 2nde (1ère C).
+
 | Fichier | Titre | Rang | Notions | Exercices | Questions | Figures |
 |---|---|---:|---:|---:|---:|---:|
-| `2nde-a/physique-chimie/ions-et-molecules.json` | Ions et molécules | 6 | 5 | 30 | 182 | 5 |
-| `2nde-a/physique-chimie/equilibre-d-un-solide-soumis-a-deux-forces.json` | Équilibre d'un solide soumis à deux forces | 7 | 3 | 26 | 149 | 3 |
-| `2nde-a/physique-chimie/mole-et-grandeurs-molaires.json` | Mole et grandeurs molaires | 8 | 4 | 28 | 161 | 4 |
+| `2nde-a/physique-chimie/ions-et-molecules.json` | Ions et molécules | 6 | 7 | 34 | 214 | 6 |
+| `2nde-a/physique-chimie/equilibre-d-un-solide-soumis-a-deux-forces.json` | Équilibre d'un solide soumis à deux forces | 7 | 4 | 28 | 164 | 4 |
+| `2nde-a/physique-chimie/mole-et-grandeurs-molaires.json` | Mole et grandeurs molaires | 8 | 5 | 30 | 176 | 4 |
 | `2nde-a/physique-chimie/le-courant-electrique.json` | Le courant électrique | 9 | 4 | 28 | 168 | 1 |
-| `2nde-a/physique-chimie/intensite-d-un-courant-continu.json` | Intensité d'un courant continu | 10 | 4 | 28 | 169 | 2 |
-| `2nde-c/physique-chimie/equilibre-d-un-solide-soumis-a-deux-02-forces-puis-a-trois-03-forces.json` | Équilibre d'un solide soumis à deux (02) forces, puis à trois (03) forces | 6 | 4 | 28 | 170 | 4 |
-| `2nde-c/physique-chimie/ions-et-molecules.json` | Ions et molécules | 7 | 5 | 30 | 182 | 5 |
+| `2nde-a/physique-chimie/intensite-d-un-courant-continu.json` | Intensité d'un courant continu | 10 | 5 | 30 | 184 | 2 |
+| `2nde-c/physique-chimie/equilibre-d-un-solide-soumis-a-deux-02-forces-puis-a-trois-03-forces.json` | Équilibre d'un solide soumis à deux (02) forces, puis à trois (03) forces | 6 | 5 | 30 | 186 | 5 |
+| `2nde-c/physique-chimie/ions-et-molecules.json` | Ions et molécules | 7 | 7 | 34 | 214 | 6 |
 | `2nde-c/physique-chimie/equilibre-d-un-solide-mobile-autour-d-un-axe-fixe.json` | Équilibre d'un solide mobile autour d'un axe fixe | 8 | 3 | 26 | 144 | 3 |
-| `2nde-c/physique-chimie/mole-et-grandeurs-molaires.json` | Mole et grandeurs molaires | 9 | 4 | 28 | 161 | 4 |
-| `2nde-c/physique-chimie/principe-de-l-inertie.json` | Principe de l'inertie | 10 | 4 | 28 | 164 | 5 |
+| `2nde-c/physique-chimie/mole-et-grandeurs-molaires.json` | Mole et grandeurs molaires | 9 | 5 | 30 | 176 | 4 |
+| `2nde-c/physique-chimie/principe-de-l-inertie.json` | Principe de l'inertie | 10 | 5 | 30 | 180 | 6 |
 
 ### 2nde, SVT, leçons 6 à 10 (chantier `lecons-2nde-6-a-10`)
 
