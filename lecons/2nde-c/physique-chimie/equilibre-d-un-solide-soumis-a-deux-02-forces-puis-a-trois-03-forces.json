@@ -13,7 +13,7 @@
         {
           "key": "deux-forces",
           "kind": "coordinate_plane",
-          "description": "Un plan à carreaux. Une lampe est représentée par son point G, en (3 ; 3). Deux flèches partent de G : le poids P, verticale vers le bas, de 3 carreaux, et la tension T du fil, verticale vers le haut, de 3 carreaux. Échelle : 1 carreau pour 10 N. On lit que les deux forces ont la même droite d'action, des sens opposés et la même intensité, 30 N.",
+          "description": "Un plan à carreaux. Une lampe est représentée par son point G, en (3 ; 3). Deux flèches partent de G : le poids P, verticale vers le bas, de 3 carreaux, et la tension T du fil, verticale vers le haut (le point d'attache du fil est sur la même verticale que G), de 3 carreaux. Échelle : 1 carreau pour 10 N. On lit que les deux forces ont la même droite d'action, des sens opposés et la même intensité, 30 N.",
           "params": {
             "xmin": 0,
             "xmax": 6,
@@ -191,7 +191,7 @@
       "notions": [
         {
           "name": "Faire le bilan des forces exercées sur un solide",
-          "remember": "Le **système** est le solide que l'on étudie. Les **forces extérieures** sont celles que les autres objets exercent **sur** lui. Le **bilan des forces** est la liste de ces forces avec leurs caractéristiques. Trois forces reviennent souvent. Le **poids** $\\vec P$ : exercé à distance par la Terre, appliqué au centre de gravité G, vertical, vers le bas, d'intensité $P = m \\times g$. La **tension** $\\vec T$ d'un fil : contact localisé, appliquée au point d'attache, dirigée suivant le fil, du solide vers le fil. La **réaction** $\\vec R$ d'un support : contact réparti, dirigée du support vers le solide ; si le support est lisse (sans frottements), elle est perpendiculaire au support. Dans cette leçon, on néglige les frottements et on prend $g = 10$ N/kg.",
+          "remember": "Le **système** est le solide que l'on étudie. Les **forces extérieures** sont celles que les autres objets exercent **sur** lui. Le **bilan des forces** est la liste de ces forces avec leurs caractéristiques. Trois forces reviennent souvent. Le **poids** $\\vec P$ : exercé à distance par la Terre, appliqué au centre de gravité G, vertical, vers le bas, d'intensité $P = m \\times g$. La **tension** $\\vec T$ d'un fil : contact localisé, appliquée au point d'attache, dirigée suivant le fil, du solide vers le fil. La **réaction** $\\vec R$ d'un support : contact réparti, dirigée du support vers le solide ; si le support est lisse (sans frottements), elle est perpendiculaire au support. Dans cette leçon, on néglige les frottements et on prend $g = 10$ N/kg. La force qu'un solide exerce sur son support est la **force pressante** : elle s'exerce sur le support, pas sur le solide.",
           "method": [
             "Définir le système : choisir le solide étudié.",
             "Lister les objets qui agissent sur le système : la Terre (à distance), puis chaque objet qui le touche (fil, support, main).",
@@ -291,7 +291,7 @@
           "exercise": [
             {
               "title": "Faire le bilan des forces exercées sur un solide",
-              "statement": "Un pot de peinture de 5 kg est suspendu par une corde au crochet d'une grue de chantier. Il est immobile. Dans cet exercice, tu fais le bilan des forces exercées sur des solides.",
+              "statement": "Un pot de peinture est suspendu par une corde au crochet d'une grue de chantier. Il est immobile. Dans cet exercice, tu fais le bilan des forces exercées sur des solides.",
               "exercise_type": "fixation",
               "figure": null,
               "questions": [
@@ -488,7 +488,7 @@
                 {
                   "content": "Un solide est suspendu à un fil tendu. Quelles caractéristiques de la tension du fil connaît-on sans calcul ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Étape 1 — Définir le système : le système est le solide suspendu. Étape 2 — Lister les objets qui agissent : le fil touche le solide en un point d'attache. Étape 3 — Nommer la force de chaque objet : la force du fil est la tension. Étape 4 — Écrire le bilan : on lit sa direction (le fil) et son sens (le fil tire). Son point d'application est le point d'attache, pas G ; son intensité n'est pas fixée à 10 N.",
+                  "explanation": "Étape 1 — Définir le système : le système est le solide suspendu. Étape 2 — Lister les objets qui agissent : le fil touche le solide en un point d'attache. Étape 3 — Nommer la force de chaque objet : la force du fil est la tension. Étape 4 — Écrire le bilan : on lit sa direction (le fil) et son sens (le fil tire). Son point d'application est le point d'attache, pas G ; Pourquoi pas « Son intensité : égale à la masse du solide » : la masse s'exprime en kg et l'intensité en N ; pour un solide suspendu, T = P = m × g, qu'il faut calculer.",
                   "answers": [
                     {
                       "content": "Sa direction : celle du fil",
@@ -499,7 +499,7 @@
                       "correct": true
                     },
                     {
-                      "content": "Son intensité : toujours 10 N",
+                      "content": "Son intensité : égale à la masse du solide",
                       "correct": false
                     },
                     {
@@ -530,7 +530,7 @@
         },
         {
           "name": "Équilibre d'un solide soumis à deux forces",
-          "remember": "Un solide est **en équilibre** quand il reste immobile par rapport au sol. S'il n'est soumis qu'à **deux forces** $\\vec F_1$ et $\\vec F_2$, il faut et il suffit que : (1) les deux forces aient la **même droite d'action** ; (2) elles aient des **sens opposés** ; (3) elles aient la **même intensité** : $F_1 = F_2$. On écrit $\\vec F_1 + \\vec F_2 = \\vec 0$ : la somme vectorielle est nulle. Applications : un solide suspendu à un fil, $T = P$ ; un solide posé sur un plan horizontal lisse, $R = P$ ; un solide accroché à un dynamomètre, la lecture est $T = P = m \\times g$.",
+          "remember": "Un solide est **en équilibre** quand il reste immobile par rapport au sol. S'il n'est soumis qu'à **deux forces** $\\vec F_1$ et $\\vec F_2$, il faut et il suffit que : (1) les deux forces aient la **même droite d'action** ; (2) elles aient des **sens opposés** ; (3) elles aient la **même intensité** : $F_1 = F_2$. On écrit $\\vec F_1 + \\vec F_2 = \\vec 0$ : la somme vectorielle est nulle. Applications : un solide suspendu à un fil, $T = P$ ; un solide posé sur un plan horizontal lisse, $R = P$ ; un solide accroché à un dynamomètre, la lecture est $T = P = m \\times g$. La somme nulle ne suffit pas : les deux forces doivent aussi avoir la même droite d'action.",
           "method": [
             "Définir le système et dresser le bilan : écrire les deux forces exercées sur lui.",
             "Vérifier la direction et le sens : même droite d'action et sens opposés.",
@@ -750,13 +750,21 @@
                     {
                       "content": "contraires",
                       "correct": true
+                    },
+                    {
+                      "content": "opposé",
+                      "correct": true
+                    },
+                    {
+                      "content": "contraire",
+                      "correct": true
                     }
                   ]
                 },
                 {
                   "content": "Un seau de 12 kg est suspendu à une corde, immobile. On prend $g = 10$ N/kg. La tension de la corde vaut ___.",
                   "question_type": "select",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le seau ; ses deux forces sont $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 12 \\times 10 = 120$ N, donc $T = 120$ N.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système est le seau ; ses deux forces sont $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $P = 12 \\times 10 = 120$ N, donc $T = 120$ N. Pourquoi pas 12 N : c'est la masse en kg prise pour le poids ; pourquoi pas 1,2 N : on divise par 10 au lieu de multiplier par $g = 10$ N/kg.",
                   "answers": [
                     {
                       "content": "120 N",
@@ -792,7 +800,7 @@
                 {
                   "content": "Deux forces de 50 N, verticales et de sens opposés, sont appliquées à un solide de part et d'autre, sur deux verticales différentes. Le solide est-il en équilibre sous ces deux seules forces ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le système subit deux forces de 50 N. Étape 2 — Vérifier la direction et le sens : on cherche la direction et le sens : sens opposés, mais deux droites d'action différentes. Étape 3 — Écrire l'égalité des intensités : les intensités sont bien égales. Étape 4 — Calculer l'inconnue : les trois conditions doivent être réunies, ici la première manque : pas d'équilibre.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide subit deux forces de 50 N. Étape 2 — Vérifier la direction et le sens : les sens sont opposés, mais les deux droites d'action sont différentes. Étape 3 — Écrire l'égalité des intensités : les intensités sont bien égales, 50 N chacune. Étape 4 — Calculer l'inconnue : sans objet ici ; les trois conditions doivent être réunies et la première manque, donc pas d'équilibre. Pourquoi pas « leur somme vectorielle est nulle » : c'est vrai, mais insuffisant, car la même droite d'action manque. Pourquoi pas « deux forces ne peuvent jamais équilibrer un solide » : c'est faux, un fil vertical et le poids s'équilibrent dès qu'ils sont sur la même droite.",
                   "answers": [
                     {
                       "content": "Non : elles n'ont pas la même droite d'action",
@@ -803,11 +811,11 @@
                       "correct": false
                     },
                     {
-                      "content": "Oui : leur somme vectorielle est nulle",
+                      "content": "Oui : leur somme vectorielle est nulle, donc le solide est en équilibre",
                       "correct": false
                     },
                     {
-                      "content": "Non : leurs intensités sont différentes",
+                      "content": "Non : deux forces ne peuvent jamais équilibrer un solide",
                       "correct": false
                     }
                   ]
@@ -895,7 +903,7 @@
               {
                 "content": "Un solide est en équilibre sous trois forces non parallèles. Les trois vecteurs, mis bout à bout à l'échelle, forment…",
                 "question_type": "single_choice",
-                "explanation": "Étape 1 — Faire le bilan : le système subit trois forces. Étape 2 — Vérifier les conditions : elles sont coplanaires et concourantes. Étape 3 — Écrire la condition d'équilibre : $\\vec F_1 + \\vec F_2 + \\vec F_3 = \\vec 0$. Étape 4 — Construire le triangle des forces : la somme étant nulle, on revient au point de départ : le triangle est fermé. Un triangle ouvert aurait une somme non nulle.",
+                "explanation": "Étape 1 — Faire le bilan : le système subit trois forces. Étape 2 — Vérifier les conditions : elles sont coplanaires et concourantes. Étape 3 — Écrire la condition d'équilibre : $\\vec F_1 + \\vec F_2 + \\vec F_3 = \\vec 0$. Étape 4 — Construire le triangle des forces : la somme étant nulle, on revient au point de départ : le triangle est fermé. Un triangle ouvert aurait une somme non nulle. Pourquoi pas « un parallélogramme » : il se dessine avec deux forces ajoutées depuis un même point ; trois vecteurs bout à bout forment un triangle.",
                 "answers": [
                   {
                     "content": "un triangle fermé",
@@ -910,7 +918,7 @@
                     "correct": false
                   },
                   {
-                    "content": "un carré",
+                    "content": "un parallélogramme",
                     "correct": false
                   }
                 ],
@@ -969,7 +977,7 @@
                 {
                   "content": "La caisse de 12 kg (poids 120 N) est tirée horizontalement avec 50 N. Échelle 1 cm pour 10 N. Quelles sont les longueurs des trois côtés du triangle des forces ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Faire le bilan : on lit $P = 120$ N, $F = 50$ N, $T$ inconnue. Étape 2 — Vérifier les conditions : les forces sont concourantes. Étape 3 — Écrire la condition d'équilibre : $\\vec P + \\vec F + \\vec T = \\vec 0$. Étape 4 — Construire le triangle des forces : on trace $P$ : $120 \\div 10 = 12$ cm ; puis $F$ : $50 \\div 10 = 5$ cm. Étape 5 — Lire ou calculer les intensités : le triangle est rectangle : $T^2 = 12^2 + 5^2 = 169$, donc $T$ mesure 13 cm. Additionner 12 et 5 (17 cm) est faux : le triangle n'est pas aplati.",
+                  "explanation": "Étape 1 — Faire le bilan : on lit $P = 120$ N, $F = 50$ N, $T$ inconnue. Étape 2 — Vérifier les conditions : les forces sont concourantes. Étape 3 — Écrire la condition d'équilibre : $\\vec P + \\vec F + \\vec T = \\vec 0$. Étape 4 — Construire le triangle des forces : on trace $P$ : $120 \\div 10 = 12$ cm ; puis $F$ : $50 \\div 10 = 5$ cm. Étape 5 — Lire ou calculer les intensités : le triangle est rectangle : $T^2 = 12^2 + 5^2 = 169$, donc $T$ mesure 13 cm. Additionner 12 et 5 (17 cm) est faux : le triangle n'est pas aplati. Pourquoi pas « 120 cm, 50 cm et 130 cm » : ce sont les intensités en N lues comme des centimètres, sans appliquer l'échelle 1 cm pour 10 N.",
                   "answers": [
                     {
                       "content": "12 cm, 5 cm et 13 cm",
@@ -1005,7 +1013,7 @@
                 {
                   "content": "Pour qu'un solide soumis à trois forces non parallèles soit en équilibre, quelles conditions doivent être vérifiées ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Étape 1 — Faire le bilan : le système subit trois forces non parallèles. Étape 2 — Vérifier les conditions : il faut vérifier les conditions d'équilibre : coplanaires et concourantes. Étape 3 — Écrire la condition d'équilibre : la somme vectorielle est nulle. Étape 4 — Construire le triangle des forces : les intensités n'ont pas à être égales, et les forces ne sont pas parallèles par hypothèse.",
+                  "explanation": "Étape 1 — Faire le bilan : le système subit trois forces non parallèles. Étape 2 — Vérifier les conditions : elles doivent être coplanaires et leurs droites d'action concourantes. Étape 3 — Écrire la condition d'équilibre : c'est la somme des vecteurs qui est nulle. Étape 4 — Construire le triangle des forces : les intensités n'ont pas à être égales. Pourquoi pas « La somme des trois intensités est nulle » : des intensités sont des nombres positifs, leur somme ne peut pas être nulle ; seule la somme vectorielle l'est.",
                   "answers": [
                     {
                       "content": "Les forces sont dans un même plan",
@@ -1020,7 +1028,7 @@
                       "correct": false
                     },
                     {
-                      "content": "Les trois forces sont parallèles",
+                      "content": "La somme des trois intensités est nulle",
                       "correct": false
                     }
                   ]
@@ -1139,7 +1147,7 @@
                 {
                   "content": "Une lampe de 3 kg (poids 30 N) est tirée horizontalement avec 40 N. Quelle valeur possible pour la tension du fil oblique ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Faire le bilan : $P = 30$ N, $F = 40$ N. Étape 2 — Vérifier les conditions : droites concourantes. Étape 3 — Écrire la condition d'équilibre : $\\vec P + \\vec F + \\vec T = \\vec 0$. Étape 4 — Construire le triangle des forces : triangle rectangle de côtés 30 et 40. Étape 5 — Lire ou calculer les intensités : $T = \\sqrt{30^2 + 40^2} = 50$ N. 70 N (somme) et 10 N (différence) oublient que les forces ne sont pas alignées.",
+                  "explanation": "Étape 1 — Faire le bilan : $P = 30$ N, $F = 40$ N. Étape 2 — Vérifier les conditions : droites concourantes. Étape 3 — Écrire la condition d'équilibre : $\\vec P + \\vec F + \\vec T = \\vec 0$. Étape 4 — Construire le triangle des forces : triangle rectangle de côtés 30 et 40. Étape 5 — Lire ou calculer les intensités : $T = \\sqrt{30^2 + 40^2} = 50$ N. 70 N (somme) et 10 N (différence) oublient que les forces ne sont pas alignées. Pourquoi pas 35 N : c'est la moyenne de 30 et 40, qui n'a aucun sens ici ; la tension se calcule par Pythagore dans le triangle rectangle.",
                   "answers": [
                     {
                       "content": "50 N",
@@ -1189,7 +1197,7 @@
             "statement": "Un chariot de 60 kg est retenu, immobile, sur une rampe lisse inclinée de 30° sur l'horizontale, par un câble parallèle à la rampe. Calculer la tension $T$ du câble et la réaction $R$ de la rampe. On prend $g = 10$ N/kg, $\\sin 30^\\circ = 0{,}5$ et $\\cos 30^\\circ = \\frac{\\sqrt 3}{2}$.",
             "steps": [
               "Choisir : $Ox$ le long de la rampe vers le haut, $Oy$ perpendiculaire à la rampe vers le haut ; bilan : $\\vec P$ (poids, $P = 60 \\times 10 = 600$ N), $\\vec T$ (le long de la rampe), $\\vec R$ (perpendiculaire à la rampe).",
-              "Projeter : sur $Ox$ : $T_x = +T$, $R_x = 0$, $P_x = -P\\sin 30^\\circ$ ; sur $Oy$ : $T_y = 0$, $R_y = +R$, $P_y = -P\\cos 30^\\circ$.",
+              "Projeter : sur $Ox$ : $T_x = +T$, $R_x = 0$, $P_x = -P\\sin 30^\\circ$ (le poids fait 60° avec $Ox$, donc $P_x = -P\\cos 60^\\circ = -P\\sin 30^\\circ$) ; sur $Oy$ : $T_y = 0$, $R_y = +R$, $P_y = -P\\cos 30^\\circ$.",
               "Écrire : sur $Ox$ : $T - P\\sin 30^\\circ = 0$ ; sur $Oy$ : $R - P\\cos 30^\\circ = 0$.",
               "Résoudre : $T = 600 \\times 0{,}5 = 300$ N ; $R = 600 \\times \\frac{\\sqrt 3}{2} \\approx 520$ N.",
               "Vérifier : $T^2 + R^2 \\approx 300^2 + 520^2$, soit $360\\,400 \\approx 600^2 = P^2$ ; les deux résultats sont inférieurs à $P$, comme attendu."
@@ -1314,7 +1322,7 @@
                     }
                   ],
                   "unit": "N",
-                  "tolerance": 2
+                  "tolerance": 3
                 },
                 {
                   "content": "Quelle équation traduit l'équilibre sur l'axe $Ox$, le long de la rampe, vers le haut ?",
@@ -1381,12 +1389,12 @@
             },
             {
               "title": "Projeter des forces avec des angles simples",
-              "statement": "Dans cet exercice, tu projettes des forces sur deux axes et tu écris les équations d'équilibre avec des angles de 0°, 30° et 60°.",
+              "statement": "Dans cet exercice, tu projettes des forces sur deux axes et tu écris les équations d'équilibre avec des angles de 0° et 30°.",
               "exercise_type": "fixation",
               "figure": null,
               "questions": [
                 {
-                  "content": "Une force de 80 N fait un angle de 30° avec l'axe $Ox$. On donne $\\sin 30^\\circ = 0{,}5$. Quelle est la valeur de sa composante sur $Oy$, en N ?",
+                  "content": "Une force de 80 N fait un angle de 30° avec l'axe $Ox$ et va dans le sens des deux axes. On donne $\\sin 30^\\circ = 0{,}5$. Quelle est la valeur de sa composante sur $Oy$, en N ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Choisir deux axes : axes $Ox$ et $Oy$ donnés. Étape 2 — Projeter chaque force : la composante sur $Oy$ est $F_y = F\\sin\\alpha$. Étape 3 — Écrire la condition d'équilibre sur chaque axe : elle sert à écrire $\\sum F_y = 0$. Étape 4 — Résoudre les équations : $F_y = 80 \\times 0{,}5 = 40$ N. Étape 5 — Vérifier le résultat : cohérent : moins de 80 N.",
                   "answers": [
@@ -1418,7 +1426,7 @@
                   ]
                 },
                 {
-                  "content": "Un tableau de 4 kg est accroché par deux fils identiques, chacun incliné de 30° sur l'horizontale. Il est immobile. On prend $g = 10$ N/kg et $\\sin 30^\\circ = 0{,}5$. Quelle est la tension de chaque fil, en N ?",
+                  "content": "Un tableau de 4 kg est accroché par deux fils identiques, chacun incliné de 30° sur l'horizontale. Il est immobile et pend sans toucher le mur. On prend $g = 10$ N/kg et $\\sin 30^\\circ = 0{,}5$. Quelle est la tension de chaque fil, en N ?",
                   "question_type": "numeric",
                   "explanation": "Étape 1 — Choisir deux axes : axe $Ox$ horizontal, axe $Oy$ vertical vers le haut ; forces $\\vec P$, $\\vec T_1$, $\\vec T_2$ avec $T_1 = T_2 = T$. Étape 2 — Projeter chaque force : $T_y = T\\sin 30^\\circ$ pour chaque fil ; $P_y = -P$ ; sur $Ox$, les composantes se compensent. Étape 3 — Écrire la condition d'équilibre sur chaque axe : sur $Oy$ : $2T\\sin 30^\\circ - P = 0$. Étape 4 — Résoudre les équations : $P = 4 \\times 10 = 40$ N, $2 \\times T \\times 0{,}5 = 40$, donc $T = 40$ N. Étape 5 — Vérifier le résultat : chaque fil porte autant que le poids : cohérent avec l'angle de 30°.",
                   "answers": [
@@ -1431,7 +1439,7 @@
                   "tolerance": 0
                 },
                 {
-                  "content": "Dans le montage des deux fils symétriques inclinés de 30° sur l'horizontale, les composantes horizontales des deux tensions s'annulent.",
+                  "content": "Un tableau pend sans toucher le mur, accroché par deux fils symétriques inclinés de 30° sur l'horizontale. Les composantes horizontales des deux tensions s'annulent.",
                   "question_type": "true_false",
                   "explanation": "Étape 1 — Choisir deux axes : axe $Ox$ horizontal. Étape 2 — Projeter chaque force : $T_{1x} = -T\\cos 30^\\circ$ et $T_{2x} = +T\\cos 30^\\circ$. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $\\sum F_x = -T\\cos 30^\\circ + T\\cos 30^\\circ = 0$. Étape 4 — Résoudre les équations : la condition sur $Ox$ est automatiquement vérifiée. Étape 5 — Vérifier le résultat : le poids n'a pas de composante horizontale.",
                   "answers": [
@@ -1520,7 +1528,7 @@
             {
               "content": "Quelle est l'intensité du poids de la lampe, en N ?",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Relever : $m = 4$ kg, $g = 10$ N/kg. Étape 2 — Formule : $P = m \\times g$. Étape 3 — Calculer : $P = 4 \\times 10 = 40$ N.",
+              "explanation": "Étape 1 — Relever : $m = 4$ kg, $g = 10$ N/kg. Étape 2 — Formule : $P = m \\times g$. Étape 3 — Calculer : $P = 4 \\times 10 = 40$ N. Pourquoi pas 4 N : c'est la masse en kg ; le poids est $m \\times g$.",
               "answers": [
                 {
                   "content": "40",
@@ -1533,7 +1541,7 @@
             {
               "content": "Quelles sont la direction et le sens de la tension du fil ?",
               "question_type": "single_choice",
-              "explanation": "Étape 1 — Définir le système : la lampe, immobile. Étape 2 — Vérifier : le fil est vertical et tire la lampe vers lui, donc vers le haut. Étape 3 — Écrire : $\\vec T$ et $\\vec P$ ont la même droite d'action et des sens opposés. Étape 4 — Conclure : $\\vec T$ est verticale, vers le haut. Son intensité n'est pas 4 N : c'est la masse, pas la force.",
+              "explanation": "Étape 1 — Définir le système : la lampe, immobile. Étape 2 — Vérifier la direction et le sens : le fil est vertical et tire la lampe vers lui, donc vers le haut. Étape 3 — Écrire : $\\vec T$ et $\\vec P$ ont la même droite d'action et des sens opposés. Étape 4 — Conclure : $\\vec T$ est verticale, vers le haut. Pourquoi pas « Oblique, le long du plafond » : la tension a la direction du fil, qui est vertical ; une force oblique n'aurait pas la même droite d'action que le poids, et la lampe ne serait pas en équilibre.",
               "answers": [
                 {
                   "content": "Verticale, vers le haut",
@@ -1548,7 +1556,7 @@
                   "correct": false
                 },
                 {
-                  "content": "Verticale, vers le haut, avec une intensité de 4 N",
+                  "content": "Oblique, le long du plafond",
                   "correct": false
                 }
               ]
@@ -1606,7 +1614,7 @@
             {
               "content": "Quelle est la masse du sac d'attiéké, en kg ?",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Définir le système : le sac ; ses forces sont $\\vec P$ et $\\vec T$ (du ressort). Étape 2 — Vérifier : verticales, de sens opposés. Étape 3 — Écrire : $P = T = 35$ N. Étape 4 — Calculer : $m = P \\div g = 35 \\div 10 = 3{,}5$ kg.",
+              "explanation": "Étape 1 — Définir le système : le sac ; ses forces sont $\\vec P$ et $\\vec T$ (du ressort). Étape 2 — Vérifier : verticales, de sens opposés. Étape 3 — Écrire : $P = T = 35$ N. Étape 4 — Calculer : $m = P \\div g = 35 \\div 10 = 3{,}5$ kg. Pourquoi pas 350 kg : on divise le poids par $g = 10$ N/kg, on ne le multiplie pas.",
               "answers": [
                 {
                   "content": "3,5",
@@ -1642,7 +1650,7 @@
             {
               "content": "La vendeuse ajoute au crochet un second sac de 2 kg, et l'ensemble reste immobile. Que lit-on alors, en N ?",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Définir le système : les deux sacs. Étape 2 — Vérifier : deux forces, verticales, de sens opposés. Étape 3 — Écrire : $T = P_{total}$. Étape 4 — Calculer : $P = 35 + 2 \\times 10 = 55$ N.",
+              "explanation": "Étape 1 — Définir le système : les deux sacs. Étape 2 — Vérifier : deux forces, verticales, de sens opposés. Étape 3 — Écrire : $T = P_{total}$. Étape 4 — Calculer : $P = 35 + 2 \\times 10 = 55$ N. Pourquoi pas 37 N : c'est $35 + 2$, qui ajoute une masse en kg à un poids en N ; le second sac pèse $2 \\times 10 = 20$ N.",
               "answers": [
                 {
                   "content": "55",
@@ -1670,7 +1678,7 @@
             {
               "content": "Le calibre de la balance est 100 N. Quelle masse maximale peut-elle peser, en kg ?",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Relever : calibre $= 100$ N. Étape 2 — Vérifier : à l'équilibre, la lecture vaut le poids. Étape 3 — Écrire : $P_{max} = 100$ N. Étape 4 — Calculer : $m = 100 \\div 10 = 10$ kg.",
+              "explanation": "Étape 1 — Relever : calibre $= 100$ N. Étape 2 — Vérifier : à l'équilibre, la lecture vaut le poids. Étape 3 — Écrire : $P_{max} = 100$ N. Étape 4 — Calculer : $m = 100 \\div 10 = 10$ kg. Pourquoi pas 1 000 kg : on divise 100 N par $g = 10$ N/kg, on ne multiplie pas.",
               "answers": [
                 {
                   "content": "10",
@@ -1710,7 +1718,7 @@
             {
               "content": "Quelle est l'intensité du poids du panneau, en N ?",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Relever : $m = 8$ kg, $g = 10$ N/kg. Étape 2 — Formule : $P = m \\times g$. Étape 3 — Calculer : $P = 8 \\times 10 = 80$ N.",
+              "explanation": "Étape 1 — Relever : $m = 8$ kg, $g = 10$ N/kg. Étape 2 — Formule : $P = m \\times g$. Étape 3 — Calculer : $P = 8 \\times 10 = 80$ N. Pourquoi pas 8 N : c'est la masse en kg ; le poids est $m \\times g$.",
               "answers": [
                 {
                   "content": "80",
@@ -1723,7 +1731,7 @@
             {
               "content": "Quelles conditions les trois forces exercées sur le panneau vérifient-elles ?",
               "question_type": "multiple_correct_2",
-              "explanation": "Étape 1 — Définir le système : le panneau, soumis à $\\vec P$, $\\vec F$ et $\\vec T$. Étape 2 — Ces trois forces ne sont pas parallèles ; le panneau est en équilibre. Étape 3 — Conclure : elles sont coplanaires et concourantes, et leur somme est nulle ; leurs intensités sont différentes (80 N, 60 N, 100 N).",
+              "explanation": "Étape 1 — Définir le système : le panneau, soumis à $\\vec P$, $\\vec F$ et $\\vec T$. Étape 2 — Ces trois forces ne sont pas parallèles ; le panneau est en équilibre. Étape 3 — Conclure : elles sont coplanaires et concourantes, et leur somme est nulle ; leurs intensités sont différentes (80 N, 60 N, 100 N). Pourquoi pas « La somme de leurs trois intensités est nulle » : des intensités sont positives, leur somme ne peut pas être nulle ; seule la somme des vecteurs, $\\vec P + \\vec F + \\vec T$, vaut $\\vec 0$.",
               "answers": [
                 {
                   "content": "Elles sont dans un même plan",
@@ -1738,7 +1746,7 @@
                   "correct": false
                 },
                 {
-                  "content": "Elles sont parallèles",
+                  "content": "La somme de leurs trois intensités est nulle",
                   "correct": false
                 }
               ]
@@ -1769,7 +1777,7 @@
             {
               "content": "Quelle est l'intensité de la tension du câble oblique, en N ?",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Faire le bilan : $P = 80$ N, $F = 60$ N. Étape 2 — Vérifier : coplanaires et concourantes. Étape 3 — Écrire : $\\vec P + \\vec F + \\vec T = \\vec 0$. Étape 4 — Construire : triangle rectangle de côtés 80 et 60. Étape 5 — Calculer : $T^2 = 80^2 + 60^2 = 10\\,000$, donc $T = 100$ N.",
+              "explanation": "Étape 1 — Faire le bilan : $P = 80$ N, $F = 60$ N. Étape 2 — Vérifier : coplanaires et concourantes. Étape 3 — Écrire : $\\vec P + \\vec F + \\vec T = \\vec 0$. Étape 4 — Construire : triangle rectangle de côtés 80 et 60. Étape 5 — Calculer : $T^2 = 80^2 + 60^2 = 10\\,000$, donc $T = 100$ N. Pourquoi pas 140 N : c'est $80 + 60$, une addition d'intensités qui suppose deux forces dans la même direction ; ici elles sont perpendiculaires.",
               "answers": [
                 {
                   "content": "100",
@@ -1782,7 +1790,7 @@
             {
               "content": "Le câble oblique fait un angle $\\alpha$ avec la verticale. Sur l'axe vertical, $T\\cos\\alpha = P$. Quelle est la valeur de $\\cos\\alpha$ ?",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Choisir : axe $Oy$ vertical vers le haut ; $T_y = T\\cos\\alpha$, $P_y = -P$, $F_y = 0$. Étape 2 — Projeter : voir ci-dessus. Étape 3 — Écrire : $T\\cos\\alpha - P = 0$. Étape 4 — Résoudre : $\\cos\\alpha = P \\div T = 80 \\div 100 = 0{,}8$. Étape 5 — Vérifier : $\\cos\\alpha < 1$ et le câble est plus tendu que le poids, comme $T = 100 > 80$.",
+              "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical vers le haut. Étape 2 — Projeter chaque force : $T_y = T\\cos\\alpha$, $P_y = -P$, $F_y = 0$. Étape 3 — Écrire la condition d'équilibre : $T\\cos\\alpha - P = 0$. Étape 4 — Résoudre : $\\cos\\alpha = P \\div T = 80 \\div 100 = 0{,}8$. Étape 5 — Vérifier : $\\cos\\alpha < 1$ et $T = 100$ N $> P = 80$ N, comme attendu pour un câble oblique. Pourquoi pas 0,6 : c'est $\\sin\\alpha = F \\div T = 60 \\div 100$, la composante horizontale ; avec l'angle pris depuis la verticale, la projection verticale utilise le cosinus.",
               "answers": [
                 {
                   "content": "0,8",
@@ -1816,7 +1824,7 @@
             {
               "content": "Quelle est l'intensité du poids du chariot, en N ?",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Relever : $m = 120$ kg, $g = 10$ N/kg. Étape 2 — Formule : $P = m \\times g$. Étape 3 — Calculer : $P = 120 \\times 10 = 1\\,200$ N.",
+              "explanation": "Étape 1 — Relever : $m = 120$ kg, $g = 10$ N/kg. Étape 2 — Formule : $P = m \\times g$. Étape 3 — Calculer : $P = 120 \\times 10 = 1\\,200$ N. Pourquoi pas 120 N : c'est la masse en kg ; le poids est $m \\times g$.",
               "answers": [
                 {
                   "content": "1200",
@@ -1875,7 +1883,7 @@
             {
               "content": "Quelle est l'intensité de la tension du câble, en N ?",
               "question_type": "numeric",
-              "explanation": "Étape 1 — Choisir : $Ox$ le long de la rampe vers le haut, $Oy$ perpendiculaire. Étape 2 — Projeter : $T_x = +T$, $R_x = 0$, $P_x = -P\\sin 30^\\circ$. Étape 3 — Écrire : $T - P\\sin 30^\\circ = 0$. Étape 4 — Résoudre : $T = 1\\,200 \\times 0{,}5 = 600$ N. Étape 5 — Vérifier : $T < P$ ; à 0°, $T$ serait nulle.",
+              "explanation": "Étape 1 — Choisir : $Ox$ le long de la rampe vers le haut, $Oy$ perpendiculaire. Étape 2 — Projeter : $T_x = +T$, $R_x = 0$, $P_x = -P\\sin 30^\\circ$. Étape 3 — Écrire : $T - P\\sin 30^\\circ = 0$. Étape 4 — Résoudre : $T = 1\\,200 \\times 0{,}5 = 600$ N. Étape 5 — Vérifier : $T < P$ ; à 0°, $T$ serait nulle. Pourquoi pas 1 039 N : c'est $P\\cos 30^\\circ$, la composante perpendiculaire à la rampe ; le long de la rampe, on prend le sinus.",
               "answers": [
                 {
                   "content": "600",
@@ -1896,7 +1904,7 @@
                 }
               ],
               "unit": "N",
-              "tolerance": 2
+              "tolerance": 5
             },
             {
               "content": "Le câble, qui supporte au plus 500 N, retient le chariot sans casser.",
@@ -1944,7 +1952,7 @@
                 {
                   "content": "Quelles forces s'exercent sur le seau ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Définir le système : le seau. Étape 2 — Lister : la Terre (à distance), la corde (contact). Étape 3 — Nommer : poids et tension. Étape 4 — Écrire le bilan : deux forces ; la force du seau sur la corde s'exerce sur la corde.",
+                  "explanation": "Étape 1 — Définir le système : le seau. Étape 2 — Lister les objets qui agissent sur lui : la Terre, à distance, et la corde, au contact. Étape 3 — Nommer la force de chaque objet : le poids pour la Terre, la tension pour la corde. Étape 4 — Écrire le bilan : deux forces, $\\vec P$ et $\\vec T$. Pourquoi pas « Son poids, la tension et la force du seau sur la corde » : la force du seau sur la corde s'exerce sur la corde, pas sur le seau, donc elle n'entre pas dans le bilan.",
                   "answers": [
                     {
                       "content": "Son poids et la tension de la corde",
@@ -1967,7 +1975,7 @@
                 {
                   "content": "Quelle est l'intensité du poids du seau, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Relever : $m = 6$ kg, $g = 10$ N/kg. Étape 2 — Formule : $P = m \\times g$. Étape 3 — Calculer : $P = 6 \\times 10 = 60$ N.",
+                  "explanation": "Étape 1 — Définir le système : le seau de 6 kg. Étape 2 — Lister les objets qui agissent : la Terre agit à distance. Étape 3 — Nommer la force de chaque objet : le poids, $P = m \\times g$. Étape 4 — Écrire le bilan : $P = 6 \\times 10 = 60$ N, verticale, vers le bas. Pourquoi pas 6 N : c'est la masse en kg ; il faut la multiplier par $g = 10$ N/kg pour obtenir le poids en newtons.",
                   "answers": [
                     {
                       "content": "60",
@@ -1980,7 +1988,7 @@
                 {
                   "content": "La tension de la corde a pour direction celle de la ___.",
                   "question_type": "fill_blank",
-                  "explanation": "Étape 1 — Nommer la force : la tension de la corde. Étape 2 — Sa direction : celle de la corde tendue. Étape 3 — Son sens : du seau vers la corde, donc vers le haut.",
+                  "explanation": "Étape 1 — Définir le système : le seau. Étape 2 — Lister les objets qui agissent : la corde touche le seau en son point d'attache. Étape 3 — Nommer la force de chaque objet : la tension de la corde. Étape 4 — Écrire le bilan : sa direction est celle de la corde tendue, son sens va du seau vers la corde, donc vers le haut. Pourquoi pas « poids » : le poids est la force de la Terre, vertical et appliqué en G ; la tension, elle, suit la corde, quelle que soit son inclinaison.",
                   "answers": [
                     {
                       "content": "corde",
@@ -1995,7 +2003,7 @@
                 {
                   "content": "La force exercée par le seau sur la corde fait partie du bilan des forces exercées sur le seau.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Définir le système : le seau. Étape 2 — Ne retenir que les forces exercées sur le seau. Étape 3 — La force du seau sur la corde s'exerce sur la corde : l'affirmation est fausse.",
+                  "explanation": "Étape 1 — Définir le système : le seau. Étape 2 — Lister les objets qui agissent sur lui : la Terre et la corde. Étape 3 — Nommer la force de chaque objet : le poids et la tension. Étape 4 — Écrire le bilan : seules les forces exercées sur le seau y figurent. Pourquoi pas « Vrai » : la force du seau sur la corde s'exerce sur la corde, pas sur le seau ; l'ajouter donnerait trois forces au lieu de deux.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2010,7 +2018,7 @@
                 {
                   "content": "Relie chaque force à l'objet qui l'exerce.",
                   "question_type": "matching",
-                  "explanation": "Étape 1 — Lister les objets qui agissent. Étape 2 — Nommer : la Terre donne le poids, une corde la tension, un support la réaction. Étape 3 — Chaque force est rattachée à son auteur.",
+                  "explanation": "Étape 1 — Définir le système : un solide soutenu par une corde et posé sur un support. Étape 2 — Lister les objets qui agissent : la Terre, la corde, le support. Étape 3 — Nommer la force de chaque objet : poids pour la Terre, tension pour la corde, réaction pour un support. Étape 4 — Écrire le bilan : chaque force se nomme avec son auteur. Pourquoi pas relier la tension à la Terre : la Terre agit à distance et exerce le poids ; la corde agit au contact et exerce la tension.",
                   "answers": [
                     {
                       "content": "Le poids",
@@ -2038,7 +2046,7 @@
                 {
                   "content": "Quel est le bilan des forces exercées sur le livre ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Définir le système : le livre. Étape 2 — Lister : la Terre, la table. Étape 3 — Nommer : poids et réaction. Étape 4 — Aucun fil ne touche le livre : pas de tension.",
+                  "explanation": "Étape 1 — Définir le système : le livre. Étape 2 — Lister les objets qui agissent : la Terre, à distance, et la table, au contact. Étape 3 — Nommer la force de chaque objet : le poids pour la Terre, la réaction pour la table. Étape 4 — Écrire le bilan : $\\vec P$ et $\\vec R$, deux forces. Pourquoi pas « Le poids seulement » : le livre touche la table, qui exerce la réaction ; l'oublier laisserait le livre sans rien pour l'empêcher de tomber.",
                   "answers": [
                     {
                       "content": "Le poids et la réaction de la table",
@@ -2061,7 +2069,7 @@
                 {
                   "content": "Quelle est l'intensité du poids du livre, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Relever : $m = 3$ kg. Étape 2 — Formule : $P = m \\times g$. Étape 3 — Calculer : $P = 3 \\times 10 = 30$ N.",
+                  "explanation": "Étape 1 — Définir le système : le livre de 3 kg. Étape 2 — Lister les objets qui agissent : la Terre agit à distance. Étape 3 — Nommer la force de chaque objet : le poids, $P = m \\times g$. Étape 4 — Écrire le bilan : $P = 3 \\times 10 = 30$ N. Pourquoi pas 3 N : c'est la masse en kg, pas le poids en newtons ; il manque la multiplication par $g$.",
                   "answers": [
                     {
                       "content": "30",
@@ -2074,7 +2082,7 @@
                 {
                   "content": "Le livre est en équilibre sous deux forces. Que vérifient-elles ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan : $\\vec P$ et $\\vec R$. Étape 2 — Vérifier : même droite d'action et sens opposés. Étape 3 — Écrire : $R = P$. Étape 4 — Les autres propositions oublient au moins une condition.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le livre subit $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : même droite d'action (la verticale) et sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : les trois conditions vont ensemble. Pourquoi pas « Seulement la même intensité » : deux forces de même intensité, mais de même sens ou de droites d'action différentes, ne s'équilibrent pas.",
                   "answers": [
                     {
                       "content": "Même droite d'action, sens opposés, même intensité",
@@ -2097,7 +2105,7 @@
                 {
                   "content": "Quelle est l'intensité de la réaction de la table, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan : $\\vec P$ et $\\vec R$. Étape 2 — Vérifier : verticales, sens opposés. Étape 3 — Écrire : $R = P$. Étape 4 — Calculer : $R = 30$ N.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le livre, avec $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $P = 3 \\times 10 = 30$ N, donc $R = 30$ N. Pourquoi pas 3 N : confondre la masse (3 kg) et le poids (30 N) donnerait une réaction trop faible pour porter le livre.",
                   "answers": [
                     {
                       "content": "30",
@@ -2110,7 +2118,7 @@
                 {
                   "content": "Le poids et la réaction de la table ont le même sens.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Le poids est vers le bas. Étape 2 — La réaction va de la table vers le livre, vers le haut. Étape 3 — Les sens sont opposés : l'affirmation est fausse.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : $\\vec P$ et $\\vec R$ s'exercent sur le livre. Étape 2 — Vérifier la direction et le sens : le poids est vers le bas, la réaction va de la table vers le livre, donc vers le haut. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Conclure : les sens sont opposés. Pourquoi pas « Vrai » : deux forces de même sens s'ajoutent au lieu de se compenser, et le livre ne serait pas en équilibre.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2134,7 +2142,7 @@
                 {
                   "content": "Quelles conditions vérifient les trois forces exercées sur la lampe ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Étape 1 — Faire le bilan : $\\vec P$, $\\vec F$, $\\vec T$. Étape 2 — Vérifier les conditions : coplanaires et concourantes. Étape 3 — Les intensités ne sont pas égales et $\\vec F$ est horizontale.",
+                  "explanation": "Étape 1 — Faire le bilan : $\\vec P$, $\\vec F$ et $\\vec T$ s'exercent sur la lampe. Étape 2 — Vérifier les conditions : à l'équilibre, ces trois forces non parallèles sont coplanaires et leurs droites d'action sont concourantes. Étape 3 — Écrire la condition d'équilibre : leur somme vectorielle est nulle. Pourquoi pas « Elles ont toutes la même intensité » : ici 90 N, 120 N et 150 N sont différentes ; seule la somme des vecteurs est nulle.",
                   "answers": [
                     {
                       "content": "Elles sont coplanaires",
@@ -2157,7 +2165,7 @@
                 {
                   "content": "Quelle égalité traduit l'équilibre de la lampe ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Faire le bilan des trois forces. Étape 2 — Vérifier les conditions. Étape 3 — Écrire la condition d'équilibre : la somme des vecteurs est nulle. Une somme d'intensités positives ne peut pas valoir 0.",
+                  "explanation": "Étape 1 — Faire le bilan : $\\vec P$, $\\vec F$, $\\vec T$. Étape 2 — Vérifier les conditions : coplanaires et concourantes. Étape 3 — Écrire la condition d'équilibre : la somme des trois vecteurs est le vecteur nul, $\\vec P + \\vec F + \\vec T = \\vec 0$. Pourquoi pas $T = P + F$ : on additionne des vecteurs, pas des intensités ; $\\vec P$ et $\\vec F$ ne sont pas dans la même direction.",
                   "answers": [
                     {
                       "content": "$\\vec P + \\vec F + \\vec T = \\vec 0$",
@@ -2180,7 +2188,7 @@
                 {
                   "content": "Quelle est l'intensité du poids de la lampe, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Relever : $m = 9$ kg. Étape 2 — Formule : $P = m \\times g$. Étape 3 — Calculer : $P = 9 \\times 10 = 90$ N.",
+                  "explanation": "Étape 1 — Définir le système : la lampe de 9 kg. Étape 2 — Lister les objets qui agissent : la Terre agit à distance. Étape 3 — Nommer la force de chaque objet : le poids, $P = m \\times g$. Étape 4 — Écrire le bilan : $P = 9 \\times 10 = 90$ N. Pourquoi pas 9 N : c'est la masse en kg ; le poids se calcule avec $g = 10$ N/kg.",
                   "answers": [
                     {
                       "content": "90",
@@ -2193,7 +2201,7 @@
                 {
                   "content": "Quelle est l'intensité de la tension du fil oblique, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Faire le bilan : $P = 90$ N, $F = 120$ N. Étape 2 — Vérifier : concourantes. Étape 3 — Écrire : $\\vec P + \\vec F + \\vec T = \\vec 0$. Étape 4 — Construire : triangle rectangle de côtés 90 et 120. Étape 5 — Calculer : $T = \\sqrt{90^2 + 120^2} = 150$ N.",
+                  "explanation": "Étape 1 — Faire le bilan : $P = 90$ N (verticale), $F = 120$ N (horizontale), $T$ inconnue. Étape 2 — Vérifier les conditions : forces coplanaires et concourantes. Étape 3 — Écrire la condition d'équilibre : $\\vec P + \\vec F + \\vec T = \\vec 0$. Étape 4 — Construire le triangle des forces : il est rectangle, de côtés 90 et 120. Étape 5 — Lire ou calculer les intensités : $T = \\sqrt{90^2 + 120^2} = 150$ N. Pourquoi pas 210 N : c'est $90 + 120$ ; cette addition suppose les forces alignées, alors qu'elles sont perpendiculaires.",
                   "answers": [
                     {
                       "content": "150",
@@ -2206,7 +2214,7 @@
                 {
                   "content": "Le triangle des forces de la lampe est un triangle fermé.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Écrire la condition : somme vectorielle nulle. Étape 2 — Construire : les vecteurs bout à bout reviennent au départ. Étape 3 — Le triangle est fermé : vrai.",
+                  "explanation": "Étape 1 — Faire le bilan : trois forces, $\\vec P$, $\\vec F$, $\\vec T$. Étape 2 — Vérifier les conditions : coplanaires et concourantes. Étape 3 — Écrire la condition d'équilibre : somme nulle. Étape 4 — Construire le triangle des forces : $\\vec P$, puis $\\vec F$ à son extrémité, puis $\\vec T$ qui ramène au point de départ : le triangle est fermé. Pourquoi pas « Faux » : un triangle ouvert correspondrait à une somme non nulle, donc à une lampe qui ne reste pas immobile.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2230,7 +2238,7 @@
                 {
                   "content": "Quelle est la composante de $\\vec F$ sur $Ox$, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Choisir les axes : $Ox$ et $Oy$ donnés. Étape 2 — Projeter : $F_x = F\\cos 60^\\circ$. Étape 3 — Calculer : $F_x = 60 \\times 0{,}5 = 30$ N.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Ox$ et $Oy$ sont donnés, la force fait 60° avec $Ox$. Étape 2 — Projeter chaque force : $F_x = F\\cos 60^\\circ$. Étape 3 — Écrire la condition d'équilibre : non demandée ici. Étape 4 — Résoudre les équations : $F_x = 60 \\times 0{,}5 = 30$ N. Étape 5 — Vérifier le résultat : 30 N est inférieur à 60 N. Pourquoi pas 52 N : c'est $F\\sin 60^\\circ$, la composante sur $Oy$ ; l'angle étant mesuré depuis $Ox$, c'est le cosinus qui donne $Ox$.",
                   "answers": [
                     {
                       "content": "30",
@@ -2243,7 +2251,7 @@
                 {
                   "content": "Quelle est la composante de $\\vec F$ sur $Oy$, en N ? Arrondis à l'unité.",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Projeter : $F_y = F\\sin 60^\\circ$. Étape 2 — Calculer : $F_y = 60 \\times \\frac{\\sqrt 3}{2}$, soit $30\\sqrt 3 \\approx 52$ N. Étape 3 — Vérifier : $30^2 + 52^2 \\approx 60^2$.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Ox$ et $Oy$, angle de 60° avec $Ox$. Étape 2 — Projeter chaque force : $F_y = F\\sin 60^\\circ$. Étape 3 — Écrire la condition d'équilibre : sans objet, il n'y a qu'une force. Étape 4 — Résoudre les équations : $F_y = 60 \\times \\frac{\\sqrt 3}{2}$ $= 30\\sqrt 3 \\approx 52$ N. Étape 5 — Vérifier le résultat : $30^2 + 52^2 \\approx 60^2$. Pourquoi pas 30 N : c'est $F\\cos 60^\\circ$, la composante sur $Ox$ ; sur $Oy$ on prend le sinus.",
                   "answers": [
                     {
                       "content": "52",
@@ -2256,7 +2264,7 @@
                 {
                   "content": "À l'équilibre, la somme des composantes sur chaque axe est égale à ___.",
                   "question_type": "select",
-                  "explanation": "Étape 1 — Écrire la condition d'équilibre : $\\vec F_1 + \\vec F_2 + \\vec F_3 = \\vec 0$. Étape 2 — Projeter sur chaque axe. Étape 3 — On obtient $\\sum F_x = 0$ et $\\sum F_y = 0$.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Ox$ et $Oy$. Étape 2 — Projeter chaque force : on projette $\\vec F_1 + \\vec F_2 + \\vec F_3 = \\vec 0$ sur chaque axe. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $\\sum F_x = 0$ et $\\sum F_y = 0$. Pourquoi pas « 1 » : rien ne rend cette somme égale à 1 ; sinon le solide ne resterait pas immobile.",
                   "answers": [
                     {
                       "content": "0",
@@ -2275,7 +2283,7 @@
                 {
                   "content": "Une force est dirigée vers la gauche ; l'axe $Ox$ est orienté vers la droite. Le signe de sa composante sur $Ox$ est…",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Choisir : $Ox$ vers la droite. Étape 2 — Projeter : la composante va dans le sens opposé à l'axe. Étape 3 — Signe : −.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Ox$ est orienté vers la droite. Étape 2 — Projeter chaque force : le signe est + si la composante va dans le sens de l'axe, − sinon ; la force va vers la gauche, donc dans le sens opposé à $Ox$. Étape 3 — Conclure : la composante est négative. Pourquoi pas « positif » : le signe + est réservé aux composantes qui vont dans le sens de l'axe ; une force vers la gauche ne le fait pas.",
                   "answers": [
                     {
                       "content": "négatif",
@@ -2298,7 +2306,7 @@
                 {
                   "content": "Relie chaque valeur trigonométrique à sa valeur.",
                   "question_type": "matching",
-                  "explanation": "Étape 1 — Lire le rappel des valeurs utiles. Étape 2 — $\\cos 60^\\circ = 0{,}5$ ; $\\cos 0^\\circ = 1$ ; $\\sin 0^\\circ = 0$. Étape 3 — À 0°, une force parallèle à l'axe y garde toute son intensité.",
+                  "explanation": "Étape 1 — Choisir deux axes : on projette sur l'axe $Ox$. Étape 2 — Projeter chaque force : on utilise $\\cos 60^\\circ = 0{,}5$, $\\cos 0^\\circ = 1$ et $\\sin 0^\\circ = 0$. Étape 3 — Vérifier le résultat sur les cas limites : à 0°, une force parallèle à un axe garde sur cet axe toute son intensité. Pourquoi pas relier $\\cos 0^\\circ$ à 0 : c'est $\\sin 0^\\circ$ qui vaut 0 ; $\\cos 0^\\circ = 1$ car la force est tout entière sur l'axe.",
                   "answers": [
                     {
                       "content": "$\\cos 60^\\circ$",
@@ -2332,7 +2340,7 @@
                 {
                   "content": "Quelle est la masse du sac d'arachides, en kg ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le sac, $\\vec P$ et $\\vec T$. Étape 2 — Vérifier : verticales, sens opposés. Étape 3 — Écrire : $P = T = 45$ N. Étape 4 — Calculer : $m = 45 \\div 10 = 4{,}5$ kg.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le sac, avec $\\vec P$ et $\\vec T$ du ressort. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P = T = 45$ N. Étape 4 — Calculer l'inconnue : $m = P \\div g = 45 \\div 10 = 4{,}5$ kg. Pourquoi pas 450 kg : c'est multiplier par 10 au lieu de diviser ; la masse en kg est plus petite que le poids en N.",
                   "answers": [
                     {
                       "content": "4,5",
@@ -2345,7 +2353,7 @@
                 {
                   "content": "Le vendeur ajoute un sac de 3 kg. Que lit-on, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Système : les deux sacs. Étape 2 — Deux forces opposées. Étape 3 — $T = P$. Étape 4 — Calculer : $45 + 3 \\times 10 = 75$ N.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : les deux sacs, avec le poids total $\\vec P$ et la tension $\\vec T$ du ressort. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P_{total}$. Étape 4 — Calculer l'inconnue : $T = 45 + 3 \\times 10 = 75$ N. Pourquoi pas 48 N : c'est $45 + 3$, qui ajoute une masse en kg à un poids en N ; le second sac pèse 30 N.",
                   "answers": [
                     {
                       "content": "75",
@@ -2358,7 +2366,7 @@
                 {
                   "content": "Quelle est la direction de la force du ressort sur le sac ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Bilan : $\\vec P$ vertical. Étape 2 — Équilibre sous deux forces : même droite d'action. Étape 3 — La force du ressort est donc verticale, vers le haut.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le sac subit $\\vec P$ (verticale, vers le bas) et la force du ressort. Étape 2 — Vérifier la direction et le sens : à l'équilibre, la force du ressort a la même droite d'action que $\\vec P$ et un sens opposé. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Conclure : la direction est verticale. Pourquoi pas « Aucune : un solide immobile ne subit aucune force » : un solide immobile subit des forces, qui se compensent ; ici le ressort tire vers le haut pendant que le poids tire vers le bas.",
                   "answers": [
                     {
                       "content": "Verticale",
@@ -2373,15 +2381,15 @@
                       "correct": false
                     },
                     {
-                      "content": "Elle n'a pas de direction",
+                      "content": "Aucune : un solide immobile ne subit aucune force",
                       "correct": false
                     }
                   ]
                 },
                 {
-                  "content": "Si on prend $g = 10$ N/kg, la masse lue en kg est le dixième de la lecture en N.",
+                  "content": "Si on prend $g = 10$ N/kg, la masse, en kg, vaut le dixième de la lecture en N.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Écrire : $P = m \\times g$. Étape 2 — Donc $m = P \\div 10$. Étape 3 — Exemple : 45 N donne 4,5 kg ; l'affirmation est vraie.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le sac, avec $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : lecture $= T = P = m \\times g$. Étape 4 — Calculer l'inconnue : $m = P \\div 10$ ; 45 N donne 4,5 kg. Pourquoi pas « Faux » : diviser par $g = 10$ revient à prendre le dixième de la lecture ; l'affirmation est vraie.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2396,7 +2404,7 @@
                 {
                   "content": "Une balance à ressort immobile indique une intensité égale à celle ___ du sac.",
                   "question_type": "select",
-                  "explanation": "Étape 1 — Équilibre : $T = P$. Étape 2 — La lecture est en newtons. Étape 3 — Elle vaut le poids ; la masse est en kg, ce n'est pas une force.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le sac, avec $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$, donc la lecture en newtons est celle du poids. Étape 4 — Calculer l'inconnue : la masse se déduit ensuite par $m = P \\div g$. Pourquoi pas « de la masse » : la masse s'exprime en kg et n'est pas une force ; la balance mesure une force, en newtons.",
                   "answers": [
                     {
                       "content": "du poids",
@@ -2424,7 +2432,7 @@
                 {
                   "content": "Quelle est l'intensité du poids du bloc, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Relever : $m = 800$ kg. Étape 2 — Formule : $P = m \\times g$. Étape 3 — Calculer : $P = 8\\,000$ N.",
+                  "explanation": "Étape 1 — Définir le système : le bloc de 800 kg. Étape 2 — Lister les objets qui agissent : la Terre agit à distance. Étape 3 — Nommer la force de chaque objet : le poids, $P = m \\times g$. Étape 4 — Écrire le bilan : $P = 800 \\times 10 = 8\\,000$ N. Pourquoi pas 800 N : c'est la masse en kg ; il manque la multiplication par $g = 10$ N/kg.",
                   "answers": [
                     {
                       "content": "8000",
@@ -2437,7 +2445,7 @@
                 {
                   "content": "Quelle est l'intensité de la tension du câble quand le bloc est immobile, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan : $\\vec P$ et $\\vec T$. Étape 2 — Vérifier : verticales, sens opposés. Étape 3 — Écrire : $T = P$. Étape 4 — Calculer : $T = 8\\,000$ N.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le bloc, avec $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $T = 8\\,000$ N. Pourquoi pas 0 N : un bloc immobile n'est pas sans force ; le câble doit compenser exactement le poids de 8 000 N.",
                   "answers": [
                     {
                       "content": "8000",
@@ -2450,7 +2458,7 @@
                 {
                   "content": "Le câble supporte au plus 10 000 N. Quelle masse maximale peut-il maintenir immobile, en kg ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Système : la charge. Étape 2 — Deux forces opposées. Étape 3 — $P_{max} = T_{max} = 10\\,000$ N. Étape 4 — Calculer : $m = 10\\,000 \\div 10 = 1\\,000$ kg.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : la charge, avec $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P_{max} = T_{max} = 10\\,000$ N. Étape 4 — Calculer l'inconnue : $m = 10\\,000 \\div 10 = 1\\,000$ kg. Pourquoi pas 100 000 kg : c'est multiplier par $g$ au lieu de diviser ; une masse se déduit du poids en divisant par 10.",
                   "answers": [
                     {
                       "content": "1000",
@@ -2463,7 +2471,7 @@
                 {
                   "content": "Le bloc étant immobile, la tension du câble est plus grande que son poids.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Bilan : $\\vec P$ et $\\vec T$. Étape 2 — Équilibre sous deux forces. Étape 3 — $T = P$ : ni plus grande, ni plus petite. Faux.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le bloc, avec $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : même droite d'action, sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$, ni plus grande ni plus petite. Pourquoi pas « Vrai » : une tension plus grande que le poids ne compenserait pas le poids, et le bloc ne resterait pas immobile.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2478,7 +2486,7 @@
                 {
                   "content": "Quelles affirmations sur la tension du câble sont vraies ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Étape 1 — Nommer : tension du câble. Étape 2 — Direction : celle du câble, verticale ; sens : vers le haut. Étape 3 — Intensité 8 000 N, pas 800 N ; point d'application : le point d'attache, pas G.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le bloc, avec $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : la tension a la direction du câble, verticale, et va du bloc vers le câble, donc vers le haut. Étape 3 — Écrire l'égalité des intensités : $T = P = 8\\,000$ N. Pourquoi pas « Elle vaut 800 N » : 800 est la masse en kg, la tension vaut 8 000 N. Pourquoi pas « Elle est appliquée au centre de gravité du bloc » : G est le point d'application du poids ; la tension s'applique au point d'attache.",
                   "answers": [
                     {
                       "content": "Elle est verticale",
@@ -2503,14 +2511,14 @@
             },
             {
               "title": "Exercice 3",
-              "statement": "Dans un salon à Yamoussoukro, un tableau de 6 kg est accroché par deux fils identiques, chacun incliné de 30° sur l'horizontale, de part et d'autre du tableau. Il est immobile. On prend $g = 10$ N/kg et $\\sin 30^\\circ = 0{,}5$.",
+              "statement": "Dans un salon à Yamoussoukro, un tableau de 6 kg est accroché par deux fils identiques, chacun incliné de 30° sur l'horizontale, de part et d'autre du tableau. Il est immobile et pend sans toucher le mur. On prend $g = 10$ N/kg et $\\sin 30^\\circ = 0{,}5$.",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [
                 {
-                  "content": "Combien de forces s'exercent sur le tableau ?",
+                  "content": "Le tableau pend sans toucher le mur. Combien de forces s'exercent sur lui ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Système : le tableau. Étape 2 — Lister : la Terre et les deux fils (le tableau ne touche pas le mur ici). Étape 3 — Bilan : $\\vec P$, $\\vec T_1$, $\\vec T_2$.",
+                  "explanation": "Étape 1 — Définir le système : le tableau. Étape 2 — Lister les objets qui agissent : la Terre, à distance, et chacun des deux fils, au contact ; le mur ne le touche pas. Étape 3 — Nommer la force de chaque objet : un poids et deux tensions. Étape 4 — Écrire le bilan : $\\vec P$, $\\vec T_1$, $\\vec T_2$, soit trois forces. Pourquoi pas « Quatre : le poids, deux tensions et la réaction du mur » : le tableau pend sans toucher le mur, qui n'exerce donc aucune réaction.",
                   "answers": [
                     {
                       "content": "Trois : le poids et les deux tensions",
@@ -2533,7 +2541,7 @@
                 {
                   "content": "Quelle est l'intensité du poids du tableau, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Relever : $m = 6$ kg. Étape 2 — Formule : $P = m \\times g$. Étape 3 — Calculer : $P = 60$ N.",
+                  "explanation": "Étape 1 — Définir le système : le tableau de 6 kg. Étape 2 — Lister les objets qui agissent : la Terre agit à distance. Étape 3 — Nommer la force de chaque objet : le poids, $P = m \\times g$. Étape 4 — Écrire le bilan : $P = 6 \\times 10 = 60$ N. Pourquoi pas 6 N : c'est la masse en kg, pas le poids.",
                   "answers": [
                     {
                       "content": "60",
@@ -2546,7 +2554,7 @@
                 {
                   "content": "Avec $Oy$ vertical vers le haut, quelle équation traduit l'équilibre sur $Oy$ ($T_1 = T_2 = T$) ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Choisir : $Oy$ vertical. Étape 2 — Projeter : chaque fil fait 30° avec l'horizontale, donc $T_y = T\\sin 30^\\circ$ ; $P_y = -P$. Étape 3 — Écrire : $2T\\sin 30^\\circ - P = 0$. Le cosinus donnerait la composante horizontale.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Ox$ horizontal, $Oy$ vertical vers le haut ; bilan $\\vec P$, $\\vec T_1$, $\\vec T_2$. Étape 2 — Projeter chaque force : chaque fil fait 30° avec l'horizontale, donc $T_y = T\\sin 30^\\circ$ ; $P_y = -P$. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $2T\\sin 30^\\circ - P = 0$ sur $Oy$. Pourquoi pas $2T\\cos 30^\\circ - P = 0$ : le cosinus de l'angle avec l'horizontale donne la composante horizontale, pas la verticale.",
                   "answers": [
                     {
                       "content": "$2T\\sin 30^\\circ - P = 0$",
@@ -2569,7 +2577,7 @@
                 {
                   "content": "Quelle est la tension de chaque fil, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Équation sur $Oy$ : $2T\\sin 30^\\circ = P$. Étape 2 — Résoudre : $2 \\times T \\times 0{,}5 = 60$. Étape 3 — Donc $T = 60$ N. Étape 4 — Vérifier : avec des fils peu inclinés, chaque fil porte autant que le poids.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical vers le haut ; $T_1 = T_2 = T$. Étape 2 — Projeter chaque force : $T_y = T\\sin 30^\\circ$ pour chaque fil, $P_y = -P = -60$ N. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $2T\\sin 30^\\circ - P = 0$. Étape 4 — Résoudre les équations : $2 \\times T \\times 0{,}5 = 60$, donc $T = 60$ N. Étape 5 — Vérifier le résultat : à 30°, $2\\sin 30^\\circ = 1$, donc $T = P$. Pourquoi pas 30 N : c'est $P \\div 2$, valable seulement pour des fils verticaux ; à 30° de l'horizontale chaque fil tire plus fort.",
                   "answers": [
                     {
                       "content": "60",
@@ -2582,7 +2590,7 @@
                 {
                   "content": "Les composantes horizontales des deux tensions se compensent.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Projeter sur $Ox$ : $-T\\cos 30^\\circ$ et $+T\\cos 30^\\circ$. Étape 2 — Somme nulle. Étape 3 — Vrai : la symétrie l'assure.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Ox$ horizontal. Étape 2 — Projeter chaque force : $T_{1x} = -T\\cos 30^\\circ$ et $T_{2x} = +T\\cos 30^\\circ$ ; le poids n'a pas de composante horizontale. Étape 3 — Écrire la condition d'équilibre sur chaque axe : la somme sur $Ox$ vaut 0. Pourquoi pas « Faux » : les deux fils sont identiques et symétriques, leurs composantes horizontales sont égales et opposées, donc elles se compensent.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2606,7 +2614,7 @@
                 {
                   "content": "Quelle est l'intensité du poids du fût, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Relever : $m = 80$ kg. Étape 2 — Formule : $P = m \\times g$. Étape 3 — Calculer : $P = 800$ N.",
+                  "explanation": "Étape 1 — Définir le système : le fût de 80 kg. Étape 2 — Lister les objets qui agissent : la Terre agit à distance. Étape 3 — Nommer la force de chaque objet : le poids, $P = m \\times g$. Étape 4 — Écrire le bilan : $P = 80 \\times 10 = 800$ N. Pourquoi pas 80 N : c'est la masse en kg ; il manque le facteur $g = 10$ N/kg.",
                   "answers": [
                     {
                       "content": "800",
@@ -2619,7 +2627,7 @@
                 {
                   "content": "Quelle est la tension de la corde, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Choisir : $Ox$ le long de la rampe vers le haut. Étape 2 — Projeter : $T_x = +T$, $P_x = -P\\sin 30^\\circ$, $R_x = 0$. Étape 3 — Écrire : $T - P\\sin 30^\\circ = 0$. Étape 4 — Résoudre : $T = 800 \\times 0{,}5 = 400$ N.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Ox$ le long de la rampe vers le haut ; bilan $\\vec P$, $\\vec T$, $\\vec R$. Étape 2 — Projeter chaque force : $T_x = +T$, $P_x = -P\\sin 30^\\circ$, $R_x = 0$. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $T - P\\sin 30^\\circ = 0$. Étape 4 — Résoudre les équations : $T = 800 \\times 0{,}5 = 400$ N. Étape 5 — Vérifier le résultat : $T < P$. Pourquoi pas 693 N : c'est $P\\cos 30^\\circ$, la composante perpendiculaire à la rampe, pas celle qui est le long de la rampe.",
                   "answers": [
                     {
                       "content": "400",
@@ -2632,7 +2640,7 @@
                 {
                   "content": "Quelle est la réaction de la rampe, en N ? Arrondis à 10 N près.",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Choisir : $Oy$ perpendiculaire à la rampe. Étape 2 — Projeter : $R_y = +R$, $P_y = -P\\cos 30^\\circ$. Étape 3 — Écrire : $R - P\\cos 30^\\circ = 0$. Étape 4 — Résoudre : $R = 800 \\times \\frac{\\sqrt 3}{2} \\approx 693$ N, soit 690 N à 10 N près.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ perpendiculaire à la rampe, vers le haut. Étape 2 — Projeter chaque force : $R_y = +R$, $P_y = -P\\cos 30^\\circ$, $T_y = 0$. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $R - P\\cos 30^\\circ = 0$. Étape 4 — Résoudre les équations : $R = 800 \\times \\frac{\\sqrt 3}{2} \\approx 693$ N, soit 690 N à 10 N près (avec 0,87 on trouve 696 N, accepté). Étape 5 — Vérifier le résultat : $R < P$. Pourquoi pas 800 N : $R = P$ n'est vrai que sur un plan horizontal.",
                   "answers": [
                     {
                       "content": "690",
@@ -2640,12 +2648,12 @@
                     }
                   ],
                   "unit": "N",
-                  "tolerance": 5
+                  "tolerance": 10
                 },
                 {
                   "content": "Quelle est la direction de la réaction de la rampe lisse ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Support lisse : pas de frottements. Étape 2 — La réaction est alors perpendiculaire au support. Étape 3 — Elle n'est verticale que sur un plan horizontal.",
+                  "explanation": "Étape 1 — Choisir deux axes : un le long de la rampe, un perpendiculaire à la rampe. Étape 2 — Projeter chaque force : la rampe est lisse, sans frottements, donc la réaction est perpendiculaire à la rampe. Étape 3 — Conclure : elle est perpendiculaire à la rampe, et elle n'a aucune composante le long de la rampe. Pourquoi pas « Verticale » : la réaction n'est verticale que sur un plan horizontal ; sur une rampe inclinée elle s'incline avec elle.",
                   "answers": [
                     {
                       "content": "Perpendiculaire à la rampe",
@@ -2668,7 +2676,7 @@
                 {
                   "content": "Plus la rampe est inclinée, plus la corde doit tirer fort pour retenir le fût.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Projection : $T = P\\sin\\alpha$. Étape 2 — $\\sin\\alpha$ augmente quand $\\alpha$ augmente (de 0° à 90°). Étape 3 — Donc $T$ augmente : vrai.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Ox$ le long de la rampe. Étape 2 — Projeter chaque force : $P_x = -P\\sin\\alpha$ et $T_x = +T$. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $T = P\\sin\\alpha$. Étape 4 — Résoudre les équations : $\\sin\\alpha$ augmente avec $\\alpha$ entre 0° et 90°, donc $T$ augmente. Pourquoi pas « Faux » : une rampe plus raide augmente la composante du poids le long de la rampe, donc la corde doit retenir davantage ; à 0° elle ne retient rien.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2698,7 +2706,7 @@
                 {
                   "content": "L'affirmation d'Awa est juste.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Définir le système : la lampe. Étape 2 — Lister : la Terre et le fil agissent sur elle. Étape 3 — Elle subit deux forces qui se compensent : l'affirmation est fausse.",
+                  "explanation": "Étape 1 — Définir le système : la lampe. Étape 2 — Lister les objets qui agissent : la Terre, à distance, et le fil, au contact. Étape 3 — Nommer la force de chaque objet : poids et tension. Étape 4 — Écrire le bilan : deux forces s'exercent sur la lampe et elles se compensent. Pourquoi pas « Vrai » : l'immobilité ne signifie pas l'absence de force ; elle vient de forces qui se compensent.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2713,7 +2721,7 @@
                 {
                   "content": "Quelle est l'intensité du poids de la lampe, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Relever : $m = 2$ kg. Étape 2 — $P = m \\times g$. Étape 3 — $P = 20$ N.",
+                  "explanation": "Étape 1 — Définir le système : la lampe de 2 kg. Étape 2 — Lister les objets qui agissent : la Terre agit à distance. Étape 3 — Nommer la force de chaque objet : le poids, $P = m \\times g$. Étape 4 — Écrire le bilan : $P = 2 \\times 10 = 20$ N. Pourquoi pas 2 N : c'est la masse en kg ; le poids se calcule avec $g$.",
                   "answers": [
                     {
                       "content": "20",
@@ -2726,7 +2734,7 @@
                 {
                   "content": "Quelle est l'intensité de la tension du fil, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Bilan : $\\vec P$ et $\\vec T$. Étape 2 — Même droite, sens opposés. Étape 3 — $T = P$. Étape 4 — $T = 20$ N.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : la lampe, avec $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : même droite d'action (le fil), sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $T = 20$ N. Pourquoi pas 0 N : c'est l'idée d'Awa, qui oublie que le fil tire sur la lampe ; sans tension de 20 N, la lampe tomberait.",
                   "answers": [
                     {
                       "content": "20",
@@ -2739,7 +2747,7 @@
                 {
                   "content": "Quelle phrase corrige le mieux Awa ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Bilan : deux forces. Étape 2 — Elles sont opposées. Étape 3 — Leur somme vectorielle est nulle : la lampe reste immobile.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : la lampe, avec $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : même droite d'action, sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$, donc $\\vec P + \\vec T = \\vec 0$. Étape 4 — Conclure : la somme est nulle et la lampe reste immobile. Pourquoi pas « La lampe ne subit que son poids » : le fil touche la lampe et exerce la tension ; sans elle, la lampe tomberait.",
                   "answers": [
                     {
                       "content": "La lampe subit deux forces dont la somme vectorielle est nulle",
@@ -2762,7 +2770,7 @@
                 {
                   "content": "Rédige, en trois phrases, la correction de l'affirmation d'Awa.",
                   "question_type": "written",
-                  "explanation": "Corrigé modèle : La lampe subit son poids $\\vec P$ (20 N, vers le bas) et la tension $\\vec T$ du fil (vers le haut). Ces deux forces ont la même droite d'action, des sens opposés et la même intensité : $T = P = 20$ N. Leur somme vectorielle est nulle, c'est pourquoi la lampe reste immobile. Barème : bilan (0,5), conditions (1), conclusion (0,5).",
+                  "explanation": "Corrigé modèle : Étape 1 — Définir le système : la lampe. Étape 2 — Faire le bilan : elle subit son poids $\\vec P$ (20 N, vers le bas) et la tension $\\vec T$ du fil (vers le haut). Étape 3 — Vérifier la direction et le sens : ces deux forces ont la même droite d'action et des sens opposés. Étape 4 — Écrire l'égalité des intensités : $T = P = 20$ N. Leur somme vectorielle est nulle, c'est pourquoi la lampe reste immobile. Pourquoi pas « elle ne subit aucune force » : ce qui est nul, c'est la somme des forces, pas les forces elles-mêmes. Barème : bilan (0,5), conditions (1), conclusion (0,5).",
                   "answers": [],
                   "points": 2,
                   "criteria": [
@@ -2784,7 +2792,7 @@
                 {
                   "content": "Quelle erreur Koffi a-t-il commise ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Bilan : $\\vec P$ et $\\vec R$. Étape 2 — Équilibre : $R = P$ est juste. Étape 3 — Mais $P = m \\times g$, pas $m$ : il a écrit la masse à la place du poids.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le sac, avec $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$, ce que Koffi a bien écrit. Étape 4 — Calculer l'inconnue : $P = m \\times g = 500$ N, pas 50 N. Pourquoi pas « La réaction n'est pas égale au poids » : l'égalité $R = P$ est juste ; l'erreur est d'avoir pris la masse 50 à la place du poids 500 N.",
                   "answers": [
                     {
                       "content": "Il a confondu la masse et le poids",
@@ -2807,7 +2815,7 @@
                 {
                   "content": "Quelle est la bonne valeur de la réaction de la dalle, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Bilan : $\\vec P$ et $\\vec R$. Étape 2 — Verticales, sens opposés. Étape 3 — $R = P$. Étape 4 — $P = 50 \\times 10 = 500$ N, donc $R = 500$ N.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le sac, avec $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $P = 50 \\times 10 = 500$ N, donc $R = 500$ N. Pourquoi pas 50 N : c'est la masse en kg ; le poids se calcule avec $g = 10$ N/kg.",
                   "answers": [
                     {
                       "content": "500",
@@ -2820,7 +2828,7 @@
                 {
                   "content": "Quelles affirmations sur la réaction de la dalle sont justes ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Étape 1 — Réaction d'un support lisse : perpendiculaire. Étape 2 — Sens : du support vers le solide, vers le haut. Étape 3 — La force du sac sur la dalle est la force pressante, exercée sur la dalle.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le sac, avec $\\vec P$ et la réaction $\\vec R$ de la dalle. Étape 2 — Vérifier la direction et le sens : la dalle est lisse, donc la réaction est perpendiculaire à la dalle ; elle va du support vers le sac, vers le haut. Étape 3 — Écrire l'égalité des intensités : $R = P$. Pourquoi pas « Elle est exercée par le sac sur la dalle » : cette force est la force pressante, qui s'exerce sur la dalle ; la réaction est exercée par la dalle sur le sac.",
                   "answers": [
                     {
                       "content": "Elle est perpendiculaire à la dalle",
@@ -2843,7 +2851,7 @@
                 {
                   "content": "La masse s'exprime en kilogrammes et le poids en ___.",
                   "question_type": "fill_blank",
-                  "explanation": "Étape 1 — Le poids est une force. Étape 2 — Une force s'exprime en newtons. Étape 3 — La masse, elle, s'exprime en kg.",
+                  "explanation": "Étape 1 — Définir le système : le sac, soumis à son poids. Étape 2 — Nommer la force : le poids est une force. Étape 3 — Écrire le bilan : une force s'exprime en newtons (N), alors que la masse s'exprime en kilogrammes. Étape 4 — Calculer : $P = 500$ N pour 50 kg. Pourquoi pas « kilogrammes » : cette unité est celle de la masse, grandeur différente du poids ; c'est la confusion qu'a faite Koffi.",
                   "answers": [
                     {
                       "content": "newtons",
@@ -2862,7 +2870,7 @@
                 {
                   "content": "Remets dans l'ordre le raisonnement correct.",
                   "question_type": "ordering",
-                  "explanation": "Étape 1 — Définir le système et dresser le bilan. Étape 2 — Vérifier la direction et le sens. Étape 3 — Écrire l'égalité. Étape 4 — Calculer avec l'unité.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le sac, avec $\\vec P$ et $\\vec R$. Étape 2 — Vérifier la direction et le sens : même droite d'action, sens opposés. Étape 3 — Écrire l'égalité des intensités : $R = P$. Étape 4 — Calculer l'inconnue : $P = 50 \\times 10 = 500$ N. Pourquoi pas le calcul de 500 N avant l'égalité : on ne peut pas calculer $R$ avant d'avoir posé $R = P$, ni poser $R = P$ avant d'avoir vérifié que les forces sont opposées.",
                   "answers": [
                     {
                       "content": "Le système est le sac ; il subit $\\vec P$ et $\\vec R$"
@@ -2890,7 +2898,7 @@
                 {
                   "content": "Quelle est l'intensité du poids de la charge, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Relever : $m = 15$ kg. Étape 2 — $P = m \\times g$. Étape 3 — $P = 150$ N.",
+                  "explanation": "Étape 1 — Définir le système : la charge de 15 kg. Étape 2 — Lister les objets qui agissent : la Terre agit à distance. Étape 3 — Nommer la force de chaque objet : le poids, $P = m \\times g$. Étape 4 — Écrire le bilan : $P = 15 \\times 10 = 150$ N. Pourquoi pas 15 N : c'est la masse en kg, pas le poids.",
                   "answers": [
                     {
                       "content": "150",
@@ -2903,7 +2911,7 @@
                 {
                   "content": "Quelle est la tension du câble oblique, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Faire le bilan : $P = 150$ N, $F = 80$ N, $T$. Étape 2 — Vérifier : coplanaires, concourantes. Étape 3 — Écrire : $\\vec P + \\vec F + \\vec T = \\vec 0$. Étape 4 — Construire : triangle rectangle de côtés 150 et 80. Étape 5 — Calculer : $T = \\sqrt{150^2 + 80^2} = 170$ N.",
+                  "explanation": "Étape 1 — Faire le bilan : $P = 150$ N (verticale), $F = 80$ N (horizontale), $T$ inconnue. Étape 2 — Vérifier les conditions : forces coplanaires et concourantes. Étape 3 — Écrire la condition d'équilibre : $\\vec P + \\vec F + \\vec T = \\vec 0$. Étape 4 — Construire le triangle des forces : il est rectangle, de côtés 150 et 80. Étape 5 — Lire ou calculer les intensités : $T = \\sqrt{150^2 + 80^2} = 170$ N. Pourquoi pas 230 N : c'est $150 + 80$ ; on additionne des intensités alors que $\\vec P$ et $\\vec F$ sont perpendiculaires.",
                   "answers": [
                     {
                       "content": "170",
@@ -2916,7 +2924,7 @@
                 {
                   "content": "La tension du câble est égale à $150 + 80 = 230$ N.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Les forces $\\vec P$ et $\\vec F$ sont perpendiculaires. Étape 2 — On additionne des vecteurs. Étape 3 — $T = 170$ N, pas 230 N : faux.",
+                  "explanation": "Étape 1 — Faire le bilan : $P = 150$ N et $F = 80$ N. Étape 2 — Vérifier les conditions : $\\vec P$ et $\\vec F$ sont perpendiculaires. Étape 3 — Écrire la condition d'équilibre : $\\vec P + \\vec F + \\vec T = \\vec 0$, une somme de vecteurs. Étape 4 — Construire le triangle des forces : il est rectangle. Étape 5 — Calculer : $T = 170$ N. Pourquoi pas « Vrai » : additionner 150 et 80 suppose deux forces dans la même direction ; de plus, dans un vrai triangle, un côté est plus court que la somme des deux autres : 170 < 230.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -2931,7 +2939,7 @@
                 {
                   "content": "Échelle 1 cm pour 10 N. Quelle longueur a le côté qui représente $\\vec T$ ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Construire le triangle des forces. Étape 2 — $T = 170$ N. Étape 3 — Longueur : $170 \\div 10 = 17$ cm.",
+                  "explanation": "Étape 1 — Faire le bilan : $P = 150$ N, $F = 80$ N, $T$ inconnue. Étape 2 — Vérifier les conditions : forces concourantes. Étape 3 — Écrire la condition d'équilibre : somme nulle. Étape 4 — Construire le triangle des forces : avec 1 cm pour 10 N, les côtés mesurent 15 cm et 8 cm. Étape 5 — Lire ou calculer les intensités : $\\sqrt{15^2 + 8^2} = 17$ cm. Pourquoi pas 23 cm : c'est $15 + 8$, qui additionne les longueurs ; le côté de $\\vec T$ est l'hypoténuse d'un triangle rectangle.",
                   "answers": [
                     {
                       "content": "17 cm",
@@ -2954,7 +2962,7 @@
                 {
                   "content": "Rédige la construction du triangle des forces de la charge (ordre des vecteurs, longueurs, fermeture).",
                   "question_type": "written",
-                  "explanation": "Corrigé modèle : Avec 1 cm pour 10 N, je trace $\\vec P$ verticale vers le bas, de 15 cm. À son extrémité, je trace $\\vec F$ horizontale, de 8 cm. Je ferme le triangle par $\\vec T$, de l'extrémité de $\\vec F$ à l'origine de $\\vec P$ : il mesure $\\sqrt{15^2 + 8^2} = 17$ cm, soit $T = 170$ N. Barème : longueurs (1), bout à bout (0,5), fermeture (0,5), résultat (1).",
+                  "explanation": "Corrigé modèle : Étape 1 — Faire le bilan : $P = 150$ N, $F = 80$ N, $T$ inconnue. Étape 2 — Vérifier les conditions : forces concourantes. Étape 3 — Écrire la condition d'équilibre : $\\vec P + \\vec F + \\vec T = \\vec 0$. Étape 4 — Construire le triangle des forces : avec 1 cm pour 10 N, je trace $\\vec P$ verticale vers le bas, de 15 cm. À son extrémité, je trace $\\vec F$ horizontale, de 8 cm. Je ferme le triangle par $\\vec T$, de l'extrémité de $\\vec F$ à l'origine de $\\vec P$. Étape 5 — Lire ou calculer : $\\sqrt{15^2 + 8^2} = 17$ cm, soit $T = 170$ N. Pourquoi pas tracer $\\vec F$ depuis l'origine de $\\vec P$ : les vecteurs ne seraient plus bout à bout et le triangle ne se fermerait pas. Barème : longueurs (1), bout à bout (0,5), fermeture (0,5), résultat (1).",
                   "answers": [],
                   "points": 3,
                   "criteria": [
@@ -2977,7 +2985,7 @@
                 {
                   "content": "Quelle est l'intensité du poids de la lampe, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — $m = 10$ kg. Étape 2 — $P = m \\times g$. Étape 3 — $P = 100$ N.",
+                  "explanation": "Étape 1 — Définir le système : la lampe de 10 kg. Étape 2 — Lister les objets qui agissent : la Terre agit à distance. Étape 3 — Nommer la force de chaque objet : le poids, $P = m \\times g$. Étape 4 — Écrire le bilan : $P = 10 \\times 10 = 100$ N. Pourquoi pas 10 N : c'est la masse en kg, pas le poids.",
                   "answers": [
                     {
                       "content": "100",
@@ -2990,7 +2998,7 @@
                 {
                   "content": "Sur l'axe vertical, quelle équation traduit l'équilibre ($T_1 = T_2 = T$) ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Choisir : $Oy$ vertical vers le haut. Étape 2 — Projeter : chaque fil donne $T\\sin 45^\\circ$ ; le poids donne $-P$. Étape 3 — Écrire : $2T\\sin 45^\\circ - P = 0$.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical vers le haut ; bilan $\\vec P$, $\\vec T_1$, $\\vec T_2$. Étape 2 — Projeter chaque force : chaque fil donne $T\\sin 45^\\circ$ sur $Oy$, le poids donne $-P$. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $2T\\sin 45^\\circ - P = 0$. Pourquoi pas $T\\sin 45^\\circ = P$ : cette équation oublie le second fil ; les deux tensions soutiennent ensemble la lampe.",
                   "answers": [
                     {
                       "content": "$2T\\sin 45^\\circ = P$",
@@ -3005,7 +3013,7 @@
                       "correct": false
                     },
                     {
-                      "content": "$2T\\sin 45^\\circ = 2P$",
+                      "content": "$2T\\sin 45^\\circ + P = 0$",
                       "correct": false
                     }
                   ]
@@ -3013,7 +3021,7 @@
                 {
                   "content": "Quelle est la tension de chaque fil, en N ? Arrondis à l'unité.",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Équation : $2T\\sin 45^\\circ = 100$. Étape 2 — Résoudre : $T = \\frac{100}{\\sqrt 2} \\approx 70{,}7$ N. Étape 3 — Arrondi : 71 N. Étape 4 — Vérifier : $T > P/2 = 50$ N, car les fils sont inclinés.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical vers le haut. Étape 2 — Projeter chaque force : $T\\sin 45^\\circ$ par fil, $-P$ pour le poids. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $2T\\sin 45^\\circ = 100$. Étape 4 — Résoudre les équations : $T = \\frac{100}{\\sqrt 2} \\approx 70{,}7$ N, soit 71 N. Étape 5 — Vérifier le résultat : $T > P \\div 2 = 50$ N car les fils sont inclinés. Pourquoi pas 50 N : c'est le résultat de fils verticaux ; ici seule une partie de chaque tension soutient la lampe.",
                   "answers": [
                     {
                       "content": "71",
@@ -3026,7 +3034,7 @@
                 {
                   "content": "Chaque fil porte exactement la moitié du poids, 50 N.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Les fils sont inclinés. Étape 2 — Seule leur composante verticale soutient la lampe. Étape 3 — $T \\approx 71$ N > 50 N : faux.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical. Étape 2 — Projeter chaque force : seule la composante verticale $T\\sin 45^\\circ$ de chaque fil soutient la lampe. Étape 3 — Écrire la condition d'équilibre : $2T\\sin 45^\\circ = P$. Étape 4 — Résoudre : $T \\approx 71$ N. Étape 5 — Vérifier : 71 N est supérieur à 50 N. Pourquoi pas « Vrai » : la moitié du poids n'est la tension de chaque fil que pour des fils verticaux ; des fils inclinés tirent plus fort.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -3041,7 +3049,7 @@
                 {
                   "content": "Explique pourquoi, si les fils devenaient verticaux, chaque tension vaudrait 50 N.",
                   "question_type": "written",
-                  "explanation": "Corrigé modèle : Si les fils sont verticaux, l'angle avec l'horizontale vaut 90° et $\\sin 90^\\circ = 1$. L'équation sur l'axe vertical devient $2T - P = 0$, donc $T = 100 \\div 2 = 50$ N. Barème : angle et sinus (0,5), équation (1), calcul (0,5).",
+                  "explanation": "Corrigé modèle : Étape 1 — Choisir deux axes : $Oy$ vertical vers le haut. Étape 2 — Projeter chaque force : $T_y = T\\sin\\alpha$ par fil, $P_y = -P$. Étape 3 — Écrire la condition d'équilibre : $2T\\sin\\alpha - P = 0$. Étape 4 — Résoudre : fils verticaux, l'angle avec l'horizontale vaut 90° et $\\sin 90^\\circ = 1$, donc $2T - P = 0$ et $T = 100 \\div 2 = 50$ N. Étape 5 — Vérifier : à 45° on avait 71 N, plus que 50 N. Pourquoi pas « chaque fil porte tout le poids, 100 N » : deux fils se partagent le poids, chacun en porte la moitié quand ils sont verticaux. Barème : angle et sinus (0,5), équation (1), calcul (0,5).",
                   "answers": [],
                   "points": 2,
                   "criteria": [
@@ -3069,7 +3077,7 @@
                 {
                   "content": "Que lit-on sur le dynamomètre, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Bilan : $\\vec P$ et $\\vec T$. Étape 2 — Même droite, sens opposés. Étape 3 — $T = P$. Étape 4 — $T = 5 \\times 10 = 50$ N.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le pot, avec $\\vec P$ et $\\vec T$ du ressort. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $T = P$. Étape 4 — Calculer l'inconnue : $T = 5 \\times 10 = 50$ N. Pourquoi pas 5 N : la masse du pot est 5 kg ; le dynamomètre est gradué en newtons et indique le poids, 50 N.",
                   "answers": [
                     {
                       "content": "50",
@@ -3082,7 +3090,7 @@
                 {
                   "content": "Quel est le point d'application de la tension du ressort sur le pot ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Nommer : tension. Étape 2 — Contact localisé : le crochet touche le pot en un point. Étape 3 — Le centre de gravité est celui du poids.",
+                  "explanation": "Étape 1 — Définir le système : le pot. Étape 2 — Lister les objets qui agissent : le crochet touche le pot en un point. Étape 3 — Nommer la force de chaque objet : la tension du ressort ; c'est un contact localisé, donc son point d'application est le point d'attache. Étape 4 — Écrire le bilan : point d'application, direction, sens et intensité. Pourquoi pas « Le centre de gravité du pot » : G est le point d'application du poids, force exercée à distance par la Terre ; la tension est un contact localisé.",
                   "answers": [
                     {
                       "content": "Le point d'attache du pot au crochet",
@@ -3105,7 +3113,7 @@
                 {
                   "content": "On remplace le pot par un autre ; le dynamomètre indique 75 N. Quelle est sa masse, en kg ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — $P = T = 75$ N. Étape 2 — $m = P \\div g$. Étape 3 — $m = 7{,}5$ kg.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le pot, avec $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : $P = T = 75$ N. Étape 4 — Calculer l'inconnue : $m = P \\div g = 75 \\div 10 = 7{,}5$ kg. Pourquoi pas 750 kg : on divise le poids par $g$, on ne le multiplie pas.",
                   "answers": [
                     {
                       "content": "7,5",
@@ -3118,7 +3126,7 @@
                 {
                   "content": "Le dynamomètre indique la masse du pot en kilogrammes.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Le dynamomètre est gradué en newtons. Étape 2 — Il indique l'intensité d'une force. Étape 3 — La masse se calcule ensuite : faux.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le pot, avec $\\vec P$ et $\\vec T$. Étape 2 — Vérifier la direction et le sens : verticales, de sens opposés. Étape 3 — Écrire l'égalité des intensités : la lecture vaut $T = P$, en newtons. Étape 4 — Calculer l'inconnue : la masse se calcule ensuite par $m = P \\div g$. Pourquoi pas « Vrai » : l'index se déplace devant une graduation en newtons ; le dynamomètre mesure une force, pas une masse.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -3133,7 +3141,7 @@
                 {
                   "content": "Un solide immobile soumis à deux forces : ces forces sont de même intensité et de sens ___.",
                   "question_type": "fill_blank",
-                  "explanation": "Étape 1 — Bilan : deux forces. Étape 2 — Vérifier : même droite, sens opposés. Étape 3 — Écrire : même intensité.",
+                  "explanation": "Étape 1 — Définir le système et dresser le bilan : le solide, soumis à deux forces. Étape 2 — Vérifier la direction et le sens : même droite d'action et sens opposés. Étape 3 — Écrire l'égalité des intensités : $F_1 = F_2$. Étape 4 — Calculer l'inconnue : leur somme vectorielle est nulle. Pourquoi pas « même sens » : deux forces de même sens s'ajoutent au lieu de se compenser, donc le solide ne resterait pas immobile.",
                   "answers": [
                     {
                       "content": "opposés",
@@ -3141,6 +3149,14 @@
                     },
                     {
                       "content": "contraires",
+                      "correct": true
+                    },
+                    {
+                      "content": "opposé",
+                      "correct": true
+                    },
+                    {
+                      "content": "contraire",
                       "correct": true
                     }
                   ]
@@ -3157,7 +3173,7 @@
                 {
                   "content": "Quel est le bilan des forces exercées sur le panneau ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Système : le panneau. Étape 2 — Lister : la Terre, le fil, la corde. Étape 3 — Trois forces ; le sol ne le touche pas.",
+                  "explanation": "Étape 1 — Définir le système : le panneau. Étape 2 — Lister les objets qui agissent : la Terre à distance ; le fil oblique et la corde, au contact ; le sol ne le touche pas. Étape 3 — Nommer la force de chaque objet : un poids et deux tensions. Étape 4 — Écrire le bilan : $\\vec P$, la tension du fil oblique et la tension de la corde, soit trois forces. Pourquoi pas « Le poids, les deux tensions et la réaction du sol » : sans contact avec le sol, aucune réaction ne s'exerce ; une réaction n'existe que si un support touche le solide.",
                   "answers": [
                     {
                       "content": "Le poids, la tension du fil oblique et la tension de la corde",
@@ -3180,7 +3196,7 @@
                 {
                   "content": "Quelle est la tension du fil oblique, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Bilan : $P = 30$ N, $F = 40$ N. Étape 2 — Concourantes. Étape 3 — Somme nulle. Étape 4 — Triangle rectangle. Étape 5 — $T = \\sqrt{30^2 + 40^2} = 50$ N.",
+                  "explanation": "Étape 1 — Faire le bilan : $P = 3 \\times 10 = 30$ N, $F = 40$ N, $T$ inconnue. Étape 2 — Vérifier les conditions : forces coplanaires et concourantes. Étape 3 — Écrire la condition d'équilibre : $\\vec P + \\vec F + \\vec T = \\vec 0$. Étape 4 — Construire le triangle des forces : il est rectangle, de côtés 30 et 40. Étape 5 — Lire ou calculer les intensités : $T = \\sqrt{30^2 + 40^2} = 50$ N. Pourquoi pas 70 N : c'est $30 + 40$, une addition d'intensités valable seulement pour deux forces de même direction.",
                   "answers": [
                     {
                       "content": "50",
@@ -3193,7 +3209,7 @@
                 {
                   "content": "Quelles affirmations sont vraies ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Étape 1 — Vérifier les conditions : concourantes. Étape 2 — Somme nulle : triangle fermé. Étape 3 — 70 N additionne les intensités ; un solide immobile subit des forces.",
+                  "explanation": "Étape 1 — Faire le bilan : $\\vec P$ (30 N), $\\vec F$ (40 N) et $\\vec T$ (50 N). Étape 2 — Vérifier les conditions : à l'équilibre, les droites d'action sont concourantes. Étape 3 — Écrire la condition d'équilibre : la somme vectorielle est nulle. Étape 4 — Construire le triangle des forces : les vecteurs bout à bout reviennent au point de départ, le triangle est fermé. Pourquoi pas « La tension du fil vaut 70 N » : 70 est la somme $30 + 40$ ; la tension vaut 50 N, hypoténuse du triangle rectangle.",
                   "answers": [
                     {
                       "content": "Les droites d'action des trois forces sont concourantes",
@@ -3216,7 +3232,7 @@
                 {
                   "content": "Échelle 1 cm pour 10 N : quelle longueur a le côté qui représente le poids, en cm ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — $P = 30$ N. Étape 2 — Échelle : 1 cm pour 10 N. Étape 3 — $30 \\div 10 = 3$ cm.",
+                  "explanation": "Étape 1 — Faire le bilan : $P = 30$ N. Étape 2 — Vérifier les conditions : sans objet pour cette lecture. Étape 3 — Écrire la condition d'équilibre : $\\vec P + \\vec F + \\vec T = \\vec 0$. Étape 4 — Construire le triangle des forces : l'échelle est 1 cm pour 10 N. Étape 5 — Lire ou calculer les intensités : $30 \\div 10 = 3$ cm. Pourquoi pas 30 cm : on divise l'intensité par l'échelle (10 N par cm), on ne la recopie pas.",
                   "answers": [
                     {
                       "content": "3",
@@ -3229,7 +3245,7 @@
                 {
                   "content": "Remets dans l'ordre les étapes pour étudier l'équilibre sous trois forces.",
                   "question_type": "ordering",
-                  "explanation": "Étape 1 — Faire le bilan. Étape 2 — Vérifier les conditions. Étape 3 — Écrire la condition d'équilibre. Étape 4 — Construire le triangle des forces. Étape 5 — Lire ou calculer les intensités.",
+                  "explanation": "Étape 1 — Faire le bilan : on liste d'abord les trois forces. Étape 2 — Vérifier les conditions : forces coplanaires et concourantes. Étape 3 — Écrire la condition d'équilibre : $\\vec F_1 + \\vec F_2 + \\vec F_3 = \\vec 0$. Étape 4 — Construire le triangle des forces à l'échelle. Étape 5 — Lire ou calculer les intensités. Pourquoi pas construire avant d'écrire la condition d'équilibre : c'est cette égalité qui dit que le triangle se ferme ; sans elle, on ne sait pas quoi tracer.",
                   "answers": [
                     {
                       "content": "Faire le bilan"
@@ -3260,7 +3276,7 @@
                 {
                   "content": "Quelle est l'intensité du poids de la brouette chargée, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — $m = 100$ kg. Étape 2 — $P = m \\times g$. Étape 3 — $P = 1\\,000$ N.",
+                  "explanation": "Étape 1 — Définir le système : la brouette chargée de 100 kg. Étape 2 — Lister les objets qui agissent : la Terre agit à distance. Étape 3 — Nommer la force de chaque objet : le poids, $P = m \\times g$. Étape 4 — Écrire le bilan : $P = 100 \\times 10 = 1\\,000$ N. Pourquoi pas 100 N : c'est la masse en kg, pas le poids.",
                   "answers": [
                     {
                       "content": "1000",
@@ -3273,7 +3289,7 @@
                 {
                   "content": "Avec $Ox$ le long de la rampe vers le haut, quelle est la composante du poids sur $Ox$ ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Choisir : $Ox$ le long de la rampe. Étape 2 — Projeter : le poids tire vers le bas de la rampe, d'où le signe − ; valeur $P\\sin 30^\\circ$. Étape 3 — Le cosinus correspond à l'axe perpendiculaire.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Ox$ le long de la rampe vers le haut. Étape 2 — Projeter chaque force : le poids tire vers le bas de la rampe, donc le signe est −, et la valeur est $P\\sin 30^\\circ$. Étape 3 — Écrire la condition d'équilibre : $T - P\\sin 30^\\circ = 0$. Pourquoi pas $-P\\cos 30^\\circ$ : le cosinus donne la composante perpendiculaire à la rampe, sur $Oy$, pas celle qui est le long de la rampe.",
                   "answers": [
                     {
                       "content": "$-P\\sin 30^\\circ$",
@@ -3296,7 +3312,7 @@
                 {
                   "content": "Quelle est la tension de la corde, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Choisir : $Ox$ le long de la rampe. Étape 2 — Projeter : $T_x = +T$, $P_x = -P\\sin 30^\\circ$. Étape 3 — Écrire : $T - P\\sin 30^\\circ = 0$. Étape 4 — Résoudre : $T = 1\\,000 \\times 0{,}5 = 500$ N.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Ox$ le long de la rampe vers le haut ; bilan $\\vec P$, $\\vec T$, $\\vec R$. Étape 2 — Projeter chaque force : $T_x = +T$, $P_x = -P\\sin 30^\\circ$, $R_x = 0$. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $T - P\\sin 30^\\circ = 0$. Étape 4 — Résoudre les équations : $T = 1\\,000 \\times 0{,}5 = 500$ N. Étape 5 — Vérifier le résultat : $T < P$. Pourquoi pas 1 000 N : ce serait $T = P$, vrai seulement pour une corde verticale ; sur 30° la corde ne retient que la moitié du poids.",
                   "answers": [
                     {
                       "content": "500",
@@ -3309,7 +3325,7 @@
                 {
                   "content": "La réaction de la rampe a une composante nulle sur l'axe $Ox$ le long de la rampe.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — La rampe est lisse : $\\vec R$ est perpendiculaire à la rampe. Étape 2 — Sa projection sur $Ox$ est nulle. Étape 3 — Vrai.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Ox$ le long de la rampe, $Oy$ perpendiculaire. Étape 2 — Projeter chaque force : la rampe est lisse, donc $\\vec R$ est perpendiculaire à la rampe et $R_x = 0$. Étape 3 — Écrire la condition d'équilibre : sur $Ox$ ne figurent que $T$ et $P_x$. Pourquoi pas « Faux » : la réaction d'un support lisse n'a aucune composante le long du support ; seuls des frottements lui en donneraient une.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -3324,7 +3340,7 @@
                 {
                   "content": "Sur une rampe horizontale, la corde devrait tirer avec une force de ___.",
                   "question_type": "select",
-                  "explanation": "Étape 1 — $T = P\\sin\\alpha$. Étape 2 — Pour $\\alpha = 0^\\circ$, $\\sin 0^\\circ = 0$. Étape 3 — $T = 0$ N : c'est le cas limite qui vérifie la formule.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Ox$ le long de la rampe, horizontal si $\\alpha = 0^\\circ$. Étape 2 — Projeter chaque force : $P_x = -P\\sin 0^\\circ = 0$. Étape 3 — Écrire la condition d'équilibre : $T - P\\sin 0^\\circ = 0$. Étape 4 — Résoudre les équations : $T = 0$ N. Étape 5 — Vérifier le résultat : un solide posé sur un plan horizontal lisse n'a pas besoin d'être retenu. Pourquoi pas « 1 000 N » : ce serait $P\\cos 0^\\circ$, la confusion du sinus et du cosinus ; sur le plat, la corde ne retient rien.",
                   "answers": [
                     {
                       "content": "0 N",
@@ -3345,14 +3361,14 @@
             },
             {
               "title": "Exercice 4",
-              "statement": "Un tableau de 40 kg est accroché par deux câbles identiques, chacun incliné de 30° sur l'horizontale, de part et d'autre. Il est immobile. On prend $g = 10$ N/kg et $\\sin 30^\\circ = 0{,}5$.",
+              "statement": "Un tableau de 40 kg est accroché par deux câbles identiques, chacun incliné de 30° sur l'horizontale, de part et d'autre. Il est immobile et pend sans toucher le mur. On prend $g = 10$ N/kg et $\\sin 30^\\circ = 0{,}5$.",
               "exercise_type": "evaluation",
               "figure": null,
               "questions": [
                 {
                   "content": "Quelle est l'intensité du poids du tableau, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — $m = 40$ kg. Étape 2 — $P = m \\times g$. Étape 3 — $P = 400$ N.",
+                  "explanation": "Étape 1 — Définir le système : le tableau de 40 kg. Étape 2 — Lister les objets qui agissent : la Terre agit à distance. Étape 3 — Nommer la force de chaque objet : le poids, $P = m \\times g$. Étape 4 — Écrire le bilan : $P = 40 \\times 10 = 400$ N. Pourquoi pas 40 N : c'est la masse en kg, pas le poids.",
                   "answers": [
                     {
                       "content": "400",
@@ -3363,9 +3379,9 @@
                   "tolerance": 0
                 },
                 {
-                  "content": "Combien de forces s'exercent sur le tableau ?",
+                  "content": "Le tableau pend sans toucher le mur. Combien de forces s'exercent sur lui ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Système : le tableau. Étape 2 — Lister : la Terre et deux câbles. Étape 3 — Trois forces : $\\vec P$, $\\vec T_1$, $\\vec T_2$.",
+                  "explanation": "Étape 1 — Définir le système : le tableau. Étape 2 — Lister les objets qui agissent : la Terre à distance, les deux câbles au contact ; le mur ne le touche pas. Étape 3 — Nommer la force de chaque objet : un poids et deux tensions. Étape 4 — Écrire le bilan : $\\vec P$, $\\vec T_1$, $\\vec T_2$, soit trois forces. Pourquoi pas « Quatre » : il faudrait un quatrième objet au contact, par exemple un mur qui touche le tableau ; ici il n'y en a pas.",
                   "answers": [
                     {
                       "content": "Trois",
@@ -3388,7 +3404,7 @@
                 {
                   "content": "Quelle est la tension de chaque câble, en N ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 1 — Choisir : $Oy$ vertical. Étape 2 — Projeter : $T\\sin 30^\\circ$ par câble, $-P$ pour le poids. Étape 3 — Écrire : $2T\\sin 30^\\circ - P = 0$. Étape 4 — Résoudre : $T = 400 \\div (2 \\times 0{,}5) = 400$ N.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical vers le haut ; $T_1 = T_2 = T$. Étape 2 — Projeter chaque force : $T\\sin 30^\\circ$ par câble, $-P$ pour le poids. Étape 3 — Écrire la condition d'équilibre sur chaque axe : $2T\\sin 30^\\circ - P = 0$. Étape 4 — Résoudre les équations : $T = 400 \\div (2 \\times 0{,}5) = 400$ N. Étape 5 — Vérifier le résultat : $T = P$ car $2\\sin 30^\\circ = 1$. Pourquoi pas 200 N : c'est $P \\div 2$, qui vaudrait pour des câbles verticaux ; à 30° de l'horizontale, chaque câble tire plus fort.",
                   "answers": [
                     {
                       "content": "400",
@@ -3401,7 +3417,7 @@
                 {
                   "content": "Les trois forces exercées sur le tableau ont des droites d'action concourantes.",
                   "question_type": "true_false",
-                  "explanation": "Étape 1 — Trois forces non parallèles. Étape 2 — À l'équilibre : coplanaires et concourantes. Étape 3 — Vrai.",
+                  "explanation": "Étape 1 — Faire le bilan : trois forces non parallèles, $\\vec P$, $\\vec T_1$ et $\\vec T_2$. Étape 2 — Vérifier les conditions : à l'équilibre, elles sont coplanaires et leurs droites d'action se coupent en un même point. Étape 3 — Écrire la condition d'équilibre : leur somme vectorielle est nulle. Pourquoi pas « Faux » : si les droites d'action ne concouraient pas, le tableau ne pourrait pas être en équilibre sous ces trois forces ; ici, par symétrie, elles se coupent en un point.",
                   "answers": [
                     {
                       "content": "Vrai",
@@ -3416,7 +3432,7 @@
                 {
                   "content": "Si on rend les câbles plus inclinés vers la verticale (angle plus grand sur l'horizontale), la tension de chaque câble…",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — $T = P \\div (2\\sin\\alpha)$. Étape 2 — Quand $\\alpha$ augmente, $\\sin\\alpha$ augmente. Étape 3 — Donc $T$ diminue, jusqu'à $P \\div 2 = 200$ N pour des câbles verticaux.",
+                  "explanation": "Étape 1 — Choisir deux axes : $Oy$ vertical. Étape 2 — Projeter chaque force : $T\\sin\\alpha$ par câble. Étape 3 — Écrire la condition d'équilibre : $2T\\sin\\alpha = P$. Étape 4 — Résoudre les équations : $T = P \\div (2\\sin\\alpha)$ ; quand $\\alpha$ augmente, $\\sin\\alpha$ augmente, donc $T$ diminue. Étape 5 — Vérifier le résultat : à 90°, $T = P \\div 2 = 200$ N. Pourquoi pas « augmente » : on divise par $2\\sin\\alpha$, un nombre qui grandit avec $\\alpha$ ; le quotient diminue.",
                   "answers": [
                     {
                       "content": "diminue",
