@@ -103,7 +103,7 @@
         {
           "key": "parabole-carre",
           "kind": "coordinate_plane",
-          "description": "Dans un repère, sept points de la courbe de la fonction carré x ↦ x², reliés par des segments : (-3 ; 9), (-2 ; 4), (-1 ; 1), (0 ; 0), (1 ; 1), (2 ; 4) et (3 ; 9). La courbe descend jusqu'à l'origine, point le plus bas, puis remonte. Elle est symétrique par rapport à l'axe des ordonnées.",
+          "description": "Dans un repère, sept points de la courbe de la fonction carré x ↦ x², reliés par des segments : (-3 ; 9), (-2 ; 4), (-1 ; 1), (0 ; 0), (1 ; 1), (2 ; 4) et (3 ; 9). La courbe descend jusqu'à l'origine, point le plus bas, puis remonte. Elle est symétrique par rapport à l'axe des ordonnées. La vraie courbe est arrondie entre ces points.",
           "params": {
             "xmin": -4,
             "xmax": 4,
@@ -190,7 +190,7 @@
         {
           "key": "hyperbole-inverse",
           "kind": "coordinate_plane",
-          "description": "Dans un repère, huit points de la courbe de la fonction inverse x ↦ 1/x, en deux branches : (0,5 ; 2), (1 ; 1), (2 ; 0,5) et (4 ; 0,25) pour x positif ; (-0,5 ; -2), (-1 ; -1), (-2 ; -0,5) et (-4 ; -0,25) pour x négatif. Chaque branche descend de gauche à droite. La courbe ne coupe jamais les axes.",
+          "description": "Dans un repère, huit points de la courbe de la fonction inverse x ↦ 1/x, en deux branches : (0,5 ; 2), (1 ; 1), (2 ; 0,5) et (4 ; 0,25) pour x positif ; (-0,5 ; -2), (-1 ; -1), (-2 ; -0,5) et (-4 ; -0,25) pour x négatif. Chaque branche descend de gauche à droite. La courbe ne coupe jamais les axes. La vraie courbe est arrondie entre ces points.",
           "params": {
             "xmin": -4,
             "xmax": 4,
@@ -283,7 +283,7 @@
       "notions": [
         {
           "name": "Représenter une fonction affine",
-          "remember": "Une **fonction affine** est une fonction $f$ définie sur $\\mathbb{R}$ par $f(x) = ax + b$, où $a$ et $b$ sont deux nombres fixés. $a$ est le **coefficient directeur** et $b$ l'**ordonnée à l'origine**. Si $b = 0$, c'est une fonction **linéaire** : $f(x) = ax$. Sa représentation est une **droite**, qui passe par le point $(0 ; b)$. Si $a > 0$, $f$ est **croissante** ; si $a < 0$, $f$ est **décroissante** ; si $a = 0$, $f$ est constante. Deux points suffisent pour tracer la droite.",
+          "remember": "Une **fonction affine** est une fonction $f$ définie sur $\\mathbb{R}$ par $f(x) = ax + b$, où $a$ et $b$ sont deux nombres fixés. $a$ est le **coefficient directeur** et $b$ l'**ordonnée à l'origine**. Si $b = 0$, c'est une fonction **linéaire** : $f(x) = ax$. Sa représentation est une **droite**, qui passe par le point $(0 ; b)$. Si $a > 0$, $f$ est **croissante** ; si $a < 0$, $f$ est **décroissante** ; si $a = 0$, $f$ est constante. Deux points suffisent pour tracer la droite. Sur un intervalle fermé borné, son **tableau de variation** n'a qu'une flèche : montante si $a > 0$, descendante si $a < 0$, avec les images des deux bornes à ses extrémités.",
           "method": [
             "Identifier : les nombres $a$ et $b$ dans la formule $f(x) = ax + b$.",
             "Calculer : les images de deux valeurs de $x$ faciles, par exemple $f(0)$ et $f(2)$.",
@@ -452,12 +452,12 @@
                   ]
                 },
                 {
-                  "content": "La fonction $f(x) = 0{,}5x + 3$ est ___ (croissante ou décroissante).",
+                  "content": "On dresse le tableau de variation de $f(x) = -2x + 8$ sur $[0 ; 4]$. La flèche descend de la valeur ___ (écrite sous $x = 0$) à la valeur 0 (écrite sous $x = 4$).",
                   "question_type": "fill_blank",
-                  "explanation": "Étape 1 — Identifier : $a = 0{,}5$ et $b = 3$. Étape 2 — Calculer : $f(0) = 3$ et $f(2) = 4$ : l'image augmente. Étape 4 — Conclure : $a = 0{,}5$ est positif : $f$ est croissante.",
+                  "explanation": "Étape 1 — Identifier : $a = -2$ et $b = 8$. Étape 2 — Calculer : les images des bornes, $f(0) = -2 \\times 0 + 8 = 8$ et $f(4) = -8 + 8 = 0$. Étape 3 — Placer : sur $[0 ; 4]$, la représentation de $f$ est le segment qui joint $(0 ; 8)$ à $(4 ; 0)$. Étape 4 — Conclure : $a = -2 < 0$, donc $f$ est décroissante : une seule flèche, descendante, de 8 à 0. Le nombre $-2$ est le coefficient directeur, pas une image.",
                   "answers": [
                     {
-                      "content": "croissante",
+                      "content": "8",
                       "correct": true
                     }
                   ]
@@ -884,7 +884,7 @@
         },
         {
           "name": "Étudier la fonction carré",
-          "remember": "La **fonction carré** est définie sur $\\mathbb{R}$ par $f(x) = x^2$. Un carré est toujours positif ou nul, et deux nombres opposés ont le même carré : $(-3)^2 = 3^2 = 9$. Elle est **décroissante** sur $]-\\infty ; 0]$ et **croissante** sur $[0 ; +\\infty[$ : son **minimum** est 0, atteint pour $x = 0$. Donc si $0 \\leq a < b$, alors $a^2 < b^2$ ; et si $a < b \\leq 0$, alors $a^2 > b^2$. Sa courbe est une **parabole**, symétrique par rapport à l'axe des ordonnées.",
+          "remember": "La **fonction carré** est définie sur $\\mathbb{R}$ par $f(x) = x^2$. Un carré est toujours positif ou nul, et deux nombres opposés ont le même carré : $(-3)^2 = 3^2 = 9$. Elle est **décroissante** sur $]-\\infty ; 0]$ et **croissante** sur $[0 ; +\\infty[$ : son **minimum** est 0, atteint pour $x = 0$. Donc si $0 \\leq a < b$, alors $a^2 < b^2$ ; et si $a < b \\leq 0$, alors $a^2 > b^2$. Sa courbe est une **parabole**, symétrique par rapport à l'axe des ordonnées. Sur $[-2 ; 3]$, son **tableau de variation** porte une flèche descendante de $f(-2) = 4$ à $f(0) = 0$, puis une flèche montante jusqu'à $f(3) = 9$. Pour la représenter sur un intervalle fermé borné, on dresse un tableau de valeurs, on place les points, puis on les relie par une courbe arrondie.",
           "method": [
             "Repérer : si les deux nombres sont positifs ou nuls, ou s'ils sont négatifs ou nuls.",
             "Rappeler : le sens de variation de la fonction carré sur cet intervalle : décroissante sur $]-\\infty ; 0]$, croissante sur $[0 ; +\\infty[$.",
@@ -1053,13 +1053,25 @@
                   ]
                 },
                 {
-                  "content": "Si $1 \\leq x \\leq 3$, alors $x^2$ est compris entre 1 et ___ .",
-                  "question_type": "fill_blank",
-                  "explanation": "Étape 1 — Repérer : $x$ est entre 1 et 3, donc positif. Étape 2 — Rappeler : la fonction carré est croissante sur $[0 ; +\\infty[$. Étape 3 — Comparer : l'ordre est conservé : $1^2 \\leq x^2 \\leq 3^2$. Étape 4 — Conclure : $1 \\leq x^2 \\leq 9$.",
+                  "content": "On dresse le tableau de variation de la fonction carré $f(x) = x^2$ sur $[-2 ; 3]$. Quelles valeurs de $f$ y sont écrites, de gauche à droite ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Repérer : $[-2 ; 3]$ contient des nombres négatifs, $[-2 ; 0]$, et des nombres positifs, $[0 ; 3]$. Étape 2 — Rappeler : la fonction carré est décroissante sur $[-2 ; 0]$ et croissante sur $[0 ; 3]$. Étape 3 — Comparer : on calcule les valeurs aux bouts des flèches : $f(-2) = 4$, $f(0) = 0$ et $f(3) = 9$. Étape 4 — Conclure : une flèche descend de 4 à 0, puis une flèche monte de 0 à 9. La réponse « 4, puis 9 » oublie le minimum 0, atteint en $x = 0$ ; un carré n'est jamais égal à $-4$.",
                   "answers": [
                     {
-                      "content": "9",
+                      "content": "4, puis 0, puis 9",
                       "correct": true
+                    },
+                    {
+                      "content": "4, puis 9",
+                      "correct": false
+                    },
+                    {
+                      "content": "0, puis 4, puis 9",
+                      "correct": false
+                    },
+                    {
+                      "content": "$-4$, puis 0, puis 9",
+                      "correct": false
                     }
                   ]
                 }
@@ -1148,7 +1160,7 @@
                 {
                   "content": "Quelles inégalités sont vraies ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Étape 1 — Repérer : on regarde le signe des nombres de chaque comparaison. Étape 2 — Rappeler : carré décroissante sur les négatifs, croissante sur les positifs. Étape 3 — Comparer : $(-6)^2 = 36 > 1 = (-1)^2$ et $2^2 = 4 < 25 = 5^2$ sont vraies ; $(-3)^2 = 9$ n'est pas inférieur à $(-2)^2 = 4$ ; $(-4)^2 = 16$ n'est pas inférieur à 1. Étape 4 — Conclure : les deux premières sont vraies.",
+                  "explanation": "Étape 1 — Repérer : on regarde le signe des nombres de chaque comparaison. Étape 2 — Rappeler : carré décroissante sur les négatifs, croissante sur les positifs. Étape 3 — Comparer : $(-6)^2 = 36 > 1 = (-1)^2$ et $2^2 = 4 < 25 = 5^2$ sont vraies ; $(-3)^2 = 9$ n'est pas inférieur à $(-2)^2 = 4$ ; $(-4)^2 = 16$ n'est pas inférieur à 1. Étape 4 — Conclure : les inégalités vraies sont $(-6)^2 > (-1)^2$ et $2^2 < 5^2$.",
                   "answers": [
                     {
                       "content": "$(-6)^2 > (-1)^2$",
@@ -1190,7 +1202,7 @@
         },
         {
           "name": "Étudier la fonction inverse",
-          "remember": "La **fonction inverse** est définie par $f(x) = \\dfrac{1}{x}$ pour tout $x \\neq 0$ : son ensemble de définition est $\\mathbb{R}$ privé de 0, car on ne peut pas diviser par 0. Elle est **décroissante** sur $]-\\infty ; 0[$ et **décroissante** sur $]0 ; +\\infty[$, mais pas sur les deux à la fois. $\\dfrac{1}{x}$ a le même signe que $x$. Donc si $0 < a < b$ ou si $a < b < 0$, alors $\\dfrac{1}{a} > \\dfrac{1}{b}$. Sa courbe est une **hyperbole**, à deux branches, qui ne coupe jamais les axes.",
+          "remember": "La **fonction inverse** est définie par $f(x) = \\dfrac{1}{x}$ pour tout $x \\neq 0$ : son ensemble de définition est $\\mathbb{R}$ privé de 0, noté $\\mathbb{R}^*$, car on ne peut pas diviser par 0. Elle est **décroissante** sur $]-\\infty ; 0[$ et **décroissante** sur $]0 ; +\\infty[$, mais pas sur les deux à la fois. $\\dfrac{1}{x}$ a le même signe que $x$. Donc si $0 < a < b$ ou si $a < b < 0$, alors $\\dfrac{1}{a} > \\dfrac{1}{b}$. Sa courbe est une **hyperbole**, à deux branches, qui ne coupe jamais les axes. Sur $[1 ; 4]$, son tableau de variation n'a qu'une flèche, descendante, de 1 (en $x = 1$) à 0,25 (en $x = 4$).",
           "method": [
             "Vérifier : que les deux nombres sont non nuls et du même côté de 0 (tous deux positifs, ou tous deux négatifs).",
             "Rappeler : la fonction inverse est décroissante sur $]-\\infty ; 0[$ et sur $]0 ; +\\infty[$.",
@@ -1317,20 +1329,20 @@
                   ]
                 },
                 {
-                  "content": "Quelle inégalité est vraie ?",
-                  "question_type": "single_choice",
-                  "explanation": "Étape 1 — Vérifier : 3 et 7 sont non nuls et positifs. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : $3 < 7$, donc l'ordre est contraire : $\\dfrac{1}{3} > \\dfrac{1}{7}$. Étape 4 — Conclure : $\\dfrac{1}{3} > \\dfrac{1}{7}$.",
+                  "content": "Sur $[1 ; 4]$, le tableau de variation de la fonction inverse porte une seule flèche ___ , de 1 (écrit sous $x = 1$) à 0,25 (écrit sous $x = 4$).",
+                  "question_type": "select",
+                  "explanation": "Étape 1 — Vérifier : les nombres de $[1 ; 4]$ sont non nuls et positifs : ils sont dans $]0 ; +\\infty[$. Étape 2 — Rappeler : la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 3 — Comparer : $1 < 4$, et les inverses sont dans l'ordre contraire : $\\dfrac{1}{1} = 1 > \\dfrac{1}{4} = 0{,}25$. Étape 4 — Conclure : la flèche est descendante, de 1 à 0,25. Une flèche montante garderait l'ordre des nombres, ce qui est faux pour la fonction inverse.",
                   "answers": [
                     {
-                      "content": "$\\dfrac{1}{3} > \\dfrac{1}{7}$",
+                      "content": "descendante",
                       "correct": true
                     },
                     {
-                      "content": "$\\dfrac{1}{3} < \\dfrac{1}{7}$",
+                      "content": "montante",
                       "correct": false
                     },
                     {
-                      "content": "$\\dfrac{1}{3} = \\dfrac{1}{7}$",
+                      "content": "horizontale",
                       "correct": false
                     }
                   ]
@@ -1427,16 +1439,24 @@
                   ]
                 },
                 {
-                  "content": "Vrai ou faux : la fonction $g$ est décroissante sur $]0 ; +\\infty[$.",
-                  "question_type": "true_false",
-                  "explanation": "Étape 1 — Vérifier : le nombre de parts est positif, donc dans $]0 ; +\\infty[$. Étape 2 — Rappeler : la fonction inverse y est décroissante. Étape 3 — Comparer : plus $x$ est grand, plus $\\dfrac{1}{x}$ est petit. Étape 4 — Conclure : l'affirmation est vraie.",
+                  "content": "Parmi ces fonctions, laquelle n'est pas définie sur $\\mathbb{R}$ tout entier ?",
+                  "question_type": "single_choice",
+                  "explanation": "Étape 1 — Vérifier : on cherche un nombre qui n'a pas d'image, c'est-à-dire un dénominateur qui peut être nul. Étape 2 — Rappeler : les fonctions affines comme $2x + 5$, les fonctions linéaires comme $-4x$ et la fonction carré $x^2$ sont définies sur $\\mathbb{R}$ : on calcule leur image pour tout nombre. Étape 3 — Comparer : pour $h(x) = \\dfrac{1}{x}$, le nombre 0 n'a pas d'image, car $\\dfrac{1}{0}$ n'existe pas. Étape 4 — Conclure : $h$ est définie sur $\\mathbb{R}^*$ seulement. La fonction carré, elle, est définie partout : c'est seulement son minimum qui vaut 0.",
                   "answers": [
                     {
-                      "content": "Vrai",
+                      "content": "$h(x) = \\dfrac{1}{x}$",
                       "correct": true
                     },
                     {
-                      "content": "Faux",
+                      "content": "$f(x) = 2x + 5$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$g(x) = x^2$",
+                      "correct": false
+                    },
+                    {
+                      "content": "$k(x) = -4x$",
                       "correct": false
                     }
                   ]
@@ -2656,7 +2676,7 @@
                 {
                   "content": "Quelles affirmations sont vraies ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Étape 1 — Rappeler : la fonction carré est croissante sur $[0 ; +\\infty[$ et la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 2 — Calculer : $g(0) = \\dfrac{1}{0}$ n'existe pas, on ne divise pas par 0 ; $A(-2) = (-2)^2 = 4$, un carré n'est jamais négatif. Conclusion : seules les deux premières sont vraies.",
+                  "explanation": "Étape 1 — Rappeler : la fonction carré est croissante sur $[0 ; +\\infty[$ et la fonction inverse est décroissante sur $]0 ; +\\infty[$. Étape 2 — Calculer : $g(0) = \\dfrac{1}{0}$ n'existe pas, on ne divise pas par 0 ; $A(-2) = (-2)^2 = 4$, un carré n'est jamais négatif. Conclusion : seules « $A$ est croissante pour des côtés positifs » et « $g$ est décroissante pour un nombre de parts positif » sont vraies. Pourquoi pas $A(-2) = -4$ : on oublie les parenthèses, alors que $(-2)^2 = (-2) \\times (-2) = 4$.",
                   "answers": [
                     {
                       "content": "$A$ est croissante pour des côtés positifs",
@@ -3313,7 +3333,7 @@
                 {
                   "content": "Quelles affirmations sont vraies ?",
                   "question_type": "multiple_correct_2",
-                  "explanation": "Étape 1 — Rappeler : un carré est positif ou nul, et on ne divise pas par 0. Étape 2 — Calculer : $(-3)^2 = 9$ et non $-9$. Étape 3 — Conclure : la fonction inverse est définie sur $\\mathbb{R}$ privé de 0, pas sur $\\mathbb{R}$ entier. Seules les deux premières affirmations sont vraies.",
+                  "explanation": "Étape 1 — Rappeler : un carré est positif ou nul, et on ne divise pas par 0. Étape 2 — Calculer : $(-3)^2 = 9$ et non $-9$. Étape 3 — Conclure : la fonction inverse est définie sur $\\mathbb{R}$ privé de 0, pas sur $\\mathbb{R}$ entier. Seules « pour tout nombre $x$, $x^2 \\geq 0$ » et « la fonction inverse n'est pas définie en 0 » sont vraies. Pourquoi pas $(-3)^2 = -9$ : on a calculé $-3^2$, sans parenthèses, au lieu de $(-3) \\times (-3)$.",
                   "answers": [
                     {
                       "content": "Pour tout nombre $x$, $x^2 \\geq 0$",

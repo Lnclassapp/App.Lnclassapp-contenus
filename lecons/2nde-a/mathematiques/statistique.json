@@ -398,21 +398,21 @@
           ]
         },
         {
-          "name": "Classes et effectifs cumulés",
-          "remember": "Quand une série a beaucoup de valeurs différentes (notes, tailles, prix), on la **regroupe en classes** de même **amplitude**. Une classe $[a\\,;\\,b[$ contient les valeurs de $a$ (inclus) à $b$ (exclu) ; son amplitude est $b - a$ et son **centre** est $\\frac{a + b}{2}$. L'**effectif cumulé croissant** d'une classe est la somme des effectifs de cette classe et de toutes les classes précédentes ; le dernier est égal à $N$. La **classe modale** est la classe d'effectif le plus grand.",
+          "name": "Classes, effectifs cumulés et fréquences cumulées",
+          "remember": "Quand une série a beaucoup de valeurs différentes (notes, tailles, prix), on la **regroupe en classes** de même **amplitude**. Une classe $[a\\,;\\,b[$ contient les valeurs de $a$ (inclus) à $b$ (exclu) ; son amplitude est $b - a$ et son **centre** est $\\frac{a + b}{2}$. L'**effectif cumulé croissant** d'une classe est la somme des effectifs de cette classe et de toutes les classes précédentes ; le dernier est égal à $N$. L'**effectif cumulé décroissant** d'une classe est la somme des effectifs de cette classe et de toutes les classes suivantes ; le premier est égal à $N$. Pour $[a\\,;\\,b[$, le cumul croissant compte les valeurs inférieures à $b$, le cumul décroissant les valeurs supérieures ou égales à $a$. Une **fréquence cumulée** (croissante ou décroissante) est un effectif cumulé divisé par $N$. Pour une série discrète, on cumule de la même façon, valeur par valeur. La **classe modale** est la classe d'effectif le plus grand.",
           "method": [
             "Repérer : trouver la plus petite et la plus grande valeur de la série.",
             "Découper : choisir des classes $[a\\,;\\,b[$ de même amplitude, qui couvrent toutes les valeurs.",
             "Compter : ranger chaque valeur dans sa classe et donner l'effectif de chaque classe.",
-            "Cumuler : additionner les effectifs de la première classe jusqu'à la classe voulue ; le dernier cumul est $N$."
+            "Cumuler : additionner les effectifs de la première classe jusqu'à la classe voulue (cumul croissant) ou de la classe voulue jusqu'à la dernière (cumul décroissant) ; diviser par $N$ pour une fréquence cumulée."
           ],
           "example": {
-            "statement": "Les notes de 20 élèves sont : 4, 6, 7, 8, 9, 9, 10, 10, 11, 12, 12, 13, 13, 14, 14, 15, 16, 16, 17, 19. Les regrouper en classes de même amplitude 5 et donner les effectifs cumulés.",
+            "statement": "Les notes de 20 élèves sont : 4, 6, 7, 8, 9, 9, 10, 10, 11, 12, 12, 13, 13, 14, 14, 15, 16, 16, 17, 19. Les regrouper en classes de même amplitude 5 et donner les effectifs cumulés croissants et décroissants.",
             "steps": [
               "Repérer : la plus petite note est 4 et la plus grande est 19.",
               "Découper : on prend les classes [0 ; 5[, [5 ; 10[, [10 ; 15[ et [15 ; 20[.",
               "Compter : les effectifs sont 1, 5, 9 et 5.",
-              "Cumuler : $1$, puis $1 + 5 = 6$, puis $6 + 9 = 15$, puis $15 + 5 = 20 = N$."
+              "Cumuler : croissants $1$, puis $1 + 5 = 6$, puis $6 + 9 = 15$, puis $15 + 5 = 20 = N$ ; décroissants $20$, puis $20 - 1 = 19$, puis $19 - 5 = 14$, puis $14 - 9 = 5$."
             ]
           },
           "pitfall": "Ne pas oublier que la borne de droite est exclue. Contre-exemple : les deux notes 10 appartiennent à [10 ; 15[ et non à [5 ; 10[. Si on range les deux notes 10 à gauche, on trouve 7 notes dans [5 ; 10[ au lieu de 5. Ne confonds pas non plus effectif (9 pour [10 ; 15[) et effectif cumulé ($1 + 5 + 9 = 15$).",
@@ -434,20 +434,20 @@
                 "hint": "Compte les notes de 10 inclus à 20 exclu."
               },
               {
-                "content": "Vrai ou faux : la note 10 appartient à la classe [0 ; 10[.",
+                "content": "Vrai ou faux : l'effectif cumulé décroissant de la première classe d'une série est égal à l'effectif total $N$.",
                 "question_type": "true_false",
-                "explanation": "Étape 2 — Découper : [0 ; 10[ exclut la borne 10. Étape 3 — Compter : 10 est la borne gauche de [10 ; 20[. L'affirmation est fausse.",
+                "explanation": "Étape 3 — Compter : on connaît l'effectif de chaque classe. Étape 4 — Cumuler : l'effectif cumulé décroissant de la première classe additionne son effectif et ceux de toutes les classes suivantes, donc de toutes les classes : il vaut $N$. L'affirmation est vraie. Exemple : effectifs 1, 5, 9 et 5 ; cumul décroissant de la première classe : $1 + 5 + 9 + 5 = 20 = N$.",
                 "answers": [
                   {
                     "content": "Vrai",
-                    "correct": false
+                    "correct": true
                   },
                   {
                     "content": "Faux",
-                    "correct": true
+                    "correct": false
                   }
                 ],
-                "hint": "La borne de droite est exclue."
+                "hint": "Le cumul décroissant d'une classe ajoute cette classe et toutes celles qui la suivent."
               },
               {
                 "content": "Trois classes ont pour effectifs 5, 8 et 7. Quel est l'effectif cumulé de la troisième classe ?",
@@ -536,7 +536,7 @@
                 {
                   "content": "Les classes [150 ; 160[, [160 ; 170[ et [170 ; 180[ ont pour effectifs 4, 5 et 3. Combien d'élèves mesurent 160 cm ou plus ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 3 — Compter : les effectifs sont 4, 5 et 3. Étape 4 — Cumuler : 160 cm ou plus : on additionne les deux dernières classes, $5 + 3 = 8$ (ou $12 - 4 = 8$). Le résultat 5 oublie la dernière classe ; 9 compte les élèves de moins de 170 cm.",
+                  "explanation": "Étape 3 — Compter : les effectifs sont 4, 5 et 3. Étape 4 — Cumuler : « 160 cm ou plus », c'est l'effectif cumulé décroissant de [160 ; 170[ : on additionne cette classe et la suivante, $5 + 3 = 8$ (ou $12 - 4 = 8$). Le résultat 5 oublie la classe [170 ; 180[ ; 9 est l'effectif cumulé croissant de [160 ; 170[, qui compte les élèves de moins de 170 cm.",
                   "answers": [
                     {
                       "content": "8",
@@ -592,17 +592,17 @@
                   ]
                 },
                 {
-                  "content": "Quelle est l'amplitude de la classe [100 ; 300[, en FCFA ?",
+                  "content": "Les classes de prix [100 ; 300[, [300 ; 500[ et [500 ; 700[ ont pour effectifs 4, 4 et 2. Quel est l'effectif cumulé décroissant de la classe [300 ; 500[ ?",
                   "question_type": "numeric",
-                  "explanation": "Étape 2 — Découper : l'amplitude est $b - a = 300 - 100 = 200$. L'amplitude est 200 FCFA.",
+                  "explanation": "Étape 3 — Compter : les effectifs sont 4, 4 et 2. Étape 4 — Cumuler : en cumul décroissant, on part de la classe [300 ; 500[ et on ajoute les classes suivantes : $4 + 2 = 6$. 6 articles coûtent 300 FCFA ou plus. Le résultat 8 est l'effectif cumulé croissant de [300 ; 500[, qui compte les prix inférieurs à 500 FCFA.",
                   "answers": [
                     {
-                      "content": "200",
+                      "content": "6",
                       "correct": true
                     }
                   ],
                   "tolerance": 0,
-                  "unit": "FCFA"
+                  "unit": "articles"
                 },
                 {
                   "content": "Les classes [100 ; 300[, [300 ; 500[ et [500 ; 700[ ont pour effectifs 4, 4 et 2. Relie chaque classe à son effectif cumulé croissant.",
@@ -1792,17 +1792,17 @@
               ]
             },
             {
-              "content": "Les tailles de 20 élèves de 2nde sont regroupées en classes de même amplitude 10 : [140 ; 150[ (2 élèves), [150 ; 160[ (6), [160 ; 170[ (8) et [170 ; 180[ (4). Vrai ou faux : plus de la moitié des élèves mesurent moins de 160 cm.",
+              "content": "Les tailles de 20 élèves de 2nde sont regroupées en classes de même amplitude 10 : [140 ; 150[ (2 élèves), [150 ; 160[ (6), [160 ; 170[ (8) et [170 ; 180[ (4). Vrai ou faux : la fréquence cumulée décroissante de la classe [160 ; 170[ est 60 %.",
               "question_type": "true_false",
-              "explanation": "Étape 3 — Compter : effectifs 2 et 6. Étape 4 — Cumuler : $2 + 6 = 8$ élèves sur 20, soit 40 %. 40 % est moins de la moitié : l'affirmation est fausse. Ne compter que la classe modale serait une autre erreur.",
+              "explanation": "Étape 3 — Compter : effectifs 2, 6, 8 et 4, et N = 20. Étape 4 — Cumuler : l'effectif cumulé décroissant de [160 ; 170[ additionne cette classe et la suivante : $8 + 4 = 12$ ; la fréquence cumulée décroissante est $\\frac{12}{20} = 0{,}6$, soit 60 %. L'affirmation est vraie : 60 % des élèves mesurent 160 cm ou plus. Ne prendre que la classe [160 ; 170[ donnerait 40 %, sa fréquence seule.",
               "answers": [
                 {
                   "content": "Vrai",
-                  "correct": false
+                  "correct": true
                 },
                 {
                   "content": "Faux",
-                  "correct": true
+                  "correct": false
                 }
               ]
             },
@@ -1910,7 +1910,7 @@
       "subjects": [
         {
           "title": "Sujet 1 · Les savoirs de base",
-          "notions": "Vocabulaire (population, caractère, modalité), effectifs et fréquences en pourcentage, classes et effectifs cumulés, moyenne, mode et médiane d'une série simple.",
+          "notions": "Vocabulaire (population, caractère, modalité), effectifs et fréquences en pourcentage, classes, effectifs et fréquences cumulés, moyenne, mode et médiane d'une série simple.",
           "exercises": [
             {
               "title": "Exercice 1",
@@ -2163,19 +2163,17 @@
                   ]
                 },
                 {
-                  "content": "Vrai ou faux : la note 10 est rangée dans la classe [5 ; 10[.",
-                  "question_type": "true_false",
-                  "explanation": "Étape 2 — Découper : [5 ; 10[ exclut 10. Étape 3 — Compter : 10 est dans [10 ; 15[. L'affirmation est fausse.",
+                  "content": "Les classes de notes [0 ; 5[, [5 ; 10[, [10 ; 15[ et [15 ; 20[ ont pour effectifs 1, 3, 3 et 3, pour 10 élèves. Quelle est la fréquence cumulée croissante de la classe [10 ; 15[, en pourcentage ?",
+                  "question_type": "numeric",
+                  "explanation": "Étape 3 — Compter : les effectifs sont 1, 3, 3 et 3, et N = 10. Étape 4 — Cumuler : l'effectif cumulé croissant de [10 ; 15[ est $1 + 3 + 3 = 7$ ; on divise par N : $\\frac{7}{10} = 0{,}7$, soit 70 %. 70 % des élèves ont une note inférieure à 15. Pourquoi pas 30 % : c'est la fréquence de la classe [10 ; 15[ seule, sans cumuler les classes qui la précèdent.",
                   "answers": [
                     {
-                      "content": "Vrai",
-                      "correct": false
-                    },
-                    {
-                      "content": "Faux",
+                      "content": "70",
                       "correct": true
                     }
-                  ]
+                  ],
+                  "tolerance": 0,
+                  "unit": "%"
                 },
                 {
                   "content": "Quel est le centre de la classe [10 ; 15[ ?",

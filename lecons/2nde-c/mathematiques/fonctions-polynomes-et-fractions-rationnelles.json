@@ -698,7 +698,7 @@
         },
         {
           "name": "Utiliser une racine pour factoriser un polynôme",
-          "remember": "Un réel $a$ est une **racine** du polynôme $P$ si $P(a)=0$. Propriété : si $a$ est une racine de $P$, alors $P(x)=(x-a)Q(x)$, où $Q$ est un polynôme de degré $n-1$ si $P$ est de degré $n$. Réciproquement, si $P(x)=(x-a)Q(x)$, alors $P(a)=0$. Le facteur est toujours $x-a$ : pour la racine $-2$, c'est $x-(-2)=x+2$.",
+          "remember": "Un réel $a$ est un **zéro** du polynôme $P$ (on dit aussi une **racine**) si $P(a)=0$. Propriété : si $a$ est une racine de $P$, alors $P(x)=(x-a)Q(x)$, où $Q$ est un polynôme de degré $n-1$ si $P$ est de degré $n$. Réciproquement, si $P(x)=(x-a)Q(x)$, alors $P(a)=0$. Le facteur est toujours $x-a$ : pour la racine $-2$, c'est $x-(-2)=x+2$.",
           "method": [
             "Calculer $P(a)$ pour quelques entiers simples ($\\pm 1$, $\\pm 2$, $\\pm 3$…) jusqu'à trouver une racine $a$.",
             "Écrire $P(x)=(x-a)Q(x)$, où $Q$ est de degré $n-1$ à coefficients inconnus (pour $n=3$ : $Q(x)=ux^2+vx+w$).",
@@ -899,16 +899,12 @@
               "figure": null,
               "questions": [
                 {
-                  "content": "Si $P(a)=0$, le réel $a$ est une ___ du polynôme $P$.",
+                  "content": "Si $P(a)=0$, le réel $a$ est appelé un ___ du polynôme $P$ (on dit aussi une racine de $P$).",
                   "question_type": "fill_blank",
-                  "explanation": "Étape 1 — Calculer : on calcule $P(a)$. Étape 2 — Écrire : si $P(a)=0$, alors $P(x)=(x-a)Q(x)$. Étape 3 — Développer : sans objet ici. Étape 4 — Résoudre : par définition, un réel qui annule $P$ est une racine de $P$.",
+                  "explanation": "Étape 1 — Calculer : on calcule $P(a)$. Étape 2 — Écrire : si $P(a)=0$, alors $P(x)=(x-a)Q(x)$. Étape 3 — Développer : sans objet ici. Étape 4 — Résoudre : par définition, un réel qui annule $P$ est un zéro de $P$ ; on dit aussi une racine. C'est le mot du programme : « vérifier qu'un nombre réel donné est zéro d'un polynôme ».",
                   "answers": [
                     {
-                      "content": "racine",
-                      "correct": true
-                    },
-                    {
-                      "content": "racines",
+                      "content": "zéro",
                       "correct": true
                     }
                   ]
@@ -1763,7 +1759,7 @@
             {
               "content": "Quelle est la factorisation de $x^2+7x+12$ ?",
               "question_type": "single_choice",
-              "explanation": "Étape 1 — Chercher : deux nombres de somme $7$ et de produit $12$ sont $3$ et $4$. Étape 2 — Écrire : $x^2+7x+12=(x+3)(x+4)$. Étape 3 — Vérifier : $(x+3)(x+4)=x^2+4x+3x+12=x^2+7x+12$. Les autres propositions ont une somme $8$, $-7$ ou $13$, pas $7$.",
+              "explanation": "Étape 1 — Écrire : on cherche deux réels $p$ et $q$ tels que $x^2+7x+12=(x+p)(x+q)$. Étape 2 — Développer et identifier : $(x+p)(x+q)=x^2+(p+q)x+pq$, donc $p+q=7$ et $pq=12$ ; $p=3$ et $q=4$ conviennent. Étape 3 — Vérifier : $(x+3)(x+4)=x^2+4x+3x+12=x^2+7x+12$. Pourquoi pas $(x+2)(x+6)$ : le produit $2\\times 6$ vaut bien $12$, mais $2+6=8$, ce qui donne $x^2+8x+12$.",
               "answers": [
                 {
                   "content": "$(x+3)(x+4)$",
@@ -3352,7 +3348,7 @@
                 {
                   "content": "Quelle est la factorisation de $x^2+9x+20$ ?",
                   "question_type": "single_choice",
-                  "explanation": "Étape 1 — Chercher : deux nombres de somme $9$ et de produit $20$ sont $4$ et $5$. Étape 2 — Écrire : $x^2+9x+20=(x+4)(x+5)$. Étape 3 — Vérifier : $(x+4)(x+5)=x^2+9x+20$. Les autres propositions ont une somme $12$, $-9$ ou $21$.",
+                  "explanation": "Étape 1 — Écrire : on cherche deux réels $p$ et $q$ tels que $x^2+9x+20=(x+p)(x+q)$. Étape 2 — Développer et identifier : $(x+p)(x+q)=x^2+(p+q)x+pq$, donc $p+q=9$ et $pq=20$ ; $p=4$ et $q=5$ conviennent. Étape 3 — Vérifier : $(x+4)(x+5)=x^2+5x+4x+20=x^2+9x+20$. Pourquoi pas $(x+2)(x+10)$ : le produit $2\\times 10$ vaut bien $20$, mais $2+10=12$, ce qui donne $x^2+12x+20$.",
                   "answers": [
                     {
                       "content": "$(x+4)(x+5)$",
